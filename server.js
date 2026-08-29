@@ -10,9 +10,9 @@
 /**
  * POLY-GLOT MCP SERVER
  * GOOSE NOTE: This is the security boundary exposed to ChatGPT.
- * For the Neon-only deployment, port the HTTP listener to a Neon Function
- * fetch(request) entrypoint while preserving every tool schema and entitlement
- * check. Never move Pro authorization into the browser/widget.
+ * Production runs in a production Node/MCP runtime on one public port. Preserve
+ * every tool schema and entitlement check. Neon remains the database. Never
+ * move Pro authorization into the browser/widget.
  */
 import { createServer } from "node:http";
 import { readFileSync } from "node:fs";
@@ -33,6 +33,7 @@ import {
   templateAccess,
 } from "./entitlements.js";
 import { publicPricing } from "./pricing.js";
+import { handleEntitlementRequest } from "./entitlement-service/server.js";
 import {
   applyLanguageInstructions,
   languageContext,
@@ -47,7 +48,25 @@ const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html
 const catalog = JSON.parse(readFileSync(join(__dirname, "data", "catalog.json"), "utf8"));
 const templates = catalog.templates;
 const prompts = catalog.prompts;
-const UI_URI = "ui://polyglot/workspace-v2.html";
+const UI_URI = "ui://polyglot/workspace-v3.html";
+
+// Shared Apps SDK metadata. The widget does not fetch remote assets or APIs;
+// it talks to the MCP host bridge, so the CSP can stay intentionally tight.
+const UI_META = Object.freeze({
+  ui: {
+    resourceUri: UI_URI,
+    prefersBorder: true,
+    csp: { connectDomains: [], resourceDomains: [] },
+  },
+  "openai/outputTemplate": UI_URI,
+  "openai/widgetDescription": "Interactive Poly-Glot AI Workspace with template search, multilingual prompt building, subscription-aware states, and Compare Mode.",
+});
+
+const renderMeta = (invoking, invoked) => ({
+  ...UI_META,
+  "openai/toolInvocation/invoking": invoking,
+  "openai/toolInvocation/invoked": invoked,
+});
 
 const COMPARE_PROVIDERS = Object.freeze({
   chatgpt: { label: "ChatGPT", url: "https://chatgpt.com/" },
@@ -57,8 +76,6 @@ const COMPARE_PROVIDERS = Object.freeze({
   grok: { label: "Grok", url: "https://grok.com/" },
   copilot: { label: "Copilot", url: "https://copilot.microsoft.com/" },
   mistral: { label: "Mistral", url: "https://chat.mistral.ai/" },
-  groq: { label: "Groq", url: "https://groq.com/" },
-  duckduckgo: { label: "DuckDuckGo AI", url: "https://duckduckgo.com/?q=ai&ia=chat" },
 });
 
 function compareAccess(entitlement) {
@@ -186,14 +203,26 @@ const localizationArgs = {
   outputLanguage: z.string().max(80).optional().default("EN"),
 };
 
-function createPolyglotServer() {
+function createPolyglotServer(requestAuthToken = "") {
+  // production host forwards the Authorization header on each Streamable HTTP
+  // request. The MCP SDK does not guarantee that raw HTTP auth is copied into
+  // extra.authInfo for a custom server, so we bind the verified bearer token
+  // candidate to this request-scoped server instance. The entitlement API still
+  // performs the actual JWT signature/issuer/audience verification.
+  const entitlementContext = (extra) => ({
+    ...(extra || {}),
+    authInfo: {
+      ...(extra?.authInfo || {}),
+      token: extra?.authInfo?.token || extra?.authInfo?.accessToken || requestAuthToken || "",
+    },
+  });
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.3.0" },
+    { name: "polyglot-ai-workspace", version: "1.5.0" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, and prepare Compare Mode runs across multiple AI providers. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server." }
   );
 
-  registerAppResource(server, "polyglot-workspace", UI_URI, {}, async () => ({
-    contents: [{ uri: UI_URI, mimeType: RESOURCE_MIME_TYPE, text: widgetHtml }],
+  registerAppResource(server, "polyglot-workspace", UI_URI, { _meta: UI_META }, async () => ({
+    contents: [{ uri: UI_URI, mimeType: RESOURCE_MIME_TYPE, text: widgetHtml, _meta: UI_META }],
   }));
 
   registerAppTool(server, "get_language_options", {
@@ -222,7 +251,7 @@ function createPolyglotServer() {
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async (_args, extra) => {
-    const entitlement = await getEntitlement(extra);
+    const entitlement = await getEntitlement(entitlementContext(extra));
     return {
       structuredContent: { view: "subscription", entitlement: entitlementSummary(entitlement) },
       content: [{ type: "text", text: `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.` }],
@@ -235,9 +264,9 @@ function createPolyglotServer() {
     inputSchema: { query: z.string().max(200).optional().default(""), uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
-    _meta: { ui: { resourceUri: UI_URI } },
+    _meta: renderMeta("Opening Poly-Glot…", "Poly-Glot is ready"),
   }, async ({ query = "", uiLanguage = "EN" }, extra) => {
-    const entitlement = await getEntitlement(extra);
+    const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, limit: 12, uiLanguage: localization.uiLanguage.code }, entitlement);
     return {
@@ -256,8 +285,9 @@ function createPolyglotServer() {
     },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+    _meta: renderMeta("Searching templates…", "Templates updated"),
   }, async ({ query = "", goal, plan, limit = 12, uiLanguage = "EN" }, extra) => {
-    const entitlement = await getEntitlement(extra);
+    const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, goal, plan, limit, uiLanguage: localization.uiLanguage.code }, entitlement);
     return {
@@ -278,10 +308,11 @@ function createPolyglotServer() {
       message: z.string().optional(),
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+    _meta: renderMeta("Opening template…", "Template opened"),
   }, async ({ name, uiLanguage = "EN" }, extra) => {
     const template = findTemplate(name);
     if (!template) throw new Error(`Template not found: ${name}`);
-    const entitlement = await getEntitlement(extra);
+    const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const access = templateAccess(template, entitlement);
     if (!access.allowed) {
@@ -311,11 +342,12 @@ function createPolyglotServer() {
       template: templateSchema.optional(), message: z.string().optional(), entitlement: entitlementSchema, localization: localizationSchema,
     },
     annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
+    _meta: renderMeta("Building prompt…", "Prompt is ready"),
   }, async ({ name, values = {}, uiLanguage = "EN", inputLanguage = "EN", outputLanguage = "EN" }, extra) => {
     const template = findTemplate(name);
     if (!template) throw new Error(`Template not found: ${name}`);
     const localization = languageContext({ uiLanguage, inputLanguage, outputLanguage });
-    let entitlement = await getEntitlement(extra);
+    let entitlement = await getEntitlement(entitlementContext(extra));
     let access = templateAccess(template, entitlement);
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
@@ -324,7 +356,7 @@ function createPolyglotServer() {
     }
 
     if (template.plan === "free" && entitlement.state === "not_started") {
-      entitlement = await startTrialIfNeeded(extra);
+      entitlement = await startTrialIfNeeded(entitlementContext(extra));
       access = templateAccess(template, entitlement);
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
@@ -362,7 +394,7 @@ function createPolyglotServer() {
       prompt: z.string().min(1).max(30000).optional(),
       values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}),
       ...localizationArgs,
-      providers: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral", "groq", "duckduckgo"])).min(2).max(9).optional().default(["chatgpt", "claude"]),
+      providers: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral"])).min(2).max(7).optional().default(["chatgpt", "claude"]),
     },
     outputSchema: {
       view: z.enum(["compare", "compare_locked", "locked"]),
@@ -376,13 +408,14 @@ function createPolyglotServer() {
       localization: localizationSchema,
     },
     annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
+    _meta: renderMeta("Preparing Compare Mode…", "Comparison is ready"),
   }, async ({ name, prompt, values = {}, uiLanguage = "EN", inputLanguage = "EN", outputLanguage = "EN", providers = ["chatgpt", "claude"] }, extra) => {
     if (!name && !prompt) throw new Error("Provide either a Poly-Glot template name or a prompt to compare.");
     const localization = languageContext({ uiLanguage, inputLanguage, outputLanguage });
-    let entitlement = await getEntitlement(extra);
+    let entitlement = await getEntitlement(entitlementContext(extra));
 
     // First eligible Compare use starts the same three-day product trial.
-    if (entitlement.state === "not_started") entitlement = await startTrialIfNeeded(extra);
+    if (entitlement.state === "not_started") entitlement = await startTrialIfNeeded(entitlementContext(extra));
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
       locked.structuredContent.localization = localization;
@@ -441,6 +474,13 @@ const httpServer = createServer(async (req, res) => {
     });
     return res.end();
   }
+  // the production runtime expose one public app port. Keep the MCP and
+  // entitlement APIs on the same HTTPS origin and dispatch entitlement routes
+  // before the MCP handler. This preserves one deployable container.
+  if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
+    return handleEntitlementRequest(req, res);
+  }
+
   if (req.method === "GET" && url.pathname === "/") {
     res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
     return res.end(JSON.stringify({
@@ -451,7 +491,9 @@ const httpServer = createServer(async (req, res) => {
   if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
-    const server = createPolyglotServer();
+    const authHeader = String(req.headers.authorization || "");
+    const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
+    const server = createPolyglotServer(requestAuthToken);
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
     res.on("close", () => { transport.close(); server.close(); });
     try {

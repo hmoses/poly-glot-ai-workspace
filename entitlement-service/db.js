@@ -1,7 +1,7 @@
 /**
  * POLY-GLOT DATABASE ACCESS
  * GOOSE NOTE: DATABASE_URL must point to Neon Postgres in production.
- * Neon Functions inject DATABASE_URL automatically. Keep a small connection
+ * production host injects DATABASE_URL from Space Secrets. Keep a small connection
  * pool and reuse it at module scope. All entitlement decisions derive from
  * persisted, server-verified transaction/trial records.
  */
