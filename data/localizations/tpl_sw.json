@@ -1,0 +1,298 @@
+{
+  "pills": {
+    "all": "Zote",
+    "makemoney": "💰 Pesa",
+    "free": "⭐ Bila malipo",
+    "money": "💰 Biashara",
+    "coding": "💻 Programu",
+    "ai": "🤖 AI",
+    "writing": "✍️ Uandishi",
+    "marketing": "📢 Masoko",
+    "sales": "🤝 Mauzo",
+    "school": "📚 Elimu",
+    "research": "🔬 Utafiti",
+    "career": "🚀 Kazi",
+    "legal": "⚖️ Sheria",
+    "finance": "📊 Fedha",
+    "health": "🏥 Afya",
+    "cooking": "🍳 Kupika",
+    "garden": "🌱 Bustani",
+    "realestate": "🏠 Mali Isiyohamishika",
+    "auto": "🚗 Magari",
+    "travel": "✈️ Safari",
+    "image": "🎨 AI ya Picha",
+    "music": "🎵 Muziki",
+    "video": "🎬 Video",
+    "social": "📱 Mitandao",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 Biashara Mtandaoni",
+    "productivity": "⏱ Uzalishaji",
+    "diy": "🔨 Jifanyie",
+    "event": "🎉 Matukio",
+    "parent": "👶 Uzazi",
+    "pets": "🐾 Wanyama",
+    "sports": "⚽ Michezo",
+    "wellness": "🧘 Ustawi",
+    "language": "🌍 Lugha",
+    "security": "🔒 Usalama",
+    "datascience": "📈 Sayansi ya Data",
+    "chemistry": "🧪 Kemia",
+    "biology": "🧬 Biolojia",
+    "physics": "⚛️ Fizikia",
+    "math": "🔢 Hisabati",
+    "time": "⏱ Muda"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Zana ya Muhtasari",
+      "d": "Fupisha maudhui yoyote kuwa muhtasari wazi"
+    },
+    "Technical Documentation": {
+      "n": "Nyaraka za Kiufundi",
+      "d": "Tengeneza nyaraka wazi za kiufundi za API na vipengele"
+    },
+    "YouTube Script": {
+      "n": "Hati ya YouTube",
+      "d": "Hati kamili ya video na ndoano, sehemu, CTA"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Mwandishi wa Machapisho ya LinkedIn",
+      "d": "Machapisho ya LinkedIn yanayosimamisha kusogeza"
+    },
+    "Code Review Assistant": {
+      "n": "Msaidizi wa Ukaguzi wa Msimbo",
+      "d": "Ukaguzi wa kina wa msimbo na mapendekezo"
+    },
+    "Content Writer": {
+      "n": "Mwandishi wa Maudhui",
+      "d": "Unda maudhui ya kitaalamu kwa hadhira yoyote"
+    },
+    "Data Analyst": {
+      "n": "Mchambuzi wa Data",
+      "d": "Changanua data na utoe maarifa muhimu"
+    },
+    "Translation Expert": {
+      "n": "Mtaalamu wa Tafsiri",
+      "d": "Tafsiri za kitaalamu kati ya lugha"
+    },
+    "Creative Storyteller": {
+      "n": "Msimuliaji Bunifu",
+      "d": "Hadithi za kustaajabisha za aina yoyote"
+    },
+    "Customer Support": {
+      "n": "Msaada wa Wateja",
+      "d": "Majibu ya huruma na ya kitaalamu kwa wateja"
+    },
+    "Bug Report Writer": {
+      "n": "Mwandishi wa Ripoti za Hitilafu",
+      "d": "Ripoti za hitilafu zilizopangwa vizuri"
+    },
+    "Cold Email Outreach": {
+      "n": "Barua Pepe za Kufikia",
+      "d": "Barua pepe bora za kufikia wateja wapya"
+    },
+    "Study Guide Creator": {
+      "n": "Muundaji wa Mwongozo wa Masomo",
+      "d": "Miongozo kamili ya masomo kwa mada yoyote"
+    },
+    "Social Media Caption": {
+      "n": "Maelezo ya Mitandao ya Kijamii",
+      "d": "Maelezo yanayovutia kwa mitandao ya kijamii"
+    },
+    "Meeting Summary": {
+      "n": "Muhtasari wa Mkutano",
+      "d": "Muhtasari uliopangwa wa mikutano"
+    },
+    "Legal Contract Reviewer": {
+      "n": "Mkaguzi wa Mikataba ya Kisheria",
+      "d": "Kagua mikataba ya kisheria na upate hatari"
+    },
+    "Side Hustle Finder": {
+      "n": "Kitafutaji cha Kazi za Ziada",
+      "d": "Gundua mawazo ya kazi za ziada kulingana na ujuzi wako"
+    },
+    "Passive Income Blueprint": {
+      "n": "Mpango wa Mapato Yasiyo na Bidii",
+      "d": "Jenga mkakati wa mapato yasiyo na bidii"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Kikokotoo cha Kiwango cha Huru",
+      "d": "Kokotoa kiwango chako bora cha kazi huru"
+    },
+    "Savings Challenge Generator": {
+      "n": "Kizazi cha Changamoto ya Akiba",
+      "d": "Tengeneza mpango wa changamoto ya kuokoa pesa"
+    },
+    "Negotiate Any Bill": {
+      "n": "Jadiliana Bili Yoyote",
+      "d": "Hati za kujadiliana na kupunguza bili zako"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Kizindua Duka la Etsy",
+      "d": "Mpango wa hatua kwa hatua wa kuzindua duka la Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Mpangaji wa Kituo cha YouTube",
+      "d": "Panga na uzindue kituo cha YouTube chenye faida"
+    },
+    "Rental Income Analyzer": {
+      "n": "Mchambuzi wa Mapato ya Kodi",
+      "d": "Changanua mapato yanayowezekana ya mali ya kukodi"
+    },
+    "Online Course Creator": {
+      "n": "Muundaji wa Kozi Mtandaoni",
+      "d": "Panga na upange kozi mtandaoni ya kuuza"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Kiongezaji cha Kuponi na Pesa Rejeshi",
+      "d": "Ongeza akiba na kuponi na pesa rejeshi"
+    }
+  },
+  "fields": {
+    "budget": "bajeti",
+    "topic": "mada",
+    "duration": "muda",
+    "level": "kiwango",
+    "style": "mtindo",
+    "timeline": "ratiba",
+    "product": "bidhaa",
+    "audience": "hadhira",
+    "tone": "sauti",
+    "industry": "sekta",
+    "theme": "theme",
+    "platform": "jukwaa",
+    "location": "mahali",
+    "experience": "uzoefu",
+    "genre": "aina",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "umbizo",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "lengo",
+    "destination": "destination",
+    "subject": "somo",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "lugha",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "jukumu",
+    "companyName": "companyName",
+    "company": "kampuni",
+    "title": "kichwa",
+    "setting": "mazingira",
+    "date": "tarehe",
+    "environment": "mazingira",
+    "state": "state",
+    "jurisdiction": "mamlaka",
+    "priorities": "priorities",
+    "target_audience": "hadhira inayolengwa",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "kategoria",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "uwanja",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "muktadha",
+    "output_format": "output format",
+    "task": "kazi",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "washiriki",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "urefu",
+    "niche": "nafasi",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "wito wa hatua",
+    "word_count": "idadi ya maneno",
+    "period": "period",
+    "severity": "ukali",
+    "difficulty": "ugumu",
+    "skills": "ujuzi",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "masaa kwa wiki",
+    "income_goal": "lengo la mapato",
+    "starting_capital": "mtaji wa kuanzia",
+    "risk_tolerance": "uvumilivu wa hatari",
+    "time_commitment": "kujitolea kwa muda",
+    "experience_years": "miaka ya uzoefu",
+    "expenses_monthly": "gharama za kila mwezi",
+    "hours_available": "masaa yanayopatikana",
+    "target_income": "mapato yanayolengwa",
+    "savings_goal": "lengo la akiba",
+    "current_savings": "akiba ya sasa",
+    "monthly_income": "mapato ya kila mwezi",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "aina ya bidhaa",
+    "pricing_range": "kiwango cha bei",
+    "content_type": "aina ya maudhui",
+    "upload_frequency": "mzunguko wa kupakia",
+    "equipment_budget": "bajeti ya vifaa",
+    "monetization_goal": "lengo la mapato",
+    "property_price": "bei ya mali",
+    "down_payment": "malipo ya awali",
+    "monthly_rent": "kodi ya kila mwezi",
+    "property_type": "aina ya mali",
+    "expenses": "expenses",
+    "expertise_level": "kiwango cha utaalamu",
+    "target_student": "mwanafunzi anayeshughulikiwa",
+    "course_length": "urefu wa kozi",
+    "price_point": "kiwango cha bei",
+    "monthly_spending": "matumizi ya kila mwezi",
+    "current_cards": "kadi za sasa",
+    "store_preferences": "mapendeleo ya duka",
+    "effort_level": "kiwango cha juhudi",
+    "apps_used": "programu zinazotumiwa",
+    "marketing_budget": "bajeti ya masoko",
+    "product_count": "idadi ya bidhaa",
+    "target_market": "soko linalolengwa",
+    "available_hours": "masaa yanayopatikana",
+    "vehicle": "gari",
+    "current_gigs": "kazi za sasa",
+    "preferences": "mapendeleo"
+  }
+}

@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Tất cả",
+    "free": "⭐ Miễn phí",
+    "money": "💰 Kinh doanh",
+    "coding": "💻 Lập trình",
+    "ai": "🤖 AI",
+    "writing": "✍️ Viết",
+    "marketing": "📢 Tiếp thị",
+    "sales": "🤝 Bán hàng",
+    "school": "📚 Giáo dục",
+    "research": "🔬 Nghiên cứu",
+    "career": "🚀 Sự nghiệp",
+    "legal": "⚖️ Pháp lý",
+    "finance": "📊 Tài chính",
+    "health": "🏥 Sức khỏe",
+    "cooking": "🍳 Nấu ăn",
+    "garden": "🌱 Vườn",
+    "realestate": "🏠 Bất động sản",
+    "auto": "🚗 Ô tô",
+    "travel": "✈️ Du lịch",
+    "image": "🎨 AI Hình ảnh",
+    "music": "🎵 Âm nhạc",
+    "video": "🎬 Video",
+    "social": "📱 Mạng xã hội",
+    "startup": "🦄 Khởi nghiệp",
+    "ecommerce": "🛒 Thương mại điện tử",
+    "productivity": "⏱ Năng suất",
+    "diy": "🔨 Tự làm",
+    "event": "🎉 Sự kiện",
+    "parent": "👶 Nuôi dạy con",
+    "pets": "🐾 Thú cưng",
+    "sports": "⚽ Thể thao",
+    "wellness": "🧘 Sức khỏe tinh thần",
+    "language": "🌍 Ngôn ngữ",
+    "security": "🔒 Bảo mật",
+    "datascience": "📈 Khoa học dữ liệu",
+    "chemistry": "🧪 Hóa học",
+    "biology": "🧬 Sinh học",
+    "physics": "⚛️ Vật lý",
+    "math": "🔢 Toán học",
+    "makemoney": "💰 Tiền"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Công cụ tóm tắt",
+      "d": "Cô đọng bất kỳ nội dung nào thành các bản tóm tắt rõ ràng bằng dấu đầu dòng"
+    },
+    "Technical Documentation": {
+      "n": "Tài liệu kỹ thuật",
+      "d": "Tạo tài liệu kỹ thuật rõ ràng về API và tính năng"
+    },
+    "YouTube Script": {
+      "n": "Tập lệnh YouTube",
+      "d": "Kịch bản video đầy đủ có hook, phần, CTA, danh sách b-roll"
+    },
+    "TikTok Generator": {
+      "n": "Trình tạo TikTok",
+      "d": "Tập lệnh video dạng ngắn được tối ưu hóa cho TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Người viết bài trên LinkedIn",
+      "d": "Các bài đăng trên LinkedIn dừng cuộn để thúc đẩy sự tương tác"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Trình tạo bài đăng blog",
+      "d": "Bài đăng blog dài được tối ưu hóa SEO"
+    },
+    "SEO Article Writer": {
+      "n": "Người viết bài SEO",
+      "d": "Các bài viết giàu từ khóa được xây dựng để xếp hạng trên Google"
+    },
+    "Podcast Episode Outline": {
+      "n": "Tóm tắt tập podcast",
+      "d": "Đề cương tập có cấu trúc với các điểm thảo luận"
+    },
+    "Newsletter Writer": {
+      "n": "Người viết bản tin",
+      "d": "Thu hút các bản tin email hấp dẫn người đọc thực sự mở"
+    },
+    "Product Review Writer": {
+      "n": "Người viết đánh giá sản phẩm",
+      "d": "Đánh giá sản phẩm cân bằng, đáng tin cậy"
+    },
+    "Social Media Calendar": {
+      "n": "Lịch truyền thông xã hội",
+      "d": "Lịch nội dung 30 ngày với ý tưởng bài đăng trên mỗi nền tảng"
+    },
+    "Executive Summary": {
+      "n": "Tóm tắt điều hành",
+      "d": "Bản tóm tắt điều hành một trang từ các tài liệu dài"
+    },
+    "Customer Support Response": {
+      "n": "Phản hồi hỗ trợ khách hàng",
+      "d": "Câu trả lời hỗ trợ khách hàng phù hợp với thương hiệu và đồng cảm"
+    },
+    "Business Proposal": {
+      "n": "Đề xuất kinh doanh",
+      "d": "Giành được đề xuất của khách hàng với phạm vi và giá cả"
+    },
+    "Decision Memo": {
+      "n": "Bản ghi nhớ Quyết định",
+      "d": "Bản ghi nhớ quyết định rõ ràng với các tùy chọn và đề xuất"
+    },
+    "Stakeholder Update": {
+      "n": "Cập nhật các bên liên quan",
+      "d": "Cập nhật trạng thái dự án ngắn gọn cho các bên liên quan"
+    },
+    "Code Review Assistant": {
+      "n": "Trợ lý đánh giá mã",
+      "d": "Xem lại mã để tìm lỗi, kiểu và cách thực hành tốt nhất"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc/Nhận xét mã",
+      "d": "Nhận xét JSDoc cho JavaScript và TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Bản ghi Quyết định Kiến trúc",
+      "d": "ADR chính thức ghi lại các quyết định kỹ thuật"
+    },
+    "User Story Writer": {
+      "n": "Người viết câu chuyện của người dùng",
+      "d": "Câu chuyện của người dùng linh hoạt với tiêu chí chấp nhận"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Tiêu chí chấp nhận",
+      "d": "Tiêu chí chấp nhận theo phong cách Gherkin cho câu chuyện của người dùng"
+    },
+    "PR Description Writer": {
+      "n": "Người viết mô tả PR",
+      "d": "Mô tả PR rõ ràng với ngữ cảnh và ghi chú kiểm tra"
+    },
+    "Unit Test Generator": {
+      "n": "Trình tạo thử nghiệm đơn vị",
+      "d": "Kiểm tra đơn vị với các trường hợp đặc biệt cho bất kỳ chức năng nào"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Cố vấn tái cấu trúc mã",
+      "d": "Mã tái cấu trúc để dễ đọc và hiệu suất"
+    },
+    "SQL Query Builder": {
+      "n": "Trình tạo truy vấn SQL",
+      "d": "Ngôn ngữ tự nhiên cho các truy vấn SQL được tối ưu hóa"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Trình tạo cấu hình Kubernetes",
+      "d": "Chẩn đoán và khắc phục sự cố K8s nhanh chóng"
+    },
+    "Postmortem Report": {
+      "n": "Báo cáo khám nghiệm tử thi",
+      "d": "Khám nghiệm tử thi không tì vết với dòng thời gian và các mục hành động"
+    },
+    "Release Notes Writer": {
+      "n": "Người viết ghi chú phát hành",
+      "d": "Ghi chú phát hành thân thiện với người dùng từ thông báo cam kết"
+    },
+    "Prompt Optimizer": {
+      "n": "Trình tối ưu hóa lời nhắc",
+      "d": "Cải thiện bất kỳ lời nhắc AI nào để có kết quả đầu ra tốt hơn, chính xác hơn"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Người xây dựng chuỗi suy nghĩ",
+      "d": "Xây dựng lời nhắc lý luận nhiều bước cho các nhiệm vụ phức tạp"
+    },
+    "RAG System Prompt": {
+      "n": "Lời nhắc hệ thống RAG",
+      "d": "Mẫu lời nhắc tạo tăng cường truy xuất"
+    },
+    "Eval Dataset Creator": {
+      "n": "Đánh giá người tạo tập dữ liệu",
+      "d": "Tạo bộ dữ liệu đánh giá để thử nghiệm mô hình AI"
+    },
+    "Prompt A/B Tester": {
+      "n": "Trình kiểm tra A/B nhanh chóng",
+      "d": "Tạo các biến thể A/B của lời nhắc để so sánh hiệu suất"
+    },
+    "Multi-Model Comparison": {
+      "n": "So sánh nhiều mô hình",
+      "d": "Khung để so sánh kết quả đầu ra giữa các mô hình AI"
+    },
+    "Resume Tailoring": {
+      "n": "Tiếp tục may",
+      "d": "Điều chỉnh sơ yếu lý lịch của bạn theo mô tả công việc cụ thể"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Trình tạo thư xin việc",
+      "d": "Thư xin việc hấp dẫn nhận được cuộc phỏng vấn"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "Trình tối ưu hóa hồ sơ LinkedIn",
+      "d": "Tối ưu hóa LinkedIn của bạn cho nhà tuyển dụng"
+    },
+    "Interview Coach": {
+      "n": "Huấn luyện viên phỏng vấn",
+      "d": "Thực hành hỏi đáp phỏng vấn cho bất kỳ vai trò nào"
+    },
+    "Salary Negotiation Script": {
+      "n": "Kịch bản đàm phán lương",
+      "d": "Kịch bản và chiến lược để đàm phán mức lương cao hơn"
+    },
+    "Career Roadmap Planner": {
+      "n": "Người lập kế hoạch lộ trình nghề nghiệp",
+      "d": "Kế hoạch phát triển nghề nghiệp 12 tháng với các cột mốc quan trọng"
+    },
+    "Objection Handler": {
+      "n": "Xử lý phản đối",
+      "d": "Các kịch bản xử lý các phản đối bán hàng phổ biến"
+    },
+    "Landing Page Copy": {
+      "n": "Bản sao trang đích",
+      "d": "Bản sao trang đích có khả năng chuyển đổi cao"
+    },
+    "Google Ads Copy": {
+      "n": "Bản sao quảng cáo Google",
+      "d": "Bản sao quảng cáo tìm kiếm Google có CTR cao"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Quảng cáo Facebook/Instagram",
+      "d": "Bản sao quảng cáo Facebook và Instagram có khả năng chuyển đổi"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Tóm tắt chiến dịch tiếp thị",
+      "d": "Chiến dịch tiếp thị đầy đủ với các kênh và dòng thời gian"
+    },
+    "Customer Persona Builder": {
+      "n": "Người xây dựng chân dung khách hàng",
+      "d": "Chân dung người mua chi tiết cho hoạt động tiếp thị và sản phẩm"
+    },
+    "Value Proposition Canvas": {
+      "n": "Canvas đề xuất giá trị",
+      "d": "Đề xuất giá trị rõ ràng, hấp dẫn"
+    },
+    "Product Launch Plan": {
+      "n": "Kế hoạch ra mắt sản phẩm",
+      "d": "Kế hoạch tiếp cận thị trường để giới thiệu sản phẩm"
+    },
+    "Study Guide Creator": {
+      "n": "Người tạo hướng dẫn học tập",
+      "d": "Biến bất kỳ chủ đề nào thành một hướng dẫn học tập có cấu trúc"
+    },
+    "Flashcard Creator": {
+      "n": "Người tạo Flashcard",
+      "d": "Bộ Q&A Flashcard giúp ghi nhớ nhanh"
+    },
+    "Quiz Generator": {
+      "n": "Trình tạo câu đố",
+      "d": "Câu hỏi trắc nghiệm và câu trả lời ngắn"
+    },
+    "Lesson Plan Builder": {
+      "n": "Trình lập kế hoạch bài học",
+      "d": "Kế hoạch bài học chi tiết với các hoạt động và đánh giá"
+    },
+    "Research Notes Organizer": {
+      "n": "Người tổ chức ghi chú nghiên cứu",
+      "d": "Sắp xếp các ghi chú nghiên cứu thành các đề cương có cấu trúc"
+    },
+    "Essay Outline Generator": {
+      "n": "Trình tạo dàn ý bài luận",
+      "d": "Bài luận có cấu trúc phác thảo với luận điểm và lập luận"
+    },
+    "Literature Review Assistant": {
+      "n": "Trợ lý phê bình văn học",
+      "d": "Đánh giá tài liệu học thuật với sự tổng hợp"
+    },
+    "Thesis Statement Builder": {
+      "n": "Trình tạo báo cáo luận án",
+      "d": "Tuyên bố luận điểm mạnh mẽ, có thể tranh luận"
+    },
+    "Exam Prep Planner": {
+      "n": "Kế hoạch luyện thi",
+      "d": "Lịch học thi được cá nhân hóa"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Tóm tắt hợp đồng",
+      "d": "Bản tóm tắt hợp đồng bằng tiếng Anh đơn giản. Không phải tư vấn pháp lý."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Đánh giá rủi ro hợp đồng",
+      "d": "Xác định các điều khoản rủi ro. Không phải tư vấn pháp lý."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F Trình phân tích NDA",
+      "d": "Phân tích điều khoản NDA. Không phải tư vấn pháp lý."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Trợ lý Dự thảo Chính sách",
+      "d": "Dự thảo chính sách nội bộ Không phải tư vấn pháp lý."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Danh sách kiểm tra tuân thủ",
+      "d": "Danh sách kiểm tra tuân thủ theo khuôn khổ. Không phải tư vấn pháp lý."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Người đánh giá điều khoản dịch vụ",
+      "d": "Gắn cờ rủi ro ToS. Không phải tư vấn pháp lý."
+    },
+    "Budget Planner": {
+      "n": "Công cụ lập kế hoạch ngân sách",
+      "d": "Kế hoạch ngân sách cá nhân hoặc doanh nghiệp. Không phải lời khuyên tài chính."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Tóm tắt cuộc gọi thu nhập",
+      "d": "Những bài học chính từ các cuộc gọi báo cáo thu nhập. Không phải lời khuyên tài chính."
+    },
+    "Investment Thesis Builder": {
+      "n": "Xây dựng luận án đầu tư",
+      "d": "Luận án đầu tư có cấu trúc. Không phải lời khuyên tài chính."
+    },
+    "Financial Analysis Report": {
+      "n": "Báo cáo phân tích tài chính",
+      "d": "Phân tích tài chính. Không phải lời khuyên tài chính."
+    },
+    "Expense Categorizer": {
+      "n": "Phân loại chi phí",
+      "d": "Phân loại và phân tích chi phí. Không phải lời khuyên tài chính."
+    },
+    "SOAP Note Generator": {
+      "n": "Trình tạo ghi chú SOAP",
+      "d": "Ghi chú SOAP lâm sàng. Không phải lời khuyên y tế."
+    },
+    "Clinical Case Summary": {
+      "n": "Tóm tắt trường hợp lâm sàng",
+      "d": "Cấu trúc ghi chú lâm sàng. Không phải lời khuyên y tế."
+    },
+    "Patient Education Writer": {
+      "n": "Nhà văn giáo dục bệnh nhân",
+      "d": "Giáo dục bệnh nhân bằng ngôn ngữ đơn giản. Không phải lời khuyên y tế."
+    },
+    "Medical Research Summarizer": {
+      "n": "Tóm tắt nghiên cứu y học",
+      "d": "Tóm tắt các tài liệu nghiên cứu. Không phải lời khuyên y tế."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Trợ lý chẩn đoán phân biệt",
+      "d": "Tổ chức chẩn đoán phân biệt. Không phải lời khuyên y tế."
+    },
+    "Creative Storyteller": {
+      "n": "Người kể chuyện sáng tạo",
+      "d": "Tạo ra những câu chuyện và câu chuyện sáng tạo"
+    },
+    "Ad Copy Generator": {
+      "n": "Trình tạo bản sao quảng cáo",
+      "d": "Bản sao có tính chuyển đổi cao cho Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Người viết báo cáo lỗi",
+      "d": "Viết báo cáo lỗi rõ ràng, có thể tái tạo"
+    },
+    "Social Media Caption": {
+      "n": "Chú thích trên mạng xã hội",
+      "d": "Tạo chú thích dừng cuộn cho mọi nền tảng"
+    },
+    "Research Paper Abstract": {
+      "n": "Tóm tắt bài nghiên cứu",
+      "d": "Viết tóm tắt học thuật có cấu trúc"
+    },
+    "Translation Expert": {
+      "n": "Chuyên gia dịch thuật",
+      "d": "Dịch văn bản theo ngữ cảnh và sắc thái"
+    },
+    "Data Analyst": {
+      "n": "Nhà phân tích dữ liệu",
+      "d": "Phân tích dữ liệu và cung cấp những hiểu biết sâu sắc có thể hành động"
+    },
+    "Recipe Generator": {
+      "n": "Trình tạo công thức",
+      "d": "Tạo công thức nấu ăn tùy chỉnh dựa trên sở thích và nhu cầu ăn kiêng của bạn"
+    },
+    "Meal Planner": {
+      "n": "Kế hoạch bữa ăn",
+      "d": "Lập kế hoạch bữa ăn cân bằng cho cả tuần với sự đa dạng và dinh dưỡng"
+    },
+    "Grocery List Builder": {
+      "n": "Trình tạo danh sách tạp hóa",
+      "d": "Xây dựng danh sách tạp hóa có tổ chức từ các bữa ăn theo kế hoạch và nhu cầu đựng thức ăn của bạn"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Công cụ tìm công thức đựng thức ăn",
+      "d": "Tìm công thức nấu ăn ngon bằng cách sử dụng nguyên liệu bạn có sẵn"
+    },
+    "Nutrition Calculator": {
+      "n": "Máy tính dinh dưỡng",
+      "d": "Tính toán thông tin dinh dưỡng chi tiết cho bất kỳ công thức nấu ăn hoặc sự kết hợp bữa ăn nào"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Hướng dẫn thay thế thành phần",
+      "d": "Tìm sự thay thế hoàn hảo cho các thành phần bị thiếu hoặc bị hạn chế"
+    },
+    "Batch Cooking Planner": {
+      "n": "Kế hoạch nấu ăn hàng loạt",
+      "d": "Lên kế hoạch nấu theo mẻ hiệu quả để tiết kiệm thời gian trong tuần"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Người tạo công thức cocktail",
+      "d": "Tạo và tùy chỉnh công thức cocktail cho bất kỳ dịp nào"
+    },
+    "Baking Conversion Helper": {
+      "n": "Trình trợ giúp chuyển đổi nướng bánh",
+      "d": "Chuyển đổi số đo nướng giữa các đơn vị và công thức nấu ăn theo tỷ lệ lên hoặc xuống"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Công cụ tìm công thức ăn kiêng cụ thể",
+      "d": "Tìm công thức nấu ăn phù hợp với kế hoạch ăn kiêng hoặc mục tiêu dinh dưỡng cụ thể của bạn"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Công thức nấu chậm",
+      "d": "Nhận công thức nấu ăn chậm theo thời gian hoàn hảo để nấu ăn dễ dàng"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Người tạo công thức nồi chiên không dầu",
+      "d": "Tạo công thức nấu ăn chiên giòn và ngon miệng với thời gian hoàn hảo"
+    },
+    "Smoothie Builder": {
+      "n": "Công cụ tạo sinh tố",
+      "d": "Xây dựng công thức sinh tố thơm ngon và bổ dưỡng cho mọi mục tiêu"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Người tạo nước sốt & nước sốt",
+      "d": "Tự làm nước sốt và nước sốt từ đầu"
+    },
+    "Spice Blend Guide": {
+      "n": "Hướng dẫn pha trộn gia vị",
+      "d": "Tạo hỗn hợp gia vị tùy chỉnh cho bất kỳ món ăn hoặc loại món ăn nào"
+    },
+    "Food Pairing Expert": {
+      "n": "Chuyên gia kết hợp thực phẩm",
+      "d": "Khám phá sự kết hợp thực phẩm và hương vị lý tưởng cho bữa ăn thịnh soạn"
+    },
+    "Holiday Menu Planner": {
+      "n": "Công cụ lập kế hoạch thực đơn ngày lễ",
+      "d": "Lập kế hoạch thực đơn ngày lễ hoàn chỉnh với dòng thời gian và danh sách mua sắm"
+    },
+    "Leftover Makeover": {
+      "n": "Trang điểm còn sót lại",
+      "d": "Biến thức ăn thừa thành bữa ăn mới thú vị với những ý tưởng sáng tạo"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Ý tưởng bữa ăn thân thiện với trẻ em",
+      "d": "Tạo ra những bữa ăn lành mạnh mà trẻ sẽ thực sự thích ăn"
+    },
+    "Date Night Dinner": {
+      "n": "Bữa tối hẹn hò",
+      "d": "Lên kế hoạch tổ chức bữa tối ấn tượng cho buổi tối lãng mạn tại nhà"
+    },
+    "Budget Meal Planner": {
+      "n": "Kế hoạch bữa ăn ngân sách",
+      "d": "Tạo những bữa ăn ngon với ngân sách eo hẹp mà không phải hy sinh dinh dưỡng"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Công thức chuyển đổi thuần chay",
+      "d": "Chuyển đổi bất kỳ công thức truyền thống nào thành phiên bản thuần chay ngon miệng"
+    },
+    "Dessert Creator": {
+      "n": "Người tạo món tráng miệng",
+      "d": "Thiết kế công thức món tráng miệng tùy chỉnh cho mọi cấp độ kỹ năng và dịp"
+    },
+    "Appetizer Planner": {
+      "n": "Công cụ lập kế hoạch món khai vị",
+      "d": "Lên kế hoạch chiêu đãi món khai vị hoàn hảo cho các bữa tiệc và họp mặt"
+    },
+    "Food Prep Timeline": {
+      "n": "Dòng thời gian chuẩn bị thực phẩm",
+      "d": "Tạo lịch trình nấu ăn chi tiết để mọi thứ sẵn sàng ngay lập tức"
+    },
+    "Plant Care Guide": {
+      "n": "Hướng dẫn chăm sóc cây trồng",
+      "d": "Nhận hướng dẫn chăm sóc cá nhân cho bất kỳ loại cây nào trong bộ sưu tập của bạn"
+    },
+    "Garden Planner": {
+      "n": "Người lập kế hoạch làm vườn",
+      "d": "Thiết kế và lên kế hoạch bố trí khu vườn của bạn để có năng suất và vẻ đẹp tối đa"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Công cụ chẩn đoán dịch hại",
+      "d": "Xác định sâu bệnh trong vườn bằng các phương pháp xử lý hữu cơ"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Lịch trồng cây theo mùa",
+      "d": "Biết chính xác thời điểm trồng từng loại cây trồng trong vùng trồng trọt của bạn"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Người lập kế hoạch vườn rau",
+      "d": "Lên kế hoạch cho một vườn rau hiệu quả với việc trồng và luân canh đồng hành"
+    },
+    "Indoor Plant Guide": {
+      "n": "Hướng dẫn trồng cây trong nhà",
+      "d": "Lựa chọn và chăm sóc cây trồng trong nhà hoàn hảo cho không gian của bạn"
+    },
+    "Herb Garden Starter": {
+      "n": "Vườn thảo mộc khởi đầu",
+      "d": "Bắt đầu một khu vườn thảo mộc tươi tốt trong nhà hoặc ngoài trời với sự hướng dẫn của chuyên gia"
+    },
+    "Composting Guide": {
+      "n": "Hướng dẫn ủ phân",
+      "d": "Bắt đầu và duy trì hệ thống ủ phân cho đất vườn màu mỡ"
+    },
+    "Landscape Design Helper": {
+      "n": "Người trợ giúp thiết kế cảnh quan",
+      "d": "Thiết kế một kế hoạch cảnh quan đẹp cho tài sản của bạn"
+    },
+    "Raised Bed Planner": {
+      "n": "Công cụ lập kế hoạch giường nâng",
+      "d": "Thiết kế và xây dựng những chiếc giường sân vườn hoàn hảo cho không gian của bạn"
+    },
+    "Fruit Tree Guide": {
+      "n": "Hướng dẫn cây ăn quả",
+      "d": "Lựa chọn và chăm sóc cây ăn quả phù hợp với khí hậu, không gian nhà bạn"
+    },
+    "Container Garden Planner": {
+      "n": "Người lập kế hoạch vườn container",
+      "d": "Tạo những khu vườn container đẹp và hiệu quả cho mọi không gian"
+    },
+    "Pollinator Garden": {
+      "n": "Vườn thụ phấn",
+      "d": "Thiết kế khu vườn thu hút ong, bướm và côn trùng có ích"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Vườn chịu hạn",
+      "d": "Lập kế hoạch cho một khu vườn thông minh về nước và phát triển mạnh với lượng nước tưới tối thiểu"
+    },
+    "Soil Amendment Guide": {
+      "n": "Hướng dẫn sửa đổi đất",
+      "d": "Kiểm tra và cải thiện đất vườn của bạn để có sức khỏe cây trồng tối ưu"
+    },
+    "Seed Starting Calendar": {
+      "n": "Lịch bắt đầu gieo hạt",
+      "d": "Lập kế hoạch bắt đầu gieo hạt để có một mùa sinh trưởng thành công"
+    },
+    "Garden Layout Designer": {
+      "n": "Nhà thiết kế bố trí sân vườn",
+      "d": "Tạo bố cục sân vườn được tối ưu hóa với khoảng cách thích hợp và khả năng tiếp cận ánh nắng mặt trời"
+    },
+    "Water Schedule Planner": {
+      "n": "Công cụ lập lịch trình nước",
+      "d": "Tạo lịch tưới nước hiệu quả cho khu vườn và bãi cỏ của bạn"
+    },
+    "Plant Problem Solver": {
+      "n": "Giải quyết vấn đề thực vật",
+      "d": "Chẩn đoán và điều trị các vấn đề thường gặp ở cây trồng bằng lời khuyên của chuyên gia"
+    },
+    "Pruning Guide": {
+      "n": "Hướng dẫn cắt tỉa",
+      "d": "Tìm hiểu thời điểm và cách cắt tỉa bất kỳ loại cây nào để tốt cho sức khỏe và sắc đẹp"
+    },
+    "Home Buying Checklist": {
+      "n": "Danh sách kiểm tra mua nhà",
+      "d": "Hoàn thành danh sách kiểm tra từng bước cho quá trình mua nhà"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Công cụ so sánh căn hộ",
+      "d": "So sánh các căn hộ cạnh nhau để tìm thuê căn hộ hoàn hảo của bạn"
+    },
+    "Rental Application Helper": {
+      "n": "Người trợ giúp đơn xin thuê nhà",
+      "d": "Chuẩn bị đơn xin thuê nhà thật ấn tượng để gây ấn tượng với chủ nhà"
+    },
+    "Home Inspection Questions": {
+      "n": "Câu hỏi kiểm tra nhà",
+      "d": "Những câu hỏi quan trọng cần hỏi khi kiểm tra nhà"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Máy tính so sánh thế chấp",
+      "d": "So sánh các lựa chọn thế chấp để tìm thỏa thuận tốt nhất cho tình huống của bạn"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Hướng dẫn người mua lần đầu",
+      "d": "Hướng dẫn đầy đủ để tự tin điều hướng việc mua căn nhà đầu tiên của bạn"
+    },
+    "Neighborhood Research": {
+      "n": "Nghiên cứu vùng lân cận",
+      "d": "Nghiên cứu và so sánh các khu vực lân cận để tìm ra nơi phù hợp với bạn"
+    },
+    "Home Value Estimator": {
+      "n": "Công cụ ước tính giá trị ngôi nhà",
+      "d": "Ước tính giá trị ngôi nhà của bạn bằng cách sử dụng dữ liệu thị trường và doanh số bán hàng có thể so sánh được"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Người đánh giá hợp đồng thuê",
+      "d": "Xem xét và hiểu các điều khoản chính trong hợp đồng thuê của bạn"
+    },
+    "Moving Checklist": {
+      "n": "Danh sách kiểm tra di chuyển",
+      "d": "Danh sách kiểm tra di chuyển toàn diện với quản lý dòng thời gian và nhiệm vụ"
+    },
+    "Property Investment Analyzer": {
+      "n": "Máy phân tích đầu tư bất động sản",
+      "d": "Phân tích bất động sản cho thuê để tìm kiếm lợi tức đầu tư tiềm năng"
+    },
+    "Renovation Budget Planner": {
+      "n": "Công cụ lập kế hoạch ngân sách cải tạo",
+      "d": "Lập kế hoạch và dự toán ngân sách cho các dự án cải tạo nhà với ước tính chi phí chi tiết"
+    },
+    "House Hunting Scorecard": {
+      "n": "Thẻ điểm săn nhà",
+      "d": "Chấm điểm và xếp hạng các ngôi nhà trong quá trình săn nhà của bạn"
+    },
+    "Down Payment Calculator": {
+      "n": "Máy tính tiền trả trước",
+      "d": "Tính toán các lựa chọn trả trước và kế hoạch tiết kiệm cho việc mua nhà của bạn"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Lịch bảo trì tại nhà",
+      "d": "Tạo lịch bảo trì nhà theo mùa để bảo vệ khoản đầu tư của bạn"
+    },
+    "Rental Property Analysis": {
+      "n": "Phân tích tài sản cho thuê",
+      "d": "Đánh giá các cơ hội bất động sản cho thuê bằng các dự báo tài chính"
+    },
+    "Home Staging Tips": {
+      "n": "Mẹo dàn dựng tại nhà",
+      "d": "Giai đoạn nhà của bạn để bán nhanh hơn và với giá cao hơn"
+    },
+    "Realtor Interview Questions": {
+      "n": "Câu hỏi phỏng vấn môi giới bất động sản",
+      "d": "Những câu hỏi quan trọng cần hỏi khi phỏng vấn đại lý bất động sản"
+    },
+    "Closing Cost Estimator": {
+      "n": "Công cụ ước tính chi phí kết thúc",
+      "d": "Ước tính tất cả chi phí kết thúc cho giao dịch bất động sản của bạn"
+    },
+    "HOA Assessment Guide": {
+      "n": "Hướng dẫn đánh giá HOA",
+      "d": "Đánh giá phí HOA, quy tắc và sức khỏe tài chính trước khi mua"
+    },
+    "Car Buying Assistant": {
+      "n": "Trợ lý mua xe",
+      "d": "Tự tin điều hướng quá trình mua xe và tiết kiệm tiền"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Công cụ so sánh xe",
+      "d": "So sánh các xe cạnh nhau về thông số kỹ thuật, giá cả và tính năng"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Lập kế hoạch lịch trình bảo trì",
+      "d": "Tạo lịch bảo dưỡng xe được cá nhân hóa để kéo dài tuổi thọ xe"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Máy phân tích ước tính sửa chữa",
+      "d": "Đánh giá ước tính sửa chữa ô tô và tìm mức giá hợp lý cho các dịch vụ"
+    },
+    "Road Trip Planner": {
+      "n": "Công cụ lập kế hoạch chuyến đi",
+      "d": "Lên kế hoạch cho chuyến đi hoàn hảo với các điểm dừng, nhiên liệu và thời gian được tính toán"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Danh sách kiểm tra kiểm tra xe đã qua sử dụng",
+      "d": "Danh sách kiểm tra kỹ lưỡng để mua xe cũ một cách tự tin"
+    },
+    "Auto Insurance Comparison": {
+      "n": "So sánh bảo hiểm ô tô",
+      "d": "So sánh các lựa chọn bảo hiểm ô tô để tìm phạm vi bảo hiểm và giá cả tốt nhất"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Máy tính tiết kiệm nhiên liệu",
+      "d": "Tính toán và tối ưu hóa chi phí và hiệu quả nhiên liệu cho xe của bạn"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Phân tích thuê xe và mua xe",
+      "d": "So sánh việc thuê và mua để tìm ra lựa chọn tài chính tốt nhất"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Công cụ ước tính giá trị trao đổi",
+      "d": "Ước tính giá trị trao đổi chiếc xe của bạn và thương lượng một thỏa thuận hợp lý"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Người đánh giá lịch sử xe",
+      "d": "Các câu hỏi và kiểm tra chính khi xem lại báo cáo lịch sử xe đã qua sử dụng"
+    },
+    "Car Detailing Guide": {
+      "n": "Hướng dẫn chi tiết ô tô",
+      "d": "Hướng dẫn chi tiết xe từng bước để hoàn thiện phòng trưng bày"
+    },
+    "Winter Car Prep": {
+      "n": "Chuẩn bị xe mùa đông",
+      "d": "Chuẩn bị xe của bạn cho điều kiện lái xe mùa đông và thời tiết lạnh"
+    },
+    "New Driver Guide": {
+      "n": "Hướng dẫn lái xe mới",
+      "d": "Những lời khuyên và kiến ​​thức lái xe cần thiết cho người mới lái xe và đang học lái xe"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Hướng dẫn xe điện",
+      "d": "Mọi điều bạn cần biết về việc mua và sở hữu một chiếc xe điện"
+    },
+    "Trip Planner": {
+      "n": "Kế hoạch chuyến đi",
+      "d": "Lên kế hoạch cho chuyến đi hoàn hảo của bạn với các điểm đến, hoạt động và hậu cần"
+    },
+    "Packing List Generator": {
+      "n": "Trình tạo danh sách đóng gói",
+      "d": "Tạo danh sách đóng gói tùy chỉnh cho bất kỳ chuyến đi và điểm đến nào"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Công Cụ Lập Lịch Trình Kỳ Nghỉ",
+      "d": "Xây dựng lịch trình kỳ nghỉ theo từng ngày với các hoạt động và ăn uống"
+    },
+    "Travel Budget Calculator": {
+      "n": "Máy Tính Ngân Sách Du Lịch",
+      "d": "Tính toán và theo dõi ngân sách du lịch của bạn với các danh mục chi tiêu chi tiết"
+    },
+    "Local Attractions Guide": {
+      "n": "Hướng Dẫn Điểm Tham Quan Địa Phương",
+      "d": "Khám phá những điểm tham quan địa phương tốt nhất, những viên ngọc ẩn giấu và những nơi nhất định phải đến"
+    },
+    "Travel Insurance Comparison": {
+      "n": "So Sánh Bảo Hiểm Du Lịch",
+      "d": "So sánh các lựa chọn bảo hiểm du lịch để có phạm vi bảo hiểm phù hợp cho chuyến đi của bạn"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Chiến Lược Tìm Vé Máy Bay Giá Rẻ",
+      "d": "Chiến lược và mẹo để tìm được những ưu đãi và giá vé máy bay tốt nhất"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Trợ Lý So Sánh Khách Sạn",
+      "d": "So sánh khách sạn về giá cả, tiện nghi, vị trí và đánh giá"
+    },
+    "Solo Travel Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Du Lịch Một Mình",
+      "d": "Lên kế hoạch cho một chuyến du lịch một mình an toàn và trọn vẹn ở bất cứ đâu trên thế giới"
+    },
+    "Family Vacation Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Kỳ Nghỉ Gia Đình",
+      "d": "Lên kế hoạch cho một kỳ nghỉ gia đình phù hợp mọi lứa tuổi và luôn vui vẻ"
+    },
+    "Backpacking Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Du Lịch Bụi",
+      "d": "Lên kế hoạch cho một chuyến du lịch bụi tiết kiệm với lộ trình và trang bị"
+    },
+    "Business Travel Organizer": {
+      "n": "Công Cụ Tổ Chức Chuyến Công Tác",
+      "d": "Tổ chức các chuyến công tác hiệu quả với theo dõi chi phí và lập lịch trình"
+    },
+    "Cruise Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Du Thuyền",
+      "d": "Lên kế hoạch cho kỳ nghỉ du thuyền hoàn hảo với các chuyến tham quan bến cảng và hoạt động trên tàu"
+    },
+    "Travel Safety Guide": {
+      "n": "Hướng Dẫn An Toàn Du Lịch",
+      "d": "Giữ an toàn khi du lịch với các mẹo và quy tắc an toàn theo từng điểm đến"
+    },
+    "Visa Requirements Checker": {
+      "n": "Công Cụ Kiểm Tra Yêu Cầu Thị Thực",
+      "d": "Kiểm tra yêu cầu thị thực và chuẩn bị hồ sơ xin thị thực cho chuyến đi của bạn"
+    },
+    "Language Survival Kit": {
+      "n": "Bộ Ngôn Ngữ Sinh Tồn",
+      "d": "Học các cụm từ thiết yếu và mẹo văn hóa cho điểm đến du lịch của bạn"
+    },
+    "Airport Navigation Guide": {
+      "n": "Hướng Dẫn Di Chuyển Tại Sân Bay",
+      "d": "Di chuyển hiệu quả tại sân bay với các mẹo về nhà ga và quản lý thời gian"
+    },
+    "Travel Photo Plan": {
+      "n": "Kế Hoạch Chụp Ảnh Du Lịch",
+      "d": "Lên kế hoạch chụp ảnh du lịch với các địa điểm, thời điểm và kỹ thuật tốt nhất"
+    },
+    "Group Trip Coordinator": {
+      "n": "Điều Phối Viên Chuyến Đi Nhóm",
+      "d": "Điều phối hậu cần, ngân sách và hoạt động cho chuyến đi nhóm của mọi người"
+    },
+    "Adventure Travel Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Du Lịch Mạo Hiểm",
+      "d": "Lên kế hoạch du lịch mạo hiểm đầy kích thích với sự an toàn và hậu cần"
+    },
+    "Wedding Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Đám Cưới",
+      "d": "Lên kế hoạch cho mọi chi tiết của đám cưới hoàn hảo từ địa điểm đến lời thề nguyện"
+    },
+    "Birthday Party Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tiệc Sinh Nhật",
+      "d": "Lên kế hoạch cho một bữa tiệc sinh nhật đáng nhớ cho mọi lứa tuổi và phong cách"
+    },
+    "Conference Organizer": {
+      "n": "Công Cụ Tổ Chức Hội Nghị",
+      "d": "Tổ chức các hội nghị và hội thảo chuyên nghiệp với hậu cần chi tiết"
+    },
+    "Baby Shower Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tiệc Đón Em Bé",
+      "d": "Lên kế hoạch cho một buổi tiệc đón em bé tuyệt đẹp với trò chơi, đồ ăn và trang trí"
+    },
+    "Anniversary Celebration": {
+      "n": "Lễ Kỷ Niệm Ngày Cưới",
+      "d": "Lên kế hoạch cho một lễ kỷ niệm ngày cưới ý nghĩa cho bất kỳ cột mốc năm nào"
+    },
+    "Graduation Party": {
+      "n": "Tiệc Tốt Nghiệp",
+      "d": "Chúc mừng thành tích học tập với một bữa tiệc tốt nghiệp được lên kế hoạch hoàn hảo"
+    },
+    "Holiday Party Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tiệc Ngày Lễ",
+      "d": "Lên kế hoạch cho các buổi tụ họp ngày lễ rộn ràng với đồ ăn, hoạt động và trang trí"
+    },
+    "Corporate Event Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Sự Kiện Doanh Nghiệp",
+      "d": "Lên kế hoạch cho các sự kiện doanh nghiệp chuyên nghiệp gây ấn tượng với khách hàng và nhân viên"
+    },
+    "Fundraiser Organizer": {
+      "n": "Công Cụ Tổ Chức Gây Quỹ",
+      "d": "Tổ chức các sự kiện gây quỹ thành công cho các tổ chức từ thiện và mục đích tốt đẹp"
+    },
+    "Reunion Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Họp Mặt",
+      "d": "Lên kế hoạch cho một buổi họp mặt gia đình hoặc lớp học đáng nhớ, quy tụ mọi người"
+    },
+    "Engagement Party Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tiệc Đính Hôn",
+      "d": "Lên kế hoạch cho một buổi tiệc đính hôn vui vẻ để chia sẻ tin vui"
+    },
+    "Retirement Party": {
+      "n": "Tiệc Nghỉ Hưu",
+      "d": "Kỷ niệm một sự nghiệp trọn vẹn với một bữa tiệc nghỉ hưu chu đáo"
+    },
+    "Housewarming Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tiệc Tân Gia",
+      "d": "Lên kế hoạch cho một bữa tiệc tân gia ấm áp cho ngôi nhà mới của bạn"
+    },
+    "Themed Party Creator": {
+      "n": "Công Cụ Tạo Tiệc Theo Chủ Đề",
+      "d": "Thiết kế và lên kế hoạch cho các bữa tiệc theo chủ đề sáng tạo với chi tiết phối hợp"
+    },
+    "Event Budget Tracker": {
+      "n": "Công Cụ Theo Dõi Ngân Sách Sự Kiện",
+      "d": "Theo dõi và quản lý chi phí sự kiện để nằm trong ngân sách tổ chức của bạn"
+    },
+    "Chore Chart Creator": {
+      "n": "Công Cụ Tạo Bảng Phân Công Việc Nhà",
+      "d": "Tạo bảng phân công việc nhà phù hợp lứa tuổi với phần thưởng và theo dõi"
+    },
+    "Educational Activity Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Hoạt Động Giáo Dục",
+      "d": "Lên kế hoạch cho các hoạt động giáo dục vui nhộn giúp việc học trở nên thú vị cho trẻ"
+    },
+    "Bedtime Story Writer": {
+      "n": "Người Viết Truyện Trước Giờ Ngủ",
+      "d": "Tạo những câu chuyện trước giờ ngủ được cá nhân hóa với nhân vật chính là con bạn"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Công Cụ Theo Dõi Cột Mốc Phát Triển Theo Tuổi",
+      "d": "Theo dõi các cột mốc phát triển và kỷ niệm sự trưởng thành của con bạn"
+    },
+    "School Lunch Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Bữa Trưa Ở Trường",
+      "d": "Lên kế hoạch cho những bữa trưa ở trường lành mạnh và hấp dẫn mà trẻ thực sự muốn ăn"
+    },
+    "Homework Help Guide": {
+      "n": "Hướng Dẫn Hỗ Trợ Bài Tập Về Nhà",
+      "d": "Các chiến lược hỗ trợ bài tập về nhà của con mà không làm thay con"
+    },
+    "Family Game Night Ideas": {
+      "n": "Ý Tưởng Đêm Chơi Trò Chơi Gia Đình",
+      "d": "Lên kế hoạch cho những đêm chơi trò chơi gia đình hấp dẫn với hoạt động cho mọi lứa tuổi"
+    },
+    "Screen Time Schedule": {
+      "n": "Lịch Trình Thời Gian Sử Dụng Màn Hình",
+      "d": "Tạo quy tắc và lịch trình sử dụng màn hình cân bằng cho gia đình bạn"
+    },
+    "Allowance System Designer": {
+      "n": "Công Cụ Thiết Kế Hệ Thống Tiền Tiêu Vặt",
+      "d": "Thiết kế hệ thống tiền tiêu vặt và quản lý tiền bạc phù hợp lứa tuổi"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Lịch Trình Giấc Ngủ Cho Bé",
+      "d": "Tạo lịch trình và thói quen ngủ lành mạnh cho trẻ sơ sinh và trẻ nhỏ"
+    },
+    "Potty Training Guide": {
+      "n": "Hướng Dẫn Tập Đi Vệ Sinh",
+      "d": "Kế hoạch tập đi vệ sinh từng bước với mẹo cho mọi giai đoạn"
+    },
+    "Back to School Prep": {
+      "n": "Chuẩn Bị Trở Lại Trường Học",
+      "d": "Chuẩn bị cho gia đình bạn một sự chuyển đổi suôn sẻ khi trở lại trường học"
+    },
+    "Summer Activity Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Hoạt Động Mùa Hè",
+      "d": "Lên kế hoạch cho một mùa hè vui vẻ và bổ ích với các hoạt động, trại hè và cuộc phiêu lưu"
+    },
+    "Family Meeting Agenda": {
+      "n": "Chương Trình Họp Gia Đình",
+      "d": "Tổ chức các cuộc họp gia đình hiệu quả, cho mọi người cơ hội được lên tiếng"
+    },
+    "Child Development Tracker": {
+      "n": "Công Cụ Theo Dõi Phát Triển Của Trẻ",
+      "d": "Giám sát và hỗ trợ sự phát triển thể chất, xã hội và nhận thức của con bạn"
+    },
+    "Dog Training Plan": {
+      "n": "Kế Hoạch Huấn Luyện Chó",
+      "d": "Tạo kế hoạch huấn luyện tùy chỉnh cho chó của bạn ở mọi lứa tuổi hoặc trình độ"
+    },
+    "Cat Care Guide": {
+      "n": "Hướng Dẫn Chăm Sóc Mèo",
+      "d": "Hướng dẫn chăm sóc toàn diện để giữ cho mèo của bạn khỏe mạnh và vui vẻ"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Dinh Dưỡng Thú Cưng",
+      "d": "Lên kế hoạch dinh dưỡng tối ưu cho thú cưng dựa trên tuổi, giống và nhu cầu sức khỏe"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Danh Sách Kiểm Tra Xã Hội Hóa Chó Con",
+      "d": "Đảm bảo chó con của bạn được xã hội hóa đúng cách trong giai đoạn phát triển quan trọng"
+    },
+    "Pet First Aid Guide": {
+      "n": "Hướng Dẫn Sơ Cứu Thú Cưng",
+      "d": "Kiến thức sơ cứu thiết yếu và quy trình cấp cứu cho chủ nuôi thú cưng"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Thiết Lập Bể Cá",
+      "d": "Lên kế hoạch và thiết lập bể cá phát triển tốt với loại cá và thiết bị phù hợp"
+    },
+    "Pet Travel Preparation": {
+      "n": "Chuẩn Bị Du Lịch Cùng Thú Cưng",
+      "d": "Chuẩn bị mọi thứ cần thiết để du lịch an toàn và không căng thẳng cùng thú cưng"
+    },
+    "New Pet Checklist": {
+      "n": "Danh Sách Chuẩn Bị Cho Thú Cưng Mới",
+      "d": "Mọi thứ bạn cần chuẩn bị trước khi đón thú cưng mới về nhà"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Công Cụ Phân Tích Hành Vi Thú Cưng",
+      "d": "Hiểu và giải quyết các vấn đề hành vi của thú cưng với hướng dẫn chuyên gia"
+    },
+    "Senior Pet Care": {
+      "n": "Chăm Sóc Thú Cưng Cao Tuổi",
+      "d": "Hướng dẫn chăm sóc chuyên biệt cho thú cưng già để giữ chúng thoải mái và khỏe mạnh"
+    },
+    "Pet Exercise Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Vận Động Cho Thú Cưng",
+      "d": "Tạo thói quen vận động giúp thú cưng khỏe mạnh và được kích thích trí não"
+    },
+    "Vet Visit Preparation": {
+      "n": "Chuẩn Bị Đi Khám Thú Y",
+      "d": "Chuẩn bị cho các buổi khám thú y với thông tin sức khỏe có tổ chức và câu hỏi cần hỏi"
+    },
+    "Home Improvement Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Cải Tạo Nhà",
+      "d": "Lên kế hoạch và ưu tiên các dự án cải tạo nhà với ngân sách và tiến độ"
+    },
+    "Furniture Project Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Dự Án Nội Thất",
+      "d": "Lên kế hoạch đóng nội thất tùy chỉnh với vật liệu, công cụ và hướng dẫn từng bước"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Máy Tính Ngân Sách Sửa Sang Nhà",
+      "d": "Tính toán chi phí sửa sang chi tiết bao gồm nhân công, vật liệu và dự phòng"
+    },
+    "Paint Color Coordinator": {
+      "n": "Điều Phối Màu Sơn",
+      "d": "Chọn và phối hợp màu sơn để tạo bảng màu hài hòa cho ngôi nhà"
+    },
+    "Organization System Designer": {
+      "n": "Công Cụ Thiết Kế Hệ Thống Sắp Xếp",
+      "d": "Thiết kế hệ thống sắp xếp tùy chỉnh cho bất kỳ phòng hoặc không gian nào trong nhà"
+    },
+    "Storage Solutions Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Giải Pháp Lưu Trữ",
+      "d": "Tìm giải pháp lưu trữ sáng tạo để tối đa hóa không gian trong mọi phòng"
+    },
+    "Home Repair Guide": {
+      "n": "Hướng Dẫn Sửa Chữa Nhà",
+      "d": "Hướng dẫn từng bước cho các sửa chữa nhà phổ biến mà bạn có thể tự làm"
+    },
+    "Tool Buying Guide": {
+      "n": "Hướng Dẫn Mua Dụng Cụ",
+      "d": "Chọn đúng dụng cụ cho các dự án tự làm mà không chi tiêu quá mức"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Bảo Trì Nhà Theo Mùa",
+      "d": "Danh sách bảo trì theo mùa đầy đủ để bảo vệ ngôi nhà của bạn quanh năm"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Kiểm Toán Hiệu Quả Năng Lượng",
+      "d": "Đánh giá và cải thiện hiệu quả năng lượng trong nhà để tiết kiệm hóa đơn tiện ích"
+    },
+    "Smart Home Setup": {
+      "n": "Thiết Lập Nhà Thông Minh",
+      "d": "Lên kế hoạch và thiết lập hệ thống nhà thông minh với các thiết bị và tích hợp phù hợp"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Cải Tạo Phòng Tắm",
+      "d": "Lên kế hoạch cải tạo phòng tắm với bố trí, thiết bị vệ sinh và quản lý ngân sách"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Cải Tạo Nhà Bếp",
+      "d": "Lên kế hoạch cải tạo nhà bếp từ bố trí đến thiết bị với ngân sách chi tiết"
+    },
+    "Closet Organization": {
+      "n": "Sắp Xếp Tủ Quần Áo",
+      "d": "Thiết kế và sắp xếp tủ quần áo để đạt hiệu quả tối đa và dễ dàng lấy đồ"
+    },
+    "Garage Organization": {
+      "n": "Sắp Xếp Nhà Để Xe",
+      "d": "Biến nhà để xe của bạn thành một không gian gọn gàng và tiện dụng"
+    },
+    "Product Comparison Tool": {
+      "n": "Công Cụ So Sánh Sản Phẩm",
+      "d": "So sánh sản phẩm song song để đưa ra quyết định mua hàng tốt nhất"
+    },
+    "Buying Guide Creator": {
+      "n": "Công Cụ Tạo Hướng Dẫn Mua Hàng",
+      "d": "Tạo hướng dẫn mua hàng chi tiết cho bất kỳ danh mục sản phẩm nào"
+    },
+    "Gift Finder": {
+      "n": "Công Cụ Tìm Quà Tặng",
+      "d": "Tìm món quà hoàn hảo cho bất kỳ ai dựa trên sở thích và ngân sách của bạn"
+    },
+    "Price Tracker Strategy": {
+      "n": "Chiến Lược Theo Dõi Giá",
+      "d": "Chiến lược theo dõi giá và mua hàng vào thời điểm tốt nhất"
+    },
+    "Black Friday Strategy": {
+      "n": "Chiến Lược Black Friday",
+      "d": "Lên kế hoạch mua sắm Black Friday và Cyber Monday để tiết kiệm tối đa"
+    },
+    "Back to School Shopping": {
+      "n": "Mua Sắm Trở Lại Trường Học",
+      "d": "Tổ chức mua sắm tựu trường với danh sách, ngân sách và ưu đãi"
+    },
+    "Wardrobe Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tủ Đồ",
+      "d": "Xây dựng tủ đồ đa dụng với mua sắm chiến lược và lên kế hoạch trang phục"
+    },
+    "Electronics Buying Guide": {
+      "n": "Hướng Dẫn Mua Đồ Điện Tử",
+      "d": "Hướng dẫn mua đồ điện tử với so sánh thông số kỹ thuật và tư vấn thời điểm mua"
+    },
+    "Subscription Service Comparison": {
+      "n": "So Sánh Dịch Vụ Đăng Ký",
+      "d": "So sánh các dịch vụ đăng ký để tìm giá trị tốt nhất cho nhu cầu của bạn"
+    },
+    "Wedding Registry Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Danh Sách Quà Cưới",
+      "d": "Xây dựng danh sách quà cưới toàn diện với các món đồ cho mọi ngân sách"
+    },
+    "Bible Study Guide": {
+      "n": "Hướng Dẫn Học Kinh Thánh",
+      "d": "Tạo kế hoạch học Kinh Thánh có cấu trúc với bối cảnh, câu hỏi và ứng dụng"
+    },
+    "Sermon Outline Creator": {
+      "n": "Công Cụ Tạo Dàn Ý Bài Giảng",
+      "d": "Phát triển dàn ý bài giảng hấp dẫn với kinh văn, luận điểm và minh họa"
+    },
+    "Comparative Religion Study": {
+      "n": "Nghiên Cứu So Sánh Tôn Giáo",
+      "d": "Khám phá và so sánh tín ngưỡng, thực hành và lịch sử giữa các tôn giáo trên thế giới"
+    },
+    "Discussion Question Generator": {
+      "n": "Công Cụ Tạo Câu Hỏi Thảo Luận",
+      "d": "Tạo câu hỏi thảo luận sâu sắc cho các chủ đề tôn giáo và triết học"
+    },
+    "Devotional Writer": {
+      "n": "Người Viết Bài Suy Niệm",
+      "d": "Tạo bài suy niệm hàng ngày với kinh văn, suy tư và gợi ý cầu nguyện"
+    },
+    "Prayer Journal Guide": {
+      "n": "Hướng Dẫn Nhật Ký Cầu Nguyện",
+      "d": "Xây dựng đời sống cầu nguyện với các gợi ý viết nhật ký và khung hướng dẫn"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Hướng Dẫn Câu Lạc Bộ Sách Tâm Linh",
+      "d": "Tạo hướng dẫn thảo luận câu lạc bộ sách cho các sách tâm linh và tôn giáo"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Hướng Dẫn Thiền Định Kinh Văn",
+      "d": "Tạo trải nghiệm thiền định có hướng dẫn xoay quanh các đoạn kinh văn"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Kế Hoạch Bài Học Nhóm Thanh Thiếu Niên",
+      "d": "Tạo bài học nhóm thanh thiếu niên hấp dẫn với hoạt động và thảo luận"
+    },
+    "Faith Journey Reflector": {
+      "n": "Suy Tư Hành Trình Đức Tin",
+      "d": "Suy tư có hướng dẫn để khám phá và làm sâu sắc hành trình đức tin cá nhân của bạn"
+    },
+    "Workout Plan Creator": {
+      "n": "Công Cụ Tạo Kế Hoạch Tập Luyện",
+      "d": "Tạo kế hoạch tập luyện cá nhân hóa dựa trên mục tiêu và trình độ thể lực của bạn"
+    },
+    "Training Schedule Builder": {
+      "n": "Công Cụ Xây Dựng Lịch Trình Tập Luyện",
+      "d": "Xây dựng lịch trình tập luyện có cấu trúc cho bất kỳ môn thể thao hoặc mục tiêu thể lực nào"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Công Cụ Phân Tích Chiến Thuật Trận Đấu",
+      "d": "Phân tích chiến thuật trận đấu và phát triển phương pháp chiến thắng cho môn thể thao của bạn"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Hướng Dẫn Dinh Dưỡng Thể Thao",
+      "d": "Tối ưu hóa dinh dưỡng thể thao để đạt hiệu suất đỉnh cao và phục hồi tốt"
+    },
+    "Coaching Practice Plan": {
+      "n": "Kế Hoạch Buổi Tập Huấn Luyện",
+      "d": "Thiết kế buổi tập hiệu quả phát triển kỹ năng và sự gắn kết đội nhóm"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Công Cụ Phân Tích Thể Thao Ảo",
+      "d": "Phân tích các trận đấu và tối ưu hóa đội hình thể thao ảo của bạn mỗi tuần"
+    },
+    "Race Training Plan": {
+      "n": "Kế Hoạch Tập Luyện Chạy Đua",
+      "d": "Tập luyện cho các cuộc đua từ 5K đến marathon với kế hoạch tiến bộ có cấu trúc"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Công Cụ Phân Tích Thống Kê Thể Thao",
+      "d": "Phân tích thống kê cầu thủ và đội bóng để hiểu sâu hơn về thể thao"
+    },
+    "Team Management Tool": {
+      "n": "Công Cụ Quản Lý Đội",
+      "d": "Quản lý danh sách đội, lịch trình và liên lạc hiệu quả"
+    },
+    "Injury Recovery Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Phục Hồi Chấn Thương",
+      "d": "Lên kế hoạch phục hồi an toàn và hiệu quả từ các chấn thương thể thao phổ biến"
+    },
+    "Photography Guide": {
+      "n": "Hướng Dẫn Nhiếp Ảnh",
+      "d": "Nâng cao kỹ năng nhiếp ảnh với mẹo về bố cục, ánh sáng và thiết bị"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Trợ Lý Mẫu Đan Len",
+      "d": "Tìm và điều chỉnh mẫu đan len cho trình độ và ý tưởng dự án của bạn"
+    },
+    "Board Game Night Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Đêm Trò Chơi Board Game",
+      "d": "Lên kế hoạch cho những đêm board game hoàn hảo với lựa chọn trò chơi và phân nhóm"
+    },
+    "Fishing Trip Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Chuyến Câu Cá",
+      "d": "Lên kế hoạch cho chuyến câu cá thành công với tư vấn về địa điểm, dụng cụ và kỹ thuật"
+    },
+    "Camping Trip Organizer": {
+      "n": "Công Cụ Tổ Chức Chuyến Cắm Trại",
+      "d": "Tổ chức chuyến cắm trại với danh sách dụng cụ, kế hoạch bữa ăn và ý tưởng hoạt động"
+    },
+    "Bird Watching Guide": {
+      "n": "Hướng Dẫn Quan Sát Chim",
+      "d": "Nhận diện các loài chim địa phương và lên kế hoạch quan sát chim với mẹo theo mùa"
+    },
+    "Model Building Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Xây Dựng Mô Hình",
+      "d": "Lên kế hoạch và thực hiện các dự án xây dựng mô hình với vật liệu và kỹ thuật"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Hướng Dẫn Chiến Lược Giải Đố",
+      "d": "Chiến lược và kỹ thuật để giải đố nhanh hơn và hiệu quả hơn"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Quan Sát Thiên Văn",
+      "d": "Lên kế hoạch ngắm sao với các sự kiện thiên văn và gợi ý thiết bị"
+    },
+    "Art Supply Guide": {
+      "n": "Hướng Dẫn Dụng Cụ Mỹ Thuật",
+      "d": "Chọn đúng dụng cụ mỹ thuật cho chất liệu và trình độ của bạn"
+    },
+    "Goal Setting Framework": {
+      "n": "Khung Thiết Lập Mục Tiêu",
+      "d": "Đặt và đạt được các mục tiêu ý nghĩa với khung có cấu trúc và kế hoạch hành động"
+    },
+    "Bucket List Creator": {
+      "n": "Công Cụ Tạo Danh Sách Ước Nguyện",
+      "d": "Tạo danh sách ước nguyện truyền cảm hứng được sắp xếp theo danh mục và mức độ ưu tiên"
+    },
+    "Personal Mission Statement": {
+      "n": "Tuyên Bố Sứ Mệnh Cá Nhân",
+      "d": "Soạn một tuyên bố sứ mệnh cá nhân ý nghĩa để hướng dẫn các quyết định trong cuộc sống"
+    },
+    "Life Transition Guide": {
+      "n": "Hướng Dẫn Chuyển Giao Cuộc Sống",
+      "d": "Vượt qua các giai đoạn chuyển đổi lớn trong cuộc sống với kế hoạch, hỗ trợ và chiến lược đối phó"
+    },
+    "Habit Building Plan": {
+      "n": "Kế Hoạch Xây Dựng Thói Quen",
+      "d": "Xây dựng thói quen tích cực lâu dài với các chiến lược khoa học đã được chứng minh"
+    },
+    "Time Audit Tool": {
+      "n": "Công Cụ Kiểm Toán Thời Gian",
+      "d": "Kiểm toán cách bạn sử dụng thời gian và tối ưu hóa cho những gì quan trọng nhất"
+    },
+    "Relationship Goal Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Mục Tiêu Mối Quan Hệ",
+      "d": "Đặt ra và hướng tới các mục tiêu cho những mối quan hệ bền chặt và lành mạnh hơn"
+    },
+    "Vision Board Creator": {
+      "n": "Công Cụ Tạo Bảng Tầm Nhìn",
+      "d": "Tạo bảng tầm nhìn kỹ thuật số với gợi ý có hướng dẫn và bài tập hình dung"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Phân Tích SWOT Cá Nhân",
+      "d": "Thực hiện phân tích SWOT cá nhân cho việc lập kế hoạch sự nghiệp và cuộc sống"
+    },
+    "Legacy Letter Writer": {
+      "n": "Người Viết Thư Di Sản",
+      "d": "Viết những bức thư di sản ý nghĩa gửi người thân yêu, ghi lại giá trị và trí tuệ của bạn"
+    },
+    "Contract Draft Creator": {
+      "n": "Công Cụ Tạo Bản Nháp Hợp Đồng",
+      "d": "Tạo bản nháp hợp đồng chuyên nghiệp cho mọi mối quan hệ kinh doanh"
+    },
+    "NDA Generator": {
+      "n": "Công Cụ Tạo NDA",
+      "d": "Tạo thỏa thuận bảo mật phù hợp với tình huống của bạn"
+    },
+    "Rental Agreement Draft": {
+      "n": "Bản Nháp Hợp Đồng Cho Thuê",
+      "d": "Soạn hợp đồng cho thuê nhà ở hoặc thương mại"
+    },
+    "Terms of Service Generator": {
+      "n": "Công Cụ Tạo Điều Khoản Dịch Vụ",
+      "d": "Tạo điều khoản dịch vụ toàn diện cho website và ứng dụng"
+    },
+    "Privacy Policy Writer": {
+      "n": "Người Viết Chính Sách Bảo Mật",
+      "d": "Tạo chính sách bảo mật tuân thủ GDPR và CCPA"
+    },
+    "Freelance Agreement": {
+      "n": "Hợp Đồng Freelance",
+      "d": "Tạo hợp đồng giữa freelancer và khách hàng"
+    },
+    "Non-Compete Draft": {
+      "n": "Bản Nháp Thỏa Thuận Không Cạnh Tranh",
+      "d": "Soạn điều khoản không cạnh tranh và thỏa thuận độc lập"
+    },
+    "LLC Operating Agreement": {
+      "n": "Thỏa Thuận Hoạt Động LLC",
+      "d": "Tạo thỏa thuận hoạt động cho công ty trách nhiệm hữu hạn"
+    },
+    "Partnership Agreement": {
+      "n": "Hợp Đồng Hợp Tác",
+      "d": "Soạn hợp đồng hợp tác với vai trò và điều khoản rõ ràng"
+    },
+    "Intellectual Property Brief": {
+      "n": "Tóm Tắt Sở Hữu Trí Tuệ",
+      "d": "Phác thảo quyền sở hữu trí tuệ và chiến lược bảo vệ"
+    },
+    "Cease and Desist Draft": {
+      "n": "Bản Nháp Thư Yêu Cầu Chấm Dứt",
+      "d": "Tạo thư yêu cầu chấm dứt cho các vi phạm khác nhau"
+    },
+    "Employee Handbook Section": {
+      "n": "Phần Sổ Tay Nhân Viên",
+      "d": "Viết các phần riêng lẻ cho sổ tay nhân viên"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Hợp Đồng Nhà Thầu Độc Lập",
+      "d": "Soạn hợp đồng nhà thầu độc lập với ngôn ngữ phân loại phù hợp"
+    },
+    "Liability Waiver Draft": {
+      "n": "Bản Nháp Miễn Trừ Trách Nhiệm",
+      "d": "Tạo giấy miễn trừ trách nhiệm cho các hoạt động và dịch vụ"
+    },
+    "Settlement Letter Draft": {
+      "n": "Bản Nháp Thư Hòa Giải",
+      "d": "Soạn thư đề nghị hoặc phản hồi hòa giải"
+    },
+    "Demand Letter Draft": {
+      "n": "Bản Nháp Thư Yêu Cầu",
+      "d": "Tạo thư yêu cầu chính thức cho các khiếu nại khác nhau"
+    },
+    "Power of Attorney Draft": {
+      "n": "Bản Nháp Giấy Ủy Quyền",
+      "d": "Soạn giấy ủy quyền cho các mục đích khác nhau"
+    },
+    "Last Will Outline": {
+      "n": "Dàn Ý Di Chúc",
+      "d": "Tạo dàn ý cho một bản di chúc cơ bản"
+    },
+    "Business License Checklist": {
+      "n": "Danh Sách Kiểm Tra Giấy Phép Kinh Doanh",
+      "d": "Tạo danh sách kiểm tra các giấy phép cần thiết cho doanh nghiệp của bạn"
+    },
+    "Trademark Application Guide": {
+      "n": "Hướng Dẫn Đăng Ký Nhãn Hiệu",
+      "d": "Hướng dẫn từng bước để nộp đơn đăng ký nhãn hiệu"
+    },
+    "Small Claims Court Guide": {
+      "n": "Hướng Dẫn Tòa Án Giải Quyết Tranh Chấp Nhỏ",
+      "d": "Chuẩn bị cho tòa án giải quyết tranh chấp nhỏ với các lập luận có tổ chức"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Chuẩn Bị Hòa Giải Ly Hôn",
+      "d": "Sắp xếp các điểm chính và ưu tiên cho hòa giải ly hôn"
+    },
+    "Tenant Rights Guide": {
+      "n": "Hướng Dẫn Quyền Người Thuê Nhà",
+      "d": "Hiểu quyền và biện pháp khắc phục của người thuê nhà trong khu vực pháp lý của bạn"
+    },
+    "Landlord Notice Draft": {
+      "n": "Bản Nháp Thông Báo Chủ Nhà",
+      "d": "Soạn thông báo pháp lý phù hợp từ chủ nhà gửi người thuê"
+    },
+    "Copyright Registration Guide": {
+      "n": "Hướng Dẫn Đăng Ký Bản Quyền",
+      "d": "Hướng dẫn đăng ký bản quyền với Cục Bản Quyền Hoa Kỳ"
+    },
+    "Personal Budget Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Ngân Sách Cá Nhân",
+      "d": "Tạo kế hoạch ngân sách hàng tháng hoặc hàng năm toàn diện"
+    },
+    "Investment Research Assistant": {
+      "n": "Trợ Lý Nghiên Cứu Đầu Tư",
+      "d": "Nghiên cứu và phân tích các cơ hội đầu tư một cách có hệ thống"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Máy Tính Trả Nợ",
+      "d": "Lên chiến lược để xóa nợ hiệu quả"
+    },
+    "Expense Tracker Setup": {
+      "n": "Thiết Lập Công Cụ Theo Dõi Chi Tiêu",
+      "d": "Thiết kế hệ thống theo dõi chi tiêu cá nhân hóa"
+    },
+    "Retirement Planning Guide": {
+      "n": "Hướng Dẫn Lập Kế Hoạch Nghỉ Hưu",
+      "d": "Xây dựng chiến lược tiết kiệm hưu trí toàn diện"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Danh Sách Chuẩn Bị Khai Thuế",
+      "d": "Sắp xếp giấy tờ và các khoản khấu trừ để khai thuế"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Máy Tính Quỹ Khẩn Cấp",
+      "d": "Xác định và lên kế hoạch cho quỹ khẩn cấp lý tưởng của bạn"
+    },
+    "Net Worth Tracker": {
+      "n": "Công Cụ Theo Dõi Giá Trị Tài Sản Ròng",
+      "d": "Theo dõi và trực quan hóa bức tranh tài chính tổng thể của bạn"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Kế Hoạch Cải Thiện Điểm Tín Dụng",
+      "d": "Tạo kế hoạch hành động để cải thiện điểm tín dụng của bạn"
+    },
+    "Student Loan Strategy": {
+      "n": "Chiến Lược Vay Sinh Viên",
+      "d": "Tối ưu hóa phương pháp trả nợ vay sinh viên của bạn"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Doanh Thu Nghề Tay Trái",
+      "d": "Lên kế hoạch và dự kiến thu nhập từ các nghề tay trái"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Công Cụ Phân Tích Nhu Cầu Bảo Hiểm",
+      "d": "Đánh giá các khoảng trống và nhu cầu bảo hiểm của bạn"
+    },
+    "Estate Planning Checklist": {
+      "n": "Danh Sách Kiểm Tra Lập Kế Hoạch Di Sản",
+      "d": "Sắp xếp các giấy tờ và quyết định liên quan đến lập kế hoạch di sản"
+    },
+    "Financial Goal Setter": {
+      "n": "Công Cụ Thiết Lập Mục Tiêu Tài Chính",
+      "d": "Xác định và theo dõi tiến trình đạt được các cột mốc tài chính"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Công Cụ Phân Tích Dòng Tiền",
+      "d": "Phân tích mô hình thu nhập và chi tiêu theo thời gian"
+    },
+    "Savings Challenge Creator": {
+      "n": "Công Cụ Tạo Thử Thách Tiết Kiệm",
+      "d": "Thiết kế thử thách tiết kiệm vui nhộn để xây dựng quỹ dự trữ"
+    },
+    "Investment Portfolio Review": {
+      "n": "Đánh Giá Danh Mục Đầu Tư",
+      "d": "Xem xét và tái cân bằng danh mục đầu tư của bạn"
+    },
+    "Cryptocurrency Research": {
+      "n": "Nghiên Cứu Tiền Điện Tử",
+      "d": "Nghiên cứu và đánh giá các khoản đầu tư tiền điện tử"
+    },
+    "Stock Analysis Helper": {
+      "n": "Trợ Lý Phân Tích Cổ Phiếu",
+      "d": "Thực hiện phân tích cơ bản và kỹ thuật đối với cổ phiếu"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Máy Tính Đầu Tư Bất Động Sản",
+      "d": "Phân tích lợi nhuận tiềm năng từ đầu tư bất động sản"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Công Cụ Tìm Khoản Khấu Trừ Thuế Doanh Nghiệp",
+      "d": "Xác định các khoản khấu trừ thuế đủ điều kiện cho doanh nghiệp của bạn"
+    },
+    "Payroll Budget Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Ngân Sách Lương",
+      "d": "Lên kế hoạch và lập ngân sách cho chi phí lương nhân viên"
+    },
+    "Invoice Template Creator": {
+      "n": "Công Cụ Tạo Mẫu Hóa Đơn",
+      "d": "Thiết kế hóa đơn chuyên nghiệp cho doanh nghiệp của bạn"
+    },
+    "Profit Margin Calculator": {
+      "n": "Máy Tính Biên Lợi Nhuận",
+      "d": "Tính toán và tối ưu hóa biên lợi nhuận trên các sản phẩm"
+    },
+    "Financial Independence Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Tự Do Tài Chính",
+      "d": "Vạch ra con đường đến tự do tài chính và nghỉ hưu sớm"
+    },
+    "Ad Copy Writer": {
+      "n": "Người Viết Nội Dung Quảng Cáo",
+      "d": "Tạo nội dung quảng cáo hấp dẫn cho mọi nền tảng hoặc phương tiện"
+    },
+    "SEO Article Creator": {
+      "n": "Công Cụ Tạo Bài Viết SEO",
+      "d": "Viết bài viết tối ưu SEO giúp xếp hạng cao và chuyển đổi tốt"
+    },
+    "Social Media Content Calendar": {
+      "n": "Lịch Nội Dung Mạng Xã Hội",
+      "d": "Lên kế hoạch nội dung mạng xã hội trong một tháng trên các nền tảng"
+    },
+    "Email Campaign Builder": {
+      "n": "Công Cụ Xây Dựng Chiến Dịch Email",
+      "d": "Thiết kế chiến dịch tiếp thị email đa thư với tỷ lệ chuyển đổi cao"
+    },
+    "Product Launch Strategy": {
+      "n": "Chiến Lược Ra Mắt Sản Phẩm",
+      "d": "Tạo chiến lược tiếp thị ra mắt sản phẩm toàn diện"
+    },
+    "Brand Voice Guide": {
+      "n": "Hướng Dẫn Giọng Nói Thương Hiệu",
+      "d": "Xác định và tài liệu hóa giọng nói và thông điệp thương hiệu của bạn"
+    },
+    "Content Marketing Strategy": {
+      "n": "Chiến Lược Tiếp Thị Nội Dung",
+      "d": "Xây dựng chiến lược tiếp thị nội dung hoàn chỉnh từ đầu"
+    },
+    "Influencer Outreach Template": {
+      "n": "Mẫu Tiếp Cận Người Ảnh Hưởng",
+      "d": "Tạo lời mời hợp tác cá nhân hóa với người ảnh hưởng"
+    },
+    "Landing Page Copywriter": {
+      "n": "Người Viết Nội Dung Trang Đích",
+      "d": "Viết nội dung trang đích có tỷ lệ chuyển đổi cao"
+    },
+    "A/B Test Plan Creator": {
+      "n": "Công Cụ Tạo Kế Hoạch Thử Nghiệm A/B",
+      "d": "Thiết kế thử nghiệm A/B có cấu trúc cho các chiến dịch tiếp thị"
+    },
+    "Buyer Persona Builder": {
+      "n": "Công Cụ Xây Dựng Chân Dung Khách Hàng",
+      "d": "Tạo chân dung khách hàng chi tiết để nhắm mục tiêu"
+    },
+    "Competitive Analysis Template": {
+      "n": "Mẫu Phân Tích Cạnh Tranh",
+      "d": "Phân tích đối thủ cạnh tranh và xác định cơ hội thị trường"
+    },
+    "Marketing Budget Planner": {
+      "n": "Công Cụ Lập Kế Hoạch Ngân Sách Tiếp Thị",
+      "d": "Phân bổ và tối ưu hóa ngân sách tiếp thị của bạn"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Chiến Lược Tiếp Thị Liên Kết",
+      "d": "Xây dựng và tối ưu hóa chương trình tiếp thị liên kết"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Kế Hoạch Tiếp Thị Podcast",
+      "d": "Quảng bá podcast của bạn và phát triển lượng người nghe"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Kế Hoạch Quảng Bá Webinar",
+      "d": "Lên kế hoạch và quảng bá webinar để thúc đẩy đăng ký"
+    },
+    "Referral Program Designer": {
+      "n": "Công Cụ Thiết Kế Chương Trình Giới Thiệu",
+      "d": "Thiết kế chương trình giới thiệu thúc đẩy tăng trưởng truyền miệng"
+    },
+    "Brand Story Writer": {
+      "n": "Người Viết Câu Chuyện Thương Hiệu",
+      "d": "Tạo câu chuyện nguồn gốc và tường thuật thương hiệu hấp dẫn"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Công Cụ Xây Dựng Phễu Tiếp Thị",
+      "d": "Thiết kế phễu hành trình khách hàng từ nhận biết đến chuyển đổi"
+    },
+    "App Store Optimization": {
+      "n": "Tối Ưu Hóa App Store",
+      "d": "Tối ưu hóa danh sách app store để tối đa hóa lượt tải xuống"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Người Viết Nội Dung Google Ads",
+      "d": "Viết tiêu đề và mô tả Google Ads hiệu quả"
+    },
+    "Facebook Ads Creator": {
+      "n": "Công Cụ Tạo Facebook Ads",
+      "d": "Tạo chiến dịch quảng cáo Facebook và Instagram"
+    },
+    "Newsletter Strategy": {
+      "n": "Chiến Lược Bản Tin",
+      "d": "Lên kế hoạch và phát triển bản tin email từ đầu"
+    },
+    "PR Media Pitch": {
+      "n": "Thư Chào Hàng Truyền Thông PR",
+      "d": "Viết thư chào hàng truyền thông hấp dẫn để được đưa tin"
+    },
+    "Content Repurposing Plan": {
+      "n": "Kế Hoạch Tái Sử Dụng Nội Dung",
+      "d": "Chuyển đổi nội dung hiện có thành nhiều định dạng khác nhau"
+    },
+    "Cold Email Generator": {
+      "n": "Tạo Email Tiếp Cận",
+      "d": "Tạo email tiếp cận lạnh cá nhân hóa để nhận phản hồi"
+    },
+    "Sales Script Writer": {
+      "n": "Viết Kịch Bản Bán Hàng",
+      "d": "Viết kịch bản bán hàng hiệu quả cho cuộc gọi và cuộc họp"
+    },
+    "Objection Handling Guide": {
+      "n": "Hướng Dẫn Xử Lý Phản Đối",
+      "d": "Chuẩn bị phản hồi cho các phản đối bán hàng phổ biến"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Tạo Tin Nhắn Theo Dõi",
+      "d": "Tạo chuỗi tin nhắn theo dõi chiến lược"
+    },
+    "Sales Pitch Creator": {
+      "n": "Tạo Bài Giới Thiệu Bán Hàng",
+      "d": "Xây dựng bài giới thiệu ngắn và thuyết trình bán hàng hấp dẫn"
+    },
+    "Proposal Generator": {
+      "n": "Tạo Đề Xuất",
+      "d": "Tạo đề xuất bán hàng và báo giá chuyên nghiệp"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Kế Hoạch Dọn Dữ Liệu CRM",
+      "d": "Sắp xếp và dọn dẹp cơ sở dữ liệu CRM một cách có hệ thống"
+    },
+    "Sales Territory Planner": {
+      "n": "Lập Kế Hoạch Vùng Bán Hàng",
+      "d": "Xác định và tối ưu hóa vùng bán hàng cho đội ngũ"
+    },
+    "Account Strategy Builder": {
+      "n": "Xây Dựng Chiến Lược Khách Hàng",
+      "d": "Tạo kế hoạch chiến lược cho khách hàng trọng điểm"
+    },
+    "Upsell Script Creator": {
+      "n": "Tạo Kịch Bản Bán Thêm",
+      "d": "Viết kịch bản bán thêm và bán chéo cho khách hàng hiện tại"
+    },
+    "Customer Win-Back Email": {
+      "n": "Email Lấy Lại Khách Hàng",
+      "d": "Thu hút lại khách hàng đã mất bằng chiến dịch nhắm mục tiêu"
+    },
+    "Sales Forecast Template": {
+      "n": "Mẫu Dự Báo Bán Hàng",
+      "d": "Xây dựng dự báo bán hàng chính xác cho pipeline"
+    },
+    "Commission Calculator": {
+      "n": "Tính Hoa Hồng",
+      "d": "Thiết kế và tính toán cơ cấu hoa hồng bán hàng"
+    },
+    "Discovery Call Script": {
+      "n": "Kịch Bản Cuộc Gọi Khám Phá",
+      "d": "Cấu trúc cuộc gọi khám phá hiệu quả để đánh giá khách hàng tiềm năng"
+    },
+    "Demo Presentation Outline": {
+      "n": "Dàn Ý Demo Sản Phẩm",
+      "d": "Tạo bài thuyết trình demo sản phẩm có cấu trúc"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Kế Hoạch Đào Tạo Bán Hàng",
+      "d": "Thiết kế chương trình đào tạo cho nhân viên bán hàng mới"
+    },
+    "Quarterly Business Review": {
+      "n": "Đánh Giá Kinh Doanh Quý",
+      "d": "Chuẩn bị bài thuyết trình đánh giá kinh doanh quý cho khách hàng"
+    },
+    "Customer Success Plan": {
+      "n": "Kế Hoạch Thành Công Khách Hàng",
+      "d": "Xây dựng kế hoạch giữ chân và thành công khách hàng chủ động"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Tư Vấn Chiến Lược Giá",
+      "d": "Phát triển và tối ưu hóa chiến lược định giá sản phẩm"
+    },
+    "Value Proposition Builder": {
+      "n": "Xây Dựng Giá Trị Đề Xuất",
+      "d": "Tạo giá trị đề xuất rõ ràng và hấp dẫn"
+    },
+    "FAQ Generator": {
+      "n": "Tạo Câu Hỏi Thường Gặp",
+      "d": "Tạo mục FAQ toàn diện từ thông tin sản phẩm"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Viết Bài Cơ Sở Tri Thức",
+      "d": "Viết bài cơ sở tri thức rõ ràng và dễ tìm kiếm"
+    },
+    "Support Response Template": {
+      "n": "Mẫu Phản Hồi Hỗ Trợ",
+      "d": "Tạo mẫu tái sử dụng cho các tình huống hỗ trợ phổ biến"
+    },
+    "Chatbot Training Data": {
+      "n": "Dữ Liệu Huấn Luyện Chatbot",
+      "d": "Tạo dữ liệu huấn luyện cho chatbot hỗ trợ khách hàng"
+    },
+    "Escalation Response Guide": {
+      "n": "Hướng Dẫn Xử Lý Leo Thang",
+      "d": "Tạo hướng dẫn xử lý các vấn đề hỗ trợ leo thang"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Khảo Sát Hài Lòng Khách Hàng",
+      "d": "Thiết kế khảo sát đo lường mức độ hài lòng khách hàng"
+    },
+    "Refund Policy Writer": {
+      "n": "Viết Chính Sách Hoàn Tiền",
+      "d": "Tạo chính sách hoàn tiền và đổi trả rõ ràng công bằng"
+    },
+    "Bug Report Template": {
+      "n": "Mẫu Báo Cáo Lỗi",
+      "d": "Thiết kế mẫu báo cáo lỗi có cấu trúc cho người dùng"
+    },
+    "Feature Request Response": {
+      "n": "Phản Hồi Yêu Cầu Tính Năng",
+      "d": "Soạn phản hồi cho yêu cầu tính năng từ khách hàng"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Chuỗi Email Giới Thiệu",
+      "d": "Tạo chuỗi email giới thiệu khách hàng mới"
+    },
+    "Help Center Article": {
+      "n": "Bài Viết Trung Tâm Trợ Giúp",
+      "d": "Viết tài liệu trung tâm trợ giúp toàn diện"
+    },
+    "Service Level Agreement": {
+      "n": "Thỏa Thuận Cấp Độ Dịch Vụ",
+      "d": "Soạn tài liệu SLA cho cam kết hỗ trợ"
+    },
+    "Customer Apology Template": {
+      "n": "Mẫu Xin Lỗi Khách Hàng",
+      "d": "Viết tin nhắn xin lỗi chân thành cho sự cố dịch vụ"
+    },
+    "Product Update Announcement": {
+      "n": "Thông Báo Cập Nhật Sản Phẩm",
+      "d": "Truyền đạt cập nhật và thay đổi sản phẩm đến khách hàng"
+    },
+    "Community Guidelines Writer": {
+      "n": "Viết Quy Tắc Cộng Đồng",
+      "d": "Tạo quy tắc cộng đồng cho diễn đàn và mạng xã hội"
+    },
+    "Startup Validation Framework": {
+      "n": "Khung Xác Nhận Startup",
+      "d": "Xác nhận ý tưởng startup trước khi xây dựng"
+    },
+    "MVP Feature Planner": {
+      "n": "Lập Kế Hoạch Tính Năng MVP",
+      "d": "Ưu tiên tính năng cho sản phẩm khả thi tối thiểu"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Xây Dựng Chiến Lược Giá",
+      "d": "Phát triển mô hình định giá cho sản phẩm startup"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Dàn Ý Bài Thuyết Trình Đầu Tư",
+      "d": "Cấu trúc bài thuyết trình hấp dẫn cho gọi vốn"
+    },
+    "Business Model Canvas": {
+      "n": "Khung Mô Hình Kinh Doanh",
+      "d": "Vẽ mô hình kinh doanh hoàn chỉnh trên một trang"
+    },
+    "Lean Canvas Creator": {
+      "n": "Tạo Lean Canvas",
+      "d": "Tạo lean canvas để xác định rủi ro và giả định"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Phân Tích Cạnh Tranh",
+      "d": "Lập bản đồ và phân tích môi trường cạnh tranh"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Chiến Lược Ra Thị Trường",
+      "d": "Lập kế hoạch gia nhập thị trường và thu hút khách hàng"
+    },
+    "Founding Team Assessment": {
+      "n": "Đánh Giá Đội Ngũ Sáng Lập",
+      "d": "Đánh giá thành phần đội ngũ và xác định khoảng trống kỹ năng"
+    },
+    "Startup Financial Projections": {
+      "n": "Dự Báo Tài Chính Startup",
+      "d": "Xây dựng dự báo tài chính 3 năm cho startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Tuyển Ban Cố Vấn",
+      "d": "Xác định và tuyển cố vấn cho startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Khung Quyết Định Xoay Trục",
+      "d": "Đánh giá liệu có nên và cách xoay trục startup"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Bảng KPI Startup",
+      "d": "Xác định và theo dõi các chỉ số hiệu suất chính"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Kế Hoạch Gọi Vốn Cộng Đồng",
+      "d": "Lên kế hoạch và thực hiện chiến dịch gọi vốn cộng đồng thành công"
+    },
+    "Partnership Strategy": {
+      "n": "Chiến Lược Đối Tác",
+      "d": "Xác định và theo đuổi quan hệ đối tác chiến lược"
+    },
+    "Accelerator Application": {
+      "n": "Đơn Xin Vào Vườn Ươm",
+      "d": "Chuẩn bị đơn xin vào vườn ươm hoặc chương trình tăng tốc hấp dẫn"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Khảo Sát Phù Hợp Thị Trường",
+      "d": "Thiết kế khảo sát đo lường mức độ phù hợp sản phẩm-thị trường"
+    },
+    "Startup Legal Checklist": {
+      "n": "Danh Sách Pháp Lý Startup",
+      "d": "Đảm bảo tất cả yêu cầu pháp lý khi thành lập công ty"
+    },
+    "Equity Split Calculator": {
+      "n": "Tính Phân Chia Cổ Phần",
+      "d": "Xác định phân chia cổ phần công bằng giữa đồng sáng lập"
+    },
+    "Growth Experiment Planner": {
+      "n": "Lập Kế Hoạch Thử Nghiệm Tăng Trưởng",
+      "d": "Thiết kế và theo dõi thử nghiệm tăng trưởng có hệ thống"
+    },
+    "Product Description Writer": {
+      "n": "Viết Mô Tả Sản Phẩm",
+      "d": "Viết mô tả sản phẩm hấp dẫn thúc đẩy bán hàng"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Tối Ưu Danh Sách Amazon",
+      "d": "Tối ưu danh sách sản phẩm Amazon cho khả năng hiển thị và chuyển đổi"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Hướng Dẫn Thiết Lập Etsy",
+      "d": "Thiết lập và tối ưu cửa hàng Etsy thành công"
+    },
+    "Shopify Store Planner": {
+      "n": "Lập Kế Hoạch Cửa Hàng Shopify",
+      "d": "Lên kế hoạch cấu trúc cửa hàng Shopify và ra mắt"
+    },
+    "Product Photography Brief": {
+      "n": "Bản Mô Tả Chụp Ảnh Sản Phẩm",
+      "d": "Tạo bản mô tả cho buổi chụp ảnh sản phẩm"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Lập Kế Hoạch Vận Chuyển",
+      "d": "Thiết kế chiến lược vận chuyển tiết kiệm chi phí"
+    },
+    "Return Policy Creator": {
+      "n": "Tạo Chính Sách Đổi Trả",
+      "d": "Tạo chính sách đổi trả thương mại điện tử rõ ràng"
+    },
+    "Customer Review Response": {
+      "n": "Phản Hồi Đánh Giá Khách Hàng",
+      "d": "Soạn phản hồi chuyên nghiệp cho đánh giá khách hàng"
+    },
+    "Inventory Management Plan": {
+      "n": "Kế Hoạch Quản Lý Tồn Kho",
+      "d": "Tạo hệ thống theo dõi và quản lý tồn kho"
+    },
+    "Dropshipping Product Research": {
+      "n": "Nghiên Cứu Sản Phẩm Dropshipping",
+      "d": "Nghiên cứu và đánh giá cơ hội sản phẩm dropshipping"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Thiết Kế In Theo Yêu Cầu",
+      "d": "Lên kế hoạch dòng sản phẩm và thiết kế in theo yêu cầu"
+    },
+    "Subscription Box Planner": {
+      "n": "Lập Kế Hoạch Hộp Đăng Ký",
+      "d": "Thiết kế và ra mắt kinh doanh hộp đăng ký"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Chiến Lược Bán Hàng Mùa Lễ",
+      "d": "Lên kế hoạch khuyến mãi theo mùa và chiến dịch bán hàng dịp lễ"
+    },
+    "Product Bundle Creator": {
+      "n": "Tạo Gói Sản Phẩm",
+      "d": "Thiết kế gói sản phẩm tăng giá trị đơn hàng trung bình"
+    },
+    "Cart Abandonment Email": {
+      "n": "Email Giỏ Hàng Bỏ Quên",
+      "d": "Tạo chuỗi email khôi phục giỏ hàng bỏ quên"
+    },
+    "Homework Helper": {
+      "n": "Trợ Giúp Bài Tập",
+      "d": "Hỗ trợ từng bước cho bài tập mọi môn học"
+    },
+    "Quiz & Test Generator": {
+      "n": "Tạo Bài Kiểm Tra",
+      "d": "Tạo bài kiểm tra tùy chỉnh từ bất kỳ chủ đề hoặc tài liệu học"
+    },
+    "Science Fair Project Planner": {
+      "n": "Lập Kế Hoạch Dự Án Khoa Học",
+      "d": "Lên kế hoạch và tổ chức dự án hội chợ khoa học từ giả thuyết đến trình bày"
+    },
+    "Lesson Plan Creator": {
+      "n": "Tạo Giáo Án",
+      "d": "Thiết kế giáo án có cấu trúc phù hợp mục tiêu học tập"
+    },
+    "Lab Report Writer": {
+      "n": "Viết Báo Cáo Thí Nghiệm",
+      "d": "Cấu trúc và viết báo cáo thí nghiệm với định dạng khoa học đúng"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Trợ Giúp Đọc Hiểu",
+      "d": "Cải thiện khả năng đọc hiểu với phân tích và câu hỏi hướng dẫn"
+    },
+    "Math Problem Solver": {
+      "n": "Giải Bài Toán",
+      "d": "Giải bài toán với giải thích chi tiết từng bước"
+    },
+    "Vocabulary Builder": {
+      "n": "Xây Dựng Từ Vựng",
+      "d": "Xây dựng và luyện từ vựng với định nghĩa, ví dụ và bài tập"
+    },
+    "Book Report Helper": {
+      "n": "Trợ Giúp Bài Báo Cáo Sách",
+      "d": "Lập dàn ý và viết báo cáo sách với phân tích có cấu trúc"
+    },
+    "History Timeline Creator": {
+      "n": "Tạo Dòng Thời Gian Lịch Sử",
+      "d": "Tạo dòng thời gian lịch sử chi tiết cho bất kỳ thời đại hoặc sự kiện"
+    },
+    "Geography Quiz Maker": {
+      "n": "Tạo Bài Kiểm Tra Địa Lý",
+      "d": "Tạo bài kiểm tra địa lý về bản đồ, thủ đô, địa danh"
+    },
+    "Spelling Practice Generator": {
+      "n": "Tạo Bài Luyện Chính Tả",
+      "d": "Tạo danh sách luyện chính tả và bài tập cá nhân hóa"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Tạo Bài Tập Ngữ Pháp",
+      "d": "Tạo bài tập ngữ pháp cho mọi trình độ và chủ đề"
+    },
+    "Critical Thinking Questions": {
+      "n": "Câu Hỏi Tư Duy Phản Biện",
+      "d": "Tạo câu hỏi kích thích tư duy phản biện"
+    },
+    "Debate Prep Guide": {
+      "n": "Hướng Dẫn Chuẩn Bị Tranh Luận",
+      "d": "Chuẩn bị lập luận và phản biện có cấu trúc cho tranh luận"
+    },
+    "College Application Essay": {
+      "n": "Bài Luận Xin Nhập Học",
+      "d": "Viết bài luận xin nhập học đại học hấp dẫn với hướng dẫn"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Trợ Giúp Bài Luận Học Bổng",
+      "d": "Viết bài luận học bổng thuyết phục nêu bật thành tích và mục tiêu"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "Hướng Dẫn Ôn Thi SAT/ACT",
+      "d": "Tạo kế hoạch học tập và luyện tập nhắm mục tiêu cho SAT hoặc ACT"
+    },
+    "Study Schedule Planner": {
+      "n": "Lập Lịch Học Tập",
+      "d": "Xây dựng lịch học hiệu quả cân bằng tất cả môn học và thời hạn"
+    },
+    "Group Project Organizer": {
+      "n": "Tổ Chức Dự Án Nhóm",
+      "d": "Lên kế hoạch vai trò, nhiệm vụ và lịch trình cho dự án nhóm"
+    },
+    "Presentation Creator": {
+      "n": "Tạo Bài Thuyết Trình",
+      "d": "Thiết kế và lập dàn ý bài thuyết trình hấp dẫn cho mọi chủ đề"
+    },
+    "Note-Taking Guide": {
+      "n": "Hướng Dẫn Ghi Chú",
+      "d": "Tạo mẫu ghi chú có cấu trúc cho bài giảng và tài liệu đọc"
+    },
+    "Mind Map Generator": {
+      "n": "Tạo Sơ Đồ Tư Duy",
+      "d": "Tạo sơ đồ tư duy trực quan để tổ chức ý tưởng và khái niệm"
+    },
+    "Research Project Planner": {
+      "n": "Lập Kế Hoạch Dự Án Nghiên Cứu",
+      "d": "Lên kế hoạch và quản lý dự án nghiên cứu từ chọn đề tài đến bài viết cuối"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Chuẩn Bị Họp Phụ Huynh",
+      "d": "Chuẩn bị điểm thảo luận và câu hỏi cho cuộc họp phụ huynh-giáo viên"
+    },
+    "Classroom Activity Designer": {
+      "n": "Thiết Kế Hoạt Động Lớp Học",
+      "d": "Thiết kế hoạt động lớp học tương tác củng cố mục tiêu học tập"
+    },
+    "Special Education Resource": {
+      "n": "Tài Nguyên Giáo Dục Đặc Biệt",
+      "d": "Tạo tài liệu học tập phù hợp cho học sinh giáo dục đặc biệt"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Lập Chương Trình Học Tại Nhà",
+      "d": "Lên kế hoạch chương trình học tại nhà hoàn chỉnh theo môn và học kỳ"
+    },
+    "Student Self-Assessment": {
+      "n": "Tự Đánh Giá Học Sinh",
+      "d": "Tạo công cụ tự đánh giá để học sinh theo dõi tiến trình học tập"
+    },
+    "Learning Style Analyzer": {
+      "n": "Phân Tích Phong Cách Học",
+      "d": "Xác định phong cách học và đề xuất chiến lược học tập cá nhân"
+    },
+    "Literature Review Writer": {
+      "n": "Viết Tổng Quan Tài Liệu",
+      "d": "Tổ chức và viết tổng quan tài liệu toàn diện về bất kỳ chủ đề"
+    },
+    "Research Assistant": {
+      "n": "Trợ Lý Nghiên Cứu",
+      "d": "Hỗ trợ tìm kiếm, tổ chức và tóm tắt tài liệu nghiên cứu"
+    },
+    "Fact Checker Template": {
+      "n": "Mẫu Kiểm Tra Thông Tin",
+      "d": "Xác minh tuyên bố với phương pháp kiểm tra thông tin có cấu trúc"
+    },
+    "Source Comparison Tool": {
+      "n": "Công Cụ So Sánh Nguồn",
+      "d": "So sánh và đối chiếu nhiều nguồn về cùng một chủ đề"
+    },
+    "Citation Generator": {
+      "n": "Tạo Trích Dẫn",
+      "d": "Tạo trích dẫn định dạng đúng theo bất kỳ kiểu học thuật"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Tạo Thư Mục Chú Giải",
+      "d": "Tạo thư mục chú giải với tóm tắt và đánh giá"
+    },
+    "Research Methodology Guide": {
+      "n": "Hướng Dẫn Phương Pháp Nghiên Cứu",
+      "d": "Chọn và thiết kế phương pháp nghiên cứu phù hợp"
+    },
+    "Survey Question Designer": {
+      "n": "Thiết Kế Câu Hỏi Khảo Sát",
+      "d": "Thiết kế câu hỏi khảo sát hiệu quả để thu thập dữ liệu đáng tin cậy"
+    },
+    "Data Collection Plan": {
+      "n": "Kế Hoạch Thu Thập Dữ Liệu",
+      "d": "Tạo kế hoạch có cấu trúc để thu thập dữ liệu nghiên cứu"
+    },
+    "Thesis Statement Generator": {
+      "n": "Tạo Luận Đề",
+      "d": "Soạn luận đề mạnh cho bài nghiên cứu và luận văn"
+    },
+    "Research Proposal Writer": {
+      "n": "Viết Đề Xuất Nghiên Cứu",
+      "d": "Viết đề xuất nghiên cứu hấp dẫn cho đánh giá học thuật hoặc xin tài trợ"
+    },
+    "Systematic Review Guide": {
+      "n": "Hướng Dẫn Tổng Quan Hệ Thống",
+      "d": "Thực hiện tổng quan hệ thống theo quy trình đã thiết lập"
+    },
+    "Interview Protocol Creator": {
+      "n": "Tạo Quy Trình Phỏng Vấn",
+      "d": "Thiết kế quy trình phỏng vấn có cấu trúc cho nghiên cứu định tính"
+    },
+    "Research Ethics Checklist": {
+      "n": "Danh Sách Đạo Đức Nghiên Cứu",
+      "d": "Đảm bảo nghiên cứu tuân thủ hướng dẫn đạo đức và yêu cầu IRB"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Khung Phân Tích Tổng Hợp",
+      "d": "Cấu trúc và thực hiện phân tích tổng hợp trên nhiều nghiên cứu"
+    },
+    "Case Study Template": {
+      "n": "Mẫu Nghiên Cứu Tình Huống",
+      "d": "Cấu trúc và viết nghiên cứu tình huống chi tiết"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Hướng Dẫn Phân Tích Định Tính",
+      "d": "Hướng dẫn phân tích dữ liệu định tính bằng mã hóa và chủ đề"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Hướng Dẫn Phân Tích Định Lượng",
+      "d": "Hướng dẫn phân tích dữ liệu định lượng với phương pháp thống kê phù hợp"
+    },
+    "Research Poster Creator": {
+      "n": "Tạo Poster Nghiên Cứu",
+      "d": "Thiết kế và bố trí poster nghiên cứu cho hội nghị"
+    },
+    "Research Grant Writer": {
+      "n": "Viết Đề Xuất Tài Trợ",
+      "d": "Viết đề xuất tài trợ có cấu trúc cho nghiên cứu"
+    },
+    "Chemistry Tutor": {
+      "n": "Gia Sư Hóa Học",
+      "d": "Nhận dạy kèm hóa học cá nhân với giải thích và bài tập thực hành"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Cân Bằng Phương Trình Hóa Học",
+      "d": "Cân bằng phương trình hóa học với giải thích từng bước"
+    },
+    "Lab Safety Checklist": {
+      "n": "Danh Sách An Toàn Phòng Thí Nghiệm",
+      "d": "Tạo danh sách an toàn phòng thí nghiệm toàn diện cho thí nghiệm hóa học"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Trợ Giúp Hóa Hữu Cơ",
+      "d": "Học phản ứng hữu cơ, cơ chế và danh pháp"
+    },
+    "Periodic Table Explorer": {
+      "n": "Khám Phá Bảng Tuần Hoàn",
+      "d": "Khám phá tính chất nguyên tố, xu hướng và mối quan hệ trong bảng tuần hoàn"
+    },
+    "Stoichiometry Solver": {
+      "n": "Giải Bài Tỷ Lượng",
+      "d": "Giải bài toán tỷ lượng với phép tính mol chi tiết"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Hướng Dẫn Liên Kết Hóa Học",
+      "d": "Hiểu liên kết ion, cộng hóa trị và kim loại với giải thích trực quan"
+    },
+    "Acid-Base Calculator": {
+      "n": "Tính Axit-Bazơ",
+      "d": "Tính pH, pOH, Ka, Kb và giải bài cân bằng axit-bazơ"
+    },
+    "Solution Preparation Guide": {
+      "n": "Hướng Dẫn Pha Chế Dung Dịch",
+      "d": "Tính toán và pha chế dung dịch hóa học với nồng độ đúng"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Phân Tích Phổ",
+      "d": "Phân tích phổ IR, NMR và khối phổ để xác định hợp chất"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Sổ Thí Nghiệm Hóa Học",
+      "d": "Tạo bản ghi sổ thí nghiệm có cấu trúc cho thí nghiệm hóa học"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Trợ Giúp Cơ Chế Phản Ứng",
+      "d": "Vẽ và hiểu cơ chế phản ứng từng bước"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Tính Nhiệt Hóa Học",
+      "d": "Tính entanpi, entropi và năng lượng tự do Gibbs cho phản ứng hóa học"
+    },
+    "Electrochemistry Guide": {
+      "n": "Hướng Dẫn Điện Hóa Học",
+      "d": "Hiểu pin điện hóa, thế điện cực và điện phân"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Hướng Dẫn Hóa Polyme",
+      "d": "Học các loại polyme, cơ chế tổng hợp và tính chất"
+    },
+    "Biology Tutor": {
+      "n": "Gia Sư Sinh Học",
+      "d": "Nhận dạy kèm sinh học cá nhân với giải thích rõ ràng và ví dụ"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Hướng Dẫn Học Sinh Học Tế Bào",
+      "d": "Học cấu trúc, chức năng và quá trình tế bào chuyên sâu"
+    },
+    "Genetics Problem Solver": {
+      "n": "Giải Bài Di Truyền Học",
+      "d": "Giải bài di truyền bao gồm bảng Punnett và phân tích phả hệ"
+    },
+    "Ecology Study Helper": {
+      "n": "Trợ Giúp Học Sinh Thái Học",
+      "d": "Học hệ sinh thái, chuỗi thức ăn, động lực quần thể và mối quan hệ sinh thái"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Hướng Dẫn Giải Phẫu & Sinh Lý",
+      "d": "Học hệ thống cơ thể người với giải thích giải phẫu chi tiết"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Hướng Dẫn Thí Nghiệm Vi Sinh",
+      "d": "Hướng dẫn kỹ thuật vi sinh bao gồm nhuộm, nuôi cấy và xác định"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Sơ Đồ Khái Niệm Tiến Hóa",
+      "d": "Lập sơ đồ khái niệm tiến hóa bao gồm chọn lọc tự nhiên và phát sinh loài"
+    },
+    "Plant Biology Helper": {
+      "n": "Trợ Giúp Sinh Học Thực Vật",
+      "d": "Học giải phẫu, sinh lý và vai trò sinh thái của thực vật"
+    },
+    "Molecular Biology Guide": {
+      "n": "Hướng Dẫn Sinh Học Phân Tử",
+      "d": "Hiểu sao chép DNA, phiên mã, dịch mã và điều hòa gen"
+    },
+    "Bioinformatics Helper": {
+      "n": "Trợ Giúp Tin Sinh Học",
+      "d": "Hỗ trợ phân tích trình tự, tìm kiếm cơ sở dữ liệu và sinh học tính toán"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Hướng Dẫn Học Thần Kinh Học",
+      "d": "Học hệ thần kinh, chức năng não và đường dẫn thần kinh"
+    },
+    "Marine Biology Explorer": {
+      "n": "Khám Phá Sinh Học Biển",
+      "d": "Khám phá hệ sinh thái biển, sinh vật và khoa học đại dương"
+    },
+    "Immunology Study Guide": {
+      "n": "Hướng Dẫn Học Miễn Dịch Học",
+      "d": "Học hệ miễn dịch, đáp ứng miễn dịch và rối loạn miễn dịch"
+    },
+    "Biotechnology Overview": {
+      "n": "Tổng Quan Công Nghệ Sinh Học",
+      "d": "Khám phá ứng dụng công nghệ sinh học bao gồm kỹ thuật di truyền và CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Lập Kế Hoạch Bảo Tồn Sinh Học",
+      "d": "Lên kế hoạch chiến lược bảo tồn cho loài và môi trường sống"
+    },
+    "Physics Problem Solver": {
+      "n": "Giải Bài Vật Lý",
+      "d": "Giải bài vật lý với lời giải chi tiết từng bước"
+    },
+    "Mechanics Helper": {
+      "n": "Trợ Giúp Cơ Học",
+      "d": "Học và giải bài cơ học cổ điển bao gồm động học và động lực học"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Hướng Dẫn Điện & Từ",
+      "d": "Hiểu trường điện, mạch điện và hiện tượng điện từ"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Gia Sư Nhiệt Động Học",
+      "d": "Học các định luật nhiệt động, quá trình và bài toán truyền nhiệt"
+    },
+    "Optics & Waves Guide": {
+      "n": "Hướng Dẫn Quang Học & Sóng",
+      "d": "Học hiện tượng sóng, quang học và hành vi ánh sáng"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Giải Thích Vật Lý Lượng Tử",
+      "d": "Hiểu khái niệm cơ học lượng tử với giải thích rõ ràng và ví dụ"
+    },
+    "Astrophysics Explorer": {
+      "n": "Khám Phá Vật Lý Thiên Văn",
+      "d": "Khám phá tiến hóa sao, vũ trụ học và cơ học thiên thể"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Hướng Dẫn Vật Lý Hạt Nhân",
+      "d": "Học phản ứng hạt nhân, phóng xạ và năng lượng hạt nhân"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Trợ Giúp Động Lực Học Chất Lỏng",
+      "d": "Giải bài cơ học chất lỏng bao gồm ứng dụng Bernoulli và Navier-Stokes"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Gia Sư Cơ Học Cổ Điển",
+      "d": "Tìm hiểu sâu cơ học Lagrange và Hamilton và động lực học nâng cao"
+    },
+    "Relativity Concept Guide": {
+      "n": "Hướng Dẫn Thuyết Tương Đối",
+      "d": "Hiểu thuyết tương đối hẹp và rộng với thí nghiệm tư duy và toán học"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Trợ Giúp Báo Cáo Thí Nghiệm Vật Lý",
+      "d": "Cấu trúc và viết báo cáo thí nghiệm vật lý với phân tích dữ liệu đúng"
+    },
+    "Math Proof Writer": {
+      "n": "Viết Chứng Minh Toán Học",
+      "d": "Viết chứng minh toán học rõ ràng và chặt chẽ với cấu trúc logic"
+    },
+    "Calculus Problem Solver": {
+      "n": "Giải Bài Giải Tích",
+      "d": "Giải bài giải tích bao gồm giới hạn, đạo hàm và tích phân"
+    },
+    "Statistics Helper": {
+      "n": "Trợ Giúp Thống Kê",
+      "d": "Giải bài thống kê và diễn giải kết quả thống kê"
+    },
+    "Linear Algebra Guide": {
+      "n": "Hướng Dẫn Đại Số Tuyến Tính",
+      "d": "Học vector, ma trận, phép biến đổi và giá trị riêng"
+    },
+    "Probability Calculator": {
+      "n": "Tính Xác Suất",
+      "d": "Tính xác suất và giải bài phân phối xác suất"
+    },
+    "Geometry Tutor": {
+      "n": "Gia Sư Hình Học",
+      "d": "Học khái niệm hình học, định lý và giải bài hình học"
+    },
+    "Trigonometry Helper": {
+      "n": "Trợ Giúp Lượng Giác",
+      "d": "Giải phương trình lượng giác, đồng nhất thức và ứng dụng"
+    },
+    "Number Theory Explorer": {
+      "n": "Khám Phá Lý Thuyết Số",
+      "d": "Khám phá số nguyên tố, phép chia, số học modular và ứng dụng mật mã"
+    },
+    "Discrete Math Guide": {
+      "n": "Hướng Dẫn Toán Rời Rạc",
+      "d": "Học tổ hợp, lý thuyết đồ thị, logic và lý thuyết tập hợp"
+    },
+    "Differential Equations Solver": {
+      "n": "Giải Phương Trình Vi Phân",
+      "d": "Giải phương trình vi phân thường và riêng phần với phương pháp chi tiết"
+    },
+    "Math Word Problem Solver": {
+      "n": "Giải Bài Toán Có Lời Văn",
+      "d": "Dịch và giải bài toán thực tế có lời văn từng bước"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Hướng Dẫn Mô Hình Toán Học",
+      "d": "Xây dựng mô hình toán học cho hiện tượng thực tế và ứng dụng"
+    },
+    "SQL Query Generator": {
+      "n": "Tạo Truy Vấn SQL",
+      "d": "Tạo và tối ưu truy vấn SQL để truy xuất và phân tích dữ liệu"
+    },
+    "Python Data Analysis": {
+      "n": "Phân Tích Dữ Liệu Python",
+      "d": "Viết mã Python phân tích dữ liệu bằng pandas, NumPy và hơn thế"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Danh Sách Làm Sạch Dữ Liệu",
+      "d": "Tạo danh sách toàn diện cho làm sạch và tiền xử lý dữ liệu"
+    },
+    "Data Visualization Planner": {
+      "n": "Lập Kế Hoạch Trực Quan Hóa Dữ Liệu",
+      "d": "Chọn biểu đồ phù hợp và thiết kế trực quan hóa dữ liệu hiệu quả"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Chọn Mô Hình Machine Learning",
+      "d": "Chọn mô hình ML tốt nhất cho loại vấn đề và đặc tính dữ liệu"
+    },
+    "A/B Test Calculator": {
+      "n": "Tính A/B Test",
+      "d": "Thiết kế và phân tích A/B test với tính toán ý nghĩa thống kê"
+    },
+    "Dashboard Design Guide": {
+      "n": "Hướng Dẫn Thiết Kế Dashboard",
+      "d": "Thiết kế dashboard hiệu quả với KPI và bố cục phù hợp"
+    },
+    "ETL Pipeline Planner": {
+      "n": "Lập Kế Hoạch ETL Pipeline",
+      "d": "Thiết kế và lên kế hoạch ETL pipeline cho tích hợp và xử lý dữ liệu"
+    },
+    "Feature Engineering Guide": {
+      "n": "Hướng Dẫn Feature Engineering",
+      "d": "Tạo features hiệu quả cho mô hình machine learning"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Kiến Trúc Data Pipeline",
+      "d": "Thiết kế kiến trúc data pipeline có khả năng mở rộng cho phân tích và ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Phân Tích Dữ Liệu Khám Phá",
+      "d": "Thực hiện EDA kỹ lưỡng với kế hoạch phân tích và trực quan hóa có cấu trúc"
+    },
+    "Statistical Test Selector": {
+      "n": "Chọn Phương Pháp Thống Kê",
+      "d": "Chọn và áp dụng phương pháp thống kê phù hợp cho dữ liệu và giả thuyết"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Hướng Dẫn Phân Tích Chuỗi Thời Gian",
+      "d": "Phân tích dữ liệu chuỗi thời gian với dự báo và phát hiện xu hướng"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Bắt Đầu Xử Lý Ngôn Ngữ Tự Nhiên",
+      "d": "Bắt đầu với NLP bao gồm phân loại văn bản và phân tích cảm xúc"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Lập Kế Hoạch Dự Án Thị Giác Máy Tính",
+      "d": "Lên kế hoạch dự án thị giác máy tính từ thu thập dữ liệu đến triển khai mô hình"
+    },
+    "Technical Requirements Document": {
+      "n": "Tài Liệu Yêu Cầu Kỹ Thuật",
+      "d": "Tạo tài liệu yêu cầu kỹ thuật chi tiết cho dự án kỹ thuật"
+    },
+    "Engineering Design Review": {
+      "n": "Đánh Giá Thiết Kế Kỹ Thuật",
+      "d": "Chuẩn bị tài liệu đánh giá thiết kế có cấu trúc cho dự án kỹ thuật"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Phân Tích Chế Độ Hỏng (FMEA)",
+      "d": "Thực hiện phân tích chế độ hỏng và tác động có hệ thống cho sản phẩm hoặc quy trình"
+    },
+    "Project Specification Writer": {
+      "n": "Viết Đặc Tả Dự Án",
+      "d": "Viết đặc tả dự án rõ ràng và hoàn chỉnh cho công việc kỹ thuật"
+    },
+    "CAD Project Planner": {
+      "n": "Lập Kế Hoạch Dự Án CAD",
+      "d": "Lên kế hoạch và tổ chức dự án mô hình CAD với tài liệu đúng"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Hướng Dẫn Quy Trình Sản Xuất",
+      "d": "Chọn và lên kế hoạch quy trình sản xuất cho phát triển sản phẩm"
+    },
+    "Quality Control Checklist": {
+      "n": "Danh Sách Kiểm Soát Chất Lượng",
+      "d": "Tạo danh sách kiểm soát chất lượng và kế hoạch kiểm tra cho sản xuất"
+    },
+    "Engineering Change Request": {
+      "n": "Yêu Cầu Thay Đổi Kỹ Thuật",
+      "d": "Ghi chép và quản lý yêu cầu thay đổi kỹ thuật với phân tích tác động"
+    },
+    "Structural Analysis Guide": {
+      "n": "Hướng Dẫn Phân Tích Kết Cấu",
+      "d": "Hướng dẫn tính toán và phương pháp phân tích kết cấu cho dự án kỹ thuật"
+    },
+    "Materials Selection Guide": {
+      "n": "Hướng Dẫn Chọn Vật Liệu",
+      "d": "Chọn vật liệu tối ưu dựa trên yêu cầu cơ, nhiệt và hóa học"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Tạo Prompt Midjourney",
+      "d": "Soạn prompt Midjourney chi tiết với phong cách, ánh sáng và bố cục"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "Xây Dựng Prompt DALL-E",
+      "d": "Xây dựng prompt DALL-E tối ưu với mô tả rõ ràng và hướng nghệ thuật"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Viết Prompt Stable Diffusion",
+      "d": "Tạo prompt Stable Diffusion với kỹ thuật prompt tích cực và tiêu cực"
+    },
+    "Product Photography Prompt": {
+      "n": "Prompt Chụp Ảnh Sản Phẩm",
+      "d": "Tạo prompt AI cho ảnh sản phẩm tuyệt đẹp chất lượng studio"
+    },
+    "Landscape Art Prompt": {
+      "n": "Prompt Nghệ Thuật Phong Cảnh",
+      "d": "Tạo prompt nghệ thuật phong cảnh ngoạn mục với chi tiết môi trường và bầu không khí"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Prompt Chụp Ảnh Chân Dung",
+      "d": "Tạo prompt chân dung AI với hướng dẫn ánh sáng, biểu cảm và bố cục"
+    },
+    "Food Photography Prompt": {
+      "n": "Prompt Chụp Ảnh Ẩm Thực",
+      "d": "Soạn prompt chụp ảnh ẩm thực hấp dẫn với tạo kiểu và bày trí"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Prompt Trực Quan Hóa Kiến Trúc",
+      "d": "Tạo prompt trực quan hóa kiến trúc cho tòa nhà và không gian nội thất"
+    },
+    "Fashion Design Prompt": {
+      "n": "Prompt Thiết Kế Thời Trang",
+      "d": "Tạo khái niệm thiết kế thời trang với vải, dáng và chi tiết tạo kiểu"
+    },
+    "Comic Art Prompt": {
+      "n": "Prompt Nghệ Thuật Truyện Tranh",
+      "d": "Tạo prompt nghệ thuật phong cách truyện tranh với bố cục khung và hành động nhân vật"
+    },
+    "Abstract Art Prompt": {
+      "n": "Prompt Nghệ Thuật Trừu Tượng",
+      "d": "Tạo prompt nghệ thuật trừu tượng với lý thuyết màu sắc, kết cấu và biểu đạt cảm xúc"
+    },
+    "Icon Design Brief": {
+      "n": "Bản tóm tắt thiết kế biểu tượng",
+      "d": "Thiết kế bộ biểu tượng gọn gàng với phong cách nhất quán và ngôn ngữ thị giác thống nhất"
+    },
+    "Infographic Design Brief": {
+      "n": "Bản Mô Tả Thiết Kế Infographic",
+      "d": "Lên kế hoạch bố cục infographic với trực quan hóa dữ liệu và hệ thống phân cấp thị giác"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Prompt Đồ Họa Mạng Xã Hội",
+      "d": "Tạo đồ họa mạng xã hội bắt mắt cho mọi nền tảng"
+    },
+    "Meme Creator Prompt": {
+      "n": "Prompt Tạo Meme",
+      "d": "Tạo ý tưởng meme với chọn định dạng, chú thích và tiềm năng lan truyền"
+    },
+    "AI Avatar Prompt": {
+      "n": "Prompt Avatar AI",
+      "d": "Tạo thiết kế avatar AI độc đáo cho hồ sơ, game và danh tính ảo"
+    },
+    "Song Lyrics Writer": {
+      "n": "Viết Lời Bài Hát",
+      "d": "Viết lời bài hát gốc với câu hát, điệp khúc và cầu nối trong mọi thể loại"
+    },
+    "Chord Progression Generator": {
+      "n": "Tạo Tiến Trình Hợp Âm",
+      "d": "Tạo tiến trình hợp âm với hướng dẫn lý thuyết âm nhạc cho mọi thể loại và tâm trạng"
+    },
+    "Beat Ideas Creator": {
+      "n": "Tạo Ý Tưởng Beat",
+      "d": "Tạo ý tưởng beat với nhịp độ, mẫu trống và ý tưởng nhạc cụ"
+    },
+    "Song Structure Builder": {
+      "n": "Xây Dựng Cấu Trúc Bài Hát",
+      "d": "Thiết kế sắp xếp bài hát với thứ tự phần, động lực và chuyển tiếp"
+    },
+    "Rap Verse Writer": {
+      "n": "Viết Verse Rap",
+      "d": "Viết verse rap mạnh mẽ với mẫu flow, sơ đồ vần và chơi chữ"
+    },
+    "Country Song Writer": {
+      "n": "Viết Bài Hát Country",
+      "d": "Viết bài hát country chân thực với kể chuyện, hình ảnh và phong cách"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Tạo Hook Nhạc Pop",
+      "d": "Soạn hook và điệp khúc pop hấp dẫn đọng lại trong đầu người nghe"
+    },
+    "Rock Ballad Writer": {
+      "n": "Viết Ballad Rock",
+      "d": "Viết ballad rock đầy cảm xúc với xây dựng mạnh mẽ và điệp khúc hoành tráng"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Hướng Dẫn Phối Nhạc",
+      "d": "Lên kế hoạch phối nhạc hoàn chỉnh với nhạc cụ, giọng và động lực"
+    },
+    "Band Name Generator": {
+      "n": "Tạo Tên Ban Nhạc",
+      "d": "Tạo tên ban nhạc sáng tạo dựa trên thể loại, phong cách và sở thích hình ảnh"
+    },
+    "Music Video Concept": {
+      "n": "Ý Tưởng MV",
+      "d": "Phát triển ý tưởng MV sáng tạo với câu chuyện, hình ảnh và vũ đạo"
+    },
+    "Mixing Checklist": {
+      "n": "Danh Sách Mix Nhạc",
+      "d": "Danh sách mix nhạc toàn diện bao gồm EQ, nén, hiệu ứng và cân bằng"
+    },
+    "Film Score Brief": {
+      "n": "Bản Mô Tả Nhạc Phim",
+      "d": "Tạo bản mô tả nhạc phim chi tiết với tâm trạng, nhạc cụ và gợi ý thời gian"
+    },
+    "YouTube Shorts Script": {
+      "n": "Kịch Bản YouTube Shorts",
+      "d": "Viết kịch bản YouTube Shorts hấp dẫn tối ưu cho video dọc 60 giây"
+    },
+    "Video Storyboard Creator": {
+      "n": "Tạo Storyboard Video",
+      "d": "Lên kế hoạch storyboard với mô tả cảnh, góc quay và chuyển cảnh"
+    },
+    "Documentary Outline": {
+      "n": "Dàn Ý Phim Tài Liệu",
+      "d": "Cấu trúc phim tài liệu hấp dẫn với cung kịch, phỏng vấn và kế hoạch b-roll"
+    },
+    "Vlog Episode Planner": {
+      "n": "Lập Kế Hoạch Tập Vlog",
+      "d": "Lên kế hoạch tập vlog hấp dẫn với địa điểm, điểm nói và đa dạng hình ảnh"
+    },
+    "Screenwriting Helper": {
+      "n": "Trợ Giúp Viết Kịch Bản",
+      "d": "Phát triển kịch bản với định dạng đúng, hội thoại và chỉ đạo cảnh"
+    },
+    "Short Film Script": {
+      "n": "Kịch Bản Phim Ngắn",
+      "d": "Viết kịch bản phim ngắn hoàn chỉnh với kể chuyện bằng hình ảnh và câu chuyện chặt chẽ"
+    },
+    "Animation Script Writer": {
+      "n": "Viết Kịch Bản Hoạt Hình",
+      "d": "Viết kịch bản hoạt hình với gag hình ảnh, hành động nhân vật và nhịp điệu"
+    },
+    "Video Editing Brief": {
+      "n": "Bản Mô Tả Dựng Video",
+      "d": "Tạo bản mô tả dựng video chi tiết với nhịp độ, hiệu ứng và hướng dẫn phong cách"
+    },
+    "Livestream Run Sheet": {
+      "n": "Kịch Bản Livestream",
+      "d": "Lên kế hoạch livestream với phân đoạn thời gian, điểm nói và kích hoạt tương tác"
+    },
+    "Tutorial Video Script": {
+      "n": "Kịch Bản Video Hướng Dẫn",
+      "d": "Viết kịch bản video hướng dẫn rõ ràng với hướng dẫn từng bước và hình ảnh"
+    },
+    "Explainer Video Script": {
+      "n": "Kịch Bản Video Giải Thích",
+      "d": "Viết kịch bản video giải thích rõ ràng đơn giản hóa chủ đề phức tạp bằng hình ảnh"
+    },
+    "Video SEO Optimizer": {
+      "n": "Tối Ưu SEO Video",
+      "d": "Tối ưu metadata video với tiêu đề, mô tả, thẻ và chiến lược thumbnail"
+    },
+    "Novel Outline Creator": {
+      "n": "Tạo Dàn Ý Tiểu Thuyết",
+      "d": "Xây dựng dàn ý tiểu thuyết toàn diện với cấu trúc cốt truyện, chương và vòng cung nhân vật"
+    },
+    "Short Story Writer": {
+      "n": "Viết Truyện Ngắn",
+      "d": "Viết truyện ngắn hấp dẫn với nhân vật sống động và kết thúc thỏa mãn"
+    },
+    "Poetry Generator": {
+      "n": "Tạo Thơ",
+      "d": "Sáng tác thơ gốc ở nhiều hình thức với hình ảnh, nhịp và cảm xúc"
+    },
+    "Book Proposal Template": {
+      "n": "Mẫu Đề Xuất Sách",
+      "d": "Tạo đề xuất sách chuyên nghiệp với phân tích thị trường và tóm tắt chương"
+    },
+    "Memoir Outline": {
+      "n": "Dàn Ý Hồi Ký",
+      "d": "Cấu trúc hồi ký cá nhân với chương chủ đề và tường thuật phản chiếu"
+    },
+    "Children's Book Creator": {
+      "n": "Tạo Sách Thiếu Nhi",
+      "d": "Viết sách thiếu nhi phù hợp lứa tuổi với câu chuyện hấp dẫn và ghi chú minh họa"
+    },
+    "Screenplay Outline": {
+      "n": "Dàn Ý Kịch Bản Phim",
+      "d": "Phác thảo kịch bản phim với cấu trúc ba hồi, phân tích cảnh và ghi chú hội thoại"
+    },
+    "Play Script Writer": {
+      "n": "Viết Kịch Bản Sân Khấu",
+      "d": "Viết kịch bản sân khấu với chỉ đạo sân khấu, hội thoại và cấu trúc cảnh"
+    },
+    "Comic Book Script": {
+      "n": "Kịch Bản Truyện Tranh",
+      "d": "Viết kịch bản truyện tranh với mô tả khung, hội thoại và nhịp điệu"
+    },
+    "Fan Fiction Creator": {
+      "n": "Tạo Fan Fiction",
+      "d": "Viết fan fiction với giọng nhân vật trung thành và cốt truyện mới sáng tạo"
+    },
+    "Writing Prompt Generator": {
+      "n": "Tạo Gợi Ý Viết",
+      "d": "Tạo gợi ý viết sáng tạo với thể loại, ràng buộc và hạt giống câu chuyện"
+    },
+    "Dialogue Writer": {
+      "n": "Viết Hội Thoại",
+      "d": "Soạn hội thoại tự nhiên thể hiện tính cách và đẩy cốt truyện tiến lên"
+    },
+    "Plot Twist Generator": {
+      "n": "Tạo Bước Ngoặt",
+      "d": "Tạo bước ngoặt bất ngờ nhưng hợp lý làm thay đổi bối cảnh câu chuyện"
+    },
+    "Query Letter Writer": {
+      "n": "Viết Thư Giới Thiệu",
+      "d": "Viết thư giới thiệu hấp dẫn gửi đại lý văn học với hook và tóm tắt"
+    },
+    "Book Description Writer": {
+      "n": "Viết Mô Tả Sách",
+      "d": "Viết mô tả sách hấp dẫn thu hút người đọc và thúc đẩy doanh số"
+    },
+    "Ghostwriting Brief": {
+      "n": "Bản Mô Tả Viết Thuê",
+      "d": "Tạo bản mô tả viết thuê chi tiết với giọng, phong cách và yêu cầu nội dung"
+    },
+    "Technical Writing Guide": {
+      "n": "Hướng Dẫn Viết Kỹ Thuật",
+      "d": "Viết tài liệu kỹ thuật rõ ràng với định dạng có cấu trúc và chính xác"
+    },
+    "Grant Proposal Writer": {
+      "n": "Viết Đề Xuất Tài Trợ",
+      "d": "Viết đề xuất tài trợ thuyết phục với mô tả dự án và biện minh ngân sách"
+    },
+    "White Paper Outline": {
+      "n": "Dàn Ý Sách Trắng",
+      "d": "Cấu trúc sách trắng có thẩm quyền với nghiên cứu, phân tích và khuyến nghị"
+    },
+    "Copywriting Formula": {
+      "n": "Công Thức Viết Quảng Cáo",
+      "d": "Áp dụng công thức viết quảng cáo đã được chứng minh như AIDA, PAS và BAB cho mọi sản phẩm"
+    },
+    "Instagram Content Planner": {
+      "n": "Lập Kế Hoạch Nội Dung Instagram",
+      "d": "Lên kế hoạch nội dung Instagram cả tuần với bài đăng, stories, reels và chú thích"
+    },
+    "X Thread Creator": {
+      "n": "Tạo Thread X",
+      "d": "Viết thread X hấp dẫn xây dựng uy tín và thúc đẩy tương tác"
+    },
+    "Reddit Post Writer": {
+      "n": "Viết Bài Reddit",
+      "d": "Viết bài Reddit tối ưu cho subreddit cụ thể phù hợp quy tắc cộng đồng"
+    },
+    "Viral Hook Generator": {
+      "n": "Tạo Hook Lan Truyền",
+      "d": "Tạo hook bắt mắt cho nội dung mạng xã hội trên các nền tảng"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Công Cụ Chiến Lược Hashtag",
+      "d": "Nghiên cứu và tổ chức chiến lược hashtag để tối đa khả năng khám phá"
+    },
+    "Engagement Response Generator": {
+      "n": "Tạo Phản Hồi Tương Tác",
+      "d": "Tạo phản hồi chu đáo cho bình luận, DM và đề cập ở quy mô lớn"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Viết Bài LinkedIn",
+      "d": "Viết bài lãnh đạo tư tưởng LinkedIn thiết lập uy tín chuyên nghiệp"
+    },
+    "Episode Show Notes": {
+      "n": "Ghi Chú Tập Podcast",
+      "d": "Viết ghi chú tập chi tiết với mốc thời gian, liên kết và điểm chính"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Danh Sách Chỉnh Sửa Podcast",
+      "d": "Chuẩn hóa quy trình chỉnh sửa podcast với điểm kiểm tra chất lượng"
+    },
+    "Prompt Improver": {
+      "n": "Cải Thiện Prompt",
+      "d": "Tinh chỉnh và tối ưu mọi prompt cho đầu ra AI tốt hơn với kỹ thuật có cấu trúc"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Tổ Chức Chuỗi Suy Nghĩ",
+      "d": "Xây dựng prompt chuỗi suy nghĩ hướng dẫn AI lý luận từng bước"
+    },
+    "RAG Prompt Generator": {
+      "n": "Tạo Prompt RAG",
+      "d": "Tạo prompt RAG với tối ưu cửa sổ ngữ cảnh"
+    },
+    "Prompt Translator": {
+      "n": "Dịch Prompt",
+      "d": "Dịch prompt giữa các mô hình AI khác nhau giữ nguyên ý định và chất lượng"
+    },
+    "Prompt Evaluator": {
+      "n": "Đánh Giá Prompt",
+      "d": "Đánh giá và chấm điểm prompt trên nhiều chiều chất lượng với mẹo cải thiện"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Tạo Ví Dụ Few-Shot",
+      "d": "Tạo ví dụ few-shot chất lượng cao cho prompt học trong ngữ cảnh"
+    },
+    "System Prompt Writer": {
+      "n": "Viết System Prompt",
+      "d": "Viết system prompt hiệu quả xác định hành vi, ràng buộc và phong cách đầu ra AI"
+    },
+    "AI Guardrails Designer": {
+      "n": "Thiết Kế Rào Cản AI",
+      "d": "Thiết kế rào cản an toàn và chính sách nội dung cho ứng dụng AI"
+    },
+    "AI Use Case Identifier": {
+      "n": "Xác Định Ca Sử Dụng AI",
+      "d": "Xác định và đánh giá ca sử dụng AI tiềm năng cho doanh nghiệp và quy trình"
+    },
+    "Model Comparison Guide": {
+      "n": "Hướng Dẫn So Sánh Mô Hình",
+      "d": "So sánh mô hình AI về khả năng, giá cả và phù hợp ca sử dụng"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "Tạo Dữ Liệu Fine-Tuning LLM",
+      "d": "Tạo và cấu trúc dữ liệu huấn luyện cho dự án fine-tuning LLM"
+    },
+    "Debugger Assistant": {
+      "n": "Trợ Lý Gỡ Lỗi",
+      "d": "Gỡ lỗi mã có hệ thống với phân tích nguyên nhân gốc và đề xuất sửa"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "Lập Kế Hoạch CI/CD Pipeline",
+      "d": "Thiết kế CI/CD pipeline với cấu hình giai đoạn build, test và deploy"
+    },
+    "Docker Configuration Guide": {
+      "n": "Hướng Dẫn Cấu Hình Docker",
+      "d": "Tạo Dockerfile và cấu hình compose với thực hành tốt nhất"
+    },
+    "Git Workflow Planner": {
+      "n": "Lập Kế Hoạch Git Workflow",
+      "d": "Thiết kế chiến lược nhánh Git và quy trình cộng tác cho đội phát triển"
+    },
+    "Code Migration Guide": {
+      "n": "Hướng Dẫn Di Chuyển Mã",
+      "d": "Lên kế hoạch và thực hiện di chuyển mã giữa ngôn ngữ, framework hoặc phiên bản"
+    },
+    "Database Schema Designer": {
+      "n": "Thiết Kế Schema Cơ Sở Dữ Liệu",
+      "d": "Thiết kế schema cơ sở dữ liệu với bảng, quan hệ, chỉ mục và ràng buộc"
+    },
+    "Performance Optimization Guide": {
+      "n": "Hướng Dẫn Tối Ưu Hiệu Suất",
+      "d": "Xác định và giải quyết điểm nghẽn hiệu suất với profiling và tối ưu"
+    },
+    "Microservices Architecture": {
+      "n": "Kiến Trúc Microservices",
+      "d": "Thiết kế kiến trúc microservices với ranh giới dịch vụ, giao tiếp và triển khai"
+    },
+    "GraphQL Schema Builder": {
+      "n": "Xây Dựng Schema GraphQL",
+      "d": "Thiết kế schema GraphQL với types, queries, mutations và subscriptions"
+    },
+    "Terraform Configuration": {
+      "n": "Cấu Hình Terraform",
+      "d": "Tạo cấu hình Terraform cho cung cấp hạ tầng đám mây"
+    },
+    "AWS Architecture Planner": {
+      "n": "Lập Kế Hoạch Kiến Trúc AWS",
+      "d": "Thiết kế kiến trúc đám mây AWS với chọn dịch vụ và tối ưu chi phí"
+    },
+    "Code Documentation Generator": {
+      "n": "Tạo Tài Liệu Mã",
+      "d": "Tạo tài liệu inline, JSDoc, docstrings và chú thích mã"
+    },
+    "Technical Interview Prep": {
+      "n": "Chuẩn Bị Phỏng Vấn Kỹ Thuật",
+      "d": "Chuẩn bị phỏng vấn kỹ thuật với phân tích bài toán và mẫu giải pháp"
+    },
+    "Changelog Writer": {
+      "n": "Viết Changelog",
+      "d": "Viết changelog rõ ràng theo định dạng Keep a Changelog với semantic versioning"
+    },
+    "Error Handling Strategy": {
+      "n": "Chiến Lược Xử Lý Lỗi",
+      "d": "Thiết kế chiến lược xử lý lỗi toàn diện với mẫu và thông báo người dùng"
+    },
+    "Logging Strategy Guide": {
+      "n": "Hướng Dẫn Chiến Lược Logging",
+      "d": "Thiết kế chiến lược logging ứng dụng với cấp độ, định dạng và tổng hợp"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Hướng Dẫn Thiết Lập Giám Sát",
+      "d": "Thiết lập giám sát ứng dụng với metrics, cảnh báo và dashboard"
+    },
+    "Load Testing Plan": {
+      "n": "Kế Hoạch Kiểm Thử Tải",
+      "d": "Thiết kế kế hoạch kiểm thử tải với kịch bản, metrics và tiêu chí chấp nhận"
+    },
+    "Security Audit Checklist": {
+      "n": "Danh Sách Kiểm Tra Bảo Mật",
+      "d": "Kiểm tra bảo mật với danh sách dựa trên OWASP và hướng dẫn khắc phục"
+    },
+    "Security Checklist Creator": {
+      "n": "Tạo Danh Sách Bảo Mật",
+      "d": "Tạo danh sách bảo mật toàn diện phù hợp ứng dụng và stack công nghệ"
+    },
+    "Penetration Testing Plan": {
+      "n": "Kế Hoạch Kiểm Thử Xâm Nhập",
+      "d": "Lên kế hoạch kiểm thử xâm nhập có cấu trúc với phạm vi, phương pháp và mẫu báo cáo"
+    },
+    "Secure Coding Guide": {
+      "n": "Hướng Dẫn Lập Trình An Toàn",
+      "d": "Tạo hướng dẫn lập trình an toàn theo ngôn ngữ với phòng ngừa lỗ hổng"
+    },
+    "Incident Response Plan": {
+      "n": "Kế Hoạch Ứng Phó Sự Cố",
+      "d": "Thiết kế kế hoạch ứng phó sự cố với phát hiện, ngăn chặn và phục hồi"
+    },
+    "Security Policy Writer": {
+      "n": "Viết Chính Sách Bảo Mật",
+      "d": "Viết chính sách bảo mật tổ chức về kiểm soát truy cập, xử lý dữ liệu và tuân thủ"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Hướng Dẫn Đánh Giá Lỗ Hổng",
+      "d": "Thực hiện đánh giá lỗ hổng có hệ thống với quét và khắc phục ưu tiên"
+    },
+    "Security Awareness Training": {
+      "n": "Đào Tạo Nhận Thức Bảo Mật",
+      "d": "Thiết kế chương trình đào tạo nhận thức bảo mật cho nhân viên mọi cấp"
+    },
+    "Password Policy Creator": {
+      "n": "Tạo Chính Sách Mật Khẩu",
+      "d": "Tạo chính sách mật khẩu mạnh với độ phức tạp, thay đổi và yêu cầu MFA"
+    },
+    "Data Protection Plan": {
+      "n": "Kế Hoạch Bảo Vệ Dữ Liệu",
+      "d": "Thiết kế chiến lược bảo vệ dữ liệu bao gồm phân loại, mã hóa và lưu giữ"
+    },
+    "SWOT Analysis Pro": {
+      "n": "Phân Tích SWOT Chuyên Nghiệp",
+      "d": "Phân tích SWOT nâng cao với chấm điểm có trọng số và kế hoạch hành động"
+    },
+    "Pitch Deck Outline": {
+      "n": "Dàn Ý Bài Thuyết Trình",
+      "d": "Tạo cấu trúc bài thuyết trình đầu tư hấp dẫn"
+    },
+    "Business Canvas Creator": {
+      "n": "Công cụ tạo mô hình kinh doanh",
+      "d": "Tạo mô hình kinh doanh Canvas hoàn chỉnh cho dự án của bạn"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Báo cáo phân tích đối thủ",
+      "d": "Phân tích đối thủ cạnh tranh và xác định cơ hội định vị thị trường"
+    },
+    "Strategic Planning Guide": {
+      "n": "Hướng dẫn lập kế hoạch chiến lược",
+      "d": "Xây dựng kế hoạch chiến lược nhiều năm với mục tiêu và cột mốc"
+    },
+    "Annual Report Template": {
+      "n": "Mẫu báo cáo thường niên",
+      "d": "Cấu trúc báo cáo thường niên công ty với các điểm nổi bật về tài chính và hoạt động"
+    },
+    "Board Meeting Agenda": {
+      "n": "Chương trình họp hội đồng quản trị",
+      "d": "Chương trình họp hội đồng quản trị chuyên nghiệp với các thông lệ quản trị tốt nhất"
+    },
+    "Company Newsletter": {
+      "n": "Bản tin công ty",
+      "d": "Thiết kế bản tin nội bộ hoặc bên ngoài hấp dẫn cho công ty"
+    },
+    "Employee Survey Creator": {
+      "n": "Công cụ tạo khảo sát nhân viên",
+      "d": "Xây dựng khảo sát hiệu quả về mức độ gắn kết và hài lòng của nhân viên"
+    },
+    "Team Building Activity Planner": {
+      "n": "Lập kế hoạch hoạt động gắn kết đội nhóm",
+      "d": "Lên kế hoạch các sự kiện và hoạt động gắn kết đội nhóm hấp dẫn"
+    },
+    "Remote Work Policy": {
+      "n": "Chính sách làm việc từ xa",
+      "d": "Tạo chính sách làm việc từ xa toàn diện cho tổ chức của bạn"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Kế hoạch đa dạng & hòa nhập",
+      "d": "Xây dựng chiến lược đa dạng, công bằng và hòa nhập có ý nghĩa"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Ma trận đánh giá nhà cung cấp",
+      "d": "Đánh giá và so sánh nhà cung cấp một cách có hệ thống cho các quyết định mua sắm"
+    },
+    "Process Improvement Plan": {
+      "n": "Kế hoạch cải tiến quy trình",
+      "d": "Xác định và triển khai cải tiến quy trình sử dụng phương pháp tinh gọn"
+    },
+    "Change Management Plan": {
+      "n": "Kế hoạch quản lý thay đổi",
+      "d": "Hướng dẫn thay đổi tổ chức với sự đồng thuận của các bên liên quan và truyền thông"
+    },
+    "Risk Assessment Template": {
+      "n": "Mẫu đánh giá rủi ro",
+      "d": "Xác định, đánh giá và giảm thiểu rủi ro kinh doanh một cách có hệ thống"
+    },
+    "Succession Planning Guide": {
+      "n": "Hướng dẫn kế hoạch kế nhiệm",
+      "d": "Lên kế hoạch chuyển giao lãnh đạo và phát triển đội ngũ kế cận"
+    },
+    "Business Continuity Plan": {
+      "n": "Kế hoạch duy trì hoạt động kinh doanh",
+      "d": "Chuẩn bị cho các gián đoạn với chiến lược duy trì hoạt động toàn diện"
+    },
+    "Customer Journey Map": {
+      "n": "Bản đồ hành trình khách hàng",
+      "d": "Trực quan hóa và tối ưu hóa trải nghiệm khách hàng toàn diện"
+    },
+    "Brand Guidelines Template": {
+      "n": "Mẫu hướng dẫn thương hiệu",
+      "d": "Xác định nhận diện thương hiệu với hướng dẫn phong cách và sử dụng toàn diện"
+    },
+    "Mission & Vision Statement": {
+      "n": "Tuyên bố sứ mệnh & tầm nhìn",
+      "d": "Soạn thảo tuyên bố sứ mệnh và tầm nhìn truyền cảm hứng cho tổ chức của bạn"
+    },
+    "Company Culture Document": {
+      "n": "Tài liệu văn hóa công ty",
+      "d": "Xác định và ghi lại văn hóa và giá trị cốt lõi của tổ chức"
+    },
+    "Organizational Chart Planner": {
+      "n": "Lập Sơ Đồ Tổ Chức",
+      "d": "Thiết kế và lên kế hoạch cơ cấu tổ chức và tuyến báo cáo"
+    },
+    "Department Budget Template": {
+      "n": "Mẫu Ngân Sách Phòng Ban",
+      "d": "Tạo ngân sách phòng ban chi tiết với dự báo và theo dõi"
+    },
+    "KPI Dashboard Builder": {
+      "n": "Xây Dựng Dashboard KPI",
+      "d": "Thiết kế dashboard chỉ số hiệu suất chính cho quyết định dựa trên dữ liệu"
+    },
+    "Job Description Writer": {
+      "n": "Viết Mô Tả Công Việc",
+      "d": "Tạo mô tả công việc rõ ràng và bao gồm thu hút nhân tài hàng đầu"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Tạo Phiếu Đánh Giá Phỏng Vấn",
+      "d": "Xây dựng phiếu đánh giá phỏng vấn có cấu trúc để đánh giá ứng viên nhất quán"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Danh Sách Đào Tạo Nhân Viên Mới",
+      "d": "Danh sách đào tạo toàn diện cho thành công của nhân viên mới"
+    },
+    "Performance Improvement Plan": {
+      "n": "Kế Hoạch Cải Thiện Hiệu Suất",
+      "d": "Tạo kế hoạch cải thiện hiệu suất hỗ trợ với mốc rõ ràng"
+    },
+    "Exit Interview Guide": {
+      "n": "Hướng Dẫn Phỏng Vấn Nghỉ Việc",
+      "d": "Thực hiện phỏng vấn nghỉ việc sâu sắc để cải thiện giữ chân nhân viên"
+    },
+    "Compensation Analysis": {
+      "n": "Phân Tích Lương Thưởng",
+      "d": "Phân tích và đối chuẩn gói lương thưởng theo cạnh tranh thị trường"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Hướng Dẫn So Sánh Phúc Lợi",
+      "d": "So sánh và đánh giá các gói phúc lợi nhân viên"
+    },
+    "Team Retrospective": {
+      "n": "Đánh Giá Lại Nhóm",
+      "d": "Tổ chức đánh giá lại nhóm hiệu quả cho cải tiến liên tục"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Mẫu Họp 1-1",
+      "d": "Cấu trúc cuộc họp 1-1 hiệu quả với báo cáo trực tiếp"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Lập Kế Hoạch Pipeline Tuyển Dụng",
+      "d": "Thiết kế và tối ưu pipeline tuyển dụng từ đầu đến cuối"
+    },
+    "Employee Recognition Program": {
+      "n": "Chương Trình Ghi Nhận Nhân Viên",
+      "d": "Xây dựng chương trình ghi nhận và khen thưởng nhân viên có ý nghĩa"
+    },
+    "Training Program Designer": {
+      "n": "Thiết Kế Chương Trình Đào Tạo",
+      "d": "Thiết kế chương trình đào tạo và phát triển nhân viên hiệu quả"
+    },
+    "Workplace Policy Writer": {
+      "n": "Viết Chính Sách Nơi Làm Việc",
+      "d": "Soạn chính sách nơi làm việc rõ ràng bao gồm các chủ đề tổ chức chính"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Hướng Dẫn Giải Quyết Xung Đột",
+      "d": "Xử lý xung đột nơi làm việc với khung giải quyết có cấu trúc"
+    },
+    "Remote Team Handbook": {
+      "n": "Sổ Tay Đội Từ Xa",
+      "d": "Tạo sổ tay toàn diện cho vận hành đội phân tán"
+    },
+    "Career Path Planner": {
+      "n": "Lập Kế Hoạch Con Đường Sự Nghiệp",
+      "d": "Vẽ lộ trình sự nghiệp với các mốc hành động cụ thể"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Chuẩn Bị Đàm Phán Lương",
+      "d": "Chuẩn bị điểm nói đàm phán lương tự tin và chiến lược"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "Xây Dựng Hồ Sơ LinkedIn",
+      "d": "Tối ưu hồ sơ LinkedIn để thu hút nhà tuyển dụng và cơ hội"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Hướng Dẫn Xây Dựng Portfolio",
+      "d": "Tạo portfolio chuyên nghiệp nổi bật trưng bày công việc tốt nhất"
+    },
+    "Networking Email Templates": {
+      "n": "Mẫu Email Kết Nối",
+      "d": "Viết email kết nối hiệu quả cho phát triển sự nghiệp và giới thiệu"
+    },
+    "Career Pivot Guide": {
+      "n": "Hướng Dẫn Chuyển Đổi Sự Nghiệp",
+      "d": "Điều hướng chuyển đổi sự nghiệp thành công với kế hoạch có cấu trúc"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Máy tính giá freelance",
+      "d": "Tính toán mức giá freelance lý tưởng và chiến lược định giá"
+    },
+    "Professional Development Plan": {
+      "n": "Kế Hoạch Phát Triển Chuyên Nghiệp",
+      "d": "Tạo kế hoạch có cấu trúc cho phát triển chuyên nghiệp liên tục"
+    },
+    "Mentorship Program Guide": {
+      "n": "Hướng Dẫn Chương Trình Cố Vấn",
+      "d": "Tìm cấu trúc và tối đa hóa mối quan hệ cố vấn"
+    },
+    "Side Hustle Validator": {
+      "n": "Đánh Giá Nghề Tay Trái",
+      "d": "Đánh giá và xác nhận ý tưởng kinh doanh phụ về tính khả thi"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Kiểm Tra Cân Bằng Cuộc Sống",
+      "d": "Đánh giá và cải thiện cân bằng công việc-cuộc sống với chiến lược hành động"
+    },
+    "Speaking Proposal Template": {
+      "n": "Mẫu Đề Xuất Diễn Thuyết",
+      "d": "Tạo đề xuất diễn thuyết hội nghị và sự kiện thuyết phục"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Viết Đề Xuất Tư Vấn",
+      "d": "Soạn đề xuất tư vấn chiến thắng giúp chốt hợp đồng"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Phân Tích Khoảng Trống Kỹ Năng",
+      "d": "Xác định và lên kế hoạch lấp khoảng trống kỹ năng quan trọng cho thăng tiến"
+    },
+    "Career Journal Prompts": {
+      "n": "Gợi Ý Nhật Ký Sự Nghiệp",
+      "d": "Phản ánh hành trình sự nghiệp với bài tập viết nhật ký có hướng dẫn"
+    },
+    "Informational Interview Guide": {
+      "n": "Hướng Dẫn Phỏng Vấn Tìm Hiểu",
+      "d": "Chuẩn bị và thực hiện phỏng vấn tìm hiểu thông tin hiệu quả"
+    },
+    "Thank You Note Writer": {
+      "n": "Viết Thư Cảm Ơn",
+      "d": "Viết thư cảm ơn chuyên nghiệp chu đáo cho mọi dịp"
+    },
+    "Resignation Letter Template": {
+      "n": "Mẫu Thư Từ Chức",
+      "d": "Viết thư từ chức chuyên nghiệp duy trì quan hệ tích cực"
+    },
+    "Meal Prep Planner": {
+      "n": "Lập Kế Hoạch Chuẩn Bị Bữa Ăn",
+      "d": "Lên kế hoạch bữa ăn tuần với danh sách mua sắm và lịch chuẩn bị"
+    },
+    "Habit Tracker Designer": {
+      "n": "Thiết Kế Theo Dõi Thói Quen",
+      "d": "Thiết kế hệ thống theo dõi thói quen cá nhân cho thay đổi lâu dài"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Hướng Dẫn Cải Thiện Giấc Ngủ",
+      "d": "Tối ưu chất lượng giấc ngủ với chiến lược dựa trên bằng chứng"
+    },
+    "Stress Management Plan": {
+      "n": "Kế Hoạch Quản Lý Căng Thẳng",
+      "d": "Xây dựng bộ công cụ và kế hoạch hành động quản lý căng thẳng cá nhân"
+    },
+    "Yoga Routine Builder": {
+      "n": "Xây Dựng Bài Tập Yoga",
+      "d": "Tạo bài tập yoga tùy chỉnh cho trình độ và mục tiêu của bạn"
+    },
+    "Running Training Plan": {
+      "n": "Kế Hoạch Tập Chạy",
+      "d": "Xây dựng kế hoạch tập chạy có cấu trúc cho mọi mục tiêu cự ly"
+    },
+    "Swimming Workout": {
+      "n": "Bài Tập Bơi",
+      "d": "Thiết kế bài tập bơi hiệu quả cho thể lực và kỹ thuật"
+    },
+    "Strength Training Program": {
+      "n": "Chương Trình Tập Sức Mạnh",
+      "d": "Tạo chương trình tập sức mạnh tiến bộ phù hợp mục tiêu"
+    },
+    "Flexibility Routine": {
+      "n": "Bài Tập Linh Hoạt",
+      "d": "Cải thiện linh hoạt và khả năng vận động với bài giãn cơ có cấu trúc"
+    },
+    "HIIT Workout Creator": {
+      "n": "Tạo Bài Tập HIIT",
+      "d": "Thiết kế bài tập cường độ cao ngắt quãng cho kết quả tối đa"
+    },
+    "Nutrition Label Reader": {
+      "n": "Đọc Nhãn Dinh Dưỡng",
+      "d": "Học cách đọc và hiểu nhãn dinh dưỡng cho lựa chọn lành mạnh hơn"
+    },
+    "Calorie Counter Guide": {
+      "n": "Hướng Dẫn Đếm Calo",
+      "d": "Thiết lập theo dõi calo cá nhân với phân tích macro"
+    },
+    "Hydration Tracker": {
+      "n": "Theo Dõi Uống Nước",
+      "d": "Theo dõi và tối ưu lượng nước uống hàng ngày và thói quen giữ nước"
+    },
+    "Mental Health Check-In": {
+      "n": "Kiểm Tra Sức Khỏe Tâm Thần",
+      "d": "Tự đánh giá sức khỏe tâm thần có hướng dẫn và theo dõi sức khỏe"
+    },
+    "Therapy Session Prep": {
+      "n": "Chuẩn Bị Buổi Trị Liệu",
+      "d": "Chuẩn bị cho buổi trị liệu với phản ánh có cấu trúc và thiết lập mục tiêu"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Gợi Ý Nhật Ký Biết Ơn",
+      "d": "Gợi ý viết nhật ký biết ơn hàng ngày để cải thiện sức khỏe tâm thần"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Tạo Bài Tập Chánh Niệm",
+      "d": "Tạo bài tập chánh niệm và thở cá nhân hóa"
+    },
+    "Supplement Research Guide": {
+      "n": "Hướng Dẫn Nghiên Cứu Thực Phẩm Bổ Sung",
+      "d": "Nghiên cứu và đánh giá thực phẩm bổ sung dựa trên mục tiêu sức khỏe"
+    },
+    "Allergy Management Plan": {
+      "n": "Kế Hoạch Quản Lý Dị Ứng",
+      "d": "Tạo chiến lược quản lý và phòng tránh dị ứng toàn diện"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Theo Dõi Bệnh Mạn Tính",
+      "d": "Theo dõi triệu chứng, thuốc và yếu tố kích hoạt cho bệnh mạn tính"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Nhật Ký Bài Tập Vật Lý Trị Liệu",
+      "d": "Ghi và theo dõi bài tập vật lý trị liệu và tiến trình phục hồi"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Thiết Lập Không Gian Làm Việc Ergonomic",
+      "d": "Tối ưu không gian làm việc cho thoải mái, sức khỏe và năng suất"
+    },
+    "Digital Detox Planner": {
+      "n": "Lập Kế Hoạch Cai Nghiện Kỹ Thuật Số",
+      "d": "Lên kế hoạch và thực hiện cai nghiện kỹ thuật số để cải thiện sức khỏe tâm thần"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Xây Dựng Thói Quen Tự Chăm Sóc",
+      "d": "Xây dựng thói quen tự chăm sóc bền vững trên mọi khía cạnh sức khỏe"
+    },
+    "First Aid Guide": {
+      "n": "Hướng Dẫn Sơ Cứu",
+      "d": "Hướng dẫn sơ cứu nhanh cho các trường hợp khẩn cấp phổ biến"
+    },
+    "To-Do List Power Planner": {
+      "n": "Lập Danh Sách Việc Cần Làm",
+      "d": "Tạo danh sách ưu tiên với ước tính thời gian và mức năng lượng"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Tối Ưu Lịch Trình Hàng Ngày",
+      "d": "Thiết kế lịch trình hàng ngày tối ưu dựa trên mẫu năng lượng"
+    },
+    "Project Planner Pro": {
+      "n": "Lập Kế Hoạch Dự Án Pro",
+      "d": "Lên kế hoạch dự án với mốc, sản phẩm và phân bổ nguồn lực"
+    },
+    "Decision Matrix Builder": {
+      "n": "Xây Dựng Ma Trận Quyết Định",
+      "d": "Ra quyết định tốt hơn bằng phân tích tiêu chí có trọng số"
+    },
+    "Weekly Review Template": {
+      "n": "Mẫu Đánh Giá Tuần",
+      "d": "Thực hiện đánh giá tuần kỹ lưỡng để theo đúng mục tiêu"
+    },
+    "Morning Routine Designer": {
+      "n": "Thiết Kế Thói Quen Buổi Sáng",
+      "d": "Thiết kế thói quen buổi sáng tràn đầy năng lượng cho hiệu suất cao nhất"
+    },
+    "Evening Routine Creator": {
+      "n": "Tạo Thói Quen Buổi Tối",
+      "d": "Tạo thói quen buổi tối thư giãn cho nghỉ ngơi tốt hơn và chuẩn bị ngày mới"
+    },
+    "Time Blocking Schedule": {
+      "n": "Lịch Phân Chia Thời Gian",
+      "d": "Tổ chức ngày với khối thời gian tập trung cho năng suất tối đa"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Công Cụ Ma Trận Eisenhower",
+      "d": "Phân loại nhiệm vụ theo mức độ khẩn cấp và quan trọng để ưu tiên tốt hơn"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Lập Kế Hoạch Pomodoro",
+      "d": "Lên kế hoạch phiên làm việc tập trung bằng kỹ thuật Pomodoro"
+    },
+    "Goal Tracking System": {
+      "n": "Hệ Thống Theo Dõi Mục Tiêu",
+      "d": "Thiết lập hệ thống theo dõi mục tiêu toàn diện với chỉ số tiến trình"
+    },
+    "Quarterly Planning Template": {
+      "n": "Mẫu Lập Kế Hoạch Quý",
+      "d": "Lên kế hoạch quý với mục tiêu chiến lược và mục tiêu hành động"
+    },
+    "Annual Review Template": {
+      "n": "Mẫu Đánh Giá Năm",
+      "d": "Thực hiện đánh giá năm kỹ lưỡng về thành tích và đặt mục tiêu tương lai"
+    },
+    "Meeting Notes Template": {
+      "n": "Mẫu Ghi Chú Cuộc Họp",
+      "d": "Ghi lại ghi chú cuộc họp có thể hành động với quyết định và theo dõi"
+    },
+    "Brain Dump Organizer": {
+      "n": "Tổ Chức Xả Ý Tưởng",
+      "d": "Biến suy nghĩ hỗn loạn thành danh mục có tổ chức và hành động được"
+    },
+    "Delegation Framework": {
+      "n": "Khung Ủy Quyền",
+      "d": "Xác định việc cần ủy quyền và tạo bản mô tả ủy quyền rõ ràng"
+    },
+    "Focus Session Planner": {
+      "n": "Lập Kế Hoạch Phiên Tập Trung",
+      "d": "Lên kế hoạch phiên tập trung sâu với quản lý môi trường và phiền nhiễu"
+    },
+    "Energy Management Guide": {
+      "n": "Hướng Dẫn Quản Lý Năng Lượng",
+      "d": "Tối ưu mức năng lượng suốt cả ngày cho hiệu suất cao nhất"
+    },
+    "Batch Processing Planner": {
+      "n": "Lập Kế Hoạch Xử Lý Theo Lô",
+      "d": "Nhóm các nhiệm vụ tương tự để xử lý theo lô hiệu quả"
+    },
+    "System Documentation Template": {
+      "n": "Mẫu Tài Liệu Hệ Thống",
+      "d": "Ghi chép hệ thống cá nhân và nhóm để nhất quán và đào tạo"
+    },
+    "Project Kickoff Template": {
+      "n": "Mẫu Khởi Động Dự Án",
+      "d": "Khởi động dự án với mục tiêu, phạm vi và sự đồng thuận nhóm rõ ràng"
+    },
+    "Sprint Planning Guide": {
+      "n": "Hướng Dẫn Lập Kế Hoạch Sprint",
+      "d": "Lên kế hoạch sprint hiệu quả với user stories, ước tính và năng lực"
+    },
+    "Kanban Board Setup": {
+      "n": "Thiết Lập Bảng Kanban",
+      "d": "Thiết kế và cấu hình bảng Kanban cho quản lý quy trình trực quan"
+    },
+    "Gantt Chart Planner": {
+      "n": "Lập Kế Hoạch Biểu Đồ Gantt",
+      "d": "Tạo lịch trình dự án chi tiết với phụ thuộc và mốc"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Ma Trận Phân Bổ Nguồn Lực",
+      "d": "Lên kế hoạch và tối ưu phân bổ nguồn lực giữa các dự án và nhóm"
+    },
+    "Status Report Template": {
+      "n": "Mẫu Báo Cáo Tình Trạng",
+      "d": "Tạo báo cáo tình trạng dự án rõ ràng cho giao tiếp với các bên liên quan"
+    },
+    "Risk Register Creator": {
+      "n": "Tạo Sổ Đăng Ký Rủi Ro",
+      "d": "Xây dựng và duy trì sổ đăng ký rủi ro dự án toàn diện"
+    },
+    "Lessons Learned Template": {
+      "n": "Mẫu Bài Học Kinh Nghiệm",
+      "d": "Thu thập và ghi chép bài học kinh nghiệm dự án cho cải thiện tương lai"
+    },
+    "Requirements Document": {
+      "n": "Tài Liệu Yêu Cầu",
+      "d": "Thu thập và ghi chép yêu cầu dự án với tiêu chí chấp nhận"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Kế Hoạch Kiểm Thử Chấp Nhận",
+      "d": "Tạo kế hoạch UAT có cấu trúc với trường hợp kiểm thử và tiêu chí ký duyệt"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Kế Hoạch Giao Tiếp Các Bên",
+      "d": "Lên kế hoạch giao tiếp các bên liên quan với kênh, tần suất và thông điệp"
+    },
+    "Project Timeline Creator": {
+      "n": "Tạo Lịch Trình Dự Án",
+      "d": "Xây dựng lịch trình dự án chi tiết với giai đoạn và sản phẩm"
+    },
+    "Agile Retrospective": {
+      "n": "Đánh Giá Agile",
+      "d": "Tổ chức đánh giá agile hiệu quả với nhiều định dạng"
+    },
+    "Scope Document Writer": {
+      "n": "Viết Tài Liệu Phạm Vi",
+      "d": "Xác định phạm vi dự án với ranh giới, sản phẩm và loại trừ"
+    },
+    "Project Closure Report": {
+      "n": "Báo Cáo Đóng Dự Án",
+      "d": "Ghi chép hoàn thành dự án với kết quả và đánh giá cuối cùng"
+    },
+    "Conversation Practice Partner": {
+      "n": "Đối Tác Luyện Hội Thoại",
+      "d": "Luyện hội thoại bằng ngôn ngữ mục tiêu với tình huống thực tế"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Xây Dựng Từ Vựng Pro",
+      "d": "Xây dựng từ vựng với ngữ cảnh, ví dụ và gợi ý lặp lại cách quãng"
+    },
+    "Grammar Coach": {
+      "n": "Huấn Luyện Ngữ Pháp",
+      "d": "Học và luyện quy tắc ngữ pháp với giải thích rõ ràng và bài tập"
+    },
+    "Translation Helper": {
+      "n": "Trợ lý dịch thuật",
+      "d": "Nhận bản dịch chính xác với ngữ cảnh và ghi chú cách sử dụng"
+    },
+    "Language Exchange Prep": {
+      "n": "Chuẩn bị trao đổi ngôn ngữ",
+      "d": "Chuẩn bị cho các buổi trao đổi ngôn ngữ với chủ đề hội thoại có cấu trúc"
+    },
+    "Travel Phrase Book": {
+      "n": "Sổ tay cụm từ du lịch",
+      "d": "Các cụm từ du lịch thiết yếu được sắp xếp theo tình huống cho điểm đến của bạn"
+    },
+    "Business Language Guide": {
+      "n": "Hướng dẫn ngôn ngữ kinh doanh",
+      "d": "Học ngôn ngữ chuyên nghiệp cho môi trường và giao tiếp kinh doanh"
+    },
+    "Accent Improvement Guide": {
+      "n": "Hướng dẫn cải thiện phát âm",
+      "d": "Cải thiện phát âm và giọng nói với các bài tập có mục tiêu"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Luyện đọc hiểu",
+      "d": "Nâng cao kỹ năng đọc với các bài đọc phân cấp và câu hỏi đọc hiểu"
+    },
+    "Writing Practice Creator": {
+      "n": "Công cụ tạo bài luyện viết",
+      "d": "Luyện viết bằng ngôn ngữ mục tiêu với gợi ý hướng dẫn và phản hồi"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Hướng dẫn luyện nghe hiểu",
+      "d": "Cải thiện kỹ năng nghe với các bài tập và chiến lược có cấu trúc"
+    },
+    "Cultural Context Guide": {
+      "n": "Hướng dẫn bối cảnh văn hóa",
+      "d": "Hiểu các sắc thái văn hóa và phép xã giao để giao tiếp hiệu quả"
+    },
+    "Room Layout Planner": {
+      "n": "Công cụ bố trí phòng",
+      "d": "Lên kế hoạch bố trí phòng tối ưu với cách sắp xếp nội thất và lưu thông"
+    },
+    "Color Palette Creator": {
+      "n": "Công cụ tạo bảng màu",
+      "d": "Tạo bảng màu hài hòa cho phòng và dự án thiết kế"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Hướng dẫn mua sắm nội thất",
+      "d": "Mua sắm nội thất thông minh với phối hợp phong cách và kế hoạch ngân sách"
+    },
+    "Home Decor Style Finder": {
+      "n": "Tìm phong cách trang trí nhà",
+      "d": "Khám phá phong cách thiết kế nội thất của bạn với đánh giá có hướng dẫn"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Xây dựng tủ quần áo tối giản",
+      "d": "Xây dựng tủ quần áo capsule đa năng tối đa hóa các bộ trang phục kết hợp"
+    },
+    "Outfit Planner": {
+      "n": "Lên kế hoạch trang phục",
+      "d": "Lên kế hoạch trang phục cho cả tuần hoặc sự kiện đặc biệt từ tủ đồ hiện có"
+    },
+    "Personal Style Guide": {
+      "n": "Hướng dẫn phong cách cá nhân",
+      "d": "Xác định phong cách cá nhân và hướng dẫn mua sắm của bạn"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Làm mới tủ đồ theo mùa",
+      "d": "Làm mới tủ quần áo mỗi mùa với các bổ sung và chỉnh sửa chiến lược"
+    },
+    "Home Office Setup Guide": {
+      "n": "Hướng dẫn bố trí văn phòng tại nhà",
+      "d": "Thiết kế không gian văn phòng tại nhà năng suất và phong cách"
+    },
+    "Bathroom Design Planner": {
+      "n": "Công cụ lập kế hoạch thiết kế phòng tắm",
+      "d": "Lên kế hoạch cải tạo và nâng cấp phòng tắm với phong cách và chức năng"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Công cụ tạo ý tưởng hackathon",
+      "d": "Động não và xác nhận ý tưởng dự án hackathon dựa trên chủ đề và ràng buộc"
+    },
+    "MVP Builder Guide": {
+      "n": "Hướng dẫn xây dựng MVP",
+      "d": "Lên kế hoạch và xây dựng sản phẩm khả thi tối thiểu trong thời hạn hackathon gấp rút"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Bài thuyết trình hackathon",
+      "d": "Tạo bài thuyết trình hấp dẫn để trình bày dự án hackathon trước ban giám khảo"
+    },
+    "Technical Architecture Planner": {
+      "n": "Công cụ lập kế hoạch kiến trúc kỹ thuật",
+      "d": "Thiết kế kiến trúc kỹ thuật cho dự án hackathon một cách nhanh chóng"
+    },
+    "Hackathon Team Builder": {
+      "n": "Xây dựng đội hackathon",
+      "d": "Thành lập đội hackathon cân bằng với kỹ năng bổ trợ và vai trò rõ ràng"
+    },
+    "Demo Day Script": {
+      "n": "Kịch bản ngày demo",
+      "d": "Viết kịch bản demo trực tiếp chuyên nghiệp làm nổi bật các tính năng chính của dự án"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Phân tích tiêu chí chấm điểm",
+      "d": "Phân tích tiêu chí chấm điểm hackathon và tối ưu hóa dự án cho phù hợp"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Lập kế hoạch thời gian hackathon",
+      "d": "Chia nhỏ thời gian hackathon thành lịch sprint có cấu trúc"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Tư vấn chiến lược giải thưởng",
+      "d": "Nhắm mục tiêu chiến lược vào các hạng mục giải thưởng cụ thể và điều chỉnh dự án để chiến thắng"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Kế hoạch hành động sau hackathon",
+      "d": "Biến dự án hackathon thành sản phẩm thực tế hoặc dự án trong hồ sơ cá nhân"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Hướng dẫn tạo mẫu nhanh",
+      "d": "Nhanh chóng tạo mẫu và lặp lại ý tưởng hackathon với thời gian hạn chế"
+    },
+    "Hackathon Submission Template": {
+      "n": "Mẫu nộp bài hackathon",
+      "d": "Chuẩn bị bài nộp hackathon hoàn chỉnh và chỉn chu với tất cả tài liệu cần thiết"
+    },
+    "Game Design Document": {
+      "n": "Tài liệu thiết kế trò chơi",
+      "d": "Tạo tài liệu thiết kế trò chơi toàn diện bao gồm mọi khía cạnh của trò chơi"
+    },
+    "Game Mechanics Designer": {
+      "n": "Thiết kế cơ chế trò chơi",
+      "d": "Thiết kế và cân bằng các cơ chế trò chơi cốt lõi cho lối chơi hấp dẫn"
+    },
+    "Level Design Planner": {
+      "n": "Lập kế hoạch thiết kế màn chơi",
+      "d": "Lên kế hoạch các màn chơi với nhịp độ, thử thách và kể chuyện qua môi trường"
+    },
+    "Game Economy Balancer": {
+      "n": "Cân bằng kinh tế trò chơi",
+      "d": "Thiết kế và cân bằng nền kinh tế trong trò chơi cho tiến trình công bằng và hấp dẫn"
+    },
+    "Character Stats Builder": {
+      "n": "Xây dựng chỉ số nhân vật",
+      "d": "Tạo hệ thống chỉ số nhân vật cân bằng và các nguyên mẫu lớp nhân vật"
+    },
+    "Quest Designer": {
+      "n": "Thiết kế nhiệm vụ",
+      "d": "Thiết kế nhiệm vụ hấp dẫn với cốt truyện phân nhánh và phần thưởng có ý nghĩa"
+    },
+    "Game UI/UX Planner": {
+      "n": "Lập kế hoạch UI/UX trò chơi",
+      "d": "Lên kế hoạch giao diện trò chơi trực quan và luồng trải nghiệm người dùng"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Chiến dịch RPG trên bàn",
+      "d": "Xây dựng chiến dịch RPG trên bàn với bối cảnh thế giới, NPC và các tuyến truyện"
+    },
+    "Board Game Designer": {
+      "n": "Thiết kế trò chơi cờ bàn",
+      "d": "Thiết kế trò chơi cờ bàn từ ý tưởng đến mẫu thử với luật chơi cân bằng"
+    },
+    "Game Testing Checklist": {
+      "n": "Danh sách kiểm tra thử nghiệm trò chơi",
+      "d": "Tạo danh sách kiểm tra QA toàn diện cho trò chơi của bạn"
+    },
+    "Photo Shoot Planner": {
+      "n": "Lập kế hoạch buổi chụp ảnh",
+      "d": "Lên kế hoạch buổi chụp ảnh hoàn chỉnh từ ý tưởng đến thực hiện với mọi công tác hậu cần"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Hướng dẫn hồ sơ nhiếp ảnh",
+      "d": "Tuyển chọn và tổ chức hồ sơ nhiếp ảnh nổi bật cho khách hàng hoặc triển lãm"
+    },
+    "Photo Editing Workflow": {
+      "n": "Quy trình chỉnh sửa ảnh",
+      "d": "Xây dựng quy trình chỉnh sửa ảnh hiệu quả từ nhập vào đến xuất cuối cùng"
+    },
+    "Client Photography Brief": {
+      "n": "Bản tóm tắt nhiếp ảnh cho khách hàng",
+      "d": "Tạo bản tóm tắt nhiếp ảnh chuyên nghiệp cho các dự án khách hàng"
+    },
+    "Landscape Photography Guide": {
+      "n": "Hướng dẫn chụp ảnh phong cảnh",
+      "d": "Lên kế hoạch chụp ảnh phong cảnh với mẹo về thời tiết, thời điểm và bố cục"
+    },
+    "Portrait Photography Tips": {
+      "n": "Mẹo chụp ảnh chân dung",
+      "d": "Hướng dẫn chụp ảnh chân dung cuốn hút với ánh sáng và tư thế"
+    },
+    "Product Photography Setup": {
+      "n": "Thiết lập chụp ảnh sản phẩm",
+      "d": "Thiết lập chụp ảnh sản phẩm chuyên nghiệp với ánh sáng và bối cảnh phù hợp"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Lịch trình chụp ảnh cưới",
+      "d": "Lên kế hoạch lịch trình chụp ảnh cưới hoàn chỉnh từ chuẩn bị đến tiệc cưới"
+    },
+    "Street Photography Guide": {
+      "n": "Hướng dẫn chụp ảnh đường phố",
+      "d": "Mẹo và kỹ thuật chụp ảnh đường phố chân thực và cuốn hút"
+    },
+    "Astrophotography Planner": {
+      "n": "Lập kế hoạch chụp ảnh thiên văn",
+      "d": "Lên kế hoạch chụp ảnh thiên văn với cài đặt thiết bị và sự kiện thiên văn"
+    },
+    "Character Design Brief": {
+      "n": "Bản tóm tắt thiết kế nhân vật",
+      "d": "Tạo bản tóm tắt thiết kế nhân vật chi tiết với tính cách, ngoại hình và tiểu sử"
+    },
+    "Comic Strip Creator": {
+      "n": "Công cụ tạo truyện tranh",
+      "d": "Lên kế hoạch và tạo truyện tranh với bố cục khung, lời thoại và nhịp độ"
+    },
+    "World Building Guide": {
+      "n": "Hướng dẫn xây dựng thế giới",
+      "d": "Thiết kế thế giới hư cấu sống động với địa lý, văn hóa và truyền thuyết"
+    },
+    "Children's Book Illustrator": {
+      "n": "Minh họa sách thiếu nhi",
+      "d": "Lên kế hoạch minh họa cho sách thiếu nhi với phong cách phù hợp lứa tuổi và nhịp độ"
+    },
+    "Art Portfolio Curator": {
+      "n": "Quản lý hồ sơ nghệ thuật",
+      "d": "Tuyển chọn và trình bày hồ sơ nghệ thuật cho phòng tranh, khách hàng hoặc trường học"
+    },
+    "Color Theory Guide": {
+      "n": "Hướng dẫn lý thuyết màu sắc",
+      "d": "Áp dụng nguyên lý lý thuyết màu sắc để tạo tác phẩm hài hòa và ấn tượng"
+    },
+    "Digital Art Workflow": {
+      "n": "Quy trình nghệ thuật số",
+      "d": "Tối ưu hóa quy trình nghệ thuật số từ phác thảo đến hoàn thiện"
+    },
+    "Art Commission Brief": {
+      "n": "Bản tóm tắt đơn đặt tranh",
+      "d": "Viết bản tóm tắt đơn đặt tranh rõ ràng để truyền đạt tầm nhìn cho họa sĩ"
+    },
+    "Mural Design Planner": {
+      "n": "Lập kế hoạch thiết kế tranh tường",
+      "d": "Lên kế hoạch dự án tranh tường quy mô lớn từ ý tưởng đến lắp đặt"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Đề xuất triển lãm nghệ thuật",
+      "d": "Viết đề xuất triển lãm nghệ thuật chuyên nghiệp cho phòng tranh và địa điểm"
+    },
+    "Tax Deduction Finder": {
+      "n": "Công cụ tìm khoản khấu trừ thuế",
+      "d": "Xác định các khoản khấu trừ thuế thường bị bỏ sót dựa trên tình huống và tình trạng khai thuế"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Hướng dẫn thuế tự kinh doanh",
+      "d": "Hướng dẫn thuế tự kinh doanh bao gồm thanh toán ước tính và các khoản khấu trừ"
+    },
+    "Tax Document Organizer": {
+      "n": "Công cụ sắp xếp hồ sơ thuế",
+      "d": "Sắp xếp và theo dõi tất cả hồ sơ thuế cần thiết cho mùa khai thuế"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Công cụ ước tính thuế hàng quý",
+      "d": "Tính toán và lên kế hoạch thanh toán thuế ước tính hàng quý cho người tự kinh doanh"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Hướng dẫn tính thuế lãi vốn",
+      "d": "Hiểu và lên kế hoạch cho thuế lãi vốn từ đầu tư và bất động sản"
+    },
+    "Tax Filing Checklist": {
+      "n": "Danh sách kiểm tra khai thuế",
+      "d": "Danh sách kiểm tra từng bước để đảm bảo khai thuế chính xác và đầy đủ"
+    },
+    "State Tax Comparison": {
+      "n": "So sánh thuế giữa các bang",
+      "d": "So sánh tác động thuế giữa các bang khi chuyển nơi ở hoặc thu nhập đa bang"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Hướng dẫn thu hoạch lỗ thuế",
+      "d": "Chiến lược thu hoạch lỗ đầu tư để bù đắp lãi và giảm nghĩa vụ thuế"
+    },
+    "Stock Research Template": {
+      "n": "Mẫu nghiên cứu cổ phiếu",
+      "d": "Thực hiện phân tích cơ bản và kỹ thuật kỹ lưỡng cho từng cổ phiếu"
+    },
+    "ETF Comparison Tool": {
+      "n": "Công cụ so sánh ETF",
+      "d": "So sánh các quỹ ETF theo tỷ lệ chi phí, danh mục đầu tư, hiệu suất và chiến lược"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Lập kế hoạch danh mục cổ tức",
+      "d": "Xây dựng danh mục đầu tư tập trung vào cổ tức để tạo thu nhập thụ động"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Phân tích đầu tư bất động sản",
+      "d": "Phân tích bất động sản cho thuê và đầu tư về lợi nhuận và dòng tiền"
+    },
+    "Angel Investing Checklist": {
+      "n": "Danh sách kiểm tra đầu tư thiên thần",
+      "d": "Đánh giá cơ hội đầu tư khởi nghiệp với khung thẩm định chi tiết"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Tối ưu hóa tài khoản hưu trí",
+      "d": "Tối ưu hóa đóng góp qua 401k, IRA và các tài khoản hưu trí khác"
+    },
+    "Bond Analysis Guide": {
+      "n": "Hướng dẫn phân tích trái phiếu",
+      "d": "Phân tích trái phiếu và chứng khoán thu nhập cố định về lợi suất, kỳ hạn và rủi ro"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Đánh giá quỹ tương hỗ",
+      "d": "Đánh giá quỹ tương hỗ theo hiệu suất, phí, thành tích quản lý và sự phù hợp"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Hướng dẫn tái cân bằng danh mục",
+      "d": "Tái cân bằng danh mục đầu tư để duy trì phân bổ tài sản mục tiêu"
+    },
+    "Investment Journal Template": {
+      "n": "Mẫu nhật ký đầu tư",
+      "d": "Theo dõi quyết định đầu tư, lý do và kết quả để cải thiện liên tục"
+    },
+    "AWS Service Selector": {
+      "n": "Công cụ chọn dịch vụ AWS",
+      "d": "Chọn dịch vụ AWS phù hợp cho yêu cầu ứng dụng và ngân sách của bạn"
+    },
+    "Cloud Migration Plan": {
+      "n": "Kế hoạch di chuyển lên đám mây",
+      "d": "Lên kế hoạch di chuyển có cấu trúc các hệ thống tại chỗ lên đám mây"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Hướng dẫn triển khai Kubernetes",
+      "d": "Triển khai và quản lý ứng dụng trên Kubernetes với các phương pháp tốt nhất"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Mẫu hạ tầng dưới dạng mã",
+      "d": "Tạo mẫu hạ tầng dưới dạng mã cho môi trường đám mây có thể tái tạo"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "Thiết kế pipeline CI/CD",
+      "d": "Thiết kế pipeline CI/CD tự động cho tích hợp và triển khai liên tục"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Tối ưu chi phí đám mây",
+      "d": "Xác định và triển khai các chiến lược tối ưu hóa chi phí đám mây"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Lập kế hoạch kiến trúc serverless",
+      "d": "Thiết kế ứng dụng serverless với các mẫu kiến trúc hướng sự kiện"
+    },
+    "Container Strategy Guide": {
+      "n": "Hướng dẫn chiến lược container",
+      "d": "Xác định chiến lược container hóa cho ứng dụng và microservices"
+    },
+    "Cloud Security Checklist": {
+      "n": "Danh sách kiểm tra bảo mật đám mây",
+      "d": "Kiểm tra và bảo mật hạ tầng đám mây với các kiểm tra bảo mật toàn diện"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Kế hoạch khắc phục thảm họa",
+      "d": "Thiết kế kế hoạch khắc phục thảm họa trên đám mây với mục tiêu RTO và RPO"
+    },
+    "Keynote Speech Writer": {
+      "n": "Viết bài phát biểu chính",
+      "d": "Viết bài phát biểu chính mạnh mẽ truyền cảm hứng và thu hút khán giả"
+    },
+    "TED Talk Outline": {
+      "n": "Dàn bài thuyết trình kiểu TED",
+      "d": "Xây dựng bài thuyết trình kiểu TED hấp dẫn với cấu trúc kể chuyện mạnh mẽ"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Viết lời chúc mừng và tôn vinh",
+      "d": "Viết lời chúc mừng và tôn vinh đáng nhớ cho đám cưới, nghỉ hưu và lễ kỷ niệm"
+    },
+    "Debate Preparation Guide": {
+      "n": "Hướng dẫn chuẩn bị tranh luận",
+      "d": "Chuẩn bị kỹ lưỡng cho các cuộc tranh luận với lập luận, phản biện và bằng chứng"
+    },
+    "Panel Discussion Prep": {
+      "n": "Chuẩn bị thảo luận nhóm",
+      "d": "Chuẩn bị cho thảo luận nhóm với các điểm nói chuyện và tương tác khán giả"
+    },
+    "Presentation Slide Planner": {
+      "n": "Lập kế hoạch slide thuyết trình",
+      "d": "Lên kế hoạch slide thuyết trình với phân cấp hình ảnh và mạch kể chuyện"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Hướng dẫn nói ứng khẩu",
+      "d": "Rèn kỹ năng tư duy nhanh với các khuôn khổ nói ứng khẩu"
+    },
+    "Commencement Speech Writer": {
+      "n": "Viết diễn văn tốt nghiệp",
+      "d": "Viết diễn văn tốt nghiệp truyền cảm hứng cho lễ trao bằng"
+    },
+    "Grant Application Writer": {
+      "n": "Viết đơn xin tài trợ",
+      "d": "Viết đơn xin tài trợ hấp dẫn thể hiện rõ ràng tác động và nhu cầu"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Kế hoạch chiến dịch gây quỹ",
+      "d": "Lên kế hoạch và thực hiện chiến dịch gây quỹ hiệu quả qua nhiều kênh"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Hướng dẫn tuyển tình nguyện viên",
+      "d": "Tuyển dụng, đào tạo và giữ chân tình nguyện viên cho các chương trình phi lợi nhuận"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Họp hội đồng quản trị phi lợi nhuận",
+      "d": "Chuẩn bị và điều hành cuộc họp hội đồng quản trị phi lợi nhuận hiệu quả với chương trình rõ ràng"
+    },
+    "Impact Report Template": {
+      "n": "Mẫu báo cáo tác động",
+      "d": "Tạo báo cáo tác động hấp dẫn thể hiện thành tựu của tổ chức phi lợi nhuận"
+    },
+    "Donor Thank You Letter": {
+      "n": "Thư cảm ơn nhà tài trợ",
+      "d": "Viết thư cảm ơn nhà tài trợ được cá nhân hóa để xây dựng mối quan hệ lâu dài"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Chiến lược chiến dịch hàng năm",
+      "d": "Xây dựng chiến lược gây quỹ và tương tác toàn diện hàng năm"
+    },
+    "Community Needs Assessment": {
+      "n": "Đánh giá nhu cầu cộng đồng",
+      "d": "Thực hiện đánh giá nhu cầu cộng đồng kỹ lưỡng để hướng dẫn phát triển chương trình"
+    },
+    "Construction Project Plan": {
+      "n": "Kế hoạch dự án xây dựng",
+      "d": "Tạo kế hoạch dự án xây dựng toàn diện với các giai đoạn, tiến độ và ngân sách"
+    },
+    "Building Permit Checklist": {
+      "n": "Danh sách kiểm tra giấy phép xây dựng",
+      "d": "Theo dõi tất cả giấy phép xây dựng và phê duyệt cần thiết cho dự án"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Hướng dẫn đánh giá nhà thầu",
+      "d": "Đánh giá và so sánh nhà thầu với khung chấm điểm có cấu trúc"
+    },
+    "Material Estimate Calculator": {
+      "n": "Công cụ ước tính vật liệu",
+      "d": "Ước tính vật liệu xây dựng cần thiết với số lượng và dự toán chi phí"
+    },
+    "Site Inspection Checklist": {
+      "n": "Danh sách kiểm tra khảo sát công trường",
+      "d": "Thực hiện khảo sát công trường kỹ lưỡng với danh sách kiểm tra tiêu chuẩn hóa"
+    },
+    "Renovation Scope Document": {
+      "n": "Tài liệu phạm vi cải tạo",
+      "d": "Xác định phạm vi công việc cải tạo rõ ràng với thông số kỹ thuật và kỳ vọng"
+    },
+    "Architectural Brief": {
+      "n": "Bản tóm tắt kiến trúc",
+      "d": "Viết bản tóm tắt kiến trúc xác định tầm nhìn, yêu cầu và ràng buộc dự án"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Danh sách kiểm tra tuân thủ an toàn",
+      "d": "Đảm bảo tuân thủ an toàn công trường xây dựng theo quy định OSHA và địa phương"
+    },
+    "Robot Design Specification": {
+      "n": "Thông số thiết kế robot",
+      "d": "Xác định thông số thiết kế robot hoàn chỉnh bao gồm cơ khí, điện tử và phần mềm"
+    },
+    "IoT Project Planner": {
+      "n": "Lập kế hoạch dự án IoT",
+      "d": "Lên kế hoạch dự án IoT trọn vẹn từ cảm biến đến bảng điều khiển đám mây"
+    },
+    "Sensor Selection Guide": {
+      "n": "Hướng dẫn chọn cảm biến",
+      "d": "Chọn cảm biến tối ưu cho yêu cầu ứng dụng robot hoặc IoT của bạn"
+    },
+    "Embedded Systems Guide": {
+      "n": "Hướng dẫn hệ thống nhúng",
+      "d": "Thiết kế hệ thống nhúng với lựa chọn vi điều khiển và kiến trúc firmware phù hợp"
+    },
+    "Automation Workflow Designer": {
+      "n": "Thiết kế quy trình tự động hóa",
+      "d": "Thiết kế quy trình tự động hóa công nghiệp hoặc gia đình với cảm biến và bộ truyền động"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Lập kế hoạch mẫu phần cứng",
+      "d": "Lên kế hoạch mẫu phần cứng từ breadboard đến PCB với nguồn linh kiện"
+    },
+    "Anxiety Management Plan": {
+      "n": "Kế hoạch quản lý lo âu",
+      "d": "Tạo kế hoạch quản lý lo âu cá nhân hóa với chiến lược đối phó và nhận diện tác nhân"
+    },
+    "CBT Thought Record": {
+      "n": "Bản ghi suy nghĩ CBT",
+      "d": "Thực hành ghi chép suy nghĩ theo liệu pháp nhận thức hành vi để thách thức tư duy tiêu cực"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Công cụ tạo gợi ý viết nhật ký",
+      "d": "Tạo gợi ý viết nhật ký có ý nghĩa để tự suy ngẫm và xử lý cảm xúc"
+    },
+    "Relationship Communication Guide": {
+      "n": "Hướng dẫn giao tiếp trong mối quan hệ",
+      "d": "Cải thiện giao tiếp trong mối quan hệ với các khuôn khổ hội thoại có cấu trúc"
+    },
+    "Boundary Setting Guide": {
+      "n": "Hướng dẫn thiết lập ranh giới",
+      "d": "Học cách thiết lập và duy trì ranh giới lành mạnh trong cuộc sống cá nhân và nghề nghiệp"
+    },
+    "Grief Processing Helper": {
+      "n": "Hỗ trợ xử lý đau buồn",
+      "d": "Vượt qua quá trình đau buồn với sự hướng dẫn đồng cảm và các bước thực tế"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Bài tập tự thương yêu bản thân",
+      "d": "Thực hành bài tập tự thương yêu bản thân để xây dựng sức bền và giảm tự phê bình"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Xây dựng trí tuệ cảm xúc",
+      "d": "Phát triển kỹ năng trí tuệ cảm xúc để tự nhận thức và cải thiện các mối quan hệ"
+    },
+    "Anger Management Plan": {
+      "n": "Kế hoạch quản lý cơn giận",
+      "d": "Phát triển chiến lược quản lý cơn giận lành mạnh với nhận diện tác nhân và kỹ thuật hạ nhiệt"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Kế hoạch phục hồi kiệt sức",
+      "d": "Tạo kế hoạch phục hồi kiệt sức có cấu trúc với ranh giới, nghỉ ngơi và tái hòa nhập dần dần"
+    },
+    "Instant Pot Recipe": {
+      "n": "Công thức nồi áp suất điện",
+      "d": "Công thức nấu bằng nồi áp suất với hướng dẫn thời gian"
+    },
+    "World Cuisine Explorer": {
+      "n": "Khám phá ẩm thực thế giới",
+      "d": "Công thức chính gốc từ các nền ẩm thực toàn cầu"
+    },
+    "Fermentation Guide": {
+      "n": "Hướng dẫn lên men",
+      "d": "Công thức và kỹ thuật chế biến thực phẩm lên men"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Hướng dẫn nướng BBQ",
+      "d": "Công thức nướng với gia vị ướp và nước sốt kết hợp"
+    },
+    "Bread Baking Guide": {
+      "n": "Hướng dẫn làm bánh mì",
+      "d": "Công thức bánh mì thủ công từ men cái đến thành phẩm"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Hướng dẫn trồng nấm",
+      "d": "Trồng nấm trong nhà từ giống đến thu hoạch"
+    },
+    "Permaculture Planner": {
+      "n": "Lập kế hoạch nông nghiệp bền vững",
+      "d": "Thiết kế hệ sinh thái vườn thực phẩm tự duy trì"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Hướng dẫn lắp đặt nhà kính",
+      "d": "Lên kế hoạch và xây dựng nhà kính năng suất"
+    },
+    "FSBO Selling Guide": {
+      "n": "Hướng dẫn tự bán nhà",
+      "d": "Tự bán nhà không qua môi giới từng bước một"
+    },
+    "Investment Property Finder": {
+      "n": "Tìm bất động sản đầu tư",
+      "d": "Đánh giá các bất động sản cho thuê tiềm năng để đầu tư"
+    },
+    "Car Modification Guide": {
+      "n": "Hướng dẫn độ xe",
+      "d": "Lên kế hoạch cải tiến và nâng cấp xe"
+    },
+    "Fleet Management Planner": {
+      "n": "Lập kế hoạch quản lý đội xe",
+      "d": "Quản lý bảo dưỡng và chi phí nhiều xe"
+    },
+    "Digital Nomad Guide": {
+      "n": "Hướng dẫn dân du mục kỹ thuật số",
+      "d": "Làm việc từ xa trong khi du lịch khắp thế giới"
+    },
+    "Eco-Travel Planner": {
+      "n": "Lập kế hoạch du lịch xanh",
+      "d": "Lên kế hoạch chuyến đi bền vững và thân thiện với môi trường"
+    },
+    "Product Launch Event": {
+      "n": "Sự kiện ra mắt sản phẩm",
+      "d": "Lên kế hoạch sự kiện ra mắt sản phẩm từ địa điểm đến PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Lập kế hoạch sự kiện trực tuyến",
+      "d": "Lên kế hoạch sự kiện trực tuyến và hội thảo web hấp dẫn"
+    },
+    "College Planning Guide": {
+      "n": "Hướng dẫn lập kế hoạch đại học",
+      "d": "Lên kế hoạch vào đại học từ chọn trường đến hỗ trợ tài chính"
+    },
+    "Child Safety Plan": {
+      "n": "Kế hoạch an toàn trẻ em",
+      "d": "Hướng dẫn an toàn toàn diện tại nhà và trực tuyến"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Hướng dẫn chăm sóc thú cưng lạ",
+      "d": "Hướng dẫn chăm sóc bò sát, chim và thú cưng lạ"
+    },
+    "Pet Adoption Guide": {
+      "n": "Hướng dẫn nhận nuôi thú cưng",
+      "d": "Hướng dẫn quy trình nhận nuôi thú cưng thành công"
+    },
+    "Tiny House Builder": {
+      "n": "Xây dựng nhà siêu nhỏ",
+      "d": "Lên kế hoạch và xây nhà siêu nhỏ từng bước"
+    },
+    "Workshop Setup Guide": {
+      "n": "Hướng dẫn bố trí xưởng",
+      "d": "Thiết kế và trang bị xưởng làm việc tại nhà"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Lập kế hoạch chiến lược phiếu giảm giá",
+      "d": "Tối đa hóa tiết kiệm với chiến lược dùng phiếu giảm giá"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Hướng dẫn mua đồ cũ",
+      "d": "Tìm hàng chất lượng tại cửa hàng đồ cũ và trực tuyến"
+    },
+    "Theological Study Guide": {
+      "n": "Hướng dẫn nghiên cứu thần học",
+      "d": "Tìm hiểu sâu các khái niệm và giáo lý thần học"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Hướng dẫn đối thoại liên tôn",
+      "d": "Hỗ trợ các cuộc đối thoại liên tôn tôn trọng"
+    },
+    "Marathon Training Plan": {
+      "n": "Kế hoạch tập luyện marathon",
+      "d": "Chương trình tập luyện marathon hoàn chỉnh từ cơ bản đến 42km"
+    },
+    "Youth Sports Coach": {
+      "n": "Huấn luyện viên thể thao trẻ",
+      "d": "Lên kế hoạch tập luyện và phát triển thể thao cho trẻ"
+    },
+    "Woodworking Project": {
+      "n": "Dự án đồ gỗ",
+      "d": "Lên kế hoạch dự án đồ gỗ với danh sách cắt và các bước"
+    },
+    "Vinyl Record Guide": {
+      "n": "Hướng dẫn đĩa than",
+      "d": "Bắt đầu và quản lý bộ sưu tập đĩa than"
+    },
+    "Home Brewing Guide": {
+      "n": "Hướng dẫn nấu bia tại nhà",
+      "d": "Nấu bia hoặc rượu vang tại nhà từ đầu đến cuối"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Lộ trình tự do tài chính",
+      "d": "Vạch đường đến tự do tài chính"
+    },
+    "Midlife Career Change": {
+      "n": "Chuyển đổi nghề nghiệp giữa đời",
+      "d": "Hướng dẫn chuyển đổi sự nghiệp ở mọi lứa tuổi"
+    },
+    "AI Wallpaper Creator": {
+      "n": "Tạo hình nền AI",
+      "d": "Tạo hình nền tuyệt đẹp cho mọi thiết bị"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Gợi ý thiết kế hình xăm",
+      "d": "Tạo ý tưởng thiết kế hình xăm tùy chỉnh bằng AI"
+    },
+    "DJ Set Planner": {
+      "n": "Lập kế hoạch set DJ",
+      "d": "Lên kế hoạch set DJ với chọn bài và chuyển đoạn"
+    },
+    "Music Theory Tutor": {
+      "n": "Gia sư lý thuyết âm nhạc",
+      "d": "Học các khái niệm lý thuyết âm nhạc với bài tập"
+    },
+    "Podcast Video Setup": {
+      "n": "Thiết lập podcast video",
+      "d": "Thiết lập podcast video từ thiết bị đến biên tập"
+    },
+    "Wedding Video Plan": {
+      "n": "Kế hoạch quay phim cưới",
+      "d": "Lên kế hoạch quay phim cưới từ lễ cưới đến dựng phim"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Viết chương hồi ký",
+      "d": "Viết các chương hồi ký hấp dẫn từ câu chuyện cuộc đời"
+    },
+    "Haiku Generator": {
+      "n": "Tạo thơ Haiku",
+      "d": "Sáng tác thơ haiku về mọi chủ đề"
+    },
+    "TikTok Content Strategy": {
+      "n": "Chiến lược nội dung TikTok",
+      "d": "Xây dựng chiến lược tăng trưởng TikTok với ý tưởng nội dung"
+    },
+    "YouTube Community Post": {
+      "n": "Bài đăng cộng đồng YouTube",
+      "d": "Tạo bài đăng cộng đồng YouTube hấp dẫn"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Kế hoạch kiếm tiền từ podcast",
+      "d": "Chiến lược kiếm tiền từ podcast của bạn"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Hướng dẫn so sánh công cụ AI",
+      "d": "So sánh các công cụ AI cho từng trường hợp sử dụng cụ thể"
+    },
+    "Code Snippet Library": {
+      "n": "Thư viện đoạn mã",
+      "d": "Tổ chức và ghi chú các đoạn mã có thể tái sử dụng"
+    },
+    "Tech Stack Selector": {
+      "n": "Công cụ chọn công nghệ",
+      "d": "Chọn bộ công nghệ phù hợp cho dự án của bạn"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Hướng dẫn tuân thủ quyền riêng tư",
+      "d": "Đảm bảo ứng dụng đáp ứng các quy định về quyền riêng tư"
+    },
+    "API Security Audit": {
+      "n": "Kiểm tra bảo mật API",
+      "d": "Kiểm tra các endpoint API về lỗ hổng bảo mật"
+    },
+    "AI Hackathon Project": {
+      "n": "Dự án hackathon AI",
+      "d": "Lên kế hoạch dự án hackathon tập trung vào AI trọn vẹn"
+    },
+    "Mobile Game Concept": {
+      "n": "Ý tưởng trò chơi di động",
+      "d": "Thiết kế trò chơi di động từ ý tưởng đến kiếm tiền"
+    },
+    "Drone Photography Guide": {
+      "n": "Hướng dẫn chụp ảnh flycam",
+      "d": "Lên kế hoạch chuyến bay chụp ảnh trên không"
+    },
+    "NFT Art Collection": {
+      "n": "Bộ sưu tập nghệ thuật NFT",
+      "d": "Lên kế hoạch và tạo bộ sưu tập nghệ thuật số"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Hướng dẫn thuế cho freelancer",
+      "d": "Hướng dẫn thuế tự kinh doanh và các khoản khấu trừ"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Xây dựng danh mục tiền mã hóa",
+      "d": "Xây dựng danh mục đầu tư tiền mã hóa đa dạng"
+    },
+    "Azure Service Guide": {
+      "n": "Hướng dẫn dịch vụ Azure",
+      "d": "Chọn và cấu hình các dịch vụ đám mây Azure"
+    },
+    "Wedding Speech Writer": {
+      "n": "Viết bài phát biểu đám cưới",
+      "d": "Viết bài phát biểu và lời chúc mừng đám cưới chân thành"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Hướng dẫn thành lập tổ chức phi lợi nhuận",
+      "d": "Thành lập tổ chức phi lợi nhuận từ đầu"
+    },
+    "Home Addition Planner": {
+      "n": "Lập kế hoạch mở rộng nhà",
+      "d": "Lên kế hoạch mở rộng nhà từ giấy phép đến thi công"
+    },
+    "Arduino Project Planner": {
+      "n": "Lập kế hoạch dự án Arduino",
+      "d": "Lên kế hoạch dự án điện tử dựa trên Arduino"
+    },
+    "Digital Wellness Plan": {
+      "n": "Kế hoạch sức khỏe kỹ thuật số",
+      "d": "Tạo mối quan hệ lành mạnh với công nghệ"
+    },
+    "SWOT Analysis Tool": {
+      "n": "Công cụ phân tích SWOT",
+      "d": "Phân tích chiến lược điểm mạnh, điểm yếu, cơ hội, thách thức"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Công cụ tạo chương trình họp",
+      "d": "Tạo chương trình họp có cấu trúc với khung thời gian"
+    },
+    "OKR Framework Builder": {
+      "n": "Công cụ xây dựng khung OKR",
+      "d": "Thiết lập mục tiêu và kết quả then chốt cho đội nhóm"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Chuẩn bị đàm phán nhà cung cấp",
+      "d": "Chuẩn bị cho đàm phán với nhà cung cấp và đối tác"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Hướng dẫn đánh giá nhượng quyền",
+      "d": "Đánh giá cơ hội nhượng quyền một cách có hệ thống"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Công cụ soạn chính sách làm việc từ xa",
+      "d": "Tạo chính sách làm việc từ xa toàn diện"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Kế hoạch tuyển dụng đa dạng",
+      "d": "Xây dựng quy trình và kênh tuyển dụng hòa nhập"
+    },
+    "Freelance Contract Template": {
+      "n": "Mẫu hợp đồng freelance",
+      "d": "Tạo hợp đồng dịch vụ freelance chuyên nghiệp"
+    },
+    "Personal Website Planner": {
+      "n": "Lập kế hoạch trang web cá nhân",
+      "d": "Lên kế hoạch và cấu trúc trang web hồ sơ chuyên nghiệp"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Hướng dẫn nhịn ăn gián đoạn",
+      "d": "Thiết kế chế độ nhịn ăn gián đoạn phù hợp"
+    },
+    "Posture Improvement Plan": {
+      "n": "Kế hoạch cải thiện tư thế",
+      "d": "Sửa các vấn đề tư thế với bài tập và thói quen"
+    },
+    "Notion Template Builder": {
+      "n": "Công cụ tạo mẫu Notion",
+      "d": "Thiết kế mẫu không gian làm việc Notion cho mọi quy trình"
+    },
+    "Automation Workflow Builder": {
+      "n": "Công cụ xây dựng quy trình tự động",
+      "d": "Thiết kế quy trình tự động với Zapier hoặc Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Lập kế hoạch sprint Agile",
+      "d": "Lên kế hoạch sprint agile với story point và velocity"
+    },
+    "Product Roadmap Builder": {
+      "n": "Công cụ xây dựng lộ trình sản phẩm",
+      "d": "Tạo lộ trình sản phẩm với cột mốc và chủ đề"
+    },
+    "TOEFL Prep Guide": {
+      "n": "Hướng dẫn ôn thi TOEFL",
+      "d": "Chuẩn bị cho kỳ thi TOEFL với chiến lược học tập"
+    },
+    "Business English Coach": {
+      "n": "Huấn luyện viên tiếng Anh thương mại",
+      "d": "Cải thiện kỹ năng giao tiếp tiếng Anh chuyên nghiệp"
+    },
+    "Brand Identity Designer": {
+      "n": "Thiết kế nhận diện thương hiệu",
+      "d": "Tạo hướng dẫn nhận diện thương hiệu thị giác thống nhất"
+    },
+    "UX Research Plan": {
+      "n": "Kế hoạch nghiên cứu UX",
+      "d": "Lên kế hoạch nghiên cứu trải nghiệm người dùng cho sản phẩm số"
+    },
+    "Data Storytelling Guide": {
+      "n": "Hướng dẫn kể chuyện bằng dữ liệu",
+      "d": "Biến những hiểu biết từ dữ liệu thành câu chuyện hấp dẫn"
+    },
+    "AI Model Evaluation": {
+      "n": "Đánh giá mô hình AI",
+      "d": "Đánh giá và so sánh hiệu suất các mô hình học máy"
+    },
+    "3D Printing Project": {
+      "n": "Dự án in 3D",
+      "d": "Lên kế hoạch dự án in 3D từ thiết kế đến in"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Thiết kế mạch điện",
+      "d": "Thiết kế mạch điện với lựa chọn linh kiện"
+    },
+    "Side Hustle Finder": {
+      "n": "Tìm kiếm thu nhập phụ",
+      "d": "Khám phá ý tưởng thu nhập phụ dựa trên kỹ năng của bạn"
+    },
+    "Passive Income Blueprint": {
+      "n": "Kế hoạch thu nhập thụ động",
+      "d": "Xây dựng chiến lược thu nhập thụ động phù hợp với tình hình của bạn"
+    },
+    "Savings Challenge Generator": {
+      "n": "Tạo thử thách tiết kiệm",
+      "d": "Tạo kế hoạch thử thách tiết kiệm tùy chỉnh"
+    },
+    "Negotiate Any Bill": {
+      "n": "Đàm phán hóa đơn",
+      "d": "Kịch bản để đàm phán và giảm hóa đơn định kỳ"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Khởi chạy cửa hàng Etsy",
+      "d": "Kế hoạch từng bước để mở và phát triển cửa hàng Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Lập kế hoạch kênh YouTube",
+      "d": "Lập kế hoạch và khởi chạy kênh YouTube có lợi nhuận"
+    },
+    "Rental Income Analyzer": {
+      "n": "Phân tích thu nhập cho thuê",
+      "d": "Phân tích lợi nhuận tiềm năng từ bất động sản cho thuê"
+    },
+    "Online Course Creator": {
+      "n": "Tạo khóa học trực tuyến",
+      "d": "Lập kế hoạch và cấu trúc khóa học trực tuyến để bán"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Tối đa hóa phiếu giảm giá & hoàn tiền",
+      "d": "Tối đa hóa tiết kiệm với phiếu giảm giá, hoàn tiền và phần thưởng"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Thiết lập cửa hàng dropshipping",
+      "d": "Lập kế hoạch kinh doanh dropshipping từ đầu"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Tối ưu hóa kinh tế gig",
+      "d": "Tối đa hóa thu nhập từ các ứng dụng gig như Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

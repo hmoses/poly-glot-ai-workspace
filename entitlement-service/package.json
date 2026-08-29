@@ -1,0 +1,16 @@
+{
+  "name": "polyglot-entitlement-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check apple.js && node --check auth.js && node --check db.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@apple/app-store-server-library": "latest",
+    "jose": "^6.0.0",
+    "pg": "^8.16.0"
+  }
+}

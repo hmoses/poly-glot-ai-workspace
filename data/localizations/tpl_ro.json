@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Toate",
+    "free": "⭐ Gratuit",
+    "money": "💰 Afaceri",
+    "coding": "💻 Programare",
+    "ai": "🤖 AI",
+    "writing": "✍️ Scriere",
+    "marketing": "📢 Marketing",
+    "sales": "🤝 Vânzări",
+    "school": "📚 Educație",
+    "research": "🔬 Cercetare",
+    "career": "🚀 Carieră",
+    "legal": "⚖️ Juridic",
+    "finance": "📊 Finanțe",
+    "health": "🏥 Sănătate",
+    "cooking": "🍳 Gătit",
+    "garden": "🌱 Grădină",
+    "realestate": "🏠 Imobiliare",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Călătorii",
+    "image": "🎨 Imagine AI",
+    "music": "🎵 Muzică",
+    "video": "🎬 Video",
+    "social": "📱 Social",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-commerce",
+    "productivity": "⏱ Productivitate",
+    "diy": "🔨 DIY",
+    "event": "🎉 Evenimente",
+    "parent": "👶 Parenting",
+    "pets": "🐾 Animale",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Bunăstare",
+    "language": "🌍 Limbi",
+    "security": "🔒 Securitate",
+    "datascience": "📈 Știința datelor",
+    "chemistry": "🧪 Chimie",
+    "biology": "🧬 Biologie",
+    "physics": "⚛️ Fizică",
+    "math": "🔢 Matematică",
+    "makemoney": "💰 Bani"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Instrument de rezumat",
+      "d": "Condensați orice conținut în rezumate clare"
+    },
+    "Technical Documentation": {
+      "n": "Documentatie Tehnica",
+      "d": "Creați documente tehnice clare pentru API-uri și funcții"
+    },
+    "YouTube Script": {
+      "n": "Script YouTube",
+      "d": "Script video complet cu cârlig, secțiuni, CTA, listă b-roll"
+    },
+    "TikTok Generator": {
+      "n": "Generator TikTok",
+      "d": "Script video de scurtă durată optimizat pentru TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Scriitor de postări LinkedIn",
+      "d": "Postări pe LinkedIn care opresc defilarea care stimulează implicarea"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Generator de postări pe blog",
+      "d": "Postări de blog în formă lungă optimizate pentru SEO"
+    },
+    "SEO Article Writer": {
+      "n": "Scriitor de articole SEO",
+      "d": "Articole bogate în cuvinte cheie create pentru a se clasa pe Google"
+    },
+    "Podcast Episode Outline": {
+      "n": "Schița episodului din podcast",
+      "d": "Contur structurat al episodului cu puncte de discuție"
+    },
+    "Newsletter Writer": {
+      "n": "Scriitor de buletine informative",
+      "d": "Cititorii de buletine informative captivante de e-mail deschise efectiv"
+    },
+    "Product Review Writer": {
+      "n": "Scriitor de recenzii de produse",
+      "d": "Recenzii echilibrate, credibile ale produselor"
+    },
+    "Social Media Calendar": {
+      "n": "Calendarul Social Media",
+      "d": "Calendar de conținut de 30 de zile cu idei de postări pe platformă"
+    },
+    "Executive Summary": {
+      "n": "Rezumat",
+      "d": "Rezumat executiv de o pagină din documente lungi"
+    },
+    "Customer Support Response": {
+      "n": "Răspuns de asistență pentru clienți",
+      "d": "Răspunsuri de asistență pentru clienți empatice, pe marcă"
+    },
+    "Business Proposal": {
+      "n": "Propunere de afaceri",
+      "d": "Câștigarea propunerilor clienților cu domeniul și prețul"
+    },
+    "Decision Memo": {
+      "n": "Notă de decizie",
+      "d": "Note de decizie clare cu opțiuni și recomandări"
+    },
+    "Stakeholder Update": {
+      "n": "Actualizarea părților interesate",
+      "d": "Actualizări concise privind starea proiectului pentru părțile interesate"
+    },
+    "Code Review Assistant": {
+      "n": "Asistent de revizuire a codului",
+      "d": "Examinați codul pentru erori, stil și cele mai bune practici"
+    },
+    "JSDoc / Code Comments": {
+      "n": "Comentarii JSDoc / Cod",
+      "d": "Comentarii JSDoc pentru JavaScript și TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Registru de decizii arhitecturale",
+      "d": "Documentați deciziile arhitecturale cu context, opțiuni și consecințe"
+    },
+    "User Story Writer": {
+      "n": "Scriitor de povești de utilizator",
+      "d": "Povești agile utilizatorilor cu criterii de acceptare"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Criterii de acceptare",
+      "d": "Criterii de acceptare în stil corniș pentru poveștile utilizatorilor"
+    },
+    "PR Description Writer": {
+      "n": "Scriitor de descriere PR",
+      "d": "Descrieri clare de PR cu context și note de testare"
+    },
+    "Unit Test Generator": {
+      "n": "Generator de teste unitare",
+      "d": "Generați cazuri cuprinzătoare de teste unitare cu scenarii limită și mock-uri"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "Consilier de refactorizare a codului",
+      "d": "Refactorează codul pentru lizibilitate și performanță"
+    },
+    "SQL Query Builder": {
+      "n": "SQL Query Builder",
+      "d": "Limbajul natural pentru interogări SQL optimizate"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Generatorul de configurare Kubernetes",
+      "d": "Diagnosticați și rezolvați rapid problemele K8s"
+    },
+    "Postmortem Report": {
+      "n": "Raport post mortem",
+      "d": "Postmortem fără vină cu cronologie și elemente de acțiune"
+    },
+    "Release Notes Writer": {
+      "n": "Scriitor de note de lansare",
+      "d": "Note de lansare ușor de utilizat din mesajele de confirmare"
+    },
+    "Prompt Optimizer": {
+      "n": "Prompt Optimizer",
+      "d": "Îmbunătățiți orice prompt AI pentru rezultate mai bune și mai precise"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Constructor de lanțuri de gândire",
+      "d": "Creați instrucțiuni de raționament în mai mulți pași pentru sarcini complexe"
+    },
+    "RAG System Prompt": {
+      "n": "RAG System Prompt",
+      "d": "Șabloane de prompt de generare îmbunătățite cu recuperare"
+    },
+    "Eval Dataset Creator": {
+      "n": "Eval Dataset Creator",
+      "d": "Generați seturi de date de evaluare pentru testarea modelului AI"
+    },
+    "Prompt A/B Tester": {
+      "n": "Prompt A/B Tester",
+      "d": "Generați variante A/B de solicitări pentru a compara performanța"
+    },
+    "Multi-Model Comparison": {
+      "n": "Comparație cu mai multe modele",
+      "d": "Cadru pentru compararea rezultatelor dintre modelele AI"
+    },
+    "Resume Tailoring": {
+      "n": "Reluați croitoria",
+      "d": "Adaptează-ți CV-ul la o anumită fișă a postului"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Generator de scrisori de intentie",
+      "d": "Scrisori de intenție convingătoare care primesc interviuri"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn Profile Optimizer",
+      "d": "Optimizați-vă LinkedIn pentru recrutori"
+    },
+    "Interview Coach": {
+      "n": "Interviu antrenor",
+      "d": "Practicați interviul Q&A pentru orice rol"
+    },
+    "Salary Negotiation Script": {
+      "n": "Scriptul de negociere a salariului",
+      "d": "Scripturi și strategii pentru a negocia salarii mai mari"
+    },
+    "Career Roadmap Planner": {
+      "n": "Planificator de foaie de parcurs de carieră",
+      "d": "Plan de dezvoltare a carierei pe 12 luni cu repere"
+    },
+    "Objection Handler": {
+      "n": "Manipulator de obiecții",
+      "d": "Scripturi pentru a gestiona obiecțiile comune de vânzări"
+    },
+    "Landing Page Copy": {
+      "n": "Copiere pagină de destinație",
+      "d": "Copie a paginii de destinație cu o conversie ridicată"
+    },
+    "Google Ads Copy": {
+      "n": "Copie Google Ads",
+      "d": "Copie publicitară de căutare Google cu CTR ridicată"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Anunț Facebook/Instagram",
+      "d": "Copie publicitară Facebook și Instagram care convertește"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Rezumat al campaniei de marketing",
+      "d": "Campanie de marketing completă cu canale și cronologie"
+    },
+    "Customer Persona Builder": {
+      "n": "Constructor de personas de clienți",
+      "d": "Construiți personas detaliate de clienți pentru marketing direcționat"
+    },
+    "Value Proposition Canvas": {
+      "n": "Canvas pentru propuneri de valoare",
+      "d": "Propuneri de valoare clare, convingătoare"
+    },
+    "Product Launch Plan": {
+      "n": "Plan de lansare a produsului",
+      "d": "Plan de introducere pe piață pentru lansările de produse"
+    },
+    "Study Guide Creator": {
+      "n": "Ghid de studiu Creator",
+      "d": "Transformă orice subiect într-un ghid de studiu structurat"
+    },
+    "Flashcard Creator": {
+      "n": "Creator de carduri flash",
+      "d": "Seturi de întrebări și răspunsuri flashcard pentru memorare rapidă"
+    },
+    "Quiz Generator": {
+      "n": "Generator de chestionare",
+      "d": "Chestionare cu alegere multiplă și cu răspunsuri scurte"
+    },
+    "Lesson Plan Builder": {
+      "n": "Generator de planuri de lecție",
+      "d": "Planuri detaliate de lecție cu activități și evaluări"
+    },
+    "Research Notes Organizer": {
+      "n": "Organizator de note de cercetare",
+      "d": "Organizați notele de cercetare în schițe structurate"
+    },
+    "Essay Outline Generator": {
+      "n": "Generator de schiță de eseu",
+      "d": "Eseul structurat conturează teze și argumente"
+    },
+    "Literature Review Assistant": {
+      "n": "Asistent de revizuire a literaturii",
+      "d": "Revizuirea literaturii academice cu sinteză"
+    },
+    "Thesis Statement Builder": {
+      "n": "Generator de declarații de teză",
+      "d": "Declarații de teză puternice, discutabile"
+    },
+    "Exam Prep Planner": {
+      "n": "Planificator de pregătire pentru examene",
+      "d": "Program personalizat de studii pentru examene"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Rezumatul contractului",
+      "d": "Rezumatul contractului în limba engleză simplă. Nu sfaturi juridice."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Examinarea riscurilor contractuale",
+      "d": "Identificați clauzele riscante. Nu sfaturi juridice."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F Analizor NDA",
+      "d": "Defalcarea clauzei NDA. Nu sfaturi juridice."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Asistent pentru proiectul politicii",
+      "d": "Proiect de politici interne. Nu sfaturi juridice."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Lista de verificare a conformității",
+      "d": "Lista de verificare a conformității în funcție de cadru. Nu sfaturi juridice."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Examinator al termenilor și condițiilor",
+      "d": "Semnalați riscurile ToS. Nu sfaturi juridice."
+    },
+    "Budget Planner": {
+      "n": "Planificator de buget",
+      "d": "Plan de buget personal sau de afaceri. Nu sfaturi financiare."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Rezumat de apeluri pentru venituri",
+      "d": "Principalele concluzii din apelurile privind veniturile. Nu sfaturi financiare."
+    },
+    "Investment Thesis Builder": {
+      "n": "Constructor de teze de investiții",
+      "d": "Teză de investiții structurate. Nu sfaturi financiare."
+    },
+    "Financial Analysis Report": {
+      "n": "Raport de analiză financiară",
+      "d": "Analizați situația financiară. Nu sfaturi financiare."
+    },
+    "Expense Categorizer": {
+      "n": "Categorizator de cheltuieli",
+      "d": "Clasificați și analizați cheltuielile. Nu sfaturi financiare."
+    },
+    "SOAP Note Generator": {
+      "n": "Generator de note SOAP",
+      "d": "Note clinice de SAPUN. Nu sfatul medical."
+    },
+    "Clinical Case Summary": {
+      "n": "Rezumatul cazului clinic",
+      "d": "Structurați note clinice. Nu sfatul medical."
+    },
+    "Patient Education Writer": {
+      "n": "Scriitor de educație pentru pacient",
+      "d": "Educația pacientului în limbaj simplu. Nu sfatul medical."
+    },
+    "Medical Research Summarizer": {
+      "n": "Rezumat al cercetării medicale",
+      "d": "Rezumați lucrările de cercetare. Nu sfatul medical."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Asistent de diagnostic diferențial",
+      "d": "Organizați diagnostice diferențiale. Nu sfatul medical."
+    },
+    "Creative Storyteller": {
+      "n": "Povestitor creativ",
+      "d": "Generați povești și narațiuni creative"
+    },
+    "Ad Copy Generator": {
+      "n": "Generator de copiere a reclamelor",
+      "d": "Copie de mare conversie pentru Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Scriitor de rapoarte de eroare",
+      "d": "Scrieți rapoarte clare și reproductibile de erori"
+    },
+    "Social Media Caption": {
+      "n": "Subtitrare Social Media",
+      "d": "Generați subtitrări care opresc derularea pentru orice platformă"
+    },
+    "Research Paper Abstract": {
+      "n": "Rezumat al lucrării de cercetare",
+      "d": "Scrieți rezumate academice structurate"
+    },
+    "Translation Expert": {
+      "n": "Expert în traduceri",
+      "d": "Traduceți textul cu context și nuanță"
+    },
+    "Data Analyst": {
+      "n": "Analist de date",
+      "d": "Analizați datele și furnizați informații utile"
+    },
+    "Recipe Generator": {
+      "n": "Generator de rețete",
+      "d": "Generați rețete personalizate pe baza preferințelor și nevoilor dvs. dietetice"
+    },
+    "Meal Planner": {
+      "n": "Planificator de mese",
+      "d": "Planificați mese echilibrate pentru întreaga săptămână, având în vedere varietatea și nutriția"
+    },
+    "Grocery List Builder": {
+      "n": "Generator de liste de produse alimentare",
+      "d": "Construiește o listă de cumpărături organizată din mesele planificate și din nevoile tale de cămară"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Cămara Rețete Finder",
+      "d": "Găsiți rețete delicioase folosind ingrediente pe care le aveți deja la îndemână"
+    },
+    "Nutrition Calculator": {
+      "n": "Calculator de nutriție",
+      "d": "Calculați informații nutriționale detaliate pentru orice rețetă sau combinație de mese"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Ghid de înlocuire a ingredientelor",
+      "d": "Găsiți substituții perfecte pentru ingredientele lipsă sau restricționate"
+    },
+    "Batch Cooking Planner": {
+      "n": "Planificator de gătit în loturi",
+      "d": "Planificați sesiuni eficiente de gătit în lot pentru a economisi timp pe parcursul săptămânii"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Creator de rețete de cocktailuri",
+      "d": "Creați și personalizați rețete de cocktailuri cu tehnici de barman"
+    },
+    "Baking Conversion Helper": {
+      "n": "Asistent de conversie pentru coptură",
+      "d": "Convertiți măsuri de coptură între sisteme și scalați rețetele"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Găsitor de rețete specifice dietei",
+      "d": "Găsiți rețete adaptate planului dvs. de dietă specific sau obiectivelor nutriționale"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Rețetă de gătit lentă",
+      "d": "Obțineți rețete de gătit lent, perfect sincronizate, pentru gătit fără mâini"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Creator de rețete pentru prăjitor cu aer",
+      "d": "Creați rețete crocante și delicioase de friteuză cu aer cu o sincronizare perfectă"
+    },
+    "Smoothie Builder": {
+      "n": "Smoothie Builder",
+      "d": "Construiește rețete de smoothie hrănitoare și delicioase pentru orice scop"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Creator de sos și dressing",
+      "d": "Creați sosuri și sosuri de casă de la zero"
+    },
+    "Spice Blend Guide": {
+      "n": "Ghid de amestecuri de condimente",
+      "d": "Creați amestecuri de condimente personalizate pentru orice bucătărie sau tip de fel de mâncare"
+    },
+    "Food Pairing Expert": {
+      "n": "Expert în combinații alimentare",
+      "d": "Descoperiți combinațiile ideale de alimente și arome pentru mese bogate"
+    },
+    "Holiday Menu Planner": {
+      "n": "Planificator de meniu de vacanță",
+      "d": "Planificați un meniu complet de vacanță cu cronologie și listă de cumpărături"
+    },
+    "Leftover Makeover": {
+      "n": "Machiaj rămas",
+      "d": "Transformă resturile în mese noi interesante, cu idei creative"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Idei de mese pentru copii",
+      "d": "Generați mese sănătoase pe care copiii le vor bucura de fapt"
+    },
+    "Date Night Dinner": {
+      "n": "Cină de noapte",
+      "d": "Planifică o cină impresionantă pentru o seară romantică acasă"
+    },
+    "Budget Meal Planner": {
+      "n": "Planificator de mese bugetare",
+      "d": "Creați mese delicioase cu un buget restrâns, fără a sacrifica nutriția"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Convertor de rețete vegane",
+      "d": "Transformă orice rețetă tradițională într-o versiune vegană delicioasă"
+    },
+    "Dessert Creator": {
+      "n": "Creator de deserturi",
+      "d": "Creați rețete de deserturi personalizate pentru orice nivel de calificare și ocazie"
+    },
+    "Appetizer Planner": {
+      "n": "Planificator de aperitive",
+      "d": "Planificați aperitivul perfect pentru petreceri și întruniri"
+    },
+    "Food Prep Timeline": {
+      "n": "Cronologie pentru pregătirea alimentelor",
+      "d": "Creați o cronologie detaliată pentru gătit, astfel încât totul să fie gata deodată"
+    },
+    "Plant Care Guide": {
+      "n": "Ghid de îngrijire a plantelor",
+      "d": "Obțineți instrucțiuni personalizate de îngrijire pentru orice plantă din colecția dvs"
+    },
+    "Garden Planner": {
+      "n": "Planificator de grădină",
+      "d": "Planificați grădina cu selecția plantelor, amenajarea și programul de întreținere"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Instrument de diagnosticare a dăunătorilor",
+      "d": "Identificați dăunătorii și bolile din grădină cu opțiuni de tratament organic"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Calendar sezonier de plantare",
+      "d": "Aflați exact când să plantați fiecare cultură în zona dvs. de creștere"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Planificator de grădini de legume",
+      "d": "Planificați o grădină de legume productivă cu plantare și rotație însoțitoare"
+    },
+    "Indoor Plant Guide": {
+      "n": "Ghidul plantelor de interior",
+      "d": "Alegeți și îngrijiți plantele de interior perfecte pentru spațiul dvs"
+    },
+    "Herb Garden Starter": {
+      "n": "Starter pentru grădina de plante medicinale",
+      "d": "Începeți o grădină de plante înfloritoare în interior sau în aer liber, cu îndrumări de specialitate"
+    },
+    "Composting Guide": {
+      "n": "Ghid de compostare",
+      "d": "Începeți și întrețineți un sistem de compostare pentru sol sănătos"
+    },
+    "Landscape Design Helper": {
+      "n": "Asistent pentru proiectarea peisajului",
+      "d": "Proiectați un plan de peisaj frumos pentru proprietatea dvs"
+    },
+    "Raised Bed Planner": {
+      "n": "Planificator de pat înălțat",
+      "d": "Proiectați și construiți paturile de grădină înălțate perfecte pentru spațiul dvs"
+    },
+    "Fruit Tree Guide": {
+      "n": "Ghidul pomilor fructiferi",
+      "d": "Selectați și îngrijiți pomi fructiferi adaptați climatului și spațiului dvs"
+    },
+    "Container Garden Planner": {
+      "n": "Container Garden Planner",
+      "d": "Creați grădini de containere frumoase și productive pentru orice spațiu"
+    },
+    "Pollinator Garden": {
+      "n": "Grădina Polenizatorilor",
+      "d": "Proiectați o grădină care să atragă albinele, fluturii și insectele benefice"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Grădină tolerantă la secetă",
+      "d": "Planificați o grădină înțeleaptă de apă, care prosperă cu irigare minimă"
+    },
+    "Soil Amendment Guide": {
+      "n": "Ghid de modificare a solului",
+      "d": "Testați și îmbunătățiți solul din grădină pentru o sănătate optimă a plantelor"
+    },
+    "Seed Starting Calendar": {
+      "n": "Calendarul de pornire a semințelor",
+      "d": "Planificați-vă programul de începere a semințelor pentru un sezon de creștere reușit"
+    },
+    "Garden Layout Designer": {
+      "n": "Designer de amenajare a grădinii",
+      "d": "Creați un aspect optimizat al grădinii cu spații adecvate și acces la soare"
+    },
+    "Water Schedule Planner": {
+      "n": "Planificator de orar de apă",
+      "d": "Creați un program eficient de udare pentru grădina și gazonul dvs"
+    },
+    "Plant Problem Solver": {
+      "n": "Rezolvarea problemelor plantelor",
+      "d": "Diagnosticați și tratați problemele comune ale plantelor cu sfatul experților"
+    },
+    "Pruning Guide": {
+      "n": "Ghid de tăiere",
+      "d": "Ghid de tăiere a pomilor, arbuștilor și plantelor pentru creștere sănătoasă"
+    },
+    "Home Buying Checklist": {
+      "n": "Lista de verificare pentru achiziționarea casei",
+      "d": "Lista completă de verificare pas cu pas pentru procesul de cumpărare a casei"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Instrument de comparare a apartamentelor",
+      "d": "Comparați apartamentele una lângă alta pentru a găsi închirierea perfectă"
+    },
+    "Rental Application Helper": {
+      "n": "Asistent pentru aplicații de închiriere",
+      "d": "Pregătiți o cerere de închiriere puternică, care să iasă în evidență pentru proprietari"
+    },
+    "Home Inspection Questions": {
+      "n": "Întrebări de inspecție la domiciliu",
+      "d": "Întrebări esențiale de pus în timpul unei inspecții la domiciliu"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Calculator de comparație ipotecară",
+      "d": "Comparați opțiunile de credit ipotecar pentru a găsi cea mai bună ofertă pentru situația dvs"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Ghid pentru cumpărător pentru prima dată",
+      "d": "Ghid complet pentru a naviga cu încredere în prima achiziție a casei"
+    },
+    "Neighborhood Research": {
+      "n": "Cercetare de cartier",
+      "d": "Cercetați și comparați cartierele pentru a găsi cea mai potrivită pentru dvs"
+    },
+    "Home Value Estimator": {
+      "n": "Estimator de valoare a casei",
+      "d": "Estimați valoarea casei dvs. utilizând vânzări și date de piață comparabile"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Revizorul contractului de închiriere",
+      "d": "Examinați și înțelegeți termenii cheie din contractul de închiriere"
+    },
+    "Moving Checklist": {
+      "n": "Lista de verificare a mutarii",
+      "d": "Listă de verificare cuprinzătoare pentru mutare cu cronologie și management al sarcinilor"
+    },
+    "Property Investment Analyzer": {
+      "n": "Analizor de investiții imobiliare",
+      "d": "Analizați proprietățile închiriate pentru potențialul de rentabilitate a investiției"
+    },
+    "Renovation Budget Planner": {
+      "n": "Planificator de buget pentru renovare",
+      "d": "Planificați și bugetați proiecte de renovare a casei cu estimări detaliate ale costurilor"
+    },
+    "House Hunting Scorecard": {
+      "n": "Fișă de punctaj pentru vânătoarea casei",
+      "d": "Punctează și clasifică casele în timpul procesului tău de căutare a casei"
+    },
+    "Down Payment Calculator": {
+      "n": "Calculator de avans",
+      "d": "Calculați opțiunile de plată în avans și planurile de economii pentru achiziția casei dvs"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Program de întreținere a locuinței",
+      "d": "Creați un program sezonier de întreținere a casei pentru a vă proteja investiția"
+    },
+    "Rental Property Analysis": {
+      "n": "Analiza proprietății închiriate",
+      "d": "Evaluați oportunitățile de închiriere de proprietăți cu proiecții financiare"
+    },
+    "Home Staging Tips": {
+      "n": "Sfaturi pentru Home Staging",
+      "d": "Stabiliți-vă casa pentru a vinde mai repede și la un preț mai mare"
+    },
+    "Realtor Interview Questions": {
+      "n": "Întrebări la interviu cu agent imobiliar",
+      "d": "Întrebări cheie de pus atunci când intervieviți agenții imobiliari"
+    },
+    "Closing Cost Estimator": {
+      "n": "Estimator de cost de închidere",
+      "d": "Estimați toate costurile de închidere pentru tranzacția dvs. imobiliară"
+    },
+    "HOA Assessment Guide": {
+      "n": "Ghid de evaluare HOA",
+      "d": "Evaluați taxele HOA, regulile și sănătatea financiară înainte de a cumpăra"
+    },
+    "Car Buying Assistant": {
+      "n": "Asistent de cumpărare auto",
+      "d": "Navigați cu încredere în procesul de cumpărare a mașinii și economisiți bani"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Instrument de comparare a vehiculelor",
+      "d": "Comparați vehiculele unul lângă altul în ceea ce privește specificațiile, prețul și caracteristicile"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Planificatorul programului de întreținere",
+      "d": "Create a personalized vehicle maintenance schedule to extend car life"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Analizor de estimări de reparații",
+      "d": "Evaluați estimările de reparații auto și găsiți prețuri corecte pentru servicii"
+    },
+    "Road Trip Planner": {
+      "n": "Planificator de călătorii rutiere",
+      "d": "Planificați călătoria rutieră perfectă cu opriri, combustibil și timp calculat"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Lista de verificare pentru inspecția mașinilor second-hand",
+      "d": "Listă detaliată de verificare pentru cumpărarea unei mașini second-hand cu încredere"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Comparație de asigurări auto",
+      "d": "Comparați opțiunile de asigurare auto pentru a găsi cea mai bună acoperire și preț"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Calculator de economie de combustibil",
+      "d": "Calculați și optimizați costurile de combustibil și eficiența vehiculului"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Analizor leasing vs cumpărare auto",
+      "d": "Comparați leasingul cu achiziția pentru a găsi cea mai bună opțiune financiară"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Estimator de valoare la schimb",
+      "d": "Estimați valoarea vehiculului la schimb și negociați o ofertă corectă"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Verificator de istoric al vehiculului",
+      "d": "Întrebări cheie și verificări la examinarea unui raport de istoric al vehiculului"
+    },
+    "Car Detailing Guide": {
+      "n": "Ghid de detailing auto",
+      "d": "Instrucțiuni pas cu pas pentru detailing auto cu un finisaj de showroom"
+    },
+    "Winter Car Prep": {
+      "n": "Pregătirea mașinii pentru iarnă",
+      "d": "Pregătiți vehiculul pentru condiții de conducere pe timp de iarnă și vreme rece"
+    },
+    "New Driver Guide": {
+      "n": "Ghid pentru șoferi începători",
+      "d": "Sfaturi esențiale de conducere și cunoștințe pentru șoferii noi și în curs de învățare"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Ghid pentru vehicule electrice",
+      "d": "Tot ce trebuie să știți despre cumpărarea și deținerea unui vehicul electric"
+    },
+    "Trip Planner": {
+      "n": "Planificator de călătorii",
+      "d": "Planificați călătoria perfectă cu destinații, activități și logistică"
+    },
+    "Packing List Generator": {
+      "n": "Generator de liste de bagaje",
+      "d": "Generați o listă personalizată de bagaje pentru orice călătorie și destinație"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Creator de itinerar de vacanță",
+      "d": "Construiți un itinerar de vacanță zi cu zi cu activități și restaurante"
+    },
+    "Travel Budget Calculator": {
+      "n": "Calculator de buget de călătorie",
+      "d": "Calculați și urmăriți bugetul de călătorie cu categorii detaliate de cheltuieli"
+    },
+    "Local Attractions Guide": {
+      "n": "Ghid de atracții locale",
+      "d": "Descoperiți cele mai bune atracții locale, comori ascunse și locuri de vizitat"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Comparație de asigurări de călătorie",
+      "d": "Comparați opțiunile de asigurare de călătorie pentru acoperirea potrivită"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Strategie de găsire a ofertelor de zbor",
+      "d": "Strategii și sfaturi pentru găsirea celor mai bune oferte și prețuri de zbor"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Asistent de comparare a hotelurilor",
+      "d": "Comparați hoteluri după preț, facilități, locație și recenzii"
+    },
+    "Solo Travel Planner": {
+      "n": "Planificator de călătorii solo",
+      "d": "Planificați o aventură de călătorie solo sigură și satisfăcătoare oriunde în lume"
+    },
+    "Family Vacation Planner": {
+      "n": "Planificator de vacanțe în familie",
+      "d": "Planificați o vacanță prietenoasă pentru familie care distrează toate vârstele"
+    },
+    "Backpacking Planner": {
+      "n": "Planificator de backpacking",
+      "d": "Planificați o aventură de backpacking cu buget redus cu rute și echipament"
+    },
+    "Business Travel Organizer": {
+      "n": "Organizator de călătorii de afaceri",
+      "d": "Organizați călătoriile de afaceri eficient cu urmărirea cheltuielilor și programare"
+    },
+    "Cruise Planner": {
+      "n": "Planificator de croaziere",
+      "d": "Planificați vacanța perfectă pe croazieră cu excursii în porturi și activități la bord"
+    },
+    "Travel Safety Guide": {
+      "n": "Ghid de siguranță în călătorii",
+      "d": "Rămâneți în siguranță în timpul călătoriilor cu sfaturi și protocoale de siguranță specifice destinației"
+    },
+    "Visa Requirements Checker": {
+      "n": "Verificator de cerințe de viză",
+      "d": "Verificați cerințele de viză și pregătiți materialele de aplicare pentru călătorie"
+    },
+    "Language Survival Kit": {
+      "n": "Kit de supraviețuire lingvistică",
+      "d": "Învățați expresii esențiale și sfaturi culturale pentru destinația de călătorie"
+    },
+    "Airport Navigation Guide": {
+      "n": "Ghid de navigare în aeroport",
+      "d": "Navigați eficient prin aeroporturi cu sfaturi despre terminale și gestionarea timpului"
+    },
+    "Travel Photo Plan": {
+      "n": "Plan de fotografie de călătorie",
+      "d": "Planificați fotografia de călătorie cu cele mai bune locații, ore și tehnici"
+    },
+    "Group Trip Coordinator": {
+      "n": "Coordonator de călătorii în grup",
+      "d": "Coordonați logistica călătoriilor de grup, bugetele și activitățile pentru toți"
+    },
+    "Adventure Travel Planner": {
+      "n": "Planificator de călătorii de aventură",
+      "d": "Planificați călătorii de aventură pline de adrenalină cu siguranță și logistică"
+    },
+    "Wedding Planner": {
+      "n": "Planificator de nunți",
+      "d": "Planificați fiecare detaliu al nunții perfecte de la locație la jurăminte"
+    },
+    "Birthday Party Planner": {
+      "n": "Planificator de petreceri de ziua de naștere",
+      "d": "Planificați o sărbătoare memorabilă de ziua de naștere pentru orice vârstă și stil"
+    },
+    "Conference Organizer": {
+      "n": "Organizator de conferințe",
+      "d": "Organizați conferințe și seminarii profesionale cu logistică detaliată"
+    },
+    "Baby Shower Planner": {
+      "n": "Planificator de baby shower",
+      "d": "Planificați un baby shower frumos cu jocuri, mâncare și decorațiuni"
+    },
+    "Anniversary Celebration": {
+      "n": "Sărbătoare de aniversare",
+      "d": "Planificați o sărbătoare semnificativă de aniversare pentru orice an important"
+    },
+    "Graduation Party": {
+      "n": "Petrecere de absolvire",
+      "d": "Sărbătoriți realizările academice cu o petrecere de absolvire perfect planificată"
+    },
+    "Holiday Party Planner": {
+      "n": "Planificator de petreceri de sărbători",
+      "d": "Planificați întâlniri festive de sărbători cu mâncare, activități și decorațiuni"
+    },
+    "Corporate Event Planner": {
+      "n": "Planificator de evenimente corporative",
+      "d": "Planificați evenimente corporative profesionale care impresionează clienții și angajații"
+    },
+    "Fundraiser Organizer": {
+      "n": "Organizator de strângeri de fonduri",
+      "d": "Organizați evenimente de strângere de fonduri de succes pentru organizații caritabile și cauze"
+    },
+    "Reunion Planner": {
+      "n": "Planificator de reuniuni",
+      "d": "Planificați o reuniune memorabilă de familie sau de clasă care aduce pe toți împreună"
+    },
+    "Engagement Party Planner": {
+      "n": "Planificator de petreceri de logodnă",
+      "d": "Planificați o sărbătoare veselă de logodnă pentru a împărtăși vestea cea bună"
+    },
+    "Retirement Party": {
+      "n": "Petrecere de pensionare",
+      "d": "Sărbătoriți o carieră frumoasă cu o petrecere de pensionare atentă"
+    },
+    "Housewarming Planner": {
+      "n": "Planificator de petrecere de inaugurare a casei",
+      "d": "Planificați o petrecere primitoare de inaugurare a casei noi"
+    },
+    "Themed Party Creator": {
+      "n": "Creator de petreceri tematice",
+      "d": "Proiectați și planificați petreceri tematice creative cu detalii coordonate"
+    },
+    "Event Budget Tracker": {
+      "n": "Urmăritor de buget pentru evenimente",
+      "d": "Urmăriți și gestionați cheltuielile evenimentelor pentru a rămâne în buget"
+    },
+    "Chore Chart Creator": {
+      "n": "Creator de grafic de treburi casnice",
+      "d": "Creați grafice de treburi casnice adecvate vârstei cu recompense și urmărire"
+    },
+    "Educational Activity Planner": {
+      "n": "Planificator de activități educaționale",
+      "d": "Planificați activități educaționale distractive care fac învățarea captivantă pentru copii"
+    },
+    "Bedtime Story Writer": {
+      "n": "Scriitor de povești de noapte bună",
+      "d": "Creați povești personalizate de noapte bună cu copilul dumneavoastră ca protagonist"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Urmăritor de etape de dezvoltare pe vârste",
+      "d": "Urmăriți etapele de dezvoltare și sărbătoriți creșterea copilului"
+    },
+    "School Lunch Planner": {
+      "n": "Planificator de prânzuri școlare",
+      "d": "Planificați prânzuri școlare sănătoase și atrăgătoare pe care copiii le vor mânca cu plăcere"
+    },
+    "Homework Help Guide": {
+      "n": "Ghid de ajutor pentru teme",
+      "d": "Strategii pentru a sprijini temele copilului fără a le face în locul lui"
+    },
+    "Family Game Night Ideas": {
+      "n": "Idei pentru seara de jocuri în familie",
+      "d": "Planificați seri captivante de jocuri în familie cu activități pentru toate vârstele"
+    },
+    "Screen Time Schedule": {
+      "n": "Program de timp la ecran",
+      "d": "Creați reguli echilibrate și programe de timp la ecran pentru familia dumneavoastră"
+    },
+    "Allowance System Designer": {
+      "n": "Designer de sistem de alocație",
+      "d": "Proiectați un sistem de alocație și gestionare a banilor adecvat vârstei"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Program de somn pentru bebeluși",
+      "d": "Creați programe de somn sănătoase și rutine pentru bebeluși și copii mici"
+    },
+    "Potty Training Guide": {
+      "n": "Ghid de învățare la olita",
+      "d": "Planuri pas cu pas pentru învățarea la oliță cu sfaturi pentru fiecare etapă"
+    },
+    "Back to School Prep": {
+      "n": "Pregătire pentru întoarcerea la școală",
+      "d": "Pregătiți familia pentru o tranziție lină la întoarcerea la școală"
+    },
+    "Summer Activity Planner": {
+      "n": "Planificator de activități de vară",
+      "d": "Planificați o vară distractivă și îmbogățitoare cu activități, tabere și aventuri"
+    },
+    "Family Meeting Agenda": {
+      "n": "Agenda întâlnirilor de familie",
+      "d": "Conduceți întâlniri de familie productive care dau voce tuturor"
+    },
+    "Child Development Tracker": {
+      "n": "Urmăritor de dezvoltare a copilului",
+      "d": "Monitorizați și sprijiniți dezvoltarea fizică, socială și cognitivă a copilului"
+    },
+    "Dog Training Plan": {
+      "n": "Plan de dresaj canin",
+      "d": "Creați un plan de dresaj personalizat pentru câinele dumneavoastră la orice vârstă sau nivel"
+    },
+    "Cat Care Guide": {
+      "n": "Ghid de îngrijire a pisicilor",
+      "d": "Ghid complet de îngrijire pentru a vă menține pisica sănătoasă și fericită"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Planificator de nutriție pentru animale",
+      "d": "Planificați nutriția optimă pentru animalul de companie în funcție de vârstă, rasă și sănătate"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Lista de verificare pentru socializarea cățelușului",
+      "d": "Asigurați-vă că cățelușul este socializat corespunzător în fereastra critică de dezvoltare"
+    },
+    "Pet First Aid Guide": {
+      "n": "Ghid de prim ajutor pentru animale de companie",
+      "d": "Cunoștințe esențiale de prim ajutor și proceduri de urgență pentru proprietarii de animale"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Planificator de amenajare a acvariului",
+      "d": "Planificați și amenajați un acvariu prosper cu peștii și echipamentul potrivit"
+    },
+    "Pet Travel Preparation": {
+      "n": "Pregătire pentru călătorii cu animale",
+      "d": "Pregătiți tot ce este necesar pentru călătorii sigure și fără stres cu animalul de companie"
+    },
+    "New Pet Checklist": {
+      "n": "Lista de verificare pentru un animal nou",
+      "d": "Tot ce aveți nevoie să pregătiți înainte de a aduce un animal nou acasă"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Analizor de comportament al animalelor",
+      "d": "Înțelegeți și abordați problemele comportamentale ale animalului cu ghidare de specialitate"
+    },
+    "Senior Pet Care": {
+      "n": "Îngrijirea animalelor în vârstă",
+      "d": "Ghid specializat de îngrijire pentru animale îmbătrânite pentru a le menține confortabile și sănătoase"
+    },
+    "Pet Exercise Planner": {
+      "n": "Planificator de exerciții pentru animale",
+      "d": "Creați o rutină de exerciții care menține animalul în formă și stimulat mental"
+    },
+    "Vet Visit Preparation": {
+      "n": "Pregătire pentru vizita la veterinar",
+      "d": "Pregătiți-vă pentru vizitele la veterinar cu informații de sănătate organizate și întrebări"
+    },
+    "Home Improvement Planner": {
+      "n": "Planificator de îmbunătățiri ale locuinței",
+      "d": "Planificați și prioritizați proiectele de îmbunătățire a locuinței cu bugete și calendare"
+    },
+    "Furniture Project Planner": {
+      "n": "Planificator de proiecte de mobilier",
+      "d": "Planificați construcția de mobilier personalizat cu materiale, unelte și ghidare pas cu pas"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Calculator de buget pentru renovare",
+      "d": "Calculați costurile detaliate de renovare cu manoperă, materiale și contingență"
+    },
+    "Paint Color Coordinator": {
+      "n": "Coordonator de culori de vopsea",
+      "d": "Alegeți și coordonați culorile de vopsea pentru o paletă coerentă a locuinței"
+    },
+    "Organization System Designer": {
+      "n": "Designer de sisteme de organizare",
+      "d": "Proiectați sisteme personalizate de organizare pentru orice cameră sau spațiu din locuință"
+    },
+    "Storage Solutions Planner": {
+      "n": "Planificator de soluții de depozitare",
+      "d": "Găsiți soluții creative de depozitare pentru a maximiza spațiul din orice cameră"
+    },
+    "Home Repair Guide": {
+      "n": "Ghid de reparații casnice",
+      "d": "Ghidare pas cu pas pentru reparații casnice comune pe care le puteți face singur"
+    },
+    "Tool Buying Guide": {
+      "n": "Ghid de cumpărare a uneltelor",
+      "d": "Alegeți uneltele potrivite pentru proiectele DIY fără a cheltui prea mult"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Întreținere sezonieră a locuinței",
+      "d": "Liste complete de verificare sezonieră pentru protejarea locuinței pe tot parcursul anului"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Audit de eficiență energetică",
+      "d": "Evaluați și îmbunătățiți eficiența energetică a locuinței pentru a economisi la facturi"
+    },
+    "Smart Home Setup": {
+      "n": "Configurare casă inteligentă",
+      "d": "Planificați și configurați un sistem de casă inteligentă cu dispozitivele și integrările potrivite"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Planificator de renovare a băii",
+      "d": "Planificați renovarea băii cu plan de amenajare, corpuri sanitare și gestionarea bugetului"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Planificator de renovare a bucătăriei",
+      "d": "Planificați renovarea bucătăriei de la amenajare la electrocasnice cu bugetare detaliată"
+    },
+    "Closet Organization": {
+      "n": "Organizarea dulapului",
+      "d": "Proiectați și organizați dulapurile pentru eficiență maximă și acces ușor"
+    },
+    "Garage Organization": {
+      "n": "Organizarea garajului",
+      "d": "Transformați garajul într-un spațiu organizat și funcțional"
+    },
+    "Product Comparison Tool": {
+      "n": "Instrument de comparare a produselor",
+      "d": "Comparați produsele una lângă alta pentru a lua cea mai bună decizie de cumpărare"
+    },
+    "Buying Guide Creator": {
+      "n": "Creator de ghiduri de cumpărare",
+      "d": "Creați ghiduri detaliate de cumpărare pentru orice categorie de produse"
+    },
+    "Gift Finder": {
+      "n": "Găsitor de cadouri",
+      "d": "Găsiți cadoul perfect pentru oricine pe baza intereselor și bugetului"
+    },
+    "Price Tracker Strategy": {
+      "n": "Strategie de urmărire a prețurilor",
+      "d": "Strategii pentru urmărirea prețurilor și cumpărarea la cel mai bun moment"
+    },
+    "Black Friday Strategy": {
+      "n": "Strategie de Black Friday",
+      "d": "Planificați cumpărăturile de Black Friday și Cyber Monday pentru economii maxime"
+    },
+    "Back to School Shopping": {
+      "n": "Cumpărături pentru întoarcerea la școală",
+      "d": "Organizați cumpărăturile pentru întoarcerea la școală cu liste, bugete și oferte"
+    },
+    "Wardrobe Planner": {
+      "n": "Planificator de garderobă",
+      "d": "Construiți o garderobă versatilă cu cumpărături strategice și planificarea ținutelor"
+    },
+    "Electronics Buying Guide": {
+      "n": "Ghid de cumpărare a electronicelor",
+      "d": "Navigați achizițiile de electronice cu compararea specificațiilor și sfaturi de sincronizare"
+    },
+    "Subscription Service Comparison": {
+      "n": "Comparație de servicii de abonament",
+      "d": "Comparați serviciile de abonament pentru a găsi cea mai bună valoare pentru nevoile dumneavoastră"
+    },
+    "Wedding Registry Planner": {
+      "n": "Planificator de listă de nuntă",
+      "d": "Construiți o listă completă de nuntă cu articole pentru fiecare buget"
+    },
+    "Bible Study Guide": {
+      "n": "Ghid de studiu biblic",
+      "d": "Creați planuri structurate de studiu biblic cu context, întrebări și aplicare"
+    },
+    "Sermon Outline Creator": {
+      "n": "Creator de schițe de predici",
+      "d": "Dezvoltați schițe convingătoare de predici cu scriptură, puncte și ilustrații"
+    },
+    "Comparative Religion Study": {
+      "n": "Studiu comparativ al religiilor",
+      "d": "Explorați și comparați credințe, practici și istorie în diferite religii ale lumii"
+    },
+    "Discussion Question Generator": {
+      "n": "Generator de întrebări de discuție",
+      "d": "Generați întrebări de discuție pertinente pentru subiecte religioase și filozofice"
+    },
+    "Devotional Writer": {
+      "n": "Scriitor de meditații zilnice",
+      "d": "Creați meditații zilnice cu scriptură, reflecție și îndemnuri de rugăciune"
+    },
+    "Prayer Journal Guide": {
+      "n": "Ghid de jurnal de rugăciune",
+      "d": "Structurați viața de rugăciune cu îndemnuri ghidate de jurnalizare și cadre"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Ghid de club de carte spirituală",
+      "d": "Creați ghiduri de discuție pentru clubul de carte pentru cărți spirituale și religioase"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Ghid de meditație pe scriptură",
+      "d": "Creați experiențe ghidate de meditație centrate pe pasaje din scriptură"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Plan de lecție pentru grupul de tineret",
+      "d": "Creați lecții captivante pentru grupul de tineret cu activități și discuții"
+    },
+    "Faith Journey Reflector": {
+      "n": "Reflector al călătoriei de credință",
+      "d": "Reflecții ghidate pentru explorarea și aprofundarea călătoriei personale de credință"
+    },
+    "Workout Plan Creator": {
+      "n": "Creator de plan de antrenament",
+      "d": "Creați planuri personalizate de antrenament bazate pe obiectivele și nivelul de fitness"
+    },
+    "Training Schedule Builder": {
+      "n": "Constructor de program de antrenament",
+      "d": "Construiți un program structurat de antrenament pentru orice sport sau obiectiv de fitness"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Analizor de strategii de joc",
+      "d": "Analizați strategiile de joc și dezvoltați abordări câștigătoare pentru sportul dumneavoastră"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Ghid de nutriție sportivă",
+      "d": "Optimizați nutriția sportivă pentru performanță de vârf și recuperare"
+    },
+    "Coaching Practice Plan": {
+      "n": "Plan de antrenament pentru antrenori",
+      "d": "Proiectați sesiuni de practică eficiente care dezvoltă abilitățile și coeziunea echipei"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Analizor de sporturi fantasy",
+      "d": "Analizați meciurile și optimizați-vă echipa de sporturi fantasy în fiecare săptămână"
+    },
+    "Race Training Plan": {
+      "n": "Plan de antrenament pentru curse",
+      "d": "Antrenați-vă pentru curse de la 5K la maraton cu planuri progresive structurate"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Analizor de statistici sportive",
+      "d": "Analizați statisticile jucătorilor și echipelor pentru o înțelegere mai profundă a sportului"
+    },
+    "Team Management Tool": {
+      "n": "Instrument de gestionare a echipei",
+      "d": "Gestionați loturile echipelor, programele și comunicările eficient"
+    },
+    "Injury Recovery Planner": {
+      "n": "Planificator de recuperare după accidentări",
+      "d": "Planificați recuperarea sigură și eficientă după accidentări sportive comune"
+    },
+    "Photography Guide": {
+      "n": "Ghid de fotografie",
+      "d": "Îmbunătățiți-vă abilitățile de fotografie cu sfaturi despre compoziție, lumină și echipament"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Asistent de modele de tricotat",
+      "d": "Găsiți și adaptați modele de tricotat pentru nivelul și ideile dumneavoastră de proiect"
+    },
+    "Board Game Night Planner": {
+      "n": "Planificator de seară de jocuri de societate",
+      "d": "Planificați seri perfecte de jocuri de societate cu selecția jocurilor și potrivirea grupului"
+    },
+    "Fishing Trip Planner": {
+      "n": "Planificator de excursii de pescuit",
+      "d": "Planificați excursii de pescuit reușite cu sfaturi despre locație, echipament și tehnică"
+    },
+    "Camping Trip Organizer": {
+      "n": "Organizator de excursii de camping",
+      "d": "Organizați excursii de camping cu liste de echipamente, planuri de masă și idei de activități"
+    },
+    "Bird Watching Guide": {
+      "n": "Ghid de observare a păsărilor",
+      "d": "Identificați păsările locale și planificați excursii de birdwatching cu sfaturi sezoniere"
+    },
+    "Model Building Planner": {
+      "n": "Planificator de construcție de machete",
+      "d": "Planificați și executați proiecte de construcție de machete cu materiale și tehnici"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Ghid de strategie pentru puzzle-uri",
+      "d": "Strategii și tehnici pentru rezolvarea puzzle-urilor mai rapid și mai eficient"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Planificator de observații astronomice",
+      "d": "Planificați sesiuni de observare a cerului cu evenimente celeste și recomandări de echipament"
+    },
+    "Art Supply Guide": {
+      "n": "Ghid de materiale artistice",
+      "d": "Alegeți materialele artistice potrivite pentru tehnica și nivelul dumneavoastră"
+    },
+    "Goal Setting Framework": {
+      "n": "Cadru de stabilire a obiectivelor",
+      "d": "Stabiliți și atingeți obiective semnificative cu un cadru structurat și plan de acțiune"
+    },
+    "Bucket List Creator": {
+      "n": "Creator de lista de dorințe",
+      "d": "Creați o listă inspiratoare de dorințe organizată pe categorii și priorități"
+    },
+    "Personal Mission Statement": {
+      "n": "Declarație de misiune personală",
+      "d": "Elaborați o declarație de misiune personală semnificativă care vă ghidează deciziile de viață"
+    },
+    "Life Transition Guide": {
+      "n": "Ghid pentru tranzițiile vieții",
+      "d": "Navigați tranzițiile majore ale vieții cu planificare, sprijin și strategii de adaptare"
+    },
+    "Habit Building Plan": {
+      "n": "Plan de construire a obiceiurilor",
+      "d": "Construiți obiceiuri pozitive durabile cu strategii dovedite bazate pe știință"
+    },
+    "Time Audit Tool": {
+      "n": "Instrument de audit al timpului",
+      "d": "Auditați modul în care vă petreceți timpul și optimizați pentru ceea ce contează cel mai mult"
+    },
+    "Relationship Goal Planner": {
+      "n": "Planificator de obiective relaționale",
+      "d": "Stabiliți și lucrați pentru obiective de relații mai puternice și mai sănătoase"
+    },
+    "Vision Board Creator": {
+      "n": "Creator de panou de viziune",
+      "d": "Creați un panou digital de viziune cu îndemnuri ghidate și exerciții de vizualizare"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Analiză SWOT personală",
+      "d": "Realizați o analiză SWOT personală pentru planificarea carierei și a vieții"
+    },
+    "Legacy Letter Writer": {
+      "n": "Scriitor de scrisori de moștenire",
+      "d": "Scrieți scrisori semnificative de moștenire către cei dragi captând valorile și înțelepciunea"
+    },
+    "Contract Draft Creator": {
+      "n": "Creator de proiecte de contract",
+      "d": "Generați proiecte profesionale de contracte pentru orice relație de afaceri"
+    },
+    "NDA Generator": {
+      "n": "Generator de acorduri de confidențialitate",
+      "d": "Creați acorduri de confidențialitate adaptate situației dumneavoastră"
+    },
+    "Rental Agreement Draft": {
+      "n": "Proiect de contract de închiriere",
+      "d": "Elaborați contracte de închiriere rezidențiale sau comerciale"
+    },
+    "Terms of Service Generator": {
+      "n": "Generator de termeni și condiții",
+      "d": "Creați termeni și condiții complete pentru site-uri web și aplicații"
+    },
+    "Privacy Policy Writer": {
+      "n": "Scriitor de politici de confidențialitate",
+      "d": "Generați politici de confidențialitate conforme cu GDPR și CCPA"
+    },
+    "Freelance Agreement": {
+      "n": "Acord de freelancing",
+      "d": "Creați acorduri între freelanceri și clienți"
+    },
+    "Non-Compete Draft": {
+      "n": "Proiect de clauză de neconcurență",
+      "d": "Elaborați clauze de neconcurență și acorduri independente"
+    },
+    "LLC Operating Agreement": {
+      "n": "Acord de funcționare SRL",
+      "d": "Creați acorduri de funcționare pentru societăți cu răspundere limitată"
+    },
+    "Partnership Agreement": {
+      "n": "Acord de parteneriat",
+      "d": "Elaborați acorduri de parteneriat cu roluri și termeni clari"
+    },
+    "Intellectual Property Brief": {
+      "n": "Rezumat de proprietate intelectuală",
+      "d": "Descrieți proprietatea intelectuală și strategiile de protecție"
+    },
+    "Cease and Desist Draft": {
+      "n": "Proiect de scrisoare de somație",
+      "d": "Creați scrisori de somație pentru diverse încălcări"
+    },
+    "Employee Handbook Section": {
+      "n": "Secțiune de manual al angajatului",
+      "d": "Scrieți secțiuni individuale pentru manualul angajatului"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Acord de contractant independent",
+      "d": "Elaborați acorduri de contractant independent cu limbaj de clasificare adecvat"
+    },
+    "Liability Waiver Draft": {
+      "n": "Proiect de renunțare la răspundere",
+      "d": "Creați renunțări la răspundere pentru activități și servicii"
+    },
+    "Settlement Letter Draft": {
+      "n": "Proiect de scrisoare de tranzacție",
+      "d": "Elaborați scrisori de ofertă sau răspuns de tranzacție"
+    },
+    "Demand Letter Draft": {
+      "n": "Proiect de scrisoare de punere în întârziere",
+      "d": "Creați scrisori formale de punere în întârziere pentru diverse pretenții"
+    },
+    "Power of Attorney Draft": {
+      "n": "Proiect de procură",
+      "d": "Elaborați documente de procură pentru diverse scopuri"
+    },
+    "Last Will Outline": {
+      "n": "Schiță de testament",
+      "d": "Creați o schiță pentru un testament de bază"
+    },
+    "Business License Checklist": {
+      "n": "Lista de verificare pentru licențe de afaceri",
+      "d": "Generați o listă de verificare a licențelor necesare pentru afacerea dumneavoastră"
+    },
+    "Trademark Application Guide": {
+      "n": "Ghid de aplicare pentru marcă înregistrată",
+      "d": "Ghid pas cu pas pentru depunerea unei cereri de marcă înregistrată"
+    },
+    "Small Claims Court Guide": {
+      "n": "Ghid pentru instanța de mică judecată",
+      "d": "Pregătiți-vă pentru instanța de mică judecată cu argumente organizate"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Pregătire pentru medierea divorțului",
+      "d": "Organizați punctele cheie și prioritățile pentru medierea divorțului"
+    },
+    "Tenant Rights Guide": {
+      "n": "Ghid al drepturilor chiriașului",
+      "d": "Înțelegeți drepturile și remediile chiriașilor în jurisdicția dumneavoastră"
+    },
+    "Landlord Notice Draft": {
+      "n": "Proiect de notificare a proprietarului",
+      "d": "Elaborați notificări legale corespunzătoare de la proprietar către chiriaș"
+    },
+    "Copyright Registration Guide": {
+      "n": "Ghid de înregistrare a drepturilor de autor",
+      "d": "Ghid pentru înregistrarea drepturilor de autor la Oficiul de Drepturi de Autor"
+    },
+    "Personal Budget Planner": {
+      "n": "Planificator de buget personal",
+      "d": "Creați un plan cuprinzător de buget lunar sau anual"
+    },
+    "Investment Research Assistant": {
+      "n": "Asistent de cercetare a investițiilor",
+      "d": "Cercetați și analizați oportunitățile de investiții sistematic"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Calculator de achitare a datoriilor",
+      "d": "Planificați o strategie pentru eliminarea eficientă a datoriilor"
+    },
+    "Expense Tracker Setup": {
+      "n": "Configurare urmăritor de cheltuieli",
+      "d": "Proiectați un sistem personalizat de urmărire a cheltuielilor"
+    },
+    "Retirement Planning Guide": {
+      "n": "Ghid de planificare a pensionării",
+      "d": "Construiți o strategie cuprinzătoare de economisire pentru pensionare"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Lista de verificare pentru pregătirea impozitelor",
+      "d": "Organizați documentele și deducerile pentru declarația fiscală"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Calculator de fond de urgență",
+      "d": "Determinați și planificați fondul ideal de urgență"
+    },
+    "Net Worth Tracker": {
+      "n": "Urmăritor de avere netă",
+      "d": "Urmăriți și vizualizați imaginea financiară completă"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Plan de îmbunătățire a scorului de credit",
+      "d": "Creați un plan acționabil pentru îmbunătățirea scorului de credit"
+    },
+    "Student Loan Strategy": {
+      "n": "Strategie pentru împrumuturi studențești",
+      "d": "Optimizați abordarea de rambursare a împrumuturilor studențești"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Planificator de venituri din activități secundare",
+      "d": "Planificați și proiectați veniturile din activități secundare"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Analizor de nevoi de asigurare",
+      "d": "Evaluați lacunele și nevoile dumneavoastră de acoperire de asigurare"
+    },
+    "Estate Planning Checklist": {
+      "n": "Lista de verificare pentru planificarea succesiunii",
+      "d": "Organizați documentele și deciziile de planificare a succesiunii"
+    },
+    "Financial Goal Setter": {
+      "n": "Stabilitor de obiective financiare",
+      "d": "Definiți și urmăriți progresul către reperele financiare"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Analizor de flux de numerar",
+      "d": "Analizați tiparele de venituri și cheltuieli în timp"
+    },
+    "Savings Challenge Creator": {
+      "n": "Creator de provocări de economisire",
+      "d": "Proiectați o provocare distractivă de economisire pentru a vă construi economiile"
+    },
+    "Investment Portfolio Review": {
+      "n": "Revizuire a portofoliului de investiții",
+      "d": "Revizuiți și reechilibrați portofoliul de investiții"
+    },
+    "Cryptocurrency Research": {
+      "n": "Cercetare de criptomonede",
+      "d": "Cercetați și evaluați investițiile în criptomonede"
+    },
+    "Stock Analysis Helper": {
+      "n": "Asistent de analiză a acțiunilor",
+      "d": "Efectuați analize fundamentale și tehnice ale acțiunilor"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Calculator de investiții imobiliare",
+      "d": "Analizați randamentele potențiale ale investițiilor imobiliare"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Găsitor de deduceri fiscale de afaceri",
+      "d": "Identificați deducerile fiscale eligibile pentru afacerea dumneavoastră"
+    },
+    "Payroll Budget Planner": {
+      "n": "Planificator de buget de salarii",
+      "d": "Planificați și bugetați costurile salariale ale angajaților"
+    },
+    "Invoice Template Creator": {
+      "n": "Creator de șabloane de factură",
+      "d": "Proiectați facturi profesionale pentru afacerea dumneavoastră"
+    },
+    "Profit Margin Calculator": {
+      "n": "Calculator de marjă de profit",
+      "d": "Calculați și optimizați marjele de profit pentru produse"
+    },
+    "Financial Independence Planner": {
+      "n": "Planificator de independență financiară",
+      "d": "Trasați calea către independența financiară și pensionarea timpurie"
+    },
+    "Ad Copy Writer": {
+      "n": "Scriitor de texte publicitare",
+      "d": "Creați texte publicitare convingătoare pentru orice platformă sau mediu"
+    },
+    "SEO Article Creator": {
+      "n": "Creator de articole SEO",
+      "d": "Scrieți articole optimizate SEO care se clasează și convertesc"
+    },
+    "Social Media Content Calendar": {
+      "n": "Calendar de conținut pentru rețele sociale",
+      "d": "Planificați o lună de conținut pentru rețele sociale pe toate platformele"
+    },
+    "Email Campaign Builder": {
+      "n": "Constructor de campanii de email",
+      "d": "Proiectați campanii de marketing prin email cu mai multe mesaje care convertesc"
+    },
+    "Product Launch Strategy": {
+      "n": "Strategie de lansare a produsului",
+      "d": "Creați o strategie cuprinzătoare de marketing pentru lansarea produsului"
+    },
+    "Brand Voice Guide": {
+      "n": "Ghid de voce a brandului",
+      "d": "Definiți și documentați vocea și mesajele brandului dumneavoastră"
+    },
+    "Content Marketing Strategy": {
+      "n": "Strategie de marketing de conținut",
+      "d": "Construiți o strategie completă de marketing de conținut de la zero"
+    },
+    "Influencer Outreach Template": {
+      "n": "Șablon de contactare a influencerilor",
+      "d": "Creați propuneri personalizate de colaborare cu influenceri"
+    },
+    "Landing Page Copywriter": {
+      "n": "Scriitor de texte pentru pagini de destinație",
+      "d": "Scrieți texte de pagini de destinație cu rată mare de conversie"
+    },
+    "A/B Test Plan Creator": {
+      "n": "Creator de planuri de teste A/B",
+      "d": "Proiectați teste A/B structurate pentru campaniile de marketing"
+    },
+    "Buyer Persona Builder": {
+      "n": "Constructor de persona de cumpărător",
+      "d": "Construiți persoane detaliate de cumpărători pentru marketing direcționat"
+    },
+    "Competitive Analysis Template": {
+      "n": "Șablon de analiză competitivă",
+      "d": "Analizați concurenții cu cadre structurate și comparații de piață"
+    },
+    "Marketing Budget Planner": {
+      "n": "Planificator de buget de marketing",
+      "d": "Planificați și alocați bugetele de marketing pe canale și campanii"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Strategie de marketing afiliat",
+      "d": "Construiți un program de marketing afiliat de succes de la zero"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Plan de marketing pentru podcast",
+      "d": "Promovați-vă podcastul cu strategii de marketing multi-canal"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Plan de promovare a webinarelor",
+      "d": "Promovați webinare cu strategii multi-canal de marketing pre și post-eveniment"
+    },
+    "Referral Program Designer": {
+      "n": "Designer de programe de recomandare",
+      "d": "Proiectați programe eficiente de recomandare care stimulează creșterea"
+    },
+    "Brand Story Writer": {
+      "n": "Scriitor de poveste de brand",
+      "d": "Creați o poveste de brand captivantă care rezonează cu audiența dumneavoastră"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Constructor de pâlnie de marketing",
+      "d": "Proiectați pâlnii de marketing care ghidează prospecții de la conștientizare la conversie"
+    },
+    "App Store Optimization": {
+      "n": "Optimizare pentru magazinul de aplicații",
+      "d": "Optimizați listarea aplicației pentru vizibilitate și descărcări mai mari"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Scriitor de texte Google Ads",
+      "d": "Scrieți texte convingătoare pentru Google Ads care atrag clicuri și conversii"
+    },
+    "Facebook Ads Creator": {
+      "n": "Creator de reclame Facebook",
+      "d": "Creați reclame eficiente pe Facebook cu direcționare și texte optimizate"
+    },
+    "Newsletter Strategy": {
+      "n": "Strategie de newsletter",
+      "d": "Construiți și dezvoltați un newsletter de succes cu conținut captivant"
+    },
+    "PR Media Pitch": {
+      "n": "Propunere media PR",
+      "d": "Creați propuneri media convingătoare care atrag atenția jurnaliștilor"
+    },
+    "Content Repurposing Plan": {
+      "n": "Plan de reutilizare a conținutului",
+      "d": "Transformați conținutul existent în mai multe formate pentru un impact mai mare"
+    },
+    "Cold Email Generator": {
+      "n": "Generator de emailuri la rece",
+      "d": "Scrieți emailuri la rece eficiente care obțin răspunsuri și deschid conversații"
+    },
+    "Sales Script Writer": {
+      "n": "Scriitor de scripturi de vânzări",
+      "d": "Creați scripturi de vânzări persuasive pentru apeluri și întâlniri"
+    },
+    "Objection Handling Guide": {
+      "n": "Ghid de gestionare a obiecțiilor",
+      "d": "Pregătiți răspunsuri eficiente la obiecțiile comune din vânzări"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Creator de mesaje de follow-up",
+      "d": "Scrieți mesaje de follow-up care mențin conversația și închid vânzări"
+    },
+    "Sales Pitch Creator": {
+      "n": "Creator de pitch-uri de vânzări",
+      "d": "Creați pitch-uri de vânzări convingătoare adaptate audienței dumneavoastră"
+    },
+    "Proposal Generator": {
+      "n": "Generator de propuneri",
+      "d": "Generați propuneri profesionale de afaceri cu structură și conținut optimizat"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Plan de curățare a datelor CRM",
+      "d": "Curățați și organizați datele CRM pentru o eficiență mai bună a vânzărilor"
+    },
+    "Sales Territory Planner": {
+      "n": "Planificator de teritoriu de vânzări",
+      "d": "Planificați și optimizați teritoriile de vânzări pentru acoperire maximă"
+    },
+    "Account Strategy Builder": {
+      "n": "Constructor de strategie de cont",
+      "d": "Dezvoltați strategii de cont pentru clienți cheie și oportunități de creștere"
+    },
+    "Upsell Script Creator": {
+      "n": "Creator scripturi upsell",
+      "d": "Scrieți scripturi pentru upsell și cross-sell către clienții existenți"
+    },
+    "Customer Win-Back Email": {
+      "n": "E-mail recuperare clienți",
+      "d": "Re-angajați clienții pierduți cu campanii direcționate de recuperare"
+    },
+    "Sales Forecast Template": {
+      "n": "Șablon de prognoză de vânzări",
+      "d": "Creați prognoze de vânzări precise cu metodologii bazate pe date"
+    },
+    "Commission Calculator": {
+      "n": "Calculator comisioane",
+      "d": "Proiectați și calculați structuri de comisioane de vânzări"
+    },
+    "Discovery Call Script": {
+      "n": "Script apel descoperire",
+      "d": "Structurați apeluri de descoperire eficiente pentru calificarea prospecților"
+    },
+    "Demo Presentation Outline": {
+      "n": "Schiță prezentare demo",
+      "d": "Creați prezentări structurate de demonstrație produs"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Plan integrare vânzări",
+      "d": "Proiectați programe de integrare pentru noi reprezentanți de vânzări"
+    },
+    "Quarterly Business Review": {
+      "n": "Revizuire trimestrială afaceri",
+      "d": "Pregătiți prezentări de revizuire trimestrială a afacerii pentru clienți"
+    },
+    "Customer Success Plan": {
+      "n": "Plan de succes al clienților",
+      "d": "Proiectați programe de succes al clienților pentru retenție și creștere"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Consilier strategie prețuri",
+      "d": "Dezvoltați și optimizați strategia de prețuri a produsului dvs."
+    },
+    "Value Proposition Builder": {
+      "n": "Constructor de propunere de valoare",
+      "d": "Elaborați propuneri de valoare clare și convingătoare"
+    },
+    "FAQ Generator": {
+      "n": "Generator de întrebări frecvente",
+      "d": "Creați secțiuni cuprinzătoare de întrebări frecvente din informațiile despre produs"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Scriitor de articole pentru baza de cunoștințe",
+      "d": "Scrieți articole clare și ușor de căutat pentru baza de cunoștințe"
+    },
+    "Support Response Template": {
+      "n": "Șablon de răspuns pentru suport",
+      "d": "Creați șabloane reutilizabile pentru scenarii comune de suport"
+    },
+    "Chatbot Training Data": {
+      "n": "Date de antrenament pentru chatbot",
+      "d": "Generați date de antrenament pentru chatbot-uri de suport clienți"
+    },
+    "Escalation Response Guide": {
+      "n": "Ghid de răspuns la escaladări",
+      "d": "Creați ghiduri pentru gestionarea problemelor de suport escaladate"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Sondaj de satisfacție a clienților",
+      "d": "Proiectați sondaje pentru măsurarea satisfacției clienților"
+    },
+    "Refund Policy Writer": {
+      "n": "Scriitor de politici de rambursare",
+      "d": "Creați politici clare și corecte de rambursare și returnare"
+    },
+    "Bug Report Template": {
+      "n": "Șablon de raport de erori",
+      "d": "Proiectați șabloane structurate de raportare a erorilor pentru utilizatori"
+    },
+    "Feature Request Response": {
+      "n": "Răspuns la cereri de funcționalități",
+      "d": "Elaborați răspunsuri la cererile de funcționalități ale clienților"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Secvență de emailuri de integrare",
+      "d": "Creați secvențe de emailuri pentru integrarea clienților noi"
+    },
+    "Help Center Article": {
+      "n": "Articol pentru centrul de ajutor",
+      "d": "Scrieți documentație cuprinzătoare pentru centrul de ajutor"
+    },
+    "Service Level Agreement": {
+      "n": "Acord privind nivelul serviciilor",
+      "d": "Elaborați documente SLA pentru angajamentele de suport"
+    },
+    "Customer Apology Template": {
+      "n": "Șablon de scuze pentru clienți",
+      "d": "Scrieți mesaje sincere de scuze pentru deficiențele serviciului"
+    },
+    "Product Update Announcement": {
+      "n": "Anunț de actualizare a produsului",
+      "d": "Comunicați actualizări și modificări ale produsului clienților"
+    },
+    "Community Guidelines Writer": {
+      "n": "Scriitor de ghiduri ale comunității",
+      "d": "Creați ghiduri ale comunității pentru forumuri și canale sociale"
+    },
+    "Startup Validation Framework": {
+      "n": "Cadru de validare a startup-ului",
+      "d": "Validați ideea de startup înainte de a construi"
+    },
+    "MVP Feature Planner": {
+      "n": "Planificator funcții MVP",
+      "d": "Prioritizați funcțiile pentru produsul minim viabil"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Constructor de strategie de prețuri",
+      "d": "Dezvoltați modele de prețuri pentru produsul startup-ului"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Schiță de prezentare pentru investitori",
+      "d": "Structurați un pitch deck convingător pentru strângerea de fonduri"
+    },
+    "Business Model Canvas": {
+      "n": "Canvas-ul modelului de afaceri",
+      "d": "Cartografiați modelul complet de afaceri pe o singură pagină"
+    },
+    "Lean Canvas Creator": {
+      "n": "Creator Lean Canvas",
+      "d": "Creați un lean canvas pentru identificarea riscurilor și ipotezelor"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Analizor al peisajului competitiv",
+      "d": "Cartografiați și analizați mediul dumneavoastră competitiv"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Strategie de lansare pe piață",
+      "d": "Planificați intrarea pe piață și abordarea de achiziție a clienților"
+    },
+    "Founding Team Assessment": {
+      "n": "Evaluare a echipei fondatoare",
+      "d": "Evaluați compoziția echipei și identificați lacunele de competențe"
+    },
+    "Startup Financial Projections": {
+      "n": "Proiecții financiare pentru startup",
+      "d": "Construiți proiecții financiare pe 3 ani pentru startup-ul dumneavoastră"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Recrutor de consiliu consultativ",
+      "d": "Identificați și recrutați consilieri pentru startup-ul dumneavoastră"
+    },
+    "Pivot Decision Framework": {
+      "n": "Cadru de decizie pentru pivot",
+      "d": "Evaluați dacă și cum să pivotați startup-ul"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Tablou de bord KPI pentru startup",
+      "d": "Definiți și urmăriți indicatorii cheie de performanță"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Plan de campanie de crowdfunding",
+      "d": "Planificați și executați o campanie de crowdfunding de succes"
+    },
+    "Partnership Strategy": {
+      "n": "Strategie de parteneriat",
+      "d": "Identificați și urmăriți parteneriate strategice"
+    },
+    "Accelerator Application": {
+      "n": "Aplicație pentru accelerator",
+      "d": "Pregătiți o aplicație convingătoare pentru accelerator sau incubator"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Sondaj de potrivire produs-piață",
+      "d": "Proiectați sondaje pentru măsurarea potrivirii produs-piață"
+    },
+    "Startup Legal Checklist": {
+      "n": "Checklist juridic startup",
+      "d": "Acoperiți toate bazele juridice la înființarea unei companii"
+    },
+    "Equity Split Calculator": {
+      "n": "Calculator de împărțire a capitalului",
+      "d": "Determinați o distribuție corectă a capitalului între co-fondatori"
+    },
+    "Growth Experiment Planner": {
+      "n": "Planificator de experimente de creștere",
+      "d": "Proiectați și urmăriți experimente de creștere sistematic"
+    },
+    "Product Description Writer": {
+      "n": "Scriitor descrieri produse",
+      "d": "Scrieți descrieri de produse convingătoare care stimulează vânzările"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Optimizator de listări Amazon",
+      "d": "Optimizați listările de produse Amazon pentru vizibilitate și conversie"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Ghid de configurare a magazinului Etsy",
+      "d": "Configurați și optimizați magazinul Etsy pentru succes"
+    },
+    "Shopify Store Planner": {
+      "n": "Planificator de magazin Shopify",
+      "d": "Planificați structura și lansarea magazinului Shopify"
+    },
+    "Product Photography Brief": {
+      "n": "Brief de fotografie de produs",
+      "d": "Creați brief-uri pentru ședințe de fotografie de produs"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Planificator de strategie de expediere",
+      "d": "Proiectați strategii de expediere eficiente din punct de vedere al costurilor"
+    },
+    "Return Policy Creator": {
+      "n": "Creator de politici de returnare",
+      "d": "Creați politici clare de returnare și schimb pentru e-commerce"
+    },
+    "Customer Review Response": {
+      "n": "Răspuns la recenziile clienților",
+      "d": "Elaborați răspunsuri profesionale la recenziile clienților"
+    },
+    "Inventory Management Plan": {
+      "n": "Plan de gestionare a inventarului",
+      "d": "Creați sisteme de urmărire și gestionare a inventarului"
+    },
+    "Dropshipping Product Research": {
+      "n": "Cercetare de produse dropshipping",
+      "d": "Cercetați și evaluați oportunitățile de produse dropshipping"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Designer print-on-demand",
+      "d": "Planificați linii de produse și design-uri print-on-demand"
+    },
+    "Subscription Box Planner": {
+      "n": "Planificator de cutii de abonament",
+      "d": "Proiectați și lansați o afacere de cutii de abonament"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Strategie de vânzări de sărbători",
+      "d": "Planificați promoții sezoniere și campanii de vânzări de sărbători"
+    },
+    "Product Bundle Creator": {
+      "n": "Creator de pachete de produse",
+      "d": "Proiectați pachete de produse care cresc valoarea medie a comenzii"
+    },
+    "Cart Abandonment Email": {
+      "n": "Email pentru coșul abandonat",
+      "d": "Creați secvențe de emailuri pentru recuperarea coșurilor abandonate"
+    },
+    "Homework Helper": {
+      "n": "Asistent de teme",
+      "d": "Obțineți ajutor pas cu pas la teme pentru orice materie"
+    },
+    "Quiz & Test Generator": {
+      "n": "Generator chestionare și teste",
+      "d": "Creați chestionare personalizate din orice subiect sau material de studiu"
+    },
+    "Science Fair Project Planner": {
+      "n": "Planificator de proiect pentru târgul de științe",
+      "d": "Planificați și organizați un proiect câștigător pentru târgul de științe de la ipoteză la prezentare"
+    },
+    "Lesson Plan Creator": {
+      "n": "Creator planuri lecție",
+      "d": "Proiectați planuri structurate de lecție aliniate cu obiectivele de învățare"
+    },
+    "Lab Report Writer": {
+      "n": "Scriitor de rapoarte de laborator",
+      "d": "Structurați și scrieți rapoarte de laborator cu formatare științifică corespunzătoare"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Ajutor înțelegere text",
+      "d": "Îmbunătățiți înțelegerea textului cu analiză ghidată și întrebări"
+    },
+    "Math Problem Solver": {
+      "n": "Rezolvator de probleme de matematică",
+      "d": "Rezolvați probleme de matematică cu explicații detaliate pas cu pas"
+    },
+    "Vocabulary Builder": {
+      "n": "Constructor de vocabular",
+      "d": "Construiți și exersați vocabularul cu definiții, exemple și exerciții"
+    },
+    "Book Report Helper": {
+      "n": "Asistent de recenzii de carte",
+      "d": "Schițați și scrieți recenzii de carte cu analiză structurată"
+    },
+    "History Timeline Creator": {
+      "n": "Creator de cronologii istorice",
+      "d": "Creați cronologii istorice detaliate pentru orice eră sau eveniment"
+    },
+    "Geography Quiz Maker": {
+      "n": "Creator de chestionare de geografie",
+      "d": "Generați chestionare de geografie acoperind hărți, capitale, repere și altele"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generator de practică de ortografie",
+      "d": "Creați liste personalizate de practică de ortografie și exerciții"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Creator de exerciții de gramatică",
+      "d": "Generați exerciții de gramatică pentru orice nivel de abilitate și subiect"
+    },
+    "Critical Thinking Questions": {
+      "n": "Întrebări de gândire critică",
+      "d": "Generați întrebări provocatoare de gândire pentru dezvoltarea gândirii critice"
+    },
+    "Debate Prep Guide": {
+      "n": "Ghid de pregătire pentru dezbateri",
+      "d": "Pregătiți argumente structurate și contraargumente pentru dezbateri"
+    },
+    "College Application Essay": {
+      "n": "Eseu pentru admiterea la facultate",
+      "d": "Elaborați eseuri convingătoare de admitere la facultate cu îndemnuri ghidate"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Asistent pentru eseuri de bursă",
+      "d": "Scrieți eseuri persuasive de bursă care evidențiază realizările și obiectivele"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "Ghid de pregătire SAT/ACT",
+      "d": "Creați planuri de studiu direcționate și exersați pentru examenele SAT sau ACT"
+    },
+    "Study Schedule Planner": {
+      "n": "Planificator de program de studiu",
+      "d": "Construiți un program de studiu eficient echilibrând toate materiile și termenele"
+    },
+    "Group Project Organizer": {
+      "n": "Organizator de proiecte de grup",
+      "d": "Planificați roluri, sarcini și calendare pentru proiecte de grup"
+    },
+    "Presentation Creator": {
+      "n": "Creator de prezentări",
+      "d": "Proiectați și schițați prezentări captivante pentru orice subiect"
+    },
+    "Note-Taking Guide": {
+      "n": "Ghid de luare a notițelor",
+      "d": "Creați șabloane structurate de notițe pentru cursuri și lecturi"
+    },
+    "Mind Map Generator": {
+      "n": "Generator de hărți mentale",
+      "d": "Creați hărți mentale vizuale pentru organizarea ideilor și conceptelor"
+    },
+    "Research Project Planner": {
+      "n": "Planificator de proiecte de cercetare",
+      "d": "Planificați și gestionați proiecte de cercetare de la selecția temei la lucrarea finală"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Pregătire pentru conferința părinte-profesor",
+      "d": "Pregătiți puncte de discuție și întrebări pentru întâlniri productive părinte-profesor"
+    },
+    "Classroom Activity Designer": {
+      "n": "Designer de activități de clasă",
+      "d": "Proiectați activități interactive de clasă care consolidează obiectivele de învățare"
+    },
+    "Special Education Resource": {
+      "n": "Resursă de educație specială",
+      "d": "Creați resurse de învățare adaptate pentru elevii cu nevoi educaționale speciale"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Planificator de curriculum homeschooling",
+      "d": "Planificați un curriculum complet de homeschooling pe materii și semestre"
+    },
+    "Student Self-Assessment": {
+      "n": "Autoevaluare a elevului",
+      "d": "Creați instrumente de autoevaluare pentru ca elevii să își urmărească propriul progres"
+    },
+    "Learning Style Analyzer": {
+      "n": "Analizor de stil de învățare",
+      "d": "Identificați stilurile de învățare și sugerați strategii de studiu personalizate"
+    },
+    "Literature Review Writer": {
+      "n": "Scriitor de recenzii de literatură",
+      "d": "Organizați și scrieți recenzii cuprinzătoare de literatură pe orice subiect"
+    },
+    "Research Assistant": {
+      "n": "Asistent de cercetare",
+      "d": "Obțineți ajutor pentru găsirea, organizarea și rezumarea materialelor de cercetare"
+    },
+    "Fact Checker Template": {
+      "n": "Șablon de verificare a faptelor",
+      "d": "Verificați afirmații și declarații cu o metodologie structurată de verificare"
+    },
+    "Source Comparison Tool": {
+      "n": "Instrument de comparare a surselor",
+      "d": "Comparați și contrastați mai multe surse pe același subiect"
+    },
+    "Citation Generator": {
+      "n": "Generator de citări",
+      "d": "Generați citări formatate corect în orice stil academic"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Creator de bibliografie adnotată",
+      "d": "Creați bibliografii adnotate cu rezumate și evaluări"
+    },
+    "Research Methodology Guide": {
+      "n": "Ghid de metodologie de cercetare",
+      "d": "Selectați și proiectați metodologia de cercetare potrivită pentru studiul dumneavoastră"
+    },
+    "Survey Question Designer": {
+      "n": "Designer de întrebări de sondaj",
+      "d": "Proiectați întrebări de sondaj eficiente pentru colectarea de date de cercetare fiabile"
+    },
+    "Data Collection Plan": {
+      "n": "Plan de colectare a datelor",
+      "d": "Creați un plan structurat pentru colectarea datelor de cercetare"
+    },
+    "Thesis Statement Generator": {
+      "n": "Generator de enunțuri de teză",
+      "d": "Elaborați enunțuri puternice de teză pentru lucrări și disertații"
+    },
+    "Research Proposal Writer": {
+      "n": "Scriitor de propuneri de cercetare",
+      "d": "Scrieți propuneri convingătoare de cercetare pentru evaluare academică sau finanțare"
+    },
+    "Systematic Review Guide": {
+      "n": "Ghid de revizuire sistematică",
+      "d": "Efectuați revizuiri sistematice urmând protocoale stabilite"
+    },
+    "Interview Protocol Creator": {
+      "n": "Creator de protocol de interviu",
+      "d": "Proiectați protocoale structurate de interviu pentru cercetarea calitativă"
+    },
+    "Research Ethics Checklist": {
+      "n": "Lista de verificare a eticii cercetării",
+      "d": "Asigurați conformitatea cercetării cu ghidurile etice și cerințele comitetului de etică"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Cadru de meta-analiză",
+      "d": "Structurați și efectuați meta-analize pe studii multiple"
+    },
+    "Case Study Template": {
+      "n": "Șablon de studiu de caz",
+      "d": "Structurați și scrieți studii de caz detaliate pentru cercetare sau afaceri"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Ghid de analiză calitativă",
+      "d": "Ghidați analiza calitativă a datelor folosind abordări de codificare și tematice"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Ghid de analiză cantitativă",
+      "d": "Ghidați analiza cantitativă a datelor cu metode statistice adecvate"
+    },
+    "Research Poster Creator": {
+      "n": "Creator de postere de cercetare",
+      "d": "Proiectați și aranjați postere de cercetare pentru conferințe și prezentări"
+    },
+    "Research Grant Writer": {
+      "n": "Scriitor de granturi de cercetare",
+      "d": "Scrieți propuneri structurate de granturi pentru finanțarea cercetării"
+    },
+    "Chemistry Tutor": {
+      "n": "Tutor de chimie",
+      "d": "Obțineți tutorat personalizat de chimie cu explicații și probleme de practică"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Echilibrator de ecuații chimice",
+      "d": "Echilibrați ecuații chimice cu explicații pas cu pas"
+    },
+    "Lab Safety Checklist": {
+      "n": "Lista de verificare pentru siguranța în laborator",
+      "d": "Generați liste cuprinzătoare de siguranță pentru experimente de chimie"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Asistent de chimie organică",
+      "d": "Studiați reacții organice, mecanisme și nomenclatură"
+    },
+    "Periodic Table Explorer": {
+      "n": "Explorator al tabelului periodic",
+      "d": "Explorați proprietățile elementelor, tendințele și relațiile din tabelul periodic"
+    },
+    "Stoichiometry Solver": {
+      "n": "Rezolvator de stoichiometrie",
+      "d": "Rezolvați probleme de stoichiometrie cu calcule detaliate mol-la-mol"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Ghid de legături chimice",
+      "d": "Înțelegeți legăturile ionice, covalente și metalice cu explicații vizuale"
+    },
+    "Acid-Base Calculator": {
+      "n": "Calculator acido-bazic",
+      "d": "Calculați pH, pOH, Ka, Kb și rezolvați probleme de echilibru acido-bazic"
+    },
+    "Solution Preparation Guide": {
+      "n": "Ghid de preparare a soluțiilor",
+      "d": "Calculați și pregătiți soluții chimice cu concentrații corecte"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Interpret de spectroscopie",
+      "d": "Interpretați spectre IR, RMN și de masă pentru identificarea compușilor"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Caiet de laborator de chimie",
+      "d": "Creați intrări structurate în caietul de laborator pentru experimente de chimie"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Asistent pentru mecanisme de reacție",
+      "d": "Desenați și înțelegeți mecanismele de reacție pas cu pas"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Calculator de termochimie",
+      "d": "Calculați entalpia, entropia și energia liberă Gibbs pentru reacții chimice"
+    },
+    "Electrochemistry Guide": {
+      "n": "Ghid de electrochimie",
+      "d": "Înțelegeți celulele electrochimice, potențialele de electrod și electroliza"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Ghid de chimia polimerilor",
+      "d": "Studiați tipurile de polimeri, mecanismele de sinteză și proprietățile"
+    },
+    "Biology Tutor": {
+      "n": "Tutor de biologie",
+      "d": "Obțineți tutorat personalizat de biologie cu explicații clare și exemple"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Ghid de studiu al biologiei celulare",
+      "d": "Studiați structurile, funcțiile și procesele celulare în profunzime"
+    },
+    "Genetics Problem Solver": {
+      "n": "Rezolvator de probleme de genetică",
+      "d": "Rezolvați probleme de genetică inclusiv pătrate Punnett și analiza de pedigri"
+    },
+    "Ecology Study Helper": {
+      "n": "Asistent de studiu al ecologiei",
+      "d": "Studiați ecosistemele, rețelele trofice, dinamica populațiilor și relațiile ecologice"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Ghid de anatomie și fiziologie",
+      "d": "Studiați sistemele corpului uman cu explicații anatomice detaliate"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Ghid de laborator de microbiologie",
+      "d": "Ghidați tehnicile de laborator de microbiologie inclusiv colorarea, cultivarea și identificarea"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Cartograf de concepte ale evoluției",
+      "d": "Cartografiați conceptele evoluției inclusiv selecția naturală, specierea și filogenetica"
+    },
+    "Plant Biology Helper": {
+      "n": "Asistent de biologia plantelor",
+      "d": "Studiați anatomia, fiziologia și rolurile ecologice ale plantelor"
+    },
+    "Molecular Biology Guide": {
+      "n": "Ghid de biologie moleculară",
+      "d": "Înțelegeți replicarea ADN, transcripția, traducerea și reglarea genelor"
+    },
+    "Bioinformatics Helper": {
+      "n": "Asistent de bioinformatică",
+      "d": "Obțineți ajutor cu analiza secvențelor, căutarea în baze de date și biologia computațională"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Ghid de studiu al neuroștiinței",
+      "d": "Studiați sistemul nervos, funcția creierului și căile neuronale"
+    },
+    "Marine Biology Explorer": {
+      "n": "Explorator de biologie marină",
+      "d": "Explorați ecosistemele marine, organismele și știința oceanului"
+    },
+    "Immunology Study Guide": {
+      "n": "Ghid de studiu al imunologiei",
+      "d": "Studiați sistemul imunitar, răspunsurile imune și tulburările imunologice"
+    },
+    "Biotechnology Overview": {
+      "n": "Prezentare generală a biotehnologiei",
+      "d": "Explorați aplicațiile biotehnologiei inclusiv ingineria genetică și CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Planificator de biologie a conservării",
+      "d": "Planificați strategii de conservare pentru prezervarea speciilor și habitatelor"
+    },
+    "Physics Problem Solver": {
+      "n": "Rezolvator de probleme de fizică",
+      "d": "Rezolvați probleme de fizică cu soluții detaliate pas cu pas"
+    },
+    "Mechanics Helper": {
+      "n": "Asistent de mecanică",
+      "d": "Studiați și rezolvați probleme de mecanică clasică inclusiv cinematica și dinamica"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Ghid de electricitate și magnetism",
+      "d": "Înțelegeți câmpurile electrice, circuitele și fenomenele electromagnetice"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Tutor de termodinamică",
+      "d": "Studiați legile termodinamicii, procesele și problemele de transfer de căldură"
+    },
+    "Optics & Waves Guide": {
+      "n": "Ghid de optică și unde",
+      "d": "Studiați fenomenele ondulatorii, optica și comportamentul luminii"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Explicator de fizică cuantică",
+      "d": "Înțelegeți conceptele de mecanică cuantică cu explicații clare și exemple"
+    },
+    "Astrophysics Explorer": {
+      "n": "Explorator de astrofizică",
+      "d": "Explorați evoluția stelară, cosmologia și mecanica cerească"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Ghid de fizică nucleară",
+      "d": "Studiați reacțiile nucleare, radioactivitatea și energia nucleară"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Asistent de dinamica fluidelor",
+      "d": "Rezolvați probleme de mecanica fluidelor inclusiv aplicații Bernoulli și Navier-Stokes"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Tutor de mecanică clasică",
+      "d": "Aprofundați mecanica lagrangiană și hamiltoniană și dinamica avansată"
+    },
+    "Relativity Concept Guide": {
+      "n": "Ghid de concepte ale relativității",
+      "d": "Înțelegeți relativitatea specială și generală cu experimente mintale și matematică"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Asistent de rapoarte de laborator de fizică",
+      "d": "Structurați și scrieți rapoarte de laborator de fizică cu analiza corespunzătoare a datelor"
+    },
+    "Math Proof Writer": {
+      "n": "Scriitor de demonstrații matematice",
+      "d": "Scrieți demonstrații matematice clare și riguroase cu structură logică"
+    },
+    "Calculus Problem Solver": {
+      "n": "Rezolvator de probleme de calcul",
+      "d": "Rezolvați probleme de calcul inclusiv limite, derivate și integrale"
+    },
+    "Statistics Helper": {
+      "n": "Asistent de statistică",
+      "d": "Rezolvați probleme de statistică și interpretați rezultatele statistice"
+    },
+    "Linear Algebra Guide": {
+      "n": "Ghid de algebră liniară",
+      "d": "Studiați vectori, matrici, transformări și valori proprii"
+    },
+    "Probability Calculator": {
+      "n": "Calculator de probabilități",
+      "d": "Calculați probabilități și rezolvați probleme de distribuții de probabilitate"
+    },
+    "Geometry Tutor": {
+      "n": "Tutor de geometrie",
+      "d": "Studiați concepte geometrice, teoreme și rezolvați probleme de geometrie"
+    },
+    "Trigonometry Helper": {
+      "n": "Asistent de trigonometrie",
+      "d": "Rezolvați ecuații trigonometrice, identități și aplicații"
+    },
+    "Number Theory Explorer": {
+      "n": "Explorator de teoria numerelor",
+      "d": "Explorați numere prime, divizibilitate, aritmetică modulară și aplicații criptografice"
+    },
+    "Discrete Math Guide": {
+      "n": "Ghid de matematică discretă",
+      "d": "Studiați combinatorica, teoria grafurilor, logica și teoria mulțimilor"
+    },
+    "Differential Equations Solver": {
+      "n": "Rezolvator de ecuații diferențiale",
+      "d": "Rezolvați ecuații diferențiale ordinare și cu derivate parțiale cu metode detaliate"
+    },
+    "Math Word Problem Solver": {
+      "n": "Rezolvator de probleme de matematică cu enunț",
+      "d": "Traduceți și rezolvați probleme de matematică din viața reală pas cu pas"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Ghid de modelare matematică",
+      "d": "Construiți modele matematice pentru fenomene și aplicații din lumea reală"
+    },
+    "SQL Query Generator": {
+      "n": "Generator de interogări SQL",
+      "d": "Generați și optimizați interogări SQL pentru extragerea și analiza datelor"
+    },
+    "Python Data Analysis": {
+      "n": "Analiză de date cu Python",
+      "d": "Scrieți cod Python pentru analiza datelor folosind pandas, NumPy și altele"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Lista de verificare pentru curățarea datelor",
+      "d": "Creați liste cuprinzătoare de verificare pentru curățarea și preprocesarea datelor"
+    },
+    "Data Visualization Planner": {
+      "n": "Planificator de vizualizare a datelor",
+      "d": "Alegeți graficele potrivite și proiectați vizualizări eficiente de date"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Selector de modele de machine learning",
+      "d": "Selectați cel mai bun model ML pentru tipul problemei și caracteristicile datelor"
+    },
+    "A/B Test Calculator": {
+      "n": "Calculator de teste A/B",
+      "d": "Proiectați și analizați teste A/B cu calcule de semnificație statistică"
+    },
+    "Dashboard Design Guide": {
+      "n": "Ghid de design al tablourilor de bord",
+      "d": "Proiectați tablouri de bord eficiente cu KPI-urile și aspectul potrivit"
+    },
+    "ETL Pipeline Planner": {
+      "n": "Planificator de pipeline ETL",
+      "d": "Proiectați și planificați pipeline-uri ETL pentru integrarea și procesarea datelor"
+    },
+    "Feature Engineering Guide": {
+      "n": "Ghid de inginerie a caracteristicilor",
+      "d": "Creați caracteristici eficiente pentru modelele de machine learning"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Arhitectură de pipeline de date",
+      "d": "Proiectați arhitecturi scalabile de pipeline de date pentru analiză și ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Analiză exploratorie a datelor",
+      "d": "Efectuați analize exploratorii de date amănunțite cu planuri structurate de analiză și vizualizare"
+    },
+    "Statistical Test Selector": {
+      "n": "Selector de teste statistice",
+      "d": "Alegeți și aplicați testul statistic potrivit pentru datele și ipoteza dumneavoastră"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Ghid de analiză de serii temporale",
+      "d": "Analizați date de serii temporale cu metode de prognoză și detectare a tendințelor"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Ghid de introducere în procesarea limbajului natural",
+      "d": "Începeți cu sarcini NLP inclusiv clasificarea textului și analiza sentimentelor"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Planificator de proiecte de viziune computerizată",
+      "d": "Planificați proiecte de viziune computerizată de la colectarea datelor la implementarea modelului"
+    },
+    "Technical Requirements Document": {
+      "n": "Document de cerințe tehnice",
+      "d": "Creați documente detaliate de cerințe tehnice pentru proiecte de inginerie"
+    },
+    "Engineering Design Review": {
+      "n": "Revizuire de design ingineresc",
+      "d": "Pregătiți documente structurate de revizuire a designului pentru proiecte de inginerie"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Analiză a modurilor de defecțiune (FMEA)",
+      "d": "Efectuați analize sistematice ale modurilor și efectelor defecțiunilor pentru produse sau procese"
+    },
+    "Project Specification Writer": {
+      "n": "Scriitor de specificații de proiect",
+      "d": "Scrieți specificații clare și complete de proiect pentru lucrări de inginerie"
+    },
+    "CAD Project Planner": {
+      "n": "Planificator de proiecte CAD",
+      "d": "Planificați și organizați proiecte de modelare CAD cu documentație adecvată"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Ghid de procese de fabricație",
+      "d": "Selectați și planificați procese de fabricație pentru dezvoltarea produselor"
+    },
+    "Quality Control Checklist": {
+      "n": "Lista de verificare pentru controlul calității",
+      "d": "Creați liste de verificare pentru controlul calității și planuri de inspecție pentru fabricație"
+    },
+    "Engineering Change Request": {
+      "n": "Cerere de modificare inginerească",
+      "d": "Documentați și gestionați cererile de modificare inginerească cu analiza impactului"
+    },
+    "Structural Analysis Guide": {
+      "n": "Ghid de analiză structurală",
+      "d": "Ghidați calculele și metodologia de analiză structurală pentru proiecte de inginerie"
+    },
+    "Materials Selection Guide": {
+      "n": "Ghid de selecție a materialelor",
+      "d": "Selectați materialele optime pe baza cerințelor mecanice, termice și chimice"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Creator de prompt-uri Midjourney",
+      "d": "Elaborați prompt-uri detaliate Midjourney cu stil, iluminare și parametri de compoziție"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "Constructor de prompt-uri DALL-E",
+      "d": "Construiți prompt-uri DALL-E optimizate cu descrieri clare și direcție artistică"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Scriitor de prompt-uri Stable Diffusion",
+      "d": "Generați prompt-uri Stable Diffusion cu inginerie de prompt-uri pozitive și negative"
+    },
+    "Product Photography Prompt": {
+      "n": "Prompt de fotografie de produs",
+      "d": "Creați prompt-uri AI pentru fotografie de produs uimitoare cu rezultate de calitate de studio"
+    },
+    "Landscape Art Prompt": {
+      "n": "Prompt de artă peisagistică",
+      "d": "Creați prompt-uri de artă peisagistică uluitoare cu detalii de mediu și atmosferă"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Prompt de fotografie de portret",
+      "d": "Generați prompt-uri AI de portret cu iluminare, expresie și ghidare de compoziție"
+    },
+    "Food Photography Prompt": {
+      "n": "Prompt de fotografie culinară",
+      "d": "Elaborați prompt-uri apetisante de fotografie culinară cu stilizare și detalii de prezentare"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Prompt de vizualizare arhitecturală",
+      "d": "Creați prompt-uri de vizualizare arhitecturală pentru clădiri și spații interioare"
+    },
+    "Fashion Design Prompt": {
+      "n": "Prompt de design vestimentar",
+      "d": "Generați concepte de design vestimentar cu detalii de țesătură, siluetă și stil"
+    },
+    "Comic Art Prompt": {
+      "n": "Prompt de artă de benzi desenate",
+      "d": "Creați prompt-uri de artă în stil de benzi desenate cu compoziție de panouri și acțiunea personajelor"
+    },
+    "Abstract Art Prompt": {
+      "n": "Prompt de artă abstractă",
+      "d": "Generați prompt-uri de artă abstractă cu teoria culorilor, textură și expresie emoțională"
+    },
+    "Icon Design Brief": {
+      "n": "Brief de design al pictogramelor",
+      "d": "Proiectați seturi de pictograme curate cu stil consistent și limbaj vizual"
+    },
+    "Infographic Design Brief": {
+      "n": "Brief de design de infografic",
+      "d": "Planificați machete de infografice cu vizualizarea datelor și ierarhie vizuală"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Prompt de grafică pentru rețele sociale",
+      "d": "Generați grafice captivante pentru rețelele sociale pentru orice platformă"
+    },
+    "Meme Creator Prompt": {
+      "n": "Prompt de creare de meme-uri",
+      "d": "Generați concepte de meme-uri cu selecția formatului, subtitrări și potențial viral"
+    },
+    "AI Avatar Prompt": {
+      "n": "Prompt de avatar AI",
+      "d": "Creați design-uri unice de avatar AI pentru profiluri, gaming și identități virtuale"
+    },
+    "Song Lyrics Writer": {
+      "n": "Scriitor versuri cântece",
+      "d": "Scrieți versuri originale de cântece cu strofe, refren și punte în orice gen"
+    },
+    "Chord Progression Generator": {
+      "n": "Generator de progresii de acorduri",
+      "d": "Generați progresii de acorduri cu ghidare de teorie muzicală pentru orice gen și dispoziție"
+    },
+    "Beat Ideas Creator": {
+      "n": "Creator de idei de ritmuri",
+      "d": "Generați concepte de ritmuri cu tempo, modele de tobe și idei de instrumentație"
+    },
+    "Song Structure Builder": {
+      "n": "Constructor de structură a cântecului",
+      "d": "Proiectați aranjamente de cântece cu ordinea secțiunilor, dinamica și tranzițiile"
+    },
+    "Rap Verse Writer": {
+      "n": "Scriitor de versuri rap",
+      "d": "Scrieți versuri rap puternice cu modele de flux, scheme de rimă și jocuri de cuvinte"
+    },
+    "Country Song Writer": {
+      "n": "Scriitor de cântece country",
+      "d": "Scrieți cântece country autentice cu povestire, imagistică și stil specific"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Creator de hook-uri de pop",
+      "d": "Creați hook-uri și refrenuri de pop memorabile care rămân în mintea ascultătorilor"
+    },
+    "Rock Ballad Writer": {
+      "n": "Scriitor de balade rock",
+      "d": "Scrieți balade rock emoționante cu crescendo-uri puternice și refrenuri imnice"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Ghid de aranjament muzical complet",
+      "d": "Planificați aranjamente muzicale complete cu instrumentație, voci și dinamică"
+    },
+    "Band Name Generator": {
+      "n": "Generator de nume de trupă",
+      "d": "Generați nume creative de trupă pe baza genului, atmosferei și preferințelor imagistice"
+    },
+    "Music Video Concept": {
+      "n": "Concept de videoclip muzical",
+      "d": "Dezvoltați concepte de videoclipuri muzicale cu narațiune vizuală și storyboard"
+    },
+    "Mixing Checklist": {
+      "n": "Lista de verificare pentru mixare",
+      "d": "Lista cuprinzătoare de verificare pentru mixare acoperind EQ, compresie, efecte și echilibru"
+    },
+    "Film Score Brief": {
+      "n": "Brief coloană sonoră film",
+      "d": "Creați briefs detaliate pentru coloane sonore cu dispoziție, instrumentație și indicii temporale"
+    },
+    "YouTube Shorts Script": {
+      "n": "Scenariu YouTube Shorts",
+      "d": "Scrieți scenarii captivante pentru YouTube Shorts optimizate pentru video vertical de 60 de secunde"
+    },
+    "Video Storyboard Creator": {
+      "n": "Creator de storyboard video",
+      "d": "Planificați storyboard-uri vizuale cu descrieri de scene, unghiuri de cameră și tranziții"
+    },
+    "Documentary Outline": {
+      "n": "Schiță documentar",
+      "d": "Structurați documentare convingătoare cu arc narativ, interviuri și planuri b-roll"
+    },
+    "Vlog Episode Planner": {
+      "n": "Planificator episoade vlog",
+      "d": "Planificați episoade de vlog captivante cu locații, puncte de discuție și varietate vizuală"
+    },
+    "Screenwriting Helper": {
+      "n": "Asistent de scriere de scenarii",
+      "d": "Scrieți scenarii cu structură, format și tehnici profesionale"
+    },
+    "Short Film Script": {
+      "n": "Scenariu scurtmetraj",
+      "d": "Scrieți scenarii complete de scurtmetraj cu povestire vizuală și narativă strânsă"
+    },
+    "Animation Script Writer": {
+      "n": "Scenarist de animație",
+      "d": "Scrieți scenarii de animație cu gaguri vizuale, acțiuni ale personajelor și sincronizare"
+    },
+    "Video Editing Brief": {
+      "n": "Brief editare video",
+      "d": "Creați briefs detaliate de editare video cu ritm, efecte și linii directoare de stil"
+    },
+    "Livestream Run Sheet": {
+      "n": "Plan de transmisiune live",
+      "d": "Planificați transmisiuni live cu segmente cronometrate, puncte de discuție și elemente de angajament"
+    },
+    "Tutorial Video Script": {
+      "n": "Scenariu video tutorial",
+      "d": "Scrieți scenarii clare pentru tutoriale video cu instrucțiuni pas cu pas și materiale vizuale"
+    },
+    "Explainer Video Script": {
+      "n": "Scenariu video explicativ",
+      "d": "Scrieți scenarii clare de videoclipuri explicative care simplifică subiectele complexe vizual"
+    },
+    "Video SEO Optimizer": {
+      "n": "Optimizator SEO video",
+      "d": "Optimizați metadatele video cu titluri, descrieri, etichete și strategii de miniaturi"
+    },
+    "Novel Outline Creator": {
+      "n": "Creator schiță roman",
+      "d": "Construiți schițe cuprinzătoare de roman cu structură narativă, capitole și arce de personaje"
+    },
+    "Short Story Writer": {
+      "n": "Scriitor de povestiri scurte",
+      "d": "Scrieți povestiri scurte captivante cu personaje vii și concluzii satisfăcătoare"
+    },
+    "Poetry Generator": {
+      "n": "Generator de poezie",
+      "d": "Creați poezie originală în diverse forme cu imagistică, metru și emoție"
+    },
+    "Book Proposal Template": {
+      "n": "Șablon propunere carte",
+      "d": "Creați propuneri profesionale de carte cu analiză de piață și rezumate pe capitole"
+    },
+    "Memoir Outline": {
+      "n": "Schiță memorii",
+      "d": "Structurați memorii personale cu capitole tematice și narativă reflectivă"
+    },
+    "Children's Book Creator": {
+      "n": "Creator cărți pentru copii",
+      "d": "Scrieți cărți pentru copii adecvate vârstei cu povești captivante și note de ilustrație"
+    },
+    "Screenplay Outline": {
+      "n": "Schiță scenariu film",
+      "d": "Schițați scenarii cu structură în trei acte, defalcări de scene și note de dialog"
+    },
+    "Play Script Writer": {
+      "n": "Scriitor de piese de teatru",
+      "d": "Scrieți scenarii teatrale cu indicații scenice, dialog și structură de scene"
+    },
+    "Comic Book Script": {
+      "n": "Scenariu bandă desenată",
+      "d": "Scrieți scenarii de bandă desenată cu descrieri de panouri, dialog și ritm"
+    },
+    "Fan Fiction Creator": {
+      "n": "Creator fan fiction",
+      "d": "Scrieți fan fiction cu voci fidele ale personajelor și noi linii de poveste creative"
+    },
+    "Writing Prompt Generator": {
+      "n": "Generator de provocări de scriere",
+      "d": "Generați provocări creative de scriere cu gen, constrângeri și semințe de poveste"
+    },
+    "Dialogue Writer": {
+      "n": "Scriitor de dialoguri",
+      "d": "Creați dialoguri natural-sounding care dezvăluie personajul și avansează intriga"
+    },
+    "Plot Twist Generator": {
+      "n": "Generator răsturnări de situație",
+      "d": "Generați răsturnări de situație neașteptate care mențin cititorii captivați"
+    },
+    "Query Letter Writer": {
+      "n": "Scriitor scrisori de interogare",
+      "d": "Scrieți scrisori de interogare convingătoare către agenți literari cu captare și sinopsis"
+    },
+    "Book Description Writer": {
+      "n": "Scriitor descrieri cărți",
+      "d": "Scrieți descrieri de cărți captivante care atrag cititorii și stimulează vânzările"
+    },
+    "Ghostwriting Brief": {
+      "n": "Brief ghostwriting",
+      "d": "Creați briefs detaliate de ghostwriting cu voce, stil și cerințe de conținut"
+    },
+    "Technical Writing Guide": {
+      "n": "Ghid de scriere tehnică",
+      "d": "Scrieți documentație tehnică clară cu structură și terminologie adecvată"
+    },
+    "Grant Proposal Writer": {
+      "n": "Scriitor propuneri granturi",
+      "d": "Scrieți propuneri de granturi persuasive cu descrieri de proiect și justificare a bugetului"
+    },
+    "White Paper Outline": {
+      "n": "Schiță de carte albă",
+      "d": "Structurați cărți albe autoritare care stabilesc leadership-ul de opinie"
+    },
+    "Copywriting Formula": {
+      "n": "Formulă de copywriting",
+      "d": "Aplicați formule dovedite de copywriting precum AIDA, PAS și BAB oricărui produs sau serviciu"
+    },
+    "Instagram Content Planner": {
+      "n": "Planificator conținut Instagram",
+      "d": "Planificați o săptămână de conținut Instagram cu postări, povești, reels și descrieri"
+    },
+    "X Thread Creator": {
+      "n": "Creator fire X",
+      "d": "Scrieți fire X captivante care construiesc autoritate și stimulează angajamentul"
+    },
+    "Reddit Post Writer": {
+      "n": "Scriitor postări Reddit",
+      "d": "Scrieți postări Reddit optimizate pentru subreddits specifice cu normele comunității în minte"
+    },
+    "Viral Hook Generator": {
+      "n": "Generator cârlige virale",
+      "d": "Generați cârlige captivante pentru conținut social media pe diverse platforme"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Instrument strategie hashtag",
+      "d": "Cercetați și organizați strategii de hashtag pentru descoperibilitate maximă"
+    },
+    "Engagement Response Generator": {
+      "n": "Generator răspunsuri de angajament",
+      "d": "Generați răspunsuri gândite la comentarii, mesaje și mențiuni la scară"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Scriitor articole LinkedIn",
+      "d": "Scrieți articole LinkedIn de leadership de gândire care stabilesc autoritatea profesională"
+    },
+    "Episode Show Notes": {
+      "n": "Note episod",
+      "d": "Scrieți note detaliate cu marcaje temporale, linkuri și concluzii cheie"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Checklist editare podcast",
+      "d": "Standardizați fluxul de editare podcast cu puncte de control de calitate și pași de finisare"
+    },
+    "Prompt Improver": {
+      "n": "Îmbunătățitor de prompturi",
+      "d": "Rafinați și optimizați orice prompt pentru rezultate AI mai bune cu tehnici structurate"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Organizator lanț de gândire",
+      "d": "Construiți prompturi lanț de gândire care ghidează AI prin raționament pas cu pas"
+    },
+    "RAG Prompt Generator": {
+      "n": "Generator prompturi RAG",
+      "d": "Creați prompturi de generare augmentată prin recuperare cu optimizare fereastră de context"
+    },
+    "Prompt Translator": {
+      "n": "Traducător de prompturi",
+      "d": "Traduceți prompturi între diferite modele AI păstrând intenția și calitatea"
+    },
+    "Prompt Evaluator": {
+      "n": "Evaluator de prompturi",
+      "d": "Evaluați și punctați prompturi pe multiple dimensiuni de calitate cu sfaturi de îmbunătățire"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Generator exemple few-shot",
+      "d": "Generați exemple few-shot de înaltă calitate pentru prompturi de învățare în context"
+    },
+    "System Prompt Writer": {
+      "n": "Scriitor prompturi de sistem",
+      "d": "Scrieți prompturi de sistem eficiente care definesc comportamentul AI, constrângerile și stilul"
+    },
+    "AI Guardrails Designer": {
+      "n": "Designer bariere de siguranță AI",
+      "d": "Proiectați bariere de siguranță și politici de conținut pentru aplicații AI"
+    },
+    "AI Use Case Identifier": {
+      "n": "Identificator cazuri de utilizare AI",
+      "d": "Identificați și evaluați cazuri potențiale de utilizare AI pentru afaceri și fluxuri de lucru"
+    },
+    "Model Comparison Guide": {
+      "n": "Ghid comparare modele",
+      "d": "Comparați modele AI pe capacități, prețuri și potrivirea cazului de utilizare"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "Creator date fine-tuning LLM",
+      "d": "Generați și structurați date de antrenament pentru proiecte de fine-tuning LLM"
+    },
+    "Debugger Assistant": {
+      "n": "Asistent de depanare",
+      "d": "Depanați sistematic problemele de cod cu analiză a cauzei fundamentale și sugestii de remediere"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "Planificator pipeline CI/CD",
+      "d": "Proiectați pipeline-uri CI/CD cu configurații de etape de construcție, testare și implementare"
+    },
+    "Docker Configuration Guide": {
+      "n": "Ghid configurare Docker",
+      "d": "Creați Dockerfile-uri și configurații compose cu cele mai bune practici"
+    },
+    "Git Workflow Planner": {
+      "n": "Planificator de flux de lucru Git",
+      "d": "Proiectați strategii de ramificare Git și fluxuri de lucru de colaborare pentru echipe de dezvoltare"
+    },
+    "Code Migration Guide": {
+      "n": "Ghid de migrare a codului",
+      "d": "Planificați și executați migrări de cod între limbaje, framework-uri sau versiuni"
+    },
+    "Database Schema Designer": {
+      "n": "Designer de schemă de bază de date",
+      "d": "Proiectați scheme de baze de date cu tabele, relații, indecși și constrângeri"
+    },
+    "Performance Optimization Guide": {
+      "n": "Ghid de optimizare a performanței",
+      "d": "Identificați și rezolvați blocajele de performanță cu profilare și strategii de optimizare"
+    },
+    "Microservices Architecture": {
+      "n": "Arhitectură de microservicii",
+      "d": "Proiectați arhitecturi de microservicii cu limite de servicii, comunicare și implementare"
+    },
+    "GraphQL Schema Builder": {
+      "n": "Constructor de scheme GraphQL",
+      "d": "Proiectați scheme GraphQL cu tipuri, interogări, mutații și subscripții"
+    },
+    "Terraform Configuration": {
+      "n": "Configurare Terraform",
+      "d": "Generați configurații Terraform pentru provizionarea infrastructurii cloud"
+    },
+    "AWS Architecture Planner": {
+      "n": "Planificator de arhitectură AWS",
+      "d": "Proiectați arhitecturi cloud AWS cu selecția serviciilor și optimizarea costurilor"
+    },
+    "Code Documentation Generator": {
+      "n": "Generator de documentație de cod",
+      "d": "Generați documentație inline, JSDoc, docstring-uri și comentarii de cod"
+    },
+    "Technical Interview Prep": {
+      "n": "Pregătire pentru interviuri tehnice",
+      "d": "Pregătiți-vă pentru interviuri tehnice cu descompunerea problemelor și modele de soluții"
+    },
+    "Changelog Writer": {
+      "n": "Scriitor de jurnal de modificări",
+      "d": "Scrieți jurnale de modificări clare urmând formatul Keep a Changelog cu versionare semantică"
+    },
+    "Error Handling Strategy": {
+      "n": "Strategie de gestionare a erorilor",
+      "d": "Proiectați strategii cuprinzătoare de gestionare a erorilor cu modele și mesaje pentru utilizator"
+    },
+    "Logging Strategy Guide": {
+      "n": "Ghid de strategie de logare",
+      "d": "Proiectați strategii de logare pentru aplicații cu niveluri, formate și agregare"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Ghid de configurare a monitorizării",
+      "d": "Configurați monitorizarea aplicației cu metrici, alerte și tablouri de bord"
+    },
+    "Load Testing Plan": {
+      "n": "Plan de testare la încărcare",
+      "d": "Proiectați planuri de testare la încărcare cu scenarii, metrici și criterii de acceptare"
+    },
+    "Security Audit Checklist": {
+      "n": "Lista de verificare pentru audit de securitate",
+      "d": "Efectuați audituri de securitate cu liste de verificare bazate pe OWASP și ghidare de remediere"
+    },
+    "Security Checklist Creator": {
+      "n": "Creator de liste de verificare de securitate",
+      "d": "Generați liste cuprinzătoare de verificare de securitate adaptate aplicației și stivei dumneavoastră"
+    },
+    "Penetration Testing Plan": {
+      "n": "Plan de testare de penetrare",
+      "d": "Planificați teste structurate de penetrare cu scop, metodologie și șabloane de raportare"
+    },
+    "Secure Coding Guide": {
+      "n": "Ghid de codare securizată",
+      "d": "Creați ghiduri de codare securizată specifice limbajului cu prevenirea vulnerabilităților"
+    },
+    "Incident Response Plan": {
+      "n": "Plan de răspuns la incidente",
+      "d": "Proiectați planuri de răspuns la incidente cu detecție, izolare și proceduri de recuperare"
+    },
+    "Security Policy Writer": {
+      "n": "Scriitor de politici de securitate",
+      "d": "Scrieți politici organizaționale de securitate acoperind controlul accesului, manipularea datelor și conformitatea"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Ghid de evaluare a vulnerabilităților",
+      "d": "Efectuați evaluări sistematice ale vulnerabilităților cu scanare și remediere prioritizată"
+    },
+    "Security Awareness Training": {
+      "n": "Instruire de conștientizare a securității",
+      "d": "Proiectați programe de instruire de conștientizare a securității pentru angajați la toate nivelurile"
+    },
+    "Password Policy Creator": {
+      "n": "Creator de politici de parole",
+      "d": "Creați politici robuste de parole cu complexitate, rotație și cerințe MFA"
+    },
+    "Data Protection Plan": {
+      "n": "Plan de protecție a datelor",
+      "d": "Proiectați strategii de protecție a datelor acoperind clasificarea, criptarea și retenția"
+    },
+    "SWOT Analysis Pro": {
+      "n": "Analiză SWOT Pro",
+      "d": "Analiză SWOT avansată cu punctaje ponderate și planuri de acțiune"
+    },
+    "Pitch Deck Outline": {
+      "n": "Schiță de prezentare pentru investitori",
+      "d": "Creați o structură convingătoare de prezentare pentru investitori"
+    },
+    "Business Canvas Creator": {
+      "n": "Creator de canvas de afaceri",
+      "d": "Generați un canvas complet al modelului de afaceri pentru proiectul dumneavoastră"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Raport de inteligență competitivă",
+      "d": "Analizați concurenții și identificați oportunitățile de poziționare pe piață"
+    },
+    "Strategic Planning Guide": {
+      "n": "Ghid de planificare strategică",
+      "d": "Dezvoltați un plan strategic multi-anual cu obiective și etape"
+    },
+    "Annual Report Template": {
+      "n": "Șablon de raport anual",
+      "d": "Structurați raportul anual al companiei cu repere financiare și operaționale cheie"
+    },
+    "Board Meeting Agenda": {
+      "n": "Agenda ședinței consiliului de administrație",
+      "d": "Agendă profesională pentru ședința CA cu cele mai bune practici de guvernanță"
+    },
+    "Company Newsletter": {
+      "n": "Buletin informativ al companiei",
+      "d": "Proiectați un buletin informativ captivant intern sau extern al companiei"
+    },
+    "Employee Survey Creator": {
+      "n": "Creator de sondaje pentru angajați",
+      "d": "Construiți sondaje eficiente de implicare și satisfacție a angajaților"
+    },
+    "Team Building Activity Planner": {
+      "n": "Planificator de activități de team building",
+      "d": "Planificați evenimente și activități captivante de consolidare a echipei"
+    },
+    "Remote Work Policy": {
+      "n": "Politică de lucru la distanță",
+      "d": "Creați o politică cuprinzătoare de lucru la distanță pentru organizație"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Plan de diversitate și incluziune",
+      "d": "Dezvoltați o strategie semnificativă de diversitate, echitate și incluziune"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Matrice de evaluare a furnizorilor",
+      "d": "Evaluați și comparați sistematic furnizorii pentru decizii de achiziție"
+    },
+    "Process Improvement Plan": {
+      "n": "Plan de îmbunătățire a proceselor",
+      "d": "Identificați și implementați îmbunătățiri ale proceselor folosind metodologii lean"
+    },
+    "Change Management Plan": {
+      "n": "Plan de management al schimbării",
+      "d": "Ghidați schimbarea organizațională cu alinierea părților interesate și comunicare"
+    },
+    "Risk Assessment Template": {
+      "n": "Șablon de evaluare a riscurilor",
+      "d": "Identificați, evaluați și atenuați riscurile de afaceri sistematic"
+    },
+    "Succession Planning Guide": {
+      "n": "Ghid de planificare a succesiunii",
+      "d": "Planificați tranzițiile de conducere și dezvoltarea canalului de talente"
+    },
+    "Business Continuity Plan": {
+      "n": "Plan de continuitate a afacerii",
+      "d": "Pregătiți-vă pentru perturbări cu o strategie cuprinzătoare de continuitate"
+    },
+    "Customer Journey Map": {
+      "n": "Harta călătoriei clientului",
+      "d": "Vizualizați și optimizați experiența completă a clientului"
+    },
+    "Brand Guidelines Template": {
+      "n": "Șablon de ghid de brand",
+      "d": "Definiți identitatea brandului cu ghiduri cuprinzătoare de stil și utilizare"
+    },
+    "Mission & Vision Statement": {
+      "n": "Declarație de misiune și viziune",
+      "d": "Elaborați declarații de misiune și viziune inspiratoare pentru organizație"
+    },
+    "Company Culture Document": {
+      "n": "Document de cultură organizațională",
+      "d": "Definiți și documentați cultura și valorile organizaționale"
+    },
+    "Organizational Chart Planner": {
+      "n": "Planificator de organigramă",
+      "d": "Proiectați și planificați structura organizațională și liniile de raportare"
+    },
+    "Department Budget Template": {
+      "n": "Șablon de buget departamental",
+      "d": "Creați bugete departamentale detaliate cu prognoze și urmărire"
+    },
+    "KPI Dashboard Builder": {
+      "n": "Constructor de tablou de bord KPI",
+      "d": "Proiectați tablouri de bord cu indicatori cheie de performanță pentru decizii bazate pe date"
+    },
+    "Job Description Writer": {
+      "n": "Scriitor de fișe de post",
+      "d": "Creați fișe de post clare și incluzive care atrag talente de top"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Creator de fișe de evaluare pentru interviuri",
+      "d": "Construiți fișe de evaluare structurate pentru evaluarea consistentă a candidaților"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Lista de verificare pentru integrarea angajaților",
+      "d": "Listă cuprinzătoare de verificare pentru integrarea cu succes a noilor angajați"
+    },
+    "Performance Improvement Plan": {
+      "n": "Plan de îmbunătățire a performanței",
+      "d": "Creați planuri suportive de îmbunătățire a performanței cu etape clare"
+    },
+    "Exit Interview Guide": {
+      "n": "Ghid de interviu de plecare",
+      "d": "Conduceți interviuri de plecare perspicace pentru îmbunătățirea retenției"
+    },
+    "Compensation Analysis": {
+      "n": "Analiză de compensare",
+      "d": "Analizați și evaluați pachetele de compensare pentru competitivitatea pe piață"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Ghid de comparare a beneficiilor",
+      "d": "Comparați și evaluați pachetele de beneficii pentru angajați"
+    },
+    "Team Retrospective": {
+      "n": "Retrospectivă de echipă",
+      "d": "Facilitați retrospective eficiente de echipă pentru îmbunătățire continuă"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Șablon de întâlnire unu-la-unu",
+      "d": "Structurați întâlniri productive unu-la-unu cu subordonații direcți"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Planificator de pipeline de recrutare",
+      "d": "Proiectați și optimizați procesul de recrutare de la capăt la capăt"
+    },
+    "Employee Recognition Program": {
+      "n": "Program de recunoaștere a angajaților",
+      "d": "Construiți un program semnificativ de recunoaștere și recompensare a angajaților"
+    },
+    "Training Program Designer": {
+      "n": "Designer de programe de formare",
+      "d": "Proiectați programe eficiente de formare și dezvoltare a angajaților"
+    },
+    "Workplace Policy Writer": {
+      "n": "Scriitor de politici la locul de muncă",
+      "d": "Elaborați politici clare la locul de muncă acoperind subiecte organizaționale cheie"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Ghid de rezolvare a conflictelor",
+      "d": "Navigați conflictele la locul de muncă cu cadre structurate de rezolvare"
+    },
+    "Remote Team Handbook": {
+      "n": "Manual pentru echipe la distanță",
+      "d": "Creați un manual cuprinzător pentru operațiunile echipelor distribuite"
+    },
+    "Career Path Planner": {
+      "n": "Planificator de parcurs profesional",
+      "d": "Trasați traiectoria carierei cu etape acționabile"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Pregătire pentru negocierea salariului",
+      "d": "Pregătiți puncte de discuție și strategii de negociere salarială cu încredere"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "Constructor de profil LinkedIn",
+      "d": "Optimizați-vă profilul LinkedIn pentru a atrage recrutori și oportunități"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Ghid de construire a portofoliului",
+      "d": "Creați un portofoliu profesional remarcabil prezentând cele mai bune lucrări"
+    },
+    "Networking Email Templates": {
+      "n": "Șabloane de emailuri de networking",
+      "d": "Scrieți emailuri eficiente de networking pentru dezvoltarea carierei și introduceri"
+    },
+    "Career Pivot Guide": {
+      "n": "Ghid de schimbare a carierei",
+      "d": "Navigați o tranziție de carieră de succes cu un plan structurat"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Calculator tarife freelance",
+      "d": "Calculează tariful ideal de freelance și strategia de prețuri"
+    },
+    "Professional Development Plan": {
+      "n": "Plan de dezvoltare profesională",
+      "d": "Creați un plan structurat pentru creșterea profesională continuă"
+    },
+    "Mentorship Program Guide": {
+      "n": "Ghid de program de mentorat",
+      "d": "Găsiți, structurați și maximizați relațiile de mentorat"
+    },
+    "Side Hustle Validator": {
+      "n": "Validator de activități secundare",
+      "d": "Evaluați și validați ideile de afaceri secundare pentru viabilitate"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Audit de echilibru muncă-viață",
+      "d": "Evaluați și îmbunătățiți echilibrul muncă-viață cu strategii acționabile"
+    },
+    "Speaking Proposal Template": {
+      "n": "Șablon de propunere de speaker",
+      "d": "Creați propuneri persuasive de speaker pentru conferințe și evenimente"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Scriitor de propuneri de consultanță",
+      "d": "Elaborați propuneri câștigătoare de consultanță care închid contracte"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Analizor de lacune de competențe",
+      "d": "Identificați și planificați acoperirea lacunelor critice de competențe pentru avansarea în carieră"
+    },
+    "Career Journal Prompts": {
+      "n": "Îndemnuri de jurnal de carieră",
+      "d": "Reflectați asupra călătoriei profesionale cu exerciții ghidate de jurnalizare"
+    },
+    "Informational Interview Guide": {
+      "n": "Ghid de interviu informativ",
+      "d": "Pregătiți și conduceți interviuri informative eficiente"
+    },
+    "Thank You Note Writer": {
+      "n": "Scriitor de scrisori de mulțumire",
+      "d": "Scrieți scrisori profesionale atente de mulțumire pentru orice ocazie"
+    },
+    "Resignation Letter Template": {
+      "n": "Șablon de scrisoare de demisie",
+      "d": "Scrieți o scrisoare profesională de demisie menținând relații pozitive"
+    },
+    "Meal Prep Planner": {
+      "n": "Planificator de preparare a meselor",
+      "d": "Planificați mesele săptămânale cu liste de cumpărături și programe de preparare"
+    },
+    "Habit Tracker Designer": {
+      "n": "Designer de urmăritor de obiceiuri",
+      "d": "Proiectați un sistem personalizat de urmărire a obiceiurilor pentru schimbare durabilă"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Ghid de îmbunătățire a somnului",
+      "d": "Optimizați calitatea somnului cu strategii bazate pe dovezi"
+    },
+    "Stress Management Plan": {
+      "n": "Plan de gestionare a stresului",
+      "d": "Construiți un set personalizat de instrumente și plan de acțiune pentru gestionarea stresului"
+    },
+    "Yoga Routine Builder": {
+      "n": "Constructor de rutine de yoga",
+      "d": "Creați rutine personalizate de yoga pentru nivelul și obiectivele dumneavoastră"
+    },
+    "Running Training Plan": {
+      "n": "Plan de antrenament de alergare",
+      "d": "Construiți un plan structurat de antrenament de alergare pentru orice obiectiv de distanță"
+    },
+    "Swimming Workout": {
+      "n": "Antrenament de înot",
+      "d": "Proiectați antrenamente eficiente de înot pentru fitness și tehnică"
+    },
+    "Strength Training Program": {
+      "n": "Program de antrenament de forță",
+      "d": "Creați un program progresiv de antrenament de forță adaptat obiectivelor dumneavoastră"
+    },
+    "Flexibility Routine": {
+      "n": "Rutină de flexibilitate",
+      "d": "Îmbunătățiți flexibilitatea și mobilitatea cu rutine structurate de stretching"
+    },
+    "HIIT Workout Creator": {
+      "n": "Creator de antrenamente HIIT",
+      "d": "Proiectați antrenamente de interval de intensitate ridicată pentru rezultate maxime"
+    },
+    "Nutrition Label Reader": {
+      "n": "Cititor de etichete nutriționale",
+      "d": "Învățați să citiți și să înțelegeți etichetele nutriționale pentru alegeri mai sănătoase"
+    },
+    "Calorie Counter Guide": {
+      "n": "Ghid de numărare a caloriilor",
+      "d": "Configurați urmărirea personalizată a caloriilor cu defalcări de macronutrienți"
+    },
+    "Hydration Tracker": {
+      "n": "Urmăritor de hidratare",
+      "d": "Urmăriți și optimizați consumul zilnic de apă și obiceiurile de hidratare"
+    },
+    "Mental Health Check-In": {
+      "n": "Verificare a sănătății mintale",
+      "d": "Autoevaluare ghidată a sănătății mintale și urmărirea bunăstării"
+    },
+    "Therapy Session Prep": {
+      "n": "Pregătire pentru sesiunea de terapie",
+      "d": "Pregătiți-vă pentru sesiunile de terapie cu reflecție structurată și stabilirea obiectivelor"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Îndemnuri de jurnal de recunoștință",
+      "d": "Îndemnuri zilnice de jurnalizare a recunoștinței pentru bunăstare mintală îmbunătățită"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Creator de exerciții de mindfulness",
+      "d": "Creați exerciții personalizate de mindfulness și respirație"
+    },
+    "Supplement Research Guide": {
+      "n": "Ghid de cercetare a suplimentelor",
+      "d": "Cercetați și evaluați suplimentele alimentare cu informații bazate pe dovezi"
+    },
+    "Allergy Management Plan": {
+      "n": "Plan gestionare alergii",
+      "d": "Creați o strategie cuprinzătoare de gestionare și evitare a alergiilor"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Monitor condiții cronice",
+      "d": "Monitorizați simptomele, medicamentele și factorii declanșatori pentru condiții cronice de sănătate"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Jurnal exerciții fizioterapie",
+      "d": "Înregistrați și urmăriți exercițiile de fizioterapie și progresul recuperării"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Configurare ergonomică a spațiului de lucru",
+      "d": "Configurați un spațiu de lucru ergonomic pentru confort și prevenirea accidentărilor"
+    },
+    "Digital Detox Planner": {
+      "n": "Planificator detox digital",
+      "d": "Planificați și executați un detox digital pentru îmbunătățirea bunăstării mentale"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Constructor de rutine de auto-îngrijire",
+      "d": "Construiți rutine durabile de auto-îngrijire care hrănesc mintea și corpul"
+    },
+    "First Aid Guide": {
+      "n": "Ghid prim ajutor",
+      "d": "Proceduri de referință rapidă de prim ajutor pentru urgențe comune"
+    },
+    "To-Do List Power Planner": {
+      "n": "Planificator puternic de sarcini",
+      "d": "Creați liste de sarcini prioritizate cu estimări de timp și niveluri de energie"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Optimizator program zilnic",
+      "d": "Proiectați un program zilnic optimizat bazat pe tiparele dvs. de energie"
+    },
+    "Project Planner Pro": {
+      "n": "Planificator proiecte Pro",
+      "d": "Planificați proiecte cu jaloane, livrabile și alocare de resurse"
+    },
+    "Decision Matrix Builder": {
+      "n": "Constructor de matrice de decizie",
+      "d": "Luați decizii mai bune cu matrici de decizie ponderate și evaluări structurate"
+    },
+    "Weekly Review Template": {
+      "n": "Șablon de revizuire săptămânală",
+      "d": "Revizuiți realizările săptămânale, blocajele și planificați săptămâna următoare"
+    },
+    "Morning Routine Designer": {
+      "n": "Designer rutină matinală",
+      "d": "Proiectați o rutină matinală energizantă pentru performanță maximă"
+    },
+    "Evening Routine Creator": {
+      "n": "Creator rutină de seară",
+      "d": "Creați o rutină de seară calmantă pentru odihnă mai bună și pregătire pentru ziua următoare"
+    },
+    "Time Blocking Schedule": {
+      "n": "Program blocare timp",
+      "d": "Organizați-vă ziua cu blocuri de timp focusate pentru productivitate maximă"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Instrument matrice Eisenhower",
+      "d": "Categorisiți sarcinile după urgență și importanță pentru o mai bună prioritizare"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Planificator sesiuni Pomodoro",
+      "d": "Planificați sesiuni de lucru focusate folosind tehnica Pomodoro"
+    },
+    "Goal Tracking System": {
+      "n": "Sistem urmărire obiective",
+      "d": "Configurați un sistem cuprinzător de urmărire a obiectivelor cu indicatori de progres"
+    },
+    "Quarterly Planning Template": {
+      "n": "Șablon planificare trimestrială",
+      "d": "Planificați trimestrul cu obiective strategice și obiective acționabile"
+    },
+    "Annual Review Template": {
+      "n": "Șablon revizuire anuală",
+      "d": "Efectuați o revizuire anuală temeinică a realizărilor și stabiliți obiective viitoare"
+    },
+    "Meeting Notes Template": {
+      "n": "Șablon de note de ședință",
+      "d": "Capturați note de ședință acționabile cu decizii, acțiuni și urmăriri"
+    },
+    "Brain Dump Organizer": {
+      "n": "Organizator descărcare mentală",
+      "d": "Transformați gândurile haotice în categorii organizate și acționabile"
+    },
+    "Delegation Framework": {
+      "n": "Cadru de delegare",
+      "d": "Identificați ce să delegați și creați briefs clare de delegare"
+    },
+    "Focus Session Planner": {
+      "n": "Planificator sesiuni de focalizare",
+      "d": "Planificați sesiuni de focalizare profundă cu management al mediului și distragerii"
+    },
+    "Energy Management Guide": {
+      "n": "Ghid de gestionare a energiei",
+      "d": "Gestionați nivelurile de energie pe parcursul zilei pentru performanță optimă"
+    },
+    "Batch Processing Planner": {
+      "n": "Planificator procesare lot",
+      "d": "Grupați sarcini similare pentru sesiuni eficiente de procesare în lot"
+    },
+    "System Documentation Template": {
+      "n": "Șablon documentare sisteme",
+      "d": "Documentați sistemele personale și de echipă pentru consistență și integrare"
+    },
+    "Project Kickoff Template": {
+      "n": "Șablon lansare proiect",
+      "d": "Lansați proiecte cu obiective clare, domeniu și aliniere a echipei"
+    },
+    "Sprint Planning Guide": {
+      "n": "Ghid planificare sprint",
+      "d": "Planificați sprinturi eficiente cu povești utilizator, estimare și capacitate"
+    },
+    "Kanban Board Setup": {
+      "n": "Configurare tablou Kanban",
+      "d": "Proiectați și configurați un tablou Kanban pentru management vizual al fluxului de lucru"
+    },
+    "Gantt Chart Planner": {
+      "n": "Planificator diagramă Gantt",
+      "d": "Creați cronologii detaliate de proiect cu dependențe și jaloane"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Matrice alocare resurse",
+      "d": "Planificați și optimizați alocarea resurselor între proiecte și echipe"
+    },
+    "Status Report Template": {
+      "n": "Șablon raport de status",
+      "d": "Creați rapoarte clare de status al proiectului pentru comunicarea cu părțile interesate"
+    },
+    "Risk Register Creator": {
+      "n": "Creator registru riscuri",
+      "d": "Construiți și mențineți un registru cuprinzător de riscuri al proiectului"
+    },
+    "Lessons Learned Template": {
+      "n": "Șablon lecții învățate",
+      "d": "Captați și documentați lecțiile învățate din proiect pentru îmbunătățire viitoare"
+    },
+    "Requirements Document": {
+      "n": "Document cerințe",
+      "d": "Colectați și documentați cerințele proiectului cu criterii de acceptare"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Plan testare acceptare utilizator",
+      "d": "Creați planuri UAT structurate cu cazuri de test și criterii de aprobare"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Plan comunicare părți interesate",
+      "d": "Planificați comunicările cu părțile interesate cu canale, frecvență și mesaje"
+    },
+    "Project Timeline Creator": {
+      "n": "Creator cronologie proiect",
+      "d": "Construiți cronologii detaliate de proiect cu faze și livrabile"
+    },
+    "Agile Retrospective": {
+      "n": "Retrospectivă Agile",
+      "d": "Facilitați retrospective agile productive cu formate variate"
+    },
+    "Scope Document Writer": {
+      "n": "Scriitor document domeniu",
+      "d": "Definiți domeniul proiectului cu limite, livrabile și excluderi"
+    },
+    "Project Closure Report": {
+      "n": "Raport închidere proiect",
+      "d": "Documentați finalizarea proiectului cu rezultate și evaluări finale"
+    },
+    "Conversation Practice Partner": {
+      "n": "Partener practică conversație",
+      "d": "Exersați conversații în limba țintă cu scenarii realiste"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Constructor vocabular Pro",
+      "d": "Construiți vocabular cu exemple de context și indicii de repetiție spațiată"
+    },
+    "Grammar Coach": {
+      "n": "Antrenor gramatică",
+      "d": "Învățați și exersați reguli gramaticale cu explicații clare și exerciții"
+    },
+    "Translation Helper": {
+      "n": "Asistent traducere",
+      "d": "Obțineți traduceri precise cu context și note de utilizare"
+    },
+    "Language Exchange Prep": {
+      "n": "Pregătire schimb lingvistic",
+      "d": "Pregătiți-vă pentru schimburi lingvistice cu subiecte de conversație și vocabular"
+    },
+    "Travel Phrase Book": {
+      "n": "Ghid fraze de călătorie",
+      "d": "Fraze esențiale de călătorie organizate pe situații pentru destinația dvs."
+    },
+    "Business Language Guide": {
+      "n": "Ghid limbaj de afaceri",
+      "d": "Învățați limbaj profesional pentru medii și comunicare de afaceri"
+    },
+    "Accent Improvement Guide": {
+      "n": "Ghid îmbunătățire accent",
+      "d": "Îmbunătățiți pronunția și accentul cu exerciții direcționate"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Practică înțelegere text",
+      "d": "Îmbunătățiți abilitățile de citire cu texte nivelate și întrebări de comprehensiune"
+    },
+    "Writing Practice Creator": {
+      "n": "Creator practică scriere",
+      "d": "Exersați scrierea în limba țintă cu provocări ghidate și feedback"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Ghid înțelegere auditivă",
+      "d": "Îmbunătățiți abilitățile de ascultare cu exerciții structurate și strategii"
+    },
+    "Cultural Context Guide": {
+      "n": "Ghid de context cultural",
+      "d": "Înțelegeți contextul cultural și etichetele pentru utilizarea eficientă a limbii"
+    },
+    "Room Layout Planner": {
+      "n": "Planificator amenajare cameră",
+      "d": "Planificați amenajări optime ale camerei cu plasare mobilier și flux"
+    },
+    "Color Palette Creator": {
+      "n": "Creator paletă culori",
+      "d": "Generați palete de culori coezive pentru camere și proiecte de design"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Ghid cumpărare mobilier",
+      "d": "Cumpărături inteligente de mobilier cu potrivire de stil și planificare buget"
+    },
+    "Home Decor Style Finder": {
+      "n": "Găsitor stil decor interior",
+      "d": "Descoperiți stilul dvs. de design interior cu o evaluare ghidată"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Constructor garderobă capsulă",
+      "d": "Construiți o garderobă capsulă versatilă care maximizează combinațiile de ținute"
+    },
+    "Outfit Planner": {
+      "n": "Planificator ținute",
+      "d": "Planificați ținute pentru săptămână sau evenimente speciale din garderoba existentă"
+    },
+    "Personal Style Guide": {
+      "n": "Ghid stil personal",
+      "d": "Definiți-vă identitatea stilului personal și ghidurile de cumpărături"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Reîmprospătare garderobă sezonieră",
+      "d": "Reîmprospătați-vă garderoba în fiecare sezon cu adăugări și editări strategice"
+    },
+    "Home Office Setup Guide": {
+      "n": "Ghid de amenajare a biroului de acasă",
+      "d": "Proiectați un spațiu de birou de acasă productiv și stilat"
+    },
+    "Bathroom Design Planner": {
+      "n": "Planificator design baie",
+      "d": "Planificați renovări și actualizări de baie cu stil și funcționalitate"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Generator idei hackathon",
+      "d": "Brainstorming și validarea ideilor de proiecte hackathon bazate pe teme și constrângeri"
+    },
+    "MVP Builder Guide": {
+      "n": "Ghid constructor MVP",
+      "d": "Planificați și construiți un produs minim viabil în termene strânse de hackathon"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Prezentare pitch hackathon",
+      "d": "Creați o prezentare pitch convingătoare pentru proiectul dvs. de hackathon"
+    },
+    "Technical Architecture Planner": {
+      "n": "Planificator arhitectură tehnică",
+      "d": "Proiectați rapid arhitectura tehnică pentru proiectul dvs. de hackathon"
+    },
+    "Hackathon Team Builder": {
+      "n": "Constructor echipă hackathon",
+      "d": "Formați o echipă de hackathon echilibrată cu abilități complementare și roluri clare"
+    },
+    "Demo Day Script": {
+      "n": "Scenariu zi demonstrație",
+      "d": "Scriptuiți o demonstrație live rafinată care evidențiază funcțiile cheie ale proiectului"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Analizor criterii jurizare",
+      "d": "Analizați criteriile de jurizare ale hackathonului și optimizați proiectul în consecință"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Planificator cronologie hackathon",
+      "d": "Împărțiți orele de hackathon într-un program sprint structurat"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Consilier strategie premii",
+      "d": "Vizați strategic piste de premii specifice și adaptați proiectul pentru a câștiga"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Plan acțiune post-hackathon",
+      "d": "Transformați proiectul de hackathon într-un produs real sau piesă de portofoliu"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Ghid prototipare rapidă",
+      "d": "Prototipați și iterați rapid pe conceptul de hackathon cu timp limitat"
+    },
+    "Hackathon Submission Template": {
+      "n": "Șablon trimitere hackathon",
+      "d": "Pregătiți o trimitere completă și rafinată de hackathon cu toate materialele necesare"
+    },
+    "Game Design Document": {
+      "n": "Document design joc",
+      "d": "Creați un document cuprinzător de design de joc acoperind toate aspectele jocului"
+    },
+    "Game Mechanics Designer": {
+      "n": "Designer mecanici joc",
+      "d": "Proiectați și echilibrați mecanicile de bază ale jocului pentru gameplay captivant"
+    },
+    "Level Design Planner": {
+      "n": "Planificator design nivel",
+      "d": "Planificați niveluri de joc cu ritm, provocări și povestire ambientală"
+    },
+    "Game Economy Balancer": {
+      "n": "Echilibrator economie joc",
+      "d": "Proiectați și echilibrați economiile in-game pentru progresie echitabilă și captivantă"
+    },
+    "Character Stats Builder": {
+      "n": "Constructor statistici personaj",
+      "d": "Creați sisteme echilibrate de statistici de personaje și arhetipuri de clasă"
+    },
+    "Quest Designer": {
+      "n": "Designer misiuni",
+      "d": "Proiectați misiuni captivante cu narațiuni ramificate și recompense semnificative"
+    },
+    "Game UI/UX Planner": {
+      "n": "Planificator UI/UX joc",
+      "d": "Planificați layouturi intuitive UI de joc și fluxuri de experiență utilizator"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Campanie RPG de masă",
+      "d": "Construiți o campanie RPG de masă cu poveste, NPC-uri și arce narative"
+    },
+    "Board Game Designer": {
+      "n": "Designer jocuri de societate",
+      "d": "Proiectați un joc de societate de la concept la prototip cu reguli echilibrate"
+    },
+    "Game Testing Checklist": {
+      "n": "Checklist testare joc",
+      "d": "Creați un checklist cuprinzător de testare QA pentru jocul dvs."
+    },
+    "Photo Shoot Planner": {
+      "n": "Planificator ședință foto",
+      "d": "Planificați o ședință foto completă de la concept la execuție cu toată logistica"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Ghid portofoliu fotografie",
+      "d": "Curați și organizați un portofoliu de fotografie remarcabil pentru clienți sau expoziții"
+    },
+    "Photo Editing Workflow": {
+      "n": "Flux de lucru pentru editarea fotografiilor",
+      "d": "Construiți un flux eficient de editare a fotografiilor de la import la exportul final"
+    },
+    "Client Photography Brief": {
+      "n": "Brief fotografie client",
+      "d": "Creați un brief profesional de fotografie pentru proiecte cu clienți"
+    },
+    "Landscape Photography Guide": {
+      "n": "Ghid fotografie peisaj",
+      "d": "Planificați ieșiri de fotografie peisaj cu vreme, sincronizare și sfaturi de compoziție"
+    },
+    "Portrait Photography Tips": {
+      "n": "Sfaturi fotografie portret",
+      "d": "Ghid pentru capturarea portretelor convingătoare cu direcție de iluminare și pozare"
+    },
+    "Product Photography Setup": {
+      "n": "Configurare fotografie produs",
+      "d": "Configurați fotografia profesională de produs cu iluminare și aranjament adecvat"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Cronologie fotografie nuntă",
+      "d": "Planificați o cronologie completă de fotografie de nuntă de la pregătire la recepție"
+    },
+    "Street Photography Guide": {
+      "n": "Ghid de fotografie stradală",
+      "d": "Sfaturi și tehnici pentru fotografia stradală autentică și convingătoare"
+    },
+    "Astrophotography Planner": {
+      "n": "Planificator astrofotografie",
+      "d": "Planificați sesiuni de astrofotografie cu setări echipament și evenimente cerești"
+    },
+    "Character Design Brief": {
+      "n": "Brief design personaj",
+      "d": "Creați briefs detaliate de design personaj cu personalitate, aspect și poveste"
+    },
+    "Comic Strip Creator": {
+      "n": "Creator benzi desenate",
+      "d": "Planificați și creați benzi desenate cu layouturi de panouri, dialog și ritm"
+    },
+    "World Building Guide": {
+      "n": "Ghid construcție lume",
+      "d": "Proiectați lumi fictive imersive cu geografie, culturi și tradiții"
+    },
+    "Children's Book Illustrator": {
+      "n": "Ilustrator cărți copii",
+      "d": "Planificați ilustrații pentru cărți de copii cu stil adecvat vârstei și ritm"
+    },
+    "Art Portfolio Curator": {
+      "n": "Curator portofoliu artă",
+      "d": "Curați și prezentați un portofoliu de artă pentru galerii, clienți sau școli"
+    },
+    "Color Theory Guide": {
+      "n": "Ghid teoria culorilor",
+      "d": "Aplicați principii de teorie a culorilor pentru a crea opere armonioase și impactante"
+    },
+    "Digital Art Workflow": {
+      "n": "Flux lucru artă digitală",
+      "d": "Eficientizați procesul de artă digitală de la schiță la randare finală"
+    },
+    "Art Commission Brief": {
+      "n": "Brief comandă artă",
+      "d": "Scrieți briefs clare de comandă de artă pentru a comunica viziunea dvs. artiștilor"
+    },
+    "Mural Design Planner": {
+      "n": "Planificator design mural",
+      "d": "Planificați proiecte de mural la scară mare de la concept la instalare"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Propunere expoziție artă",
+      "d": "Scrieți o propunere profesională de expoziție de artă pentru galerii și locații"
+    },
+    "Tax Deduction Finder": {
+      "n": "Găsitor deduceri fiscale",
+      "d": "Identificați deduceri fiscale frecvent ratate bazate pe situația și statutul dvs."
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Ghid impozit activitate independentă",
+      "d": "Navigați impozitele pentru activitate independentă incluzând plăți estimate și deduceri"
+    },
+    "Tax Document Organizer": {
+      "n": "Organizator documente fiscale",
+      "d": "Organizați și urmăriți toate documentele fiscale necesare pentru sezonul de declarare"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Estimator fiscal trimestrial",
+      "d": "Calculați și planificați plăți fiscale trimestriale estimate pentru persoane independente"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Ghid calculator câștiguri de capital",
+      "d": "Înțelegeți și planificați impozitele pe câștiguri de capital din investiții și proprietăți"
+    },
+    "Tax Filing Checklist": {
+      "n": "Checklist depunere fiscală",
+      "d": "Checklist pas cu pas pentru depunere fiscală precisă și completă"
+    },
+    "State Tax Comparison": {
+      "n": "Comparare impozite stat",
+      "d": "Comparați implicațiile fiscale ale statului pentru relocare sau venituri multi-stat"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Ghid recoltare pierderi fiscale",
+      "d": "Recoltați strategic pierderile investiționale pentru a compensa câștigurile și reduce obligația fiscală"
+    },
+    "Stock Research Template": {
+      "n": "Șablon cercetare acțiuni",
+      "d": "Efectuați analize fundamentale și tehnice amănunțite pe acțiuni individuale"
+    },
+    "ETF Comparison Tool": {
+      "n": "Instrument comparare ETF",
+      "d": "Comparați ETF-uri după ratele cheltuielilor, dețineri, performanță și strategie"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Planificator portofoliu dividende",
+      "d": "Construiți un portofoliu focusat pe dividende pentru generare de venit pasiv"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Analizor investiții imobiliare",
+      "d": "Analizați proprietăți de închiriere și investiții imobiliare pentru randament și flux numerar"
+    },
+    "Angel Investing Checklist": {
+      "n": "Checklist investiții angel",
+      "d": "Evaluați oportunități de investiție în startup-uri cu cadre de due diligence"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Optimizator cont pensie",
+      "d": "Optimizați contribuțiile între conturile de pensie și alte conturi de economii"
+    },
+    "Bond Analysis Guide": {
+      "n": "Ghid analiză obligațiuni",
+      "d": "Analizați obligațiuni și titluri cu venit fix pentru randament, durată și risc"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Evaluator fonduri mutuale",
+      "d": "Evaluați fonduri mutuale după performanță, comisioane, istoricul managerului și potrivire"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Ghid reechilibrare portofoliu",
+      "d": "Reechilibrați portofoliul investițional pentru a menține alocarea țintă a activelor"
+    },
+    "Investment Journal Template": {
+      "n": "Șablon jurnal investiții",
+      "d": "Urmăriți deciziile investiționale, raționamentul și rezultatele pentru îmbunătățire continuă"
+    },
+    "AWS Service Selector": {
+      "n": "Selector servicii AWS",
+      "d": "Alegeți serviciile AWS potrivite pentru cerințele și bugetul aplicației dvs."
+    },
+    "Cloud Migration Plan": {
+      "n": "Plan migrare cloud",
+      "d": "Planificați o migrare structurată a sarcinilor de lucru locale către cloud"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Ghid implementare Kubernetes",
+      "d": "Implementați și gestionați aplicații pe Kubernetes cu cele mai bune practici"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Șablon infrastructură ca cod",
+      "d": "Creați șabloane de infrastructură ca cod pentru medii cloud reproductibile"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "Designer pipeline CI/CD",
+      "d": "Proiectați pipeline-uri CI/CD automate pentru integrare și implementare continuă"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Optimizator costuri cloud",
+      "d": "Identificați și implementați strategii de optimizare a costurilor cloud"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Planificator arhitectură serverless",
+      "d": "Proiectați aplicații serverless cu modele de arhitectură bazate pe evenimente"
+    },
+    "Container Strategy Guide": {
+      "n": "Ghid strategie containere",
+      "d": "Definiți strategia de containerizare pentru aplicații și microservicii"
+    },
+    "Cloud Security Checklist": {
+      "n": "Checklist securitate cloud",
+      "d": "Auditați și securizați infrastructura cloud cu verificări cuprinzătoare de securitate"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Plan de recuperare în caz de dezastru",
+      "d": "Proiectați un plan cloud de recuperare în caz de dezastru cu obiective RTO și RPO"
+    },
+    "Keynote Speech Writer": {
+      "n": "Scriitor discurs principal",
+      "d": "Scrieți un discurs principal puternic care inspiră și captează audiența"
+    },
+    "TED Talk Outline": {
+      "n": "Schiță discurs TED",
+      "d": "Structurați un discurs TED convingător cu un arc narativ puternic"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Scriitor toasturi și omagii",
+      "d": "Scrieți toasturi și omagii memorabile pentru nunți, pensionări și celebrări"
+    },
+    "Debate Preparation Guide": {
+      "n": "Ghid pregătire dezbateri",
+      "d": "Pregătiți-vă temeinic pentru dezbateri cu argumente, contraargumente și dovezi"
+    },
+    "Panel Discussion Prep": {
+      "n": "Pregătire discuție panel",
+      "d": "Pregătiți-vă pentru discuții panel cu puncte de discuție și angajament cu audiența"
+    },
+    "Presentation Slide Planner": {
+      "n": "Planificator slide prezentare",
+      "d": "Planificați slide-uri de prezentare cu ierarhie vizuală și flux narativ"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Ghid vorbire improvizată",
+      "d": "Dezvoltați abilități de gândire rapidă cu cadre pentru vorbire improvizată"
+    },
+    "Commencement Speech Writer": {
+      "n": "Scriitor discurs absolvire",
+      "d": "Scrieți un discurs de absolvire inspirator pentru ceremoniile de graduare"
+    },
+    "Grant Application Writer": {
+      "n": "Scriitor cereri granturi",
+      "d": "Scrieți cereri de granturi convingătoare care articulează clar impactul și necesitatea"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Plan campanie strângere fonduri",
+      "d": "Planificați și executați campanii eficiente de strângere de fonduri pe multiple canale"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Ghid recrutare voluntari",
+      "d": "Recrutați, integrați și rețineți voluntari pentru programele nonprofit"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Ședință consiliu nonprofit",
+      "d": "Pregătiți și conduceți ședințe eficiente ale consiliului nonprofit cu agende clare"
+    },
+    "Impact Report Template": {
+      "n": "Șablon raport impact",
+      "d": "Creați rapoarte de impact convingătoare care prezintă realizările organizației nonprofitului"
+    },
+    "Donor Thank You Letter": {
+      "n": "Scrisoare mulțumire donator",
+      "d": "Scrieți scrisori personalizate de mulțumire donatorilor care construiesc relații durabile"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Strategie campanie anuală",
+      "d": "Dezvoltați o strategie anuală cuprinzătoare de strângere de fonduri și angajament"
+    },
+    "Community Needs Assessment": {
+      "n": "Evaluare nevoi comunitate",
+      "d": "Efectuați o evaluare temeinică a nevoilor comunității pentru a ghida dezvoltarea programelor"
+    },
+    "Construction Project Plan": {
+      "n": "Plan proiect construcție",
+      "d": "Creați un plan cuprinzător de proiect de construcție cu faze, cronologii și bugete"
+    },
+    "Building Permit Checklist": {
+      "n": "Checklist autorizație construcție",
+      "d": "Urmăriți toate autorizațiile și aprobările necesare pentru proiectul dvs. de construcție"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Ghid evaluare contractori",
+      "d": "Evaluați și comparați contractori cu un cadru structurat de punctare"
+    },
+    "Material Estimate Calculator": {
+      "n": "Calculator estimare materiale",
+      "d": "Estimați materialele de construcție necesare cu cantități și proiecții de cost"
+    },
+    "Site Inspection Checklist": {
+      "n": "Lista de verificare pentru inspecția șantierului",
+      "d": "Efectuați inspecții amănunțite ale șantierului cu liste standardizate de verificare"
+    },
+    "Renovation Scope Document": {
+      "n": "Document de sferă a renovării",
+      "d": "Definiți clar sfera lucrărilor de renovare cu specificații și așteptări"
+    },
+    "Architectural Brief": {
+      "n": "Brief arhitectural",
+      "d": "Scrieți un brief arhitectural definind viziunea, cerințele și constrângerile proiectului"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Lista de verificare pentru conformitatea cu siguranța",
+      "d": "Asigurați conformitatea cu siguranța pe șantier cu OSHA și reglementările locale"
+    },
+    "Robot Design Specification": {
+      "n": "Specificație de proiectare a robotului",
+      "d": "Definiți specificații complete de proiectare a robotului inclusiv mecanică, electronică și software"
+    },
+    "IoT Project Planner": {
+      "n": "Planificator de proiecte IoT",
+      "d": "Planificați proiecte IoT de la capăt la capăt de la senzori la tablouri de bord cloud"
+    },
+    "Sensor Selection Guide": {
+      "n": "Ghid de selecție a senzorilor",
+      "d": "Alegeți senzorii optimi pentru cerințele aplicației de robotică sau IoT"
+    },
+    "Embedded Systems Guide": {
+      "n": "Ghid de sisteme încorporate",
+      "d": "Proiectați sisteme încorporate cu selecția corectă a microcontrolerului și arhitectura firmware"
+    },
+    "Automation Workflow Designer": {
+      "n": "Designer de fluxuri de lucru de automatizare",
+      "d": "Proiectați fluxuri de lucru de automatizare industrială sau casnică cu senzori și actuatori"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Planificator de prototipuri hardware",
+      "d": "Planificați prototipuri hardware de la breadboard la PCB cu aprovizionarea componentelor"
+    },
+    "Anxiety Management Plan": {
+      "n": "Plan de gestionare a anxietății",
+      "d": "Creați un plan personalizat de gestionare a anxietății cu strategii de coping și declanșatoare"
+    },
+    "CBT Thought Record": {
+      "n": "Registru de gânduri TCC",
+      "d": "Practicați registre de gânduri din terapia cognitiv-comportamentală pentru a contesta gândirea negativă"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Generator de îndemnuri de jurnalizare",
+      "d": "Generați îndemnuri semnificative de jurnalizare pentru auto-reflecție și procesare emoțională"
+    },
+    "Relationship Communication Guide": {
+      "n": "Ghid de comunicare în relații",
+      "d": "Îmbunătățiți comunicarea în relații cu cadre structurate de conversație"
+    },
+    "Boundary Setting Guide": {
+      "n": "Ghid de stabilire a limitelor",
+      "d": "Învățați să stabiliți și să mențineți limite sănătoase în viața personală și profesională"
+    },
+    "Grief Processing Helper": {
+      "n": "Asistent de procesare a durerii",
+      "d": "Navigați procesul de doliu cu ghidare compasionată și pași practici"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Exercițiu de auto-compasiune",
+      "d": "Practicați exerciții de auto-compasiune pentru a construi reziliență și a reduce autocritica"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Constructor de inteligență emoțională",
+      "d": "Dezvoltați abilități de inteligență emoțională pentru o mai bună conștientizare de sine și relații"
+    },
+    "Anger Management Plan": {
+      "n": "Plan de gestionare a furiei",
+      "d": "Dezvoltați strategii sănătoase de gestionare a furiei cu declanșatoare și tehnici de dezescaladare"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Plan de recuperare din burnout",
+      "d": "Creați un plan structurat de recuperare din burnout cu limite, odihnă și reangajare treptată"
+    },
+    "Instant Pot Recipe": {
+      "n": "Rețetă pentru oala sub presiune",
+      "d": "Rețete pentru oala sub presiune cu ghiduri de timp"
+    },
+    "World Cuisine Explorer": {
+      "n": "Explorator de bucătării ale lumii",
+      "d": "Rețete autentice din bucătării globale"
+    },
+    "Fermentation Guide": {
+      "n": "Ghid de fermentare",
+      "d": "Rețete și tehnici pentru alimente fermentate"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Ghid de barbecue și grătar",
+      "d": "Rețete de grătar cu marinări și sosuri recomandate"
+    },
+    "Bread Baking Guide": {
+      "n": "Ghid de panificație artizanală",
+      "d": "Rețete de pâine artizanală de la maia la produsul final"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Ghid de cultivare a ciupercilor",
+      "d": "Cultivarea ciupercilor de interior de la miceliu la recoltare"
+    },
+    "Permaculture Planner": {
+      "n": "Planificator de permacultură",
+      "d": "Proiectați un ecosistem de grădină alimentară autosustenabilă"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Ghid de amenajare a serei",
+      "d": "Planificați și construiți o seră productivă"
+    },
+    "FSBO Selling Guide": {
+      "n": "Ghid de vânzare directă a locuinței",
+      "d": "Vindeți locuința fără agent imobiliar pas cu pas"
+    },
+    "Investment Property Finder": {
+      "n": "Găsitor de proprietăți de investiții",
+      "d": "Evaluați potențialele proprietăți de investiții pentru închiriere"
+    },
+    "Car Modification Guide": {
+      "n": "Ghid de modificare a mașinii",
+      "d": "Planificați modificări și îmbunătățiri ale vehiculului"
+    },
+    "Fleet Management Planner": {
+      "n": "Planificator de gestionare a flotei",
+      "d": "Gestionați întreținerea și costurile mai multor vehicule"
+    },
+    "Digital Nomad Guide": {
+      "n": "Ghid de nomad digital",
+      "d": "Lucrați de la distanță în timp ce călătoriți prin lume"
+    },
+    "Eco-Travel Planner": {
+      "n": "Planificator de ecoturism",
+      "d": "Planificați călătorii sustenabile și ecologice"
+    },
+    "Product Launch Event": {
+      "n": "Eveniment de lansare a produsului",
+      "d": "Planificați un eveniment de lansare a produsului de la locație la PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Planificator de evenimente virtuale",
+      "d": "Planificați evenimente online captivante și webinare"
+    },
+    "College Planning Guide": {
+      "n": "Ghid de planificare universitară",
+      "d": "Planificați pentru universitate de la selecție la ajutor financiar"
+    },
+    "Child Safety Plan": {
+      "n": "Plan de siguranță a copilului",
+      "d": "Ghiduri cuprinzătoare de siguranță a copilului acasă și online"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Ghid de îngrijire a animalelor exotice",
+      "d": "Ghiduri de îngrijire pentru reptile, păsări și animale exotice"
+    },
+    "Pet Adoption Guide": {
+      "n": "Ghid de adopție a animalelor",
+      "d": "Navigați procesul de adopție a animalelor cu succes"
+    },
+    "Tiny House Builder": {
+      "n": "Constructor de case mici",
+      "d": "Planificați și construiți o casă mică pas cu pas"
+    },
+    "Workshop Setup Guide": {
+      "n": "Ghid de amenajare a atelierului",
+      "d": "Proiectați și echipați un atelier acasă"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Planificator de strategie de cupoane",
+      "d": "Maximizați economiile cu utilizarea strategică a cupoanelor"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Ghid de cumpărături second-hand",
+      "d": "Găsiți articole de calitate în magazine second-hand și online"
+    },
+    "Theological Study Guide": {
+      "n": "Ghid de studiu teologic",
+      "d": "Aprofundați concepte și doctrine teologice"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Ghid de dialog interreligios",
+      "d": "Facilitați conversații interreligioase respectuoase"
+    },
+    "Marathon Training Plan": {
+      "n": "Plan de antrenament pentru maraton",
+      "d": "Antrenament complet de maraton de la zero la 42.2 km"
+    },
+    "Youth Sports Coach": {
+      "n": "Antrenor de sport pentru tineret",
+      "d": "Planificați antrenamente de sport pentru tineret și dezvoltare"
+    },
+    "Woodworking Project": {
+      "n": "Proiect de prelucrare a lemnului",
+      "d": "Planificați proiecte de prelucrare a lemnului cu liste de tăiere și pași"
+    },
+    "Vinyl Record Guide": {
+      "n": "Ghid de discuri de vinil",
+      "d": "Începeți și administrați o colecție de discuri de vinil"
+    },
+    "Home Brewing Guide": {
+      "n": "Ghid de preparare a berii acasă",
+      "d": "Preparați bere sau vin acasă de la început la sfârșit"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Foaie de parcurs către libertatea financiară",
+      "d": "Trasați calea către independența financiară"
+    },
+    "Midlife Career Change": {
+      "n": "Schimbare de carieră la maturitate",
+      "d": "Navigați o tranziție de carieră la orice vârstă"
+    },
+    "AI Wallpaper Creator": {
+      "n": "Creator de imagini de fundal cu AI",
+      "d": "Generați imagini de fundal uimitoare pentru orice dispozitiv"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Îndemnuri pentru design de tatuaje",
+      "d": "Creați concepte personalizate de design de tatuaje cu AI"
+    },
+    "DJ Set Planner": {
+      "n": "Planificator de seturi DJ",
+      "d": "Planificați seturi DJ cu selecția pieselor și tranziții"
+    },
+    "Music Theory Tutor": {
+      "n": "Tutor de teorie muzicală",
+      "d": "Învățați concepte de teorie muzicală cu exerciții"
+    },
+    "Podcast Video Setup": {
+      "n": "Configurare video pentru podcast",
+      "d": "Configurați podcastul video de la echipament la editare"
+    },
+    "Wedding Video Plan": {
+      "n": "Plan video de nuntă",
+      "d": "Planificați videografia nunții de la ceremonie la montaj"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Scriitor de capitole de memorii",
+      "d": "Scrieți capitole captivante de memorii din povești de viață"
+    },
+    "Haiku Generator": {
+      "n": "Generator de haiku-uri",
+      "d": "Creați poeme haiku pe orice temă"
+    },
+    "TikTok Content Strategy": {
+      "n": "Strategie de conținut TikTok",
+      "d": "Construiți o strategie de creștere pe TikTok cu idei de conținut"
+    },
+    "YouTube Community Post": {
+      "n": "Postare de comunitate YouTube",
+      "d": "Creați postări captivante de comunitate YouTube"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Plan de monetizare a podcastului",
+      "d": "Strategii de monetizare a podcastului"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Ghid de comparare a instrumentelor AI",
+      "d": "Comparați instrumentele AI pentru cazuri specifice de utilizare"
+    },
+    "Code Snippet Library": {
+      "n": "Bibliotecă de fragmente de cod",
+      "d": "Organizați și documentați fragmente reutilizabile de cod"
+    },
+    "Tech Stack Selector": {
+      "n": "Selector de stivă tehnologică",
+      "d": "Alegeți stiva tehnologică potrivită pentru proiectul dumneavoastră"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Ghid de conformitate privind confidențialitatea",
+      "d": "Asigurați-vă că aplicația respectă reglementările de confidențialitate"
+    },
+    "API Security Audit": {
+      "n": "Audit de securitate API",
+      "d": "Auditați endpoint-urile API pentru vulnerabilități de securitate"
+    },
+    "AI Hackathon Project": {
+      "n": "Proiect de hackathon AI",
+      "d": "Planificați un proiect de hackathon axat pe AI de la capăt la capăt"
+    },
+    "Mobile Game Concept": {
+      "n": "Concept de joc mobil",
+      "d": "Proiectați un joc mobil de la concept la monetizare"
+    },
+    "Drone Photography Guide": {
+      "n": "Ghid de fotografie cu drona",
+      "d": "Planificați misiuni și cadre de fotografie aeriană"
+    },
+    "NFT Art Collection": {
+      "n": "Colecție de artă NFT",
+      "d": "Planificați și creați o colecție de artă digitală"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Ghid fiscal pentru freelanceri",
+      "d": "Navigați impozitele pe activitatea independentă și deducerile"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Constructor de portofoliu cripto",
+      "d": "Construiți un portofoliu diversificat de criptomonede"
+    },
+    "Azure Service Guide": {
+      "n": "Ghid de servicii Azure",
+      "d": "Selectați și configurați servicii cloud Azure"
+    },
+    "Wedding Speech Writer": {
+      "n": "Scriitor de discursuri de nuntă",
+      "d": "Scrieți discursuri și toasturi emoționante de nuntă"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Ghid de înființare a ONG-urilor",
+      "d": "Înființați o organizație nonprofit de la zero"
+    },
+    "Home Addition Planner": {
+      "n": "Planificator de extindere a locuinței",
+      "d": "Planificați o extindere a locuinței de la autorizații la construcție"
+    },
+    "Arduino Project Planner": {
+      "n": "Planificator de proiecte Arduino",
+      "d": "Planificați proiecte de electronică bazate pe Arduino"
+    },
+    "Digital Wellness Plan": {
+      "n": "Plan de bunăstare digitală",
+      "d": "Creați o relație sănătoasă cu tehnologia"
+    },
+    "SWOT Analysis Tool": {
+      "n": "Instrument de analiză SWOT",
+      "d": "Analiză strategică a punctelor forte, punctelor slabe, oportunităților și amenințărilor"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Constructor de agende de ședință",
+      "d": "Creați agende structurate de ședință cu blocuri de timp"
+    },
+    "OKR Framework Builder": {
+      "n": "Constructor de cadru OKR",
+      "d": "Stabiliți obiective și rezultate cheie pentru echipe"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Pregătire pentru negocierea cu furnizorii",
+      "d": "Pregătiți-vă pentru negocierile cu furnizorii și distribuitorii"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Ghid de evaluare a francizelor",
+      "d": "Evaluați oportunitățile de franciză sistematic"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Scriitor de politici de lucru la distanță",
+      "d": "Creați politici cuprinzătoare de lucru la distanță"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Plan de recrutare diversificată",
+      "d": "Construiți practici de recrutare incluzive și canale diverse"
+    },
+    "Freelance Contract Template": {
+      "n": "Șablon de contract de freelancing",
+      "d": "Creați acorduri profesionale de servicii freelance"
+    },
+    "Personal Website Planner": {
+      "n": "Planificator de site web personal",
+      "d": "Planificați și structurați site-ul dumneavoastră profesional de portofoliu"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Ghid de post intermitent",
+      "d": "Proiectați un protocol de post intermitent"
+    },
+    "Posture Improvement Plan": {
+      "n": "Plan de îmbunătățire a posturii",
+      "d": "Corectați problemele de postură cu exerciții și obiceiuri"
+    },
+    "Notion Template Builder": {
+      "n": "Constructor de șabloane Notion",
+      "d": "Proiectați șabloane de spațiu de lucru Notion pentru orice flux de lucru"
+    },
+    "Automation Workflow Builder": {
+      "n": "Constructor de fluxuri de automatizare",
+      "d": "Proiectați fluxuri de automatizare cu Zapier sau Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Planificator de sprinturi agile",
+      "d": "Planificați sprinturi agile cu puncte de efort și velocitate"
+    },
+    "Product Roadmap Builder": {
+      "n": "Constructor de foaie de parcurs a produsului",
+      "d": "Creați foi de parcurs de produs cu etape și teme"
+    },
+    "TOEFL Prep Guide": {
+      "n": "Ghid de pregătire TOEFL",
+      "d": "Pregătiți-vă pentru examenul TOEFL cu strategii de studiu"
+    },
+    "Business English Coach": {
+      "n": "Antrenor de engleză de afaceri",
+      "d": "Îmbunătățiți comunicarea profesională în engleză"
+    },
+    "Brand Identity Designer": {
+      "n": "Designer de identitate de brand",
+      "d": "Creați ghiduri coerente de identitate vizuală a brandului"
+    },
+    "UX Research Plan": {
+      "n": "Plan de cercetare UX",
+      "d": "Planificați cercetarea experienței utilizatorului pentru produse digitale"
+    },
+    "Data Storytelling Guide": {
+      "n": "Ghid de storytelling cu date",
+      "d": "Transformați perspectivele datelor în narațiuni convingătoare"
+    },
+    "AI Model Evaluation": {
+      "n": "Evaluare de modele AI",
+      "d": "Evaluați și comparați performanța modelelor de machine learning"
+    },
+    "3D Printing Project": {
+      "n": "Proiect de imprimare 3D",
+      "d": "Planificați proiecte de imprimare 3D de la design la imprimare"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Designer de circuite electrice",
+      "d": "Proiectați circuite electrice cu selecția componentelor"
+    },
+    "Side Hustle Finder": {
+      "n": "Căutător de venituri suplimentare",
+      "d": "Descoperă idei de venituri suplimentare bazate pe abilitățile tale"
+    },
+    "Passive Income Blueprint": {
+      "n": "Plan de venituri pasive",
+      "d": "Construiește o strategie de venituri pasive adaptată situației tale"
+    },
+    "Savings Challenge Generator": {
+      "n": "Generator provocare economisire",
+      "d": "Creează un plan personalizat de provocare a economisirii"
+    },
+    "Negotiate Any Bill": {
+      "n": "Negociator de facturi",
+      "d": "Scripturi pentru a negocia și reduce facturile recurente"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Lansator magazin Etsy",
+      "d": "Plan pas cu pas pentru a lansa și crește un magazin Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Planificator canal YouTube",
+      "d": "Planifică și lansează un canal YouTube profitabil"
+    },
+    "Rental Income Analyzer": {
+      "n": "Analizator venituri din chirie",
+      "d": "Analizează randamentele potențiale ale proprietăților de închiriat"
+    },
+    "Online Course Creator": {
+      "n": "Creator de cursuri online",
+      "d": "Planifică și structurează un curs online de vândut"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Maximizator cupoane și cashback",
+      "d": "Maximizează economiile cu cupoane, cashback și recompense"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Configurare magazin dropshipping",
+      "d": "Planifică o afacere dropshipping de la zero"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Optimizator economie gig",
+      "d": "Maximizează câștigurile din aplicații gig precum Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

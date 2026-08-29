@@ -1,0 +1,4450 @@
+{
+  "pills": {
+    "all": "Tümü",
+    "free": "⭐ Ücretsiz",
+    "money": "💰 İş",
+    "coding": "💻 Kodlama",
+    "ai": "🤖 Yapay Zekâ",
+    "writing": "✍️ Yazarlık",
+    "marketing": "📢 Pazarlama",
+    "sales": "🤝 Satış",
+    "school": "📚 Eğitim",
+    "research": "🔬 Araştırma",
+    "career": "🚀 Kariyer",
+    "legal": "⚖️ Hukuk",
+    "finance": "📊 Finans",
+    "health": "🏥 Sağlık",
+    "cooking": "🍳 Yemek",
+    "garden": "🌱 Bahçe",
+    "realestate": "🏠 Emlak",
+    "auto": "🚗 Otomobil",
+    "travel": "✈️ Seyahat",
+    "image": "🎨 Görsel AI",
+    "music": "🎵 Müzik",
+    "video": "🎬 Video",
+    "social": "📱 Sosyal",
+    "startup": "🦄 Girişim",
+    "ecommerce": "🛒 E-ticaret",
+    "productivity": "⏱ Verimlilik",
+    "diy": "🔨 Kendin Yap",
+    "event": "🎉 Etkinlik",
+    "parent": "👶 Ebeveynlik",
+    "pets": "🐾 Evcil Hayvan",
+    "sports": "⚽ Spor",
+    "wellness": "🧘 Sağlıklı Yaşam",
+    "language": "🌍 Diller",
+    "security": "🔒 Güvenlik",
+    "datascience": "📈 Veri Bilimi",
+    "chemistry": "🧪 Kimya",
+    "biology": "🧬 Biyoloji",
+    "physics": "⚛️ Fizik",
+    "math": "🔢 Matematik",
+    "makemoney": "💰 Para"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Özetleme Aracı",
+      "d": "Her türlü içeriği net madde işaretli özetlere dönüştürün"
+    },
+    "Technical Documentation": {
+      "n": "Teknik Dokümantasyon",
+      "d": "API'ler ve özellikler için anlaşılır teknik belgeler oluşturun"
+    },
+    "YouTube Script": {
+      "n": "YouTube Komut Dosyası",
+      "d": "Kanca, bölümler, CTA, b-roll listesi içeren tam video komut dosyası"
+    },
+    "TikTok Generator": {
+      "n": "TikTok Oluşturucu",
+      "d": "TikTok için optimize edilmiş kısa biçimli video komut dosyası"
+    },
+    "LinkedIn Post Writer": {
+      "n": "LinkedIn Yazı Yazarı",
+      "d": "Etkileşimi artıran LinkedIn gönderilerini kaydırarak durdurma"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Blog Gönderisi Oluşturucu",
+      "d": "SEO için optimize edilmiş uzun biçimli blog gönderileri"
+    },
+    "SEO Article Writer": {
+      "n": "SEO Makale Yazarı",
+      "d": "Google'da sıralanmak için oluşturulmuş, anahtar kelime açısından zengin makaleler"
+    },
+    "Podcast Episode Outline": {
+      "n": "Podcast Bölüm Özeti",
+      "d": "Konuşma noktalarıyla yapılandırılmış bölüm taslağı"
+    },
+    "Newsletter Writer": {
+      "n": "Bülten Yazarı",
+      "d": "İlgi çekici e-posta bültenleri okuyucuları gerçekten açılıyor"
+    },
+    "Product Review Writer": {
+      "n": "Ürün İnceleme Yazarı",
+      "d": "Dengeli, güvenilir ürün incelemeleri"
+    },
+    "Social Media Calendar": {
+      "n": "Sosyal Medya Takvimi",
+      "d": "Platform başına gönderi fikirleri içeren 30 günlük içerik takvimi"
+    },
+    "Executive Summary": {
+      "n": "Yönetici Özeti",
+      "d": "Uzun belgelerden tek sayfalık yönetici özeti"
+    },
+    "Customer Support Response": {
+      "n": "Müşteri Desteği Yanıtı",
+      "d": "Empatik, markaya uygun müşteri desteği yanıtları"
+    },
+    "Business Proposal": {
+      "n": "İş Teklifi",
+      "d": "Kapsam ve fiyatlandırmayla müşteri tekliflerini kazanma"
+    },
+    "Decision Memo": {
+      "n": "Karar Notu",
+      "d": "Seçenekler ve öneriler içeren net karar notları"
+    },
+    "Stakeholder Update": {
+      "n": "Paydaş Güncellemesi",
+      "d": "Paydaşlar için kısa proje durumu güncellemeleri"
+    },
+    "Code Review Assistant": {
+      "n": "Kod İnceleme Asistanı",
+      "d": "Hatalar, stil ve en iyi uygulamalar için kodu inceleyin"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Kod Yorumları",
+      "d": "JavaScript ve TypeScript için JSDoc yorumları"
+    },
+    "Architecture Decision Record": {
+      "n": "Mimari Karar Kaydı",
+      "d": "Bağlam ve sonuçlarla mimari kararları belgelendirin"
+    },
+    "User Story Writer": {
+      "n": "Kullanıcı Hikayesi Yazarı",
+      "d": "Kabul kriterlerine sahip çevik kullanıcı hikayeleri"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Kabul Kriterleri",
+      "d": "Kullanıcı hikayeleri için salatalık tarzı kabul kriterleri"
+    },
+    "PR Description Writer": {
+      "n": "PR Açıklama Yazarı",
+      "d": "Bağlam ve test notlarıyla net halkla ilişkiler açıklamaları"
+    },
+    "Unit Test Generator": {
+      "n": "Birim Test Oluşturucu",
+      "d": "Herhangi bir işlev için uç durumlarla birim testleri"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "Kod Yeniden Düzenleme Danışmanı",
+      "d": "Okunabilirlik ve performans için kodu yeniden düzenleme"
+    },
+    "SQL Query Builder": {
+      "n": "SQL Sorgu Oluşturucu",
+      "d": "Optimize edilmiş SQL sorgularına doğal dil"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes Yapılandırma Oluşturucu",
+      "d": "K8s sorunlarını hızla teşhis edin ve düzeltin"
+    },
+    "Postmortem Report": {
+      "n": "Ölüm Sonrası Raporu",
+      "d": "Zaman çizelgesi ve eylem öğeleriyle suçsuz ölüm sonrası"
+    },
+    "Release Notes Writer": {
+      "n": "Sürüm Notları Yazarı",
+      "d": "Taahhüt mesajlarından kullanıcı dostu sürüm notları"
+    },
+    "Prompt Optimizer": {
+      "n": "İstem Optimize Edici",
+      "d": "Daha iyi, daha hassas çıktılar için tüm yapay zeka istemlerini iyileştirin"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Düşünce Zinciri Oluşturucu",
+      "d": "Karmaşık görevler için çok adımlı akıl yürütme istemleri oluşturun"
+    },
+    "RAG System Prompt": {
+      "n": "RAG Sistem İstemi",
+      "d": "Almayla zenginleştirilmiş nesil bilgi istemi şablonları"
+    },
+    "Eval Dataset Creator": {
+      "n": "Eval Veri Kümesi Oluşturucu",
+      "d": "Yapay zeka modeli testi için değerlendirme veri kümeleri oluşturun"
+    },
+    "Prompt A/B Tester": {
+      "n": "İstemi A/B Test Cihazı",
+      "d": "Performansı karşılaştırmak için istemlerin A/B varyantlarını oluşturun"
+    },
+    "Multi-Model Comparison": {
+      "n": "Çoklu Model Karşılaştırması",
+      "d": "Yapay zeka modellerindeki çıktıları karşılaştırmaya yönelik çerçeve"
+    },
+    "Resume Tailoring": {
+      "n": "Terziliğe Devam Et",
+      "d": "Özgeçmişinizi belirli bir iş tanımına göre uyarlayın"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "Kapak Mektubu Oluşturucu",
+      "d": "Röportaj getiren ilgi çekici kapak mektupları"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn Profil Optimize Edici",
+      "d": "LinkedIn'inizi işe alım uzmanları için optimize edin"
+    },
+    "Interview Coach": {
+      "n": "Röportaj Koçu",
+      "d": "Herhangi bir rol için röportaj soru-cevap alıştırması yapın"
+    },
+    "Salary Negotiation Script": {
+      "n": "Maaş Pazarlığı Senaryosu",
+      "d": "Daha yüksek ücret için pazarlık yapmak için senaryolar ve stratejiler"
+    },
+    "Career Roadmap Planner": {
+      "n": "Kariyer Yol Haritası Planlayıcısı",
+      "d": "Kilometre taşlarını içeren 12 aylık kariyer büyüme planı"
+    },
+    "Objection Handler": {
+      "n": "İtiraz İşleyicisi",
+      "d": "Yaygın satış itirazlarını ele almaya yönelik komut dosyaları"
+    },
+    "Landing Page Copy": {
+      "n": "Açılış Sayfası Kopyası",
+      "d": "Yüksek dönüşüm sağlayan açılış sayfası kopyası"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads Kopyası",
+      "d": "Yüksek TO'lu Google arama ağı reklam metni"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram Reklamı",
+      "d": "Dönüştüren Facebook ve Instagram reklam metni"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Pazarlama Kampanyası Özeti",
+      "d": "Kanallar ve zaman çizelgesiyle eksiksiz pazarlama kampanyası"
+    },
+    "Customer Persona Builder": {
+      "n": "Müşteri Persona Oluşturucusu",
+      "d": "Pazarlama ve ürün için ayrıntılı alıcı karakterleri"
+    },
+    "Value Proposition Canvas": {
+      "n": "Değer Önerisi Kanvası",
+      "d": "Açık, ikna edici değer önerileri"
+    },
+    "Product Launch Plan": {
+      "n": "Ürün Lansman Planı",
+      "d": "Ürün lansmanları için pazara açılma planı"
+    },
+    "Study Guide Creator": {
+      "n": "Çalışma Rehberi Oluşturucu",
+      "d": "Herhangi bir konuyu yapılandırılmış bir çalışma kılavuzuna dönüştürün"
+    },
+    "Flashcard Creator": {
+      "n": "Bilgi Kartı Oluşturucu",
+      "d": "Hızlı ezberleme için Flashcard Soru-Cevap setleri"
+    },
+    "Quiz Generator": {
+      "n": "Sınav Oluşturucu",
+      "d": "Çoktan seçmeli ve kısa cevaplı testler"
+    },
+    "Lesson Plan Builder": {
+      "n": "Ders Planı Oluşturucu",
+      "d": "Faaliyetler ve değerlendirmeler içeren ayrıntılı ders planları"
+    },
+    "Research Notes Organizer": {
+      "n": "Araştırma Notları Organizatörü",
+      "d": "Araştırma notlarını yapılandırılmış ana hatlar halinde düzenleyin"
+    },
+    "Essay Outline Generator": {
+      "n": "Deneme Anahat Oluşturucu",
+      "d": "Tez ve argümanlarla birlikte yapılandırılmış makale ana hatları"
+    },
+    "Literature Review Assistant": {
+      "n": "Literatür Tarama Asistanı",
+      "d": "Sentezli akademik literatür taraması"
+    },
+    "Thesis Statement Builder": {
+      "n": "Tez Beyanı Oluşturucu",
+      "d": "Güçlü, tartışılabilir tez ifadeleri"
+    },
+    "Exam Prep Planner": {
+      "n": "Sınav Hazırlık Planlayıcısı",
+      "d": "Kişiselleştirilmiş sınav çalışma programı"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Sözleşme Özeti",
+      "d": "Sade İngilizce sözleşme özeti. Yasal tavsiye değildir."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Sözleşme Riski İncelemesi",
+      "d": "Riskli maddeleri belirleyin. Yasal tavsiye değildir."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F Gizlilik Analizcisi",
+      "d": "NDA maddesinin dökümü. Yasal tavsiye değildir."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Politika Taslağı Asistanı",
+      "d": "İç politika taslağını hazırlayın. Yasal tavsiye değildir."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Uyumluluk Kontrol Listesi",
+      "d": "Çerçeveye göre uyumluluk kontrol listesi. Yasal tavsiye değildir."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Hizmet Şartlarını İnceleyen Kişi",
+      "d": "Hizmet Şartları risklerini işaretleyin. Yasal tavsiye değildir."
+    },
+    "Budget Planner": {
+      "n": "Bütçe Planlayıcı",
+      "d": "Kişisel veya işletme bütçe planı. Mali tavsiye değil."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Kazanç Çağrısı Özetleyici",
+      "d": "Kazanç çağrılarından önemli çıkarımlar. Mali tavsiye değil."
+    },
+    "Investment Thesis Builder": {
+      "n": "Yatırım Tezi Oluşturucu",
+      "d": "Yapılandırılmış yatırım tezi. Mali tavsiye değil."
+    },
+    "Financial Analysis Report": {
+      "n": "Mali Analiz Raporu",
+      "d": "Mali analiz yapın. Mali tavsiye değil."
+    },
+    "Expense Categorizer": {
+      "n": "Gider Sınıflandırıcısı",
+      "d": "Giderleri kategorilere ayırın ve analiz edin. Mali tavsiye değil."
+    },
+    "SOAP Note Generator": {
+      "n": "SABUN Notu Oluşturucu",
+      "d": "Klinik SABUN notları. Tıbbi tavsiye değil."
+    },
+    "Clinical Case Summary": {
+      "n": "Klinik Vaka Özeti",
+      "d": "Klinik notların yapısı. Tıbbi tavsiye değil."
+    },
+    "Patient Education Writer": {
+      "n": "Hasta Eğitim Yazarı",
+      "d": "Sade dilli hasta eğitimi. Tıbbi tavsiye değil."
+    },
+    "Medical Research Summarizer": {
+      "n": "Tıbbi Araştırma Özetleyici",
+      "d": "Araştırma makalelerini özetleyin. Tıbbi tavsiye değil."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Ayırıcı Tanı Asistanı",
+      "d": "Ayırıcı tanıları düzenleyin. Tıbbi tavsiye değil."
+    },
+    "Creative Storyteller": {
+      "n": "Yaratıcı Hikaye Anlatıcı",
+      "d": "Yaratıcı hikayeler ve anlatılar oluşturun"
+    },
+    "Ad Copy Generator": {
+      "n": "Reklam Metni Oluşturucu",
+      "d": "Google, Meta, LinkedIn için yüksek dönüşüm sağlayan kopya"
+    },
+    "Bug Report Writer": {
+      "n": "Hata Raporu Yazarı",
+      "d": "Açık, tekrarlanabilir hata raporları yazın"
+    },
+    "Social Media Caption": {
+      "n": "Sosyal Medya Altyazısı",
+      "d": "Herhangi bir platform için kaydırmayı durduran altyazılar oluşturun"
+    },
+    "Research Paper Abstract": {
+      "n": "Araştırma Makalesi Özeti",
+      "d": "Yapılandırılmış akademik özetler yazın"
+    },
+    "Translation Expert": {
+      "n": "Çeviri Uzmanı",
+      "d": "Metni bağlam ve nüanslarla çevirin"
+    },
+    "Data Analyst": {
+      "n": "Veri Analisti",
+      "d": "Verileri analiz edin ve eyleme dönüştürülebilir bilgiler sağlayın"
+    },
+    "Recipe Generator": {
+      "n": "Tarif Oluşturucu",
+      "d": "Tercihlerinize ve beslenme ihtiyaçlarınıza göre özel tarifler oluşturun"
+    },
+    "Meal Planner": {
+      "n": "Yemek Planlayıcı",
+      "d": "Çeşitliliği ve beslenmeyi göz önünde bulundurarak tüm hafta boyunca dengeli öğünler planlayın"
+    },
+    "Grocery List Builder": {
+      "n": "Bakkal Listesi Oluşturucu",
+      "d": "Planladığınız yemekler ve kiler ihtiyaçlarınızdan organize bir alışveriş listesi oluşturun"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Kiler Tarif Bulucu",
+      "d": "Elinizde bulunan malzemeleri kullanarak lezzetli tarifler bulun"
+    },
+    "Nutrition Calculator": {
+      "n": "Beslenme Hesaplayıcı",
+      "d": "Herhangi bir tarif veya yemek kombinasyonu için ayrıntılı beslenme bilgilerini hesaplayın"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "İçerik Değiştirme Kılavuzu",
+      "d": "Eksik veya kısıtlı malzemeler için mükemmel ikameleri bulun"
+    },
+    "Batch Cooking Planner": {
+      "n": "Toplu Pişirme Planlayıcısı",
+      "d": "Hafta boyunca zamandan tasarruf etmek için verimli toplu pişirme oturumları planlayın"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Kokteyl Tarifi Yaratıcısı",
+      "d": "Her duruma uygun kokteyl tarifleri oluşturun ve özelleştirin"
+    },
+    "Baking Conversion Helper": {
+      "n": "Pişirme Dönüşüm Yardımcısı",
+      "d": "Pişirme ölçümlerini birimler arasında dönüştürün ve tarifleri yukarı veya aşağı ölçeklendirin"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Diyete Özel Tarif Bulucu",
+      "d": "Özel diyet planınıza veya beslenme hedeflerinize göre hazırlanmış tarifleri bulun"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Yavaş Tencere Tarifi",
+      "d": "El değmeden yemek pişirmek için mükemmel zamanlanmış yavaş pişirici tarifleri alın"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Hava Fritözü Tarifi Oluşturucu",
+      "d": "Mükemmel zamanlamayla çıtır ve lezzetli hava fritöz tarifleri oluşturun"
+    },
+    "Smoothie Builder": {
+      "n": "Güler yüzlü Oluşturucu",
+      "d": "Her amaca yönelik besleyici ve lezzetli smoothie tarifleri oluşturun"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Sos ve Sos Yaratıcısı",
+      "d": "Sıfırdan ev yapımı soslar ve soslar yaratın"
+    },
+    "Spice Blend Guide": {
+      "n": "Baharat Karışımı Kılavuzu",
+      "d": "Her mutfak veya yemek türü için özel baharat karışımları oluşturun"
+    },
+    "Food Pairing Expert": {
+      "n": "Gıda Eşleştirme Uzmanı",
+      "d": "Zengin öğünler için ideal yiyecek ve lezzet eşleşmelerini keşfedin"
+    },
+    "Holiday Menu Planner": {
+      "n": "Tatil Menüsü Planlayıcı",
+      "d": "Zaman çizelgesi ve alışveriş listesiyle eksiksiz bir tatil menüsü planlayın"
+    },
+    "Leftover Makeover": {
+      "n": "Artık Makyaj",
+      "d": "Artıkları yaratıcı fikirlerle heyecan verici yeni yemeklere dönüştürün"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Çocuk Dostu Yemek Fikirleri",
+      "d": "Çocukların yemekten gerçekten keyif alacağı sağlıklı yemekler oluşturun"
+    },
+    "Date Night Dinner": {
+      "n": "Randevu Gecesi Yemeği",
+      "d": "Evde romantik bir akşam için etkileyici bir akşam yemeği planlayın"
+    },
+    "Budget Meal Planner": {
+      "n": "Bütçe Yemek Planlayıcısı",
+      "d": "Beslenmeden ödün vermeden kısıtlı bir bütçeyle lezzetli yemekler yaratın"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Vegan Tarif Dönüştürücü",
+      "d": "Herhangi bir geleneksel tarifi lezzetli vegan versiyona dönüştürün"
+    },
+    "Dessert Creator": {
+      "n": "Tatlı Yaratıcısı",
+      "d": "Her beceri seviyesine ve duruma uygun özel tatlı tarifleri tasarlayın"
+    },
+    "Appetizer Planner": {
+      "n": "Meze Planlayıcısı",
+      "d": "Partiler ve toplantılar için mükemmel meze çeşitlerini planlayın"
+    },
+    "Food Prep Timeline": {
+      "n": "Yiyecek Hazırlama Zaman Çizelgesi",
+      "d": "Her şeyin bir anda hazır olması için ayrıntılı bir pişirme zaman çizelgesi oluşturun"
+    },
+    "Plant Care Guide": {
+      "n": "Bitki Bakım Kılavuzu",
+      "d": "Koleksiyonunuzdaki herhangi bir bitki için kişiselleştirilmiş bakım talimatlarını alın"
+    },
+    "Garden Planner": {
+      "n": "Bahçe Planlayıcısı",
+      "d": "Maksimum verim ve güzellik için bahçe düzeninizi tasarlayın ve planlayın"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Zararlı Teşhis Aracı",
+      "d": "Organik tedavi seçenekleriyle bahçe zararlılarını ve hastalıklarını tespit edin"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Mevsimsel Dikim Takvimi",
+      "d": "Yetiştirme bölgenizdeki her bir mahsulü ne zaman ekeceğinizi tam olarak bilin"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Sebze Bahçesi Planlayıcısı",
+      "d": "Yardımcı ekim ve rotasyonla verimli bir sebze bahçesi planlayın"
+    },
+    "Indoor Plant Guide": {
+      "n": "İç Mekan Bitki Rehberi",
+      "d": "Alanınız için mükemmel iç mekan bitkilerini seçin ve bakımını yapın"
+    },
+    "Herb Garden Starter": {
+      "n": "Bitki Bahçesi Başlangıç",
+      "d": "Uzman rehberliği ile iç mekanda veya dış mekanda gelişen bir bitki bahçesi başlatın"
+    },
+    "Composting Guide": {
+      "n": "Kompostlama Kılavuzu",
+      "d": "Zengin bahçe toprağı için kompostlama sistemini başlatın ve sürdürün"
+    },
+    "Landscape Design Helper": {
+      "n": "Peyzaj Tasarım Yardımcısı",
+      "d": "Mülkünüz için güzel bir peyzaj planı tasarlayın"
+    },
+    "Raised Bed Planner": {
+      "n": "Yükseltilmiş Yatak Planlayıcısı",
+      "d": "Alanınız için mükemmel yükseltilmiş bahçe yataklarını tasarlayın ve inşa edin"
+    },
+    "Fruit Tree Guide": {
+      "n": "Meyve Ağacı Rehberi",
+      "d": "İkliminize ve alanınıza uygun meyve ağaçlarını seçin ve bakımını yapın"
+    },
+    "Container Garden Planner": {
+      "n": "Konteyner Bahçe Planlayıcısı",
+      "d": "Her alan için güzel ve üretken konteyner bahçeleri yaratın"
+    },
+    "Pollinator Garden": {
+      "n": "Tozlayıcı Bahçe",
+      "d": "Arıları, kelebekleri ve faydalı böcekleri çekecek bir bahçe tasarlayın"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Kuraklığa Dayanıklı Bahçe",
+      "d": "Minimum sulamayla gelişen, suya dayalı bir bahçe planlayın"
+    },
+    "Soil Amendment Guide": {
+      "n": "Toprak Değişikliği Kılavuzu",
+      "d": "Optimum bitki sağlığı için bahçe toprağınızı test edin ve iyileştirin"
+    },
+    "Seed Starting Calendar": {
+      "n": "Tohum Başlangıç ​​Takvimi",
+      "d": "Başarılı bir büyüme sezonu için tohum başlangıç ​​programınızı planlayın"
+    },
+    "Garden Layout Designer": {
+      "n": "Bahçe Düzeni Tasarımcısı",
+      "d": "Uygun aralık ve güneş erişimi ile optimize edilmiş bir bahçe düzeni oluşturun"
+    },
+    "Water Schedule Planner": {
+      "n": "Su Programı Planlayıcısı",
+      "d": "Bahçeniz ve çimleriniz için verimli bir sulama programı oluşturun"
+    },
+    "Plant Problem Solver": {
+      "n": "Tesis Sorun Çözücü",
+      "d": "Yaygın bitki sorunlarını uzman tavsiyesiyle teşhis edin ve tedavi edin"
+    },
+    "Pruning Guide": {
+      "n": "Budama Kılavuzu",
+      "d": "Sağlık ve güzellik için herhangi bir bitkiyi ne zaman ve nasıl budayacağınızı öğrenin"
+    },
+    "Home Buying Checklist": {
+      "n": "Ev Satın Alma Kontrol Listesi",
+      "d": "Ev satın alma süreci için adım adım kontrol listesini tamamlayın"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Daire Karşılaştırma Aracı",
+      "d": "Mükemmel kiralık dairenizi bulmak için daireleri yan yana karşılaştırın"
+    },
+    "Rental Application Helper": {
+      "n": "Kiralama Başvuru Yardımcısı",
+      "d": "Ev sahiplerinin dikkatini çekecek güçlü bir kiralama uygulaması hazırlayın"
+    },
+    "Home Inspection Questions": {
+      "n": "Evde Muayene Soruları",
+      "d": "Ev muayenesi sırasında sorulması gereken temel sorular"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Mortgage Karşılaştırma Hesaplayıcı",
+      "d": "Durumunuza en uygun teklifi bulmak için ipotek seçeneklerini karşılaştırın"
+    },
+    "First-Time Buyer Guide": {
+      "n": "İlk Kez Alıcı Rehberi",
+      "d": "İlk ev satın alma işleminizde güvenle gezinmeniz için eksiksiz kılavuz"
+    },
+    "Neighborhood Research": {
+      "n": "Mahalle Araştırması",
+      "d": "Size en uygun olanı bulmak için mahalleleri araştırın ve karşılaştırın"
+    },
+    "Home Value Estimator": {
+      "n": "Ana Sayfa Değer Tahmincisi",
+      "d": "Karşılaştırılabilir satış ve pazar verilerini kullanarak evinizin değerini tahmin edin"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Kira Sözleşmesi İnceleyicisi",
+      "d": "Kira sözleşmenizdeki önemli şartları inceleyin ve anlayın"
+    },
+    "Moving Checklist": {
+      "n": "Hareketli Kontrol Listesi",
+      "d": "Zaman çizelgesi ve görev yönetimiyle kapsamlı taşınma kontrol listesi"
+    },
+    "Property Investment Analyzer": {
+      "n": "Gayrimenkul Yatırım Analizörü",
+      "d": "Yatırım getirisi potansiyeli için kiralık mülkleri analiz edin"
+    },
+    "Renovation Budget Planner": {
+      "n": "Yenileme Bütçe Planlayıcısı",
+      "d": "Ayrıntılı maliyet tahminleriyle ev yenileme projelerini planlayın ve bütçeleyin"
+    },
+    "House Hunting Scorecard": {
+      "n": "Ev Avcılığı Puan Kartı",
+      "d": "Ev arama süreciniz sırasında evleri puanlayın ve sıralayın"
+    },
+    "Down Payment Calculator": {
+      "n": "Peşinat Hesaplayıcı",
+      "d": "Ev satın alımınız için peşinat seçeneklerini ve tasarruf planlarını hesaplayın"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Ev Bakım Programı",
+      "d": "Yatırımınızı korumak için mevsimlik bir ev bakım programı oluşturun"
+    },
+    "Rental Property Analysis": {
+      "n": "Kiralık Gayrimenkul Analizi",
+      "d": "Finansal projeksiyonlarla kiralık mülk fırsatlarını değerlendirin"
+    },
+    "Home Staging Tips": {
+      "n": "Evde Sahneleme İpuçları",
+      "d": "Evinizi daha hızlı ve daha yüksek fiyata satacak şekilde hazırlayın"
+    },
+    "Realtor Interview Questions": {
+      "n": "Emlakçı Mülakat Soruları",
+      "d": "Emlakçılarla röportaj yaparken sorulacak temel sorular"
+    },
+    "Closing Cost Estimator": {
+      "n": "Kapanış Maliyet Tahmincisi",
+      "d": "Gayrimenkul işleminizin tüm kapanış maliyetlerini tahmin edin"
+    },
+    "HOA Assessment Guide": {
+      "n": "HOA Değerlendirme Kılavuzu",
+      "d": "Satın almadan önce HOA ücretlerini, kurallarını ve finansal durumunu değerlendirin"
+    },
+    "Car Buying Assistant": {
+      "n": "Araba Satın Alma Asistanı",
+      "d": "Araba satın alma sürecinde güvenle ilerleyin ve paradan tasarruf edin"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Araç Karşılaştırma Aracı",
+      "d": "Araçları özellikler, fiyat ve özellikler açısından yan yana karşılaştırın"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Bakım Programı Planlayıcısı",
+      "d": "Araç ömrünü uzatmak için kişiselleştirilmiş bir araç bakım programı oluşturun"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Onarım Tahmini Analizörü",
+      "d": "Oto tamir tahminlerini değerlendirin ve hizmetler için adil fiyatlandırmayı bulun"
+    },
+    "Road Trip Planner": {
+      "n": "Yol Gezisi Planlayıcısı",
+      "d": "Durakları, yakıtı ve zamanlamayı hesaplayarak mükemmel yolculuğu planlayın"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "İkinci El Araç Muayene Kontrol Listesi",
+      "d": "Kullanılmış bir arabayı güvenle satın almak için kapsamlı inceleme kontrol listesi"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Otomobil Sigortası Karşılaştırması",
+      "d": "En iyi teminatı ve fiyatı bulmak için otomobil sigortası seçeneklerini karşılaştırın"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Yakıt Ekonomisi Hesaplayıcı",
+      "d": "Araç yakıt maliyetlerinizi ve verimliliğinizi hesaplayın ve optimize edin"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Araç Kiralama ve Satın Alma Karşılaştırıcı",
+      "d": "En iyi finansal seçeneği bulmak için kiralama ile satın almayı karşılaştırın"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Takas Değeri Tahmincisi",
+      "d": "Araç takas değerinizi tahmin edin ve adil bir anlaşma için pazarlık yapın"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Araç Geçmişi İnceleyici",
+      "d": "Kullanılmış araç geçmiş raporunu incelerken sorulacak önemli sorular ve kontroller"
+    },
+    "Car Detailing Guide": {
+      "n": "Araç Detaylı Temizlik Rehberi",
+      "d": "Showroom kalitesinde bir sonuç için adım adım araç detaylı temizlik talimatları"
+    },
+    "Winter Car Prep": {
+      "n": "Kışa Araç Hazırlığı",
+      "d": "Aracınızı kış sürüş koşullarına ve soğuk havaya hazırlayın"
+    },
+    "New Driver Guide": {
+      "n": "Yeni Sürücü Rehberi",
+      "d": "Yeni ve öğrenen sürücüler için temel sürüş ipuçları ve bilgiler"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Elektrikli Araç Rehberi",
+      "d": "Elektrikli araç satın alma ve sahip olma hakkında bilmeniz gereken her şey"
+    },
+    "Trip Planner": {
+      "n": "Gezi Planlayıcı",
+      "d": "Destinasyonlar, aktiviteler ve lojistik ile mükemmel gezinizi planlayın"
+    },
+    "Packing List Generator": {
+      "n": "Bavul Listesi Oluşturucu",
+      "d": "Herhangi bir gezi ve destinasyon için özelleştirilmiş bavul listesi oluşturun"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Tatil Programı Oluşturucu",
+      "d": "Aktiviteler ve yemek planlarıyla gün gün tatil programı oluşturun"
+    },
+    "Travel Budget Calculator": {
+      "n": "Seyahat Bütçesi Hesaplayıcı",
+      "d": "Detaylı harcama kategorileriyle seyahat bütçenizi hesaplayın ve takip edin"
+    },
+    "Local Attractions Guide": {
+      "n": "Yerel Gezilecek Yerler Rehberi",
+      "d": "En iyi yerel turistik yerleri, gizli kalmış hazineleri ve mutlaka görülmesi gereken noktaları keşfedin"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Seyahat Sigortası Karşılaştırması",
+      "d": "Geziniz için doğru kapsamı bulmak üzere seyahat sigortası seçeneklerini karşılaştırın"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Uçuş Fırsatı Bulma Stratejisi",
+      "d": "En iyi uçuş fırsatlarını ve fiyatları bulmak için stratejiler ve ipuçları"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Otel Karşılaştırma Yardımcısı",
+      "d": "Otelleri fiyat, olanaklar, konum ve yorumlara göre karşılaştırın"
+    },
+    "Solo Travel Planner": {
+      "n": "Yalnız Seyahat Planlayıcı",
+      "d": "Dünyanın herhangi bir yerinde güvenli ve tatmin edici bir yalnız seyahat macerası planlayın"
+    },
+    "Family Vacation Planner": {
+      "n": "Aile Tatili Planlayıcı",
+      "d": "Her yaştan insanı eğlendirecek aile dostu bir tatil planlayın"
+    },
+    "Backpacking Planner": {
+      "n": "Sırt Çantası Gezisi Planlayıcı",
+      "d": "Rotalar ve ekipmanlarla bütçe dostu bir sırt çantası macerası planlayın"
+    },
+    "Business Travel Organizer": {
+      "n": "İş Seyahati Organizatörü",
+      "d": "Harcama takibi ve planlama ile iş seyahatlerini verimli bir şekilde organize edin"
+    },
+    "Cruise Planner": {
+      "n": "Kruvaziyer Planlayıcı",
+      "d": "Liman gezileri ve gemi içi aktivitelerle mükemmel kruvaziyer tatili planlayın"
+    },
+    "Travel Safety Guide": {
+      "n": "Seyahat Güvenliği Rehberi",
+      "d": "Destinasyona özel güvenlik ipuçları ve protokollerle seyahat ederken güvende kalın"
+    },
+    "Visa Requirements Checker": {
+      "n": "Vize Gereksinimleri Kontrolcüsü",
+      "d": "Geziniz için vize gereksinimlerini kontrol edin ve başvuru belgelerini hazırlayın"
+    },
+    "Language Survival Kit": {
+      "n": "Dil Hayatta Kalma Kiti",
+      "d": "Seyahat destinasyonunuz için temel ifadeleri ve kültürel ipuçlarını öğrenin"
+    },
+    "Airport Navigation Guide": {
+      "n": "Havalimanı Navigasyon Rehberi",
+      "d": "Terminal ipuçları ve zaman yönetimi ile havalimanlarında verimli bir şekilde gezinin"
+    },
+    "Travel Photo Plan": {
+      "n": "Seyahat Fotoğraf Planı",
+      "d": "En iyi lokasyonlar, zamanlar ve tekniklerle seyahat fotoğrafçılığınızı planlayın"
+    },
+    "Group Trip Coordinator": {
+      "n": "Grup Gezisi Koordinatörü",
+      "d": "Herkes için grup seyahati lojistiğini, bütçelerini ve aktivitelerini koordine edin"
+    },
+    "Adventure Travel Planner": {
+      "n": "Macera Seyahati Planlayıcı",
+      "d": "Güvenlik ve lojistik ile adrenalin dolu macera seyahati planlayın"
+    },
+    "Wedding Planner": {
+      "n": "Düğün Planlayıcı",
+      "d": "Mekandan yeminlere kadar mükemmel düğününüzün her detayını planlayın"
+    },
+    "Birthday Party Planner": {
+      "n": "Doğum Günü Partisi Planlayıcı",
+      "d": "Her yaş ve tarza uygun unutulmaz bir doğum günü kutlaması planlayın"
+    },
+    "Conference Organizer": {
+      "n": "Konferans Organizatörü",
+      "d": "Detaylı lojistik ile profesyonel konferanslar ve seminerler organize edin"
+    },
+    "Baby Shower Planner": {
+      "n": "Baby Shower Planlayıcı",
+      "d": "Oyunlar, yiyecekler ve dekorasyonlarla güzel bir baby shower planlayın"
+    },
+    "Anniversary Celebration": {
+      "n": "Yıl Dönümü Kutlaması",
+      "d": "Herhangi bir dönüm noktası yılı için anlamlı bir yıl dönümü kutlaması planlayın"
+    },
+    "Graduation Party": {
+      "n": "Mezuniyet Partisi",
+      "d": "Mükemmel planlanmış bir mezuniyet partisiyle akademik başarıları kutlayın"
+    },
+    "Holiday Party Planner": {
+      "n": "Tatil Partisi Planlayıcı",
+      "d": "Yiyecek, aktivite ve dekorasyonlarla şenlikli tatil buluşmaları planlayın"
+    },
+    "Corporate Event Planner": {
+      "n": "Kurumsal Etkinlik Planlayıcı",
+      "d": "Müşterileri ve çalışanları etkileyen profesyonel kurumsal etkinlikler planlayın"
+    },
+    "Fundraiser Organizer": {
+      "n": "Bağış Toplama Organizatörü",
+      "d": "Hayır kurumları ve amaçlar için başarılı bağış toplama etkinlikleri organize edin"
+    },
+    "Reunion Planner": {
+      "n": "Buluşma Planlayıcı",
+      "d": "Herkesi bir araya getiren unutulmaz bir aile veya sınıf buluşması planlayın"
+    },
+    "Engagement Party Planner": {
+      "n": "Nişan Partisi Planlayıcı",
+      "d": "Mutlu haberi paylaşmak için neşeli bir nişan kutlaması planlayın"
+    },
+    "Retirement Party": {
+      "n": "Emeklilik Partisi",
+      "d": "İyi yaşanmış bir kariyeri düşünceli bir emeklilik partisiyle kutlayın"
+    },
+    "Housewarming Planner": {
+      "n": "Ev Isıtma Partisi Planlayıcı",
+      "d": "Yeni eviniz için sıcak bir ev ısıtma partisi planlayın"
+    },
+    "Themed Party Creator": {
+      "n": "Temalı Parti Oluşturucu",
+      "d": "Koordineli detaylarla yaratıcı temalı partiler tasarlayın ve planlayın"
+    },
+    "Event Budget Tracker": {
+      "n": "Etkinlik Bütçe Takipçisi",
+      "d": "Kutlama bütçenizi aşmamak için etkinlik harcamalarını takip edin ve yönetin"
+    },
+    "Chore Chart Creator": {
+      "n": "Ev İşi Tablosu Oluşturucu",
+      "d": "Ödüller ve takip sistemiyle yaşa uygun ev işi tabloları oluşturun"
+    },
+    "Educational Activity Planner": {
+      "n": "Eğitici Aktivite Planlayıcı",
+      "d": "Çocuklar için öğrenmeyi heyecanlı hale getiren eğlenceli eğitici aktiviteler planlayın"
+    },
+    "Bedtime Story Writer": {
+      "n": "Uyku Masalı Yazarı",
+      "d": "Çocuğunuzun başrolde olduğu kişiselleştirilmiş uyku masalları oluşturun"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Yaşa Uygun Gelişim Takipçisi",
+      "d": "Gelişim aşamalarını takip edin ve çocuğunuzun büyümesini kutlayın"
+    },
+    "School Lunch Planner": {
+      "n": "Okul Öğle Yemeği Planlayıcı",
+      "d": "Çocukların gerçekten yiyeceği sağlıklı ve çekici okul öğle yemekleri planlayın"
+    },
+    "Homework Help Guide": {
+      "n": "Ödev Yardım Rehberi",
+      "d": "Çocuğunuzun ödevini onun yerine yapmadan destekleme stratejileri"
+    },
+    "Family Game Night Ideas": {
+      "n": "Aile Oyun Gecesi Fikirleri",
+      "d": "Her yaş için aktivitelerle ilgi çekici aile oyun geceleri planlayın"
+    },
+    "Screen Time Schedule": {
+      "n": "Ekran Süresi Programı",
+      "d": "Aileniz için dengeli ekran süresi kuralları ve programları oluşturun"
+    },
+    "Allowance System Designer": {
+      "n": "Harçlık Sistemi Tasarımcısı",
+      "d": "Yaşa uygun bir harçlık ve para yönetimi sistemi tasarlayın"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Bebek Uyku Programı",
+      "d": "Bebekler ve küçük çocuklar için sağlıklı uyku programları ve rutinleri oluşturun"
+    },
+    "Potty Training Guide": {
+      "n": "Tuvalet Eğitimi Rehberi",
+      "d": "Her aşama için ipuçlarıyla adım adım tuvalet eğitimi planları"
+    },
+    "Back to School Prep": {
+      "n": "Okula Dönüş Hazırlığı",
+      "d": "Ailenizi sorunsuz bir okula dönüş geçişine hazırlayın"
+    },
+    "Summer Activity Planner": {
+      "n": "Yaz Aktivitesi Planlayıcı",
+      "d": "Aktiviteler, kamplar ve maceralarla eğlenceli ve zenginleştirici bir yaz planlayın"
+    },
+    "Family Meeting Agenda": {
+      "n": "Aile Toplantısı Gündemi",
+      "d": "Herkese söz hakkı veren verimli aile toplantıları yürütün"
+    },
+    "Child Development Tracker": {
+      "n": "Çocuk Gelişimi Takipçisi",
+      "d": "Çocuğunuzun fiziksel, sosyal ve bilişsel gelişimini izleyin ve destekleyin"
+    },
+    "Dog Training Plan": {
+      "n": "Köpek Eğitim Planı",
+      "d": "Köpeğiniz için her yaş ve beceri düzeyine uygun özelleştirilmiş bir eğitim planı oluşturun"
+    },
+    "Cat Care Guide": {
+      "n": "Kedi Bakım Rehberi",
+      "d": "Kedinizi sağlıklı ve mutlu tutmak için kapsamlı bakım rehberi"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Evcil Hayvan Beslenme Planlayıcı",
+      "d": "Yaş, ırk ve sağlık ihtiyaçlarına göre evcil hayvanınız için optimal beslenme planlayın"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Yavru Köpek Sosyalleşme Kontrol Listesi",
+      "d": "Kritik gelişim döneminde yavru köpeğinizin düzgün sosyalleştirildiğinden emin olun"
+    },
+    "Pet First Aid Guide": {
+      "n": "Evcil Hayvan İlk Yardım Rehberi",
+      "d": "Evcil hayvan sahipleri için temel ilk yardım bilgisi ve acil durum prosedürleri"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Akvaryum Kurulum Planlayıcı",
+      "d": "Doğru balıklar ve ekipmanlarla gelişen bir akvaryum planlayın ve kurun"
+    },
+    "Pet Travel Preparation": {
+      "n": "Evcil Hayvan Seyahat Hazırlığı",
+      "d": "Evcil hayvanınızla güvenli ve stressiz seyahat için gereken her şeyi hazırlayın"
+    },
+    "New Pet Checklist": {
+      "n": "Yeni Evcil Hayvan Kontrol Listesi",
+      "d": "Yeni bir evcil hayvanı eve getirmeden önce hazırlamanız gereken her şey"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Evcil Hayvan Davranış Analizcisi",
+      "d": "Uzman rehberliğiyle evcil hayvanınızın davranış sorunlarını anlayın ve ele alın"
+    },
+    "Senior Pet Care": {
+      "n": "Yaşlı Evcil Hayvan Bakımı",
+      "d": "Yaşlanan evcil hayvanları rahat ve sağlıklı tutmak için özel bakım rehberi"
+    },
+    "Pet Exercise Planner": {
+      "n": "Evcil Hayvan Egzersiz Planlayıcı",
+      "d": "Evcil hayvanınızı formda ve zihinsel olarak uyarılmış tutan bir egzersiz rutini oluşturun"
+    },
+    "Vet Visit Preparation": {
+      "n": "Veteriner Ziyareti Hazırlığı",
+      "d": "Düzenlenmiş sağlık bilgileri ve sorulacak sorularla veteriner ziyaretlerine hazırlanın"
+    },
+    "Home Improvement Planner": {
+      "n": "Ev Tadilat Planlayıcı",
+      "d": "Bütçeler ve zaman çizelgeleriyle ev tadilat projelerini planlayın ve önceliklendirin"
+    },
+    "Furniture Project Planner": {
+      "n": "Mobilya Projesi Planlayıcı",
+      "d": "Malzemeler, aletler ve adım adım rehberlikle özel mobilya yapımı planlayın"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Tadilat Bütçesi Hesaplayıcı",
+      "d": "İşçilik, malzeme ve öngörülemeyen giderlerle detaylı tadilat maliyetlerini hesaplayın"
+    },
+    "Paint Color Coordinator": {
+      "n": "Boya Rengi Koordinatörü",
+      "d": "Uyumlu bir ev paleti için boya renklerini seçin ve koordine edin"
+    },
+    "Organization System Designer": {
+      "n": "Düzenleme Sistemi Tasarımcısı",
+      "d": "Evinizdeki herhangi bir oda veya alan için özel düzenleme sistemleri tasarlayın"
+    },
+    "Storage Solutions Planner": {
+      "n": "Depolama Çözümleri Planlayıcı",
+      "d": "Herhangi bir odada alanı en üst düzeye çıkarmak için yaratıcı depolama çözümleri bulun"
+    },
+    "Home Repair Guide": {
+      "n": "Ev Tamir Rehberi",
+      "d": "Kendiniz yapabileceğiniz yaygın ev tamirleri için adım adım rehberlik"
+    },
+    "Tool Buying Guide": {
+      "n": "Alet Satın Alma Rehberi",
+      "d": "Fazla harcama yapmadan kendin yap projeleri için doğru aletleri seçin"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Mevsimsel Ev Bakımı",
+      "d": "Evinizi yıl boyunca korumak için kapsamlı mevsimsel bakım kontrol listeleri"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Enerji Verimliliği Denetimi",
+      "d": "Fatura tasarrufu için evinizin enerji verimliliğini değerlendirin ve iyileştirin"
+    },
+    "Smart Home Setup": {
+      "n": "Akıllı Ev Kurulumu",
+      "d": "Doğru cihazlar ve entegrasyonlarla akıllı ev sistemi planlayın ve kurun"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Banyo Tadilat Planlayıcı",
+      "d": "Düzen, armatürler ve bütçe yönetimiyle banyo tadilatı planlayın"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Mutfak Tadilat Planlayıcı",
+      "d": "Düzenden cihazlara kadar detaylı bütçelemeyle mutfak tadilatı planlayın"
+    },
+    "Closet Organization": {
+      "n": "Dolap Düzenleme",
+      "d": "Maksimum verimlilik ve kolay erişim için dolapları tasarlayın ve düzenleyin"
+    },
+    "Garage Organization": {
+      "n": "Garaj Düzenleme",
+      "d": "Garajınızı düzenli ve işlevsel bir alana dönüştürün"
+    },
+    "Product Comparison Tool": {
+      "n": "Ürün Karşılaştırma Aracı",
+      "d": "En iyi satın alma kararını vermek için ürünleri yan yana karşılaştırın"
+    },
+    "Buying Guide Creator": {
+      "n": "Satın Alma Rehberi Oluşturucu",
+      "d": "Herhangi bir ürün kategorisi için detaylı satın alma rehberleri oluşturun"
+    },
+    "Gift Finder": {
+      "n": "Hediye Bulucu",
+      "d": "İlgi alanlarına ve bütçenize göre herkes için mükemmel hediyeyi bulun"
+    },
+    "Price Tracker Strategy": {
+      "n": "Fiyat Takip Stratejisi",
+      "d": "Fiyatları takip etmek ve en uygun zamanda satın almak için stratejiler"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday Stratejisi",
+      "d": "Maksimum tasarruf için Black Friday ve Cyber Monday alışverişinizi planlayın"
+    },
+    "Back to School Shopping": {
+      "n": "Okula Dönüş Alışverişi",
+      "d": "Listeler, bütçeler ve fırsatlarla okula dönüş alışverişini organize edin"
+    },
+    "Wardrobe Planner": {
+      "n": "Gardırop Planlayıcı",
+      "d": "Stratejik alışveriş ve kıyafet planlamasıyla çok yönlü bir gardırop oluşturun"
+    },
+    "Electronics Buying Guide": {
+      "n": "Elektronik Satın Alma Rehberi",
+      "d": "Özellik karşılaştırması ve zamanlama tavsiyeleriyle elektronik satın alımlarında yol gösterici"
+    },
+    "Subscription Service Comparison": {
+      "n": "Abonelik Hizmeti Karşılaştırması",
+      "d": "İhtiyaçlarınız için en iyi değeri bulmak üzere abonelik hizmetlerini karşılaştırın"
+    },
+    "Wedding Registry Planner": {
+      "n": "Düğün Hediye Listesi Planlayıcı",
+      "d": "Her bütçeye uygun ürünlerle kapsamlı bir düğün hediye listesi oluşturun"
+    },
+    "Bible Study Guide": {
+      "n": "Kutsal Kitap Çalışma Rehberi",
+      "d": "Bağlam, sorular ve uygulamayla yapılandırılmış Kutsal Kitap çalışma planları oluşturun"
+    },
+    "Sermon Outline Creator": {
+      "n": "Vaaz Taslağı Oluşturucu",
+      "d": "Kutsal yazı, ana noktalar ve örneklerle etkileyici vaaz taslakları geliştirin"
+    },
+    "Comparative Religion Study": {
+      "n": "Karşılaştırmalı Din Çalışması",
+      "d": "Dünya dinleri arasındaki inançları, uygulamaları ve tarihi keşfedin ve karşılaştırın"
+    },
+    "Discussion Question Generator": {
+      "n": "Tartışma Sorusu Oluşturucu",
+      "d": "Dini ve felsefi konular için düşündürücü tartışma soruları oluşturun"
+    },
+    "Devotional Writer": {
+      "n": "Günlük Dua Yazarı",
+      "d": "Kutsal yazı, düşünce ve dua yönlendirmeleriyle günlük ibadetler oluşturun"
+    },
+    "Prayer Journal Guide": {
+      "n": "Dua Günlüğü Rehberi",
+      "d": "Rehberli günlük tutma yönlendirmeleri ve çerçevelerle dua hayatınızı yapılandırın"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Manevi Kitap Kulübü Rehberi",
+      "d": "Manevi ve dini kitaplar için kitap kulübü tartışma rehberleri oluşturun"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Meditasyon Kutsal Yazı Rehberi",
+      "d": "Kutsal yazı pasajları merkezli rehberli meditasyon deneyimleri oluşturun"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Gençlik Grubu Ders Planı",
+      "d": "Aktiviteler ve tartışmalarla ilgi çekici gençlik grubu dersleri oluşturun"
+    },
+    "Faith Journey Reflector": {
+      "n": "İnanç Yolculuğu Düşünücüsü",
+      "d": "Kişisel inanç yolculuğunuzu keşfetmek ve derinleştirmek için rehberli düşünceler"
+    },
+    "Workout Plan Creator": {
+      "n": "Antrenman Planı Oluşturucu",
+      "d": "Hedeflerinize ve fitness seviyenize göre kişiselleştirilmiş antrenman planları oluşturun"
+    },
+    "Training Schedule Builder": {
+      "n": "Antrenman Programı Oluşturucu",
+      "d": "Herhangi bir spor veya fitness hedefi için yapılandırılmış antrenman programı oluşturun"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Oyun Stratejisi Analizcisi",
+      "d": "Oyun stratejilerini analiz edin ve sporunuz için kazanan yaklaşımlar geliştirin"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Spor Beslenmesi Rehberi",
+      "d": "En yüksek performans ve toparlanma için spor beslenmenizi optimize edin"
+    },
+    "Coaching Practice Plan": {
+      "n": "Antrenörlük Pratik Planı",
+      "d": "Beceri gelişimi ve takım uyumunu sağlayan etkili antrenman seansları tasarlayın"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Fantasy Spor Analizcisi",
+      "d": "Maç analizleri yapın ve her hafta fantasy spor kadronuzu optimize edin"
+    },
+    "Race Training Plan": {
+      "n": "Yarış Antrenman Planı",
+      "d": "5K'dan maratona kadar yapılandırılmış ilerleyici planlarla yarışlara hazırlanın"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Spor İstatistikleri Analizcisi",
+      "d": "Daha derin spor anlayışı için oyuncu ve takım istatistiklerini analiz edin"
+    },
+    "Team Management Tool": {
+      "n": "Takım Yönetim Aracı",
+      "d": "Takım kadrolarını, programları ve iletişimi verimli bir şekilde yönetin"
+    },
+    "Injury Recovery Planner": {
+      "n": "Sakatlanma İyileşme Planlayıcı",
+      "d": "Yaygın spor sakatlanmalarından güvenli ve etkili iyileşme planlayın"
+    },
+    "Photography Guide": {
+      "n": "Fotoğrafçılık Rehberi",
+      "d": "Kompozisyon, aydınlatma ve ekipman ipuçlarıyla fotoğrafçılık becerilerinizi geliştirin"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Örgü Deseni Yardımcısı",
+      "d": "Beceri seviyenize ve proje fikirlerinize uygun örgü desenleri bulun ve uyarlayın"
+    },
+    "Board Game Night Planner": {
+      "n": "Masa Oyunu Gecesi Planlayıcı",
+      "d": "Oyun seçimi ve grup eşleştirmesiyle mükemmel masa oyunu geceleri planlayın"
+    },
+    "Fishing Trip Planner": {
+      "n": "Balık Tutma Gezisi Planlayıcı",
+      "d": "Lokasyon, ekipman ve teknik tavsiyeleriyle başarılı balık tutma gezileri planlayın"
+    },
+    "Camping Trip Organizer": {
+      "n": "Kamp Gezisi Organizatörü",
+      "d": "Ekipman listeleri, yemek planları ve aktivite fikirleriyle kamp gezileri organize edin"
+    },
+    "Bird Watching Guide": {
+      "n": "Kuş Gözlemi Rehberi",
+      "d": "Yerel kuşları tanımlayın ve mevsimsel ipuçlarıyla kuş gözlemi gezileri planlayın"
+    },
+    "Model Building Planner": {
+      "n": "Maket Yapım Planlayıcı",
+      "d": "Malzemeler ve tekniklerle maket yapım projelerini planlayın ve uygulayın"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Bulmaca Strateji Rehberi",
+      "d": "Bulmacaları daha hızlı ve verimli çözmek için stratejiler ve teknikler"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Astronomi Gözlem Planlayıcı",
+      "d": "Göksel olaylar ve ekipman önerileriyle yıldız gözlemi seansları planlayın"
+    },
+    "Art Supply Guide": {
+      "n": "Sanat Malzemesi Rehberi",
+      "d": "Dalınıza ve beceri seviyenize uygun doğru sanat malzemelerini seçin"
+    },
+    "Goal Setting Framework": {
+      "n": "Hedef Belirleme Çerçevesi",
+      "d": "Yapılandırılmış bir çerçeve ve eylem planıyla anlamlı hedefler belirleyin ve gerçekleştirin"
+    },
+    "Bucket List Creator": {
+      "n": "Hayat Hedefleri Listesi Oluşturucu",
+      "d": "Kategori ve önceliğe göre düzenlenmiş ilham verici bir hayat hedefleri listesi oluşturun"
+    },
+    "Personal Mission Statement": {
+      "n": "Kişisel Misyon Bildirisi",
+      "d": "Yaşam kararlarınıza rehberlik eden anlamlı bir kişisel misyon bildirisi oluşturun"
+    },
+    "Life Transition Guide": {
+      "n": "Yaşam Geçişi Rehberi",
+      "d": "Planlama, destek ve başa çıkma stratejileriyle büyük yaşam geçişlerinde yol alın"
+    },
+    "Habit Building Plan": {
+      "n": "Alışkanlık Oluşturma Planı",
+      "d": "Kanıtlanmış bilim temelli stratejilerle kalıcı olumlu alışkanlıklar edinin"
+    },
+    "Time Audit Tool": {
+      "n": "Zaman Denetim Aracı",
+      "d": "Zamanınızı nasıl harcadığınızı denetleyin ve en önemli şeyler için optimize edin"
+    },
+    "Relationship Goal Planner": {
+      "n": "İlişki Hedefi Planlayıcı",
+      "d": "Daha güçlü ve sağlıklı ilişkiler için hedefler belirleyin ve bunlara doğru çalışın"
+    },
+    "Vision Board Creator": {
+      "n": "Vizyon Panosu Oluşturucu",
+      "d": "Rehberli yönlendirmeler ve görselleştirme egzersizleriyle dijital vizyon panosu oluşturun"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Kişisel SWOT Analizi",
+      "d": "Kariyer ve yaşam planlaması için kişisel SWOT analizi yapın"
+    },
+    "Legacy Letter Writer": {
+      "n": "Miras Mektubu Yazarı",
+      "d": "Değerlerinizi ve bilgeliğinizi yakalayan sevdiklerinize anlamlı miras mektupları yazın"
+    },
+    "Contract Draft Creator": {
+      "n": "Sözleşme Taslağı Oluşturucu",
+      "d": "Herhangi bir iş ilişkisi için profesyonel sözleşme taslakları oluşturun"
+    },
+    "NDA Generator": {
+      "n": "NDA Oluşturucu",
+      "d": "Durumunuza özel gizlilik sözleşmeleri oluşturun"
+    },
+    "Rental Agreement Draft": {
+      "n": "Kira Sözleşmesi Taslağı",
+      "d": "Konut veya ticari kira sözleşmeleri taslağı hazırlayın"
+    },
+    "Terms of Service Generator": {
+      "n": "Hizmet Şartları Oluşturucu",
+      "d": "Web siteleri ve uygulamalar için kapsamlı hizmet şartları oluşturun"
+    },
+    "Privacy Policy Writer": {
+      "n": "Gizlilik Politikası Yazarı",
+      "d": "GDPR ve CCPA uyumlu gizlilik politikaları oluşturun"
+    },
+    "Freelance Agreement": {
+      "n": "Serbest Çalışan Sözleşmesi",
+      "d": "Serbest çalışanlar ve müşteriler arasında sözleşmeler oluşturun"
+    },
+    "Non-Compete Draft": {
+      "n": "Rekabet Yasağı Taslağı",
+      "d": "Rekabet yasağı maddeleri ve bağımsız sözleşmeler taslağı hazırlayın"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC İşletme Sözleşmesi",
+      "d": "Limited şirketler için işletme sözleşmeleri oluşturun"
+    },
+    "Partnership Agreement": {
+      "n": "Ortaklık Sözleşmesi",
+      "d": "Net roller ve şartlarla ortaklık sözleşmeleri taslağı hazırlayın"
+    },
+    "Intellectual Property Brief": {
+      "n": "Fikri Mülkiyet Özeti",
+      "d": "Fikri mülkiyet sahipliği ve koruma stratejilerini özetleyin"
+    },
+    "Cease and Desist Draft": {
+      "n": "İhtar Mektubu Taslağı",
+      "d": "Çeşitli ihlaller için ihtar mektupları oluşturun"
+    },
+    "Employee Handbook Section": {
+      "n": "Çalışan El Kitabı Bölümü",
+      "d": "Çalışan el kitapları için ayrı bölümler yazın"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Bağımsız Yüklenici Sözleşmesi",
+      "d": "Uygun sınıflandırma diliyle bağımsız yüklenici sözleşmeleri taslağı hazırlayın"
+    },
+    "Liability Waiver Draft": {
+      "n": "Sorumluluk Feragati Taslağı",
+      "d": "Aktiviteler ve hizmetler için sorumluluk feragatnameleri oluşturun"
+    },
+    "Settlement Letter Draft": {
+      "n": "Uzlaşma Mektubu Taslağı",
+      "d": "Uzlaşma teklifi veya yanıt mektupları taslağı hazırlayın"
+    },
+    "Demand Letter Draft": {
+      "n": "Talep Mektubu Taslağı",
+      "d": "Çeşitli talepler için resmi talep mektupları oluşturun"
+    },
+    "Power of Attorney Draft": {
+      "n": "Vekâletname Taslağı",
+      "d": "Çeşitli amaçlar için vekâletname belgeleri taslağı hazırlayın"
+    },
+    "Last Will Outline": {
+      "n": "Vasiyetname Taslağı",
+      "d": "Temel bir vasiyetname için taslak oluşturun"
+    },
+    "Business License Checklist": {
+      "n": "İşletme Ruhsatı Kontrol Listesi",
+      "d": "İşletmeniz için gerekli ruhsatların kontrol listesini oluşturun"
+    },
+    "Trademark Application Guide": {
+      "n": "Marka Tescil Başvuru Rehberi",
+      "d": "Marka tescil başvurusu için adım adım rehber"
+    },
+    "Small Claims Court Guide": {
+      "n": "Küçük Talepler Mahkemesi Rehberi",
+      "d": "Düzenlenmiş argümanlarla küçük talepler mahkemesine hazırlanın"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Boşanma Arabuluculuk Hazırlığı",
+      "d": "Boşanma arabuluculuğu için önemli noktaları ve öncelikleri düzenleyin"
+    },
+    "Tenant Rights Guide": {
+      "n": "Kiracı Hakları Rehberi",
+      "d": "Bulunduğunuz yargı alanında kiracı haklarını ve çözüm yollarını anlayın"
+    },
+    "Landlord Notice Draft": {
+      "n": "Ev Sahibi Bildirim Taslağı",
+      "d": "Ev sahibinden kiracıya uygun yasal bildirimler taslağı hazırlayın"
+    },
+    "Copyright Registration Guide": {
+      "n": "Telif Hakkı Tescil Rehberi",
+      "d": "ABD Telif Hakkı Ofisi'ne telif hakkı tescili için rehber"
+    },
+    "Personal Budget Planner": {
+      "n": "Kişisel Bütçe Planlayıcı",
+      "d": "Kapsamlı bir aylık veya yıllık bütçe planı oluşturun"
+    },
+    "Investment Research Assistant": {
+      "n": "Yatırım Araştırma Asistanı",
+      "d": "Yatırım fırsatlarını sistematik olarak araştırın ve analiz edin"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Borç Ödeme Hesaplayıcı",
+      "d": "Borçları verimli bir şekilde ortadan kaldırmak için bir strateji planlayın"
+    },
+    "Expense Tracker Setup": {
+      "n": "Harcama Takipçisi Kurulumu",
+      "d": "Kişiselleştirilmiş bir harcama takip sistemi tasarlayın"
+    },
+    "Retirement Planning Guide": {
+      "n": "Emeklilik Planlama Rehberi",
+      "d": "Kapsamlı bir emeklilik tasarruf stratejisi oluşturun"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Vergi Hazırlık Kontrol Listesi",
+      "d": "Vergi beyannamesi için belgeleri ve indirimleri düzenleyin"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Acil Durum Fonu Hesaplayıcı",
+      "d": "İdeal acil durum fonunuzu belirleyin ve planlayın"
+    },
+    "Net Worth Tracker": {
+      "n": "Net Değer Takipçisi",
+      "d": "Tüm finansal durumunuzu takip edin ve görselleştirin"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Kredi Puanı İyileştirme Planı",
+      "d": "Kredi puanınızı yükseltmek için uygulanabilir bir plan oluşturun"
+    },
+    "Student Loan Strategy": {
+      "n": "Öğrenim Kredisi Stratejisi",
+      "d": "Öğrenim kredisi geri ödeme yaklaşımınızı optimize edin"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Ek İş Gelir Planlayıcı",
+      "d": "Ek işlerden elde edilen geliri planlayın ve öngörün"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Sigorta İhtiyaçları Analizcisi",
+      "d": "Sigorta kapsam boşluklarınızı ve ihtiyaçlarınızı değerlendirin"
+    },
+    "Estate Planning Checklist": {
+      "n": "Miras Planlama Kontrol Listesi",
+      "d": "Miras planlama belgelerinizi ve kararlarınızı düzenleyin"
+    },
+    "Financial Goal Setter": {
+      "n": "Finansal Hedef Belirleyici",
+      "d": "Finansal dönüm noktalarına yönelik ilerlemeyi tanımlayın ve takip edin"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Nakit Akışı Analizcisi",
+      "d": "Zaman içindeki gelir ve gider kalıplarını analiz edin"
+    },
+    "Savings Challenge Creator": {
+      "n": "Tasarruf Yarışması Oluşturucu",
+      "d": "Birikim yapmak için eğlenceli bir tasarruf yarışması tasarlayın"
+    },
+    "Investment Portfolio Review": {
+      "n": "Yatırım Portföyü İncelemesi",
+      "d": "Yatırım portföyünüzü inceleyin ve yeniden dengeleyin"
+    },
+    "Cryptocurrency Research": {
+      "n": "Kripto Para Araştırması",
+      "d": "Kripto para yatırımlarını araştırın ve değerlendirin"
+    },
+    "Stock Analysis Helper": {
+      "n": "Hisse Senedi Analiz Yardımcısı",
+      "d": "Hisse senetleri üzerinde temel ve teknik analiz yapın"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Gayrimenkul Yatırım Hesaplayıcı",
+      "d": "Potansiyel gayrimenkul yatırım getirilerini analiz edin"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "İşletme Vergi İndirimi Bulucu",
+      "d": "İşletmeniz için uygun vergi indirimlerini belirleyin"
+    },
+    "Payroll Budget Planner": {
+      "n": "Bordro Bütçe Planlayıcı",
+      "d": "Çalışan bordro maliyetlerini planlayın ve bütçeleyin"
+    },
+    "Invoice Template Creator": {
+      "n": "Fatura Şablonu Oluşturucu",
+      "d": "İşletmeniz için profesyonel faturalar tasarlayın"
+    },
+    "Profit Margin Calculator": {
+      "n": "Kâr Marjı Hesaplayıcı",
+      "d": "Ürünler genelinde kâr marjlarını hesaplayın ve optimize edin"
+    },
+    "Financial Independence Planner": {
+      "n": "Finansal Bağımsızlık Planlayıcı",
+      "d": "Finansal bağımsızlığa ve erken emekliliğe giden yolunuzu haritalayın"
+    },
+    "Ad Copy Writer": {
+      "n": "Reklam Metni Yazarı",
+      "d": "Herhangi bir platform veya mecra için etkileyici reklam metinleri oluşturun"
+    },
+    "SEO Article Creator": {
+      "n": "SEO Makale Oluşturucu",
+      "d": "Sıralama yapan ve dönüşüm sağlayan SEO uyumlu makaleler yazın"
+    },
+    "Social Media Content Calendar": {
+      "n": "Sosyal Medya İçerik Takvimi",
+      "d": "Platformlar genelinde bir aylık sosyal medya içeriği planlayın"
+    },
+    "Email Campaign Builder": {
+      "n": "E-posta Kampanya Oluşturucu",
+      "d": "Dönüşüm sağlayan çok e-postalı pazarlama kampanyaları tasarlayın"
+    },
+    "Product Launch Strategy": {
+      "n": "Ürün Lansman Stratejisi",
+      "d": "Kapsamlı bir ürün lansman pazarlama stratejisi oluşturun"
+    },
+    "Brand Voice Guide": {
+      "n": "Marka Sesi Rehberi",
+      "d": "Marka sesinizi ve mesajlarınızı tanımlayın ve belgeleyin"
+    },
+    "Content Marketing Strategy": {
+      "n": "İçerik Pazarlama Stratejisi",
+      "d": "Sıfırdan tam bir içerik pazarlama stratejisi oluşturun"
+    },
+    "Influencer Outreach Template": {
+      "n": "Influencer İletişim Şablonu",
+      "d": "Kişiselleştirilmiş influencer iş birliği teklifleri oluşturun"
+    },
+    "Landing Page Copywriter": {
+      "n": "Açılış Sayfası Metin Yazarı",
+      "d": "Yüksek dönüşümlü açılış sayfası metinleri yazın"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B Test Planı Oluşturucu",
+      "d": "Pazarlama kampanyaları için yapılandırılmış A/B testleri tasarlayın"
+    },
+    "Buyer Persona Builder": {
+      "n": "Alıcı Kişiliği Oluşturucu",
+      "d": "Hedefleme için detaylı müşteri kişilikleri oluşturun"
+    },
+    "Competitive Analysis Template": {
+      "n": "Rekabet Analizi Şablonu",
+      "d": "Rakipleri analiz edin ve pazar fırsatlarını belirleyin"
+    },
+    "Marketing Budget Planner": {
+      "n": "Pazarlama Bütçesi Planlayıcı",
+      "d": "Pazarlama bütçenizi tahsis edin ve optimize edin"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Satış Ortaklığı Pazarlama Stratejisi",
+      "d": "Bir satış ortaklığı pazarlama programı oluşturun ve optimize edin"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcast Pazarlama Planı",
+      "d": "Podcast'inizi tanıtın ve dinleyici kitlenizi büyütün"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Web Semineri Tanıtım Planı",
+      "d": "Kayıtları artıran web seminerlerini planlayın ve tanıtın"
+    },
+    "Referral Program Designer": {
+      "n": "Tavsiye Programı Tasarımcısı",
+      "d": "Ağızdan ağıza büyümeyi sağlayan tavsiye programları tasarlayın"
+    },
+    "Brand Story Writer": {
+      "n": "Marka Hikayesi Yazarı",
+      "d": "Etkileyici bir marka kuruluş hikayesi ve anlatısı oluşturun"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Pazarlama Hunisi Oluşturucu",
+      "d": "Farkındalıktan dönüşüme müşteri yolculuğu hunileri tasarlayın"
+    },
+    "App Store Optimization": {
+      "n": "Uygulama Mağazası Optimizasyonu",
+      "d": "Maksimum indirme için uygulama mağazası listelemelerini optimize edin"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Google Ads Metin Yazarı",
+      "d": "Etkili Google Ads başlıkları ve açıklamaları yazın"
+    },
+    "Facebook Ads Creator": {
+      "n": "Facebook Reklam Oluşturucu",
+      "d": "Facebook ve Instagram reklam kampanyaları oluşturun"
+    },
+    "Newsletter Strategy": {
+      "n": "Bülten Stratejisi",
+      "d": "Sıfırdan bir e-posta bülteni planlayın ve büyütün"
+    },
+    "PR Media Pitch": {
+      "n": "PR Medya Sunumu",
+      "d": "Basın kapsamı için etkileyici medya sunumları yazın"
+    },
+    "Content Repurposing Plan": {
+      "n": "İçerik Yeniden Kullanım Planı",
+      "d": "Mevcut içeriği birden fazla formata dönüştürün"
+    },
+    "Cold Email Generator": {
+      "n": "Soğuk E-posta Oluşturucu",
+      "d": "Yanıt alan kişiselleştirilmiş soğuk iletişim e-postaları oluşturun"
+    },
+    "Sales Script Writer": {
+      "n": "Satış Senaryosu Yazarı",
+      "d": "Aramalar ve toplantılar için etkili satış senaryoları yazın"
+    },
+    "Objection Handling Guide": {
+      "n": "İtiraz Yönetimi Rehberi",
+      "d": "Yaygın satış itirazlarına yanıtlar hazırlayın"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Takip Mesajı Oluşturucu",
+      "d": "Stratejik takip mesajı dizileri oluşturun"
+    },
+    "Sales Pitch Creator": {
+      "n": "Satış Sunumu Oluşturucu",
+      "d": "Etkileyici asansör konuşmaları ve satış sunumları hazırlayın"
+    },
+    "Proposal Generator": {
+      "n": "Teklif Oluşturucu",
+      "d": "Profesyonel satış teklifleri ve fiyat teklifleri oluşturun"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "CRM Veri Temizleme Planı",
+      "d": "CRM veritabanınızı sistematik olarak düzenleyin ve temizleyin"
+    },
+    "Sales Territory Planner": {
+      "n": "Satış Bölgesi Planlayıcı",
+      "d": "Ekibiniz için satış bölgelerini tanımlayın ve optimize edin"
+    },
+    "Account Strategy Builder": {
+      "n": "Hesap Stratejisi Oluşturucu",
+      "d": "Kilit müşteriler için stratejik hesap planları oluşturun"
+    },
+    "Upsell Script Creator": {
+      "n": "Üst Satış Senaryosu Oluşturucu",
+      "d": "Mevcut müşterilere üst satış ve çapraz satış senaryoları yazın"
+    },
+    "Customer Win-Back Email": {
+      "n": "Müşteri Geri Kazanım E-postası",
+      "d": "Kaybedilen müşterileri hedefli geri kazanım kampanyalarıyla yeniden etkinleştirin"
+    },
+    "Sales Forecast Template": {
+      "n": "Satış Tahmini Şablonu",
+      "d": "İş hattınız için doğru satış tahminleri oluşturun"
+    },
+    "Commission Calculator": {
+      "n": "Komisyon Hesaplayıcı",
+      "d": "Satış komisyon yapılarını tasarlayın ve hesaplayın"
+    },
+    "Discovery Call Script": {
+      "n": "Keşif Görüşmesi Senaryosu",
+      "d": "Potansiyel müşterileri değerlendirmek için etkili keşif görüşmeleri yapılandırın"
+    },
+    "Demo Presentation Outline": {
+      "n": "Demo Sunum Taslağı",
+      "d": "Yapılandırılmış ürün demo sunumları oluşturun"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Satış Oryantasyon Planı",
+      "d": "Yeni satış temsilcileri için oryantasyon programları tasarlayın"
+    },
+    "Quarterly Business Review": {
+      "n": "Üç Aylık İş Değerlendirmesi",
+      "d": "Müşteriler için üç aylık iş değerlendirme sunumları hazırlayın"
+    },
+    "Customer Success Plan": {
+      "n": "Müşteri Başarı Planı",
+      "d": "Proaktif müşteri başarısı ve elde tutma planları oluşturun"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Fiyatlandırma Stratejisi Danışmanı",
+      "d": "Ürün fiyatlandırma stratejinizi geliştirin ve optimize edin"
+    },
+    "Value Proposition Builder": {
+      "n": "Değer Önerisi Oluşturucu",
+      "d": "Net ve etkileyici değer önerileri hazırlayın"
+    },
+    "FAQ Generator": {
+      "n": "SSS Oluşturucu",
+      "d": "Ürün bilgilerinden kapsamlı SSS bölümleri oluşturun"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Bilgi Tabanı Makale Yazarı",
+      "d": "Açık ve aranabilir bilgi tabanı makaleleri yazın"
+    },
+    "Support Response Template": {
+      "n": "Destek Yanıt Şablonu",
+      "d": "Yaygın destek senaryoları için yeniden kullanılabilir şablonlar oluşturun"
+    },
+    "Chatbot Training Data": {
+      "n": "Chatbot Eğitim Verisi",
+      "d": "Müşteri destek chatbotları için eğitim verisi oluşturun"
+    },
+    "Escalation Response Guide": {
+      "n": "Eskalasyon Yanıt Rehberi",
+      "d": "Yükseltilmiş destek sorunlarını ele almak için yönergeler oluşturun"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Müşteri Memnuniyeti Anketi",
+      "d": "Müşteri memnuniyetini ölçmek için anketler tasarlayın"
+    },
+    "Refund Policy Writer": {
+      "n": "İade Politikası Yazarı",
+      "d": "Açık ve adil iade ve geri gönderim politikaları oluşturun"
+    },
+    "Bug Report Template": {
+      "n": "Hata Raporu Şablonu",
+      "d": "Kullanıcılar için yapılandırılmış hata raporu şablonları tasarlayın"
+    },
+    "Feature Request Response": {
+      "n": "Özellik İsteği Yanıtı",
+      "d": "Müşteri özellik isteklerine yanıtlar hazırlayın"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Oryantasyon E-posta Dizisi",
+      "d": "Yeni müşterileri alıştırmak için e-posta dizileri oluşturun"
+    },
+    "Help Center Article": {
+      "n": "Yardım Merkezi Makalesi",
+      "d": "Kapsamlı yardım merkezi belgeleri yazın"
+    },
+    "Service Level Agreement": {
+      "n": "Hizmet Seviyesi Sözleşmesi",
+      "d": "Destek taahhütleri için SLA belgeleri hazırlayın"
+    },
+    "Customer Apology Template": {
+      "n": "Müşteri Özür Şablonu",
+      "d": "Hizmet aksaklıkları için samimi özür mesajları yazın"
+    },
+    "Product Update Announcement": {
+      "n": "Ürün Güncelleme Duyurusu",
+      "d": "Ürün güncellemelerini ve değişiklikleri müşterilere bildirin"
+    },
+    "Community Guidelines Writer": {
+      "n": "Topluluk Kuralları Yazarı",
+      "d": "Forumlar ve sosyal kanallar için topluluk kuralları oluşturun"
+    },
+    "Startup Validation Framework": {
+      "n": "Girişim Doğrulama Çerçevesi",
+      "d": "Girişim fikrinizi oluşturmadan önce doğrulayın"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP Özellik Planlayıcı",
+      "d": "Minimum uygulanabilir ürününüz için özellikleri önceliklendirin"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Fiyatlandırma Stratejisi Oluşturucu",
+      "d": "Girişim ürününüz için fiyatlandırma modelleri geliştirin"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Yatırımcı Sunum Taslağı",
+      "d": "Fon toplama için etkileyici bir sunum yapısı oluşturun"
+    },
+    "Business Model Canvas": {
+      "n": "İş Modeli Kanvası",
+      "d": "Tüm iş modelinizi tek sayfada haritalayın"
+    },
+    "Lean Canvas Creator": {
+      "n": "Yalın Kanvas Oluşturucu",
+      "d": "Riskleri ve varsayımları belirlemek için yalın kanvas oluşturun"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Rekabet Ortamı Analizcisi",
+      "d": "Rekabet ortamınızı haritalayın ve analiz edin"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Pazara Giriş Stratejisi",
+      "d": "Pazara giriş ve müşteri kazanımı yaklaşımınızı planlayın"
+    },
+    "Founding Team Assessment": {
+      "n": "Kurucu Ekip Değerlendirmesi",
+      "d": "Ekip yapısını değerlendirin ve beceri eksikliklerini belirleyin"
+    },
+    "Startup Financial Projections": {
+      "n": "Girişim Finansal Projeksiyonları",
+      "d": "Girişiminiz için 3 yıllık finansal projeksiyonlar oluşturun"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Danışma Kurulu İşe Alımcısı",
+      "d": "Girişiminiz için danışmanları belirleyin ve işe alın"
+    },
+    "Pivot Decision Framework": {
+      "n": "Pivot Karar Çerçevesi",
+      "d": "Girişiminizi pivotlayıp pivotlamamayı ve nasıl pivotlayacağınızı değerlendirin"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Girişim KPI Panosu",
+      "d": "Temel performans göstergelerini tanımlayın ve takip edin"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Kitlesel Fonlama Kampanya Planı",
+      "d": "Başarılı bir kitlesel fonlama kampanyası planlayın ve yürütün"
+    },
+    "Partnership Strategy": {
+      "n": "Ortaklık Stratejisi",
+      "d": "Stratejik ortaklıkları belirleyin ve takip edin"
+    },
+    "Accelerator Application": {
+      "n": "Hızlandırıcı Başvurusu",
+      "d": "Etkileyici bir hızlandırıcı veya kuluçka merkezi başvurusu hazırlayın"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Ürün-Pazar Uyumu Anketi",
+      "d": "Ürün-pazar uyumunu ölçmek için anketler tasarlayın"
+    },
+    "Startup Legal Checklist": {
+      "n": "Girişim Hukuki Kontrol Listesi",
+      "d": "Şirket kurarken tüm hukuki gereklilikleri karşılayın"
+    },
+    "Equity Split Calculator": {
+      "n": "Hisse Dağılımı Hesaplayıcı",
+      "d": "Kurucu ortaklar arasında adil hisse dağılımını belirleyin"
+    },
+    "Growth Experiment Planner": {
+      "n": "Büyüme Deneyi Planlayıcı",
+      "d": "Büyüme deneylerini sistematik olarak tasarlayın ve takip edin"
+    },
+    "Product Description Writer": {
+      "n": "Ürün Açıklaması Yazarı",
+      "d": "Satışları artıran etkileyici ürün açıklamaları yazın"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Amazon Listeleme Optimize Edici",
+      "d": "Amazon ürün listelemelerini görünürlük ve dönüşüm için optimize edin"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Etsy Mağaza Kurulum Rehberi",
+      "d": "Etsy mağazanızı başarı için kurun ve optimize edin"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify Mağaza Planlayıcı",
+      "d": "Shopify mağaza yapınızı ve lansmanınızı planlayın"
+    },
+    "Product Photography Brief": {
+      "n": "Ürün Fotoğrafçılığı Brifingi",
+      "d": "Ürün fotoğraf çekimleri için brifingeler oluşturun"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Kargo Stratejisi Planlayıcı",
+      "d": "Uygun maliyetli kargo stratejileri tasarlayın"
+    },
+    "Return Policy Creator": {
+      "n": "İade Politikası Oluşturucu",
+      "d": "Açık e-ticaret iade ve değişim politikaları oluşturun"
+    },
+    "Customer Review Response": {
+      "n": "Müşteri Değerlendirme Yanıtı",
+      "d": "Müşteri değerlendirmelerine profesyonel yanıtlar hazırlayın"
+    },
+    "Inventory Management Plan": {
+      "n": "Envanter Yönetim Planı",
+      "d": "Envanteri takip etmek ve yönetmek için sistemler oluşturun"
+    },
+    "Dropshipping Product Research": {
+      "n": "Stoksuz Satış Ürün Araştırması",
+      "d": "Stoksuz satış ürün fırsatlarını araştırın ve değerlendirin"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Talebe Bağlı Baskı Tasarımcısı",
+      "d": "Talebe bağlı baskı ürün hatları ve tasarımları planlayın"
+    },
+    "Subscription Box Planner": {
+      "n": "Abonelik Kutusu Planlayıcı",
+      "d": "Bir abonelik kutusu işi tasarlayın ve başlatın"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Tatil Satış Stratejisi",
+      "d": "Mevsimsel promosyonlar ve tatil satış kampanyaları planlayın"
+    },
+    "Product Bundle Creator": {
+      "n": "Ürün Paketi Oluşturucu",
+      "d": "Ortalama sipariş değerini artıran ürün paketleri tasarlayın"
+    },
+    "Cart Abandonment Email": {
+      "n": "Sepet Terk E-postası",
+      "d": "Terk edilen sepetleri kurtarmak için e-posta dizileri oluşturun"
+    },
+    "Homework Helper": {
+      "n": "Ödev Yardımcısı",
+      "d": "Her konuda adım adım ödev yardımı alın"
+    },
+    "Quiz & Test Generator": {
+      "n": "Sınav ve Test Oluşturucu",
+      "d": "Herhangi bir konudan veya çalışma materyalinden özel sınavlar oluşturun"
+    },
+    "Science Fair Project Planner": {
+      "n": "Bilim Fuarı Proje Planlayıcı",
+      "d": "Hipotezden sunuma kazandıran bir bilim fuarı projesi planlayın ve düzenleyin"
+    },
+    "Lesson Plan Creator": {
+      "n": "Ders Planı Oluşturucu",
+      "d": "Öğrenme hedefleriyle uyumlu yapılandırılmış ders planları tasarlayın"
+    },
+    "Lab Report Writer": {
+      "n": "Laboratuvar Raporu Yazarı",
+      "d": "Uygun bilimsel formatta laboratuvar raporları yapılandırın ve yazın"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Okuduğunu Anlama Yardımcısı",
+      "d": "Rehberli analiz ve sorularla okuduğunu anlama becerisini geliştirin"
+    },
+    "Math Problem Solver": {
+      "n": "Matematik Problem Çözücü",
+      "d": "Matematik problemlerini ayrıntılı adım adım açıklamalarla çözün"
+    },
+    "Vocabulary Builder": {
+      "n": "Kelime Hazinesi Geliştirici",
+      "d": "Tanımlar, örnekler ve alıştırmalarla kelime hazinesi oluşturun ve pratik yapın"
+    },
+    "Book Report Helper": {
+      "n": "Kitap Raporu Yardımcısı",
+      "d": "Yapılandırılmış analizle kitap raporlarını taslak halinde oluşturun ve yazın"
+    },
+    "History Timeline Creator": {
+      "n": "Tarih Zaman Çizelgesi Oluşturucu",
+      "d": "Herhangi bir dönem veya olay için ayrıntılı tarih zaman çizelgeleri oluşturun"
+    },
+    "Geography Quiz Maker": {
+      "n": "Coğrafya Sınav Oluşturucu",
+      "d": "Haritaları, başkentleri, simge yapıları ve daha fazlasını kapsayan coğrafya sınavları oluşturun"
+    },
+    "Spelling Practice Generator": {
+      "n": "Yazım Alıştırması Oluşturucu",
+      "d": "Kişiselleştirilmiş yazım alıştırma listeleri ve egzersizleri oluşturun"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Dilbilgisi Alıştırması Oluşturucu",
+      "d": "Her seviye ve konu için dilbilgisi alıştırmaları oluşturun"
+    },
+    "Critical Thinking Questions": {
+      "n": "Eleştirel Düşünme Soruları",
+      "d": "Eleştirel düşünme becerilerini geliştirmek için düşündürücü sorular oluşturun"
+    },
+    "Debate Prep Guide": {
+      "n": "Münazara Hazırlık Rehberi",
+      "d": "Münazaralar için yapılandırılmış argümanlar ve karşı argümanlar hazırlayın"
+    },
+    "College Application Essay": {
+      "n": "Üniversite Başvuru Kompozisyonu",
+      "d": "Rehberli yönlendirmelerle etkileyici üniversite başvuru kompozisyonları hazırlayın"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Burs Kompozisyonu Yardımcısı",
+      "d": "Başarıları ve hedefleri öne çıkaran ikna edici burs kompozisyonları yazın"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT Hazırlık Rehberi",
+      "d": "SAT veya ACT sınavları için hedefli çalışma planları ve pratik oluşturun"
+    },
+    "Study Schedule Planner": {
+      "n": "Çalışma Programı Planlayıcı",
+      "d": "Tüm dersleri ve son teslim tarihlerini dengeleyen etkili bir çalışma programı oluşturun"
+    },
+    "Group Project Organizer": {
+      "n": "Grup Projesi Organizatörü",
+      "d": "Grup projeleri için rolleri, görevleri ve zaman çizelgelerini planlayın"
+    },
+    "Presentation Creator": {
+      "n": "Sunum Oluşturucu",
+      "d": "Her konu için ilgi çekici sunumlar tasarlayın ve taslak oluşturun"
+    },
+    "Note-Taking Guide": {
+      "n": "Not Alma Rehberi",
+      "d": "Dersler ve okumalar için yapılandırılmış not alma şablonları oluşturun"
+    },
+    "Mind Map Generator": {
+      "n": "Zihin Haritası Oluşturucu",
+      "d": "Fikirleri ve kavramları düzenlemek için görsel zihin haritaları oluşturun"
+    },
+    "Research Project Planner": {
+      "n": "Araştırma Projesi Planlayıcı",
+      "d": "Konu seçiminden son makaleye araştırma projelerini planlayın ve yönetin"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Veli-Öğretmen Toplantısı Hazırlığı",
+      "d": "Verimli veli-öğretmen toplantıları için konuşma noktaları ve sorular hazırlayın"
+    },
+    "Classroom Activity Designer": {
+      "n": "Sınıf Etkinliği Tasarımcısı",
+      "d": "Öğrenme hedeflerini pekiştiren etkileşimli sınıf etkinlikleri tasarlayın"
+    },
+    "Special Education Resource": {
+      "n": "Özel Eğitim Kaynağı",
+      "d": "Özel eğitim ihtiyaçları olan öğrenciler için özelleştirilmiş öğrenme kaynakları oluşturun"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Ev Okulu Müfredat Planlayıcı",
+      "d": "Konuya ve döneme göre eksiksiz bir ev okulu müfredatı planlayın"
+    },
+    "Student Self-Assessment": {
+      "n": "Öğrenci Öz Değerlendirmesi",
+      "d": "Öğrencilerin kendi öğrenme ilerlemelerini takip etmeleri için öz değerlendirme araçları oluşturun"
+    },
+    "Learning Style Analyzer": {
+      "n": "Öğrenme Stili Analizcisi",
+      "d": "Öğrenme stillerini belirleyin ve kişiselleştirilmiş çalışma stratejileri önerin"
+    },
+    "Literature Review Writer": {
+      "n": "Literatür Taraması Yazarı",
+      "d": "Herhangi bir konuda kapsamlı literatür taramaları düzenleyin ve yazın"
+    },
+    "Research Assistant": {
+      "n": "Araştırma Asistanı",
+      "d": "Araştırma materyallerini bulma, düzenleme ve özetleme konusunda yardım alın"
+    },
+    "Fact Checker Template": {
+      "n": "Doğruluk Kontrol Şablonu",
+      "d": "Yapılandırılmış doğruluk kontrol metodolojisiyle iddiaları ve ifadeleri doğrulayın"
+    },
+    "Source Comparison Tool": {
+      "n": "Kaynak Karşılaştırma Aracı",
+      "d": "Aynı konudaki birden fazla kaynağı karşılaştırın ve kıyaslayın"
+    },
+    "Citation Generator": {
+      "n": "Atıf Oluşturucu",
+      "d": "Herhangi bir akademik stilde düzgün biçimlendirilmiş atıflar oluşturun"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Açıklamalı Bibliyografya Oluşturucu",
+      "d": "Özetler ve değerlendirmelerle açıklamalı bibliyografyalar oluşturun"
+    },
+    "Research Methodology Guide": {
+      "n": "Araştırma Metodolojisi Rehberi",
+      "d": "Çalışmanız için doğru araştırma metodolojisini seçin ve tasarlayın"
+    },
+    "Survey Question Designer": {
+      "n": "Anket Sorusu Tasarımcısı",
+      "d": "Güvenilir araştırma verisi toplamak için etkili anket soruları tasarlayın"
+    },
+    "Data Collection Plan": {
+      "n": "Veri Toplama Planı",
+      "d": "Araştırma verisi toplamak için yapılandırılmış bir plan oluşturun"
+    },
+    "Thesis Statement Generator": {
+      "n": "Tez Cümlesi Oluşturucu",
+      "d": "Araştırma makaleleri ve tezler için güçlü tez cümleleri hazırlayın"
+    },
+    "Research Proposal Writer": {
+      "n": "Araştırma Teklifi Yazarı",
+      "d": "Akademik veya finansman değerlendirmesi için etkileyici araştırma teklifleri yazın"
+    },
+    "Systematic Review Guide": {
+      "n": "Sistematik İnceleme Rehberi",
+      "d": "Yerleşik protokolleri izleyerek sistematik incelemeler yapın"
+    },
+    "Interview Protocol Creator": {
+      "n": "Görüşme Protokolü Oluşturucu",
+      "d": "Nitel araştırma için yapılandırılmış görüşme protokolleri tasarlayın"
+    },
+    "Research Ethics Checklist": {
+      "n": "Araştırma Etiği Kontrol Listesi",
+      "d": "Araştırmanın etik yönergelere ve IRB gereksinimlerine uyumunu sağlayın"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Meta-Analiz Çerçevesi",
+      "d": "Birden fazla çalışmada meta-analizleri yapılandırın ve gerçekleştirin"
+    },
+    "Case Study Template": {
+      "n": "Vaka Çalışması Şablonu",
+      "d": "Araştırma veya iş için ayrıntılı vaka çalışmalarını yapılandırın ve yazın"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Nitel Analiz Rehberi",
+      "d": "Kodlama ve tematik yaklaşımlar kullanarak nitel veri analizine rehberlik edin"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Nicel Analiz Rehberi",
+      "d": "Uygun istatistiksel yöntemlerle nicel veri analizine rehberlik edin"
+    },
+    "Research Poster Creator": {
+      "n": "Araştırma Posteri Oluşturucu",
+      "d": "Konferanslar ve sunumlar için araştırma posterleri tasarlayın ve düzenleyin"
+    },
+    "Research Grant Writer": {
+      "n": "Araştırma Hibesi Yazarı",
+      "d": "Araştırma finansmanı başvuruları için yapılandırılmış hibe teklifleri yazın"
+    },
+    "Chemistry Tutor": {
+      "n": "Kimya Öğretmeni",
+      "d": "Açıklamalar ve alıştırma problemleriyle kişiselleştirilmiş kimya dersi alın"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Kimyasal Denklem Dengeleyici",
+      "d": "Kimyasal denklemleri adım adım açıklamalarla dengeleyin"
+    },
+    "Lab Safety Checklist": {
+      "n": "Laboratuvar Güvenliği Kontrol Listesi",
+      "d": "Kimya deneyleri için kapsamlı laboratuvar güvenliği kontrol listeleri oluşturun"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Organik Kimya Yardımcısı",
+      "d": "Organik reaksiyonları, mekanizmaları ve isimlendirmeyi çalışın"
+    },
+    "Periodic Table Explorer": {
+      "n": "Periyodik Tablo Gezgini",
+      "d": "Element özelliklerini, eğilimlerini ve ilişkilerini periyodik tablo üzerinde keşfedin"
+    },
+    "Stoichiometry Solver": {
+      "n": "Stokiyometri Çözücü",
+      "d": "Ayrıntılı mol-mol hesaplamalarıyla stokiyometri problemlerini çözün"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Kimyasal Bağ Rehberi",
+      "d": "İyonik, kovalent ve metalik bağlanmayı görsel açıklamalarla anlayın"
+    },
+    "Acid-Base Calculator": {
+      "n": "Asit-Baz Hesaplayıcı",
+      "d": "pH, pOH, Ka, Kb hesaplayın ve asit-baz denge problemlerini çözün"
+    },
+    "Solution Preparation Guide": {
+      "n": "Çözelti Hazırlama Rehberi",
+      "d": "Uygun konsantrasyonlarda kimyasal çözeltileri hesaplayın ve hazırlayın"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Spektroskopi Yorumlayıcı",
+      "d": "Bileşik tanımlama için IR, NMR ve kütle spektrumlarını yorumlayın"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Kimya Laboratuvar Defteri",
+      "d": "Kimya deneyleri için yapılandırılmış laboratuvar defteri kayıtları oluşturun"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Reaksiyon Mekanizması Yardımcısı",
+      "d": "Reaksiyon mekanizmalarını adım adım çizin ve anlayın"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Termokimya Hesaplayıcı",
+      "d": "Kimyasal reaksiyonlar için entalpi, entropi ve Gibbs serbest enerjisini hesaplayın"
+    },
+    "Electrochemistry Guide": {
+      "n": "Elektrokimya Rehberi",
+      "d": "Elektrokimyasal hücreler, elektrot potansiyelleri ve elektrolizi anlayın"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Polimer Kimyası Rehberi",
+      "d": "Polimer türlerini, sentez mekanizmalarını ve özelliklerini çalışın"
+    },
+    "Biology Tutor": {
+      "n": "Biyoloji Öğretmeni",
+      "d": "Net açıklamalar ve örneklerle kişiselleştirilmiş biyoloji dersi alın"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Hücre Biyolojisi Çalışma Rehberi",
+      "d": "Hücre yapılarını, işlevlerini ve süreçlerini derinlemesine çalışın"
+    },
+    "Genetics Problem Solver": {
+      "n": "Genetik Problem Çözücü",
+      "d": "Punnett kareleri ve soy ağacı analizi dahil genetik problemlerini çözün"
+    },
+    "Ecology Study Helper": {
+      "n": "Ekoloji Çalışma Yardımcısı",
+      "d": "Ekosistemleri, besin ağlarını, popülasyon dinamiklerini ve ekolojik ilişkileri çalışın"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Anatomi ve Fizyoloji Rehberi",
+      "d": "İnsan vücut sistemlerini ayrıntılı anatomik açıklamalarla çalışın"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Mikrobiyoloji Laboratuvar Rehberi",
+      "d": "Boyama, kültürleme ve tanımlama dahil mikrobiyoloji laboratuvar tekniklerine rehberlik edin"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Evrim Kavram Haritacısı",
+      "d": "Doğal seçilim, türleşme ve filogenetik dahil evrim kavramlarını haritalayın"
+    },
+    "Plant Biology Helper": {
+      "n": "Bitki Biyolojisi Yardımcısı",
+      "d": "Bitki anatomisini, fizyolojisini ve ekolojik rollerini çalışın"
+    },
+    "Molecular Biology Guide": {
+      "n": "Moleküler Biyoloji Rehberi",
+      "d": "DNA replikasyonu, transkripsiyon, translasyon ve gen regülasyonunu anlayın"
+    },
+    "Bioinformatics Helper": {
+      "n": "Biyoinformatik Yardımcısı",
+      "d": "Dizi analizi, veritabanı aramaları ve hesaplamalı biyoloji konusunda yardım alın"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Sinirbilim Çalışma Rehberi",
+      "d": "Sinir sistemi, beyin işlevi ve sinir yollarını çalışın"
+    },
+    "Marine Biology Explorer": {
+      "n": "Deniz Biyolojisi Gezgini",
+      "d": "Deniz ekosistemlerini, organizmaları ve okyanus bilimini keşfedin"
+    },
+    "Immunology Study Guide": {
+      "n": "İmmünoloji Çalışma Rehberi",
+      "d": "Bağışıklık sistemi, bağışıklık yanıtları ve immünolojik bozuklukları çalışın"
+    },
+    "Biotechnology Overview": {
+      "n": "Biyoteknoloji Genel Bakışı",
+      "d": "Genetik mühendislik ve CRISPR dahil biyoteknoloji uygulamalarını keşfedin"
+    },
+    "Conservation Biology Planner": {
+      "n": "Koruma Biyolojisi Planlayıcı",
+      "d": "Türlerin ve habitatların korunması için koruma stratejileri planlayın"
+    },
+    "Physics Problem Solver": {
+      "n": "Fizik Problem Çözücü",
+      "d": "Fizik problemlerini ayrıntılı adım adım çözümlerle çözün"
+    },
+    "Mechanics Helper": {
+      "n": "Mekanik Yardımcısı",
+      "d": "Kinematik ve dinamik dahil klasik mekanik problemlerini çalışın ve çözün"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Elektrik ve Manyetizma Rehberi",
+      "d": "Elektrik alanlarını, devreleri ve elektromanyetik olayları anlayın"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Termodinamik Öğretmeni",
+      "d": "Termodinamik yasalarını, süreçleri ve ısı transferi problemlerini çalışın"
+    },
+    "Optics & Waves Guide": {
+      "n": "Optik ve Dalgalar Rehberi",
+      "d": "Dalga olaylarını, optiği ve ışık davranışını çalışın"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Kuantum Fiziği Açıklayıcı",
+      "d": "Kuantum mekaniği kavramlarını net açıklamalar ve örneklerle anlayın"
+    },
+    "Astrophysics Explorer": {
+      "n": "Astrofizik Gezgini",
+      "d": "Yıldız evrimi, kozmoloji ve gök mekaniğini keşfedin"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Nükleer Fizik Rehberi",
+      "d": "Nükleer reaksiyonları, radyoaktiviteyi ve nükleer enerjiyi çalışın"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Akışkanlar Dinamiği Yardımcısı",
+      "d": "Bernoulli ve Navier-Stokes uygulamaları dahil akışkan mekaniği problemlerini çözün"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Klasik Mekanik Öğretmeni",
+      "d": "Lagrange ve Hamilton mekaniği ile ileri dinamik konularına derinlemesine dalın"
+    },
+    "Relativity Concept Guide": {
+      "n": "Görelilik Kavram Rehberi",
+      "d": "Özel ve genel göreliliği düşünce deneyleri ve matematikle anlayın"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Fizik Laboratuvar Raporu Yardımcısı",
+      "d": "Uygun veri analiziyle fizik laboratuvar raporlarını yapılandırın ve yazın"
+    },
+    "Math Proof Writer": {
+      "n": "Matematik İspat Yazarı",
+      "d": "Mantıksal yapıyla açık ve titiz matematiksel ispatlar yazın"
+    },
+    "Calculus Problem Solver": {
+      "n": "Kalkülüs Problem Çözücü",
+      "d": "Limitler, türevler ve integraller dahil kalkülüs problemlerini çözün"
+    },
+    "Statistics Helper": {
+      "n": "İstatistik Yardımcısı",
+      "d": "İstatistik problemlerini çözün ve istatistiksel sonuçları yorumlayın"
+    },
+    "Linear Algebra Guide": {
+      "n": "Lineer Cebir Rehberi",
+      "d": "Vektörler, matrisler, dönüşümler ve özdeğerleri çalışın"
+    },
+    "Probability Calculator": {
+      "n": "Olasılık Hesaplayıcı",
+      "d": "Olasılıkları hesaplayın ve olasılık dağılımı problemlerini çözün"
+    },
+    "Geometry Tutor": {
+      "n": "Geometri Öğretmeni",
+      "d": "Geometrik kavramları, teoremleri çalışın ve geometri problemlerini çözün"
+    },
+    "Trigonometry Helper": {
+      "n": "Trigonometri Yardımcısı",
+      "d": "Trigonometrik denklemleri, özdeşlikleri ve uygulamaları çözün"
+    },
+    "Number Theory Explorer": {
+      "n": "Sayılar Teorisi Gezgini",
+      "d": "Asal sayıları, bölünebilirliği, modüler aritmetiği ve kriptografik uygulamaları keşfedin"
+    },
+    "Discrete Math Guide": {
+      "n": "Ayrık Matematik Rehberi",
+      "d": "Kombinatorik, çizge teorisi, mantık ve küme teorisini çalışın"
+    },
+    "Differential Equations Solver": {
+      "n": "Diferansiyel Denklem Çözücü",
+      "d": "Adi ve kısmi diferansiyel denklemleri ayrıntılı yöntemlerle çözün"
+    },
+    "Math Word Problem Solver": {
+      "n": "Matematik Sözel Problem Çözücü",
+      "d": "Gerçek dünya matematik sözel problemlerini adım adım çevirip çözün"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Matematiksel Modelleme Rehberi",
+      "d": "Gerçek dünya olayları ve uygulamaları için matematiksel modeller oluşturun"
+    },
+    "SQL Query Generator": {
+      "n": "SQL Sorgu Oluşturucu",
+      "d": "Veri alma ve analiz için SQL sorguları oluşturun ve optimize edin"
+    },
+    "Python Data Analysis": {
+      "n": "Python Veri Analizi",
+      "d": "Pandas, NumPy ve daha fazlasını kullanarak veri analizi için Python kodu yazın"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Veri Temizleme Kontrol Listesi",
+      "d": "Veri temizleme ve ön işleme için kapsamlı kontrol listeleri oluşturun"
+    },
+    "Data Visualization Planner": {
+      "n": "Veri Görselleştirme Planlayıcı",
+      "d": "Doğru grafikleri seçin ve etkili veri görselleştirmeleri tasarlayın"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Makine Öğrenimi Model Seçici",
+      "d": "Problem türünüze ve veri özelliklerinize en uygun ML modelini seçin"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B Testi Hesaplayıcı",
+      "d": "İstatistiksel anlamlılık hesaplamalarıyla A/B testleri tasarlayın ve analiz edin"
+    },
+    "Dashboard Design Guide": {
+      "n": "Gösterge Paneli Tasarım Rehberi",
+      "d": "Doğru KPI'lar ve düzenle etkili gösterge panelleri tasarlayın"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL İş Hattı Planlayıcı",
+      "d": "Veri entegrasyonu ve işleme için ETL iş hatlarını tasarlayın ve planlayın"
+    },
+    "Feature Engineering Guide": {
+      "n": "Özellik Mühendisliği Rehberi",
+      "d": "Makine öğrenimi modelleri için etkili özellikler oluşturun"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Veri İş Hattı Mimarisi",
+      "d": "Analitik ve ML için ölçeklenebilir veri iş hattı mimarileri tasarlayın"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Keşifsel Veri Analizi",
+      "d": "Yapılandırılmış analiz ve görselleştirme planlarıyla kapsamlı KVA gerçekleştirin"
+    },
+    "Statistical Test Selector": {
+      "n": "İstatistiksel Test Seçici",
+      "d": "Veriniz ve hipoteziniz için doğru istatistiksel testi seçin ve uygulayın"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Zaman Serisi Analizi Rehberi",
+      "d": "Tahmin ve eğilim tespit yöntemleriyle zaman serisi verilerini analiz edin"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Doğal Dil İşleme Başlangıç Rehberi",
+      "d": "Metin sınıflandırma ve duygu analizi dahil NLP görevlerine başlayın"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Bilgisayarlı Görü Proje Planlayıcı",
+      "d": "Veri toplamadan model dağıtımına bilgisayarlı görü projeleri planlayın"
+    },
+    "Technical Requirements Document": {
+      "n": "Teknik Gereksinimler Belgesi",
+      "d": "Mühendislik projeleri için ayrıntılı teknik gereksinim belgeleri oluşturun"
+    },
+    "Engineering Design Review": {
+      "n": "Mühendislik Tasarım İncelemesi",
+      "d": "Mühendislik projeleri için yapılandırılmış tasarım inceleme belgeleri hazırlayın"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Hata Modu Analizi (FMEA)",
+      "d": "Ürünler veya süreçler için sistematik hata modu ve etkileri analizi yapın"
+    },
+    "Project Specification Writer": {
+      "n": "Proje Şartnamesi Yazarı",
+      "d": "Mühendislik çalışmaları için açık ve eksiksiz proje şartnameleri yazın"
+    },
+    "CAD Project Planner": {
+      "n": "CAD Proje Planlayıcı",
+      "d": "CAD modelleme projelerini uygun dokümantasyonla planlayın ve düzenleyin"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Üretim Süreci Rehberi",
+      "d": "Ürün geliştirme için üretim süreçlerini seçin ve planlayın"
+    },
+    "Quality Control Checklist": {
+      "n": "Kalite Kontrol Kontrol Listesi",
+      "d": "Üretim için kalite kontrol kontrol listeleri ve muayene planları oluşturun"
+    },
+    "Engineering Change Request": {
+      "n": "Mühendislik Değişiklik Talebi",
+      "d": "Etki analizi ile mühendislik değişiklik taleplerini belgelendirin ve yönetin"
+    },
+    "Structural Analysis Guide": {
+      "n": "Yapısal Analiz Rehberi",
+      "d": "Mühendislik projeleri için yapısal analiz hesaplamalarına ve metodolojisine rehberlik edin"
+    },
+    "Materials Selection Guide": {
+      "n": "Malzeme Seçim Rehberi",
+      "d": "Mekanik, termal ve kimyasal gereksinimlere göre en uygun malzemeleri seçin"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Midjourney Prompt Oluşturucu",
+      "d": "Stil, aydınlatma ve kompozisyon parametreleriyle ayrıntılı Midjourney promptları hazırlayın"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E Prompt Oluşturucu",
+      "d": "Net açıklamalar ve sanatsal yönlendirmeyle optimize edilmiş DALL-E promptları oluşturun"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Stable Diffusion Prompt Yazarı",
+      "d": "Pozitif ve negatif prompt mühendisliğiyle Stable Diffusion promptları oluşturun"
+    },
+    "Product Photography Prompt": {
+      "n": "Ürün Fotoğrafçılığı Promptu",
+      "d": "Stüdyo kalitesinde sonuçlar için yapay zeka ürün fotoğrafçılığı promptları oluşturun"
+    },
+    "Landscape Art Prompt": {
+      "n": "Manzara Sanatı Promptu",
+      "d": "Ortam ve atmosfer detaylarıyla nefes kesen manzara sanatı promptları oluşturun"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Portre Fotoğrafçılığı Promptu",
+      "d": "Aydınlatma, ifade ve kompozisyon rehberliğiyle yapay zeka portre promptları oluşturun"
+    },
+    "Food Photography Prompt": {
+      "n": "Yemek Fotoğrafçılığı Promptu",
+      "d": "Sunum ve tabak düzenleme detaylarıyla iştah açıcı yemek fotoğrafçılığı promptları hazırlayın"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Mimari Görselleştirme Promptu",
+      "d": "Binalar ve iç mekanlar için mimari görselleştirme promptları oluşturun"
+    },
+    "Fashion Design Prompt": {
+      "n": "Moda Tasarım Promptu",
+      "d": "Kumaş, siluet ve stil detaylarıyla moda tasarım konseptleri oluşturun"
+    },
+    "Comic Art Prompt": {
+      "n": "Çizgi Roman Sanatı Promptu",
+      "d": "Panel kompozisyonu ve karakter eylemiyle çizgi roman tarzı sanat promptları oluşturun"
+    },
+    "Abstract Art Prompt": {
+      "n": "Soyut Sanat Promptu",
+      "d": "Renk teorisi, doku ve duygusal ifadeyle soyut sanat promptları oluşturun"
+    },
+    "Icon Design Brief": {
+      "n": "İkon Tasarım Brifingi",
+      "d": "Tutarlı stil ve görsel dille temiz ikonografi setleri tasarlayın"
+    },
+    "Infographic Design Brief": {
+      "n": "İnfografik Tasarım Brifingi",
+      "d": "Veri görselleştirme ve görsel hiyerarşiyle infografik düzenleri planlayın"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Sosyal Medya Grafikleri Promptu",
+      "d": "Her platform için dikkat çekici sosyal medya grafikleri oluşturun"
+    },
+    "Meme Creator Prompt": {
+      "n": "Meme Oluşturucu Promptu",
+      "d": "Format seçimi, altyazılar ve viral potansiyeliyle meme konseptleri oluşturun"
+    },
+    "AI Avatar Prompt": {
+      "n": "Yapay Zeka Avatar Promptu",
+      "d": "Profiller, oyunlar ve sanal kimlikler için benzersiz yapay zeka avatar tasarımları oluşturun"
+    },
+    "Song Lyrics Writer": {
+      "n": "Şarkı Sözü Yazarı",
+      "d": "Her türde kıta, nakarat ve köprüyle orijinal şarkı sözleri yazın"
+    },
+    "Chord Progression Generator": {
+      "n": "Akor İlerlemesi Oluşturucu",
+      "d": "Her tür ve ruh hali için müzik teorisi rehberliğiyle akor ilerlemeleri oluşturun"
+    },
+    "Beat Ideas Creator": {
+      "n": "Beat Fikri Oluşturucu",
+      "d": "Tempo, ritim desenleri ve enstrümantasyon fikirleriyle beat konseptleri oluşturun"
+    },
+    "Song Structure Builder": {
+      "n": "Şarkı Yapısı Oluşturucu",
+      "d": "Bölüm sırası, dinamikler ve geçişlerle şarkı düzenlemeleri tasarlayın"
+    },
+    "Rap Verse Writer": {
+      "n": "Rap Dize Yazarı",
+      "d": "Akış desenleri, kafiye şemaları ve söz oyunlarıyla vurucu rap dizeleri yazın"
+    },
+    "Country Song Writer": {
+      "n": "Country Şarkı Yazarı",
+      "d": "Hikaye anlatımı, imgelem ve otantik tınıyla country şarkıları yazın"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Pop Şarkı Hook Oluşturucu",
+      "d": "Dinleyicilerin aklında kalan akılda kalıcı pop hook'ları ve nakaratları oluşturun"
+    },
+    "Rock Ballad Writer": {
+      "n": "Rock Balad Yazarı",
+      "d": "Güçlü yapılanmalar ve marş niteliğinde nakaratlarla duygusal rock baladları yazın"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Müzikal Düzenleme Rehberi",
+      "d": "Enstrümantasyon, seslendirme ve dinamiklerle tam müzikal düzenlemeler planlayın"
+    },
+    "Band Name Generator": {
+      "n": "Grup Adı Oluşturucu",
+      "d": "Tür, atmosfer ve imgelem tercihlerine göre yaratıcı grup adları oluşturun"
+    },
+    "Music Video Concept": {
+      "n": "Müzik Videosu Konsepti",
+      "d": "Anlatı, görseller ve koreografiyle yaratıcı müzik videosu konseptleri geliştirin"
+    },
+    "Mixing Checklist": {
+      "n": "Miksleme Kontrol Listesi",
+      "d": "EQ, kompresyon, efektler ve dengeyi kapsayan kapsamlı miksleme kontrol listesi"
+    },
+    "Film Score Brief": {
+      "n": "Film Müziği Brifingi",
+      "d": "Ruh hali, enstrümantasyon ve zamanlama ipuçlarıyla ayrıntılı film müziği brifingleri oluşturun"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts Senaryosu",
+      "d": "60 saniyelik dikey video için optimize edilmiş ilgi çekici YouTube Shorts senaryoları yazın"
+    },
+    "Video Storyboard Creator": {
+      "n": "Video Storyboard Oluşturucu",
+      "d": "Sahne açıklamaları, kamera açıları ve geçişlerle görsel storyboard'lar planlayın"
+    },
+    "Documentary Outline": {
+      "n": "Belgesel Taslağı",
+      "d": "Anlatı akışı, röportajlar ve b-roll planlarıyla etkileyici belgeseller yapılandırın"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlog Bölüm Planlayıcı",
+      "d": "Mekanlar, konuşma noktaları ve görsel çeşitlilikle ilgi çekici vlog bölümleri planlayın"
+    },
+    "Screenwriting Helper": {
+      "n": "Senaryo Yazımı Yardımcısı",
+      "d": "Uygun formatlama, diyalog ve sahne yönlendirmesiyle senaryolar geliştirin"
+    },
+    "Short Film Script": {
+      "n": "Kısa Film Senaryosu",
+      "d": "Görsel hikaye anlatımı ve sıkı anlatımla eksiksiz kısa film senaryoları yazın"
+    },
+    "Animation Script Writer": {
+      "n": "Animasyon Senaryo Yazarı",
+      "d": "Görsel espriler, karakter eylemleri ve zamanlama ipuçlarıyla animasyon senaryoları yazın"
+    },
+    "Video Editing Brief": {
+      "n": "Video Düzenleme Brifingi",
+      "d": "Tempo, efektler ve stil yönergeleriyle ayrıntılı video düzenleme brifingleri oluşturun"
+    },
+    "Livestream Run Sheet": {
+      "n": "Canlı Yayın Akış Planı",
+      "d": "Zamanlı bölümler, konuşma noktaları ve etkileşim tetikleyicileriyle canlı yayınlar planlayın"
+    },
+    "Tutorial Video Script": {
+      "n": "Eğitim Videosu Senaryosu",
+      "d": "Adım adım talimatlar ve görsellerle net eğitim videosu senaryoları yazın"
+    },
+    "Explainer Video Script": {
+      "n": "Tanıtım Videosu Senaryosu",
+      "d": "Karmaşık konuları görsel olarak basitleştiren net açıklayıcı video senaryoları yazın"
+    },
+    "Video SEO Optimizer": {
+      "n": "Video SEO Optimize Edici",
+      "d": "Başlıklar, açıklamalar, etiketler ve küçük resim stratejileriyle video meta verilerini optimize edin"
+    },
+    "Novel Outline Creator": {
+      "n": "Roman Taslağı Oluşturucu",
+      "d": "Olay örgüsü yapısı, bölümler ve karakter gelişim yaylarıyla kapsamlı roman taslakları oluşturun"
+    },
+    "Short Story Writer": {
+      "n": "Kısa Hikaye Yazarı",
+      "d": "Canlı karakterler ve tatmin edici sonuçlarla etkileyici kısa hikayeler yazın"
+    },
+    "Poetry Generator": {
+      "n": "Şiir Oluşturucu",
+      "d": "İmgelem, vezin ve duyguyla çeşitli formlarda orijinal şiirler oluşturun"
+    },
+    "Book Proposal Template": {
+      "n": "Kitap Teklifi Şablonu",
+      "d": "Pazar analizi ve bölüm özetleriyle profesyonel kitap teklifleri oluşturun"
+    },
+    "Memoir Outline": {
+      "n": "Anı Kitabı Taslağı",
+      "d": "Kişisel anıları tematik bölümler ve yansıtıcı anlatıyla yapılandırın"
+    },
+    "Children's Book Creator": {
+      "n": "Çocuk Kitabı Oluşturucu",
+      "d": "İlgi çekici hikayeler ve illüstrasyon notlarıyla yaşa uygun çocuk kitapları yazın"
+    },
+    "Screenplay Outline": {
+      "n": "Senaryo Taslağı",
+      "d": "Üç perdelik yapı, sahne dökümleri ve diyalog notlarıyla senaryoları tasarlayın"
+    },
+    "Play Script Writer": {
+      "n": "Tiyatro Senaryosu Yazarı",
+      "d": "Sahne yönergeleri, diyalog ve sahne yapısıyla tiyatro metinleri yazın"
+    },
+    "Comic Book Script": {
+      "n": "Çizgi Roman Senaryosu",
+      "d": "Panel açıklamaları, diyalog ve tempo ile çizgi roman senaryoları yazın"
+    },
+    "Fan Fiction Creator": {
+      "n": "Fan Kurgu Oluşturucu",
+      "d": "Karakterlere sadık sesler ve yaratıcı yeni hikaye hatlarıyla fan kurguları yazın"
+    },
+    "Writing Prompt Generator": {
+      "n": "Yazma Yönlendirmesi Oluşturucu",
+      "d": "Tür, kısıtlamalar ve hikaye tohumlarıyla yaratıcı yazma yönlendirmeleri oluşturun"
+    },
+    "Dialogue Writer": {
+      "n": "Diyalog Yazarı",
+      "d": "Karakter ortaya koyan ve olay örgüsünü ilerletecek doğal sesli diyaloglar yazın"
+    },
+    "Plot Twist Generator": {
+      "n": "Olay Örgüsü Dönüm Noktası Oluşturucu",
+      "d": "Anlatıyı yeniden bağlamlandıran şaşırtıcı ama mantıklı olay örgüsü dönüm noktaları oluşturun"
+    },
+    "Query Letter Writer": {
+      "n": "Sorgu Mektubu Yazarı",
+      "d": "Kanca ve özet ile edebiyat ajanslarına etkileyici sorgu mektupları yazın"
+    },
+    "Book Description Writer": {
+      "n": "Kitap Açıklaması Yazarı",
+      "d": "Okuyucuları yakalayan ve satışları artıran etkileyici kitap açıklamaları yazın"
+    },
+    "Ghostwriting Brief": {
+      "n": "Hayalet Yazarlık Brifingi",
+      "d": "Ses, stil ve içerik gereksinimleriyle ayrıntılı hayalet yazarlık brifingleri oluşturun"
+    },
+    "Technical Writing Guide": {
+      "n": "Teknik Yazım Rehberi",
+      "d": "Yapılandırılmış formatlama ve doğrulukla net teknik dokümantasyon yazın"
+    },
+    "Grant Proposal Writer": {
+      "n": "Hibe Teklifi Yazarı",
+      "d": "Proje açıklamaları ve bütçe gerekçesiyle ikna edici hibe teklifleri yazın"
+    },
+    "White Paper Outline": {
+      "n": "Teknik Rapor Taslağı",
+      "d": "Araştırma, analiz ve önerilerle otoriter teknik raporları yapılandırın"
+    },
+    "Copywriting Formula": {
+      "n": "Metin Yazarlığı Formülü",
+      "d": "AIDA, PAS ve BAB gibi kanıtlanmış metin yazarlığı formüllerini her ürün veya hizmete uygulayın"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram İçerik Planlayıcı",
+      "d": "Gönderiler, hikayeler, reels ve altyazılarla bir haftalık Instagram içeriği planlayın"
+    },
+    "X Thread Creator": {
+      "n": "X Başlık Dizisi Oluşturucu",
+      "d": "Otorite oluşturan ve etkileşim sağlayan ilgi çekici X başlık dizileri yazın"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit Gönderi Yazarı",
+      "d": "Topluluk normlarını gözeterek belirli subreddit'ler için optimize edilmiş Reddit gönderileri yazın"
+    },
+    "Viral Hook Generator": {
+      "n": "Viral Kanca Oluşturucu",
+      "d": "Tüm platformlarda sosyal medya içeriği için dikkat çekici kancalar oluşturun"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Hashtag Stratejisi Aracı",
+      "d": "Maksimum keşfedilebilirlik için hashtag stratejileri araştırın ve düzenleyin"
+    },
+    "Engagement Response Generator": {
+      "n": "Etkileşim Yanıtı Oluşturucu",
+      "d": "Yorumlara, DM'lere ve bahsetmelere ölçekli düşünceli yanıtlar oluşturun"
+    },
+    "LinkedIn Article Writer": {
+      "n": "LinkedIn Makale Yazarı",
+      "d": "Profesyonel otorite oluşturan düşünce liderliği LinkedIn makaleleri yazın"
+    },
+    "Episode Show Notes": {
+      "n": "Bölüm Yayın Notları",
+      "d": "Zaman damgaları, bağlantılar ve önemli çıkarımlarla ayrıntılı yayın notları yazın"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Podcast Düzenleme Kontrol Listesi",
+      "d": "Kalite kontrol noktaları ve son rötuşlarla podcast düzenleme iş akışını standartlaştırın"
+    },
+    "Prompt Improver": {
+      "n": "Prompt İyileştirici",
+      "d": "Yapılandırılmış tekniklerle daha iyi yapay zeka çıktıları için herhangi bir promptu iyileştirin ve optimize edin"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Düşünce Zinciri Organizatörü",
+      "d": "Yapay zekayı adım adım akıl yürütmeye yönlendiren düşünce zinciri promptları oluşturun"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG Prompt Oluşturucu",
+      "d": "Bağlam penceresi optimizasyonuyla bilgi erişimli üretim promptları oluşturun"
+    },
+    "Prompt Translator": {
+      "n": "Prompt Çevirmeni",
+      "d": "Niyet ve kaliteyi koruyarak promptları farklı yapay zeka modelleri arasında çevirin"
+    },
+    "Prompt Evaluator": {
+      "n": "Prompt Değerlendirici",
+      "d": "Promptları birden fazla kalite boyutunda değerlendirin ve puanlayın, iyileştirme ipuçları sunun"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Az Örnekli Örnek Oluşturucu",
+      "d": "Bağlam içi öğrenme promptları için yüksek kaliteli az örnekli örnekler oluşturun"
+    },
+    "System Prompt Writer": {
+      "n": "Sistem Promptu Yazarı",
+      "d": "Yapay zeka davranışını, kısıtlamalarını ve çıktı stilini tanımlayan etkili sistem promptları yazın"
+    },
+    "AI Guardrails Designer": {
+      "n": "Yapay Zeka Koruma Rayı Tasarımcısı",
+      "d": "Yapay zeka uygulamaları için güvenlik koruma rayları ve içerik politikaları tasarlayın"
+    },
+    "AI Use Case Identifier": {
+      "n": "Yapay Zeka Kullanım Alanı Belirleyici",
+      "d": "İşletmeler ve iş akışları için potansiyel yapay zeka kullanım alanlarını belirleyin ve değerlendirin"
+    },
+    "Model Comparison Guide": {
+      "n": "Model Karşılaştırma Rehberi",
+      "d": "Yapay zeka modellerini yetenekler, fiyatlandırma ve kullanım alanı uygunluğu açısından karşılaştırın"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM İnce Ayar Verisi Oluşturucu",
+      "d": "LLM ince ayar projeleri için eğitim verisi oluşturun ve yapılandırın"
+    },
+    "Debugger Assistant": {
+      "n": "Hata Ayıklama Asistanı",
+      "d": "Kök neden analizi ve düzeltme önerileriyle kod sorunlarını sistematik olarak ayıklayın"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD İş Hattı Planlayıcı",
+      "d": "Derleme, test ve dağıtım aşamalarıyla CI/CD iş hatları tasarlayın"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker Yapılandırma Rehberi",
+      "d": "En iyi uygulamalarla Dockerfile ve compose yapılandırmaları oluşturun"
+    },
+    "Git Workflow Planner": {
+      "n": "Git İş Akışı Planlayıcı",
+      "d": "Geliştirme ekipleri için Git dallanma stratejileri ve iş birliği iş akışları tasarlayın"
+    },
+    "Code Migration Guide": {
+      "n": "Kod Taşıma Rehberi",
+      "d": "Diller, çerçeveler veya sürümler arasında kod taşımalarını planlayın ve gerçekleştirin"
+    },
+    "Database Schema Designer": {
+      "n": "Veritabanı Şema Tasarımcısı",
+      "d": "Uygun ilişkiler ve indekslerle veritabanı şemaları tasarlayın"
+    },
+    "Performance Optimization Guide": {
+      "n": "Performans Optimizasyonu Rehberi",
+      "d": "Profilleme ve darboğaz çözümüyle uygulama performansını optimize edin"
+    },
+    "Microservices Architecture": {
+      "n": "Mikro Hizmet Mimarisi",
+      "d": "Uygun hizmet sınırları ve iletişim desenleriyle mikro hizmet mimarileri tasarlayın"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL Şema Oluşturucu",
+      "d": "Tipler, sorgular, mutasyonlar ve aboneliklerle GraphQL şemaları tasarlayın"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform Yapılandırması",
+      "d": "Bulut altyapı sağlama için Terraform yapılandırmaları oluşturun"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS Mimari Planlayıcı",
+      "d": "Hizmet seçimi ve maliyet optimizasyonuyla AWS bulut mimarileri tasarlayın"
+    },
+    "Code Documentation Generator": {
+      "n": "Kod Belgeleme Oluşturucu",
+      "d": "Satır içi belgeler, JSDoc, docstring'ler ve kod yorumları oluşturun"
+    },
+    "Technical Interview Prep": {
+      "n": "Teknik Mülakat Hazırlığı",
+      "d": "Problem analizleri ve çözüm desenleriyle teknik mülakata hazırlanın"
+    },
+    "Changelog Writer": {
+      "n": "Değişiklik Günlüğü Yazarı",
+      "d": "Keep a Changelog formatını ve anlamsal sürümlemeyi izleyerek net değişiklik günlükleri yazın"
+    },
+    "Error Handling Strategy": {
+      "n": "Hata Yönetimi Stratejisi",
+      "d": "Desenler ve kullanıcı mesajlarıyla kapsamlı hata yönetimi stratejileri tasarlayın"
+    },
+    "Logging Strategy Guide": {
+      "n": "Günlükleme Stratejisi Rehberi",
+      "d": "Seviyeler, formatlar ve toplamlamayla uygulama günlükleme stratejileri tasarlayın"
+    },
+    "Monitoring Setup Guide": {
+      "n": "İzleme Kurulum Rehberi",
+      "d": "Metrikler, uyarılar ve panolarla uygulama izleme sistemi kurun"
+    },
+    "Load Testing Plan": {
+      "n": "Yük Testi Planı",
+      "d": "Senaryolar, metrikler ve kabul kriterleriyle yük testi planları tasarlayın"
+    },
+    "Security Audit Checklist": {
+      "n": "Güvenlik Denetimi Kontrol Listesi",
+      "d": "OWASP tabanlı kontrol listeleri ve düzeltme rehberliğiyle güvenlik denetimleri yapın"
+    },
+    "Security Checklist Creator": {
+      "n": "Güvenlik Kontrol Listesi Oluşturucu",
+      "d": "Uygulamanıza ve teknoloji yığınınıza özel kapsamlı güvenlik kontrol listeleri oluşturun"
+    },
+    "Penetration Testing Plan": {
+      "n": "Sızma Testi Planı",
+      "d": "Kapsam, metodoloji ve raporlama şablonlarıyla yapılandırılmış sızma testleri planlayın"
+    },
+    "Secure Coding Guide": {
+      "n": "Güvenli Kodlama Rehberi",
+      "d": "Güvenlik açığı önleme ile dile özgü güvenli kodlama yönergeleri oluşturun"
+    },
+    "Incident Response Plan": {
+      "n": "Olay Müdahale Planı",
+      "d": "Tespit, kontrol altına alma ve kurtarma prosedürleriyle olay müdahale planları tasarlayın"
+    },
+    "Security Policy Writer": {
+      "n": "Güvenlik Politikası Yazarı",
+      "d": "Erişim kontrolü, veri işleme ve uyumluluğu kapsayan kurumsal güvenlik politikaları yazın"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Güvenlik Açığı Değerlendirme Rehberi",
+      "d": "Tarama ve önceliklendirilmiş düzeltme ile sistematik güvenlik açığı değerlendirmeleri yapın"
+    },
+    "Security Awareness Training": {
+      "n": "Güvenlik Farkındalık Eğitimi",
+      "d": "Her seviyedeki çalışanlar için güvenlik farkındalık eğitim programları tasarlayın"
+    },
+    "Password Policy Creator": {
+      "n": "Parola Politikası Oluşturucu",
+      "d": "Karmaşıklık, rotasyon ve MFA gereksinimleriyle sağlam parola politikaları oluşturun"
+    },
+    "Data Protection Plan": {
+      "n": "Veri Koruma Planı",
+      "d": "Sınıflandırma, şifreleme ve saklama süresini kapsayan veri koruma stratejileri tasarlayın"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT Analizi Pro",
+      "d": "Ağırlıklı puanlama ve eylem planlarıyla gelişmiş SWOT analizi"
+    },
+    "Pitch Deck Outline": {
+      "n": "Sunum Destesi Taslağı",
+      "d": "Etkileyici bir yatırımcı sunum destesi yapısı oluşturun"
+    },
+    "Business Canvas Creator": {
+      "n": "İş Kanvası Oluşturucu",
+      "d": "Girişiminiz için eksiksiz bir iş modeli kanvası oluşturun"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Rekabet İstihbaratı Raporu",
+      "d": "Rakipleri analiz edin ve pazar konumlandırma fırsatlarını belirleyin"
+    },
+    "Strategic Planning Guide": {
+      "n": "Stratejik Planlama Rehberi",
+      "d": "Hedefler ve kilometre taşlarıyla çok yıllık stratejik plan geliştirin"
+    },
+    "Annual Report Template": {
+      "n": "Yıllık Rapor Şablonu",
+      "d": "Şirket yıllık raporunuzu temel finansal ve operasyonel vurgularla yapılandırın"
+    },
+    "Board Meeting Agenda": {
+      "n": "Yönetim Kurulu Toplantı Gündemi",
+      "d": "Yönetişim en iyi uygulamalarıyla profesyonel yönetim kurulu toplantı gündemi"
+    },
+    "Company Newsletter": {
+      "n": "Şirket Bülteni",
+      "d": "İlgi çekici bir dahili veya harici şirket bülteni tasarlayın"
+    },
+    "Employee Survey Creator": {
+      "n": "Çalışan Anketi Oluşturucu",
+      "d": "Etkili çalışan bağlılığı ve memnuniyet anketleri oluşturun"
+    },
+    "Team Building Activity Planner": {
+      "n": "Takım Oluşturma Etkinlik Planlayıcı",
+      "d": "İlgi çekici takım oluşturma etkinlikleri ve aktiviteleri planlayın"
+    },
+    "Remote Work Policy": {
+      "n": "Uzaktan Çalışma Politikası",
+      "d": "Organizasyonunuz için kapsamlı bir uzaktan çalışma politikası oluşturun"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Çeşitlilik ve Kapsayıcılık Planı",
+      "d": "Anlamlı bir çeşitlilik, eşitlik ve kapsayıcılık stratejisi geliştirin"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Tedarikçi Değerlendirme Matrisi",
+      "d": "Tedarik kararları için tedarikçileri sistematik olarak değerlendirin ve karşılaştırın"
+    },
+    "Process Improvement Plan": {
+      "n": "Süreç İyileştirme Planı",
+      "d": "Yalın metodolojiler kullanarak süreç iyileştirmelerini belirleyin ve uygulayın"
+    },
+    "Change Management Plan": {
+      "n": "Değişim Yönetimi Planı",
+      "d": "Paydaş uyumu ve iletişimle kurumsal değişime rehberlik edin"
+    },
+    "Risk Assessment Template": {
+      "n": "Risk Değerlendirme Şablonu",
+      "d": "İş risklerini sistematik olarak belirleyin, değerlendirin ve azaltın"
+    },
+    "Succession Planning Guide": {
+      "n": "Yedekleme Planlama Rehberi",
+      "d": "Liderlik geçişleri ve yetenek havuzu gelişimini planlayın"
+    },
+    "Business Continuity Plan": {
+      "n": "İş Sürekliliği Planı",
+      "d": "Kapsamlı bir süreklilik stratejisiyle aksaklıklara hazırlanın"
+    },
+    "Customer Journey Map": {
+      "n": "Müşteri Yolculuk Haritası",
+      "d": "Eksiksiz müşteri deneyimini görselleştirin ve optimize edin"
+    },
+    "Brand Guidelines Template": {
+      "n": "Marka Kılavuzu Şablonu",
+      "d": "Kapsamlı stil ve kullanım yönergeleriyle marka kimliğinizi tanımlayın"
+    },
+    "Mission & Vision Statement": {
+      "n": "Misyon ve Vizyon Bildirisi",
+      "d": "Organizasyonunuz için ilham verici misyon ve vizyon bildirgeleri oluşturun"
+    },
+    "Company Culture Document": {
+      "n": "Şirket Kültürü Belgesi",
+      "d": "Kurumsal kültürünüzü ve değerlerinizi tanımlayın ve belgelendirin"
+    },
+    "Organizational Chart Planner": {
+      "n": "Organizasyon Şeması Planlayıcı",
+      "d": "Organizasyon yapınızı ve raporlama hatlarınızı tasarlayın ve planlayın"
+    },
+    "Department Budget Template": {
+      "n": "Departman Bütçe Şablonu",
+      "d": "Tahmin ve takiple ayrıntılı departman bütçeleri oluşturun"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI Panosu Oluşturucu",
+      "d": "Veriye dayalı kararlar için temel performans göstergesi panoları tasarlayın"
+    },
+    "Job Description Writer": {
+      "n": "İş Tanımı Yazarı",
+      "d": "En iyi yetenekleri çeken açık ve kapsayıcı iş tanımları oluşturun"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Mülakat Değerlendirme Kartı Oluşturucu",
+      "d": "Tutarlı aday değerlendirmesi için yapılandırılmış mülakat değerlendirme kartları oluşturun"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Çalışan Oryantasyon Kontrol Listesi",
+      "d": "Yeni işe alımların başarısı için kapsamlı oryantasyon kontrol listesi"
+    },
+    "Performance Improvement Plan": {
+      "n": "Performans İyileştirme Planı",
+      "d": "Net kilometre taşlarıyla destekleyici performans iyileştirme planları oluşturun"
+    },
+    "Exit Interview Guide": {
+      "n": "Çıkış Mülakatı Rehberi",
+      "d": "Elde tutmayı iyileştirmek için aydınlatıcı çıkış mülakatları yapın"
+    },
+    "Compensation Analysis": {
+      "n": "Ücret Analizi",
+      "d": "Pazar rekabetçiliği için ücret paketlerini analiz edin ve karşılaştırın"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Yan Haklar Karşılaştırma Rehberi",
+      "d": "Çalışan yan hak paketlerini karşılaştırın ve değerlendirin"
+    },
+    "Team Retrospective": {
+      "n": "Takım Retrospektifi",
+      "d": "Sürekli iyileştirme için etkili takım retrospektifleri yürütün"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Bire Bir Toplantı Şablonu",
+      "d": "Doğrudan raporlarla verimli bire bir toplantılar yapılandırın"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "İşe Alım Süreci Planlayıcı",
+      "d": "İşe alım sürecinizi baştan sona tasarlayın ve optimize edin"
+    },
+    "Employee Recognition Program": {
+      "n": "Çalışan Takdir Programı",
+      "d": "Anlamlı bir çalışan takdir ve ödül programı oluşturun"
+    },
+    "Training Program Designer": {
+      "n": "Eğitim Programı Tasarımcısı",
+      "d": "Etkili çalışan eğitim ve gelişim programları tasarlayın"
+    },
+    "Workplace Policy Writer": {
+      "n": "İşyeri Politikası Yazarı",
+      "d": "Temel kurumsal konuları kapsayan açık işyeri politikaları hazırlayın"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Çatışma Çözümü Rehberi",
+      "d": "Yapılandırılmış çözüm çerçeveleriyle işyeri çatışmalarını yönetin"
+    },
+    "Remote Team Handbook": {
+      "n": "Uzak Ekip El Kitabı",
+      "d": "Dağıtık ekip operasyonları için kapsamlı bir el kitabı oluşturun"
+    },
+    "Career Path Planner": {
+      "n": "Kariyer Yolu Planlayıcı",
+      "d": "Eyleme dönüştürülebilir kilometre taşlarıyla kariyer yolculuğunuzu haritalayın"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Maaş Müzakeresi Hazırlığı",
+      "d": "Güvenli maaş müzakeresi konuşma noktaları ve stratejileri hazırlayın"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn Profili Oluşturucu",
+      "d": "İşe alımcıları ve fırsatları çekmek için LinkedIn profilinizi optimize edin"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Portfolyo Oluşturma Rehberi",
+      "d": "En iyi çalışmalarınızı sergileyen öne çıkan bir profesyonel portfolyo oluşturun"
+    },
+    "Networking Email Templates": {
+      "n": "Ağ Oluşturma E-posta Şablonları",
+      "d": "Kariyer gelişimi ve tanışmalar için etkili ağ oluşturma e-postaları yazın"
+    },
+    "Career Pivot Guide": {
+      "n": "Kariyer Değişikliği Rehberi",
+      "d": "Yapılandırılmış bir planla başarılı bir kariyer geçişi yapın"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Serbest Çalışan Ücret Hesaplayıcı",
+      "d": "İdeal serbest çalışan ücretinizi ve fiyatlandırma stratejinizi hesaplayın"
+    },
+    "Professional Development Plan": {
+      "n": "Profesyonel Gelişim Planı",
+      "d": "Sürekli profesyonel gelişim için yapılandırılmış bir plan oluşturun"
+    },
+    "Mentorship Program Guide": {
+      "n": "Mentorluk Programı Rehberi",
+      "d": "Mentorluk ilişkilerini bulun, yapılandırın ve en üst düzeye çıkarın"
+    },
+    "Side Hustle Validator": {
+      "n": "Ek İş Doğrulayıcı",
+      "d": "Ek iş fikirlerini uygulanabilirlik açısından değerlendirin ve doğrulayın"
+    },
+    "Work-Life Balance Audit": {
+      "n": "İş-Yaşam Dengesi Denetimi",
+      "d": "Eyleme dönüştürülebilir stratejilerle iş-yaşam dengenizi değerlendirin ve iyileştirin"
+    },
+    "Speaking Proposal Template": {
+      "n": "Konuşmacı Teklif Şablonu",
+      "d": "İkna edici konferans ve etkinlik konuşmacı teklifleri oluşturun"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Danışmanlık Teklifi Yazarı",
+      "d": "Anlaşma kapatan kazanan danışmanlık teklifleri hazırlayın"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Beceri Açığı Analizcisi",
+      "d": "Kariyer ilerlemesi için kritik beceri açıklarını belirleyin ve kapatmayı planlayın"
+    },
+    "Career Journal Prompts": {
+      "n": "Kariyer Günlüğü Yönlendirmeleri",
+      "d": "Rehberli günlük egzersizleriyle kariyer yolculuğunuzu değerlendirin"
+    },
+    "Informational Interview Guide": {
+      "n": "Bilgi Amaçlı Mülakat Rehberi",
+      "d": "Etkili bilgi amaçlı mülakatlar hazırlayın ve gerçekleştirin"
+    },
+    "Thank You Note Writer": {
+      "n": "Teşekkür Notu Yazarı",
+      "d": "Her vesileyle düşünceli profesyonel teşekkür notları yazın"
+    },
+    "Resignation Letter Template": {
+      "n": "İstifa Mektubu Şablonu",
+      "d": "Olumlu ilişkileri koruyarak profesyonel bir istifa mektubu yazın"
+    },
+    "Meal Prep Planner": {
+      "n": "Yemek Hazırlık Planlayıcı",
+      "d": "Alışveriş listeleri ve hazırlık programlarıyla haftalık yemekleri planlayın"
+    },
+    "Habit Tracker Designer": {
+      "n": "Alışkanlık Takip Tasarımcısı",
+      "d": "Kalıcı değişim için kişiselleştirilmiş bir alışkanlık takip sistemi tasarlayın"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Uyku İyileştirme Rehberi",
+      "d": "Kanıta dayalı stratejilerle uyku kalitenizi optimize edin"
+    },
+    "Stress Management Plan": {
+      "n": "Stres Yönetimi Planı",
+      "d": "Kişiselleştirilmiş bir stres yönetimi araç seti ve eylem planı oluşturun"
+    },
+    "Yoga Routine Builder": {
+      "n": "Yoga Rutini Oluşturucu",
+      "d": "Seviyenize ve hedeflerinize göre özelleştirilmiş yoga rutinleri oluşturun"
+    },
+    "Running Training Plan": {
+      "n": "Koşu Antrenman Planı",
+      "d": "Herhangi bir mesafe hedefi için yapılandırılmış bir koşu antrenman planı oluşturun"
+    },
+    "Swimming Workout": {
+      "n": "Yüzme Antrenmanı",
+      "d": "Kondisyon ve teknik için etkili yüzme antrenmanları tasarlayın"
+    },
+    "Strength Training Program": {
+      "n": "Güç Antrenmanı Programı",
+      "d": "Hedeflerinize özel aşamalı bir güç antrenmanı programı oluşturun"
+    },
+    "Flexibility Routine": {
+      "n": "Esneklik Rutini",
+      "d": "Yapılandırılmış esneme rutinleriyle esnekliği ve hareketliliği artırın"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT Antrenman Oluşturucu",
+      "d": "Maksimum sonuçlar için yüksek yoğunluklu aralıklı antrenmanlar tasarlayın"
+    },
+    "Nutrition Label Reader": {
+      "n": "Besin Etiketi Okuyucu",
+      "d": "Daha sağlıklı seçimler için besin etiketlerini okumayı ve anlamayı öğrenin"
+    },
+    "Calorie Counter Guide": {
+      "n": "Kalori Sayacı Rehberi",
+      "d": "Makro dağılımlarıyla kişiselleştirilmiş kalori takibi kurun"
+    },
+    "Hydration Tracker": {
+      "n": "Hidrasyon Takipçisi",
+      "d": "Günlük su alımınızı ve hidrasyon alışkanlıklarınızı takip edin ve optimize edin"
+    },
+    "Mental Health Check-In": {
+      "n": "Ruh Sağlığı Kontrolü",
+      "d": "Rehberli ruh sağlığı öz değerlendirmesi ve sağlık takibi"
+    },
+    "Therapy Session Prep": {
+      "n": "Terapi Seansı Hazırlığı",
+      "d": "Yapılandırılmış düşünce ve hedef belirleme ile terapi seanslarına hazırlanın"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Şükran Günlüğü Yönlendirmeleri",
+      "d": "Ruhsal sağlığı iyileştirmek için günlük şükran günlüğü yönlendirmeleri"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Farkındalık Egzersizi Oluşturucu",
+      "d": "Kişiselleştirilmiş farkındalık ve nefes egzersizleri oluşturun"
+    },
+    "Supplement Research Guide": {
+      "n": "Takviye Araştırma Rehberi",
+      "d": "Sağlık hedeflerinize göre takviyeleri araştırın ve değerlendirin"
+    },
+    "Allergy Management Plan": {
+      "n": "Alerji Yönetim Planı",
+      "d": "Kapsamlı bir alerji yönetimi ve kaçınma stratejisi oluşturun"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Kronik Durum Takipçisi",
+      "d": "Kronik sağlık durumları için semptomları, ilaçları ve tetikleyicileri takip edin"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Fizik Tedavi Egzersiz Günlüğü",
+      "d": "Fizik tedavi egzersizlerini ve iyileşme sürecini kaydedin ve takip edin"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonomik Çalışma Alanı Kurulumu",
+      "d": "Çalışma alanınızı konfor, sağlık ve verimlilik için optimize edin"
+    },
+    "Digital Detox Planner": {
+      "n": "Dijital Detoks Planlayıcı",
+      "d": "Ruhsal sağlığı iyileştirmek için bir dijital detoks planlayın ve uygulayın"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Öz Bakım Rutini Oluşturucu",
+      "d": "Tüm sağlık boyutlarında sürdürülebilir bir öz bakım rutini oluşturun"
+    },
+    "First Aid Guide": {
+      "n": "İlk Yardım Rehberi",
+      "d": "Yaygın acil durumlar için hızlı başvuru ilk yardım prosedürleri"
+    },
+    "To-Do List Power Planner": {
+      "n": "Yapılacaklar Listesi Güç Planlayıcı",
+      "d": "Zaman tahminleri ve enerji seviyeleriyle önceliklendirilmiş yapılacaklar listeleri oluşturun"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Günlük Program Optimize Edici",
+      "d": "Enerji kalıplarınıza göre optimize edilmiş bir günlük program tasarlayın"
+    },
+    "Project Planner Pro": {
+      "n": "Proje Planlayıcı Pro",
+      "d": "Kilometre taşları, çıktılar ve kaynak tahsisiyle projeleri planlayın"
+    },
+    "Decision Matrix Builder": {
+      "n": "Karar Matrisi Oluşturucu",
+      "d": "Ağırlıklı kriter analizi kullanarak daha iyi kararlar verin"
+    },
+    "Weekly Review Template": {
+      "n": "Haftalık Değerlendirme Şablonu",
+      "d": "Hedeflerinize ulaşmak için kapsamlı haftalık değerlendirmeler yapın"
+    },
+    "Morning Routine Designer": {
+      "n": "Sabah Rutini Tasarımcısı",
+      "d": "Zirve performans için enerji veren bir sabah rutini tasarlayın"
+    },
+    "Evening Routine Creator": {
+      "n": "Akşam Rutini Oluşturucu",
+      "d": "Daha iyi dinlenme ve ertesi güne hazırlık için sakinleştirici bir akşam rutini oluşturun"
+    },
+    "Time Blocking Schedule": {
+      "n": "Zaman Bloklaması Programı",
+      "d": "Maksimum verimlilik için gününüzü odaklanmış zaman bloklarıyla düzenleyin"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhower Matrisi Aracı",
+      "d": "Daha iyi önceliklendirme için görevleri aciliyet ve önem düzeyine göre kategorize edin"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Pomodoro Seans Planlayıcı",
+      "d": "Pomodoro tekniğini kullanarak odaklanmış çalışma seansları planlayın"
+    },
+    "Goal Tracking System": {
+      "n": "Hedef Takip Sistemi",
+      "d": "İlerleme metrikleriyle kapsamlı bir hedef takip sistemi kurun"
+    },
+    "Quarterly Planning Template": {
+      "n": "Üç Aylık Planlama Şablonu",
+      "d": "Stratejik hedefler ve eyleme dönüştürülebilir amaçlarla çeyreğinizi planlayın"
+    },
+    "Annual Review Template": {
+      "n": "Yıllık Değerlendirme Şablonu",
+      "d": "Başarıların kapsamlı bir yıllık değerlendirmesini yapın ve gelecek hedefler belirleyin"
+    },
+    "Meeting Notes Template": {
+      "n": "Toplantı Notları Şablonu",
+      "d": "Kararlar ve takip adımlarıyla eyleme dönüştürülebilir toplantı notları kaydedin"
+    },
+    "Brain Dump Organizer": {
+      "n": "Beyin Boşaltma Organizatörü",
+      "d": "Kaotik düşünceleri düzenli ve eyleme dönüştürülebilir kategorilere dönüştürün"
+    },
+    "Delegation Framework": {
+      "n": "Delegasyon Çerçevesi",
+      "d": "Neyi delege edeceğinizi belirleyin ve net delegasyon brifingleri oluşturun"
+    },
+    "Focus Session Planner": {
+      "n": "Odak Seansı Planlayıcı",
+      "d": "Ortam ve dikkat dağıtıcı yönetimiyle derin odak seansları planlayın"
+    },
+    "Energy Management Guide": {
+      "n": "Enerji Yönetimi Rehberi",
+      "d": "Zirve performans için gün boyunca enerji seviyelerinizi optimize edin"
+    },
+    "Batch Processing Planner": {
+      "n": "Toplu İşleme Planlayıcı",
+      "d": "Verimli toplu işleme seansları için benzer görevleri gruplandırın"
+    },
+    "System Documentation Template": {
+      "n": "Sistem Dokümantasyon Şablonu",
+      "d": "Tutarlılık ve oryantasyon için kişisel ve ekip sistemlerini belgelendirin"
+    },
+    "Project Kickoff Template": {
+      "n": "Proje Başlangıç Şablonu",
+      "d": "Net hedefler, kapsam ve ekip uyumuyla projeleri başlatın"
+    },
+    "Sprint Planning Guide": {
+      "n": "Sprint Planlama Rehberi",
+      "d": "Kullanıcı hikayeleri, tahmin ve kapasiteyle etkili sprint'ler planlayın"
+    },
+    "Kanban Board Setup": {
+      "n": "Kanban Panosu Kurulumu",
+      "d": "Görsel iş akışı yönetimi için bir Kanban panosu tasarlayın ve yapılandırın"
+    },
+    "Gantt Chart Planner": {
+      "n": "Gantt Şeması Planlayıcı",
+      "d": "Bağımlılıklar ve kilometre taşlarıyla ayrıntılı proje zaman çizelgeleri oluşturun"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Kaynak Tahsis Matrisi",
+      "d": "Projeler ve ekipler arasında kaynak tahsisini planlayın ve optimize edin"
+    },
+    "Status Report Template": {
+      "n": "Durum Raporu Şablonu",
+      "d": "Paydaş iletişimi için net proje durum raporları oluşturun"
+    },
+    "Risk Register Creator": {
+      "n": "Risk Kaydı Oluşturucu",
+      "d": "Kapsamlı bir proje risk kaydı oluşturun ve sürdürün"
+    },
+    "Lessons Learned Template": {
+      "n": "Alınan Dersler Şablonu",
+      "d": "Gelecekte iyileştirme için projeden alınan dersleri kaydedin ve belgelendirin"
+    },
+    "Requirements Document": {
+      "n": "Gereksinimler Belgesi",
+      "d": "Kabul kriterleriyle proje gereksinimlerini toplayın ve belgelendirin"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Kullanıcı Kabul Testi Planı",
+      "d": "Test senaryoları ve onay kriterleriyle yapılandırılmış KKT planları oluşturun"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Paydaş İletişim Planı",
+      "d": "Kanallar, sıklık ve mesajlaşmayla paydaş iletişimlerini planlayın"
+    },
+    "Project Timeline Creator": {
+      "n": "Proje Zaman Çizelgesi Oluşturucu",
+      "d": "Aşamalar ve çıktılarla ayrıntılı proje zaman çizelgeleri oluşturun"
+    },
+    "Agile Retrospective": {
+      "n": "Çevik Retrospektif",
+      "d": "Çeşitli formatlarla verimli çevik retrospektifler yönetin"
+    },
+    "Scope Document Writer": {
+      "n": "Kapsam Belgesi Yazarı",
+      "d": "Sınırlar, çıktılar ve istisnalarla proje kapsamını tanımlayın"
+    },
+    "Project Closure Report": {
+      "n": "Proje Kapanış Raporu",
+      "d": "Sonuçlar ve nihai değerlendirmelerle proje tamamlanmasını belgelendirin"
+    },
+    "Conversation Practice Partner": {
+      "n": "Konuşma Pratik Partneri",
+      "d": "Gerçekçi senaryolarla hedef dilinizde konuşma pratiği yapın"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Kelime Hazinesi Geliştirici Pro",
+      "d": "Bağlam örnekleri ve aralıklı tekrar ipuçlarıyla kelime hazinesi oluşturun"
+    },
+    "Grammar Coach": {
+      "n": "Dilbilgisi Koçu",
+      "d": "Net açıklamalar ve alıştırmalarla dilbilgisi kurallarını öğrenin ve pratik yapın"
+    },
+    "Translation Helper": {
+      "n": "Çeviri Yardımcısı",
+      "d": "Bağlam ve kullanım notlarıyla doğru çeviriler alın"
+    },
+    "Language Exchange Prep": {
+      "n": "Dil Değişimi Hazırlığı",
+      "d": "Yapılandırılmış konuşma konularıyla dil değişimi seanslarına hazırlanın"
+    },
+    "Travel Phrase Book": {
+      "n": "Seyahat Cümle Kitabı",
+      "d": "Varış noktanız için duruma göre düzenlenmiş temel seyahat cümleleri"
+    },
+    "Business Language Guide": {
+      "n": "İş Dili Rehberi",
+      "d": "İş ortamları ve iletişim için profesyonel dil öğrenin"
+    },
+    "Accent Improvement Guide": {
+      "n": "Aksan İyileştirme Rehberi",
+      "d": "Hedefli alıştırmalarla telaffuz ve aksanı geliştirin"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Okuduğunu Anlama Pratiği",
+      "d": "Seviyeli metinler ve anlama sorularıyla okuma becerilerini geliştirin"
+    },
+    "Writing Practice Creator": {
+      "n": "Yazma Pratiği Oluşturucu",
+      "d": "Rehberli yönlendirmeler ve geri bildirimle hedef dilinizde yazma pratiği yapın"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Dinlediğini Anlama Rehberi",
+      "d": "Yapılandırılmış alıştırmalar ve stratejilerle dinleme becerilerini geliştirin"
+    },
+    "Cultural Context Guide": {
+      "n": "Kültürel Bağlam Rehberi",
+      "d": "Etkili iletişim için kültürel nüansları ve görgü kurallarını anlayın"
+    },
+    "Room Layout Planner": {
+      "n": "Oda Düzeni Planlayıcı",
+      "d": "Mobilya yerleşimi ve akışla en uygun oda düzenlerini planlayın"
+    },
+    "Color Palette Creator": {
+      "n": "Renk Paleti Oluşturucu",
+      "d": "Odalar ve tasarım projeleri için uyumlu renk paletleri oluşturun"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Mobilya Alışverişi Rehberi",
+      "d": "Stil eşleştirme ve bütçe planlamasıyla akıllı mobilya alışverişi"
+    },
+    "Home Decor Style Finder": {
+      "n": "Ev Dekorasyon Stili Bulucu",
+      "d": "Rehberli bir değerlendirmeyle iç tasarım stilinizi keşfedin"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Kapsül Gardırop Oluşturucu",
+      "d": "Kıyafet kombinasyonlarını en üst düzeye çıkaran çok yönlü bir kapsül gardırop oluşturun"
+    },
+    "Outfit Planner": {
+      "n": "Kıyafet Planlayıcı",
+      "d": "Mevcut gardırobunuzdan haftalık veya özel etkinlik kıyafetleri planlayın"
+    },
+    "Personal Style Guide": {
+      "n": "Kişisel Stil Rehberi",
+      "d": "Kişisel stil kimliğinizi ve alışveriş yönergelerinizi tanımlayın"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Mevsimsel Gardırop Yenileme",
+      "d": "Stratejik eklemeler ve düzenlemelerle her mevsim gardırobunuzu yenileyin"
+    },
+    "Home Office Setup Guide": {
+      "n": "Ev Ofisi Kurulum Rehberi",
+      "d": "Verimli ve şık bir ev ofisi alanı tasarlayın"
+    },
+    "Bathroom Design Planner": {
+      "n": "Banyo Tasarım Planlayıcı",
+      "d": "Stil ve işlevsellikle banyo tadilat ve güncellemelerini planlayın"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Hackathon Fikir Oluşturucu",
+      "d": "Tema ve kısıtlamalara göre hackathon proje fikirlerini beyin fırtınasıyla bulun ve doğrulayın"
+    },
+    "MVP Builder Guide": {
+      "n": "MVP Oluşturma Rehberi",
+      "d": "Sıkı hackathon son tarihleri içinde minimum uygulanabilir ürünü planlayın ve oluşturun"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon Sunum Destesi",
+      "d": "Hackathon projenizi jüriye sunmak için etkileyici bir sunum destesi oluşturun"
+    },
+    "Technical Architecture Planner": {
+      "n": "Teknik Mimari Planlayıcı",
+      "d": "Hackathon projeniz için teknik mimariyi hızlıca tasarlayın"
+    },
+    "Hackathon Team Builder": {
+      "n": "Hackathon Takım Oluşturucu",
+      "d": "Tamamlayıcı beceriler ve net rollerle dengeli bir hackathon takımı oluşturun"
+    },
+    "Demo Day Script": {
+      "n": "Demo Günü Senaryosu",
+      "d": "Projenizin temel özelliklerini öne çıkaran cilalı bir canlı demo senaryosu yazın"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Değerlendirme Kriterleri Analizcisi",
+      "d": "Hackathon değerlendirme kriterlerini analiz edin ve projenizi buna göre optimize edin"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Hackathon Zaman Çizelgesi Planlayıcı",
+      "d": "Hackathon saatlerinizi yapılandırılmış bir sprint programına bölün"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Ödül Stratejisi Danışmanı",
+      "d": "Belirli ödül kategorilerini stratejik olarak hedefleyin ve projenizi kazanmaya göre uyarlayın"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Hackathon Sonrası Eylem Planı",
+      "d": "Hackathon projenizi gerçek bir ürüne veya portfolyo parçasına dönüştürün"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Hızlı Prototipleme Rehberi",
+      "d": "Sınırlı süreyle hackathon konseptinizi hızla prototipleyip geliştirin"
+    },
+    "Hackathon Submission Template": {
+      "n": "Hackathon Başvuru Şablonu",
+      "d": "Gerekli tüm materyallerle eksiksiz ve cilalı bir hackathon başvurusu hazırlayın"
+    },
+    "Game Design Document": {
+      "n": "Oyun Tasarım Belgesi",
+      "d": "Oyununuzun tüm yönlerini kapsayan kapsamlı bir oyun tasarım belgesi oluşturun"
+    },
+    "Game Mechanics Designer": {
+      "n": "Oyun Mekanikleri Tasarımcısı",
+      "d": "İlgi çekici oyun deneyimi için temel oyun mekaniklerini tasarlayın ve dengeleyin"
+    },
+    "Level Design Planner": {
+      "n": "Seviye Tasarım Planlayıcı",
+      "d": "Tempo, zorluklar ve çevresel hikaye anlatımıyla oyun seviyelerini planlayın"
+    },
+    "Game Economy Balancer": {
+      "n": "Oyun Ekonomisi Dengeleyici",
+      "d": "Adil ve ilgi çekici ilerleme için oyun içi ekonomileri tasarlayın ve dengeleyin"
+    },
+    "Character Stats Builder": {
+      "n": "Karakter İstatistikleri Oluşturucu",
+      "d": "Dengeli karakter istatistik sistemleri ve sınıf arketipleri oluşturun"
+    },
+    "Quest Designer": {
+      "n": "Görev Tasarımcısı",
+      "d": "Dallanmalı anlatılar ve anlamlı ödüllerle etkileyici görevler tasarlayın"
+    },
+    "Game UI/UX Planner": {
+      "n": "Oyun UI/UX Planlayıcı",
+      "d": "Sezgisel oyun arayüz düzenleri ve kullanıcı deneyimi akışları planlayın"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Masa Üstü RPG Kampanyası",
+      "d": "Dünya geleneği, NPC'ler ve hikaye yaylarıyla masa üstü RPG kampanyası oluşturun"
+    },
+    "Board Game Designer": {
+      "n": "Masa Oyunu Tasarımcısı",
+      "d": "Konseptten prototipe dengeli kurallarla bir masa oyunu tasarlayın"
+    },
+    "Game Testing Checklist": {
+      "n": "Oyun Test Kontrol Listesi",
+      "d": "Oyununuz için kapsamlı bir QA test kontrol listesi oluşturun"
+    },
+    "Photo Shoot Planner": {
+      "n": "Fotoğraf Çekimi Planlayıcı",
+      "d": "Tüm lojistikle konseptten uygulamaya eksiksiz bir fotoğraf çekimi planlayın"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Fotoğraf Portfolyosu Rehberi",
+      "d": "Müşteriler veya sergiler için öne çıkan bir fotoğraf portfolyosu düzenleyin ve organize edin"
+    },
+    "Photo Editing Workflow": {
+      "n": "Fotoğraf Düzenleme İş Akışı",
+      "d": "İçe aktarmadan son dışa aktarmaya verimli bir fotoğraf düzenleme iş akışı oluşturun"
+    },
+    "Client Photography Brief": {
+      "n": "Müşteri Fotoğrafçılık Brifingi",
+      "d": "Müşteri projeleri için profesyonel bir fotoğrafçılık brifingi oluşturun"
+    },
+    "Landscape Photography Guide": {
+      "n": "Manzara Fotoğrafçılığı Rehberi",
+      "d": "Hava durumu, zamanlama ve kompozisyon ipuçlarıyla manzara fotoğrafçılığı gezileri planlayın"
+    },
+    "Portrait Photography Tips": {
+      "n": "Portre Fotoğrafçılığı İpuçları",
+      "d": "Aydınlatma ve poz yönlendirmesiyle etkileyici portreler çekmek için rehber"
+    },
+    "Product Photography Setup": {
+      "n": "Ürün Fotoğrafçılığı Kurulumu",
+      "d": "Uygun aydınlatma ve sahnelemeyle profesyonel ürün fotoğrafçılığı kurun"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Düğün Fotoğrafçılığı Zaman Çizelgesi",
+      "d": "Hazırlıktan resepsiyona eksiksiz bir düğün günü fotoğrafçılık zaman çizelgesi planlayın"
+    },
+    "Street Photography Guide": {
+      "n": "Sokak Fotoğrafçılığı Rehberi",
+      "d": "Otantik ve etkileyici sokak fotoğrafçılığı için ipuçları ve teknikler"
+    },
+    "Astrophotography Planner": {
+      "n": "Astrofotoğrafçılık Planlayıcı",
+      "d": "Ekipman ayarları ve gök olaylarıyla astrofotoğrafçılık seansları planlayın"
+    },
+    "Character Design Brief": {
+      "n": "Karakter Tasarım Brifingi",
+      "d": "Kişilik, görünüm ve arka planla ayrıntılı karakter tasarım brifingleri oluşturun"
+    },
+    "Comic Strip Creator": {
+      "n": "Çizgi Bant Oluşturucu",
+      "d": "Panel düzenleri, diyalog ve tempoyla çizgi bantlar planlayın ve oluşturun"
+    },
+    "World Building Guide": {
+      "n": "Dünya İnşası Rehberi",
+      "d": "Coğrafya, kültürler ve gelenekle sürükleyici kurgusal dünyalar tasarlayın"
+    },
+    "Children's Book Illustrator": {
+      "n": "Çocuk Kitabı İllüstratörü",
+      "d": "Yaşa uygun stil ve tempoyla çocuk kitapları için illüstrasyonlar planlayın"
+    },
+    "Art Portfolio Curator": {
+      "n": "Sanat Portfolyosu Küratörü",
+      "d": "Galeriler, müşteriler veya okullar için bir sanat portfolyosu düzenleyin ve sunun"
+    },
+    "Color Theory Guide": {
+      "n": "Renk Teorisi Rehberi",
+      "d": "Uyumlu ve etkili sanat eserleri oluşturmak için renk teorisi ilkelerini uygulayın"
+    },
+    "Digital Art Workflow": {
+      "n": "Dijital Sanat İş Akışı",
+      "d": "Eskizden son renderlamaya dijital sanat sürecinizi düzenleyin"
+    },
+    "Art Commission Brief": {
+      "n": "Sanat Komisyonu Brifingi",
+      "d": "Vizyonunuzu sanatçılara iletmek için net sanat komisyonu brifingleri yazın"
+    },
+    "Mural Design Planner": {
+      "n": "Duvar Resmi Tasarım Planlayıcı",
+      "d": "Konseptten kuruluma büyük ölçekli duvar resmi projelerini planlayın"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Sanat Sergisi Teklifi",
+      "d": "Galeriler ve mekanlar için profesyonel bir sanat sergisi teklifi yazın"
+    },
+    "Tax Deduction Finder": {
+      "n": "Vergi İndirimi Bulucu",
+      "d": "Durumunuza ve beyanname türünüze göre sıkça gözden kaçan vergi indirimlerini belirleyin"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Serbest Meslek Vergisi Rehberi",
+      "d": "Tahmini ödemeler ve indirimler dahil serbest meslek vergilerini yönetin"
+    },
+    "Tax Document Organizer": {
+      "n": "Vergi Belgesi Düzenleyici",
+      "d": "Beyanname dönemi için gereken tüm vergi belgelerini düzenleyin ve takip edin"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Üç Aylık Vergi Tahmincisi",
+      "d": "Serbest çalışanlar için üç aylık tahmini vergi ödemelerini hesaplayın ve planlayın"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Sermaye Kazancı Hesaplama Rehberi",
+      "d": "Yatırımlar ve mülkler üzerindeki sermaye kazancı vergilerini anlayın ve planlayın"
+    },
+    "Tax Filing Checklist": {
+      "n": "Vergi Beyannamesi Kontrol Listesi",
+      "d": "Doğru ve eksiksiz vergi beyannamesi için adım adım kontrol listesi"
+    },
+    "State Tax Comparison": {
+      "n": "Eyalet Vergisi Karşılaştırması",
+      "d": "Taşınma veya çok eyaletli gelir için eyalet vergisi etkilerini karşılaştırın"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Vergi Zararı Hasadı Rehberi",
+      "d": "Kazançları dengelemek ve vergi yükünü azaltmak için yatırım kayıplarını stratejik olarak kullanın"
+    },
+    "Stock Research Template": {
+      "n": "Hisse Senedi Araştırma Şablonu",
+      "d": "Bireysel hisse senetleri üzerinde kapsamlı temel ve teknik analiz yapın"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF Karşılaştırma Aracı",
+      "d": "ETF'leri gider oranları, varlıklar, performans ve stratejiye göre karşılaştırın"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Temettü Portföyü Planlayıcı",
+      "d": "Pasif gelir elde etmek için temettü odaklı bir portföy oluşturun"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Gayrimenkul Yatırım Analizcisi",
+      "d": "Kiralık mülkleri ve gayrimenkul yatırımlarını getiri ve nakit akışı açısından analiz edin"
+    },
+    "Angel Investing Checklist": {
+      "n": "Melek Yatırımcı Kontrol Listesi",
+      "d": "Girişim yatırım fırsatlarını durum tespiti çerçeveleriyle değerlendirin"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Emeklilik Hesabı Optimizasyonu",
+      "d": "401k, IRA ve diğer emeklilik hesaplarına yapılan katkıları optimize edin"
+    },
+    "Bond Analysis Guide": {
+      "n": "Tahvil Analizi Rehberi",
+      "d": "Tahvil ve sabit getirili menkul kıymetleri getiri, vade ve risk açısından analiz edin"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Yatırım Fonu Değerlendiricisi",
+      "d": "Yatırım fonlarını performans, ücretler, yönetici geçmişi ve uygunluk açısından değerlendirin"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Portföy Yeniden Dengeleme Rehberi",
+      "d": "Hedef varlık dağılımını korumak için yatırım portföyünüzü yeniden dengeleyin"
+    },
+    "Investment Journal Template": {
+      "n": "Yatırım Günlüğü Şablonu",
+      "d": "Sürekli iyileştirme için yatırım kararlarını, gerekçeleri ve sonuçları takip edin"
+    },
+    "AWS Service Selector": {
+      "n": "AWS Hizmet Seçici",
+      "d": "Uygulama gereksinimleriniz ve bütçeniz için doğru AWS hizmetlerini seçin"
+    },
+    "Cloud Migration Plan": {
+      "n": "Bulut Göç Planı",
+      "d": "Yerinde çalışan iş yüklerinin buluta yapılandırılmış göçünü planlayın"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Kubernetes Dağıtım Rehberi",
+      "d": "En iyi uygulamalarla Kubernetes üzerinde uygulama dağıtın ve yönetin"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Kod Olarak Altyapı Şablonu",
+      "d": "Tekrarlanabilir bulut ortamları için kod olarak altyapı şablonları oluşturun"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD Boru Hattı Tasarımcısı",
+      "d": "Sürekli entegrasyon ve dağıtım için otomatik CI/CD boru hatları tasarlayın"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Bulut Maliyet Optimizasyonu",
+      "d": "Bulut maliyet optimizasyon stratejilerini belirleyin ve uygulayın"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Sunucusuz Mimari Planlayıcı",
+      "d": "Olay güdümlü mimari kalıplarıyla sunucusuz uygulamalar tasarlayın"
+    },
+    "Container Strategy Guide": {
+      "n": "Konteyner Strateji Rehberi",
+      "d": "Uygulamalar ve mikro hizmetler için konteynerleştirme stratejisi belirleyin"
+    },
+    "Cloud Security Checklist": {
+      "n": "Bulut Güvenliği Kontrol Listesi",
+      "d": "Kapsamlı güvenlik kontrolleriyle bulut altyapısını denetleyin ve güvence altına alın"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Felaket Kurtarma Planı",
+      "d": "RTO ve RPO hedefleriyle bulut felaket kurtarma planı tasarlayın"
+    },
+    "Keynote Speech Writer": {
+      "n": "Açılış Konuşması Yazarı",
+      "d": "Dinleyicilerinizi ilham veren ve etkileyen güçlü bir açılış konuşması yazın"
+    },
+    "TED Talk Outline": {
+      "n": "TED Konuşması Taslağı",
+      "d": "Güçlü bir anlatı akışıyla etkileyici bir TED tarzı konuşma yapılandırın"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Kadeh Kaldırma ve Anma Yazarı",
+      "d": "Düğünler, emeklilikler ve kutlamalar için unutulmaz kadeh kaldırma konuşmaları yazın"
+    },
+    "Debate Preparation Guide": {
+      "n": "Tartışma Hazırlık Rehberi",
+      "d": "Argümanlar, karşı argümanlar ve kanıtlarla münazaralara kapsamlı hazırlanın"
+    },
+    "Panel Discussion Prep": {
+      "n": "Panel Tartışması Hazırlığı",
+      "d": "Konuşma noktaları ve izleyici etkileşimiyle panel tartışmalarına hazırlanın"
+    },
+    "Presentation Slide Planner": {
+      "n": "Sunum Slaytı Planlayıcı",
+      "d": "Görsel hiyerarşi ve anlatı akışıyla sunum slaytları planlayın"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Doğaçlama Konuşma Rehberi",
+      "d": "Doğaçlama konuşma çerçeveleriyle anında düşünme becerileri geliştirin"
+    },
+    "Commencement Speech Writer": {
+      "n": "Mezuniyet Konuşması Yazarı",
+      "d": "Mezuniyet törenleri için ilham verici bir konuşma yazın"
+    },
+    "Grant Application Writer": {
+      "n": "Hibe Başvurusu Yazarı",
+      "d": "Etkiyi ve ihtiyacı açıkça ifade eden ikna edici hibe başvuruları yazın"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Bağış Kampanyası Planı",
+      "d": "Birden fazla kanal üzerinden etkili bağış toplama kampanyaları planlayın ve yürütün"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Gönüllü İşe Alım Rehberi",
+      "d": "Kâr amacı gütmeyen programlar için gönüllüleri işe alın, oryantasyon yapın ve elde tutun"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Kâr Amacı Gütmeyen Kuruluş Yönetim Kurulu Toplantısı",
+      "d": "Net gündemlerle etkili kâr amacı gütmeyen kuruluş yönetim kurulu toplantıları hazırlayın ve yönetin"
+    },
+    "Impact Report Template": {
+      "n": "Etki Raporu Şablonu",
+      "d": "Kuruluşunuzun başarılarını sergileyen etkileyici etki raporları oluşturun"
+    },
+    "Donor Thank You Letter": {
+      "n": "Bağışçı Teşekkür Mektubu",
+      "d": "Kalıcı ilişkiler kuran kişiselleştirilmiş bağışçı teşekkür mektupları yazın"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Yıllık Kampanya Stratejisi",
+      "d": "Kapsamlı bir yıllık bağış toplama ve etkileşim stratejisi geliştirin"
+    },
+    "Community Needs Assessment": {
+      "n": "Toplum İhtiyaç Değerlendirmesi",
+      "d": "Program geliştirmeye rehberlik edecek kapsamlı bir toplum ihtiyaç değerlendirmesi yapın"
+    },
+    "Construction Project Plan": {
+      "n": "İnşaat Proje Planı",
+      "d": "Aşamalar, zaman çizelgeleri ve bütçelerle kapsamlı bir inşaat proje planı oluşturun"
+    },
+    "Building Permit Checklist": {
+      "n": "İnşaat Ruhsatı Kontrol Listesi",
+      "d": "İnşaat projeniz için gereken tüm yapı ruhsatlarını ve onayları takip edin"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Müteahhit Değerlendirme Rehberi",
+      "d": "Yapılandırılmış bir puanlama çerçevesiyle müteahhitleri değerlendirin ve karşılaştırın"
+    },
+    "Material Estimate Calculator": {
+      "n": "Malzeme Tahmin Hesaplayıcı",
+      "d": "Gereken inşaat malzemelerini miktar ve maliyet tahminleriyle hesaplayın"
+    },
+    "Site Inspection Checklist": {
+      "n": "Saha Denetim Kontrol Listesi",
+      "d": "Standartlaştırılmış kontrol listeleriyle kapsamlı saha denetimleri yapın"
+    },
+    "Renovation Scope Document": {
+      "n": "Tadilat Kapsam Belgesi",
+      "d": "Şartnameler ve beklentilerle net bir tadilat iş kapsamı tanımlayın"
+    },
+    "Architectural Brief": {
+      "n": "Mimari Brifing",
+      "d": "Proje vizyonu, gereksinimleri ve kısıtlamaları tanımlayan bir mimari brifing yazın"
+    },
+    "Safety Compliance Checklist": {
+      "n": "İş Güvenliği Uyum Kontrol Listesi",
+      "d": "İSG ve yerel yönetmeliklere uygun inşaat sahası güvenlik uyumunu sağlayın"
+    },
+    "Robot Design Specification": {
+      "n": "Robot Tasarım Spesifikasyonu",
+      "d": "Mekanik, elektronik ve yazılım dahil eksiksiz robot tasarım özelliklerini tanımlayın"
+    },
+    "IoT Project Planner": {
+      "n": "IoT Proje Planlayıcı",
+      "d": "Sensörlerden bulut panolarına uçtan uca IoT projeleri planlayın"
+    },
+    "Sensor Selection Guide": {
+      "n": "Sensör Seçim Rehberi",
+      "d": "Robotik veya IoT uygulama gereksinimleriniz için en uygun sensörleri seçin"
+    },
+    "Embedded Systems Guide": {
+      "n": "Gömülü Sistemler Rehberi",
+      "d": "Uygun mikrodenetleyici seçimi ve donanım yazılımı mimarisiyle gömülü sistemler tasarlayın"
+    },
+    "Automation Workflow Designer": {
+      "n": "Otomasyon İş Akışı Tasarımcısı",
+      "d": "Sensörler ve aktüatörlerle endüstriyel veya ev otomasyonu iş akışları tasarlayın"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Donanım Prototip Planlayıcı",
+      "d": "Breadboard'dan PCB'ye bileşen tedariğiyle donanım prototipleri planlayın"
+    },
+    "Anxiety Management Plan": {
+      "n": "Kaygı Yönetim Planı",
+      "d": "Başa çıkma stratejileri ve tetikleyicilerle kişiselleştirilmiş bir kaygı yönetim planı oluşturun"
+    },
+    "CBT Thought Record": {
+      "n": "BDT Düşünce Kaydı",
+      "d": "Olumsuz düşünceleri sorgulamak için bilişsel davranışçı terapi düşünce kayıtları uygulayın"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Günlük Yazma İpucu Üretici",
+      "d": "Öz-değerlendirme ve duygusal işleme için anlamlı günlük yazma ipuçları oluşturun"
+    },
+    "Relationship Communication Guide": {
+      "n": "İlişki İletişim Rehberi",
+      "d": "Yapılandırılmış konuşma çerçeveleriyle ilişki iletişimini geliştirin"
+    },
+    "Boundary Setting Guide": {
+      "n": "Sınır Koyma Rehberi",
+      "d": "Kişisel ve profesyonel yaşamda sağlıklı sınırlar koymayı ve korumayı öğrenin"
+    },
+    "Grief Processing Helper": {
+      "n": "Yas Süreci Yardımcısı",
+      "d": "Şefkatli rehberlik ve pratik adımlarla yas sürecini yönetin"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Öz-Şefkat Egzersizi",
+      "d": "Dayanıklılık geliştirmek ve öz-eleştiriyi azaltmak için öz-şefkat egzersizleri uygulayın"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Duygusal Zekâ Geliştirici",
+      "d": "Daha iyi öz-farkındalık ve ilişkiler için duygusal zekâ becerileri geliştirin"
+    },
+    "Anger Management Plan": {
+      "n": "Öfke Yönetim Planı",
+      "d": "Tetikleyiciler ve yatıştırma teknikleriyle sağlıklı öfke yönetim stratejileri geliştirin"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Tükenmişlik İyileşme Planı",
+      "d": "Sınırlar, dinlenme ve kademeli yeniden katılımla yapılandırılmış bir tükenmişlik iyileşme planı oluşturun"
+    },
+    "Instant Pot Recipe": {
+      "n": "Düdüklü Tencere Tarifi",
+      "d": "Zamanlama rehberleriyle düdüklü tencere tarifleri"
+    },
+    "World Cuisine Explorer": {
+      "n": "Dünya Mutfağı Keşfi",
+      "d": "Dünya mutfaklarından otantik tarifler"
+    },
+    "Fermentation Guide": {
+      "n": "Fermantasyon Rehberi",
+      "d": "Fermente gıda tarifleri ve teknikleri"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Mangal ve Izgara Rehberi",
+      "d": "Sos ve baharat eşleştirmeli ızgara tarifleri"
+    },
+    "Bread Baking Guide": {
+      "n": "Ekmek Yapım Rehberi",
+      "d": "Mayadan bitişe zanaatkâr ekmek tarifleri"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Mantar Yetiştirme Rehberi",
+      "d": "Tohumdan hasada kapalı ortam mantar yetiştiriciliği"
+    },
+    "Permaculture Planner": {
+      "n": "Permakültür Planlayıcı",
+      "d": "Kendi kendini sürdüren bir gıda bahçesi ekosistemi tasarlayın"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Sera Kurulum Rehberi",
+      "d": "Verimli bir sera planlayın ve kurun"
+    },
+    "FSBO Selling Guide": {
+      "n": "Komisyoncusuz Ev Satış Rehberi",
+      "d": "Evinizi emlakçı olmadan adım adım satın"
+    },
+    "Investment Property Finder": {
+      "n": "Yatırım Amaçlı Mülk Bulucu",
+      "d": "Potansiyel kiralık yatırım mülklerini değerlendirin"
+    },
+    "Car Modification Guide": {
+      "n": "Araç Modifikasyon Rehberi",
+      "d": "Araç modifikasyonlarını ve yükseltmelerini planlayın"
+    },
+    "Fleet Management Planner": {
+      "n": "Filo Yönetim Planlayıcı",
+      "d": "Birden fazla aracın bakım ve maliyetlerini yönetin"
+    },
+    "Digital Nomad Guide": {
+      "n": "Dijital Göçebe Rehberi",
+      "d": "Dünyayı gezerken uzaktan çalışın"
+    },
+    "Eco-Travel Planner": {
+      "n": "Eko-Seyahat Planlayıcı",
+      "d": "Sürdürülebilir ve çevre dostu seyahatler planlayın"
+    },
+    "Product Launch Event": {
+      "n": "Ürün Lansman Etkinliği",
+      "d": "Mekândan halkla ilişkilere kadar bir ürün lansman etkinliği planlayın"
+    },
+    "Virtual Event Planner": {
+      "n": "Sanal Etkinlik Planlayıcı",
+      "d": "İlgi çekici çevrimiçi etkinlikler ve web seminerleri planlayın"
+    },
+    "College Planning Guide": {
+      "n": "Üniversite Planlama Rehberi",
+      "d": "Üniversite seçiminden mali yardıma kadar planlama yapın"
+    },
+    "Child Safety Plan": {
+      "n": "Çocuk Güvenliği Planı",
+      "d": "Kapsamlı ev ve çevrimiçi güvenlik yönergeleri"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Egzotik Evcil Hayvan Bakım Rehberi",
+      "d": "Sürüngenler, kuşlar ve egzotik evcil hayvanlar için bakım rehberleri"
+    },
+    "Pet Adoption Guide": {
+      "n": "Evcil Hayvan Sahiplenme Rehberi",
+      "d": "Evcil hayvan sahiplenme sürecini başarıyla tamamlayın"
+    },
+    "Tiny House Builder": {
+      "n": "Küçük Ev Yapımcısı",
+      "d": "Adım adım küçük bir ev planlayın ve inşa edin"
+    },
+    "Workshop Setup Guide": {
+      "n": "Atölye Kurulum Rehberi",
+      "d": "Bir ev atölyesi tasarlayın ve donatın"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Kupon Stratejisi Planlayıcı",
+      "d": "Stratejik kupon kullanımıyla tasarruflarınızı en üst düzeye çıkarın"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "İkinci El Alışveriş Rehberi",
+      "d": "İkinci el mağazalarda ve çevrimiçi ortamlarda kaliteli ürünler bulun"
+    },
+    "Theological Study Guide": {
+      "n": "Teoloji Çalışma Rehberi",
+      "d": "Teolojik kavramları ve doktrinleri derinlemesine inceleyin"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Dinlerarası Diyalog Rehberi",
+      "d": "Saygılı dinlerarası diyalogları kolaylaştırın"
+    },
+    "Marathon Training Plan": {
+      "n": "Maraton Antrenman Planı",
+      "d": "Sıfırdan 42 kilometreye komple maraton antrenmanı"
+    },
+    "Youth Sports Coach": {
+      "n": "Genç Sporcu Koçu",
+      "d": "Genç sporcu antrenmanlarını ve gelişimini planlayın"
+    },
+    "Woodworking Project": {
+      "n": "Ahşap İşçiliği Projesi",
+      "d": "Kesim listeleri ve adımlarla ahşap işçiliği projeleri planlayın"
+    },
+    "Vinyl Record Guide": {
+      "n": "Plak Koleksiyonu Rehberi",
+      "d": "Bir vinil plak koleksiyonu başlatın ve yönetin"
+    },
+    "Home Brewing Guide": {
+      "n": "Evde Bira Yapım Rehberi",
+      "d": "Baştan sona evde bira veya şarap yapın"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Finansal Özgürlük Yol Haritası",
+      "d": "Finansal bağımsızlığa giden yolunuzu çizin"
+    },
+    "Midlife Career Change": {
+      "n": "Kariyer Değişikliği Rehberi",
+      "d": "Her yaşta kariyer geçişini başarıyla yönetin"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI Duvar Kâğıdı Oluşturucu",
+      "d": "Her cihaz için çarpıcı duvar kâğıtları oluşturun"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Dövme Tasarım İstemi",
+      "d": "Yapay zekâ ile özel dövme tasarım konseptleri oluşturun"
+    },
+    "DJ Set Planner": {
+      "n": "DJ Set Planlayıcı",
+      "d": "Parça seçimi ve geçişlerle DJ setleri planlayın"
+    },
+    "Music Theory Tutor": {
+      "n": "Müzik Teorisi Eğitmeni",
+      "d": "Alıştırmalarla müzik teorisi kavramlarını öğrenin"
+    },
+    "Podcast Video Setup": {
+      "n": "Podcast Video Kurulumu",
+      "d": "Ekipmandan düzenlemeye video podcast kurulumu yapın"
+    },
+    "Wedding Video Plan": {
+      "n": "Düğün Video Planı",
+      "d": "Törenden kurguya düğün videografisi planlayın"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Anı Bölüm Yazarı",
+      "d": "Yaşam hikâyelerinden etkileyici anı bölümleri yazın"
+    },
+    "Haiku Generator": {
+      "n": "Haiku Oluşturucu",
+      "d": "Her temada haiku şiirleri oluşturun"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok İçerik Stratejisi",
+      "d": "İçerik fikirleriyle bir TikTok büyüme stratejisi oluşturun"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube Topluluk Gönderisi",
+      "d": "İlgi çekici YouTube topluluk gönderileri oluşturun"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Podcast Gelir Planı",
+      "d": "Podcast'inizden gelir elde etme stratejileri"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "AI Araç Karşılaştırma Rehberi",
+      "d": "Belirli kullanım alanları için yapay zekâ araçlarını karşılaştırın"
+    },
+    "Code Snippet Library": {
+      "n": "Kod Parçacığı Kütüphanesi",
+      "d": "Yeniden kullanılabilir kod parçacıklarını düzenleyin ve belgelendirin"
+    },
+    "Tech Stack Selector": {
+      "n": "Teknoloji Yığını Seçici",
+      "d": "Projeniz için doğru teknoloji yığınını seçin"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Gizlilik Uyumluluk Rehberi",
+      "d": "Uygulamanızın gizlilik düzenlemelerine uygunluğunu sağlayın"
+    },
+    "API Security Audit": {
+      "n": "API Güvenlik Denetimi",
+      "d": "API uç noktalarınızı güvenlik açıkları açısından denetleyin"
+    },
+    "AI Hackathon Project": {
+      "n": "AI Hackathon Projesi",
+      "d": "Yapay zekâ odaklı bir hackathon projesini uçtan uca planlayın"
+    },
+    "Mobile Game Concept": {
+      "n": "Mobil Oyun Konsepti",
+      "d": "Konseptten gelir modeline bir mobil oyun tasarlayın"
+    },
+    "Drone Photography Guide": {
+      "n": "Drone Fotoğrafçılık Rehberi",
+      "d": "Havadan fotoğraf çekimi görevlerini ve kareleri planlayın"
+    },
+    "NFT Art Collection": {
+      "n": "NFT Sanat Koleksiyonu",
+      "d": "Bir dijital sanat koleksiyonu planlayın ve oluşturun"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Serbest Çalışan Vergi Rehberi",
+      "d": "Serbest meslek vergileri ve indirimlerini yönetin"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Kripto Portföy Oluşturucu",
+      "d": "Çeşitlendirilmiş bir kripto para portföyü oluşturun"
+    },
+    "Azure Service Guide": {
+      "n": "Azure Hizmet Rehberi",
+      "d": "Azure bulut hizmetlerini seçin ve yapılandırın"
+    },
+    "Wedding Speech Writer": {
+      "n": "Düğün Konuşması Yazarı",
+      "d": "İçten düğün konuşmaları ve kadeh kaldırma konuşmaları yazın"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Kâr Amacı Gütmeyen Kuruluş Başlatma Rehberi",
+      "d": "Sıfırdan bir kâr amacı gütmeyen kuruluş kurun"
+    },
+    "Home Addition Planner": {
+      "n": "Ev Ek Yapı Planlayıcı",
+      "d": "Ruhsatlardan inşaata kadar bir ev ek yapısı planlayın"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino Proje Planlayıcı",
+      "d": "Arduino tabanlı elektronik projeleri planlayın"
+    },
+    "Digital Wellness Plan": {
+      "n": "Dijital Sağlık Planı",
+      "d": "Teknolojiyle sağlıklı bir ilişki oluşturun"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT Analiz Aracı",
+      "d": "Güçlü yönler, zayıf yönler, fırsatlar ve tehditler için stratejik analiz"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Toplantı Gündemi Oluşturucu",
+      "d": "Zaman dilimleriyle yapılandırılmış toplantı gündemleri oluşturun"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR Çerçeve Oluşturucu",
+      "d": "Ekipler için hedefler ve temel sonuçlar belirleyin"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Tedarikçi Müzakere Hazırlığı",
+      "d": "Tedarikçi ve satıcı müzakerelerine hazırlanın"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Franchise Değerlendirme Rehberi",
+      "d": "Franchise fırsatlarını sistematik olarak değerlendirin"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Uzaktan Çalışma Politikası Yazarı",
+      "d": "Kapsamlı uzaktan çalışma politikaları oluşturun"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Çeşitlilik İşe Alım Planı",
+      "d": "Kapsayıcı işe alım uygulamaları ve süreçleri oluşturun"
+    },
+    "Freelance Contract Template": {
+      "n": "Serbest Çalışma Sözleşme Şablonu",
+      "d": "Profesyonel serbest çalışma hizmet sözleşmeleri oluşturun"
+    },
+    "Personal Website Planner": {
+      "n": "Kişisel Web Sitesi Planlayıcı",
+      "d": "Profesyonel portföy sitenizi planlayın ve yapılandırın"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Aralıklı Oruç Rehberi",
+      "d": "Bir aralıklı oruç protokolü tasarlayın"
+    },
+    "Posture Improvement Plan": {
+      "n": "Duruş Düzeltme Planı",
+      "d": "Egzersizler ve alışkanlıklarla duruş sorunlarını düzeltin"
+    },
+    "Notion Template Builder": {
+      "n": "Notion Şablon Oluşturucu",
+      "d": "Her iş akışı için Notion çalışma alanı şablonları tasarlayın"
+    },
+    "Automation Workflow Builder": {
+      "n": "Otomasyon İş Akışı Oluşturucu",
+      "d": "Zapier veya Make ile otomasyon iş akışları tasarlayın"
+    },
+    "Agile Sprint Planner": {
+      "n": "Çevik Sprint Planlayıcı",
+      "d": "Hikâye puanları ve hızla çevik sprintler planlayın"
+    },
+    "Product Roadmap Builder": {
+      "n": "Ürün Yol Haritası Oluşturucu",
+      "d": "Kilometre taşları ve temalarla ürün yol haritaları oluşturun"
+    },
+    "TOEFL Prep Guide": {
+      "n": "TOEFL Hazırlık Rehberi",
+      "d": "Çalışma stratejileriyle TOEFL sınavına hazırlanın"
+    },
+    "Business English Coach": {
+      "n": "İş İngilizcesi Koçu",
+      "d": "Profesyonel İngilizce iletişimi geliştirin"
+    },
+    "Brand Identity Designer": {
+      "n": "Marka Kimliği Tasarımcısı",
+      "d": "Tutarlı marka görsel kimlik yönergeleri oluşturun"
+    },
+    "UX Research Plan": {
+      "n": "UX Araştırma Planı",
+      "d": "Dijital ürünler için kullanıcı deneyimi araştırması planlayın"
+    },
+    "Data Storytelling Guide": {
+      "n": "Veri Hikâyeciliği Rehberi",
+      "d": "Veri içgörülerini etkileyici anlatılara dönüştürün"
+    },
+    "AI Model Evaluation": {
+      "n": "AI Model Değerlendirmesi",
+      "d": "Makine öğrenimi model performansını değerlendirin ve karşılaştırın"
+    },
+    "3D Printing Project": {
+      "n": "3D Baskı Projesi",
+      "d": "Tasarımdan baskıya 3D baskı projeleri planlayın"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Elektrik Devresi Tasarımcısı",
+      "d": "Bileşen seçimiyle elektrik devreleri tasarlayın"
+    },
+    "API Design Guide": {
+      "n": "API Tasarım Rehberi",
+      "d": "RESTful veya GraphQL API'ler için temiz API tasarımları oluşturun"
+    },
+    "System Architecture Planner": {
+      "n": "Sistem Mimarisi Planlayıcı",
+      "d": "Uygun tasarım desenleri ve bileşenlerle sistem mimarisi tasarlayın"
+    },
+    "Code Review Checklist": {
+      "n": "Kod İnceleme Kontrol Listesi",
+      "d": "Kod kalitesini ve en iyi uygulamaları sağlamak için kod inceleme kontrol listeleri oluşturun"
+    },
+    "Testing Strategy Planner": {
+      "n": "Test Stratejisi Planlayıcı",
+      "d": "Birim, entegrasyon ve uçtan uca testler dahil kapsamlı test stratejileri tasarlayın"
+    },
+    "DevOps Pipeline Guide": {
+      "n": "DevOps İş Hattı Rehberi",
+      "d": "Test ve dağıtım otomasyonu ile CI/CD iş hatları kurun"
+    },
+    "Git Workflow Guide": {
+      "n": "Git İş Akışı Rehberi",
+      "d": "Dallanma ve birleştirme en iyi uygulamalarıyla Git iş akışları tasarlayın"
+    },
+    "Agile Sprint Planning": {
+      "n": "Çevik Sprint Planlaması",
+      "d": "Sprint döngüleri ve hız takibiyle çevik sprint planlaması yapın"
+    },
+    "Bug Triage Process": {
+      "n": "Hata Önceliklendirme Süreci",
+      "d": "Hataları verimli bir şekilde önceliklendirmek ve çözmek için hata triyaj süreçleri oluşturun"
+    },
+    "Accessibility Audit Guide": {
+      "n": "Erişilebilirlik Denetim Rehberi",
+      "d": "WCAG uyumluluğu ve kapsayıcı tasarım için erişilebilirlik denetimleri gerçekleştirin"
+    },
+    "Mobile App Architecture": {
+      "n": "Mobil Uygulama Mimarisi",
+      "d": "Platform en iyi uygulamalarını izleyerek mobil uygulama mimarileri tasarlayın"
+    },
+    "API Rate Limiting Strategy": {
+      "n": "API Hız Sınırlama Stratejisi",
+      "d": "API'leri kötüye kullanımdan korumak için hız sınırlama ve kısıtlama stratejileri tasarlayın"
+    },
+    "Technical Debt Assessment": {
+      "n": "Teknik Borç Değerlendirmesi",
+      "d": "Teknik borcu değerlendirin, önceliklendirin ve çözüm planları oluşturun"
+    },
+    "Caching Strategy Guide": {
+      "n": "Önbellekleme Stratejisi Rehberi",
+      "d": "Performans ve tutarlılık için önbellekleme stratejileri tasarlayın"
+    },
+    "Design System Builder": {
+      "n": "Tasarım Sistemi Oluşturucu",
+      "d": "Bileşenler ve yönergelerle tutarlı UI tasarım sistemleri oluşturun"
+    },
+    "Error Budget Calculator": {
+      "n": "Hata Bütçesi Hesaplayıcı",
+      "d": "SRE ilkelerini kullanarak hata bütçelerini hesaplayın ve takip edin"
+    },
+    "Feature Flag Strategy": {
+      "n": "Özellik Bayrağı Stratejisi",
+      "d": "Güvenli dağıtımlar ve deneyler için özellik bayrakları uygulayın"
+    },
+    "GraphQL Schema Designer": {
+      "n": "GraphQL Şema Tasarımcısı",
+      "d": "Sorgu optimizasyonu ve tip güvenliğiyle GraphQL şemaları tasarlayın"
+    },
+    "WebSocket Architecture": {
+      "n": "WebSocket Mimarisi",
+      "d": "Gerçek zamanlı uygulamalar için WebSocket iletişim mimarileri tasarlayın"
+    },
+    "Search Implementation Guide": {
+      "n": "Arama Uygulama Rehberi",
+      "d": "İndeksleme ve alaka düzeni ayarlamasıyla arama işlevselliği uygulayın"
+    },
+    "Data Migration Planner": {
+      "n": "Veri Taşıma Planlayıcı",
+      "d": "Doğrulama ve geri alma prosedürleriyle veri taşımalarını planlayın"
+    },
+    "Authentication System Design": {
+      "n": "Kimlik Doğrulama Sistemi Tasarımı",
+      "d": "OAuth, JWT ve MFA dahil güvenli kimlik doğrulama sistemleri tasarlayın"
+    },
+    "Event-Driven Architecture": {
+      "n": "Olay Güdümlü Mimari",
+      "d": "Mesaj kuyrukları ve olay akışlarıyla olay güdümlü sistemler tasarlayın"
+    },
+    "Technical RFC Template": {
+      "n": "Teknik RFC Şablonu",
+      "d": "Mühendislik kararları için yapılandırılmış teknik RFC belgeleri yazın"
+    },
+    "Infrastructure Cost Calculator": {
+      "n": "Altyapı Maliyet Hesaplayıcı",
+      "d": "Farklı dağıtım seçenekleri için altyapı maliyetlerini tahmin edin ve karşılaştırın"
+    },
+    "Runbook Creator": {
+      "n": "Çalıştırma Kitabı Oluşturucu",
+      "d": "Operasyonel prosedürler ve olay müdahalesi için çalıştırma kitapları oluşturun"
+    },
+    "SLA Definition Guide": {
+      "n": "SLA Tanımlama Rehberi",
+      "d": "Ölçümler ve izleme ile hizmet seviyesi sözleşmeleri tanımlayın"
+    },
+    "Deployment Checklist": {
+      "n": "Dağıtım Kontrol Listesi",
+      "d": "Güvenli ve güvenilir dağıtımlar için kapsamlı dağıtım kontrol listeleri oluşturun"
+    },
+    "On-Call Rotation Planner": {
+      "n": "Nöbet Rotasyonu Planlayıcı",
+      "d": "Adil ve etkili nöbet rotasyonları ve eskalasyon politikaları tasarlayın"
+    },
+    "Post-Mortem Template": {
+      "n": "Olay Sonrası Analiz Şablonu",
+      "d": "Suçlama yapmayan olay sonrası analizler yapın ve iyileştirme planları oluşturun"
+    },
+    "Capacity Planning Guide": {
+      "n": "Kapasite Planlama Rehberi",
+      "d": "Büyüme ve kaynak gereksinimleri için altyapı kapasitesi planlayın"
+    },
+    "Service Mesh Guide": {
+      "n": "Hizmet Ağı Rehberi",
+      "d": "Mikro hizmetler arası iletişim yönetimi için hizmet ağları uygulayın"
+    },
+    "Database Optimization Guide": {
+      "n": "Veritabanı Optimizasyonu Rehberi",
+      "d": "Sorgu optimizasyonu ve indeksleme stratejileriyle veritabanı performansını iyileştirin"
+    },
+    "Release Management Plan": {
+      "n": "Sürüm Yönetim Planı",
+      "d": "Sürüm oluşturma ve dağıtım koordinasyonuyla sürüm yönetimi süreçleri oluşturun"
+    },
+    "Observability Strategy": {
+      "n": "Gözlemlenebilirlik Stratejisi",
+      "d": "Günlükler, metrikler ve izleme ile gözlemlenebilirlik stratejileri tasarlayın"
+    },
+    "Zero Downtime Migration": {
+      "n": "Sıfır Kesinti Taşıma",
+      "d": "Hizmet sürekliliğini koruyarak sıfır kesinti taşımaları planlayın ve gerçekleştirin"
+    },
+    "Multi-Region Architecture": {
+      "n": "Çoklu Bölge Mimarisi",
+      "d": "Yüksek erişilebilirlik ve düşük gecikme için çoklu bölge mimarileri tasarlayın"
+    },
+    "Disaster Recovery Testing": {
+      "n": "Felaket Kurtarma Testi",
+      "d": "İş sürekliliğini sağlamak için felaket kurtarma testleri planlayın ve gerçekleştirin"
+    },
+    "Blue-Green Deployment Guide": {
+      "n": "Mavi-Yeşil Dağıtım Rehberi",
+      "d": "Sıfır kesinti güncellemeleri için mavi-yeşil dağıtım stratejileri uygulayın"
+    },
+    "Chaos Engineering Plan": {
+      "n": "Kaos Mühendisliği Planı",
+      "d": "Sistem dayanıklılığını test etmek için kaos mühendisliği deneyleri tasarlayın"
+    },
+    "Cost Optimization Review": {
+      "n": "Maliyet Optimizasyonu İncelemesi",
+      "d": "Bulut ve altyapı maliyetlerini analiz edin ve optimize edin"
+    },
+    "Platform Engineering Guide": {
+      "n": "Platform Mühendisliği Rehberi",
+      "d": "Geliştirici verimliliği ve self-servis yetenekler için dahili platformlar oluşturun"
+    },
+    "Compliance Automation Guide": {
+      "n": "Uyumluluk Otomasyonu Rehberi",
+      "d": "Sürekli doğrulama ve raporlama ile uyumluluk kontrollerini otomatikleştirin"
+    },
+    "Internal Documentation Wiki": {
+      "n": "Dahili Belgeleme Vikisi",
+      "d": "Ekip ve organizasyon için yapılandırılmış dahili dokümantasyon oluşturun"
+    },
+    "Technical Onboarding Guide": {
+      "n": "Teknik Oryantasyon Rehberi",
+      "d": "Yeni mühendislerin hızla alışması için teknik oryantasyon programları oluşturun"
+    },
+    "Dependency Management Plan": {
+      "n": "Bağımlılık Yönetim Planı",
+      "d": "Güncelleme ve güvenlik yamasıyla proje bağımlılıklarını yönetin"
+    },
+    "Site Reliability Checklist": {
+      "n": "Site Güvenilirliği Kontrol Listesi",
+      "d": "Üretime hazırlık ve güvenilirlik kontrol listeleriyle hizmet güvenilirliğini sağlayın"
+    },
+    "Scalability Assessment": {
+      "n": "Ölçeklenebilirlik Değerlendirmesi",
+      "d": "Sistem ölçeklenebilirliğini değerlendirin ve darboğazları belirleyin"
+    },
+    "Tech Stack Migration": {
+      "n": "Teknoloji Yığını Taşıma",
+      "d": "Risk azaltma ve zaman çizelgeleriyle teknoloji yığını taşımalarını planlayın"
+    },
+    "Open Source Contribution Guide": {
+      "n": "Açık Kaynak Katkı Rehberi",
+      "d": "Etkili açık kaynak katkıları için yapılandırılmış yaklaşımlar oluşturun"
+    },
+    "Side Hustle Finder": {
+      "n": "Ek Gelir Bulucu",
+      "d": "Becerilerinize göre kişiselleştirilmiş ek gelir fikirleri keşfedin"
+    },
+    "Passive Income Blueprint": {
+      "n": "Pasif Gelir Planı",
+      "d": "Durumunuza uygun bir pasif gelir stratejisi oluşturun"
+    },
+    "Savings Challenge Generator": {
+      "n": "Tasarruf Meydan Okuması Oluşturucu",
+      "d": "Özel bir para biriktirme meydan okuması planı oluşturun"
+    },
+    "Negotiate Any Bill": {
+      "n": "Fatura Müzakerecisi",
+      "d": "Düzenli faturalarınızı müzakere etmek ve düşürmek için senaryolar"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy Mağaza Başlatıcı",
+      "d": "Bir Etsy mağazası başlatmak ve büyütmek için adım adım plan"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube Kanal Planlayıcı",
+      "d": "Kârlı bir YouTube kanalı planlayın ve başlatın"
+    },
+    "Rental Income Analyzer": {
+      "n": "Kira Geliri Analizörü",
+      "d": "Potansiyel kiralık mülk getirilerini analiz edin"
+    },
+    "Online Course Creator": {
+      "n": "Çevrimiçi Kurs Oluşturucu",
+      "d": "Satmak için bir çevrimiçi kurs planlayın ve yapılandırın"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Kupon ve Cashback Maksimizörü",
+      "d": "Kuponlar, cashback ve ödüllerle tasarrufları maksimize edin"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Dropshipping Mağaza Kurulumu",
+      "d": "Sıfırdan bir dropshipping işi planlayın"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Gig Ekonomisi Optimizörü",
+      "d": "Uber, DoorDash gibi gig uygulamalarından kazançları maksimize edin"
+    }
+  },
+  "fields": {
+    "budget": "bütçe",
+    "topic": "konu",
+    "duration": "süre",
+    "level": "seviye",
+    "style": "stil",
+    "timeline": "zaman çizelgesi",
+    "product": "ürün",
+    "audience": "hedef kitle",
+    "tone": "ton",
+    "industry": "sektör",
+    "theme": "tema",
+    "platform": "platform",
+    "location": "konum",
+    "experience": "deneyim",
+    "genre": "tür",
+    "frequency": "sıklık",
+    "goals": "hedefler",
+    "format": "biçim",
+    "season": "mevsim",
+    "projectName": "proje adı",
+    "showSteps": "adımları göster",
+    "goal": "hedef",
+    "destination": "varış yeri",
+    "subject": "konu",
+    "equipment": "ekipman",
+    "targetAudience": "hedef kitle",
+    "language": "dil",
+    "problem": "sorun",
+    "categories": "kategoriler",
+    "gradeLevel": "sınıf seviyesi",
+    "mood": "ruh hali",
+    "role": "rol",
+    "companyName": "şirket adı",
+    "company": "şirket",
+    "title": "başlık",
+    "setting": "ortam",
+    "date": "tarih",
+    "environment": "çevre",
+    "state": "eyalet",
+    "jurisdiction": "yetki alanı",
+    "priorities": "öncelikler",
+    "target_audience": "hedef kitle",
+    "deadline": "son tarih",
+    "childAge": "çocuk yaşı",
+    "guestCount": "misafir sayısı",
+    "timeframe": "zaman dilimi",
+    "interests": "ilgi alanları",
+    "concerns": "endişeler",
+    "region": "bölge",
+    "tools": "araçlar",
+    "category": "kategori",
+    "constraints": "kısıtlamalar",
+    "projectType": "proje türü",
+    "venue": "mekan",
+    "focusArea": "odak alanı",
+    "targetLanguage": "hedef dil",
+    "framework": "çerçeve",
+    "domain": "alan",
+    "purpose": "amaç",
+    "age": "yaş",
+    "teamSize": "ekip büyüklüğü",
+    "researchQuestion": "araştırma sorusu",
+    "context": "bağlam",
+    "output_format": "çıktı biçimi",
+    "task": "görev",
+    "channels": "kanallar",
+    "servings": "porsiyon",
+    "skillLevel": "beceri seviyesi",
+    "occasion": "etkinlik",
+    "climate": "iklim",
+    "zone": "bölge",
+    "activities": "aktiviteler",
+    "attendees": "katılımcılar",
+    "objectives": "hedefler",
+    "characters": "karakterler",
+    "length": "uzunluk",
+    "niche": "niş",
+    "scope": "kapsam",
+    "stakeholders": "paydaşlar",
+    "focus": "odak",
+    "size": "boyut",
+    "homeType": "ev tipi",
+    "sport": "spor",
+    "application": "uygulama",
+    "department": "departman",
+    "cta": "harekete geçirici mesaj",
+    "word_count": "kelime sayısı",
+    "period": "dönem",
+    "severity": "ciddiyet",
+    "difficulty": "zorluk",
+    "skills": "beceriler",
+    "materials": "malzemeler",
+    "methodology": "metodoloji",
+    "cuisine": "mutfak",
+    "lifestyle": "yaşam tarzı",
+    "year": "yıl",
+    "petType": "evcil hayvan türü",
+    "complexity": "karmaşıklık",
+    "deliverables": "çıktılar",
+    "dataType": "veri türü",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

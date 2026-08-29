@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "全部",
+    "free": "⭐ 免费",
+    "money": "💰 商业",
+    "coding": "💻 编程",
+    "ai": "🤖 AI",
+    "writing": "✍️ 写作",
+    "marketing": "📢 营销",
+    "sales": "🤝 销售",
+    "school": "📚 教育",
+    "research": "🔬 研究",
+    "career": "🚀 职业",
+    "legal": "⚖️ 法律",
+    "finance": "📊 金融",
+    "health": "🏥 健康",
+    "cooking": "🍳 烹饪",
+    "garden": "🌱 园艺",
+    "realestate": "🏠 房地产",
+    "auto": "🚗 汽车",
+    "travel": "✈️ 旅行",
+    "image": "🎨 图像AI",
+    "music": "🎵 音乐",
+    "video": "🎬 视频",
+    "social": "📱 社交",
+    "startup": "🦄 创业",
+    "ecommerce": "🛒 电商",
+    "productivity": "⏱ 效率",
+    "diy": "🔨 DIY",
+    "event": "🎉 活动",
+    "parent": "👶 育儿",
+    "pets": "🐾 宠物",
+    "sports": "⚽ 运动",
+    "wellness": "🧘 养生",
+    "language": "🌍 语言",
+    "security": "🔒 安全",
+    "datascience": "📈 数据科学",
+    "chemistry": "🧪 化学",
+    "biology": "🧬 生物",
+    "physics": "⚛️ 物理",
+    "math": "🔢 数学",
+    "makemoney": "💰 赚钱"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "总结工具",
+      "d": "将任何内容压缩为清晰的要点摘要"
+    },
+    "Technical Documentation": {
+      "n": "技术文档",
+      "d": "为 API 和功能创建清晰的技术文档"
+    },
+    "YouTube Script": {
+      "n": "YouTube 脚本",
+      "d": "完整的视频脚本，包含挂钩、章节、CTA、幕后花絮列表"
+    },
+    "TikTok Generator": {
+      "n": "TikTok 生成器",
+      "d": "针对 TikTok 优化的短视频脚本"
+    },
+    "LinkedIn Post Writer": {
+      "n": "LinkedIn 发帖作者",
+      "d": "滚动停止 LinkedIn 帖子可提高参与度"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F 博客文章生成器",
+      "d": "SEO 优化的长篇博客文章"
+    },
+    "SEO Article Writer": {
+      "n": "SEO 文章作家",
+      "d": "为在 Google 上排名而构建的关键字丰富的文章"
+    },
+    "Podcast Episode Outline": {
+      "n": "播客剧集大纲",
+      "d": "结构化的剧集大纲和谈话要点"
+    },
+    "Newsletter Writer": {
+      "n": "时事通讯作者",
+      "d": "吸引读者实际打开的电子邮件通讯"
+    },
+    "Product Review Writer": {
+      "n": "产品评论作家",
+      "d": "平衡、可信的产品评论"
+    },
+    "Social Media Calendar": {
+      "n": "社交媒体日历",
+      "d": "30 天内容日历，包含每个平台的帖子创意"
+    },
+    "Executive Summary": {
+      "n": "执行摘要",
+      "d": "来自长文档的一页执行摘要"
+    },
+    "Customer Support Response": {
+      "n": "客户支持响应",
+      "d": "善解人意、品牌化的客户支持回复"
+    },
+    "Business Proposal": {
+      "n": "商业提案",
+      "d": "通过范围和定价赢得客户提案"
+    },
+    "Decision Memo": {
+      "n": "决定备忘录",
+      "d": "带有选项和建议的清晰决策备忘录"
+    },
+    "Stakeholder Update": {
+      "n": "利益相关者更新",
+      "d": "为利益相关者提供简明的项目状态更新"
+    },
+    "Code Review Assistant": {
+      "n": "代码审查助理",
+      "d": "检查代码中的错误、风格和最佳实践"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / 代码注释",
+      "d": "JavaScript 和 TypeScript 的 JSDoc 注释"
+    },
+    "Architecture Decision Record": {
+      "n": "架构决策记录",
+      "d": "记录技术决策的正式 ADR"
+    },
+    "User Story Writer": {
+      "n": "用户故事作家",
+      "d": "具有接受标准的敏捷用户故事"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 验收标准",
+      "d": "小黄瓜式的用户故事接受标准"
+    },
+    "PR Description Writer": {
+      "n": "公关描述作者",
+      "d": "清晰的 PR 描述以及上下文和测试说明"
+    },
+    "Unit Test Generator": {
+      "n": "单元测试生成器",
+      "d": "任何函数的边缘情况单元测试"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F 代码重构顾问",
+      "d": "重构代码以提高可读性和性能"
+    },
+    "SQL Query Builder": {
+      "n": "SQL 查询生成器",
+      "d": "自然语言到优化的 SQL 查询"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes 配置生成器",
+      "d": "快速诊断并修复 K8s 问题"
+    },
+    "Postmortem Report": {
+      "n": "事后报告",
+      "d": "带有时间表和行动项目的无过失事后分析"
+    },
+    "Release Notes Writer": {
+      "n": "发行说明作者",
+      "d": "来自提交消息的用户友好的发行说明"
+    },
+    "Prompt Optimizer": {
+      "n": "提示优化器",
+      "d": "改进任何 AI 提示以获得更好、更精确的输出"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "思想链构建器",
+      "d": "为复杂任务构建多步骤推理提示"
+    },
+    "RAG System Prompt": {
+      "n": "RAG系统提示",
+      "d": "检索增强生成提示模板"
+    },
+    "Eval Dataset Creator": {
+      "n": "评估数据集创建器",
+      "d": "生成用于 AI 模型测试的评估数据集"
+    },
+    "Prompt A/B Tester": {
+      "n": "提示 A/B 测试仪",
+      "d": "生成提示的 A/B 变体以比较性能"
+    },
+    "Multi-Model Comparison": {
+      "n": "多型号比较",
+      "d": "比较 AI 模型输出的框架"
+    },
+    "Resume Tailoring": {
+      "n": "简历定制",
+      "d": "根据特定的职位描述定制您的简历"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F 求职信生成器",
+      "d": "获得面试机会的引人注目的求职信"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn 个人资料优化器",
+      "d": "为招聘人员优化您的 LinkedIn"
+    },
+    "Interview Coach": {
+      "n": "面试教练",
+      "d": "练习任何职位的面试问答"
+    },
+    "Salary Negotiation Script": {
+      "n": "薪资谈判脚本",
+      "d": "谈判高薪的脚本和策略"
+    },
+    "Career Roadmap Planner": {
+      "n": "职业路线规划师",
+      "d": "具有里程碑的 12 个月职业发展计划"
+    },
+    "Objection Handler": {
+      "n": "异议处理程序",
+      "d": "处理常见销售异议的脚本"
+    },
+    "Landing Page Copy": {
+      "n": "登陆页面副本",
+      "d": "高转化着陆页文案"
+    },
+    "Google Ads Copy": {
+      "n": "谷歌广告文案",
+      "d": "高点击率 Google 搜索广告文案"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram 广告",
+      "d": "可转化的 Facebook 和 Instagram 广告文案"
+    },
+    "Marketing Campaign Brief": {
+      "n": "营销活动简介",
+      "d": "完整的营销活动，包括渠道和时间表"
+    },
+    "Customer Persona Builder": {
+      "n": "客户角色构建器",
+      "d": "营销和产品的详细买家角色"
+    },
+    "Value Proposition Canvas": {
+      "n": "价值主张画布",
+      "d": "清晰、引人注目的价值主张"
+    },
+    "Product Launch Plan": {
+      "n": "产品发布计划",
+      "d": "产品发布的上市计划"
+    },
+    "Study Guide Creator": {
+      "n": "学习指南创建者",
+      "d": "将任何主题变成结构化学习指南"
+    },
+    "Flashcard Creator": {
+      "n": "抽认卡创建器",
+      "d": "抽认卡问答集可快速记忆"
+    },
+    "Quiz Generator": {
+      "n": "测验生成器",
+      "d": "多项选择题和简答题"
+    },
+    "Lesson Plan Builder": {
+      "n": "课程计划生成器",
+      "d": "包含活动和评估的详细课程计划"
+    },
+    "Research Notes Organizer": {
+      "n": "研究笔记组织者",
+      "d": "将研究笔记整理成结构化大纲"
+    },
+    "Essay Outline Generator": {
+      "n": "论文大纲生成器",
+      "d": "结构化论文大纲，包含论文和论点"
+    },
+    "Literature Review Assistant": {
+      "n": "文献综述助理",
+      "d": "学术文献综述与综合"
+    },
+    "Thesis Statement Builder": {
+      "n": "论文陈述生成器",
+      "d": "强有力的、有争议的论文陈述"
+    },
+    "Exam Prep Planner": {
+      "n": "考试准备计划",
+      "d": "个性化考试学习安排"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\\\u2696\\uFE0F 合同摘要",
+      "d": "简明英语合同摘要。不是法律建议。"
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\\\u2696\\uFE0F 合同风险审查",
+      "d": "识别有风险的条款。不是法律建议。"
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA 分析器",
+      "d": "NDA 条款细目。不是法律建议。"
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\\\u2696\\uFE0F 政策起草助理",
+      "d": "起草内部政策。不是法律建议。"
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\\\u2696\\uFE0F 合规检查表",
+      "d": "按框架列出的合规性检查表。不是法律建议。"
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F 服务条款审核者",
+      "d": "标记 ToS 风险。不是法律建议。"
+    },
+    "Budget Planner": {
+      "n": "预算规划",
+      "d": "个人或企业预算计划。不是财务建议。"
+    },
+    "Earnings Call Summarizer": {
+      "n": "收益电话会议摘要",
+      "d": "财报电话会议的主要要点。不是财务建议。"
+    },
+    "Investment Thesis Builder": {
+      "n": "投资论文生成器",
+      "d": "结构性投资论文。不是财务建议。"
+    },
+    "Financial Analysis Report": {
+      "n": "财务分析报告",
+      "d": "分析财务状况。不是财务建议。"
+    },
+    "Expense Categorizer": {
+      "n": "费用分类器",
+      "d": "对费用进行分类和分析。不是财务建议。"
+    },
+    "SOAP Note Generator": {
+      "n": "SOAP 注释生成器",
+      "d": "临床肥皂笔记。不是医疗建议。"
+    },
+    "Clinical Case Summary": {
+      "n": "临床病例总结",
+      "d": "结构临床笔记。不是医疗建议。"
+    },
+    "Patient Education Writer": {
+      "n": "患者教育作家",
+      "d": "用通俗易懂的语言进行患者教育。不是医疗建议。"
+    },
+    "Medical Research Summarizer": {
+      "n": "医学研究总结",
+      "d": "总结研究论文。不是医疗建议。"
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "鉴别诊断助手",
+      "d": "组织鉴别诊断。不是医疗建议。"
+    },
+    "Creative Storyteller": {
+      "n": "创意讲故事",
+      "d": "生成创意故事和叙述"
+    },
+    "Ad Copy Generator": {
+      "n": "广告文案生成器",
+      "d": "适用于 Google、Meta、LinkedIn 的高转化文案"
+    },
+    "Bug Report Writer": {
+      "n": "错误报告作家",
+      "d": "撰写清晰、可重现的错误报告"
+    },
+    "Social Media Caption": {
+      "n": "社交媒体标题",
+      "d": "为任何平台生成滚动停止字幕"
+    },
+    "Research Paper Abstract": {
+      "n": "研究论文摘要",
+      "d": "撰写结构化学术摘要"
+    },
+    "Translation Expert": {
+      "n": "翻译专家",
+      "d": "翻译带有上下文和细微差别的文本"
+    },
+    "Data Analyst": {
+      "n": "数据分析师",
+      "d": "分析数据并提供可行的见解"
+    },
+    "Recipe Generator": {
+      "n": "配方生成器",
+      "d": "根据您的喜好和饮食需求生成定制食谱"
+    },
+    "Meal Planner": {
+      "n": "膳食计划",
+      "d": "计划一整周的均衡膳食，考虑多样性和营养"
+    },
+    "Grocery List Builder": {
+      "n": "购物清单生成器",
+      "d": "根据您计划的膳食和食品储藏室的需求建立一个有组织的杂货清单"
+    },
+    "Pantry Recipe Finder": {
+      "n": "食品储藏室食谱查找器",
+      "d": "使用您手头已有的食材寻找美味食谱"
+    },
+    "Nutrition Calculator": {
+      "n": "营养计算器",
+      "d": "计算任何食谱或膳食组合的详细营养信息"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "成分替代指南",
+      "d": "寻找缺失或受限成分的完美替代品"
+    },
+    "Batch Cooking Planner": {
+      "n": "批量烹饪计划",
+      "d": "计划高效的批量烹饪课程以节省一周的时间"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "鸡尾酒配方创建者",
+      "d": "为任何场合创建和定制鸡尾酒配方"
+    },
+    "Baking Conversion Helper": {
+      "n": "烘焙转换助手",
+      "d": "在单位之间转换烘焙测量值并向上或向下缩放食谱"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "特定饮食食谱查找器",
+      "d": "查找适合您特定饮食计划或营养目标的食谱"
+    },
+    "Slow Cooker Recipe": {
+      "n": "慢炖锅食谱",
+      "d": "获取完美定时的慢炖锅食谱，实现放手烹饪"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "空气炸锅食谱创建者",
+      "d": "在完美的时机创造香脆可口的空气炸锅食谱"
+    },
+    "Smoothie Builder": {
+      "n": "冰沙生成器",
+      "d": "为任何目标打造营养美味的冰沙食谱"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "酱汁和调料创造者",
+      "d": "从头开始制作自制酱汁和调料"
+    },
+    "Spice Blend Guide": {
+      "n": "香料混合指南",
+      "d": "为任何菜肴或菜肴类型创建定制香料混合物"
+    },
+    "Food Pairing Expert": {
+      "n": "食物搭配专家",
+      "d": "发现高级膳食的理想食物和风味搭配"
+    },
+    "Holiday Menu Planner": {
+      "n": "假日菜单规划",
+      "d": "计划一个完整的假期菜单，包括时间表和购物清单"
+    },
+    "Leftover Makeover": {
+      "n": "剩余改造",
+      "d": "用创意将剩菜变成令人兴奋的新餐"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "儿童友好餐点",
+      "d": "制作孩子们真正喜欢吃的健康膳食"
+    },
+    "Date Night Dinner": {
+      "n": "约会之夜晚餐",
+      "d": "计划一顿令人印象深刻的晚餐，在家里度过一个浪漫的夜晚"
+    },
+    "Budget Meal Planner": {
+      "n": "预算膳食计划",
+      "d": "在预算紧张的情况下制作美味佳肴而不牺牲营养"
+    },
+    "Vegan Recipe Converter": {
+      "n": "素食食谱转换器",
+      "d": "将任何传统食谱转换为美味的素食版本"
+    },
+    "Dessert Creator": {
+      "n": "甜点创作者",
+      "d": "为任何技能水平和场合设计定制甜点食谱"
+    },
+    "Appetizer Planner": {
+      "n": "开胃菜计划",
+      "d": "为聚会和聚会策划完美的开胃菜"
+    },
+    "Food Prep Timeline": {
+      "n": "食物准备时间表",
+      "d": "创建详细的烹饪时间表，以便立即准备好一切"
+    },
+    "Plant Care Guide": {
+      "n": "植物护理指南",
+      "d": "获取您收藏的任何植物的个性化护理说明"
+    },
+    "Garden Planner": {
+      "n": "花园规划师",
+      "d": "设计和规划您的花园布局，以实现最大产量和美观"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "害虫诊断工具",
+      "d": "通过有机处理方案识别花园病虫害"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "季节性种植日历",
+      "d": "确切地知道何时在您的种植区种植每种作物"
+    },
+    "Vegetable Garden Planner": {
+      "n": "菜园规划",
+      "d": "规划一个多产的菜园，进行同伴种植和轮作"
+    },
+    "Indoor Plant Guide": {
+      "n": "室内植物指南",
+      "d": "选择并照顾适合您空间的完美室内植物"
+    },
+    "Herb Garden Starter": {
+      "n": "香草园入门",
+      "d": "在专家指导下，在室内或室外建立一个欣欣向荣的药草花园"
+    },
+    "Composting Guide": {
+      "n": "堆肥指南",
+      "d": "启动并维护肥沃花园土壤的堆肥系统"
+    },
+    "Landscape Design Helper": {
+      "n": "景观设计好帮手",
+      "d": "为您的房产设计美丽的景观规划"
+    },
+    "Raised Bed Planner": {
+      "n": "高架床规划器",
+      "d": "为您的空间设计和建造完美的高架花园床"
+    },
+    "Fruit Tree Guide": {
+      "n": "果树指南",
+      "d": "选择并照顾适合您的气候和空间的果树"
+    },
+    "Container Garden Planner": {
+      "n": "集装箱花园规划师",
+      "d": "为任何空间打造美丽且富有成效的容器花园"
+    },
+    "Pollinator Garden": {
+      "n": "传粉者花园",
+      "d": "设计一个吸引蜜蜂、蝴蝶和有益昆虫的花园"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "耐旱花园",
+      "d": "规划一个节水花园，只需最少的灌溉就能茁壮成长"
+    },
+    "Soil Amendment Guide": {
+      "n": "土壤改良指南",
+      "d": "测试并改善您的花园土壤以获得最佳植物健康"
+    },
+    "Seed Starting Calendar": {
+      "n": "种子开始日历",
+      "d": "为成功的生长季节规划您的种子开始时间表"
+    },
+    "Garden Layout Designer": {
+      "n": "花园布局设计师",
+      "d": "创建一个具有适当间距和阳光照射的优化花园布局"
+    },
+    "Water Schedule Planner": {
+      "n": "水表计划",
+      "d": "为您的花园和草坪制定高效的浇水计划"
+    },
+    "Plant Problem Solver": {
+      "n": "工厂问题解决者",
+      "d": "根据专家建议诊断和治疗常见植物问题"
+    },
+    "Pruning Guide": {
+      "n": "修剪指南",
+      "d": "了解何时以及如何修剪任何植物以保持健康和美丽"
+    },
+    "Home Buying Checklist": {
+      "n": "购房清单",
+      "d": "购房流程的完整分步清单"
+    },
+    "Apartment Comparison Tool": {
+      "n": "公寓比较工具",
+      "d": "并排比较公寓，找到最适合您的出租"
+    },
+    "Rental Application Helper": {
+      "n": "租赁申请助手",
+      "d": "准备一份对房东来说很有吸引力的强有力的租赁申请"
+    },
+    "Home Inspection Questions": {
+      "n": "房屋检查问题",
+      "d": "房屋检查期间要问的基本问题"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "抵押贷款比较计算器",
+      "d": "比较抵押贷款选项，找到最适合您情况的交易"
+    },
+    "First-Time Buyer Guide": {
+      "n": "首次购买者指南",
+      "d": "充满信心地购买首次购房的完整指南"
+    },
+    "Neighborhood Research": {
+      "n": "邻里研究",
+      "d": "研究并比较社区，找到最适合您的"
+    },
+    "Home Value Estimator": {
+      "n": "房屋价值估算器",
+      "d": "使用可比较的销售和市场数据估计您的房屋价值"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "租赁协议审核员",
+      "d": "查看并理解租赁协议中的关键条款"
+    },
+    "Moving Checklist": {
+      "n": "搬家清单",
+      "d": "具有时间线和任务管理功能的综合搬家清单"
+    },
+    "Property Investment Analyzer": {
+      "n": "房地产投资分析仪",
+      "d": "分析出租物业的投资回报潜力"
+    },
+    "Renovation Budget Planner": {
+      "n": "装修预算规划",
+      "d": "规划和预算家居装修项目，并提供详细的成本估算"
+    },
+    "House Hunting Scorecard": {
+      "n": "找房记分卡",
+      "d": "在找房过程中对房屋进行评分和排名"
+    },
+    "Down Payment Calculator": {
+      "n": "首付计算器",
+      "d": "计算您购房的首付选项和储蓄计划"
+    },
+    "Home Maintenance Schedule": {
+      "n": "上门维护时间表",
+      "d": "创建季节性家庭维护计划以保护您的投资"
+    },
+    "Rental Property Analysis": {
+      "n": "出租物业分析",
+      "d": "通过财务预测评估出租物业的机会"
+    },
+    "Home Staging Tips": {
+      "n": "家庭舞台技巧",
+      "d": "布置您的房屋以更快地以更高的价格出售"
+    },
+    "Realtor Interview Questions": {
+      "n": "房地产经纪人面试问题",
+      "d": "面试房地产经纪人时要问的关键问题"
+    },
+    "Closing Cost Estimator": {
+      "n": "结算成本估算器",
+      "d": "估算您的房地产交易的所有成交成本"
+    },
+    "HOA Assessment Guide": {
+      "n": "HOA评估指南",
+      "d": "购买前评估 HOA 费用、规则和财务状况"
+    },
+    "Car Buying Assistant": {
+      "n": "购车助手",
+      "d": "自信地完成购车流程并省钱"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "车辆比较工具",
+      "d": "并排比较车辆的规格、价格和功能"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "维护计划计划",
+      "d": "创建个性化车辆保养计划，延长汽车寿命"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "维修估算分析器",
+      "d": "评估汽车维修估算并找到公平的服务定价"
+    },
+    "Road Trip Planner": {
+      "n": "公路旅行计划",
+      "d": "规划完美的公路旅行，计算停靠点、燃油和时间"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "二手车检查清单",
+      "d": "彻底检查清单，让您放心购买二手车"
+    },
+    "Auto Insurance Comparison": {
+      "n": "汽车保险比较",
+      "d": "比较汽车保险选项以找到最佳的承保范围和价格"
+    },
+    "Fuel Economy Calculator": {
+      "n": "燃油经济性计算器",
+      "d": "计算并优化您的车辆燃油成本和效率"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "汽车租赁与购买分析器",
+      "d": "比较租赁与购买以找到最佳的财务选择"
+    },
+    "Trade-In Value Estimator": {
+      "n": "以旧换新价值估算器",
+      "d": "估算您的车辆以旧换新价值并协商公平交易"
+    },
+    "Vehicle History Reviewer": {
+      "n": "车辆历史评论家",
+      "d": "查看二手车历史报告时的关键问题和检查"
+    },
+    "Car Detailing Guide": {
+      "n": "汽车细节指南",
+      "d": "展厅装修的分步汽车细节说明"
+    },
+    "Winter Car Prep": {
+      "n": "冬季汽车准备",
+      "d": "为您的车辆做好冬季驾驶条件和寒冷天气的准备"
+    },
+    "New Driver Guide": {
+      "n": "新司机指南",
+      "d": "新手和学习驾驶员的基本驾驶技巧和知识"
+    },
+    "Electric Vehicle Guide": {
+      "n": "电动车指南",
+      "d": "关于购买和拥有电动汽车您需要了解的一切"
+    },
+    "Trip Planner": {
+      "n": "旅行计划",
+      "d": "规划您的完美旅行，包括目的地、活动和物流"
+    },
+    "Packing List Generator": {
+      "n": "装箱单生成器",
+      "d": "为任何行程和目的地生成定制装箱单"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "假期行程生成器",
+      "d": "制定包含活动和餐饮的每日假期行程"
+    },
+    "Travel Budget Calculator": {
+      "n": "旅行预算计算器",
+      "d": "通过详细的费用类别计算和跟踪您的旅行预算"
+    },
+    "Local Attractions Guide": {
+      "n": "当地景点指南",
+      "d": "发现当地最好的景点、隐藏的瑰宝和必看景点"
+    },
+    "Travel Insurance Comparison": {
+      "n": "旅行保险比较",
+      "d": "比较旅行保险选项，为您的旅行提供合适的保险"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "航班优惠搜索策略",
+      "d": "寻找最佳航班优惠和价格的策略和提示"
+    },
+    "Hotel Comparison Helper": {
+      "n": "酒店比较助手",
+      "d": "比较酒店的价格、设施、位置和评论"
+    },
+    "Solo Travel Planner": {
+      "n": "独自旅行计划",
+      "d": "在世界任何地方计划一次安全而充实的独自旅行冒险"
+    },
+    "Family Vacation Planner": {
+      "n": "家庭度假计划",
+      "d": "计划一个适合家庭的假期，让所有年龄段的人都能尽兴"
+    },
+    "Backpacking Planner": {
+      "n": "背包旅行计划",
+      "d": "通过路线和装备计划一次经济实惠的背包冒险"
+    },
+    "Business Travel Organizer": {
+      "n": "商务旅行组织者",
+      "d": "通过费用跟踪和安排有效地组织商务旅行"
+    },
+    "Cruise Planner": {
+      "n": "邮轮规划师",
+      "d": "通过港口游览和船上活动计划完美的邮轮假期"
+    },
+    "Travel Safety Guide": {
+      "n": "旅行安全指南",
+      "d": "使用目的地特定的安全提示和协议确保旅行时的安全"
+    },
+    "Visa Requirements Checker": {
+      "n": "签证要求检查器",
+      "d": "检查签证要求并为您的旅行准备申请材料"
+    },
+    "Language Survival Kit": {
+      "n": "语言生存工具包",
+      "d": "学习旅行目的地的基本短语和文化提示"
+    },
+    "Airport Navigation Guide": {
+      "n": "机场导航指南",
+      "d": "通过航站楼提示和时间管理高效导航机场"
+    },
+    "Travel Photo Plan": {
+      "n": "旅行照片计划",
+      "d": "利用最佳地点、时间和技术来计划您的旅行摄影"
+    },
+    "Group Trip Coordinator": {
+      "n": "团体旅行协调员",
+      "d": "协调每个人的团体旅行后勤、预算和活动"
+    },
+    "Adventure Travel Planner": {
+      "n": "探险旅行计划",
+      "d": "计划安全且后勤保障的刺激冒险之旅"
+    },
+    "Wedding Planner": {
+      "n": "婚礼策划",
+      "d": "规划完美婚礼的每一个细节，从场地到誓言"
+    },
+    "Birthday Party Planner": {
+      "n": "生日派对策划",
+      "d": "为任何年龄和风格的人策划一次难忘的生日庆祝活动"
+    },
+    "Conference Organizer": {
+      "n": "会议组织者",
+      "d": "组织专业会议和研讨会并提供详细的后勤"
+    },
+    "Baby Shower Planner": {
+      "n": "婴儿送礼会策划",
+      "d": "计划一个包含游戏、食物和装饰品的美丽迎婴派对"
+    },
+    "Anniversary Celebration": {
+      "n": "周年庆典",
+      "d": "为任何具有里程碑意义的一年策划一次有意义的周年庆典"
+    },
+    "Graduation Party": {
+      "n": "毕业派对",
+      "d": "通过精心策划的毕业派对庆祝学术成就"
+    },
+    "Holiday Party Planner": {
+      "n": "假日聚会策划",
+      "d": "用食物、活动和装饰品来计划节日聚会"
+    },
+    "Corporate Event Planner": {
+      "n": "企业活动策划",
+      "d": "策划给客户和员工留下深刻印象的专业企业活动"
+    },
+    "Fundraiser Organizer": {
+      "n": "筹款活动组织者",
+      "d": "为慈善机构和事业组织成功的筹款活动"
+    },
+    "Reunion Planner": {
+      "n": "团聚策划",
+      "d": "计划一次难忘的家庭聚会或同学聚会，让每个人都聚在一起"
+    },
+    "Engagement Party Planner": {
+      "n": "订婚派对策划",
+      "d": "策划一场欢乐的订婚庆典，分享喜讯"
+    },
+    "Retirement Party": {
+      "n": "退休聚会",
+      "d": "通过一场贴心的退休派对庆祝美好的职业生涯"
+    },
+    "Housewarming Planner": {
+      "n": "乔迁策划",
+      "d": "为您的新家筹办一场欢迎乔迁派对"
+    },
+    "Themed Party Creator": {
+      "n": "主题派对创作者",
+      "d": "设计和策划具有协调细节的创意主题派对"
+    },
+    "Event Budget Tracker": {
+      "n": "活动预算跟踪器",
+      "d": "跟踪和管理活动费用以保持在您的庆祝预算范围内"
+    },
+    "Chore Chart Creator": {
+      "n": "家务图表创建器",
+      "d": "创建适合年龄的家务图表，并提供奖励和跟踪"
+    },
+    "Educational Activity Planner": {
+      "n": "教育活动策划",
+      "d": "规划有趣的教育活动，让孩子们的学习充满乐趣"
+    },
+    "Bedtime Story Writer": {
+      "n": "睡前故事作家",
+      "d": "创建由您的孩子主演的个性化睡前故事"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "适合年龄的里程碑追踪器",
+      "d": "跟踪发育里程碑并庆祝您孩子的成长"
+    },
+    "School Lunch Planner": {
+      "n": "学校午餐计划",
+      "d": "计划孩子们真正会吃的健康且有吸引力的学校午餐"
+    },
+    "Homework Help Guide": {
+      "n": "作业帮助指南",
+      "d": "支持孩子做家庭作业但不帮他们做的策略"
+    },
+    "Family Game Night Ideas": {
+      "n": "家庭游戏之夜创意",
+      "d": "计划适合所有年龄段的精彩家庭游戏之夜"
+    },
+    "Screen Time Schedule": {
+      "n": "屏幕时间安排",
+      "d": "为您的家人制定平衡的屏幕时间规则和时间表"
+    },
+    "Allowance System Designer": {
+      "n": "津贴系统设计师",
+      "d": "设计适合年龄的津贴和资金管理系统"
+    },
+    "Baby Sleep Schedule": {
+      "n": "嬰兒睡眠時間表",
+      "d": "為嬰幼兒建立健康的睡眠時間表和作息規律"
+    },
+    "Potty Training Guide": {
+      "n": "如廁訓練指南",
+      "d": "逐步如廁訓練計畫，附有每個階段的實用技巧"
+    },
+    "Back to School Prep": {
+      "n": "返校準備",
+      "d": "幫助您的家庭順利迎接開學季的過渡準備"
+    },
+    "Summer Activity Planner": {
+      "n": "暑期活動規劃器",
+      "d": "規劃充滿樂趣且豐富的暑假活動、營隊和冒險"
+    },
+    "Family Meeting Agenda": {
+      "n": "家庭會議議程",
+      "d": "主持高效的家庭會議，讓每個人都有發言的機會"
+    },
+    "Child Development Tracker": {
+      "n": "兒童發展追蹤器",
+      "d": "監測並支持孩子的身體、社交和認知發展"
+    },
+    "Dog Training Plan": {
+      "n": "狗狗訓練計畫",
+      "d": "為任何年齡或技能水平的狗狗制定客製化訓練計畫"
+    },
+    "Cat Care Guide": {
+      "n": "貓咪照護指南",
+      "d": "讓您的貓咪保持健康快樂的完整照護指南"
+    },
+    "Pet Nutrition Planner": {
+      "n": "寵物營養規劃器",
+      "d": "根據年齡、品種和健康需求規劃寵物的最佳營養方案"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "幼犬社會化清單",
+      "d": "確保您的幼犬在關鍵發展期得到適當的社會化訓練"
+    },
+    "Pet First Aid Guide": {
+      "n": "寵物急救指南",
+      "d": "寵物飼主必備的急救知識和緊急處理程序"
+    },
+    "Aquarium Setup Planner": {
+      "n": "水族箱設置規劃器",
+      "d": "規劃並設置一個擁有合適魚類和設備的繁榮水族箱"
+    },
+    "Pet Travel Preparation": {
+      "n": "寵物旅行準備",
+      "d": "準備好與寵物安全且無壓力旅行所需的一切"
+    },
+    "New Pet Checklist": {
+      "n": "新寵物清單",
+      "d": "在帶新寵物回家之前需要準備的所有事項"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "寵物行為分析器",
+      "d": "透過專家指導了解並解決寵物的行為問題"
+    },
+    "Senior Pet Care": {
+      "n": "老年寵物照護",
+      "d": "為年邁寵物提供專門照護指南，讓牠們舒適健康"
+    },
+    "Pet Exercise Planner": {
+      "n": "寵物運動規劃器",
+      "d": "制定讓寵物保持健康並獲得心理刺激的運動計畫"
+    },
+    "Vet Visit Preparation": {
+      "n": "獸醫就診準備",
+      "d": "準備好整理完善的健康資訊和需要詢問的問題來迎接獸醫就診"
+    },
+    "Home Improvement Planner": {
+      "n": "居家裝修規劃器",
+      "d": "規劃並排定居家裝修專案的優先順序，包含預算和時程"
+    },
+    "Furniture Project Planner": {
+      "n": "傢俱專案規劃器",
+      "d": "規劃客製傢俱製作，包含材料、工具和逐步指導"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "翻修預算計算器",
+      "d": "計算詳細的翻修費用，包含人工、材料和備用金"
+    },
+    "Paint Color Coordinator": {
+      "n": "油漆色彩協調器",
+      "d": "選擇並協調油漆顏色，打造和諧的居家色調"
+    },
+    "Organization System Designer": {
+      "n": "收納系統設計師",
+      "d": "為家中任何房間或空間設計客製化收納系統"
+    },
+    "Storage Solutions Planner": {
+      "n": "儲物方案規劃器",
+      "d": "尋找創意儲物方案，最大化任何房間的空間利用"
+    },
+    "Home Repair Guide": {
+      "n": "居家維修指南",
+      "d": "常見居家維修的逐步指導，自己動手就能完成"
+    },
+    "Tool Buying Guide": {
+      "n": "工具選購指南",
+      "d": "為您的 DIY 專案選擇合適的工具，不超出預算"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "季節性居家維護",
+      "d": "完整的季節性維護清單，全年保護您的房屋"
+    },
+    "Energy Efficiency Audit": {
+      "n": "能源效率審計",
+      "d": "評估並改善您的居家能源效率，節省水電費用"
+    },
+    "Smart Home Setup": {
+      "n": "智慧家居設置",
+      "d": "規劃並設置智慧家居系統，搭配合適的裝置和整合方案"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "浴室翻修規劃器",
+      "d": "規劃浴室翻修，包含格局、衛浴設備和預算管理"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "廚房翻修規劃器",
+      "d": "從格局到家電全面規劃廚房翻修，附有詳細預算"
+    },
+    "Closet Organization": {
+      "n": "衣櫃整理",
+      "d": "設計並整理衣櫃，實現最大效率和輕鬆取用"
+    },
+    "Garage Organization": {
+      "n": "車庫整理",
+      "d": "將您的車庫改造成井然有序且功能齊全的空間"
+    },
+    "Product Comparison Tool": {
+      "n": "產品比較工具",
+      "d": "並排比較產品，做出最佳購買決策"
+    },
+    "Buying Guide Creator": {
+      "n": "選購指南建立器",
+      "d": "為任何產品類別建立詳細的選購指南"
+    },
+    "Gift Finder": {
+      "n": "禮物搜尋器",
+      "d": "根據對方的興趣和您的預算，找到最完美的禮物"
+    },
+    "Price Tracker Strategy": {
+      "n": "價格追蹤策略",
+      "d": "追蹤價格並在最佳時機購買的策略"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday 策略",
+      "d": "規劃您的 Black Friday 和 Cyber Monday 購物，實現最大節省"
+    },
+    "Back to School Shopping": {
+      "n": "返校購物",
+      "d": "透過清單、預算和優惠來組織返校購物"
+    },
+    "Wardrobe Planner": {
+      "n": "衣櫥規劃器",
+      "d": "透過策略性購物和穿搭規劃打造百搭衣櫥"
+    },
+    "Electronics Buying Guide": {
+      "n": "電子產品選購指南",
+      "d": "透過規格比較和購買時機建議來引導電子產品採購"
+    },
+    "Subscription Service Comparison": {
+      "n": "訂閱服務比較",
+      "d": "比較訂閱服務，找到最符合您需求的最佳價值"
+    },
+    "Wedding Registry Planner": {
+      "n": "婚禮禮物清單規劃器",
+      "d": "建立涵蓋各種預算品項的完整婚禮禮物清單"
+    },
+    "Bible Study Guide": {
+      "n": "聖經研讀指南",
+      "d": "建立結構化的聖經研讀計畫，包含背景、問題和應用"
+    },
+    "Sermon Outline Creator": {
+      "n": "講道大綱建立器",
+      "d": "編寫引人入勝的講道大綱，包含經文、要點和例證"
+    },
+    "Comparative Religion Study": {
+      "n": "比較宗教研究",
+      "d": "探索並比較世界各宗教的信仰、實踐和歷史"
+    },
+    "Discussion Question Generator": {
+      "n": "討論問題產生器",
+      "d": "為宗教和哲學主題產生發人深省的討論問題"
+    },
+    "Devotional Writer": {
+      "n": "靈修文章撰寫器",
+      "d": "建立每日靈修內容，包含經文、反思和禱告引導"
+    },
+    "Prayer Journal Guide": {
+      "n": "禱告日誌指南",
+      "d": "透過引導式日誌提示和架構來規劃您的禱告生活"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "靈性讀書會指南",
+      "d": "為靈性和宗教書籍建立讀書會討論指南"
+    },
+    "Meditation Scripture Guide": {
+      "n": "經文默想指南",
+      "d": "建立以經文段落為中心的引導式默想體驗"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "青年團契課程計畫",
+      "d": "建立引人入勝的青年團契課程，包含活動和討論"
+    },
+    "Faith Journey Reflector": {
+      "n": "信仰旅程反思器",
+      "d": "引導式反思，用於探索和深化您的個人信仰旅程"
+    },
+    "Workout Plan Creator": {
+      "n": "健身計畫建立器",
+      "d": "根據您的目標和體能水平建立個人化健身計畫"
+    },
+    "Training Schedule Builder": {
+      "n": "訓練時程建立器",
+      "d": "為任何運動或健身目標建立結構化的訓練時程"
+    },
+    "Game Strategy Analyzer": {
+      "n": "比賽策略分析器",
+      "d": "分析比賽策略並為您的運動項目制定制勝方案"
+    },
+    "Sports Nutrition Guide": {
+      "n": "運動營養指南",
+      "d": "優化您的運動營養，達到巔峰表現和最佳恢復"
+    },
+    "Coaching Practice Plan": {
+      "n": "教練練習計畫",
+      "d": "設計有效的練習課程，培養技能和團隊凝聚力"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "夢幻運動分析器",
+      "d": "分析對戰組合並每週優化您的夢幻運動陣容"
+    },
+    "Race Training Plan": {
+      "n": "賽跑訓練計畫",
+      "d": "透過結構化的漸進式計畫訓練從 5K 到馬拉松的各種賽事"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "運動數據分析器",
+      "d": "分析球員和球隊數據，深入了解運動賽事"
+    },
+    "Team Management Tool": {
+      "n": "團隊管理工具",
+      "d": "高效管理團隊名單、賽程和溝通事宜"
+    },
+    "Injury Recovery Planner": {
+      "n": "傷後復健規劃器",
+      "d": "為常見運動傷害規劃安全有效的復健計畫"
+    },
+    "Photography Guide": {
+      "n": "攝影指南",
+      "d": "透過構圖、光線和器材的技巧提升您的攝影技術"
+    },
+    "Knitting Pattern Helper": {
+      "n": "編織花樣助手",
+      "d": "尋找並調整適合您技能水平和專案構想的編織花樣"
+    },
+    "Board Game Night Planner": {
+      "n": "桌遊之夜規劃器",
+      "d": "規劃完美的桌遊之夜，包含遊戲選擇和人數配對"
+    },
+    "Fishing Trip Planner": {
+      "n": "釣魚之旅規劃器",
+      "d": "規劃成功的釣魚之旅，包含地點、裝備和技巧建議"
+    },
+    "Camping Trip Organizer": {
+      "n": "露營之旅組織器",
+      "d": "組織露營之旅，包含裝備清單、餐飲計畫和活動構想"
+    },
+    "Bird Watching Guide": {
+      "n": "賞鳥指南",
+      "d": "辨識當地鳥類並規劃賞鳥行程，附有季節性提示"
+    },
+    "Model Building Planner": {
+      "n": "模型製作規劃器",
+      "d": "規劃並執行模型製作專案，包含材料和技術"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "解謎策略指南",
+      "d": "更快、更有效率地解謎的策略和技巧"
+    },
+    "Astronomy Observation Planner": {
+      "n": "天文觀測規劃器",
+      "d": "規劃觀星活動，包含天文事件和設備推薦"
+    },
+    "Art Supply Guide": {
+      "n": "美術用品指南",
+      "d": "根據您的媒材和技能水平選擇合適的美術用品"
+    },
+    "Goal Setting Framework": {
+      "n": "目標設定框架",
+      "d": "透過結構化框架和行動計畫設定並達成有意義的目標"
+    },
+    "Bucket List Creator": {
+      "n": "人生願望清單建立器",
+      "d": "建立按類別和優先順序整理的激勵人心的願望清單"
+    },
+    "Personal Mission Statement": {
+      "n": "個人使命宣言",
+      "d": "撰寫有意義的個人使命宣言，引導您的人生決策"
+    },
+    "Life Transition Guide": {
+      "n": "人生轉變指南",
+      "d": "透過規劃、支持和應對策略來度過重大人生轉變"
+    },
+    "Habit Building Plan": {
+      "n": "習慣養成計畫",
+      "d": "運用經過驗證的科學策略建立持久的正面習慣"
+    },
+    "Time Audit Tool": {
+      "n": "時間審計工具",
+      "d": "審視您的時間使用方式，並針對最重要的事進行優化"
+    },
+    "Relationship Goal Planner": {
+      "n": "關係目標規劃器",
+      "d": "設定並朝著更強健、更健康的關係目標努力"
+    },
+    "Vision Board Creator": {
+      "n": "願景板建立器",
+      "d": "透過引導式提示和視覺化練習建立數位願景板"
+    },
+    "Personal SWOT Analysis": {
+      "n": "個人 SWOT 分析",
+      "d": "為職涯和人生規劃進行個人 SWOT 分析"
+    },
+    "Legacy Letter Writer": {
+      "n": "傳承家書撰寫器",
+      "d": "為摯愛之人撰寫有意義的傳承家書，記錄您的價值觀和智慧"
+    },
+    "Contract Draft Creator": {
+      "n": "合約草稿建立器",
+      "d": "為任何商業關係產生專業的合約草稿"
+    },
+    "NDA Generator": {
+      "n": "保密協議產生器",
+      "d": "建立針對您的情況量身打造的保密協議"
+    },
+    "Rental Agreement Draft": {
+      "n": "租賃合約草稿",
+      "d": "起草住宅或商業租賃合約"
+    },
+    "Terms of Service Generator": {
+      "n": "服務條款產生器",
+      "d": "為網站和應用程式建立完整的服務條款"
+    },
+    "Privacy Policy Writer": {
+      "n": "隱私權政策撰寫器",
+      "d": "產生符合 GDPR 和 CCPA 規範的隱私權政策"
+    },
+    "Freelance Agreement": {
+      "n": "自由接案合約",
+      "d": "建立自由工作者與客戶之間的合約"
+    },
+    "Non-Compete Draft": {
+      "n": "競業禁止草稿",
+      "d": "起草競業禁止條款和獨立合約"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC 營運協議",
+      "d": "為有限責任公司建立營運協議"
+    },
+    "Partnership Agreement": {
+      "n": "合夥協議",
+      "d": "起草明確角色和條款的合夥協議"
+    },
+    "Intellectual Property Brief": {
+      "n": "智慧財產權摘要",
+      "d": "概述智慧財產權的擁有權和保護策略"
+    },
+    "Cease and Desist Draft": {
+      "n": "停止侵害函草稿",
+      "d": "針對各種侵權行為建立停止侵害函"
+    },
+    "Employee Handbook Section": {
+      "n": "員工手冊章節",
+      "d": "撰寫員工手冊的各個章節"
+    },
+    "Independent Contractor Agreement": {
+      "n": "獨立承包商合約",
+      "d": "起草附有適當分類用語的獨立承包商合約"
+    },
+    "Liability Waiver Draft": {
+      "n": "免責聲明草稿",
+      "d": "為活動和服務建立免責聲明"
+    },
+    "Settlement Letter Draft": {
+      "n": "和解函草稿",
+      "d": "起草和解提議或回覆函件"
+    },
+    "Demand Letter Draft": {
+      "n": "催告函草稿",
+      "d": "為各種索賠建立正式催告函"
+    },
+    "Power of Attorney Draft": {
+      "n": "授權委託書草稿",
+      "d": "為各種用途起草授權委託書文件"
+    },
+    "Last Will Outline": {
+      "n": "遺囑大綱",
+      "d": "建立基本遺囑的大綱"
+    },
+    "Business License Checklist": {
+      "n": "營業執照清單",
+      "d": "產生您的企業所需執照的核對清單"
+    },
+    "Trademark Application Guide": {
+      "n": "商標申請指南",
+      "d": "申請商標註冊的逐步指南"
+    },
+    "Small Claims Court Guide": {
+      "n": "小額訴訟指南",
+      "d": "整理好論點，為小額訴訟做好準備"
+    },
+    "Divorce Mediation Prep": {
+      "n": "離婚調解準備",
+      "d": "整理離婚調解的重點和優先事項"
+    },
+    "Tenant Rights Guide": {
+      "n": "房客權益指南",
+      "d": "了解您所在管轄區的房客權利和救濟途徑"
+    },
+    "Landlord Notice Draft": {
+      "n": "房東通知草稿",
+      "d": "起草房東給房客的正式法律通知"
+    },
+    "Copyright Registration Guide": {
+      "n": "著作權登記指南",
+      "d": "向美國著作權局登記著作權的指南"
+    },
+    "Personal Budget Planner": {
+      "n": "個人預算規劃器",
+      "d": "建立全面的月度或年度預算計畫"
+    },
+    "Investment Research Assistant": {
+      "n": "投資研究助理",
+      "d": "系統化地研究和分析投資機會"
+    },
+    "Debt Payoff Calculator": {
+      "n": "債務償還計算器",
+      "d": "規劃有效消除債務的策略"
+    },
+    "Expense Tracker Setup": {
+      "n": "支出追蹤設置",
+      "d": "設計個人化的支出追蹤系統"
+    },
+    "Retirement Planning Guide": {
+      "n": "退休規劃指南",
+      "d": "建立全面的退休儲蓄策略"
+    },
+    "Tax Preparation Checklist": {
+      "n": "報稅準備清單",
+      "d": "整理報稅所需的文件和扣除項目"
+    },
+    "Emergency Fund Calculator": {
+      "n": "緊急備用金計算器",
+      "d": "確定並規劃您的理想緊急備用金"
+    },
+    "Net Worth Tracker": {
+      "n": "淨資產追蹤器",
+      "d": "追蹤並視覺化呈現您完整的財務狀況"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "信用評分改善計畫",
+      "d": "建立可執行的信用評分改善計畫"
+    },
+    "Student Loan Strategy": {
+      "n": "學貸還款策略",
+      "d": "優化您的學生貸款還款方式"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "副業收入規劃器",
+      "d": "規劃並預估副業的收入"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "保險需求分析器",
+      "d": "評估您的保險覆蓋缺口和需求"
+    },
+    "Estate Planning Checklist": {
+      "n": "遺產規劃清單",
+      "d": "整理您的遺產規劃文件和決策"
+    },
+    "Financial Goal Setter": {
+      "n": "財務目標設定器",
+      "d": "定義並追蹤邁向財務里程碑的進度"
+    },
+    "Cash Flow Analyzer": {
+      "n": "現金流分析器",
+      "d": "分析一段時間內的收入和支出模式"
+    },
+    "Savings Challenge Creator": {
+      "n": "儲蓄挑戰建立器",
+      "d": "設計有趣的儲蓄挑戰來累積您的存款"
+    },
+    "Investment Portfolio Review": {
+      "n": "投資組合檢視",
+      "d": "檢視並重新平衡您的投資組合"
+    },
+    "Cryptocurrency Research": {
+      "n": "加密貨幣研究",
+      "d": "研究和評估加密貨幣投資"
+    },
+    "Stock Analysis Helper": {
+      "n": "股票分析助手",
+      "d": "對股票進行基本面和技術面分析"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "房地產投資計算器",
+      "d": "分析潛在房地產投資的報酬率"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "企業稅務扣除搜尋器",
+      "d": "為您的企業找出符合資格的稅務扣除項目"
+    },
+    "Payroll Budget Planner": {
+      "n": "薪資預算規劃器",
+      "d": "規劃和編列員工薪資成本預算"
+    },
+    "Invoice Template Creator": {
+      "n": "發票範本建立器",
+      "d": "為您的企業設計專業發票"
+    },
+    "Profit Margin Calculator": {
+      "n": "利潤率計算器",
+      "d": "計算並優化各產品的利潤率"
+    },
+    "Financial Independence Planner": {
+      "n": "財務自由規劃器",
+      "d": "規劃您通往財務自由和提早退休的道路"
+    },
+    "Ad Copy Writer": {
+      "n": "廣告文案撰寫器",
+      "d": "為任何平台或媒體建立引人注目的廣告文案"
+    },
+    "SEO Article Creator": {
+      "n": "SEO 文章建立器",
+      "d": "撰寫能獲得排名並帶來轉換的 SEO 優化文章"
+    },
+    "Social Media Content Calendar": {
+      "n": "社群媒體內容行事曆",
+      "d": "規劃跨平台的一個月社群媒體內容"
+    },
+    "Email Campaign Builder": {
+      "n": "電子郵件行銷活動建立器",
+      "d": "設計能帶來轉換的多封電子郵件行銷活動"
+    },
+    "Product Launch Strategy": {
+      "n": "產品上市策略",
+      "d": "建立全面的產品上市行銷策略"
+    },
+    "Brand Voice Guide": {
+      "n": "品牌語調指南",
+      "d": "定義並記錄您的品牌語調和訊息傳達方式"
+    },
+    "Content Marketing Strategy": {
+      "n": "內容行銷策略",
+      "d": "從零開始建立完整的內容行銷策略"
+    },
+    "Influencer Outreach Template": {
+      "n": "網紅合作邀約範本",
+      "d": "建立個人化的網紅合作邀約文案"
+    },
+    "Landing Page Copywriter": {
+      "n": "到達頁文案撰寫器",
+      "d": "撰寫高轉換率的到達頁文案"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B 測試計畫建立器",
+      "d": "為行銷活動設計結構化的 A/B 測試"
+    },
+    "Buyer Persona Builder": {
+      "n": "買家人物誌建立器",
+      "d": "建立詳細的客戶人物誌以進行精準行銷"
+    },
+    "Competitive Analysis Template": {
+      "n": "競爭分析範本",
+      "d": "分析競爭對手並找出市場機會"
+    },
+    "Marketing Budget Planner": {
+      "n": "行銷預算規劃器",
+      "d": "分配並優化您的行銷預算"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "聯盟行銷策略",
+      "d": "建立並優化聯盟行銷計畫"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcast 行銷計畫",
+      "d": "推廣您的 Podcast 並擴大聽眾群"
+    },
+    "Webinar Promotion Plan": {
+      "n": "線上研討會推廣計畫",
+      "d": "規劃並推廣能促進報名的線上研討會"
+    },
+    "Referral Program Designer": {
+      "n": "推薦計畫設計師",
+      "d": "設計能驅動口碑增長的推薦計畫"
+    },
+    "Brand Story Writer": {
+      "n": "品牌故事撰寫器",
+      "d": "撰寫引人入勝的品牌起源故事和敘事"
+    },
+    "Marketing Funnel Builder": {
+      "n": "行銷漏斗建立器",
+      "d": "設計從認知到轉換的客戶旅程漏斗"
+    },
+    "App Store Optimization": {
+      "n": "應用商店優化",
+      "d": "優化應用商店頁面以獲得最大下載量"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Google Ads 文案撰寫器",
+      "d": "撰寫有效的 Google Ads 標題和描述"
+    },
+    "Facebook Ads Creator": {
+      "n": "Facebook Ads 建立器",
+      "d": "建立 Facebook 和 Instagram 廣告活動"
+    },
+    "Newsletter Strategy": {
+      "n": "電子報策略",
+      "d": "從零開始規劃並發展電子報"
+    },
+    "PR Media Pitch": {
+      "n": "公關媒體提案",
+      "d": "撰寫引人注目的媒體提案以獲得新聞報導"
+    },
+    "Content Repurposing Plan": {
+      "n": "內容再利用計畫",
+      "d": "將現有內容轉化為多種格式"
+    },
+    "Cold Email Generator": {
+      "n": "陌生開發信產生器",
+      "d": "建立能獲得回覆的個人化陌生開發信"
+    },
+    "Sales Script Writer": {
+      "n": "銷售腳本撰寫器",
+      "d": "為電話和會議撰寫有效的銷售腳本"
+    },
+    "Objection Handling Guide": {
+      "n": "異議處理指南",
+      "d": "準備應對常見銷售異議的回應方式"
+    },
+    "Follow-Up Message Creator": {
+      "n": "後續追蹤訊息建立器",
+      "d": "建立策略性的後續追蹤訊息序列"
+    },
+    "Sales Pitch Creator": {
+      "n": "銷售簡報建立器",
+      "d": "打造引人注目的電梯簡報和銷售簡報"
+    },
+    "Proposal Generator": {
+      "n": "提案產生器",
+      "d": "建立專業的銷售提案和報價單"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "CRM 資料清理計畫",
+      "d": "系統化地整理和清理您的 CRM 資料庫"
+    },
+    "Sales Territory Planner": {
+      "n": "銷售區域規劃器",
+      "d": "為您的團隊定義並優化銷售區域"
+    },
+    "Account Strategy Builder": {
+      "n": "客戶策略建立器",
+      "d": "為重要客戶建立策略性客戶計畫"
+    },
+    "Upsell Script Creator": {
+      "n": "追加銷售腳本建立器",
+      "d": "撰寫向現有客戶進行追加銷售和交叉銷售的腳本"
+    },
+    "Customer Win-Back Email": {
+      "n": "客戶回流電子郵件",
+      "d": "透過針對性的回流活動重新吸引流失客戶"
+    },
+    "Sales Forecast Template": {
+      "n": "銷售預測範本",
+      "d": "為您的銷售管道建立準確的銷售預測"
+    },
+    "Commission Calculator": {
+      "n": "佣金計算器",
+      "d": "設計並計算銷售佣金結構"
+    },
+    "Discovery Call Script": {
+      "n": "探索通話腳本",
+      "d": "建構有效的探索通話流程以篩選潛在客戶"
+    },
+    "Demo Presentation Outline": {
+      "n": "產品展示大綱",
+      "d": "建立結構化的產品展示簡報"
+    },
+    "Sales Onboarding Plan": {
+      "n": "銷售新人培訓計畫",
+      "d": "為新進銷售人員設計入職培訓計畫"
+    },
+    "Quarterly Business Review": {
+      "n": "季度業務回顧",
+      "d": "為客戶準備季度業務回顧簡報"
+    },
+    "Customer Success Plan": {
+      "n": "客戶成功計畫",
+      "d": "建立主動式客戶成功和留存計畫"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "定價策略顧問",
+      "d": "制定並優化您的產品定價策略"
+    },
+    "Value Proposition Builder": {
+      "n": "價值主張建立器",
+      "d": "打造清晰且引人注目的價值主張"
+    },
+    "FAQ Generator": {
+      "n": "常見問題產生器",
+      "d": "根據產品資訊建立完整的常見問題專區"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "知識庫文章撰寫器",
+      "d": "撰寫清晰且易於搜尋的知識庫文章"
+    },
+    "Support Response Template": {
+      "n": "客服回覆範本",
+      "d": "為常見客服情境建立可重複使用的範本"
+    },
+    "Chatbot Training Data": {
+      "n": "聊天機器人訓練資料",
+      "d": "為客服聊天機器人產生訓練資料"
+    },
+    "Escalation Response Guide": {
+      "n": "升級處理回覆指南",
+      "d": "建立處理升級客服問題的指導方針"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "客戶滿意度調查",
+      "d": "設計衡量客戶滿意度的調查問卷"
+    },
+    "Refund Policy Writer": {
+      "n": "退款政策撰寫器",
+      "d": "建立清晰且公平的退款和退貨政策"
+    },
+    "Bug Report Template": {
+      "n": "錯誤回報範本",
+      "d": "為使用者設計結構化的錯誤回報範本"
+    },
+    "Feature Request Response": {
+      "n": "功能需求回覆",
+      "d": "撰寫回覆客戶功能需求的訊息"
+    },
+    "Onboarding Email Sequence": {
+      "n": "新客戶引導電子郵件序列",
+      "d": "建立引導新客戶的電子郵件序列"
+    },
+    "Help Center Article": {
+      "n": "幫助中心文章",
+      "d": "撰寫完整的幫助中心文件"
+    },
+    "Service Level Agreement": {
+      "n": "服務水準協議",
+      "d": "起草客服承諾的 SLA 文件"
+    },
+    "Customer Apology Template": {
+      "n": "客戶致歉範本",
+      "d": "為服務失誤撰寫真誠的致歉訊息"
+    },
+    "Product Update Announcement": {
+      "n": "產品更新公告",
+      "d": "向客戶傳達產品更新和變更資訊"
+    },
+    "Community Guidelines Writer": {
+      "n": "社群規範撰寫器",
+      "d": "為論壇和社群頻道建立社群規範"
+    },
+    "Startup Validation Framework": {
+      "n": "新創驗證框架",
+      "d": "在開始建造之前驗證您的新創構想"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP 功能規劃器",
+      "d": "為您的最小可行產品排定功能優先順序"
+    },
+    "Pricing Strategy Builder": {
+      "n": "定價策略建立器",
+      "d": "為您的新創產品開發定價模型"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "投資人簡報大綱",
+      "d": "為募資建構引人注目的簡報架構"
+    },
+    "Business Model Canvas": {
+      "n": "商業模式畫布",
+      "d": "在一頁中勾勒出您完整的商業模式"
+    },
+    "Lean Canvas Creator": {
+      "n": "精實畫布建立器",
+      "d": "建立精實畫布以識別風險和假設"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "競爭格局分析器",
+      "d": "繪製並分析您的競爭環境"
+    },
+    "Go-To-Market Strategy": {
+      "n": "进入市场策略",
+      "d": "规划您的市场进入和客户获取方法"
+    },
+    "Founding Team Assessment": {
+      "n": "创始团队评估",
+      "d": "评估团队构成并确定技能差距"
+    },
+    "Startup Financial Projections": {
+      "n": "初创公司财务预测",
+      "d": "为您的初创公司制定 3 年财务预测"
+    },
+    "Advisory Board Recruiter": {
+      "n": "顾问委员会招聘人员",
+      "d": "为您的初创公司物色并招募顾问"
+    },
+    "Pivot Decision Framework": {
+      "n": "枢轴决策框架",
+      "d": "评估是否以及如何改变你的初创公司"
+    },
+    "Startup KPI Dashboard": {
+      "n": "启动 KPI 仪表板",
+      "d": "定义并跟踪关键绩效指标"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "众筹活动计划",
+      "d": "规划并执行成功的众筹活动"
+    },
+    "Partnership Strategy": {
+      "n": "合作伙伴战略",
+      "d": "确定并寻求战略合作伙伴关系"
+    },
+    "Accelerator Application": {
+      "n": "加速器应用",
+      "d": "准备一个引人注目的加速器或孵化器应用程序"
+    },
+    "Product-Market Fit Survey": {
+      "n": "产品市场契合度调查",
+      "d": "设计调查来衡量产品与市场的契合度"
+    },
+    "Startup Legal Checklist": {
+      "n": "启动法律清单",
+      "d": "涵盖创办公司时的所有法律依据"
+    },
+    "Equity Split Calculator": {
+      "n": "股权分割计算器",
+      "d": "确定联合创始人之间公平的股权分配"
+    },
+    "Growth Experiment Planner": {
+      "n": "成长实验计划",
+      "d": "系统地设计和跟踪生长实验"
+    },
+    "Product Description Writer": {
+      "n": "产品描述作家",
+      "d": "撰写引人注目的产品描述来推动销售"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "亚马逊列表优化器",
+      "d": "优化亚马逊产品列表以提高可见性和转化率"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Etsy 商店设置指南",
+      "d": "设置并优化您的 Etsy 商店以取得成功"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify 商店规划师",
+      "d": "规划您的 Shopify 商店结构并启动"
+    },
+    "Product Photography Brief": {
+      "n": "产品摄影简介",
+      "d": "为产品摄影拍摄创建简介"
+    },
+    "Shipping Strategy Planner": {
+      "n": "航运策略规划师",
+      "d": "设计具有成本效益的运输策略"
+    },
+    "Return Policy Creator": {
+      "n": "退货政策创建者",
+      "d": "制定明确的电子商务退换货政策"
+    },
+    "Customer Review Response": {
+      "n": "客户评论回复",
+      "d": "对客户评论做出专业回应"
+    },
+    "Inventory Management Plan": {
+      "n": "库存管理计划",
+      "d": "创建用于跟踪和管理库存的系统"
+    },
+    "Dropshipping Product Research": {
+      "n": "直销产品研究",
+      "d": "研究和评估直销产品机会"
+    },
+    "Print-on-Demand Designer": {
+      "n": "按需印刷设计师",
+      "d": "规划按需印刷产品线和设计"
+    },
+    "Subscription Box Planner": {
+      "n": "订阅盒规划器",
+      "d": "设计并推出订阅盒业务"
+    },
+    "Holiday Sales Strategy": {
+      "n": "假日销售策略",
+      "d": "规划季节性促销和假日销售活动"
+    },
+    "Product Bundle Creator": {
+      "n": "产品包创建者",
+      "d": "设计可提高平均订单价值的产品捆绑"
+    },
+    "Cart Abandonment Email": {
+      "n": "购物车放弃电子邮件",
+      "d": "创建电子邮件序列以恢复废弃的购物车"
+    },
+    "Homework Helper": {
+      "n": "作业帮手",
+      "d": "获得任何科目作业的分步帮助"
+    },
+    "Quiz & Test Generator": {
+      "n": "测验和测试生成器",
+      "d": "从任何主题或学习材料创建自定义测验"
+    },
+    "Science Fair Project Planner": {
+      "n": "科学博览会项目策划人",
+      "d": "规划和组织一个获奖的科学博览会项目，从假设到演示"
+    },
+    "Lesson Plan Creator": {
+      "n": "课程计划创建者",
+      "d": "设计符合学习目标的结构化课程计划"
+    },
+    "Lab Report Writer": {
+      "n": "实验室报告撰写者",
+      "d": "使用适当的科学格式构建和撰写实验室报告"
+    },
+    "Reading Comprehension Helper": {
+      "n": "阅读理解助手",
+      "d": "通过引导分析和问题提高阅读理解能力"
+    },
+    "Math Problem Solver": {
+      "n": "数学问题解决者",
+      "d": "通过详细的分步解释解决数学问题"
+    },
+    "Vocabulary Builder": {
+      "n": "词汇生成器",
+      "d": "通过定义、示例和练习构建和练习词汇"
+    },
+    "Book Report Helper": {
+      "n": "读书报告助手",
+      "d": "通过结构化分析概述和撰写读书报告"
+    },
+    "History Timeline Creator": {
+      "n": "历史时间线创建者",
+      "d": "为任何时代或事件创建详细的历史时间表"
+    },
+    "Geography Quiz Maker": {
+      "n": "地理测验制作",
+      "d": "生成涵盖地图、首都、地标等的地理测验"
+    },
+    "Spelling Practice Generator": {
+      "n": "拼写练习生成器",
+      "d": "创建个性化的拼写练习列表和练习"
+    },
+    "Grammar Exercise Creator": {
+      "n": "语法练习创建器",
+      "d": "为任何技能水平和主题生成语法练习"
+    },
+    "Critical Thinking Questions": {
+      "n": "批判性思维问题",
+      "d": "提出发人深省的问题来培养批判性思维能力"
+    },
+    "Debate Prep Guide": {
+      "n": "辩论准备指南",
+      "d": "为辩论准备结构化的论证和反驳"
+    },
+    "College Application Essay": {
+      "n": "大学申请论文",
+      "d": "根据指导提示撰写引人注目的大学申请论文"
+    },
+    "Scholarship Essay Helper": {
+      "n": "奖学金论文助手",
+      "d": "撰写有说​​服力的学术论文，突出成就和目标"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT 准备指南",
+      "d": "制定有针对性的学习计划并练习 SAT 或 ACT 考试"
+    },
+    "Study Schedule Planner": {
+      "n": "学习日程规划",
+      "d": "制定有效的学习计划，平衡所有科目和截止日期"
+    },
+    "Group Project Organizer": {
+      "n": "团体项目组织者",
+      "d": "规划小组项目的角色、任务和时间表"
+    },
+    "Presentation Creator": {
+      "n": "演示文稿创建者",
+      "d": "为任何主题设计和概述引人入胜的演示文稿"
+    },
+    "Note-Taking Guide": {
+      "n": "笔记指南",
+      "d": "为讲座和阅读创建结构化笔记模板"
+    },
+    "Mind Map Generator": {
+      "n": "思维导图生成器",
+      "d": "创建视觉思维导图来组织想法和概念"
+    },
+    "Research Project Planner": {
+      "n": "研究项目规划师",
+      "d": "规划和管理从选题到最终论文的研究项目"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "家长会准备",
+      "d": "为富有成效的家长会准备谈话要点和问题"
+    },
+    "Classroom Activity Designer": {
+      "n": "课堂活动设计师",
+      "d": "设计强化学习目标的互动课堂活动"
+    },
+    "Special Education Resource": {
+      "n": "特殊教育资源",
+      "d": "为有特殊教育需求的学生创建量身定制的学习资源"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "家庭学校课程规划",
+      "d": "按科目和学期规划完整的家庭学校课程"
+    },
+    "Student Self-Assessment": {
+      "n": "学生自我评估",
+      "d": "创建自我评估工具，让学生跟踪自己的学习进度"
+    },
+    "Learning Style Analyzer": {
+      "n": "学习风格分析器",
+      "d": "识别学习风格并提出个性化学习策略"
+    },
+    "Literature Review Writer": {
+      "n": "文献评论作家",
+      "d": "组织并撰写有关任何主题的综合文献评论"
+    },
+    "Research Assistant": {
+      "n": "研究助理",
+      "d": "获取查找、组织和总结研究材料的帮助"
+    },
+    "Fact Checker Template": {
+      "n": "事实检查模板",
+      "d": "使用结构化事实检查方法验证声明和陈述"
+    },
+    "Source Comparison Tool": {
+      "n": "来源比较工具",
+      "d": "比较和对比同一主题的多个来源"
+    },
+    "Citation Generator": {
+      "n": "引文生成器",
+      "d": "以任何学术风格生成格式正确的引文"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "带注释的参考书目创建者",
+      "d": "创建带有摘要和评估的带注释的参考书目"
+    },
+    "Research Methodology Guide": {
+      "n": "研究方法指南",
+      "d": "为您的研究选择和设计正确的研究方法"
+    },
+    "Survey Question Designer": {
+      "n": "调查问题设计器",
+      "d": "设计有效的调查问题以收集可靠的研究数据"
+    },
+    "Data Collection Plan": {
+      "n": "数据收集计划",
+      "d": "创建收集研究数据的结构化计划"
+    },
+    "Thesis Statement Generator": {
+      "n": "论文陈述生成器",
+      "d": "为研究论文和论文撰写强有力的论文陈述"
+    },
+    "Research Proposal Writer": {
+      "n": "研究计划撰稿人",
+      "d": "撰写令人信服的研究提案以供学术或资金审查"
+    },
+    "Systematic Review Guide": {
+      "n": "系统评审指南",
+      "d": "按照既定方案进行系统审查"
+    },
+    "Interview Protocol Creator": {
+      "n": "采访协议创建者",
+      "d": "为定性研究设计结构化访谈协议"
+    },
+    "Research Ethics Checklist": {
+      "n": "研究道德清单",
+      "d": "确保研究符合道德准则和 IRB 要求"
+    },
+    "Meta-Analysis Framework": {
+      "n": "荟萃分析框架",
+      "d": "跨多项研究构建并进行荟萃分析"
+    },
+    "Case Study Template": {
+      "n": "案例研究模板",
+      "d": "为研究或商业构建和撰写详细的案例研究"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "定性分析指南",
+      "d": "使用编码和主题方法指导定性数据分析"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "定量分析指南",
+      "d": "使用适当的统计方法指导定量数据分析"
+    },
+    "Research Poster Creator": {
+      "n": "研究海报创作者",
+      "d": "为会议和演示文稿设计和布局研究海报"
+    },
+    "Research Grant Writer": {
+      "n": "研究资助作家",
+      "d": "为研究资助申请撰写结构化资助提案"
+    },
+    "Chemistry Tutor": {
+      "n": "化学导师",
+      "d": "获得带有解释和练习题的个性化化学辅导"
+    },
+    "Chemical Equation Balancer": {
+      "n": "化学方程式配平",
+      "d": "通过逐步解释来平衡化学方程式"
+    },
+    "Lab Safety Checklist": {
+      "n": "实验室安全检查表",
+      "d": "生成化学实验的全面实验室安全检查表"
+    },
+    "Organic Chemistry Helper": {
+      "n": "有机化学帮手",
+      "d": "研究有机反应、机理和命名"
+    },
+    "Periodic Table Explorer": {
+      "n": "元素周期表浏览器",
+      "d": "探索元素周期表中的元素属性、趋势和关系"
+    },
+    "Stoichiometry Solver": {
+      "n": "化学计量求解器",
+      "d": "通过详细的摩尔间计算解决化学计量问题"
+    },
+    "Chemical Bonding Guide": {
+      "n": "化学键合指南",
+      "d": "通过视觉解释了解离子键、共价键和金属键"
+    },
+    "Acid-Base Calculator": {
+      "n": "酸碱计算器",
+      "d": "计算pH、pOH、Ka、Kb并解决酸碱平衡问题"
+    },
+    "Solution Preparation Guide": {
+      "n": "解决方案准备指南",
+      "d": "计算并配制适当浓度的化学溶液"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "光谱解释器",
+      "d": "解释 IR、NMR 和质谱以进行化合物鉴定"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "化学实验室笔记本",
+      "d": "为化学实验创建结构化实验室笔记本条目"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "反应机制助手",
+      "d": "逐步绘制并理解反应机理"
+    },
+    "Thermochemistry Calculator": {
+      "n": "热化学计算器",
+      "d": "计算化学反应的焓、熵和吉布斯自由能"
+    },
+    "Electrochemistry Guide": {
+      "n": "电化学指南",
+      "d": "了解电化学电池、电极电势和电解"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "高分子化学指南",
+      "d": "研究聚合物类型、合成机理和性能"
+    },
+    "Biology Tutor": {
+      "n": "生物导师",
+      "d": "获得带有清晰解释和示例的个性化生物学辅导"
+    },
+    "Cell Biology Study Guide": {
+      "n": "细胞生物学学习指南",
+      "d": "深入研究细胞结构、功能和过程"
+    },
+    "Genetics Problem Solver": {
+      "n": "遗传学问题解决者",
+      "d": "解决遗传学问题，包括旁尼特平方和谱系分析"
+    },
+    "Ecology Study Helper": {
+      "n": "生态学学习好帮手",
+      "d": "研究生态系统、食物网、种群动态和生态关系"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "解剖学和生理学指南",
+      "d": "通过详细的解剖学解释来研究人体系统"
+    },
+    "Microbiology Lab Guide": {
+      "n": "微生物学实验室指南",
+      "d": "指导微生物实验室技术，包括染色、培养和鉴定"
+    },
+    "Evolution Concept Mapper": {
+      "n": "进化概念图",
+      "d": "绘制进化概念图，包括自然选择、物种形成和系统发育"
+    },
+    "Plant Biology Helper": {
+      "n": "植物生物学帮手",
+      "d": "研究植物解剖学、生理学和生态作用"
+    },
+    "Molecular Biology Guide": {
+      "n": "分子生物学指南",
+      "d": "了解 DNA 复制、转录、翻译和基因调控"
+    },
+    "Bioinformatics Helper": {
+      "n": "生物信息学助手",
+      "d": "获取有关序列分析、数据库搜索和计算生物学的帮助"
+    },
+    "Neuroscience Study Guide": {
+      "n": "神经科学研究指南",
+      "d": "研究神经系统、大脑功能和神经通路"
+    },
+    "Marine Biology Explorer": {
+      "n": "海洋生物学探索者",
+      "d": "探索海洋生态系统、生物体和海洋科学"
+    },
+    "Immunology Study Guide": {
+      "n": "免疫学学习指南",
+      "d": "研究免疫系统、免疫反应和免疫疾病"
+    },
+    "Biotechnology Overview": {
+      "n": "生物技术概述",
+      "d": "探索生物技术应用，包括基因工程和 CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "保护生物学规划师",
+      "d": "规划物种和栖息地保护的保护策略"
+    },
+    "Physics Problem Solver": {
+      "n": "物理问题解决者",
+      "d": "通过详细的分步解决方案解决物理问题"
+    },
+    "Mechanics Helper": {
+      "n": "力学助手",
+      "d": "研究和解决经典力学问题，包括运动学和动力学"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "电和磁指南",
+      "d": "了解电场、电路和电磁现象"
+    },
+    "Thermodynamics Tutor": {
+      "n": "热力学导师",
+      "d": "研究热力学定律、过程和传热问题"
+    },
+    "Optics & Waves Guide": {
+      "n": "光学与波指南",
+      "d": "研究波动现象、光学和光行为"
+    },
+    "Quantum Physics Explainer": {
+      "n": "量子物理解释器",
+      "d": "通过清晰的解释和示例了解量子力学概念"
+    },
+    "Astrophysics Explorer": {
+      "n": "天体物理学探索者",
+      "d": "探索恒星演化、宇宙学和天体力学"
+    },
+    "Nuclear Physics Guide": {
+      "n": "核物理指南",
+      "d": "研究核反应、放射性和核能"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "流体动力学助手",
+      "d": "解决流体力学问题，包括伯努利和纳维-斯托克斯应用"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "经典力学导师",
+      "d": "深入研究拉格朗日力学和哈密顿力学以及高级动力学"
+    },
+    "Relativity Concept Guide": {
+      "n": "相对论概念指南",
+      "d": "通过思想实验和数学理解狭义相对论和广义相对论"
+    },
+    "Physics Lab Report Helper": {
+      "n": "物理实验室报告助手",
+      "d": "通过适当的数据分析构建和撰写物理实验室报告"
+    },
+    "Math Proof Writer": {
+      "n": "数学证明作家",
+      "d": "写出清晰、严谨、具有逻辑结构的数学证明"
+    },
+    "Calculus Problem Solver": {
+      "n": "微积分问题解决者",
+      "d": "解决微积分问题，包括极限、导数和积分"
+    },
+    "Statistics Helper": {
+      "n": "统计助手",
+      "d": "解决统计问题并解释统计结果"
+    },
+    "Linear Algebra Guide": {
+      "n": "线性代数指南",
+      "d": "研究向量、矩阵、变换和特征值"
+    },
+    "Probability Calculator": {
+      "n": "概率计算器",
+      "d": "计算概率并解决概率分布问题"
+    },
+    "Geometry Tutor": {
+      "n": "几何导师",
+      "d": "研究几何概念、定理并解决几何问题"
+    },
+    "Trigonometry Helper": {
+      "n": "三角学助手",
+      "d": "求解三角方程、恒等式和应用"
+    },
+    "Number Theory Explorer": {
+      "n": "数论探索者",
+      "d": "探索素数、整除性、模算术和加密应用"
+    },
+    "Discrete Math Guide": {
+      "n": "离散数学指南",
+      "d": "研究组合学、图论、逻辑和集合论"
+    },
+    "Differential Equations Solver": {
+      "n": "微分方程求解器",
+      "d": "用详细方法求解常微分方程和偏微分方程"
+    },
+    "Math Word Problem Solver": {
+      "n": "数学应用题解决器",
+      "d": "逐步翻译并解决现实世界的数学应用题"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "数学建模指南",
+      "d": "为现实世界的现象和应用建立数学模型"
+    },
+    "SQL Query Generator": {
+      "n": "SQL 查询生成器",
+      "d": "生成和优化 SQL 查询以进行数据检索和分析"
+    },
+    "Python Data Analysis": {
+      "n": "Python数据分析",
+      "d": "使用 pandas、NumPy 等编写用于数据分析的 Python 代码"
+    },
+    "Data Cleaning Checklist": {
+      "n": "数据清理清单",
+      "d": "创建数据清理和预处理的全面清单"
+    },
+    "Data Visualization Planner": {
+      "n": "数据可视化规划师",
+      "d": "选择正确的图表并设计有效的数据可视化"
+    },
+    "Machine Learning Model Selector": {
+      "n": "机器学习模型选择器",
+      "d": "选择最适合您的问题类型和数据特征的 ML 模型"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B 测试计算器",
+      "d": "通过统计显着性计算来设计和分析 A/B 测试"
+    },
+    "Dashboard Design Guide": {
+      "n": "仪表板设计指南",
+      "d": "使用正确的 KPI 和布局设计有效的仪表板"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL 管道规划器",
+      "d": "设计和规划用于数据集成和处理的 ETL 管道"
+    },
+    "Feature Engineering Guide": {
+      "n": "特征工程指南",
+      "d": "为机器学习模型创建有效的特征"
+    },
+    "Data Pipeline Architecture": {
+      "n": "数据管道架构",
+      "d": "为分析和机器学习设计可扩展的数据管道架构"
+    },
+    "Exploratory Data Analysis": {
+      "n": "探索性数据分析",
+      "d": "通过结构化分析和可视化计划进行彻底的 EDA"
+    },
+    "Statistical Test Selector": {
+      "n": "统计测试选择器",
+      "d": "为您的数据和假设选择并应用正确的统计检验"
+    },
+    "Time Series Analysis Guide": {
+      "n": "时间序列分析指南",
+      "d": "使用预测和趋势检测方法分析时间序列数据"
+    },
+    "Natural Language Processing Starter": {
+      "n": "自然语言处理入门",
+      "d": "开始执行 NLP 任务，包括文本分类和情感分析"
+    },
+    "Computer Vision Project Planner": {
+      "n": "计算机视觉项目规划师",
+      "d": "规划计算机视觉项目从数据收集到模型部署"
+    },
+    "Technical Requirements Document": {
+      "n": "技术要求文件",
+      "d": "为工程项目创建详细的技术要求文件"
+    },
+    "Engineering Design Review": {
+      "n": "工程设计评审",
+      "d": "为工程项目准备结构化设计评审文件"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "故障模式分析 (FMEA)",
+      "d": "对产品或过程进行系统的故障模式和影响分析"
+    },
+    "Project Specification Writer": {
+      "n": "项目规范编写者",
+      "d": "为工程工作编写清晰完整的项目规范"
+    },
+    "CAD Project Planner": {
+      "n": "CAD 项目规划",
+      "d": "使用适当的文档规划和组织 CAD 建模项目"
+    },
+    "Manufacturing Process Guide": {
+      "n": "制造工艺指南",
+      "d": "选择和规划产品开发的制造流程"
+    },
+    "Quality Control Checklist": {
+      "n": "质量控制清单",
+      "d": "创建制造质量控制清单和检验计划"
+    },
+    "Engineering Change Request": {
+      "n": "工程变更请求",
+      "d": "通过影响分析记录和管理工程变更请求"
+    },
+    "Structural Analysis Guide": {
+      "n": "结构分析指南",
+      "d": "指导工程项目的结构分析计算和方法"
+    },
+    "Materials Selection Guide": {
+      "n": "材料选择指南",
+      "d": "根据机械、热和化学要求选择最佳材料"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "中途提示创建器",
+      "d": "使用风格、灯光和构图参数制作详细的中途提示"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E 提示生成器",
+      "d": "构建具有清晰描述和艺术指导的优化 DALL-E 提示"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "稳定扩散提示作家",
+      "d": "通过正负提示工程生成稳定的扩散提示"
+    },
+    "Product Photography Prompt": {
+      "n": "产品摄影提示",
+      "d": "创建 AI 提示，实现令人惊叹的产品摄影，获得工作室品质的效果"
+    },
+    "Landscape Art Prompt": {
+      "n": "景观艺术提示",
+      "d": "利用环境和氛围细节创建令人惊叹的景观艺术提示"
+    },
+    "Portrait Photography Prompt": {
+      "n": "人像摄影提示",
+      "d": "通过灯光、表情和构图指导生成 AI 肖像提示"
+    },
+    "Food Photography Prompt": {
+      "n": "食物摄影提示",
+      "d": "工艺令人垂涎的美食摄影提示造型和电镀细节"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "架构可视化提示",
+      "d": "为建筑物和室内空间创建建筑可视化提示"
+    },
+    "Fashion Design Prompt": {
+      "n": "时尚设计提示",
+      "d": "利用面料、廓形和造型细节生成时装设计概念"
+    },
+    "Comic Art Prompt": {
+      "n": "漫画艺术提示",
+      "d": "通过面板构成和角色动作创建漫画书风格的艺术提示"
+    },
+    "Abstract Art Prompt": {
+      "n": "抽象艺术提示",
+      "d": "使用色彩理论、纹理和情感表达生成抽象艺术提示"
+    },
+    "Icon Design Brief": {
+      "n": "图标设计简介",
+      "d": "设计具有一致风格和视觉语言的干净图像集"
+    },
+    "Infographic Design Brief": {
+      "n": "信息图表设计简介",
+      "d": "使用数据可视化和视觉层次结构规划信息图表布局"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "社交媒体图形提示",
+      "d": "为任何平台生成滚动停止的社交媒体图形"
+    },
+    "Meme Creator Prompt": {
+      "n": "模因创建者提示",
+      "d": "通过格式选择、标题和病毒潜力生成模因概念"
+    },
+    "AI Avatar Prompt": {
+      "n": "AI头像提示",
+      "d": "为个人资料、游戏和虚拟身份创建独特的 AI 头像设计"
+    },
+    "Song Lyrics Writer": {
+      "n": "歌曲歌词作家",
+      "d": "编写任何流派的原创歌词，包括主歌、副歌和桥段"
+    },
+    "Chord Progression Generator": {
+      "n": "和弦进行生成器",
+      "d": "根据音乐理论指导生成适合任何流派和情绪的和弦进行"
+    },
+    "Beat Ideas Creator": {
+      "n": "节拍创意创造者",
+      "d": "使用节奏、鼓模式和乐器创意生成节拍概念"
+    },
+    "Song Structure Builder": {
+      "n": "歌曲结构生成器",
+      "d": "根据章节顺序、动态和过渡设计歌曲编曲"
+    },
+    "Rap Verse Writer": {
+      "n": "说唱诗歌作家",
+      "d": "用流畅的模式、押韵方案和双关语写出有力的说唱诗"
+    },
+    "Country Song Writer": {
+      "n": "乡村歌曲作家",
+      "d": "用讲故事、想象和音色写出地道的乡村歌曲"
+    },
+    "Pop Song Hook Creator": {
+      "n": "流行歌曲 Hook 创作者",
+      "d": "制作朗朗上口的流行歌曲和合唱旋律，让听众牢牢记住"
+    },
+    "Rock Ballad Writer": {
+      "n": "摇滚民谣作家",
+      "d": "用强大的构建和赞歌合唱写出情感摇滚民谣"
+    },
+    "Musical Arrangement Guide": {
+      "n": "编曲指南",
+      "d": "规划完整的音乐安排，包括乐器、发声和动态"
+    },
+    "Band Name Generator": {
+      "n": "乐队名称生成器",
+      "d": "根据流派、氛围和图像偏好生成创意乐队名称"
+    },
+    "Music Video Concept": {
+      "n": "音乐视频概念",
+      "d": "通过叙事、视觉效果和编舞开发创意音乐视频概念"
+    },
+    "Mixing Checklist": {
+      "n": "混合清单",
+      "d": "全面的混音清单，涵盖均衡器、压缩、效果和平衡"
+    },
+    "Film Score Brief": {
+      "n": "电影配乐简介",
+      "d": "使用情绪、乐器和时间提示创建详细的电影配乐简介"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts 脚本",
+      "d": "编写针对 60 秒垂直视频进行优化的引人入胜的 YouTube Shorts 脚本"
+    },
+    "Video Storyboard Creator": {
+      "n": "视频故事板创建器",
+      "d": "使用场景描述、摄像机角度和过渡来规划视觉故事板"
+    },
+    "Documentary Outline": {
+      "n": "纪录片大纲",
+      "d": "通过叙事弧线、采访和花絮计划构建引人入胜的纪录片"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlog 剧集策划",
+      "d": "规划具有地点、谈话要点和视觉多样性的引人入胜的视频博客节目"
+    },
+    "Screenwriting Helper": {
+      "n": "编剧帮手",
+      "d": "开发具有适当格式、对话和场景方向的剧本"
+    },
+    "Short Film Script": {
+      "n": "短片剧本",
+      "d": "编写完整的短片剧本，以视觉叙事和紧凑的叙事"
+    },
+    "Animation Script Writer": {
+      "n": "动画剧本作家",
+      "d": "编写带有视觉笑点、角色动作和时间提示的动画脚本"
+    },
+    "Video Editing Brief": {
+      "n": "视频编辑简介",
+      "d": "创建详细的视频编辑摘要，包括节奏、效果和风格指南"
+    },
+    "Livestream Run Sheet": {
+      "n": "直播运行表",
+      "d": "通过定时片段、谈话要点和参与触发器来规划直播"
+    },
+    "Tutorial Video Script": {
+      "n": "教程视频脚本",
+      "d": "使用分步说明和视觉效果编写清晰的教程视频脚本"
+    },
+    "Explainer Video Script": {
+      "n": "讲解视频脚本",
+      "d": "编写清晰的解释视频脚本，以直观方式简化复杂的主题"
+    },
+    "Video SEO Optimizer": {
+      "n": "视频 SEO 优化",
+      "d": "通过标题、描述、标签和缩略图策略优化视频元数据"
+    },
+    "Novel Outline Creator": {
+      "n": "小说大纲创作者",
+      "d": "通过情节结构、章节和人物弧线构建全面的小说大纲"
+    },
+    "Short Story Writer": {
+      "n": "短篇小说作家",
+      "d": "写出引人入胜的短篇故事，人物生动，结论令人满意"
+    },
+    "Poetry Generator": {
+      "n": "诗歌生成器",
+      "d": "以意象、韵律、情感创作各种形式的原创诗歌"
+    },
+    "Book Proposal Template": {
+      "n": "书籍提案模板",
+      "d": "通过市场分析和章节摘要创建专业的书籍提案"
+    },
+    "Memoir Outline": {
+      "n": "回忆录大纲",
+      "d": "用主题章节和反思性叙述来构建个人回忆录"
+    },
+    "Children's Book Creator": {
+      "n": "儿童图书创作者",
+      "d": "编写适合年龄的儿童读物，其中包含引人入胜的故事和插图笔记"
+    },
+    "Screenplay Outline": {
+      "n": "剧本大纲",
+      "d": "具有三幕结构、场景分解和对话注释的剧本大纲"
+    },
+    "Play Script Writer": {
+      "n": "播放剧本作家",
+      "d": "编写带有舞台指导、对话和场景结构的戏剧剧本"
+    },
+    "Comic Book Script": {
+      "n": "漫画剧本",
+      "d": "编写带有面板描述、对话和节奏的漫画书脚本"
+    },
+    "Fan Fiction Creator": {
+      "n": "同人小说创作者",
+      "d": "用忠实的角色声音和富有创意的新故事情节撰写同人小说"
+    },
+    "Writing Prompt Generator": {
+      "n": "书写提示生成器",
+      "d": "生成包含流派、限制和故事种子的创意写作提示"
+    },
+    "Dialogue Writer": {
+      "n": "对话作家",
+      "d": "精心制作听起来自然的对话，揭示人物性格并推动情节"
+    },
+    "Plot Twist Generator": {
+      "n": "情节扭曲生成器",
+      "d": "产生令人惊讶但合乎逻辑的情节曲折，重新构建叙事"
+    },
+    "Query Letter Writer": {
+      "n": "查询信作者",
+      "d": "给文学代理人写引人注目的查询信，并附上钩子和概要"
+    },
+    "Book Description Writer": {
+      "n": "书籍描述作家",
+      "d": "撰写引人入胜的书籍描述，吸引读者并推动销售"
+    },
+    "Ghostwriting Brief": {
+      "n": "代笔简介",
+      "d": "根据声音、风格和内容要求创建详细的代笔简报"
+    },
+    "Technical Writing Guide": {
+      "n": "技术写作指南",
+      "d": "以结构化格式和准确性编写清晰的技术文档"
+    },
+    "Grant Proposal Writer": {
+      "n": "拨款提案撰写者",
+      "d": "撰写具有项目描述和预算理由的有说服力的拨款提案"
+    },
+    "White Paper Outline": {
+      "n": "白皮书大纲",
+      "d": "通过研究、分析和建议构建权威白皮书"
+    },
+    "Copywriting Formula": {
+      "n": "文案公式",
+      "d": "将 AIDA、PAS 和 BAB 等经过验证的文案公式应用于任何产品或服务"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram 内容策划",
+      "d": "计划一周的 Instagram 内容，包括帖子、故事、影片和标题"
+    },
+    "X Thread Creator": {
+      "n": "X 线程创建器",
+      "d": "编写引人入胜的 X 线程来建立权威并推动参与"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit 帖子作者",
+      "d": "撰写针对特定 Reddit 子版块优化的 Reddit 帖子，并牢记社区规范"
+    },
+    "Viral Hook Generator": {
+      "n": "病毒挂钩生成器",
+      "d": "为跨平台的社交媒体内容生成引人注目的挂钩"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "标签策略工具",
+      "d": "研究和组织主题标签策略以最大程度地提高可发现性"
+    },
+    "Engagement Response Generator": {
+      "n": "参与响应生成器",
+      "d": "大规模生成对评论、私信和提及的深思熟虑的回复"
+    },
+    "LinkedIn Article Writer": {
+      "n": "LinkedIn 文章作者",
+      "d": "撰写思想领导力 LinkedIn 文章，建立专业权威"
+    },
+    "Episode Show Notes": {
+      "n": "剧集演出笔记",
+      "d": "编写详细的演出注释，包括时间戳、链接和关键要点"
+    },
+    "Podcast Editing Checklist": {
+      "n": "播客编辑清单",
+      "d": "通过质量检查点和润色步骤标准化播客编辑工作流程"
+    },
+    "Prompt Improver": {
+      "n": "及时改进",
+      "d": "使用结构化技术完善和优化任何提示，以获得更好的 AI 输出"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "思想链组织者",
+      "d": "构建思维链提示，引导 AI 逐步推理"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG 提示生成器",
+      "d": "通过上下文窗口优化创建检索增强的生成提示"
+    },
+    "Prompt Translator": {
+      "n": "提示翻译",
+      "d": "在不同的 AI 模型之间翻译提示，同时保留意图和质量"
+    },
+    "Prompt Evaluator": {
+      "n": "提示评估器",
+      "d": "通过改进提示对多个质量维度的提示进行评估和评分"
+    },
+    "Few-Shot Example Generator": {
+      "n": "少样本示例生成器",
+      "d": "为上下文学习提示生成高质量的小样本示例"
+    },
+    "System Prompt Writer": {
+      "n": "系统提示编写器",
+      "d": "编写有效的系统提示来定义 AI 行为、约束和输出样式"
+    },
+    "AI Guardrails Designer": {
+      "n": "AI护栏设计师",
+      "d": "为人工智能应用设计安全护栏和内容策略"
+    },
+    "AI Use Case Identifier": {
+      "n": "人工智能用例标识符",
+      "d": "识别和评估业务和工作流程的潜在人工智能用例"
+    },
+    "Model Comparison Guide": {
+      "n": "型号比较指南",
+      "d": "比较 AI 模型的功能、定价和用例适应性"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM 微调数据创建器",
+      "d": "为 LLM 微调项目生成和构建培训数据"
+    },
+    "Debugger Assistant": {
+      "n": "调试助手",
+      "d": "通过根本原因分析和修复建议系统地调试代码问题"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD 管道规划器",
+      "d": "使用构建、测试和部署阶段配置设计 CI/CD 管道"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker 配置指南",
+      "d": "使用最佳实践创建 Dockerfile 并编写配置"
+    },
+    "Git Workflow Planner": {
+      "n": "Git 工作流程规划器",
+      "d": "为开发团队设计 Git 分支策略和协作工作流程"
+    },
+    "Code Migration Guide": {
+      "n": "代码迁移指南",
+      "d": "规划和执行语言、框架或版本之间的代码迁移"
+    },
+    "Database Schema Designer": {
+      "n": "数据库架构设计器",
+      "d": "使用表、关系、索引和约束设计数据库模式"
+    },
+    "Performance Optimization Guide": {
+      "n": "性能优化指南",
+      "d": "通过分析和优化策略识别并解决性能瓶颈"
+    },
+    "Microservices Architecture": {
+      "n": "微服务架构",
+      "d": "设计具有服务边界、通信和部署的微服务架构"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL 架构生成器",
+      "d": "使用类型、查询、突变和订阅设计 GraphQL 架构"
+    },
+    "Terraform Configuration": {
+      "n": "地形配置",
+      "d": "为云基础设施配置生成 Terraform 配置"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS 架构规划师",
+      "d": "通过服务选择和成本优化来设计 AWS 云架构"
+    },
+    "Code Documentation Generator": {
+      "n": "代码文档生成器",
+      "d": "生成内联文档、JSDoc、文档字符串和代码注释"
+    },
+    "Technical Interview Prep": {
+      "n": "技术面试准备",
+      "d": "为技术面试做好准备，了解问题细分和解决方案模式"
+    },
+    "Changelog Writer": {
+      "n": "变更日志编写者",
+      "d": "按照使用语义版本控制保持变更日志格式"
+    },
+    "Error Handling Strategy": {
+      "n": "错误处理策略",
+      "d": "编写清晰的变更日志使用模式和用户消息传递设计全面的错误处理策略"
+    },
+    "Logging Strategy Guide": {
+      "n": "日志记录策略指南",
+      "d": "使用级别、格式和聚合设计应用程序日志记录策略"
+    },
+    "Monitoring Setup Guide": {
+      "n": "监控设置指南",
+      "d": "使用指标、警报和仪表板设置应用程序监控"
+    },
+    "Load Testing Plan": {
+      "n": "负载测试计划",
+      "d": "使用场景、指标和验收标准设计负载测试计划"
+    },
+    "Security Audit Checklist": {
+      "n": "安全审核清单",
+      "d": "使用基于 OWASP 的清单和补救指南进行安全审核"
+    },
+    "Security Checklist Creator": {
+      "n": "安全检查表创建者",
+      "d": "生成适合您的应用程序和堆栈的全面安全检查表"
+    },
+    "Penetration Testing Plan": {
+      "n": "渗透测试计划",
+      "d": "使用范围、方法和报告模板规划结构化渗透测试"
+    },
+    "Secure Coding Guide": {
+      "n": "安全编码指南",
+      "d": "通过漏洞预防创建特定于语言的安全编码指南"
+    },
+    "Incident Response Plan": {
+      "n": "事件响应计划",
+      "d": "设计包含检测、遏制和恢复程序的事件响应计划"
+    },
+    "Security Policy Writer": {
+      "n": "安全策略编写者",
+      "d": "编写涵盖访问控制、数据处理和合规性的组织安全策略"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "漏洞评估指南",
+      "d": "通过扫描和优先修复进行系统的漏洞评估"
+    },
+    "Security Awareness Training": {
+      "n": "安全意识培训",
+      "d": "为各级员工设计安全意识培训计划"
+    },
+    "Password Policy Creator": {
+      "n": "密码策略创建者",
+      "d": "创建具有复杂性、轮换和 MFA 要求的强大密码策略"
+    },
+    "Data Protection Plan": {
+      "n": "数据保护计划",
+      "d": "设计涵盖分类、加密和保留的数据保护策略"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT 分析专业版",
+      "d": "具有加权评分和行动计划的高级 SWOT 分析"
+    },
+    "Pitch Deck Outline": {
+      "n": "宣传演讲稿大纲",
+      "d": "创建一个引人注目的投资者推介材料结构"
+    },
+    "Business Canvas Creator": {
+      "n": "商业画布创建者",
+      "d": "为您的企业生成完整的商业模式画布"
+    },
+    "Competitive Intelligence Report": {
+      "n": "竞争情报报告",
+      "d": "分析竞争对手并确定市场定位机会"
+    },
+    "Strategic Planning Guide": {
+      "n": "战略规划指南",
+      "d": "制定具有目标和里程碑的多年战略计划"
+    },
+    "Annual Report Template": {
+      "n": "年度报告模板",
+      "d": "用关键的财务和运营亮点来构建您公司的年度报告"
+    },
+    "Board Meeting Agenda": {
+      "n": "董事会会议议程",
+      "d": "专业董事会会议议程与治理最佳实践"
+    },
+    "Company Newsletter": {
+      "n": "公司通讯",
+      "d": "设计一份引人入胜的内部或外部公司通讯"
+    },
+    "Employee Survey Creator": {
+      "n": "员工调查创建者",
+      "d": "建立有效的员工敬业度和满意度调查"
+    },
+    "Team Building Activity Planner": {
+      "n": "团队建设活动策划",
+      "d": "规划引人入胜的团队建设活动"
+    },
+    "Remote Work Policy": {
+      "n": "远程工作政策",
+      "d": "为您的组织制定全面的远程工作政策"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "多元化和包容性计划",
+      "d": "制定有意义的多元化公平和包容性战略"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "供应商评估矩阵",
+      "d": "系统地评估和比较供应商以做出采购决策"
+    },
+    "Process Improvement Plan": {
+      "n": "流程改进计划",
+      "d": "使用精益方法确定并实施流程改进"
+    },
+    "Change Management Plan": {
+      "n": "变革管理计划",
+      "d": "通过利益相关者协调和沟通来指导组织变革"
+    },
+    "Risk Assessment Template": {
+      "n": "风险评估模板",
+      "d": "系统地识别、评估和减轻业务风险"
+    },
+    "Succession Planning Guide": {
+      "n": "继任计划指南",
+      "d": "规划领导层换届和人才管道开发"
+    },
+    "Business Continuity Plan": {
+      "n": "业务连续性计划",
+      "d": "通过全面的连续性策略为中断做好准备"
+    },
+    "Customer Journey Map": {
+      "n": "客户旅程地图",
+      "d": "可视化并优化完整的客户体验"
+    },
+    "Brand Guidelines Template": {
+      "n": "品牌指南模板",
+      "d": "通过全面的风格和使用指南定义您的品牌形象"
+    },
+    "Mission & Vision Statement": {
+      "n": "使命与愿景声明",
+      "d": "为您的组织制定鼓舞人心的使命和愿景声明"
+    },
+    "Company Culture Document": {
+      "n": "企业文化文档",
+      "d": "定义并记录您的组织文化和价值观"
+    },
+    "Organizational Chart Planner": {
+      "n": "组织结构图规划师",
+      "d": "设计和规划您的组织结构和汇报关系"
+    },
+    "Department Budget Template": {
+      "n": "部门预算模板",
+      "d": "通过预测和跟踪创建详细的部门预算"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI 仪表板生成器",
+      "d": "设计关键绩效指标仪表板以进行数据驱动的决策"
+    },
+    "Job Description Writer": {
+      "n": "职位描述作家",
+      "d": "创建清晰且包容的职位描述，吸引顶尖人才"
+    },
+    "Interview Scorecard Creator": {
+      "n": "面试记分卡创建者",
+      "d": "构建结构化面试记分卡以实现一致的候选人评估"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "员工入职清单",
+      "d": "新员工成功的全面入职清单"
+    },
+    "Performance Improvement Plan": {
+      "n": "绩效改进计划",
+      "d": "创建具有明确里程碑的支持性绩效改进计划"
+    },
+    "Exit Interview Guide": {
+      "n": "退出面试指南",
+      "d": "进行富有洞察力的离职面谈以提高保留率"
+    },
+    "Compensation Analysis": {
+      "n": "薪酬分析",
+      "d": "分析和衡量薪酬方案的市场竞争力"
+    },
+    "Benefits Comparison Guide": {
+      "n": "优势比较指南",
+      "d": "比较和评估员工福利方案"
+    },
+    "Team Retrospective": {
+      "n": "团队回顾",
+      "d": "促进有效的团队回顾以持续改进"
+    },
+    "One-on-One Meeting Template": {
+      "n": "一对一会议模板",
+      "d": "与直接下属组织富有成效的一对一会议"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "招聘管道规划员",
+      "d": "端到端设计和优化您的招聘渠道"
+    },
+    "Employee Recognition Program": {
+      "n": "员工认可计划",
+      "d": "建立有意义的员工认可和奖励计划"
+    },
+    "Training Program Designer": {
+      "n": "培训项目设计师",
+      "d": "设计有效的员工培训和发展计划"
+    },
+    "Workplace Policy Writer": {
+      "n": "工作场所政策撰稿人",
+      "d": "起草涵盖关键组织主题的明确工作场所政策"
+    },
+    "Conflict Resolution Guide": {
+      "n": "冲突解决指南",
+      "d": "通过结构化解决框架解决工作场所冲突"
+    },
+    "Remote Team Handbook": {
+      "n": "远程团队手册",
+      "d": "为分布式团队运营创建综合手册"
+    },
+    "Career Path Planner": {
+      "n": "职业道路规划师",
+      "d": "用可行的里程碑规划您的职业轨迹"
+    },
+    "Salary Negotiation Prep": {
+      "n": "薪资谈判准备",
+      "d": "准备自信的薪资谈判谈话要点和策略"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn 个人资料生成器",
+      "d": "优化您的 LinkedIn 个人资料以吸引招聘人员和机会"
+    },
+    "Portfolio Builder Guide": {
+      "n": "投资组合构建指南",
+      "d": "创建一个出色的专业作品集来展示您最好的作品"
+    },
+    "Networking Email Templates": {
+      "n": "网络电子邮件模板",
+      "d": "撰写有效的社交电子邮件以促进职业发展和介绍"
+    },
+    "Career Pivot Guide": {
+      "n": "职业枢轴指南",
+      "d": "通过结构化计划实现成功的职业转型"
+    },
+    "Freelance Rate Calculator": {
+      "n": "自由职业费率计算器",
+      "d": "计算你的理想自由职业费率和定价策略"
+    },
+    "Professional Development Plan": {
+      "n": "专业发展计划",
+      "d": "制定持续职业发展的结构化计划"
+    },
+    "Mentorship Program Guide": {
+      "n": "导师计划指南",
+      "d": "寻找结构并最大化指导关系"
+    },
+    "Side Hustle Validator": {
+      "n": "副业验证器",
+      "d": "评估并验证副业创意的可行性"
+    },
+    "Work-Life Balance Audit": {
+      "n": "工作与生活平衡审计",
+      "d": "通过可行的策略评估和改善您的工作与生活平衡"
+    },
+    "Speaking Proposal Template": {
+      "n": "演讲提案模板",
+      "d": "创建有说服力的会议和活动演讲提案"
+    },
+    "Consulting Proposal Writer": {
+      "n": "咨询提案作家",
+      "d": "起草达成交易的获胜咨询提案"
+    },
+    "Skill Gap Analyzer": {
+      "n": "技能差距分析器",
+      "d": "确定并计划缩小职业发展的关键技能差距"
+    },
+    "Career Journal Prompts": {
+      "n": "职业日记提示",
+      "d": "通过指导日记练习反思您的职业生涯"
+    },
+    "Informational Interview Guide": {
+      "n": "信息面试指南",
+      "d": "准备并进行有效的信息访谈"
+    },
+    "Thank You Note Writer": {
+      "n": "谢谢你的便条作者",
+      "d": "为任何场合撰写深思熟虑的专业感谢信"
+    },
+    "Resignation Letter Template": {
+      "n": "辞职信模板",
+      "d": "写一封专业辞职信以保持积极的关系"
+    },
+    "Meal Prep Planner": {
+      "n": "膳食准备计划",
+      "d": "通过购物清单和准备时间表计划每周膳食"
+    },
+    "Habit Tracker Designer": {
+      "n": "习惯追踪器设计师",
+      "d": "设计个性化习惯跟踪系统以实现持久改变"
+    },
+    "Sleep Improvement Guide": {
+      "n": "睡眠改善指南",
+      "d": "通过循证策略优化您的睡眠质量"
+    },
+    "Stress Management Plan": {
+      "n": "压力管理计划",
+      "d": "构建个性化压力管理工具包和行动计划"
+    },
+    "Yoga Routine Builder": {
+      "n": "瑜伽日常生成器",
+      "d": "根据您的水平和目标创建定制的瑜伽练习"
+    },
+    "Running Training Plan": {
+      "n": "跑步训练计划",
+      "d": "为任何距离目标制定结构化的跑步训练计划"
+    },
+    "Swimming Workout": {
+      "n": "游泳锻炼",
+      "d": "设计有效的健身和技术游泳训练"
+    },
+    "Strength Training Program": {
+      "n": "力量训练计划",
+      "d": "创建适合您目标的渐进式力量训练计划"
+    },
+    "Flexibility Routine": {
+      "n": "灵活性程序",
+      "d": "通过结构化的伸展运动提高灵活性和活动性"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT 锻炼创建者",
+      "d": "设计高强度间歇训练以获得最大效果"
+    },
+    "Nutrition Label Reader": {
+      "n": "营养标签阅读器",
+      "d": "学习阅读和理解营养标签以获得更健康的选择"
+    },
+    "Calorie Counter Guide": {
+      "n": "卡路里计数器指南",
+      "d": "通过宏观细分设置个性化卡路里跟踪"
+    },
+    "Hydration Tracker": {
+      "n": "水分追踪器",
+      "d": "跟踪并优化您的每日饮水量和补水习惯"
+    },
+    "Mental Health Check-In": {
+      "n": "心理健康检查",
+      "d": "指导心理健康自我评估和健康跟踪"
+    },
+    "Therapy Session Prep": {
+      "n": "治疗准备",
+      "d": "通过结构化反思和目标设定为治疗课程做好准备"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "感恩日记提示",
+      "d": "每日感恩日记有助于改善心理健康"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "正念练习创造者",
+      "d": "创建个性化的正念和呼吸练习"
+    },
+    "Supplement Research Guide": {
+      "n": "补充研究指南",
+      "d": "根据您的健康目标研究和评估补充剂"
+    },
+    "Allergy Management Plan": {
+      "n": "过敏管理计划",
+      "d": "制定全面的过敏管理和避免策略"
+    },
+    "Chronic Condition Tracker": {
+      "n": "慢性病追踪器",
+      "d": "跟踪慢性健康状况的症状、药物和触发因素"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "物理治疗锻炼日志",
+      "d": "记录并跟踪物理治疗练习和恢复进度"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "符合人体工程学的工作空间设置",
+      "d": "优化您的工作空间，以提高舒适度、健康度和生产力"
+    },
+    "Digital Detox Planner": {
+      "n": "数字排毒计划",
+      "d": "计划并执行数字排毒以改善心理健康"
+    },
+    "Self-Care Routine Builder": {
+      "n": "自我护理日常生成器",
+      "d": "建立涵盖所有健康维度的可持续自我护理程序"
+    },
+    "First Aid Guide": {
+      "n": "急救指南",
+      "d": "常见紧急情况的快速参考急救程序"
+    },
+    "To-Do List Power Planner": {
+      "n": "待办事项列表电源规划器",
+      "d": "创建包含时间估计和精力水平的优先待办事项列表"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "每日日程优化器",
+      "d": "根据您的能量模式设计优化的每日计划"
+    },
+    "Project Planner Pro": {
+      "n": "项目规划师专业版",
+      "d": "规划具有里程碑可交付成果和资源分配的项目"
+    },
+    "Decision Matrix Builder": {
+      "n": "决策矩阵生成器",
+      "d": "使用加权标准分析做出更好的决策"
+    },
+    "Weekly Review Template": {
+      "n": "每周回顾模板",
+      "d": "每周进行彻底的回顾，以保持您的目标的正轨"
+    },
+    "Morning Routine Designer": {
+      "n": "早晨例程设计师",
+      "d": "设计一个充满活力的早晨例程，以实现最佳表现"
+    },
+    "Evening Routine Creator": {
+      "n": "晚间例行活动创建者",
+      "d": "制定一个平静的夜间惯例，以便更好地休息和为第二天做准备"
+    },
+    "Time Blocking Schedule": {
+      "n": "时间限制时间表",
+      "d": "通过集中的时间段安排您的一天，以实现最大生产力"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "艾森豪威尔矩阵工具",
+      "d": "按紧急程度和重要性对任务进行分类，以便更好地确定优先级"
+    },
+    "Pomodoro Session Planner": {
+      "n": "番茄工作法",
+      "d": "使用番茄工作法计划重点工作会议"
+    },
+    "Goal Tracking System": {
+      "n": "目标追踪系统",
+      "d": "建立具有进度指标的全面目标跟踪系统"
+    },
+    "Quarterly Planning Template": {
+      "n": "季度计划模板",
+      "d": "通过战略目标和可行的目标来规划您的季度"
+    },
+    "Annual Review Template": {
+      "n": "年度审核模板",
+      "d": "对成就进行彻底的年度审查并设定未来目标"
+    },
+    "Meeting Notes Template": {
+      "n": "会议记录模板",
+      "d": "捕获可操作的会议记录以及决策和后续行动"
+    },
+    "Brain Dump Organizer": {
+      "n": "大脑转储组织者",
+      "d": "将混乱的想法转化为有组织的可操作类别"
+    },
+    "Delegation Framework": {
+      "n": "委托框架",
+      "d": "确定要授权的内容并创建清晰的授权简报"
+    },
+    "Focus Session Planner": {
+      "n": "焦点会议策划者",
+      "d": "通过环境和分心管理来规划深度聚焦课程"
+    },
+    "Energy Management Guide": {
+      "n": "能源管理指南",
+      "d": "优化您全天的能量水平，以获得最佳表现"
+    },
+    "Batch Processing Planner": {
+      "n": "批处理计划器",
+      "d": "将相似的任务分组以实现高效的批处理会话"
+    },
+    "System Documentation Template": {
+      "n": "系统文档模板",
+      "d": "记录个人和团队系统以确保一致性和入职"
+    },
+    "Project Kickoff Template": {
+      "n": "项目启动模板",
+      "d": "启动具有明确目标范围和团队协调的项目"
+    },
+    "Sprint Planning Guide": {
+      "n": "Sprint 计划指南",
+      "d": "通过用户故事估计和容量来规划有效的冲刺"
+    },
+    "Kanban Board Setup": {
+      "n": "看板设置",
+      "d": "设计和配置用于可视化工作流程管理的看板"
+    },
+    "Gantt Chart Planner": {
+      "n": "甘特图规划器",
+      "d": "创建包含依赖项和里程碑的详细项目时间表"
+    },
+    "Resource Allocation Matrix": {
+      "n": "资源分配矩阵",
+      "d": "规划和优化跨项目和团队的资源分配"
+    },
+    "Status Report Template": {
+      "n": "状态报告模板",
+      "d": "创建清晰的项目状态报告以供利益相关者沟通"
+    },
+    "Risk Register Creator": {
+      "n": "风险登记册创建者",
+      "d": "建立和维护全面的项目风险登记册"
+    },
+    "Lessons Learned Template": {
+      "n": "经验教训模板",
+      "d": "记录并记录项目经验教训以供未来改进"
+    },
+    "Requirements Document": {
+      "n": "需求文档",
+      "d": "收集并记录项目要求和验收标准"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "用户验收测试计划",
+      "d": "使用测试用例和签核标准创建结构化 UAT 计划"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "利益相关者沟通计划",
+      "d": "通过渠道频率和消息传递来规划利益相关者的沟通"
+    },
+    "Project Timeline Creator": {
+      "n": "项目时间表创建者",
+      "d": "建立包含阶段和可交付成果的详细项目时间表"
+    },
+    "Agile Retrospective": {
+      "n": "敏捷回顾",
+      "d": "以不同的形式促进高效、敏捷的回顾"
+    },
+    "Scope Document Writer": {
+      "n": "范围文档编写者",
+      "d": "使用边界可交付成果和排除定义项目范围"
+    },
+    "Project Closure Report": {
+      "n": "项目结束报告",
+      "d": "记录项目完成情况以及结果和最终评估"
+    },
+    "Conversation Practice Partner": {
+      "n": "对话练习伙伴",
+      "d": "通过现实场景练习目标语言对话"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "词汇生成器专业版",
+      "d": "通过上下文示例和间隔重复提示构建词汇"
+    },
+    "Grammar Coach": {
+      "n": "语法教练",
+      "d": "通过清晰的解释和练习学习和练习语法规则"
+    },
+    "Translation Helper": {
+      "n": "翻译助手",
+      "d": "通过上下文和使用说明获得准确的翻译"
+    },
+    "Language Exchange Prep": {
+      "n": "语言交换准备",
+      "d": "为具有结构化对话主题的语言交换课程做准备"
+    },
+    "Travel Phrase Book": {
+      "n": "旅行短语手册",
+      "d": "根据目的地情况整理的基本旅行短语"
+    },
+    "Business Language Guide": {
+      "n": "商务语言指南",
+      "d": "学习商业环境和沟通的专业语言"
+    },
+    "Accent Improvement Guide": {
+      "n": "口音改进指南",
+      "d": "通过有针对性的练习改善发音和口音"
+    },
+    "Reading Comprehension Practice": {
+      "n": "阅读理解练习",
+      "d": "通过分级文本和理解问题提高阅读技能"
+    },
+    "Writing Practice Creator": {
+      "n": "写作练习创造者",
+      "d": "通过指导提示和反馈练习用目标语言写作"
+    },
+    "Listening Comprehension Guide": {
+      "n": "听力理解指南",
+      "d": "通过结构化练习和策略提高听力技能"
+    },
+    "Cultural Context Guide": {
+      "n": "文化背景指南",
+      "d": "了解文化差异和礼仪以进行有效沟通"
+    },
+    "Room Layout Planner": {
+      "n": "房间布局规划",
+      "d": "通过家具放置和流动来规划最佳的房间布局"
+    },
+    "Color Palette Creator": {
+      "n": "调色板创建器",
+      "d": "为房间和设计项目生成有凝聚力的调色板"
+    },
+    "Furniture Shopping Guide": {
+      "n": "家具选购指南",
+      "d": "智能家具购物，提供风格匹配和预算规划"
+    },
+    "Home Decor Style Finder": {
+      "n": "家居装饰风格查找器",
+      "d": "通过指导评估发现您的室内设计风格"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "衣柜胶囊生成器",
+      "d": "打造一个多功能的胶囊衣柜，最大限度地增加服装组合"
+    },
+    "Outfit Planner": {
+      "n": "服装规划师",
+      "d": "从现有衣柜中规划本周或特殊活动的服装"
+    },
+    "Personal Style Guide": {
+      "n": "个人风格指南",
+      "d": "定义您的个人风格身份和购物指南"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "季节性衣橱刷新",
+      "d": "每个季节都通过策略性的添加和编辑来更新您的衣柜"
+    },
+    "Home Office Setup Guide": {
+      "n": "家庭办公室设置指南",
+      "d": "设计高效且时尚的家庭办公空间"
+    },
+    "Bathroom Design Planner": {
+      "n": "浴室设计规划",
+      "d": "规划浴室的装修和更新，使其风格和功能相得益彰"
+    },
+    "Hackathon Idea Generator": {
+      "n": "黑客马拉松创意生成器",
+      "d": "根据主题和约束集思广益并验证黑客马拉松项目想法"
+    },
+    "MVP Builder Guide": {
+      "n": "MVP 构建指南",
+      "d": "在紧张的黑客马拉松期限内规划和构建最小可行产品"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "黑客马拉松推介演讲",
+      "d": "创建引人注目的宣传材料，向评委展示您的黑客马拉松项目"
+    },
+    "Technical Architecture Planner": {
+      "n": "技术架构规划师",
+      "d": "快速为您的黑客马拉松项目设计技术架构"
+    },
+    "Hackathon Team Builder": {
+      "n": "黑客马拉松团队建设者",
+      "d": "组建一支技能互补、角色明确、平衡的黑客马拉松团队"
+    },
+    "Demo Day Script": {
+      "n": "演示日脚本",
+      "d": "编写一个精美的现场演示脚本，突出显示您项目的主要功能"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "评审标准分析器",
+      "d": "分析黑客马拉松评判标准并相应优化您的项目"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "黑客马拉松时间表规划",
+      "d": "将您的黑客马拉松时间分解为结构化的冲刺时间表"
+    },
+    "Prize Strategy Advisor": {
+      "n": "有奖策略顾问",
+      "d": "战略性地瞄准特定的奖项曲目并定制您的项目以赢得胜利"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "黑客马拉松后行动计划",
+      "d": "将您的黑客马拉松项目变成真正的产品或作品集"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "快速原型制作指南",
+      "d": "在有限的时间内快速构建原型并迭代您的黑客马拉松概念"
+    },
+    "Hackathon Submission Template": {
+      "n": "黑客马拉松提交模板",
+      "d": "使用所有必需的材料准备完整且精美的黑客马拉松提交"
+    },
+    "Game Design Document": {
+      "n": "游戏设计文档",
+      "d": "创建涵盖游戏各个方面的全面游戏设计文档"
+    },
+    "Game Mechanics Designer": {
+      "n": "游戏机制设计师",
+      "d": "设计和平衡核心游戏机制以实现引人入胜的游戏玩法"
+    },
+    "Level Design Planner": {
+      "n": "关卡设计规划",
+      "d": "通过节奏、挑战和环境故事讲述来规划游戏关卡"
+    },
+    "Game Economy Balancer": {
+      "n": "游戏经济平衡器",
+      "d": "设计和平衡游戏内经济，以实现公平且引人入胜的进程"
+    },
+    "Character Stats Builder": {
+      "n": "角色统计生成器",
+      "d": "创建平衡的角色统计系统和职业原型"
+    },
+    "Quest Designer": {
+      "n": "任务设计师",
+      "d": "设计引人入胜的任务，提供分支叙事和有意义的奖励"
+    },
+    "Game UI/UX Planner": {
+      "n": "游戏 UI/UX 规划师",
+      "d": "规划直观的游戏 UI 布局和用户体验流程"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "桌面角色扮演战役",
+      "d": "利用世界传说、NPC 和故事线构建桌面 RPG 战役"
+    },
+    "Board Game Designer": {
+      "n": "棋盘游戏设计师",
+      "d": "使用平衡规则设计从概念到原型的棋盘游戏"
+    },
+    "Game Testing Checklist": {
+      "n": "游戏测试清单",
+      "d": "为您的游戏创建全面的 QA 测试清单"
+    },
+    "Photo Shoot Planner": {
+      "n": "照片拍摄策划",
+      "d": "计划从概念到执行的完整照片拍摄以及所有后勤"
+    },
+    "Photography Portfolio Guide": {
+      "n": "摄影作品集指南",
+      "d": "为客户或展览策划和组织出色的摄影作品集"
+    },
+    "Photo Editing Workflow": {
+      "n": "照片编辑工作流程",
+      "d": "构建从导入到最终导出的高效照片编辑工作流程"
+    },
+    "Client Photography Brief": {
+      "n": "客户摄影简介",
+      "d": "为客户项目创建专业摄影简介"
+    },
+    "Landscape Photography Guide": {
+      "n": "风景摄影指南",
+      "d": "根据天气、时间和构图技巧来计划风景摄影郊游"
+    },
+    "Portrait Photography Tips": {
+      "n": "人像摄影技巧",
+      "d": "使用灯光和姿势方向捕捉引人注目的肖像的指南"
+    },
+    "Product Photography Setup": {
+      "n": "产品摄影设置",
+      "d": "使用适当的灯光和舞台设置专业的产品摄影"
+    },
+    "Wedding Photography Timeline": {
+      "n": "婚纱摄影时间表",
+      "d": "规划从准备到接待的完整婚礼当天摄影时间表"
+    },
+    "Street Photography Guide": {
+      "n": "街头摄影指南",
+      "d": "真实而引人注目的街头摄影的技巧和技巧"
+    },
+    "Astrophotography Planner": {
+      "n": "天文摄影策划",
+      "d": "使用设备设置和天体事件计划天文摄影课程"
+    },
+    "Character Design Brief": {
+      "n": "角色设计简介",
+      "d": "创建包含个性、外观和背景故事的详细角色设计简介"
+    },
+    "Comic Strip Creator": {
+      "n": "漫画创作者",
+      "d": "使用面板布局、对话和节奏来规划和创建漫画"
+    },
+    "World Building Guide": {
+      "n": "世界建设指南",
+      "d": "设计具有地理、文化和传说的沉浸式虚构世界"
+    },
+    "Children's Book Illustrator": {
+      "n": "儿童图书插画",
+      "d": "以适合年龄的风格和节奏为儿童读物规划插图"
+    },
+    "Art Portfolio Curator": {
+      "n": "艺术作品集策展人",
+      "d": "为画廊、客户或学校策划和展示艺术作品集"
+    },
+    "Color Theory Guide": {
+      "n": "色彩理论指南",
+      "d": "应用色彩理论原理创造和谐且有影响力的艺术品"
+    },
+    "Digital Art Workflow": {
+      "n": "数字艺术工作流程",
+      "d": "简化从草图到最终渲染的数字艺术流程"
+    },
+    "Art Commission Brief": {
+      "n": "艺术委员会简介",
+      "d": "撰写清晰的艺术委托简介，向艺术家传达您的愿景"
+    },
+    "Mural Design Planner": {
+      "n": "壁画设计策划",
+      "d": "规划大型壁画项目从概念到安装"
+    },
+    "Art Exhibition Proposal": {
+      "n": "艺术展览提案",
+      "d": "为画廊和场馆撰写专业的艺术展览提案"
+    },
+    "Tax Deduction Finder": {
+      "n": "减税查找器",
+      "d": "根据您的情况和申报状态确定经常错过的税收减免"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "自营职业税务指南",
+      "d": "了解自营职业税，包括估计付款和扣除"
+    },
+    "Tax Document Organizer": {
+      "n": "税务文件整理器",
+      "d": "组织和跟踪申报季所需的所有税务文件"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "季度税收估算器",
+      "d": "计算和计划个体经营者的季度估计纳税"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "资本收益计算器指南",
+      "d": "了解并规划投资和财产的资本利得税"
+    },
+    "Tax Filing Checklist": {
+      "n": "报税清单",
+      "d": "确保税务申报准确完整的分步清单"
+    },
+    "State Tax Comparison": {
+      "n": "州税比较",
+      "d": "比较搬迁或多州收入的州税收影响"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "减税采收指南",
+      "d": "战略性地收获投资损失以抵消收益并减少纳税义务"
+    },
+    "Stock Research Template": {
+      "n": "股票研究模板",
+      "d": "对个股进行彻底的基本面和技术分析"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF 比较工具",
+      "d": "按费用比率、持有量、业绩和策略比较 ETF"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "股息投资组合规划师",
+      "d": "建立以股息为中心的投资组合以产生被动收入"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "房地产投资分析仪",
+      "d": "分析出租物业和房地产投资的回报和现金流"
+    },
+    "Angel Investing Checklist": {
+      "n": "天使投资清单",
+      "d": "通过尽职调查框架评估初创企业投资机会"
+    },
+    "Retirement Account Optimizer": {
+      "n": "退休账户优化器",
+      "d": "优化 401k、IRA 和其他退休账户的缴款"
+    },
+    "Bond Analysis Guide": {
+      "n": "债券分析指南",
+      "d": "分析债券和固定收益证券的收益率、久期和风险"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "共同基金评估员",
+      "d": "通过业绩、费用、经理业绩记录和适合程度评估共同基金"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "投资组合再平衡指南",
+      "d": "重新平衡您的投资组合以维持目标资产配置"
+    },
+    "Investment Journal Template": {
+      "n": "投资日记模板",
+      "d": "跟踪投资决策、理由和结果以持续改进"
+    },
+    "AWS Service Selector": {
+      "n": "AWS 服务选择器",
+      "d": "选择适合您的应用程序要求和预算的 AWS 服务"
+    },
+    "Cloud Migration Plan": {
+      "n": "云迁移计划",
+      "d": "规划本地工作负载到云的结构化迁移"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Kubernetes 部署指南",
+      "d": "使用最佳实践在 Kubernetes 上部署和管理应用程序"
+    },
+    "Infrastructure as Code Template": {
+      "n": "基础设施即代码模板",
+      "d": "为可复制的云环境创建基础设施作为代码模板"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD 管道设计器",
+      "d": "设计自动化 CI/CD 管道以实现持续集成和部署"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "云成本优化器",
+      "d": "确定并实施云成本优化策略"
+    },
+    "Serverless Architecture Planner": {
+      "n": "无服务器架构规划师",
+      "d": "使用事件驱动架构模式设计无服务器应用程序"
+    },
+    "Container Strategy Guide": {
+      "n": "容器策略指南",
+      "d": "定义应用程序和微服务的容器化策略"
+    },
+    "Cloud Security Checklist": {
+      "n": "云安全清单",
+      "d": "通过全面的安全检查审核和保护云基础设施"
+    },
+    "Disaster Recovery Plan": {
+      "n": "灾难恢复计划",
+      "d": "设计具有 RTO 和 RPO 目标的云灾难恢复计划"
+    },
+    "Keynote Speech Writer": {
+      "n": "主题演讲撰稿人",
+      "d": "撰写一篇强有力的主题演讲，激发并吸引观众"
+    },
+    "TED Talk Outline": {
+      "n": "TED 演讲大纲",
+      "d": "用强大的叙事弧线构建引人入胜的 TED 风格演讲"
+    },
+    "Toast and Tribute Writer": {
+      "n": "敬酒和致敬作家",
+      "d": "为婚礼、退休和庆祝活动写下难忘的祝酒词和致敬词"
+    },
+    "Debate Preparation Guide": {
+      "n": "辩论准备指南",
+      "d": "为辩论做好充分的准备，包括论证、反驳和证据"
+    },
+    "Panel Discussion Prep": {
+      "n": "小组讨论准备",
+      "d": "为小组讨论做好准备，包括谈话要点和观众参与"
+    },
+    "Presentation Slide Planner": {
+      "n": "演示幻灯片规划",
+      "d": "使用视觉层次结构和叙述流程规划演示幻灯片"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "即兴演讲指南",
+      "d": "通过即兴演讲框架培养快速思考的技能"
+    },
+    "Commencement Speech Writer": {
+      "n": "毕业典礼演讲撰稿人",
+      "d": "为毕业典礼写一篇鼓舞人心的毕业典礼演讲"
+    },
+    "Grant Application Writer": {
+      "n": "拨款申请作家",
+      "d": "撰写令人信服的拨款申请，清楚地阐明影响和需求"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "筹款活动计划",
+      "d": "跨多个渠道规划和执行有效的筹款活动"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "志愿者招募指南",
+      "d": "为非营利项目招募、加入和留住志愿者"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "非营利组织董事会会议",
+      "d": "准备并召开有效的非营利性董事会会议，议程明确"
+    },
+    "Impact Report Template": {
+      "n": "影响报告模板",
+      "d": "创建引人注目的影响报告，展示您的非营利组织的成就"
+    },
+    "Donor Thank You Letter": {
+      "n": "捐助者感谢信",
+      "d": "撰写个性化的捐助者致谢信，建立持久的关系"
+    },
+    "Annual Campaign Strategy": {
+      "n": "年度活动策略",
+      "d": "制定全面的年度筹款和参与策略"
+    },
+    "Community Needs Assessment": {
+      "n": "社区需求评估",
+      "d": "进行彻底的社区需求评估以指导计划开发"
+    },
+    "Construction Project Plan": {
+      "n": "建设项目计划",
+      "d": "创建包含阶段、时间表和预算的全面建设项目计划"
+    },
+    "Building Permit Checklist": {
+      "n": "建筑许可证清单",
+      "d": "跟踪您的建设项目所需的所有建筑许可证和批准"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "承包商评估指南",
+      "d": "使用结构化评分框架评估和比较承包商"
+    },
+    "Material Estimate Calculator": {
+      "n": "材料估算计算器",
+      "d": "估算所需的建筑材料以及数量和成本预测"
+    },
+    "Site Inspection Checklist": {
+      "n": "现场检查清单",
+      "d": "使用标准化检查表进行彻底的现场检查"
+    },
+    "Renovation Scope Document": {
+      "n": "装修范围文件",
+      "d": "定义明确的改造工作范围以及规范和期望"
+    },
+    "Architectural Brief": {
+      "n": "架构简介",
+      "d": "撰写架构简介，定义项目愿景、要求和约束"
+    },
+    "Safety Compliance Checklist": {
+      "n": "安全合规检查表",
+      "d": "确保施工现场安全符合 OSHA 和当地法规"
+    },
+    "Robot Design Specification": {
+      "n": "机器人设计规范",
+      "d": "定义完整的机器人设计规范，包括机械、电子和软件"
+    },
+    "IoT Project Planner": {
+      "n": "物联网项目规划师",
+      "d": "规划从传感器到云仪表板的端到端物联网项目"
+    },
+    "Sensor Selection Guide": {
+      "n": "传感器选择指南",
+      "d": "选择适合您的机器人或物联网应用要求的最佳传感器"
+    },
+    "Embedded Systems Guide": {
+      "n": "嵌入式系统指南",
+      "d": "使用正确的微控制器选择和固件架构设计嵌入式系统"
+    },
+    "Automation Workflow Designer": {
+      "n": "自动化工作流程设计器",
+      "d": "使用传感器和执行器设计工业或家庭自动化工作流程"
+    },
+    "Hardware Prototype Planner": {
+      "n": "硬件原型规划器",
+      "d": "通过组件采购规划从面包板到 PCB 的硬件原型"
+    },
+    "Anxiety Management Plan": {
+      "n": "焦虑管理计划",
+      "d": "通过应对策略和触发因素创建个性化的焦虑管理计划"
+    },
+    "CBT Thought Record": {
+      "n": "CBT 思想记录",
+      "d": "练习认知行为疗法思维记录来挑战消极思维"
+    },
+    "Journaling Prompt Generator": {
+      "n": "日记提示生成器",
+      "d": "生成有意义的日记提示以进行自我反思和情感处理"
+    },
+    "Relationship Communication Guide": {
+      "n": "关系沟通指南",
+      "d": "通过结构化对话框架改善关系沟通"
+    },
+    "Boundary Setting Guide": {
+      "n": "边界设定指南",
+      "d": "学习在个人和职业生活中设定并保持健康的界限"
+    },
+    "Grief Processing Helper": {
+      "n": "悲伤处理助手",
+      "d": "通过富有同情心的指导和实际步骤来度过悲伤的过程"
+    },
+    "Self-Compassion Exercise": {
+      "n": "自我慈悲练习",
+      "d": "进行自我慈悲练习，以增强韧性并减少自我批评"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "情商建设者",
+      "d": "培养情商技能，以提高自我意识和人际关系"
+    },
+    "Anger Management Plan": {
+      "n": "愤怒管理计划",
+      "d": "通过触发因素和降级技术制定健康的愤怒管理策略"
+    },
+    "Burnout Recovery Plan": {
+      "n": "倦怠恢复计划",
+      "d": "创建一个结构化的倦怠恢复计划，其中包含界限、休息和逐步重新参与"
+    },
+    "Instant Pot Recipe": {
+      "n": "速溶锅食谱",
+      "d": "带有时间指南的高压锅食谱"
+    },
+    "World Cuisine Explorer": {
+      "n": "世界美食探索者",
+      "d": "来自全球美食的正宗食谱"
+    },
+    "Fermentation Guide": {
+      "n": "发酵指南",
+      "d": "发酵食品食谱和技术"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "烧烤指南",
+      "d": "烧烤食谱与摩擦和酱汁搭配"
+    },
+    "Bread Baking Guide": {
+      "n": "面包烘焙指南",
+      "d": "工匠面包食谱从头到尾"
+    },
+    "Mushroom Growing Guide": {
+      "n": "蘑菇种植指南",
+      "d": "室内蘑菇栽培从产卵到收获"
+    },
+    "Permaculture Planner": {
+      "n": "永续农业规划师",
+      "d": "设计一个自我维持的食物花园生态系统"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "温室设置指南",
+      "d": "规划和建造一个高效的温室"
+    },
+    "FSBO Selling Guide": {
+      "n": "FSBO 销售指南",
+      "d": "无需房地产经纪人即可逐步出售您的房屋"
+    },
+    "Investment Property Finder": {
+      "n": "投资房产查找器",
+      "d": "评估潜在的租赁投资物业"
+    },
+    "Car Modification Guide": {
+      "n": "汽车改装指南",
+      "d": "计划车辆改装和升级"
+    },
+    "Fleet Management Planner": {
+      "n": "车队管理规划师",
+      "d": "管理多辆车辆的维护和成本"
+    },
+    "Digital Nomad Guide": {
+      "n": "数字游牧者指南",
+      "d": "环游世界时远程工作"
+    },
+    "Eco-Travel Planner": {
+      "n": "生态旅行计划",
+      "d": "规划可持续且环保的旅行"
+    },
+    "Product Launch Event": {
+      "n": "产品发布会",
+      "d": "策划一场从场地到公关的产品发布会"
+    },
+    "Virtual Event Planner": {
+      "n": "虚拟活动策划",
+      "d": "规划引人入胜的在线活动和网络研讨会"
+    },
+    "College Planning Guide": {
+      "n": "大学规划指南",
+      "d": "大学规划从选拔到经济援助"
+    },
+    "Child Safety Plan": {
+      "n": "儿童安全计划",
+      "d": "全面的家庭和在线安全指南"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "异国宠物护理指南",
+      "d": "爬行动物、鸟类和外来宠物护理指南"
+    },
+    "Pet Adoption Guide": {
+      "n": "宠物领养指南",
+      "d": "成功完成宠物领养流程"
+    },
+    "Tiny House Builder": {
+      "n": "小房子建造者",
+      "d": "一步一步规划并建造一座小房子"
+    },
+    "Workshop Setup Guide": {
+      "n": "研讨会设置指南",
+      "d": "设计和装备家庭车间"
+    },
+    "Coupon Strategy Planner": {
+      "n": "优惠券策略规划师",
+      "d": "通过战略优惠券最大限度地节省"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "二手购物指南",
+      "d": "在旧货店和网上寻找优质商品"
+    },
+    "Theological Study Guide": {
+      "n": "神学学习指南",
+      "d": "深入探讨神学概念和教义"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "宗教间对话指南",
+      "d": "促进相互尊重的宗教间对话"
+    },
+    "Marathon Training Plan": {
+      "n": "马拉松训练计划",
+      "d": "从沙发到 26.2 的完整马拉松训练"
+    },
+    "Youth Sports Coach": {
+      "n": "青少年体育教练",
+      "d": "规划青少年体育实践和发展"
+    },
+    "Woodworking Project": {
+      "n": "木工项目",
+      "d": "使用切割清单和步骤规划木工项目"
+    },
+    "Vinyl Record Guide": {
+      "n": "黑胶唱片指南",
+      "d": "开始并策划黑胶唱片收藏"
+    },
+    "Home Brewing Guide": {
+      "n": "家庭酿造指南",
+      "d": "从头到尾在家酿造啤酒或葡萄酒"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "财务自由路线图",
+      "d": "绘制您实现财务独立的道路"
+    },
+    "Midlife Career Change": {
+      "n": "中年职业转变",
+      "d": "在任何年龄实现职业转型"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI壁纸创作者",
+      "d": "为任何设备生成令人惊叹的壁纸"
+    },
+    "Tattoo Design Prompt": {
+      "n": "纹身设计提示",
+      "d": "使用 AI 创建定制纹身设计概念"
+    },
+    "DJ Set Planner": {
+      "n": "DJ 布景规划",
+      "d": "通过曲目选择和过渡来规划 DJ 集"
+    },
+    "Music Theory Tutor": {
+      "n": "音乐理论导师",
+      "d": "通过练习学习音乐理论概念"
+    },
+    "Podcast Video Setup": {
+      "n": "播客视频设置",
+      "d": "设置视频播客从装备到编辑"
+    },
+    "Wedding Video Plan": {
+      "n": "婚礼视频计划",
+      "d": "策划婚礼摄像从仪式到编辑"
+    },
+    "Memoir Chapter Writer": {
+      "n": "回忆录章节作者",
+      "d": "从生活故事中写出引人入胜的回忆录章节"
+    },
+    "Haiku Generator": {
+      "n": "俳句生成器",
+      "d": "创作任何主题的俳句"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok 内容策略",
+      "d": "利用内容创意制定 TikTok 增长战略"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube 社区帖子",
+      "d": "创建引人入胜的 YouTube 社区帖子"
+    },
+    "Podcast Monetization Plan": {
+      "n": "播客货币化计划",
+      "d": "通过播客获利的策略"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "AI 工具比较指南",
+      "d": "比较特定用例的 AI 工具"
+    },
+    "Code Snippet Library": {
+      "n": "代码片段库",
+      "d": "组织和记录可重用的代码片段"
+    },
+    "Tech Stack Selector": {
+      "n": "技术堆栈选择器",
+      "d": "为您的项目选择正确的技术堆栈"
+    },
+    "Privacy Compliance Guide": {
+      "n": "隐私合规指南",
+      "d": "确保您的应用程序符合隐私法规"
+    },
+    "API Security Audit": {
+      "n": "API安全审计",
+      "d": "审核您的 API 端点是否存在安全漏洞"
+    },
+    "AI Hackathon Project": {
+      "n": "人工智能黑客马拉松项目",
+      "d": "端到端规划以人工智能为中心的黑客马拉松项目"
+    },
+    "Mobile Game Concept": {
+      "n": "手机游戏概念",
+      "d": "设计一款手机游戏，从概念到盈利"
+    },
+    "Drone Photography Guide": {
+      "n": "无人机摄影指南",
+      "d": "规划航空摄影任务和拍摄"
+    },
+    "NFT Art Collection": {
+      "n": "NFT 艺术收藏",
+      "d": "规划并创建数字艺术收藏"
+    },
+    "Freelancer Tax Guide": {
+      "n": "自由职业者税务指南",
+      "d": "了解自营职业税和扣除"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "加密货币投资组合生成器",
+      "d": "建立多元化的加密货币投资组合"
+    },
+    "Azure Service Guide": {
+      "n": "Azure 服务指南",
+      "d": "选择并配置 Azure 云服务"
+    },
+    "Wedding Speech Writer": {
+      "n": "婚礼致词作家",
+      "d": "撰写衷心的婚礼致辞和祝酒"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "非营利组织启动指南",
+      "d": "从头开始创建一个非营利组织"
+    },
+    "Home Addition Planner": {
+      "n": "家庭加建规划师",
+      "d": "规划房屋扩建，从许可证到施工"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino 项目规划器",
+      "d": "规划基于 Arduino 的电子项目"
+    },
+    "Digital Wellness Plan": {
+      "n": "数字健康计划",
+      "d": "与技术建立健康的关系"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT 分析工具",
+      "d": "优势、劣势、机遇、威胁的战略分析"
+    },
+    "Meeting Agenda Builder": {
+      "n": "会议议程生成器",
+      "d": "创建具有时间段的结构化会议议程"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR 框架生成器",
+      "d": "为团队设定目标和关键结果"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "供应商谈判准备",
+      "d": "为供应商和供应商谈判做准备"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "特许经营评估指南",
+      "d": "系统地评估特许经营机会"
+    },
+    "Remote Work Policy Writer": {
+      "n": "远程工作政策撰写者",
+      "d": "制定全面的远程工作政策"
+    },
+    "Diversity Hiring Plan": {
+      "n": "多元化招聘计划",
+      "d": "建立包容性的招聘实践和渠道"
+    },
+    "Freelance Contract Template": {
+      "n": "自由职业合同模板",
+      "d": "创建专业的自由职业服务协议"
+    },
+    "Personal Website Planner": {
+      "n": "个人网站策划",
+      "d": "规划和构建您的专业作品集网站"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "间歇性禁食指南",
+      "d": "设计间歇性禁食方案"
+    },
+    "Posture Improvement Plan": {
+      "n": "姿势改善计划",
+      "d": "通过锻炼和习惯纠正姿势问题"
+    },
+    "Notion Template Builder": {
+      "n": "概念模板生成器",
+      "d": "适用于任何工作流程的设计概念工作区模板"
+    },
+    "Automation Workflow Builder": {
+      "n": "自动化工作流程构建器",
+      "d": "使用 Zapier 或 Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "敏捷冲刺计划",
+      "d": "设计自动化工作流程使用故事点和速度规划敏捷冲刺"
+    },
+    "Product Roadmap Builder": {
+      "n": "产品路线图生成器",
+      "d": "创建具有里程碑和主题的产品路线图"
+    },
+    "TOEFL Prep Guide": {
+      "n": "托福备考指南",
+      "d": "通过学习策略准备托福考试"
+    },
+    "Business English Coach": {
+      "n": "商务英语教练",
+      "d": "提高专业英语沟通"
+    },
+    "Brand Identity Designer": {
+      "n": "品牌形象设计师",
+      "d": "创建有凝聚力的品牌视觉识别指南"
+    },
+    "UX Research Plan": {
+      "n": "用户体验研究计划",
+      "d": "规划数字产品的用户体验研究"
+    },
+    "Data Storytelling Guide": {
+      "n": "数据讲故事指南",
+      "d": "将数据洞察转化为引人入胜的叙述"
+    },
+    "AI Model Evaluation": {
+      "n": "AI模型评估",
+      "d": "评估和比较机器学习模型性能"
+    },
+    "3D Printing Project": {
+      "n": "3D打印项目",
+      "d": "规划从设计到打印的 3D 打印项目"
+    },
+    "Electrical Circuit Designer": {
+      "n": "电路设计师",
+      "d": "通过元件选择设计电路"
+    },
+    "Side Hustle Finder": {
+      "n": "副业发现器",
+      "d": "根据你的技能发现个性化的副业创意"
+    },
+    "Passive Income Blueprint": {
+      "n": "被动收入蓝图",
+      "d": "为你的情况量身定制被动收入策略"
+    },
+    "Savings Challenge Generator": {
+      "n": "储蓄挑战生成器",
+      "d": "创建定制的省钱挑战计划"
+    },
+    "Negotiate Any Bill": {
+      "n": "账单谈判脚本",
+      "d": "谈判和降低你的经常性账单的脚本"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy店铺启动器",
+      "d": "一步步启动和发展Etsy店铺的计划"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube频道规划器",
+      "d": "规划和启动一个盈利的YouTube频道"
+    },
+    "Rental Income Analyzer": {
+      "n": "租金收入分析器",
+      "d": "分析潜在租赁物业的回报"
+    },
+    "Online Course Creator": {
+      "n": "在线课程创建器",
+      "d": "规划和构建一个用于销售的在线课程"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "优惠券和返现最大化",
+      "d": "通过优惠券、返现和奖励最大化节省"
+    },
+    "Dropshipping Store Setup": {
+      "n": "代发货店铺设置",
+      "d": "从零开始规划代发货业务"
+    },
+    "Gig Economy Optimizer": {
+      "n": "零工经济优化器",
+      "d": "最大化Uber、DoorDash等零工应用的收入"
+    }
+  },
+  "fields": {
+    "budget": "预算",
+    "topic": "主题",
+    "duration": "时长",
+    "level": "级别",
+    "style": "风格",
+    "timeline": "时间线",
+    "product": "产品",
+    "audience": "受众",
+    "tone": "语气",
+    "industry": "行业",
+    "theme": "主题",
+    "platform": "平台",
+    "location": "位置",
+    "experience": "经验",
+    "genre": "类型",
+    "frequency": "频率",
+    "goals": "目标",
+    "format": "格式",
+    "season": "季节",
+    "projectName": "项目名称",
+    "showSteps": "显示步骤",
+    "goal": "目标",
+    "destination": "目的地",
+    "subject": "科目",
+    "equipment": "设备",
+    "targetAudience": "目标受众",
+    "language": "语言",
+    "problem": "问题",
+    "categories": "类别",
+    "gradeLevel": "年级",
+    "mood": "情绪",
+    "role": "角色",
+    "companyName": "公司名称",
+    "company": "公司",
+    "title": "标题",
+    "setting": "背景",
+    "date": "日期",
+    "environment": "环境",
+    "state": "状态",
+    "jurisdiction": "管辖权",
+    "priorities": "优先事项",
+    "target_audience": "目标受众",
+    "deadline": "截止日期",
+    "childAge": "儿童年龄",
+    "guestCount": "客人数量",
+    "timeframe": "时间范围",
+    "interests": "兴趣",
+    "concerns": "关注点",
+    "region": "地区",
+    "tools": "工具",
+    "category": "类别",
+    "constraints": "约束",
+    "projectType": "项目类型",
+    "venue": "场地",
+    "focusArea": "重点领域",
+    "targetLanguage": "目标语言",
+    "framework": "框架",
+    "domain": "领域",
+    "purpose": "目的",
+    "age": "年龄",
+    "teamSize": "团队规模",
+    "researchQuestion": "研究问题",
+    "context": "背景",
+    "output_format": "输出格式",
+    "task": "任务",
+    "channels": "渠道",
+    "servings": "份量",
+    "skillLevel": "技能水平",
+    "occasion": "场合",
+    "climate": "气候",
+    "zone": "区域",
+    "activities": "活动",
+    "attendees": "参加者",
+    "objectives": "目标",
+    "characters": "角色",
+    "length": "长度",
+    "niche": "利基",
+    "scope": "范围",
+    "stakeholders": "利益相关者",
+    "focus": "重点",
+    "size": "大小",
+    "homeType": "住宅类型",
+    "sport": "运动",
+    "application": "应用",
+    "department": "部门",
+    "cta": "行动号召",
+    "word_count": "字数",
+    "period": "时期",
+    "severity": "严重程度",
+    "difficulty": "难度",
+    "skills": "技能",
+    "materials": "材料",
+    "methodology": "方法论",
+    "cuisine": "菜系",
+    "lifestyle": "生活方式",
+    "year": "年份",
+    "petType": "宠物类型",
+    "complexity": "复杂度",
+    "deliverables": "交付物",
+    "dataType": "数据类型",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

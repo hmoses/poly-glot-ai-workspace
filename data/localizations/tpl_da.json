@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Alle",
+    "free": "⭐ Gratis",
+    "money": "💰 Forretning",
+    "coding": "💻 Kodning",
+    "ai": "🤖 AI",
+    "writing": "✍️ Skrivning",
+    "marketing": "📢 Markedsføring",
+    "sales": "🤝 Salg",
+    "school": "📚 Uddannelse",
+    "research": "🔬 Forskning",
+    "career": "🚀 Karriere",
+    "legal": "⚖️ Jura",
+    "finance": "📊 Økonomi",
+    "health": "🏥 Sundhed",
+    "cooking": "🍳 Madlavning",
+    "garden": "🌱 Have",
+    "realestate": "🏠 Ejendom",
+    "auto": "🚗 Bil",
+    "travel": "✈️ Rejser",
+    "image": "🎨 Billed-AI",
+    "music": "🎵 Musik",
+    "video": "🎬 Video",
+    "social": "📱 Socialt",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-handel",
+    "productivity": "⏱ Produktivitet",
+    "diy": "🔨 Gør-det-selv",
+    "event": "🎉 Events",
+    "parent": "👶 Forældre",
+    "pets": "🐾 Kæledyr",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Velvære",
+    "language": "🌍 Sprog",
+    "security": "🔒 Sikkerhed",
+    "datascience": "📈 Datavidenskab",
+    "chemistry": "🧪 Kemi",
+    "biology": "🧬 Biologi",
+    "physics": "⚛️ Fysik",
+    "math": "🔢 Matematik",
+    "makemoney": "💰 Penge"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Opsummeringsværktøj",
+      "d": "Kondenser ethvert indhold til klare punktopsummeringer"
+    },
+    "Technical Documentation": {
+      "n": "Teknisk dokumentation",
+      "d": "Opret klare tekniske dokumenter til API'er og funktioner"
+    },
+    "YouTube Script": {
+      "n": "YouTube-manuskript",
+      "d": "Komplet videomanuskript med hook, sektioner, CTA og b-roll-liste"
+    },
+    "TikTok Generator": {
+      "n": "TikTok-generator",
+      "d": "Kortformsvideomanuskript optimeret til TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "LinkedIn-opslags-skribent",
+      "d": "Scroll-stoppende LinkedIn-opslag der skaber engagement"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Blogindlægs-generator",
+      "d": "SEO-optimerede langformsblogindlæg"
+    },
+    "SEO Article Writer": {
+      "n": "SEO artikel forfatter",
+      "d": "Søgeordsrige artikler bygget til at rangere på Google"
+    },
+    "Podcast Episode Outline": {
+      "n": "Oversigt over podcast-episoden",
+      "d": "Struktureret episodeoversigt med samtalepunkter"
+    },
+    "Newsletter Writer": {
+      "n": "Nyhedsbrevskribent",
+      "d": "Engagerende e-mail nyhedsbreve, læsere faktisk åbner"
+    },
+    "Product Review Writer": {
+      "n": "Produktanmeldelsesskribent",
+      "d": "Afbalancerede, troværdige produktanmeldelser"
+    },
+    "Social Media Calendar": {
+      "n": "Sociale medier kalender",
+      "d": "30-dages indholdskalender med indlægsideer pr. platform"
+    },
+    "Executive Summary": {
+      "n": "Direktionsresumé",
+      "d": "Én-sides direktionsresumé fra lange dokumenter"
+    },
+    "Customer Support Response": {
+      "n": "Kundesupport svar",
+      "d": "Empatiske, on-brand kundesupportsvar"
+    },
+    "Business Proposal": {
+      "n": "Forretningsforslag",
+      "d": "Vindende kundeforslag med omfang og prisfastsættelse"
+    },
+    "Decision Memo": {
+      "n": "Beslutningsnotat",
+      "d": "Tydelige beslutningsnotater med muligheder og anbefaling"
+    },
+    "Stakeholder Update": {
+      "n": "Opdatering af interessenter",
+      "d": "Kortfattede projektstatusopdateringer for interessenter"
+    },
+    "Code Review Assistant": {
+      "n": "Kodegennemgang assistent",
+      "d": "Gennemgå koden for fejl, stil og bedste praksis"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Kodekommentarer",
+      "d": "JSDoc-kommentarer til JavaScript og TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Arkitektur beslutningsjournal",
+      "d": "Formel ADR, der dokumenterer tekniske beslutninger"
+    },
+    "User Story Writer": {
+      "n": "User Story-skribent",
+      "d": "Agile user stories med acceptkriterier"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Acceptkriterier",
+      "d": "Acceptkriterier i gurke-stil for brugerhistorier"
+    },
+    "PR Description Writer": {
+      "n": "PR Beskrivelse Skribent",
+      "d": "Tydelige PR-beskrivelser med kontekst og testnotater"
+    },
+    "Unit Test Generator": {
+      "n": "Enhedstestgenerator",
+      "d": "Enhedstest med kantkasser til enhver funktion"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Kode Refactoring Advisor",
+      "d": "Refaktorkode for læsbarhed og ydeevne"
+    },
+    "SQL Query Builder": {
+      "n": "SQL-forespørgselsbygger",
+      "d": "Naturligt sprog til optimerede SQL-forespørgsler"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes-konfigurationsgenerator",
+      "d": "Diagnosticér og løs K8s-problemer hurtigt"
+    },
+    "Postmortem Report": {
+      "n": "Postmortem rapport",
+      "d": "Ulastelig postmortem med tidslinje og handlingspunkter"
+    },
+    "Release Notes Writer": {
+      "n": "Udgivelsesnoter-skribent",
+      "d": "Brugervenlige udgivelsesnoter fra commit-beskeder"
+    },
+    "Prompt Optimizer": {
+      "n": "Spørg Optimizer",
+      "d": "Forbedre enhver AI-prompt for bedre, mere præcise output"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Tankekæde-bygger",
+      "d": "Byg flertrins-ræsonneringsprompter til komplekse opgaver"
+    },
+    "RAG System Prompt": {
+      "n": "RAG-systemprompt",
+      "d": "Retrieval-augmented generation promptskabeloner"
+    },
+    "Eval Dataset Creator": {
+      "n": "Evalueringsdatasæt-opretter",
+      "d": "Generér evalueringsdatasæt til AI-modeltestning"
+    },
+    "Prompt A/B Tester": {
+      "n": "Spørg A/B-tester",
+      "d": "Generer A/B-varianter af prompter for at sammenligne ydeevne"
+    },
+    "Multi-Model Comparison": {
+      "n": "Sammenligning af flere modeller",
+      "d": "Ramme til at sammenligne output på tværs af AI-modeller"
+    },
+    "Resume Tailoring": {
+      "n": "Genoptag skræddersyet",
+      "d": "Skræddersy dit CV til en specifik jobbeskrivelse"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Følgebrevsgenerator",
+      "d": "Overbevisende følgebreve, der får interviews"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn Profil Optimizer",
+      "d": "Optimer din LinkedIn til rekrutterere"
+    },
+    "Interview Coach": {
+      "n": "Interviewcoach",
+      "d": "Øv interview-spørgsmål og svar til enhver stilling"
+    },
+    "Salary Negotiation Script": {
+      "n": "Lønforhandlingsskrift",
+      "d": "Scripts og strategier til at forhandle højere løn"
+    },
+    "Career Roadmap Planner": {
+      "n": "Karriereplanlægger",
+      "d": "12-måneders karrierevækstplan med milepæle"
+    },
+    "Objection Handler": {
+      "n": "Indsigelsesbehandler",
+      "d": "Scripts til at håndtere almindelige salgsindsigelser"
+    },
+    "Landing Page Copy": {
+      "n": "Landingssidetekst",
+      "d": "Højkonverterende landingssidetekst"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads-kopi",
+      "d": "Høj-CTR Google-søgeannoncetekst"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram annonce",
+      "d": "Facebook og Instagram annoncetekst, der konverterer"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Kort om markedsføringskampagner",
+      "d": "Fuld marketingkampagne med kanaler og tidslinje"
+    },
+    "Customer Persona Builder": {
+      "n": "Kundepersona-bygger",
+      "d": "Detaljerede køberpersonaer til marketing og produkt"
+    },
+    "Value Proposition Canvas": {
+      "n": "Værditilbuds-canvas",
+      "d": "Klare og overbevisende værditilbud"
+    },
+    "Product Launch Plan": {
+      "n": "Produktlanceringsplan",
+      "d": "Go-to-market plan for produktlanceringer"
+    },
+    "Study Guide Creator": {
+      "n": "Studievejledningsskaber",
+      "d": "Gør ethvert emne til en struktureret studievejledning"
+    },
+    "Flashcard Creator": {
+      "n": "Flashcard-opretter",
+      "d": "Flashcard-spørgsmål og svar til hurtig memorering"
+    },
+    "Quiz Generator": {
+      "n": "Quizgenerator",
+      "d": "Multiple choice- og kortsvar-quizzer"
+    },
+    "Lesson Plan Builder": {
+      "n": "Lektionsplanbygger",
+      "d": "Detaljerede lektionsplaner med aktiviteter og vurderinger"
+    },
+    "Research Notes Organizer": {
+      "n": "Forskningsnoter-organisator",
+      "d": "Organisér forskningsnoter i strukturerede oversigter"
+    },
+    "Essay Outline Generator": {
+      "n": "Essayoversigts-generator",
+      "d": "Strukturerede essayoversigter med tese og argumenter"
+    },
+    "Literature Review Assistant": {
+      "n": "Litteraturanmeldelsesassistent",
+      "d": "Akademisk litteraturgennemgang med syntese"
+    },
+    "Thesis Statement Builder": {
+      "n": "Speciale Statement Builder",
+      "d": "Stærke, diskutable afhandlingsudsagn"
+    },
+    "Exam Prep Planner": {
+      "n": "Eksamensforberedelsesplanlægger",
+      "d": "Personlig eksamensstudieskema"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Kontraktoversigt",
+      "d": "Almindeligt engelsk kontraktresumé. Ikke juridisk rådgivning."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Kontraktrisikogennemgang",
+      "d": "Identificer risikable klausuler. Ikke juridisk rådgivning."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA-analysator",
+      "d": "Fordeling af NDA-klausulen. Ikke juridisk rådgivning."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Politikudkastassistent",
+      "d": "Udkast til interne politikker. Ikke juridisk rådgivning."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Overholdelsestjekliste",
+      "d": "Overholdelsestjekliste efter rammer. Ikke juridisk rådgivning."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Servicevilkår Reviewer",
+      "d": "Flag ToS-risici. Ikke juridisk rådgivning."
+    },
+    "Budget Planner": {
+      "n": "Budget planlægger",
+      "d": "Personlig eller forretningsmæssig budgetplan. Ikke økonomisk rådgivning."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Indtjening Call Summarizer",
+      "d": "Vigtige ting fra indtjeningsopkald. Ikke økonomisk rådgivning."
+    },
+    "Investment Thesis Builder": {
+      "n": "Investeringsafhandlingsbygger",
+      "d": "Struktureret investeringsafhandling. Ikke økonomisk rådgivning."
+    },
+    "Financial Analysis Report": {
+      "n": "Finansiel analyserapport",
+      "d": "Analyser økonomi. Ikke økonomisk rådgivning."
+    },
+    "Expense Categorizer": {
+      "n": "Udgiftskategoriserer",
+      "d": "Kategoriser og analyser udgifter. Ikke økonomisk rådgivning."
+    },
+    "SOAP Note Generator": {
+      "n": "SOAP-notegenerator",
+      "d": "Kliniske SOAP-noter. Ikke medicinsk rådgivning."
+    },
+    "Clinical Case Summary": {
+      "n": "Opsummering af kliniske tilfælde",
+      "d": "Strukturer kliniske noter. Ikke lægeråd."
+    },
+    "Patient Education Writer": {
+      "n": "Patientuddannelsesskribent",
+      "d": "Klarsproget patientuddannelse. Ikke lægeråd."
+    },
+    "Medical Research Summarizer": {
+      "n": "Medicinsk forskningsresumé",
+      "d": "Opsummér forskningsartikler. Ikke medicinsk rådgivning."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Differentialdiagnoseassistent",
+      "d": "Organiser differentialdiagnoser. Ikke lægeråd."
+    },
+    "Creative Storyteller": {
+      "n": "Kreativ historiefortæller",
+      "d": "Generer kreative historier og fortællinger"
+    },
+    "Ad Copy Generator": {
+      "n": "Annoncekopigenerator",
+      "d": "Højkonverterende kopi til Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Forfatter af fejlrapporter",
+      "d": "Skriv klare, reproducerbare fejlrapporter"
+    },
+    "Social Media Caption": {
+      "n": "Sociale medier-billedtekst",
+      "d": "Generér scroll-stoppende billedtekster til enhver platform"
+    },
+    "Research Paper Abstract": {
+      "n": "Forskning Paper Abstract",
+      "d": "Skriv strukturerede akademiske abstracts"
+    },
+    "Translation Expert": {
+      "n": "Oversættelsesekspert",
+      "d": "Oversæt tekst med kontekst og nuancer"
+    },
+    "Data Analyst": {
+      "n": "Dataanalytiker",
+      "d": "Analyser data og giv handlingsorienteret indsigt"
+    },
+    "Recipe Generator": {
+      "n": "Opskriftsgenerator",
+      "d": "Generer tilpassede opskrifter baseret på dine præferencer og diætbehov"
+    },
+    "Meal Planner": {
+      "n": "Måltidsplanlægger",
+      "d": "Planlæg afbalancerede måltider for hele ugen med variation og ernæring i tankerne"
+    },
+    "Grocery List Builder": {
+      "n": "Købmandslistebygger",
+      "d": "Byg en organiseret indkøbsliste ud fra dine planlagte måltider og spisekammerbehov"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Pantry Opskrift Finder",
+      "d": "Find lækre opskrifter med ingredienser, du allerede har ved hånden"
+    },
+    "Nutrition Calculator": {
+      "n": "Ernæringsberegner",
+      "d": "Beregn detaljerede ernæringsoplysninger for enhver opskrift eller måltidskombination"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Ingredienserstatningsvejledning",
+      "d": "Find perfekte erstatninger for manglende eller begrænsede ingredienser"
+    },
+    "Batch Cooking Planner": {
+      "n": "Storkognings-planlægger",
+      "d": "Planlæg effektive storkogningssessioner for at spare tid i løbet af ugen"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Cocktailopskriftsskaber",
+      "d": "Skab og tilpas cocktailopskrifter til enhver lejlighed"
+    },
+    "Baking Conversion Helper": {
+      "n": "Bagekonverteringshjælper",
+      "d": "Konverter bagemål mellem enheder og skaler opskrifter op eller ned"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Kostspecifik opskriftsfinder",
+      "d": "Find opskrifter, der er skræddersyet til din specifikke kostplan eller ernæringsmål"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Slow Cooker opskrift",
+      "d": "Få perfekt timede slow cooker-opskrifter til praktisk madlavning"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Air Fryer Opskrift Creator",
+      "d": "Skab sprøde og lækre luftfritureopskrifter med perfekt timing"
+    },
+    "Smoothie Builder": {
+      "n": "Smoothie-bygger",
+      "d": "Byg næringsrige og lækre smoothieopskrifter til ethvert mål"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Sauce- og dressingskaber",
+      "d": "Lav hjemmelavede saucer og dressinger fra bunden"
+    },
+    "Spice Blend Guide": {
+      "n": "Guide til krydderiblanding",
+      "d": "Skab brugerdefinerede krydderiblandinger til ethvert køkken eller skåltype"
+    },
+    "Food Pairing Expert": {
+      "n": "Madparringsekspert",
+      "d": "Oplev ideelle mad- og smagssammensætninger til forhøjede måltider"
+    },
+    "Holiday Menu Planner": {
+      "n": "Feriemenuplanlægger",
+      "d": "Planlæg en komplet feriemenu med tidslinje og indkøbsliste"
+    },
+    "Leftover Makeover": {
+      "n": "Rester af makeover",
+      "d": "Forvandl rester til spændende nye måltider med kreative ideer"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Børnevenlige måltidsideer",
+      "d": "Skab sunde måltider, som børn rent faktisk vil nyde at spise"
+    },
+    "Date Night Dinner": {
+      "n": "Romantisk middag",
+      "d": "Planlæg en imponerende middag til en romantisk aften derhjemme"
+    },
+    "Budget Meal Planner": {
+      "n": "Budget måltidsplanlægger",
+      "d": "Skab lækre måltider på et stramt budget uden at ofre ernæring"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Vegansk opskriftskonverter",
+      "d": "Konverter enhver traditionel opskrift til en lækker vegansk version"
+    },
+    "Dessert Creator": {
+      "n": "Dessertskaber",
+      "d": "Design skræddersyede dessertopskrifter til ethvert færdighedsniveau og enhver lejlighed"
+    },
+    "Appetizer Planner": {
+      "n": "Forretter planlægger",
+      "d": "Planlæg den perfekte appetitvækker til fester og sammenkomster"
+    },
+    "Food Prep Timeline": {
+      "n": "Tidslinje for madforberedelse",
+      "d": "Opret en detaljeret madlavningstidslinje, så alt er klar på én gang"
+    },
+    "Plant Care Guide": {
+      "n": "Planteplejevejledning",
+      "d": "Få personlig plejevejledning til enhver plante i din samling"
+    },
+    "Garden Planner": {
+      "n": "Haveplanlægger",
+      "d": "Design og planlæg din havelayout for maksimalt udbytte og skønhed"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Skadedyrsdiagnoseværktøj",
+      "d": "Identificer havens skadedyr og sygdomme med økologiske behandlingsmuligheder"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Sæsonbestemt plantekalender",
+      "d": "Ved præcis, hvornår du skal plante hver afgrøde i din vækstzone"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Grøntsagshaveplanlægger",
+      "d": "Planlæg en produktiv køkkenhave med ledsagende plantning og rotation"
+    },
+    "Indoor Plant Guide": {
+      "n": "Indendørs planteguide",
+      "d": "Vælg og pleje de perfekte indendørs planter til dit rum"
+    },
+    "Herb Garden Starter": {
+      "n": "Urtehave Starter",
+      "d": "Start en blomstrende urtehave indendørs eller udendørs med kyndig vejledning"
+    },
+    "Composting Guide": {
+      "n": "Komposteringsvejledning",
+      "d": "Start og vedligehold et komposteringssystem til rig havejord"
+    },
+    "Landscape Design Helper": {
+      "n": "Landskabsdesignhjælper",
+      "d": "Design en smuk landskabsplan for din ejendom"
+    },
+    "Raised Bed Planner": {
+      "n": "Højsengsplanlægger",
+      "d": "Design og byg de perfekte høje havebede til dit rum"
+    },
+    "Fruit Tree Guide": {
+      "n": "Guide til frugttræer",
+      "d": "Vælg og pleje frugttræer, der passer til dit klima og rum"
+    },
+    "Container Garden Planner": {
+      "n": "Container Have Planner",
+      "d": "Skab smukke og produktive containerhaver til ethvert rum"
+    },
+    "Pollinator Garden": {
+      "n": "Bestøverhave",
+      "d": "Design en have, der tiltrækker bier, sommerfugle og gavnlige insekter"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Tørketålende have",
+      "d": "Planlæg en vandmæssig have, der trives med minimal kunstvanding"
+    },
+    "Soil Amendment Guide": {
+      "n": "Vejledning til jordændring",
+      "d": "Test og forbedre din havejord for optimal plantesundhed"
+    },
+    "Seed Starting Calendar": {
+      "n": "Frøstartskalender",
+      "d": "Planlæg din frøstartplan for en vellykket vækstsæson"
+    },
+    "Garden Layout Designer": {
+      "n": "Havelayout designer",
+      "d": "Skab et optimeret haveanlæg med passende mellemrum og soladgang"
+    },
+    "Water Schedule Planner": {
+      "n": "Vandplanlægger",
+      "d": "Lav en effektiv vandingsplan for din have og græsplæne"
+    },
+    "Plant Problem Solver": {
+      "n": "Planteproblemløser",
+      "d": "Diagnostiser og behandle almindelige planteproblemer med ekspertrådgivning"
+    },
+    "Pruning Guide": {
+      "n": "Beskæringsvejledning",
+      "d": "Lær, hvornår og hvordan du beskærer enhver plante for sundhed og skønhed"
+    },
+    "Home Buying Checklist": {
+      "n": "Tjekliste til boligkøb",
+      "d": "Udfyld trin-for-trin tjekliste til boligkøbsprocessen"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Værktøj til sammenligning af lejligheder",
+      "d": "Sammenlign lejligheder side om side for at finde din perfekte leje"
+    },
+    "Rental Application Helper": {
+      "n": "Lejeansøgningshjælper",
+      "d": "Forbered en stærk lejeansøgning, der skiller sig ud for udlejere"
+    },
+    "Home Inspection Questions": {
+      "n": "Spørgsmål om boliginspektion",
+      "d": "Væsentlige spørgsmål at stille under en boliginspektion"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Pantlånssammenligningsberegner",
+      "d": "Sammenlign muligheder for realkreditlån for at finde det bedste tilbud til din situation"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Førstegangskøbervejledning",
+      "d": "Komplet guide til at navigere dit første boligkøb med tillid"
+    },
+    "Neighborhood Research": {
+      "n": "Naboforskning",
+      "d": "Undersøg og sammenlign kvarterer for at finde det, der passer til dig"
+    },
+    "Home Value Estimator": {
+      "n": "Boligværdivurdering",
+      "d": "Estimer din boligværdi ved hjælp af sammenlignelige salgs- og markedsdata"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Lejeaftale anmelder",
+      "d": "Gennemgå og forstå centrale vilkår i din lejeaftale"
+    },
+    "Moving Checklist": {
+      "n": "Flyttetjekliste",
+      "d": "Omfattende flytte-tjekliste med tidslinje og opgavestyring"
+    },
+    "Property Investment Analyzer": {
+      "n": "Ejendomsinvesteringsanalysator",
+      "d": "Analyser lejeejendomme for potentiale for investeringsafkast"
+    },
+    "Renovation Budget Planner": {
+      "n": "Renoveringsbudgetplanlægger",
+      "d": "Planlæg og budgetter boligrenoveringsprojekter med detaljerede omkostningsoverslag"
+    },
+    "House Hunting Scorecard": {
+      "n": "Scorekort for husjagt",
+      "d": "Score og rangordne boliger under din husjagtproces"
+    },
+    "Down Payment Calculator": {
+      "n": "Udbetalingsberegner",
+      "d": "Beregn udbetalingsmuligheder og spareplaner for dit boligkøb"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Vedligeholdelsesplan for hjemmet",
+      "d": "Lav en sæsonbestemt vedligeholdelsesplan for hjemmet for at beskytte din investering"
+    },
+    "Rental Property Analysis": {
+      "n": "Analyse af lejebolig",
+      "d": "Evaluer muligheder for lejeboliger med økonomiske fremskrivninger"
+    },
+    "Home Staging Tips": {
+      "n": "Boligstyling-tips",
+      "d": "Style dit hjem for at sælge hurtigere og til en højere pris"
+    },
+    "Realtor Interview Questions": {
+      "n": "Spørgsmål til ejendomsmæglerinterview",
+      "d": "Nøglespørgsmål at stille, når man interviewer ejendomsmæglere"
+    },
+    "Closing Cost Estimator": {
+      "n": "Slutomkostningsberegning",
+      "d": "Estimer alle afsluttende omkostninger for din ejendomshandel"
+    },
+    "HOA Assessment Guide": {
+      "n": "HOA vurderingsvejledning",
+      "d": "Evaluer HOA-gebyrer, regler og økonomisk sundhed, før du køber"
+    },
+    "Car Buying Assistant": {
+      "n": "Bilkøbsassistent",
+      "d": "Naviger i bilkøbsprocessen med tillid og spar penge"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Værktøj til sammenligning af køretøjer",
+      "d": "Sammenlign køretøjer side om side om specifikationer, pris og funktioner"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Vedligeholdelsesplanlægger",
+      "d": "Opret en personlig vedligeholdelsesplan for at forlænge bilens levetid"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Reparationsestimatanalysator",
+      "d": "Evaluer autoreparationsvurderinger og find rimelige priser for tjenester"
+    },
+    "Road Trip Planner": {
+      "n": "Roadtrip-planlægger",
+      "d": "Planlæg den perfekte roadtrip med stop, brændstof og tidsberegning"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Tjekliste for brugt bil",
+      "d": "Grundig tjekliste til køb af brugt bil med tillid"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Bilforsikring sammenligning",
+      "d": "Sammenlign muligheder for bilforsikring for at finde den bedste dækning og pris"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Brændstoføkonomi lommeregner",
+      "d": "Beregn og optimer dit køretøjs brændstofomkostninger og effektivitet"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Billeasing vs Køb Analyzer",
+      "d": "Sammenlign leasing versus køb for at finde den bedste økonomiske løsning"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Indbytteværdiestimator",
+      "d": "Estimer dit køretøjs indbytningsværdi, og forhandle en rimelig aftale"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Køretøjshistorisk anmelder",
+      "d": "Nøglespørgsmål og kontroller ved gennemgang af en rapport om brugt køretøjshistorik"
+    },
+    "Car Detailing Guide": {
+      "n": "Bildetaljeringsvejledning",
+      "d": "Trin-for-trin bil med detaljerede instruktioner til et showroom finish"
+    },
+    "Winter Car Prep": {
+      "n": "Forberedelse af vinterbil",
+      "d": "Forbered dit køretøj til vinterkørsel og koldt vejr"
+    },
+    "New Driver Guide": {
+      "n": "Ny drivervejledning",
+      "d": "Væsentlige køretips og viden til nye og lærende chauffører"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Guide til elbiler",
+      "d": "Alt du behøver at vide om at købe og eje en elbil"
+    },
+    "Trip Planner": {
+      "n": "Rejseplanlægger",
+      "d": "Planlæg din perfekte rejse med destinationer, aktiviteter og logistik"
+    },
+    "Packing List Generator": {
+      "n": "Pakkelistegenerator",
+      "d": "Generer en tilpasset pakkeliste til enhver rejse og destination"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Ferie-rejseplan-bygger",
+      "d": "Byg en dag-for-dag ferierejseplan med aktiviteter og spisesteder"
+    },
+    "Travel Budget Calculator": {
+      "n": "Rejsebudget-beregner",
+      "d": "Beregn og følg dit rejsebudget med detaljerede udgiftskategorier"
+    },
+    "Local Attractions Guide": {
+      "n": "Guide til lokale attraktioner",
+      "d": "Opdag de bedste lokale attraktioner, skjulte perler og must-see steder"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Rejseforsikrings-sammenligning",
+      "d": "Sammenlign rejseforsikringsmuligheder for den rette dækning på din rejse"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Strategi til flybilet-tilbud",
+      "d": "Strategier og tips til at finde de bedste flytilbud og priser"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Hotelsammenlignings-hjælper",
+      "d": "Sammenlign hoteller på pris, faciliteter, beliggenhed og anmeldelser"
+    },
+    "Solo Travel Planner": {
+      "n": "Solo-rejseplanlægger",
+      "d": "Planlæg et sikkert og givende solo-rejseeventyr hvor som helst i verden"
+    },
+    "Family Vacation Planner": {
+      "n": "Familieferie-planlægger",
+      "d": "Planlæg en familievenlig ferie der underholder alle aldre"
+    },
+    "Backpacking Planner": {
+      "n": "Backpacking-planlægger",
+      "d": "Planlæg et budgetvenligt backpacking-eventyr med ruter og udstyr"
+    },
+    "Business Travel Organizer": {
+      "n": "Forretningsrejse-organisator",
+      "d": "Organisér forretningsrejser effektivt med udgiftssporing og planlægning"
+    },
+    "Cruise Planner": {
+      "n": "Krydstogt-planlægger",
+      "d": "Planlæg det perfekte krydstogt med havneudflugter og aktiviteter ombord"
+    },
+    "Travel Safety Guide": {
+      "n": "Rejsesikkerheds-guide",
+      "d": "Hold dig sikker på rejsen med destinationsspecifikke sikkerhedstips og -protokoller"
+    },
+    "Visa Requirements Checker": {
+      "n": "Visumkravs-tjekker",
+      "d": "Tjek visumkrav og forbered ansøgningsmaterialer til din rejse"
+    },
+    "Language Survival Kit": {
+      "n": "Sproget overlevelseskit",
+      "d": "Lær vigtige fraser og kulturtips til din rejsedestination"
+    },
+    "Airport Navigation Guide": {
+      "n": "Lufthavnsnavigations-guide",
+      "d": "Navigér effektivt i lufthavne med terminaltips og tidsstyring"
+    },
+    "Travel Photo Plan": {
+      "n": "Rejsefoto-plan",
+      "d": "Planlæg din rejsefotografering med de bedste steder, tidspunkter og teknikker"
+    },
+    "Group Trip Coordinator": {
+      "n": "Grupperejse-koordinator",
+      "d": "Koordinér grupperejselogistik, budgetter og aktiviteter for alle"
+    },
+    "Adventure Travel Planner": {
+      "n": "Eventyrrejse-planlægger",
+      "d": "Planlæg adrenalinfyldte eventyrrejser med sikkerhed og logistik"
+    },
+    "Wedding Planner": {
+      "n": "Bryllupsplanlægger",
+      "d": "Planlæg hver detalje af dit perfekte bryllup fra lokale til løfter"
+    },
+    "Birthday Party Planner": {
+      "n": "Fødselsdagsfest-planlægger",
+      "d": "Planlæg en mindeværdig fødselsdagsfejring for enhver alder og stil"
+    },
+    "Conference Organizer": {
+      "n": "Konference-organisator",
+      "d": "Organisér professionelle konferencer og seminarer med detaljeret logistik"
+    },
+    "Baby Shower Planner": {
+      "n": "Baby shower-planlægger",
+      "d": "Planlæg en smuk baby shower med lege, mad og dekorationer"
+    },
+    "Anniversary Celebration": {
+      "n": "Jubilæumsfejring",
+      "d": "Planlæg en meningsfuld jubilæumsfejring for enhver milepæl"
+    },
+    "Graduation Party": {
+      "n": "Dimissionsfest",
+      "d": "Fejr akademiske præstationer med en perfekt planlagt dimissionsfest"
+    },
+    "Holiday Party Planner": {
+      "n": "Højtidsfest-planlægger",
+      "d": "Planlæg festlige højtidssammenkomster med mad, aktiviteter og dekorationer"
+    },
+    "Corporate Event Planner": {
+      "n": "Virksomhedsarrangements-planlægger",
+      "d": "Planlæg professionelle virksomhedsarrangementer der imponerer kunder og medarbejdere"
+    },
+    "Fundraiser Organizer": {
+      "n": "Fundraiser-organisator",
+      "d": "Organisér vellykkede fundraising-arrangementer for velgørende formål og sager"
+    },
+    "Reunion Planner": {
+      "n": "Genforenings-planlægger",
+      "d": "Planlæg en mindeværdig familie- eller klassegenforening der samler alle"
+    },
+    "Engagement Party Planner": {
+      "n": "Forlovelsesfest-planlægger",
+      "d": "Planlæg en glædelig forlovelsesfejring til at dele den gode nyhed"
+    },
+    "Retirement Party": {
+      "n": "Pensionsfest",
+      "d": "Fejr en karriere godt levet med en gennemtænkt pensionsfest"
+    },
+    "Housewarming Planner": {
+      "n": "Indflytningsfest-planlægger",
+      "d": "Planlæg en indbydende indflytningsfest til dit nye hjem"
+    },
+    "Themed Party Creator": {
+      "n": "Temafest-skaber",
+      "d": "Design og planlæg kreative temafester med koordinerede detaljer"
+    },
+    "Event Budget Tracker": {
+      "n": "Arrangementsbudget-tracker",
+      "d": "Spor og administrér arrangementsudgifter for at holde dig inden for festbudgettet"
+    },
+    "Chore Chart Creator": {
+      "n": "Pligtskema-opretter",
+      "d": "Opret alderstilpassede pligtskemaer med belønninger og sporing"
+    },
+    "Educational Activity Planner": {
+      "n": "Uddannelsesaktivitets-planlægger",
+      "d": "Planlæg sjove uddannelsesaktiviteter der gør læring spændende for børn"
+    },
+    "Bedtime Story Writer": {
+      "n": "Godnathistorie-skribent",
+      "d": "Skab personlige godnathistorier med dit barn i hovedrollen"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Alderstilpasset milepæls-tracker",
+      "d": "Følg udviklingsmilepæle og fejr dit barns vækst"
+    },
+    "School Lunch Planner": {
+      "n": "Skolefrokost-planlægger",
+      "d": "Planlæg sunde og tiltalende skolefrokoster som børn rent faktisk vil spise"
+    },
+    "Homework Help Guide": {
+      "n": "Lektiehjælps-guide",
+      "d": "Strategier til at støtte dit barns lektier uden at gøre dem for dem"
+    },
+    "Family Game Night Ideas": {
+      "n": "Familiespilaften-idéer",
+      "d": "Planlæg engagerende familiespilaftener med aktiviteter for alle aldre"
+    },
+    "Screen Time Schedule": {
+      "n": "Skærmtids-skema",
+      "d": "Opret balancerede skærmtidsregler og -skemaer for din familie"
+    },
+    "Allowance System Designer": {
+      "n": "Lommepenge-system-designer",
+      "d": "Design et alderstilpasset lommepenge- og pengestyringssystem"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Baby-søvnskema",
+      "d": "Opret sunde søvnskemaer og -rutiner for babyer og småbørn"
+    },
+    "Potty Training Guide": {
+      "n": "Pottetrænings-guide",
+      "d": "Trin-for-trin pottetræningsplaner med tips til hvert stadie"
+    },
+    "Back to School Prep": {
+      "n": "Tilbage-til-skole-forberedelse",
+      "d": "Forbered din familie til en problemfri skolestart"
+    },
+    "Summer Activity Planner": {
+      "n": "Sommeraktivitets-planlægger",
+      "d": "Planlæg en sjov og berigende sommer med aktiviteter, lejre og eventyr"
+    },
+    "Family Meeting Agenda": {
+      "n": "Familiemøde-dagsorden",
+      "d": "Afhold produktive familiemøder der giver alle en stemme"
+    },
+    "Child Development Tracker": {
+      "n": "Børneudviklings-tracker",
+      "d": "Overvåg og støt dit barns fysiske, sociale og kognitive udvikling"
+    },
+    "Dog Training Plan": {
+      "n": "Hundetræningsplan",
+      "d": "Opret en tilpasset træningsplan til din hund uanset alder eller niveau"
+    },
+    "Cat Care Guide": {
+      "n": "Katteplejeguide",
+      "d": "Komplet plejeguide til at holde din kat sund og glad"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Kæledyrs-ernæringsplanlægger",
+      "d": "Planlæg optimal ernæring til dit kæledyr baseret på alder, race og sundhedsbehov"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Hvalpesocialiserings-tjekliste",
+      "d": "Sørg for at din hvalp er ordentligt socialiseret i det kritiske udviklingsvindue"
+    },
+    "Pet First Aid Guide": {
+      "n": "Kæledyrs-førstehjælpsguide",
+      "d": "Essentiel førstehjælpsviden og nødprocedurer for kæledyrsejere"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Akvarieopsætnings-planlægger",
+      "d": "Planlæg og opsæt et blomstrende akvarium med de rette fisk og udstyr"
+    },
+    "Pet Travel Preparation": {
+      "n": "Kæledyrs-rejseforberedelse",
+      "d": "Forbered alt det nødvendige for sikker og stressfri rejse med dit kæledyr"
+    },
+    "New Pet Checklist": {
+      "n": "Nyt kæledyr-tjekliste",
+      "d": "Alt hvad du behøver at forberede før du bringer et nyt kæledyr hjem"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Kæledyrsadfærds-analysator",
+      "d": "Forstå og håndtér dit kæledyrs adfærdsproblemer med ekspertvejledning"
+    },
+    "Senior Pet Care": {
+      "n": "Ældrekæledyrs-pleje",
+      "d": "Specialiseret plejeguide til ældre kæledyr for at holde dem komfortable og sunde"
+    },
+    "Pet Exercise Planner": {
+      "n": "Kæledyrs-motionsplanlægger",
+      "d": "Opret en motionsrutine der holder dit kæledyr i form og mentalt stimuleret"
+    },
+    "Vet Visit Preparation": {
+      "n": "Dyrlægebesøgs-forberedelse",
+      "d": "Forbered dig til dyrlægebesøg med organiserede sundhedsoplysninger og spørgsmål"
+    },
+    "Home Improvement Planner": {
+      "n": "Boligforbedring-planlægger",
+      "d": "Planlæg og prioritér boligforbedringsprojekter med budgetter og tidsplaner"
+    },
+    "Furniture Project Planner": {
+      "n": "Møbelprojekt-planlægger",
+      "d": "Planlæg specialbyggede møbler med materialer, værktøj og trin-for-trin-vejledning"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Ombygningsbudget-beregner",
+      "d": "Beregn detaljerede ombygningsomkostninger med arbejdskraft, materialer og reserve"
+    },
+    "Paint Color Coordinator": {
+      "n": "Malefarve-koordinator",
+      "d": "Vælg og koordinér malefarver til en sammenhængende boligpalet"
+    },
+    "Organization System Designer": {
+      "n": "Organiseringssystem-designer",
+      "d": "Design tilpassede organiseringssystemer til ethvert rum eller område i dit hjem"
+    },
+    "Storage Solutions Planner": {
+      "n": "Opbevaringsløsnings-planlægger",
+      "d": "Find kreative opbevaringsløsninger til at maksimere pladsen i ethvert rum"
+    },
+    "Home Repair Guide": {
+      "n": "Boligreparations-guide",
+      "d": "Trin-for-trin-vejledning til almindelige boligreparationer du selv kan udføre"
+    },
+    "Tool Buying Guide": {
+      "n": "Værktøjskøbs-guide",
+      "d": "Vælg det rigtige værktøj til dine gør-det-selv-projekter uden at bruge for meget"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Sæsonbestemt boligvedligeholdelse",
+      "d": "Komplette sæsonbestemte vedligeholdelsestjeklister til at beskytte dit hjem året rundt"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Energieffektivitets-audit",
+      "d": "Vurdér og forbedr dit hjems energieffektivitet for at spare på forbrugsregningerne"
+    },
+    "Smart Home Setup": {
+      "n": "Smart hjem-opsætning",
+      "d": "Planlæg og opsæt et smart hjem-system med de rette enheder og integrationer"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Badeværelsesombygnings-planlægger",
+      "d": "Planlæg en badeværelsesombygning med layout, armaturer og budgetstyring"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Køkkenombygnings-planlægger",
+      "d": "Planlæg en køkkenombygning fra layout til hvidevarer med detaljeret budgettering"
+    },
+    "Closet Organization": {
+      "n": "Skabsorganisering",
+      "d": "Design og organisér skabe for maksimal effektivitet og nem adgang"
+    },
+    "Garage Organization": {
+      "n": "Garageorganisering",
+      "d": "Forvandl din garage til et organiseret og funktionelt rum"
+    },
+    "Product Comparison Tool": {
+      "n": "Produktsammenlignings-værktøj",
+      "d": "Sammenlign produkter side om side for at træffe det bedste købsbeslutning"
+    },
+    "Buying Guide Creator": {
+      "n": "Købsguide-opretter",
+      "d": "Opret detaljerede købsguider til enhver produktkategori"
+    },
+    "Gift Finder": {
+      "n": "Gavefinder",
+      "d": "Find den perfekte gave til enhver baseret på deres interesser og dit budget"
+    },
+    "Price Tracker Strategy": {
+      "n": "Prissporing-strategi",
+      "d": "Strategier til at spore priser og købe på det bedste tidspunkt"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday-strategi",
+      "d": "Planlæg dit Black Friday- og Cyber Monday-indkøb for maksimal besparelse"
+    },
+    "Back to School Shopping": {
+      "n": "Skolestart-indkøb",
+      "d": "Organisér skolestart-indkøb med lister, budgetter og tilbud"
+    },
+    "Wardrobe Planner": {
+      "n": "Garderobe-planlægger",
+      "d": "Byg en alsidig garderobe med strategisk indkøb og outfit-planlægning"
+    },
+    "Electronics Buying Guide": {
+      "n": "Elektronik-købsguide",
+      "d": "Navigér elektronikkøb med specifikationssammenligning og tidspunktrådgivning"
+    },
+    "Subscription Service Comparison": {
+      "n": "Abonnementstjeneste-sammenligning",
+      "d": "Sammenlign abonnementstjenester for at finde den bedste værdi for dine behov"
+    },
+    "Wedding Registry Planner": {
+      "n": "Bryllupsgaveliste-planlægger",
+      "d": "Byg en omfattende bryllupsgaveliste med gaver til ethvert budget"
+    },
+    "Bible Study Guide": {
+      "n": "Bibelstudievejledning",
+      "d": "Opret strukturerede bibelstudieforløb med kontekst, spørgsmål og anvendelse"
+    },
+    "Sermon Outline Creator": {
+      "n": "Prædikenoversigts-opretter",
+      "d": "Udvikl overbevisende prædikenoversigter med skriftsteder, pointer og illustrationer"
+    },
+    "Comparative Religion Study": {
+      "n": "Komparativt religionsstudie",
+      "d": "Udforsk og sammenlign trosretninger, praksisser og historie på tværs af verdensreligioner"
+    },
+    "Discussion Question Generator": {
+      "n": "Diskussionsspørgsmåls-generator",
+      "d": "Generér gennemtænkte diskussionsspørgsmål til religiøse og filosofiske emner"
+    },
+    "Devotional Writer": {
+      "n": "Andagtsskribent",
+      "d": "Opret daglige andagter med skriftsteder, refleksion og bønneguider"
+    },
+    "Prayer Journal Guide": {
+      "n": "Bønnedagbogs-guide",
+      "d": "Strukturér dit bønneliv med guidede dagbogsprompter og rammer"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Åndelig bogklub-guide",
+      "d": "Opret bogklub-diskussionsguider til åndelige og religiøse bøger"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Meditationsskrift-guide",
+      "d": "Opret guidede meditationsoplevelser centreret om skriftsteder"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Ungdomsgruppe-lektionsplan",
+      "d": "Opret engagerende ungdomsgruppeundervisning med aktiviteter og diskussioner"
+    },
+    "Faith Journey Reflector": {
+      "n": "Trosrejse-reflektør",
+      "d": "Guidede refleksioner til at udforske og fordybe din personlige trosrejse"
+    },
+    "Workout Plan Creator": {
+      "n": "Træningsplan-opretter",
+      "d": "Opret personlige træningsplaner baseret på dine mål og fitnessniveau"
+    },
+    "Training Schedule Builder": {
+      "n": "Træningsskema-bygger",
+      "d": "Byg et struktureret træningsskema til enhver sport eller fitnessmål"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Kampstrategisk analysator",
+      "d": "Analysér kampstrategier og udvikl vindende tilgange til din sport"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Sportsernærings-guide",
+      "d": "Optimér din sportsernæring for toppræstation og restitution"
+    },
+    "Coaching Practice Plan": {
+      "n": "Trænerøvelses-plan",
+      "d": "Design effektive træningssessioner der udvikler færdigheder og holdsammenhold"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Fantasy Sports-analysator",
+      "d": "Analysér kampe og optimér dit Fantasy Sports-hold hver uge"
+    },
+    "Race Training Plan": {
+      "n": "Løbetræningsplan",
+      "d": "Træn til løb fra 5K til maraton med strukturerede progressive planer"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Sportsstatistik-analysator",
+      "d": "Analysér spiller- og holdstatistikker for dybere sportsforståelse"
+    },
+    "Team Management Tool": {
+      "n": "Holdstyrings-værktøj",
+      "d": "Administrér holdlister, skemaer og kommunikation effektivt"
+    },
+    "Injury Recovery Planner": {
+      "n": "Skadesheling-planlægger",
+      "d": "Planlæg sikker og effektiv restitution fra almindelige sportsskader"
+    },
+    "Photography Guide": {
+      "n": "Fotograferings-guide",
+      "d": "Forbedr dine fotograferingsfærdigheder med tips om komposition, lys og udstyr"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Strikkemusters-hjælper",
+      "d": "Find og tilpas strikkemønstre til dit færdighedsniveau og projektidéer"
+    },
+    "Board Game Night Planner": {
+      "n": "Brætspilsaften-planlægger",
+      "d": "Planlæg perfekte brætspilsaftener med spilvalg og gruppematch"
+    },
+    "Fishing Trip Planner": {
+      "n": "Fisketur-planlægger",
+      "d": "Planlæg vellykkede fisketure med tips til sted, udstyr og teknik"
+    },
+    "Camping Trip Organizer": {
+      "n": "Campingtur-organisator",
+      "d": "Organisér campingture med udstyrslister, madplaner og aktivitetsidéer"
+    },
+    "Bird Watching Guide": {
+      "n": "Fuglekiggeri-guide",
+      "d": "Identificér lokale fugle og planlæg fuglekiggerture med sæsontips"
+    },
+    "Model Building Planner": {
+      "n": "Modelbygnings-planlægger",
+      "d": "Planlæg og udfør modelbygningsprojekter med materialer og teknikker"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Puslespilsstrategi-guide",
+      "d": "Strategier og teknikker til at løse puslespil hurtigere og mere effektivt"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Astronomi-observationsplanlægger",
+      "d": "Planlæg stjernekiggersessioner med himmelbegivenheder og udstyrsanbefalinger"
+    },
+    "Art Supply Guide": {
+      "n": "Kunstforsynings-guide",
+      "d": "Vælg de rigtige kunstmaterialer til dit medie og færdighedsniveau"
+    },
+    "Goal Setting Framework": {
+      "n": "Målsætningsramme",
+      "d": "Sæt og opnå meningsfulde mål med en struktureret ramme og handlingsplan"
+    },
+    "Bucket List Creator": {
+      "n": "Bucket list-opretter",
+      "d": "Opret en inspirerende bucket list organiseret efter kategori og prioritet"
+    },
+    "Personal Mission Statement": {
+      "n": "Personlig missionserklæring",
+      "d": "Udform en meningsfuld personlig missionserklæring der guider dine livsbeslutninger"
+    },
+    "Life Transition Guide": {
+      "n": "Livsovergangs-guide",
+      "d": "Navigér store livsovergange med planlægning, støtte og mestringsstrategier"
+    },
+    "Habit Building Plan": {
+      "n": "Vaneopbygningsplan",
+      "d": "Opbyg varige positive vaner med beviste videnskabsbaserede strategier"
+    },
+    "Time Audit Tool": {
+      "n": "Tidsaudit-værktøj",
+      "d": "Auditér hvordan du bruger din tid og optimér for det der betyder mest"
+    },
+    "Relationship Goal Planner": {
+      "n": "Forholdsmål-planlægger",
+      "d": "Sæt og arbejd hen imod mål for stærkere og sundere relationer"
+    },
+    "Vision Board Creator": {
+      "n": "Visionboard-opretter",
+      "d": "Opret et digitalt visionboard med guidede prompter og visualiseringsøvelser"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Personlig SWOT-analyse",
+      "d": "Udfør en personlig SWOT-analyse til karriere- og livsplanlægning"
+    },
+    "Legacy Letter Writer": {
+      "n": "Arvebreve-skribent",
+      "d": "Skriv meningsfulde arvebreve til dine kære der fanger dine værdier og visdom"
+    },
+    "Contract Draft Creator": {
+      "n": "Kontraktudkasts-opretter",
+      "d": "Generér professionelle kontraktudkast til ethvert forretningsforhold"
+    },
+    "NDA Generator": {
+      "n": "NDA-generator",
+      "d": "Opret fortrolighedsaftaler tilpasset din situation"
+    },
+    "Rental Agreement Draft": {
+      "n": "Lejeaftaleudkast",
+      "d": "Udarbejd bolig- eller erhvervslejeaftaler"
+    },
+    "Terms of Service Generator": {
+      "n": "Servicevilkårs-generator",
+      "d": "Opret omfattende servicevilkår til hjemmesider og apps"
+    },
+    "Privacy Policy Writer": {
+      "n": "Privatlivspolitik-skribent",
+      "d": "Generér GDPR- og CCPA-kompatible privatlivspolitikker"
+    },
+    "Freelance Agreement": {
+      "n": "Freelanceaftale",
+      "d": "Opret aftaler mellem freelancere og kunder"
+    },
+    "Non-Compete Draft": {
+      "n": "Konkurrenceklausul-udkast",
+      "d": "Udarbejd konkurrenceklausuler og selvstændige aftaler"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC-driftsaftale",
+      "d": "Opret driftsaftaler til selskaber med begrænset ansvar"
+    },
+    "Partnership Agreement": {
+      "n": "Partnerskabsaftale",
+      "d": "Udarbejd partnerskabsaftaler med klare roller og vilkår"
+    },
+    "Intellectual Property Brief": {
+      "n": "Immaterialretlig brief",
+      "d": "Beskriv IP-ejerskab og beskyttelsesstrategier"
+    },
+    "Cease and Desist Draft": {
+      "n": "Påkravsbrev-udkast",
+      "d": "Opret påkravsbreve for forskellige overtrædelser"
+    },
+    "Employee Handbook Section": {
+      "n": "Medarbejderhåndbogs-afsnit",
+      "d": "Skriv individuelle afsnit til medarbejderhåndbøger"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Selvstændig entreprenøraftale",
+      "d": "Udarbejd IC-aftaler med korrekt klassificeringssprog"
+    },
+    "Liability Waiver Draft": {
+      "n": "Ansvarsfraskrivelses-udkast",
+      "d": "Opret ansvarsfraskrivelseserklæringer for aktiviteter og tjenester"
+    },
+    "Settlement Letter Draft": {
+      "n": "Forligsbrevudkast",
+      "d": "Udarbejd forligstilbud eller svarbreve"
+    },
+    "Demand Letter Draft": {
+      "n": "Kravbrev-udkast",
+      "d": "Opret formelle kravbreve for forskellige fordringer"
+    },
+    "Power of Attorney Draft": {
+      "n": "Fuldmagts-udkast",
+      "d": "Udarbejd fuldmagtsdokumenter til forskellige formål"
+    },
+    "Last Will Outline": {
+      "n": "Testamente-oversigt",
+      "d": "Opret en oversigt til et grundlæggende testamente"
+    },
+    "Business License Checklist": {
+      "n": "Erhvervslicens-tjekliste",
+      "d": "Generér en tjekliste over påkrævede licenser til din virksomhed"
+    },
+    "Trademark Application Guide": {
+      "n": "Varemærkeansøgnings-guide",
+      "d": "Trin-for-trin-guide til indgivelse af en varemærkeansøgning"
+    },
+    "Small Claims Court Guide": {
+      "n": "Småsagsrets-guide",
+      "d": "Forbered dig til småsagsretten med organiserede argumenter"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Skilsmissemæglings-forberedelse",
+      "d": "Organisér nøglepunkter og prioriteter til skilsmissemægling"
+    },
+    "Tenant Rights Guide": {
+      "n": "Lejerrettigheds-guide",
+      "d": "Forstå lejerrettigheder og retsmidler i din jurisdiktion"
+    },
+    "Landlord Notice Draft": {
+      "n": "Udlejermeddelelse-udkast",
+      "d": "Udarbejd korrekte juridiske meddelelser fra udlejer til lejer"
+    },
+    "Copyright Registration Guide": {
+      "n": "Ophavsretsregistrerings-guide",
+      "d": "Guide til registrering af ophavsrettigheder hos ophavsretsmyndigheden"
+    },
+    "Personal Budget Planner": {
+      "n": "Personlig budgetplanlægger",
+      "d": "Opret en omfattende månedlig eller årlig budgetplan"
+    },
+    "Investment Research Assistant": {
+      "n": "Investeringsforsknings-assistent",
+      "d": "Undersøg og analysér investeringsmuligheder systematisk"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Gældsafbetalings-beregner",
+      "d": "Planlæg en strategi til effektiv gældsafvikling"
+    },
+    "Expense Tracker Setup": {
+      "n": "Udgiftssporing-opsætning",
+      "d": "Design et personligt udgiftssporingssystem"
+    },
+    "Retirement Planning Guide": {
+      "n": "Pensionsplanlægnings-guide",
+      "d": "Byg en omfattende pensionsopsparingsstrategi"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Skatteforberedelse-tjekliste",
+      "d": "Organisér dokumenter og fradrag til skatteindberetning"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Nødopsparings-beregner",
+      "d": "Fastlæg og planlæg din ideelle nødopsparing"
+    },
+    "Net Worth Tracker": {
+      "n": "Nettoformue-tracker",
+      "d": "Spor og visualisér dit samlede økonomiske billede"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Kreditvurdering-forbedringsplan",
+      "d": "Opret en handlingsorienteret plan til at forbedre din kreditvurdering"
+    },
+    "Student Loan Strategy": {
+      "n": "SU-lånsstrategi",
+      "d": "Optimér din tilgang til tilbagebetaling af studielån"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Biindtægts-planlægger",
+      "d": "Planlæg og fremskriv indkomst fra bijob"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Forsikringsbehovs-analysator",
+      "d": "Vurdér dine forsikringsdæknings-mangler og -behov"
+    },
+    "Estate Planning Checklist": {
+      "n": "Boplanlægnings-tjekliste",
+      "d": "Organisér dine boplanlægningsdokumenter og beslutninger"
+    },
+    "Financial Goal Setter": {
+      "n": "Økonomisk målsætter",
+      "d": "Definér og følg fremskridt mod økonomiske milepæle"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Pengestrøms-analysator",
+      "d": "Analysér indkomst- og udgiftsmønstre over tid"
+    },
+    "Savings Challenge Creator": {
+      "n": "Opsparingsudfordrings-opretter",
+      "d": "Design en sjov opsparingsudfordring til at opbygge din redeæg"
+    },
+    "Investment Portfolio Review": {
+      "n": "Investeringsportefølje-gennemgang",
+      "d": "Gennemgå og rebalancér din investeringsportefølje"
+    },
+    "Cryptocurrency Research": {
+      "n": "Kryptovalutaforskning",
+      "d": "Undersøg og vurdér kryptovalutainvesteringer"
+    },
+    "Stock Analysis Helper": {
+      "n": "Aktieanalyse-hjælper",
+      "d": "Udfør fundamental- og teknisk analyse af aktier"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Ejendomsinvesterings-beregner",
+      "d": "Analysér potentielle ejendomsinvesteringsafkast"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Erhvervsskattefradrags-finder",
+      "d": "Identificér berettigede skattefradrag for din virksomhed"
+    },
+    "Payroll Budget Planner": {
+      "n": "Lønbudget-planlægger",
+      "d": "Planlæg og budgettér for lønomkostninger til medarbejdere"
+    },
+    "Invoice Template Creator": {
+      "n": "Fakturaskabelon-opretter",
+      "d": "Design professionelle fakturaer til din virksomhed"
+    },
+    "Profit Margin Calculator": {
+      "n": "Overskudsmargin-beregner",
+      "d": "Beregn og optimér avancer på tværs af produkter"
+    },
+    "Financial Independence Planner": {
+      "n": "Økonomisk uafhængigheds-planlægger",
+      "d": "Kortlæg din vej til økonomisk uafhængighed og tidlig pension"
+    },
+    "Ad Copy Writer": {
+      "n": "Annoncetekst-skribent",
+      "d": "Skriv overbevisende annoncetekster til enhver platform eller medie"
+    },
+    "SEO Article Creator": {
+      "n": "SEO-artikel-opretter",
+      "d": "Skriv SEO-optimerede artikler der rangerer og konverterer"
+    },
+    "Social Media Content Calendar": {
+      "n": "Sociale medier-indholdskalender",
+      "d": "Planlæg en måneds indhold til sociale medier på tværs af platforme"
+    },
+    "Email Campaign Builder": {
+      "n": "E-mailkampagne-bygger",
+      "d": "Design e-mailmarketingkampagner med flere e-mails der konverterer"
+    },
+    "Product Launch Strategy": {
+      "n": "Produktlanceringsstrategi",
+      "d": "Opret en omfattende markedsføringsstrategi til produktlancering"
+    },
+    "Brand Voice Guide": {
+      "n": "Brandstemme-guide",
+      "d": "Definér og dokumentér din brandstemme og budskaber"
+    },
+    "Content Marketing Strategy": {
+      "n": "Indholdsmarketingstrategi",
+      "d": "Byg en komplet indholdsmarketingstrategi fra bunden"
+    },
+    "Influencer Outreach Template": {
+      "n": "Influencer-henvendelsesskabelon",
+      "d": "Opret personlige samarbejdshenvendelser til influencere"
+    },
+    "Landing Page Copywriter": {
+      "n": "Landingsside-tekstforfatter",
+      "d": "Skriv højkonverterende landingssidetekst"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B-testplan-opretter",
+      "d": "Design strukturerede A/B-tests til marketingkampagner"
+    },
+    "Buyer Persona Builder": {
+      "n": "Køberpersona-bygger",
+      "d": "Opret detaljerede kundepersonaer til målretning"
+    },
+    "Competitive Analysis Template": {
+      "n": "Konkurrentanalyseskabelon",
+      "d": "Analysér konkurrenter og identificér markedsmuligheder"
+    },
+    "Marketing Budget Planner": {
+      "n": "Marketingbudget-planlægger",
+      "d": "Fordel og optimér dit marketingbudget"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Affiliate-marketingstrategi",
+      "d": "Byg og optimér et affiliate-marketingprogram"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcast-markedsføringsplan",
+      "d": "Promovér din podcast og udvid din lytterskare"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Webinar-promotionsplan",
+      "d": "Planlæg og promovér webinarer der driver tilmeldinger"
+    },
+    "Referral Program Designer": {
+      "n": "Henvisningsprogram-designer",
+      "d": "Design henvisningsprogrammer der skaber mund-til-mund-vækst"
+    },
+    "Brand Story Writer": {
+      "n": "Brandhistorie-skribent",
+      "d": "Udform en overbevisende brand-oprindelseshistorie og fortælling"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Marketingtragt-bygger",
+      "d": "Design kundekampagnetragter fra kendskab til konvertering"
+    },
+    "App Store Optimization": {
+      "n": "App Store-optimering",
+      "d": "Optimér app store-opslag for maksimale downloads"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Google Ads-tekstforfatter",
+      "d": "Skriv effektive Google Ads-overskrifter og -beskrivelser"
+    },
+    "Facebook Ads Creator": {
+      "n": "Facebook Ads-opretter",
+      "d": "Opret Facebook- og Instagram-annoncekampagner"
+    },
+    "Newsletter Strategy": {
+      "n": "Nyhedsbrevsstrategi",
+      "d": "Planlæg og udvid et e-mail-nyhedsbrev fra bunden"
+    },
+    "PR Media Pitch": {
+      "n": "PR-mediepitch",
+      "d": "Skriv overbevisende mediehenvendelser for pressedækning"
+    },
+    "Content Repurposing Plan": {
+      "n": "Indholdsgenanvendelsesplan",
+      "d": "Omdan eksisterende indhold til flere formater"
+    },
+    "Cold Email Generator": {
+      "n": "Kold e-mail-generator",
+      "d": "Opret personlige kolde henvendelsesmails der får svar"
+    },
+    "Sales Script Writer": {
+      "n": "Salgsmanuskript-skribent",
+      "d": "Skriv effektive salgsmanuskripter til opkald og møder"
+    },
+    "Objection Handling Guide": {
+      "n": "Indvendingshåndterings-guide",
+      "d": "Forbered svar på almindelige salgsindvendinger"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Opfølgningsbesked-opretter",
+      "d": "Opret strategiske opfølgningsbeskedsekvenser"
+    },
+    "Sales Pitch Creator": {
+      "n": "Salgspitch-opretter",
+      "d": "Byg overbevisende elevatortaler og salgspræsentationer"
+    },
+    "Proposal Generator": {
+      "n": "Tilbudsgenerator",
+      "d": "Opret professionelle salgstilbud og pristilbud"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "CRM-dataoprydningsplan",
+      "d": "Organisér og ryd op i din CRM-database systematisk"
+    },
+    "Sales Territory Planner": {
+      "n": "Salgsområde-planlægger",
+      "d": "Definér og optimér salgsområder for dit team"
+    },
+    "Account Strategy Builder": {
+      "n": "Kontostrategi-bygger",
+      "d": "Opret strategiske kontoplaner for nøglekunder"
+    },
+    "Upsell Script Creator": {
+      "n": "Mersalgsmanuskript-opretter",
+      "d": "Skriv manuskripter til mersalg og krydssalg til eksisterende kunder"
+    },
+    "Customer Win-Back Email": {
+      "n": "Kundetilbagevindings-e-mail",
+      "d": "Genengagér tabte kunder med målrettede tilbagevindings-kampagner"
+    },
+    "Sales Forecast Template": {
+      "n": "Salgsprognoseskabelon",
+      "d": "Byg præcise salgsprognoser for din pipeline"
+    },
+    "Commission Calculator": {
+      "n": "Provisionsberegner",
+      "d": "Design og beregn salgsprovisionsstrukturer"
+    },
+    "Discovery Call Script": {
+      "n": "Opdagelsessamtale-manuskript",
+      "d": "Strukturér effektive opdagelsessamtaler til at kvalificere emner"
+    },
+    "Demo Presentation Outline": {
+      "n": "Demo-præsentationsoversigt",
+      "d": "Opret strukturerede produktdemopræsentationer"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Salgsonboarding-plan",
+      "d": "Design onboarding-programmer for nye sælgere"
+    },
+    "Quarterly Business Review": {
+      "n": "Kvartalsvis forretningsgennemgang",
+      "d": "Forbered kvartalsvise forretningsgennemgangspræsentationer for kunder"
+    },
+    "Customer Success Plan": {
+      "n": "Kundesuccesplan",
+      "d": "Byg proaktive kundesucces- og fastholdelsesplaner"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Prisstrategi-rådgiver",
+      "d": "Udvikl og optimér din produktprisstrategi"
+    },
+    "Value Proposition Builder": {
+      "n": "Værditilbuds-bygger",
+      "d": "Udform klare og overbevisende værditilbud"
+    },
+    "FAQ Generator": {
+      "n": "FAQ-generator",
+      "d": "Opret omfattende FAQ-sektioner fra produktinformation"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Vidensbase-artikelskribent",
+      "d": "Skriv klare og søgbare vidensbaseartikler"
+    },
+    "Support Response Template": {
+      "n": "Supportsvars-skabelon",
+      "d": "Opret genbrugelige skabeloner til almindelige supportscenarier"
+    },
+    "Chatbot Training Data": {
+      "n": "Chatbot-træningsdata",
+      "d": "Generér træningsdata til kundesupport-chatbots"
+    },
+    "Escalation Response Guide": {
+      "n": "Eskaleringssvars-guide",
+      "d": "Opret retningslinjer for håndtering af eskalerede supportsager"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Kundetilfredshedsundersøgelse",
+      "d": "Design undersøgelser til at måle kundetilfredshed"
+    },
+    "Refund Policy Writer": {
+      "n": "Refusionspolitik-skribent",
+      "d": "Opret klare og fair refusions- og returpolitikker"
+    },
+    "Bug Report Template": {
+      "n": "Fejlrapportskabelon",
+      "d": "Design strukturerede fejlrapportskabeloner til brugere"
+    },
+    "Feature Request Response": {
+      "n": "Funktionsanmodningssvar",
+      "d": "Udform svar på kunders funktionsanmodninger"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Onboarding-e-mailsekvens",
+      "d": "Opret e-mailsekvenser til onboarding af nye kunder"
+    },
+    "Help Center Article": {
+      "n": "Hjælpecenter-artikel",
+      "d": "Skriv omfattende hjælpecenterdokumentation"
+    },
+    "Service Level Agreement": {
+      "n": "Serviceniveauaftale",
+      "d": "Udarbejd SLA-dokumenter for supportforpligtelser"
+    },
+    "Customer Apology Template": {
+      "n": "Kundeundskyldningsskabelon",
+      "d": "Skriv oprigtige undskyldningsbeskeder ved servicefejl"
+    },
+    "Product Update Announcement": {
+      "n": "Produktopdateringsmeddelelse",
+      "d": "Kommunikér produktopdateringer og ændringer til kunder"
+    },
+    "Community Guidelines Writer": {
+      "n": "Fællesskabsretningslinjer-skribent",
+      "d": "Opret fællesskabsretningslinjer til fora og sociale kanaler"
+    },
+    "Startup Validation Framework": {
+      "n": "Startup-valideringsramme",
+      "d": "Validér din startup-idé før du bygger"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP-funktionsplanlægger",
+      "d": "Prioritér funktioner til dit minimum viable product"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Prisstrategi-bygger",
+      "d": "Udvikl prismodeller til dit startup-produkt"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Investorpitch-deck-oversigt",
+      "d": "Strukturér et overbevisende pitch deck til fundraising"
+    },
+    "Business Model Canvas": {
+      "n": "Forretningsmodel-canvas",
+      "d": "Kortlæg din komplette forretningsmodel på én side"
+    },
+    "Lean Canvas Creator": {
+      "n": "Lean Canvas-opretter",
+      "d": "Opret et lean canvas til at identificere risici og antagelser"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Konkurrencelandskabs-analysator",
+      "d": "Kortlæg og analysér dit konkurrencemiljø"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Go-to-market-strategi",
+      "d": "Planlæg din markedsindtræden og kundeerhvervelsesstrategi"
+    },
+    "Founding Team Assessment": {
+      "n": "Stifterteam-vurdering",
+      "d": "Vurdér teamsammensætning og identificér kompetencemangler"
+    },
+    "Startup Financial Projections": {
+      "n": "Startup-finansielle fremskrivninger",
+      "d": "Byg 3-årige finansielle fremskrivninger for din startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Rådgivende bestyrelses-rekrutterer",
+      "d": "Identificér og rekruttér rådgivere til din startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Pivoteringsbeslutningsramme",
+      "d": "Vurdér om og hvordan du skal pivotere din startup"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Startup-KPI-dashboard",
+      "d": "Definér og følg nøglepræstationsindikatorer"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Crowdfunding-kampagneplan",
+      "d": "Planlæg og gennemfør en succesfuld crowdfunding-kampagne"
+    },
+    "Partnership Strategy": {
+      "n": "Partnerskabsstrategi",
+      "d": "Identificér og forfølg strategiske partnerskaber"
+    },
+    "Accelerator Application": {
+      "n": "Accelerator-ansøgning",
+      "d": "Forbered en overbevisende accelerator- eller inkubatoransøgning"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Produkt-markedstilpasnings-undersøgelse",
+      "d": "Design undersøgelser til at måle produkt-markedstilpasning"
+    },
+    "Startup Legal Checklist": {
+      "n": "Startup-juridisk tjekliste",
+      "d": "Dæk alle juridiske grundlag ved opstart af en virksomhed"
+    },
+    "Equity Split Calculator": {
+      "n": "Ejerandelsfordelings-beregner",
+      "d": "Fastlæg en fair ejerandelsfordeling blandt medstiftere"
+    },
+    "Growth Experiment Planner": {
+      "n": "Væksteksperiment-planlægger",
+      "d": "Design og følg væksteksperimenter systematisk"
+    },
+    "Product Description Writer": {
+      "n": "Produktbeskrivelses-skribent",
+      "d": "Skriv overbevisende produktbeskrivelser der driver salg"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Amazon-opslags-optimerer",
+      "d": "Optimér Amazon-produktopslag for synlighed og konvertering"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Etsy-butiksopsætnings-guide",
+      "d": "Opsæt og optimér din Etsy-butik for succes"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify-butiksplanlægger",
+      "d": "Planlæg din Shopify-butiksstruktur og lancering"
+    },
+    "Product Photography Brief": {
+      "n": "Produktfotograferings-brief",
+      "d": "Opret briefs til produktfotograferingssessioner"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Forsendelsesstrategi-planlægger",
+      "d": "Design omkostningseffektive forsendelsesstrategier"
+    },
+    "Return Policy Creator": {
+      "n": "Returpolitik-opretter",
+      "d": "Opret klare e-handelsretur- og byttepolitikker"
+    },
+    "Customer Review Response": {
+      "n": "Kundeanmeldelsessvar",
+      "d": "Udform professionelle svar på kundeanmeldelser"
+    },
+    "Inventory Management Plan": {
+      "n": "Lagerstyringsplan",
+      "d": "Opret systemer til sporing og styring af lagerbeholdning"
+    },
+    "Dropshipping Product Research": {
+      "n": "Dropshipping-produktresearch",
+      "d": "Undersøg og vurdér dropshipping-produktmuligheder"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Print-on-demand-designer",
+      "d": "Planlæg print-on-demand-produktlinjer og -designs"
+    },
+    "Subscription Box Planner": {
+      "n": "Abonnementsboks-planlægger",
+      "d": "Design og lancér en abonnementsboksforretning"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Højtidssalgsstrategi",
+      "d": "Planlæg sæsonkampagner og højtidssalgskampagner"
+    },
+    "Product Bundle Creator": {
+      "n": "Produktbundt-opretter",
+      "d": "Design produktbundter der øger den gennemsnitlige ordreværdi"
+    },
+    "Cart Abandonment Email": {
+      "n": "Indkøbskurvs-forladelses-e-mail",
+      "d": "Opret e-mailsekvenser til at genvinde forladte indkøbskurve"
+    },
+    "Homework Helper": {
+      "n": "Lektiehjælper",
+      "d": "Få trin-for-trin hjælp med lektier i ethvert fag"
+    },
+    "Quiz & Test Generator": {
+      "n": "Quiz- og testgenerator",
+      "d": "Opret tilpassede quizzer fra ethvert emne eller studiemateriale"
+    },
+    "Science Fair Project Planner": {
+      "n": "Naturfagsmesse-projektplanlægger",
+      "d": "Planlæg og organisér et vindende naturfagsmesseprojekt fra hypotese til præsentation"
+    },
+    "Lesson Plan Creator": {
+      "n": "Lektionsplan-opretter",
+      "d": "Design strukturerede lektionsplaner tilpasset læringsmål"
+    },
+    "Lab Report Writer": {
+      "n": "Laboratorierapport-skribent",
+      "d": "Strukturér og skriv laboratorierapporter med korrekt videnskabelig formatering"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Læseforståelses-hjælper",
+      "d": "Forbedr læseforståelsen med guidet analyse og spørgsmål"
+    },
+    "Math Problem Solver": {
+      "n": "Matematikopgave-løser",
+      "d": "Løs matematikopgaver med detaljerede trin-for-trin-forklaringer"
+    },
+    "Vocabulary Builder": {
+      "n": "Ordforrådsopbygger",
+      "d": "Opbyg og øv ordforråd med definitioner, eksempler og øvelser"
+    },
+    "Book Report Helper": {
+      "n": "Bograpport-hjælper",
+      "d": "Skitsér og skriv bograpporter med struktureret analyse"
+    },
+    "History Timeline Creator": {
+      "n": "Historisk tidslinje-opretter",
+      "d": "Opret detaljerede historiske tidslinjer for enhver æra eller begivenhed"
+    },
+    "Geography Quiz Maker": {
+      "n": "Geografiquiz-opretter",
+      "d": "Generér geografiquizzer der dækker kort, hovedstæder, vartegn og mere"
+    },
+    "Spelling Practice Generator": {
+      "n": "Stavetrænings-generator",
+      "d": "Opret personlige stavetræningslister og -øvelser"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Grammatikøvelses-opretter",
+      "d": "Generér grammatikøvelser til ethvert niveau og emne"
+    },
+    "Critical Thinking Questions": {
+      "n": "Kritisk tænkning-spørgsmål",
+      "d": "Generér tankevækkende spørgsmål til at udvikle kritisk tænkning"
+    },
+    "Debate Prep Guide": {
+      "n": "Debatforberedelsesguide",
+      "d": "Forbered strukturerede argumenter og modargumenter til debatter"
+    },
+    "College Application Essay": {
+      "n": "Universitetsansøgningsessay",
+      "d": "Udform overbevisende universitetsansøgningsessays med guidede prompter"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Stipendieessay-hjælper",
+      "d": "Skriv overbevisende stipendieessays der fremhæver præstationer og mål"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT-forberedelsesguide",
+      "d": "Opret målrettede studieplaner og øvelser til SAT- eller ACT-eksamener"
+    },
+    "Study Schedule Planner": {
+      "n": "Studieskema-planlægger",
+      "d": "Byg et effektivt studieskema der balancerer alle fag og deadlines"
+    },
+    "Group Project Organizer": {
+      "n": "Gruppeprojekt-organisator",
+      "d": "Planlæg roller, opgaver og tidslinjer for gruppeprojekter"
+    },
+    "Presentation Creator": {
+      "n": "Præsentations-opretter",
+      "d": "Design og skitsér engagerende præsentationer til ethvert emne"
+    },
+    "Note-Taking Guide": {
+      "n": "Notetagnings-guide",
+      "d": "Opret strukturerede notetagningsskabeloner til forelæsninger og læsning"
+    },
+    "Mind Map Generator": {
+      "n": "Mindmap-generator",
+      "d": "Opret visuelle mindmaps til at organisere idéer og koncepter"
+    },
+    "Research Project Planner": {
+      "n": "Forskningsprojekt-planlægger",
+      "d": "Planlæg og styr forskningsprojekter fra emnevalg til færdig afhandling"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Forældresamtale-forberedelse",
+      "d": "Forbered samtalepunkter og spørgsmål til produktive skole-hjem-samtaler"
+    },
+    "Classroom Activity Designer": {
+      "n": "Klasseværelsesaktivitets-designer",
+      "d": "Design interaktive klasseværelsesaktiviteter der styrker læringsmål"
+    },
+    "Special Education Resource": {
+      "n": "Specialundervisningsressource",
+      "d": "Opret tilpassede læringsressourcer til elever med særlige undervisningsbehov"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Hjemmeundervisnings-læseplan-planlægger",
+      "d": "Planlæg en komplet hjemmeundervisnings-læseplan efter fag og semester"
+    },
+    "Student Self-Assessment": {
+      "n": "Elev-selvevaluering",
+      "d": "Opret selvevalueringsværktøjer for elever til at følge deres egen læringsfremgang"
+    },
+    "Learning Style Analyzer": {
+      "n": "Læringsstils-analysator",
+      "d": "Identificér læringsstile og foreslå personlige studiestrategier"
+    },
+    "Literature Review Writer": {
+      "n": "Litteraturgennemgangs-skribent",
+      "d": "Organisér og skriv omfattende litteraturgennemgange om ethvert emne"
+    },
+    "Research Assistant": {
+      "n": "Forskningsassistent",
+      "d": "Få hjælp til at finde, organisere og opsummere forskningsmaterialer"
+    },
+    "Fact Checker Template": {
+      "n": "Faktatjekskabelon",
+      "d": "Verificér påstande og udsagn med struktureret faktatjekmetodik"
+    },
+    "Source Comparison Tool": {
+      "n": "Kildesammenlignings-værktøj",
+      "d": "Sammenlign og kontraster flere kilder om det samme emne"
+    },
+    "Citation Generator": {
+      "n": "Kildehenvisnings-generator",
+      "d": "Generér korrekt formaterede kildehenvisninger i enhver akademisk stil"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Annoteret bibliografi-opretter",
+      "d": "Opret annoterede bibliografier med resuméer og vurderinger"
+    },
+    "Research Methodology Guide": {
+      "n": "Forskningsmetodologi-guide",
+      "d": "Vælg og design den rette forskningsmetodologi til dit studie"
+    },
+    "Survey Question Designer": {
+      "n": "Undersøgelsesspørgsmåls-designer",
+      "d": "Design effektive undersøgelsesspørgsmål til at indsamle pålidelige forskningsdata"
+    },
+    "Data Collection Plan": {
+      "n": "Dataindsamlingsplan",
+      "d": "Opret en struktureret plan til indsamling af forskningsdata"
+    },
+    "Thesis Statement Generator": {
+      "n": "Teseformulerings-generator",
+      "d": "Udform stærke teseformuleringer til forskningsopgaver og afhandlinger"
+    },
+    "Research Proposal Writer": {
+      "n": "Forskningsforslags-skribent",
+      "d": "Skriv overbevisende forskningsforslag til akademisk eller finansiel bedømmelse"
+    },
+    "Systematic Review Guide": {
+      "n": "Systematisk gennemgangs-guide",
+      "d": "Gennemfør systematiske gennemgange efter etablerede protokoller"
+    },
+    "Interview Protocol Creator": {
+      "n": "Interviewprotokol-opretter",
+      "d": "Design strukturerede interviewprotokoller til kvalitativ forskning"
+    },
+    "Research Ethics Checklist": {
+      "n": "Forskningsetik-tjekliste",
+      "d": "Sikr forskningskomplianse med etiske retningslinjer og IRB-krav"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Metaanalyse-ramme",
+      "d": "Strukturér og gennemfør metaanalyser på tværs af flere studier"
+    },
+    "Case Study Template": {
+      "n": "Casestudie-skabelon",
+      "d": "Strukturér og skriv detaljerede casestudier til forskning eller forretning"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Kvalitativ analyseguide",
+      "d": "Vejled kvalitativ dataanalyse med kodning og tematiske tilgange"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Kvantitativ analyseguide",
+      "d": "Vejled kvantitativ dataanalyse med passende statistiske metoder"
+    },
+    "Research Poster Creator": {
+      "n": "Forskningsplakat-opretter",
+      "d": "Design og layoute forskningsplakater til konferencer og præsentationer"
+    },
+    "Research Grant Writer": {
+      "n": "Forskningsbevilling-skribent",
+      "d": "Skriv strukturerede bevillingsansøgninger til forskningsfinansiering"
+    },
+    "Chemistry Tutor": {
+      "n": "Kemitutor",
+      "d": "Få personlig kemiundervisning med forklaringer og øvelsesopgaver"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Kemisk lignings-afstemmer",
+      "d": "Afstem kemiske ligninger med trin-for-trin-forklaringer"
+    },
+    "Lab Safety Checklist": {
+      "n": "Labsikkerheds-tjekliste",
+      "d": "Generér omfattende labsikkerhedstjeklister til kemiforsøg"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Organisk kemi-hjælper",
+      "d": "Studér organiske reaktioner, mekanismer og nomenklatur"
+    },
+    "Periodic Table Explorer": {
+      "n": "Periodiske system-udforsker",
+      "d": "Udforsk grundstofegenskaber, tendenser og sammenhænge i det periodiske system"
+    },
+    "Stoichiometry Solver": {
+      "n": "Støkiometri-løser",
+      "d": "Løs støkiometriopgaver med detaljerede mol-til-mol-beregninger"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Kemisk bindings-guide",
+      "d": "Forstå ionbinding, kovalent binding og metalbinding med visuelle forklaringer"
+    },
+    "Acid-Base Calculator": {
+      "n": "Syre-base-beregner",
+      "d": "Beregn pH, pOH, Ka, Kb og løs syre-base-ligevægtsproblemer"
+    },
+    "Solution Preparation Guide": {
+      "n": "Opløsningsforberedelsesguide",
+      "d": "Beregn og forbered kemiske opløsninger med korrekte koncentrationer"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Spektroskopi-fortolker",
+      "d": "Fortolk IR-, NMR- og massespektre til forbindelsesidentifikation"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Kemi-labnotebook",
+      "d": "Opret strukturerede labnotebook-indlæg til kemiforsøg"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Reaktionsmekanisme-hjælper",
+      "d": "Tegn og forstå reaktionsmekanismer trin for trin"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Termokemi-beregner",
+      "d": "Beregn entalpi, entropi og Gibbs fri energi for kemiske reaktioner"
+    },
+    "Electrochemistry Guide": {
+      "n": "Elektrokemi-guide",
+      "d": "Forstå elektrokemiske celler, elektrodepotentialer og elektrolyse"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Polymerkemi-guide",
+      "d": "Studér polymertyper, syntesemekanismer og egenskaber"
+    },
+    "Biology Tutor": {
+      "n": "Biologitutor",
+      "d": "Få personlig biologiundervisning med klare forklaringer og eksempler"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Cellebiologi-studievejledning",
+      "d": "Studér cellestrukturer, funktioner og processer i dybden"
+    },
+    "Genetics Problem Solver": {
+      "n": "Genetikopgave-løser",
+      "d": "Løs genetikopgaver inklusiv Punnett-diagrammer og stamtavleanalyse"
+    },
+    "Ecology Study Helper": {
+      "n": "Økologi-studiehjælper",
+      "d": "Studér økosystemer, fødekæder, populationsdynamik og økologiske relationer"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Anatomi- og fysiologiguide",
+      "d": "Studér menneskekroppens systemer med detaljerede anatomiske forklaringer"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Mikrobiologi-labguide",
+      "d": "Vejled mikrobiologiske labteknikker inklusiv farvning, dyrkning og identifikation"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Evolutionskonceptkortlægger",
+      "d": "Kortlæg evolutionskoncepter inklusiv naturlig selektion, artsdannelse og fylogenetik"
+    },
+    "Plant Biology Helper": {
+      "n": "Plantebiologi-hjælper",
+      "d": "Studér planteanatomi, fysiologi og økologiske roller"
+    },
+    "Molecular Biology Guide": {
+      "n": "Molekylærbiologi-guide",
+      "d": "Forstå DNA-replikation, transkription, translation og genregulering"
+    },
+    "Bioinformatics Helper": {
+      "n": "Bioinformatik-hjælper",
+      "d": "Få hjælp til sekvensanalyse, databasesøgninger og beregningsbiologi"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Neurovidenskabs-studievejledning",
+      "d": "Studér nervesystemet, hjernefunktion og neurale baner"
+    },
+    "Marine Biology Explorer": {
+      "n": "Marinbiologi-udforsker",
+      "d": "Udforsk marine økosystemer, organismer og havvidenskab"
+    },
+    "Immunology Study Guide": {
+      "n": "Immunologi-studievejledning",
+      "d": "Studér immunsystemet, immunresponser og immunologiske sygdomme"
+    },
+    "Biotechnology Overview": {
+      "n": "Bioteknologi-oversigt",
+      "d": "Udforsk bioteknologianvendelser inklusiv genteknologi og CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Bevaringsbiologi-planlægger",
+      "d": "Planlæg bevaringsstrategier for arter og habitatbevarelse"
+    },
+    "Physics Problem Solver": {
+      "n": "Fysikopgave-løser",
+      "d": "Løs fysikopgaver med detaljerede trin-for-trin-løsninger"
+    },
+    "Mechanics Helper": {
+      "n": "Mekanik-hjælper",
+      "d": "Studér og løs opgaver i klassisk mekanik inklusiv kinematik og dynamik"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Elektricitet- og magnetismeguide",
+      "d": "Forstå elektriske felter, kredsløb og elektromagnetiske fænomener"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Termodynamik-tutor",
+      "d": "Studér termodynamiske love, processer og varmeoverførselsproblemer"
+    },
+    "Optics & Waves Guide": {
+      "n": "Optik- og bølgeguide",
+      "d": "Studér bølgefænomener, optik og lysets opførsel"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Kvantefysik-forklarer",
+      "d": "Forstå kvantemekaniske koncepter med klare forklaringer og eksempler"
+    },
+    "Astrophysics Explorer": {
+      "n": "Astrofysik-udforsker",
+      "d": "Udforsk stjerneudvikling, kosmologi og himmelsk mekanik"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Kernefysik-guide",
+      "d": "Studér kernereaktioner, radioaktivitet og kerneenergi"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Fluiddynamik-hjælper",
+      "d": "Løs fluidmekanikopgaver inklusiv Bernoulli- og Navier-Stokes-anvendelser"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Klassisk mekanik-tutor",
+      "d": "Dybdegående studie af Lagrange- og Hamilton-mekanik og avanceret dynamik"
+    },
+    "Relativity Concept Guide": {
+      "n": "Relativitetskoncept-guide",
+      "d": "Forstå speciel og generel relativitet med tankeeksperimenter og matematik"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Fysik-labrapport-hjælper",
+      "d": "Strukturér og skriv fysiklabrapporter med korrekt dataanalyse"
+    },
+    "Math Proof Writer": {
+      "n": "Matematisk bevis-skribent",
+      "d": "Skriv klare og stringente matematiske beviser med logisk struktur"
+    },
+    "Calculus Problem Solver": {
+      "n": "Calculus-opgaveløser",
+      "d": "Løs calculus-opgaver inklusiv grænseværdier, differentialer og integraler"
+    },
+    "Statistics Helper": {
+      "n": "Statistik-hjælper",
+      "d": "Løs statistikopgaver og fortolk statistiske resultater"
+    },
+    "Linear Algebra Guide": {
+      "n": "Lineær algebra-guide",
+      "d": "Studér vektorer, matricer, transformationer og egenværdier"
+    },
+    "Probability Calculator": {
+      "n": "Sandsynligheds-beregner",
+      "d": "Beregn sandsynligheder og løs sandsynlighedsfordelingsproblemer"
+    },
+    "Geometry Tutor": {
+      "n": "Geometri-tutor",
+      "d": "Studér geometriske koncepter, sætninger og løs geometriopgaver"
+    },
+    "Trigonometry Helper": {
+      "n": "Trigonometri-hjælper",
+      "d": "Løs trigonometriske ligninger, identiteter og anvendelser"
+    },
+    "Number Theory Explorer": {
+      "n": "Talteori-udforsker",
+      "d": "Udforsk primtal, delelighed, modulær aritmetik og kryptografiske anvendelser"
+    },
+    "Discrete Math Guide": {
+      "n": "Guide til diskret matematik",
+      "d": "Studér kombinatorik, grafteori, logik og mængdeteori"
+    },
+    "Differential Equations Solver": {
+      "n": "Differentialligningsløser",
+      "d": "Løs ordinære og partielle differentialligninger med detaljerede metoder"
+    },
+    "Math Word Problem Solver": {
+      "n": "Løser af matematiske tekstopgaver",
+      "d": "Oversæt og løs virkelighedsnære matematiske tekstopgaver trin for trin"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Guide til matematisk modellering",
+      "d": "Byg matematiske modeller for virkelighedsnære fænomener og anvendelser"
+    },
+    "SQL Query Generator": {
+      "n": "SQL-forespørgselsgenerator",
+      "d": "Generér og optimér SQL-forespørgsler til datahentning og analyse"
+    },
+    "Python Data Analysis": {
+      "n": "Python-dataanalyse",
+      "d": "Skriv Python-kode til dataanalyse med pandas, NumPy og mere"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Tjekliste til datarensning",
+      "d": "Opret omfattende tjeklister til datarensning og forbehandling"
+    },
+    "Data Visualization Planner": {
+      "n": "Planlægger af datavisualisering",
+      "d": "Vælg de rigtige diagrammer og design effektive datavisualiseringer"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Vælger af maskinlæringsmodel",
+      "d": "Vælg den bedste ML-model til din problemtype og datakarakteristika"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B-testberegner",
+      "d": "Design og analysér A/B-tests med statistisk signifikansberegninger"
+    },
+    "Dashboard Design Guide": {
+      "n": "Guide til dashboard-design",
+      "d": "Design effektive dashboards med de rigtige KPI'er og layout"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL-pipeline-planlægger",
+      "d": "Design og planlæg ETL-pipelines til dataintegration og -behandling"
+    },
+    "Feature Engineering Guide": {
+      "n": "Guide til feature engineering",
+      "d": "Opret effektive features til maskinlæringsmodeller"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Datapipeline-arkitektur",
+      "d": "Design skalerbare datapipeline-arkitekturer til analyse og ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Eksplorativ dataanalyse",
+      "d": "Udfør grundig EDA med struktureret analyse og visualiseringsplaner"
+    },
+    "Statistical Test Selector": {
+      "n": "Vælger af statistisk test",
+      "d": "Vælg og anvend den rigtige statistiske test til dine data og hypotese"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Guide til tidsserieanalyse",
+      "d": "Analysér tidsseriedata med prognose- og trenddetektionsmetoder"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Kom godt i gang med naturlig sprogbehandling",
+      "d": "Kom i gang med NLP-opgaver, herunder tekstklassificering og sentimentanalyse"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Planlægger af computervisionsprojekter",
+      "d": "Planlæg computervisionsprojekter fra dataindsamling til modeludrulning"
+    },
+    "Technical Requirements Document": {
+      "n": "Teknisk kravdokument",
+      "d": "Opret detaljerede tekniske kravdokumenter til ingeniørprojekter"
+    },
+    "Engineering Design Review": {
+      "n": "Ingeniørmæssig designgennemgang",
+      "d": "Forbered strukturerede designgennemgangsdokumenter til ingeniørprojekter"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Fejltilstandsanalyse (FMEA)",
+      "d": "Udfør systematisk fejltilstands- og effektanalyse for produkter eller processer"
+    },
+    "Project Specification Writer": {
+      "n": "Projektspecifikationsforfatter",
+      "d": "Skriv klare og komplette projektspecifikationer til ingeniørarbejde"
+    },
+    "CAD Project Planner": {
+      "n": "CAD-projektplanlægger",
+      "d": "Planlæg og organisér CAD-modelleringsprojekter med korrekt dokumentation"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Guide til fremstillingsprocesser",
+      "d": "Vælg og planlæg fremstillingsprocesser til produktudvikling"
+    },
+    "Quality Control Checklist": {
+      "n": "Kvalitetskontrol-tjekliste",
+      "d": "Opret kvalitetskontrol-tjeklister og inspektionsplaner til produktion"
+    },
+    "Engineering Change Request": {
+      "n": "Ingeniørmæssig ændringsanmodning",
+      "d": "Dokumentér og administrér ingeniørmæssige ændringsanmodninger med konsekvensanalyse"
+    },
+    "Structural Analysis Guide": {
+      "n": "Guide til strukturel analyse",
+      "d": "Vejled i strukturelle analyseberegninger og -metodik til ingeniørprojekter"
+    },
+    "Materials Selection Guide": {
+      "n": "Guide til materialevalg",
+      "d": "Vælg optimale materialer baseret på mekaniske, termiske og kemiske krav"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Midjourney-promptskaber",
+      "d": "Udform detaljerede Midjourney-prompts med stil-, belysnings- og kompositionsparametre"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E-promptbygger",
+      "d": "Byg optimerede DALL-E-prompts med klare beskrivelser og kunstnerisk retning"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Stable Diffusion-promptforfatter",
+      "d": "Generér Stable Diffusion-prompts med positiv og negativ prompt-engineering"
+    },
+    "Product Photography Prompt": {
+      "n": "Produktfotografi-prompt",
+      "d": "Opret AI-prompts til flot produktfotografi med studiekvalitetsresultater"
+    },
+    "Landscape Art Prompt": {
+      "n": "Landskabskunst-prompt",
+      "d": "Skab betagende landskabskunst-prompts med miljø- og atmosfæredetaljer"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Portrætfotografi-prompt",
+      "d": "Generér AI-portrætprompts med belysning, udtryk og kompositionsvejledning"
+    },
+    "Food Photography Prompt": {
+      "n": "Madfotografi-prompt",
+      "d": "Udform appetitlige madfotografi-prompts med styling- og anretningsdetaljer"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Arkitekturvisualiseringsprompt",
+      "d": "Opret arkitekturvisualiseringsprompts til bygninger og indendørs rum"
+    },
+    "Fashion Design Prompt": {
+      "n": "Modedesign-prompt",
+      "d": "Generér modedesignkoncepter med stof-, silhuet- og stylingdetaljer"
+    },
+    "Comic Art Prompt": {
+      "n": "Tegneseriekunst-prompt",
+      "d": "Opret tegneseriestils-kunstprompts med panelkomposition og figurhandling"
+    },
+    "Abstract Art Prompt": {
+      "n": "Abstrakt kunst-prompt",
+      "d": "Generér abstrakte kunstprompts med farveteori, tekstur og følelsesmæssigt udtryk"
+    },
+    "Icon Design Brief": {
+      "n": "Ikondesign-brief",
+      "d": "Design rene ikonsæt med ensartet stil og visuelt sprog"
+    },
+    "Infographic Design Brief": {
+      "n": "Infografik-designbrief",
+      "d": "Planlæg infografiklayouts med datavisualisering og visuelt hierarki"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Sociale medier-grafikprompt",
+      "d": "Generér scrollstoppende sociale medier-grafik til enhver platform"
+    },
+    "Meme Creator Prompt": {
+      "n": "Meme-skaber-prompt",
+      "d": "Generér meme-koncepter med formatvalg, billedtekster og viralt potentiale"
+    },
+    "AI Avatar Prompt": {
+      "n": "AI-avatar-prompt",
+      "d": "Skab unikke AI-avatardesigns til profiler, gaming og virtuelle identiteter"
+    },
+    "Song Lyrics Writer": {
+      "n": "Sangtekstforfatter",
+      "d": "Skriv originale sangtekster med vers, omkvæd og bro i enhver genre"
+    },
+    "Chord Progression Generator": {
+      "n": "Akkordprogression-generator",
+      "d": "Generér akkordprogressioner med musikteorivejledning til enhver genre og stemning"
+    },
+    "Beat Ideas Creator": {
+      "n": "Beat-idéskaber",
+      "d": "Generér beat-koncepter med tempo, trommerytmer og instrumenteringsidéer"
+    },
+    "Song Structure Builder": {
+      "n": "Sangstrukturbygger",
+      "d": "Design sangarrangementer med sektionsrækkefølge, dynamik og overgange"
+    },
+    "Rap Verse Writer": {
+      "n": "Rapvers-forfatter",
+      "d": "Skriv slagkraftige rapvers med flowmønstre, rimmønstre og ordspil"
+    },
+    "Country Song Writer": {
+      "n": "Countrysangforfatter",
+      "d": "Skriv autentiske countrysange med fortælling, billedsprog og twang"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Popsang-hookskaber",
+      "d": "Udform fængende pop-hooks og omkvædsmelodier, der sætter sig fast i lytternes hukommelse"
+    },
+    "Rock Ballad Writer": {
+      "n": "Rockballadeforfatter",
+      "d": "Skriv følelsesladede rockballader med kraftfulde opbygninger og antematiske omkvæd"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Guide til musikalsk arrangement",
+      "d": "Planlæg komplette musikalske arrangementer med instrumentering, stemmeføring og dynamik"
+    },
+    "Band Name Generator": {
+      "n": "Bandnavnsgenerator",
+      "d": "Generér kreative bandnavne baseret på genre, stemning og billedsprogspræferencer"
+    },
+    "Music Video Concept": {
+      "n": "Musikvideo-koncept",
+      "d": "Udvikl kreative musikvideokoncepter med narrativ, visuel stil og koreografi"
+    },
+    "Mixing Checklist": {
+      "n": "Miksningstjekliste",
+      "d": "Omfattende miksningstjekliste, der dækker EQ, kompression, effekter og balance"
+    },
+    "Film Score Brief": {
+      "n": "Filmmusik-brief",
+      "d": "Opret detaljerede filmmusik-briefs med stemning, instrumentering og timingcues"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts-manuskript",
+      "d": "Skriv engagerende YouTube Shorts-manuskripter optimeret til 60-sekunders vertikale videoer"
+    },
+    "Video Storyboard Creator": {
+      "n": "Video-storyboardskaber",
+      "d": "Planlæg visuelle storyboards med scenebeskrivelser, kameravinkler og overgange"
+    },
+    "Documentary Outline": {
+      "n": "Dokumentar-disposition",
+      "d": "Strukturér overbevisende dokumentarer med narrativ bue, interviews og b-roll-planer"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlog-episodeplanlægger",
+      "d": "Planlæg engagerende vlog-episoder med lokationer, samtalepunkter og visuel variation"
+    },
+    "Screenwriting Helper": {
+      "n": "Manuskriptskrivningshjælper",
+      "d": "Udvikl manuskripter med korrekt formatering, dialog og sceneinstruktion"
+    },
+    "Short Film Script": {
+      "n": "Kortfilmsmanuskript",
+      "d": "Skriv komplette kortfilmsmanuskripter med visuel fortælling og stram narrativ"
+    },
+    "Animation Script Writer": {
+      "n": "Animationsmanuskriptforfatter",
+      "d": "Skriv animationsmanuskripter med visuelle gags, figurhandlinger og timingcues"
+    },
+    "Video Editing Brief": {
+      "n": "Videoredigerings-brief",
+      "d": "Opret detaljerede videoredigerings-briefs med tempo, effekter og stilretningslinjer"
+    },
+    "Livestream Run Sheet": {
+      "n": "Livestream-køreplan",
+      "d": "Planlæg livestreams med tidsbestemte segmenter, samtalepunkter og engagementtriggere"
+    },
+    "Tutorial Video Script": {
+      "n": "Vejledningsvideo-manuskript",
+      "d": "Skriv klare vejledningsvideo-manuskripter med trin-for-trin-instruktioner og visuelle elementer"
+    },
+    "Explainer Video Script": {
+      "n": "Forklaringsvideo-manuskript",
+      "d": "Skriv klare forklaringsvideo-manuskripter, der forenkler komplekse emner visuelt"
+    },
+    "Video SEO Optimizer": {
+      "n": "Video-SEO-optimerer",
+      "d": "Optimér videometadata med titler, beskrivelser, tags og miniaturebilledestrategier"
+    },
+    "Novel Outline Creator": {
+      "n": "Romandispositionsskaber",
+      "d": "Byg omfattende romandispositioner med plotstruktur, kapitler og karakterbuer"
+    },
+    "Short Story Writer": {
+      "n": "Novellforfatter",
+      "d": "Skriv fængslende noveller med levende karakterer og tilfredsstillende afslutninger"
+    },
+    "Poetry Generator": {
+      "n": "Digterigenerator",
+      "d": "Skab original digtning i forskellige former med billedsprog, metrik og følelse"
+    },
+    "Book Proposal Template": {
+      "n": "Bogforslag-skabelon",
+      "d": "Opret professionelle bogforslag med markedsanalyse og kapitelresuméer"
+    },
+    "Memoir Outline": {
+      "n": "Memoar-disposition",
+      "d": "Strukturér personlige memoarer med tematiske kapitler og reflekterende fortælling"
+    },
+    "Children's Book Creator": {
+      "n": "Børnebogsskaber",
+      "d": "Skriv alderstilpassede børnebøger med engagerende historier og illustrationsnoter"
+    },
+    "Screenplay Outline": {
+      "n": "Filmmanusdisposition",
+      "d": "Skitser filmmanuskripter med treaktsstruktur, sceneopdeling og dialognoter"
+    },
+    "Play Script Writer": {
+      "n": "Teaterforfattermanuskript",
+      "d": "Skriv teaterManuskripter med sceneanvisninger, dialog og scenestruktur"
+    },
+    "Comic Book Script": {
+      "n": "Tegneseriemanuskript",
+      "d": "Skriv tegneseriemanuskripter med panelbeskrivelser, dialog og tempo"
+    },
+    "Fan Fiction Creator": {
+      "n": "Fanfiktionsskaber",
+      "d": "Skriv fanfiktion med trofaste karakterstemmer og kreative nye historieforløb"
+    },
+    "Writing Prompt Generator": {
+      "n": "Skriveprompt-generator",
+      "d": "Generér kreative skriveprompter med genre, begrænsninger og historieidéer"
+    },
+    "Dialogue Writer": {
+      "n": "Dialogforfatter",
+      "d": "Udform naturligt klingende dialog, der afslører karakter og driver handlingen fremad"
+    },
+    "Plot Twist Generator": {
+      "n": "Plottwist-generator",
+      "d": "Generér overraskende men logiske plottwists, der sætter fortællingen i nyt perspektiv"
+    },
+    "Query Letter Writer": {
+      "n": "Forespørgselsbrev-forfatter",
+      "d": "Skriv overbevisende forespørgselsbreve til litterære agenter med hook og synopsis"
+    },
+    "Book Description Writer": {
+      "n": "Bogbeskrivelsesforfatter",
+      "d": "Skriv fængslende bogbeskrivelser, der fanger læsere og driver salg"
+    },
+    "Ghostwriting Brief": {
+      "n": "Ghostwriting-brief",
+      "d": "Opret detaljerede ghostwriting-briefs med stemme-, stil- og indholdskrav"
+    },
+    "Technical Writing Guide": {
+      "n": "Guide til teknisk skrivning",
+      "d": "Skriv klar teknisk dokumentation med struktureret formatering og præcision"
+    },
+    "Grant Proposal Writer": {
+      "n": "Bevillingsansøgningsforfatter",
+      "d": "Skriv overbevisende bevillingsansøgninger med projektbeskrivelser og budgetbegrundelse"
+    },
+    "White Paper Outline": {
+      "n": "Whitepaper-disposition",
+      "d": "Strukturér autoritative whitepapers med forskning, analyse og anbefalinger"
+    },
+    "Copywriting Formula": {
+      "n": "Copywriting-formel",
+      "d": "Anvend gennemprøvede copywriting-formler som AIDA, PAS og BAB til ethvert produkt eller service"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram-indholdsplanlægger",
+      "d": "Planlæg en uges Instagram-indhold med opslag, stories, reels og billedtekster"
+    },
+    "X Thread Creator": {
+      "n": "X-trådskaber",
+      "d": "Skriv engagerende X-tråde, der opbygger autoritet og driver engagement"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit-opslagsforfatter",
+      "d": "Skriv Reddit-opslag optimeret til specifikke subreddits med fællesskabsnormer i fokus"
+    },
+    "Viral Hook Generator": {
+      "n": "Viral hook-generator",
+      "d": "Generér opmærksomhedsfangende hooks til sociale medier-indhold på tværs af platforme"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Hashtag-strategiværktøj",
+      "d": "Undersøg og organisér hashtagstrategier for maksimal synlighed"
+    },
+    "Engagement Response Generator": {
+      "n": "Engagementssvar-generator",
+      "d": "Generér gennemtænkte svar på kommentarer, DM'er og omtaler i stor skala"
+    },
+    "LinkedIn Article Writer": {
+      "n": "LinkedIn-artikelforfatter",
+      "d": "Skriv tankelederartikler på LinkedIn, der etablerer professionel autoritet"
+    },
+    "Episode Show Notes": {
+      "n": "Episode-shownoter",
+      "d": "Skriv detaljerede shownoter med tidsstempler, links og vigtige pointer"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Podcastredigerings-tjekliste",
+      "d": "Standardisér podcastredigeringsworkflow med kvalitetskontrolpunkter og finpudsningstrin"
+    },
+    "Prompt Improver": {
+      "n": "Promptforbedrer",
+      "d": "Forbedr og optimér enhver prompt til bedre AI-resultater med strukturerede teknikker"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Kæde-af-tanker-organisator",
+      "d": "Byg kæde-af-tanker-prompts, der guider AI gennem trinvis ræsonnering"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG-promptgenerator",
+      "d": "Opret retrieval-augmented generation-prompts med kontekstvindue-optimering"
+    },
+    "Prompt Translator": {
+      "n": "Promptoversætter",
+      "d": "Oversæt prompts mellem forskellige AI-modeller og bevar hensigt og kvalitet"
+    },
+    "Prompt Evaluator": {
+      "n": "Promptevaluator",
+      "d": "Evaluér og bedøm prompts på tværs af flere kvalitetsdimensioner med forbedringstips"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Few-shot-eksempelgenerator",
+      "d": "Generér eksempler af høj kvalitet til few-shot in-context learning-prompts"
+    },
+    "System Prompt Writer": {
+      "n": "Systempromptforfatter",
+      "d": "Skriv effektive systemprompter, der definerer AI-adfærd, begrænsninger og outputstil"
+    },
+    "AI Guardrails Designer": {
+      "n": "AI-sikkerhedsskinner-designer",
+      "d": "Design sikkerhedsskinner og indholdspolitikker til AI-applikationer"
+    },
+    "AI Use Case Identifier": {
+      "n": "AI-brugsscenarie-identificator",
+      "d": "Identificér og evaluer potentielle AI-brugsscenarier til virksomheder og arbejdsgange"
+    },
+    "Model Comparison Guide": {
+      "n": "Modelsammenligningsguide",
+      "d": "Sammenlign AI-modeller på tværs af kapabiliteter, prissætning og brugstilpasning"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM-finjusterings-dataskaber",
+      "d": "Generér og strukturér træningsdata til LLM-finjusteringsprojekter"
+    },
+    "Debugger Assistant": {
+      "n": "Fejlsøgningsassistent",
+      "d": "Fejlsøg kodeproblemer systematisk med årsagsanalyse og rettelsesforslag"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD-pipeline-planlægger",
+      "d": "Design CI/CD-pipelines med build-, test- og udrulningsfasekonfigurationer"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker-konfigurationsguide",
+      "d": "Opret Dockerfiler og compose-konfigurationer med bedste praksis"
+    },
+    "Git Workflow Planner": {
+      "n": "Git-workflow-planlægger",
+      "d": "Design Git-forgreningsstrategier og samarbejdsworkflows til udviklingsteams"
+    },
+    "Code Migration Guide": {
+      "n": "Kodemigrationsguide",
+      "d": "Planlæg og udfør kodemigrationer mellem sprog, frameworks eller versioner"
+    },
+    "Database Schema Designer": {
+      "n": "Databaseskema-designer",
+      "d": "Design databaseskemaer med tabeller, relationer, indekser og begrænsninger"
+    },
+    "Performance Optimization Guide": {
+      "n": "Ydelsesoptimeringsguide",
+      "d": "Identificér og løs ydelsesflaskehalse med profilering og optimeringsstrategier"
+    },
+    "Microservices Architecture": {
+      "n": "Mikroservicearkitektur",
+      "d": "Design mikroservicearkitekturer med servicegrænser, kommunikation og udrulning"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL-skemabygger",
+      "d": "Design GraphQL-skemaer med typer, forespørgsler, mutationer og abonnementer"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform-konfiguration",
+      "d": "Generér Terraform-konfigurationer til cloudinfrastruktur-provisionering"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS-arkitekturplanlægger",
+      "d": "Design AWS-cloudarkitekturer med servicevalg og omkostningsoptimering"
+    },
+    "Code Documentation Generator": {
+      "n": "Kodedokumentationsgenerator",
+      "d": "Generér inline-dokumentation, JSDoc, docstrings og kodekommentarer"
+    },
+    "Technical Interview Prep": {
+      "n": "Teknisk interviewforberedelse",
+      "d": "Forbered dig til tekniske interviews med problemanalyser og løsningsmønstre"
+    },
+    "Changelog Writer": {
+      "n": "Ændringslogforfatter",
+      "d": "Skriv klare ændringslogger efter Keep a Changelog-formatet med semantisk versionering"
+    },
+    "Error Handling Strategy": {
+      "n": "Fejlhåndteringsstrategi",
+      "d": "Design omfattende fejlhåndteringsstrategier med mønstre og brugermeddelelser"
+    },
+    "Logging Strategy Guide": {
+      "n": "Logningsstrategiguide",
+      "d": "Design applikationslogningsstrategier med niveauer, formater og aggregering"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Guide til monitoreringsopsætning",
+      "d": "Opsæt applikationsmonitorering med metrikker, alarmer og dashboards"
+    },
+    "Load Testing Plan": {
+      "n": "Belastningstestplan",
+      "d": "Design belastningstestplaner med scenarier, metrikker og acceptkriterier"
+    },
+    "Security Audit Checklist": {
+      "n": "Sikkerhedsrevisions-tjekliste",
+      "d": "Udfør sikkerhedsrevisioner med OWASP-baserede tjeklister og afhjælpningsvejledning"
+    },
+    "Security Checklist Creator": {
+      "n": "Sikkerhedstjekliste-skaber",
+      "d": "Generér omfattende sikkerhedstjeklister tilpasset din applikation og teknologistak"
+    },
+    "Penetration Testing Plan": {
+      "n": "Penetrationstestplan",
+      "d": "Planlæg strukturerede penetrationstests med omfang, metodik og rapportskabeloner"
+    },
+    "Secure Coding Guide": {
+      "n": "Guide til sikker kodning",
+      "d": "Opret sprogspecifikke retningslinjer for sikker kodning med sårbarhedsforebyggelse"
+    },
+    "Incident Response Plan": {
+      "n": "Hændelsesresponsplan",
+      "d": "Design hændelsesresponsplaner med detektion, inddæmning og genopretningsprocedurer"
+    },
+    "Security Policy Writer": {
+      "n": "Sikkerhedspolitikforfatter",
+      "d": "Skriv organisatoriske sikkerhedspolitikker, der dækker adgangskontrol, datahåndtering og compliance"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Guide til sårbarhedsvurdering",
+      "d": "Udfør systematiske sårbarhedsvurderinger med scanning og prioriteret afhjælpning"
+    },
+    "Security Awareness Training": {
+      "n": "Sikkerhedsbevidsthedstræning",
+      "d": "Design sikkerhedsbevidsthedstræningsprogrammer for medarbejdere på alle niveauer"
+    },
+    "Password Policy Creator": {
+      "n": "Adgangskodepolitik-skaber",
+      "d": "Opret robuste adgangskodepolitikker med kompleksitets-, rotations- og MFA-krav"
+    },
+    "Data Protection Plan": {
+      "n": "Databeskyttelsesplan",
+      "d": "Design databeskyttelsesstrategier, der dækker klassificering, kryptering og opbevaring"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT-analyse Pro",
+      "d": "Avanceret SWOT-analyse med vægtet scoring og handlingsplaner"
+    },
+    "Pitch Deck Outline": {
+      "n": "Pitch deck-disposition",
+      "d": "Opret en overbevisende investor-pitchdeck-struktur"
+    },
+    "Business Canvas Creator": {
+      "n": "Forretningscanvas-skaber",
+      "d": "Generér et komplet forretningsmodel-canvas til din virksomhed"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Konkurrenceefterretningsrapport",
+      "d": "Analysér konkurrenter og identificér markedspositioneringsmuligheder"
+    },
+    "Strategic Planning Guide": {
+      "n": "Strategisk planlægningsguide",
+      "d": "Udvikl en flerårig strategisk plan med mål og milepæle"
+    },
+    "Annual Report Template": {
+      "n": "Årsrapport-skabelon",
+      "d": "Strukturér din virksomheds årsrapport med vigtige finansielle og driftsmæssige højdepunkter"
+    },
+    "Board Meeting Agenda": {
+      "n": "Bestyrelsesmøde-dagsorden",
+      "d": "Professionel bestyrelsesmødedagsorden med bedste praksis for god selskabsledelse"
+    },
+    "Company Newsletter": {
+      "n": "Virksomhedsnyhedsbrev",
+      "d": "Design et engagerende internt eller eksternt virksomhedsnyhedsbrev"
+    },
+    "Employee Survey Creator": {
+      "n": "Medarbejderundersøgelses-skaber",
+      "d": "Byg effektive medarbejderengagement- og tilfredshedsundersøgelser"
+    },
+    "Team Building Activity Planner": {
+      "n": "Teambuilding-aktivitetsplanlægger",
+      "d": "Planlæg engagerende teambuilding-arrangementer og aktiviteter"
+    },
+    "Remote Work Policy": {
+      "n": "Fjernarbejdspolitik",
+      "d": "Opret en omfattende fjernarbejdspolitik til din organisation"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Diversitets- og inklusionsplan",
+      "d": "Udvikl en meningsfuld strategi for diversitet, lighed og inklusion"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Leverandørevalueringsmatrix",
+      "d": "Evaluér og sammenlign leverandører systematisk til indkøbsbeslutninger"
+    },
+    "Process Improvement Plan": {
+      "n": "Procesforbedringssplan",
+      "d": "Identificér og implementér procesforbedringer ved hjælp af lean-metoder"
+    },
+    "Change Management Plan": {
+      "n": "Forandringsledelsesplan",
+      "d": "Vejled organisatorisk forandring med interessentafstemning og kommunikation"
+    },
+    "Risk Assessment Template": {
+      "n": "Risikovurderingsskabelon",
+      "d": "Identificér, evaluér og afbød forretningsrisici systematisk"
+    },
+    "Succession Planning Guide": {
+      "n": "Guide til successionsplanlægning",
+      "d": "Planlæg lederskifter og udvikling af talentpipeline"
+    },
+    "Business Continuity Plan": {
+      "n": "Forretningskontinuitetsplan",
+      "d": "Forbered dig på forstyrrelser med en omfattende kontinuitetsstrategi"
+    },
+    "Customer Journey Map": {
+      "n": "Kunderejsekort",
+      "d": "Visualisér og optimér den komplette kundeoplevelse"
+    },
+    "Brand Guidelines Template": {
+      "n": "Brandretningslinjer-skabelon",
+      "d": "Definér din brandidentitet med omfattende stil- og brugsretningslinjer"
+    },
+    "Mission & Vision Statement": {
+      "n": "Missions- og visionserklæring",
+      "d": "Udform inspirerende missions- og visionserklæringer til din organisation"
+    },
+    "Company Culture Document": {
+      "n": "Virksomhedskulturdokument",
+      "d": "Definér og dokumentér din organisationskultur og dine værdier"
+    },
+    "Organizational Chart Planner": {
+      "n": "Organisationsdiagram-planlægger",
+      "d": "Design og planlæg din organisationsstruktur og rapporteringslinjer"
+    },
+    "Department Budget Template": {
+      "n": "Afdelingsbudget-skabelon",
+      "d": "Opret detaljerede afdelingsbudgetter med prognoser og opfølgning"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI-dashboardbygger",
+      "d": "Design dashboards til nøglepræstationsindikatorer til datadrevne beslutninger"
+    },
+    "Job Description Writer": {
+      "n": "Jobbeskrivelse-forfatter",
+      "d": "Opret klare og inkluderende jobbeskrivelser, der tiltrækker toptalent"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Interviewscorekort-skaber",
+      "d": "Byg strukturerede interviewscorekort til ensartet kandidatvurdering"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Medarbejder-onboarding-tjekliste",
+      "d": "Omfattende onboarding-tjekliste til nyansattes succes"
+    },
+    "Performance Improvement Plan": {
+      "n": "Præstationsforbedringsplan",
+      "d": "Opret støttende præstationsforbedringsplaner med klare milepæle"
+    },
+    "Exit Interview Guide": {
+      "n": "Guide til fratrædelsesinterview",
+      "d": "Udfør indsigtsfulde fratrædelsesinterviews for at forbedre fastholdelse"
+    },
+    "Compensation Analysis": {
+      "n": "Lønanalyse",
+      "d": "Analysér og benchmark lønpakker for markedskonkurrenceevne"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Guide til sammenligning af personalegoder",
+      "d": "Sammenlign og evaluér personalegodepakker"
+    },
+    "Team Retrospective": {
+      "n": "Teamretrospektiv",
+      "d": "Facilitér effektive teamretrospektiver til løbende forbedring"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Skabelon til en-til-en-møde",
+      "d": "Strukturér produktive en-til-en-møder med direkte rapporterende medarbejdere"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Ansættelsespipeline-planlægger",
+      "d": "Design og optimér din rekrutteringspipeline fra ende til anden"
+    },
+    "Employee Recognition Program": {
+      "n": "Medarbejderanerkendelsessprogram",
+      "d": "Byg et meningsfuldt medarbejderanerkendelses- og belønningsprogram"
+    },
+    "Training Program Designer": {
+      "n": "Uddannelsesprogramdesigner",
+      "d": "Design effektive medarbejderuddannelses- og udviklingsprogrammer"
+    },
+    "Workplace Policy Writer": {
+      "n": "Arbejdspladspolitik-forfatter",
+      "d": "Udarbejd klare arbejdspladspolitikker, der dækker vigtige organisatoriske emner"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Guide til konfliktløsning",
+      "d": "Navigér arbejdspladskonflikter med strukturerede løsningsrammer"
+    },
+    "Remote Team Handbook": {
+      "n": "Fjernteam-håndbog",
+      "d": "Opret en omfattende håndbog til distribueret teamdrift"
+    },
+    "Career Path Planner": {
+      "n": "Karrierevejsplanlægger",
+      "d": "Kortlæg din karrierebane med handlingsrettede milepæle"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Lønforhandlingsforberedelse",
+      "d": "Forbered selvsikre lønforhandlingspunkter og -strategier"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn-profilbygger",
+      "d": "Optimér din LinkedIn-profil til at tiltrække rekrutteringsfolk og muligheder"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Porteføljebygger-guide",
+      "d": "Opret en fremragende professionel portefølje, der fremviser dit bedste arbejde"
+    },
+    "Networking Email Templates": {
+      "n": "Netværks-e-mailskabeloner",
+      "d": "Skriv effektive netværks-e-mails til karrierevækst og introduktioner"
+    },
+    "Career Pivot Guide": {
+      "n": "Karriereskift-guide",
+      "d": "Navigér et succesfuldt karriereskift med en struktureret plan"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Freelance-sats beregner",
+      "d": "Beregn din ideelle freelance-sats og prisstrategi"
+    },
+    "Professional Development Plan": {
+      "n": "Professionel udviklingsplan",
+      "d": "Opret en struktureret plan for løbende professionel vækst"
+    },
+    "Mentorship Program Guide": {
+      "n": "Mentorprogramguide",
+      "d": "Find struktur og maksimér mentorrelationer"
+    },
+    "Side Hustle Validator": {
+      "n": "Sideprojekt-validator",
+      "d": "Evaluér og validér sideprojektidéer for levedygtighed"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Work-life balance-revision",
+      "d": "Vurdér og forbedr din work-life balance med handlingsrettede strategier"
+    },
+    "Speaking Proposal Template": {
+      "n": "Taleforslags-skabelon",
+      "d": "Opret overbevisende konference- og begivenhedstaleforslag"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Konsulentforslags-forfatter",
+      "d": "Udarbejd vindende konsulentforslag, der lukker aftaler"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Kompetencegab-analysator",
+      "d": "Identificér og planlæg at lukke kritiske kompetencegab til karrierefremgang"
+    },
+    "Career Journal Prompts": {
+      "n": "Karrieredagbog-prompts",
+      "d": "Reflektér over din karriererejse med guidede dagbogsøvelser"
+    },
+    "Informational Interview Guide": {
+      "n": "Guide til informationsinterview",
+      "d": "Forbered og udfør effektive informationsinterviews"
+    },
+    "Thank You Note Writer": {
+      "n": "Takkekort-forfatter",
+      "d": "Skriv gennemtænkte professionelle takkebreve til enhver lejlighed"
+    },
+    "Resignation Letter Template": {
+      "n": "Opsigelsesbrев-skabelon",
+      "d": "Skriv et professionelt opsigelsesbrev, der bevarer positive relationer"
+    },
+    "Meal Prep Planner": {
+      "n": "Måltidsforberedelsesplanlægger",
+      "d": "Planlæg ugentlige måltider med indkøbslister og tilberedningsplaner"
+    },
+    "Habit Tracker Designer": {
+      "n": "Vanetracker-designer",
+      "d": "Design et personligt vanesporingssystem til varig forandring"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Guide til søvnforbedring",
+      "d": "Optimér din søvnkvalitet med evidensbaserede strategier"
+    },
+    "Stress Management Plan": {
+      "n": "Stresshåndteringsplan",
+      "d": "Opbyg et personligt stresshåndteringsværktøj og en handlingsplan"
+    },
+    "Yoga Routine Builder": {
+      "n": "Yogaprogram-bygger",
+      "d": "Skab tilpassede yogarutiner til dit niveau og dine mål"
+    },
+    "Running Training Plan": {
+      "n": "Løbetræningsplan",
+      "d": "Opbyg en struktureret løbetræningsplan til enhver distance"
+    },
+    "Swimming Workout": {
+      "n": "Svømmetræning",
+      "d": "Design effektive svømmetræninger for kondition og teknik"
+    },
+    "Strength Training Program": {
+      "n": "Styrketræningsprogram",
+      "d": "Skab et progressivt styrketræningsprogram tilpasset dine mål"
+    },
+    "Flexibility Routine": {
+      "n": "Smidighedsrutine",
+      "d": "Forbedr smidighed og bevægelighed med strukturerede udstrækningsøvelser"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT-træningsskaber",
+      "d": "Design højintensiv intervaltræning for maksimale resultater"
+    },
+    "Nutrition Label Reader": {
+      "n": "Næringsetiket-læser",
+      "d": "Lær at læse og forstå næringsetiketter for sundere valg"
+    },
+    "Calorie Counter Guide": {
+      "n": "Kalorietællerguide",
+      "d": "Opsæt personlig kaloriesporing med makronæringsfordeling"
+    },
+    "Hydration Tracker": {
+      "n": "Væskeindtag-tracker",
+      "d": "Spor og optimer dit daglige væskeindtag og hydrering"
+    },
+    "Mental Health Check-In": {
+      "n": "Mentalt sundhedstjek",
+      "d": "Guidet selvvurdering af mental sundhed og trivsel"
+    },
+    "Therapy Session Prep": {
+      "n": "Terapiforberedelse",
+      "d": "Forbered terapisessioner med struktureret refleksion og målsætning"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Taknemlighedsdagbog",
+      "d": "Daglige taknemlighedsprompter for bedre mental trivsel"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Mindfulness-øvelsesskaber",
+      "d": "Skab personlige mindfulness- og åndedrætsøvelser"
+    },
+    "Supplement Research Guide": {
+      "n": "Kosttilskudsguide",
+      "d": "Undersøg og vurder kosttilskud baseret på dine sundhedsmål"
+    },
+    "Allergy Management Plan": {
+      "n": "Allergihåndteringsplan",
+      "d": "Skab en omfattende allergihåndterings- og forebyggelsesstrategi"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Kronisk sygdoms-tracker",
+      "d": "Spor symptomer, medicin og udløsere for kroniske tilstande"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Fysioterapiøvelseslog",
+      "d": "Log og spor fysioterapiøvelser og genoptræningsfremskridt"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonomisk arbejdsplads",
+      "d": "Optimer din arbejdsplads for komfort, sundhed og produktivitet"
+    },
+    "Digital Detox Planner": {
+      "n": "Digital detox-planlægger",
+      "d": "Planlæg og gennemfør en digital detox for bedre mental trivsel"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Selvplejerutine-bygger",
+      "d": "Opbyg en bæredygtig selvplejerutine på tværs af alle trivselsdimensioner"
+    },
+    "First Aid Guide": {
+      "n": "Førstehjælpsguide",
+      "d": "Hurtig reference til førstehjælpsprocedurer ved almindelige nødsituationer"
+    },
+    "To-Do List Power Planner": {
+      "n": "To-do-liste-planlægger",
+      "d": "Skab prioriterede opgavelister med tidsestimater og energiniveauer"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Daglig skema-optimering",
+      "d": "Design en optimeret dagsplan baseret på dine energimønstre"
+    },
+    "Project Planner Pro": {
+      "n": "Projektplanlægger Pro",
+      "d": "Planlæg projekter med milepæle, leverancer og ressourceallokering"
+    },
+    "Decision Matrix Builder": {
+      "n": "Beslutningsmatrice-bygger",
+      "d": "Træf bedre beslutninger med vægtet kriterieanalyse"
+    },
+    "Weekly Review Template": {
+      "n": "Ugentlig evalueringsskabelon",
+      "d": "Gennemfør grundige ugentlige evalueringer for at holde styr på dine mål"
+    },
+    "Morning Routine Designer": {
+      "n": "Morgenrutine-designer",
+      "d": "Design en energigivende morgenrutine for toppræstation"
+    },
+    "Evening Routine Creator": {
+      "n": "Aftenrutine-skaber",
+      "d": "Skab en beroligende aftenrutine for bedre hvile og næste dags forberedelse"
+    },
+    "Time Blocking Schedule": {
+      "n": "Tidsblokskema",
+      "d": "Organiser din dag med fokuserede tidsblokke for maksimal produktivitet"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhower-matrice-værktøj",
+      "d": "Kategoriser opgaver efter hastighed og vigtighed for bedre prioritering"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Pomodoro-sessionsplanlægger",
+      "d": "Planlæg fokuserede arbejdssessioner med Pomodoro-teknikken"
+    },
+    "Goal Tracking System": {
+      "n": "Målsporingssystem",
+      "d": "Opsæt et omfattende målsporingssystem med fremskridtsmålinger"
+    },
+    "Quarterly Planning Template": {
+      "n": "Kvartalplanlægningsskabelon",
+      "d": "Planlæg dit kvartal med strategiske mål og handlingsrettede delmål"
+    },
+    "Annual Review Template": {
+      "n": "Årlig evalueringsskabelon",
+      "d": "Gennemfør en grundig årsgennemgang af resultater og sæt fremtidige mål"
+    },
+    "Meeting Notes Template": {
+      "n": "Mødenotatskabelon",
+      "d": "Fasthold handlingsrettede mødenotater med beslutninger og opfølgninger"
+    },
+    "Brain Dump Organizer": {
+      "n": "Tankesorterings-organisator",
+      "d": "Omdan kaotiske tanker til organiserede og handlingsrettede kategorier"
+    },
+    "Delegation Framework": {
+      "n": "Delegeringsrammeværk",
+      "d": "Identificer hvad der kan delegeres og skab tydelige delegeringsoplæg"
+    },
+    "Focus Session Planner": {
+      "n": "Fokussession-planlægger",
+      "d": "Planlæg dybdegående fokussessioner med miljø- og distraktionsstyring"
+    },
+    "Energy Management Guide": {
+      "n": "Energistyringsguide",
+      "d": "Optimer dine energiniveauer gennem dagen for toppræstation"
+    },
+    "Batch Processing Planner": {
+      "n": "Batchbehandlings-planlægger",
+      "d": "Saml lignende opgaver til effektive batchbehandlingssessioner"
+    },
+    "System Documentation Template": {
+      "n": "Systemdokumentationsskabelon",
+      "d": "Dokumenter personlige og team-systemer for konsistens og onboarding"
+    },
+    "Project Kickoff Template": {
+      "n": "Projektopstartsskabelon",
+      "d": "Start projekter med klare mål, omfang og teamafstemning"
+    },
+    "Sprint Planning Guide": {
+      "n": "Sprintplanlægningsguide",
+      "d": "Planlæg effektive sprints med brugerhistorier, estimering og kapacitet"
+    },
+    "Kanban Board Setup": {
+      "n": "Kanban-tavle-opsætning",
+      "d": "Design og konfigurer en Kanban-tavle til visuel arbejdsgangsstyring"
+    },
+    "Gantt Chart Planner": {
+      "n": "Gantt-diagram-planlægger",
+      "d": "Skab detaljerede projekttidslinjer med afhængigheder og milepæle"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Ressourceallokeringsmatrice",
+      "d": "Planlæg og optimer ressourceallokering på tværs af projekter og teams"
+    },
+    "Status Report Template": {
+      "n": "Statusrapportskabelon",
+      "d": "Skab klare projektstatusrapporter til interessentkommunikation"
+    },
+    "Risk Register Creator": {
+      "n": "Risikoregister-skaber",
+      "d": "Opbyg og vedligehold et omfattende projektrisikoregister"
+    },
+    "Lessons Learned Template": {
+      "n": "Erfaringsopsamlingsskabelon",
+      "d": "Opsaml og dokumenter projektlæringer til fremtidig forbedring"
+    },
+    "Requirements Document": {
+      "n": "Kravdokument",
+      "d": "Indsaml og dokumenter projektkrav med acceptkriterier"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Brugeraccepttestplan",
+      "d": "Skab strukturerede UAT-planer med testcases og godkendelseskriterier"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Interessentkommunikationsplan",
+      "d": "Planlæg interessentkommunikation med kanaler, frekvens og budskaber"
+    },
+    "Project Timeline Creator": {
+      "n": "Projekttidslinje-skaber",
+      "d": "Opbyg detaljerede projekttidslinjer med faser og leverancer"
+    },
+    "Agile Retrospective": {
+      "n": "Agilt retrospektiv",
+      "d": "Faciliter produktive agile retrospektiver med varierede formater"
+    },
+    "Scope Document Writer": {
+      "n": "Omfangsdokument-skriver",
+      "d": "Definer projektomfang med afgrænsninger, leverancer og undtagelser"
+    },
+    "Project Closure Report": {
+      "n": "Projektafslutningsrapport",
+      "d": "Dokumenter projektafslutning med resultater og endelige vurderinger"
+    },
+    "Conversation Practice Partner": {
+      "n": "Samtaletræningspartner",
+      "d": "Øv samtaler på dit målsprog med realistiske scenarier"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Ordforrådsbygger Pro",
+      "d": "Opbyg ordforråd med kontekst, eksempler og gentagelsesmetoder"
+    },
+    "Grammar Coach": {
+      "n": "Grammatiktræner",
+      "d": "Lær og øv grammatikregler med klare forklaringer og øvelser"
+    },
+    "Translation Helper": {
+      "n": "Oversættelseshjælper",
+      "d": "Få præcise oversættelser med kontekst og brugsnoter"
+    },
+    "Language Exchange Prep": {
+      "n": "Sprogudvekslingsforberedelse",
+      "d": "Forbered sprogudvekslingssessioner med strukturerede samtaleemner"
+    },
+    "Travel Phrase Book": {
+      "n": "Rejsefrasebog",
+      "d": "Vigtige rejsefraser organiseret efter situation for din destination"
+    },
+    "Business Language Guide": {
+      "n": "Forretningssprogguide",
+      "d": "Lær professionelt sprog til forretningssammenhænge og kommunikation"
+    },
+    "Accent Improvement Guide": {
+      "n": "Accentforbedringsguide",
+      "d": "Forbedr udtale og accent med målrettede øvelser"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Læseforståelsesøvelse",
+      "d": "Forbedr læsefærdigheder med niveauopdelte tekster og forståelsesspørgsmål"
+    },
+    "Writing Practice Creator": {
+      "n": "Skriveøvelsesskaber",
+      "d": "Øv skrivning på dit målsprog med guidede opgaver og feedback"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Lytteforståelsesguide",
+      "d": "Forbedr lyttefærdigheder med strukturerede øvelser og strategier"
+    },
+    "Cultural Context Guide": {
+      "n": "Kulturel kontekstguide",
+      "d": "Forstå kulturelle nuancer og etikette for effektiv kommunikation"
+    },
+    "Room Layout Planner": {
+      "n": "Rumlayout-planlægger",
+      "d": "Planlæg optimale rumlayouts med møbelplacering og flow"
+    },
+    "Color Palette Creator": {
+      "n": "Farvepalet-skaber",
+      "d": "Generer sammenhængende farvepaletter til rum og designprojekter"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Møbelindkøbsguide",
+      "d": "Smart møbelindkøb med stilmatch og budgetplanlægning"
+    },
+    "Home Decor Style Finder": {
+      "n": "Boligstil-finder",
+      "d": "Opdag din indretningsstil med en guidet vurdering"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Kapselgarderobe-bygger",
+      "d": "Opbyg en alsidig kapselgarderobe der maksimerer kombinationsmulighederne"
+    },
+    "Outfit Planner": {
+      "n": "Outfit-planlægger",
+      "d": "Planlæg outfits til ugen eller særlige begivenheder fra din garderobe"
+    },
+    "Personal Style Guide": {
+      "n": "Personlig stilguide",
+      "d": "Definer din personlige stilidentitet og indkøbsretningslinjer"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Sæsongarderobe-opdatering",
+      "d": "Opfrisk din garderobe hver sæson med strategiske tilføjelser og ændringer"
+    },
+    "Home Office Setup Guide": {
+      "n": "Hjemmekontor-opsætningsguide",
+      "d": "Design et produktivt og stilfuldt hjemmekontor"
+    },
+    "Bathroom Design Planner": {
+      "n": "Badeværelsesdesign-planlægger",
+      "d": "Planlæg badeværelsesrenoveringer med stil og funktionalitet"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Hackathon-idégenerator",
+      "d": "Brainstorm og valider hackathon-projektidéer baseret på temaer og begrænsninger"
+    },
+    "MVP Builder Guide": {
+      "n": "MVP-byggerguide",
+      "d": "Planlæg og byg et minimum viable product inden for stramme hackathon-deadlines"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon-pitchpræsentation",
+      "d": "Skab en overbevisende pitchdæk til at præsentere dit hackathon-projekt for dommere"
+    },
+    "Technical Architecture Planner": {
+      "n": "Teknisk arkitekturplanlægger",
+      "d": "Design den tekniske arkitektur til dit hackathon-projekt hurtigt"
+    },
+    "Hackathon Team Builder": {
+      "n": "Hackathon-teambuilder",
+      "d": "Sammensæt et balanceret hackathon-team med komplementære kompetencer og klare roller"
+    },
+    "Demo Day Script": {
+      "n": "Demodagsmanuskript",
+      "d": "Skriv et poleret live-demo-manuskript der fremhæver dit projekts nøglefunktioner"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Bedømmelseskriterieanalyse",
+      "d": "Analysér hackathon-bedømmelseskriterier og optimer dit projekt derefter"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Hackathon-tidsplanlægger",
+      "d": "Opdel dine hackathon-timer i en struktureret sprintplan"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Præmiestrategirådgiver",
+      "d": "Sigt strategisk efter specifikke præmiespor og tilpas dit projekt til at vinde"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Post-hackathon-handlingsplan",
+      "d": "Gør dit hackathon-projekt til et rigtigt produkt eller porteføljeemne"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Hurtig prototypeguide",
+      "d": "Prototyp og iterér hurtigt på dit hackathon-koncept med begrænset tid"
+    },
+    "Hackathon Submission Template": {
+      "n": "Hackathon-indsendelseskabelon",
+      "d": "Forbered en komplet og poleret hackathon-indsendelse med alt nødvendigt materiale"
+    },
+    "Game Design Document": {
+      "n": "Spildesigndokument",
+      "d": "Skab et omfattende spildesigndokument der dækker alle aspekter af dit spil"
+    },
+    "Game Mechanics Designer": {
+      "n": "Spilmekanik-designer",
+      "d": "Design og balancer centrale spilmekanikker for engagerende gameplay"
+    },
+    "Level Design Planner": {
+      "n": "Leveldesign-planlægger",
+      "d": "Planlæg spilniveauer med pacing, udfordringer og miljøfortælling"
+    },
+    "Game Economy Balancer": {
+      "n": "Spiløkonomi-balancerer",
+      "d": "Design og balancer in-game-økonomier for retfærdig og engagerende progression"
+    },
+    "Character Stats Builder": {
+      "n": "Karakterstatistik-bygger",
+      "d": "Skab balancerede karakterstatistiksystemer og klassearketyper"
+    },
+    "Quest Designer": {
+      "n": "Quest-designer",
+      "d": "Design fængslende quests med forgrenede fortællinger og meningsfulde belønninger"
+    },
+    "Game UI/UX Planner": {
+      "n": "Spil-UI/UX-planlægger",
+      "d": "Planlæg intuitive spil-UI-layouts og brugeroplevelsesflows"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Bordrollespilskampagne",
+      "d": "Byg en bordrollespilskampagne med verdenshistorie, NPC'er og handlingsforløb"
+    },
+    "Board Game Designer": {
+      "n": "Brætspildesigner",
+      "d": "Design et brætspil fra koncept til prototype med balancerede regler"
+    },
+    "Game Testing Checklist": {
+      "n": "Spiltestcheckliste",
+      "d": "Skab en omfattende QA-testcheckliste til dit spil"
+    },
+    "Photo Shoot Planner": {
+      "n": "Fotosession-planlægger",
+      "d": "Planlæg en komplet fotosession fra koncept til udførelse med al logistik"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Fotografiporteføljeguide",
+      "d": "Kuratér og organiser en fremragende fotografiportefølje til kunder eller udstillinger"
+    },
+    "Photo Editing Workflow": {
+      "n": "Fotoredigerings-arbejdsgang",
+      "d": "Opbyg en effektiv fotoredigeringsproces fra import til endelig eksport"
+    },
+    "Client Photography Brief": {
+      "n": "Kundefotografibrief",
+      "d": "Skab et professionelt fotografibrief til kundeprojekter"
+    },
+    "Landscape Photography Guide": {
+      "n": "Landskabsfotografiguide",
+      "d": "Planlæg landskabsfotografiudflugter med vejr, timing og kompositionstips"
+    },
+    "Portrait Photography Tips": {
+      "n": "Portrætfotografitips",
+      "d": "Guide til fængslende portrætter med lys- og poseringsvejledning"
+    },
+    "Product Photography Setup": {
+      "n": "Produktfotografi-opsætning",
+      "d": "Opsæt professionel produktfotografering med korrekt belysning og sceneri"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Bryllupsfotografi-tidslinje",
+      "d": "Planlæg en komplet bryllupsfotografi-tidslinje fra forberedelse til reception"
+    },
+    "Street Photography Guide": {
+      "n": "Gadefotografiguide",
+      "d": "Tips og teknikker til autentisk og fængslende gadefotografi"
+    },
+    "Astrophotography Planner": {
+      "n": "Astrofotografi-planlægger",
+      "d": "Planlæg astrofotografisessioner med udstyr, indstillinger og himmelbegivenheder"
+    },
+    "Character Design Brief": {
+      "n": "Karakterdesignbrief",
+      "d": "Skab detaljerede karakterdesignbriefs med personlighed, udseende og baggrund"
+    },
+    "Comic Strip Creator": {
+      "n": "Tegneserieskaber",
+      "d": "Planlæg og skab tegneserier med panellayout, dialog og tempo"
+    },
+    "World Building Guide": {
+      "n": "Verdensopbygningsguide",
+      "d": "Design fordybende fiktive verdener med geografi, kulturer og historie"
+    },
+    "Children's Book Illustrator": {
+      "n": "Børnebogsillustrator",
+      "d": "Planlæg illustrationer til børnebøger med alderstilpasset stil og tempo"
+    },
+    "Art Portfolio Curator": {
+      "n": "Kunstporteføljekurator",
+      "d": "Kuratér og præsenter en kunstportefølje til gallerier, kunder eller skoler"
+    },
+    "Color Theory Guide": {
+      "n": "Farveteoriguide",
+      "d": "Anvend farveteoriprincipper til at skabe harmoniske og effektfulde kunstværker"
+    },
+    "Digital Art Workflow": {
+      "n": "Digital kunst-arbejdsgang",
+      "d": "Strømlin din digitale kunstproces fra skitse til færdigt resultat"
+    },
+    "Art Commission Brief": {
+      "n": "Kunstbestillingsbrief",
+      "d": "Skriv tydelige kunstbestillingsbriefs for at formidle din vision til kunstnere"
+    },
+    "Mural Design Planner": {
+      "n": "Vægmaleri-designplanlægger",
+      "d": "Planlæg store vægmaleriprojekter fra koncept til installation"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Kunstudstillingsforslag",
+      "d": "Skriv et professionelt kunstudstillingsforslag til gallerier og udstillingssteder"
+    },
+    "Tax Deduction Finder": {
+      "n": "Skattefradragsfinder",
+      "d": "Identificer ofte oversete skattefradrag baseret på din situation og indgivelse"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Selvstændig skatteguide",
+      "d": "Navigér skat for selvstændige inkl. á conto-betalinger og fradrag"
+    },
+    "Tax Document Organizer": {
+      "n": "Skattedokument-organisator",
+      "d": "Organiser og spor alle skattedokumenter til selvangivelsen"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Kvartalsvis skatteberegner",
+      "d": "Beregn og planlæg kvartalsvise á conto-skattebetalinger for selvstændige"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Kapitalgevinstberegner",
+      "d": "Forstå og planlæg kapitalgevinstbeskatning på investeringer og ejendom"
+    },
+    "Tax Filing Checklist": {
+      "n": "Selvangivelsescheckliste",
+      "d": "Trin-for-trin-checkliste for nøjagtig og komplet selvangivelse"
+    },
+    "State Tax Comparison": {
+      "n": "Delstatskat-sammenligning",
+      "d": "Sammenlign skattemæssige konsekvenser ved flytning eller indkomst i flere stater"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Skattemæssig tabsoptimering",
+      "d": "Udnyt strategisk investeringstab til at modregne gevinster og reducere skat"
+    },
+    "Stock Research Template": {
+      "n": "Aktieanalyseskabelon",
+      "d": "Gennemfør grundig fundamental og teknisk analyse af enkeltaktier"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF-sammenligningsværktøj",
+      "d": "Sammenlign ETF'er på omkostninger, beholdninger, afkast og strategi"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Udbytteporteføljeplanlægger",
+      "d": "Opbyg en udbyttefokuseret portefølje til passiv indkomst"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Ejendomsinvesteringsanalyse",
+      "d": "Analysér udlejningsejendomme og ejendomsinvesteringer for afkast og cashflow"
+    },
+    "Angel Investing Checklist": {
+      "n": "Engleinvesteringscheckliste",
+      "d": "Vurder startup-investeringsmuligheder med due diligence-rammer"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Pensionskontooptimering",
+      "d": "Optimer indbetalinger på tværs af pensionskonti og opsparingsordninger"
+    },
+    "Bond Analysis Guide": {
+      "n": "Obligationsanalyseguide",
+      "d": "Analysér obligationer og fastforrentede værdipapirer for afkast, varighed og risiko"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Investeringsforeningsevaluering",
+      "d": "Vurder investeringsforeninger ud fra afkast, gebyrer, forvalter og egnethed"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Porteføljerebalanceringsguide",
+      "d": "Rebalancer din investeringsportefølje for at fastholde målallokering"
+    },
+    "Investment Journal Template": {
+      "n": "Investeringsdagbogsskabelon",
+      "d": "Spor investeringsbeslutninger, begrundelser og resultater til løbende forbedring"
+    },
+    "AWS Service Selector": {
+      "n": "AWS-tjenevælger",
+      "d": "Vælg de rigtige AWS-tjenester til dine applikationskrav og budget"
+    },
+    "Cloud Migration Plan": {
+      "n": "Cloud-migreringsplan",
+      "d": "Planlæg en struktureret migrering af lokale arbejdsbyrder til skyen"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Kubernetes-udrulningsguide",
+      "d": "Udrul og administrer applikationer på Kubernetes med best practices"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Infrastruktur som kode-skabelon",
+      "d": "Skab infrastruktur som kode-skabeloner til reproducerbare skymiljøer"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD-pipeline-designer",
+      "d": "Design automatiserede CI/CD-pipelines til kontinuerlig integration og udrulning"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Skyomkostningsoptimering",
+      "d": "Identificer og implementer strategier til optimering af skyomkostninger"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Serverløs arkitekturplanlægger",
+      "d": "Design serverløse applikationer med hændelsesdrevne arkitekturmønstre"
+    },
+    "Container Strategy Guide": {
+      "n": "Containerstrateguide",
+      "d": "Definer containeriseringsstrategi for applikationer og mikrotjenester"
+    },
+    "Cloud Security Checklist": {
+      "n": "Skysikkerhedscheckliste",
+      "d": "Revision og sikring af skyinfrastruktur med omfattende sikkerhedstjek"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Katastrofeberedskabsplan",
+      "d": "Design en cloud-katastrofegenopretningsplan med RTO- og RPO-mål"
+    },
+    "Keynote Speech Writer": {
+      "n": "Hovedtaleforfatter",
+      "d": "Skriv en kraftfuld hovedtale der inspirerer og engagerer dit publikum"
+    },
+    "TED Talk Outline": {
+      "n": "TED Talk-disposition",
+      "d": "Strukturér en overbevisende TED-stil tale med en stærk fortællebue"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Skål- og hyldesttaleforfatter",
+      "d": "Skriv mindeværdige skåltaler og hyldester til bryllupper, receptioner og fejringer"
+    },
+    "Debate Preparation Guide": {
+      "n": "Debatforberedelsesguide",
+      "d": "Forbered dig grundigt til debatter med argumenter, modsvar og evidens"
+    },
+    "Panel Discussion Prep": {
+      "n": "Paneldebatforberedelse",
+      "d": "Forbered paneldiskussioner med samtalepunkter og publikumsengagement"
+    },
+    "Presentation Slide Planner": {
+      "n": "Præsentationsdia-planlægger",
+      "d": "Planlæg præsentationsslides med visuelt hierarki og narrativt flow"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Improviseret taleguide",
+      "d": "Opbyg evner til at tale spontant med rammer for improviserede taler"
+    },
+    "Commencement Speech Writer": {
+      "n": "Dimissionstale-forfatter",
+      "d": "Skriv en inspirerende dimissionstale til afgangsceremoni"
+    },
+    "Grant Application Writer": {
+      "n": "Ansøgningsforfatter til bevillinger",
+      "d": "Skriv overbevisende bevillingsansøgninger der tydeligt formidler effekt og behov"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Fundraisingkampagneplan",
+      "d": "Planlæg og gennemfør effektive fundraisingkampagner på tværs af kanaler"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Frivilligrekrutteringsguide",
+      "d": "Rekruttér, onboard og fasthold frivillige til nonprofitprogrammer"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Nonprofitbestyrelsesmøde",
+      "d": "Forbered og afhold effektive nonprofitbestyrelsesmøder med klare dagsordener"
+    },
+    "Impact Report Template": {
+      "n": "Effektrapportskabelon",
+      "d": "Skab overbevisende effektrapporter der fremviser din nonprofits resultater"
+    },
+    "Donor Thank You Letter": {
+      "n": "Donortakkebrev",
+      "d": "Skriv personlige donortakkebreve der opbygger varige relationer"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Årlig kampagnestrategi",
+      "d": "Udvikl en omfattende årlig fundraising- og engagementstrategi"
+    },
+    "Community Needs Assessment": {
+      "n": "Samfundsbehovsvurdering",
+      "d": "Gennemfør en grundig samfundsbehovsvurdering til programudvikling"
+    },
+    "Construction Project Plan": {
+      "n": "Byggeprojektplan",
+      "d": "Skab en omfattende byggeprojektplan med faser, tidslinjer og budgetter"
+    },
+    "Building Permit Checklist": {
+      "n": "Byggetilladelses-checkliste",
+      "d": "Spor alle nødvendige byggetilladelser og godkendelser til dit byggeprojekt"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Entreprenørvurderingsguide",
+      "d": "Vurder og sammenlign entreprenører med en struktureret pointramme"
+    },
+    "Material Estimate Calculator": {
+      "n": "Materialberegner",
+      "d": "Estimér nødvendige byggematerialer med mængder og omkostningsoverslag"
+    },
+    "Site Inspection Checklist": {
+      "n": "Byggepladsinspektionscheckliste",
+      "d": "Gennemfør grundige byggepladsinspektioner med standardiserede checklister"
+    },
+    "Renovation Scope Document": {
+      "n": "Renoveringsomfangsdokument",
+      "d": "Definer et klart renoveringsomfang med specifikationer og forventninger"
+    },
+    "Architectural Brief": {
+      "n": "Arkitekturbrief",
+      "d": "Skriv et arkitekturbrief der definerer projektvision, krav og begrænsninger"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Sikkerhedsoverholdelsescheckliste",
+      "d": "Sikr overholdelse af arbejdsmiljøregler på byggepladsen"
+    },
+    "Robot Design Specification": {
+      "n": "Robotdesignspecifikation",
+      "d": "Definer komplette robotdesignspecifikationer inkl. mekanik, elektronik og software"
+    },
+    "IoT Project Planner": {
+      "n": "IoT-projektplanlægger",
+      "d": "Planlæg IoT-projekter fra ende til anden – fra sensorer til cloud-dashboards"
+    },
+    "Sensor Selection Guide": {
+      "n": "Sensorvalgguide",
+      "d": "Vælg optimale sensorer til dine robotik- eller IoT-applikationskrav"
+    },
+    "Embedded Systems Guide": {
+      "n": "Indlejrede systemers guide",
+      "d": "Design indlejrede systemer med korrekt mikrocontrollervalg og firmwarearkitektur"
+    },
+    "Automation Workflow Designer": {
+      "n": "Automatiseringsworkflow-designer",
+      "d": "Design industrielle eller hjemmeautomationsworkflows med sensorer og aktuatorer"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Hardwareprototype-planlægger",
+      "d": "Planlæg hardwareprototyper fra breadboard til PCB med komponentindkøb"
+    },
+    "Anxiety Management Plan": {
+      "n": "Angstmestringsplan",
+      "d": "Skab en personlig angstmestringsplan med mestringsstrategier og udløsere"
+    },
+    "CBT Thought Record": {
+      "n": "KAT-tankeregistrering",
+      "d": "Øv kognitiv adfærdsterapi-tankeregistrering for at udfordre negative tanker"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Dagbogspromptgenerator",
+      "d": "Generer meningsfulde dagbogsprompter til selvrefleksion og følelsesbearbejdning"
+    },
+    "Relationship Communication Guide": {
+      "n": "Relationskommunikationsguide",
+      "d": "Forbedr relationskommunikation med strukturerede samtalerammeværk"
+    },
+    "Boundary Setting Guide": {
+      "n": "Grænsesætningsguide",
+      "d": "Lær at sætte og opretholde sunde grænser i privat- og arbejdslivet"
+    },
+    "Grief Processing Helper": {
+      "n": "Sorgbearbejdningshjælper",
+      "d": "Navigér sorgprocessen med medfølende vejledning og praktiske skridt"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Selvmedfølelsesøvelse",
+      "d": "Øv selvmedfølelsesøvelser for at opbygge modstandskraft og reducere selvkritik"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Emotionel intelligens-bygger",
+      "d": "Udvikl emotionel intelligens for bedre selvindsigt og relationer"
+    },
+    "Anger Management Plan": {
+      "n": "Vredeshåndteringsplan",
+      "d": "Udvikl sunde vredeshåndteringsstrategier med udløsere og nedtrappingsteknikker"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Udbrændthedsplan",
+      "d": "Skab en struktureret genopretningsplan fra udbrændthed med grænser, hvile og gradvis genoptagelse"
+    },
+    "Instant Pot Recipe": {
+      "n": "Instant Pot-opskrift",
+      "d": "Trykkogeropskrifter med tidsguider"
+    },
+    "World Cuisine Explorer": {
+      "n": "Verdenskøkkenudforsker",
+      "d": "Autentiske opskrifter fra globale køkkener"
+    },
+    "Fermentation Guide": {
+      "n": "Fermenteringsguide",
+      "d": "Opskrifter og teknikker til fermenterede fødevarer"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Grill- og BBQ-guide",
+      "d": "Grillopskrifter med marinader og saucepairings"
+    },
+    "Bread Baking Guide": {
+      "n": "Brødbagningsguide",
+      "d": "Håndværksbagede brødopskrifter fra surdej til færdigt brød"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Svampedyrkningsguide",
+      "d": "Indendørs svampedyrkning fra frø til høst"
+    },
+    "Permaculture Planner": {
+      "n": "Permakulturplanlægger",
+      "d": "Design et selvforsynende madhavers økosystem"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Drivhus-opsætningsguide",
+      "d": "Planlæg og byg et produktivt drivhus"
+    },
+    "FSBO Selling Guide": {
+      "n": "Sælg-selv-boligguide",
+      "d": "Sælg din bolig uden mægler trin for trin"
+    },
+    "Investment Property Finder": {
+      "n": "Investeringsejendomsfinder",
+      "d": "Vurder potentielle udlejningsinvesteringsejendomme"
+    },
+    "Car Modification Guide": {
+      "n": "Bilmodifikationsguide",
+      "d": "Planlæg bilmodifikationer og opgraderinger"
+    },
+    "Fleet Management Planner": {
+      "n": "Flådestyrringsplanlægger",
+      "d": "Administrer vedligeholdelse og omkostninger for flere køretøjer"
+    },
+    "Digital Nomad Guide": {
+      "n": "Digital nomadeguide",
+      "d": "Arbejd fjernbetjent mens du rejser verden rundt"
+    },
+    "Eco-Travel Planner": {
+      "n": "Økorejse-planlægger",
+      "d": "Planlæg bæredygtige og miljøvenlige rejser"
+    },
+    "Product Launch Event": {
+      "n": "Produktlanceringsbegivenhed",
+      "d": "Planlæg et produktlanceringsarrangement fra venue til PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Virtuel begivenhedsplanlægger",
+      "d": "Planlæg engagerende onlinebegivenheder og webinarer"
+    },
+    "College Planning Guide": {
+      "n": "Uddannelsesplanlægningsguide",
+      "d": "Planlæg videregående uddannelse fra valg til studiestøtte"
+    },
+    "Child Safety Plan": {
+      "n": "Børnesikkerhedsplan",
+      "d": "Omfattende retningslinjer for sikkert hjem og online"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Eksotiske kæledyrsguide",
+      "d": "Plejeguider til krybdyr, fugle og eksotiske kæledyr"
+    },
+    "Pet Adoption Guide": {
+      "n": "Kæledyrsadoptionsguide",
+      "d": "Navigér kæledyrsadoptionsprocessen med succes"
+    },
+    "Tiny House Builder": {
+      "n": "Minihus-bygger",
+      "d": "Planlæg og byg et minihus trin for trin"
+    },
+    "Workshop Setup Guide": {
+      "n": "Værkstedsopsætningsguide",
+      "d": "Design og udstyr et hjemmeværksted"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Kuponstrategiplanlægger",
+      "d": "Maksimer besparelser med strategisk kuponbrug"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Genbrugsindkøbsguide",
+      "d": "Find kvalitetsting i genbrugsbutikker og online"
+    },
+    "Theological Study Guide": {
+      "n": "Teologisk studieguide",
+      "d": "Dyk ned i teologiske begreber og doktriner"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Interreligiøs dialogguide",
+      "d": "Faciliter respektfulde interreligiøse samtaler"
+    },
+    "Marathon Training Plan": {
+      "n": "Maratontræningsplan",
+      "d": "Komplet maratontræning fra sofa til 42 km"
+    },
+    "Youth Sports Coach": {
+      "n": "Ungdomssportstræner",
+      "d": "Planlæg ungdomssportstræning og udvikling"
+    },
+    "Woodworking Project": {
+      "n": "Træbearbejdningsprojekt",
+      "d": "Planlæg træbearbejdningsprojekter med skærelister og trin"
+    },
+    "Vinyl Record Guide": {
+      "n": "Vinylpladeguide",
+      "d": "Start og kuratér en vinylpladesamling"
+    },
+    "Home Brewing Guide": {
+      "n": "Hjemmebrygningsguide",
+      "d": "Bryg øl eller vin hjemme fra start til slut"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Økonomisk frihedskøreplan",
+      "d": "Kortlæg din vej til økonomisk uafhængighed"
+    },
+    "Midlife Career Change": {
+      "n": "Karriereskift i midten af livet",
+      "d": "Navigér et karriereskift i enhver alder"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI-baggrundsskaber",
+      "d": "Generer flotte baggrundsbilleder til enhver enhed"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Tatoveringsdesignprompt",
+      "d": "Skab unikke tatoveringsdesignkoncepter med AI"
+    },
+    "DJ Set Planner": {
+      "n": "DJ-sæt-planlægger",
+      "d": "Planlæg DJ-sæt med nummervalg og overgange"
+    },
+    "Music Theory Tutor": {
+      "n": "Musikteoritutor",
+      "d": "Lær musikteorikoncepter med øvelser"
+    },
+    "Podcast Video Setup": {
+      "n": "Podcast-videoopsætning",
+      "d": "Opsæt videopodcasting fra udstyr til redigering"
+    },
+    "Wedding Video Plan": {
+      "n": "Bryllupsvideoplan",
+      "d": "Planlæg bryllupsvideooptagelse fra ceremoni til redigering"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Memoirekapitelforfatter",
+      "d": "Skriv fængslende memoirekapitler fra livshistorier"
+    },
+    "Haiku Generator": {
+      "n": "Haikugenerator",
+      "d": "Skab haikudigte om ethvert emne"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok-indholdsstrategi",
+      "d": "Opbyg en TikTok-vækststrategi med indholdsidéer"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube-fællesskabsindlæg",
+      "d": "Skab engagerende YouTube-fællesskabsindlæg"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Podcast-indtjeningsplan",
+      "d": "Strategier til at tjene penge på din podcast"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "AI-værktøjssammenligningsguide",
+      "d": "Sammenlign AI-værktøjer til specifikke brugssituationer"
+    },
+    "Code Snippet Library": {
+      "n": "Kodestykkebibliotek",
+      "d": "Organiser og dokumenter genbrugelige kodestykker"
+    },
+    "Tech Stack Selector": {
+      "n": "Teknologistaksvælger",
+      "d": "Vælg den rigtige teknologistak til dit projekt"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Privatlivsoverholdelsesguide",
+      "d": "Sikr at din app overholder privatlivslovgivningen"
+    },
+    "API Security Audit": {
+      "n": "API-sikkerhedsrevision",
+      "d": "Revidér dine API-endepunkter for sikkerhedssårbarheder"
+    },
+    "AI Hackathon Project": {
+      "n": "AI-hackathonprojekt",
+      "d": "Planlæg et AI-fokuseret hackathonprojekt fra ende til anden"
+    },
+    "Mobile Game Concept": {
+      "n": "Mobilspilskoncept",
+      "d": "Design et mobilspil fra koncept til indtjening"
+    },
+    "Drone Photography Guide": {
+      "n": "Dronefotografiguide",
+      "d": "Planlæg luftfotograferingsmissioner og optagelser"
+    },
+    "NFT Art Collection": {
+      "n": "NFT-kunstsamling",
+      "d": "Planlæg og skab en digital kunstsamling"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Freelancerskatteguide",
+      "d": "Navigér skat og fradrag for selvstændige"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Kryptoporteføljebygger",
+      "d": "Opbyg en diversificeret kryptovalutaportefølje"
+    },
+    "Azure Service Guide": {
+      "n": "Azure-tjenesteguide",
+      "d": "Vælg og konfigurer Azure-cloudtjenester"
+    },
+    "Wedding Speech Writer": {
+      "n": "Bryllupstale-forfatter",
+      "d": "Skriv hjertelige bryllupstaler og skåltaler"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Nonprofitopstartsguide",
+      "d": "Start en nonprofitorganisation fra bunden"
+    },
+    "Home Addition Planner": {
+      "n": "Tilbygningsplanlægger",
+      "d": "Planlæg en tilbygning fra tilladelser til byggeri"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino-projektplanlægger",
+      "d": "Planlæg Arduino-baserede elektronikprojekter"
+    },
+    "Digital Wellness Plan": {
+      "n": "Digital trivselsplan",
+      "d": "Skab et sundt forhold til teknologi"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT-analyseværktøj",
+      "d": "Strategisk analyse af styrker, svagheder, muligheder og trusler"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Mødedagsorden-bygger",
+      "d": "Skab strukturerede mødedagsordener med tidsblokke"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR-rammeværksbygger",
+      "d": "Sæt mål og nøgleresultater for teams"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Leverandørforhandlingsforberedelse",
+      "d": "Forbered forhandlinger med leverandører og underleverandører"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Franchisevurderingsguide",
+      "d": "Vurder franchisemuligheder systematisk"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Fjernarbejdspolitik-forfatter",
+      "d": "Skab omfattende fjernarbejdspolitikker"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Mangfoldighedsansættelsesplan",
+      "d": "Opbyg inkluderende ansættelsespraksis og pipelines"
+    },
+    "Freelance Contract Template": {
+      "n": "Freelancekontraktskabelon",
+      "d": "Skab professionelle freelanceserviceaftaler"
+    },
+    "Personal Website Planner": {
+      "n": "Personlig hjemmesideplanlægger",
+      "d": "Planlæg og strukturer din professionelle porteføljesite"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Intervalfasteguide",
+      "d": "Design en intervalfasteprotokol"
+    },
+    "Posture Improvement Plan": {
+      "n": "Holdningsforbedringsplan",
+      "d": "Korriger holdningsproblemer med øvelser og vaner"
+    },
+    "Notion Template Builder": {
+      "n": "Notion-skabelonbygger",
+      "d": "Design Notion-arbejdsområdeskabeloner til enhver arbejdsgang"
+    },
+    "Automation Workflow Builder": {
+      "n": "Automatiseringsworkflow-bygger",
+      "d": "Design automatiseringsworkflows med Zapier eller Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Agil sprintplanlægger",
+      "d": "Planlæg agile sprints med storypoints og hastighed"
+    },
+    "Product Roadmap Builder": {
+      "n": "Produktkøreplanbygger",
+      "d": "Skab produktkøreplaner med milepæle og temaer"
+    },
+    "TOEFL Prep Guide": {
+      "n": "TOEFL-forberedelsesguide",
+      "d": "Forbered dig til TOEFL-eksamen med studiestrategier"
+    },
+    "Business English Coach": {
+      "n": "Forretningsengelskcoach",
+      "d": "Forbedr professionel engelsksproglig kommunikation"
+    },
+    "Brand Identity Designer": {
+      "n": "Brandidentitetsdesigner",
+      "d": "Skab sammenhængende retningslinjer for visuel brandidentitet"
+    },
+    "UX Research Plan": {
+      "n": "UX-forskningsplan",
+      "d": "Planlæg brugeroplevelsesresearch for digitale produkter"
+    },
+    "Data Storytelling Guide": {
+      "n": "Datafortællingsguide",
+      "d": "Omdan dataindsigter til overbevisende fortællinger"
+    },
+    "AI Model Evaluation": {
+      "n": "AI-modelevaluering",
+      "d": "Evaluer og sammenlign maskinlæringsmodellers ydeevne"
+    },
+    "3D Printing Project": {
+      "n": "3D-printprojekt",
+      "d": "Planlæg 3D-printprojekter fra design til print"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Elektrisk kredsløbsdesigner",
+      "d": "Design elektriske kredsløb med komponentvalg"
+    },
+    "Side Hustle Finder": {
+      "n": "Ekstraindkomst-finder",
+      "d": "Opdag ekstraindkomstidéer baseret på dine færdigheder"
+    },
+    "Passive Income Blueprint": {
+      "n": "Passiv indkomst-plan",
+      "d": "Byg en passiv indkomststrategi tilpasset din situation"
+    },
+    "Savings Challenge Generator": {
+      "n": "Opsparingsudfordring-generator",
+      "d": "Opret en tilpasset opsparingsudfordringsplan"
+    },
+    "Negotiate Any Bill": {
+      "n": "Regningsforhandler",
+      "d": "Scripts til at forhandle og sænke dine tilbagevendende regninger"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy-butik starter",
+      "d": "Trin-for-trin plan til at starte og vokse en Etsy-butik"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube-kanal planlægger",
+      "d": "Planlæg og start en profitabel YouTube-kanal"
+    },
+    "Rental Income Analyzer": {
+      "n": "Lejeindkomst-analysator",
+      "d": "Analysér potentielle lejeindtægter fra ejendomme"
+    },
+    "Online Course Creator": {
+      "n": "Online kursus-skaber",
+      "d": "Planlæg og strukturer et online kursus til salg"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Kupon & cashback-maksimerer",
+      "d": "Maksimér besparelser med kuponer, cashback og belønninger"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Dropshipping-butik opsætning",
+      "d": "Planlæg en dropshipping-forretning fra bunden"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Gigøkonomi-optimerer",
+      "d": "Maksimér indtjening fra gig-apps som Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

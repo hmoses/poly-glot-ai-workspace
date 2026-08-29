@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Alle",
+    "free": "⭐ Gratis",
+    "money": "💰 Zakelijk",
+    "coding": "💻 Coderen",
+    "ai": "🤖 AI",
+    "writing": "✍️ Schrijven",
+    "marketing": "📢 Marketing",
+    "sales": "🤝 Verkoop",
+    "school": "📚 Onderwijs",
+    "research": "🔬 Onderzoek",
+    "career": "🚀 Carrière",
+    "legal": "⚖️ Juridisch",
+    "finance": "📊 Financiën",
+    "health": "🏥 Gezondheid",
+    "cooking": "🍳 Koken",
+    "garden": "🌱 Tuin",
+    "realestate": "🏠 Vastgoed",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Reizen",
+    "image": "🎨 Beeld-AI",
+    "music": "🎵 Muziek",
+    "video": "🎬 Video",
+    "social": "📱 Sociaal",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-commerce",
+    "productivity": "⏱ Productiviteit",
+    "diy": "🔨 Doe-het-zelf",
+    "event": "🎉 Evenementen",
+    "parent": "👶 Ouderschap",
+    "pets": "🐾 Huisdieren",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Welzijn",
+    "language": "🌍 Talen",
+    "security": "🔒 Beveiliging",
+    "datascience": "📈 Data Science",
+    "chemistry": "🧪 Scheikunde",
+    "biology": "🧬 Biologie",
+    "physics": "⚛️ Natuurkunde",
+    "math": "🔢 Wiskunde",
+    "makemoney": "💰 Geld"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Samenvattend hulpmiddel",
+      "d": "Concludeer alle inhoud in duidelijke samenvattingen met opsommingstekens"
+    },
+    "Technical Documentation": {
+      "n": "Technische documentatie",
+      "d": "Maak duidelijke technische documenten voor API's en functies"
+    },
+    "YouTube Script": {
+      "n": "YouTube-script",
+      "d": "Volledig videoscript met hook, secties, CTA, b-rolllijst"
+    },
+    "TikTok Generator": {
+      "n": "TikTok-generator",
+      "d": "Kort videoscript geoptimaliseerd voor TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "LinkedIn-berichtschrijver",
+      "d": "Scroll-stoppende LinkedIn-posts die betrokkenheid stimuleren"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Blogpostgenerator",
+      "d": "SEO-geoptimaliseerde lange blogposts"
+    },
+    "SEO Article Writer": {
+      "n": "SEO-artikelschrijver",
+      "d": "Artikelen met veel zoekwoorden die zijn gebouwd om te scoren op Google"
+    },
+    "Podcast Episode Outline": {
+      "n": "Overzicht podcastaflevering",
+      "d": "Gestructureerd afleveringsoverzicht met gesprekspunten"
+    },
+    "Newsletter Writer": {
+      "n": "Nieuwsbrief Schrijver",
+      "d": "Boeiende lezers van e-mailnieuwsbrieven openen daadwerkelijk"
+    },
+    "Product Review Writer": {
+      "n": "Schrijver van productrecensies",
+      "d": "Evenwichtige, geloofwaardige productrecensies"
+    },
+    "Social Media Calendar": {
+      "n": "Socialemediakalender",
+      "d": "30-daagse contentkalender met postideeën per platform"
+    },
+    "Executive Summary": {
+      "n": "Samenvatting",
+      "d": "Samenvatting van één pagina van lange documenten"
+    },
+    "Customer Support Response": {
+      "n": "Reactie van de klantenondersteuning",
+      "d": "Empathische, merkgerichte klantenondersteuningsantwoorden"
+    },
+    "Business Proposal": {
+      "n": "Zakelijk voorstel",
+      "d": "Winnende klantvoorstellen met reikwijdte en prijsstelling"
+    },
+    "Decision Memo": {
+      "n": "Beslismemo",
+      "d": "Duidelijke beslismemo's met opties en aanbeveling"
+    },
+    "Stakeholder Update": {
+      "n": "Update van belanghebbenden",
+      "d": "Beknopte projectstatusupdates voor belanghebbenden"
+    },
+    "Code Review Assistant": {
+      "n": "Codebeoordelingsassistent",
+      "d": "Code controleren op bugs, stijl en best practices"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Codecommentaar",
+      "d": "JSDoc-opmerkingen voor JavaScript en TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Architectuurbeslissingsrecord",
+      "d": "Formele ADR waarin technische beslissingen worden gedocumenteerd"
+    },
+    "User Story Writer": {
+      "n": "Schrijver van gebruikersverhalen",
+      "d": "Agile gebruikersverhalen met acceptatiecriteria"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Acceptatiecriteria",
+      "d": "Acceptatiecriteria in augurkstijl voor gebruikersverhalen"
+    },
+    "PR Description Writer": {
+      "n": "PR-beschrijving Schrijver",
+      "d": "Duidelijke PR-beschrijvingen met context en testnotities"
+    },
+    "Unit Test Generator": {
+      "n": "Eenheidstestgenerator",
+      "d": "Eenheidstests met randgevallen voor elke functie"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Adviseur voor coderefactoring",
+      "d": "Refactorcode voor leesbaarheid en prestaties"
+    },
+    "SQL Query Builder": {
+      "n": "SQL-querybouwer",
+      "d": "Natuurlijke taal voor geoptimaliseerde SQL-query's"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes-configuratiegenerator",
+      "d": "Diagnose en repareer K8s-problemen snel"
+    },
+    "Postmortem Report": {
+      "n": "Postmortaal rapport",
+      "d": "Onberispelijke postmortem met tijdlijn en actie-items"
+    },
+    "Release Notes Writer": {
+      "n": "Release-opmerkingen Schrijver",
+      "d": "Gebruiksvriendelijke release-opmerkingen van commit-berichten"
+    },
+    "Prompt Optimizer": {
+      "n": "Promptoptimalisatie",
+      "d": "Verbeter elke AI-prompt voor betere, nauwkeurigere uitvoer"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Bouwer van gedachteketens",
+      "d": "Bouw redeneringsprompts in meerdere stappen voor complexe taken"
+    },
+    "RAG System Prompt": {
+      "n": "RAG-systeemprompt",
+      "d": "Sjablonen voor het ophalen van uitgebreide generatieprompts"
+    },
+    "Eval Dataset Creator": {
+      "n": "Eval-gegevenssetmaker",
+      "d": "Evaluatiegegevenssets genereren voor het testen van AI-modellen"
+    },
+    "Prompt A/B Tester": {
+      "n": "Snelle A/B-tester",
+      "d": "Genereer A/B-varianten van aanwijzingen om de prestaties te vergelijken"
+    },
+    "Multi-Model Comparison": {
+      "n": "Vergelijking van meerdere modellen",
+      "d": "Kader om de resultaten van AI-modellen te vergelijken"
+    },
+    "Resume Tailoring": {
+      "n": "Hervatten van maatwerk",
+      "d": "Pas uw CV aan een specifieke functieomschrijving aan"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Sollicitatiebriefgenerator",
+      "d": "Boeiende sollicitatiebrieven die interviews opleveren"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn-profieloptimalisatie",
+      "d": "Optimaliseer uw LinkedIn voor recruiters"
+    },
+    "Interview Coach": {
+      "n": "Interviewcoach",
+      "d": "Oefen interviewvragen en antwoorden voor elke rol"
+    },
+    "Salary Negotiation Script": {
+      "n": "Salarisonderhandelingsscript",
+      "d": "Scripts en strategieën om te onderhandelen over hogere lonen"
+    },
+    "Career Roadmap Planner": {
+      "n": "Carrièreroutekaartplanner",
+      "d": "Carrièregroeiplan van 12 maanden met mijlpalen"
+    },
+    "Objection Handler": {
+      "n": "Bezwaarbehandelaar",
+      "d": "Scripts om algemene verkoopbezwaren af ​​te handelen"
+    },
+    "Landing Page Copy": {
+      "n": "Bestemmingspagina kopiëren",
+      "d": "Kopie van bestemmingspagina met hoge conversies"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads-kopie",
+      "d": "Kopie van Google-zoekadvertenties met hoge CTR"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram-advertentie",
+      "d": "Facebook- en Instagram-advertentietekst die"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Kort marketingcampagne",
+      "d": "converteert Volledige marketingcampagne met kanalen en tijdlijn"
+    },
+    "Customer Persona Builder": {
+      "n": "Klantpersona-bouwer",
+      "d": "Gedetailleerde koperspersona's voor marketing en product"
+    },
+    "Value Proposition Canvas": {
+      "n": "Canvas Waardepropositie",
+      "d": "Duidelijke, overtuigende waardeproposities"
+    },
+    "Product Launch Plan": {
+      "n": "Productlanceringsplan",
+      "d": "Go-to-market-plan voor productlanceringen"
+    },
+    "Study Guide Creator": {
+      "n": "Studiegids Maker",
+      "d": "Verander elk onderwerp in een gestructureerde studiegids"
+    },
+    "Flashcard Creator": {
+      "n": "Flashcard-maker",
+      "d": "Flashcard Q&A-sets voor snel onthouden"
+    },
+    "Quiz Generator": {
+      "n": "Quizgenerator",
+      "d": "Meerkeuzevragen en quizzen met korte antwoorden"
+    },
+    "Lesson Plan Builder": {
+      "n": "Lesplanbouwer",
+      "d": "Gedetailleerde lesplannen met activiteiten en beoordelingen"
+    },
+    "Research Notes Organizer": {
+      "n": "Organisator van onderzoeksnotities",
+      "d": "Organiseer onderzoeksnotities in gestructureerde overzichten"
+    },
+    "Essay Outline Generator": {
+      "n": "Essayoverzichtgenerator",
+      "d": "Gestructureerde essayoverzichten met stelling en argumenten"
+    },
+    "Literature Review Assistant": {
+      "n": "Assistent literatuuronderzoek",
+      "d": "Academisch literatuuronderzoek met synthese"
+    },
+    "Thesis Statement Builder": {
+      "n": "Scriptieverklaringbouwer",
+      "d": "Sterke, betwistbare stellingverklaringen"
+    },
+    "Exam Prep Planner": {
+      "n": "Examenvoorbereidingsplanner",
+      "d": "Gepersonaliseerd examenstudieschema"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Contractsamenvatting",
+      "d": "Duidelijke Engelse samenvatting van het contract. Geen juridisch advies."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Contractrisicobeoordeling",
+      "d": "Identificeer risicovolle clausules. Geen juridisch advies."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA-analysator",
+      "d": "Uitsplitsing van de NDA-clausule. Geen juridisch advies."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Assistent beleidsontwerp",
+      "d": "Opstellen van intern beleid. Geen juridisch advies."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Nalevingscontrolelijst",
+      "d": "Compliancechecklist per raamwerk. Geen juridisch advies."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Servicevoorwaardenbeoordelaar",
+      "d": "Markeer ToS-risico's. Geen juridisch advies."
+    },
+    "Budget Planner": {
+      "n": "Budgetplanner",
+      "d": "Persoonlijk of zakelijk budgetplan. Geen financieel advies."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Inkomstenoproepoverzicht",
+      "d": "Belangrijkste inzichten uit inkomstenoproepen. Geen financieel advies."
+    },
+    "Investment Thesis Builder": {
+      "n": "Investeringsscriptiebouwer",
+      "d": "Gestructureerde beleggingsscriptie. Geen financieel advies."
+    },
+    "Financial Analysis Report": {
+      "n": "Financieel analyserapport",
+      "d": "Analyseer financiële gegevens. Geen financieel advies."
+    },
+    "Expense Categorizer": {
+      "n": "Kostencategorisering",
+      "d": "Categoriseer en analyseer de uitgaven. Geen financieel advies."
+    },
+    "SOAP Note Generator": {
+      "n": "SOAP-notitiegenerator",
+      "d": "Klinische SOAP-aantekeningen. Geen medisch advies."
+    },
+    "Clinical Case Summary": {
+      "n": "Samenvatting van het klinische geval",
+      "d": "Structuur klinische aantekeningen. Geen medisch advies."
+    },
+    "Patient Education Writer": {
+      "n": "Schrijver voor patiënteneducatie",
+      "d": "Patiëntenvoorlichting in eenvoudige taal. Geen medisch advies."
+    },
+    "Medical Research Summarizer": {
+      "n": "Samenvatting van medisch onderzoek",
+      "d": "Onderzoeksdocumenten samenvatten. Geen medisch advies."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Differentiële diagnose-assistent",
+      "d": "Differentiële diagnoses organiseren. Geen medisch advies."
+    },
+    "Creative Storyteller": {
+      "n": "Creatieve verhalenverteller",
+      "d": "Genereer creatieve verhalen en verhalen"
+    },
+    "Ad Copy Generator": {
+      "n": "Generator voor advertentiekopieën",
+      "d": "Hoog-converterende kopie voor Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Schrijver van bugrapporten",
+      "d": "Schrijf duidelijke, reproduceerbare bugrapporten"
+    },
+    "Social Media Caption": {
+      "n": "Onderschrift sociale media",
+      "d": "Genereer scroll-stoppende ondertitels voor elk platform"
+    },
+    "Research Paper Abstract": {
+      "n": "Onderzoekspaper Samenvatting",
+      "d": "Schrijf gestructureerde academische samenvattingen"
+    },
+    "Translation Expert": {
+      "n": "Vertaalexpert",
+      "d": "Vertaal tekst met context en nuance"
+    },
+    "Data Analyst": {
+      "n": "Gegevensanalist",
+      "d": "Analyseer gegevens en bied bruikbare inzichten"
+    },
+    "Recipe Generator": {
+      "n": "Receptgenerator",
+      "d": "Genereer aangepaste recepten op basis van uw voorkeuren en voedingsbehoeften"
+    },
+    "Meal Planner": {
+      "n": "Maaltijdplanner",
+      "d": "Plan uitgebalanceerde maaltijden voor de hele week, met variatie en voeding in gedachten"
+    },
+    "Grocery List Builder": {
+      "n": "Boodschappenlijstbouwer",
+      "d": "Stel een georganiseerde boodschappenlijst samen op basis van uw geplande maaltijden en voorraadbehoeften"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Pantry Receptzoeker",
+      "d": "Vind heerlijke recepten met ingrediënten die je al bij de hand hebt"
+    },
+    "Nutrition Calculator": {
+      "n": "Voedingscalculator",
+      "d": "Bereken gedetailleerde voedingsinformatie voor elk recept of maaltijdcombinatie"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Gids voor het vervangen van ingrediënten",
+      "d": "Vind perfecte vervangingen voor ontbrekende of beperkte ingrediënten"
+    },
+    "Batch Cooking Planner": {
+      "n": "Batch-kookplanner",
+      "d": "Plan efficiënte batch-kooksessies om de hele week tijd te besparen"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Cocktailreceptmaker",
+      "d": "Creëer en pas cocktailrecepten aan voor elke gelegenheid"
+    },
+    "Baking Conversion Helper": {
+      "n": "Bakconversiehulp",
+      "d": "Converteer bakmetingen tussen eenheden en schaal recepten omhoog of omlaag"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Dieetspecifieke receptenzoeker",
+      "d": "Vind recepten die zijn afgestemd op uw specifieke dieetplan of voedingsdoelen"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Recept uit de slowcooker",
+      "d": "Ontvang perfect getimede slowcooker-recepten voor hands-off koken"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Receptmaker voor Airfryer",
+      "d": "Creëer knapperige en heerlijke airfryerrecepten met perfecte timing"
+    },
+    "Smoothie Builder": {
+      "n": "Smoothie-bouwer",
+      "d": "Bouw voedzame en heerlijke smoothierecepten voor elk doel"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Saus- en dressingmaker",
+      "d": "Maak zelfgemaakte sauzen en dressings vanaf het begin"
+    },
+    "Spice Blend Guide": {
+      "n": "Gids voor kruidenmixen",
+      "d": "Maak aangepaste kruidenmixen voor elke keuken of gerechttype"
+    },
+    "Food Pairing Expert": {
+      "n": "Expert in foodpairing",
+      "d": "Ontdek de ideale voedsel- en smaakcombinaties voor verfijnde maaltijden"
+    },
+    "Holiday Menu Planner": {
+      "n": "Vakantiemenuplanner",
+      "d": "Plan een compleet vakantiemenu met tijdlijn en boodschappenlijstje"
+    },
+    "Leftover Makeover": {
+      "n": "Overgebleven make-over",
+      "d": "Transformeer restjes in spannende nieuwe maaltijden met creatieve ideeën"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Kindvriendelijke maaltijdideeën",
+      "d": "Genereer gezonde maaltijden waar kinderen echt van zullen genieten"
+    },
+    "Date Night Dinner": {
+      "n": "Date Night-diner",
+      "d": "Plan een indrukwekkend diner voor een romantische avond thuis"
+    },
+    "Budget Meal Planner": {
+      "n": "Budget maaltijdplanner",
+      "d": "Creëer heerlijke maaltijden met een beperkt budget zonder in te boeten aan voeding"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Veganistische receptconvertor",
+      "d": "Zet elk traditioneel recept om in een heerlijke veganistische versie"
+    },
+    "Dessert Creator": {
+      "n": "Dessertmaker",
+      "d": "Ontwerp aangepaste dessertrecepten voor elk vaardigheidsniveau en elke gelegenheid"
+    },
+    "Appetizer Planner": {
+      "n": "Voorgerechtplanner",
+      "d": "Plan de perfecte aperitiefspread voor feesten en bijeenkomsten"
+    },
+    "Food Prep Timeline": {
+      "n": "Tijdlijn voor voedselbereiding",
+      "d": "Maak een gedetailleerde kooktijdlijn, zodat alles in één keer klaar is"
+    },
+    "Plant Care Guide": {
+      "n": "Gids voor plantenverzorging",
+      "d": "Ontvang gepersonaliseerde verzorgingsinstructies voor elke plant in je collectie"
+    },
+    "Garden Planner": {
+      "n": "Tuinplanner",
+      "d": "Ontwerp en plan uw tuinindeling voor maximale opbrengst en schoonheid"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Diagnosetool voor ongedierte",
+      "d": "Identificeer plagen en ziekten in de tuin met biologische behandelingsopties"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Seizoensgebonden plantkalender",
+      "d": "Weet precies wanneer u elk gewas in uw teeltgebied moet planten"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Moestuinplanner",
+      "d": "Plan een productieve moestuin met begeleidende beplanting en rotatie"
+    },
+    "Indoor Plant Guide": {
+      "n": "Gids voor kamerplanten",
+      "d": "Kies en zorg voor de perfecte kamerplanten voor uw ruimte"
+    },
+    "Herb Garden Starter": {
+      "n": "Kruidentuinstarter",
+      "d": "Begin een bloeiende kruidentuin, binnen of buiten, met deskundige begeleiding"
+    },
+    "Composting Guide": {
+      "n": "Composteringsgids",
+      "d": "Start en onderhoud een composteersysteem voor rijke tuingrond"
+    },
+    "Landscape Design Helper": {
+      "n": "Hulp bij landschapsontwerp",
+      "d": "Ontwerp een prachtig landschapsplan voor uw pand"
+    },
+    "Raised Bed Planner": {
+      "n": "Verhoogde bedplanner",
+      "d": "Ontwerp en bouw de perfecte verhoogde tuinbedden voor uw ruimte"
+    },
+    "Fruit Tree Guide": {
+      "n": "Fruitboomgids",
+      "d": "Selecteer en verzorg fruitbomen die geschikt zijn voor uw klimaat en ruimte"
+    },
+    "Container Garden Planner": {
+      "n": "Containertuinplanner",
+      "d": "Creëer prachtige en productieve containertuinen voor elke ruimte"
+    },
+    "Pollinator Garden": {
+      "n": "Bestuivertuin",
+      "d": "Ontwerp een tuin die bijen, vlinders en nuttige insecten aantrekt"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Droogtetolerante tuin",
+      "d": "Plan een waterrijke tuin die gedijt met minimale irrigatie"
+    },
+    "Soil Amendment Guide": {
+      "n": "Gids voor bodemverbetering",
+      "d": "Test en verbeter uw tuingrond voor een optimale plantgezondheid"
+    },
+    "Seed Starting Calendar": {
+      "n": "Zaadstartkalender",
+      "d": "Plan uw zaadstartschema voor een succesvol groeiseizoen"
+    },
+    "Garden Layout Designer": {
+      "n": "Tuinontwerper",
+      "d": "Creëer een geoptimaliseerde tuinindeling met de juiste afstand en toegang tot de zon"
+    },
+    "Water Schedule Planner": {
+      "n": "Waterschemaplanner",
+      "d": "Creëer een efficiënt bewateringsschema voor uw tuin en gazon"
+    },
+    "Plant Problem Solver": {
+      "n": "Probleemoplosser voor installaties",
+      "d": "Diagnose en behandel veel voorkomende plantproblemen met deskundig advies"
+    },
+    "Pruning Guide": {
+      "n": "Snoeigids",
+      "d": "Leer wanneer en hoe je een plant moet snoeien voor gezondheid en schoonheid"
+    },
+    "Home Buying Checklist": {
+      "n": "Controlelijst voor het kopen van een huis",
+      "d": "Volledige stapsgewijze checklist voor het huisaankoopproces"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Tool voor appartementvergelijking",
+      "d": "Vergelijk appartementen naast elkaar om uw perfecte huurwoning te vinden"
+    },
+    "Rental Application Helper": {
+      "n": "Huuraanvraaghulp",
+      "d": "Zorg voor een sterke huuraanvraag die opvalt bij verhuurders"
+    },
+    "Home Inspection Questions": {
+      "n": "Vragen over huisinspectie",
+      "d": "Essentiële vragen die u moet stellen tijdens een woninginspectie"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Hypotheekvergelijkingscalculator",
+      "d": "Vergelijk hypotheekopties om de beste deal voor uw situatie te vinden"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Gids voor eerste kopers",
+      "d": "Complete gids om met vertrouwen uw eerste huisaankoop te doen"
+    },
+    "Neighborhood Research": {
+      "n": "Buurtonderzoek",
+      "d": "Onderzoek en vergelijk buurten om de juiste woning voor jou te vinden"
+    },
+    "Home Value Estimator": {
+      "n": "Woningwaardeschatter",
+      "d": "Schat de waarde van uw woning met behulp van vergelijkbare verkoop- en marktgegevens"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Leaseovereenkomstbeoordelaar",
+      "d": "Bekijk en begrijp de belangrijkste voorwaarden in uw huurovereenkomst"
+    },
+    "Moving Checklist": {
+      "n": "Verhuischecklist",
+      "d": "Uitgebreide verhuischecklist met tijdlijn en taakbeheer"
+    },
+    "Property Investment Analyzer": {
+      "n": "Analyser van vastgoedinvesteringen",
+      "d": "Analyseer huurwoningen op rendement op investeringspotentieel"
+    },
+    "Renovation Budget Planner": {
+      "n": "Renovatiebudgetplanner",
+      "d": "Plan en begroot woningrenovatieprojecten met gedetailleerde kostenramingen"
+    },
+    "House Hunting Scorecard": {
+      "n": "Scorekaart huizenjacht",
+      "d": "Scoor en rangschik huizen tijdens uw huizenjachtproces"
+    },
+    "Down Payment Calculator": {
+      "n": "Aanbetalingscalculator",
+      "d": "Bereken aanbetalingsmogelijkheden en spaarplannen voor uw woningaankoop"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Onderhoudsschema voor uw huis",
+      "d": "Maak een seizoensgebonden onderhoudsschema voor uw huis om uw investering te beschermen"
+    },
+    "Rental Property Analysis": {
+      "n": "Analyse van huurwoningen",
+      "d": "Evalueer de mogelijkheden voor huurwoningen met financiële projecties"
+    },
+    "Home Staging Tips": {
+      "n": "Home Staging-tips",
+      "d": "Stimuleer uw huis om sneller en voor een hogere prijs te verkopen"
+    },
+    "Realtor Interview Questions": {
+      "n": "Sollicitatievragen voor makelaars",
+      "d": "Belangrijke vragen die u moet stellen bij het interviewen van makelaars in onroerend goed"
+    },
+    "Closing Cost Estimator": {
+      "n": "Kostencalculator afsluiten",
+      "d": "Schat alle afsluitingskosten voor uw vastgoedtransactie"
+    },
+    "HOA Assessment Guide": {
+      "n": "VvE-beoordelingsgids",
+      "d": "Evalueer VvE-kosten, regels en financiële gezondheid voordat u"
+    },
+    "Car Buying Assistant": {
+      "n": "Assistent autoaankoop",
+      "d": "koopt Navigeer met vertrouwen door het auto-aankoopproces en bespaar geld"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Voertuigvergelijkingstool",
+      "d": "Vergelijk voertuigen naast elkaar op specificaties, prijs en kenmerken"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Onderhoudsschemaplanner",
+      "d": "Creëer een persoonlijk onderhoudsschema voor uw voertuig om de levensduur van uw auto te verlengen"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Reparatieschattingsanalysator",
+      "d": "Evalueer schattingen voor autoreparaties en vind eerlijke prijzen voor services"
+    },
+    "Road Trip Planner": {
+      "n": "Roadtripplanner",
+      "d": "Plan de perfecte roadtrip met berekende stops, brandstof en timing"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Controlelijst gebruikte auto's",
+      "d": "Grondige inspectiechecklist om met vertrouwen een gebruikte auto te kopen"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Vergelijking van autoverzekeringen",
+      "d": "Vergelijk autoverzekeringsopties om de beste dekking en prijs te vinden"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Brandstofverbruikcalculator",
+      "d": "Bereken en optimaliseer de brandstofkosten en efficiëntie van uw voertuig"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Autolease versus koopanalysator",
+      "d": "Vergelijk leasen versus kopen om de beste financiële optie te vinden"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Inruilwaardeschatter",
+      "d": "Schat de inruilwaarde van uw voertuig en onderhandel over een eerlijke deal"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Beoordelaar voertuiggeschiedenis",
+      "d": "Belangrijke vragen en controles bij het bekijken van een rapport over de geschiedenis van een gebruikt voertuig"
+    },
+    "Car Detailing Guide": {
+      "n": "Gids voor autodetailing",
+      "d": "Stapsgewijze autodetailinstructies voor een showroomafwerking"
+    },
+    "Winter Car Prep": {
+      "n": "Winterautovoorbereiding",
+      "d": "Bereid uw voertuig voor op winterse rijomstandigheden en koud weer"
+    },
+    "New Driver Guide": {
+      "n": "Nieuwe stuurprogrammagids",
+      "d": "Essentiële rijtips en kennis voor nieuwe en lerende bestuurders"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Gids voor elektrische voertuigen",
+      "d": "Alles wat u moet weten over het kopen en bezitten van een elektrisch voertuig"
+    },
+    "Trip Planner": {
+      "n": "Reisplanner",
+      "d": "Plan uw perfecte reis met bestemmingen, activiteiten en logistiek"
+    },
+    "Packing List Generator": {
+      "n": "Paklijstgenerator",
+      "d": "Genereer een aangepaste paklijst voor elke reis en bestemming"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Vakantieroutebouwer",
+      "d": "Stel een vakantieprogramma van dag tot dag samen met activiteiten en eetgelegenheden"
+    },
+    "Travel Budget Calculator": {
+      "n": "Reisbudgetcalculator",
+      "d": "Bereken en volg uw reisbudget met gedetailleerde onkostencategorieën"
+    },
+    "Local Attractions Guide": {
+      "n": "Gids voor lokale attracties",
+      "d": "Ontdek de beste lokale attracties, verborgen juweeltjes en must-see plekken"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Vergelijking van reisverzekeringen",
+      "d": "Vergelijk reisverzekeringsopties voor de juiste dekking tijdens uw reis"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Strategie voor vluchtdealzoeker",
+      "d": "Strategieën en tips voor het vinden van de beste vluchtdeals en prijzen"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Hotelvergelijkingshulp",
+      "d": "Vergelijk hotels op prijs, voorzieningen, locatie en beoordelingen"
+    },
+    "Solo Travel Planner": {
+      "n": "Solo-reisplanner",
+      "d": "Plan een veilig en bevredigend solo-reisavontuur waar ook ter wereld"
+    },
+    "Family Vacation Planner": {
+      "n": "Familievakantieplanner",
+      "d": "Plan een gezinsvriendelijke vakantie waar alle leeftijden zich mee vermaken"
+    },
+    "Backpacking Planner": {
+      "n": "Backpackplanner",
+      "d": "Plan een budgetvriendelijk backpackavontuur met routes en uitrusting"
+    },
+    "Business Travel Organizer": {
+      "n": "Organisator voor zakenreizen",
+      "d": "Organiseer zakenreizen efficiënt met het bijhouden en plannen van uitgaven"
+    },
+    "Cruise Planner": {
+      "n": "Cruiseplanner",
+      "d": "Plan de perfecte cruisevakantie met havenexcursies en activiteiten aan boord"
+    },
+    "Travel Safety Guide": {
+      "n": "Reisveiligheidsgids",
+      "d": "Blijf veilig tijdens het reizen met bestemmingsspecifieke veiligheidstips en protocollen"
+    },
+    "Visa Requirements Checker": {
+      "n": "Visumvereistencontrole",
+      "d": "Controleer de visumvereisten en bereid het aanvraagmateriaal voor uw reis voor"
+    },
+    "Language Survival Kit": {
+      "n": "Taaloverlevingspakket",
+      "d": "Leer essentiële zinnen en culturele tips voor uw reisbestemming"
+    },
+    "Airport Navigation Guide": {
+      "n": "Luchthavennavigatiegids",
+      "d": "Navigeer efficiënt door luchthavens met terminaltips en tijdbeheer"
+    },
+    "Travel Photo Plan": {
+      "n": "Reisfotoplan",
+      "d": "Plan uw reisfotografie met de beste locaties, tijden en technieken"
+    },
+    "Group Trip Coordinator": {
+      "n": "Coördinator groepsreizen",
+      "d": "Coördineer de logistiek, budgetten en activiteiten van groepsreizen voor iedereen"
+    },
+    "Adventure Travel Planner": {
+      "n": "Avontuurlijke reisplanner",
+      "d": "Plan adrenaline-pompende avontuurlijke reizen met veiligheid en logistiek"
+    },
+    "Wedding Planner": {
+      "n": "Bruiloftplanner",
+      "d": "Plan elk detail van uw perfecte bruiloft, van locatie tot geloften"
+    },
+    "Birthday Party Planner": {
+      "n": "Verjaardagsfeestplanner",
+      "d": "Plan een gedenkwaardig verjaardagsfeest voor elke leeftijd en stijl"
+    },
+    "Conference Organizer": {
+      "n": "Conferentieorganisator",
+      "d": "Organiseer professionele conferenties en seminars met gedetailleerde logistiek"
+    },
+    "Baby Shower Planner": {
+      "n": "Babydoucheplanner",
+      "d": "Plan een mooie babyshower met spelletjes, eten en decoraties"
+    },
+    "Anniversary Celebration": {
+      "n": "Jubileumviering",
+      "d": "Plan een betekenisvol jubileumfeest voor elk mijlpaaljaar"
+    },
+    "Graduation Party": {
+      "n": "Afstudeerfeest",
+      "d": "Vier academische prestaties met een perfect gepland afstudeerfeest"
+    },
+    "Holiday Party Planner": {
+      "n": "Vakantiefeestplanner",
+      "d": "Plan feestelijke vakantiebijeenkomsten met eten, activiteiten en decoraties"
+    },
+    "Corporate Event Planner": {
+      "n": "Bedrijfsevenementplanner",
+      "d": "Plan professionele bedrijfsevenementen die indruk maken op klanten en medewerkers"
+    },
+    "Fundraiser Organizer": {
+      "n": "Organisator van fondsenwerving",
+      "d": "Organiseer succesvolle fondsenwervende evenementen voor goede doelen en goede doelen"
+    },
+    "Reunion Planner": {
+      "n": "Reünieplanner",
+      "d": "Plan een gedenkwaardige familie- of klasreünie die iedereen samenbrengt"
+    },
+    "Engagement Party Planner": {
+      "n": "Verlovingsfeestplanner",
+      "d": "Plan een vreugdevol verlovingsfeest om het goede nieuws te delen"
+    },
+    "Retirement Party": {
+      "n": "Pensioenpartij",
+      "d": "Vier een goed geleefde carrière met een doordacht pensioenfeest"
+    },
+    "Housewarming Planner": {
+      "n": "Inwijdingsfeestplanner",
+      "d": "Plan een uitnodigend housewarmingfeest voor je nieuwe huis"
+    },
+    "Themed Party Creator": {
+      "n": "Themafeestmaker",
+      "d": "Ontwerp en plan creatieve themafeesten met op elkaar afgestemde details"
+    },
+    "Event Budget Tracker": {
+      "n": "Evenementbudget bijhouden",
+      "d": "Houd evenementenkosten bij en beheer ze, zodat u binnen uw feestbudget blijft"
+    },
+    "Chore Chart Creator": {
+      "n": "Chore Chart Creator",
+      "d": "Maak voor de leeftijd geschikte karweigrafieken met beloningen en tracking"
+    },
+    "Educational Activity Planner": {
+      "n": "Educatieve activiteitenplanner",
+      "d": "Plan leuke educatieve activiteiten die het leren spannend maken voor kinderen"
+    },
+    "Bedtime Story Writer": {
+      "n": "Schrijver van verhaaltjes voor het slapengaan",
+      "d": "Maak gepersonaliseerde verhaaltjes voor het slapengaan met uw kind in de hoofdrol"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Leeftijdsadequate mijlpaaltracker",
+      "d": "Houd ontwikkelingsmijlpalen bij en vier de groei van uw kind"
+    },
+    "School Lunch Planner": {
+      "n": "Schoollunchplanner",
+      "d": "Plan gezonde en aantrekkelijke schoollunches die kinderen daadwerkelijk zullen eten"
+    },
+    "Homework Help Guide": {
+      "n": "Hulpgids voor huiswerk",
+      "d": "Strategieën om het huiswerk van uw kind te ondersteunen zonder het voor hem/haar te doen"
+    },
+    "Family Game Night Ideas": {
+      "n": "Ideeën voor een familiespelavond",
+      "d": "Plan boeiende gezinsspelavonden met activiteiten voor alle leeftijden"
+    },
+    "Screen Time Schedule": {
+      "n": "Schermtijdschema",
+      "d": "Creëer evenwichtige schermtijdregels en -schema's voor uw gezin"
+    },
+    "Allowance System Designer": {
+      "n": "Ontwerper van vergoedingssysteem",
+      "d": "Ontwerp een systeem voor het beheren van toelagen en geld dat past bij de leeftijd"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Babyslaapschema",
+      "d": "Creëer gezonde slaapschema's en -routines voor baby's en peuters"
+    },
+    "Potty Training Guide": {
+      "n": "Gids voor zindelijkheidstraining",
+      "d": "Stap-voor-stap zindelijkheidstrainingplannen met tips voor elke fase"
+    },
+    "Back to School Prep": {
+      "n": "Terug naar schoolvoorbereiding",
+      "d": "Bereid uw gezin voor op een soepele overgang van school naar school"
+    },
+    "Summer Activity Planner": {
+      "n": "Zomeractiviteitenplanner",
+      "d": "Plan een leuke en verrijkende zomer met activiteiten, kampen en avonturen"
+    },
+    "Family Meeting Agenda": {
+      "n": "Agenda voor familiebijeenkomsten",
+      "d": "Organiseer productieve familiebijeenkomsten waarbij iedereen een stem krijgt"
+    },
+    "Child Development Tracker": {
+      "n": "Tracker voor de ontwikkeling van kinderen",
+      "d": "Bewaak en ondersteun de fysieke, sociale en cognitieve ontwikkeling van uw kind"
+    },
+    "Dog Training Plan": {
+      "n": "Hondentrainingsplan",
+      "d": "Maak een trainingsplan op maat voor uw hond op elke leeftijd of elk niveau"
+    },
+    "Cat Care Guide": {
+      "n": "Gids voor kattenverzorging",
+      "d": "Complete verzorgingsgids om uw kat gezond en gelukkig te houden"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Huisdiervoedingsplanner",
+      "d": "Plan optimale voeding voor uw huisdier op basis van leeftijd, ras en gezondheidsbehoeften"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Socialisatiechecklist voor puppy's",
+      "d": "Zorg ervoor dat uw puppy goed gesocialiseerd is tijdens de kritieke ontwikkelingsperiode"
+    },
+    "Pet First Aid Guide": {
+      "n": "Gids voor EHBO bij huisdieren",
+      "d": "Essentiële kennis over eerste hulp en noodprocedures voor eigenaren van gezelschapsdieren"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Aquariumopstellingplanner",
+      "d": "Plan en richt een bloeiend aquarium op met de juiste vissen en uitrusting"
+    },
+    "Pet Travel Preparation": {
+      "n": "Voorbereiding op reis voor huisdieren",
+      "d": "Bereid alles voor wat nodig is voor een veilige en stressvrije reis met uw huisdier"
+    },
+    "New Pet Checklist": {
+      "n": "Nieuwe huisdierenchecklist",
+      "d": "Alles wat u moet voorbereiden voordat u een nieuw huisdier mee naar huis neemt"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Analyser voor huisdiergedrag",
+      "d": "Begrijp de gedragsproblemen van uw huisdier en pak deze aan met deskundige begeleiding"
+    },
+    "Senior Pet Care": {
+      "n": "Dierenverzorging voor senioren",
+      "d": "Gespecialiseerde verzorgingsgids voor oudere huisdieren om ze comfortabel en gezond te houden"
+    },
+    "Pet Exercise Planner": {
+      "n": "Huisdiertrainingsplanner",
+      "d": "Creëer een trainingsroutine die uw huisdier fit en mentaal gestimuleerd houdt"
+    },
+    "Vet Visit Preparation": {
+      "n": "Voorbereiding dierenartsbezoek",
+      "d": "Bereid je voor op dierenartsbezoeken met georganiseerde gezondheidsinformatie en vragen om te stellen"
+    },
+    "Home Improvement Planner": {
+      "n": "Huisverbeteringsplanner",
+      "d": "Plan en prioriteer projecten voor woningverbetering met budgetten en tijdlijnen"
+    },
+    "Furniture Project Planner": {
+      "n": "Meubelprojectplanner",
+      "d": "Plan op maat gemaakte meubelconstructies met materialen, gereedschappen en stapsgewijze begeleiding"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Budgetcalculator verbouwen",
+      "d": "Bereken gedetailleerde verbouwingskosten met arbeid, materialen en onvoorziene uitgaven"
+    },
+    "Paint Color Coordinator": {
+      "n": "Coördinator verfkleuren",
+      "d": "Kies en coördineer verfkleuren voor een samenhangend woonpalet"
+    },
+    "Organization System Designer": {
+      "n": "Organisatiesysteemontwerper",
+      "d": "Ontwerp op maat gemaakte organisatiesystemen voor elke kamer of ruimte in uw huis"
+    },
+    "Storage Solutions Planner": {
+      "n": "Planner voor opslagoplossingen",
+      "d": "Vind creatieve opbergoplossingen om de ruimte in elke kamer te maximaliseren"
+    },
+    "Home Repair Guide": {
+      "n": "Handleiding voor thuisreparatie",
+      "d": "Stapsgewijze begeleiding voor veel voorkomende huisreparaties die u zelf kunt uitvoeren"
+    },
+    "Tool Buying Guide": {
+      "n": "Gids voor het kopen van gereedschap",
+      "d": "Kies het juiste gereedschap voor uw doe-het-zelf-projecten zonder te veel geld uit te geven"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Seizoensgebonden woningonderhoud",
+      "d": "Vul checklists voor seizoensonderhoud in om uw huis het hele jaar door te beschermen"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Audit energie-efficiëntie",
+      "d": "Beoordeel en verbeter de energie-efficiëntie van uw huis om te besparen op energierekeningen"
+    },
+    "Smart Home Setup": {
+      "n": "Smart Home-installatie",
+      "d": "Plan en installeer een smart home-systeem met de juiste apparaten en integraties"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Badkamer renovatieplanner",
+      "d": "Plan een badkamerrenovatie met indeling, armaturen en budgetbeheer"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Keukenrenovatieplanner",
+      "d": "Plan een keukenverbouwing van indeling tot apparatuur met gedetailleerde budgettering"
+    },
+    "Closet Organization": {
+      "n": "Kastorganisatie",
+      "d": "Ontwerp en organiseer kasten voor maximale efficiëntie en gemakkelijke toegang"
+    },
+    "Garage Organization": {
+      "n": "Garageorganisatie",
+      "d": "Transformeer uw garage in een georganiseerde en functionele ruimte"
+    },
+    "Product Comparison Tool": {
+      "n": "Productvergelijkingstool",
+      "d": "Vergelijk producten naast elkaar om de beste aankoopbeslissing te nemen"
+    },
+    "Buying Guide Creator": {
+      "n": "Koopgids Maker",
+      "d": "Creëer gedetailleerde koopgidsen voor elke productcategorie"
+    },
+    "Gift Finder": {
+      "n": "Cadeauzoeker",
+      "d": "Vind het perfecte cadeau voor iedereen op basis van hun interesses en uw budget"
+    },
+    "Price Tracker Strategy": {
+      "n": "Prijstrackerstrategie",
+      "d": "Strategieën voor het volgen van prijzen en kopen op het beste moment"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday-strategie",
+      "d": "Plan uw Black Friday- en Cyber ​​Monday-aankopen voor maximale besparingen"
+    },
+    "Back to School Shopping": {
+      "n": "Terug naar school winkelen",
+      "d": "Organiseer back-to-school-winkelen met lijsten, budgetten en aanbiedingen"
+    },
+    "Wardrobe Planner": {
+      "n": "Garderobeplanner",
+      "d": "Bouw een veelzijdige garderobe met strategische winkel- en outfitplanning"
+    },
+    "Electronics Buying Guide": {
+      "n": "Koopgids voor elektronica",
+      "d": "Navigeer door elektronica-aankopen met specificatiesvergelijking en timingadvies"
+    },
+    "Subscription Service Comparison": {
+      "n": "Vergelijking van abonnementsdiensten",
+      "d": "Vergelijk abonnementsdiensten om de beste waarde voor uw behoeften te vinden"
+    },
+    "Wedding Registry Planner": {
+      "n": "Huwelijksregistratieplanner",
+      "d": "Bouw een uitgebreid huwelijksregister met items voor elk budget"
+    },
+    "Bible Study Guide": {
+      "n": "Bijbelstudiegids",
+      "d": "Creëer gestructureerde bijbelstudieplannen met context, vragen en toepassing"
+    },
+    "Sermon Outline Creator": {
+      "n": "Preekoverzicht Schepper",
+      "d": "Ontwikkel boeiende preekoverzichten met teksten, punten en illustraties"
+    },
+    "Comparative Religion Study": {
+      "n": "Vergelijkende religiestudie",
+      "d": "Ontdek en vergelijk overtuigingen, praktijken en geschiedenis van wereldreligies"
+    },
+    "Discussion Question Generator": {
+      "n": "Discussievragengenerator",
+      "d": "Genereer doordachte discussievragen voor religieuze en filosofische onderwerpen"
+    },
+    "Devotional Writer": {
+      "n": "Devotionele schrijver",
+      "d": "Creëer dagelijkse devotionals met Schriftteksten, reflectie en gebedsaanwijzingen"
+    },
+    "Prayer Journal Guide": {
+      "n": "Gids voor gebedsdagboeken",
+      "d": "Structureer uw gebedsleven met begeleide dagboekaanwijzingen en kaders"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Gids voor spirituele boekenclub",
+      "d": "Creëer discussiegidsen voor boekenclubs voor spirituele en religieuze boeken"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Meditatie Schriftengids",
+      "d": "Creëer begeleide meditatie-ervaringen gericht op Bijbelpassages"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Lesplan jeugdgroep",
+      "d": "Creëer boeiende groepslessen voor jongeren met activiteiten en discussies"
+    },
+    "Faith Journey Reflector": {
+      "n": "Geloofsreisreflector",
+      "d": "Begeleide reflecties voor het verkennen en verdiepen van uw persoonlijke geloofsreis"
+    },
+    "Workout Plan Creator": {
+      "n": "Maker van trainingsplan",
+      "d": "Maak gepersonaliseerde trainingsplannen op basis van uw doelen en fitnessniveau"
+    },
+    "Training Schedule Builder": {
+      "n": "Bouwer van trainingsschema's",
+      "d": "Stel een gestructureerd trainingsschema op voor elk sport- of fitnessdoel"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Spelstrategieanalyzer",
+      "d": "Analyseer spelstrategieën en ontwikkel winnende benaderingen voor uw sport"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Gids voor sportvoeding",
+      "d": "Optimaliseer uw sportvoeding voor topprestaties en herstel"
+    },
+    "Coaching Practice Plan": {
+      "n": "Coachingoefenplan",
+      "d": "Ontwerp effectieve oefensessies die vaardigheden en teamcohesie ontwikkelen"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Fantasiesportanalysator",
+      "d": "Analyseer matchups en optimaliseer elke week je fantasiesportopstelling"
+    },
+    "Race Training Plan": {
+      "n": "Racetrainingsplan",
+      "d": "Train voor races van 5 km tot marathon met gestructureerde progressieve plannen"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Analyser van sportstatistieken",
+      "d": "Analyseer speler- en teamstatistieken voor een beter begrip van sport"
+    },
+    "Team Management Tool": {
+      "n": "Teambeheertool",
+      "d": "Beheer teamroosters, planningen en communicatie efficiënt"
+    },
+    "Injury Recovery Planner": {
+      "n": "Blessureherstelplanner",
+      "d": "Plan veilig en effectief herstel van veelvoorkomende sportblessures"
+    },
+    "Photography Guide": {
+      "n": "Fotografiegids",
+      "d": "Verbeter je fotografievaardigheden met tips over compositie, belichting en uitrusting"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Breipatroonhelper",
+      "d": "Vind en pas breipatronen aan voor uw vaardigheidsniveau en projectideeën"
+    },
+    "Board Game Night Planner": {
+      "n": "Bordspel Nachtplanner",
+      "d": "Plan perfecte bordspelavonden met spelselectie en groepsmatching"
+    },
+    "Fishing Trip Planner": {
+      "n": "Visreisplanner",
+      "d": "Plan succesvolle visreizen met advies over locatie, uitrusting en techniek"
+    },
+    "Camping Trip Organizer": {
+      "n": "Organisator van kampeerreizen",
+      "d": "Organiseer kampeertrips met uitrustingslijsten, maaltijdplannen en activiteitsideeën"
+    },
+    "Bird Watching Guide": {
+      "n": "Gids voor vogelspotten",
+      "d": "Identificeer lokale vogels en plan vogeluitstapjes met seizoenstips"
+    },
+    "Model Building Planner": {
+      "n": "Modelbouwplanner",
+      "d": "Modelbouwprojecten plannen en uitvoeren met materialen en technieken"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Puzzelstrategiegids",
+      "d": "Strategieën en technieken om puzzels sneller en efficiënter op te lossen"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Astronomieobservatieplanner",
+      "d": "Plan sterrenkijksessies met hemelse evenementen en uitrustingsaanbevelingen"
+    },
+    "Art Supply Guide": {
+      "n": "Gids voor kunstaanbod",
+      "d": "Kies de juiste kunstbenodigdheden voor uw medium en vaardigheidsniveau"
+    },
+    "Goal Setting Framework": {
+      "n": "Kader voor het stellen van doelen",
+      "d": "Betekenisvolle doelen stellen en bereiken met een gestructureerd raamwerk en actieplan"
+    },
+    "Bucket List Creator": {
+      "n": "Bucketlist-maker",
+      "d": "Maak een inspirerende bucketlist, georganiseerd op categorie en prioriteit"
+    },
+    "Personal Mission Statement": {
+      "n": "Persoonlijke missieverklaring",
+      "d": "Stel een betekenisvolle persoonlijke missie op die uw levensbeslissingen begeleidt"
+    },
+    "Life Transition Guide": {
+      "n": "Gids voor levenstransitie",
+      "d": "Navigeer door grote levenstransities met plannings-, ondersteunings- en copingstrategieën"
+    },
+    "Habit Building Plan": {
+      "n": "Gewoonteopbouwplan",
+      "d": "Ontwikkel blijvende positieve gewoonten met bewezen, op wetenschap gebaseerde strategieën"
+    },
+    "Time Audit Tool": {
+      "n": "Tijdcontroletool",
+      "d": "Controleer hoe u uw tijd besteedt en optimaliseer wat het belangrijkst is"
+    },
+    "Relationship Goal Planner": {
+      "n": "Relatiedoelplanner",
+      "d": "Doelen stellen en ernaar streven voor sterkere, gezondere relaties"
+    },
+    "Vision Board Creator": {
+      "n": "Vision Board-maker",
+      "d": "Maak een digitaal visiebord met begeleide aanwijzingen en visualisatieoefeningen"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Persoonlijke SWOT-analyse",
+      "d": "Voer een persoonlijke SWOT-analyse uit voor loopbaan- en levensplanning"
+    },
+    "Legacy Letter Writer": {
+      "n": "Oude brievenschrijver",
+      "d": "Schrijf zinvolle nalatenschapsbrieven aan dierbaren waarin u uw waarden en wijsheid vastlegt"
+    },
+    "Contract Draft Creator": {
+      "n": "Contractontwerpmaker",
+      "d": "Genereer professionele contractconcepten voor elke zakelijke relatie"
+    },
+    "NDA Generator": {
+      "n": "NDA-generator",
+      "d": "Maak geheimhoudingsovereenkomsten op maat van uw situatie"
+    },
+    "Rental Agreement Draft": {
+      "n": "Concept huurovereenkomst",
+      "d": "Opstellen van residentiële of commerciële huurovereenkomsten"
+    },
+    "Terms of Service Generator": {
+      "n": "Servicevoorwaardengenerator",
+      "d": "Maak uitgebreide servicevoorwaarden voor websites en apps"
+    },
+    "Privacy Policy Writer": {
+      "n": "Privacybeleid Schrijver",
+      "d": "Genereer een privacybeleid dat voldoet aan de AVG en CCPA"
+    },
+    "Freelance Agreement": {
+      "n": "Freelanceovereenkomst",
+      "d": "Maak overeenkomsten tussen freelancers en klanten"
+    },
+    "Non-Compete Draft": {
+      "n": "Niet-concurrerend concept",
+      "d": "Ontwerp van niet-concurrentiebedingen en op zichzelf staande overeenkomsten"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC-exploitatieovereenkomst",
+      "d": "Exploitatieovereenkomsten maken voor vennootschappen met beperkte aansprakelijkheid"
+    },
+    "Partnership Agreement": {
+      "n": "Partnerschapsovereenkomst",
+      "d": "Partnerschapsovereenkomsten opstellen met duidelijke rollen en voorwaarden"
+    },
+    "Intellectual Property Brief": {
+      "n": "Intellectueel eigendomsoverzicht",
+      "d": "Schets strategieën voor IE-eigendom en bescherming"
+    },
+    "Cease and Desist Draft": {
+      "n": "Cease and Desist-ontwerp",
+      "d": "Opschortingsbrieven opstellen voor verschillende overtredingen"
+    },
+    "Employee Handbook Section": {
+      "n": "Sectie Personeelshandboek",
+      "d": "Schrijf individuele secties voor werknemershandboeken"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Overeenkomst voor onafhankelijke contractanten",
+      "d": "Ontwerp IC-overeenkomsten met de juiste classificatietaal"
+    },
+    "Liability Waiver Draft": {
+      "n": "Concept van aansprakelijkheidsvrijstelling",
+      "d": "Ontheffingen van aansprakelijkheid creëren voor activiteiten en diensten"
+    },
+    "Settlement Letter Draft": {
+      "n": "Schikkingsbrief Concept",
+      "d": "Ontwerp van een aanbod tot schikking of van een antwoordbrief"
+    },
+    "Demand Letter Draft": {
+      "n": "Concept van een verzoekbrief",
+      "d": "Formele aanmaningsbrieven opstellen voor diverse claims"
+    },
+    "Power of Attorney Draft": {
+      "n": "Ontwerp volmacht",
+      "d": "Opstellen van volmachtdocumenten voor diverse doeleinden"
+    },
+    "Last Will Outline": {
+      "n": "Laatste wilsoverzicht",
+      "d": "Maak een schets voor een basistestament"
+    },
+    "Business License Checklist": {
+      "n": "Controlelijst bedrijfslicentie",
+      "d": "Genereer een checklist met de vereiste licenties voor uw bedrijf"
+    },
+    "Trademark Application Guide": {
+      "n": "Handleiding voor het aanvragen van handelsmerken",
+      "d": "Stappenplan voor het indienen van een merkaanvraag"
+    },
+    "Small Claims Court Guide": {
+      "n": "Gids voor rechtbanken voor geringe vorderingen",
+      "d": "Bereid je voor op een rechtbank voor kleine vorderingen met georganiseerde argumenten"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Voorbereiding scheidingsbemiddeling",
+      "d": "Organiseer kernpunten en prioriteiten voor echtscheidingsmediation"
+    },
+    "Tenant Rights Guide": {
+      "n": "Gids voor huurdersrechten",
+      "d": "Begrijp de rechten en rechtsmiddelen van huurders in uw rechtsgebied"
+    },
+    "Landlord Notice Draft": {
+      "n": "Concept kennisgeving verhuurder",
+      "d": "Stel goede juridische mededelingen op van verhuurder aan huurder"
+    },
+    "Copyright Registration Guide": {
+      "n": "Gids voor auteursrechtregistratie",
+      "d": "Gids voor het registreren van auteursrechten bij het US Copyright Office"
+    },
+    "Personal Budget Planner": {
+      "n": "Persoonlijke Budgetplanner",
+      "d": "Maak een uitgebreid maandelijks of jaarlijks budgetplan"
+    },
+    "Investment Research Assistant": {
+      "n": "Assistent beleggingsonderzoek",
+      "d": "Onderzoek en analyseer investeringsmogelijkheden systematisch"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Schuldbetalingscalculator",
+      "d": "Plan een strategie om schulden efficiënt te elimineren"
+    },
+    "Expense Tracker Setup": {
+      "n": "Onkostenregistratie instellen",
+      "d": "Ontwerp een gepersonaliseerd onkostenregistratiesysteem"
+    },
+    "Retirement Planning Guide": {
+      "n": "Gids voor pensioenplanning",
+      "d": "Ontwikkel een alomvattende strategie voor pensioensparen"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Controlelijst voor belastingvoorbereiding",
+      "d": "Organiseer documenten en inhoudingen voor belastingaangifte"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Noodfondscalculator",
+      "d": "Bepaal en plan uw ideale noodfonds"
+    },
+    "Net Worth Tracker": {
+      "n": "Nettowaarde-tracker",
+      "d": "Volg en visualiseer uw volledige financiële plaatje"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Verbeteringsplan voor de kredietscore",
+      "d": "Creëer een uitvoerbaar plan om uw kredietscore te verbeteren"
+    },
+    "Student Loan Strategy": {
+      "n": "Strategie voor studieleningen",
+      "d": "Optimaliseer uw aanpak voor de terugbetaling van studieleningen"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Side Hustle-inkomstenplanner",
+      "d": "Plan en projecteer inkomsten uit bijbaantjes"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Analyser van verzekeringsbehoeften",
+      "d": "Evalueer de lacunes en behoeften van uw verzekeringsdekking"
+    },
+    "Estate Planning Checklist": {
+      "n": "Controlelijst voor vermogensplanning",
+      "d": "Organiseer uw vermogensplanningsdocumenten en -beslissingen"
+    },
+    "Financial Goal Setter": {
+      "n": "Financiële doelen stellen",
+      "d": "Definieer en volg de voortgang richting financiële mijlpalen"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Cashflowanalyser",
+      "d": "Analyseer inkomsten- en uitgavenpatronen in de loop van de tijd"
+    },
+    "Savings Challenge Creator": {
+      "n": "Spaaruitdaging Schepper",
+      "d": "Ontwerp een leuke spaaruitdaging om je spaarpotje te bouwen"
+    },
+    "Investment Portfolio Review": {
+      "n": "Beoordeling van de beleggingsportefeuille",
+      "d": "Controleer en herbalanceer uw beleggingsportefeuille"
+    },
+    "Cryptocurrency Research": {
+      "n": "Onderzoek naar cryptovaluta",
+      "d": "Onderzoek en evalueer investeringen in cryptocurrency"
+    },
+    "Stock Analysis Helper": {
+      "n": "Helper voor aandelenanalyse",
+      "d": "Fundamentele en technische analyses uitvoeren op aandelen"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Investeringscalculator voor onroerend goed",
+      "d": "Analyseer het potentiële rendement op vastgoedbeleggingen"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Zoeker voor belastingaftrek voor bedrijven",
+      "d": "Identificeer in aanmerking komende belastingaftrekken voor uw bedrijf"
+    },
+    "Payroll Budget Planner": {
+      "n": "Salarisbudgetplanner",
+      "d": "Plan en begroot de loonkosten van werknemers"
+    },
+    "Invoice Template Creator": {
+      "n": "Factuursjabloon maken",
+      "d": "Ontwerp professionele facturen voor uw bedrijf"
+    },
+    "Profit Margin Calculator": {
+      "n": "Winstmargecalculator",
+      "d": "Bereken en optimaliseer de winstmarges voor alle producten"
+    },
+    "Financial Independence Planner": {
+      "n": "Financiële onafhankelijkheidsplanner",
+      "d": "Breng uw pad naar financiële onafhankelijkheid en vervroegde pensionering in kaart"
+    },
+    "Ad Copy Writer": {
+      "n": "Advertentietekstschrijver",
+      "d": "Creëer aantrekkelijke advertentieteksten voor elk platform of medium"
+    },
+    "SEO Article Creator": {
+      "n": "SEO-artikelmaker",
+      "d": "Schrijf SEO-geoptimaliseerde artikelen die"
+    },
+    "Social Media Content Calendar": {
+      "n": "Kalender voor sociale media-inhoud",
+      "d": "rangschikken en converteren Plan een maand lang sociale media-inhoud op verschillende platforms"
+    },
+    "Email Campaign Builder": {
+      "n": "Bouwer van e-mailcampagnes",
+      "d": "Ontwerp marketingcampagnes met meerdere e-mails die"
+    },
+    "Product Launch Strategy": {
+      "n": "Strategie voor productlancering",
+      "d": "converteren Creëer een uitgebreide marketingstrategie voor productlanceringen"
+    },
+    "Brand Voice Guide": {
+      "n": "Merkstemgids",
+      "d": "Definieer en documenteer de stem en boodschap van uw merk"
+    },
+    "Content Marketing Strategy": {
+      "n": "Contentmarketingstrategie",
+      "d": "Bouw een volledige contentmarketingstrategie vanaf het begin"
+    },
+    "Influencer Outreach Template": {
+      "n": "Outreach-sjabloon voor beïnvloeders",
+      "d": "Creëer gepersonaliseerde pitches voor samenwerking met influencers"
+    },
+    "Landing Page Copywriter": {
+      "n": "Copywriter voor landingspagina's",
+      "d": "Schrijf een hoog-converterende bestemmingspagina-kopie"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B-testplan maken",
+      "d": "Ontwerp gestructureerde A/B-tests voor marketingcampagnes"
+    },
+    "Buyer Persona Builder": {
+      "n": "Koper Persona-bouwer",
+      "d": "Creëer gedetailleerde klantpersona's voor targeting"
+    },
+    "Competitive Analysis Template": {
+      "n": "Sjabloon voor concurrentieanalyse",
+      "d": "Analyseer concurrenten en identificeer marktkansen"
+    },
+    "Marketing Budget Planner": {
+      "n": "Marketingbudgetplanner",
+      "d": "Wijs en optimaliseer uw marketingbudget"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Affiliate marketingstrategie",
+      "d": "Bouw en optimaliseer een affiliate marketingprogramma"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcastmarketingplan",
+      "d": "Promoot uw podcast en breid uw luisteraarsbestand uit"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Webinar Promotieplan",
+      "d": "Plan en promoot webinars die registraties stimuleren"
+    },
+    "Referral Program Designer": {
+      "n": "Ontwerper van verwijzingsprogramma",
+      "d": "Ontwerp verwijzingsprogramma's die de mond-tot-mondreclame stimuleren"
+    },
+    "Brand Story Writer": {
+      "n": "Schrijver van merkverhalen",
+      "d": "Creëer een boeiend verhaal en verhaal over de oorsprong van het merk"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Marketingtrechterbouwer",
+      "d": "Ontwerp klanttrajecttrechters van bewustwording tot conversie"
+    },
+    "App Store Optimization": {
+      "n": "App Store-optimalisatie",
+      "d": "Optimaliseer app store-vermeldingen voor maximale downloads"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Google Ads-tekstschrijver",
+      "d": "Schrijf effectieve Google Ads-koppen en -beschrijvingen"
+    },
+    "Facebook Ads Creator": {
+      "n": "Maker van Facebook-advertenties",
+      "d": "Maak Facebook- en Instagram-advertentiecampagnes"
+    },
+    "Newsletter Strategy": {
+      "n": "Nieuwsbriefstrategie",
+      "d": "Plan en laat een e-mailnieuwsbrief helemaal opnieuw groeien"
+    },
+    "PR Media Pitch": {
+      "n": "PR-mediapitch",
+      "d": "Schrijf boeiende mediapitches voor persaandacht"
+    },
+    "Content Repurposing Plan": {
+      "n": "Herbestemmingsplan voor inhoud",
+      "d": "Transformeer bestaande inhoud naar meerdere formaten"
+    },
+    "Cold Email Generator": {
+      "n": "Koude e-mailgenerator",
+      "d": "Creëer gepersonaliseerde cold outreach-e-mails die reacties krijgen"
+    },
+    "Sales Script Writer": {
+      "n": "Verkoopscriptschrijver",
+      "d": "Schrijf effectieve verkoopscripts voor oproepen en vergaderingen"
+    },
+    "Objection Handling Guide": {
+      "n": "Gids voor het behandelen van bezwaren",
+      "d": "Reacties voorbereiden op veelvoorkomende verkoopbezwaren"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Maker van vervolgberichten",
+      "d": "Creëer strategische vervolgberichtenreeksen"
+    },
+    "Sales Pitch Creator": {
+      "n": "Maker van verkooppraatjes",
+      "d": "Bouw boeiende elevator pitches en verkooppresentaties"
+    },
+    "Proposal Generator": {
+      "n": "Voorstelgenerator",
+      "d": "Creëer professionele verkoopvoorstellen en offertes"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Plan voor het opschonen van CRM-gegevens",
+      "d": "Organiseer en ruim uw CRM-database systematisch op"
+    },
+    "Sales Territory Planner": {
+      "n": "Verkooprayonplanner",
+      "d": "Definieer en optimaliseer verkoopgebieden voor uw team"
+    },
+    "Account Strategy Builder": {
+      "n": "Accountstrategiebouwer",
+      "d": "Creëer strategische accountplannen voor belangrijke klanten"
+    },
+    "Upsell Script Creator": {
+      "n": "Upsell-scriptmaker",
+      "d": "Schrijf scripts voor upsell en cross-sell aan bestaande klanten"
+    },
+    "Customer Win-Back Email": {
+      "n": "Klant-win-back-e-mail",
+      "d": "Betrek verloren klanten opnieuw met gerichte win-back-campagnes"
+    },
+    "Sales Forecast Template": {
+      "n": "Sjabloon voor verkoopprognoses",
+      "d": "Maak nauwkeurige verkoopprognoses voor uw pijplijn"
+    },
+    "Commission Calculator": {
+      "n": "Commissiecalculator",
+      "d": "Ontwerp en bereken verkoopcommissiestructuren"
+    },
+    "Discovery Call Script": {
+      "n": "Script voor ontdekkingsoproepen",
+      "d": "Structureer effectieve ontdekkingsgesprekken om potentiële klanten te kwalificeren"
+    },
+    "Demo Presentation Outline": {
+      "n": "Overzicht demopresentatie",
+      "d": "Creëer gestructureerde productdemopresentaties"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Verkooponboardingplan",
+      "d": "Ontwerp onboardingprogramma's voor nieuwe verkopers"
+    },
+    "Quarterly Business Review": {
+      "n": "Driemaandelijks bedrijfsoverzicht",
+      "d": "Driemaandelijkse bedrijfsbeoordelingspresentaties voorbereiden voor klanten"
+    },
+    "Customer Success Plan": {
+      "n": "Klantsuccesplan",
+      "d": "Ontwikkel proactieve klantsucces- en retentieplannen"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Prijsstrategieadviseur",
+      "d": "Ontwikkel en optimaliseer uw productprijsstrategie"
+    },
+    "Value Proposition Builder": {
+      "n": "Waardepropositiebouwer",
+      "d": "Creëer duidelijke en overtuigende waardeproposities"
+    },
+    "FAQ Generator": {
+      "n": "FAQ-generator",
+      "d": "Maak uitgebreide FAQ-secties van productinformatie"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Kennisbankartikelschrijver",
+      "d": "Schrijf duidelijke en doorzoekbare kennisbankartikelen"
+    },
+    "Support Response Template": {
+      "n": "Ondersteuningsantwoordsjabloon",
+      "d": "Herbruikbare sjablonen maken voor algemene ondersteuningsscenario's"
+    },
+    "Chatbot Training Data": {
+      "n": "Chatbot-trainingsgegevens",
+      "d": "Genereer trainingsgegevens voor chatbots voor klantenondersteuning"
+    },
+    "Escalation Response Guide": {
+      "n": "Gids voor escalatiereacties",
+      "d": "Richtlijnen opstellen voor het afhandelen van geëscaleerde ondersteuningsproblemen"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Klanttevredenheidsonderzoek",
+      "d": "Ontwerp enquêtes om de klanttevredenheid te meten"
+    },
+    "Refund Policy Writer": {
+      "n": "Schrijver van het restitutiebeleid",
+      "d": "Creëer een duidelijk en eerlijk restitutie- en retourbeleid"
+    },
+    "Bug Report Template": {
+      "n": "Sjabloon voor bugrapport",
+      "d": "Ontwerp gestructureerde bugrapportsjablonen voor gebruikers"
+    },
+    "Feature Request Response": {
+      "n": "Reactie op functieverzoek",
+      "d": "Reacties opstellen op functieverzoeken van klanten"
+    },
+    "Onboarding Email Sequence": {
+      "n": "E-mailreeks voor onboarding",
+      "d": "Maak e-mailreeksen om nieuwe klanten aan boord te krijgen"
+    },
+    "Help Center Article": {
+      "n": "Helpcentrumartikel",
+      "d": "Schrijf uitgebreide helpcentrumdocumentatie"
+    },
+    "Service Level Agreement": {
+      "n": "Service Level Agreement",
+      "d": "SLA-documenten opstellen voor ondersteuningsverplichtingen"
+    },
+    "Customer Apology Template": {
+      "n": "Sjabloon voor klantverontschuldiging",
+      "d": "Schrijf oprechte verontschuldigingsberichten voor servicefouten"
+    },
+    "Product Update Announcement": {
+      "n": "Aankondiging productupdate",
+      "d": "Communiceer productupdates en wijzigingen aan klanten"
+    },
+    "Community Guidelines Writer": {
+      "n": "Schrijver van gemeenschapsrichtlijnen",
+      "d": "Creëer communityrichtlijnen voor forums en sociale kanalen"
+    },
+    "Startup Validation Framework": {
+      "n": "Opstartvalidatieframework",
+      "d": "Valideer uw startup-idee voordat u"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP-functieplanner",
+      "d": "bouwt Geef prioriteit aan functies voor uw minimaal levensvatbare product"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Prijsstrategiebouwer",
+      "d": "Ontwikkel prijsmodellen voor uw startup-product"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Overzicht van het pitchdeck voor investeerders",
+      "d": "Structureer een overtuigend pitchdeck voor fondsenwerving"
+    },
+    "Business Model Canvas": {
+      "n": "Canvas voor bedrijfsmodellen",
+      "d": "Breng uw volledige bedrijfsmodel in kaart op één pagina"
+    },
+    "Lean Canvas Creator": {
+      "n": "Lean Canvas-maker",
+      "d": "Creëer een lean canvas om risico's en aannames te identificeren"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Competitieve landschapsanalysator",
+      "d": "Breng uw concurrentieomgeving in kaart en analyseer"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Go-to-market-strategie",
+      "d": "Plan uw aanpak voor het betreden van de markt en het werven van klanten"
+    },
+    "Founding Team Assessment": {
+      "n": "Beoordeling van het oprichtingsteam",
+      "d": "Evalueer de teamsamenstelling en identificeer hiaten in vaardigheden"
+    },
+    "Startup Financial Projections": {
+      "n": "Financiële projecties bij opstarten",
+      "d": "Stel financiële projecties voor drie jaar op voor uw startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Adviesraad Recruiter",
+      "d": "Identificeer en rekruteer adviseurs voor uw startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Kader voor draaibeslissingen",
+      "d": "Evalueer of en hoe u uw startup kunt laten draaien"
+    },
+    "Startup KPI Dashboard": {
+      "n": "KPI-dashboard voor opstarten",
+      "d": "Definieer en volg de belangrijkste prestatie-indicatoren"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Crowdfunding-campagneplan",
+      "d": "Plan en voer een succesvolle crowdfundingcampagne uit"
+    },
+    "Partnership Strategy": {
+      "n": "Partnerschapsstrategie",
+      "d": "Identificeren en nastreven van strategische partnerschappen"
+    },
+    "Accelerator Application": {
+      "n": "Accelerator-applicatie",
+      "d": "Bereid een overtuigende accelerator- of incubatortoepassing voor"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Onderzoek naar product-marktfit",
+      "d": "Ontwerp enquêtes om de aansluiting tussen producten en markten te meten"
+    },
+    "Startup Legal Checklist": {
+      "n": "Juridische checklist voor opstarten",
+      "d": "Bestrijk alle rechtsgrondslagen bij het starten van een bedrijf"
+    },
+    "Equity Split Calculator": {
+      "n": "Aandelensplitsingscalculator",
+      "d": "Bepaal een eerlijke aandelenverdeling onder de medeoprichters"
+    },
+    "Growth Experiment Planner": {
+      "n": "Groei Experiment Planner",
+      "d": "Ontwerp en volg groei-experimenten systematisch"
+    },
+    "Product Description Writer": {
+      "n": "Productbeschrijving Schrijver",
+      "d": "Schrijf overtuigende productbeschrijvingen die de verkoop stimuleren"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Amazon-vermeldingsoptimalisatie",
+      "d": "Optimaliseer Amazon-productvermeldingen voor zichtbaarheid en conversie"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Installatiehandleiding voor Etsy Shop",
+      "d": "Zet je Etsy-shop op en optimaliseer hem voor succes"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify Winkelplanner",
+      "d": "Plan uw Shopify-winkelstructuur en lanceer"
+    },
+    "Product Photography Brief": {
+      "n": "Productfotografie kort",
+      "d": "Maak instructies voor productfotografieshoots"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Verzendstrategieplanner",
+      "d": "Ontwerp kosteneffectieve verzendstrategieën"
+    },
+    "Return Policy Creator": {
+      "n": "Maker van het retourbeleid",
+      "d": "Creëer een duidelijk retour- en omruilbeleid voor e-commerce"
+    },
+    "Customer Review Response": {
+      "n": "Klantrecensiereactie",
+      "d": "Creëer professionele reacties op klantbeoordelingen"
+    },
+    "Inventory Management Plan": {
+      "n": "Voorraadbeheerplan",
+      "d": "Creëer systemen voor het volgen en beheren van voorraad"
+    },
+    "Dropshipping Product Research": {
+      "n": "Dropshipping productonderzoek",
+      "d": "Onderzoek en evalueer de mogelijkheden van dropshipping-producten"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Print-on-demand-ontwerper",
+      "d": "Plan print-on-demand productlijnen en ontwerpen"
+    },
+    "Subscription Box Planner": {
+      "n": "Abonnementsboxplanner",
+      "d": "Ontwerp en start een abonnementsboxbedrijf"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Verkoopstrategie voor de feestdagen",
+      "d": "Seizoenspromoties en verkoopcampagnes voor de feestdagen plannen"
+    },
+    "Product Bundle Creator": {
+      "n": "Maker van productbundels",
+      "d": "Ontwerp productbundels die de gemiddelde bestelwaarde verhogen"
+    },
+    "Cart Abandonment Email": {
+      "n": "E-mail voor verlaten winkelwagen",
+      "d": "Maak e-mailreeksen om verlaten winkelwagentjes te herstellen"
+    },
+    "Homework Helper": {
+      "n": "Huiswerkhulp",
+      "d": "Krijg stapsgewijze hulp bij huiswerk voor elk onderwerp"
+    },
+    "Quiz & Test Generator": {
+      "n": "Quiz- en testgenerator",
+      "d": "Maak aangepaste quizzen van elk onderwerp of studiemateriaal"
+    },
+    "Science Fair Project Planner": {
+      "n": "Wetenschapsbeurs projectplanner",
+      "d": "Plan en organiseer een winnend wetenschapsbeursproject, van hypothese tot presentatie"
+    },
+    "Lesson Plan Creator": {
+      "n": "Lesplanmaker",
+      "d": "Ontwerp gestructureerde lesplannen afgestemd op leerdoelen"
+    },
+    "Lab Report Writer": {
+      "n": "Labrapportschrijver",
+      "d": "Structureer en schrijf laboratoriumrapporten met de juiste wetenschappelijke opmaak"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Hulp bij begrijpend lezen",
+      "d": "Verbeter het begrijpend lezen met begeleide analyses en vragen"
+    },
+    "Math Problem Solver": {
+      "n": "Wiskundige probleemoplosser",
+      "d": "Los wiskundige problemen op met gedetailleerde stapsgewijze uitleg"
+    },
+    "Vocabulary Builder": {
+      "n": "Woordenschatbouwer",
+      "d": "Bouw en oefen een woordenschat met definities, voorbeelden en oefeningen"
+    },
+    "Book Report Helper": {
+      "n": "Boekrapporthelper",
+      "d": "Boekverslagen schetsen en schrijven met gestructureerde analyse"
+    },
+    "History Timeline Creator": {
+      "n": "Geschiedenis Tijdlijn Maker",
+      "d": "Creëer gedetailleerde historische tijdlijnen voor elk tijdperk of elke gebeurtenis"
+    },
+    "Geography Quiz Maker": {
+      "n": "Aardrijkskundequizmaker",
+      "d": "Genereer aardrijkskundequizzen over kaarten, hoofdsteden, oriëntatiepunten en meer"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generator voor spellingoefeningen",
+      "d": "Maak gepersonaliseerde spellingsoefenlijsten en oefeningen"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Grammatica-oefening Schepper",
+      "d": "Genereer grammatica-oefeningen voor elk vaardigheidsniveau en onderwerp"
+    },
+    "Critical Thinking Questions": {
+      "n": "Kritische denkvragen",
+      "d": "Genereer tot nadenken stemmende vragen om kritische denkvaardigheden te ontwikkelen"
+    },
+    "Debate Prep Guide": {
+      "n": "Gids voor voorbereiding van het debat",
+      "d": "Gestructureerde argumenten en tegenargumenten voorbereiden voor debatten"
+    },
+    "College Application Essay": {
+      "n": "College-aanvraagessay",
+      "d": "Maak boeiende essays voor universiteitsaanvragen met begeleide aanwijzingen"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Beurzenessayhelper",
+      "d": "Schrijf overtuigende beursessays waarin de prestaties en doelen worden benadrukt"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT voorbereidingsgids",
+      "d": "Maak gerichte studieplannen en oefen voor SAT- of ACT-examens"
+    },
+    "Study Schedule Planner": {
+      "n": "Studieroosterplanner",
+      "d": "Stel een effectief studieschema op waarin alle onderwerpen en deadlines in evenwicht zijn"
+    },
+    "Group Project Organizer": {
+      "n": "Groepsprojectorganisator",
+      "d": "Rollen, taken en tijdlijnen plannen voor groepsprojecten"
+    },
+    "Presentation Creator": {
+      "n": "Presentatiemaker",
+      "d": "Ontwerp en schets boeiende presentaties voor elk onderwerp"
+    },
+    "Note-Taking Guide": {
+      "n": "Gids voor het maken van aantekeningen",
+      "d": "Creëer gestructureerde sjablonen voor het maken van notities voor lezingen en lezingen"
+    },
+    "Mind Map Generator": {
+      "n": "Mindmapgenerator",
+      "d": "Maak visuele mindmaps om ideeën en concepten te ordenen"
+    },
+    "Research Project Planner": {
+      "n": "Onderzoeksprojectplanner",
+      "d": "Plan en beheer onderzoeksprojecten van onderwerpselectie tot eindpaper"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Voorbereiding ouder-leraarconferentie",
+      "d": "Bereid gesprekspunten en vragen voor voor productieve ouder-leraarbijeenkomsten"
+    },
+    "Classroom Activity Designer": {
+      "n": "Ontwerper van klasactiviteiten",
+      "d": "Ontwerp interactieve klassikale activiteiten die de leerdoelen versterken"
+    },
+    "Special Education Resource": {
+      "n": "Hulpbron voor speciaal onderwijs",
+      "d": "Creëer leermiddelen op maat voor leerlingen met speciale onderwijsbehoeften"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Curriculumplanner voor thuisonderwijs",
+      "d": "Plan een compleet thuisschoolcurriculum per onderwerp en semester"
+    },
+    "Student Self-Assessment": {
+      "n": "Zelfevaluatie van studenten",
+      "d": "Creëer hulpmiddelen voor zelfevaluatie waarmee leerlingen hun eigen leervoortgang kunnen volgen"
+    },
+    "Learning Style Analyzer": {
+      "n": "Leerstijlanalyzer",
+      "d": "Identificeer leerstijlen en stel gepersonaliseerde studiestrategieën voor"
+    },
+    "Literature Review Writer": {
+      "n": "Schrijver van literatuurrecensies",
+      "d": "Organiseer en schrijf uitgebreide literatuuroverzichten over elk onderwerp"
+    },
+    "Research Assistant": {
+      "n": "Onderzoeksassistent",
+      "d": "Hulp bij het vinden, organiseren en samenvatten van onderzoeksmateriaal"
+    },
+    "Fact Checker Template": {
+      "n": "Factchecker-sjabloon",
+      "d": "Beweringen en verklaringen verifiëren met gestructureerde feitencontrolemethodologie"
+    },
+    "Source Comparison Tool": {
+      "n": "Bronvergelijkingstool",
+      "d": "Vergelijk en contrasteer meerdere bronnen over hetzelfde onderwerp"
+    },
+    "Citation Generator": {
+      "n": "Citatiegenerator",
+      "d": "Genereer correct opgemaakte citaten in elke academische stijl"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Geannoteerde bibliografiemaker",
+      "d": "Creëer geannoteerde bibliografieën met samenvattingen en evaluaties"
+    },
+    "Research Methodology Guide": {
+      "n": "Gids voor onderzoeksmethodologie",
+      "d": "Selecteer en ontwerp de juiste onderzoeksmethodologie voor uw onderzoek"
+    },
+    "Survey Question Designer": {
+      "n": "Ontwerper van enquêtevragen",
+      "d": "Ontwerp effectieve enquêtevragen om betrouwbare onderzoeksgegevens te verzamelen"
+    },
+    "Data Collection Plan": {
+      "n": "Gegevensverzamelingsplan",
+      "d": "Creëer een gestructureerd plan voor het verzamelen van onderzoeksdata"
+    },
+    "Thesis Statement Generator": {
+      "n": "Thesisverklaringgenerator",
+      "d": "Maak sterke stellingverklaringen voor onderzoekspapers en proefschriften"
+    },
+    "Research Proposal Writer": {
+      "n": "Schrijver van onderzoeksvoorstellen",
+      "d": "Schrijf overtuigende onderzoeksvoorstellen voor academische of financieringsbeoordeling"
+    },
+    "Systematic Review Guide": {
+      "n": "Gids voor systematische review",
+      "d": "Voer systematische beoordelingen uit volgens vastgestelde protocollen"
+    },
+    "Interview Protocol Creator": {
+      "n": "Maker van interviewprotocol",
+      "d": "Ontwerp gestructureerde interviewprotocollen voor kwalitatief onderzoek"
+    },
+    "Research Ethics Checklist": {
+      "n": "Checklist voor onderzoeksethiek",
+      "d": "Zorg ervoor dat het onderzoek voldoet aan de ethische richtlijnen en IRB-vereisten"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Meta-analysekader",
+      "d": "Structureer en voer meta-analyses uit over meerdere onderzoeken heen"
+    },
+    "Case Study Template": {
+      "n": "Casestudy-sjabloon",
+      "d": "Structureer en schrijf gedetailleerde casestudies voor onderzoek of het bedrijfsleven"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Gids voor kwalitatieve analyse",
+      "d": "Begeleiden van kwalitatieve data-analyse met behulp van codering en thematische benaderingen"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Gids voor kwantitatieve analyse",
+      "d": "Begeleid kwantitatieve data-analyse met geschikte statistische methoden"
+    },
+    "Research Poster Creator": {
+      "n": "Maker van onderzoeksposters",
+      "d": "Ontwerp en opmaak onderzoeksposters voor conferenties en presentaties"
+    },
+    "Research Grant Writer": {
+      "n": "Onderzoekssubsidieschrijver",
+      "d": "Gestructureerde subsidievoorstellen schrijven voor onderzoeksfinancieringsaanvragen"
+    },
+    "Chemistry Tutor": {
+      "n": "Scheikundeleraar",
+      "d": "Ontvang gepersonaliseerde scheikundebegeleiding met uitleg en oefenproblemen"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Chemische vergelijkingsbalancer",
+      "d": "Breng chemische vergelijkingen in evenwicht met stapsgewijze uitleg"
+    },
+    "Lab Safety Checklist": {
+      "n": "Controlelijst laboratoriumveiligheid",
+      "d": "Genereer uitgebreide laboratoriumveiligheidscontrolelijsten voor chemische experimenten"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Organische chemiehelper",
+      "d": "Bestudeer organische reacties, mechanismen en nomenclatuur"
+    },
+    "Periodic Table Explorer": {
+      "n": "Periodieke Tabelverkenner",
+      "d": "Ontdek elementeigenschappen, trends en relaties in het periodiek systeem"
+    },
+    "Stoichiometry Solver": {
+      "n": "Stoichiometrie-oplosser",
+      "d": "Los stoichiometrieproblemen op met gedetailleerde mol-tot-mol-berekeningen"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Gids voor chemische bindingen",
+      "d": "Begrijp ionische, covalente en metaalbindingen met visuele uitleg"
+    },
+    "Acid-Base Calculator": {
+      "n": "Zuur-base-calculator",
+      "d": "Bereken pH, pOH, Ka, Kb en los zuur-base-evenwichtsproblemen op"
+    },
+    "Solution Preparation Guide": {
+      "n": "Handleiding voor voorbereiding van oplossingen",
+      "d": "Bereken en bereid chemische oplossingen met de juiste concentraties"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Spectroscopie-tolk",
+      "d": "Interpreteer IR-, NMR- en massaspectra voor identificatie van verbindingen"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Chemie Lab Notitieboekje",
+      "d": "Creëer gestructureerde laboratoriumnotitieboekjes voor scheikundige experimenten"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Reactiemechanismehelper",
+      "d": "Teken en begrijp reactiemechanismen stap voor stap"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Thermochemiecalculator",
+      "d": "Bereken enthalpie, entropie en Gibbs-vrije energie voor chemische reacties"
+    },
+    "Electrochemistry Guide": {
+      "n": "Gids voor elektrochemie",
+      "d": "Begrijp elektrochemische cellen, elektrodepotentialen en elektrolyse"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Gids voor polymeerchemie",
+      "d": "Bestudeer polymeertypen, synthesemechanismen en eigenschappen"
+    },
+    "Biology Tutor": {
+      "n": "Biologieleraar",
+      "d": "Ontvang gepersonaliseerde biologiebegeleiding met duidelijke uitleg en voorbeelden"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Studiegids celbiologie",
+      "d": "Bestudeer celstructuren, functies en processen diepgaand"
+    },
+    "Genetics Problem Solver": {
+      "n": "Genetica probleemoplosser",
+      "d": "Los genetische problemen op, waaronder Punnett-vierkanten en stamboomanalyse"
+    },
+    "Ecology Study Helper": {
+      "n": "Ecologiestudiehelper",
+      "d": "Bestudeer ecosystemen, voedselwebben, populatiedynamiek en ecologische relaties"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Gids voor anatomie en fysiologie",
+      "d": "Bestudeer menselijke lichaamssystemen met gedetailleerde anatomische uitleg"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Microbiologische laboratoriumgids",
+      "d": "Gids voor microbiologische laboratoriumtechnieken, waaronder kleuring, kweken en identificatie"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Evolutieconceptmapper",
+      "d": "Breng evolutionaire concepten in kaart, waaronder natuurlijke selectie, soortvorming en fylogenetica"
+    },
+    "Plant Biology Helper": {
+      "n": "Helper plantenbiologie",
+      "d": "Bestudeer de anatomie, fysiologie en ecologische rollen van planten"
+    },
+    "Molecular Biology Guide": {
+      "n": "Gids voor moleculaire biologie",
+      "d": "Begrijp DNA-replicatie, transcriptie, vertaling en genregulatie"
+    },
+    "Bioinformatics Helper": {
+      "n": "Bio-informatica-helper",
+      "d": "Krijg hulp bij sequentieanalyse, databasezoekopdrachten en computationele biologie"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Studiegids voor neurowetenschappen",
+      "d": "Bestudeer het zenuwstelsel, de hersenfunctie en zenuwbanen"
+    },
+    "Marine Biology Explorer": {
+      "n": "Mariene biologieverkenner",
+      "d": "Ontdek mariene ecosystemen, organismen en oceaanwetenschappen"
+    },
+    "Immunology Study Guide": {
+      "n": "Studiegids voor immunologie",
+      "d": "Bestudeer het immuunsysteem, immuunreacties en immunologische aandoeningen"
+    },
+    "Biotechnology Overview": {
+      "n": "Overzicht biotechnologie",
+      "d": "Ontdek biotechnologische toepassingen, waaronder genetische manipulatie en CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Behoud Biologie Planner",
+      "d": "Plan instandhoudingsstrategieën voor het behoud van soorten en habitats"
+    },
+    "Physics Problem Solver": {
+      "n": "Natuurkunde probleemoplosser",
+      "d": "Los natuurkundige problemen op met gedetailleerde stapsgewijze oplossingen"
+    },
+    "Mechanics Helper": {
+      "n": "Mechanicahelper",
+      "d": "Problemen in de klassieke mechanica bestuderen en oplossen, inclusief kinematica en dynamica"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Gids voor elektriciteit en magnetisme",
+      "d": "Begrijp elektrische velden, circuits en elektromagnetische verschijnselen"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Docent thermodynamica",
+      "d": "Bestudeer thermodynamische wetten, processen en problemen met warmteoverdracht"
+    },
+    "Optics & Waves Guide": {
+      "n": "Gids voor optica en golven",
+      "d": "Bestudeer golfverschijnselen, optica en lichtgedrag"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Kwantumfysica-uitleg",
+      "d": "Begrijp de concepten van de kwantummechanica met duidelijke uitleg en voorbeelden"
+    },
+    "Astrophysics Explorer": {
+      "n": "Astrofysica-verkenner",
+      "d": "Ontdek stellaire evolutie, kosmologie en hemelmechanica"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Gids voor kernfysica",
+      "d": "Bestudeer kernreacties, radioactiviteit en kernenergie"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Fluid Dynamics-helper",
+      "d": "Los vloeistofmechanische problemen op, waaronder Bernoulli- en Navier-Stokes-applicaties"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Docent klassieke mechanica",
+      "d": "Diepe duik in Lagrangiaanse en Hamiltoniaanse mechanica en geavanceerde dynamiek"
+    },
+    "Relativity Concept Guide": {
+      "n": "Relativiteitsconceptgids",
+      "d": "Begrijp de speciale en algemene relativiteitstheorie met gedachte-experimenten en wiskunde"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Physics Lab-rapporthelper",
+      "d": "Structureer en schrijf natuurkundelaboratoriumrapporten met de juiste data-analyse"
+    },
+    "Math Proof Writer": {
+      "n": "Wiskundeproefschrijver",
+      "d": "Schrijf duidelijke en rigoureuze wiskundige bewijzen met een logische structuur"
+    },
+    "Calculus Problem Solver": {
+      "n": "Rekenprobleemoplosser",
+      "d": "Los calculusproblemen op, inclusief limieten, afgeleiden en integralen"
+    },
+    "Statistics Helper": {
+      "n": "Statistiekhulp",
+      "d": "Statistische problemen oplossen en statistische resultaten interpreteren"
+    },
+    "Linear Algebra Guide": {
+      "n": "Gids voor lineaire algebra",
+      "d": "Bestudeer vectoren, matrices, transformaties en eigenwaarden"
+    },
+    "Probability Calculator": {
+      "n": "Waarschijnlijkheidscalculator",
+      "d": "Bereken kansen en los kansverdelingsproblemen op"
+    },
+    "Geometry Tutor": {
+      "n": "Meetkundeleraar",
+      "d": "Bestudeer geometrische concepten en stellingen en los geometrische problemen op"
+    },
+    "Trigonometry Helper": {
+      "n": "Trigonometriehelper",
+      "d": "Los goniometrische vergelijkingen, identiteiten en toepassingen op"
+    },
+    "Number Theory Explorer": {
+      "n": "Getaltheorieverkenner",
+      "d": "Ontdek priemgetallen, deelbaarheid, modulaire rekenkunde en cryptografische toepassingen"
+    },
+    "Discrete Math Guide": {
+      "n": "Discrete wiskundegids",
+      "d": "Bestudeer combinatoriek, grafentheorie, logica en verzamelingenleer"
+    },
+    "Differential Equations Solver": {
+      "n": "Differentiaalvergelijkingenoplosser",
+      "d": "Los gewone en partiële differentiaalvergelijkingen op met gedetailleerde methoden"
+    },
+    "Math Word Problem Solver": {
+      "n": "Wiskundige woordprobleemoplosser",
+      "d": "Vertaal en los echte wiskundige woordproblemen stap voor stap op"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Handleiding voor wiskundige modellen",
+      "d": "Bouw wiskundige modellen voor verschijnselen en toepassingen uit de echte wereld"
+    },
+    "SQL Query Generator": {
+      "n": "SQL-querygenerator",
+      "d": "Genereer en optimaliseer SQL-query's voor het ophalen en analyseren van gegevens"
+    },
+    "Python Data Analysis": {
+      "n": "Python-gegevensanalyse",
+      "d": "Schrijf Python-code voor gegevensanalyse met panda's, NumPy en meer"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Controlelijst voor het opschonen van gegevens",
+      "d": "Creëer uitgebreide checklists voor het opschonen en voorbewerken van gegevens"
+    },
+    "Data Visualization Planner": {
+      "n": "Gegevensvisualisatieplanner",
+      "d": "Kies de juiste grafieken en ontwerp effectieve datavisualisaties"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Machine Learning-modelkiezer",
+      "d": "Selecteer het beste ML-model voor uw probleemtype en gegevenskenmerken"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B-testcalculator",
+      "d": "Ontwerp en analyseer A/B-tests met statistische significantieberekeningen"
+    },
+    "Dashboard Design Guide": {
+      "n": "Dashboardontwerpgids",
+      "d": "Ontwerp effectieve dashboards met de juiste KPI’s en lay-out"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL-pijplijnplanner",
+      "d": "Ontwerp en plan ETL-pijplijnen voor gegevensintegratie en -verwerking"
+    },
+    "Feature Engineering Guide": {
+      "n": "Technische handleiding voor functies",
+      "d": "Creëer effectieve functies voor machine learning-modellen"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Gegevenspijplijnarchitectuur",
+      "d": "Ontwerp schaalbare datapijplijnarchitecturen voor analyse en ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Verkennende gegevensanalyse",
+      "d": "Voer een grondige EDA uit met gestructureerde analyse- en visualisatieplannen"
+    },
+    "Statistical Test Selector": {
+      "n": "Statistische testkiezer",
+      "d": "Kies en pas de juiste statistische test toe voor uw gegevens en hypothese"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Gids voor tijdreeksanalyse",
+      "d": "Analyseer tijdreeksgegevens met methoden voor prognoses en trenddetectie"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Starter voor natuurlijke taalverwerking",
+      "d": "Ga aan de slag met NLP-taken, waaronder tekstclassificatie en sentimentanalyse"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Computer Vision-projectplanner",
+      "d": "Plan computer vision-projecten, van gegevensverzameling tot modelimplementatie"
+    },
+    "Technical Requirements Document": {
+      "n": "Document met technische vereisten",
+      "d": "Creëer gedetailleerde technische vereistendocumenten voor engineeringprojecten"
+    },
+    "Engineering Design Review": {
+      "n": "Beoordeling technisch ontwerp",
+      "d": "Gestructureerde ontwerpbeoordelingsdocumenten voorbereiden voor engineeringprojecten"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Foutmodusanalyse (FMEA)",
+      "d": "Voer systematische faalmodus- en effectanalyses uit voor producten of processen"
+    },
+    "Project Specification Writer": {
+      "n": "Schrijver van projectspecificaties",
+      "d": "Schrijven van duidelijke en volledige projectspecificaties voor engineeringwerkzaamheden"
+    },
+    "CAD Project Planner": {
+      "n": "CAD-projectplanner",
+      "d": "Plan en organiseer CAD-modelleringsprojecten met de juiste documentatie"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Handleiding voor het productieproces",
+      "d": "Productieprocessen voor productontwikkeling selecteren en plannen"
+    },
+    "Quality Control Checklist": {
+      "n": "Controlelijst kwaliteitscontrole",
+      "d": "Kwaliteitscontrolechecklists en inspectieplannen maken voor de productie"
+    },
+    "Engineering Change Request": {
+      "n": "Verzoek om technische wijziging",
+      "d": "Documenteer en beheer technische wijzigingsverzoeken met impactanalyse"
+    },
+    "Structural Analysis Guide": {
+      "n": "Gids voor structurele analyse",
+      "d": "Gids voor structurele analyseberekeningen en methodologie voor technische projecten"
+    },
+    "Materials Selection Guide": {
+      "n": "Gids voor materiaalkeuze",
+      "d": "Selecteer optimale materialen op basis van mechanische, thermische en chemische vereisten"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Midjourney Prompt Creator",
+      "d": "Maak gedetailleerde Midjourney-prompts met stijl-, belichtings- en compositieparameters"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E Promptbouwer",
+      "d": "Bouw geoptimaliseerde DALL-E-prompts met duidelijke beschrijvingen en artistieke leiding"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Stabiele diffusiepromptschrijver",
+      "d": "Genereer stabiele diffusieprompts met positieve en negatieve prompt-engineering"
+    },
+    "Product Photography Prompt": {
+      "n": "Productfotografie Prompt",
+      "d": "Creëer AI-aanwijzingen voor verbluffende productfotografie met resultaten van studiokwaliteit"
+    },
+    "Landscape Art Prompt": {
+      "n": "Landschapskunstprompt",
+      "d": "Creëer adembenemende landschapskunstprompts met omgevings- en sfeerdetails"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Portretfotografie Prompt",
+      "d": "Genereer AI-portretaanwijzingen met begeleiding voor belichting, expressie en compositie"
+    },
+    "Food Photography Prompt": {
+      "n": "Voedselfotografie Prompt",
+      "d": "Maak overheerlijke foodfotografie-aanwijzingen met styling- en plateringdetails"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Architectuurvisualisatieprompt",
+      "d": "Creëer architecturale visualisatieaanwijzingen voor gebouwen en binnenruimtes"
+    },
+    "Fashion Design Prompt": {
+      "n": "Modeontwerpprompt",
+      "d": "Genereer modeontwerpconcepten met stof-, silhouet- en stylingdetails"
+    },
+    "Comic Art Prompt": {
+      "n": "Stripkunstprompt",
+      "d": "Maak kunstprompts in stripboekstijl met paneelcompositie en karakteractie"
+    },
+    "Abstract Art Prompt": {
+      "n": "Vraag naar abstracte kunst",
+      "d": "Genereer abstracte kunstaanwijzingen met kleurentheorie, textuur en emotionele expressie"
+    },
+    "Icon Design Brief": {
+      "n": "Pictogramontwerpoverzicht",
+      "d": "Ontwerp strakke iconografiesets met consistente stijl en beeldtaal"
+    },
+    "Infographic Design Brief": {
+      "n": "Infographic-ontwerpoverzicht",
+      "d": "Plan infographic-indelingen met datavisualisatie en visuele hiërarchie"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Grafische prompt voor sociale media",
+      "d": "Genereer scroll-stoppende sociale media-afbeeldingen voor elk platform"
+    },
+    "Meme Creator Prompt": {
+      "n": "Meme Creator-prompt",
+      "d": "Genereer meme-concepten met formaatselectie, bijschriften en virale mogelijkheden"
+    },
+    "AI Avatar Prompt": {
+      "n": "AI-avatarprompt",
+      "d": "Creëer unieke AI-avatarontwerpen voor profielen, gaming en virtuele identiteiten"
+    },
+    "Song Lyrics Writer": {
+      "n": "Schrijver van songteksten",
+      "d": "Schrijf originele songteksten met verzen, refreinen en bridge in elk genre"
+    },
+    "Chord Progression Generator": {
+      "n": "Akkoordprogressiegenerator",
+      "d": "Genereer akkoordprogressies met muziektheoretische begeleiding voor elk genre en elke stemming"
+    },
+    "Beat Ideas Creator": {
+      "n": "Versla de maker van ideeën",
+      "d": "Genereer beatconcepten met tempo, drumpatronen en instrumentatie-ideeën"
+    },
+    "Song Structure Builder": {
+      "n": "Bouwer van songstructuren",
+      "d": "Ontwerp songarrangementen met sectievolgorde, dynamiek en overgangen"
+    },
+    "Rap Verse Writer": {
+      "n": "Schrijver van rapvers",
+      "d": "Schrijf krachtige rapverzen met stroompatronen, rijmschema's en woordspelingen"
+    },
+    "Country Song Writer": {
+      "n": "Countryliedschrijver",
+      "d": "Schrijf authentieke countrynummers met verhalen, beelden en twang"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Pop Song Hook-maker",
+      "d": "Maak pakkende pophooks en refreinmelodieën die in de hoofden van luisteraars blijven hangen"
+    },
+    "Rock Ballad Writer": {
+      "n": "Rockballad-schrijver",
+      "d": "Schrijf emotionele rockballads met krachtige builds en anthemische refreinen"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Gids voor muziekarrangementen",
+      "d": "Plan volledige muzikale arrangementen met instrumentatie, stemvoering en dynamiek"
+    },
+    "Band Name Generator": {
+      "n": "Bandnaamgenerator",
+      "d": "Genereer creatieve bandnamen op basis van genre-, sfeer- en beeldvoorkeuren"
+    },
+    "Music Video Concept": {
+      "n": "Muziekvideoconcept",
+      "d": "Ontwikkel creatieve muziekvideoconcepten met verhaal, beelden en choreografie"
+    },
+    "Mixing Checklist": {
+      "n": "Controlelijst voor mengen",
+      "d": "Uitgebreide mixchecklist met EQ, compressie, effecten en balans"
+    },
+    "Film Score Brief": {
+      "n": "Korte filmscore",
+      "d": "Maak gedetailleerde filmscoreoverzichten met sfeer-, instrumentatie- en timingaanwijzingen"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts-script",
+      "d": "Schrijf boeiende YouTube Shorts-scripts die zijn geoptimaliseerd voor verticale video van 60 seconden"
+    },
+    "Video Storyboard Creator": {
+      "n": "Video Storyboard-maker",
+      "d": "Plan visuele storyboards met scènebeschrijvingen, camerahoeken en overgangen"
+    },
+    "Documentary Outline": {
+      "n": "Documentaireoverzicht",
+      "d": "Structureer meeslepende documentaires met een verhaallijn, interviews en b-roll-plannen"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlog-afleveringsplanner",
+      "d": "Plan boeiende vlog-afleveringen met locaties, gesprekspunten en visuele variatie"
+    },
+    "Screenwriting Helper": {
+      "n": "Hulp voor scenarioschrijven",
+      "d": "Ontwikkel scenario's met de juiste opmaak, dialoog en scènerichting"
+    },
+    "Short Film Script": {
+      "n": "Kortfilmscript",
+      "d": "Schrijf complete korte filmscripts met visuele verhalen en een strak verhaal"
+    },
+    "Animation Script Writer": {
+      "n": "Animatiescriptschrijver",
+      "d": "Schrijf animatiescripts met visuele grappen, karakteracties en timingaanwijzingen"
+    },
+    "Video Editing Brief": {
+      "n": "Videobewerkingsoverzicht",
+      "d": "Maak gedetailleerde instructies voor videobewerking met richtlijnen voor tempo, effecten en stijl"
+    },
+    "Livestream Run Sheet": {
+      "n": "Livestream-runsheet",
+      "d": "Plan livestreams met getimede segmenten, gesprekspunten en betrokkenheidstriggers"
+    },
+    "Tutorial Video Script": {
+      "n": "Handleiding videoscript",
+      "d": "Schrijf duidelijke instructievideoscripts met stapsgewijze instructies en beelden"
+    },
+    "Explainer Video Script": {
+      "n": "Uitlegvideoscript",
+      "d": "Schrijf duidelijke uitlegvideoscripts die complexe onderwerpen visueel vereenvoudigen"
+    },
+    "Video SEO Optimizer": {
+      "n": "Video SEO-optimalisatie",
+      "d": "Optimaliseer videometagegevens met titels, beschrijvingen, tags en miniatuurstrategieën"
+    },
+    "Novel Outline Creator": {
+      "n": "Schepper van romanoverzicht",
+      "d": "Bouw uitgebreide nieuwe schetsen met plotstructuur, hoofdstukken en karakterbogen"
+    },
+    "Short Story Writer": {
+      "n": "Schrijver van korte verhalen",
+      "d": "Schrijf meeslepende korte verhalen met levendige karakters en bevredigende conclusies"
+    },
+    "Poetry Generator": {
+      "n": "Poëziegenerator",
+      "d": "Creëer originele poëzie in verschillende vormen met beelden, metrum en emotie"
+    },
+    "Book Proposal Template": {
+      "n": "Boekvoorstelsjabloon",
+      "d": "Maak professionele boekvoorstellen met marktanalyse en hoofdstuksamenvattingen"
+    },
+    "Memoir Outline": {
+      "n": "Memoiresoverzicht",
+      "d": "Structureer persoonlijke memoires met thematische hoofdstukken en een reflecterend verhaal"
+    },
+    "Children's Book Creator": {
+      "n": "Kinderboekenmaker",
+      "d": "Schrijf kinderboeken die geschikt zijn voor de leeftijd, met boeiende verhalen en illustratieve aantekeningen"
+    },
+    "Screenplay Outline": {
+      "n": "Scenariooverzicht",
+      "d": "Overzichtsscenario's met structuur in drie bedrijven, scène-uitsplitsingen en dialoogaantekeningen"
+    },
+    "Play Script Writer": {
+      "n": "Speel Scriptschrijver",
+      "d": "Schrijf theatrale scripts met regieaanwijzingen, dialoog en scènestructuur"
+    },
+    "Comic Book Script": {
+      "n": "Stripboekscript",
+      "d": "Schrijf stripboekscripts met paneelbeschrijvingen, dialoog en tempo"
+    },
+    "Fan Fiction Creator": {
+      "n": "Maker van fanfictie",
+      "d": "Schrijf fanfictie met trouwe karakterstemmen en creatieve nieuwe verhaallijnen"
+    },
+    "Writing Prompt Generator": {
+      "n": "Promptgenerator schrijven",
+      "d": "Genereer creatieve schrijfaanwijzingen met genre, beperkingen en verhaalzaden"
+    },
+    "Dialogue Writer": {
+      "n": "Dialoogschrijver",
+      "d": "Creëer een natuurlijk klinkende dialoog die karakter onthult en het plot bevordert"
+    },
+    "Plot Twist Generator": {
+      "n": "Plottwistgenerator",
+      "d": "Genereer verrassende maar logische plotwendingen die het verhaal opnieuw contextualiseren"
+    },
+    "Query Letter Writer": {
+      "n": "Vraag Briefschrijver",
+      "d": "Schrijf overtuigende vraagbrieven aan literaire agenten met hook en synopsis"
+    },
+    "Book Description Writer": {
+      "n": "Boekbeschrijving Schrijver",
+      "d": "Schrijf boeiende boekbeschrijvingen die lezers boeien en de verkoop stimuleren"
+    },
+    "Ghostwriting Brief": {
+      "n": "Ghostwriting-briefje",
+      "d": "Maak gedetailleerde ghostwriting-instructies met stem-, stijl- en inhoudsvereisten"
+    },
+    "Technical Writing Guide": {
+      "n": "Handleiding voor technisch schrijven",
+      "d": "Schrijf duidelijke technische documentatie met gestructureerde opmaak en nauwkeurigheid"
+    },
+    "Grant Proposal Writer": {
+      "n": "Subsidievoorstelschrijver",
+      "d": "Schrijf overtuigende subsidievoorstellen met projectbeschrijvingen en budgetverantwoording"
+    },
+    "White Paper Outline": {
+      "n": "Witboekoverzicht",
+      "d": "Structureer gezaghebbende whitepapers met onderzoek, analyse en aanbevelingen"
+    },
+    "Copywriting Formula": {
+      "n": "Copywriting-formule",
+      "d": "Pas beproefde copywriting-formules zoals AIDA, PAS en BAB toe op elk product of elke dienst"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram-inhoudsplanner",
+      "d": "Plan een week vol Instagram-inhoud met posts, verhalen, haspels en bijschriften"
+    },
+    "X Thread Creator": {
+      "n": "X Thread-maker",
+      "d": "Schrijf boeiende X-threads die autoriteit opbouwen en betrokkenheid stimuleren"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit-postschrijver",
+      "d": "Schrijf Reddit-berichten die zijn geoptimaliseerd voor specifieke subreddits met gemeenschapsnormen in gedachten"
+    },
+    "Viral Hook Generator": {
+      "n": "Virale hookgenerator",
+      "d": "Genereer opvallende hooks voor sociale media-inhoud op verschillende platforms"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Hashtag-strategietool",
+      "d": "Onderzoek en organiseer hashtagstrategieën voor maximale vindbaarheid"
+    },
+    "Engagement Response Generator": {
+      "n": "Generator voor betrokkenheidsreacties",
+      "d": "Genereer doordachte reacties op opmerkingen, DM's en vermeldingen op schaal"
+    },
+    "LinkedIn Article Writer": {
+      "n": "LinkedIn-artikelschrijver",
+      "d": "Schrijf thought leadership LinkedIn-artikelen die professionele autoriteit vestigen"
+    },
+    "Episode Show Notes": {
+      "n": "Opmerkingen afleveringshow",
+      "d": "Schrijf gedetailleerde shownotities met tijdstempels, links en belangrijke informatie"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Controlelijst voor het bewerken van podcasts",
+      "d": "Standaardiseer de workflow voor het bewerken van podcasts met kwaliteitscheckpoints en polijststappen"
+    },
+    "Prompt Improver": {
+      "n": "Snelle verbeteraar",
+      "d": "Verfijn en optimaliseer elke vraag voor betere AI-resultaten met gestructureerde technieken"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Organisator van gedachteketen",
+      "d": "Bouw gedachteketenprompts die AI door stapsgewijze redeneringen leiden"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG-promptgenerator",
+      "d": "Creëer aanwijzingen voor het genereren van ophaalacties met contextvensteroptimalisatie"
+    },
+    "Prompt Translator": {
+      "n": "Snelle vertaler",
+      "d": "Vertaal aanwijzingen in verschillende AI-modellen met behoud van de intentie en kwaliteit"
+    },
+    "Prompt Evaluator": {
+      "n": "Snelle beoordelaar",
+      "d": "Evalueer en scoor prompts op meerdere kwaliteitsdimensies met verbetertips"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Few-Shot-voorbeeldgenerator",
+      "d": "Genereer enkele voorbeelden van hoge kwaliteit voor leerprompts in de context"
+    },
+    "System Prompt Writer": {
+      "n": "Systeempromptschrijver",
+      "d": "Schrijf effectieve systeemprompts die het gedrag, de beperkingen en de uitvoerstijl van AI definiëren"
+    },
+    "AI Guardrails Designer": {
+      "n": "AI Guardrails-ontwerper",
+      "d": "Ontwerp veiligheidsleuningen en inhoudsbeleid voor AI-toepassingen"
+    },
+    "AI Use Case Identifier": {
+      "n": "AI-gebruikscase-ID",
+      "d": "Identificeer en evalueer potentiële AI-gebruiksscenario's voor bedrijven en workflows"
+    },
+    "Model Comparison Guide": {
+      "n": "Gids voor modelvergelijking",
+      "d": "Vergelijk AI-modellen op basis van mogelijkheden, prijzen en gebruiksmogelijkheden"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM Finetuning van gegevensmaker",
+      "d": "Genereer en structureer trainingsgegevens voor LLM-verfijningsprojecten"
+    },
+    "Debugger Assistant": {
+      "n": "Debugger-assistent",
+      "d": "Debug codeproblemen systematisch met een analyse van de hoofdoorzaak en suggesties voor oplossingen"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD-pijplijnplanner",
+      "d": "Ontwerp CI/CD-pijplijnen met build-, test- en implementatiefaseconfiguraties"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker-configuratiehandleiding",
+      "d": "Maak Dockerfiles en stel configuraties samen met best practices"
+    },
+    "Git Workflow Planner": {
+      "n": "Git-werkstroomplanner",
+      "d": "Ontwerp Git-vertakkingsstrategieën en samenwerkingsworkflows voor ontwikkelingsteams"
+    },
+    "Code Migration Guide": {
+      "n": "Gids voor codemigratie",
+      "d": "Codemigraties plannen en uitvoeren tussen talen, frameworks of versies"
+    },
+    "Database Schema Designer": {
+      "n": "Databaseschemaontwerper",
+      "d": "Ontwerp databaseschema's met tabellen, relaties, indexen en beperkingen"
+    },
+    "Performance Optimization Guide": {
+      "n": "Gids voor prestatie-optimalisatie",
+      "d": "Identificeer en los prestatieknelpunten op met profilerings- en optimalisatiestrategieën"
+    },
+    "Microservices Architecture": {
+      "n": "Microservices-architectuur",
+      "d": "Ontwerp microservices-architecturen met servicegrenzen, communicatie en implementatie"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL Schemabouwer",
+      "d": "Ontwerp GraphQL-schema's met typen, query's, mutaties en abonnementen"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform-configuratie",
+      "d": "Genereer Terraform-configuraties voor het inrichten van cloudinfrastructuur"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS Architectuurplanner",
+      "d": "Ontwerp AWS-cloudarchitecturen met serviceselectie en kostenoptimalisatie"
+    },
+    "Code Documentation Generator": {
+      "n": "Codedocumentatiegenerator",
+      "d": "Genereer inline documentatie, JSDoc, docstrings en codeopmerkingen"
+    },
+    "Technical Interview Prep": {
+      "n": "Voorbereiding technisch interview",
+      "d": "Bereid je voor op technische interviews met probleemanalyses en oplossingspatronen"
+    },
+    "Changelog Writer": {
+      "n": "Changelog-schrijver",
+      "d": "Schrijf duidelijke changelogs volgens Keep a Changelog-formaat met semantisch versiebeheer"
+    },
+    "Error Handling Strategy": {
+      "n": "Strategie voor foutafhandeling",
+      "d": "Ontwerp uitgebreide strategieën voor foutafhandeling met patronen en gebruikersberichten"
+    },
+    "Logging Strategy Guide": {
+      "n": "Strategiegids voor logboekregistratie",
+      "d": "Ontwerp strategieën voor toepassingsregistratie met niveaus, formaten en aggregatie"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Installatiehandleiding voor monitoring",
+      "d": "Applicatiemonitoring instellen met statistieken, waarschuwingen en dashboards"
+    },
+    "Load Testing Plan": {
+      "n": "Testplan laden",
+      "d": "Ontwerp belastingtestplannen met scenario's, statistieken en acceptatiecriteria"
+    },
+    "Security Audit Checklist": {
+      "n": "Controlelijst voor beveiligingsaudits",
+      "d": "Voer beveiligingsaudits uit met op OWASP gebaseerde checklists en herstelbegeleiding"
+    },
+    "Security Checklist Creator": {
+      "n": "Maker van beveiligingschecklist",
+      "d": "Genereer uitgebreide beveiligingschecklists die zijn afgestemd op uw toepassing en stapel"
+    },
+    "Penetration Testing Plan": {
+      "n": "Penetratietestplan",
+      "d": "Plan gestructureerde penetratietests met reikwijdte, methodologie en rapportagesjablonen"
+    },
+    "Secure Coding Guide": {
+      "n": "Handleiding voor veilige codering",
+      "d": "Creëer taalspecifieke richtlijnen voor veilige codering met preventie van kwetsbaarheden"
+    },
+    "Incident Response Plan": {
+      "n": "Incidentresponsplan",
+      "d": "Ontwerp incidentresponsplannen met detectie-, insluitings- en herstelprocedures"
+    },
+    "Security Policy Writer": {
+      "n": "Schrijver van beveiligingsbeleid",
+      "d": "Schrijven van organisatorisch beveiligingsbeleid met betrekking tot toegangscontrole, gegevensverwerking en compliance"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Gids voor beoordeling van kwetsbaarheden",
+      "d": "Voer systematische kwetsbaarheidsbeoordelingen uit met scannen en geprioriteerd herstel"
+    },
+    "Security Awareness Training": {
+      "n": "Beveiligingsbewustzijnstraining",
+      "d": "Ontwerp trainingsprogramma's voor beveiligingsbewustzijn voor werknemers op alle niveaus"
+    },
+    "Password Policy Creator": {
+      "n": "Wachtwoordbeleid maker",
+      "d": "Creëer robuust wachtwoordbeleid met complexiteit, rotatie en MFA-vereisten"
+    },
+    "Data Protection Plan": {
+      "n": "Gegevensbeschermingsplan",
+      "d": "Ontwerp strategieën voor gegevensbescherming die classificatie, encryptie en retentie omvatten"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT-analyse Pro",
+      "d": "Geavanceerde SWOT-analyse met gewogen scores en actieplannen"
+    },
+    "Pitch Deck Outline": {
+      "n": "Overzicht pitchdeck",
+      "d": "Creëer een aantrekkelijke pitch-deckstructuur voor investeerders"
+    },
+    "Business Canvas Creator": {
+      "n": "Schepper van zakelijke canvassen",
+      "d": "Genereer een compleet bedrijfsmodelcanvas voor uw onderneming"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Competitief intelligentierapport",
+      "d": "Analyseer concurrenten en identificeer kansen voor marktpositionering"
+    },
+    "Strategic Planning Guide": {
+      "n": "Gids voor strategische planning",
+      "d": "Ontwikkel een meerjarig strategisch plan met doelen en mijlpalen"
+    },
+    "Annual Report Template": {
+      "n": "Sjabloon voor jaarverslag",
+      "d": "Structureer het jaarverslag van uw bedrijf met de belangrijkste financiële en operationele hoogtepunten"
+    },
+    "Board Meeting Agenda": {
+      "n": "Agenda van de bestuursvergadering",
+      "d": "Agenda voor professionele bestuursvergaderingen met best practices op het gebied van bestuur"
+    },
+    "Company Newsletter": {
+      "n": "Bedrijfsnieuwsbrief",
+      "d": "Ontwerp een boeiende interne of externe bedrijfsnieuwsbrief"
+    },
+    "Employee Survey Creator": {
+      "n": "Maker van medewerkersenquêtes",
+      "d": "Bouw effectieve medewerkersbetrokkenheids- en tevredenheidsonderzoeken"
+    },
+    "Team Building Activity Planner": {
+      "n": "Teambuilding-activiteitenplanner",
+      "d": "Plan boeiende teambuildingevenementen en -activiteiten"
+    },
+    "Remote Work Policy": {
+      "n": "Beleid voor werken op afstand",
+      "d": "Creëer een uitgebreid beleid voor werken op afstand voor uw organisatie"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Diversiteits- en inclusieplan",
+      "d": "Ontwikkel een betekenisvolle strategie voor gelijkheid en inclusiviteit op het gebied van diversiteit"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Leveranciersevaluatiematrix",
+      "d": "Leveranciers systematisch evalueren en vergelijken voor inkoopbeslissingen"
+    },
+    "Process Improvement Plan": {
+      "n": "Procesverbeteringsplan",
+      "d": "Identificeer en implementeer procesverbeteringen met behulp van lean-methodologieën"
+    },
+    "Change Management Plan": {
+      "n": "Verandermanagementplan",
+      "d": "Begeleiden van organisatorische veranderingen met afstemming van belanghebbenden en communicatie"
+    },
+    "Risk Assessment Template": {
+      "n": "Sjabloon voor risicobeoordeling",
+      "d": "Identificeer, evalueer en verminder systematisch bedrijfsrisico's"
+    },
+    "Succession Planning Guide": {
+      "n": "Gids voor opvolgingsplanning",
+      "d": "Plan leiderschapstransities en ontwikkeling van de talentpijplijn"
+    },
+    "Business Continuity Plan": {
+      "n": "Bedrijfscontinuïteitsplan",
+      "d": "Bereid u voor op verstoringen met een alomvattende continuïteitsstrategie"
+    },
+    "Customer Journey Map": {
+      "n": "Klantreiskaart",
+      "d": "Visualiseer en optimaliseer de volledige klantervaring"
+    },
+    "Brand Guidelines Template": {
+      "n": "Sjabloon voor merkrichtlijnen",
+      "d": "Definieer uw merkidentiteit met uitgebreide stijl- en gebruiksrichtlijnen"
+    },
+    "Mission & Vision Statement": {
+      "n": "Missie- en visieverklaring",
+      "d": "Maak inspirerende missie- en visieverklaringen voor uw organisatie"
+    },
+    "Company Culture Document": {
+      "n": "Bedrijfscultuurdocument",
+      "d": "Definieer en documenteer uw organisatiecultuur en -waarden"
+    },
+    "Organizational Chart Planner": {
+      "n": "Organigramplanner",
+      "d": "Ontwerp en plan uw organisatiestructuur en rapportagelijnen"
+    },
+    "Department Budget Template": {
+      "n": "Afdelingsbegrotingsjabloon",
+      "d": "Maak gedetailleerde afdelingsbudgetten met prognoses en tracking"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI-dashboardbouwer",
+      "d": "Ontwerp dashboards voor belangrijke prestatie-indicatoren voor datagestuurde beslissingen"
+    },
+    "Job Description Writer": {
+      "n": "Functieomschrijving Schrijver",
+      "d": "Creëer duidelijke en inclusieve functiebeschrijvingen die toptalent aantrekken"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Maker van interviewscorekaarten",
+      "d": "Bouw gestructureerde interviewscorekaarten voor een consistente evaluatie van kandidaten"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Controlelijst voor onboarding van werknemers",
+      "d": "Uitgebreide onboarding-checklist voor succes van nieuwe medewerkers"
+    },
+    "Performance Improvement Plan": {
+      "n": "Prestatieverbeteringsplan",
+      "d": "Creëer ondersteunende prestatieverbeteringsplannen met duidelijke mijlpalen"
+    },
+    "Exit Interview Guide": {
+      "n": "Sluit de interviewgids af",
+      "d": "Voer inzichtelijke exit-interviews uit om de retentie te verbeteren"
+    },
+    "Compensation Analysis": {
+      "n": "Compensatieanalyse",
+      "d": "Analyseer en benchmark beloningspakketten voor het concurrentievermogen van de markt"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Vergelijkingsgids voor voordelen",
+      "d": "Vergelijk en evalueer personeelsbeloningspakketten"
+    },
+    "Team Retrospective": {
+      "n": "Teamterugblik",
+      "d": "Faciliteer effectieve teamretrospectives voor continue verbetering"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Sjabloon voor één-op-één-vergadering",
+      "d": "Structureer productieve één-op-één vergaderingen met directe rapporten"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Inhuurpijplijnplanner",
+      "d": "Ontwerp en optimaliseer uw rekruteringspijplijn van begin tot eind"
+    },
+    "Employee Recognition Program": {
+      "n": "Erkenningsprogramma voor medewerkers",
+      "d": "Bouw een betekenisvol programma voor erkenning en beloning voor medewerkers"
+    },
+    "Training Program Designer": {
+      "n": "Ontwerper van trainingsprogramma's",
+      "d": "Ontwerp effectieve training- en ontwikkelingsprogramma's voor medewerkers"
+    },
+    "Workplace Policy Writer": {
+      "n": "Schrijver van werkplekbeleid",
+      "d": "Stel een duidelijk werkplekbeleid op met betrekking tot belangrijke organisatorische onderwerpen"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Gids voor conflictoplossing",
+      "d": "Navigeer door conflicten op de werkplek met gestructureerde oplossingskaders"
+    },
+    "Remote Team Handbook": {
+      "n": "Handboek voor teams op afstand",
+      "d": "Creëer een uitgebreid handboek voor gedistribueerde teamoperaties"
+    },
+    "Career Path Planner": {
+      "n": "Carrièrepadplanner",
+      "d": "Breng uw loopbaantraject in kaart met bruikbare mijlpalen"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Voorbereiding salarisonderhandelingen",
+      "d": "Bereid zelfverzekerde gesprekspunten en strategieën voor salarisonderhandelingen voor"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn-profielbouwer",
+      "d": "Optimaliseer uw LinkedIn-profiel om recruiters en kansen aan te trekken"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Gids voor het samenstellen van portfolio's",
+      "d": "Creëer een opvallend professioneel portfolio met uw beste werk"
+    },
+    "Networking Email Templates": {
+      "n": "Netwerk-e-mailsjablonen",
+      "d": "Schrijf effectieve netwerk-e-mails voor carrièregroei en introducties"
+    },
+    "Career Pivot Guide": {
+      "n": "Gids voor loopbaandraaipunten",
+      "d": "Navigeer door een succesvolle carrièretransitie met een gestructureerd plan"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Freelance tarief calculator",
+      "d": "Bereken je ideale freelance tarief en prijsstrategie"
+    },
+    "Professional Development Plan": {
+      "n": "Professioneel ontwikkelingsplan",
+      "d": "Creëer een gestructureerd plan voor continue professionele groei"
+    },
+    "Mentorship Program Guide": {
+      "n": "Gids voor mentorschapsprogramma",
+      "d": "Vind structuur en maximaliseer mentorschapsrelaties"
+    },
+    "Side Hustle Validator": {
+      "n": "Side Hustle-validator",
+      "d": "Evalueer en valideer nevenbedrijfsideeën op levensvatbaarheid"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Audit van de balans tussen werk en privé",
+      "d": "Beoordeel en verbeter uw balans tussen werk en privé met bruikbare strategieën"
+    },
+    "Speaking Proposal Template": {
+      "n": "Sjabloon voor sprekend voorstel",
+      "d": "Creëer overtuigende sprekersvoorstellen voor conferenties en evenementen"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Adviserend voorstelschrijver",
+      "d": "Ontwerp winnende adviesvoorstellen die deals sluiten"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Vaardigheidsgap-analyzer",
+      "d": "Identificeren en plannen om cruciale vaardigheidslacunes voor loopbaanontwikkeling te dichten"
+    },
+    "Career Journal Prompts": {
+      "n": "Prompts voor loopbaanjournaals",
+      "d": "Denk na over uw carrièrereis met begeleide dagboekoefeningen"
+    },
+    "Informational Interview Guide": {
+      "n": "Informatieve interviewgids",
+      "d": "Effectieve informatiegesprekken voorbereiden en voeren"
+    },
+    "Thank You Note Writer": {
+      "n": "Dankjewelschrijver",
+      "d": "Schrijf attente professionele bedankbriefjes voor elke gelegenheid"
+    },
+    "Resignation Letter Template": {
+      "n": "Ontslagbriefsjabloon",
+      "d": "Schrijf een professionele ontslagbrief en onderhoud positieve relaties"
+    },
+    "Meal Prep Planner": {
+      "n": "Maaltijdvoorbereidingsplanner",
+      "d": "Plan wekelijkse maaltijden met boodschappenlijstjes en voorbereidingsschema's"
+    },
+    "Habit Tracker Designer": {
+      "n": "Ontwerper van gewoontetracker",
+      "d": "Ontwerp een gepersonaliseerd gewoontevolgsysteem voor blijvende verandering"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Gids voor slaapverbetering",
+      "d": "Optimaliseer uw slaapkwaliteit met op bewijs gebaseerde strategieën"
+    },
+    "Stress Management Plan": {
+      "n": "Stressmanagementplan",
+      "d": "Bouw een gepersonaliseerde toolkit en actieplan voor stressmanagement"
+    },
+    "Yoga Routine Builder": {
+      "n": "Yogaroutinebouwer",
+      "d": "Creëer aangepaste yogaroutines voor jouw niveau en doelen"
+    },
+    "Running Training Plan": {
+      "n": "Hardlooptrainingsplan",
+      "d": "Stel een gestructureerd hardlooptrainingsplan op voor elk afstandsdoel"
+    },
+    "Swimming Workout": {
+      "n": "Zwemtraining",
+      "d": "Ontwerp effectieve zwemtrainingen voor conditie en techniek"
+    },
+    "Strength Training Program": {
+      "n": "Krachttrainingsprogramma",
+      "d": "Creëer een progressief krachttrainingsprogramma op maat van uw doelen"
+    },
+    "Flexibility Routine": {
+      "n": "Flexibiliteitsroutine",
+      "d": "Verbeter de flexibiliteit en mobiliteit met gestructureerde rekoefeningen"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT-workoutmaker",
+      "d": "Ontwerp intervaltrainingen met hoge intensiteit voor maximale resultaten"
+    },
+    "Nutrition Label Reader": {
+      "n": "Voedingsetiketlezer",
+      "d": "Leer voedingsetiketten lezen en begrijpen voor gezondere keuzes"
+    },
+    "Calorie Counter Guide": {
+      "n": "Gids voor calorieënteller",
+      "d": "Stel gepersonaliseerde calorietracking in met macro-uitsplitsingen"
+    },
+    "Hydration Tracker": {
+      "n": "Hydratatietracker",
+      "d": "Volg en optimaliseer uw dagelijkse waterinname en hydratatiegewoonten"
+    },
+    "Mental Health Check-In": {
+      "n": "Inchecken voor geestelijke gezondheid",
+      "d": "Begeleide zelfevaluatie van de geestelijke gezondheid en volgen van welzijn"
+    },
+    "Therapy Session Prep": {
+      "n": "Voorbereiding therapiesessie",
+      "d": "Bereid je voor op therapiesessies met gestructureerde reflectie en het stellen van doelen"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Dankbaarheidsdagboekprompts",
+      "d": "Dagelijkse dankbaarheidslogboeken voor een beter geestelijk welzijn"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Mindfulness Oefening Schepper",
+      "d": "Creëer gepersonaliseerde mindfulness- en ademhalingsoefeningen"
+    },
+    "Supplement Research Guide": {
+      "n": "Supplement Onderzoeksgids",
+      "d": "Onderzoek en evalueer supplementen op basis van uw gezondheidsdoelen"
+    },
+    "Allergy Management Plan": {
+      "n": "Allergiemanagementplan",
+      "d": "Creëer een alomvattende strategie voor allergiebeheer en -vermijding"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Tracker voor chronische aandoeningen",
+      "d": "Volg de symptomen van medicijnen en triggers voor chronische gezondheidsproblemen"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Oefeningenlogboek voor fysiotherapie",
+      "d": "Fysiotherapie-oefeningen en herstelvoortgang registreren en volgen"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonomische werkplekopstelling",
+      "d": "Optimaliseer uw werkruimte voor comfort, gezondheid en productiviteit"
+    },
+    "Digital Detox Planner": {
+      "n": "Digitale detoxplanner",
+      "d": "Plan en voer een digitale detox uit voor een beter mentaal welzijn"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Zelfzorgroutinebouwer",
+      "d": "Bouw een duurzame zelfzorgroutine voor alle welzijnsdimensies"
+    },
+    "First Aid Guide": {
+      "n": "EHBO-gids",
+      "d": "Beknopte EHBO-procedures voor veelvoorkomende noodsituaties"
+    },
+    "To-Do List Power Planner": {
+      "n": "Takenlijst Energieplanner",
+      "d": "Maak geprioriteerde takenlijsten met tijdsschattingen en energieniveaus"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Dagelijkse planningsoptimalisatie",
+      "d": "Ontwerp een geoptimaliseerd dagelijks schema op basis van uw energiepatronen"
+    },
+    "Project Planner Pro": {
+      "n": "Projectplanner Pro",
+      "d": "Plan projecten met te leveren mijlpalen en toewijzing van middelen"
+    },
+    "Decision Matrix Builder": {
+      "n": "Beslissingsmatrixbouwer",
+      "d": "Neem betere beslissingen met behulp van gewogen criteria-analyse"
+    },
+    "Weekly Review Template": {
+      "n": "Wekelijkse beoordelingssjabloon",
+      "d": "Voer grondige wekelijkse evaluaties uit om op koers te blijven met uw doelen"
+    },
+    "Morning Routine Designer": {
+      "n": "Ochtendroutineontwerper",
+      "d": "Ontwerp een energieke ochtendroutine voor topprestaties"
+    },
+    "Evening Routine Creator": {
+      "n": "Avondroutinemaker",
+      "d": "Creëer een kalmerende avondroutine voor betere rust en voorbereiding op de volgende dag"
+    },
+    "Time Blocking Schedule": {
+      "n": "Tijdblokkeringsschema",
+      "d": "Organiseer uw dag met gerichte tijdsblokken voor maximale productiviteit"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhower-matrixtool",
+      "d": "Categoriseer taken op urgentie en belang voor een betere prioritering"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Pomodoro Sessieplanner",
+      "d": "Plan gerichte werksessies met behulp van de Pomodoro-techniek"
+    },
+    "Goal Tracking System": {
+      "n": "Doelvolgsysteem",
+      "d": "Zet een uitgebreid doelvolgsysteem op met voortgangsstatistieken"
+    },
+    "Quarterly Planning Template": {
+      "n": "Kwartaalplanningsjabloon",
+      "d": "Plan uw kwartaal met strategische doelen en uitvoerbare doelstellingen"
+    },
+    "Annual Review Template": {
+      "n": "Jaaroverzichtsjabloon",
+      "d": "Voer jaarlijks een grondige evaluatie uit van de prestaties en stel toekomstige doelen vast"
+    },
+    "Meeting Notes Template": {
+      "n": "Sjabloon voor notulen voor vergaderingen",
+      "d": "Leg bruikbare vergadernotities vast met beslissingen en vervolgacties"
+    },
+    "Brain Dump Organizer": {
+      "n": "Brain Dump-organisator",
+      "d": "Transformeer chaotische gedachten in georganiseerde, bruikbare categorieën"
+    },
+    "Delegation Framework": {
+      "n": "Delegatiekader",
+      "d": "Identificeer wat u wilt delegeren en stel duidelijke delegatieinstructies op"
+    },
+    "Focus Session Planner": {
+      "n": "Focussessieplanner",
+      "d": "Plan deep focus-sessies met omgevings- en afleidingsmanagement"
+    },
+    "Energy Management Guide": {
+      "n": "Gids voor energiebeheer",
+      "d": "Optimaliseer uw energieniveau gedurende de dag voor topprestaties"
+    },
+    "Batch Processing Planner": {
+      "n": "Batchverwerkingsplanner",
+      "d": "Groepeer vergelijkbare taken voor efficiënte batchverwerkingssessies"
+    },
+    "System Documentation Template": {
+      "n": "Systeemdocumentatiesjabloon",
+      "d": "Documenteer persoonlijke en teamsystemen voor consistentie en onboarding"
+    },
+    "Project Kickoff Template": {
+      "n": "Projectaftrapsjabloon",
+      "d": "Projecten lanceren met duidelijke doelstellingen, reikwijdte en teamafstemming"
+    },
+    "Sprint Planning Guide": {
+      "n": "Gids voor sprintplanning",
+      "d": "Plan effectieve sprints met schattingen en capaciteit van gebruikersverhalen"
+    },
+    "Kanban Board Setup": {
+      "n": "Kanbanbord instellen",
+      "d": "Ontwerp en configureer een Kanban-bord voor visueel workflowbeheer"
+    },
+    "Gantt Chart Planner": {
+      "n": "Gantt-diagramplanner",
+      "d": "Creëer gedetailleerde projecttijdlijnen met afhankelijkheden en mijlpalen"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Matrix voor toewijzing van middelen",
+      "d": "Plan en optimaliseer de toewijzing van middelen aan projecten en teams"
+    },
+    "Status Report Template": {
+      "n": "Statusrapportsjabloon",
+      "d": "Creëer duidelijke projectstatusrapporten voor communicatie met belanghebbenden"
+    },
+    "Risk Register Creator": {
+      "n": "Risicoregistermaker",
+      "d": "Bouw en onderhoud een uitgebreid projectrisicoregister"
+    },
+    "Lessons Learned Template": {
+      "n": "Sjabloon voor geleerde lessen",
+      "d": "Vastleggen en documenteren van geleerde projectlessen voor toekomstige verbetering"
+    },
+    "Requirements Document": {
+      "n": "Vereistendocument",
+      "d": "Verzamel en documenteer projectvereisten met acceptatiecriteria"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Plan voor gebruikersacceptatietesten",
+      "d": "Creëer gestructureerde UAT-plannen met testcases en afmeldcriteria"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Communicatieplan voor belanghebbenden",
+      "d": "Plan de communicatie met belanghebbenden met kanaalfrequentie en berichten"
+    },
+    "Project Timeline Creator": {
+      "n": "Projecttijdlijnmaker",
+      "d": "Bouw gedetailleerde projecttijdlijnen met fasen en deliverables"
+    },
+    "Agile Retrospective": {
+      "n": "Agile retrospectief",
+      "d": "Faciliteer productieve agile retrospectives met gevarieerde formats"
+    },
+    "Scope Document Writer": {
+      "n": "Scope Documentschrijver",
+      "d": "Definieer de projectscope met grenzen van deliverables en uitsluitingen"
+    },
+    "Project Closure Report": {
+      "n": "Projectafsluitingsrapport",
+      "d": "Documenteer de voltooiing van het project met de resultaten en eindbeoordelingen"
+    },
+    "Conversation Practice Partner": {
+      "n": "Gesprekspraktijkpartner",
+      "d": "Oefen gesprekken in uw doeltaal met realistische scenario's"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Woordenschatbouwer Pro",
+      "d": "Bouw een woordenschat op met contextvoorbeelden en gespreide herhalingsaanwijzingen"
+    },
+    "Grammar Coach": {
+      "n": "Grammaticacoach",
+      "d": "Leer en oefen grammaticaregels met duidelijke uitleg en oefeningen"
+    },
+    "Translation Helper": {
+      "n": "Vertaalhulp",
+      "d": "Zorg voor nauwkeurige vertalingen met context- en gebruiksnotities"
+    },
+    "Language Exchange Prep": {
+      "n": "Voorbereiding op taaluitwisseling",
+      "d": "Bereid je voor op taaluitwisselingssessies met gestructureerde gespreksonderwerpen"
+    },
+    "Travel Phrase Book": {
+      "n": "Reiszinnenboek",
+      "d": "Essentiële reiszinnen gerangschikt per situatie voor uw bestemming"
+    },
+    "Business Language Guide": {
+      "n": "Zakelijke taalgids",
+      "d": "Leer professionele taal voor zakelijke omgevingen en communicatie"
+    },
+    "Accent Improvement Guide": {
+      "n": "Gids voor accentverbetering",
+      "d": "Verbeter de uitspraak en het accent met gerichte oefeningen"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Begrijpend lezen",
+      "d": "Verbeter de leesvaardigheid met genivelleerde teksten en begripsvragen"
+    },
+    "Writing Practice Creator": {
+      "n": "Schrijver voor schrijfoefeningen",
+      "d": "Oefen met schrijven in uw doeltaal met begeleide aanwijzingen en feedback"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Gids voor luisterbegrip",
+      "d": "Verbeter de luistervaardigheid met gestructureerde oefeningen en strategieën"
+    },
+    "Cultural Context Guide": {
+      "n": "Culturele contextgids",
+      "d": "Begrijp culturele nuances en etiquette voor effectieve communicatie"
+    },
+    "Room Layout Planner": {
+      "n": "Ruimte-indelingsplanner",
+      "d": "Plan een optimale kamerindeling met meubelplaatsing en -stroom"
+    },
+    "Color Palette Creator": {
+      "n": "Kleurenpalet maken",
+      "d": "Genereer samenhangende kleurenpaletten voor kamers en ontwerpprojecten"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Meubelwinkelgids",
+      "d": "Slim meubelshoppen met bijpassende stijl en budgetplanning"
+    },
+    "Home Decor Style Finder": {
+      "n": "Stijlzoeker voor woondecoratie",
+      "d": "Ontdek jouw interieurstijl met een begeleid assessment"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Garderobecapsulebouwer",
+      "d": "Bouw een veelzijdige capsulegarderobe die outfitcombinaties maximaliseert"
+    },
+    "Outfit Planner": {
+      "n": "Outfitplanner",
+      "d": "Plan outfits voor de week of speciale evenementen uit je bestaande garderobe"
+    },
+    "Personal Style Guide": {
+      "n": "Persoonlijke stijlgids",
+      "d": "Definieer uw persoonlijke stijlidentiteit en winkelrichtlijnen"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Seizoensgebonden kledingkast vernieuwen",
+      "d": "Verfris je garderobe elk seizoen met strategische toevoegingen en bewerkingen"
+    },
+    "Home Office Setup Guide": {
+      "n": "Installatiehandleiding voor thuiskantoor",
+      "d": "Ontwerp een productieve en stijlvolle thuiskantoorruimte"
+    },
+    "Bathroom Design Planner": {
+      "n": "Badkamerontwerpplanner",
+      "d": "Plan badkamerrenovaties en -updates met stijl en functionaliteit"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Hackathon-ideeëngenerator",
+      "d": "Brainstorm en valideer ideeën voor hackathon-projecten op basis van thema's en beperkingen"
+    },
+    "MVP Builder Guide": {
+      "n": "Handleiding voor MVP-bouwers",
+      "d": "Plan en bouw een minimaal levensvatbaar product binnen strakke hackathon-deadlines"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon Pitch-presentatie",
+      "d": "Creëer een overtuigend pitchdeck om uw hackathonproject aan de juryleden te presenteren"
+    },
+    "Technical Architecture Planner": {
+      "n": "Technische Architectuurplanner",
+      "d": "Ontwerp snel de technische architectuur voor uw hackathonproject"
+    },
+    "Hackathon Team Builder": {
+      "n": "Hackathon-teambouwer",
+      "d": "Vorm een ​​uitgebalanceerd hackathonteam met complementaire vaardigheden en duidelijke rollen"
+    },
+    "Demo Day Script": {
+      "n": "Demodagscript",
+      "d": "Schrijf een gepolijste live demo die de belangrijkste kenmerken van uw project benadrukt"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Beoordelingscriteria-analyzer",
+      "d": "Analyseer de beoordelingscriteria van de hackathon en optimaliseer uw project dienovereenkomstig"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Hackathon-tijdlijnplanner",
+      "d": "Deel uw hackathon-uren op in een gestructureerd sprintschema"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Prijs Strategieadviseur",
+      "d": "Richt u strategisch op specifieke prijstrajecten en pas uw project aan om te winnen"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Actieplan na de hackathon",
+      "d": "Maak van uw hackathonproject een echt product of portfoliostuk"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Handleiding voor snelle prototypes",
+      "d": "Maak snel een prototype en herhaal uw hackathon-concept in beperkte tijd"
+    },
+    "Hackathon Submission Template": {
+      "n": "Hackathon-inzendingssjabloon",
+      "d": "Bereid een complete en gepolijste hackathon-inzending voor met alle benodigde materialen"
+    },
+    "Game Design Document": {
+      "n": "Spelontwerpdocument",
+      "d": "Maak een uitgebreid spelontwerpdocument dat alle aspecten van uw spel omvat"
+    },
+    "Game Mechanics Designer": {
+      "n": "Ontwerper van spelmechanica",
+      "d": "Ontwerp en balanceer de kernspelmechanismen voor boeiende gameplay"
+    },
+    "Level Design Planner": {
+      "n": "Niveauontwerpplanner",
+      "d": "Plan spelniveaus met tempo, uitdagingen en omgevingsverhalen"
+    },
+    "Game Economy Balancer": {
+      "n": "Speleconomie Balancer",
+      "d": "Ontwerp en balanceer in-game-economieën voor eerlijke en boeiende voortgang"
+    },
+    "Character Stats Builder": {
+      "n": "Karakterstatistiekenbouwer",
+      "d": "Creëer evenwichtige karakterstatistische systemen en klassenarchetypen"
+    },
+    "Quest Designer": {
+      "n": "Quest-ontwerper",
+      "d": "Ontwerp meeslepende missies met vertakkende verhalen en betekenisvolle beloningen"
+    },
+    "Game UI/UX Planner": {
+      "n": "Game UI/UX-planner",
+      "d": "Plan intuïtieve game-UI-indelingen en gebruikerservaringstromen"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Tafelblad-RPG-campagne",
+      "d": "Bouw een tabletop RPG-campagne met wereldverhalen, NPC's en verhaallijnen"
+    },
+    "Board Game Designer": {
+      "n": "Bordspelontwerper",
+      "d": "Ontwerp een bordspel van concept tot prototype met uitgebalanceerde regels"
+    },
+    "Game Testing Checklist": {
+      "n": "Controlelijst voor het testen van games",
+      "d": "Creëer een uitgebreide QA-testchecklist voor je game"
+    },
+    "Photo Shoot Planner": {
+      "n": "Fotoshootplanner",
+      "d": "Plan een complete fotoshoot van concept tot uitvoering met alle logistiek"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Fotografieportfoliogids",
+      "d": "Cureer en organiseer een opvallende fotografieportfolio voor klanten of tentoonstellingen"
+    },
+    "Photo Editing Workflow": {
+      "n": "Werkstroom voor fotobewerking",
+      "d": "Bouw een efficiënte workflow voor fotobewerking, van import tot uiteindelijke export"
+    },
+    "Client Photography Brief": {
+      "n": "Klantfotografie kort",
+      "d": "Creëer een professionele fotografieopdracht voor klantprojecten"
+    },
+    "Landscape Photography Guide": {
+      "n": "Gids voor landschapsfotografie",
+      "d": "Plan landschapsfotografie-uitjes met weer-, timing- en compositietips"
+    },
+    "Portrait Photography Tips": {
+      "n": "Tips voor portretfotografie",
+      "d": "Gids voor het vastleggen van boeiende portretten met belichting en poseerrichting"
+    },
+    "Product Photography Setup": {
+      "n": "Productfotografie instellen",
+      "d": "Zet professionele productfotografie op met de juiste belichting en enscenering"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Tijdlijn voor huwelijksfotografie",
+      "d": "Plan een volledige tijdlijn voor trouwdagfotografie, van voorbereiding tot receptie"
+    },
+    "Street Photography Guide": {
+      "n": "Gids voor straatfotografie",
+      "d": "Tips en technieken voor authentieke en meeslepende straatfotografie"
+    },
+    "Astrophotography Planner": {
+      "n": "Astrofotografieplanner",
+      "d": "Plan astrofotografiesessies met apparatuurinstellingen en hemelse gebeurtenissen"
+    },
+    "Character Design Brief": {
+      "n": "Karakterontwerp kort",
+      "d": "Maak gedetailleerde karakterontwerpinstructies met persoonlijkheid, uiterlijk en achtergrondverhaal"
+    },
+    "Comic Strip Creator": {
+      "n": "Stripmaker",
+      "d": "Plan en maak stripverhalen met paneelindelingen, dialoog en tempo"
+    },
+    "World Building Guide": {
+      "n": "Wereldbouwgids",
+      "d": "Ontwerp meeslepende fictieve werelden met geografie, culturen en kennis"
+    },
+    "Children's Book Illustrator": {
+      "n": "Kinderboekillustrator",
+      "d": "Plan illustraties voor kinderboeken in een stijl en tempo die bij de leeftijd passen"
+    },
+    "Art Portfolio Curator": {
+      "n": "Curator kunstportfolio",
+      "d": "Stel een kunstportfolio samen en presenteer deze voor galerieën, klanten of scholen"
+    },
+    "Color Theory Guide": {
+      "n": "Gids voor kleurentheorie",
+      "d": "Pas de principes van de kleurentheorie toe om harmonieuze en impactvolle kunstwerken te creëren"
+    },
+    "Digital Art Workflow": {
+      "n": "Digitale kunstworkflow",
+      "d": "Stroomlijn uw digitale kunstproces, van schets tot uiteindelijke weergave"
+    },
+    "Art Commission Brief": {
+      "n": "Brief van de Kunstcommissie",
+      "d": "Schrijf duidelijke instructies voor de kunstcommissie om uw visie aan kunstenaars over te brengen"
+    },
+    "Mural Design Planner": {
+      "n": "Ontwerpplanner voor muurschilderingen",
+      "d": "Plan grootschalige muurschilderingprojecten van concept tot installatie"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Voorstel voor kunsttentoonstelling",
+      "d": "Schrijf een professioneel kunsttentoonstellingsvoorstel voor galerijen en locaties"
+    },
+    "Tax Deduction Finder": {
+      "n": "Belastingaftrekzoeker",
+      "d": "Identificeer vaak gemiste belastingaftrekposten op basis van uw situatie en indieningsstatus"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Belastinggids voor zelfstandigen",
+      "d": "Navigeer door de belastingen op zelfstandigen, inclusief geschatte betalingen en inhoudingen"
+    },
+    "Tax Document Organizer": {
+      "n": "Belastingdocumentorganisator",
+      "d": "Organiseer en volg alle belastingdocumenten die nodig zijn voor het indienen van seizoen"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Kwartaalbelastingschatter",
+      "d": "Bereken en plan driemaandelijkse geschatte belastingbetalingen voor zelfstandigen"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Gids voor vermogenswinstcalculator",
+      "d": "Vermogenswinstbelastingen op investeringen en onroerend goed begrijpen en plannen"
+    },
+    "Tax Filing Checklist": {
+      "n": "Controlelijst belastingaangifte",
+      "d": "Stapsgewijze checklist voor een nauwkeurige en volledige belastingaangifte"
+    },
+    "State Tax Comparison": {
+      "n": "Vergelijking van staatsbelastingen",
+      "d": "Vergelijk de gevolgen van staatsbelastingen voor verhuizingen of inkomsten uit meerdere staten"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Handleiding voor het oogsten van belastingverliezen",
+      "d": "Strategisch oogsten van beleggingsverliezen om winsten te compenseren en belastingplicht te verminderen"
+    },
+    "Stock Research Template": {
+      "n": "Sjabloon voor voorraadonderzoek",
+      "d": "Voer een grondige fundamentele en technische analyse uit van individuele aandelen"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF-vergelijkingstool",
+      "d": "Vergelijk ETF's op basis van kostenratio's, beleggingen, prestaties en strategie"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Dividendportefeuilleplanner",
+      "d": "Bouw een op dividenden gerichte portefeuille voor het genereren van passieve inkomsten"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Analyser van vastgoedinvesteringen",
+      "d": "Analyseer huurwoningen en vastgoedbeleggingen op rendement en cashflow"
+    },
+    "Angel Investing Checklist": {
+      "n": "Controlelijst voor engelbeleggen",
+      "d": "Evalueer investeringsmogelijkheden voor startups met due diligence-kaders"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Pensioenrekeningoptimalisatie",
+      "d": "Optimaliseer bijdragen voor 401k, IRA en andere pensioenrekeningen"
+    },
+    "Bond Analysis Guide": {
+      "n": "Gids voor obligatieanalyse",
+      "d": "Analyseer obligaties en vastrentende effecten op rendement, looptijd en risico"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Beoordelaar van beleggingsfondsen",
+      "d": "Evalueer beleggingsfondsen op basis van prestaties, vergoedingen, trackrecord van de manager en geschiktheid"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Gids voor het herbalanceren van portefeuilles",
+      "d": "Herbalanceer uw beleggingsportefeuille om de beoogde activaspreiding te behouden"
+    },
+    "Investment Journal Template": {
+      "n": "Sjabloon investeringsdagboek",
+      "d": "Volg investeringsbeslissingen, redenen en resultaten voor continue verbetering"
+    },
+    "AWS Service Selector": {
+      "n": "AWS-servicekiezer",
+      "d": "Kies de juiste AWS-services voor uw toepassingsvereisten en budget"
+    },
+    "Cloud Migration Plan": {
+      "n": "Cloudmigratieplan",
+      "d": "Plan een gestructureerde migratie van on-premises workloads naar de cloud"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Implementatiehandleiding voor Kubernetes",
+      "d": "Implementeer en beheer applicaties op Kubernetes met best practices"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Infrastructuur als codesjabloon",
+      "d": "Creëer infrastructuur als codesjablonen voor reproduceerbare cloudomgevingen"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD-pijplijnontwerper",
+      "d": "Ontwerp geautomatiseerde CI/CD-pijplijnen voor continue integratie en implementatie"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Cloudkostenoptimalisatie",
+      "d": "Identificeer en implementeer strategieën voor cloudkostenoptimalisatie"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Serverloze architectuurplanner",
+      "d": "Ontwerp serverloze applicaties met gebeurtenisgestuurde architectuurpatronen"
+    },
+    "Container Strategy Guide": {
+      "n": "Strategiegids voor containers",
+      "d": "Definieer een containerisatiestrategie voor applicaties en microservices"
+    },
+    "Cloud Security Checklist": {
+      "n": "Controlelijst voor cloudbeveiliging",
+      "d": "Controleer en beveilig de cloudinfrastructuur met uitgebreide beveiligingscontroles"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Herstelplan voor noodgevallen",
+      "d": "Ontwerp een herstelplan voor de cloud met RTO- en RPO-doelstellingen"
+    },
+    "Keynote Speech Writer": {
+      "n": "Keynote-toespraakschrijver",
+      "d": "Schrijf een krachtige keynote speech die uw publiek inspireert en boeit"
+    },
+    "TED Talk Outline": {
+      "n": "TED-talkoverzicht",
+      "d": "Structureer een meeslepende lezing in TED-stijl met een sterke verhaallijn"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Toast- en eerbetoonschrijver",
+      "d": "Schrijf gedenkwaardige toastjes en eerbetoon voor bruiloften, pensioneringen en vieringen"
+    },
+    "Debate Preparation Guide": {
+      "n": "Gids voor voorbereiding van het debat",
+      "d": "Bereid je grondig voor op debatten met argumenten, weerleggingen en bewijsmateriaal"
+    },
+    "Panel Discussion Prep": {
+      "n": "Voorbereiding paneldiscussie",
+      "d": "Bereid je voor op paneldiscussies met gespreksonderwerpen en betrokkenheid van het publiek"
+    },
+    "Presentation Slide Planner": {
+      "n": "Presentatiediaplanner",
+      "d": "Plan presentatiedia's met visuele hiërarchie en verhaalstroom"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Geïmproviseerde spreekgids",
+      "d": "Ontwikkel vaardigheden om snel te denken met geïmproviseerde spreekkaders"
+    },
+    "Commencement Speech Writer": {
+      "n": "Aanvangstoespraakschrijver",
+      "d": "Schrijf een inspirerende afscheidsrede voor diploma-uitreikingen"
+    },
+    "Grant Application Writer": {
+      "n": "Subsidieaanvraagschrijver",
+      "d": "Schrijf overtuigende subsidieaanvragen die de impact en behoefte duidelijk verwoorden"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Campagneplan fondsenwerving",
+      "d": "Plan en voer effectieve fondsenwervingscampagnes uit via meerdere kanalen"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Gids voor werving van vrijwilligers",
+      "d": "Werven, aanwerven en behouden van vrijwilligers voor non-profitprogramma's"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Bestuursvergadering non-profitorganisatie",
+      "d": "Effectieve bestuursvergaderingen van non-profitorganisaties voorbereiden en leiden met duidelijke agenda's"
+    },
+    "Impact Report Template": {
+      "n": "Impactrapportsjabloon",
+      "d": "Maak overtuigende impactrapporten waarin u de prestaties van uw non-profitorganisatie laat zien"
+    },
+    "Donor Thank You Letter": {
+      "n": "Donateur bedankbrief",
+      "d": "Schrijf gepersonaliseerde donorbevestigingsbrieven die duurzame relaties opbouwen"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Jaarlijkse campagnestrategie",
+      "d": "Ontwikkel een alomvattende jaarlijkse strategie voor fondsenwerving en betrokkenheid"
+    },
+    "Community Needs Assessment": {
+      "n": "Beoordeling van gemeenschapsbehoeften",
+      "d": "Voer een grondige beoordeling van de behoeften van de gemeenschap uit om de programmaontwikkeling te begeleiden"
+    },
+    "Construction Project Plan": {
+      "n": "Bouwprojectplan",
+      "d": "Maak een uitgebreid bouwprojectplan met fasen, tijdlijnen en budgetten"
+    },
+    "Building Permit Checklist": {
+      "n": "Controlelijst bouwvergunning",
+      "d": "Volg alle vereiste bouwvergunningen en goedkeuringen voor uw bouwproject"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Evaluatiegids voor aannemers",
+      "d": "Evalueer en vergelijk aannemers met een gestructureerd scoreraamwerk"
+    },
+    "Material Estimate Calculator": {
+      "n": "Materiaalschattingscalculator",
+      "d": "Schat de benodigde bouwmaterialen met hoeveelheden en kostenprognoses"
+    },
+    "Site Inspection Checklist": {
+      "n": "Controlelijst voor locatie-inspectie",
+      "d": "Voer grondige inspecties ter plaatse uit met gestandaardiseerde checklists"
+    },
+    "Renovation Scope Document": {
+      "n": "Renovatiescopedocument",
+      "d": "Definieer een duidelijke reikwijdte van de renovatiewerkzaamheden met specificaties en verwachtingen"
+    },
+    "Architectural Brief": {
+      "n": "Architectuuroverzicht",
+      "d": "Schrijf een architectonisch overzicht waarin u de projectvisie, vereisten en beperkingen definieert"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Controlelijst voor naleving van veiligheidsvoorschriften",
+      "d": "Zorg ervoor dat de veiligheid op de bouwplaats voldoet aan OSHA en lokale regelgeving"
+    },
+    "Robot Design Specification": {
+      "n": "Robotontwerpspecificatie",
+      "d": "Definieer de volledige robotontwerpspecificaties, inclusief mechanica, elektronica en software"
+    },
+    "IoT Project Planner": {
+      "n": "IoT-projectplanner",
+      "d": "Plan end-to-end IoT-projecten, van sensoren tot clouddashboards"
+    },
+    "Sensor Selection Guide": {
+      "n": "Gids voor sensorselectie",
+      "d": "Kies optimale sensoren voor uw robotica- of IoT-toepassingsvereisten"
+    },
+    "Embedded Systems Guide": {
+      "n": "Gids voor ingebedde systemen",
+      "d": "Ontwerp embedded systemen met de juiste microcontrollerselectie en firmware-architectuur"
+    },
+    "Automation Workflow Designer": {
+      "n": "Automatiseringsworkflowontwerper",
+      "d": "Ontwerp industriële of domotica-workflows met sensoren en actuatoren"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Hardware-prototypeplanner",
+      "d": "Plan hardwareprototypes van breadboard tot PCB met componentsourcing"
+    },
+    "Anxiety Management Plan": {
+      "n": "Plan voor angstbeheersing",
+      "d": "Creëer een persoonlijk plan voor angstbeheersing met copingstrategieën en triggers"
+    },
+    "CBT Thought Record": {
+      "n": "CGT-gedachtenverslag",
+      "d": "Oefen gedachtenrecords uit cognitieve gedragstherapie om negatief denken uit te dagen"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Journalingpromptgenerator",
+      "d": "Genereer zinvolle dagboekaanwijzingen voor zelfreflectie en emotionele verwerking"
+    },
+    "Relationship Communication Guide": {
+      "n": "Relatiecommunicatiegids",
+      "d": "Verbeter de relatiecommunicatie met gestructureerde gesprekskaders"
+    },
+    "Boundary Setting Guide": {
+      "n": "Gids voor het stellen van grenzen",
+      "d": "Leer gezonde grenzen stellen en behouden in het persoonlijke en professionele leven"
+    },
+    "Grief Processing Helper": {
+      "n": "Rouwverwerkingshulp",
+      "d": "Navigeer door het rouwproces met meelevende begeleiding en praktische stappen"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Oefening voor zelfcompassie",
+      "d": "Oefen oefeningen met zelfcompassie om veerkracht op te bouwen en zelfkritiek te verminderen"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Bouwer van emotionele intelligentie",
+      "d": "Ontwikkel vaardigheden op het gebied van emotionele intelligentie voor een beter zelfbewustzijn en betere relaties"
+    },
+    "Anger Management Plan": {
+      "n": "Woedebeheersingsplan",
+      "d": "Ontwikkel gezonde strategieën voor woedebeheersing met triggers en de-escalatietechnieken"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Burn-out herstelplan",
+      "d": "Creëer een gestructureerd burn-outherstelplan met grenzen, rust en geleidelijke hernieuwde betrokkenheid"
+    },
+    "Instant Pot Recipe": {
+      "n": "Recept voor instantpotten",
+      "d": "Snelkookpanrecepten met timinggidsen"
+    },
+    "World Cuisine Explorer": {
+      "n": "Wereldkeuken ontdekkingsreiziger",
+      "d": "Authentieke recepten uit de wereldkeuken"
+    },
+    "Fermentation Guide": {
+      "n": "Fermentatiegids",
+      "d": "Recepten en technieken voor gefermenteerde voedingsmiddelen"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "BBQ- en grillgids",
+      "d": "Grillrecepten met combinaties van rub en saus"
+    },
+    "Bread Baking Guide": {
+      "n": "Gids voor het bakken van brood",
+      "d": "Ambachtelijke broodrecepten van voorgerecht tot einde"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Gids voor het kweken van paddenstoelen",
+      "d": "Binnenteelt van paddenstoelen van spawn tot oogst"
+    },
+    "Permaculture Planner": {
+      "n": "Permacultuurplanner",
+      "d": "Ontwerp een zelfvoorzienend ecosysteem voor voedseltuinen"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Installatiehandleiding voor de kas",
+      "d": "Plan en bouw een productieve kas"
+    },
+    "FSBO Selling Guide": {
+      "n": "FSBO-verkoopgids",
+      "d": "Stap voor stap uw huis verkopen zonder makelaar"
+    },
+    "Investment Property Finder": {
+      "n": "Vinder van vastgoedbeleggingen",
+      "d": "Evalueer potentiële huurbeleggingsobjecten"
+    },
+    "Car Modification Guide": {
+      "n": "Gids voor automodificatie",
+      "d": "Plan voertuigaanpassingen en -upgrades"
+    },
+    "Fleet Management Planner": {
+      "n": "Vlootbeheerplanner",
+      "d": "Onderhoud en kosten van meerdere voertuigen beheren"
+    },
+    "Digital Nomad Guide": {
+      "n": "Gids voor digitale nomaden",
+      "d": "Werk op afstand terwijl u de wereld rondreist"
+    },
+    "Eco-Travel Planner": {
+      "n": "Eco-reisplanner",
+      "d": "Plan duurzame en milieuvriendelijke reizen"
+    },
+    "Product Launch Event": {
+      "n": "Productlanceringsevenement",
+      "d": "Plan een productlanceringsevenement van locatie tot PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Virtuele evenementenplanner",
+      "d": "Plan boeiende online evenementen en webinars"
+    },
+    "College Planning Guide": {
+      "n": "Gids voor collegeplanning",
+      "d": "Plan voor de universiteit, van selectie tot financiële steun"
+    },
+    "Child Safety Plan": {
+      "n": "Kinderveiligheidsplan",
+      "d": "Uitgebreide veiligheidsrichtlijnen voor thuis en online"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Gids voor de verzorging van exotische huisdieren",
+      "d": "Verzorgingsgidsen voor reptielen, vogels en exotische huisdieren"
+    },
+    "Pet Adoption Guide": {
+      "n": "Gids voor adoptie van huisdieren",
+      "d": "Navigeer met succes door het adoptieproces van huisdieren"
+    },
+    "Tiny House Builder": {
+      "n": "Bouwer van kleine huizen",
+      "d": "Plan en bouw stap voor stap een klein huis"
+    },
+    "Workshop Setup Guide": {
+      "n": "Handleiding voor werkplaatsopstelling",
+      "d": "Een thuiswerkplaats ontwerpen en uitrusten"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Couponstrategieplanner",
+      "d": "Maximaliseer besparingen met strategische coupons"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Tweedehands winkelgids",
+      "d": "Vind kwaliteitsartikelen in kringloopwinkels en online"
+    },
+    "Theological Study Guide": {
+      "n": "Theologische studiegids",
+      "d": "Diepe duik in theologische concepten en doctrines"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Gids voor interreligieuze dialoog",
+      "d": "Faciliteer respectvolle interreligieuze gesprekken"
+    },
+    "Marathon Training Plan": {
+      "n": "Marathontrainingsplan",
+      "d": "Volledige marathontraining van bank tot 26.2"
+    },
+    "Youth Sports Coach": {
+      "n": "Jeugdsportcoach",
+      "d": "Plan jeugdsportpraktijken en -ontwikkeling"
+    },
+    "Woodworking Project": {
+      "n": "Houtbewerkingsproject",
+      "d": "Plan houtbewerkingsprojecten met zaaglijsten en stappen"
+    },
+    "Vinyl Record Guide": {
+      "n": "Gids voor vinylplaten",
+      "d": "Start en beheer een verzameling vinylplaten"
+    },
+    "Home Brewing Guide": {
+      "n": "Gids voor thuisbrouwen",
+      "d": "Thuis bier of wijn brouwen van begin tot eind"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Routekaart voor financiële vrijheid",
+      "d": "Breng uw pad naar financiële onafhankelijkheid in kaart"
+    },
+    "Midlife Career Change": {
+      "n": "Midlife carrièreverandering",
+      "d": "Navigeer op elke leeftijd door een carrièretransitie"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI Wallpaper-maker",
+      "d": "Genereer prachtige achtergronden voor elk apparaat"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Tattoo-ontwerpprompt",
+      "d": "Creëer aangepaste tattoo-ontwerpconcepten met AI"
+    },
+    "DJ Set Planner": {
+      "n": "DJ-setplanner",
+      "d": "Plan DJ-sets met trackselectie en overgangen"
+    },
+    "Music Theory Tutor": {
+      "n": "Docent muziektheorie",
+      "d": "Leer muziektheorieconcepten met oefeningen"
+    },
+    "Podcast Video Setup": {
+      "n": "Podcastvideo-instellingen",
+      "d": "Zet videopodcasting op, van uitrusting tot bewerken"
+    },
+    "Wedding Video Plan": {
+      "n": "Bruiloft videoplan",
+      "d": "Plan trouwvideografie van ceremonie tot montage"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Memoires Hoofdstuk Schrijver",
+      "d": "Schrijf boeiende memoires uit levensverhalen"
+    },
+    "Haiku Generator": {
+      "n": "Haiku-generator",
+      "d": "Maak haiku-gedichten over elk thema"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok-inhoudsstrategie",
+      "d": "Bouw een TikTok-groeistrategie met contentideeën"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube-communitypost",
+      "d": "Maak boeiende YouTube-communityposts"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Plan voor het genereren van inkomsten met podcasts",
+      "d": "Strategieën om inkomsten te genereren met je podcast"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Vergelijkingsgids voor AI-tools",
+      "d": "Vergelijk AI-tools voor specifieke gebruiksscenario's"
+    },
+    "Code Snippet Library": {
+      "n": "Bibliotheek met codefragmenten",
+      "d": "Organiseer en documenteer herbruikbare codefragmenten"
+    },
+    "Tech Stack Selector": {
+      "n": "Tech Stack-kiezer",
+      "d": "Kies de juiste technologiestapel voor uw project"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Gids voor naleving van de privacy",
+      "d": "Zorg ervoor dat uw app voldoet aan de privacyregelgeving"
+    },
+    "API Security Audit": {
+      "n": "API-beveiligingsaudit",
+      "d": "Controleer uw API-eindpunten op beveiligingsproblemen"
+    },
+    "AI Hackathon Project": {
+      "n": "AI Hackathon-project",
+      "d": "Plan een end-to-end hackathonproject op basis van AI"
+    },
+    "Mobile Game Concept": {
+      "n": "Mobiel spelconcept",
+      "d": "Ontwerp een mobiel spel, van concept tot het genereren van inkomsten"
+    },
+    "Drone Photography Guide": {
+      "n": "Gids voor dronefotografie",
+      "d": "Plan luchtfotografiemissies en opnames"
+    },
+    "NFT Art Collection": {
+      "n": "NFT-kunstcollectie",
+      "d": "Plan en creëer een digitale kunstcollectie"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Belastinggids voor freelancers",
+      "d": "Navigeren door belastingen en inhoudingen voor zelfstandigen"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Crypto-portfoliobouwer",
+      "d": "Bouw een gediversifieerde cryptocurrency-portfolio"
+    },
+    "Azure Service Guide": {
+      "n": "Azure-servicehandleiding",
+      "d": "Selecteer en configureer Azure-cloudservices"
+    },
+    "Wedding Speech Writer": {
+      "n": "Bruiloftstoespraakschrijver",
+      "d": "Schrijf oprechte huwelijkstoespraken en toasts"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Opstartgids voor non-profitorganisaties",
+      "d": "Begin een non-profitorganisatie helemaal opnieuw"
+    },
+    "Home Addition Planner": {
+      "n": "Aanbouwplanner",
+      "d": "Plan een woninguitbreiding van vergunning tot bouw"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino-projectplanner",
+      "d": "Plan Arduino-gebaseerde elektronicaprojecten"
+    },
+    "Digital Wellness Plan": {
+      "n": "Digitaal welzijnsplan",
+      "d": "Creëer een gezonde relatie met technologie"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT-analysetool",
+      "d": "Strategische analyse van sterke en zwakke punten, kansen en bedreigingen"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Vergaderagendabouwer",
+      "d": "Creëer gestructureerde vergaderagenda's met tijdsblokken"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR Framework-bouwer",
+      "d": "Doelstellingen en belangrijkste resultaten voor teams vaststellen"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Voorbereiding leveranciersonderhandelingen",
+      "d": "Voorbereiden op onderhandelingen met leveranciers"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Franchise-evaluatiegids",
+      "d": "Evalueer franchisemogelijkheden systematisch"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Beleidsschrijver voor werken op afstand",
+      "d": "Creëer een uitgebreid beleid voor werken op afstand"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Diversiteitswervingsplan",
+      "d": "Bouw inclusieve wervingspraktijken en -pijplijnen"
+    },
+    "Freelance Contract Template": {
+      "n": "Freelance contractsjabloon",
+      "d": "Maak professionele freelance serviceovereenkomsten"
+    },
+    "Personal Website Planner": {
+      "n": "Persoonlijke websiteplanner",
+      "d": "Plan en structureer uw professionele portfoliosite"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Gids voor intermitterend vasten",
+      "d": "Ontwerp een protocol voor intermitterend vasten"
+    },
+    "Posture Improvement Plan": {
+      "n": "Plan voor houdingsverbetering",
+      "d": "Corrigeer houdingsproblemen met oefeningen en gewoonten"
+    },
+    "Notion Template Builder": {
+      "n": "Notie-sjabloonbouwer",
+      "d": "Design Notion-werkruimtesjablonen voor elke workflow"
+    },
+    "Automation Workflow Builder": {
+      "n": "Automatiseringsworkflowbouwer",
+      "d": "Ontwerp automatiseringsworkflows met Zapier of Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Agile sprintplanner",
+      "d": "Plan agile sprints met storypoints en snelheid"
+    },
+    "Product Roadmap Builder": {
+      "n": "Productroadmapbouwer",
+      "d": "Maak productroadmaps met mijlpalen en thema's"
+    },
+    "TOEFL Prep Guide": {
+      "n": "TOEFL-voorbereidingsgids",
+      "d": "Bereid je voor op het TOEFL-examen met studiestrategieën"
+    },
+    "Business English Coach": {
+      "n": "Zakelijk Engels Coach",
+      "d": "Verbeter de professionele Engelse communicatie"
+    },
+    "Brand Identity Designer": {
+      "n": "Merkidentiteitsontwerper",
+      "d": "Creëer samenhangende richtlijnen voor de visuele identiteit van uw merk"
+    },
+    "UX Research Plan": {
+      "n": "UX-onderzoeksplan",
+      "d": "Plan gebruikerservaringsonderzoek voor digitale producten"
+    },
+    "Data Storytelling Guide": {
+      "n": "Handleiding voor het vertellen van data",
+      "d": "Zet data-inzichten om in boeiende verhalen"
+    },
+    "AI Model Evaluation": {
+      "n": "Evaluatie van AI-modellen",
+      "d": "Evalueer en vergelijk de prestaties van machine learning-modellen"
+    },
+    "3D Printing Project": {
+      "n": "3D-printproject",
+      "d": "Plan 3D-printprojecten van ontwerp tot print"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Ontwerper van elektrische circuits",
+      "d": "Ontwerp elektrische circuits met componentselectie"
+    },
+    "Side Hustle Finder": {
+      "n": "Bijverdienste zoeker",
+      "d": "Ontdek bijverdienste-ideeën op basis van je vaardigheden"
+    },
+    "Passive Income Blueprint": {
+      "n": "Passief inkomen blauwdruk",
+      "d": "Bouw een passief inkomen strategie op maat van jouw situatie"
+    },
+    "Savings Challenge Generator": {
+      "n": "Spaar-challenge generator",
+      "d": "Maak een gepersonaliseerd spaar-challenge plan"
+    },
+    "Negotiate Any Bill": {
+      "n": "Rekening onderhandelaar",
+      "d": "Scripts om te onderhandelen en je terugkerende rekeningen te verlagen"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy winkel starter",
+      "d": "Stap-voor-stap plan om een Etsy winkel te starten en te laten groeien"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube kanaal planner",
+      "d": "Plan en start een winstgevend YouTube kanaal"
+    },
+    "Rental Income Analyzer": {
+      "n": "Huurinkomsten analyzer",
+      "d": "Analyseer potentiële huurvastgoed rendementen"
+    },
+    "Online Course Creator": {
+      "n": "Online cursus maker",
+      "d": "Plan en structureer een online cursus om te verkopen"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Coupon & cashback maximizer",
+      "d": "Maximaliseer besparingen met coupons, cashback en beloningen"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Dropshipping winkel opzet",
+      "d": "Plan een dropshipping bedrijf vanaf nul"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Gig economie optimaliseerder",
+      "d": "Maximaliseer inkomsten uit gig apps zoals Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "onderwerp",
+    "duration": "duur",
+    "level": "niveau",
+    "style": "stijl",
+    "timeline": "tijdlijn",
+    "product": "product",
+    "audience": "doelgroep",
+    "tone": "toon",
+    "industry": "branche",
+    "theme": "thema",
+    "platform": "platform",
+    "location": "locatie",
+    "experience": "ervaring",
+    "genre": "genre",
+    "frequency": "frequentie",
+    "goals": "doelen",
+    "format": "formaat",
+    "season": "seizoen",
+    "projectName": "projectnaam",
+    "showSteps": "stappen tonen",
+    "goal": "doel",
+    "destination": "bestemming",
+    "subject": "onderwerp",
+    "equipment": "uitrusting",
+    "targetAudience": "doelgroep",
+    "language": "taal",
+    "problem": "probleem",
+    "categories": "categorieën",
+    "gradeLevel": "niveau",
+    "mood": "stemming",
+    "role": "rol",
+    "companyName": "bedrijfsnaam",
+    "company": "bedrijf",
+    "title": "titel",
+    "setting": "setting",
+    "date": "datum",
+    "environment": "omgeving",
+    "state": "staat",
+    "jurisdiction": "jurisdictie",
+    "priorities": "prioriteiten",
+    "target_audience": "doelgroep",
+    "deadline": "deadline",
+    "childAge": "leeftijd kind",
+    "guestCount": "aantal gasten",
+    "timeframe": "tijdskader",
+    "interests": "interesses",
+    "concerns": "zorgen",
+    "region": "regio",
+    "tools": "gereedschap",
+    "category": "categorie",
+    "constraints": "beperkingen",
+    "projectType": "projecttype",
+    "venue": "locatie",
+    "focusArea": "focusgebied",
+    "targetLanguage": "doeltaal",
+    "framework": "framework",
+    "domain": "domein",
+    "purpose": "doel",
+    "age": "leeftijd",
+    "teamSize": "teamgrootte",
+    "researchQuestion": "onderzoeksvraag",
+    "context": "context",
+    "output_format": "uitvoerformaat",
+    "task": "taak",
+    "channels": "kanalen",
+    "servings": "porties",
+    "skillLevel": "vaardigheidsniveau",
+    "occasion": "gelegenheid",
+    "climate": "klimaat",
+    "zone": "zone",
+    "activities": "activiteiten",
+    "attendees": "deelnemers",
+    "objectives": "doelstellingen",
+    "characters": "personages",
+    "length": "lengte",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "belanghebbenden",
+    "focus": "focus",
+    "size": "grootte",
+    "homeType": "woningtype",
+    "sport": "sport",
+    "application": "toepassing",
+    "department": "afdeling",
+    "cta": "cta",
+    "word_count": "woordenaantal",
+    "period": "periode",
+    "severity": "ernst",
+    "difficulty": "moeilijkheid",
+    "skills": "vaardigheden",
+    "materials": "materialen",
+    "methodology": "methodologie",
+    "cuisine": "keuken",
+    "lifestyle": "levensstijl",
+    "year": "jaar",
+    "petType": "huisdiertype",
+    "complexity": "complexiteit",
+    "deliverables": "deliverables",
+    "dataType": "datatype",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

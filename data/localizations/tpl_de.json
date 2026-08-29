@@ -1,0 +1,4253 @@
+{
+  "pills": {
+    "all": "Alle",
+    "free": "⭐ Kostenlos",
+    "money": "💰 Business",
+    "coding": "💻 Programmierung",
+    "ai": "🤖 KI",
+    "writing": "✍️ Schreiben",
+    "marketing": "📢 Marketing",
+    "sales": "🤝 Vertrieb",
+    "school": "📚 Bildung",
+    "research": "🔬 Forschung",
+    "career": "🚀 Karriere",
+    "legal": "⚖️ Recht",
+    "finance": "📊 Finanzen",
+    "health": "🏥 Gesundheit",
+    "cooking": "🍳 Kochen",
+    "garden": "🌱 Garten",
+    "realestate": "🏠 Immobilien",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Reisen",
+    "image": "🎨 Bild-KI",
+    "music": "🎵 Musik",
+    "video": "🎬 Video",
+    "social": "📱 Sozial",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-Commerce",
+    "productivity": "⏱ Produktivität",
+    "diy": "🔨 Heimwerken",
+    "event": "🎉 Events",
+    "parent": "👶 Elternschaft",
+    "pets": "🐾 Haustiere",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Wellness",
+    "language": "🌍 Sprachen",
+    "security": "🔒 Sicherheit",
+    "datascience": "📈 Datenwissenschaft",
+    "chemistry": "🧪 Chemie",
+    "biology": "🧬 Biologie",
+    "physics": "⚛️ Physik",
+    "math": "🔢 Mathematik",
+    "makemoney": "💰 Geld"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Zusammenfassungstool",
+      "d": "Fassen Sie alle Inhalte in klare, stichpunktartige Zusammenfassungen zusammen"
+    },
+    "Technical Documentation": {
+      "n": "Technische Dokumentation",
+      "d": "Erstellen Sie klare technische Dokumente für APIs und Funktionen"
+    },
+    "YouTube Script": {
+      "n": "YouTube-Skript",
+      "d": "Vollständiges Videoskript mit Hook, Abschnitten, CTA und B-Roll-Liste"
+    },
+    "TikTok Generator": {
+      "n": "TikTok-Generator",
+      "d": "Für TikTok optimiertes Kurzvideoskript"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Verfasser von LinkedIn-Beiträgen",
+      "d": "Fesselnde LinkedIn-Beiträge, die das Engagement steigern"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Blog-Post-Generator",
+      "d": "SEO-optimierte Blogbeiträge in Langform"
+    },
+    "SEO Article Writer": {
+      "n": "SEO-Artikelautor",
+      "d": "Keyword-reiche Artikel, die für ein Ranking bei Google konzipiert sind"
+    },
+    "Podcast Episode Outline": {
+      "n": "Übersicht über die Podcast-Episode",
+      "d": "Strukturierter Episodenüberblick mit Gesprächsthemen"
+    },
+    "Newsletter Writer": {
+      "n": "Newsletter-Autor",
+      "d": "Fesselnde E-Mail-Newsletter, die die Leser tatsächlich öffnen"
+    },
+    "Product Review Writer": {
+      "n": "Autor von Produktrezensionen",
+      "d": "Ausgewogene, glaubwürdige Produktbewertungen"
+    },
+    "Social Media Calendar": {
+      "n": "Social-Media-Kalender",
+      "d": "30-Tage-Inhaltskalender mit Beitragsideen pro Plattform"
+    },
+    "Executive Summary": {
+      "n": "Zusammenfassung",
+      "d": "Einseitige Zusammenfassung aus langen Dokumenten"
+    },
+    "Customer Support Response": {
+      "n": "Antwort des Kundensupports",
+      "d": "Einfühlsame, markengerechte Antworten des Kundensupports"
+    },
+    "Business Proposal": {
+      "n": "Geschäftsvorschlag",
+      "d": "Gewinnen Sie Kundenvorschläge mit Umfang und Preisgestaltung"
+    },
+    "Decision Memo": {
+      "n": "Entscheidungsnotiz",
+      "d": "Klare Entscheidungsnotizen mit Optionen und Empfehlungen"
+    },
+    "Stakeholder Update": {
+      "n": "Stakeholder-Update",
+      "d": "Präzise Aktualisierungen des Projektstatus für Stakeholder"
+    },
+    "Code Review Assistant": {
+      "n": "Codeüberprüfungsassistent",
+      "d": "Überprüfen Sie den Code auf Fehler, Stil und Best Practices"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Code-Kommentare",
+      "d": "JSDoc-Kommentare für JavaScript und TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Architektur-Entscheidungsprotokoll",
+      "d": "Formelles ADR zur Dokumentation technischer Entscheidungen"
+    },
+    "User Story Writer": {
+      "n": "User-Story-Autor",
+      "d": "Agile User Stories mit Akzeptanzkriterien"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Akzeptanzkriterien",
+      "d": "Akzeptanzkriterien im Gherkin-Stil für User Stories"
+    },
+    "PR Description Writer": {
+      "n": "PR-Beschreibungsautor",
+      "d": "Klare PR-Beschreibungen mit Kontext und Testnotizen"
+    },
+    "Unit Test Generator": {
+      "n": "Unit-Test-Generator",
+      "d": "Unit-Tests mit Randfällen für jede Funktion"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Code-Refactoring-Berater",
+      "d": "Code für Lesbarkeit und Leistung umgestalten"
+    },
+    "SQL Query Builder": {
+      "n": "SQL-Abfrage-Generator",
+      "d": "Natürliche Sprache bis hin zu optimierten SQL-Abfragen"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes-Konfigurationsgenerator",
+      "d": "Diagnostizieren und beheben Sie K8s-Probleme schnell"
+    },
+    "Postmortem Report": {
+      "n": "Obduktionsbericht",
+      "d": "Tadellose Obduktion mit Zeitleiste und Aktionspunkten"
+    },
+    "Release Notes Writer": {
+      "n": "Verfasser von Versionshinweisen",
+      "d": "Benutzerfreundliche Versionshinweise aus Commit-Nachrichten"
+    },
+    "Prompt Optimizer": {
+      "n": "Prompt-Optimierer",
+      "d": "Verbessern Sie jede KI-Eingabeaufforderung für bessere, präzisere Ausgaben"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Gedankenkettenersteller",
+      "d": "Erstellen Sie mehrstufige Argumentationsaufforderungen für komplexe Aufgaben"
+    },
+    "RAG System Prompt": {
+      "n": "RAG-Systemaufforderung",
+      "d": "Eingabeaufforderungsvorlagen für die abruferweiterte Generierung"
+    },
+    "Eval Dataset Creator": {
+      "n": "Evaluierungsdatensatz-Ersteller",
+      "d": "Generieren Sie Bewertungsdatensätze für KI-Modelltests"
+    },
+    "Prompt A/B Tester": {
+      "n": "Prompt A/B-Tester",
+      "d": "Generieren Sie A/B-Varianten von Eingabeaufforderungen, um die Leistung zu vergleichen"
+    },
+    "Multi-Model Comparison": {
+      "n": "Vergleich mehrerer Modelle",
+      "d": "Framework zum Vergleichen der Ergebnisse verschiedener KI-Modelle"
+    },
+    "Resume Tailoring": {
+      "n": "Lebenslauf Schneiderei",
+      "d": "Passen Sie Ihren Lebenslauf an eine bestimmte Stellenbeschreibung an"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Anschreiben-Generator",
+      "d": "Überzeugende Anschreiben, die zu Vorstellungsgesprächen führen"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn-Profiloptimierer",
+      "d": "Optimieren Sie Ihr LinkedIn für Personalvermittler"
+    },
+    "Interview Coach": {
+      "n": "Interview-Coach",
+      "d": "Üben Sie Fragen und Antworten im Vorstellungsgespräch für jede Rolle"
+    },
+    "Salary Negotiation Script": {
+      "n": "Skript zur Gehaltsverhandlung",
+      "d": "Skripte und Strategien zur Aushandlung höherer Löhne"
+    },
+    "Career Roadmap Planner": {
+      "n": "Karriere-Roadmap-Planer",
+      "d": "12-monatiger Karriere-Wachstumsplan mit Meilensteinen"
+    },
+    "Objection Handler": {
+      "n": "Einspruchsbearbeiter",
+      "d": "Skripte zum Umgang mit häufigen Verkaufseinwänden"
+    },
+    "Landing Page Copy": {
+      "n": "Landingpage-Kopie",
+      "d": "Hochkonvertierende Landingpage-Kopie"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads-Kopie",
+      "d": "Kopie einer Google-Suchanzeige mit hoher CTR"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook-/Instagram-Werbung",
+      "d": "Werbetexte für Facebook und Instagram, die konvertieren"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Kurzbeschreibung der Marketingkampagne",
+      "d": "Vollständige Marketingkampagne mit Kanälen und Zeitleiste"
+    },
+    "Customer Persona Builder": {
+      "n": "Kunden-Persona-Builder",
+      "d": "Detaillierte Buyer Personas für Marketing und Produkt"
+    },
+    "Value Proposition Canvas": {
+      "n": "Wertversprechen-Leinwand",
+      "d": "Klare, überzeugende Wertversprechen"
+    },
+    "Product Launch Plan": {
+      "n": "Produkteinführungsplan",
+      "d": "Go-to-Market-Plan für Produkteinführungen"
+    },
+    "Study Guide Creator": {
+      "n": "Studienführer-Ersteller",
+      "d": "Verwandeln Sie jedes Thema in einen strukturierten Studienführer"
+    },
+    "Flashcard Creator": {
+      "n": "Flashcard-Ersteller",
+      "d": "Frage-und-Antwort-Sets mit Karteikarten zum schnellen Auswendiglernen"
+    },
+    "Quiz Generator": {
+      "n": "Quizgenerator",
+      "d": "Multiple-Choice- und Kurzantwort-Quiz"
+    },
+    "Lesson Plan Builder": {
+      "n": "Unterrichtsplanersteller",
+      "d": "Detaillierte Unterrichtspläne mit Aktivitäten und Bewertungen"
+    },
+    "Research Notes Organizer": {
+      "n": "Organizer für Forschungsnotizen",
+      "d": "Organisieren Sie Forschungsnotizen in strukturierten Gliederungen"
+    },
+    "Essay Outline Generator": {
+      "n": "Essay-Gliederungsgenerator",
+      "d": "Strukturierte Aufsatzskizzen mit Thesen und Argumenten"
+    },
+    "Literature Review Assistant": {
+      "n": "Assistent für Literaturrecherche",
+      "d": "Wissenschaftliche Literaturrecherche mit Synthese"
+    },
+    "Thesis Statement Builder": {
+      "n": "Builder für Thesenerklärungen",
+      "d": "Starke, argumentierbare Thesen"
+    },
+    "Exam Prep Planner": {
+      "n": "Prüfungsvorbereitungsplaner",
+      "d": "Personalisierter Prüfungsstudienplan"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Vertragszusammenfassung",
+      "d": "Vertragszusammenfassung in einfacher englischer Sprache. Keine Rechtsberatung."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Vertragsrisikoprüfung",
+      "d": "Identifizieren Sie riskante Klauseln. Keine Rechtsberatung."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA-Analysator",
+      "d": "Aufschlüsselung der NDA-Klausel. Keine Rechtsberatung."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Assistent für Richtlinienentwürfe",
+      "d": "Entwerfen Sie interne Richtlinien. Keine Rechtsberatung."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Compliance-Checkliste",
+      "d": "Compliance-Checkliste nach Framework. Keine Rechtsberatung."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Nutzungsbedingungen-Rezensent",
+      "d": "ToS-Risiken kennzeichnen. Keine Rechtsberatung."
+    },
+    "Budget Planner": {
+      "n": "Budgetplaner",
+      "d": "Persönlicher oder geschäftlicher Budgetplan. Keine Finanzberatung."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Zusammenfassung der Gewinnaufrufe",
+      "d": "Wichtige Erkenntnisse aus Gewinnaufrufen. Keine Finanzberatung."
+    },
+    "Investment Thesis Builder": {
+      "n": "Ersteller von Anlagethesen",
+      "d": "Strukturierte Investmentthese. Keine Finanzberatung."
+    },
+    "Financial Analysis Report": {
+      "n": "Finanzanalysebericht",
+      "d": "Analysieren Sie Finanzdaten. Keine Finanzberatung."
+    },
+    "Expense Categorizer": {
+      "n": "Spesenkategorisierer",
+      "d": "Kategorisieren und analysieren Sie Ausgaben. Keine Finanzberatung."
+    },
+    "SOAP Note Generator": {
+      "n": "SOAP-Notizgenerator",
+      "d": "Klinische SOAP-Notizen. Kein medizinischer Rat."
+    },
+    "Clinical Case Summary": {
+      "n": "Zusammenfassung des klinischen Falles",
+      "d": "Strukturieren Sie klinische Notizen. Kein medizinischer Rat."
+    },
+    "Patient Education Writer": {
+      "n": "Autor für Patientenaufklärung",
+      "d": "Patientenaufklärung in einfacher Sprache. Kein medizinischer Rat."
+    },
+    "Medical Research Summarizer": {
+      "n": "Zusammenfassung der medizinischen Forschung",
+      "d": "Forschungsarbeiten zusammenfassen. Kein medizinischer Rat."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Differentialdiagnose-Assistent",
+      "d": "Differenzialdiagnosen organisieren. Kein medizinischer Rat."
+    },
+    "Creative Storyteller": {
+      "n": "Kreativer Geschichtenerzähler",
+      "d": "Erstellen Sie kreative Geschichten und Erzählungen"
+    },
+    "Ad Copy Generator": {
+      "n": "Anzeigenkopie-Generator",
+      "d": "Hochkonvertierende Kopie für Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Autor von Fehlerberichten",
+      "d": "Schreiben Sie klare, reproduzierbare Fehlerberichte"
+    },
+    "Social Media Caption": {
+      "n": "Bildunterschrift für soziale Medien",
+      "d": "Generieren Sie Bildunterschriften, die das Scrollen stoppen, für jede Plattform"
+    },
+    "Research Paper Abstract": {
+      "n": "Zusammenfassung der Forschungsarbeit",
+      "d": "Schreiben Sie strukturierte wissenschaftliche Abstracts"
+    },
+    "Translation Expert": {
+      "n": "Übersetzungsexperte",
+      "d": "Übersetzen Sie Texte mit Kontext und Nuancen"
+    },
+    "Data Analyst": {
+      "n": "Datenanalyst",
+      "d": "Analysieren Sie Daten und liefern Sie umsetzbare Erkenntnisse"
+    },
+    "Recipe Generator": {
+      "n": "Rezeptgenerator",
+      "d": "Erstellen Sie individuelle Rezepte basierend auf Ihren Vorlieben und Ernährungsbedürfnissen"
+    },
+    "Meal Planner": {
+      "n": "Essensplaner",
+      "d": "Planen Sie ausgewogene Mahlzeiten für die ganze Woche und achten Sie dabei auf Abwechslung und Ernährung"
+    },
+    "Grocery List Builder": {
+      "n": "Einkaufslisten-Ersteller",
+      "d": "Erstellen Sie eine organisierte Einkaufsliste aus Ihren geplanten Mahlzeiten und Ihrem Vorratsbedarf"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Pantry-Rezeptfinder",
+      "d": "Finden Sie köstliche Rezepte mit Zutaten, die Sie bereits zur Hand haben"
+    },
+    "Nutrition Calculator": {
+      "n": "Ernährungsrechner",
+      "d": "Berechnen Sie detaillierte Nährwertinformationen für jedes Rezept oder jede Mahlzeitkombination"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Leitfaden zur Zutatensubstitution",
+      "d": "Finden Sie den perfekten Ersatz für fehlende oder eingeschränkte Zutaten"
+    },
+    "Batch Cooking Planner": {
+      "n": "Batch-Kochplaner",
+      "d": "Planen Sie effiziente Batch-Kochsitzungen, um die ganze Woche über Zeit zu sparen"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Cocktail-Rezept-Ersteller",
+      "d": "Erstellen und passen Sie Cocktailrezepte für jeden Anlass an"
+    },
+    "Baking Conversion Helper": {
+      "n": "Backumwandlungshelfer",
+      "d": "Konvertieren Sie Backmaße zwischen Einheiten und skalieren Sie Rezepte nach oben oder unten"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Diätspezifischer Rezeptfinder",
+      "d": "Finden Sie Rezepte, die auf Ihren spezifischen Diätplan oder Ihre Ernährungsziele zugeschnitten sind"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Slow Cooker-Rezept",
+      "d": "Holen Sie sich perfekt abgestimmte Slow-Cooker-Rezepte für unkompliziertes Kochen"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Rezeptersteller für Heißluftfritteusen",
+      "d": "Kreieren Sie knusprige und köstliche Heißluftfritteuse-Rezepte mit perfektem Timing"
+    },
+    "Smoothie Builder": {
+      "n": "Smoothie-Builder",
+      "d": "Erstellen Sie nahrhafte und köstliche Smoothie-Rezepte für jedes Ziel"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Soßen- und Dressing-Ersteller",
+      "d": "Kreieren Sie selbstgemachte Saucen und Dressings von Grund auf"
+    },
+    "Spice Blend Guide": {
+      "n": "Leitfaden für Gewürzmischungen",
+      "d": "Erstellen Sie individuelle Gewürzmischungen für jede Küche und jedes Gericht"
+    },
+    "Food Pairing Expert": {
+      "n": "Experte für Food-Pairing",
+      "d": "Entdecken Sie ideale Speisen- und Geschmackskombinationen für gehobene Mahlzeiten"
+    },
+    "Holiday Menu Planner": {
+      "n": "Feiertagsmenüplaner",
+      "d": "Planen Sie ein komplettes Feiertagsmenü mit Zeitplan und Einkaufsliste"
+    },
+    "Leftover Makeover": {
+      "n": "Übrig gebliebenes Makeover",
+      "d": "Verwandeln Sie Reste mit kreativen Ideen in aufregende neue Mahlzeiten"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Kinderfreundliche Essensideen",
+      "d": "Kreieren Sie gesunde Mahlzeiten, die Kinder wirklich gerne essen"
+    },
+    "Date Night Dinner": {
+      "n": "Date-Night-Dinner",
+      "d": "Planen Sie ein beeindruckendes Abendessen für einen romantischen Abend zu Hause"
+    },
+    "Budget Meal Planner": {
+      "n": "Budget-Essensplaner",
+      "d": "Kreieren Sie köstliche Mahlzeiten mit einem knappen Budget, ohne auf die Ernährung zu verzichten"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Veganer Rezeptkonverter",
+      "d": "Wandeln Sie jedes traditionelle Rezept in eine köstliche vegane Version um"
+    },
+    "Dessert Creator": {
+      "n": "Dessert-Schöpfer",
+      "d": "Entwerfen Sie individuelle Dessertrezepte für jedes Können und jeden Anlass"
+    },
+    "Appetizer Planner": {
+      "n": "Vorspeisenplaner",
+      "d": "Planen Sie die perfekte Vorspeisenauswahl für Partys und Zusammenkünfte"
+    },
+    "Food Prep Timeline": {
+      "n": "Zeitleiste für die Essenszubereitung",
+      "d": "Erstellen Sie einen detaillierten Garzeitplan, damit alles auf einmal fertig ist"
+    },
+    "Plant Care Guide": {
+      "n": "Leitfaden zur Pflanzenpflege",
+      "d": "Erhalten Sie personalisierte Pflegeanweisungen für jede Pflanze in Ihrer Sammlung"
+    },
+    "Garden Planner": {
+      "n": "Gartenplaner",
+      "d": "Entwerfen und planen Sie Ihr Gartenlayout für maximalen Ertrag und Schönheit"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Werkzeug zur Schädlingsdiagnose",
+      "d": "Identifizieren Sie Gartenschädlinge und -krankheiten mit biologischen Behandlungsmöglichkeiten"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Saisonaler Pflanzkalender",
+      "d": "Wissen Sie genau, wann Sie die einzelnen Pflanzen in Ihrer Anbauzone pflanzen müssen"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Gemüsegartenplaner",
+      "d": "Planen Sie einen produktiven Gemüsegarten mit Begleitbepflanzung und Rotation"
+    },
+    "Indoor Plant Guide": {
+      "n": "Leitfaden für Zimmerpflanzen",
+      "d": "Wählen und pflegen Sie die perfekten Zimmerpflanzen für Ihren Raum"
+    },
+    "Herb Garden Starter": {
+      "n": "Kräutergarten-Starter",
+      "d": "Legen Sie unter fachkundiger Anleitung einen blühenden Kräutergarten drinnen oder draußen an"
+    },
+    "Composting Guide": {
+      "n": "Leitfaden zur Kompostierung",
+      "d": "Starten und pflegen Sie ein Kompostierungssystem für reichhaltige Gartenerde"
+    },
+    "Landscape Design Helper": {
+      "n": "Landschaftsdesign-Helfer",
+      "d": "Entwerfen Sie einen schönen Landschaftsplan für Ihr Grundstück"
+    },
+    "Raised Bed Planner": {
+      "n": "Hochbeetplaner",
+      "d": "Entwerfen und bauen Sie die perfekten Hochbeete für Ihren Raum"
+    },
+    "Fruit Tree Guide": {
+      "n": "Obstbaumführer",
+      "d": "Wählen und pflegen Sie Obstbäume, die zu Ihrem Klima und Ihrem Standort passen"
+    },
+    "Container Garden Planner": {
+      "n": "Container-Gartenplaner",
+      "d": "Erstellen Sie schöne und produktive Containergärten für jeden Raum"
+    },
+    "Pollinator Garden": {
+      "n": "Bestäubergarten",
+      "d": "Gestalten Sie einen Garten, der Bienen, Schmetterlinge und nützliche Insekten anzieht"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Dürretoleranter Garten",
+      "d": "Planen Sie einen wasserorientierten Garten, der mit minimaler Bewässerung gedeiht"
+    },
+    "Soil Amendment Guide": {
+      "n": "Leitfaden zur Bodenverbesserung",
+      "d": "Testen und verbessern Sie Ihren Gartenboden für eine optimale Pflanzengesundheit"
+    },
+    "Seed Starting Calendar": {
+      "n": "Saatstartkalender",
+      "d": "Planen Sie Ihren Saatstartplan für eine erfolgreiche Vegetationsperiode"
+    },
+    "Garden Layout Designer": {
+      "n": "Gartenlayout-Designer",
+      "d": "Erstellen Sie eine optimierte Gartenanlage mit angemessenem Abstand und Zugang zur Sonne"
+    },
+    "Water Schedule Planner": {
+      "n": "Wasserplaner",
+      "d": "Erstellen Sie einen effizienten Bewässerungsplan für Ihren Garten und Rasen"
+    },
+    "Plant Problem Solver": {
+      "n": "Pflanzenproblemlöser",
+      "d": "Diagnostizieren und behandeln Sie häufige Pflanzenprobleme mit fachkundiger Beratung"
+    },
+    "Pruning Guide": {
+      "n": "Schnittanleitung",
+      "d": "Erfahren Sie, wann und wie Sie jede Pflanze für Gesundheit und Schönheit beschneiden müssen"
+    },
+    "Home Buying Checklist": {
+      "n": "Checkliste für den Hauskauf",
+      "d": "Vollständige Schritt-für-Schritt-Checkliste für den Hauskaufprozess"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Wohnungsvergleichstool",
+      "d": "Vergleichen Sie Wohnungen nebeneinander, um Ihre perfekte Mietwohnung zu finden"
+    },
+    "Rental Application Helper": {
+      "n": "Helfer für Mietanträge",
+      "d": "Bereiten Sie einen aussagekräftigen Mietantrag vor, der bei Vermietern auffällt"
+    },
+    "Home Inspection Questions": {
+      "n": "Fragen zur Hausinspektion",
+      "d": "Wichtige Fragen, die Sie bei einer Hausinspektion stellen sollten"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Hypothekenvergleichsrechner",
+      "d": "Vergleichen Sie Hypothekenoptionen, um das beste Angebot für Ihre Situation zu finden"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Leitfaden für Erstkäufer",
+      "d": "Vollständiger Leitfaden für den sicheren Umgang mit Ihrem ersten Hauskauf"
+    },
+    "Neighborhood Research": {
+      "n": "Nachbarschaftsforschung",
+      "d": "Recherchieren und vergleichen Sie Stadtteile, um das Passende für Sie zu finden"
+    },
+    "Home Value Estimator": {
+      "n": "Hauswertschätzer",
+      "d": "Schätzen Sie den Wert Ihres Hauses anhand vergleichbarer Verkaufs- und Marktdaten"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Gutachter für Mietverträge",
+      "d": "Überprüfen und verstehen Sie die wichtigsten Bedingungen in Ihrem Mietvertrag"
+    },
+    "Moving Checklist": {
+      "n": "Checkliste für den Umzug",
+      "d": "Umfassende Umzugscheckliste mit Zeitleiste und Aufgabenverwaltung"
+    },
+    "Property Investment Analyzer": {
+      "n": "Immobilieninvestitionsanalysator",
+      "d": "Analysieren Sie Mietobjekte auf ihr Renditepotenzial"
+    },
+    "Renovation Budget Planner": {
+      "n": "Renovierungsbudgetplaner",
+      "d": "Planen und budgetieren Sie Hausrenovierungsprojekte mit detaillierten Kostenschätzungen"
+    },
+    "House Hunting Scorecard": {
+      "n": "Scorecard für die Wohnungssuche",
+      "d": "Bewerten und bewerten Sie Häuser während Ihrer Wohnungssuche"
+    },
+    "Down Payment Calculator": {
+      "n": "Anzahlungsrechner",
+      "d": "Berechnen Sie Anzahlungsmöglichkeiten und Sparpläne für Ihren Hauskauf"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Hauswartungsplan",
+      "d": "Erstellen Sie einen saisonalen Wartungsplan für Ihr Zuhause, um Ihre Investition zu schützen"
+    },
+    "Rental Property Analysis": {
+      "n": "Analyse von Mietobjekten",
+      "d": "Bewerten Sie Mietobjektmöglichkeiten anhand von Finanzprognosen"
+    },
+    "Home Staging Tips": {
+      "n": "Home-Staging-Tipps",
+      "d": "Präsentieren Sie Ihr Haus, um es schneller und zu einem höheren Preis zu verkaufen"
+    },
+    "Realtor Interview Questions": {
+      "n": "Fragen zum Maklerinterview",
+      "d": "Wichtige Fragen, die Sie bei Vorstellungsgesprächen mit Immobilienmaklern stellen sollten"
+    },
+    "Closing Cost Estimator": {
+      "n": "Kostenkalkulator für den Abschluss",
+      "d": "Schätzen Sie alle Abschlusskosten für Ihre Immobilientransaktion"
+    },
+    "HOA Assessment Guide": {
+      "n": "HOA-Bewertungsleitfaden",
+      "d": "Bewerten Sie vor dem Kauf die HOA-Gebühren, Regeln und die finanzielle Lage"
+    },
+    "Car Buying Assistant": {
+      "n": "Autokaufassistent",
+      "d": "Navigieren Sie mit Zuversicht durch den Autokaufprozess und sparen Sie Geld"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Fahrzeugvergleichstool",
+      "d": "Vergleichen Sie Fahrzeuge hinsichtlich Spezifikationen, Preis und Ausstattung"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Wartungsplaner",
+      "d": "Erstellen Sie einen personalisierten Fahrzeugwartungsplan, um die Lebensdauer des Fahrzeugs zu verlängern"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Reparaturschätzungsanalysator",
+      "d": "Werten Sie Kostenvoranschläge für Autoreparaturen aus und finden Sie faire Preise für Dienstleistungen"
+    },
+    "Road Trip Planner": {
+      "n": "Roadtrip-Planer",
+      "d": "Planen Sie den perfekten Roadtrip mit berechneten Stopps, Kraftstoffverbrauch und Zeitplan"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Checkliste für die Gebrauchtwageninspektion",
+      "d": "Gründliche Checkliste für den sicheren Kauf eines Gebrauchtwagens"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Kfz-Versicherungsvergleich",
+      "d": "Vergleichen Sie die Autoversicherungsoptionen, um den besten Versicherungsschutz und Preis zu finden"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Kraftstoffverbrauchsrechner",
+      "d": "Berechnen und optimieren Sie die Kraftstoffkosten und die Effizienz Ihres Fahrzeugs"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Autoleasing vs. Kaufanalysator",
+      "d": "Vergleichen Sie Leasing mit Kauf, um die beste Finanzierungsoption zu finden"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Schätzer für den Inzahlungnahmewert",
+      "d": "Schätzen Sie den Inzahlungnahmewert Ihres Fahrzeugs und verhandeln Sie einen fairen Deal"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Prüfer der Fahrzeuggeschichte",
+      "d": "Wichtige Fragen und Prüfungen bei der Durchsicht eines Gebrauchtwagen-Historienberichts"
+    },
+    "Car Detailing Guide": {
+      "n": "Leitfaden zur Fahrzeugaufbereitung",
+      "d": "Schritt-für-Schritt-Anleitung zur Fahrzeugaufbereitung für ein Showroom-Finish"
+    },
+    "Winter Car Prep": {
+      "n": "Autovorbereitung für den Winter",
+      "d": "Bereiten Sie Ihr Fahrzeug auf winterliche Fahrbedingungen und kaltes Wetter vor"
+    },
+    "New Driver Guide": {
+      "n": "Neuer Treiberführer",
+      "d": "Wichtige Fahrtipps und Wissen für neue und lernende Fahrer"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Leitfaden für Elektrofahrzeuge",
+      "d": "Alles, was Sie über den Kauf und Besitz eines Elektrofahrzeugs wissen müssen"
+    },
+    "Trip Planner": {
+      "n": "Reiseplaner",
+      "d": "Planen Sie Ihre perfekte Reise mit Reisezielen, Aktivitäten und Logistik"
+    },
+    "Packing List Generator": {
+      "n": "Packlistengenerator",
+      "d": "Erstellen Sie eine individuelle Packliste für jede Reise und jedes Reiseziel"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Urlaubsplaner",
+      "d": "Erstellen Sie einen täglichen Urlaubsplan mit Aktivitäten und Restaurants"
+    },
+    "Travel Budget Calculator": {
+      "n": "Reisebudgetrechner",
+      "d": "Berechnen und verfolgen Sie Ihr Reisebudget mit detaillierten Ausgabenkategorien"
+    },
+    "Local Attractions Guide": {
+      "n": "Leitfaden zu lokalen Sehenswürdigkeiten",
+      "d": "Entdecken Sie die besten lokalen Attraktionen, versteckten Schätze und Orte, die man gesehen haben muss"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Reiseversicherungsvergleich",
+      "d": "Vergleichen Sie Reiseversicherungsoptionen für den richtigen Schutz für Ihre Reise"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Flight Deal Finder-Strategie",
+      "d": "Strategien und Tipps, um die besten Flugangebote und Preise zu finden"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Hotelvergleichs-Helfer",
+      "d": "Vergleichen Sie Hotels nach Preis, Ausstattung, Lage und Bewertungen"
+    },
+    "Solo Travel Planner": {
+      "n": "Solo-Reiseplaner",
+      "d": "Planen Sie ein sicheres und erfüllendes Solo-Reiseabenteuer überall auf der Welt"
+    },
+    "Family Vacation Planner": {
+      "n": "Familienurlaubsplaner",
+      "d": "Planen Sie einen familienfreundlichen Urlaub, der Jung und Alt unterhält"
+    },
+    "Backpacking Planner": {
+      "n": "Rucksackplaner",
+      "d": "Planen Sie ein preisgünstiges Rucksackabenteuer mit Routen und Ausrüstung"
+    },
+    "Business Travel Organizer": {
+      "n": "Geschäftsreiseveranstalter",
+      "d": "Organisieren Sie Geschäftsreisen effizient mit Kostenverfolgung und -planung"
+    },
+    "Cruise Planner": {
+      "n": "Kreuzfahrtplaner",
+      "d": "Planen Sie den perfekten Kreuzfahrturlaub mit Hafenausflügen und Aktivitäten an Bord"
+    },
+    "Travel Safety Guide": {
+      "n": "Reisesicherheitsleitfaden",
+      "d": "Bleiben Sie auf Reisen sicher mit zielspezifischen Sicherheitstipps und -protokollen"
+    },
+    "Visa Requirements Checker": {
+      "n": "Visa-Anforderungsprüfer",
+      "d": "Überprüfen Sie die Visumsanforderungen und bereiten Sie die Antragsunterlagen für Ihre Reise vor"
+    },
+    "Language Survival Kit": {
+      "n": "Sprachüberlebenskit",
+      "d": "Lernen Sie wichtige Redewendungen und kulturelle Tipps für Ihr Reiseziel"
+    },
+    "Airport Navigation Guide": {
+      "n": "Flughafennavigationsführer",
+      "d": "Navigieren Sie effizient durch Flughäfen mit Terminaltipps und Zeitmanagement"
+    },
+    "Travel Photo Plan": {
+      "n": "Reisefotoplan",
+      "d": "Planen Sie Ihre Reisefotografie mit den besten Orten, Zeiten und Techniken"
+    },
+    "Group Trip Coordinator": {
+      "n": "Koordinator für Gruppenreisen",
+      "d": "Koordinieren Sie die Logistik, Budgets und Aktivitäten der Gruppenreise für alle"
+    },
+    "Adventure Travel Planner": {
+      "n": "Abenteuerreiseplaner",
+      "d": "Planen Sie adrenalingeladene Abenteuerreisen mit Sicherheit und Logistik"
+    },
+    "Wedding Planner": {
+      "n": "Hochzeitsplaner",
+      "d": "Planen Sie jedes Detail Ihrer perfekten Hochzeit, vom Veranstaltungsort bis zum Eheversprechen"
+    },
+    "Birthday Party Planner": {
+      "n": "Geburtstagsparty-Planer",
+      "d": "Planen Sie eine unvergessliche Geburtstagsfeier für jedes Alter und jeden Stil"
+    },
+    "Conference Organizer": {
+      "n": "Konferenzorganisator",
+      "d": "Organisieren Sie professionelle Konferenzen und Seminare mit detaillierter Logistik"
+    },
+    "Baby Shower Planner": {
+      "n": "Babyparty-Planer",
+      "d": "Planen Sie eine wunderschöne Babyparty mit Spielen, Essen und Dekorationen"
+    },
+    "Anniversary Celebration": {
+      "n": "Jubiläumsfeier",
+      "d": "Planen Sie für jedes Meilensteinjahr eine bedeutungsvolle Jubiläumsfeier"
+    },
+    "Graduation Party": {
+      "n": "Abschlussfeier",
+      "d": "Feiern Sie akademische Erfolge mit einer perfekt geplanten Abschlussfeier"
+    },
+    "Holiday Party Planner": {
+      "n": "Urlaubsparty-Planer",
+      "d": "Planen Sie festliche Feiertagstreffen mit Essen, Aktivitäten und Dekorationen"
+    },
+    "Corporate Event Planner": {
+      "n": "Firmenveranstaltungsplaner",
+      "d": "Planen Sie professionelle Firmenevents, die Kunden und Mitarbeiter beeindrucken"
+    },
+    "Fundraiser Organizer": {
+      "n": "Organisator der Spendenaktion",
+      "d": "Organisieren Sie erfolgreiche Spendenaktionen für Wohltätigkeitsorganisationen und andere Zwecke"
+    },
+    "Reunion Planner": {
+      "n": "Wiedersehensplaner",
+      "d": "Planen Sie ein unvergessliches Familien- oder Klassentreffen, das alle zusammenbringt"
+    },
+    "Engagement Party Planner": {
+      "n": "Verlobungsfeier-Planer",
+      "d": "Planen Sie eine freudige Verlobungsfeier, um die frohe Botschaft zu überbringen"
+    },
+    "Retirement Party": {
+      "n": "Ruhestandsparty",
+      "d": "Feiern Sie eine erfolgreiche Karriere mit einer durchdachten Ruhestandsfeier"
+    },
+    "Housewarming Planner": {
+      "n": "Einweihungsplaner",
+      "d": "Planen Sie eine einladende Einweihungsparty für Ihr neues Zuhause"
+    },
+    "Themed Party Creator": {
+      "n": "Motto-Party-Ersteller",
+      "d": "Gestalten und planen Sie kreative Mottopartys mit abgestimmten Details"
+    },
+    "Event Budget Tracker": {
+      "n": "Event-Budget-Tracker",
+      "d": "Verfolgen und verwalten Sie die Veranstaltungskosten, um innerhalb Ihres Feierbudgets zu bleiben"
+    },
+    "Chore Chart Creator": {
+      "n": "Ersteller von Aufgabendiagrammen",
+      "d": "Erstellen Sie altersgerechte Aufgabendiagramme mit Belohnungen und Nachverfolgung"
+    },
+    "Educational Activity Planner": {
+      "n": "Planer für pädagogische Aktivitäten",
+      "d": "Planen Sie unterhaltsame Bildungsaktivitäten, die das Lernen für Kinder spannend machen"
+    },
+    "Bedtime Story Writer": {
+      "n": "Gute-Nacht-Geschichten-Autor",
+      "d": "Erstellen Sie personalisierte Gute-Nacht-Geschichten mit Ihrem Kind"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Altersgerechter Meilenstein-Tracker",
+      "d": "Verfolgen Sie Entwicklungsmeilensteine und feiern Sie die Entwicklung Ihres Kindes"
+    },
+    "School Lunch Planner": {
+      "n": "Schulspeisungsplaner",
+      "d": "Planen Sie gesunde und ansprechende Schulessen, die die Kinder tatsächlich essen"
+    },
+    "Homework Help Guide": {
+      "n": "Leitfaden zur Hausaufgabenhilfe",
+      "d": "Strategien, um Ihr Kind bei den Hausaufgaben zu unterstützen, ohne es für es zu tun"
+    },
+    "Family Game Night Ideas": {
+      "n": "Ideen für einen Familienspielabend",
+      "d": "Planen Sie spannende Familienspielabende mit Aktivitäten für alle Altersgruppen"
+    },
+    "Screen Time Schedule": {
+      "n": "Bildschirmzeitplan",
+      "d": "Erstellen Sie ausgewogene Regeln und Zeitpläne für die Bildschirmzeit für Ihre Familie"
+    },
+    "Allowance System Designer": {
+      "n": "Vergütungssystem-Designer",
+      "d": "Entwerfen Sie ein altersgerechtes Zulagen- und Geldverwaltungssystem"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Schlafplan für Babys",
+      "d": "Erstellen Sie gesunde Schlafpläne und -routinen für Babys und Kleinkinder"
+    },
+    "Potty Training Guide": {
+      "n": "Leitfaden zum Töpfchentraining",
+      "d": "Schritt-für-Schritt-Pläne für das Töpfchentraining mit Tipps für jede Phase"
+    },
+    "Back to School Prep": {
+      "n": "Zurück zur Schulvorbereitung",
+      "d": "Bereiten Sie Ihre Familie auf einen reibungslosen Übergang zurück in die Schule vor"
+    },
+    "Summer Activity Planner": {
+      "n": "Sommer-Aktivitätsplaner",
+      "d": "Planen Sie einen unterhaltsamen und bereichernden Sommer mit Aktivitäten, Camps und Abenteuern"
+    },
+    "Family Meeting Agenda": {
+      "n": "Tagesordnung für Familientreffen",
+      "d": "Führen Sie produktive Familientreffen durch, bei denen jeder eine Stimme hat"
+    },
+    "Child Development Tracker": {
+      "n": "Kinderentwicklungs-Tracker",
+      "d": "Überwachen und unterstützen Sie die körperliche, soziale und kognitive Entwicklung Ihres Kindes"
+    },
+    "Dog Training Plan": {
+      "n": "Hundetrainingsplan",
+      "d": "Erstellen Sie einen maßgeschneiderten Trainingsplan für Ihren Hund, unabhängig von Alter und Fähigkeitsniveau"
+    },
+    "Cat Care Guide": {
+      "n": "Leitfaden zur Katzenpflege",
+      "d": "Vollständiger Pflegeratgeber, damit Ihre Katze gesund und glücklich bleibt"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Ernährungsplaner für Haustiere",
+      "d": "Planen Sie die optimale Ernährung für Ihr Haustier basierend auf Alter, Rasse und Gesundheitsbedürfnissen"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Checkliste für die Sozialisierung von Welpen",
+      "d": "Stellen Sie sicher, dass Ihr Welpe während des kritischen Entwicklungsfensters richtig sozialisiert ist"
+    },
+    "Pet First Aid Guide": {
+      "n": "Erste-Hilfe-Leitfaden für Haustiere",
+      "d": "Grundlegende Erste-Hilfe-Kenntnisse und Notfallmaßnahmen für Tierhalter"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Aquarium-Einrichtungsplaner",
+      "d": "Planen und richten Sie ein blühendes Aquarium mit den richtigen Fischen und der richtigen Ausrüstung ein"
+    },
+    "Pet Travel Preparation": {
+      "n": "Reisevorbereitung für Haustiere",
+      "d": "Bereiten Sie alles vor, was Sie für eine sichere und stressfreie Reise mit Ihrem Haustier benötigen"
+    },
+    "New Pet Checklist": {
+      "n": "Checkliste für neue Haustiere",
+      "d": "Alles, was Sie vorbereiten müssen, bevor Sie ein neues Haustier nach Hause bringen"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Verhaltensanalysator für Haustiere",
+      "d": "Verstehen und beheben Sie die Verhaltensprobleme Ihres Haustiers unter fachkundiger Anleitung"
+    },
+    "Senior Pet Care": {
+      "n": "Senioren-Haustierbetreuung",
+      "d": "Spezieller Pflegeratgeber für alternde Haustiere, damit sie sich wohlfühlen und gesund bleiben"
+    },
+    "Pet Exercise Planner": {
+      "n": "Trainingsplaner für Haustiere",
+      "d": "Erstellen Sie ein Trainingsprogramm, das Ihr Haustier fit und geistig stimuliert hält"
+    },
+    "Vet Visit Preparation": {
+      "n": "Vorbereitung auf den Tierarztbesuch",
+      "d": "Bereiten Sie sich mit organisierten Gesundheitsinformationen und Fragen auf Tierarztbesuche vor"
+    },
+    "Home Improvement Planner": {
+      "n": "Heimwerkerplaner",
+      "d": "Planen und priorisieren Sie Heimwerkerprojekte mit Budgets und Zeitplänen"
+    },
+    "Furniture Project Planner": {
+      "n": "Möbelprojektplaner",
+      "d": "Planen Sie individuelle Möbelkonstruktionen mit Materialien, Werkzeugen und Schritt-für-Schritt-Anleitungen"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Umbau-Budgetrechner",
+      "d": "Berechnen Sie die detaillierten Umbaukosten anhand von Arbeitsaufwand, Material und Eventualverbindlichkeiten"
+    },
+    "Paint Color Coordinator": {
+      "n": "Farbkoordinator",
+      "d": "Wählen und koordinieren Sie die Farben für eine zusammenhängende Farbpalette für Ihr Zuhause"
+    },
+    "Organization System Designer": {
+      "n": "Organisationssystemdesigner",
+      "d": "Entwerfen Sie individuelle Organisationssysteme für jeden Raum in Ihrem Zuhause"
+    },
+    "Storage Solutions Planner": {
+      "n": "Planer für Speicherlösungen",
+      "d": "Finden Sie kreative Aufbewahrungslösungen, um den Platz in jedem Raum zu maximieren"
+    },
+    "Home Repair Guide": {
+      "n": "Reparaturanleitung für zu Hause",
+      "d": "Schritt-für-Schritt-Anleitung für häufige Reparaturen zu Hause, die Sie selbst durchführen können"
+    },
+    "Tool Buying Guide": {
+      "n": "Leitfaden zum Werkzeugkauf",
+      "d": "Wählen Sie die richtigen Werkzeuge für Ihre DIY-Projekte, ohne zu viel auszugeben"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Saisonale Hauswartung",
+      "d": "Füllen Sie saisonale Wartungschecklisten aus, um Ihr Zuhause das ganze Jahr über zu schützen"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Energieeffizienz-Audit",
+      "d": "Bewerten und verbessern Sie die Energieeffizienz Ihres Hauses, um Stromrechnungen zu sparen"
+    },
+    "Smart Home Setup": {
+      "n": "Smart Home-Setup",
+      "d": "Planen und richten Sie ein Smart-Home-System mit den richtigen Geräten und Integrationen ein"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Badezimmer-Renovierungsplaner",
+      "d": "Planen Sie einen Badezimmerumbau mit Layout, Ausstattung und Budgetverwaltung"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Küchenumbauplaner",
+      "d": "Planen Sie einen Küchenumbau vom Layout bis zu den Geräten mit detaillierter Budgetierung"
+    },
+    "Closet Organization": {
+      "n": "Schrankorganisation",
+      "d": "Entwerfen und organisieren Sie Schränke für maximale Effizienz und einfachen Zugriff"
+    },
+    "Garage Organization": {
+      "n": "Garagenorganisation",
+      "d": "Verwandeln Sie Ihre Garage in einen organisierten und funktionalen Raum"
+    },
+    "Product Comparison Tool": {
+      "n": "Produktvergleichstool",
+      "d": "Vergleichen Sie Produkte nebeneinander, um die beste Kaufentscheidung zu treffen"
+    },
+    "Buying Guide Creator": {
+      "n": "Einkaufsführer-Ersteller",
+      "d": "Erstellen Sie detaillierte Einkaufsführer für jede Produktkategorie"
+    },
+    "Gift Finder": {
+      "n": "Geschenkfinder",
+      "d": "Finden Sie das perfekte Geschenk für jeden, basierend auf seinen Interessen und Ihrem Budget"
+    },
+    "Price Tracker Strategy": {
+      "n": "Price-Tracker-Strategie",
+      "d": "Strategien zur Preisverfolgung und zum Kauf zum besten Zeitpunkt"
+    },
+    "Black Friday Strategy": {
+      "n": "Black-Friday-Strategie",
+      "d": "Planen Sie Ihren Black Friday- und Cyber Monday-Einkauf für maximale Einsparungen"
+    },
+    "Back to School Shopping": {
+      "n": "Zurück zum Schuleinkauf",
+      "d": "Organisieren Sie Einkäufe zum Schulanfang mit Listen, Budgets und Angeboten"
+    },
+    "Wardrobe Planner": {
+      "n": "Garderobenplaner",
+      "d": "Bauen Sie mit strategischer Einkaufs- und Outfitplanung eine vielseitige Garderobe auf"
+    },
+    "Electronics Buying Guide": {
+      "n": "Kaufratgeber für Elektronikgeräte",
+      "d": "Navigieren Sie beim Einkauf von Elektronikartikeln mit technischen Datenvergleichen und Ratschlägen zum Timing"
+    },
+    "Subscription Service Comparison": {
+      "n": "Vergleich der Abonnementdienste",
+      "d": "Vergleichen Sie Abonnementdienste, um das beste Preis-Leistungs-Verhältnis für Ihre Bedürfnisse zu finden"
+    },
+    "Wedding Registry Planner": {
+      "n": "Hochzeitsregisterplaner",
+      "d": "Erstellen Sie eine umfassende Hochzeitsliste mit Artikeln für jedes Budget"
+    },
+    "Bible Study Guide": {
+      "n": "Leitfaden zum Bibelstudium",
+      "d": "Erstellen Sie strukturierte Bibelstudienpläne mit Kontext, Fragen und Anwendung"
+    },
+    "Sermon Outline Creator": {
+      "n": "Predigtgliederungsersteller",
+      "d": "Entwickeln Sie überzeugende Predigtskizzen mit Bibeltexten, Punkten und Illustrationen"
+    },
+    "Comparative Religion Study": {
+      "n": "Vergleichende Religionswissenschaft",
+      "d": "Entdecken und vergleichen Sie Überzeugungen, Praktiken und Geschichte verschiedener Weltreligionen"
+    },
+    "Discussion Question Generator": {
+      "n": "Diskussionsfragengenerator",
+      "d": "Generieren Sie nachdenkliche Diskussionsfragen zu religiösen und philosophischen Themen"
+    },
+    "Devotional Writer": {
+      "n": "Andachtsschriftsteller",
+      "d": "Erstellen Sie tägliche Andachten mit Bibelstellen, Reflexionen und Gebetsanregungen"
+    },
+    "Prayer Journal Guide": {
+      "n": "Leitfaden zum Gebetstagebuch",
+      "d": "Strukturieren Sie Ihr Gebetsleben mit geführten Tagebuchaufforderungen und -rahmen"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Leitfaden für spirituelle Buchclubs",
+      "d": "Erstellen Sie Diskussionsleitfäden für Buchclubs für spirituelle und religiöse Bücher"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Leitfaden zur Meditationsschrift",
+      "d": "Erstellen Sie geführte Meditationserlebnisse, die sich auf Schriftstellen konzentrieren"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Unterrichtsplan für Jugendgruppen",
+      "d": "Gestalten Sie spannende Jugendgruppenstunden mit Aktivitäten und Diskussionen"
+    },
+    "Faith Journey Reflector": {
+      "n": "Reflektor für die Glaubensreise",
+      "d": "Geführte Reflexionen zur Erkundung und Vertiefung Ihrer persönlichen Glaubensreise"
+    },
+    "Workout Plan Creator": {
+      "n": "Trainingsplan-Ersteller",
+      "d": "Erstellen Sie personalisierte Trainingspläne basierend auf Ihren Zielen und Ihrem Fitnessniveau"
+    },
+    "Training Schedule Builder": {
+      "n": "Schulungsplanersteller",
+      "d": "Erstellen Sie einen strukturierten Trainingsplan für jede Sportart oder jedes Fitnessziel"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Spielstrategie-Analysator",
+      "d": "Analysieren Sie Spielstrategien und entwickeln Sie erfolgreiche Ansätze für Ihren Sport"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Leitfaden zur Sporternährung",
+      "d": "Optimieren Sie Ihre Sporternährung für Höchstleistungen und Erholung"
+    },
+    "Coaching Practice Plan": {
+      "n": "Coaching-Praxisplan",
+      "d": "Entwerfen Sie effektive Übungseinheiten, die Fähigkeiten und Teamzusammenhalt entwickeln"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Fantasy-Sportanalysator",
+      "d": "Analysieren Sie Matchups und optimieren Sie jede Woche Ihre Fantasy-Sportaufstellung"
+    },
+    "Race Training Plan": {
+      "n": "Renntrainingsplan",
+      "d": "Trainieren Sie mit strukturierten, progressiven Plänen für Rennen vom 5-km-Lauf bis zum Marathon"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Sportstatistik-Analysator",
+      "d": "Analysieren Sie Spieler- und Teamstatistiken für ein tieferes Verständnis des Sports"
+    },
+    "Team Management Tool": {
+      "n": "Teammanagement-Tool",
+      "d": "Verwalten Sie Teamlisten, Zeitpläne und Kommunikation effizient"
+    },
+    "Injury Recovery Planner": {
+      "n": "Planer zur Wiederherstellung von Verletzungen",
+      "d": "Planen Sie eine sichere und effektive Genesung nach häufigen Sportverletzungen"
+    },
+    "Photography Guide": {
+      "n": "Fotoführer",
+      "d": "Verbessern Sie Ihre fotografischen Fähigkeiten mit Tipps zu Komposition, Beleuchtung und Ausrüstung"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Strickmuster-Helfer",
+      "d": "Finden und passen Sie Strickmuster an Ihr Können und Ihre Projektideen an"
+    },
+    "Board Game Night Planner": {
+      "n": "Planer für Brettspielabende",
+      "d": "Planen Sie perfekte Brettspielabende mit Spieleauswahl und Gruppenzuordnung"
+    },
+    "Fishing Trip Planner": {
+      "n": "Angelausflugsplaner",
+      "d": "Planen Sie erfolgreiche Angelausflüge mit Ratschlägen zu Standort, Ausrüstung und Technik"
+    },
+    "Camping Trip Organizer": {
+      "n": "Organisator von Campingausflügen",
+      "d": "Organisieren Sie Campingausflüge mit Ausrüstungslisten, Speiseplänen und Aktivitätsideen"
+    },
+    "Bird Watching Guide": {
+      "n": "Vogelbeobachtungsführer",
+      "d": "Identifizieren Sie einheimische Vögel und planen Sie Vogelbeobachtungsausflüge mit saisonalen Tipps"
+    },
+    "Model Building Planner": {
+      "n": "Modellbauplaner",
+      "d": "Modellbauprojekte mit Materialien und Techniken planen und durchführen"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Leitfaden zur Puzzle-Strategie",
+      "d": "Strategien und Techniken, um Rätsel schneller und effizienter zu lösen"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Astronomie-Beobachtungsplaner",
+      "d": "Planen Sie Sternbeobachtungssitzungen mit Himmelsereignissen und Ausrüstungsempfehlungen"
+    },
+    "Art Supply Guide": {
+      "n": "Leitfaden für Kunstbedarf",
+      "d": "Wählen Sie die richtigen Künstlermaterialien für Ihr Medium und Können"
+    },
+    "Goal Setting Framework": {
+      "n": "Zielsetzungsrahmen",
+      "d": "Setzen und erreichen Sie sinnvolle Ziele mit einem strukturierten Rahmen und Aktionsplan"
+    },
+    "Bucket List Creator": {
+      "n": "Bucket-List-Ersteller",
+      "d": "Erstellen Sie eine inspirierende Bucket List, geordnet nach Kategorie und Priorität"
+    },
+    "Personal Mission Statement": {
+      "n": "Persönliches Leitbild",
+      "d": "Erstellen Sie ein aussagekräftiges persönliches Leitbild, das Ihre Lebensentscheidungen leitet"
+    },
+    "Life Transition Guide": {
+      "n": "Leitfaden zum Lebensübergang",
+      "d": "Bewältigen Sie wichtige Lebensübergänge mit Planungs-, Unterstützungs- und Bewältigungsstrategien"
+    },
+    "Habit Building Plan": {
+      "n": "Gewohnheitsbildungsplan",
+      "d": "Bauen Sie mit bewährten, wissenschaftlich fundierten Strategien dauerhaft positive Gewohnheiten auf"
+    },
+    "Time Audit Tool": {
+      "n": "Zeitaudit-Tool",
+      "d": "Überprüfen Sie, wie Sie Ihre Zeit verbringen, und optimieren Sie sie für das, was am wichtigsten ist"
+    },
+    "Relationship Goal Planner": {
+      "n": "Beziehungszielplaner",
+      "d": "Setzen Sie sich Ziele für stärkere und gesündere Beziehungen und arbeiten Sie darauf hin"
+    },
+    "Vision Board Creator": {
+      "n": "Vision Board-Ersteller",
+      "d": "Erstellen Sie ein digitales Vision Board mit geführten Eingabeaufforderungen und Visualisierungsübungen"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Persönliche SWOT-Analyse",
+      "d": "Führen Sie eine persönliche SWOT-Analyse zur Karriere- und Lebensplanung durch"
+    },
+    "Legacy Letter Writer": {
+      "n": "Legacy-Briefschreiber",
+      "d": "Schreiben Sie aussagekräftige Briefe an Ihre Lieben, in denen Sie Ihre Werte und Ihre Weisheit zum Ausdruck bringen"
+    },
+    "Contract Draft Creator": {
+      "n": "Vertragsentwurfsersteller",
+      "d": "Erstellen Sie professionelle Vertragsentwürfe für jede Geschäftsbeziehung"
+    },
+    "NDA Generator": {
+      "n": "NDA-Generator",
+      "d": "Erstellen Sie auf Ihre Situation zugeschnittene Geheimhaltungsvereinbarungen"
+    },
+    "Rental Agreement Draft": {
+      "n": "Mietvertragsentwurf",
+      "d": "Entwerfen Sie Wohn- oder Gewerbemietverträge"
+    },
+    "Terms of Service Generator": {
+      "n": "Nutzungsbedingungen-Generator",
+      "d": "Erstellen Sie umfassende Nutzungsbedingungen für Websites und Apps"
+    },
+    "Privacy Policy Writer": {
+      "n": "Verfasser von Datenschutzrichtlinien",
+      "d": "Generieren Sie DSGVO- und CCPA-konforme Datenschutzrichtlinien"
+    },
+    "Freelance Agreement": {
+      "n": "Freiberuflervertrag",
+      "d": "Erstellen Sie Vereinbarungen zwischen Freiberuflern und Kunden"
+    },
+    "Non-Compete Draft": {
+      "n": "Wettbewerbsverbotsentwurf",
+      "d": "Entwerfen Sie Wettbewerbsverbote und eigenständige Vereinbarungen"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC-Betriebsvereinbarung",
+      "d": "Erstellen Sie Betriebsvereinbarungen für Gesellschaften mit beschränkter Haftung"
+    },
+    "Partnership Agreement": {
+      "n": "Partnerschaftsvereinbarung",
+      "d": "Entwerfen Sie Partnerschaftsvereinbarungen mit klaren Rollen und Bedingungen"
+    },
+    "Intellectual Property Brief": {
+      "n": "Kurzbeschreibung zum Thema geistiges Eigentum",
+      "d": "Skizzieren Sie IP-Eigentums- und Schutzstrategien"
+    },
+    "Cease and Desist Draft": {
+      "n": "Unterlassungsantrag",
+      "d": "Erstellen Sie Unterlassungserklärungen für verschiedene Verstöße"
+    },
+    "Employee Handbook Section": {
+      "n": "Abschnitt „Mitarbeiterhandbuch“.",
+      "d": "Schreiben Sie einzelne Abschnitte für Mitarbeiterhandbücher"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Unabhängiger Auftragnehmervertrag",
+      "d": "Entwerfen Sie IC-Vereinbarungen mit der richtigen Klassifizierungssprache"
+    },
+    "Liability Waiver Draft": {
+      "n": "Entwurf zum Haftungsausschluss",
+      "d": "Erstellen Sie Haftungsausschlüsse für Aktivitäten und Dienstleistungen"
+    },
+    "Settlement Letter Draft": {
+      "n": "Entwurf eines Vergleichsschreibens",
+      "d": "Entwurf eines Vergleichsangebots oder Antwortschreiben"
+    },
+    "Demand Letter Draft": {
+      "n": "Entwurf eines Anforderungsschreibens",
+      "d": "Erstellen Sie formelle Forderungsschreiben für verschiedene Ansprüche"
+    },
+    "Power of Attorney Draft": {
+      "n": "Vollmachtsentwurf",
+      "d": "Entwurf von Vollmachtsdokumenten für verschiedene Zwecke"
+    },
+    "Last Will Outline": {
+      "n": "Gliederung des letzten Testaments",
+      "d": "Erstellen Sie einen Entwurf für ein grundlegendes letztes Testament"
+    },
+    "Business License Checklist": {
+      "n": "Checkliste für Geschäftslizenzen",
+      "d": "Erstellen Sie eine Checkliste der erforderlichen Lizenzen für Ihr Unternehmen"
+    },
+    "Trademark Application Guide": {
+      "n": "Leitfaden zur Markenanmeldung",
+      "d": "Schritt-für-Schritt-Anleitung für die Einreichung einer Markenanmeldung"
+    },
+    "Small Claims Court Guide": {
+      "n": "Leitfaden für Gerichte für geringfügige Forderungen",
+      "d": "Bereiten Sie sich mit organisierten Argumenten auf das Gericht für Bagatellklagen vor"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Vorbereitung auf Scheidungsmediation",
+      "d": "Organisieren Sie die wichtigsten Punkte und Prioritäten für die Scheidungsvermittlung"
+    },
+    "Tenant Rights Guide": {
+      "n": "Leitfaden für Mieterrechte",
+      "d": "Informieren Sie sich über die Rechte und Rechtsmittel der Mieter in Ihrer Gerichtsbarkeit"
+    },
+    "Landlord Notice Draft": {
+      "n": "Entwurf einer Vermietermitteilung",
+      "d": "Verfassen Sie ordnungsgemäße rechtliche Mitteilungen vom Vermieter an den Mieter"
+    },
+    "Copyright Registration Guide": {
+      "n": "Leitfaden zur Urheberrechtsregistrierung",
+      "d": "Leitfaden zur Registrierung von Urheberrechten beim US Copyright Office"
+    },
+    "Personal Budget Planner": {
+      "n": "Persönlicher Budgetplaner",
+      "d": "Erstellen Sie einen umfassenden monatlichen oder jährlichen Budgetplan"
+    },
+    "Investment Research Assistant": {
+      "n": "Assistent für Investment-Research",
+      "d": "Recherchieren und analysieren Sie Investitionsmöglichkeiten systematisch"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Schuldentilgungsrechner",
+      "d": "Planen Sie eine Strategie zur effizienten Schuldenbeseitigung"
+    },
+    "Expense Tracker Setup": {
+      "n": "Einrichtung des Spesen-Trackers",
+      "d": "Entwerfen Sie ein personalisiertes Kostenverfolgungssystem"
+    },
+    "Retirement Planning Guide": {
+      "n": "Leitfaden zur Ruhestandsplanung",
+      "d": "Erstellen Sie eine umfassende Altersvorsorgestrategie"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Checkliste zur Steuervorbereitung",
+      "d": "Organisieren Sie Dokumente und Abzüge für die Steuererklärung"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Rechner für den Notfallfonds",
+      "d": "Bestimmen und planen Sie Ihren idealen Notfallfonds"
+    },
+    "Net Worth Tracker": {
+      "n": "Vermögens-Tracker",
+      "d": "Verfolgen und visualisieren Sie Ihr vollständiges Finanzbild"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Plan zur Verbesserung der Kreditwürdigkeit",
+      "d": "Erstellen Sie einen umsetzbaren Plan zur Verbesserung Ihrer Kreditwürdigkeit"
+    },
+    "Student Loan Strategy": {
+      "n": "Strategie für Studienkredite",
+      "d": "Optimieren Sie Ihren Ansatz zur Rückzahlung Ihres Studienkredits"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Side Hustle-Umsatzplaner",
+      "d": "Planen und projektieren Sie Einnahmen aus Nebenbeschäftigungen"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Analyse des Versicherungsbedarfs",
+      "d": "Bewerten Sie Ihre Versicherungslücken und Ihren Bedarf"
+    },
+    "Estate Planning Checklist": {
+      "n": "Checkliste für die Nachlassplanung",
+      "d": "Organisieren Sie Ihre Nachlassplanungsdokumente und -entscheidungen"
+    },
+    "Financial Goal Setter": {
+      "n": "Finanzielle Zielsetzung",
+      "d": "Definieren und verfolgen Sie den Fortschritt in Richtung finanzieller Meilensteine"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Cashflow-Analysator",
+      "d": "Analysieren Sie Einnahmen- und Ausgabenmuster im Zeitverlauf"
+    },
+    "Savings Challenge Creator": {
+      "n": "Ersteller der Spar-Challenge",
+      "d": "Entwerfen Sie eine lustige Sparherausforderung, um Ihren Notgroschen aufzubauen"
+    },
+    "Investment Portfolio Review": {
+      "n": "Überprüfung des Anlageportfolios",
+      "d": "Überprüfen Sie Ihr Anlageportfolio und gleichen Sie es neu aus"
+    },
+    "Cryptocurrency Research": {
+      "n": "Kryptowährungsforschung",
+      "d": "Recherchieren und bewerten Sie Investitionen in Kryptowährungen"
+    },
+    "Stock Analysis Helper": {
+      "n": "Helfer für die Aktienanalyse",
+      "d": "Führen Sie fundamentale und technische Analysen für Aktien durch"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Rechner für Immobilieninvestitionen",
+      "d": "Analysieren Sie potenzielle Immobilieninvestitionsrenditen"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Finder zum Gewerbesteuerabzug",
+      "d": "Identifizieren Sie geeignete Steuerabzüge für Ihr Unternehmen"
+    },
+    "Payroll Budget Planner": {
+      "n": "Budgetplaner für die Gehaltsabrechnung",
+      "d": "Planen und budgetieren Sie die Lohn- und Gehaltskosten Ihrer Mitarbeiter"
+    },
+    "Invoice Template Creator": {
+      "n": "Rechnungsvorlagenersteller",
+      "d": "Gestalten Sie professionelle Rechnungen für Ihr Unternehmen"
+    },
+    "Profit Margin Calculator": {
+      "n": "Gewinnspannenrechner",
+      "d": "Berechnen und optimieren Sie die Gewinnmargen für alle Produkte"
+    },
+    "Financial Independence Planner": {
+      "n": "Planer für finanzielle Unabhängigkeit",
+      "d": "Planen Sie Ihren Weg zur finanziellen Unabhängigkeit und zum Vorruhestand"
+    },
+    "Ad Copy Writer": {
+      "n": "Werbetexter",
+      "d": "Erstellen Sie überzeugende Anzeigentexte für jede Plattform und jedes Medium"
+    },
+    "SEO Article Creator": {
+      "n": "SEO-Artikelersteller",
+      "d": "Schreiben Sie SEO-optimierte Artikel, die ranken und konvertieren"
+    },
+    "Social Media Content Calendar": {
+      "n": "Kalender für Social-Media-Inhalte",
+      "d": "Planen Sie einen Monat lang Social-Media-Inhalte auf allen Plattformen"
+    },
+    "Email Campaign Builder": {
+      "n": "E-Mail-Kampagnen-Builder",
+      "d": "Entwerfen Sie Multi-E-Mail-Marketingkampagnen, die konvertieren"
+    },
+    "Product Launch Strategy": {
+      "n": "Produkteinführungsstrategie",
+      "d": "Erstellen Sie eine umfassende Marketingstrategie für die Produkteinführung"
+    },
+    "Brand Voice Guide": {
+      "n": "Marken-Voice-Guide",
+      "d": "Definieren und dokumentieren Sie die Stimme und Botschaft Ihrer Marke"
+    },
+    "Content Marketing Strategy": {
+      "n": "Content-Marketing-Strategie",
+      "d": "Erstellen Sie von Grund auf eine vollständige Content-Marketing-Strategie"
+    },
+    "Influencer Outreach Template": {
+      "n": "Vorlage für Influencer-Outreach",
+      "d": "Erstellen Sie personalisierte Pitches für die Zusammenarbeit mit Influencern"
+    },
+    "Landing Page Copywriter": {
+      "n": "Landingpage-Texter",
+      "d": "Schreiben Sie einen Landingpage-Text mit hoher Conversion-Rate"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B-Testplan-Ersteller",
+      "d": "Entwerfen Sie strukturierte A/B-Tests für Marketingkampagnen"
+    },
+    "Buyer Persona Builder": {
+      "n": "Käufer-Persona-Builder",
+      "d": "Erstellen Sie detaillierte Kunden-Personas für das Targeting"
+    },
+    "Competitive Analysis Template": {
+      "n": "Vorlage für Wettbewerbsanalyse",
+      "d": "Analysieren Sie Wettbewerber und identifizieren Sie Marktchancen"
+    },
+    "Marketing Budget Planner": {
+      "n": "Marketing-Budgetplaner",
+      "d": "Weisen Sie Ihr Marketingbudget zu und optimieren Sie es"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Affiliate-Marketing-Strategie",
+      "d": "Erstellen und optimieren Sie ein Affiliate-Marketing-Programm"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcast-Marketingplan",
+      "d": "Bewerben Sie Ihren Podcast und vergrößern Sie Ihre Hörerbasis"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Webinar-Werbeplan",
+      "d": "Planen und bewerben Sie Webinare, die die Anmeldungen steigern"
+    },
+    "Referral Program Designer": {
+      "n": "Empfehlungsprogramm-Designer",
+      "d": "Entwerfen Sie Empfehlungsprogramme, die das Wachstum der Mundpropaganda fördern"
+    },
+    "Brand Story Writer": {
+      "n": "Autor von Markengeschichten",
+      "d": "Erstellen Sie eine überzeugende Markenursprungsgeschichte und -erzählung"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Marketing-Trichter-Builder",
+      "d": "Entwerfen Sie Customer Journey Funnels von der Bekanntheit bis zur Konvertierung"
+    },
+    "App Store Optimization": {
+      "n": "App Store-Optimierung",
+      "d": "Optimieren Sie App-Store-Einträge für maximale Downloads"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Texter für Google Ads",
+      "d": "Verfassen Sie wirkungsvolle Google Ads-Überschriften und -Beschreibungen"
+    },
+    "Facebook Ads Creator": {
+      "n": "Ersteller von Facebook-Anzeigen",
+      "d": "Erstellen Sie Facebook- und Instagram-Werbekampagnen"
+    },
+    "Newsletter Strategy": {
+      "n": "Newsletter-Strategie",
+      "d": "Planen und erweitern Sie einen E-Mail-Newsletter von Grund auf"
+    },
+    "PR Media Pitch": {
+      "n": "PR-Medien-Pitch",
+      "d": "Schreiben Sie überzeugende Medienpräsentationen für die Berichterstattung in der Presse"
+    },
+    "Content Repurposing Plan": {
+      "n": "Plan zur Neuverwendung von Inhalten",
+      "d": "Wandeln Sie vorhandene Inhalte in mehrere Formate um"
+    },
+    "Cold Email Generator": {
+      "n": "Kalter E-Mail-Generator",
+      "d": "Erstellen Sie personalisierte Kaltakquise-E-Mails, die Antworten erhalten"
+    },
+    "Sales Script Writer": {
+      "n": "Autor von Vertriebsskripten",
+      "d": "Schreiben Sie effektive Verkaufsskripte für Anrufe und Besprechungen"
+    },
+    "Objection Handling Guide": {
+      "n": "Leitfaden zum Umgang mit Einwänden",
+      "d": "Bereiten Sie Antworten auf häufige Verkaufseinwände vor"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Follow-up-Nachrichtenersteller",
+      "d": "Erstellen Sie strategische Folgenachrichtensequenzen"
+    },
+    "Sales Pitch Creator": {
+      "n": "Ersteller von Verkaufsgesprächen",
+      "d": "Erstellen Sie überzeugende Elevator Pitches und Verkaufspräsentationen"
+    },
+    "Proposal Generator": {
+      "n": "Vorschlagsgenerator",
+      "d": "Erstellen Sie professionelle Verkaufsvorschläge und Angebote"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "CRM-Datenbereinigungsplan",
+      "d": "Organisieren und bereinigen Sie Ihre CRM-Datenbank systematisch"
+    },
+    "Sales Territory Planner": {
+      "n": "Vertriebsgebietsplaner",
+      "d": "Definieren und optimieren Sie Vertriebsgebiete für Ihr Team"
+    },
+    "Account Strategy Builder": {
+      "n": "Account-Strategie-Builder",
+      "d": "Erstellen Sie strategische Account-Pläne für Schlüsselkunden"
+    },
+    "Upsell Script Creator": {
+      "n": "Upsell-Skript-Ersteller",
+      "d": "Schreiben Sie Skripte für Upselling und Cross-Selling an bestehende Kunden"
+    },
+    "Customer Win-Back Email": {
+      "n": "E-Mail zur Kundenrückgewinnung",
+      "d": "Binden Sie verlorene Kunden mit gezielten Rückgewinnungskampagnen wieder ein"
+    },
+    "Sales Forecast Template": {
+      "n": "Vorlage für Verkaufsprognosen",
+      "d": "Erstellen Sie genaue Umsatzprognosen für Ihre Pipeline"
+    },
+    "Commission Calculator": {
+      "n": "Provisionsrechner",
+      "d": "Entwerfen und berechnen Sie Verkaufsprovisionsstrukturen"
+    },
+    "Discovery Call Script": {
+      "n": "Discovery-Aufrufskript",
+      "d": "Strukturieren Sie effektive Discovery-Anrufe, um Interessenten zu qualifizieren"
+    },
+    "Demo Presentation Outline": {
+      "n": "Übersicht über die Demo-Präsentation",
+      "d": "Erstellen Sie strukturierte Produktdemopräsentationen"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Vertriebs-Onboarding-Plan",
+      "d": "Entwerfen Sie Onboarding-Programme für neue Vertriebsmitarbeiter"
+    },
+    "Quarterly Business Review": {
+      "n": "Vierteljährlicher Geschäftsbericht",
+      "d": "Bereiten Sie vierteljährliche Geschäftsberichtspräsentationen für Kunden vor"
+    },
+    "Customer Success Plan": {
+      "n": "Kundenerfolgsplan",
+      "d": "Erstellen Sie proaktive Kundenerfolgs- und Kundenbindungspläne"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Berater für Preisstrategie",
+      "d": "Entwickeln und optimieren Sie Ihre Produktpreisstrategie"
+    },
+    "Value Proposition Builder": {
+      "n": "Wertversprechen-Generator",
+      "d": "Erstellen Sie klare und überzeugende Wertversprechen"
+    },
+    "FAQ Generator": {
+      "n": "FAQ-Generator",
+      "d": "Erstellen Sie umfassende FAQ-Bereiche aus Produktinformationen"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Verfasser von Wissensdatenbankartikeln",
+      "d": "Schreiben Sie klare und durchsuchbare Wissensdatenbankartikel"
+    },
+    "Support Response Template": {
+      "n": "Support-Antwortvorlage",
+      "d": "Erstellen Sie wiederverwendbare Vorlagen für gängige Supportszenarien"
+    },
+    "Chatbot Training Data": {
+      "n": "Chatbot-Trainingsdaten",
+      "d": "Generieren Sie Trainingsdaten für Kundensupport-Chatbots"
+    },
+    "Escalation Response Guide": {
+      "n": "Leitfaden zur Eskalationsreaktion",
+      "d": "Erstellen Sie Richtlinien für den Umgang mit eskalierten Supportproblemen"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Umfrage zur Kundenzufriedenheit",
+      "d": "Entwerfen Sie Umfragen, um die Kundenzufriedenheit zu messen"
+    },
+    "Refund Policy Writer": {
+      "n": "Verfasser von Rückerstattungsrichtlinien",
+      "d": "Erstellen Sie klare und faire Rückerstattungs- und Rückgaberichtlinien"
+    },
+    "Bug Report Template": {
+      "n": "Vorlage für Fehlerberichte",
+      "d": "Entwerfen Sie strukturierte Fehlerberichtsvorlagen für Benutzer"
+    },
+    "Feature Request Response": {
+      "n": "Antwort auf Funktionsanfrage",
+      "d": "Erstellen Sie Antworten auf Funktionsanfragen von Kunden"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Onboarding-E-Mail-Sequenz",
+      "d": "Erstellen Sie E-Mail-Sequenzen, um neue Kunden zu gewinnen"
+    },
+    "Help Center Article": {
+      "n": "Hilfe-Center-Artikel",
+      "d": "Verfassen Sie eine umfassende Help-Center-Dokumentation"
+    },
+    "Service Level Agreement": {
+      "n": "Service-Level-Vereinbarung",
+      "d": "Entwerfen Sie SLA-Dokumente für Supportverpflichtungen"
+    },
+    "Customer Apology Template": {
+      "n": "Vorlage für eine Kundenentschuldigung",
+      "d": "Schreiben Sie aufrichtige Entschuldigungsnachrichten für Serviceausfälle"
+    },
+    "Product Update Announcement": {
+      "n": "Ankündigung von Produktaktualisierungen",
+      "d": "Kommunizieren Sie Produktaktualisierungen und -änderungen an Kunden"
+    },
+    "Community Guidelines Writer": {
+      "n": "Autor von Community-Richtlinien",
+      "d": "Erstellen Sie Community-Richtlinien für Foren und soziale Kanäle"
+    },
+    "Startup Validation Framework": {
+      "n": "Startup-Validierungs-Framework",
+      "d": "Validieren Sie Ihre Startup-Idee vor der Umsetzung"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP-Funktionsplaner",
+      "d": "Priorisieren Sie Funktionen für Ihr Minimum Viable Product"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Preisstrategie-Builder",
+      "d": "Entwickeln Sie Preismodelle für Ihr Startup-Produkt"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Übersicht über das Pitch-Deck für Investoren",
+      "d": "Strukturieren Sie ein überzeugendes Pitch-Deck für die Mittelbeschaffung"
+    },
+    "Business Model Canvas": {
+      "n": "Geschäftsmodell-Leinwand",
+      "d": "Stellen Sie Ihr komplettes Geschäftsmodell auf einer Seite dar"
+    },
+    "Lean Canvas Creator": {
+      "n": "Lean Canvas Ersteller",
+      "d": "Erstellen Sie ein Lean Canvas zur Identifizierung von Risiken und Annahmen"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Wettbewerbslandschaftsanalysator",
+      "d": "Kartieren und analysieren Sie Ihr Wettbewerbsumfeld"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Go-To-Market-Strategie",
+      "d": "Planen Sie Ihren Markteintritt und Ihre Kundenakquise"
+    },
+    "Founding Team Assessment": {
+      "n": "Bewertung des Gründungsteams",
+      "d": "Bewerten Sie die Teamzusammensetzung und identifizieren Sie Qualifikationslücken"
+    },
+    "Startup Financial Projections": {
+      "n": "Finanzprognosen für Startups",
+      "d": "Erstellen Sie eine 3-Jahres-Finanzprognose für Ihr Startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Personalvermittler des Beirats",
+      "d": "Identifizieren und rekrutieren Sie Berater für Ihr Startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Pivot-Entscheidungsrahmen",
+      "d": "Bewerten Sie, ob und wie Sie Ihr Startup umstellen sollten"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Start-KPI-Dashboard",
+      "d": "Definieren und verfolgen Sie wichtige Leistungsindikatoren"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Crowdfunding-Kampagnenplan",
+      "d": "Planen und führen Sie eine erfolgreiche Crowdfunding-Kampagne durch"
+    },
+    "Partnership Strategy": {
+      "n": "Partnerschaftsstrategie",
+      "d": "Identifizieren und verfolgen Sie strategische Partnerschaften"
+    },
+    "Accelerator Application": {
+      "n": "Beschleunigeranwendung",
+      "d": "Bereiten Sie eine überzeugende Beschleuniger- oder Inkubatoranwendung vor"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Umfrage zum Produkt-Markt-Fit",
+      "d": "Entwerfen Sie Umfragen, um die Eignung des Produkts für den Markt zu messen"
+    },
+    "Startup Legal Checklist": {
+      "n": "Checkliste für rechtliche Startups",
+      "d": "Decken Sie bei der Gründung eines Unternehmens alle rechtlichen Grundlagen ab"
+    },
+    "Equity Split Calculator": {
+      "n": "Aktiensplit-Rechner",
+      "d": "Bestimmen Sie eine faire Eigenkapitalverteilung unter den Mitgründern"
+    },
+    "Growth Experiment Planner": {
+      "n": "Planer für Wachstumsexperimente",
+      "d": "Entwerfen und verfolgen Sie Wachstumsexperimente systematisch"
+    },
+    "Product Description Writer": {
+      "n": "Produktbeschreibungsautor",
+      "d": "Schreiben Sie überzeugende Produktbeschreibungen, die den Umsatz steigern"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Amazon-Listing-Optimierer",
+      "d": "Optimieren Sie Amazon-Produkteinträge für Sichtbarkeit und Konversion"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Etsy-Shop-Einrichtungsanleitung",
+      "d": "Richten Sie Ihren Etsy-Shop ein und optimieren Sie ihn für den Erfolg"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify-Shop-Planer",
+      "d": "Planen Sie die Struktur und den Start Ihres Shopify-Shops"
+    },
+    "Product Photography Brief": {
+      "n": "Produktfotografie-Brief",
+      "d": "Erstellen Sie Briefings für Produktfotografie-Shootings"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Versandstrategieplaner",
+      "d": "Entwerfen Sie kostengünstige Versandstrategien"
+    },
+    "Return Policy Creator": {
+      "n": "Ersteller von Rückgaberichtlinien",
+      "d": "Erstellen Sie klare Rückgabe- und Umtauschrichtlinien für den E-Commerce"
+    },
+    "Customer Review Response": {
+      "n": "Antwort auf die Kundenbewertung",
+      "d": "Erstellen Sie professionelle Antworten auf Kundenbewertungen"
+    },
+    "Inventory Management Plan": {
+      "n": "Bestandsverwaltungsplan",
+      "d": "Erstellen Sie Systeme zur Verfolgung und Verwaltung des Lagerbestands"
+    },
+    "Dropshipping Product Research": {
+      "n": "Dropshipping-Produktforschung",
+      "d": "Recherchieren und bewerten Sie Dropshipping-Produktmöglichkeiten"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Print-on-Demand-Designer",
+      "d": "Planen Sie Print-on-Demand-Produktlinien und -Designs"
+    },
+    "Subscription Box Planner": {
+      "n": "Abo-Box-Planer",
+      "d": "Entwerfen und starten Sie ein Abo-Box-Geschäft"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Weihnachtsverkaufsstrategie",
+      "d": "Planen Sie saisonale Werbeaktionen und Weihnachtsverkaufskampagnen"
+    },
+    "Product Bundle Creator": {
+      "n": "Produktpaket-Ersteller",
+      "d": "Entwerfen Sie Produktpakete, die den durchschnittlichen Bestellwert erhöhen"
+    },
+    "Cart Abandonment Email": {
+      "n": "E-Mail zum Warenkorbabbruch",
+      "d": "Erstellen Sie E-Mail-Sequenzen, um verlassene Warenkörbe wiederherzustellen"
+    },
+    "Homework Helper": {
+      "n": "Hausaufgabenhelfer",
+      "d": "Erhalten Sie Schritt-für-Schritt-Hilfe bei Hausaufgaben zu jedem Thema"
+    },
+    "Quiz & Test Generator": {
+      "n": "Quiz- und Testgenerator",
+      "d": "Erstellen Sie benutzerdefinierte Tests zu jedem Thema oder Lernmaterial"
+    },
+    "Science Fair Project Planner": {
+      "n": "Projektplaner für Wissenschaftsmessen",
+      "d": "Planen und organisieren Sie ein erfolgreiches Wissenschaftsmesse-Projekt von der Hypothese bis zur Präsentation"
+    },
+    "Lesson Plan Creator": {
+      "n": "Ersteller von Unterrichtsplänen",
+      "d": "Entwerfen Sie strukturierte Unterrichtspläne, die auf die Lernziele abgestimmt sind"
+    },
+    "Lab Report Writer": {
+      "n": "Verfasser von Laborberichten",
+      "d": "Strukturieren und verfassen Sie Laborberichte mit der richtigen wissenschaftlichen Formatierung"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Leseverständnis-Helfer",
+      "d": "Verbessern Sie Ihr Leseverständnis mit geführten Analysen und Fragen"
+    },
+    "Math Problem Solver": {
+      "n": "Mathe-Problemlöser",
+      "d": "Lösen Sie mathematische Probleme mit detaillierten Schritt-für-Schritt-Erklärungen"
+    },
+    "Vocabulary Builder": {
+      "n": "Vokabeltrainer",
+      "d": "Bauen Sie Ihren Wortschatz mit Definitionen, Beispielen und Übungen auf und üben Sie ihn"
+    },
+    "Book Report Helper": {
+      "n": "Buchbericht-Helfer",
+      "d": "Skizzieren und schreiben Sie Buchberichte mit strukturierter Analyse"
+    },
+    "History Timeline Creator": {
+      "n": "Geschichts-Timeline-Ersteller",
+      "d": "Erstellen Sie detaillierte historische Zeitleisten für jede Epoche oder jedes Ereignis"
+    },
+    "Geography Quiz Maker": {
+      "n": "Geographie-Quiz-Ersteller",
+      "d": "Erstellen Sie Geografie-Quiz zu Karten, Hauptstädten, Sehenswürdigkeiten und mehr"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generator für Rechtschreibübungen",
+      "d": "Erstellen Sie personalisierte Übungslisten und Übungen zur Rechtschreibung"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Ersteller von Grammatikübungen",
+      "d": "Erstellen Sie Grammatikübungen für jedes Kenntnisniveau und Thema"
+    },
+    "Critical Thinking Questions": {
+      "n": "Fragen zum kritischen Denken",
+      "d": "Generieren Sie zum Nachdenken anregende Fragen, um kritische Denkfähigkeiten zu entwickeln"
+    },
+    "Debate Prep Guide": {
+      "n": "Leitfaden zur Debattenvorbereitung",
+      "d": "Bereiten Sie strukturierte Argumente und Gegenargumente für Debatten vor"
+    },
+    "College Application Essay": {
+      "n": "Aufsatz zur Hochschulbewerbung",
+      "d": "Erstellen Sie überzeugende Essays zur Hochschulbewerbung mit geführten Eingabeaufforderungen"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Helfer für Stipendienaufsätze",
+      "d": "Schreiben Sie überzeugende Stipendienaufsätze, in denen Erfolge und Ziele hervorgehoben werden"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT-Vorbereitungsleitfaden",
+      "d": "Erstellen Sie gezielte Studienpläne und üben Sie für SAT- oder ACT-Prüfungen"
+    },
+    "Study Schedule Planner": {
+      "n": "Studienplanplaner",
+      "d": "Erstellen Sie einen effektiven Studienplan, der alle Fächer und Fristen in Einklang bringt"
+    },
+    "Group Project Organizer": {
+      "n": "Organisator von Gruppenprojekten",
+      "d": "Planen Sie Rollen, Aufgaben und Zeitpläne für Gruppenprojekte"
+    },
+    "Presentation Creator": {
+      "n": "Präsentationsersteller",
+      "d": "Entwerfen und skizzieren Sie ansprechende Präsentationen zu jedem Thema"
+    },
+    "Note-Taking Guide": {
+      "n": "Leitfaden zum Notieren",
+      "d": "Erstellen Sie strukturierte Notizvorlagen für Vorlesungen und Lesungen"
+    },
+    "Mind Map Generator": {
+      "n": "Mindmap-Generator",
+      "d": "Erstellen Sie visuelle Mindmaps, um Ideen und Konzepte zu organisieren"
+    },
+    "Research Project Planner": {
+      "n": "Forschungsprojektplaner",
+      "d": "Planen und verwalten Sie Forschungsprojekte von der Themenauswahl bis zur Abschlussarbeit"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Vorbereitung auf die Eltern-Lehrer-Konferenz",
+      "d": "Bereiten Sie Gesprächsthemen und Fragen für produktive Eltern-Lehrer-Treffen vor"
+    },
+    "Classroom Activity Designer": {
+      "n": "Designer für Unterrichtsaktivitäten",
+      "d": "Entwerfen Sie interaktive Unterrichtsaktivitäten, die die Lernziele stärken"
+    },
+    "Special Education Resource": {
+      "n": "Ressource für Sonderpädagogik",
+      "d": "Erstellen Sie maßgeschneiderte Lernressourcen für Schüler mit sonderpädagogischem Förderbedarf"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Lehrplanplaner für den Heimunterricht",
+      "d": "Planen Sie einen vollständigen Homeschool-Lehrplan nach Fach und Semester"
+    },
+    "Student Self-Assessment": {
+      "n": "Selbsteinschätzung der Studierenden",
+      "d": "Erstellen Sie Selbstbewertungstools für Schüler, um ihren eigenen Lernfortschritt zu verfolgen"
+    },
+    "Learning Style Analyzer": {
+      "n": "Lernstilanalysator",
+      "d": "Identifizieren Sie Lernstile und schlagen Sie personalisierte Lernstrategien vor"
+    },
+    "Literature Review Writer": {
+      "n": "Autor von Literaturrezensionen",
+      "d": "Organisieren und verfassen Sie umfassende Literaturrezensionen zu jedem Thema"
+    },
+    "Research Assistant": {
+      "n": "Forschungsassistent",
+      "d": "Erhalten Sie Hilfe bei der Suche, Organisation und Zusammenfassung von Forschungsmaterialien"
+    },
+    "Fact Checker Template": {
+      "n": "Faktenchecker-Vorlage",
+      "d": "Überprüfen Sie Behauptungen und Aussagen mit einer strukturierten Methodik zur Faktenprüfung"
+    },
+    "Source Comparison Tool": {
+      "n": "Quellenvergleichstool",
+      "d": "Vergleichen und kontrastieren Sie mehrere Quellen zum gleichen Thema"
+    },
+    "Citation Generator": {
+      "n": "Zitatgenerator",
+      "d": "Generieren Sie ordnungsgemäß formatierte Zitate in jedem akademischen Stil"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Ersteller kommentierter Bibliographien",
+      "d": "Erstellen Sie kommentierte Bibliografien mit Zusammenfassungen und Bewertungen"
+    },
+    "Research Methodology Guide": {
+      "n": "Leitfaden zur Forschungsmethodik",
+      "d": "Wählen und entwerfen Sie die richtige Forschungsmethodik für Ihre Studie"
+    },
+    "Survey Question Designer": {
+      "n": "Umfragefragen-Designer",
+      "d": "Entwerfen Sie effektive Umfragefragen, um zuverlässige Forschungsdaten zu sammeln"
+    },
+    "Data Collection Plan": {
+      "n": "Datenerfassungsplan",
+      "d": "Erstellen Sie einen strukturierten Plan für die Erhebung von Forschungsdaten"
+    },
+    "Thesis Statement Generator": {
+      "n": "Generator für Abschlussarbeiten",
+      "d": "Erstellen Sie überzeugende Thesen für Forschungsarbeiten und Dissertationen"
+    },
+    "Research Proposal Writer": {
+      "n": "Verfasser von Forschungsvorschlägen",
+      "d": "Verfassen Sie überzeugende Forschungsvorschläge zur akademischen oder finanziellen Prüfung"
+    },
+    "Systematic Review Guide": {
+      "n": "Leitfaden zur systematischen Überprüfung",
+      "d": "Führen Sie systematische Überprüfungen nach festgelegten Protokollen durch"
+    },
+    "Interview Protocol Creator": {
+      "n": "Ersteller von Interviewprotokollen",
+      "d": "Entwerfen Sie strukturierte Interviewprotokolle für qualitative Forschung"
+    },
+    "Research Ethics Checklist": {
+      "n": "Checkliste zur Forschungsethik",
+      "d": "Stellen Sie sicher, dass die Forschung die ethischen Richtlinien und IRB-Anforderungen einhält"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Meta-Analyse-Framework",
+      "d": "Strukturieren und führen Sie Metaanalysen über mehrere Studien hinweg durch"
+    },
+    "Case Study Template": {
+      "n": "Fallstudienvorlage",
+      "d": "Strukturieren und schreiben Sie detaillierte Fallstudien für Forschung oder Unternehmen"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Leitfaden zur qualitativen Analyse",
+      "d": "Leiten Sie die qualitative Datenanalyse mithilfe von Kodierung und thematischen Ansätzen"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Leitfaden zur quantitativen Analyse",
+      "d": "Führen Sie die quantitative Datenanalyse mit geeigneten statistischen Methoden durch"
+    },
+    "Research Poster Creator": {
+      "n": "Ersteller von Forschungsplakaten",
+      "d": "Entwerfen und gestalten Sie Forschungsplakate für Konferenzen und Präsentationen"
+    },
+    "Research Grant Writer": {
+      "n": "Autor von Forschungsstipendien",
+      "d": "Verfassen Sie strukturierte Fördervorschläge für Anträge auf Forschungsförderung"
+    },
+    "Chemistry Tutor": {
+      "n": "Nachhilfelehrer für Chemie",
+      "d": "Erhalten Sie personalisierte Chemie-Nachhilfe mit Erklärungen und Übungsproblemen"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Chemischer Gleichungsausgleicher",
+      "d": "Balancieren Sie chemische Gleichungen mit Schritt-für-Schritt-Erklärungen"
+    },
+    "Lab Safety Checklist": {
+      "n": "Checkliste zur Laborsicherheit",
+      "d": "Erstellen Sie umfassende Laborsicherheitschecklisten für Chemieexperimente"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Helfer für organische Chemie",
+      "d": "Studieren Sie organische Reaktionen, Mechanismen und Nomenklatur"
+    },
+    "Periodic Table Explorer": {
+      "n": "Periodensystem-Explorer",
+      "d": "Entdecken Sie Elementeigenschaften, Trends und Beziehungen im Periodensystem"
+    },
+    "Stoichiometry Solver": {
+      "n": "Stöchiometrie-Löser",
+      "d": "Lösen Sie Stöchiometrieprobleme mit detaillierten Mol-zu-Mol-Berechnungen"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Leitfaden zur chemischen Bindung",
+      "d": "Verstehen Sie ionische, kovalente und metallische Bindungen mit visuellen Erklärungen"
+    },
+    "Acid-Base Calculator": {
+      "n": "Säure-Base-Rechner",
+      "d": "Berechnen Sie pH, pOH, Ka, Kb und lösen Sie Probleme des Säure-Base-Gleichgewichts"
+    },
+    "Solution Preparation Guide": {
+      "n": "Leitfaden zur Lösungsvorbereitung",
+      "d": "Berechnen und bereiten Sie chemische Lösungen mit den richtigen Konzentrationen vor"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Spektroskopie-Dolmetscher",
+      "d": "Interpretieren Sie IR-, NMR- und Massenspektren zur Identifizierung von Verbindungen"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Chemielabor-Notizbuch",
+      "d": "Erstellen Sie strukturierte Labornotizbucheinträge für Chemieexperimente"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Helfer für den Reaktionsmechanismus",
+      "d": "Reaktionsmechanismen Schritt für Schritt zeichnen und verstehen"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Thermochemie-Rechner",
+      "d": "Berechnen Sie Enthalpie, Entropie und die freie Gibbs-Energie für chemische Reaktionen"
+    },
+    "Electrochemistry Guide": {
+      "n": "Leitfaden zur Elektrochemie",
+      "d": "Verstehen Sie elektrochemische Zellen, Elektrodenpotentiale und Elektrolyse"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Leitfaden zur Polymerchemie",
+      "d": "Studieren Sie Polymertypen, Synthesemechanismen und Eigenschaften"
+    },
+    "Biology Tutor": {
+      "n": "Biologielehrer",
+      "d": "Erhalten Sie personalisierte Biologie-Nachhilfe mit klaren Erklärungen und Beispielen"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Studienführer zur Zellbiologie",
+      "d": "Studieren Sie Zellstrukturen, Funktionen und Prozesse eingehend"
+    },
+    "Genetics Problem Solver": {
+      "n": "Genetischer Problemlöser",
+      "d": "Lösen Sie genetische Probleme, einschließlich Punnett-Quadrate und Stammbaumanalyse"
+    },
+    "Ecology Study Helper": {
+      "n": "Ökologie-Studienhelfer",
+      "d": "Untersuchen Sie Ökosysteme, Nahrungsnetze, Populationsdynamik und ökologische Beziehungen"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Leitfaden zur Anatomie und Physiologie",
+      "d": "Studieren Sie menschliche Körpersysteme mit detaillierten anatomischen Erklärungen"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Leitfaden für das Mikrobiologie-Labor",
+      "d": "Anleitung zu mikrobiologischen Labortechniken, einschließlich Färbung, Kultivierung und Identifizierung"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Evolutions-Konzept-Mapper",
+      "d": "Kartieren Sie Evolutionskonzepte einschließlich natürlicher Selektion, Artbildung und Phylogenetik"
+    },
+    "Plant Biology Helper": {
+      "n": "Helfer für Pflanzenbiologie",
+      "d": "Studieren Sie die Anatomie, Physiologie und ökologischen Rollen von Pflanzen"
+    },
+    "Molecular Biology Guide": {
+      "n": "Leitfaden zur Molekularbiologie",
+      "d": "Verstehen Sie die DNA-Replikation, Transkription, Translation und Genregulation"
+    },
+    "Bioinformatics Helper": {
+      "n": "Bioinformatik-Helfer",
+      "d": "Erhalten Sie Hilfe bei Sequenzanalyse, Datenbanksuche und Computerbiologie"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Studienführer für Neurowissenschaften",
+      "d": "Studieren Sie das Nervensystem, die Gehirnfunktion und die Nervenbahnen"
+    },
+    "Marine Biology Explorer": {
+      "n": "Meeresbiologie-Forscher",
+      "d": "Entdecken Sie Meeresökosysteme, Organismen und Meereswissenschaften"
+    },
+    "Immunology Study Guide": {
+      "n": "Studienführer zur Immunologie",
+      "d": "Studieren Sie das Immunsystem, Immunreaktionen und immunologische Störungen"
+    },
+    "Biotechnology Overview": {
+      "n": "Überblick über die Biotechnologie",
+      "d": "Entdecken Sie biotechnologische Anwendungen, einschließlich Gentechnik und CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Planer für Naturschutzbiologie",
+      "d": "Planen Sie Schutzstrategien zur Erhaltung von Arten und Lebensräumen"
+    },
+    "Physics Problem Solver": {
+      "n": "Physik-Problemlöser",
+      "d": "Lösen Sie physikalische Probleme mit detaillierten Schritt-für-Schritt-Lösungen"
+    },
+    "Mechanics Helper": {
+      "n": "Mechanik-Helfer",
+      "d": "Studieren und lösen Sie Probleme der klassischen Mechanik, einschließlich Kinematik und Dynamik"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Leitfaden zu Elektrizität und Magnetismus",
+      "d": "Verstehen Sie elektrische Felder, Schaltkreise und elektromagnetische Phänomene"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Nachhilfelehrer für Thermodynamik",
+      "d": "Studieren Sie thermodynamische Gesetze, Prozesse und Wärmeübertragungsprobleme"
+    },
+    "Optics & Waves Guide": {
+      "n": "Leitfaden zu Optik und Wellen",
+      "d": "Studieren Sie Wellenphänomene, Optik und Lichtverhalten"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Erklärer der Quantenphysik",
+      "d": "Verstehen Sie die Konzepte der Quantenmechanik mit klaren Erklärungen und Beispielen"
+    },
+    "Astrophysics Explorer": {
+      "n": "Astrophysik-Explorer",
+      "d": "Entdecken Sie Sternentwicklung, Kosmologie und Himmelsmechanik"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Leitfaden zur Kernphysik",
+      "d": "Studieren Sie Kernreaktionen, Radioaktivität und Kernenergie"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Fluiddynamik-Helfer",
+      "d": "Lösen Sie Probleme der Strömungsmechanik, einschließlich Bernoulli- und Navier-Stokes-Anwendungen"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Nachhilfelehrer für klassische Mechanik",
+      "d": "Tauchen Sie tief in die Lagrange- und Hamilton-Mechanik und fortgeschrittene Dynamik ein"
+    },
+    "Relativity Concept Guide": {
+      "n": "Leitfaden zum Konzept der Relativitätstheorie",
+      "d": "Verstehen Sie die spezielle und allgemeine Relativitätstheorie mit Gedankenexperimenten und Mathematik"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Helfer für Physiklaborberichte",
+      "d": "Strukturieren und verfassen Sie physikalische Laborberichte mit korrekter Datenanalyse"
+    },
+    "Math Proof Writer": {
+      "n": "Mathe-Korrekturautor",
+      "d": "Schreiben Sie klare und strenge mathematische Beweise mit logischer Struktur"
+    },
+    "Calculus Problem Solver": {
+      "n": "Kalkül-Problemlöser",
+      "d": "Lösen Sie Rechenprobleme, einschließlich Grenzwerte, Ableitungen und Integrale"
+    },
+    "Statistics Helper": {
+      "n": "Statistik-Helfer",
+      "d": "Lösen Sie Statistikprobleme und interpretieren Sie statistische Ergebnisse"
+    },
+    "Linear Algebra Guide": {
+      "n": "Leitfaden zur linearen Algebra",
+      "d": "Studieren Sie Vektoren, Matrizen, Transformationen und Eigenwerte"
+    },
+    "Probability Calculator": {
+      "n": "Wahrscheinlichkeitsrechner",
+      "d": "Berechnen Sie Wahrscheinlichkeiten und lösen Sie Wahrscheinlichkeitsverteilungsprobleme"
+    },
+    "Geometry Tutor": {
+      "n": "Geometrie-Tutor",
+      "d": "Studieren Sie geometrische Konzepte und Theoreme und lösen Sie Geometrieprobleme"
+    },
+    "Trigonometry Helper": {
+      "n": "Trigonometrie-Helfer",
+      "d": "Lösen Sie trigonometrische Gleichungen, Identitäten und Anwendungen"
+    },
+    "Number Theory Explorer": {
+      "n": "Zahlentheorie-Explorer",
+      "d": "Entdecken Sie Primzahlen, Teilbarkeit, modulare Arithmetik und kryptografische Anwendungen"
+    },
+    "Discrete Math Guide": {
+      "n": "Leitfaden für diskrete Mathematik",
+      "d": "Studieren Sie Kombinatorik, Graphentheorie, Logik und Mengenlehre"
+    },
+    "Differential Equations Solver": {
+      "n": "Differentialgleichungslöser",
+      "d": "Lösen Sie gewöhnliche und partielle Differentialgleichungen mit detaillierten Methoden"
+    },
+    "Math Word Problem Solver": {
+      "n": "Mathe-Wortproblemlöser",
+      "d": "Übersetzen und lösen Sie Schritt für Schritt reale mathematische Textaufgaben"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Leitfaden zur mathematischen Modellierung",
+      "d": "Erstellen Sie mathematische Modelle für Phänomene und Anwendungen in der realen Welt"
+    },
+    "SQL Query Generator": {
+      "n": "SQL-Abfragegenerator",
+      "d": "Generieren und optimieren Sie SQL-Abfragen für den Datenabruf und die Datenanalyse"
+    },
+    "Python Data Analysis": {
+      "n": "Python-Datenanalyse",
+      "d": "Schreiben Sie Python-Code für die Datenanalyse mit Pandas, NumPy und mehr"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Checkliste zur Datenbereinigung",
+      "d": "Erstellen Sie umfassende Checklisten für die Datenbereinigung und -vorverarbeitung"
+    },
+    "Data Visualization Planner": {
+      "n": "Datenvisualisierungsplaner",
+      "d": "Wählen Sie die richtigen Diagramme und entwerfen Sie effektive Datenvisualisierungen"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Modellauswahl für maschinelles Lernen",
+      "d": "Wählen Sie das beste ML-Modell für Ihren Problemtyp und Ihre Dateneigenschaften aus"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B-Testrechner",
+      "d": "Entwerfen und analysieren Sie A/B-Tests mit statistischen Signifikanzberechnungen"
+    },
+    "Dashboard Design Guide": {
+      "n": "Leitfaden zum Dashboard-Design",
+      "d": "Entwerfen Sie effektive Dashboards mit den richtigen KPIs und dem richtigen Layout"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL-Pipeline-Planer",
+      "d": "Entwerfen und planen Sie ETL-Pipelines für die Datenintegration und -verarbeitung"
+    },
+    "Feature Engineering Guide": {
+      "n": "Feature-Engineering-Leitfaden",
+      "d": "Erstellen Sie effektive Funktionen für Modelle für maschinelles Lernen"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Datenpipeline-Architektur",
+      "d": "Entwerfen Sie skalierbare Datenpipeline-Architekturen für Analysen und ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Explorative Datenanalyse",
+      "d": "Führen Sie eine gründliche EDA mit strukturierten Analyse- und Visualisierungsplänen durch"
+    },
+    "Statistical Test Selector": {
+      "n": "Statistischer Testselektor",
+      "d": "Wählen Sie den richtigen statistischen Test für Ihre Daten und Hypothese aus und wenden Sie ihn an"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Leitfaden zur Zeitreihenanalyse",
+      "d": "Analysieren Sie Zeitreihendaten mit Prognose- und Trenderkennungsmethoden"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Starter für die Verarbeitung natürlicher Sprache",
+      "d": "Beginnen Sie mit NLP-Aufgaben, einschließlich Textklassifizierung und Stimmungsanalyse"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Projektplaner für Computer Vision",
+      "d": "Planen Sie Computer-Vision-Projekte von der Datenerfassung bis zur Modellbereitstellung"
+    },
+    "Technical Requirements Document": {
+      "n": "Dokument mit technischen Anforderungen",
+      "d": "Erstellen Sie detaillierte technische Anforderungsdokumente für Ingenieurprojekte"
+    },
+    "Engineering Design Review": {
+      "n": "Überprüfung des technischen Entwurfs",
+      "d": "Bereiten Sie strukturierte Design-Review-Dokumente für technische Projekte vor"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Fehlermöglichkeitsanalyse (FMEA)",
+      "d": "Führen Sie eine systematische Analyse der Fehlermöglichkeiten und -auswirkungen für Produkte oder Prozesse durch"
+    },
+    "Project Specification Writer": {
+      "n": "Verfasser von Projektspezifikationen",
+      "d": "Verfassen Sie klare und vollständige Projektspezifikationen für Ingenieurarbeiten"
+    },
+    "CAD Project Planner": {
+      "n": "CAD-Projektplaner",
+      "d": "Planen und organisieren Sie CAD-Modellierungsprojekte mit ordnungsgemäßer Dokumentation"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Leitfaden zum Herstellungsprozess",
+      "d": "Wählen und planen Sie Fertigungsprozesse für die Produktentwicklung"
+    },
+    "Quality Control Checklist": {
+      "n": "Checkliste zur Qualitätskontrolle",
+      "d": "Erstellen Sie Checklisten und Prüfpläne zur Qualitätskontrolle für die Fertigung"
+    },
+    "Engineering Change Request": {
+      "n": "Technische Änderungsanfrage",
+      "d": "Dokumentieren und verwalten Sie technische Änderungsanfragen mit Auswirkungsanalyse"
+    },
+    "Structural Analysis Guide": {
+      "n": "Leitfaden zur Strukturanalyse",
+      "d": "Leitfaden für Berechnungen und Methoden zur Strukturanalyse für Ingenieurprojekte"
+    },
+    "Materials Selection Guide": {
+      "n": "Leitfaden zur Materialauswahl",
+      "d": "Wählen Sie optimale Materialien basierend auf mechanischen, thermischen und chemischen Anforderungen aus"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Midjourney Prompt-Ersteller",
+      "d": "Erstellen Sie detaillierte Midjourney-Eingabeaufforderungen mit Stil-, Beleuchtungs- und Kompositionsparametern"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E Prompt-Ersteller",
+      "d": "Erstellen Sie optimierte DALL-E-Prompts mit klaren Beschreibungen und künstlerischer Ausrichtung"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Stable Diffusion Prompt-Autor",
+      "d": "Erstellen Sie Stable-Diffusion-Prompts mit positiver und negativer Prompt-Technik"
+    },
+    "Product Photography Prompt": {
+      "n": "Produktfotografie-Eingabeaufforderung",
+      "d": "Erstellen Sie KI-Eingabeaufforderungen für atemberaubende Produktfotografie mit Ergebnissen in Studioqualität"
+    },
+    "Landscape Art Prompt": {
+      "n": "Landschaftskunst-Eingabeaufforderung",
+      "d": "Erstellen Sie atemberaubende Landschaftskunstmotive mit Umgebungs- und Atmosphärendetails"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Eingabeaufforderung für Porträtfotografie",
+      "d": "Generieren Sie Eingabeaufforderungen für KI-Porträts mit Anleitung zu Beleuchtung, Ausdruck und Komposition"
+    },
+    "Food Photography Prompt": {
+      "n": "Aufforderung zur Food-Fotografie",
+      "d": "Gestalten Sie köstliche Inspirationen für die Food-Fotografie mit Styling- und Anrichtendetails"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Eingabeaufforderung zur Architekturvisualisierung",
+      "d": "Erstellen Sie Eingabeaufforderungen zur Architekturvisualisierung für Gebäude und Innenräume"
+    },
+    "Fashion Design Prompt": {
+      "n": "Modedesign-Eingabeaufforderung",
+      "d": "Erstellen Sie Modedesignkonzepte mit Stoff-, Silhouetten- und Stylingdetails"
+    },
+    "Comic Art Prompt": {
+      "n": "Comic-Kunst-Eingabeaufforderung",
+      "d": "Erstellen Sie Kunstaufforderungen im Comic-Stil mit Panel-Komposition und Charakteraktionen"
+    },
+    "Abstract Art Prompt": {
+      "n": "Abstrakte Kunstaufforderung",
+      "d": "Generieren Sie Anregungen für abstrakte Kunst mit Farbtheorie, Textur und emotionalem Ausdruck"
+    },
+    "Icon Design Brief": {
+      "n": "Icon-Design-Brief",
+      "d": "Entwerfen Sie klare Ikonografie-Sets mit einheitlichem Stil und einheitlicher Bildsprache"
+    },
+    "Infographic Design Brief": {
+      "n": "Infografik-Design-Brief",
+      "d": "Planen Sie Infografik-Layouts mit Datenvisualisierung und visueller Hierarchie"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Eingabeaufforderung für Social-Media-Grafiken",
+      "d": "Generieren Sie fesselnde Social-Media-Grafiken für jede Plattform"
+    },
+    "Meme Creator Prompt": {
+      "n": "Eingabeaufforderung für den Meme-Ersteller",
+      "d": "Generieren Sie Meme-Konzepte mit Formatauswahl, Bildunterschriften und viralem Potenzial"
+    },
+    "AI Avatar Prompt": {
+      "n": "KI-Avatar-Eingabeaufforderung",
+      "d": "Erstellen Sie einzigartige KI-Avatar-Designs für Profile, Spiele und virtuelle Identitäten"
+    },
+    "Song Lyrics Writer": {
+      "n": "Songtext-Autor",
+      "d": "Schreiben Sie originelle Liedtexte mit Versen, Refrain und Bridge in jedem Genre"
+    },
+    "Chord Progression Generator": {
+      "n": "Akkordfolge-Generator",
+      "d": "Generieren Sie Akkordfolgen mit musiktheoretischer Anleitung für jedes Genre und jede Stimmung"
+    },
+    "Beat Ideas Creator": {
+      "n": "Beat-Ideen-Generator",
+      "d": "Generieren Sie Beat-Konzepte mit Tempo, Drum-Patterns und Instrumentierungsideen"
+    },
+    "Song Structure Builder": {
+      "n": "Song-Struktur-Builder",
+      "d": "Entwerfen Sie Songarrangements mit Abschnittsreihenfolge, Dynamik und Übergängen"
+    },
+    "Rap Verse Writer": {
+      "n": "Autor von Rap-Versen",
+      "d": "Schreiben Sie knallharte Rap-Verse mit Fließmustern, Reimschemata und Wortspielen"
+    },
+    "Country Song Writer": {
+      "n": "Country-Songwriter",
+      "d": "Schreiben Sie authentische Country-Songs mit Geschichtenerzählen, Bildern und Twang"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Pop-Song-Hook-Ersteller",
+      "d": "Kreieren Sie eingängige Pop-Hooks und Refrain-Melodien, die im Gedächtnis der Zuhörer hängen bleiben"
+    },
+    "Rock Ballad Writer": {
+      "n": "Autor von Rockballaden",
+      "d": "Schreiben Sie emotionale Rockballaden mit kraftvollem Aufbau und hymnischen Refrains"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Leitfaden für musikalische Arrangements",
+      "d": "Planen Sie vollständige musikalische Arrangements mit Instrumentierung, Gesang und Dynamik"
+    },
+    "Band Name Generator": {
+      "n": "Bandnamengenerator",
+      "d": "Generieren Sie kreative Bandnamen basierend auf Genre, Stimmung und Bildvorlieben"
+    },
+    "Music Video Concept": {
+      "n": "Musikvideo-Konzept",
+      "d": "Entwickeln Sie kreative Musikvideokonzepte mit Erzählung, Visuals und Choreografie"
+    },
+    "Mixing Checklist": {
+      "n": "Checkliste zum Mischen",
+      "d": "Umfassende Mixing-Checkliste zu EQ, Komprimierung, Effekten und Balance"
+    },
+    "Film Score Brief": {
+      "n": "Kurzfassung der Filmmusik",
+      "d": "Erstellen Sie detaillierte Kurzbeschreibungen der Filmmusik mit Stimmung, Instrumentierung und Timing-Hinweisen"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts-Skript",
+      "d": "Schreiben Sie ansprechende YouTube-Shorts-Skripte, die für vertikale 60-Sekunden-Videos optimiert sind"
+    },
+    "Video Storyboard Creator": {
+      "n": "Video-Storyboard-Ersteller",
+      "d": "Planen Sie visuelle Storyboards mit Szenenbeschreibungen, Kamerawinkeln und Übergängen"
+    },
+    "Documentary Outline": {
+      "n": "Dokumentarischer Überblick",
+      "d": "Strukturieren Sie überzeugende Dokumentarfilme mit Erzählsträngen, Interviews und B-Roll-Plänen"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlog-Episodenplaner",
+      "d": "Planen Sie ansprechende Vlog-Episoden mit Orten, Gesprächsthemen und visueller Abwechslung"
+    },
+    "Screenwriting Helper": {
+      "n": "Drehbuch-Helfer",
+      "d": "Entwickeln Sie Drehbücher mit der richtigen Formatierung, dem richtigen Dialog und der richtigen Szenenregie"
+    },
+    "Short Film Script": {
+      "n": "Kurzfilm-Skript",
+      "d": "Schreiben Sie vollständige Drehbücher für Kurzfilme mit visueller Erzählung und prägnanter Erzählung"
+    },
+    "Animation Script Writer": {
+      "n": "Autor von Animationsskripten",
+      "d": "Schreiben Sie Animationsskripte mit visuellen Gags, Charakteraktionen und Timing-Hinweisen"
+    },
+    "Video Editing Brief": {
+      "n": "Kurzanleitung zur Videobearbeitung",
+      "d": "Erstellen Sie detaillierte Videobearbeitungsanweisungen mit Tempo, Effekten und Stilrichtlinien"
+    },
+    "Livestream Run Sheet": {
+      "n": "Livestream-Laufblatt",
+      "d": "Planen Sie Livestreams mit zeitgesteuerten Segmenten, Gesprächsthemen und Engagement-Triggern"
+    },
+    "Tutorial Video Script": {
+      "n": "Tutorial-Videoskript",
+      "d": "Schreiben Sie klare Tutorial-Videoskripte mit Schritt-für-Schritt-Anleitungen und Bildern"
+    },
+    "Explainer Video Script": {
+      "n": "Erklärvideo-Skript",
+      "d": "Schreiben Sie klare Erklärvideo-Skripte, die komplexe Themen visuell vereinfachen"
+    },
+    "Video SEO Optimizer": {
+      "n": "Video-SEO-Optimierer",
+      "d": "Optimieren Sie Videometadaten mit Titeln, Beschreibungen, Tags und Miniaturbildstrategien"
+    },
+    "Novel Outline Creator": {
+      "n": "Roman-Gliederungs-Ersteller",
+      "d": "Erstellen Sie umfassende Romangliederungen mit Handlungsstruktur, Kapiteln und Handlungsbögen"
+    },
+    "Short Story Writer": {
+      "n": "Kurzgeschichtenschreiber",
+      "d": "Schreiben Sie fesselnde Kurzgeschichten mit lebendigen Charakteren und zufriedenstellenden Schlussfolgerungen"
+    },
+    "Poetry Generator": {
+      "n": "Poesiegenerator",
+      "d": "Erstellen Sie originelle Gedichte in verschiedenen Formen mit Bildern, Metrum und Emotionen"
+    },
+    "Book Proposal Template": {
+      "n": "Vorlage für einen Buchvorschlag",
+      "d": "Erstellen Sie professionelle Buchvorschläge mit Marktanalysen und Kapitelzusammenfassungen"
+    },
+    "Memoir Outline": {
+      "n": "Memoiren-Übersicht",
+      "d": "Strukturieren Sie persönliche Erinnerungen mit thematischen Kapiteln und reflektierenden Erzählungen"
+    },
+    "Children's Book Creator": {
+      "n": "Kinderbuchautor",
+      "d": "Schreiben Sie altersgerechte Kinderbücher mit spannenden Geschichten und Illustrationsnotizen"
+    },
+    "Screenplay Outline": {
+      "n": "Drehbuch-Übersicht",
+      "d": "Skizzieren Sie Drehbücher mit drei Akten, Szenenaufschlüsselungen und Dialognotizen"
+    },
+    "Play Script Writer": {
+      "n": "Spielen Sie Drehbuchautor",
+      "d": "Schreiben Sie Theaterdrehbücher mit Regieanweisungen, Dialogen und Szenenaufbau"
+    },
+    "Comic Book Script": {
+      "n": "Comic-Skript",
+      "d": "Schreiben Sie Comic-Skripte mit Panelbeschreibungen, Dialogen und Tempo"
+    },
+    "Fan Fiction Creator": {
+      "n": "Fanfiction-Schöpfer",
+      "d": "Schreiben Sie Fanfiction mit originalgetreuen Charakterstimmen und kreativen neuen Handlungssträngen"
+    },
+    "Writing Prompt Generator": {
+      "n": "Generator für Schreibaufforderungen",
+      "d": "Generieren Sie Aufforderungen zum kreativen Schreiben mit Genre, Einschränkungen und Story-Seeds"
+    },
+    "Dialogue Writer": {
+      "n": "Dialogautor",
+      "d": "Erstellen Sie einen natürlich klingenden Dialog, der den Charakter offenbart und die Handlung vorantreibt"
+    },
+    "Plot Twist Generator": {
+      "n": "Plot-Twist-Generator",
+      "d": "Generieren Sie überraschende und dennoch logische Wendungen in der Handlung, die die Erzählung neu kontextualisieren"
+    },
+    "Query Letter Writer": {
+      "n": "Verfasser von Anfragebriefen",
+      "d": "Schreiben Sie überzeugende Anfragebriefe an Literaturagenten mit einer ausführlichen Zusammenfassung"
+    },
+    "Book Description Writer": {
+      "n": "Buchbeschreibung Autor",
+      "d": "Schreiben Sie überzeugende Buchbeschreibungen, die die Leser fesseln und den Umsatz steigern"
+    },
+    "Ghostwriting Brief": {
+      "n": "Ghostwriting-Brief",
+      "d": "Erstellen Sie detaillierte Ghostwriting-Briefings mit Anforderungen an Stimme, Stil und Inhalt"
+    },
+    "Technical Writing Guide": {
+      "n": "Leitfaden für technisches Schreiben",
+      "d": "Schreiben Sie klare technische Dokumentationen mit strukturierter Formatierung und Genauigkeit"
+    },
+    "Grant Proposal Writer": {
+      "n": "Verfasser von Fördervorschlägen",
+      "d": "Verfassen Sie überzeugende Fördervorschläge mit Projektbeschreibungen und Budgetbegründung"
+    },
+    "White Paper Outline": {
+      "n": "Whitepaper-Übersicht",
+      "d": "Strukturieren Sie maßgebliche Whitepapers mit Recherchen, Analysen und Empfehlungen"
+    },
+    "Copywriting Formula": {
+      "n": "Copywriting-Formel",
+      "d": "Wenden Sie bewährte Copywriting-Formeln wie AIDA, PAS und BAB auf jedes Produkt oder jede Dienstleistung an"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram-Content-Planer",
+      "d": "Planen Sie eine Woche lang Instagram-Inhalte mit Beiträgen, Geschichten, Reels und Bildunterschriften"
+    },
+    "X Thread Creator": {
+      "n": "X-Thread-Ersteller",
+      "d": "Schreiben Sie ansprechende X-Threads, die Autorität aufbauen und das Engagement fördern"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit-Post-Autor",
+      "d": "Schreiben Sie Reddit-Beiträge, die für bestimmte Subreddits optimiert sind, und berücksichtigen Sie dabei die Community-Normen"
+    },
+    "Viral Hook Generator": {
+      "n": "Viraler Hook-Generator",
+      "d": "Generieren Sie aufmerksamkeitsstarke Hooks für Social-Media-Inhalte auf allen Plattformen"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Hashtag-Strategietool",
+      "d": "Recherchieren und organisieren Sie Hashtag-Strategien für maximale Auffindbarkeit"
+    },
+    "Engagement Response Generator": {
+      "n": "Engagement-Response-Generator",
+      "d": "Generieren Sie durchdachte Antworten auf Kommentare, Direktnachrichten und Erwähnungen in großem Umfang"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Verfasser von LinkedIn-Artikeln",
+      "d": "Schreiben Sie Thought-Leadership-LinkedIn-Artikel, die professionelle Autorität begründen"
+    },
+    "Episode Show Notes": {
+      "n": "Notizen zur Episodenshow",
+      "d": "Schreiben Sie detaillierte Shownotizen mit Zeitstempeln, Links und wichtigen Erkenntnissen"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Checkliste für die Podcast-Bearbeitung",
+      "d": "Standardisieren Sie den Podcast-Bearbeitungsworkflow mit Qualitätskontrollpunkten und Polierschritten"
+    },
+    "Prompt Improver": {
+      "n": "Prompt-Verbesserer",
+      "d": "Verfeinern und optimieren Sie jede Eingabeaufforderung für bessere KI-Ergebnisse mit strukturierten Techniken"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Gedankenketten-Organizer",
+      "d": "Erstellen Sie Gedankenkettenaufforderungen, die die KI durch schrittweise Überlegungen führen"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG-Eingabeaufforderungsgenerator",
+      "d": "Erstellen Sie abruferweiterte Generierungsaufforderungen mit Kontextfensteroptimierung"
+    },
+    "Prompt Translator": {
+      "n": "Prompt-Übersetzer",
+      "d": "Übersetzen Sie Eingabeaufforderungen über verschiedene KI-Modelle hinweg und bewahren Sie dabei Absicht und Qualität"
+    },
+    "Prompt Evaluator": {
+      "n": "Prompter Gutachter",
+      "d": "Bewerten und bewerten Sie Eingabeaufforderungen über mehrere Qualitätsdimensionen hinweg mit Verbesserungstipps"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Beispielgenerator für wenige Schüsse",
+      "d": "Generieren Sie hochwertige, wenige Beispiele für kontextbezogene Lernaufforderungen"
+    },
+    "System Prompt Writer": {
+      "n": "System-Prompt-Autor",
+      "d": "Schreiben Sie effektive Systemaufforderungen, die das Verhalten, die Einschränkungen und den Ausgabestil der KI definieren"
+    },
+    "AI Guardrails Designer": {
+      "n": "KI-Leitplanken-Designer",
+      "d": "Entwerfen Sie Sicherheitsleitplanken und Inhaltsrichtlinien für KI-Anwendungen"
+    },
+    "AI Use Case Identifier": {
+      "n": "KI-Anwendungsfall-Identifikator",
+      "d": "Identifizieren und bewerten Sie potenzielle KI-Anwendungsfälle für Unternehmen und Arbeitsabläufe"
+    },
+    "Model Comparison Guide": {
+      "n": "Leitfaden zum Modellvergleich",
+      "d": "Vergleichen Sie KI-Modelle hinsichtlich ihrer Funktionen, Preise und Anwendungsfalltauglichkeit"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM-Feinabstimmung des Datenerstellers",
+      "d": "Generieren und strukturieren Sie Trainingsdaten für LLM-Feinabstimmungsprojekte"
+    },
+    "Debugger Assistant": {
+      "n": "Debugger-Assistent",
+      "d": "Debuggen Sie Codeprobleme systematisch mit Ursachenanalyse und Lösungsvorschlägen"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD-Pipeline-Planer",
+      "d": "Entwerfen Sie CI/CD-Pipelines mit Build-, Test- und Bereitstellungsphasenkonfigurationen"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker-Konfigurationshandbuch",
+      "d": "Erstellen Sie Docker-Dateien und erstellen Sie Konfigurationen mit Best Practices"
+    },
+    "Git Workflow Planner": {
+      "n": "Git-Workflow-Planer",
+      "d": "Entwerfen Sie Git-Verzweigungsstrategien und Kollaborationsworkflows für Entwicklungsteams"
+    },
+    "Code Migration Guide": {
+      "n": "Leitfaden zur Code-Migration",
+      "d": "Planen und führen Sie Codemigrationen zwischen Sprachen, Frameworks oder Versionen durch"
+    },
+    "Database Schema Designer": {
+      "n": "Datenbankschema-Designer",
+      "d": "Entwerfen Sie Datenbankschemata mit Tabellen, Beziehungen, Indizes und Einschränkungen"
+    },
+    "Performance Optimization Guide": {
+      "n": "Leitfaden zur Leistungsoptimierung",
+      "d": "Identifizieren und beheben Sie Leistungsengpässe mit Profiling- und Optimierungsstrategien"
+    },
+    "Microservices Architecture": {
+      "n": "Microservices-Architektur",
+      "d": "Entwerfen Sie Microservices-Architekturen mit Servicegrenzen, Kommunikation und Bereitstellung"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL-Schema-Builder",
+      "d": "Entwerfen Sie GraphQL-Schemas mit Typen, Abfragen, Mutationen und Abonnements"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform-Konfiguration",
+      "d": "Generieren Sie Terraform-Konfigurationen für die Bereitstellung der Cloud-Infrastruktur"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS-Architekturplaner",
+      "d": "Entwerfen Sie AWS-Cloud-Architekturen mit Serviceauswahl und Kostenoptimierung"
+    },
+    "Code Documentation Generator": {
+      "n": "Codedokumentationsgenerator",
+      "d": "Generieren Sie Inline-Dokumentation, JSDoc, Dokumentzeichenfolgen und Codekommentare"
+    },
+    "Technical Interview Prep": {
+      "n": "Technische Interviewvorbereitung",
+      "d": "Bereiten Sie sich mit Problemaufschlüsselungen und Lösungsmustern auf technische Interviews vor"
+    },
+    "Changelog Writer": {
+      "n": "Changelog-Autor",
+      "d": "Schreiben Sie klare Änderungsprotokolle, indem Sie ein Änderungsprotokollformat mit semantischer Versionierung beibehalten"
+    },
+    "Error Handling Strategy": {
+      "n": "Fehlerbehandlungsstrategie",
+      "d": "Entwerfen Sie umfassende Fehlerbehandlungsstrategien mit Mustern und Benutzernachrichten"
+    },
+    "Logging Strategy Guide": {
+      "n": "Leitfaden zur Protokollierungsstrategie",
+      "d": "Entwerfen Sie Anwendungsprotokollierungsstrategien mit Ebenen, Formaten und Aggregation"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Anleitung zur Überwachungseinrichtung",
+      "d": "Richten Sie die Anwendungsüberwachung mit Metriken, Warnungen und Dashboards ein"
+    },
+    "Load Testing Plan": {
+      "n": "Lasttestplan",
+      "d": "Entwerfen Sie Lasttestpläne mit Szenarien, Metriken und Akzeptanzkriterien"
+    },
+    "Security Audit Checklist": {
+      "n": "Checkliste für Sicherheitsaudits",
+      "d": "Führen Sie Sicherheitsaudits mit OWASP-basierten Checklisten und Abhilfeleitfäden durch"
+    },
+    "Security Checklist Creator": {
+      "n": "Ersteller von Sicherheitschecklisten",
+      "d": "Erstellen Sie umfassende Sicherheitschecklisten, die auf Ihre Anwendung und Ihren Stack zugeschnitten sind"
+    },
+    "Penetration Testing Plan": {
+      "n": "Penetrationstestplan",
+      "d": "Planen Sie strukturierte Penetrationstests mit Umfang, Methodik und Berichtsvorlagen"
+    },
+    "Secure Coding Guide": {
+      "n": "Leitfaden zur sicheren Codierung",
+      "d": "Erstellen Sie sprachspezifische sichere Codierungsrichtlinien mit Schwachstellenprävention"
+    },
+    "Incident Response Plan": {
+      "n": "Reaktionsplan für Vorfälle",
+      "d": "Entwerfen Sie Reaktionspläne für Vorfälle mit Erkennungs-, Eindämmungs- und Wiederherstellungsverfahren"
+    },
+    "Security Policy Writer": {
+      "n": "Autor von Sicherheitsrichtlinien",
+      "d": "Schreiben Sie organisatorische Sicherheitsrichtlinien, die Zugriffskontrolle, Datenverarbeitung und Compliance umfassen"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Leitfaden zur Schwachstellenbewertung",
+      "d": "Führen Sie systematische Schwachstellenbewertungen mit Scans und priorisierter Behebung durch"
+    },
+    "Security Awareness Training": {
+      "n": "Schulung zum Sicherheitsbewusstsein",
+      "d": "Entwerfen Sie Schulungsprogramme zum Sicherheitsbewusstsein für Mitarbeiter auf allen Ebenen"
+    },
+    "Password Policy Creator": {
+      "n": "Passwortrichtlinien-Ersteller",
+      "d": "Erstellen Sie robuste Passwortrichtlinien mit Komplexitäts-, Rotations- und MFA-Anforderungen"
+    },
+    "Data Protection Plan": {
+      "n": "Datenschutzplan",
+      "d": "Entwerfen Sie Datenschutzstrategien, die Klassifizierung, Verschlüsselung und Aufbewahrung umfassen"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT-Analyse Pro",
+      "d": "Erweiterte SWOT-Analyse mit gewichteter Bewertung und Aktionsplänen"
+    },
+    "Pitch Deck Outline": {
+      "n": "Pitch-Deck-Übersicht",
+      "d": "Erstellen Sie eine überzeugende Pitch-Deck-Struktur für Investoren"
+    },
+    "Business Canvas Creator": {
+      "n": "Business Canvas-Ersteller",
+      "d": "Erstellen Sie einen vollständigen Geschäftsmodell-Canvas für Ihr Unternehmen"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Competitive Intelligence-Bericht",
+      "d": "Analysieren Sie Wettbewerber und identifizieren Sie Möglichkeiten zur Marktpositionierung"
+    },
+    "Strategic Planning Guide": {
+      "n": "Leitfaden zur strategischen Planung",
+      "d": "Entwickeln Sie einen mehrjährigen strategischen Plan mit Zielen und Meilensteinen"
+    },
+    "Annual Report Template": {
+      "n": "Jahresberichtvorlage",
+      "d": "Strukturieren Sie den Jahresbericht Ihres Unternehmens mit den wichtigsten finanziellen und betrieblichen Highlights"
+    },
+    "Board Meeting Agenda": {
+      "n": "Tagesordnung der Vorstandssitzung",
+      "d": "Professionelle Tagesordnung für Vorstandssitzungen mit bewährten Governance-Praktiken"
+    },
+    "Company Newsletter": {
+      "n": "Unternehmensnewsletter",
+      "d": "Entwerfen Sie einen ansprechenden internen oder externen Unternehmensnewsletter"
+    },
+    "Employee Survey Creator": {
+      "n": "Ersteller von Mitarbeiterbefragungen",
+      "d": "Erstellen Sie effektive Umfragen zum Mitarbeiterengagement und zur Mitarbeiterzufriedenheit"
+    },
+    "Team Building Activity Planner": {
+      "n": "Teambuilding-Aktivitätsplaner",
+      "d": "Planen Sie spannende Teambuilding-Events und -Aktivitäten"
+    },
+    "Remote Work Policy": {
+      "n": "Richtlinie zur Fernarbeit",
+      "d": "Erstellen Sie eine umfassende Remote-Arbeitsrichtlinie für Ihr Unternehmen"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Diversitäts- und Inklusionsplan",
+      "d": "Entwickeln Sie eine sinnvolle Strategie für Diversitätsgerechtigkeit und Inklusion"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Lieferantenbewertungsmatrix",
+      "d": "Bewerten und vergleichen Sie Anbieter systematisch für Beschaffungsentscheidungen"
+    },
+    "Process Improvement Plan": {
+      "n": "Prozessverbesserungsplan",
+      "d": "Identifizieren und implementieren Sie Prozessverbesserungen mithilfe von Lean-Methoden"
+    },
+    "Change Management Plan": {
+      "n": "Change-Management-Plan",
+      "d": "Leiten Sie organisatorische Veränderungen durch Ausrichtung und Kommunikation der Stakeholder"
+    },
+    "Risk Assessment Template": {
+      "n": "Vorlage zur Risikobewertung",
+      "d": "Geschäftsrisiken systematisch erkennen, bewerten und mindern"
+    },
+    "Succession Planning Guide": {
+      "n": "Leitfaden zur Nachfolgeplanung",
+      "d": "Planen Sie Führungswechsel und die Entwicklung der Talentpipeline"
+    },
+    "Business Continuity Plan": {
+      "n": "Geschäftskontinuitätsplan",
+      "d": "Bereiten Sie sich mit einer umfassenden Kontinuitätsstrategie auf Störungen vor"
+    },
+    "Customer Journey Map": {
+      "n": "Customer-Journey-Karte",
+      "d": "Visualisieren und optimieren Sie das gesamte Kundenerlebnis"
+    },
+    "Brand Guidelines Template": {
+      "n": "Vorlage für Markenrichtlinien",
+      "d": "Definieren Sie Ihre Markenidentität mit umfassenden Stil- und Nutzungsrichtlinien"
+    },
+    "Mission & Vision Statement": {
+      "n": "Leitbild und Vision",
+      "d": "Erstellen Sie inspirierende Missions- und Visionserklärungen für Ihr Unternehmen"
+    },
+    "Company Culture Document": {
+      "n": "Dokument zur Unternehmenskultur",
+      "d": "Definieren und dokumentieren Sie Ihre Unternehmenskultur und Werte"
+    },
+    "Organizational Chart Planner": {
+      "n": "Organigrammplaner",
+      "d": "Entwerfen und planen Sie Ihre Organisationsstruktur und Berichtslinien"
+    },
+    "Department Budget Template": {
+      "n": "Vorlage für den Abteilungshaushalt",
+      "d": "Erstellen Sie detaillierte Abteilungsbudgets mit Prognosen und Nachverfolgung"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI-Dashboard-Builder",
+      "d": "Entwerfen Sie Dashboards für wichtige Leistungsindikatoren für datengesteuerte Entscheidungen"
+    },
+    "Job Description Writer": {
+      "n": "Stellenbeschreibung Verfasser",
+      "d": "Erstellen Sie klare und umfassende Stellenbeschreibungen, die Top-Talente anziehen"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Scorecard-Ersteller für Vorstellungsgespräche",
+      "d": "Erstellen Sie strukturierte Scorecards für Vorstellungsgespräche für eine konsistente Kandidatenbewertung"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Checkliste für das Mitarbeiter-Onboarding",
+      "d": "Umfassende Onboarding-Checkliste für den Erfolg neuer Mitarbeiter"
+    },
+    "Performance Improvement Plan": {
+      "n": "Leistungsverbesserungsplan",
+      "d": "Erstellen Sie unterstützende Leistungsverbesserungspläne mit klaren Meilensteinen"
+    },
+    "Exit Interview Guide": {
+      "n": "Exit-Interview-Leitfaden",
+      "d": "Führen Sie aufschlussreiche Austrittsgespräche durch, um die Bindung zu verbessern"
+    },
+    "Compensation Analysis": {
+      "n": "Vergütungsanalyse",
+      "d": "Analysieren und vergleichen Sie Vergütungspakete im Hinblick auf ihre Marktwettbewerbsfähigkeit"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Leitfaden zum Vergleich der Vorteile",
+      "d": "Vergleichen und bewerten Sie Leistungspakete für Mitarbeiter"
+    },
+    "Team Retrospective": {
+      "n": "Team-Retrospektive",
+      "d": "Ermöglichen Sie effektive Team-Retrospektiven zur kontinuierlichen Verbesserung"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Vorlage für Einzelgespräche",
+      "d": "Strukturieren Sie produktive Einzelgespräche mit direkt unterstellten Mitarbeitern"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Einstellung eines Pipeline-Planers",
+      "d": "Entwerfen und optimieren Sie Ihre Rekrutierungspipeline durchgängig"
+    },
+    "Employee Recognition Program": {
+      "n": "Mitarbeiteranerkennungsprogramm",
+      "d": "Erstellen Sie ein sinnvolles Mitarbeiteranerkennungs- und Belohnungsprogramm"
+    },
+    "Training Program Designer": {
+      "n": "Schulungsprogramm-Designer",
+      "d": "Entwerfen Sie effektive Mitarbeiterschulungs- und -entwicklungsprogramme"
+    },
+    "Workplace Policy Writer": {
+      "n": "Verfasser von Arbeitsplatzrichtlinien",
+      "d": "Entwerfen Sie klare Arbeitsplatzrichtlinien, die wichtige organisatorische Themen abdecken"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Leitfaden zur Konfliktlösung",
+      "d": "Bewältigen Sie Konflikte am Arbeitsplatz mit strukturierten Lösungsrahmen"
+    },
+    "Remote Team Handbook": {
+      "n": "Handbuch für Remote-Teams",
+      "d": "Erstellen Sie ein umfassendes Handbuch für verteilte Teamoperationen"
+    },
+    "Career Path Planner": {
+      "n": "Karrierewegplaner",
+      "d": "Planen Sie Ihren Karriereweg mit umsetzbaren Meilensteinen"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Gehaltsverhandlungsvorbereitung",
+      "d": "Bereiten Sie selbstbewusste Gesprächsthemen und Strategien für Gehaltsverhandlungen vor"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn-Profilersteller",
+      "d": "Optimieren Sie Ihr LinkedIn-Profil, um Personalvermittler und Chancen anzulocken"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Leitfaden zum Portfolio-Builder",
+      "d": "Erstellen Sie ein herausragendes professionelles Portfolio, das Ihre besten Arbeiten präsentiert"
+    },
+    "Networking Email Templates": {
+      "n": "E-Mail-Vorlagen für Netzwerke",
+      "d": "Schreiben Sie effektive Networking-E-Mails für Karriereentwicklung und Vorstellungen"
+    },
+    "Career Pivot Guide": {
+      "n": "Karriere-Pivot-Leitfaden",
+      "d": "Bewältigen Sie einen erfolgreichen Karriereübergang mit einem strukturierten Plan"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Freelancer-Tarif-Rechner",
+      "d": "Berechnen Sie Ihren idealen Freelancer-Tarif und Preisstrategie"
+    },
+    "Professional Development Plan": {
+      "n": "Plan zur beruflichen Weiterentwicklung",
+      "d": "Erstellen Sie einen strukturierten Plan für eine kontinuierliche berufliche Weiterentwicklung"
+    },
+    "Mentorship Program Guide": {
+      "n": "Leitfaden zum Mentoring-Programm",
+      "d": "Finden Sie Struktur und maximieren Sie Mentoring-Beziehungen"
+    },
+    "Side Hustle Validator": {
+      "n": "Nebenprojekt-Validator",
+      "d": "Bewerten und validieren Sie Nebengeschäftsideen auf Machbarkeit"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Work-Life-Balance-Audit",
+      "d": "Bewerten und verbessern Sie Ihre Work-Life-Balance mit umsetzbaren Strategien"
+    },
+    "Speaking Proposal Template": {
+      "n": "Vorlage für einen Vortragsvorschlag",
+      "d": "Erstellen Sie überzeugende Vortragsvorschläge für Konferenzen und Veranstaltungen"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Verfasser von Beratungsvorschlägen",
+      "d": "Entwerfen Sie erfolgreiche Beratungsvorschläge, die zum Abschluss von Geschäften führen"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Skill-Gap-Analysator",
+      "d": "Identifizieren und planen Sie, kritische Qualifikationslücken für den beruflichen Aufstieg zu schließen"
+    },
+    "Career Journal Prompts": {
+      "n": "Aufforderungen zum Karrierejournal",
+      "d": "Reflektieren Sie Ihren Karriereweg mit geführten Journaling-Übungen"
+    },
+    "Informational Interview Guide": {
+      "n": "Leitfaden für informative Vorstellungsgespräche",
+      "d": "Bereiten Sie effektive Informationsinterviews vor und führen Sie diese durch"
+    },
+    "Thank You Note Writer": {
+      "n": "Vielen Dank, Notizschreiber",
+      "d": "Schreiben Sie durchdachte, professionelle Dankesschreiben für jeden Anlass"
+    },
+    "Resignation Letter Template": {
+      "n": "Vorlage für ein Kündigungsschreiben",
+      "d": "Schreiben Sie ein professionelles Kündigungsschreiben und pflegen Sie positive Beziehungen"
+    },
+    "Meal Prep Planner": {
+      "n": "Essensvorbereitungsplaner",
+      "d": "Planen Sie wöchentliche Mahlzeiten mit Einkaufslisten und Zubereitungsplänen"
+    },
+    "Habit Tracker Designer": {
+      "n": "Habit Tracker-Designer",
+      "d": "Entwerfen Sie ein personalisiertes Gewohnheitsverfolgungssystem für dauerhafte Veränderungen"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Leitfaden zur Schlafverbesserung",
+      "d": "Optimieren Sie Ihre Schlafqualität mit evidenzbasierten Strategien"
+    },
+    "Stress Management Plan": {
+      "n": "Stressmanagementplan",
+      "d": "Erstellen Sie ein personalisiertes Stressmanagement-Toolkit und einen Aktionsplan"
+    },
+    "Yoga Routine Builder": {
+      "n": "Yoga-Routine-Builder",
+      "d": "Erstellen Sie individuelle Yoga-Routinen für Ihr Niveau und Ihre Ziele"
+    },
+    "Running Training Plan": {
+      "n": "Lauftrainingsplan",
+      "d": "Erstellen Sie einen strukturierten Lauftrainingsplan für jedes Distanzziel"
+    },
+    "Swimming Workout": {
+      "n": "Schwimmtraining",
+      "d": "Entwerfen Sie effektive Schwimmtrainings für Fitness und Technik"
+    },
+    "Strength Training Program": {
+      "n": "Krafttrainingsprogramm",
+      "d": "Erstellen Sie ein progressives Krafttrainingsprogramm, das auf Ihre Ziele zugeschnitten ist"
+    },
+    "Flexibility Routine": {
+      "n": "Flexibilitätsroutine",
+      "d": "Verbessern Sie Flexibilität und Beweglichkeit mit strukturierten Dehnübungen"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT-Workout-Ersteller",
+      "d": "Entwerfen Sie hochintensive Intervalltrainingseinheiten für maximale Ergebnisse"
+    },
+    "Nutrition Label Reader": {
+      "n": "Lesegerät für Nährwertkennzeichnungen",
+      "d": "Lernen Sie, Nährwertkennzeichnungen zu lesen und zu verstehen, um gesündere Entscheidungen zu treffen"
+    },
+    "Calorie Counter Guide": {
+      "n": "Leitfaden zum Kalorienzähler",
+      "d": "Richten Sie eine personalisierte Kalorienverfolgung mit Makroaufschlüsselung ein"
+    },
+    "Hydration Tracker": {
+      "n": "Trink-Tracker",
+      "d": "Verfolgen und optimieren Sie Ihre tägliche Wasseraufnahme und Trinkgewohnheiten"
+    },
+    "Mental Health Check-In": {
+      "n": "Check-in für psychische Gesundheit",
+      "d": "Geführte Selbsteinschätzung der psychischen Gesundheit und Verfolgung des Wohlbefindens"
+    },
+    "Therapy Session Prep": {
+      "n": "Vorbereitung auf die Therapiesitzung",
+      "d": "Bereiten Sie sich mit strukturierter Reflexion und Zielsetzung auf Therapiesitzungen vor"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Aufforderungen zum Dankbarkeitstagebuch",
+      "d": "Das tägliche Dankbarkeitsjournal führt zu einer Verbesserung des geistigen Wohlbefindens"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Schöpfer von Achtsamkeitsübungen",
+      "d": "Erstellen Sie personalisierte Achtsamkeits- und Atemübungen"
+    },
+    "Supplement Research Guide": {
+      "n": "Leitfaden zur Ergänzungsforschung",
+      "d": "Recherchieren und bewerten Sie Nahrungsergänzungsmittel basierend auf Ihren Gesundheitszielen"
+    },
+    "Allergy Management Plan": {
+      "n": "Allergie-Managementplan",
+      "d": "Erstellen Sie eine umfassende Allergiemanagement- und Vermeidungsstrategie"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Chronischer Zustands-Tracker",
+      "d": "Verfolgen Sie Symptome, Medikamente und Auslöser chronischer Erkrankungen"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Physiotherapie-Übungsprotokoll",
+      "d": "Protokollieren und verfolgen Sie Physiotherapieübungen und Genesungsfortschritte"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonomische Arbeitsplatzeinrichtung",
+      "d": "Optimieren Sie Ihren Arbeitsplatz für Komfort, Gesundheit und Produktivität"
+    },
+    "Digital Detox Planner": {
+      "n": "Digitaler Detox-Planer",
+      "d": "Planen und führen Sie eine digitale Entgiftung durch, um Ihr geistiges Wohlbefinden zu verbessern"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Selbstpflege-Routine-Builder",
+      "d": "Bauen Sie eine nachhaltige Selbstpflegeroutine in allen Wellness-Dimensionen auf"
+    },
+    "First Aid Guide": {
+      "n": "Erste-Hilfe-Leitfaden",
+      "d": "Kurzübersicht über Erste-Hilfe-Maßnahmen für häufige Notfälle"
+    },
+    "To-Do List Power Planner": {
+      "n": "To-Do-Liste Power Planner",
+      "d": "Erstellen Sie priorisierte Aufgabenlisten mit Zeitschätzungen und Energieniveaus"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Täglicher Zeitplan-Optimierer",
+      "d": "Entwerfen Sie einen optimierten Tagesplan basierend auf Ihren Energiemustern"
+    },
+    "Project Planner Pro": {
+      "n": "Projektplaner Pro",
+      "d": "Planen Sie Projekte mit Meilensteinen, Ergebnissen und Ressourcenzuweisung"
+    },
+    "Decision Matrix Builder": {
+      "n": "Entscheidungsmatrix-Builder",
+      "d": "Treffen Sie bessere Entscheidungen mithilfe der Analyse gewichteter Kriterien"
+    },
+    "Weekly Review Template": {
+      "n": "Vorlage für wöchentliche Überprüfungen",
+      "d": "Führen Sie gründliche wöchentliche Überprüfungen durch, um Ihre Ziele im Auge zu behalten"
+    },
+    "Morning Routine Designer": {
+      "n": "Morgenroutine-Designer",
+      "d": "Entwerfen Sie eine energiegeladene Morgenroutine für Höchstleistungen"
+    },
+    "Evening Routine Creator": {
+      "n": "Schöpfer der Abendroutine",
+      "d": "Erstellen Sie eine beruhigende Abendroutine für bessere Erholung und Vorbereitung auf den nächsten Tag"
+    },
+    "Time Blocking Schedule": {
+      "n": "Zeitblockierungsplan",
+      "d": "Organisieren Sie Ihren Tag mit gezielten Zeitblöcken für maximale Produktivität"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhower-Matrix-Tool",
+      "d": "Kategorisieren Sie Aufgaben nach Dringlichkeit und Wichtigkeit, um eine bessere Priorisierung zu ermöglichen"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Pomodoro-Sitzungsplaner",
+      "d": "Planen Sie gezielte Arbeitssitzungen mit der Pomodoro-Technik"
+    },
+    "Goal Tracking System": {
+      "n": "Zielverfolgungssystem",
+      "d": "Richten Sie ein umfassendes Zielverfolgungssystem mit Fortschrittsmetriken ein"
+    },
+    "Quarterly Planning Template": {
+      "n": "Vierteljährliche Planungsvorlage",
+      "d": "Planen Sie Ihr Quartal mit strategischen Zielen und umsetzbaren Zielen"
+    },
+    "Annual Review Template": {
+      "n": "Vorlage für einen Jahresrückblick",
+      "d": "Führen Sie eine gründliche jährliche Überprüfung der Erfolge durch und legen Sie zukünftige Ziele fest"
+    },
+    "Meeting Notes Template": {
+      "n": "Vorlage für Besprechungsnotizen",
+      "d": "Erfassen Sie umsetzbare Besprechungsnotizen mit Entscheidungen und Folgemaßnahmen"
+    },
+    "Brain Dump Organizer": {
+      "n": "Gedanken-Organizer",
+      "d": "Verwandeln Sie chaotische Gedanken in organisierte, umsetzbare Kategorien"
+    },
+    "Delegation Framework": {
+      "n": "Delegationsrahmen",
+      "d": "Identifizieren Sie, was Sie delegieren möchten, und erstellen Sie klare Delegationsanweisungen"
+    },
+    "Focus Session Planner": {
+      "n": "Fokus-Sitzungsplaner",
+      "d": "Planen Sie intensive Fokussitzungen mit Umgebungs- und Ablenkungsmanagement"
+    },
+    "Energy Management Guide": {
+      "n": "Leitfaden zum Energiemanagement",
+      "d": "Optimieren Sie Ihr Energieniveau den ganzen Tag über, um Höchstleistungen zu erzielen"
+    },
+    "Batch Processing Planner": {
+      "n": "Stapelverarbeitungsplaner",
+      "d": "Gruppieren Sie ähnliche Aufgaben für effiziente Stapelverarbeitungssitzungen"
+    },
+    "System Documentation Template": {
+      "n": "Systemdokumentationsvorlage",
+      "d": "Dokumentieren Sie persönliche und Teamsysteme für Konsistenz und Onboarding"
+    },
+    "Project Kickoff Template": {
+      "n": "Projekt-Kickoff-Vorlage",
+      "d": "Starten Sie Projekte mit klaren Zielen, Umfang und Teamausrichtung"
+    },
+    "Sprint Planning Guide": {
+      "n": "Sprint-Planungsleitfaden",
+      "d": "Planen Sie effektive Sprints mit der Schätzung und Kapazität von User Stories"
+    },
+    "Kanban Board Setup": {
+      "n": "Kanban-Board-Setup",
+      "d": "Entwerfen und konfigurieren Sie ein Kanban-Board für das visuelle Workflow-Management"
+    },
+    "Gantt Chart Planner": {
+      "n": "Gantt-Diagrammplaner",
+      "d": "Erstellen Sie detaillierte Projektzeitpläne mit Abhängigkeiten und Meilensteinen"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Ressourcenzuteilungsmatrix",
+      "d": "Planen und optimieren Sie die Ressourcenverteilung über Projekte und Teams hinweg"
+    },
+    "Status Report Template": {
+      "n": "Statusbericht-Vorlage",
+      "d": "Erstellen Sie klare Projektstatusberichte für die Stakeholder-Kommunikation"
+    },
+    "Risk Register Creator": {
+      "n": "Risikoregister-Ersteller",
+      "d": "Erstellen und pflegen Sie ein umfassendes Projektrisikoregister"
+    },
+    "Lessons Learned Template": {
+      "n": "Vorlage für gewonnene Erkenntnisse",
+      "d": "Erfassen und dokumentieren Sie gewonnene Erkenntnisse aus dem Projekt für zukünftige Verbesserungen"
+    },
+    "Requirements Document": {
+      "n": "Anforderungsdokument",
+      "d": "Sammeln und dokumentieren Sie Projektanforderungen mit Akzeptanzkriterien"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Testplan für die Benutzerakzeptanz",
+      "d": "Erstellen Sie strukturierte UAT-Pläne mit Testfällen und Freigabekriterien"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Stakeholder-Kommunikationsplan",
+      "d": "Planen Sie die Stakeholder-Kommunikation mit Kanalfrequenz und Nachrichtenübermittlung"
+    },
+    "Project Timeline Creator": {
+      "n": "Projekt-Timeline-Ersteller",
+      "d": "Erstellen Sie detaillierte Projektzeitpläne mit Phasen und Ergebnissen"
+    },
+    "Agile Retrospective": {
+      "n": "Agile Retrospektive",
+      "d": "Ermöglichen Sie produktive agile Retrospektiven mit unterschiedlichen Formaten"
+    },
+    "Scope Document Writer": {
+      "n": "Scope-Dokumentenautor",
+      "d": "Definieren Sie den Projektumfang mit Grenzen der zu erbringenden Leistungen und Ausschlüssen"
+    },
+    "Project Closure Report": {
+      "n": "Projektabschlussbericht",
+      "d": "Dokumentieren Sie den Projektabschluss mit Ergebnissen und Abschlussbewertungen"
+    },
+    "Conversation Practice Partner": {
+      "n": "Konversationsübungspartner",
+      "d": "Üben Sie Gespräche in Ihrer Zielsprache mit realistischen Szenarien"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Vokabeltrainer Pro",
+      "d": "Bauen Sie Ihren Wortschatz mit Kontextbeispielen und räumlichen Wiederholungshinweisen auf"
+    },
+    "Grammar Coach": {
+      "n": "Grammatiktrainer",
+      "d": "Lernen und üben Sie Grammatikregeln mit klaren Erklärungen und Übungen"
+    },
+    "Translation Helper": {
+      "n": "Übersetzungshelfer",
+      "d": "Erhalten Sie genaue Übersetzungen mit Kontext- und Verwendungshinweisen"
+    },
+    "Language Exchange Prep": {
+      "n": "Vorbereitung auf Sprachaustausch",
+      "d": "Bereiten Sie sich mit strukturierten Gesprächsthemen auf Sprachaustauschsitzungen vor"
+    },
+    "Travel Phrase Book": {
+      "n": "Reise-Sprachführer",
+      "d": "Wichtige Reisesätze, geordnet nach Situation für Ihr Reiseziel"
+    },
+    "Business Language Guide": {
+      "n": "Leitfaden zur Geschäftssprache",
+      "d": "Lernen Sie Fachsprache für Geschäftsumgebungen und Kommunikation"
+    },
+    "Accent Improvement Guide": {
+      "n": "Leitfaden zur Akzentverbesserung",
+      "d": "Verbessern Sie Aussprache und Akzent durch gezielte Übungen"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Leseverständnis-Übungen",
+      "d": "Verbessern Sie Ihre Lesefähigkeiten mit nivellierten Texten und Verständnisfragen"
+    },
+    "Writing Practice Creator": {
+      "n": "Schöpfer von Schreibübungen",
+      "d": "Üben Sie das Schreiben in Ihrer Zielsprache mit geführten Eingabeaufforderungen und Feedback"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Leitfaden zum Hörverstehen",
+      "d": "Verbessern Sie Ihre Zuhörfähigkeiten mit strukturierten Übungen und Strategien"
+    },
+    "Cultural Context Guide": {
+      "n": "Leitfaden zum kulturellen Kontext",
+      "d": "Verstehen Sie kulturelle Nuancen und Etikette für eine effektive Kommunikation"
+    },
+    "Room Layout Planner": {
+      "n": "Raumaufteilungsplaner",
+      "d": "Planen Sie optimale Raumaufteilungen mit Möbelplatzierung und -fluss"
+    },
+    "Color Palette Creator": {
+      "n": "Farbpaletten-Ersteller",
+      "d": "Erstellen Sie zusammenhängende Farbpaletten für Räume und Designprojekte"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Einkaufsführer für Möbel",
+      "d": "Smarter Möbeleinkauf mit Stilanpassung und Budgetplanung"
+    },
+    "Home Decor Style Finder": {
+      "n": "Wohndekor-Stilfinder",
+      "d": "Entdecken Sie Ihren Einrichtungsstil mit einer geführten Bewertung"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Kleiderschrank-Kapselbauer",
+      "d": "Erstellen Sie eine vielseitige Capsule-Garderobe, die die Outfit-Kombinationen maximiert"
+    },
+    "Outfit Planner": {
+      "n": "Outfit-Planer",
+      "d": "Planen Sie Outfits für die Woche oder besondere Anlässe aus Ihrer vorhandenen Garderobe"
+    },
+    "Personal Style Guide": {
+      "n": "Persönlicher Styleguide",
+      "d": "Definieren Sie Ihre persönliche Stilidentität und Einkaufsrichtlinien"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Saisonale Auffrischung Ihrer Garderobe",
+      "d": "Erfrischen Sie Ihre Garderobe jede Saison mit strategischen Ergänzungen und Änderungen"
+    },
+    "Home Office Setup Guide": {
+      "n": "Home-Office-Einrichtungsanleitung",
+      "d": "Entwerfen Sie einen produktiven und stilvollen Home-Office-Bereich"
+    },
+    "Bathroom Design Planner": {
+      "n": "Badezimmer-Designplaner",
+      "d": "Planen Sie Badezimmerrenovierungen und -modernisierungen mit Stil und Funktionalität"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Hackathon-Ideengenerator",
+      "d": "Brainstorming und Validierung von Hackathon-Projektideen basierend auf Themen und Einschränkungen"
+    },
+    "MVP Builder Guide": {
+      "n": "MVP Builder-Leitfaden",
+      "d": "Planen und erstellen Sie ein Minimum Viable Product innerhalb enger Hackathon-Fristen"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon-Pitch-Präsentation",
+      "d": "Erstellen Sie ein überzeugendes Pitch-Deck, um Ihr Hackathon-Projekt der Jury zu präsentieren"
+    },
+    "Technical Architecture Planner": {
+      "n": "Technischer Architekturplaner",
+      "d": "Entwerfen Sie schnell die technische Architektur für Ihr Hackathon-Projekt"
+    },
+    "Hackathon Team Builder": {
+      "n": "Hackathon-Teambuilder",
+      "d": "Bilden Sie ein ausgewogenes Hackathon-Team mit komplementären Fähigkeiten und klaren Rollen"
+    },
+    "Demo Day Script": {
+      "n": "Skript zum Demo-Tag",
+      "d": "Erstellen Sie ein Skript für eine ausgefeilte Live-Demo, die die wichtigsten Funktionen Ihres Projekts hervorhebt"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Bewertungskriterienanalysator",
+      "d": "Analysieren Sie die Bewertungskriterien des Hackathons und optimieren Sie Ihr Projekt entsprechend"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Hackathon-Timeline-Planer",
+      "d": "Teilen Sie Ihre Hackathon-Stunden in einen strukturierten Sprintplan auf"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Berater für Preisstrategie",
+      "d": "Zielen Sie strategisch auf bestimmte Preissegmente ab und passen Sie Ihr Projekt so an, dass Sie gewinnen"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Aktionsplan für die Zeit nach dem Hackathon",
+      "d": "Verwandeln Sie Ihr Hackathon-Projekt in ein echtes Produkt oder Portfolio"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Rapid Prototyping-Leitfaden",
+      "d": "Erstellen Sie schnell Prototypen und iterieren Sie Ihr Hackathon-Konzept mit begrenzter Zeit"
+    },
+    "Hackathon Submission Template": {
+      "n": "Hackathon-Einreichungsvorlage",
+      "d": "Bereiten Sie eine vollständige und ausgefeilte Hackathon-Einreichung mit allen erforderlichen Materialien vor"
+    },
+    "Game Design Document": {
+      "n": "Game-Design-Dokument",
+      "d": "Erstellen Sie ein umfassendes Game-Design-Dokument, das alle Aspekte Ihres Spiels abdeckt"
+    },
+    "Game Mechanics Designer": {
+      "n": "Spielmechanik-Designer",
+      "d": "Entwerfen und balancieren Sie die Kernspielmechanik für ein fesselndes Gameplay"
+    },
+    "Level Design Planner": {
+      "n": "Level-Design-Planer",
+      "d": "Planen Sie Spiellevel mit Tempo, Herausforderungen und umgebungsbezogenem Geschichtenerzählen"
+    },
+    "Game Economy Balancer": {
+      "n": "Spiel-Wirtschafts-Balancer",
+      "d": "Entwerfen und balancieren Sie In-Game-Wirtschaftssysteme für faires und fesselndes Spielerlebnis"
+    },
+    "Character Stats Builder": {
+      "n": "Charakterstatistik-Builder",
+      "d": "Erstellen Sie ausgewogene Charakterstatistiksysteme und Klassenarchetypen"
+    },
+    "Quest Designer": {
+      "n": "Quest-Designer",
+      "d": "Entwerfen Sie fesselnde Quests mit verzweigten Erzählungen und sinnvollen Belohnungen"
+    },
+    "Game UI/UX Planner": {
+      "n": "Spiel-UI/UX-Planer",
+      "d": "Planen Sie intuitive Spiel-UI-Layouts und Benutzererlebnisabläufe"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Tabletop-RPG-Kampagne",
+      "d": "Erstellen Sie eine Tabletop-RPG-Kampagne mit Weltgeschichte, NPCs und Handlungssträngen"
+    },
+    "Board Game Designer": {
+      "n": "Brettspieldesigner",
+      "d": "Entwerfen Sie ein Brettspiel vom Konzept bis zum Prototyp mit ausgewogenen Regeln"
+    },
+    "Game Testing Checklist": {
+      "n": "Checkliste für Spieletests",
+      "d": "Erstellen Sie eine umfassende Checkliste für QS-Tests für Ihr Spiel"
+    },
+    "Photo Shoot Planner": {
+      "n": "Fotoshooting-Planer",
+      "d": "Planen Sie ein komplettes Fotoshooting vom Konzept bis zur Ausführung mit der gesamten Logistik"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Leitfaden für Fotografie-Portfolios",
+      "d": "Kuratieren und organisieren Sie ein herausragendes Fotoportfolio für Kunden oder Ausstellungen"
+    },
+    "Photo Editing Workflow": {
+      "n": "Fotobearbeitungs-Workflow",
+      "d": "Erstellen Sie einen effizienten Fotobearbeitungs-Workflow vom Import bis zum endgültigen Export"
+    },
+    "Client Photography Brief": {
+      "n": "Kundenfotografie-Brief",
+      "d": "Erstellen Sie ein professionelles Foto-Briefing für Kundenprojekte"
+    },
+    "Landscape Photography Guide": {
+      "n": "Leitfaden für Landschaftsfotografie",
+      "d": "Planen Sie Landschaftsfotografieausflüge mit Wetter-, Zeit- und Kompositionstipps"
+    },
+    "Portrait Photography Tips": {
+      "n": "Tipps zur Porträtfotografie",
+      "d": "Leitfaden für die Aufnahme überzeugender Porträts mit Beleuchtung und Posenrichtung"
+    },
+    "Product Photography Setup": {
+      "n": "Einrichtung der Produktfotografie",
+      "d": "Richten Sie professionelle Produktfotografie mit der richtigen Beleuchtung und Inszenierung ein"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Zeitleiste der Hochzeitsfotografie",
+      "d": "Planen Sie einen kompletten Zeitplan für die Hochzeitsfotografie von der Vorbereitung bis zum Empfang"
+    },
+    "Street Photography Guide": {
+      "n": "Leitfaden für Straßenfotografie",
+      "d": "Tipps und Techniken für authentische und überzeugende Straßenfotografie"
+    },
+    "Astrophotography Planner": {
+      "n": "Astrofotografie-Planer",
+      "d": "Planen Sie Astrofotografiesitzungen mit Geräteeinstellungen und Himmelsereignissen"
+    },
+    "Character Design Brief": {
+      "n": "Charakter-Design-Brief",
+      "d": "Erstellen Sie detaillierte Charakterdesign-Briefs mit Persönlichkeit, Aussehen und Hintergrundgeschichte"
+    },
+    "Comic Strip Creator": {
+      "n": "Comic-Schöpfer",
+      "d": "Planen und erstellen Sie Comicstrips mit Panel-Layout, Dialogen und Tempo"
+    },
+    "World Building Guide": {
+      "n": "Weltenbau-Leitfaden",
+      "d": "Entwerfen Sie immersive fiktive Welten mit Geografie, Kulturen und Überlieferungen"
+    },
+    "Children's Book Illustrator": {
+      "n": "Kinderbuchillustrator",
+      "d": "Planen Sie Illustrationen für Kinderbücher mit altersgerechtem Stil und Tempo"
+    },
+    "Art Portfolio Curator": {
+      "n": "Kurator für Kunstportfolios",
+      "d": "Kuratieren und präsentieren Sie ein Kunstportfolio für Galerien, Kunden oder Schulen"
+    },
+    "Color Theory Guide": {
+      "n": "Leitfaden zur Farbtheorie",
+      "d": "Wenden Sie die Prinzipien der Farbtheorie an, um harmonische und wirkungsvolle Kunstwerke zu schaffen"
+    },
+    "Digital Art Workflow": {
+      "n": "Digitaler Kunst-Workflow",
+      "d": "Optimieren Sie Ihren digitalen Kunstprozess von der Skizze bis zum endgültigen Rendering"
+    },
+    "Art Commission Brief": {
+      "n": "Brief der Kunstkommission",
+      "d": "Schreiben Sie klare Aufträge für Kunstaufträge, um den Künstlern Ihre Vision zu vermitteln"
+    },
+    "Mural Design Planner": {
+      "n": "Wandgestaltungsplaner",
+      "d": "Planen Sie groß angelegte Wandgemäldeprojekte vom Konzept bis zur Installation"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Vorschlag für eine Kunstausstellung",
+      "d": "Schreiben Sie einen professionellen Kunstausstellungsvorschlag für Galerien und Veranstaltungsorte"
+    },
+    "Tax Deduction Finder": {
+      "n": "Steuerabzugsfinder",
+      "d": "Identifizieren Sie häufig verpasste Steuerabzüge basierend auf Ihrer Situation und Ihrem Anmeldestatus"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Leitfaden zur Selbstständigkeitssteuer",
+      "d": "Navigieren Sie zu den Steuern auf selbständige Erwerbstätigkeit, einschließlich geschätzter Zahlungen und Abzüge"
+    },
+    "Tax Document Organizer": {
+      "n": "Organisator von Steuerdokumenten",
+      "d": "Organisieren und verfolgen Sie alle für die Einreichungssaison erforderlichen Steuerdokumente"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Vierteljährlicher Steuerschätzer",
+      "d": "Berechnen und planen Sie vierteljährlich geschätzte Steuerzahlungen für Selbstständige"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Leitfaden zur Berechnung von Kapitalgewinnen",
+      "d": "Verstehen und planen Sie Kapitalertragssteuern auf Investitionen und Immobilien"
+    },
+    "Tax Filing Checklist": {
+      "n": "Checkliste für die Steuererklärung",
+      "d": "Schritt-für-Schritt-Checkliste zur Gewährleistung einer korrekten und vollständigen Steuererklärung"
+    },
+    "State Tax Comparison": {
+      "n": "Landessteuervergleich",
+      "d": "Vergleichen Sie die steuerlichen Auswirkungen eines Umzugs oder eines Einkommens aus mehreren Bundesstaaten"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Leitfaden zur Gewinnung von Steuerverlusten",
+      "d": "Gewinnen Sie Anlageverluste strategisch, um Gewinne auszugleichen und die Steuerschuld zu reduzieren"
+    },
+    "Stock Research Template": {
+      "n": "Vorlage für Aktienrecherchen",
+      "d": "Führen Sie eine gründliche fundamentale und technische Analyse einzelner Aktien durch"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF-Vergleichstool",
+      "d": "Vergleichen Sie ETFs nach Kostenquoten, Beständen, Leistung und Strategie"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Dividendenportfolioplaner",
+      "d": "Bauen Sie ein auf Dividenden ausgerichtetes Portfolio zur passiven Einkommensgenerierung auf"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Analysator für Immobilieninvestitionen",
+      "d": "Analysieren Sie Mietobjekte und Immobilieninvestitionen auf Rendite und Cashflow"
+    },
+    "Angel Investing Checklist": {
+      "n": "Angel-Investing-Checkliste",
+      "d": "Bewerten Sie Startup-Investitionsmöglichkeiten mit Due-Diligence-Rahmenwerken"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Rentenkonto-Optimierer",
+      "d": "Optimieren Sie die Beiträge für 401k-, IRA- und andere Rentenkonten"
+    },
+    "Bond Analysis Guide": {
+      "n": "Leitfaden zur Anleihenanalyse",
+      "d": "Analysieren Sie Anleihen und festverzinsliche Wertpapiere hinsichtlich Rendite, Laufzeit und Risiko"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Gutachter für Investmentfonds",
+      "d": "Bewerten Sie Investmentfonds nach Leistung, Gebühren, Erfolgsbilanz des Managers und Eignung"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Leitfaden zur Portfolio-Neuausrichtung",
+      "d": "Balancieren Sie Ihr Anlageportfolio neu aus, um die angestrebte Vermögensallokation beizubehalten"
+    },
+    "Investment Journal Template": {
+      "n": "Vorlage für ein Investmentjournal",
+      "d": "Verfolgen Sie Investitionsentscheidungen, Gründe und Ergebnisse für eine kontinuierliche Verbesserung"
+    },
+    "AWS Service Selector": {
+      "n": "AWS-Serviceauswahl",
+      "d": "Wählen Sie die richtigen AWS-Services für Ihre Anwendungsanforderungen und Ihr Budget"
+    },
+    "Cloud Migration Plan": {
+      "n": "Cloud-Migrationsplan",
+      "d": "Planen Sie eine strukturierte Migration lokaler Workloads in die Cloud"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Kubernetes-Bereitstellungshandbuch",
+      "d": "Stellen Sie Anwendungen auf Kubernetes mit Best Practices bereit und verwalten Sie sie"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Infrastruktur als Codevorlage",
+      "d": "Erstellen Sie Infrastruktur als Code-Vorlagen für reproduzierbare Cloud-Umgebungen"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD-Pipeline-Designer",
+      "d": "Entwerfen Sie automatisierte CI/CD-Pipelines für kontinuierliche Integration und Bereitstellung"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Cloud-Kostenoptimierer",
+      "d": "Identifizieren und implementieren Sie Strategien zur Cloud-Kostenoptimierung"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Serverloser Architekturplaner",
+      "d": "Entwerfen Sie serverlose Anwendungen mit ereignisgesteuerten Architekturmustern"
+    },
+    "Container Strategy Guide": {
+      "n": "Leitfaden zur Containerstrategie",
+      "d": "Definieren Sie eine Containerisierungsstrategie für Anwendungen und Microservices"
+    },
+    "Cloud Security Checklist": {
+      "n": "Checkliste für Cloud-Sicherheit",
+      "d": "Prüfen und sichern Sie die Cloud-Infrastruktur mit umfassenden Sicherheitsprüfungen"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Notfallwiederherstellungsplan",
+      "d": "Entwerfen Sie einen Cloud-Disaster-Recovery-Plan mit RTO- und RPO-Zielen"
+    },
+    "Keynote Speech Writer": {
+      "n": "Keynote-Redenschreiber",
+      "d": "Schreiben Sie eine kraftvolle Keynote-Rede, die Ihr Publikum inspiriert und fesselt"
+    },
+    "TED Talk Outline": {
+      "n": "TED-Talk-Übersicht",
+      "d": "Strukturieren Sie einen überzeugenden Vortrag im TED-Stil mit einem starken Erzählbogen"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Toast- und Tribute-Autor",
+      "d": "Schreiben Sie unvergessliche Toasts und Ehrungen für Hochzeiten, Ruhestandsfeiern und Feiern"
+    },
+    "Debate Preparation Guide": {
+      "n": "Leitfaden zur Debattenvorbereitung",
+      "d": "Bereiten Sie sich mit Argumenten, Widerlegungen und Beweisen gründlich auf Debatten vor"
+    },
+    "Panel Discussion Prep": {
+      "n": "Podiumsdiskussionsvorbereitung",
+      "d": "Bereiten Sie sich auf Podiumsdiskussionen mit Gesprächsthemen und Beteiligung des Publikums vor"
+    },
+    "Presentation Slide Planner": {
+      "n": "Präsentationsfolienplaner",
+      "d": "Planen Sie Präsentationsfolien mit visueller Hierarchie und narrativem Fluss"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Leitfaden zum spontanen Sprechen",
+      "d": "Bauen Sie mit improvisierten Sprechrahmen Fähigkeiten auf, um schnell denken zu können"
+    },
+    "Commencement Speech Writer": {
+      "n": "Verfasser von Eröffnungsreden",
+      "d": "Schreiben Sie eine inspirierende Eröffnungsrede für Abschlussfeierlichkeiten"
+    },
+    "Grant Application Writer": {
+      "n": "Verfasser von Förderanträgen",
+      "d": "Verfassen Sie überzeugende Zuschussanträge, in denen die Auswirkungen und der Bedarf klar dargelegt werden"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Plan für eine Spendenaktion",
+      "d": "Planen und führen Sie effektive Spendenkampagnen über mehrere Kanäle durch"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Leitfaden für die Rekrutierung von Freiwilligen",
+      "d": "Rekrutieren, integrieren und binden Sie Freiwillige für gemeinnützige Programme"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Vorstandssitzung einer gemeinnützigen Organisation",
+      "d": "Bereiten Sie effektive Vorstandssitzungen gemeinnütziger Organisationen mit klaren Tagesordnungen vor und führen Sie diese durch"
+    },
+    "Impact Report Template": {
+      "n": "Vorlage für einen Wirkungsbericht",
+      "d": "Erstellen Sie überzeugende Wirkungsberichte, die die Erfolge Ihrer gemeinnützigen Organisation präsentieren"
+    },
+    "Donor Thank You Letter": {
+      "n": "Dankesbrief des Spenders",
+      "d": "Schreiben Sie personalisierte Dankesschreiben für Spender, die dauerhafte Beziehungen aufbauen"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Jährliche Kampagnenstrategie",
+      "d": "Entwickeln Sie eine umfassende jährliche Fundraising- und Engagement-Strategie"
+    },
+    "Community Needs Assessment": {
+      "n": "Bedarfsanalyse der Gemeinschaft",
+      "d": "Führen Sie eine gründliche Bedarfsanalyse der Gemeinschaft durch, um die Programmentwicklung zu leiten"
+    },
+    "Construction Project Plan": {
+      "n": "Bauprojektplan",
+      "d": "Erstellen Sie einen umfassenden Bauprojektplan mit Phasen, Zeitplänen und Budgets"
+    },
+    "Building Permit Checklist": {
+      "n": "Checkliste für Baugenehmigungen",
+      "d": "Verfolgen Sie alle erforderlichen Baugenehmigungen und Genehmigungen für Ihr Bauprojekt"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Leitfaden zur Auftragnehmerbewertung",
+      "d": "Bewerten und vergleichen Sie Auftragnehmer mit einem strukturierten Bewertungsrahmen"
+    },
+    "Material Estimate Calculator": {
+      "n": "Materialschätzungsrechner",
+      "d": "Schätzen Sie die benötigten Baumaterialien anhand von Mengen und Kostenprognosen"
+    },
+    "Site Inspection Checklist": {
+      "n": "Checkliste für die Standortinspektion",
+      "d": "Führen Sie gründliche Standortinspektionen mit standardisierten Checklisten durch"
+    },
+    "Renovation Scope Document": {
+      "n": "Dokument zum Renovierungsumfang",
+      "d": "Definieren Sie einen klaren Umfang der Renovierungsarbeiten mit Spezifikationen und Erwartungen"
+    },
+    "Architectural Brief": {
+      "n": "Architekturbrief",
+      "d": "Schreiben Sie einen Architekturbrief, in dem Sie die Vision, Anforderungen und Einschränkungen des Projekts definieren"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Checkliste zur Einhaltung der Sicherheitsvorschriften",
+      "d": "Stellen Sie sicher, dass die Sicherheit auf der Baustelle der OSHA und den örtlichen Vorschriften entspricht"
+    },
+    "Robot Design Specification": {
+      "n": "Roboterdesignspezifikation",
+      "d": "Definieren Sie vollständige Spezifikationen für das Roboterdesign, einschließlich Mechanik, Elektronik und Software"
+    },
+    "IoT Project Planner": {
+      "n": "IoT-Projektplaner",
+      "d": "Planen Sie durchgängige IoT-Projekte von Sensoren bis hin zu Cloud-Dashboards"
+    },
+    "Sensor Selection Guide": {
+      "n": "Leitfaden zur Sensorauswahl",
+      "d": "Wählen Sie optimale Sensoren für Ihre Robotik- oder IoT-Anwendungsanforderungen"
+    },
+    "Embedded Systems Guide": {
+      "n": "Leitfaden für eingebettete Systeme",
+      "d": "Entwerfen Sie eingebettete Systeme mit der richtigen Mikrocontroller-Auswahl und Firmware-Architektur"
+    },
+    "Automation Workflow Designer": {
+      "n": "Automatisierungs-Workflow-Designer",
+      "d": "Entwerfen Sie Workflows für die Industrie- oder Heimautomatisierung mit Sensoren und Aktoren"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Hardware-Prototyp-Planer",
+      "d": "Planen Sie Hardware-Prototypen vom Steckbrett bis zur Leiterplatte mit Komponentenbeschaffung"
+    },
+    "Anxiety Management Plan": {
+      "n": "Angstmanagementplan",
+      "d": "Erstellen Sie einen personalisierten Angstmanagementplan mit Bewältigungsstrategien und Auslösern"
+    },
+    "CBT Thought Record": {
+      "n": "CBT-Gedankenaufzeichnung",
+      "d": "Üben Sie Gedankenaufzeichnungen zur kognitiven Verhaltenstherapie, um negatives Denken herauszufordern"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Generator für Journalaufforderungen",
+      "d": "Generieren Sie aussagekräftige Journalanregungen zur Selbstreflexion und emotionalen Verarbeitung"
+    },
+    "Relationship Communication Guide": {
+      "n": "Leitfaden zur Beziehungskommunikation",
+      "d": "Verbessern Sie die Beziehungskommunikation mit strukturierten Gesprächsrahmen"
+    },
+    "Boundary Setting Guide": {
+      "n": "Leitfaden zur Grenzsetzung",
+      "d": "Lernen Sie, im Privat- und Berufsleben gesunde Grenzen zu setzen und aufrechtzuerhalten"
+    },
+    "Grief Processing Helper": {
+      "n": "Helfer bei der Trauerverarbeitung",
+      "d": "Bewältigen Sie den Trauerprozess mit einfühlsamer Anleitung und praktischen Schritten"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Übung zum Selbstmitgefühl",
+      "d": "Machen Sie Selbstmitgefühlsübungen, um Ihre Widerstandsfähigkeit zu stärken und Selbstkritik zu reduzieren"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Aufbau emotionaler Intelligenz",
+      "d": "Entwickeln Sie emotionale Intelligenzfähigkeiten für ein besseres Selbstbewusstsein und bessere Beziehungen"
+    },
+    "Anger Management Plan": {
+      "n": "Wutmanagementplan",
+      "d": "Entwickeln Sie gesunde Strategien zur Wutbewältigung mit Auslösern und Deeskalationstechniken"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Burnout-Wiederherstellungsplan",
+      "d": "Erstellen Sie einen strukturierten Burnout-Wiederherstellungsplan mit Grenzen, Ruhe und schrittweiser Wiedereingliederung"
+    },
+    "Instant Pot Recipe": {
+      "n": "Instant-Pot-Rezept",
+      "d": "Schnellkochtopf-Rezepte mit Zeitanleitungen"
+    },
+    "World Cuisine Explorer": {
+      "n": "Weltküchen-Entdecker",
+      "d": "Authentische Rezepte aus der Weltküche"
+    },
+    "Fermentation Guide": {
+      "n": "Leitfaden zur Fermentation",
+      "d": "Rezepte und Techniken für fermentierte Lebensmittel"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "BBQ- und Grillführer",
+      "d": "Grillrezepte mit Rub- und Soßenkombinationen"
+    },
+    "Bread Baking Guide": {
+      "n": "Anleitung zum Brotbacken",
+      "d": "Handwerkliche Brotrezepte von der Vorspeise bis zum Schluss"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Leitfaden zum Pilzanbau",
+      "d": "Indoor-Pilzzucht vom Laich bis zur Ernte"
+    },
+    "Permaculture Planner": {
+      "n": "Permakultur-Planer",
+      "d": "Entwerfen Sie ein sich selbst tragendes Ökosystem für Lebensmittelgärten"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Leitfaden zur Gewächshauseinrichtung",
+      "d": "Planen und bauen Sie ein produktives Gewächshaus"
+    },
+    "FSBO Selling Guide": {
+      "n": "FSBO-Verkaufsleitfaden",
+      "d": "Verkaufen Sie Ihr Haus ohne Makler Schritt für Schritt"
+    },
+    "Investment Property Finder": {
+      "n": "Finder für Anlageimmobilien",
+      "d": "Bewerten Sie potenzielle Mietinvestitionsobjekte"
+    },
+    "Car Modification Guide": {
+      "n": "Leitfaden zur Fahrzeugmodifikation",
+      "d": "Planen Sie Fahrzeugmodifikationen und -Upgrades"
+    },
+    "Fleet Management Planner": {
+      "n": "Flottenmanagementplaner",
+      "d": "Verwalten Sie die Wartung und Kosten mehrerer Fahrzeuge"
+    },
+    "Digital Nomad Guide": {
+      "n": "Leitfaden für digitale Nomaden",
+      "d": "Arbeiten Sie aus der Ferne, während Sie um die Welt reisen"
+    },
+    "Eco-Travel Planner": {
+      "n": "Öko-Reiseplaner",
+      "d": "Planen Sie nachhaltige und umweltfreundliche Reisen"
+    },
+    "Product Launch Event": {
+      "n": "Produkteinführungsveranstaltung",
+      "d": "Planen Sie eine Produkteinführungsveranstaltung vom Veranstaltungsort bis zur PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Virtueller Veranstaltungsplaner",
+      "d": "Planen Sie ansprechende Online-Events und Webinare"
+    },
+    "College Planning Guide": {
+      "n": "Leitfaden zur Hochschulplanung",
+      "d": "Planen Sie Ihr Studium von der Auswahl bis zur finanziellen Unterstützung"
+    },
+    "Child Safety Plan": {
+      "n": "Kindersicherheitsplan",
+      "d": "Umfassende Sicherheitsrichtlinien für Zuhause und online"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Leitfaden zur Pflege exotischer Haustiere",
+      "d": "Pflegeratgeber für Reptilien, Vögel und exotische Haustiere"
+    },
+    "Pet Adoption Guide": {
+      "n": "Leitfaden zur Haustieradoption",
+      "d": "Navigieren Sie erfolgreich durch den Haustieradoptionsprozess"
+    },
+    "Tiny House Builder": {
+      "n": "Winziger Hausbauer",
+      "d": "Planen und bauen Sie Schritt für Schritt ein Tiny House"
+    },
+    "Workshop Setup Guide": {
+      "n": "Leitfaden zur Werkstatteinrichtung",
+      "d": "Entwerfen und rüsten Sie eine Heimwerkstatt aus"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Coupon-Strategieplaner",
+      "d": "Maximieren Sie Ihre Einsparungen durch strategisches Couponing"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Second-Hand-Einkaufsführer",
+      "d": "Finden Sie hochwertige Artikel in Secondhand-Läden und online"
+    },
+    "Theological Study Guide": {
+      "n": "Theologischer Studienführer",
+      "d": "Tauchen Sie tief in theologische Konzepte und Lehren ein"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Leitfaden zum interreligiösen Dialog",
+      "d": "Ermöglichen Sie respektvolle interreligiöse Gespräche"
+    },
+    "Marathon Training Plan": {
+      "n": "Marathon-Trainingsplan",
+      "d": "Komplettes Marathontraining von der Couch bis zum 26.2"
+    },
+    "Youth Sports Coach": {
+      "n": "Jugendsporttrainer",
+      "d": "Planen Sie Jugendsportübungen und -entwicklung"
+    },
+    "Woodworking Project": {
+      "n": "Holzbearbeitungsprojekt",
+      "d": "Planen Sie Holzbearbeitungsprojekte mit Schnittlisten und Schritten"
+    },
+    "Vinyl Record Guide": {
+      "n": "Leitfaden für Schallplatten",
+      "d": "Starten und kuratieren Sie eine Schallplattensammlung"
+    },
+    "Home Brewing Guide": {
+      "n": "Leitfaden zum Heimbrauen",
+      "d": "Brauen Sie zu Hause von Anfang bis Ende Bier oder Wein"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Roadmap für finanzielle Freiheit",
+      "d": "Planen Sie Ihren Weg zur finanziellen Unabhängigkeit"
+    },
+    "Midlife Career Change": {
+      "n": "Berufswechsel in der Lebensmitte",
+      "d": "Bewältigen Sie den beruflichen Übergang in jedem Alter"
+    },
+    "AI Wallpaper Creator": {
+      "n": "KI-Hintergrundbild-Ersteller",
+      "d": "Generieren Sie atemberaubende Hintergrundbilder für jedes Gerät"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Tattoo-Design-Eingabeaufforderung",
+      "d": "Erstellen Sie individuelle Tattoo-Designkonzepte mit KI"
+    },
+    "DJ Set Planner": {
+      "n": "DJ-Setplaner",
+      "d": "Planen Sie DJ-Sets mit Titelauswahl und Übergängen"
+    },
+    "Music Theory Tutor": {
+      "n": "Nachhilfelehrer für Musiktheorie",
+      "d": "Lernen Sie musiktheoretische Konzepte mit Übungen"
+    },
+    "Podcast Video Setup": {
+      "n": "Podcast-Video-Setup",
+      "d": "Richten Sie Video-Podcasts von der Ausrüstung bis zur Bearbeitung ein"
+    },
+    "Wedding Video Plan": {
+      "n": "Hochzeitsvideoplan",
+      "d": "Planen Sie Hochzeitsvideos von der Zeremonie bis zum Schnitt"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Verfasser von Memoirenkapiteln",
+      "d": "Schreiben Sie fesselnde Memoirenkapitel aus Lebensgeschichten"
+    },
+    "Haiku Generator": {
+      "n": "Haiku-Generator",
+      "d": "Erstellen Sie Haiku-Gedichte zu jedem Thema"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok-Content-Strategie",
+      "d": "Erstellen Sie eine TikTok-Wachstumsstrategie mit Content-Ideen"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube-Community-Beitrag",
+      "d": "Erstellen Sie ansprechende YouTube-Community-Beiträge"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Podcast-Monetarisierungsplan",
+      "d": "Strategien zur Monetarisierung Ihres Podcasts"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Vergleichsleitfaden für KI-Tools",
+      "d": "Vergleichen Sie KI-Tools für bestimmte Anwendungsfälle"
+    },
+    "Code Snippet Library": {
+      "n": "Code-Snippet-Bibliothek",
+      "d": "Organisieren und dokumentieren Sie wiederverwendbare Codefragmente"
+    },
+    "Tech Stack Selector": {
+      "n": "Tech-Stack-Auswahl",
+      "d": "Wählen Sie den richtigen Technologie-Stack für Ihr Projekt"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Leitfaden zur Datenschutz-Compliance",
+      "d": "Stellen Sie sicher, dass Ihre App den Datenschutzbestimmungen entspricht"
+    },
+    "API Security Audit": {
+      "n": "API-Sicherheitsaudit",
+      "d": "Überprüfen Sie Ihre API-Endpunkte auf Sicherheitslücken"
+    },
+    "AI Hackathon Project": {
+      "n": "KI-Hackathon-Projekt",
+      "d": "Planen Sie ein KI-fokussiertes Hackathon-Projekt durchgängig"
+    },
+    "Mobile Game Concept": {
+      "n": "Mobiles Spielkonzept",
+      "d": "Entwerfen Sie ein Handyspiel vom Konzept bis zur Monetarisierung"
+    },
+    "Drone Photography Guide": {
+      "n": "Leitfaden zur Drohnenfotografie",
+      "d": "Planen Sie Luftbildmissionen und -aufnahmen"
+    },
+    "NFT Art Collection": {
+      "n": "NFT-Kunstsammlung",
+      "d": "Planen und erstellen Sie eine digitale Kunstsammlung"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Steuerleitfaden für Freiberufler",
+      "d": "Navigieren Sie zu den Steuern und Abzügen für selbständige Erwerbstätigkeit"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Krypto-Portfolio-Builder",
+      "d": "Bauen Sie ein diversifiziertes Kryptowährungsportfolio auf"
+    },
+    "Azure Service Guide": {
+      "n": "Azure-Diensthandbuch",
+      "d": "Wählen Sie Azure-Clouddienste aus und konfigurieren Sie sie"
+    },
+    "Wedding Speech Writer": {
+      "n": "Verfasser von Hochzeitsreden",
+      "d": "Schreiben Sie herzliche Hochzeitsreden und Toasts"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Leitfaden für gemeinnützige Startups",
+      "d": "Starten Sie eine gemeinnützige Organisation von Grund auf"
+    },
+    "Home Addition Planner": {
+      "n": "Hauserweiterungsplaner",
+      "d": "Planen Sie einen Hausanbau von der Genehmigung bis zum Bau"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino-Projektplaner",
+      "d": "Planen Sie Arduino-basierte Elektronikprojekte"
+    },
+    "Digital Wellness Plan": {
+      "n": "Digitaler Wellnessplan",
+      "d": "Schaffen Sie eine gesunde Beziehung zur Technologie"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT-Analysetool",
+      "d": "Strategische Analyse von Stärken, Schwächen, Chancen, Risiken"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Meeting-Agenda-Builder",
+      "d": "Erstellen Sie strukturierte Besprechungspläne mit Zeitblöcken"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR-Framework-Ersteller",
+      "d": "Setzen Sie Ziele und Schlüsselergebnisse für Teams"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Vorbereitung auf Lieferantenverhandlungen",
+      "d": "Bereiten Sie sich auf Lieferantenverhandlungen vor"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Leitfaden zur Franchise-Bewertung",
+      "d": "Bewerten Sie Franchise-Möglichkeiten systematisch"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Verfasser von Remote-Arbeitsrichtlinien",
+      "d": "Erstellen Sie umfassende Richtlinien für Remote-Arbeit"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Diversity-Einstellungsplan",
+      "d": "Bauen Sie integrative Einstellungspraktiken und Pipelines auf"
+    },
+    "Freelance Contract Template": {
+      "n": "Freiberufler-Vertragsvorlage",
+      "d": "Erstellen Sie professionelle freiberufliche Dienstleistungsverträge"
+    },
+    "Personal Website Planner": {
+      "n": "Persönlicher Website-Planer",
+      "d": "Planen und strukturieren Sie Ihre professionelle Portfolio-Site"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Leitfaden zum intermittierenden Fasten",
+      "d": "Entwerfen Sie ein Protokoll zum intermittierenden Fasten"
+    },
+    "Posture Improvement Plan": {
+      "n": "Plan zur Verbesserung der Körperhaltung",
+      "d": "Korrigieren Sie Haltungsprobleme mit Übungen und Gewohnheiten"
+    },
+    "Notion Template Builder": {
+      "n": "Notion-Vorlagen-Builder",
+      "d": "Entwerfen Sie Notion-Arbeitsbereichsvorlagen für jeden Arbeitsablauf"
+    },
+    "Automation Workflow Builder": {
+      "n": "Automatisierungs-Workflow-Builder",
+      "d": "Entwerfen Sie Automatisierungsworkflows mit Zapier oder Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Agile Sprint-Planer",
+      "d": "Planen Sie agile Sprints mit Story Points und Geschwindigkeit"
+    },
+    "Product Roadmap Builder": {
+      "n": "Produkt-Roadmap-Builder",
+      "d": "Erstellen Sie Produkt-Roadmaps mit Meilensteinen und Themen"
+    },
+    "TOEFL Prep Guide": {
+      "n": "TOEFL-Vorbereitungsleitfaden",
+      "d": "Bereiten Sie sich mit Lernstrategien auf die TOEFL-Prüfung vor"
+    },
+    "Business English Coach": {
+      "n": "Business-Englisch-Coach",
+      "d": "Verbessern Sie die professionelle Englischkommunikation"
+    },
+    "Brand Identity Designer": {
+      "n": "Markenidentitätsdesigner",
+      "d": "Erstellen Sie zusammenhängende Richtlinien für die visuelle Markenidentität"
+    },
+    "UX Research Plan": {
+      "n": "UX-Forschungsplan",
+      "d": "Planen Sie eine User-Experience-Recherche für digitale Produkte"
+    },
+    "Data Storytelling Guide": {
+      "n": "Leitfaden zum Data Storytelling",
+      "d": "Verwandeln Sie Dateneinblicke in überzeugende Erzählungen"
+    },
+    "AI Model Evaluation": {
+      "n": "KI-Modellbewertung",
+      "d": "Bewerten und vergleichen Sie die Leistung von Modellen für maschinelles Lernen"
+    },
+    "3D Printing Project": {
+      "n": "3D-Druckprojekt",
+      "d": "Planen Sie 3D-Druckprojekte vom Entwurf bis zum Druck"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Elektrischer Schaltungsdesigner",
+      "d": "Entwerfen Sie elektrische Schaltkreise mit Komponentenauswahl"
+    },
+    "Side Hustle Finder": {
+      "n": "Nebenverdienst-Finder",
+      "d": "Entdecken Sie Nebenverdienst-Ideen basierend auf Ihren Fähigkeiten"
+    },
+    "Passive Income Blueprint": {
+      "n": "Passives Einkommen Bauplan",
+      "d": "Erstellen Sie eine passive Einkommensstrategie für Ihre Situation"
+    },
+    "Savings Challenge Generator": {
+      "n": "Spar-Challenge Generator",
+      "d": "Erstellen Sie einen individuellen Spar-Challenge-Plan"
+    },
+    "Negotiate Any Bill": {
+      "n": "Rechnungsverhandlung",
+      "d": "Skripte zum Verhandeln und Senken Ihrer wiederkehrenden Rechnungen"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy-Shop Starter",
+      "d": "Schritt-für-Schritt-Plan zum Starten und Wachsen eines Etsy-Shops"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube-Kanal Planer",
+      "d": "Planen und starten Sie einen profitablen YouTube-Kanal"
+    },
+    "Rental Income Analyzer": {
+      "n": "Mieteinnahmen-Analyzer",
+      "d": "Analysieren Sie potenzielle Mietimmobilien-Renditen"
+    },
+    "Online Course Creator": {
+      "n": "Online-Kurs Ersteller",
+      "d": "Planen und strukturieren Sie einen Online-Kurs zum Verkauf"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Coupon & Cashback Maximierer",
+      "d": "Maximieren Sie Einsparungen mit Coupons, Cashback und Prämien"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Dropshipping-Shop Einrichtung",
+      "d": "Planen Sie ein Dropshipping-Geschäft von Grund auf"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Gig-Economy Optimierer",
+      "d": "Maximieren Sie Einnahmen aus Gig-Apps wie Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "Budget",
+    "topic": "Thema",
+    "duration": "Dauer",
+    "level": "Niveau",
+    "style": "Stil",
+    "timeline": "Zeitplan",
+    "product": "Produkt",
+    "audience": "Zielgruppe",
+    "tone": "Tonfall",
+    "industry": "Branche",
+    "theme": "Thema",
+    "platform": "Plattform",
+    "location": "Standort",
+    "experience": "Erfahrung",
+    "genre": "Genre",
+    "frequency": "Häufigkeit",
+    "goals": "Ziele",
+    "format": "Format",
+    "season": "Saison",
+    "projectName": "Projektname",
+    "showSteps": "Schritte anzeigen",
+    "goal": "Ziel",
+    "destination": "Reiseziel",
+    "subject": "Fach",
+    "equipment": "Ausrüstung",
+    "targetAudience": "Zielgruppe",
+    "language": "Sprache",
+    "problem": "Problem",
+    "categories": "Kategorien",
+    "gradeLevel": "Klassenstufe",
+    "mood": "Stimmung",
+    "role": "Rolle",
+    "companyName": "Firmenname",
+    "company": "Unternehmen",
+    "title": "Titel",
+    "setting": "Umgebung",
+    "date": "Datum",
+    "environment": "Umfeld",
+    "state": "Bundesland",
+    "jurisdiction": "Gerichtsbarkeit",
+    "priorities": "Prioritäten",
+    "target_audience": "Zielgruppe",
+    "deadline": "Frist",
+    "childAge": "Alter des Kindes",
+    "guestCount": "Gästeanzahl",
+    "timeframe": "Zeitrahmen",
+    "interests": "Interessen",
+    "concerns": "Bedenken",
+    "region": "Region",
+    "tools": "Werkzeuge",
+    "category": "Kategorie",
+    "constraints": "Einschränkungen",
+    "projectType": "Projekttyp",
+    "venue": "Veranstaltungsort",
+    "focusArea": "Schwerpunktbereich",
+    "targetLanguage": "Zielsprache",
+    "framework": "Framework",
+    "domain": "Domäne",
+    "purpose": "Zweck",
+    "age": "Alter",
+    "teamSize": "Teamgröße",
+    "researchQuestion": "Forschungsfrage",
+    "context": "Kontext",
+    "output_format": "Ausgabeformat",
+    "task": "Aufgabe",
+    "channels": "Kanäle",
+    "servings": "Portionen",
+    "skillLevel": "Kompetenzniveau",
+    "occasion": "Anlass",
+    "climate": "Klima",
+    "zone": "Zone",
+    "activities": "Aktivitäten",
+    "attendees": "Teilnehmer",
+    "objectives": "Ziele",
+    "characters": "Charaktere",
+    "length": "Länge",
+    "niche": "Nische",
+    "scope": "Umfang",
+    "stakeholders": "Stakeholder",
+    "focus": "Fokus",
+    "size": "Größe",
+    "homeType": "Wohnungstyp",
+    "sport": "Sportart",
+    "application": "Anwendung",
+    "department": "Abteilung",
+    "cta": "Handlungsaufforderung",
+    "word_count": "Wortanzahl",
+    "period": "Zeitraum",
+    "severity": "Schweregrad",
+    "difficulty": "Schwierigkeit",
+    "skills": "Fähigkeiten",
+    "materials": "Materialien",
+    "methodology": "Methodik",
+    "cuisine": "Küche",
+    "lifestyle": "Lebensstil",
+    "year": "Jahr",
+    "petType": "Tierart",
+    "complexity": "Komplexität",
+    "deliverables": "Ergebnisse",
+    "dataType": "Datentyp",
+    "hours_per_week": "Stunden pro Woche",
+    "income_goal": "Einkommensziel",
+    "starting_capital": "Startkapital",
+    "risk_tolerance": "Risikobereitschaft",
+    "time_commitment": "Zeitaufwand",
+    "experience_years": "Erfahrungsjahre",
+    "expenses_monthly": "monatliche Ausgaben",
+    "hours_available": "verfügbare Stunden",
+    "target_income": "Zieleinkommen",
+    "savings_goal": "Sparziel",
+    "current_savings": "aktuelle Ersparnisse",
+    "monthly_income": "monatliches Einkommen",
+    "bill_type": "Rechnungstyp",
+    "current_amount": "aktueller Betrag",
+    "provider": "Anbieter",
+    "competitor_price": "Wettbewerbspreis",
+    "customer_years": "Kundenjahre",
+    "desired_amount": "gewünschter Betrag",
+    "product_type": "Produkttyp",
+    "pricing_range": "Preisbereich",
+    "content_type": "Inhaltstyp",
+    "upload_frequency": "Upload-Frequenz",
+    "equipment_budget": "Ausrüstungsbudget",
+    "monetization_goal": "Monetarisierungsziel",
+    "property_price": "Immobilienpreis",
+    "down_payment": "Anzahlung",
+    "monthly_rent": "monatliche Miete",
+    "property_type": "Immobilientyp",
+    "expenses": "Ausgaben",
+    "expertise_level": "Fachwissen",
+    "target_student": "Zielstudent",
+    "course_length": "Kurslänge",
+    "price_point": "Preispunkt",
+    "monthly_spending": "monatliche Ausgaben",
+    "current_cards": "aktuelle Karten",
+    "store_preferences": "Geschäftspräferenzen",
+    "effort_level": "Aufwandsniveau",
+    "apps_used": "verwendete Apps",
+    "marketing_budget": "Marketingbudget",
+    "product_count": "Produktanzahl",
+    "target_market": "Zielmarkt",
+    "available_hours": "verfügbare Stunden",
+    "vehicle": "Fahrzeug",
+    "current_gigs": "aktuelle Jobs",
+    "preferences": "Präferenzen"
+  }
+}

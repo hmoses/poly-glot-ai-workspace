@@ -1,0 +1,28 @@
+{
+  "name": "polyglot-workspace-chatgpt",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Poly-Glot AI Workspace MCP Apps server for ChatGPT and Claude with 38-language UI/input/output support and Compare Mode",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js",
+    "sync": "node scripts/sync-catalog.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@apple/app-store-server-library": "^3.1.0",
+    "@hono/mcp": "^0.3.2",
+    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "@neon/config": "^1.1.0",
+    "@neon/env": "^1.1.6",
+    "@neon/functions": "^0.8.0",
+    "hono": "^4.13.5",
+    "jose": "^6.2.10",
+    "pg": "^8.23.0",
+    "zod": "^3.25.76"
+  }
+}

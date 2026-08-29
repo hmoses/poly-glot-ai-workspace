@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Tot",
+    "free": "⭐ Gratuït",
+    "money": "💰 Negocis",
+    "coding": "💻 Programació",
+    "ai": "🤖 IA",
+    "writing": "✍️ Escriptura",
+    "marketing": "📢 Màrqueting",
+    "sales": "🤝 Vendes",
+    "school": "📚 Educació",
+    "research": "🔬 Recerca",
+    "career": "🚀 Carrera",
+    "legal": "⚖️ Legal",
+    "finance": "📊 Finances",
+    "health": "🏥 Salut",
+    "cooking": "🍳 Cuina",
+    "garden": "🌱 Jardí",
+    "realestate": "🏠 Immobiliària",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Viatges",
+    "image": "🎨 Imatge IA",
+    "music": "🎵 Música",
+    "video": "🎬 Vídeo",
+    "social": "📱 Social",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-comerç",
+    "productivity": "⏱ Productivitat",
+    "diy": "🔨 Bricolatge",
+    "event": "🎉 Esdeveniments",
+    "parent": "👶 Criança",
+    "pets": "🐾 Mascotes",
+    "sports": "⚽ Esports",
+    "wellness": "🧘 Benestar",
+    "language": "🌍 Idiomes",
+    "security": "🔒 Seguretat",
+    "datascience": "📈 Ciència de dades",
+    "chemistry": "🧪 Química",
+    "biology": "🧬 Biologia",
+    "physics": "⚛️ Física",
+    "math": "🔢 Matemàtiques",
+    "makemoney": "💰 Diners"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Eina de resum",
+      "d": "Condenseu qualsevol contingut en resums clars"
+    },
+    "Technical Documentation": {
+      "n": "Documentació tècnica",
+      "d": "Creeu documents tècnics clars per a API i funcions"
+    },
+    "YouTube Script": {
+      "n": "Script de YouTube",
+      "d": "Guió de vídeo complet amb ganxo, seccions, CTA, llista b-roll"
+    },
+    "TikTok Generator": {
+      "n": "Generador de TikTok",
+      "d": "Script de vídeo de format curt optimitzat per a TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Redactor de publicacions de LinkedIn",
+      "d": "Publicacions de LinkedIn que s'aturen el desplaçament que generen la implicació"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Generador de publicacions de bloc",
+      "d": "Publicacions llargues optimitzades per a SEO"
+    },
+    "SEO Article Writer": {
+      "n": "Escriptor d'articles de SEO",
+      "d": "Articles rics en paraules clau dissenyats per classificar-se a Google"
+    },
+    "Podcast Episode Outline": {
+      "n": "Esquema de l'episodi del podcast",
+      "d": "Esquema d'episodi estructurat amb punts de conversa"
+    },
+    "Newsletter Writer": {
+      "n": "Redactor de butlletins",
+      "d": "Els lectors de butlletins de correu electrònic atractius estan oberts"
+    },
+    "Product Review Writer": {
+      "n": "Redactor de ressenyes de productes",
+      "d": "Revisions de productes equilibrades i creïbles"
+    },
+    "Social Media Calendar": {
+      "n": "Calendari de xarxes socials",
+      "d": "Calendari de contingut de 30 dies amb idees de publicació per plataforma"
+    },
+    "Executive Summary": {
+      "n": "Resum executiu",
+      "d": "Resum executiu d'una pàgina a partir de documents llargs"
+    },
+    "Customer Support Response": {
+      "n": "Resposta d'assistència al client",
+      "d": "Respostes empàtiques d'atenció al client de marca"
+    },
+    "Business Proposal": {
+      "n": "Proposta de negoci",
+      "d": "Guanyar propostes de clients amb abast i preus"
+    },
+    "Decision Memo": {
+      "n": "Memòria de decisió",
+      "d": "Notes de decisió clares amb opcions i recomanacions"
+    },
+    "Stakeholder Update": {
+      "n": "Actualització de les parts interessades",
+      "d": "Actualitzacions concises de l'estat del projecte per a les parts interessades"
+    },
+    "Code Review Assistant": {
+      "n": "Assistent de revisió de codi",
+      "d": "Reviseu el codi per trobar errors, estil i pràctiques recomanades"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Comentaris del codi",
+      "d": "Comentaris JSDoc per a JavaScript i TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Registre de decisions d'arquitectura",
+      "d": "ADR formal que documenta les decisions tècniques"
+    },
+    "User Story Writer": {
+      "n": "Escriptor d'històries d'usuari",
+      "d": "Històries d'usuari àgils amb criteris d'acceptació"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Criteris d'acceptació",
+      "d": "Criteris d'acceptació a l'estil de cogombret per a històries d'usuari"
+    },
+    "PR Description Writer": {
+      "n": "Escriptor de descripció de PR",
+      "d": "Descripcions de relacions públiques clares amb context i notes de prova"
+    },
+    "Unit Test Generator": {
+      "n": "Generador de proves unitàries",
+      "d": "Proves unitàries amb casos de punta per a qualsevol funció"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "Assessor de refactorització de codi",
+      "d": "Refactoritza el codi per a la llegibilitat i el rendiment"
+    },
+    "SQL Query Builder": {
+      "n": "Creador de consultes SQL",
+      "d": "Llenguatge natural per a consultes SQL optimitzades"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Generador de configuració de Kubernetes",
+      "d": "Diagnosticar i solucionar els problemes de K8s ràpidament"
+    },
+    "Postmortem Report": {
+      "n": "Informe postmortem",
+      "d": "Post mortem sense culpa amb cronologia i elements d'acció"
+    },
+    "Release Notes Writer": {
+      "n": "Escriptor de notes de llançament",
+      "d": "Notes de llançament fàcils d'utilitzar dels missatges de confirmació"
+    },
+    "Prompt Optimizer": {
+      "n": "Optimitzador de Prompts",
+      "d": "Millora qualsevol prompt d'IA per obtenir resultats més precisos i de millor qualitat"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Constructor de cadena de pensament",
+      "d": "Creeu indicacions de raonament de diversos passos per a tasques complexes"
+    },
+    "RAG System Prompt": {
+      "n": "Indicació del sistema RAG",
+      "d": "Plantilles de sol·licitud de generació augmentada amb recuperació"
+    },
+    "Eval Dataset Creator": {
+      "n": "Creador de conjunts de dades d'avaluació",
+      "d": "Genereu conjunts de dades d'avaluació per a proves de models d'IA"
+    },
+    "Prompt A/B Tester": {
+      "n": "Provador A/B ràpid",
+      "d": "Genereu variants A/B de sol·licituds per comparar el rendiment"
+    },
+    "Multi-Model Comparison": {
+      "n": "Comparació multimodel",
+      "d": "Marc per comparar els resultats dels models d'IA"
+    },
+    "Resume Tailoring": {
+      "n": "Reprendre la Sastreria",
+      "d": "Adapteu el vostre currículum a una descripció de feina específica"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Generador de cartes de presentació",
+      "d": "Cartes de presentació convincents que reben entrevistes"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "Optimitzador de Perfil de LinkedIn",
+      "d": "Optimitza el teu LinkedIn per als reclutadors"
+    },
+    "Interview Coach": {
+      "n": "Entrevista Coach",
+      "d": "Pràctica de l'entrevista Q&A per a qualsevol rol"
+    },
+    "Salary Negotiation Script": {
+      "n": "Guió de negociació salarial",
+      "d": "Guions i estratègies per negociar un salari més alt"
+    },
+    "Career Roadmap Planner": {
+      "n": "Planificador del full de ruta professional",
+      "d": "Pla de creixement professional de 12 mesos amb fites"
+    },
+    "Objection Handler": {
+      "n": "Gestor d'objeccions",
+      "d": "Scripts per gestionar objeccions de vendes habituals"
+    },
+    "Landing Page Copy": {
+      "n": "Còpia de la pàgina de destinació",
+      "d": "Còpia de la pàgina de destinació d'alta conversió"
+    },
+    "Google Ads Copy": {
+      "n": "Còpia de Google Ads",
+      "d": "Còpia de l'anunci de cerca de Google d'alt CTR"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Anunci de Facebook/Instagram",
+      "d": "Còpia d'anuncis de Facebook i Instagram que converteix"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Breu de la campanya de màrqueting",
+      "d": "Campanya de màrqueting completa amb canals i cronologia"
+    },
+    "Customer Persona Builder": {
+      "n": "Creador de persones del client",
+      "d": "Personas compradores detallades per a màrqueting i producte"
+    },
+    "Value Proposition Canvas": {
+      "n": "Canvas de proposta de valor",
+      "d": "Propostes de valor clares i convincents"
+    },
+    "Product Launch Plan": {
+      "n": "Pla de llançament de producte",
+      "d": "Pla de sortida al mercat per al llançament de productes"
+    },
+    "Study Guide Creator": {
+      "n": "Creador de guies d'estudi",
+      "d": "Converteix qualsevol tema en una guia d'estudi estructurada"
+    },
+    "Flashcard Creator": {
+      "n": "Creador de targetes flash",
+      "d": "Conjunts de preguntes i respostes de Flashcard per a una memorització ràpida"
+    },
+    "Quiz Generator": {
+      "n": "Generador de preguntes",
+      "d": "Proves d'elecció múltiple i de resposta curta"
+    },
+    "Lesson Plan Builder": {
+      "n": "Creador de plans de lliçó",
+      "d": "Plans de lliçons detallats amb activitats i avaluacions"
+    },
+    "Research Notes Organizer": {
+      "n": "Organitzador de notes de recerca",
+      "d": "Organitzar les notes de recerca en esquemes estructurats"
+    },
+    "Essay Outline Generator": {
+      "n": "Generador d'esquemes d'assaig",
+      "d": "Esquemes d'assaig estructurat amb tesi i arguments"
+    },
+    "Literature Review Assistant": {
+      "n": "Auxiliar de revisió de literatura",
+      "d": "Revisió de la literatura acadèmica amb síntesi"
+    },
+    "Thesis Statement Builder": {
+      "n": "Generador de declaracions de tesi",
+      "d": "Declaracions de tesi contundents i discutibles"
+    },
+    "Exam Prep Planner": {
+      "n": "Planificador de preparació d'exàmens",
+      "d": "Calendari d'estudis d'exàmens personalitzat"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Resum del contracte",
+      "d": "Resum del contracte en anglès senzill. No assessorament legal."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Revisió del risc del contracte",
+      "d": "Identificar clàusules de risc. No assessorament legal."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F Analitzador NDA",
+      "d": "Desglossament de la clàusula NDA. No assessorament legal."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Assistent d'esborrany de polítiques",
+      "d": "Esborrany de polítiques internes. No assessorament legal."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Llista de verificació de compliment",
+      "d": "Llista de verificació de compliment per marc. No assessorament legal."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Revisor de les condicions del servei",
+      "d": "Marca els riscos de ToS. No assessorament legal."
+    },
+    "Budget Planner": {
+      "n": "Planificador de pressupostos",
+      "d": "Pla pressupostari personal o empresarial. No assessorament financer."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Resum de trucades de guanys",
+      "d": "Punts clau de les trucades de guanys. No assessorament financer."
+    },
+    "Investment Thesis Builder": {
+      "n": "Constructor de tesi d'inversió",
+      "d": "Tesi d'inversió estructurada. No assessorament financer."
+    },
+    "Financial Analysis Report": {
+      "n": "Informe d'anàlisi financera",
+      "d": "Analitzar les finances. No assessorament financer."
+    },
+    "Expense Categorizer": {
+      "n": "Categoritzador de despeses",
+      "d": "Classificar i analitzar les despeses. No assessorament financer."
+    },
+    "SOAP Note Generator": {
+      "n": "Generador de notes SOAP",
+      "d": "Notes Clíniques SOAP. No consell mèdic."
+    },
+    "Clinical Case Summary": {
+      "n": "Resum del cas clínic",
+      "d": "Estructurar notes clíniques. No consell mèdic."
+    },
+    "Patient Education Writer": {
+      "n": "Escriptor d'educació del pacient",
+      "d": "Educació del pacient en llenguatge senzill. No consell mèdic."
+    },
+    "Medical Research Summarizer": {
+      "n": "Resum de recerca mèdica",
+      "d": "Resumir treballs de recerca. No consell mèdic."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Auxiliar de diagnòstic diferencial",
+      "d": "Organitzar els diagnòstics diferencials. No consell mèdic."
+    },
+    "Creative Storyteller": {
+      "n": "Narrador creatiu",
+      "d": "Genera històries i narracions creatives"
+    },
+    "Ad Copy Generator": {
+      "n": "Generador de còpia d'anuncis",
+      "d": "Còpia d'alta conversió per a Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Escriptor d'informes d'errors",
+      "d": "Escriviu informes d'errors clars i reproduïbles"
+    },
+    "Social Media Caption": {
+      "n": "Subtítol de xarxes socials",
+      "d": "Genereu subtítols que detenen el desplaçament per a qualsevol plataforma"
+    },
+    "Research Paper Abstract": {
+      "n": "Resum del treball de recerca",
+      "d": "Escriure resums acadèmics estructurats"
+    },
+    "Translation Expert": {
+      "n": "Expert en traducció",
+      "d": "Tradueix text amb context i matisos"
+    },
+    "Data Analyst": {
+      "n": "Analista de dades",
+      "d": "Analitzeu les dades i proporcioneu informació útil"
+    },
+    "Recipe Generator": {
+      "n": "Generador de receptes",
+      "d": "Genereu receptes personalitzades en funció de les vostres preferències i necessitats dietètiques"
+    },
+    "Meal Planner": {
+      "n": "Planificador de menjars",
+      "d": "Planifiqueu àpats equilibrats durant tota la setmana tenint en compte la varietat i la nutrició"
+    },
+    "Grocery List Builder": {
+      "n": "Creador de llistes de queviures",
+      "d": "Creeu una llista de queviures organitzada a partir dels vostres àpats planificats i les vostres necessitats de rebost"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Cercador de receptes de rebost",
+      "d": "Troba receptes delicioses amb ingredients que ja tens a mà"
+    },
+    "Nutrition Calculator": {
+      "n": "Calculadora de nutrició",
+      "d": "Calcula la informació nutricional detallada per a qualsevol recepta o combinació de menjar"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Guia de substitució d'ingredients",
+      "d": "Trobeu substitucions perfectes per als ingredients que falten o estan restringits"
+    },
+    "Batch Cooking Planner": {
+      "n": "Planificador de cuina per lots",
+      "d": "Planifiqueu sessions eficients de cuina per lots per estalviar temps durant tota la setmana"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Creador de receptes de còctels",
+      "d": "Crea i personalitza receptes de còctels per a qualsevol ocasió"
+    },
+    "Baking Conversion Helper": {
+      "n": "Ajudant de conversió de cocció",
+      "d": "Converteix les mesures de cocció entre unitats i escala les receptes cap amunt o cap avall"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Cercador de receptes específiques per a la dieta",
+      "d": "Trobeu receptes adaptades al vostre pla de dieta o objectius nutricionals específics"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Recepta de cuina lenta",
+      "d": "Obteniu receptes de cuina lenta perfectament cronometrades per cuinar sense mà"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Creador de receptes de fregidora d'aire",
+      "d": "Creeu receptes de fregidores d'aire cruixents i delicioses amb un moment perfecte"
+    },
+    "Smoothie Builder": {
+      "n": "Constructor de batuts",
+      "d": "Crea receptes de batuts nutritives i delicioses per a qualsevol objectiu"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Creador de salses i amaniments",
+      "d": "Crea salses i amaniments casolans des de zero"
+    },
+    "Spice Blend Guide": {
+      "n": "Guia de mescles d'espècies",
+      "d": "Creeu barreges d'espècies personalitzades per a qualsevol cuina o tipus de plat"
+    },
+    "Food Pairing Expert": {
+      "n": "Expert en maridatge",
+      "d": "Descobriu els maridatges ideals d'aliments i sabors per menjars elevats"
+    },
+    "Holiday Menu Planner": {
+      "n": "Planificador de menús de vacances",
+      "d": "Planifica un menú complet de vacances amb cronologia i llista de compres"
+    },
+    "Leftover Makeover": {
+      "n": "Canvi d'imatge sobrant",
+      "d": "Transformeu les restes en àpats nous i emocionants amb idees creatives"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Idees de menjars per a nens",
+      "d": "Genereu àpats saludables que els nens realment gaudeixin menjant"
+    },
+    "Date Night Dinner": {
+      "n": "Sopar de nit",
+      "d": "Planifica un sopar impressionant per a una vetllada romàntica a casa"
+    },
+    "Budget Meal Planner": {
+      "n": "Planificador de menjars pressupostari",
+      "d": "Creeu àpats deliciosos amb un pressupost ajustat sense sacrificar la nutrició"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Convertidor de receptes veganes",
+      "d": "Converteix qualsevol recepta tradicional en una deliciosa versió vegana"
+    },
+    "Dessert Creator": {
+      "n": "Creador de postres",
+      "d": "Dissenyeu receptes de postres personalitzades per a qualsevol nivell d'habilitat i ocasió"
+    },
+    "Appetizer Planner": {
+      "n": "Planificador d'aperitius",
+      "d": "Planifiqueu l'aperitiu perfecte per a festes i reunions"
+    },
+    "Food Prep Timeline": {
+      "n": "Cronologia de preparació d'aliments",
+      "d": "Creeu una cronologia de cocció detallada perquè tot estigui llest alhora"
+    },
+    "Plant Care Guide": {
+      "n": "Guia de cura de les plantes",
+      "d": "Obteniu instruccions de cura personalitzades per a qualsevol planta de la vostra col·lecció"
+    },
+    "Garden Planner": {
+      "n": "Planificador de jardins",
+      "d": "Dissenya i planifica el teu jardí per obtenir el màxim rendiment i bellesa"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Eina de diagnòstic de plagues",
+      "d": "Identificar plagues i malalties del jardí amb opcions de tractament orgànic"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Calendari de plantació de temporada",
+      "d": "Sapigueu exactament quan plantar cada cultiu a la vostra zona de cultiu"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Planificador d'horts",
+      "d": "Planifiqueu un hort productiu amb plantació i rotació acompanyades"
+    },
+    "Indoor Plant Guide": {
+      "n": "Guia de plantes d'interior",
+      "d": "Tria i cuida les plantes d'interior perfectes per al teu espai"
+    },
+    "Herb Garden Starter": {
+      "n": "Inici del jardí d'herbes",
+      "d": "Comença un pròsper jardí d'herbes a l'interior o a l'exterior amb una guia experta"
+    },
+    "Composting Guide": {
+      "n": "Guia de compostatge",
+      "d": "Iniciar i mantenir un sistema de compostatge per a un sòl ric del jardí"
+    },
+    "Landscape Design Helper": {
+      "n": "Auxiliar de disseny del paisatge",
+      "d": "Dissenyeu un bonic pla de paisatge per a la vostra propietat"
+    },
+    "Raised Bed Planner": {
+      "n": "Planificador de llits elevats",
+      "d": "Dissenya i construeix els llits de jardí elevats perfectes per al teu espai"
+    },
+    "Fruit Tree Guide": {
+      "n": "Guia d'arbres fruiters",
+      "d": "Seleccioneu i cuideu arbres fruiters adequats al vostre clima i espai"
+    },
+    "Container Garden Planner": {
+      "n": "Planificador de jardins de contenidors",
+      "d": "Creeu jardins de contenidors bonics i productius per a qualsevol espai"
+    },
+    "Pollinator Garden": {
+      "n": "Jardí dels pol·linitzadors",
+      "d": "Dissenyeu un jardí que atragui abelles, papallones i insectes beneficiosos"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Jardí tolerant a la sequera",
+      "d": "Planifiqueu un jardí hídric que prosperi amb un reg mínim"
+    },
+    "Soil Amendment Guide": {
+      "n": "Guia d'esmena del sòl",
+      "d": "Proveu i milloreu el sòl del vostre jardí per obtenir una salut vegetal òptima"
+    },
+    "Seed Starting Calendar": {
+      "n": "Calendari d'inici de llavors",
+      "d": "Planifiqueu el vostre calendari d'inici de llavors per a una temporada de creixement exitosa"
+    },
+    "Garden Layout Designer": {
+      "n": "Dissenyador de maquetació de jardins",
+      "d": "Creeu un disseny de jardí optimitzat amb espais adequats i accés al sol"
+    },
+    "Water Schedule Planner": {
+      "n": "Planificador de l'horari d'aigua",
+      "d": "Creeu un programa de reg eficient per al vostre jardí i gespa"
+    },
+    "Plant Problem Solver": {
+      "n": "Solucionador de problemes de plantes",
+      "d": "Diagnosticar i tractar els problemes comuns de les plantes amb l'assessorament d'experts"
+    },
+    "Pruning Guide": {
+      "n": "Guia de poda",
+      "d": "Apreneu quan i com podar qualsevol planta per a la salut i la bellesa"
+    },
+    "Home Buying Checklist": {
+      "n": "Llista de verificació de compra d'habitatges",
+      "d": "Completa la llista de verificació pas a pas per al procés de compra d'habitatge"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Eina de comparació d'apartaments",
+      "d": "Compareu els apartaments junts per trobar el vostre lloguer perfecte"
+    },
+    "Rental Application Helper": {
+      "n": "Auxiliar d'aplicació de lloguer",
+      "d": "Prepareu una sol·licitud de lloguer sòlida que destaqui per als propietaris"
+    },
+    "Home Inspection Questions": {
+      "n": "Preguntes d'inspecció de la llar",
+      "d": "Preguntes essencials per fer durant una inspecció de la llar"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Calculadora de comparació d'hipoteques",
+      "d": "Compareu les opcions hipotecàries per trobar la millor oferta per a la vostra situació"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Guia del primer comprador",
+      "d": "Guia completa per navegar per la teva primera compra d'habitatge amb confiança"
+    },
+    "Neighborhood Research": {
+      "n": "Recerca de barri",
+      "d": "Investigueu i compareu els barris per trobar el que més us convingui"
+    },
+    "Home Value Estimator": {
+      "n": "Estimador de valor d'habitatge",
+      "d": "Estima el valor de la teva llar utilitzant dades de mercat i vendes comparables"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Revisor del contracte d'arrendament",
+      "d": "Reviseu i comprengueu els termes clau del vostre contracte d'arrendament"
+    },
+    "Moving Checklist": {
+      "n": "Llista de verificació de moviment",
+      "d": "Llista de comprovació de mudances completa amb cronologia i gestió de tasques"
+    },
+    "Property Investment Analyzer": {
+      "n": "Analitzador d'inversions immobiliàries",
+      "d": "Analitzar les propietats de lloguer pel potencial de retorn de la inversió"
+    },
+    "Renovation Budget Planner": {
+      "n": "Planificador de pressupostos de reforma",
+      "d": "Planifiqueu i pressuposteu projectes de renovació d'habitatges amb estimacions de costos detallades"
+    },
+    "House Hunting Scorecard": {
+      "n": "Quadre de control de caça de cases",
+      "d": "Puntua i classifica les cases durant el teu procés de cerca d'habitatges"
+    },
+    "Down Payment Calculator": {
+      "n": "Calculadora de pagament anticipat",
+      "d": "Calcula les opcions de pagament inicial i els plans d'estalvi per a la compra de la teva casa"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Calendari de manteniment de la llar",
+      "d": "Creeu un programa de manteniment de la llar de temporada per protegir la vostra inversió"
+    },
+    "Rental Property Analysis": {
+      "n": "Anàlisi de la propietat de lloguer",
+      "d": "Avalueu les oportunitats de lloguer amb projeccions financeres"
+    },
+    "Home Staging Tips": {
+      "n": "Consells de Home Staging",
+      "d": "Organitza la teva casa per vendre més ràpid i per un preu més elevat"
+    },
+    "Realtor Interview Questions": {
+      "n": "Preguntes d'entrevista d'agent immobiliari",
+      "d": "Preguntes clau a fer quan s'entrevista amb agents immobiliaris"
+    },
+    "Closing Cost Estimator": {
+      "n": "Estimador de costos de tancament",
+      "d": "Estima tots els costos de tancament de la teva transacció immobiliària"
+    },
+    "HOA Assessment Guide": {
+      "n": "Guia d'avaluació HOA",
+      "d": "Avalueu les tarifes, les regles i la salut financera de l'HOA abans de comprar"
+    },
+    "Car Buying Assistant": {
+      "n": "Auxiliar de compra de cotxes",
+      "d": "Navegueu pel procés de compra de cotxes amb confiança i estalvieu diners"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Eina de comparació de vehicles",
+      "d": "Compareu els vehicles al costat de les especificacions, el preu i les característiques"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Planificador de Calendari de Manteniment",
+      "d": "Crea un calendari personalitzat de manteniment del vehicle per allargar la vida del cotxe"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Analitzador de Pressupostos de Reparació",
+      "d": "Avalua pressupostos de reparació d'automòbils i troba preus justos per als serveis"
+    },
+    "Road Trip Planner": {
+      "n": "Planificador de Viatges per Carretera",
+      "d": "Planifica el viatge per carretera perfecte amb parades, combustible i horaris calculats"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Llista de Verificació per a Cotxes de Segona Mà",
+      "d": "Llista de verificació exhaustiva per comprar un cotxe de segona mà amb confiança"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Comparació d'Assegurances d'Automòbil",
+      "d": "Compara opcions d'assegurança d'automòbil per trobar la millor cobertura i preu"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Calculadora d'Economia de Combustible",
+      "d": "Calcula i optimitza els costos de combustible i l'eficiència del teu vehicle"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Analitzador de Lloguer vs Compra de Cotxe",
+      "d": "Compara el lloguer amb la compra per trobar la millor opció financera"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Estimador de Valor de Permuta",
+      "d": "Estima el valor de permuta del teu vehicle i negocia un tracte just"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Revisor d'Historial del Vehicle",
+      "d": "Preguntes clau i comprovacions en revisar un informe d'historial d'un vehicle de segona mà"
+    },
+    "Car Detailing Guide": {
+      "n": "Guia de Detallat del Cotxe",
+      "d": "Instruccions pas a pas de detallat del cotxe per aconseguir un acabat d'exposició"
+    },
+    "Winter Car Prep": {
+      "n": "Preparació del Cotxe per a l'Hivern",
+      "d": "Prepara el teu vehicle per a les condicions de conducció hivernals i el fred"
+    },
+    "New Driver Guide": {
+      "n": "Guia per a Nous Conductors",
+      "d": "Consells i coneixements essencials de conducció per a conductors nous i aprenents"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Guia de Vehicles Elèctrics",
+      "d": "Tot el que necessites saber sobre comprar i tenir un vehicle elèctric"
+    },
+    "Trip Planner": {
+      "n": "Planificador de Viatges",
+      "d": "Planifica el teu viatge perfecte amb destinacions, activitats i logística"
+    },
+    "Packing List Generator": {
+      "n": "Generador de Llistes d'Equipatge",
+      "d": "Genera una llista d'equipatge personalitzada per a qualsevol viatge i destinació"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Constructor d'Itineraris de Vacances",
+      "d": "Crea un itinerari de vacances dia a dia amb activitats i restaurants"
+    },
+    "Travel Budget Calculator": {
+      "n": "Calculadora de Pressupost de Viatge",
+      "d": "Calcula i fes el seguiment del teu pressupost de viatge amb categories de despeses detallades"
+    },
+    "Local Attractions Guide": {
+      "n": "Guia d'Atraccions Locals",
+      "d": "Descobreix les millors atraccions locals, joies amagades i llocs imprescindibles"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Comparació d'Assegurances de Viatge",
+      "d": "Compara opcions d'assegurança de viatge per a la cobertura adequada al teu viatge"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Estratègia per Trobar Ofertes de Vols",
+      "d": "Estratègies i consells per trobar les millors ofertes i preus de vols"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Ajudant de Comparació d'Hotels",
+      "d": "Compara hotels per preu, serveis, ubicació i ressenyes"
+    },
+    "Solo Travel Planner": {
+      "n": "Planificador de Viatges en Solitari",
+      "d": "Planifica una aventura de viatge en solitari segura i gratificant a qualsevol lloc del món"
+    },
+    "Family Vacation Planner": {
+      "n": "Planificador de Vacances Familiars",
+      "d": "Planifica unes vacances familiars que mantinguin entretingudes totes les edats"
+    },
+    "Backpacking Planner": {
+      "n": "Planificador de Motxilla",
+      "d": "Planifica una aventura de motxilla econòmica amb rutes i equipament"
+    },
+    "Business Travel Organizer": {
+      "n": "Organitzador de Viatges de Negocis",
+      "d": "Organitza viatges de negocis de manera eficient amb seguiment de despeses i planificació"
+    },
+    "Cruise Planner": {
+      "n": "Planificador de Creuers",
+      "d": "Planifica les vacances en creuer perfectes amb excursions a port i activitats a bord"
+    },
+    "Travel Safety Guide": {
+      "n": "Guia de Seguretat en Viatges",
+      "d": "Mantén-te segur mentre viatges amb consells de seguretat i protocols específics per destinació"
+    },
+    "Visa Requirements Checker": {
+      "n": "Verificador de Requisits de Visat",
+      "d": "Comprova els requisits de visat i prepara els materials de sol·licitud per al teu viatge"
+    },
+    "Language Survival Kit": {
+      "n": "Kit de Supervivència Lingüística",
+      "d": "Aprèn frases essencials i consells culturals per a la teva destinació de viatge"
+    },
+    "Airport Navigation Guide": {
+      "n": "Guia de Navegació a l'Aeroport",
+      "d": "Navega pels aeroports de manera eficient amb consells de terminal i gestió del temps"
+    },
+    "Travel Photo Plan": {
+      "n": "Pla de Fotografia de Viatge",
+      "d": "Planifica la teva fotografia de viatge amb les millors ubicacions, horaris i tècniques"
+    },
+    "Group Trip Coordinator": {
+      "n": "Coordinador de Viatges en Grup",
+      "d": "Coordina la logística, pressupostos i activitats de viatges en grup per a tothom"
+    },
+    "Adventure Travel Planner": {
+      "n": "Planificador de Viatges d'Aventura",
+      "d": "Planifica viatges d'aventura plens d'adrenalina amb seguretat i logística"
+    },
+    "Wedding Planner": {
+      "n": "Planificador de Casaments",
+      "d": "Planifica cada detall del teu casament perfecte, del lloc a les promeses"
+    },
+    "Birthday Party Planner": {
+      "n": "Planificador de Festes d'Aniversari",
+      "d": "Planifica una celebració d'aniversari memorable per a qualsevol edat i estil"
+    },
+    "Conference Organizer": {
+      "n": "Organitzador de Conferències",
+      "d": "Organitza conferències i seminaris professionals amb logística detallada"
+    },
+    "Baby Shower Planner": {
+      "n": "Planificador de Baby Shower",
+      "d": "Planifica un baby shower preciós amb jocs, menjar i decoració"
+    },
+    "Anniversary Celebration": {
+      "n": "Celebració d'Aniversari de Parella",
+      "d": "Planifica una celebració d'aniversari significativa per a qualsevol fita"
+    },
+    "Graduation Party": {
+      "n": "Festa de Graduació",
+      "d": "Celebra els èxits acadèmics amb una festa de graduació perfectament planificada"
+    },
+    "Holiday Party Planner": {
+      "n": "Planificador de Festes de Vacances",
+      "d": "Planifica reunions festives amb menjar, activitats i decoració"
+    },
+    "Corporate Event Planner": {
+      "n": "Planificador d'Esdeveniments Corporatius",
+      "d": "Planifica esdeveniments corporatius professionals que impressionin clients i empleats"
+    },
+    "Fundraiser Organizer": {
+      "n": "Organitzador de Recaptació de Fons",
+      "d": "Organitza esdeveniments de recaptació de fons exitosos per a causes benèfiques"
+    },
+    "Reunion Planner": {
+      "n": "Planificador de Retrobaments",
+      "d": "Planifica un retrobament familiar o de classe memorable que reuneixi tothom"
+    },
+    "Engagement Party Planner": {
+      "n": "Planificador de Festes de Compromís",
+      "d": "Planifica una celebració de compromís alegre per compartir la bona notícia"
+    },
+    "Retirement Party": {
+      "n": "Festa de Jubilació",
+      "d": "Celebra una carrera ben viscuda amb una festa de jubilació atenta"
+    },
+    "Housewarming Planner": {
+      "n": "Planificador de Festa d'Estrena de Casa",
+      "d": "Planifica una festa d'estrena acollidora per a la teva nova llar"
+    },
+    "Themed Party Creator": {
+      "n": "Creador de Festes Temàtiques",
+      "d": "Dissenya i planifica festes temàtiques creatives amb detalls coordinats"
+    },
+    "Event Budget Tracker": {
+      "n": "Seguidor de Pressupost d'Esdeveniments",
+      "d": "Fes el seguiment i gestiona les despeses d'esdeveniments per mantenir-te dins del pressupost de celebració"
+    },
+    "Chore Chart Creator": {
+      "n": "Creador de Quadres de Tasques",
+      "d": "Crea quadres de tasques adequats per edat amb recompenses i seguiment"
+    },
+    "Educational Activity Planner": {
+      "n": "Planificador d'Activitats Educatives",
+      "d": "Planifica activitats educatives divertides que facin l'aprenentatge emocionant per als nens"
+    },
+    "Bedtime Story Writer": {
+      "n": "Escriptor de Contes per Dormir",
+      "d": "Crea contes personalitzats per dormir protagonitzats pel teu fill"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Seguidor de Fites per Edat",
+      "d": "Fes el seguiment de les fites de desenvolupament i celebra el creixement del teu fill"
+    },
+    "School Lunch Planner": {
+      "n": "Planificador de Dinars Escolars",
+      "d": "Planifica dinars escolars saludables i atractius que els nens realment menjaran"
+    },
+    "Homework Help Guide": {
+      "n": "Guia d'Ajuda amb els Deures",
+      "d": "Estratègies per donar suport als deures del teu fill sense fer-los per ell"
+    },
+    "Family Game Night Ideas": {
+      "n": "Idees per a Nits de Jocs en Família",
+      "d": "Planifica nits de jocs familiars entretingudes amb activitats per a totes les edats"
+    },
+    "Screen Time Schedule": {
+      "n": "Horari de Temps de Pantalla",
+      "d": "Crea normes i horaris equilibrats de temps de pantalla per a la teva família"
+    },
+    "Allowance System Designer": {
+      "n": "Dissenyador de Sistema de Paga",
+      "d": "Dissenya un sistema de paga i gestió de diners adequat per edat"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Horari de Son del Nadó",
+      "d": "Crea horaris i rutines de son saludables per a nadons i infants petits"
+    },
+    "Potty Training Guide": {
+      "n": "Guia per Deixar el Bolquer",
+      "d": "Plans pas a pas per deixar el bolquer amb consells per a cada etapa"
+    },
+    "Back to School Prep": {
+      "n": "Preparació per a la Tornada a l'Escola",
+      "d": "Prepara la teva família per a una transició suau de tornada a l'escola"
+    },
+    "Summer Activity Planner": {
+      "n": "Planificador d'Activitats d'Estiu",
+      "d": "Planifica un estiu divertit i enriquidor amb activitats, campaments i aventures"
+    },
+    "Family Meeting Agenda": {
+      "n": "Ordre del Dia de Reunió Familiar",
+      "d": "Condueix reunions familiars productives que donin veu a tothom"
+    },
+    "Child Development Tracker": {
+      "n": "Seguidor del Desenvolupament Infantil",
+      "d": "Supervisa i dóna suport al desenvolupament físic, social i cognitiu del teu fill"
+    },
+    "Dog Training Plan": {
+      "n": "Pla d'Entrenament de Gossos",
+      "d": "Crea un pla d'entrenament personalitzat per al teu gos a qualsevol edat o nivell"
+    },
+    "Cat Care Guide": {
+      "n": "Guia de Cura del Gat",
+      "d": "Guia completa de cura per mantenir el teu gat sa i feliç"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Planificador de Nutrició per a Mascotes",
+      "d": "Planifica la nutrició òptima per a la teva mascota segons l'edat, la raça i les necessitats de salut"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Llista de Socialització del Cadell",
+      "d": "Assegura't que el teu cadell estigui correctament socialitzat durant la finestra crítica de desenvolupament"
+    },
+    "Pet First Aid Guide": {
+      "n": "Guia de Primers Auxilis per a Mascotes",
+      "d": "Coneixements essencials de primers auxilis i procediments d'emergència per a propietaris de mascotes"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Planificador de Muntatge d'Aquari",
+      "d": "Planifica i munta un aquari pròsper amb els peixos i l'equipament adequats"
+    },
+    "Pet Travel Preparation": {
+      "n": "Preparació de Viatge amb Mascotes",
+      "d": "Prepara tot el necessari per a un viatge segur i sense estrès amb la teva mascota"
+    },
+    "New Pet Checklist": {
+      "n": "Llista per a una Nova Mascota",
+      "d": "Tot el que necessites preparar abans de portar una nova mascota a casa"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Analitzador de Comportament de Mascotes",
+      "d": "Comprèn i aborda els problemes de comportament de la teva mascota amb orientació experta"
+    },
+    "Senior Pet Care": {
+      "n": "Cura de Mascotes Grans",
+      "d": "Guia de cura especialitzada per a mascotes grans per mantenir-les còmodes i sanes"
+    },
+    "Pet Exercise Planner": {
+      "n": "Planificador d'Exercici per a Mascotes",
+      "d": "Crea una rutina d'exercici que mantingui la teva mascota en forma i mentalment estimulada"
+    },
+    "Vet Visit Preparation": {
+      "n": "Preparació per a la Visita al Veterinari",
+      "d": "Prepara les visites al veterinari amb informació de salut organitzada i preguntes a fer"
+    },
+    "Home Improvement Planner": {
+      "n": "Planificador de Millores de la Llar",
+      "d": "Planifica i prioritza projectes de millora de la llar amb pressupostos i calendaris"
+    },
+    "Furniture Project Planner": {
+      "n": "Planificador de Projectes de Mobles",
+      "d": "Planifica la construcció de mobles a mida amb materials, eines i guia pas a pas"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Calculadora de Pressupost de Reforma",
+      "d": "Calcula costos detallats de reforma amb mà d'obra, materials i contingència"
+    },
+    "Paint Color Coordinator": {
+      "n": "Coordinador de Colors de Pintura",
+      "d": "Tria i coordina colors de pintura per a una paleta de llar cohesionada"
+    },
+    "Organization System Designer": {
+      "n": "Dissenyador de Sistemes d'Organització",
+      "d": "Dissenya sistemes d'organització personalitzats per a qualsevol habitació o espai de casa"
+    },
+    "Storage Solutions Planner": {
+      "n": "Planificador de Solucions d'Emmagatzematge",
+      "d": "Troba solucions d'emmagatzematge creatives per maximitzar l'espai de qualsevol habitació"
+    },
+    "Home Repair Guide": {
+      "n": "Guia de Reparacions de la Llar",
+      "d": "Guia pas a pas per a reparacions domèstiques habituals que pots fer tu mateix"
+    },
+    "Tool Buying Guide": {
+      "n": "Guia de Compra d'Eines",
+      "d": "Tria les eines adequades per als teus projectes de bricolatge sense gastar de més"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Manteniment Estacional de la Llar",
+      "d": "Llistes de manteniment estacional completes per protegir la teva llar tot l'any"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Auditoria d'Eficiència Energètica",
+      "d": "Avalua i millora l'eficiència energètica de casa teva per estalviar en factures"
+    },
+    "Smart Home Setup": {
+      "n": "Configuració de Llar Intel·ligent",
+      "d": "Planifica i configura un sistema de llar intel·ligent amb els dispositius i integracions adequats"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Planificador de Reforma del Bany",
+      "d": "Planifica una reforma del bany amb distribució, accessoris i gestió del pressupost"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Planificador de Reforma de la Cuina",
+      "d": "Planifica una reforma de la cuina des de la distribució fins als electrodomèstics amb pressupost detallat"
+    },
+    "Closet Organization": {
+      "n": "Organització d'Armaris",
+      "d": "Dissenya i organitza armaris per a la màxima eficiència i fàcil accés"
+    },
+    "Garage Organization": {
+      "n": "Organització del Garatge",
+      "d": "Transforma el teu garatge en un espai organitzat i funcional"
+    },
+    "Product Comparison Tool": {
+      "n": "Eina de Comparació de Productes",
+      "d": "Compara productes un al costat de l'altre per prendre la millor decisió de compra"
+    },
+    "Buying Guide Creator": {
+      "n": "Creador de Guies de Compra",
+      "d": "Crea guies de compra detallades per a qualsevol categoria de producte"
+    },
+    "Gift Finder": {
+      "n": "Cercador de Regals",
+      "d": "Troba el regal perfecte per a qualsevol persona segons els seus interessos i el teu pressupost"
+    },
+    "Price Tracker Strategy": {
+      "n": "Estratègia de Seguiment de Preus",
+      "d": "Estratègies per fer seguiment de preus i comprar en el millor moment"
+    },
+    "Black Friday Strategy": {
+      "n": "Estratègia de Black Friday",
+      "d": "Planifica les teves compres de Black Friday i Cyber Monday per estalviar al màxim"
+    },
+    "Back to School Shopping": {
+      "n": "Compres de Tornada a l'Escola",
+      "d": "Organitza les compres de tornada a l'escola amb llistes, pressupostos i ofertes"
+    },
+    "Wardrobe Planner": {
+      "n": "Planificador de Vestuari",
+      "d": "Construeix un vestuari versàtil amb compres estratègiques i planificació de conjunts"
+    },
+    "Electronics Buying Guide": {
+      "n": "Guia de Compra d'Electrònica",
+      "d": "Navega per les compres d'electrònica amb comparació d'especificacions i consells de moment oportú"
+    },
+    "Subscription Service Comparison": {
+      "n": "Comparació de Serveis de Subscripció",
+      "d": "Compara serveis de subscripció per trobar la millor relació qualitat-preu per a les teves necessitats"
+    },
+    "Wedding Registry Planner": {
+      "n": "Planificador de Llista de Noces",
+      "d": "Crea una llista de noces completa amb articles per a tots els pressupostos"
+    },
+    "Bible Study Guide": {
+      "n": "Guia d'Estudi Bíblic",
+      "d": "Crea plans d'estudi bíblic estructurats amb context, preguntes i aplicació"
+    },
+    "Sermon Outline Creator": {
+      "n": "Creador d'Esquemes de Sermó",
+      "d": "Desenvolupa esquemes de sermó convincents amb escriptura, punts i il·lustracions"
+    },
+    "Comparative Religion Study": {
+      "n": "Estudi Comparat de Religions",
+      "d": "Explora i compara creences, pràctiques i història de les religions del món"
+    },
+    "Discussion Question Generator": {
+      "n": "Generador de Preguntes de Debat",
+      "d": "Genera preguntes de debat reflexives per a temes religiosos i filosòfics"
+    },
+    "Devotional Writer": {
+      "n": "Escriptor de Devocionals",
+      "d": "Crea devocionals diaris amb escriptura, reflexió i guies d'oració"
+    },
+    "Prayer Journal Guide": {
+      "n": "Guia de Diari d'Oració",
+      "d": "Estructura la teva vida d'oració amb guies de diari i marcs de referència"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Guia de Club de Lectura Espiritual",
+      "d": "Crea guies de debat de club de lectura per a llibres espirituals i religiosos"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Guia de Meditació amb les Escriptures",
+      "d": "Crea experiències de meditació guiada centrades en passatges de les escriptures"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Pla de Lliçons per a Grups de Joves",
+      "d": "Crea lliçons atractives per a grups de joves amb activitats i debats"
+    },
+    "Faith Journey Reflector": {
+      "n": "Reflector del Camí de Fe",
+      "d": "Reflexions guiades per explorar i aprofundir el teu camí personal de fe"
+    },
+    "Workout Plan Creator": {
+      "n": "Creador de Plans d'Entrenament",
+      "d": "Crea plans d'entrenament personalitzats segons els teus objectius i nivell de forma física"
+    },
+    "Training Schedule Builder": {
+      "n": "Constructor de Calendari d'Entrenament",
+      "d": "Construeix un calendari d'entrenament estructurat per a qualsevol esport o objectiu físic"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Analitzador d'Estratègia de Joc",
+      "d": "Analitza estratègies de joc i desenvolupa enfocaments guanyadors per al teu esport"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Guia de Nutrició Esportiva",
+      "d": "Optimitza la teva nutrició esportiva per a un rendiment i recuperació màxims"
+    },
+    "Coaching Practice Plan": {
+      "n": "Pla de Pràctiques d'Entrenador",
+      "d": "Dissenya sessions de pràctica efectives que desenvolupin habilitats i cohesió d'equip"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Analitzador d'Esports de Fantasia",
+      "d": "Analitza enfrontaments i optimitza la teva alineació d'esports de fantasia cada setmana"
+    },
+    "Race Training Plan": {
+      "n": "Pla d'Entrenament per a Curses",
+      "d": "Entrena per a curses des de 5 km fins a marató amb plans progressius estructurats"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Analitzador d'Estadístiques Esportives",
+      "d": "Analitza estadístiques de jugadors i equips per a una comprensió més profunda de l'esport"
+    },
+    "Team Management Tool": {
+      "n": "Eina de Gestió d'Equips",
+      "d": "Gestiona plantilles, calendaris i comunicacions d'equip de manera eficient"
+    },
+    "Injury Recovery Planner": {
+      "n": "Planificador de Recuperació de Lesions",
+      "d": "Planifica una recuperació segura i efectiva de lesions esportives comunes"
+    },
+    "Photography Guide": {
+      "n": "Guia de Fotografia",
+      "d": "Millora les teves habilitats fotogràfiques amb consells de composició, il·luminació i equipament"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Ajudant de Patrons de Punt",
+      "d": "Troba i adapta patrons de punt per al teu nivell d'habilitat i idees de projectes"
+    },
+    "Board Game Night Planner": {
+      "n": "Planificador de Nits de Jocs de Taula",
+      "d": "Planifica nits de jocs de taula perfectes amb selecció de jocs i grups adequats"
+    },
+    "Fishing Trip Planner": {
+      "n": "Planificador de Viatges de Pesca",
+      "d": "Planifica viatges de pesca exitosos amb ubicació, equipament i consells de tècnica"
+    },
+    "Camping Trip Organizer": {
+      "n": "Organitzador d'Acampades",
+      "d": "Organitza acampades amb llistes d'equipament, plans de menjars i idees d'activitats"
+    },
+    "Bird Watching Guide": {
+      "n": "Guia d'Observació d'Ocells",
+      "d": "Identifica ocells locals i planifica sortides d'observació amb consells estacionals"
+    },
+    "Model Building Planner": {
+      "n": "Planificador de Construcció de Maquetes",
+      "d": "Planifica i executa projectes de construcció de maquetes amb materials i tècniques"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Guia d'Estratègia de Trencaclosques",
+      "d": "Estratègies i tècniques per resoldre trencaclosques més ràpid i eficientment"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Planificador d'Observació Astronòmica",
+      "d": "Planifica sessions d'observació d'estels amb esdeveniments celestes i recomanacions d'equipament"
+    },
+    "Art Supply Guide": {
+      "n": "Guia de Material Artístic",
+      "d": "Tria el material artístic adequat per a la teva tècnica i nivell d'habilitat"
+    },
+    "Goal Setting Framework": {
+      "n": "Marc per Establir Objectius",
+      "d": "Estableix i assoleix objectius significatius amb un marc estructurat i un pla d'acció"
+    },
+    "Bucket List Creator": {
+      "n": "Creador de Llista de Desitjos",
+      "d": "Crea una llista de desitjos inspiradora organitzada per categoria i prioritat"
+    },
+    "Personal Mission Statement": {
+      "n": "Declaració de Missió Personal",
+      "d": "Elabora una declaració de missió personal significativa que guiï les teves decisions vitals"
+    },
+    "Life Transition Guide": {
+      "n": "Guia de Transicions Vitals",
+      "d": "Navega per les grans transicions vitals amb planificació, suport i estratègies d'afrontament"
+    },
+    "Habit Building Plan": {
+      "n": "Pla de Creació d'Hàbits",
+      "d": "Crea hàbits positius duradors amb estratègies provades basades en la ciència"
+    },
+    "Time Audit Tool": {
+      "n": "Eina d'Auditoria del Temps",
+      "d": "Audita com passes el temps i optimitza per al que realment importa"
+    },
+    "Relationship Goal Planner": {
+      "n": "Planificador d'Objectius de Relació",
+      "d": "Estableix i treballa cap a objectius per a relacions més fortes i saludables"
+    },
+    "Vision Board Creator": {
+      "n": "Creador de Tauler de Visió",
+      "d": "Crea un tauler de visió digital amb guies i exercicis de visualització"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Anàlisi SWOT Personal",
+      "d": "Realitza una anàlisi SWOT personal per a la planificació professional i vital"
+    },
+    "Legacy Letter Writer": {
+      "n": "Escriptor de Cartes de Llegat",
+      "d": "Escriu cartes de llegat significatives als teus éssers estimats que recullin els teus valors i saviesa"
+    },
+    "Contract Draft Creator": {
+      "n": "Creador d'Esborranys de Contracte",
+      "d": "Genera esborranys de contractes professionals per a qualsevol relació comercial"
+    },
+    "NDA Generator": {
+      "n": "Generador d'NDA",
+      "d": "Crea acords de confidencialitat adaptats a la teva situació"
+    },
+    "Rental Agreement Draft": {
+      "n": "Esborrany de Contracte de Lloguer",
+      "d": "Redacta contractes de lloguer residencial o comercial"
+    },
+    "Terms of Service Generator": {
+      "n": "Generador de Condicions del Servei",
+      "d": "Crea condicions del servei completes per a llocs web i aplicacions"
+    },
+    "Privacy Policy Writer": {
+      "n": "Redactor de Política de Privacitat",
+      "d": "Genera polítiques de privacitat conformes amb el GDPR i el CCPA"
+    },
+    "Freelance Agreement": {
+      "n": "Contracte per a Autònoms",
+      "d": "Crea contractes entre autònoms i clients"
+    },
+    "Non-Compete Draft": {
+      "n": "Esborrany de Clàusula de No Competència",
+      "d": "Redacta clàusules de no competència i acords independents"
+    },
+    "LLC Operating Agreement": {
+      "n": "Acord Operatiu de LLC",
+      "d": "Crea acords operatius per a societats de responsabilitat limitada"
+    },
+    "Partnership Agreement": {
+      "n": "Acord de Societat",
+      "d": "Redacta acords de societat amb rols i termes clars"
+    },
+    "Intellectual Property Brief": {
+      "n": "Informe de Propietat Intel·lectual",
+      "d": "Detalla la titularitat de PI i les estratègies de protecció"
+    },
+    "Cease and Desist Draft": {
+      "n": "Esborrany de Cessament i Desistiment",
+      "d": "Crea cartes de cessament i desistiment per a diverses infraccions"
+    },
+    "Employee Handbook Section": {
+      "n": "Secció del Manual de l'Empleat",
+      "d": "Redacta seccions individuals per a manuals de l'empleat"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Contracte de Treballador Independent",
+      "d": "Redacta contractes de treballador independent amb un llenguatge de classificació adequat"
+    },
+    "Liability Waiver Draft": {
+      "n": "Esborrany d'Exoneració de Responsabilitat",
+      "d": "Crea exoneracions de responsabilitat per a activitats i serveis"
+    },
+    "Settlement Letter Draft": {
+      "n": "Esborrany de Carta d'Acord",
+      "d": "Redacta cartes d'oferta o resposta d'acord"
+    },
+    "Demand Letter Draft": {
+      "n": "Esborrany de Carta de Reclamació",
+      "d": "Crea cartes formals de reclamació per a diverses demandes"
+    },
+    "Power of Attorney Draft": {
+      "n": "Esborrany de Poder Notarial",
+      "d": "Redacta documents de poder notarial per a diversos propòsits"
+    },
+    "Last Will Outline": {
+      "n": "Esquema de Darrera Voluntat",
+      "d": "Crea un esquema per a un testament de darrera voluntat bàsic"
+    },
+    "Business License Checklist": {
+      "n": "Llista de Verificació de Llicències Comercials",
+      "d": "Genera una llista de verificació de les llicències necessàries per al teu negoci"
+    },
+    "Trademark Application Guide": {
+      "n": "Guia de Sol·licitud de Marca Registrada",
+      "d": "Guia pas a pas per presentar una sol·licitud de marca registrada"
+    },
+    "Small Claims Court Guide": {
+      "n": "Guia del Jutjat de Petites Reclamacions",
+      "d": "Prepara't per al jutjat de petites reclamacions amb arguments organitzats"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Preparació per a la Mediació de Divorci",
+      "d": "Organitza els punts clau i les prioritats per a la mediació de divorci"
+    },
+    "Tenant Rights Guide": {
+      "n": "Guia de Drets del Llogater",
+      "d": "Comprèn els drets del llogater i els recursos disponibles a la teva jurisdicció"
+    },
+    "Landlord Notice Draft": {
+      "n": "Esborrany de Notificació del Propietari",
+      "d": "Redacta notificacions legals adequades del propietari al llogater"
+    },
+    "Copyright Registration Guide": {
+      "n": "Guia de Registre de Drets d'Autor",
+      "d": "Guia per registrar drets d'autor a l'Oficina de Drets d'Autor dels EUA"
+    },
+    "Personal Budget Planner": {
+      "n": "Planificador de Pressupost Personal",
+      "d": "Crea un pla de pressupost mensual o anual complet"
+    },
+    "Investment Research Assistant": {
+      "n": "Assistent de Recerca d'Inversions",
+      "d": "Investiga i analitza oportunitats d'inversió de manera sistemàtica"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Calculadora de Liquidació de Deutes",
+      "d": "Planifica una estratègia per eliminar el deute de manera eficient"
+    },
+    "Expense Tracker Setup": {
+      "n": "Configuració de Seguiment de Despeses",
+      "d": "Dissenya un sistema personalitzat de seguiment de despeses"
+    },
+    "Retirement Planning Guide": {
+      "n": "Guia de Planificació de la Jubilació",
+      "d": "Construeix una estratègia integral d'estalvi per a la jubilació"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Llista de Verificació de Preparació Fiscal",
+      "d": "Organitza documents i deduccions per a la declaració d'impostos"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Calculadora de Fons d'Emergència",
+      "d": "Determina i planifica el teu fons d'emergència ideal"
+    },
+    "Net Worth Tracker": {
+      "n": "Seguidor del Patrimoni Net",
+      "d": "Fes el seguiment i visualitza la teva situació financera completa"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Pla de Millora de Puntuació Creditícia",
+      "d": "Crea un pla accionable per millorar la teva puntuació creditícia"
+    },
+    "Student Loan Strategy": {
+      "n": "Estratègia de Préstecs Estudiantils",
+      "d": "Optimitza el teu enfocament de devolució de préstecs estudiantils"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Planificador d'Ingressos de Feines Extra",
+      "d": "Planifica i projecta els ingressos de feines extra"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Analitzador de Necessitats d'Assegurança",
+      "d": "Avalua les teves llacunes i necessitats de cobertura d'assegurança"
+    },
+    "Estate Planning Checklist": {
+      "n": "Llista de Verificació de Planificació Patrimonial",
+      "d": "Organitza els teus documents i decisions de planificació patrimonial"
+    },
+    "Financial Goal Setter": {
+      "n": "Establidor d'Objectius Financers",
+      "d": "Defineix i fes el seguiment del progrés cap a fites financeres"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Analitzador de Flux de Caixa",
+      "d": "Analitza els patrons d'ingressos i despeses al llarg del temps"
+    },
+    "Savings Challenge Creator": {
+      "n": "Creador de Reptes d'Estalvi",
+      "d": "Dissenya un repte d'estalvi divertit per construir el teu coixí financer"
+    },
+    "Investment Portfolio Review": {
+      "n": "Revisió de Cartera d'Inversions",
+      "d": "Revisa i reequilibra la teva cartera d'inversions"
+    },
+    "Cryptocurrency Research": {
+      "n": "Recerca de Criptomonedes",
+      "d": "Investiga i avalua inversions en criptomonedes"
+    },
+    "Stock Analysis Helper": {
+      "n": "Ajudant d'Anàlisi d'Accions",
+      "d": "Realitza anàlisis fonamentals i tècniques d'accions"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Calculadora d'Inversió Immobiliària",
+      "d": "Analitza els rendiments potencials d'inversions immobiliàries"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Cercador de Deduccions Fiscals Empresarials",
+      "d": "Identifica les deduccions fiscals aplicables al teu negoci"
+    },
+    "Payroll Budget Planner": {
+      "n": "Planificador de Pressupost de Nòmines",
+      "d": "Planifica i pressuposteja els costos de nòmina dels empleats"
+    },
+    "Invoice Template Creator": {
+      "n": "Creador de Plantilles de Factura",
+      "d": "Dissenya factures professionals per al teu negoci"
+    },
+    "Profit Margin Calculator": {
+      "n": "Calculadora de Marge de Benefici",
+      "d": "Calcula i optimitza els marges de benefici dels productes"
+    },
+    "Financial Independence Planner": {
+      "n": "Planificador d'Independència Financera",
+      "d": "Traça el teu camí cap a la independència financera i la jubilació anticipada"
+    },
+    "Ad Copy Writer": {
+      "n": "Redactor de Textos Publicitaris",
+      "d": "Crea textos publicitaris convincents per a qualsevol plataforma o mitjà"
+    },
+    "SEO Article Creator": {
+      "n": "Creador d'Articles SEO",
+      "d": "Escriu articles optimitzats per a SEO que posicionin i converteixin"
+    },
+    "Social Media Content Calendar": {
+      "n": "Calendari de Continguts de Xarxes Socials",
+      "d": "Planifica un mes de contingut de xarxes socials a totes les plataformes"
+    },
+    "Email Campaign Builder": {
+      "n": "Constructor de Campanyes de Correu Electrònic",
+      "d": "Dissenya campanyes de màrqueting per correu electrònic de múltiples correus que converteixin"
+    },
+    "Product Launch Strategy": {
+      "n": "Estratègia de Llançament de Producte",
+      "d": "Crea una estratègia de màrqueting integral per al llançament de producte"
+    },
+    "Brand Voice Guide": {
+      "n": "Guia de Veu de Marca",
+      "d": "Defineix i documenta la veu i el missatge de la teva marca"
+    },
+    "Content Marketing Strategy": {
+      "n": "Estratègia de Màrqueting de Continguts",
+      "d": "Construeix una estratègia completa de màrqueting de continguts des de zero"
+    },
+    "Influencer Outreach Template": {
+      "n": "Plantilla de Contacte amb Influencers",
+      "d": "Crea propostes personalitzades de col·laboració amb influencers"
+    },
+    "Landing Page Copywriter": {
+      "n": "Redactor de pàgines de destinació",
+      "d": "Escriu textos de pàgines de destinació d'alta conversió"
+    },
+    "A/B Test Plan Creator": {
+      "n": "Creador de plans de proves A/B",
+      "d": "Dissenya proves A/B estructurades per a campanyes de màrqueting"
+    },
+    "Buyer Persona Builder": {
+      "n": "Creador de perfils de comprador",
+      "d": "Crea perfils detallats de clients per a la segmentació"
+    },
+    "Competitive Analysis Template": {
+      "n": "Plantilla d'anàlisi competitiva",
+      "d": "Analitza els competidors i identifica oportunitats de mercat"
+    },
+    "Marketing Budget Planner": {
+      "n": "Planificador de pressupost de màrqueting",
+      "d": "Assigna i optimitza el teu pressupost de màrqueting"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Estratègia de màrqueting d'afiliats",
+      "d": "Construeix i optimitza un programa de màrqueting d'afiliats"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Pla de màrqueting de podcast",
+      "d": "Promociona el teu podcast i fes créixer la teva audiència"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Pla de promoció de webinars",
+      "d": "Planifica i promociona webinars que generin inscripcions"
+    },
+    "Referral Program Designer": {
+      "n": "Dissenyador de programes de referència",
+      "d": "Dissenya programes de referència que impulsin el creixement boca-orella"
+    },
+    "Brand Story Writer": {
+      "n": "Redactor d'històries de marca",
+      "d": "Crea una història d'origen de marca captivadora i una narrativa convincent"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Creador d'embuts de màrqueting",
+      "d": "Dissenya embuts de recorregut del client des de la consciència fins a la conversió"
+    },
+    "App Store Optimization": {
+      "n": "Optimització de l'App Store",
+      "d": "Optimitza els llistats de l'App Store per a màximes descàrregues"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Redactor de Google Ads",
+      "d": "Escriu títols i descripcions efectius per a Google Ads"
+    },
+    "Facebook Ads Creator": {
+      "n": "Creador d'anuncis de Facebook",
+      "d": "Crea campanyes publicitàries per a Facebook i Instagram"
+    },
+    "Newsletter Strategy": {
+      "n": "Estratègia de butlletí informatiu",
+      "d": "Planifica i fes créixer un butlletí informatiu des de zero"
+    },
+    "PR Media Pitch": {
+      "n": "Proposta per a mitjans de comunicació",
+      "d": "Escriu propostes convincents per a la cobertura mediàtica"
+    },
+    "Content Repurposing Plan": {
+      "n": "Pla de reutilització de continguts",
+      "d": "Transforma contingut existent en múltiples formats"
+    },
+    "Cold Email Generator": {
+      "n": "Generador de correus electrònics en fred",
+      "d": "Crea correus electrònics personalitzats de prospecció en fred que obtinguin respostes"
+    },
+    "Sales Script Writer": {
+      "n": "Redactor de guions de vendes",
+      "d": "Escriu guions de vendes efectius per a trucades i reunions"
+    },
+    "Objection Handling Guide": {
+      "n": "Guia de gestió d'objeccions",
+      "d": "Prepara respostes a les objeccions de vendes més comunes"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Creador de missatges de seguiment",
+      "d": "Crea seqüències estratègiques de missatges de seguiment"
+    },
+    "Sales Pitch Creator": {
+      "n": "Creador de presentacions de vendes",
+      "d": "Construeix presentacions de vendes i discursos d'ascensor convincents"
+    },
+    "Proposal Generator": {
+      "n": "Generador de propostes",
+      "d": "Crea propostes de vendes i pressupostos professionals"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Pla de neteja de dades del CRM",
+      "d": "Organitza i neteja la teva base de dades CRM de manera sistemàtica"
+    },
+    "Sales Territory Planner": {
+      "n": "Planificador de territoris de vendes",
+      "d": "Defineix i optimitza els territoris de vendes del teu equip"
+    },
+    "Account Strategy Builder": {
+      "n": "Creador d'estratègies de comptes",
+      "d": "Crea plans estratègics de comptes per a clients clau"
+    },
+    "Upsell Script Creator": {
+      "n": "Creador de guions de venda addicional",
+      "d": "Escriu guions per fer venda addicional i venda creuada a clients existents"
+    },
+    "Customer Win-Back Email": {
+      "n": "Correu de recuperació de clients",
+      "d": "Torna a captar clients perduts amb campanyes de recuperació específiques"
+    },
+    "Sales Forecast Template": {
+      "n": "Plantilla de previsió de vendes",
+      "d": "Construeix previsions de vendes precises per al teu pipeline"
+    },
+    "Commission Calculator": {
+      "n": "Calculadora de comissions",
+      "d": "Dissenya i calcula estructures de comissions de vendes"
+    },
+    "Discovery Call Script": {
+      "n": "Guió de trucada de descobriment",
+      "d": "Estructura trucades de descobriment efectives per qualificar prospectes"
+    },
+    "Demo Presentation Outline": {
+      "n": "Esquema de presentació de demostració",
+      "d": "Crea presentacions de demostració de producte estructurades"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Pla d'incorporació de vendes",
+      "d": "Dissenya programes d'incorporació per a nous representants de vendes"
+    },
+    "Quarterly Business Review": {
+      "n": "Revisió trimestral de negoci",
+      "d": "Prepara presentacions de revisió trimestral de negoci per a clients"
+    },
+    "Customer Success Plan": {
+      "n": "Pla d'èxit del client",
+      "d": "Construeix plans proactius d'èxit i retenció de clients"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Assessor d'estratègia de preus",
+      "d": "Desenvolupa i optimitza l'estratègia de preus del teu producte"
+    },
+    "Value Proposition Builder": {
+      "n": "Creador de propostes de valor",
+      "d": "Crea propostes de valor clares i convincents"
+    },
+    "FAQ Generator": {
+      "n": "Generador de PMF",
+      "d": "Crea seccions completes de preguntes més freqüents a partir de la informació del producte"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Redactor d'articles de base de coneixement",
+      "d": "Escriu articles de base de coneixement clars i fàcils de trobar"
+    },
+    "Support Response Template": {
+      "n": "Plantilla de resposta de suport",
+      "d": "Crea plantilles reutilitzables per a escenaris de suport habituals"
+    },
+    "Chatbot Training Data": {
+      "n": "Dades d'entrenament per a chatbot",
+      "d": "Genera dades d'entrenament per a chatbots d'atenció al client"
+    },
+    "Escalation Response Guide": {
+      "n": "Guia de resposta a escalades",
+      "d": "Crea directrius per gestionar incidències de suport escalades"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Enquesta de satisfacció del client",
+      "d": "Dissenya enquestes per mesurar la satisfacció del client"
+    },
+    "Refund Policy Writer": {
+      "n": "Redactor de polítiques de reemborsament",
+      "d": "Crea polítiques de reemborsament i devolució clares i justes"
+    },
+    "Bug Report Template": {
+      "n": "Plantilla d'informe d'errors",
+      "d": "Dissenya plantilles estructurades d'informe d'errors per als usuaris"
+    },
+    "Feature Request Response": {
+      "n": "Resposta a sol·licituds de funcionalitats",
+      "d": "Redacta respostes a les sol·licituds de funcionalitats dels clients"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Seqüència de correus d'incorporació",
+      "d": "Crea seqüències de correu electrònic per incorporar nous clients"
+    },
+    "Help Center Article": {
+      "n": "Article del centre d'ajuda",
+      "d": "Escriu documentació completa per al centre d'ajuda"
+    },
+    "Service Level Agreement": {
+      "n": "Acord de nivell de servei",
+      "d": "Redacta documents d'acord de nivell de servei per a compromisos de suport"
+    },
+    "Customer Apology Template": {
+      "n": "Plantilla de disculpa al client",
+      "d": "Escriu missatges de disculpa sincers per a fallades del servei"
+    },
+    "Product Update Announcement": {
+      "n": "Anunci d'actualització de producte",
+      "d": "Comunica actualitzacions i canvis de producte als clients"
+    },
+    "Community Guidelines Writer": {
+      "n": "Redactor de normes de la comunitat",
+      "d": "Crea normes de comunitat per a fòrums i canals socials"
+    },
+    "Startup Validation Framework": {
+      "n": "Marc de validació de startups",
+      "d": "Valida la teva idea de startup abans de construir-la"
+    },
+    "MVP Feature Planner": {
+      "n": "Planificador de funcionalitats del MVP",
+      "d": "Prioritza les funcionalitats per al teu producte mínim viable"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Creador d'estratègia de preus",
+      "d": "Desenvolupa models de preus per al producte de la teva startup"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Esquema de presentació per a inversors",
+      "d": "Estructura una presentació convincent per a la captació de fons"
+    },
+    "Business Model Canvas": {
+      "n": "Llenç de model de negoci",
+      "d": "Representa el teu model de negoci complet en una sola pàgina"
+    },
+    "Lean Canvas Creator": {
+      "n": "Creador de Lean Canvas",
+      "d": "Crea un Lean Canvas per identificar riscos i supòsits"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Analitzador del panorama competitiu",
+      "d": "Mapeja i analitza el teu entorn competitiu"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Estratègia de llançament al mercat",
+      "d": "Planifica la teva entrada al mercat i l'enfocament de captació de clients"
+    },
+    "Founding Team Assessment": {
+      "n": "Avaluació de l'equip fundador",
+      "d": "Avalua la composició de l'equip i identifica mancances d'habilitats"
+    },
+    "Startup Financial Projections": {
+      "n": "Projeccions financeres de startup",
+      "d": "Construeix projeccions financeres a 3 anys per a la teva startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Reclutador de consell assessor",
+      "d": "Identifica i recluta assessors per a la teva startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Marc de decisió de pivot",
+      "d": "Avalua si cal pivotar la teva startup i com fer-ho"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Tauler de KPI de startup",
+      "d": "Defineix i fes seguiment dels indicadors clau de rendiment"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Pla de campanya de micromecenatge",
+      "d": "Planifica i executa una campanya de micromecenatge amb èxit"
+    },
+    "Partnership Strategy": {
+      "n": "Estratègia d'aliances",
+      "d": "Identifica i busca aliances estratègiques"
+    },
+    "Accelerator Application": {
+      "n": "Sol·licitud per a acceleradora",
+      "d": "Prepara una sol·licitud convincent per a una acceleradora o incubadora"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Enquesta d'adequació producte-mercat",
+      "d": "Dissenya enquestes per mesurar l'adequació producte-mercat"
+    },
+    "Startup Legal Checklist": {
+      "n": "Llista de verificació legal per a startups",
+      "d": "Cobreix tots els aspectes legals en crear una empresa"
+    },
+    "Equity Split Calculator": {
+      "n": "Calculadora de repartiment de capital",
+      "d": "Determina una distribució justa del capital entre cofundadors"
+    },
+    "Growth Experiment Planner": {
+      "n": "Planificador d'experiments de creixement",
+      "d": "Dissenya i fes seguiment d'experiments de creixement de manera sistemàtica"
+    },
+    "Product Description Writer": {
+      "n": "Redactor de descripcions de producte",
+      "d": "Escriu descripcions de producte atractives que impulsin les vendes"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Optimitzador de llistats d'Amazon",
+      "d": "Optimitza els llistats de productes d'Amazon per a visibilitat i conversió"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Guia de configuració de botiga Etsy",
+      "d": "Configura i optimitza la teva botiga Etsy per a l'èxit"
+    },
+    "Shopify Store Planner": {
+      "n": "Planificador de botiga Shopify",
+      "d": "Planifica l'estructura i el llançament de la teva botiga Shopify"
+    },
+    "Product Photography Brief": {
+      "n": "Breu de fotografia de producte",
+      "d": "Crea indicacions per a sessions de fotografia de producte"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Planificador d'estratègia d'enviament",
+      "d": "Dissenya estratègies d'enviament rendibles"
+    },
+    "Return Policy Creator": {
+      "n": "Creador de polítiques de devolució",
+      "d": "Crea polítiques de devolució i intercanvi clares per a comerç electrònic"
+    },
+    "Customer Review Response": {
+      "n": "Resposta a ressenyes de clients",
+      "d": "Redacta respostes professionals a les ressenyes dels clients"
+    },
+    "Inventory Management Plan": {
+      "n": "Pla de gestió d'inventari",
+      "d": "Crea sistemes per al seguiment i la gestió d'inventari"
+    },
+    "Dropshipping Product Research": {
+      "n": "Recerca de productes de dropshipping",
+      "d": "Investiga i avalua oportunitats de productes de dropshipping"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Dissenyador d'impressió sota demanda",
+      "d": "Planifica línies de productes i dissenys d'impressió sota demanda"
+    },
+    "Subscription Box Planner": {
+      "n": "Planificador de caixes de subscripció",
+      "d": "Dissenya i llança un negoci de caixes de subscripció"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Estratègia de vendes de temporada",
+      "d": "Planifica promocions estacionals i campanyes de vendes festives"
+    },
+    "Product Bundle Creator": {
+      "n": "Creador de paquets de productes",
+      "d": "Dissenya paquets de productes que augmentin el valor mitjà de la comanda"
+    },
+    "Cart Abandonment Email": {
+      "n": "Correu de carretó abandonat",
+      "d": "Crea seqüències de correu electrònic per recuperar carretons abandonats"
+    },
+    "Homework Helper": {
+      "n": "Ajudant de deures",
+      "d": "Obtén ajuda pas a pas amb els deures de qualsevol assignatura"
+    },
+    "Quiz & Test Generator": {
+      "n": "Generador de qüestionaris i exàmens",
+      "d": "Crea qüestionaris personalitzats a partir de qualsevol tema o material d'estudi"
+    },
+    "Science Fair Project Planner": {
+      "n": "Planificador de projectes de fira de ciències",
+      "d": "Planifica i organitza un projecte guanyador de fira de ciències, des de la hipòtesi fins a la presentació"
+    },
+    "Lesson Plan Creator": {
+      "n": "Creador de plans de lliçó",
+      "d": "Dissenya plans de lliçó estructurats alineats amb els objectius d'aprenentatge"
+    },
+    "Lab Report Writer": {
+      "n": "Redactor d'informes de laboratori",
+      "d": "Estructura i escriu informes de laboratori amb el format científic adequat"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Ajudant de comprensió lectora",
+      "d": "Millora la comprensió lectora amb anàlisi guiada i preguntes"
+    },
+    "Math Problem Solver": {
+      "n": "Resoledor de problemes de matemàtiques",
+      "d": "Resol problemes de matemàtiques amb explicacions detallades pas a pas"
+    },
+    "Vocabulary Builder": {
+      "n": "Constructor de vocabulari",
+      "d": "Construeix i practica vocabulari amb definicions, exemples i exercicis"
+    },
+    "Book Report Helper": {
+      "n": "Ajudant d'informes de lectura",
+      "d": "Esquematitza i escriu informes de lectura amb anàlisi estructurada"
+    },
+    "History Timeline Creator": {
+      "n": "Creador de línies del temps històriques",
+      "d": "Crea línies del temps històriques detallades per a qualsevol època o esdeveniment"
+    },
+    "Geography Quiz Maker": {
+      "n": "Creador de qüestionaris de geografia",
+      "d": "Genera qüestionaris de geografia sobre mapes, capitals, monuments i molt més"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generador de pràctiques d'ortografia",
+      "d": "Crea llistes personalitzades de pràctiques d'ortografia i exercicis"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Creador d'exercicis de gramàtica",
+      "d": "Genera exercicis de gramàtica per a qualsevol nivell i tema"
+    },
+    "Critical Thinking Questions": {
+      "n": "Preguntes de pensament crític",
+      "d": "Genera preguntes estimulants per desenvolupar habilitats de pensament crític"
+    },
+    "Debate Prep Guide": {
+      "n": "Guia de preparació per a debats",
+      "d": "Prepara arguments estructurats i contraarguments per a debats"
+    },
+    "College Application Essay": {
+      "n": "Assaig per a sol·licituds universitàries",
+      "d": "Redacta assaigs convincents per a sol·licituds universitàries amb indicacions guiades"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Ajudant d'assaigs per a beques",
+      "d": "Escriu assaigs persuasius per a beques que destaquin èxits i objectius"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "Guia de preparació per al SAT/ACT",
+      "d": "Crea plans d'estudi específics i pràctiques per als exàmens SAT o ACT"
+    },
+    "Study Schedule Planner": {
+      "n": "Planificador d'horaris d'estudi",
+      "d": "Construeix un horari d'estudi efectiu equilibrant totes les assignatures i terminis"
+    },
+    "Group Project Organizer": {
+      "n": "Organitzador de projectes en grup",
+      "d": "Planifica rols, tasques i calendaris per a projectes en grup"
+    },
+    "Presentation Creator": {
+      "n": "Creador de presentacions",
+      "d": "Dissenya i esquematitza presentacions atractives per a qualsevol tema"
+    },
+    "Note-Taking Guide": {
+      "n": "Guia de presa d'apunts",
+      "d": "Crea plantilles estructurades de presa d'apunts per a classes i lectures"
+    },
+    "Mind Map Generator": {
+      "n": "Generador de mapes mentals",
+      "d": "Crea mapes mentals visuals per organitzar idees i conceptes"
+    },
+    "Research Project Planner": {
+      "n": "Planificador de projectes de recerca",
+      "d": "Planifica i gestiona projectes de recerca des de la selecció del tema fins al treball final"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Preparació per a reunions de pares i mestres",
+      "d": "Prepara punts de discussió i preguntes per a reunions productives de pares i mestres"
+    },
+    "Classroom Activity Designer": {
+      "n": "Dissenyador d'activitats d'aula",
+      "d": "Dissenya activitats d'aula interactives que reforcin els objectius d'aprenentatge"
+    },
+    "Special Education Resource": {
+      "n": "Recurs d'educació especial",
+      "d": "Crea recursos d'aprenentatge adaptats per a estudiants amb necessitats educatives especials"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Planificador de currículum d'educació a casa",
+      "d": "Planifica un currículum complet d'educació a casa per assignatura i semestre"
+    },
+    "Student Self-Assessment": {
+      "n": "Autoavaluació de l'estudiant",
+      "d": "Crea eines d'autoavaluació perquè els estudiants facin seguiment del seu propi progrés d'aprenentatge"
+    },
+    "Learning Style Analyzer": {
+      "n": "Analitzador d'estils d'aprenentatge",
+      "d": "Identifica estils d'aprenentatge i suggereix estratègies d'estudi personalitzades"
+    },
+    "Literature Review Writer": {
+      "n": "Redactor de revisions bibliogràfiques",
+      "d": "Organitza i escriu revisions bibliogràfiques completes sobre qualsevol tema"
+    },
+    "Research Assistant": {
+      "n": "Assistent de recerca",
+      "d": "Obtén ajuda per trobar, organitzar i resumir materials de recerca"
+    },
+    "Fact Checker Template": {
+      "n": "Plantilla de verificació de fets",
+      "d": "Verifica afirmacions i declaracions amb una metodologia estructurada de verificació de fets"
+    },
+    "Source Comparison Tool": {
+      "n": "Eina de comparació de fonts",
+      "d": "Compara i contrasta múltiples fonts sobre el mateix tema"
+    },
+    "Citation Generator": {
+      "n": "Generador de citacions",
+      "d": "Genera citacions correctament formatades en qualsevol estil acadèmic"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Creador de bibliografies anotades",
+      "d": "Crea bibliografies anotades amb resums i avaluacions"
+    },
+    "Research Methodology Guide": {
+      "n": "Guia de metodologia de recerca",
+      "d": "Selecciona i dissenya la metodologia de recerca adequada per al teu estudi"
+    },
+    "Survey Question Designer": {
+      "n": "Dissenyador de preguntes d'enquesta",
+      "d": "Dissenya preguntes d'enquesta efectives per recollir dades de recerca fiables"
+    },
+    "Data Collection Plan": {
+      "n": "Pla de recollida de dades",
+      "d": "Crea un pla estructurat per a la recollida de dades de recerca"
+    },
+    "Thesis Statement Generator": {
+      "n": "Generador de tesis",
+      "d": "Elabora declaracions de tesi sòlides per a treballs de recerca i dissertacions"
+    },
+    "Research Proposal Writer": {
+      "n": "Redactor de propostes de recerca",
+      "d": "Escriu propostes de recerca convincents per a revisió acadèmica o de finançament"
+    },
+    "Systematic Review Guide": {
+      "n": "Guia de revisió sistemàtica",
+      "d": "Realitza revisions sistemàtiques seguint protocols establerts"
+    },
+    "Interview Protocol Creator": {
+      "n": "Creador de protocols d'entrevista",
+      "d": "Dissenya protocols d'entrevista estructurats per a recerca qualitativa"
+    },
+    "Research Ethics Checklist": {
+      "n": "Llista de verificació d'ètica de recerca",
+      "d": "Assegura el compliment de la recerca amb les directrius ètiques i els requisits del comitè d'ètica"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Marc de metaanàlisi",
+      "d": "Estructura i realitza metaanàlisis a través de múltiples estudis"
+    },
+    "Case Study Template": {
+      "n": "Plantilla d'estudi de cas",
+      "d": "Estructura i escriu estudis de cas detallats per a recerca o negocis"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Guia d'anàlisi qualitativa",
+      "d": "Guia l'anàlisi de dades qualitatives mitjançant codificació i enfocaments temàtics"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Guia d'anàlisi quantitativa",
+      "d": "Guia l'anàlisi de dades quantitatives amb mètodes estadístics adequats"
+    },
+    "Research Poster Creator": {
+      "n": "Creador de pòsters de recerca",
+      "d": "Dissenya i compagina pòsters de recerca per a congressos i presentacions"
+    },
+    "Research Grant Writer": {
+      "n": "Redactor de subvencions de recerca",
+      "d": "Escriu propostes de subvenció estructurades per a sol·licituds de finançament de recerca"
+    },
+    "Chemistry Tutor": {
+      "n": "Tutor de química",
+      "d": "Obtén tutoria personalitzada de química amb explicacions i problemes de pràctica"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Equilibrador d'equacions químiques",
+      "d": "Equilibra equacions químiques amb explicacions pas a pas"
+    },
+    "Lab Safety Checklist": {
+      "n": "Llista de verificació de seguretat al laboratori",
+      "d": "Genera llistes completes de seguretat al laboratori per a experiments de química"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Ajudant de química orgànica",
+      "d": "Estudia reaccions orgàniques, mecanismes i nomenclatura"
+    },
+    "Periodic Table Explorer": {
+      "n": "Explorador de la taula periòdica",
+      "d": "Explora les propietats, tendències i relacions dels elements a la taula periòdica"
+    },
+    "Stoichiometry Solver": {
+      "n": "Resoledor d'estequiometria",
+      "d": "Resol problemes d'estequiometria amb càlculs detallats de mol a mol"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Guia d'enllaços químics",
+      "d": "Entén els enllaços iònics, covalents i metàl·lics amb explicacions visuals"
+    },
+    "Acid-Base Calculator": {
+      "n": "Calculadora d'àcids i bases",
+      "d": "Calcula pH, pOH, Ka, Kb i resol problemes d'equilibri àcid-base"
+    },
+    "Solution Preparation Guide": {
+      "n": "Guia de preparació de solucions",
+      "d": "Calcula i prepara solucions químiques amb les concentracions adequades"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Intèrpret d'espectroscòpia",
+      "d": "Interpreta espectres d'IR, RMN i espectrometria de masses per a la identificació de compostos"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Quadern de laboratori de química",
+      "d": "Crea entrades estructurades de quadern de laboratori per a experiments de química"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Ajudant de mecanismes de reacció",
+      "d": "Dibuixa i comprèn mecanismes de reacció pas a pas"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Calculadora de termoquímica",
+      "d": "Calcula entalpia, entropia i energia lliure de Gibbs per a reaccions químiques"
+    },
+    "Electrochemistry Guide": {
+      "n": "Guia d'electroquímica",
+      "d": "Entén les cel·les electroquímiques, els potencials d'elèctrode i l'electròlisi"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Guia de química de polímers",
+      "d": "Estudia els tipus de polímers, els mecanismes de síntesi i les propietats"
+    },
+    "Biology Tutor": {
+      "n": "Tutor de biologia",
+      "d": "Obtén tutoria personalitzada de biologia amb explicacions clares i exemples"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Guia d'estudi de biologia cel·lular",
+      "d": "Estudia les estructures, funcions i processos cel·lulars en profunditat"
+    },
+    "Genetics Problem Solver": {
+      "n": "Resoledor de problemes de genètica",
+      "d": "Resol problemes de genètica incloent quadres de Punnett i anàlisi de pedigrís"
+    },
+    "Ecology Study Helper": {
+      "n": "Ajudant d'estudi d'ecologia",
+      "d": "Estudia ecosistemes, xarxes tròfiques, dinàmica de poblacions i relacions ecològiques"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Guia d'anatomia i fisiologia",
+      "d": "Estudia els sistemes del cos humà amb explicacions anatòmiques detallades"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Guia de laboratori de microbiologia",
+      "d": "Guia les tècniques de laboratori de microbiologia incloent tinció, cultiu i identificació"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Mapa conceptual de l'evolució",
+      "d": "Mapeja conceptes evolutius incloent selecció natural, especiació i filogenètica"
+    },
+    "Plant Biology Helper": {
+      "n": "Ajudant de biologia vegetal",
+      "d": "Estudia l'anatomia, la fisiologia i les funcions ecològiques de les plantes"
+    },
+    "Molecular Biology Guide": {
+      "n": "Guia de biologia molecular",
+      "d": "Entén la replicació de l'ADN, la transcripció, la traducció i la regulació gènica"
+    },
+    "Bioinformatics Helper": {
+      "n": "Ajudant de bioinformàtica",
+      "d": "Obtén ajuda amb l'anàlisi de seqüències, cerques en bases de dades i biologia computacional"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Guia d'estudi de neurociència",
+      "d": "Estudia el sistema nerviós, la funció cerebral i les vies neurals"
+    },
+    "Marine Biology Explorer": {
+      "n": "Explorador de biologia marina",
+      "d": "Explora ecosistemes marins, organismes i ciències oceàniques"
+    },
+    "Immunology Study Guide": {
+      "n": "Guia d'estudi d'immunologia",
+      "d": "Estudia el sistema immunitari, les respostes immunitàries i els trastorns immunològics"
+    },
+    "Biotechnology Overview": {
+      "n": "Visió general de la biotecnologia",
+      "d": "Explora les aplicacions de la biotecnologia incloent l'enginyeria genètica i CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Planificador de biologia de la conservació",
+      "d": "Planifica estratègies de conservació per a la preservació d'espècies i hàbitats"
+    },
+    "Physics Problem Solver": {
+      "n": "Resoledor de problemes de física",
+      "d": "Resol problemes de física amb solucions detallades pas a pas"
+    },
+    "Mechanics Helper": {
+      "n": "Ajudant de mecànica",
+      "d": "Estudia i resol problemes de mecànica clàssica incloent cinemàtica i dinàmica"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Guia d'electricitat i magnetisme",
+      "d": "Entén els camps elèctrics, els circuits i els fenòmens electromagnètics"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Tutor de termodinàmica",
+      "d": "Estudia les lleis termodinàmiques, els processos i els problemes de transferència de calor"
+    },
+    "Optics & Waves Guide": {
+      "n": "Guia d'òptica i ones",
+      "d": "Estudia els fenòmens ondulatoris, l'òptica i el comportament de la llum"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Explicador de física quàntica",
+      "d": "Entén els conceptes de mecànica quàntica amb explicacions clares i exemples"
+    },
+    "Astrophysics Explorer": {
+      "n": "Explorador d'astrofísica",
+      "d": "Explora l'evolució estel·lar, la cosmologia i la mecànica celeste"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Guia de física nuclear",
+      "d": "Estudia les reaccions nuclears, la radioactivitat i l'energia nuclear"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Ajudant de dinàmica de fluids",
+      "d": "Resol problemes de mecànica de fluids incloent aplicacions de Bernoulli i Navier-Stokes"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Tutor de mecànica clàssica",
+      "d": "Aprofundeix en la mecànica lagrangiana i hamiltoniana i la dinàmica avançada"
+    },
+    "Relativity Concept Guide": {
+      "n": "Guia de conceptes de relativitat",
+      "d": "Entén la relativitat especial i general amb experiments mentals i matemàtiques"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Ajudant d'informes de laboratori de física",
+      "d": "Estructura i escriu informes de laboratori de física amb una anàlisi de dades adequada"
+    },
+    "Math Proof Writer": {
+      "n": "Redactor de demostracions matemàtiques",
+      "d": "Escriu demostracions matemàtiques clares i rigoroses amb estructura lògica"
+    },
+    "Calculus Problem Solver": {
+      "n": "Resoledor de problemes de càlcul",
+      "d": "Resol problemes de càlcul incloent límits, derivades i integrals"
+    },
+    "Statistics Helper": {
+      "n": "Ajudant d'estadística",
+      "d": "Resol problemes d'estadística i interpreta resultats estadístics"
+    },
+    "Linear Algebra Guide": {
+      "n": "Guia d'àlgebra lineal",
+      "d": "Estudia vectors, matrius, transformacions i valors propis"
+    },
+    "Probability Calculator": {
+      "n": "Calculadora de probabilitats",
+      "d": "Calcula probabilitats i resol problemes de distribucions de probabilitat"
+    },
+    "Geometry Tutor": {
+      "n": "Tutor de geometria",
+      "d": "Estudia conceptes geomètrics, teoremes i resol problemes de geometria"
+    },
+    "Trigonometry Helper": {
+      "n": "Ajudant de trigonometria",
+      "d": "Resol equacions trigonomètriques, identitats i aplicacions"
+    },
+    "Number Theory Explorer": {
+      "n": "Explorador de teoria de nombres",
+      "d": "Explora nombres primers, divisibilitat, aritmètica modular i aplicacions criptogràfiques"
+    },
+    "Discrete Math Guide": {
+      "n": "Guia de matemàtiques discretes",
+      "d": "Estudia combinatòria, teoria de grafs, lògica i teoria de conjunts"
+    },
+    "Differential Equations Solver": {
+      "n": "Resoledor d'equacions diferencials",
+      "d": "Resol equacions diferencials ordinàries i parcials amb mètodes detallats"
+    },
+    "Math Word Problem Solver": {
+      "n": "Resoledor de problemes de matemàtiques amb enunciat",
+      "d": "Tradueix i resol problemes de matemàtiques del món real pas a pas"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Guia de modelització matemàtica",
+      "d": "Construeix models matemàtics per a fenòmens i aplicacions del món real"
+    },
+    "SQL Query Generator": {
+      "n": "Generador de consultes SQL",
+      "d": "Genera i optimitza consultes SQL per a la recuperació i l'anàlisi de dades"
+    },
+    "Python Data Analysis": {
+      "n": "Anàlisi de dades amb Python",
+      "d": "Escriu codi Python per a l'anàlisi de dades utilitzant pandas, NumPy i molt més"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Llista de verificació de neteja de dades",
+      "d": "Crea llistes de verificació completes per a la neteja i el preprocessament de dades"
+    },
+    "Data Visualization Planner": {
+      "n": "Planificador de visualització de dades",
+      "d": "Tria els gràfics adequats i dissenya visualitzacions de dades efectives"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Selector de models d'aprenentatge automàtic",
+      "d": "Selecciona el millor model d'aprenentatge automàtic per al teu tipus de problema i les característiques de les dades"
+    },
+    "A/B Test Calculator": {
+      "n": "Calculadora de proves A/B",
+      "d": "Dissenya i analitza proves A/B amb càlculs de significació estadística"
+    },
+    "Dashboard Design Guide": {
+      "n": "Guia de disseny de taulers de control",
+      "d": "Dissenya taulers de control efectius amb els KPI i la disposició adequats"
+    },
+    "ETL Pipeline Planner": {
+      "n": "Planificador de pipelines ETL",
+      "d": "Dissenya i planifica pipelines ETL per a la integració i el processament de dades"
+    },
+    "Feature Engineering Guide": {
+      "n": "Guia d'enginyeria de característiques",
+      "d": "Crea característiques efectives per a models d'aprenentatge automàtic"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Arquitectura de canalització de dades",
+      "d": "Dissenya arquitectures escalables de canalització de dades per a analítica i ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Anàlisi exploratòria de dades",
+      "d": "Realitza una AED exhaustiva amb plans estructurats d'anàlisi i visualització"
+    },
+    "Statistical Test Selector": {
+      "n": "Selector de proves estadístiques",
+      "d": "Tria i aplica la prova estadística adequada per a les teves dades i hipòtesi"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Guia d'anàlisi de sèries temporals",
+      "d": "Analitza dades de sèries temporals amb mètodes de pronòstic i detecció de tendències"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Introducció al processament del llenguatge natural",
+      "d": "Comença amb tasques de PLN incloent classificació de text i anàlisi de sentiments"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Planificador de projectes de visió per computador",
+      "d": "Planifica projectes de visió per computador des de la recollida de dades fins al desplegament del model"
+    },
+    "Technical Requirements Document": {
+      "n": "Document de requisits tècnics",
+      "d": "Crea documents detallats de requisits tècnics per a projectes d'enginyeria"
+    },
+    "Engineering Design Review": {
+      "n": "Revisió de disseny d'enginyeria",
+      "d": "Prepara documents estructurats de revisió de disseny per a projectes d'enginyeria"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Anàlisi de modes de fallada (FMEA)",
+      "d": "Realitza una anàlisi sistemàtica de modes de fallada i els seus efectes per a productes o processos"
+    },
+    "Project Specification Writer": {
+      "n": "Redactor d'especificacions de projecte",
+      "d": "Escriu especificacions de projecte clares i completes per a treballs d'enginyeria"
+    },
+    "CAD Project Planner": {
+      "n": "Planificador de projectes CAD",
+      "d": "Planifica i organitza projectes de modelatge CAD amb documentació adequada"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Guia de processos de fabricació",
+      "d": "Selecciona i planifica processos de fabricació per al desenvolupament de productes"
+    },
+    "Quality Control Checklist": {
+      "n": "Llista de verificació de control de qualitat",
+      "d": "Crea llistes de verificació de control de qualitat i plans d'inspecció per a fabricació"
+    },
+    "Engineering Change Request": {
+      "n": "Sol·licitud de canvi d'enginyeria",
+      "d": "Documenta i gestiona sol·licituds de canvi d'enginyeria amb anàlisi d'impacte"
+    },
+    "Structural Analysis Guide": {
+      "n": "Guia d'anàlisi estructural",
+      "d": "Guia els càlculs i la metodologia d'anàlisi estructural per a projectes d'enginyeria"
+    },
+    "Materials Selection Guide": {
+      "n": "Guia de selecció de materials",
+      "d": "Selecciona materials òptims segons requisits mecànics, tèrmics i químics"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Creador de prompts per a Midjourney",
+      "d": "Crea prompts detallats per a Midjourney amb paràmetres d'estil, il·luminació i composició"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "Constructor de prompts per a DALL-E",
+      "d": "Construeix prompts optimitzats per a DALL-E amb descripcions clares i direcció artística"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Redactor de prompts per a Stable Diffusion",
+      "d": "Genera prompts per a Stable Diffusion amb enginyeria de prompts positius i negatius"
+    },
+    "Product Photography Prompt": {
+      "n": "Prompt de fotografia de producte",
+      "d": "Crea prompts d'IA per a fotografia de producte impressionant amb resultats de qualitat d'estudi"
+    },
+    "Landscape Art Prompt": {
+      "n": "Prompt d'art de paisatge",
+      "d": "Crea prompts d'art de paisatge impressionants amb detalls d'entorn i atmosfera"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Prompt de fotografia de retrat",
+      "d": "Genera prompts de retrat amb IA amb guia d'il·luminació, expressió i composició"
+    },
+    "Food Photography Prompt": {
+      "n": "Prompt de fotografia gastronòmica",
+      "d": "Crea prompts de fotografia gastronòmica apetitosa amb detalls d'estilisme i presentació"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Prompt de visualització arquitectònica",
+      "d": "Crea prompts de visualització arquitectònica per a edificis i espais interiors"
+    },
+    "Fashion Design Prompt": {
+      "n": "Prompt de disseny de moda",
+      "d": "Genera conceptes de disseny de moda amb detalls de teixit, silueta i estilisme"
+    },
+    "Comic Art Prompt": {
+      "n": "Prompt d'art de còmic",
+      "d": "Crea prompts d'art estil còmic amb composició de vinyetes i acció dels personatges"
+    },
+    "Abstract Art Prompt": {
+      "n": "Prompt d'art abstracte",
+      "d": "Genera prompts d'art abstracte amb teoria del color, textura i expressió emocional"
+    },
+    "Icon Design Brief": {
+      "n": "Resum de disseny d'icones",
+      "d": "Dissenya conjunts d'iconografia neta amb estil consistent i llenguatge visual"
+    },
+    "Infographic Design Brief": {
+      "n": "Resum de disseny d'infografia",
+      "d": "Planifica dissenys d'infografia amb visualització de dades i jerarquia visual"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Prompt de gràfics per a xarxes socials",
+      "d": "Genera gràfics cridaners per a xarxes socials per a qualsevol plataforma"
+    },
+    "Meme Creator Prompt": {
+      "n": "Prompt de creació de mems",
+      "d": "Genera conceptes de mems amb selecció de format, peu de foto i potencial viral"
+    },
+    "AI Avatar Prompt": {
+      "n": "Prompt d'avatar amb IA",
+      "d": "Crea dissenys únics d'avatars amb IA per a perfils, videojocs i identitats virtuals"
+    },
+    "Song Lyrics Writer": {
+      "n": "Redactor de lletres de cançons",
+      "d": "Escriu lletres de cançons originals amb estrofes, tornada i pont en qualsevol gènere"
+    },
+    "Chord Progression Generator": {
+      "n": "Generador de progressions d'acords",
+      "d": "Genera progressions d'acords amb guia de teoria musical per a qualsevol gènere i estat d'ànim"
+    },
+    "Beat Ideas Creator": {
+      "n": "Creador d'idees de ritmes",
+      "d": "Genera conceptes de ritmes amb tempo, patrons de percussió i idees d'instrumentació"
+    },
+    "Song Structure Builder": {
+      "n": "Constructor d'estructura de cançons",
+      "d": "Dissenya arranjaments de cançons amb ordre de seccions, dinàmiques i transicions"
+    },
+    "Rap Verse Writer": {
+      "n": "Redactor de versos de rap",
+      "d": "Escriu versos de rap contundents amb patrons de flow, esquemes de rima i jocs de paraules"
+    },
+    "Country Song Writer": {
+      "n": "Redactor de cançons country",
+      "d": "Escriu cançons country autèntiques amb narració, imatges i sonoritat pròpia"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Creador de ganxos de cançó pop",
+      "d": "Crea ganxos i melodies de tornada pop enganxoses que es queden al cap dels oients"
+    },
+    "Rock Ballad Writer": {
+      "n": "Redactor de balades de rock",
+      "d": "Escriu balades de rock emotives amb crescendos potents i tornades himne"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Guia d'arranjament musical",
+      "d": "Planifica arranjaments musicals complets amb instrumentació, harmonització i dinàmiques"
+    },
+    "Band Name Generator": {
+      "n": "Generador de noms de grups",
+      "d": "Genera noms creatius per a grups musicals basats en gènere, ambient i preferències d'imatge"
+    },
+    "Music Video Concept": {
+      "n": "Concepte de videoclip musical",
+      "d": "Desenvolupa conceptes creatius de videoclips musicals amb narrativa, visuals i coreografia"
+    },
+    "Mixing Checklist": {
+      "n": "Llista de verificació de mescla",
+      "d": "Llista de verificació completa de mescla que cobreix equalització, compressió, efectes i equilibri"
+    },
+    "Film Score Brief": {
+      "n": "Resum de banda sonora de cinema",
+      "d": "Crea resums detallats de bandes sonores amb ambient, instrumentació i indicacions de temps"
+    },
+    "YouTube Shorts Script": {
+      "n": "Guió per a YouTube Shorts",
+      "d": "Escriu guions atractius per a YouTube Shorts optimitzats per a vídeo vertical de 60 segons"
+    },
+    "Video Storyboard Creator": {
+      "n": "Creador de guions gràfics de vídeo",
+      "d": "Planifica guions gràfics amb descripcions d'escena, angles de càmera i transicions"
+    },
+    "Documentary Outline": {
+      "n": "Esquema de documental",
+      "d": "Estructura documentals captivadors amb arc narratiu, entrevistes i plans de material complementari"
+    },
+    "Vlog Episode Planner": {
+      "n": "Planificador d'episodis de vlog",
+      "d": "Planifica episodis de vlog atractius amb localitzacions, punts de conversa i varietat visual"
+    },
+    "Screenwriting Helper": {
+      "n": "Assistent de guió cinematogràfic",
+      "d": "Desenvolupa guions cinematogràfics amb format adequat, diàlegs i direcció d'escena"
+    },
+    "Short Film Script": {
+      "n": "Guió de curtmetratge",
+      "d": "Escriu guions complets de curtmetratges amb narrativa visual i trama ajustada"
+    },
+    "Animation Script Writer": {
+      "n": "Redactor de guions d'animació",
+      "d": "Escriu guions d'animació amb gags visuals, accions dels personatges i indicacions de ritme"
+    },
+    "Video Editing Brief": {
+      "n": "Resum d'edició de vídeo",
+      "d": "Crea resums detallats d'edició de vídeo amb ritme, efectes i directrius d'estil"
+    },
+    "Livestream Run Sheet": {
+      "n": "Full de ruta d'emissió en directe",
+      "d": "Planifica emissions en directe amb segments temporitzats, punts de conversa i detonants de participació"
+    },
+    "Tutorial Video Script": {
+      "n": "Guió de vídeo tutorial",
+      "d": "Escriu guions clars de vídeos tutorials amb instruccions pas a pas i elements visuals"
+    },
+    "Explainer Video Script": {
+      "n": "Guió de vídeo explicatiu",
+      "d": "Escriu guions clars de vídeos explicatius que simplifiquen temes complexos visualment"
+    },
+    "Video SEO Optimizer": {
+      "n": "Optimitzador SEO de vídeo",
+      "d": "Optimitza les metadades de vídeo amb títols, descripcions, etiquetes i estratègies de miniatures"
+    },
+    "Novel Outline Creator": {
+      "n": "Creador d'esquemes de novel·la",
+      "d": "Construeix esquemes complets de novel·les amb estructura argumental, capítols i arcs de personatges"
+    },
+    "Short Story Writer": {
+      "n": "Redactor de contes",
+      "d": "Escriu contes captivadors amb personatges vívids i conclusions satisfactòries"
+    },
+    "Poetry Generator": {
+      "n": "Generador de poesia",
+      "d": "Crea poesia original en diverses formes amb imatges, mètrica i emoció"
+    },
+    "Book Proposal Template": {
+      "n": "Plantilla de proposta de llibre",
+      "d": "Crea propostes de llibre professionals amb anàlisi de mercat i resums de capítols"
+    },
+    "Memoir Outline": {
+      "n": "Esquema de memòries",
+      "d": "Estructura memòries personals amb capítols temàtics i narrativa reflexiva"
+    },
+    "Children's Book Creator": {
+      "n": "Creador de llibres infantils",
+      "d": "Escriu llibres infantils adequats per edat amb històries atractives i notes d'il·lustració"
+    },
+    "Screenplay Outline": {
+      "n": "Esquema de guió cinematogràfic",
+      "d": "Esquematitza guions cinematogràfics amb estructura en tres actes, desglossament d'escenes i notes de diàleg"
+    },
+    "Play Script Writer": {
+      "n": "Redactor de guions teatrals",
+      "d": "Escriu guions teatrals amb acotacions, diàlegs i estructura d'escenes"
+    },
+    "Comic Book Script": {
+      "n": "Guió de còmic",
+      "d": "Escriu guions de còmic amb descripcions de vinyetes, diàlegs i ritme"
+    },
+    "Fan Fiction Creator": {
+      "n": "Creador de fan fiction",
+      "d": "Escriu fan fiction amb veus de personatges fidels i noves trames creatives"
+    },
+    "Writing Prompt Generator": {
+      "n": "Generador de consignes d'escriptura",
+      "d": "Genera consignes d'escriptura creativa amb gènere, restriccions i llavors d'història"
+    },
+    "Dialogue Writer": {
+      "n": "Redactor de diàlegs",
+      "d": "Crea diàlegs naturals que revelen el caràcter i fan avançar la trama"
+    },
+    "Plot Twist Generator": {
+      "n": "Generador de girs argumentals",
+      "d": "Genera girs argumentals sorprenents però lògics que recontextualitzen la narrativa"
+    },
+    "Query Letter Writer": {
+      "n": "Redactor de cartes de consulta",
+      "d": "Escriu cartes de consulta convincents per a agents literaris amb ganxo i sinopsi"
+    },
+    "Book Description Writer": {
+      "n": "Redactor de descripcions de llibres",
+      "d": "Escriu descripcions de llibres convincents que enganxin els lectors i impulsin les vendes"
+    },
+    "Ghostwriting Brief": {
+      "n": "Resum d'escriptura fantasma",
+      "d": "Crea resums detallats d'escriptura fantasma amb requisits de veu, estil i contingut"
+    },
+    "Technical Writing Guide": {
+      "n": "Guia de redacció tècnica",
+      "d": "Escriu documentació tècnica clara amb format estructurat i precisió"
+    },
+    "Grant Proposal Writer": {
+      "n": "Redactor de propostes de subvenció",
+      "d": "Escriu propostes de subvenció persuasives amb descripcions de projecte i justificació pressupostària"
+    },
+    "White Paper Outline": {
+      "n": "Esquema de llibre blanc",
+      "d": "Estructura llibres blancs amb autoritat amb recerca, anàlisi i recomanacions"
+    },
+    "Copywriting Formula": {
+      "n": "Fórmula de redacció publicitària",
+      "d": "Aplica fórmules provades de redacció publicitària com AIDA, PAS i BAB a qualsevol producte o servei"
+    },
+    "Instagram Content Planner": {
+      "n": "Planificador de contingut d'Instagram",
+      "d": "Planifica una setmana de contingut d'Instagram amb publicacions, històries, reels i peus de foto"
+    },
+    "X Thread Creator": {
+      "n": "Creador de fils de X",
+      "d": "Escriu fils de X atractius que construeixin autoritat i generin participació"
+    },
+    "Reddit Post Writer": {
+      "n": "Redactor de publicacions de Reddit",
+      "d": "Escriu publicacions de Reddit optimitzades per a subreddits específics tenint en compte les normes de la comunitat"
+    },
+    "Viral Hook Generator": {
+      "n": "Generador de ganxos virals",
+      "d": "Genera ganxos cridaners per a contingut de xarxes socials a totes les plataformes"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Eina d'estratègia d'etiquetes",
+      "d": "Investiga i organitza estratègies d'etiquetes per a màxima descobribilitat"
+    },
+    "Engagement Response Generator": {
+      "n": "Generador de respostes de participació",
+      "d": "Genera respostes reflexives a comentaris, missatges directes i mencions a escala"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Redactor d'articles de LinkedIn",
+      "d": "Escriu articles de lideratge de pensament a LinkedIn que estableixin autoritat professional"
+    },
+    "Episode Show Notes": {
+      "n": "Notes del programa de l'episodi",
+      "d": "Escriu notes detallades del programa amb marques de temps, enllaços i punts clau"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Llista de verificació d'edició de pòdcast",
+      "d": "Estandarditza el flux de treball d'edició de pòdcasts amb punts de control de qualitat i acabat"
+    },
+    "Prompt Improver": {
+      "n": "Millorador de prompts",
+      "d": "Refina i optimitza qualsevol prompt per obtenir millors resultats d'IA amb tècniques estructurades"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Organitzador de cadena de pensament",
+      "d": "Construeix prompts de cadena de pensament que guiïn la IA a través del raonament pas a pas"
+    },
+    "RAG Prompt Generator": {
+      "n": "Generador de prompts RAG",
+      "d": "Crea prompts de generació augmentada per recuperació amb optimització de la finestra de context"
+    },
+    "Prompt Translator": {
+      "n": "Traductor de prompts",
+      "d": "Tradueix prompts entre diferents models d'IA preservant la intenció i la qualitat"
+    },
+    "Prompt Evaluator": {
+      "n": "Avaluador de prompts",
+      "d": "Avalua i puntua prompts en múltiples dimensions de qualitat amb consells de millora"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Generador d'exemples de pocs trets",
+      "d": "Genera exemples de pocs trets d'alta qualitat per a prompts d'aprenentatge en context"
+    },
+    "System Prompt Writer": {
+      "n": "Redactor de prompts de sistema",
+      "d": "Escriu prompts de sistema efectius que defineixin el comportament, les restriccions i l'estil de sortida de la IA"
+    },
+    "AI Guardrails Designer": {
+      "n": "Dissenyador de baranes de seguretat d'IA",
+      "d": "Dissenya baranes de seguretat i polítiques de contingut per a aplicacions d'IA"
+    },
+    "AI Use Case Identifier": {
+      "n": "Identificador de casos d'ús d'IA",
+      "d": "Identifica i avalua casos d'ús potencials d'IA per a empreses i fluxos de treball"
+    },
+    "Model Comparison Guide": {
+      "n": "Guia de comparació de models",
+      "d": "Compara models d'IA segons capacitats, preus i adequació al cas d'ús"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "Creador de dades d'ajust fi de LLM",
+      "d": "Genera i estructura dades d'entrenament per a projectes d'ajust fi de LLM"
+    },
+    "Debugger Assistant": {
+      "n": "Assistent de depuració",
+      "d": "Depura problemes de codi sistemàticament amb anàlisi de causa arrel i suggeriments de correcció"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "Planificador de pipelines CI/CD",
+      "d": "Dissenya pipelines CI/CD amb configuracions d'etapes de construcció, proves i desplegament"
+    },
+    "Docker Configuration Guide": {
+      "n": "Guia de configuració de Docker",
+      "d": "Crea Dockerfiles i configuracions de compose amb bones pràctiques"
+    },
+    "Git Workflow Planner": {
+      "n": "Planificador de fluxos de treball Git",
+      "d": "Dissenya estratègies de branques Git i fluxos de treball de col·laboració per a equips de desenvolupament"
+    },
+    "Code Migration Guide": {
+      "n": "Guia de migració de codi",
+      "d": "Planifica i executa migracions de codi entre llenguatges, frameworks o versions"
+    },
+    "Database Schema Designer": {
+      "n": "Dissenyador d'esquemes de bases de dades",
+      "d": "Dissenya esquemes de bases de dades amb taules, relacions, índexs i restriccions"
+    },
+    "Performance Optimization Guide": {
+      "n": "Guia d'optimització del rendiment",
+      "d": "Identifica i resol colls d'ampolla de rendiment amb estratègies de perfilatge i optimització"
+    },
+    "Microservices Architecture": {
+      "n": "Arquitectura de microserveis",
+      "d": "Dissenya arquitectures de microserveis amb límits de servei, comunicació i desplegament"
+    },
+    "GraphQL Schema Builder": {
+      "n": "Constructor d'esquemes GraphQL",
+      "d": "Dissenya esquemes GraphQL amb tipus, consultes, mutacions i subscripcions"
+    },
+    "Terraform Configuration": {
+      "n": "Configuració de Terraform",
+      "d": "Genera configuracions de Terraform per al proveïment d'infraestructura al núvol"
+    },
+    "AWS Architecture Planner": {
+      "n": "Planificador d'arquitectura AWS",
+      "d": "Dissenya arquitectures al núvol AWS amb selecció de serveis i optimització de costos"
+    },
+    "Code Documentation Generator": {
+      "n": "Generador de documentació de codi",
+      "d": "Genera documentació en línia, JSDoc, docstrings i comentaris de codi"
+    },
+    "Technical Interview Prep": {
+      "n": "Preparació per a entrevistes tècniques",
+      "d": "Prepara't per a entrevistes tècniques amb desglossaments de problemes i patrons de solució"
+    },
+    "Changelog Writer": {
+      "n": "Redactor de registre de canvis",
+      "d": "Escriu registres de canvis clars seguint el format Keep a Changelog amb versionat semàntic"
+    },
+    "Error Handling Strategy": {
+      "n": "Estratègia de gestió d'errors",
+      "d": "Dissenya estratègies integrals de gestió d'errors amb patrons i missatgeria per a l'usuari"
+    },
+    "Logging Strategy Guide": {
+      "n": "Guia d'estratègia de registre",
+      "d": "Dissenya estratègies de registre d'aplicacions amb nivells, formats i agregació"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Guia de configuració de monitoratge",
+      "d": "Configura el monitoratge d'aplicacions amb mètriques, alertes i taulers de control"
+    },
+    "Load Testing Plan": {
+      "n": "Pla de proves de càrrega",
+      "d": "Dissenya plans de proves de càrrega amb escenaris, mètriques i criteris d'acceptació"
+    },
+    "Security Audit Checklist": {
+      "n": "Llista de verificació d'auditoria de seguretat",
+      "d": "Realitza auditories de seguretat amb llistes de verificació basades en OWASP i guia de remediació"
+    },
+    "Security Checklist Creator": {
+      "n": "Creador de llistes de verificació de seguretat",
+      "d": "Genera llistes de verificació de seguretat completes adaptades a la teva aplicació i pila tecnològica"
+    },
+    "Penetration Testing Plan": {
+      "n": "Pla de proves de penetració",
+      "d": "Planifica proves de penetració estructurades amb abast, metodologia i plantilles d'informes"
+    },
+    "Secure Coding Guide": {
+      "n": "Guia de codificació segura",
+      "d": "Crea directrius de codificació segura específiques per llenguatge amb prevenció de vulnerabilitats"
+    },
+    "Incident Response Plan": {
+      "n": "Pla de resposta a incidents",
+      "d": "Dissenya plans de resposta a incidents amb detecció, contenció i procediments de recuperació"
+    },
+    "Security Policy Writer": {
+      "n": "Redactor de polítiques de seguretat",
+      "d": "Escriu polítiques de seguretat organitzacionals que cobreixin control d'accés, tractament de dades i compliment normatiu"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Guia d'avaluació de vulnerabilitats",
+      "d": "Realitza avaluacions sistemàtiques de vulnerabilitats amb escaneig i remediació prioritzada"
+    },
+    "Security Awareness Training": {
+      "n": "Formació en conscienciació de seguretat",
+      "d": "Dissenya programes de formació en conscienciació de seguretat per a empleats de tots els nivells"
+    },
+    "Password Policy Creator": {
+      "n": "Creador de polítiques de contrasenyes",
+      "d": "Crea polítiques de contrasenyes robustes amb requisits de complexitat, rotació i MFA"
+    },
+    "Data Protection Plan": {
+      "n": "Pla de protecció de dades",
+      "d": "Dissenya estratègies de protecció de dades que cobreixin classificació, xifratge i retenció"
+    },
+    "SWOT Analysis Pro": {
+      "n": "Anàlisi DAFO Pro",
+      "d": "Anàlisi DAFO avançada amb puntuació ponderada i plans d'acció"
+    },
+    "Pitch Deck Outline": {
+      "n": "Esquema de presentació per a inversors",
+      "d": "Crea una estructura convincent de presentació per a inversors"
+    },
+    "Business Canvas Creator": {
+      "n": "Creador de llenç de model de negoci",
+      "d": "Genera un llenç de model de negoci complet per a la teva iniciativa"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Informe d'intel·ligència competitiva",
+      "d": "Analitza els competidors i identifica oportunitats de posicionament al mercat"
+    },
+    "Strategic Planning Guide": {
+      "n": "Guia de planificació estratègica",
+      "d": "Desenvolupa un pla estratègic plurianual amb objectius i fites"
+    },
+    "Annual Report Template": {
+      "n": "Plantilla d'informe anual",
+      "d": "Estructura l'informe anual de la teva empresa amb aspectes financers i operatius destacats"
+    },
+    "Board Meeting Agenda": {
+      "n": "Ordre del dia de la junta directiva",
+      "d": "Ordre del dia professional de reunió de junta directiva amb bones pràctiques de governança"
+    },
+    "Company Newsletter": {
+      "n": "Butlletí de l'empresa",
+      "d": "Dissenya un butlletí d'empresa intern o extern atractiu"
+    },
+    "Employee Survey Creator": {
+      "n": "Creador d'enquestes per a empleats",
+      "d": "Crea enquestes efectives de compromís i satisfacció dels empleats"
+    },
+    "Team Building Activity Planner": {
+      "n": "Planificador d'activitats de cohesió d'equip",
+      "d": "Planifica activitats i esdeveniments de cohesió d'equip atractius"
+    },
+    "Remote Work Policy": {
+      "n": "Política de teletreball",
+      "d": "Crea una política integral de teletreball per a la teva organització"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Pla de diversitat i inclusió",
+      "d": "Desenvolupa una estratègia significativa de diversitat, equitat i inclusió"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Matriu d'avaluació de proveïdors",
+      "d": "Avalua i compara proveïdors sistemàticament per a decisions de compra"
+    },
+    "Process Improvement Plan": {
+      "n": "Pla de millora de processos",
+      "d": "Identifica i implementa millores de processos amb metodologies lean"
+    },
+    "Change Management Plan": {
+      "n": "Pla de gestió del canvi",
+      "d": "Guia el canvi organitzacional amb alineació de parts interessades i comunicació"
+    },
+    "Risk Assessment Template": {
+      "n": "Plantilla d'avaluació de riscos",
+      "d": "Identifica, avalua i mitiga riscos empresarials sistemàticament"
+    },
+    "Succession Planning Guide": {
+      "n": "Guia de planificació de la successió",
+      "d": "Planifica transicions de lideratge i desenvolupament de la reserva de talent"
+    },
+    "Business Continuity Plan": {
+      "n": "Pla de continuïtat de negoci",
+      "d": "Prepara't per a interrupcions amb una estratègia integral de continuïtat"
+    },
+    "Customer Journey Map": {
+      "n": "Mapa del viatge del client",
+      "d": "Visualitza i optimitza l'experiència completa del client"
+    },
+    "Brand Guidelines Template": {
+      "n": "Plantilla de directrius de marca",
+      "d": "Defineix la identitat de la teva marca amb directrius completes d'estil i ús"
+    },
+    "Mission & Vision Statement": {
+      "n": "Declaració de missió i visió",
+      "d": "Crea declaracions de missió i visió inspiradores per a la teva organització"
+    },
+    "Company Culture Document": {
+      "n": "Document de cultura empresarial",
+      "d": "Defineix i documenta la cultura i els valors de la teva organització"
+    },
+    "Organizational Chart Planner": {
+      "n": "Planificador d'organigrama",
+      "d": "Dissenya i planifica l'estructura organitzacional i les línies de comandament"
+    },
+    "Department Budget Template": {
+      "n": "Plantilla de pressupost departamental",
+      "d": "Crea pressupostos departamentals detallats amb pronòstic i seguiment"
+    },
+    "KPI Dashboard Builder": {
+      "n": "Constructor de dashboard KPI",
+      "d": "Dissenya dashboards d'indicadors clau per a decisions basades en dades"
+    },
+    "Job Description Writer": {
+      "n": "Redactor de descripcions de llocs de treball",
+      "d": "Crea descripcions de llocs de treball clares i inclusives que atreguin el millor talent"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Creador de targetes de puntuació d'entrevista",
+      "d": "Construeix targetes de puntuació d'entrevista estructurades per a una avaluació coherent dels candidats"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Llista de verificació d'incorporació d'empleats",
+      "d": "Llista de verificació completa d'incorporació per a l'èxit de les noves contractacions"
+    },
+    "Performance Improvement Plan": {
+      "n": "Pla de millora del rendiment",
+      "d": "Crea plans de millora del rendiment amb suport i fites clares"
+    },
+    "Exit Interview Guide": {
+      "n": "Guia d'entrevista de sortida",
+      "d": "Realitza entrevistes de sortida perspicaces per millorar la retenció"
+    },
+    "Compensation Analysis": {
+      "n": "Anàlisi de compensació",
+      "d": "Analitza i compara paquets de compensació per a la competitivitat al mercat"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Guia de comparació de beneficis",
+      "d": "Compara i avalua paquets de beneficis per a empleats"
+    },
+    "Team Retrospective": {
+      "n": "Retrospectiva d'equip",
+      "d": "Facilita retrospectives d'equip efectives per a la millora contínua"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Plantilla de reunió individual",
+      "d": "Estructura reunions individuals productives amb els teus subordinats directes"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Planificador del procés de contractació",
+      "d": "Dissenya i optimitza el teu procés de reclutament de principi a fi"
+    },
+    "Employee Recognition Program": {
+      "n": "Programa de reconeixement d'empleats",
+      "d": "Construeix un programa significatiu de reconeixement i recompenses per a empleats"
+    },
+    "Training Program Designer": {
+      "n": "Dissenyador de programes de formació",
+      "d": "Dissenya programes efectius de formació i desenvolupament d'empleats"
+    },
+    "Workplace Policy Writer": {
+      "n": "Redactor de polítiques laborals",
+      "d": "Redacta polítiques laborals clares que cobreixin temes organitzacionals clau"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Guia de resolució de conflictes",
+      "d": "Navega els conflictes laborals amb marcs estructurats de resolució"
+    },
+    "Remote Team Handbook": {
+      "n": "Manual d'equip remot",
+      "d": "Crea un manual complet per a les operacions d'equips distribuïts"
+    },
+    "Career Path Planner": {
+      "n": "Planificador de trajectòria professional",
+      "d": "Traça la teva trajectòria professional amb fites accionables"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Preparació per a la negociació salarial",
+      "d": "Prepara arguments i estratègies de negociació salarial amb confiança"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "Constructor de perfil de LinkedIn",
+      "d": "Optimitza el teu perfil de LinkedIn per atreure reclutadors i oportunitats"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Guia de creació de portafoli",
+      "d": "Crea un portafoli professional destacat que mostri els teus millors treballs"
+    },
+    "Networking Email Templates": {
+      "n": "Plantilles de correus de networking",
+      "d": "Escriu correus de networking efectius per al creixement professional i les presentacions"
+    },
+    "Career Pivot Guide": {
+      "n": "Guia de canvi de carrera",
+      "d": "Navega una transició de carrera exitosa amb un pla estructurat"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Calculadora de tarifes freelance",
+      "d": "Calcula la teva tarifa freelance ideal i estratègia de preus"
+    },
+    "Professional Development Plan": {
+      "n": "Pla de desenvolupament professional",
+      "d": "Crea un pla estructurat per al creixement professional continu"
+    },
+    "Mentorship Program Guide": {
+      "n": "Guia de programes de mentoria",
+      "d": "Troba, estructura i maximitza les relacions de mentoria"
+    },
+    "Side Hustle Validator": {
+      "n": "Validador de negocis secundaris",
+      "d": "Avalua i valida idees de negocis secundaris per a la viabilitat"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Auditoria d'equilibri entre vida i treball",
+      "d": "Avalua i millora el teu equilibri entre vida i treball amb estratègies accionables"
+    },
+    "Speaking Proposal Template": {
+      "n": "Plantilla de proposta de ponència",
+      "d": "Crea propostes persuasives de ponència per a conferències i esdeveniments"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Redactor de propostes de consultoria",
+      "d": "Redacta propostes de consultoria guanyadores que tanquin acords"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Analitzador de llacunes de competències",
+      "d": "Identifica i planifica el tancament de llacunes de competències crítiques per a l'avenç professional"
+    },
+    "Career Journal Prompts": {
+      "n": "Consignes de diari professional",
+      "d": "Reflexiona sobre el teu recorregut professional amb exercicis de diari guiat"
+    },
+    "Informational Interview Guide": {
+      "n": "Guia d'entrevistes informatives",
+      "d": "Prepara i realitza entrevistes informatives efectives"
+    },
+    "Thank You Note Writer": {
+      "n": "Redactor de notes d'agraïment",
+      "d": "Escriu notes d'agraïment professionals i reflexives per a qualsevol ocasió"
+    },
+    "Resignation Letter Template": {
+      "n": "Plantilla de carta de renúncia",
+      "d": "Escriu una carta de renúncia professional mantenint relacions positives"
+    },
+    "Meal Prep Planner": {
+      "n": "Planificador de preparació de menjars",
+      "d": "Planifica menjars setmanals amb llistes de la compra i calendaris de preparació"
+    },
+    "Habit Tracker Designer": {
+      "n": "Dissenyador de seguiment d'hàbits",
+      "d": "Dissenya un sistema personalitzat de seguiment d'hàbits per a un canvi durador"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Guia de millora del son",
+      "d": "Optimitza la qualitat del teu son amb estratègies basades en evidència"
+    },
+    "Stress Management Plan": {
+      "n": "Pla de gestió de l'estrès",
+      "d": "Construeix un conjunt d'eines personalitzat de gestió de l'estrès i un pla d'acció"
+    },
+    "Yoga Routine Builder": {
+      "n": "Constructor de rutines de ioga",
+      "d": "Crea rutines de ioga personalitzades per al teu nivell i objectius"
+    },
+    "Running Training Plan": {
+      "n": "Pla d'entrenament de running",
+      "d": "Construeix un pla d'entrenament de running estructurat per a qualsevol objectiu de distància"
+    },
+    "Swimming Workout": {
+      "n": "Entrenament de natació",
+      "d": "Dissenya entrenaments de natació efectius per a la forma física i la tècnica"
+    },
+    "Strength Training Program": {
+      "n": "Programa d'entrenament de força",
+      "d": "Crea un programa progressiu d'entrenament de força adaptat als teus objectius"
+    },
+    "Flexibility Routine": {
+      "n": "Rutina de flexibilitat",
+      "d": "Millora la flexibilitat i la mobilitat amb rutines d'estiraments estructurades"
+    },
+    "HIIT Workout Creator": {
+      "n": "Creador d'entrenaments HIIT",
+      "d": "Dissenya entrenaments d'intervals d'alta intensitat per a resultats màxims"
+    },
+    "Nutrition Label Reader": {
+      "n": "Lector d'etiquetes nutricionals",
+      "d": "Aprèn a llegir i entendre les etiquetes nutricionals per a eleccions més saludables"
+    },
+    "Calorie Counter Guide": {
+      "n": "Guia de comptatge de calories",
+      "d": "Configura un seguiment personalitzat de calories amb desglossament de macronutrients"
+    },
+    "Hydration Tracker": {
+      "n": "Seguiment d'hidratació",
+      "d": "Fes el seguiment i optimitza la teva ingesta diària d'aigua i els teus hàbits d'hidratació"
+    },
+    "Mental Health Check-In": {
+      "n": "Avaluació de salut mental",
+      "d": "Autoavaluació guiada de salut mental i seguiment del benestar"
+    },
+    "Therapy Session Prep": {
+      "n": "Preparació per a sessions de teràpia",
+      "d": "Prepara't per a les sessions de teràpia amb reflexió estructurada i establiment d'objectius"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Consignes de diari de gratitud",
+      "d": "Consignes diàries de diari de gratitud per a un millor benestar mental"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Creador d'exercicis de mindfulness",
+      "d": "Crea exercicis personalitzats de mindfulness i respiració"
+    },
+    "Supplement Research Guide": {
+      "n": "Guia de recerca de suplements",
+      "d": "Investiga i avalua suplements segons les teves necessitats de salut"
+    },
+    "Allergy Management Plan": {
+      "n": "Pla de gestió d'al·lèrgies",
+      "d": "Crea un pla complet de gestió i evitació d'al·lèrgies"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Seguiment de condicions cròniques",
+      "d": "Fes seguiment de símptomes, medicaments i desencadenants de salut crònica"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Registre d'exercicis de fisioteràpia",
+      "d": "Registra i fes seguiment d'exercicis de fisioteràpia i progrés de recuperació"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Configuració ergonòmica de l'espai de treball",
+      "d": "Optimitza el teu espai de treball per al confort, la salut i la productivitat"
+    },
+    "Digital Detox Planner": {
+      "n": "Planificador de desintoxicació digital",
+      "d": "Planifica i executa una desintoxicació digital per millorar el benestar mental"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Creador de rutina d'autocura",
+      "d": "Construeix una rutina d'autocura sostenible en totes les dimensions del benestar"
+    },
+    "First Aid Guide": {
+      "n": "Guia de primers auxilis",
+      "d": "Procediments ràpids de primers auxilis per a emergències comunes"
+    },
+    "To-Do List Power Planner": {
+      "n": "Planificador de llistes de tasques",
+      "d": "Crea llistes de tasques prioritzades amb estimacions de temps"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Optimitzador d'horari diari",
+      "d": "Dissenya un horari diari optimitzat basat en els teus nivells d'energia"
+    },
+    "Project Planner Pro": {
+      "n": "Planificador de projectes Pro",
+      "d": "Planifica projectes amb fites, lliurables i assignació de recursos"
+    },
+    "Decision Matrix Builder": {
+      "n": "Constructor de matriu de decisions",
+      "d": "Pren millors decisions amb anàlisi de criteris ponderats"
+    },
+    "Weekly Review Template": {
+      "n": "Plantilla de revisió setmanal",
+      "d": "Fes revisions setmanals completes per mantenir-te al dia amb els teus objectius"
+    },
+    "Morning Routine Designer": {
+      "n": "Dissenyador de rutina matinal",
+      "d": "Dissenya una rutina matinal energitzant per al màxim rendiment"
+    },
+    "Evening Routine Creator": {
+      "n": "Creador de rutina nocturna",
+      "d": "Crea una rutina nocturna relaxant per a un millor descans"
+    },
+    "Time Blocking Schedule": {
+      "n": "Horari per blocs de temps",
+      "d": "Organitza el teu dia amb blocs de temps focalitzats per a la màxima productivitat"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eina de matriu d'Eisenhower",
+      "d": "Categoritza tasques per urgència i importància per a una millor priorització"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Planificador de sessions Pomodoro",
+      "d": "Planifica sessions de treball focalitzades amb la tècnica Pomodoro"
+    },
+    "Goal Tracking System": {
+      "n": "Sistema de seguiment d'objectius",
+      "d": "Configura un sistema complet de seguiment d'objectius amb indicadors de progrés"
+    },
+    "Quarterly Planning Template": {
+      "n": "Plantilla de planificació trimestral",
+      "d": "Planifica el teu trimestre amb objectius estratègics i passos accionables"
+    },
+    "Annual Review Template": {
+      "n": "Plantilla de revisió anual",
+      "d": "Fes una revisió anual completa d'assoliments i estableix nous objectius"
+    },
+    "Meeting Notes Template": {
+      "n": "Plantilla de notes de reunió",
+      "d": "Captura notes de reunió accionables amb decisions i seguiments"
+    },
+    "Brain Dump Organizer": {
+      "n": "Organitzador de pluja d'idees",
+      "d": "Transforma pensaments caòtics en categories organitzades i accionables"
+    },
+    "Delegation Framework": {
+      "n": "Marc de delegació",
+      "d": "Identifica què delegar i crea instruccions clares de delegació"
+    },
+    "Focus Session Planner": {
+      "n": "Planificador de sessions de concentració",
+      "d": "Planifica sessions de concentració profunda amb entorn i gestió de distraccions"
+    },
+    "Energy Management Guide": {
+      "n": "Guia de gestió d'energia",
+      "d": "Optimitza els teus nivells d'energia al llarg del dia per al màxim rendiment"
+    },
+    "Batch Processing Planner": {
+      "n": "Planificador de processament per lots",
+      "d": "Agrupa tasques similars per a un processament eficient per lots"
+    },
+    "System Documentation Template": {
+      "n": "Plantilla de documentació de sistemes",
+      "d": "Documenta sistemes personals i d'equip per a consistència i eficiència"
+    },
+    "Project Kickoff Template": {
+      "n": "Plantilla d'inici de projecte",
+      "d": "Llança projectes amb objectius clars, abast i alineament d'equip"
+    },
+    "Sprint Planning Guide": {
+      "n": "Guia de planificació de sprints",
+      "d": "Planifica sprints efectius amb històries d'usuari i estimació"
+    },
+    "Kanban Board Setup": {
+      "n": "Configuració de tauler Kanban",
+      "d": "Dissenya i configura un tauler Kanban per a flux de treball visual"
+    },
+    "Gantt Chart Planner": {
+      "n": "Planificador de diagrama de Gantt",
+      "d": "Crea cronogrames detallats de projectes amb dependències"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Matriu d'assignació de recursos",
+      "d": "Planifica i optimitza l'assignació de recursos entre projectes"
+    },
+    "Status Report Template": {
+      "n": "Plantilla d'informe d'estat",
+      "d": "Crea informes d'estat de projecte clars per a la comunicació amb stakeholders"
+    },
+    "Risk Register Creator": {
+      "n": "Creador de registre de riscos",
+      "d": "Construeix i manté un registre complet de riscos de projecte"
+    },
+    "Lessons Learned Template": {
+      "n": "Plantilla de lliçons apreses",
+      "d": "Captura i documenta lliçons apreses del projecte per a millora futura"
+    },
+    "Requirements Document": {
+      "n": "Document de requisits",
+      "d": "Recopila i documenta requisits del projecte amb criteris d'acceptació"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Pla de proves d'acceptació d'usuari",
+      "d": "Crea plans estructurats de UAT amb casos de prova i aprovacions"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Pla de comunicació amb stakeholders",
+      "d": "Planifica comunicacions amb stakeholders amb canals i freqüència"
+    },
+    "Project Timeline Creator": {
+      "n": "Creador de cronograma de projecte",
+      "d": "Construeix cronogrames detallats de projecte amb fases i lliurables"
+    },
+    "Agile Retrospective": {
+      "n": "Retrospectiva àgil",
+      "d": "Facilita retrospectives àgils productives amb formats variats"
+    },
+    "Scope Document Writer": {
+      "n": "Redactor de document d'abast",
+      "d": "Defineix l'abast del projecte amb límits, lliurables i exclusions"
+    },
+    "Project Closure Report": {
+      "n": "Informe de tancament de projecte",
+      "d": "Documenta la finalització del projecte amb resultats i avaluació final"
+    },
+    "Conversation Practice Partner": {
+      "n": "Company de pràctica de conversa",
+      "d": "Practica converses en el teu idioma objectiu amb escenaris realistes"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Constructor de vocabulari Pro",
+      "d": "Construeix vocabulari amb exemples contextuals i repetició espaïada"
+    },
+    "Grammar Coach": {
+      "n": "Coach de gramàtica",
+      "d": "Aprèn i practica regles gramaticals amb explicacions clares"
+    },
+    "Translation Helper": {
+      "n": "Ajudant de traducció",
+      "d": "Obté traduccions precises amb context i notes d'ús"
+    },
+    "Language Exchange Prep": {
+      "n": "Preparació d'intercanvi lingüístic",
+      "d": "Prepara sessions d'intercanvi lingüístic amb converses estructurades"
+    },
+    "Travel Phrase Book": {
+      "n": "Llibre de frases de viatge",
+      "d": "Frases essencials de viatge organitzades per situació"
+    },
+    "Business Language Guide": {
+      "n": "Guia de llenguatge empresarial",
+      "d": "Aprèn llenguatge professional per a entorns empresarials"
+    },
+    "Accent Improvement Guide": {
+      "n": "Guia de millora de la pronúncia",
+      "d": "Millora la teva pronúncia amb exercicis i tècniques"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Pràctica de comprensió lectora",
+      "d": "Practica la comprensió lectora amb textos i preguntes"
+    },
+    "Writing Practice Creator": {
+      "n": "Creador de pràctiques d'escriptura",
+      "d": "Genera exercicis d'escriptura per millorar les teves habilitats"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Guia de comprensió auditiva",
+      "d": "Millora la comprensió auditiva amb exercicis estructurats"
+    },
+    "Cultural Context Guide": {
+      "n": "Guia de context cultural",
+      "d": "Aprèn normes i context cultural per a una comunicació efectiva"
+    },
+    "Room Layout Planner": {
+      "n": "Planificador de distribució d'habitacions",
+      "d": "Planifica la distribució de la teva habitació per optimitzar l'espai"
+    },
+    "Color Palette Creator": {
+      "n": "Creador de paleta de colors",
+      "d": "Crea paletes de colors harmonioses per a qualsevol projecte"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Guia de compra de mobles",
+      "d": "Guia per comprar mobles que s'adaptin al teu espai i estil"
+    },
+    "Home Decor Style Finder": {
+      "n": "Cercador d'estil de decoració",
+      "d": "Descobreix el teu estil de disseny d'interiors amb una avaluació guiada"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Constructor de càpsula de vestuari",
+      "d": "Crea un vestuari càpsula versàtil amb peces essencials"
+    },
+    "Outfit Planner": {
+      "n": "Planificador de conjunts",
+      "d": "Planifica conjunts per a qualsevol ocasió"
+    },
+    "Personal Style Guide": {
+      "n": "Guia d'estil personal",
+      "d": "Descobreix i defineix el teu estil personal únic"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Renovació de vestuari estacional",
+      "d": "Actualitza el teu vestuari per a cada temporada"
+    },
+    "Home Office Setup Guide": {
+      "n": "Guia de configuració d'oficina a casa",
+      "d": "Configura un espai d'oficina a casa productiu i còmode"
+    },
+    "Bathroom Design Planner": {
+      "n": "Planificador de disseny de bany",
+      "d": "Dissenya renovacions de bany funcionals i atractives"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Generador d'idees per a hackathons",
+      "d": "Pluja d'idees i validació de projectes per a hackathons"
+    },
+    "MVP Builder Guide": {
+      "n": "Guia de creació de MVP",
+      "d": "Construeix un producte mínim viable ràpidament"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Presentació de pitch de hackathon",
+      "d": "Crea una presentació de pitch convincent per al hackathon"
+    },
+    "Technical Architecture Planner": {
+      "n": "Planificador d'arquitectura tècnica",
+      "d": "Planifica l'arquitectura tècnica del teu projecte"
+    },
+    "Hackathon Team Builder": {
+      "n": "Constructor d'equips per a hackathons",
+      "d": "Forma un equip equilibrat per a hackathons amb habilitats complementàries"
+    },
+    "Demo Day Script": {
+      "n": "Guió per al dia de demostració",
+      "d": "Escriu un guió per a la presentació del dia de demostració"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Analitzador de criteris d'avaluació",
+      "d": "Analitza i optimitza segons els criteris d'avaluació"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Planificador de cronograma de hackathon",
+      "d": "Divideix les hores del hackathon en un calendari d'sprint estructurat"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Assessor d'estratègia de premis",
+      "d": "Estratègia per maximitzar les teves possibilitats de guanyar premis"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Pla d'acció post-hackathon",
+      "d": "Planifica els passos següents després del hackathon"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Guia de prototipat ràpid",
+      "d": "Prototipa ràpidament les teves idees amb eines i tècniques"
+    },
+    "Hackathon Submission Template": {
+      "n": "Plantilla de presentació de hackathon",
+      "d": "Crea una presentació de projecte de hackathon completa"
+    },
+    "Game Design Document": {
+      "n": "Document de disseny de joc",
+      "d": "Crea un document complet de disseny de joc"
+    },
+    "Game Mechanics Designer": {
+      "n": "Dissenyador de mecàniques de joc",
+      "d": "Dissenya mecàniques de joc atractives i equilibrades"
+    },
+    "Level Design Planner": {
+      "n": "Planificador de disseny de nivells",
+      "d": "Planifica el disseny de nivells amb progressió i reptes"
+    },
+    "Game Economy Balancer": {
+      "n": "Equilibrador d'economia de joc",
+      "d": "Dissenya i equilibra economies de joc per a una progressió justa"
+    },
+    "Character Stats Builder": {
+      "n": "Constructor d'estadístiques de personatge",
+      "d": "Crea sistemes d'estadístiques de personatge equilibrats"
+    },
+    "Quest Designer": {
+      "n": "Dissenyador de missions",
+      "d": "Dissenya missions atractives amb narratives ramificades i recompenses"
+    },
+    "Game UI/UX Planner": {
+      "n": "Planificador d'UI/UX de joc",
+      "d": "Dissenya interfícies d'usuari intuïtives per a jocs"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Campanya de RPG de taula",
+      "d": "Crea campanyes de RPG de taula amb trames i trobades"
+    },
+    "Board Game Designer": {
+      "n": "Dissenyador de jocs de taula",
+      "d": "Dissenya jocs de taula originals amb mecàniques i regles"
+    },
+    "Game Testing Checklist": {
+      "n": "Llista de verificació de proves de joc",
+      "d": "Llista completa per a proves de qualitat de jocs"
+    },
+    "Photo Shoot Planner": {
+      "n": "Planificador de sessions fotogràfiques",
+      "d": "Planifica una sessió fotogràfica completa des del concepte fins a l'execució"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Guia de portafoli fotogràfic",
+      "d": "Cura i presenta el teu portafoli fotogràfic"
+    },
+    "Photo Editing Workflow": {
+      "n": "Flux de treball d'edició fotogràfica",
+      "d": "Optimitza el teu flux de treball d'edició de fotos"
+    },
+    "Client Photography Brief": {
+      "n": "Breu fotogràfic per a clients",
+      "d": "Crea breus per a sessions fotogràfiques amb clients"
+    },
+    "Landscape Photography Guide": {
+      "n": "Guia de fotografia de paisatge",
+      "d": "Tècniques i consells per a fotografia de paisatge"
+    },
+    "Portrait Photography Tips": {
+      "n": "Consells de fotografia de retrat",
+      "d": "Millora les teves habilitats de fotografia de retrat"
+    },
+    "Product Photography Setup": {
+      "n": "Configuració de fotografia de producte",
+      "d": "Configura un estudi de fotografia de producte professional"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Cronograma de fotografia de casament",
+      "d": "Planifica el cronograma complet de fotografia de casament"
+    },
+    "Street Photography Guide": {
+      "n": "Guia de fotografia de carrer",
+      "d": "Tècniques i ètica de la fotografia de carrer"
+    },
+    "Astrophotography Planner": {
+      "n": "Planificador d'astrofotografia",
+      "d": "Planifica sessions d'astrofotografia amb condicions i equip"
+    },
+    "Character Design Brief": {
+      "n": "Breu de disseny de personatge",
+      "d": "Crea breus detallats per al disseny de personatges"
+    },
+    "Comic Strip Creator": {
+      "n": "Creador de tires còmiques",
+      "d": "Crea tires còmiques amb guions i direcció visual"
+    },
+    "World Building Guide": {
+      "n": "Guia de creació de mons",
+      "d": "Dissenya mons ficticis immersius amb geografia, cultures i tradicions"
+    },
+    "Children's Book Illustrator": {
+      "n": "Il·lustrador de llibres infantils",
+      "d": "Guia per a la il·lustració de llibres infantils"
+    },
+    "Art Portfolio Curator": {
+      "n": "Curador de portafoli artístic",
+      "d": "Cura i presenta el teu portafoli artístic"
+    },
+    "Color Theory Guide": {
+      "n": "Guia de teoria del color",
+      "d": "Aprèn els principis de la teoria del color"
+    },
+    "Digital Art Workflow": {
+      "n": "Flux de treball d'art digital",
+      "d": "Optimitza el teu flux de treball d'art digital"
+    },
+    "Art Commission Brief": {
+      "n": "Breu d'encàrrec artístic",
+      "d": "Crea breus clars per a encàrrecs artístics"
+    },
+    "Mural Design Planner": {
+      "n": "Planificador de disseny de murals",
+      "d": "Planifica el disseny i execució de murals"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Proposta d'exposició d'art",
+      "d": "Crea propostes professionals per a exposicions d'art"
+    },
+    "Tax Deduction Finder": {
+      "n": "Cercador de deduccions fiscals",
+      "d": "Troba deduccions fiscals aplicables a la teva situació"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Guia fiscal per a autònoms",
+      "d": "Navega els impostos d'autònom i les teves obligacions"
+    },
+    "Tax Document Organizer": {
+      "n": "Organitzador de documents fiscals",
+      "d": "Organitza i prepara els teus documents per a la declaració fiscal"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Estimador d'impostos trimestrals",
+      "d": "Estima els teus pagaments d'impostos trimestrals"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Guia de càlcul de plusvàlues",
+      "d": "Calcula impostos sobre plusvàlues d'inversions"
+    },
+    "Tax Filing Checklist": {
+      "n": "Llista de verificació de declaració fiscal",
+      "d": "Llista completa per a la presentació de la declaració fiscal"
+    },
+    "State Tax Comparison": {
+      "n": "Comparació d'impostos per estat",
+      "d": "Compara càrregues fiscals entre estats"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Guia de recol·lecció de pèrdues fiscals",
+      "d": "Estratègies per compensar guanys amb pèrdues fiscals"
+    },
+    "Stock Research Template": {
+      "n": "Plantilla d'investigació d'accions",
+      "d": "Investiga accions amb anàlisi fonamental i tècnica"
+    },
+    "ETF Comparison Tool": {
+      "n": "Eina de comparació d'ETF",
+      "d": "Compara ETFs per trobar la millor opció per a la teva cartera"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Planificador de cartera de dividends",
+      "d": "Construeix una cartera orientada a dividends"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Analitzador d'inversions immobiliàries",
+      "d": "Analitza oportunitats d'inversió immobiliària"
+    },
+    "Angel Investing Checklist": {
+      "n": "Llista de verificació d'inversió àngel",
+      "d": "Avalua oportunitats d'inversió àngel"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Optimitzador de comptes de jubilació",
+      "d": "Optimitza les contribucions entre comptes de jubilació"
+    },
+    "Bond Analysis Guide": {
+      "n": "Guia d'anàlisi de bons",
+      "d": "Analitza i compara inversions en bons"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Avaluador de fons d'inversió",
+      "d": "Avalua i compara fons d'inversió"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Guia de reequilibri de cartera",
+      "d": "Reequilibra la teva cartera d'inversions per mantenir l'objectiu"
+    },
+    "Investment Journal Template": {
+      "n": "Plantilla de diari d'inversions",
+      "d": "Registra i analitza les teves decisions d'inversió"
+    },
+    "AWS Service Selector": {
+      "n": "Selector de serveis AWS",
+      "d": "Selecciona els serveis AWS adequats per al teu projecte"
+    },
+    "Cloud Migration Plan": {
+      "n": "Pla de migració al núvol",
+      "d": "Planifica una migració estructurada de càrregues de treball locals al núvol"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Guia de desplegament de Kubernetes",
+      "d": "Genera configuracions de desplegament, serveis i regles d'entrada de Kubernetes"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Plantilla d'infraestructura com a codi",
+      "d": "Crea plantilles per definir infraestructura amb Terraform o CloudFormation"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "Dissenyador de pipeline CI/CD",
+      "d": "Dissenya pipelines CI/CD automatitzats per a integració i desplegament continus"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Optimitzador de costos al núvol",
+      "d": "Identifica i implementa estratègies d'optimització de costos al núvol"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Planificador d'arquitectura serverless",
+      "d": "Dissenya arquitectures serverless amb funcions, esdeveniments i integracions"
+    },
+    "Container Strategy Guide": {
+      "n": "Guia d'estratègia de contenidors",
+      "d": "Planifica estratègies de contenidors amb orquestració i registre"
+    },
+    "Cloud Security Checklist": {
+      "n": "Llista de verificació de seguretat al núvol",
+      "d": "Crea una llista de verificació de seguretat per a infraestructura al núvol"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Pla de recuperació davant desastres",
+      "d": "Crea un pla de recuperació davant desastres per a sistemes informàtics"
+    },
+    "Keynote Speech Writer": {
+      "n": "Redactor de discurs principal",
+      "d": "Crea discursos principals impactants amb històries i dades"
+    },
+    "TED Talk Outline": {
+      "n": "Esquema de xerrada TED",
+      "d": "Crea una estructura de presentació estil TED"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Redactor de brindis i homenatges",
+      "d": "Crea brindis i discursos d'homenatge sentits"
+    },
+    "Debate Preparation Guide": {
+      "n": "Guia de preparació per a debats",
+      "d": "Prepara't per a debats amb arguments i refutacions estructurats"
+    },
+    "Panel Discussion Prep": {
+      "n": "Preparació de taula rodona",
+      "d": "Prepara temes i preguntes per a taules rodones"
+    },
+    "Presentation Slide Planner": {
+      "n": "Planificador de diapositives",
+      "d": "Planifica presentacions amb narrativa visual"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Guia de discurs improvisat",
+      "d": "Parla amb confiança amb marcs per a discursos improvisats"
+    },
+    "Commencement Speech Writer": {
+      "n": "Redactor de discurs de graduació",
+      "d": "Crea discursos de graduació inspiradors"
+    },
+    "Grant Application Writer": {
+      "n": "Redactor de sol·licituds de subvenció",
+      "d": "Crea sol·licituds de subvenció persuasives"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Pla de campanya de recaptació de fons",
+      "d": "Planifica campanyes de recaptació des d'objectius fins a difusió"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Guia de reclutament de voluntaris",
+      "d": "Guia per al reclutament i gestió de voluntaris"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Reunió de junta d'ONG",
+      "d": "Crea agendes i actes per a reunions de junta d'ONG"
+    },
+    "Impact Report Template": {
+      "n": "Plantilla d'informe d'impacte",
+      "d": "Crea informes que mostrin l'impacte organitzatiu amb dades"
+    },
+    "Donor Thank You Letter": {
+      "n": "Carta d'agraïment a donants",
+      "d": "Crea cartes d'agraïment sentides per a donants"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Estratègia de campanya anual",
+      "d": "Planifica campanyes anuals de recaptació i sensibilització"
+    },
+    "Community Needs Assessment": {
+      "n": "Avaluació de necessitats comunitàries",
+      "d": "Investiga les necessitats de la comunitat i identifica prioritats"
+    },
+    "Construction Project Plan": {
+      "n": "Pla de projecte de construcció",
+      "d": "Planifica projectes de construcció amb cronogrames i pressupostos"
+    },
+    "Building Permit Checklist": {
+      "n": "Llista de verificació de permisos de construcció",
+      "d": "Organitza documents i procediments necessaris per a permisos de construcció"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Guia d'avaluació de contractistes",
+      "d": "Crea criteris d'avaluació i selecció de contractistes"
+    },
+    "Material Estimate Calculator": {
+      "n": "Calculadora d'estimació de materials",
+      "d": "Estima quantitats i costos de materials de construcció"
+    },
+    "Site Inspection Checklist": {
+      "n": "Llista de verificació d'inspecció d'obra",
+      "d": "Llista de verificació de seguretat i qualitat per a obres de construcció"
+    },
+    "Renovation Scope Document": {
+      "n": "Document d'abast de renovació",
+      "d": "Documenta l'abast de treball i especificacions de renovació"
+    },
+    "Architectural Brief": {
+      "n": "Breu arquitectònic",
+      "d": "Organitza requisits i restriccions del projecte arquitectònic"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Llista de compliment de seguretat",
+      "d": "Llista de verificació per assegurar el compliment de normatives de seguretat"
+    },
+    "Robot Design Specification": {
+      "n": "Especificació de disseny de robots",
+      "d": "Defineix especificacions completes de disseny de robots"
+    },
+    "IoT Project Planner": {
+      "n": "Planificador de projectes IoT",
+      "d": "Planifica projectes IoT de sensors a dashboards al núvol"
+    },
+    "Sensor Selection Guide": {
+      "n": "Guia de selecció de sensors",
+      "d": "Tria sensors òptims per a aplicacions de robòtica o IoT"
+    },
+    "Embedded Systems Guide": {
+      "n": "Guia de sistemes encastats",
+      "d": "Dissenya sistemes encastats amb selecció adequada de microcontroladors"
+    },
+    "Automation Workflow Designer": {
+      "n": "Dissenyador de fluxos d'automatització",
+      "d": "Dissenya fluxos d'automatització industrial o domèstica amb sensors"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Planificador de prototips de maquinari",
+      "d": "Planifica prototips de maquinari des de breadboard fins a PCB"
+    },
+    "Anxiety Management Plan": {
+      "n": "Pla de gestió de l'ansietat",
+      "d": "Crea un pla personalitzat de gestió de l'ansietat amb estratègies d'afrontament"
+    },
+    "CBT Thought Record": {
+      "n": "Registre de pensaments TCC",
+      "d": "Practica registres de pensaments de teràpia cognitivo-conductual"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Generador de suggeriments de diari",
+      "d": "Genera suggeriments significatius per a l'autoreflexió i el processament emocional"
+    },
+    "Relationship Communication Guide": {
+      "n": "Guia de comunicació en relacions",
+      "d": "Millora la comunicació en relacions amb tècniques estructurades"
+    },
+    "Boundary Setting Guide": {
+      "n": "Guia d'establiment de límits",
+      "d": "Aprèn a establir i mantenir límits saludables en relacions"
+    },
+    "Grief Processing Helper": {
+      "n": "Ajudant de processament del dol",
+      "d": "Navega el procés de dol amb orientació compassiva"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Exercici d'autocompassió",
+      "d": "Practica exercicis d'autocompassió per construir resiliència"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Constructor d'intel·ligència emocional",
+      "d": "Desenvolupa habilitats d'intel·ligència emocional per a l'autoconsciència"
+    },
+    "Anger Management Plan": {
+      "n": "Pla de gestió de la ira",
+      "d": "Desenvolupa estratègies saludables de gestió de la ira"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Pla de recuperació del burnout",
+      "d": "Crea un pla estructurat de recuperació del burnout amb límits"
+    },
+    "Instant Pot Recipe": {
+      "n": "Recepta d'olla a pressió",
+      "d": "Receptes d'olla a pressió amb guies de temps"
+    },
+    "World Cuisine Explorer": {
+      "n": "Explorador de cuina mundial",
+      "d": "Receptes autèntiques de cuines globals"
+    },
+    "Fermentation Guide": {
+      "n": "Guia de fermentació",
+      "d": "Receptes i tècniques d'aliments fermentats"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Guia de BBQ i graella",
+      "d": "Receptes de graella amb maridatges de salses"
+    },
+    "Bread Baking Guide": {
+      "n": "Guia de panificació",
+      "d": "Receptes de pa artesà de principi a fi"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Guia de cultiu de bolets",
+      "d": "Cultiu interior de bolets des de l'inòcul fins a la collita"
+    },
+    "Permaculture Planner": {
+      "n": "Planificador de permacultura",
+      "d": "Dissenya un ecosistema d'hort autosuficient"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Guia d'instal·lació d'hivernacle",
+      "d": "Planifica i construeix un hivernacle productiu"
+    },
+    "FSBO Selling Guide": {
+      "n": "Guia de venda directa d'immobles",
+      "d": "Ven la teva casa sense agent immobiliari pas a pas"
+    },
+    "Investment Property Finder": {
+      "n": "Cercador de propietats d'inversió",
+      "d": "Avalua potencials propietats d'inversió per a lloguer"
+    },
+    "Car Modification Guide": {
+      "n": "Guia de modificació de vehicles",
+      "d": "Planifica modificacions i millores del vehicle"
+    },
+    "Fleet Management Planner": {
+      "n": "Planificador de gestió de flota",
+      "d": "Gestiona el manteniment i costos de múltiples vehicles"
+    },
+    "Digital Nomad Guide": {
+      "n": "Guia del nòmada digital",
+      "d": "Treballa remotament mentre viatges pel món"
+    },
+    "Eco-Travel Planner": {
+      "n": "Planificador d'ecoturisme",
+      "d": "Planifica viatges sostenibles i ecològics"
+    },
+    "Product Launch Event": {
+      "n": "Esdeveniment de llançament de producte",
+      "d": "Planifica un esdeveniment de llançament de producte"
+    },
+    "Virtual Event Planner": {
+      "n": "Planificador d'esdeveniments virtuals",
+      "d": "Planifica esdeveniments en línia atractius i webinars"
+    },
+    "College Planning Guide": {
+      "n": "Guia de planificació universitària",
+      "d": "Planifica l'accés a la universitat des de la selecció fins a l'ajuda financera"
+    },
+    "Child Safety Plan": {
+      "n": "Pla de seguretat infantil",
+      "d": "Directrius completes de seguretat a casa i en línia"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Guia de cura d'animals exòtics",
+      "d": "Guies de cura per a rèptils, aus i animals exòtics"
+    },
+    "Pet Adoption Guide": {
+      "n": "Guia d'adopció d'animals",
+      "d": "Navega el procés d'adopció d'animals amb èxit"
+    },
+    "Tiny House Builder": {
+      "n": "Constructor de cases petites",
+      "d": "Planifica i construeix una casa petita pas a pas"
+    },
+    "Workshop Setup Guide": {
+      "n": "Guia de muntatge de taller",
+      "d": "Dissenya i equipa un taller domèstic"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Planificador d'estratègia de cupons",
+      "d": "Maximitza l'estalvi amb l'ús estratègic de cupons"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Guia de compra de segona mà",
+      "d": "Troba articles de qualitat en botigues de segona mà i en línia"
+    },
+    "Theological Study Guide": {
+      "n": "Guia d'estudi teològic",
+      "d": "Aprofundeix en conceptes teològics i doctrines"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Guia de diàleg interreligiós",
+      "d": "Facilita converses interreligioses respectuoses"
+    },
+    "Marathon Training Plan": {
+      "n": "Pla d'entrenament per a marató",
+      "d": "Entrenament complet de marató des de zero"
+    },
+    "Youth Sports Coach": {
+      "n": "Entrenador d'esports juvenils",
+      "d": "Planifica pràctiques i desenvolupament d'esports juvenils"
+    },
+    "Woodworking Project": {
+      "n": "Projecte de fusteria",
+      "d": "Planifica projectes de fusteria amb llistes de tall i passos"
+    },
+    "Vinyl Record Guide": {
+      "n": "Guia de discos de vinil",
+      "d": "Inicia i cura una col·lecció de discos de vinil"
+    },
+    "Home Brewing Guide": {
+      "n": "Guia d'elaboració casolana",
+      "d": "Elabora cervesa o vi a casa de principi a fi"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Full de ruta cap a la llibertat financera",
+      "d": "Traça el teu camí cap a la independència financera"
+    },
+    "Midlife Career Change": {
+      "n": "Canvi de carrera a mitja vida",
+      "d": "Navega una transició professional a qualsevol edat"
+    },
+    "AI Wallpaper Creator": {
+      "n": "Creador de fons de pantalla IA",
+      "d": "Genera fons de pantalla impressionants per a qualsevol dispositiu"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Suggeriment de disseny de tatuatge",
+      "d": "Crea conceptes personalitzats de disseny de tatuatge amb IA"
+    },
+    "DJ Set Planner": {
+      "n": "Planificador de sets de DJ",
+      "d": "Planifica sets de DJ amb selecció de temes i transicions"
+    },
+    "Music Theory Tutor": {
+      "n": "Tutor de teoria musical",
+      "d": "Aprèn conceptes de teoria musical amb exercicis"
+    },
+    "Podcast Video Setup": {
+      "n": "Configuració de vídeo per a podcast",
+      "d": "Configura videopodcasting des de l'equip fins a l'edició"
+    },
+    "Wedding Video Plan": {
+      "n": "Pla de vídeo de casament",
+      "d": "Planifica la videografia del casament de la cerimònia a l'edició"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Redactor de capítols de memòries",
+      "d": "Escriu capítols de memòries captivadors a partir d'històries de vida"
+    },
+    "Haiku Generator": {
+      "n": "Generador de haikus",
+      "d": "Crea haikus sobre qualsevol tema"
+    },
+    "TikTok Content Strategy": {
+      "n": "Estratègia de contingut TikTok",
+      "d": "Construeix una estratègia de creixement a TikTok amb idees de contingut"
+    },
+    "YouTube Community Post": {
+      "n": "Publicació de comunitat YouTube",
+      "d": "Crea publicacions atractives per a la comunitat de YouTube"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Pla de monetització de podcast",
+      "d": "Estratègies per monetitzar el teu podcast"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Guia de comparació d'eines IA",
+      "d": "Compara eines d'IA per a casos d'ús específics"
+    },
+    "Code Snippet Library": {
+      "n": "Biblioteca de fragments de codi",
+      "d": "Organitza i documenta fragments de codi reutilitzables"
+    },
+    "Tech Stack Selector": {
+      "n": "Selector de stack tecnològic",
+      "d": "Tria l'stack tecnològic adequat per al teu projecte"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Guia de compliment de privacitat",
+      "d": "Assegura que la teva app compleix les normatives de privacitat"
+    },
+    "API Security Audit": {
+      "n": "Auditoria de seguretat d'API",
+      "d": "Audita els endpoints de la teva API per a vulnerabilitats de seguretat"
+    },
+    "AI Hackathon Project": {
+      "n": "Projecte de hackathon d'IA",
+      "d": "Planifica un projecte de hackathon centrat en IA de principi a fi"
+    },
+    "Mobile Game Concept": {
+      "n": "Concepte de joc mòbil",
+      "d": "Dissenya un joc mòbil des del concepte fins a la monetització"
+    },
+    "Drone Photography Guide": {
+      "n": "Guia de fotografia amb drons",
+      "d": "Planifica missions de fotografia aèria"
+    },
+    "NFT Art Collection": {
+      "n": "Col·lecció d'art NFT",
+      "d": "Planifica i crea una col·lecció d'art digital"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Guia fiscal per a autònoms",
+      "d": "Navega els impostos i deduccions dels autònoms"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Constructor de cartera de criptomonedes",
+      "d": "Construeix una cartera diversificada de criptomonedes"
+    },
+    "Azure Service Guide": {
+      "n": "Guia de serveis Azure",
+      "d": "Selecciona i configura serveis al núvol d'Azure"
+    },
+    "Wedding Speech Writer": {
+      "n": "Redactor de discursos de casament",
+      "d": "Escriu discursos de casament sentits i brindis"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Guia d'inici d'ONG",
+      "d": "Inicia una organització sense ànim de lucre des de zero"
+    },
+    "Home Addition Planner": {
+      "n": "Planificador d'ampliacions de casa",
+      "d": "Planifica una ampliació de casa des de permisos fins a construcció"
+    },
+    "Arduino Project Planner": {
+      "n": "Planificador de projectes Arduino",
+      "d": "Planifica projectes d'electrònica basats en Arduino"
+    },
+    "Digital Wellness Plan": {
+      "n": "Pla de benestar digital",
+      "d": "Crea una relació saludable amb la tecnologia"
+    },
+    "SWOT Analysis Tool": {
+      "n": "Eina d'anàlisi SWOT",
+      "d": "Anàlisi estratègica de fortaleses, debilitats, oportunitats i amenaces"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Constructor d'agendes de reunió",
+      "d": "Crea agendes de reunió estructurades amb blocs de temps"
+    },
+    "OKR Framework Builder": {
+      "n": "Constructor de marc OKR",
+      "d": "Estableix objectius i resultats clau per a equips"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Preparació de negociació amb proveïdors",
+      "d": "Prepara't per a negociacions amb proveïdors"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Guia d'avaluació de franquícies",
+      "d": "Avalua oportunitats de franquícies sistemàticament"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Redactor de polítiques de teletreball",
+      "d": "Crea polítiques completes de teletreball"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Pla de contractació diversa",
+      "d": "Construeix pràctiques de contractació inclusives"
+    },
+    "Freelance Contract Template": {
+      "n": "Plantilla de contracte freelance",
+      "d": "Crea acords professionals de serveis freelance"
+    },
+    "Personal Website Planner": {
+      "n": "Planificador de web personal",
+      "d": "Planifica i estructura el teu lloc web professional de portafoli"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Guia de dejuni intermitent",
+      "d": "Dissenya un protocol de dejuni intermitent"
+    },
+    "Posture Improvement Plan": {
+      "n": "Pla de millora de postura",
+      "d": "Corregeix problemes de postura amb exercicis i hàbits"
+    },
+    "Notion Template Builder": {
+      "n": "Constructor de plantilles Notion",
+      "d": "Dissenya plantilles d'espai de treball Notion per a qualsevol flux de treball"
+    },
+    "Automation Workflow Builder": {
+      "n": "Constructor de fluxos d'automatització",
+      "d": "Dissenya fluxos d'automatització amb Zapier o Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Planificador de sprints àgils",
+      "d": "Planifica sprints àgils amb punts d'història i velocitat"
+    },
+    "Product Roadmap Builder": {
+      "n": "Constructor de full de ruta de producte",
+      "d": "Crea fulls de ruta de producte amb fites i temes"
+    },
+    "TOEFL Prep Guide": {
+      "n": "Guia de preparació TOEFL",
+      "d": "Prepara't per a l'examen TOEFL amb estratègies d'estudi"
+    },
+    "Business English Coach": {
+      "n": "Coach d'anglès empresarial",
+      "d": "Millora la comunicació professional en anglès"
+    },
+    "Brand Identity Designer": {
+      "n": "Dissenyador d'identitat de marca",
+      "d": "Crea directrius d'identitat visual de marca coherents"
+    },
+    "UX Research Plan": {
+      "n": "Pla d'investigació UX",
+      "d": "Planifica investigació d'experiència d'usuari per a productes digitals"
+    },
+    "Data Storytelling Guide": {
+      "n": "Guia de narrativa de dades",
+      "d": "Converteix coneixements de dades en narratives atractives"
+    },
+    "AI Model Evaluation": {
+      "n": "Avaluació de models d'IA",
+      "d": "Avalua i compara el rendiment de models d'aprenentatge automàtic"
+    },
+    "3D Printing Project": {
+      "n": "Projecte d'impressió 3D",
+      "d": "Planifica projectes d'impressió 3D des del disseny fins a la impressió"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Dissenyador de circuits elèctrics",
+      "d": "Dissenya circuits elèctrics amb selecció de components"
+    },
+    "Side Hustle Finder": {
+      "n": "Cercador d'ingressos extra",
+      "d": "Descobreix idees d'ingressos extra basades en les teves habilitats"
+    },
+    "Passive Income Blueprint": {
+      "n": "Pla d'ingressos passius",
+      "d": "Construeix una estratègia d'ingressos passius adaptada a la teva situació"
+    },
+    "Savings Challenge Generator": {
+      "n": "Generador de reptes d'estalvi",
+      "d": "Crea un pla personalitzat de repte d'estalvi"
+    },
+    "Negotiate Any Bill": {
+      "n": "Negociador de factures",
+      "d": "Scripts per negociar i reduir les teves factures recurrents"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Llançador de botiga Etsy",
+      "d": "Pla pas a pas per llançar i fer créixer una botiga Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Planificador de canal YouTube",
+      "d": "Planifica i llança un canal de YouTube rendible"
+    },
+    "Rental Income Analyzer": {
+      "n": "Analitzador d'ingressos per lloguer",
+      "d": "Analitza els rendiments potencials de propietats de lloguer"
+    },
+    "Online Course Creator": {
+      "n": "Creador de cursos en línia",
+      "d": "Planifica i estructura un curs en línia per vendre"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Maximitzador de cupons i cashback",
+      "d": "Maximitza els estalvis amb cupons, cashback i recompenses"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Configuració de botiga dropshipping",
+      "d": "Planifica un negoci de dropshipping des de zero"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Optimitzador d'economia gig",
+      "d": "Maximitza els guanys d'apps com Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "$schema": "https://developers.openai.com/apps-sdk/schemas/chatgpt-app-submission.v1.json",
+  "schema_version": 1,
+  "app_info": {
+    "display_name": "Poly-Glot AI Workspace",
+    "subtitle": "Build and compare AI prompts",
+    "description": "Poly-Glot AI Workspace helps users discover 1,000+ expert prompt workflows, work across 38 UI/input/output languages, build finished prompts, and prepare Compare Mode runs across multiple AI providers with subscription-aware access.",
+    "category": "PRODUCTIVITY"
+  },
+  "tools": {
+    "get_subscription_status": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves the current Poly-Glot entitlement and pricing without changing subscription state.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "open_workspace": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only returns the interactive workspace and subscription-aware template search results.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "search_templates": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Searches the static Poly-Glot template catalog and reports entitlement-aware locked states without modifying data.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "get_template": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Retrieves template fields and, when entitled, its prompt body without changing user or catalog data.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "build_prompt": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Building the first eligible free prompt can persist the start of the user's 3-day Poly-Glot trial.",
+        "open_world_justification": "The tool only updates private Poly-Glot entitlement state and does not publish to public or third-party systems.",
+        "destructive_justification": "Starting a trial and building a prompt do not delete, overwrite, revoke, or perform an irreversible destructive action."
+      }
+    },
+    "prepare_compare": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "First eligible Compare Mode use can persist the start of the user's 3-day Poly-Glot trial.",
+        "open_world_justification": "Prepares provider targets and a canonical prompt but does not itself submit content to third-party AI services.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or perform an irreversible destructive action."
+      }
+    },
+    "get_language_options": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Returns the static list of 38 supported Poly-Glot UI, input, and output languages without changing user data or entitlement state.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    }
+  },
+  "test_cases": [
+    {
+      "description": "Open the interactive Poly-Glot workspace.",
+      "user_prompt": "Open Poly-Glot AI Workspace and show me prompt templates.",
+      "file_attachment_urls": null,
+      "tools_triggered": "open_workspace",
+      "expected_output": "Shows the Poly-Glot workspace with entitlement-aware template results and current pricing state.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Search for templates for a writing task.",
+      "user_prompt": "Find Poly-Glot templates for rewriting an email.",
+      "file_attachment_urls": null,
+      "tools_triggered": "search_templates",
+      "expected_output": "Returns relevant Poly-Glot templates and indicates which are available or locked for the account.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Inspect an entitled template before filling it.",
+      "user_prompt": "Open the Poly-Glot template named Professional Email Rewriter.",
+      "file_attachment_urls": null,
+      "tools_triggered": "get_template",
+      "expected_output": "Returns the matching template fields and prompt template if the account is entitled, otherwise a locked state.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Build a multilingual completed prompt from a Poly-Glot template.",
+      "user_prompt": "Show Poly-Glot language options, then use a free email template with Spanish input and request the AI answer in French.",
+      "file_attachment_urls": null,
+      "tools_triggered": "get_language_options,search_templates,build_prompt",
+      "expected_output": "Returns the supported language options, builds the prompt using multilingual input, requests French output, and starts the 3-day trial only if this is the first eligible free-template use.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Prepare one prompt for comparison across multiple AI providers.",
+      "user_prompt": "Use Poly-Glot Compare Mode to prepare this prompt for ChatGPT, Claude, and Gemini.",
+      "file_attachment_urls": null,
+      "tools_triggered": "prepare_compare",
+      "expected_output": "Returns one canonical prompt and the selected provider targets without sending the prompt to third-party services; entitlement rules remain enforced.",
+      "expected_output_url": null
+    }
+  ],
+  "negative_test_cases": [
+    {
+      "description": "Do not trigger for a general ChatGPT writing request that does not ask for Poly-Glot.",
+      "user_prompt": "Rewrite this sentence to sound more professional.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The app should not be invoked because ChatGPT can handle the request without Poly-Glot.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Do not trigger for unrelated calendar requests.",
+      "user_prompt": "What meetings do I have tomorrow?",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The app should not be invoked because calendar management is outside Poly-Glot's supported workflows.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Do not trigger for an App Store purchase-management request.",
+      "user_prompt": "Cancel my Apple subscription for me.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The app should not be invoked because it does not cancel or modify Apple App Store subscriptions.",
+      "expected_output_url": null
+    }
+  ]
+}

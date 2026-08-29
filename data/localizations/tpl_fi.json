@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Kaikki",
+    "free": "⭐ Ilmainen",
+    "money": "💰 Liiketoiminta",
+    "coding": "💻 Koodaus",
+    "ai": "🤖 AI",
+    "writing": "✍️ Kirjoittaminen",
+    "marketing": "📢 Markkinointi",
+    "sales": "🤝 Myynti",
+    "school": "📚 Koulutus",
+    "research": "🔬 Tutkimus",
+    "career": "🚀 Ura",
+    "legal": "⚖️ Laki",
+    "finance": "📊 Talous",
+    "health": "🏥 Terveys",
+    "cooking": "🍳 Ruoanlaitto",
+    "garden": "🌱 Puutarha",
+    "realestate": "🏠 Kiinteistöt",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Matkailu",
+    "image": "🎨 Kuva-AI",
+    "music": "🎵 Musiikki",
+    "video": "🎬 Video",
+    "social": "📱 Sosiaalinen",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 Verkkokauppa",
+    "productivity": "⏱ Tuottavuus",
+    "diy": "🔨 Tee-se-itse",
+    "event": "🎉 Tapahtumat",
+    "parent": "👶 Vanhemmuus",
+    "pets": "🐾 Lemmikit",
+    "sports": "⚽ Urheilu",
+    "wellness": "🧘 Hyvinvointi",
+    "language": "🌍 Kielet",
+    "security": "🔒 Turvallisuus",
+    "datascience": "📈 Datatiede",
+    "chemistry": "🧪 Kemia",
+    "biology": "🧬 Biologia",
+    "physics": "⚛️ Fysiikka",
+    "math": "🔢 Matematiikka",
+    "makemoney": "💰 Raha"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Yhteenvetotyökalu",
+      "d": "Tiivistä kaikki sisältö selkeiksi tiivistelmiksi"
+    },
+    "Technical Documentation": {
+      "n": "Tekninen dokumentaatio",
+      "d": "Luo selkeät tekniset asiakirjat sovellusliittymille ja ominaisuuksille"
+    },
+    "YouTube Script": {
+      "n": "YouTube-skripti",
+      "d": "Täysi videokäsikirjoitus koukulla, osioilla, toimintakehotuksella, b-roll-listalla"
+    },
+    "TikTok Generator": {
+      "n": "TikTok-generaattori",
+      "d": "Lyhytmuotoinen videoskripti, joka on optimoitu TikTokille"
+    },
+    "LinkedIn Post Writer": {
+      "n": "LinkedIn-postin kirjoittaja",
+      "d": "LinkedIn-viestien vierittäminen, jotka lisäävät sitoutumista"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Blogiviestien luontiohjelma",
+      "d": "SEO-optimoidut pitkät blogikirjoitukset"
+    },
+    "SEO Article Writer": {
+      "n": "SEO artikkelin kirjoittaja",
+      "d": "Avainsanat sisältävät artikkelit, jotka on luotu sijoittumaan Googlessa"
+    },
+    "Podcast Episode Outline": {
+      "n": "Podcast-jakson pääpiirteet",
+      "d": "Jakson jäsennelty hahmotelma puheenaiheineen"
+    },
+    "Newsletter Writer": {
+      "n": "Uutiskirjeen kirjoittaja",
+      "d": "Houkuttelevat sähköpostiuutiskirjeet lukijat todella avaavat"
+    },
+    "Product Review Writer": {
+      "n": "Tuotearvioinnin kirjoittaja",
+      "d": "Tasapainoiset, uskottavat tuotearvostelut"
+    },
+    "Social Media Calendar": {
+      "n": "Sosiaalisen median kalenteri",
+      "d": "30 päivän sisältökalenteri, jossa on postausideoita alustakohtaisesti"
+    },
+    "Executive Summary": {
+      "n": "Tiivistelmä",
+      "d": "Yksisivuinen yhteenveto pitkistä asiakirjoista"
+    },
+    "Customer Support Response": {
+      "n": "Asiakastuen vastaus",
+      "d": "Empaattiset, tuotemerkin asiakastuen vastaukset"
+    },
+    "Business Proposal": {
+      "n": "Liiketoimintaehdotus",
+      "d": "Voittaneet asiakasehdotukset laajuudella ja hinnoilla"
+    },
+    "Decision Memo": {
+      "n": "Päätösmuistio",
+      "d": "Selkeät päätösmuistiot, joissa on vaihtoehtoja ja suosituksia"
+    },
+    "Stakeholder Update": {
+      "n": "Sidosryhmien päivitys",
+      "d": "Lyhyet projektin tilapäivitykset sidosryhmille"
+    },
+    "Code Review Assistant": {
+      "n": "Koodikatselmointiavustaja",
+      "d": "Tarkista koodi virheiden, tyylin ja parhaiden käytäntöjen varalta"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Code Kommentit",
+      "d": "JSDoc-kommentit JavaScriptille ja TypeScriptille"
+    },
+    "Architecture Decision Record": {
+      "n": "Arkkitehtuurin päätöspöytäkirja",
+      "d": "Muodollinen ADR dokumentoi tekniset päätökset"
+    },
+    "User Story Writer": {
+      "n": "Käyttäjätarinoiden kirjoittaja",
+      "d": "Ketterät käyttäjätarinat hyväksymiskriteereillä"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Hyväksymiskriteerit",
+      "d": "Gherkin-tyyliset hyväksymiskriteerit käyttäjätarinoille"
+    },
+    "PR Description Writer": {
+      "n": "PR Kuvaus Writer",
+      "d": "Selkeät PR-kuvaukset konteksti- ja testausmuistiinpanoineen"
+    },
+    "Unit Test Generator": {
+      "n": "Yksikkötestigeneraattori",
+      "d": "Yksikkötestaukset reunakoteloilla mille tahansa toiminnolle"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Code Refaktoring Advisor",
+      "d": "Refaktorikoodi luettavuuden ja suorituskyvyn takaamiseksi"
+    },
+    "SQL Query Builder": {
+      "n": "SQL-kyselyjen rakentaja",
+      "d": "Luonnollisesta kielestä optimoituihin SQL-kyselyihin"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "⎈️ Kubernetes-konfiguraatiogeneraattori",
+      "d": "Diagnosoi ja korjaa K8s-ongelmat nopeasti"
+    },
+    "Postmortem Report": {
+      "n": "Post mortem -raportti",
+      "d": "Moitteeton kuolemanjälkeinen aikajanalla ja toimintakohteita"
+    },
+    "Release Notes Writer": {
+      "n": "Julkaisutiedotteiden kirjoittaja",
+      "d": "Käyttäjäystävälliset julkaisutiedotteet commit-viesteistä"
+    },
+    "Prompt Optimizer": {
+      "n": "Kehotteen optimointi",
+      "d": "Paranna tekoälykehotteita parempien ja tarkempien tulosteiden saamiseksi"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Ajatusketjun rakentaja",
+      "d": "Luo monivaiheisia päättelykehotteita monimutkaisiin tehtäviin"
+    },
+    "RAG System Prompt": {
+      "n": "RAG-järjestelmäkehote",
+      "d": "Haulla lisätyt sukupolven kehotemallit"
+    },
+    "Eval Dataset Creator": {
+      "n": "Arviointiaineiston luoja",
+      "d": "Luo arviointiaineistoja tekoälymallin testaamiseen"
+    },
+    "Prompt A/B Tester": {
+      "n": "Kehota A/B-testeriä",
+      "d": "Luo kehotteiden A/B-muunnelmia suorituskyvyn vertailua varten"
+    },
+    "Multi-Model Comparison": {
+      "n": "Monien mallien vertailu",
+      "d": "Kehys AI-mallien tulosten vertailuun"
+    },
+    "Resume Tailoring": {
+      "n": "Jatka räätälöintiä",
+      "d": "Räätälöi ansioluettelosi tietyn työnkuvan mukaan"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F saatekirjegeneraattori",
+      "d": "Kiinnostavia saatekirjeitä, jotka saavat haastatteluja"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn-profiilin optimoija",
+      "d": "Optimoi LinkedInsi rekrytoijia varten"
+    },
+    "Interview Coach": {
+      "n": "Haastatteluvalmentaja",
+      "d": "Harjoittele haastattelukysymyksiä ja vastauksia mihin tahansa rooliin"
+    },
+    "Salary Negotiation Script": {
+      "n": "Palkkaneuvottelukäsikirjoitus",
+      "d": "Käsikirjoitukset ja strategiat korkeamman palkan neuvottelemiseksi"
+    },
+    "Career Roadmap Planner": {
+      "n": "Urasuunnitelman suunnittelija",
+      "d": "12 kuukauden urakasvusuunnitelma virstanpylväillä"
+    },
+    "Objection Handler": {
+      "n": "Vastalauseen käsittelijä",
+      "d": "Komentosarjat yleisten myyntivastausten käsittelemiseen"
+    },
+    "Landing Page Copy": {
+      "n": "Aloitussivun kopio",
+      "d": "Erittäin tuottava aloitussivun kopio"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads -kopio",
+      "d": "Korkean napsautussuhteen Google-hakumainosteksti"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram-mainos",
+      "d": "Facebook- ja Instagram-mainoskopio, joka muuntaa"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Markkinointikampanjan esittely",
+      "d": "Täysi markkinointikampanja kanavilla ja aikajanalla"
+    },
+    "Customer Persona Builder": {
+      "n": "Asiakkaan Persona Builder",
+      "d": "Yksityiskohtaiset ostajapersoonat markkinointiin ja tuotteisiin"
+    },
+    "Value Proposition Canvas": {
+      "n": "Arvolupauskangas",
+      "d": "Selkeät, vakuuttavat arvoehdotukset"
+    },
+    "Product Launch Plan": {
+      "n": "Tuotteen lanseeraussuunnitelma",
+      "d": "Markkinoille suunnitelma tuotelanseerauksia varten"
+    },
+    "Study Guide Creator": {
+      "n": "Opinto-oppaan luoja",
+      "d": "Muuta mistä tahansa aiheesta jäsennelty opinto-opas"
+    },
+    "Flashcard Creator": {
+      "n": "Muistikorttigeneraattori",
+      "d": "Kysymys-vastaus-muistikortit nopeaan ulkoa oppimiseen"
+    },
+    "Quiz Generator": {
+      "n": "Tietovisan generaattori",
+      "d": "Monivalinta- ja lyhytvastauskyselyt"
+    },
+    "Lesson Plan Builder": {
+      "n": "Tuntisuunnitelman rakentaja",
+      "d": "Yksityiskohtaiset tuntisuunnitelmat aktiviteetteineen ja arvioinneineen"
+    },
+    "Research Notes Organizer": {
+      "n": "Tutkimusmuistiinpanojen järjestäjä",
+      "d": "Järjestä tutkimusmuistiinpanot jäsennellyiksi ääriviivoiksi"
+    },
+    "Essay Outline Generator": {
+      "n": "Essee Outline Generator",
+      "d": "Jäsennellyt esseen pääpiirteet opinnäytetyön ja argumenttien kera"
+    },
+    "Literature Review Assistant": {
+      "n": "Kirjallisuustarkistusassistentti",
+      "d": "Akateemisen kirjallisuuden katsaus synteesillä"
+    },
+    "Thesis Statement Builder": {
+      "n": "Väitöskirjan laatija",
+      "d": "Vahvat, kiistanalaiset väitöskirjat"
+    },
+    "Exam Prep Planner": {
+      "n": "Tenttivalmistelujen suunnittelija",
+      "d": "Henkilökohtainen tenttiopiskeluaikataulu"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Sopimuksen yhteenveto",
+      "d": "Pelkkä englanninkielinen sopimustiivistelmä. Ei oikeudellista neuvontaa."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Sopimusriskin tarkistus",
+      "d": "Tunnista riskialttiit lausekkeet. Ei oikeudellista neuvontaa."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA-analysaattori",
+      "d": "NDA-lausekkeen erittely. Ei oikeudellista neuvontaa."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Käytäntöluonnos Assistant",
+      "d": "Sisäisten käytäntöjen luonnokset. Ei oikeudellista neuvontaa."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F vaatimustenmukaisuuden tarkistuslista",
+      "d": "Vaatimustenmukaisuuden tarkistuslista viitekehyksen mukaan. Ei oikeudellista neuvontaa."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Palveluehtojen tarkistaja",
+      "d": "Merkitse käyttöoikeusriskit. Ei oikeudellista neuvontaa."
+    },
+    "Budget Planner": {
+      "n": "Budjettisuunnittelija",
+      "d": "Henkilökohtainen tai yrityksen budjettisuunnitelma. Ei taloudellista neuvontaa."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Tulot Call Summarizer",
+      "d": "Tärkeimmät tiedot tulopuheluista. Ei taloudellista neuvontaa."
+    },
+    "Investment Thesis Builder": {
+      "n": "Investointitutkielmien rakentaja",
+      "d": "Strukturoitujen investointien opinnäytetyö. Ei taloudellista neuvontaa."
+    },
+    "Financial Analysis Report": {
+      "n": "Talousanalyysiraportti",
+      "d": "Analysoi talousasioita. Ei taloudellista neuvontaa."
+    },
+    "Expense Categorizer": {
+      "n": "Kulujen luokittelija",
+      "d": "Luokittele ja analysoi kulut. Ei taloudellista neuvontaa."
+    },
+    "SOAP Note Generator": {
+      "n": "SOAP-muistiinpanogeneraattori",
+      "d": "Kliiniset SOAP-muistiinpanot. Ei lääketieteellistä neuvontaa."
+    },
+    "Clinical Case Summary": {
+      "n": "Kliinisen tapauksen yhteenveto",
+      "d": "Rakenne kliiniset huomautukset. Ei lääkärin neuvoja."
+    },
+    "Patient Education Writer": {
+      "n": "Potilaskoulutuksen kirjoittaja",
+      "d": "Selkeäkielinen potilaskoulutus. Ei lääkärin neuvoja."
+    },
+    "Medical Research Summarizer": {
+      "n": "Lääketieteellisen tutkimuksen yhteenveto",
+      "d": "Tee yhteenveto tutkimuspapereista. Ei lääkärin neuvoja."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Erotusdiagnoosin assistentti",
+      "d": "Järjestä erotusdiagnoosit. Ei lääkärin neuvoja."
+    },
+    "Creative Storyteller": {
+      "n": "Luova tarinankertoja",
+      "d": "Luo luovia tarinoita ja kertomuksia"
+    },
+    "Ad Copy Generator": {
+      "n": "Mainostekstigeneraattori",
+      "d": "Konvertoivaa mainostekstiä Google-, Meta- ja LinkedIn-alustoille"
+    },
+    "Bug Report Writer": {
+      "n": "Virheraporttien kirjoittaja",
+      "d": "Kirjoita selkeitä, toistettavia virheraportteja"
+    },
+    "Social Media Caption": {
+      "n": "Sosiaalisen median kuvateksti",
+      "d": "Luo vieritystä pysäyttäviä tekstityksiä mille tahansa alustalle"
+    },
+    "Research Paper Abstract": {
+      "n": "Tutkimuspaperin tiivistelmä",
+      "d": "Kirjoita strukturoituja akateemisia abstrakteja"
+    },
+    "Translation Expert": {
+      "n": "Käännösasiantuntija",
+      "d": "Käännä tekstiä kontekstin ja vivahteiden mukaan"
+    },
+    "Data Analyst": {
+      "n": "Data-analyytikko",
+      "d": "Analysoi tietoja ja tarjoa käyttökelpoisia oivalluksia"
+    },
+    "Recipe Generator": {
+      "n": "Reseptigeneraattori",
+      "d": "Luo mukautettuja reseptejä mieltymystesi ja ruokavaliosi tarpeiden mukaan"
+    },
+    "Meal Planner": {
+      "n": "Ruokailun suunnittelija",
+      "d": "Suunnittele tasapainoiset ateriat koko viikolle monipuolisuutta ja ravintoa ajatellen"
+    },
+    "Grocery List Builder": {
+      "n": "Päivittäistavarakauppaluettelon muodostaja",
+      "d": "Rakenna organisoitu päivittäistavaraluettelo suunnitelluista aterioistasi ja ruokakomerotarpeistasi"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Pantry Resepti Finder",
+      "d": "Löydä herkullisia reseptejä saatavilla olevista aineksista"
+    },
+    "Nutrition Calculator": {
+      "n": "Ravintolaskuri",
+      "d": "Laske yksityiskohtaiset ravitsemustiedot mille tahansa reseptille tai ateriayhdistelmälle"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Ainesosien vaihto-opas",
+      "d": "Löydä täydelliset korvaukset puuttuville tai rajoitetuille ainesosille"
+    },
+    "Batch Cooking Planner": {
+      "n": "Erävalmistuksen suunnittelija",
+      "d": "Suunnittele tehokkaat eräkeittoistunnot säästääksesi aikaa koko viikon ajan"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Cocktail-reseptien luoja",
+      "d": "Luo ja mukauta cocktail-reseptejä mihin tahansa tilanteeseen"
+    },
+    "Baking Conversion Helper": {
+      "n": "Leivontamuunnosapulainen",
+      "d": "Muunna paistomitat yksiköiden välillä ja skaalata reseptejä ylös tai alas"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Ruokavaliokohtainen reseptien etsijä",
+      "d": "Löydä reseptejä, jotka on räätälöity tietyn ruokavaliosuunnitelmasi tai ravitsemustavoitteidesi mukaan"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Slow Cooker Resepti",
+      "d": "Hanki täydellisesti ajoitettuja hitaan liesikeittiön reseptejä näppärästi ruoanlaittoon"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Airfryer-reseptien luoja",
+      "d": "Luo rapean herkullisia airfryer-reseptejä täydellisellä ajoituksella"
+    },
+    "Smoothie Builder": {
+      "n": "Smoothien rakentaja",
+      "d": "Rakenna ravitsevia ja herkullisia smoothiereseptejä mihin tahansa tavoitteeseen"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Kastikkeen ja kastikkeen luoja",
+      "d": "Luo kotitekoisia kastikkeita ja kastikkeita tyhjästä"
+    },
+    "Spice Blend Guide": {
+      "n": "Maustesekoitusopas",
+      "d": "Luo mukautettuja maustesekoituksia mille tahansa keittiölle tai ruokalajille"
+    },
+    "Food Pairing Expert": {
+      "n": "Ruoanparien yhdistämisen asiantuntija",
+      "d": "Löydä ihanteelliset ruoka- ja makuparit kohotettuihin aterioihin"
+    },
+    "Holiday Menu Planner": {
+      "n": "Loman menun suunnittelija",
+      "d": "Suunnittele täydellinen lomamenu aikajanalla ja ostoslistalla"
+    },
+    "Leftover Makeover": {
+      "n": "Jäljelle jäänyt muodonmuutos",
+      "d": "Muuta ylijäämät jännittäviksi uusiksi aterioiksi luovilla ideoilla"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Lapsiystävällisiä ateriaideoita",
+      "d": "Luo terveellisiä aterioita, joista lapset todella nauttivat"
+    },
+    "Date Night Dinner": {
+      "n": "Treffi-iltapäivällinen",
+      "d": "Suunnittele vaikuttava illallinen romanttiseen iltaan kotona"
+    },
+    "Budget Meal Planner": {
+      "n": "Budjettiruokasuunnittelija",
+      "d": "Luo herkullisia aterioita pienellä budjetilla tinkimättä ravinnosta"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Vegaanireseptien muuntaja",
+      "d": "Muunna mikä tahansa perinteinen resepti herkulliseksi vegaaniseksi versioksi"
+    },
+    "Dessert Creator": {
+      "n": "Jälkiruoan luoja",
+      "d": "Suunnittele mukautettuja jälkiruokareseptejä mihin tahansa taitotasoon ja tilanteeseen"
+    },
+    "Appetizer Planner": {
+      "n": "Alkupalojen suunnittelija",
+      "d": "Suunnittele täydellinen alkupalalevite juhliin ja kokoontumisiin"
+    },
+    "Food Prep Timeline": {
+      "n": "Ruoanvalmistuksen aikajana",
+      "d": "Luo yksityiskohtainen kypsennysaikajana, jotta kaikki on valmis kerralla"
+    },
+    "Plant Care Guide": {
+      "n": "Kasvien hoitoopas",
+      "d": "Hanki henkilökohtaiset hoito-ohjeet kaikille kokoelmasi kasveille"
+    },
+    "Garden Planner": {
+      "n": "Puutarhan suunnittelija",
+      "d": "Suunnittele ja suunnittele puutarhasi pohjaratkaisu maksimaalisen tuoton ja kauneuden takaamiseksi"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Tuholaisten diagnoosityökalu",
+      "d": "Tunnista puutarhan tuholaiset ja taudit luomuhoitovaihtoehdoilla"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Kauden istutuskalenteri",
+      "d": "Tiedä tarkalleen, milloin kukin sato istutetaan kasvuvyöhykkeelläsi"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Kasvispuutarhan suunnittelija",
+      "d": "Suunnittele tuottava vihannespuutarha, jossa on istutus ja kierto"
+    },
+    "Indoor Plant Guide": {
+      "n": "Sisäkasvien opas",
+      "d": "Valitse ja huolehdi tilallesi täydelliset huonekasvit"
+    },
+    "Herb Garden Starter": {
+      "n": "Yrttipuutarhan käynnistin",
+      "d": "Aloita kukoistava yrttitarha sisällä tai ulkona asiantuntevan ohjauksen avulla"
+    },
+    "Composting Guide": {
+      "n": "Kompostointiopas",
+      "d": "Käynnistä ja ylläpidä kompostointijärjestelmää runsaalle puutarhamaalle"
+    },
+    "Landscape Design Helper": {
+      "n": "Maisemasuunnittelun apulainen",
+      "d": "Suunnittele kiinteistösi kaunis maisemasuunnitelma"
+    },
+    "Raised Bed Planner": {
+      "n": "Korotettu sängyn suunnittelija",
+      "d": "Suunnittele ja rakenna täydelliset korotetut puutarhasängyt tilaan"
+    },
+    "Fruit Tree Guide": {
+      "n": "Hedelmäpuuopas",
+      "d": "Valitse ja huolehdi ilmastoosi ja tilaan sopivista hedelmäpuista"
+    },
+    "Container Garden Planner": {
+      "n": "Konttipuutarhan suunnittelija",
+      "d": "Luo kauniita ja tuottavia konttipuutarhoja mihin tahansa tilaan"
+    },
+    "Pollinator Garden": {
+      "n": "Pölyttäjän puutarha",
+      "d": "Suunnittele puutarha, joka houkuttelee mehiläisiä, perhosia ja hyödyllisiä hyönteisiä"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Kuivuutta sietävä puutarha",
+      "d": "Suunnittele vesiviisas puutarha, joka kukoistaa minimaalisella kastelulla"
+    },
+    "Soil Amendment Guide": {
+      "n": "Maaperän muutosopas",
+      "d": "Testaa ja paranna puutarhasi maaperää saadaksesi optimaalisen kasvinterveyden"
+    },
+    "Seed Starting Calendar": {
+      "n": "Siementen aloituskalenteri",
+      "d": "Suunnittele siementen aloitusaikataulu onnistuneen kasvukauden varmistamiseksi"
+    },
+    "Garden Layout Designer": {
+      "n": "Puutarhan taittosuunnittelija",
+      "d": "Luo optimoitu puutarha-asetelma, jossa on oikeat välit ja pääsy aurinkoon"
+    },
+    "Water Schedule Planner": {
+      "n": "Vesiaikataulun suunnittelija",
+      "d": "Luo tehokas kasteluohjelma puutarhallesi ja nurmikollesi"
+    },
+    "Plant Problem Solver": {
+      "n": "Kasvien ongelmanratkaisija",
+      "d": "Diagnosoi ja käsittele yleisiä kasvi-ongelmia asiantuntijan neuvojen avulla"
+    },
+    "Pruning Guide": {
+      "n": "Leikkausopas",
+      "d": "Opi milloin ja miten leikataan mitä tahansa kasveja terveyden ja kauneuden vuoksi"
+    },
+    "Home Buying Checklist": {
+      "n": "Kodinoston tarkistuslista",
+      "d": "Täydellinen vaiheittainen tarkistuslista kodin ostoprosessia varten"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Asuntojen vertailutyökalu",
+      "d": "Vertaa asuntoja vierekkäin löytääksesi täydellisen vuokra-asunnon"
+    },
+    "Rental Application Helper": {
+      "n": "Vuokrasovellusapulainen",
+      "d": "Valmistele vahva vuokrahakemus, joka erottuu vuokranantajista"
+    },
+    "Home Inspection Questions": {
+      "n": "Kodin tarkastuskysymykset",
+      "d": "Tärkeitä kysymyksiä kotitarkastuksen aikana"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Asuntolainojen vertailulaskin",
+      "d": "Vertaile asuntolainavaihtoehtoja löytääksesi tilanteeseesi sopivin tarjous"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Ensikertalaisen ostajan opas",
+      "d": "Täydellinen opas ensimmäisen asunnon oston luottamiseen"
+    },
+    "Neighborhood Research": {
+      "n": "Naapuruustutkimus",
+      "d": "Tutki ja vertaile kaupunginosia löytääksesi itsellesi sopivan"
+    },
+    "Home Value Estimator": {
+      "n": "Kodin arvon arviointityökalu",
+      "d": "Arvioi kotisi arvo vertailukelpoisten myynti- ja markkinatietojen avulla"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Vuokrasopimuksen tarkistaja",
+      "d": "Tutustu ja ymmärrä vuokrasopimuksen keskeiset ehdot"
+    },
+    "Moving Checklist": {
+      "n": "Siirrettävä tarkistuslista",
+      "d": "Kattava liikkumisen tarkistuslista aikajanalla ja tehtävien hallinnassa"
+    },
+    "Property Investment Analyzer": {
+      "n": "Kiinteistösijoitusanalysaattori",
+      "d": "Analysoi vuokra-asunnoista sijoitetun pääoman tuottopotentiaalia"
+    },
+    "Renovation Budget Planner": {
+      "n": "Remontin budjettisuunnittelija",
+      "d": "Suunnittele ja budjetoi kodin peruskorjausprojektit yksityiskohtaisilla kustannusarvioilla"
+    },
+    "House Hunting Scorecard": {
+      "n": "Talometsästyksen tuloskortti",
+      "d": "Pistele ja arvosta koteja talometsästysprosessisi aikana"
+    },
+    "Down Payment Calculator": {
+      "n": "Etumaksulaskuri",
+      "d": "Laske kotiostoksesi käsirahavaihtoehdot ja säästösuunnitelmat"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Kodin huoltoaikataulu",
+      "d": "Luo kausiluonteinen kodin huoltoaikataulu turvataksesi sijoituksesi"
+    },
+    "Rental Property Analysis": {
+      "n": "Vuokra-asuntojen analyysi",
+      "d": "Arvioi vuokra-asuntojen mahdollisuuksia taloudellisten ennusteiden avulla"
+    },
+    "Home Staging Tips": {
+      "n": "Home Staging vinkkejä",
+      "d": "Järjestä kotisi myymään nopeammin ja korkeammalla hinnalla"
+    },
+    "Realtor Interview Questions": {
+      "n": "Kiinteistönvälittäjän haastattelukysymykset",
+      "d": "Tärkeimmät kysymykset kiinteistönvälittäjien haastattelussa"
+    },
+    "Closing Cost Estimator": {
+      "n": "Sulkemiskustannusarvio",
+      "d": "Arvioi kaikki kiinteistökaupan sulkemiskustannukset"
+    },
+    "HOA Assessment Guide": {
+      "n": "HOA-arviointiopas",
+      "d": "Arvioi HOA-maksut, säännöt ja taloudellinen tilanne ennen ostamista"
+    },
+    "Car Buying Assistant": {
+      "n": "Autonostoassistentti",
+      "d": "Navigoi auton ostoprosessissa luottavaisin mielin ja säästä rahaa"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Ajoneuvojen vertailutyökalu",
+      "d": "Vertaa ajoneuvoja vierekkäin teknisistä tiedoista, hinnoista ja ominaisuuksista"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Huoltoaikataulun suunnittelija",
+      "d": "Luo henkilökohtainen ajoneuvohuoltoaikataulu auton käyttöiän pidentämiseksi"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Korjaa arvio-analysaattori",
+      "d": "Arvioi autokorjausarviot ja löydä reilu hinnoittelu palveluille"
+    },
+    "Road Trip Planner": {
+      "n": "Automatkan suunnittelija",
+      "d": "Suunnittele täydellinen automatka pysähdyspaikkojen, polttoaineen ja ajoituksen laskennalla"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Käytetyn auton katsastuslista",
+      "d": "Tarkka tarkastuslista luottamukselliselle käytetyn auton ostamiselle"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Autovakuutusten vertailu",
+      "d": "Vertaile autovakuutusvaihtoehtoja löytääksesi parhaan kattavuuden ja hinnan"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Polttoainekulutuslaskin",
+      "d": "Laske ja optimoi ajoneuvosi polttoainekustannukset ja hyötysuhde"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Auton leasing vs. osto -analysaattori",
+      "d": "Vertaile leasingia ja ostamista parhaan taloudellisen vaihtoehdon löytämiseksi"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Vaihtoarvon arvioija",
+      "d": "Arvioi ajoneuvosi vaihtoarvo ja neuvottele reilu kauppa"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Ajoneuvohistorian tarkastaja",
+      "d": "Keskeiset kysymykset ja tarkistukset käytetyn ajoneuvon historiaraporttia tarkastellessa"
+    },
+    "Car Detailing Guide": {
+      "n": "Auton tehopesuopas",
+      "d": "Vaiheittaiset ohjeet auton tehopuhdistukseen näyttelykuntoiseksi"
+    },
+    "Winter Car Prep": {
+      "n": "Auton talvivalmistelu",
+      "d": "Valmistele ajoneuvosi talviajo-olosuhteisiin ja kylmään säähän"
+    },
+    "New Driver Guide": {
+      "n": "Uuden kuljettajan opas",
+      "d": "Välttämättömät ajovinkit ja tiedot uusille ja harjoitteleville kuljettajille"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Sähköauto-opas",
+      "d": "Kaikki mitä sinun tarvitsee tietää sähköauton ostamisesta ja omistamisesta"
+    },
+    "Trip Planner": {
+      "n": "Matkan suunnittelija",
+      "d": "Suunnittele täydellinen matka kohteiden, aktiviteettien ja logistiikan kanssa"
+    },
+    "Packing List Generator": {
+      "n": "Pakkauslistan luoja",
+      "d": "Luo räätälöity pakkauslista mihin tahansa matkaan ja kohteeseen"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Lomamatkareitin rakentaja",
+      "d": "Rakenna päiväkohtainen lomaohjelma aktiviteetteineen ja ruokailuineen"
+    },
+    "Travel Budget Calculator": {
+      "n": "Matkabudjetin laskuri",
+      "d": "Laske ja seuraa matkabudjettiasi yksityiskohtaisin kulukategorioin"
+    },
+    "Local Attractions Guide": {
+      "n": "Paikallisten nähtävyyksien opas",
+      "d": "Löydä parhaat paikalliset nähtävyydet, piilotetut helmet ja välttämättömät kohteet"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Matkavakuutusvertailu",
+      "d": "Vertaile matkavakuutusvaihtoehtoja oikean turvan löytämiseksi matkallesi"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Lentotarjousten etsintästrategia",
+      "d": "Strategioita ja vinkkejä parhaiden lentotarjousten ja hintojen löytämiseen"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Hotellivertailun avustaja",
+      "d": "Vertaile hotelleja hinnan, mukavuuksien, sijainnin ja arvostelujen perusteella"
+    },
+    "Solo Travel Planner": {
+      "n": "Yksinmatkan suunnittelija",
+      "d": "Suunnittele turvallinen ja antoisa yksinmatkailuseikkailu minne tahansa maailmassa"
+    },
+    "Family Vacation Planner": {
+      "n": "Perheloman suunnittelija",
+      "d": "Suunnittele perheystävällinen loma, joka viihdyttää kaiken ikäisiä"
+    },
+    "Backpacking Planner": {
+      "n": "Reppureissun suunnittelija",
+      "d": "Suunnittele edullinen reppureissu reitteineen ja varusteineen"
+    },
+    "Business Travel Organizer": {
+      "n": "Työmatkajärjestäjä",
+      "d": "Järjestä työmatkat tehokkaasti kulujen seurannan ja aikataulutuksen kanssa"
+    },
+    "Cruise Planner": {
+      "n": "Risteilyn suunnittelija",
+      "d": "Suunnittele täydellinen risteilyloma satamaretkien ja laiva-aktiviteettien kanssa"
+    },
+    "Travel Safety Guide": {
+      "n": "Matkustusturvallisuusopas",
+      "d": "Pysy turvassa matkustaessa kohdekohtaisilla turvallisuusvinkeillä ja -ohjeilla"
+    },
+    "Visa Requirements Checker": {
+      "n": "Viisumivatimusten tarkistaja",
+      "d": "Tarkista viisumvaatimukset ja valmistele hakuasiakirjat matkaasi varten"
+    },
+    "Language Survival Kit": {
+      "n": "Kielellinen selviytymispakkaus",
+      "d": "Opi keskeiset fraasit ja kulttuurivinkit matkakohteeseen"
+    },
+    "Airport Navigation Guide": {
+      "n": "Lentokenttänavigointiopas",
+      "d": "Navigoi lentokentällä tehokkaasti terminaalivinkeillä ja ajanhallinnalla"
+    },
+    "Travel Photo Plan": {
+      "n": "Matkakuvaussuunnitelma",
+      "d": "Suunnittele matkakuvauksesi parhailla paikoilla, ajankohdilla ja tekniikoilla"
+    },
+    "Group Trip Coordinator": {
+      "n": "Ryhmämatkan koordinaattori",
+      "d": "Koordinoi ryhmämatkan logistiikka, budjetit ja aktiviteetit kaikille"
+    },
+    "Adventure Travel Planner": {
+      "n": "Seikkailumatkan suunnittelija",
+      "d": "Suunnittele adrenaliinia nostattava seikkailumatka turvallisuuden ja logistiikan kanssa"
+    },
+    "Wedding Planner": {
+      "n": "Hääsuunnittelija",
+      "d": "Suunnittele täydellisten häiden jokainen yksityiskohta juhlapaikasta valaan"
+    },
+    "Birthday Party Planner": {
+      "n": "Syntymäpäiväjuhlien suunnittelija",
+      "d": "Suunnittele ikimuistoinen syntymäpäiväjuhla minkä ikäiselle ja tyyliselle tahansa"
+    },
+    "Conference Organizer": {
+      "n": "Konferenssijärjestäjä",
+      "d": "Järjestä ammattimaisia konferensseja ja seminaareja yksityiskohtaisella logistiikalla"
+    },
+    "Baby Shower Planner": {
+      "n": "Vauvakutsujen suunnittelija",
+      "d": "Suunnittele kauniit vauvakutsut leikkeineen, ruokineen ja koristeineen"
+    },
+    "Anniversary Celebration": {
+      "n": "Vuosipäiväjuhla",
+      "d": "Suunnittele merkityksellinen vuosipäiväjuhla mille tahansa merkkipäävuodelle"
+    },
+    "Graduation Party": {
+      "n": "Valmistujaisjuhla",
+      "d": "Juhli akateemisia saavutuksia täydellisesti suunnitelluilla valmistujaisilla"
+    },
+    "Holiday Party Planner": {
+      "n": "Lomajuhlien suunnittelija",
+      "d": "Suunnittele juhlavat lomajuhlat ruokineen, aktiviteetteineen ja koristeineen"
+    },
+    "Corporate Event Planner": {
+      "n": "Yritystapahtumien suunnittelija",
+      "d": "Suunnittele ammattimaisia yritystapahtumia, jotka tekevät vaikutuksen asiakkaisiin ja työntekijöihin"
+    },
+    "Fundraiser Organizer": {
+      "n": "Varainkeruujärjestäjä",
+      "d": "Järjestä onnistuneita varainkeruutapahtumia hyväntekeväisyyteen ja hyviin tarkoituksiin"
+    },
+    "Reunion Planner": {
+      "n": "Jälleennäkemisen suunnittelija",
+      "d": "Suunnittele ikimuistoinen suku- tai luokkakokous, joka tuo kaikki yhteen"
+    },
+    "Engagement Party Planner": {
+      "n": "Kihlajaisten suunnittelija",
+      "d": "Suunnittele iloiset kihlajaiset ilouutisen jakamiseksi"
+    },
+    "Retirement Party": {
+      "n": "Eläkejuhla",
+      "d": "Juhli hyvin elettyä uraa harkitulla eläkejuhlalla"
+    },
+    "Housewarming Planner": {
+      "n": "Tupaantuliaisjuhlien suunnittelija",
+      "d": "Suunnittele tervetulleiksi tupaantuliaisjuhlat uuteen kotiisi"
+    },
+    "Themed Party Creator": {
+      "n": "Teemajuhlien luoja",
+      "d": "Suunnittele ja järjestä luovia teemajuhlia koordinoiduilla yksityiskohdilla"
+    },
+    "Event Budget Tracker": {
+      "n": "Tapahtumabudjetin seuranta",
+      "d": "Seuraa ja hallitse tapahtuman kuluja pysyäksesi juhlabudjetissa"
+    },
+    "Chore Chart Creator": {
+      "n": "Kotityötaulukon luoja",
+      "d": "Luo ikätasoisia kotityötaulukoita palkinnoilla ja seurannalla"
+    },
+    "Educational Activity Planner": {
+      "n": "Opetuksellisten aktiviteettien suunnittelija",
+      "d": "Suunnittele hauskoja opetuksellisia aktiviteetteja, jotka tekevät oppimisesta jännittävää lapsille"
+    },
+    "Bedtime Story Writer": {
+      "n": "Iltasadun kirjoittaja",
+      "d": "Luo henkilökohtaisia iltasatuja, joissa lapsesi on pääosassa"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Ikätasoisten kehitysvaiheiden seuranta",
+      "d": "Seuraa kehitysvaiheita ja juhli lapsesi kasvua"
+    },
+    "School Lunch Planner": {
+      "n": "Koululounaan suunnittelija",
+      "d": "Suunnittele terveellisiä ja houkuttelevia koululounaita, joita lapset oikeasti syövät"
+    },
+    "Homework Help Guide": {
+      "n": "Läksyjen avustamisopas",
+      "d": "Strategioita lapsesi läksyjen tukemiseen ilman että teet niitä hänen puolestaan"
+    },
+    "Family Game Night Ideas": {
+      "n": "Perhepeli-iltaideoita",
+      "d": "Suunnittele mukaansatempaavia perhepeli-iltoja aktiviteetteineen kaikille ikäryhmille"
+    },
+    "Screen Time Schedule": {
+      "n": "Ruutuajan aikataulu",
+      "d": "Luo tasapainoisia ruutuaikasääntöjä ja -aikatauluja perheellesi"
+    },
+    "Allowance System Designer": {
+      "n": "Viikkorahasysteemin suunnittelija",
+      "d": "Suunnittele ikätasoinen viikkoraha- ja rahanhallintajärjestelmä"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Vauvan uniaikataulu",
+      "d": "Luo terveellisiä uniaikatauluja ja rutiineja vauvoille ja taaperoille"
+    },
+    "Potty Training Guide": {
+      "n": "Pottatreenioppas",
+      "d": "Vaiheittaiset pottatreenisuunnitelmat vinkkeineen jokaiseen vaiheeseen"
+    },
+    "Back to School Prep": {
+      "n": "Koulun alkuun valmistautuminen",
+      "d": "Valmista perheesi sujuvaan koulun alkuun siirtymiseen"
+    },
+    "Summer Activity Planner": {
+      "n": "Kesäaktiviteettien suunnittelija",
+      "d": "Suunnittele hauska ja rikastuttava kesä aktiviteetteineen, leireineen ja seikkailuineen"
+    },
+    "Family Meeting Agenda": {
+      "n": "Perhepalaverin asialista",
+      "d": "Pidä tuottavia perhepalavereja, joissa jokaisella on ääni"
+    },
+    "Child Development Tracker": {
+      "n": "Lapsen kehityksen seuranta",
+      "d": "Seuraa ja tue lapsesi fyysistä, sosiaalista ja kognitiivista kehitystä"
+    },
+    "Dog Training Plan": {
+      "n": "Koiran koulutussuunnitelma",
+      "d": "Luo räätälöity koulutussuunnitelma koirallesi missä iässä tai taitotasolla tahansa"
+    },
+    "Cat Care Guide": {
+      "n": "Kissan hoito-opas",
+      "d": "Kattava hoito-opas kissasi terveenä ja onnellisena pitämiseen"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Lemmikin ravitsemussuunnittelija",
+      "d": "Suunnittele optimaalinen ravitsemus lemmikillesi iän, rodun ja terveystarpeiden perusteella"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Pennun sosiaalistamisen tarkistuslista",
+      "d": "Varmista, että pentusi on kunnolla sosiaalistettu kriittisen kehitysvaiheen aikana"
+    },
+    "Pet First Aid Guide": {
+      "n": "Lemmikin ensiapuopas",
+      "d": "Välttämätön ensiaputietous ja hätätilannetoimenpiteet lemmikkien omistajille"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Akvaarion perustamissuunnittelija",
+      "d": "Suunnittele ja perusta kukoistava akvaario oikeilla kaloilla ja varusteilla"
+    },
+    "Pet Travel Preparation": {
+      "n": "Lemmikin matkavalmistelut",
+      "d": "Valmistele kaikki tarvittava turvallista ja stressitöntä matkustamista varten lemmikin kanssa"
+    },
+    "New Pet Checklist": {
+      "n": "Uuden lemmikin tarkistuslista",
+      "d": "Kaikki mitä tarvitset valmistautuaksesi uuden lemmikin tuomiseen kotiin"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Lemmikin käyttäytymisanalysaattori",
+      "d": "Ymmärrä ja käsittele lemmikkisi käyttäytymisongelmia asiantuntijaopastuksella"
+    },
+    "Senior Pet Care": {
+      "n": "Ikääntyvän lemmikin hoito",
+      "d": "Erikoistunut hoito-opas ikääntyville lemmikeille niiden mukavuuden ja terveyden ylläpitämiseksi"
+    },
+    "Pet Exercise Planner": {
+      "n": "Lemmikin liikuntasuunnittelija",
+      "d": "Luo liikuntarutiini, joka pitää lemmikkisi kunnossa ja henkisesti virkeänä"
+    },
+    "Vet Visit Preparation": {
+      "n": "Eläinlääkärikäyntiin valmistautuminen",
+      "d": "Valmistaudu eläinlääkärikäynteihin järjestetyillä terveystiedoilla ja kysymyksillä"
+    },
+    "Home Improvement Planner": {
+      "n": "Kodin kunnostussuunnittelija",
+      "d": "Suunnittele ja priorisoi kodin kunnostusprojektit budjetteineen ja aikatauluineen"
+    },
+    "Furniture Project Planner": {
+      "n": "Huonekaluprojektin suunnittelija",
+      "d": "Suunnittele mittatilaushuonekaluja materiaalien, työkalujen ja vaiheittaisten ohjeiden kanssa"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Remontin budjettilaskuri",
+      "d": "Laske yksityiskohtaiset remontointikustannukset työvoiman, materiaalien ja varautumisen kanssa"
+    },
+    "Paint Color Coordinator": {
+      "n": "Maalausvärien koordinaattori",
+      "d": "Valitse ja koordinoi maalausvärit yhtenäiseen kodin väripalettiin"
+    },
+    "Organization System Designer": {
+      "n": "Järjestelmän suunnittelija",
+      "d": "Suunnittele räätälöityjä järjestelysysteemejä mihin tahansa huoneeseen tai tilaan"
+    },
+    "Storage Solutions Planner": {
+      "n": "Säilytysratkaisujen suunnittelija",
+      "d": "Löydä luovia säilytysratkaisuja tilan maksimointiin missä tahansa huoneessa"
+    },
+    "Home Repair Guide": {
+      "n": "Kodin korjausopas",
+      "d": "Vaiheittaiset ohjeet yleisiin kotiremontteihin, jotka voit tehdä itse"
+    },
+    "Tool Buying Guide": {
+      "n": "Työkalujen osto-opas",
+      "d": "Valitse oikeat työkalut tee-se-itse-projekteihin ylikuluttamatta"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Kodin kausittainen huolto",
+      "d": "Kattavat kausittaiset huoltotarkistuslistat kotisi suojaamiseksi ympäri vuoden"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Energiatehokkuustarkastus",
+      "d": "Arvioi ja paranna kotisi energiatehokkuutta sähkölaskuissa säästämiseksi"
+    },
+    "Smart Home Setup": {
+      "n": "Älykodin asennus",
+      "d": "Suunnittele ja asenna älykotijärjestelmä oikeilla laitteilla ja integraatioilla"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Kylpyhuoneremontin suunnittelija",
+      "d": "Suunnittele kylpyhuoneremontti pohjapiirroksen, kalusteiden ja budjetin kanssa"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Keittiöremontin suunnittelija",
+      "d": "Suunnittele keittiöremontti pohjapiirustuksesta kodinkoneisiin yksityiskohtaisella budjetoinnilla"
+    },
+    "Closet Organization": {
+      "n": "Vaatekaapin järjestely",
+      "d": "Suunnittele ja järjestä vaatekaapit maksimaalisen tehokkuuden ja helpon saavutettavuuden saamiseksi"
+    },
+    "Garage Organization": {
+      "n": "Autotallin järjestely",
+      "d": "Muunna autotallisi järjestetyksi ja toimivaksi tilaksi"
+    },
+    "Product Comparison Tool": {
+      "n": "Tuotevertailutyökalu",
+      "d": "Vertaile tuotteita rinnakkain parhaan ostopäätöksen tekemiseksi"
+    },
+    "Buying Guide Creator": {
+      "n": "Osto-oppaan luoja",
+      "d": "Luo yksityiskohtaisia osto-oppaita mihin tahansa tuotekategoriaan"
+    },
+    "Gift Finder": {
+      "n": "Lahjan etsijä",
+      "d": "Löydä täydellinen lahja kenelle tahansa kiinnostusten ja budjetin perusteella"
+    },
+    "Price Tracker Strategy": {
+      "n": "Hintaseurantastrategia",
+      "d": "Strategioita hintojen seuraamiseen ja ostamiseen parhaalla hetkellä"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday -strategia",
+      "d": "Suunnittele Black Friday- ja Cyber Monday -ostoksesi maksimaalisten säästöjen saamiseksi"
+    },
+    "Back to School Shopping": {
+      "n": "Koulun alkuun ostoksille",
+      "d": "Järjestä koulun alkuun ostokset listoilla, budjeteilla ja tarjouksilla"
+    },
+    "Wardrobe Planner": {
+      "n": "Vaatekaapin suunnittelija",
+      "d": "Rakenna monipuolinen vaatekaappi strategisilla ostoksilla ja asusuunnittelulla"
+    },
+    "Electronics Buying Guide": {
+      "n": "Elektroniikan osto-opas",
+      "d": "Navigoi elektroniikkaostoksilla tekniikan vertailun ja ajoituksen avulla"
+    },
+    "Subscription Service Comparison": {
+      "n": "Tilauspalveluvertailu",
+      "d": "Vertaile tilauspalveluja löytääksesi parhaan vastineen tarpeisiisi"
+    },
+    "Wedding Registry Planner": {
+      "n": "Häälahjalistojen suunnittelija",
+      "d": "Rakenna kattava häälahjalista tuotteilla jokaiseen budjettiin"
+    },
+    "Bible Study Guide": {
+      "n": "Raamatun tutkimusopas",
+      "d": "Luo jäsenneltyjä Raamatun opiskelusuunnitelmia konteksteineen, kysymyksineen ja sovelluksineen"
+    },
+    "Sermon Outline Creator": {
+      "n": "Saarnan rungon luoja",
+      "d": "Kehitä vakuuttavia saarnan runkoja raamatunkohtineen, pääpisteineen ja havainnollistuksineen"
+    },
+    "Comparative Religion Study": {
+      "n": "Vertaileva uskontotutkimus",
+      "d": "Tutki ja vertaile uskomuksia, käytäntöjä ja historiaa maailmanuskontojen välillä"
+    },
+    "Discussion Question Generator": {
+      "n": "Keskustelukysymysten luoja",
+      "d": "Luo ajatuksia herättäviä keskustelukysymyksiä uskonnollisiin ja filosofisiin aiheisiin"
+    },
+    "Devotional Writer": {
+      "n": "Hartauskirjoittaja",
+      "d": "Luo päivittäisiä hartauksia raamatunkohtineen, pohdintoineen ja rukousaiheineen"
+    },
+    "Prayer Journal Guide": {
+      "n": "Rukouspäiväkirjaopas",
+      "d": "Jäsennä rukouselämääsi ohjattujen päiväkirjaharjoitusten ja kehysten avulla"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Hengellisen kirjakerhon opas",
+      "d": "Luo kirjakerhon keskusteluoppaita hengellisille ja uskonnollisille kirjoille"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Meditaation raamattuopas",
+      "d": "Luo ohjattuja meditaatiokokemuksia raamatunkohtien ympärille"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Nuortenkerhon oppituntisuunnitelma",
+      "d": "Luo mukaansatempaavia nuortenkerhon oppitunteja aktiviteetteineen ja keskusteluineen"
+    },
+    "Faith Journey Reflector": {
+      "n": "Uskomatkan pohdiskelija",
+      "d": "Ohjattuja pohdintoja henkilökohtaisen uskon tutkimiseen ja syventämiseen"
+    },
+    "Workout Plan Creator": {
+      "n": "Treeniohjelman luoja",
+      "d": "Luo henkilökohtaisia treenisuunnitelmia tavoitteidesi ja kuntotasosi perusteella"
+    },
+    "Training Schedule Builder": {
+      "n": "Harjoitusaikataulun rakentaja",
+      "d": "Rakenna jäsennelty harjoitusaikataulu mihin tahansa urheilulajiin tai kuntoilutavoitteeseen"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Pelistrategian analysaattori",
+      "d": "Analysoi pelistrategioita ja kehitä voittavia lähestymistapoja urheilulajiisi"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Urheiluravitsemusopas",
+      "d": "Optimoi urheiluravitsemuksesi huippusuorituksen ja palautumisen saavuttamiseksi"
+    },
+    "Coaching Practice Plan": {
+      "n": "Valmentajan harjoitussuunnitelma",
+      "d": "Suunnittele tehokkaita harjoituksia, jotka kehittävät taitoja ja joukkueen yhteishenkeä"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Fantasiaurheilun analysaattori",
+      "d": "Analysoi otteluparit ja optimoi fantasiaurheilun kokoonpanosi joka viikko"
+    },
+    "Race Training Plan": {
+      "n": "Kilpailuharjoittelusuunnitelma",
+      "d": "Harjoittele kilpailuihin 5 km:stä maratoniin jäsennellyillä asteittaisilla suunnitelmilla"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Urheilutilastojen analysaattori",
+      "d": "Analysoi pelaaja- ja joukkuetilastoja syvemmän urheiluymmärryksen saamiseksi"
+    },
+    "Team Management Tool": {
+      "n": "Joukkueenhallintatyökalu",
+      "d": "Hallitse joukkueen kokoonpanoja, aikatauluja ja viestintää tehokkaasti"
+    },
+    "Injury Recovery Planner": {
+      "n": "Vamman toipumissuunnittelija",
+      "d": "Suunnittele turvallinen ja tehokas toipuminen yleisistä urheiluvammoista"
+    },
+    "Photography Guide": {
+      "n": "Valokuvausopas",
+      "d": "Paranna valokuvaustaitojasi vinkeillä sommittelusta, valaisusta ja varusteista"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Neulemallin avustaja",
+      "d": "Etsi ja mukauta neulemalleja taitotasollesi ja projekti-ideoillesi"
+    },
+    "Board Game Night Planner": {
+      "n": "Lautapeli-illan suunnittelija",
+      "d": "Suunnittele täydelliset lautapeli-illat pelivalinnalla ja ryhmäsovituksella"
+    },
+    "Fishing Trip Planner": {
+      "n": "Kalastusretken suunnittelija",
+      "d": "Suunnittele onnistuneita kalastusretkiä sijainti-, varuste- ja tekniikkavinkeillä"
+    },
+    "Camping Trip Organizer": {
+      "n": "Telttailuretken järjestäjä",
+      "d": "Järjestä telttailuretkiä varustelistoilla, ruokasuunnitelmilla ja aktiviteetti-ideoilla"
+    },
+    "Bird Watching Guide": {
+      "n": "Lintubongausopas",
+      "d": "Tunnista paikallisia lintuja ja suunnittele bongausretkiä kausittaisilla vinkeillä"
+    },
+    "Model Building Planner": {
+      "n": "Pienoismallin rakentamissuunnittelija",
+      "d": "Suunnittele ja toteuta pienoismallin rakennusprojekteja materiaaleineen ja tekniikoineen"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Palapelin strategiaopas",
+      "d": "Strategioita ja tekniikoita palapelien ratkaisemiseen nopeammin ja tehokkaammin"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Tähtitieteen havaintosuunnittelija",
+      "d": "Suunnittele tähtienkatseluiltoja taivaantapahtumineen ja varustesuosituksineen"
+    },
+    "Art Supply Guide": {
+      "n": "Taidevälineopas",
+      "d": "Valitse oikeat taidevälineet tekniikkaasi ja taitotasoasi varten"
+    },
+    "Goal Setting Framework": {
+      "n": "Tavoitteenasettelun viitekehys",
+      "d": "Aseta ja saavuta merkityksellisiä tavoitteita jäsennellyllä viitekehyksellä ja toimintasuunnitelmalla"
+    },
+    "Bucket List Creator": {
+      "n": "Unelmalistan luoja",
+      "d": "Luo innostava unelmalista kategorioittain ja tärkeysjärjestyksessä"
+    },
+    "Personal Mission Statement": {
+      "n": "Henkilökohtainen missiolausunto",
+      "d": "Muotoile merkityksellinen henkilökohtainen missiolausunto, joka ohjaa elämänpäätöksiäsi"
+    },
+    "Life Transition Guide": {
+      "n": "Elämänmuutosten opas",
+      "d": "Navigoi suurten elämänmuutosten läpi suunnittelun, tuen ja selviytymisstrategioiden avulla"
+    },
+    "Habit Building Plan": {
+      "n": "Tapojen rakentamissuunnitelma",
+      "d": "Rakenna kestäviä positiivisia tapoja todistetuilla tiedepohjaisilla strategioilla"
+    },
+    "Time Audit Tool": {
+      "n": "Ajankäytön auditointityökalu",
+      "d": "Auditoi ajankäyttöäsi ja optimoi se tärkeimpien asioiden hyväksi"
+    },
+    "Relationship Goal Planner": {
+      "n": "Ihmissuhdetavoitteiden suunnittelija",
+      "d": "Aseta ja työskentele tavoitteiden eteen vahvempien ja terveempien ihmissuhteiden puolesta"
+    },
+    "Vision Board Creator": {
+      "n": "Visiotaulun luoja",
+      "d": "Luo digitaalinen visiotaulu ohjattujen harjoitusten ja visualisointiharjoitusten avulla"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Henkilökohtainen SWOT-analyysi",
+      "d": "Tee henkilökohtainen SWOT-analyysi ura- ja elämänsuunnittelua varten"
+    },
+    "Legacy Letter Writer": {
+      "n": "Perintökirjeen kirjoittaja",
+      "d": "Kirjoita merkityksellisiä perintökirjeitä läheisille, joissa tallennat arvosi ja viisautesi"
+    },
+    "Contract Draft Creator": {
+      "n": "Sopimusluonnoksen luoja",
+      "d": "Luo ammattimaisia sopimusluonnoksia mihin tahansa liikesuhteeseen"
+    },
+    "NDA Generator": {
+      "n": "Salassapitosopimuksen luoja",
+      "d": "Luo tilanteeseesi räätälöityjä salassapitosopimuksia"
+    },
+    "Rental Agreement Draft": {
+      "n": "Vuokrasopimusluonnos",
+      "d": "Laadi asuin- tai liiketilojen vuokrasopimuksia"
+    },
+    "Terms of Service Generator": {
+      "n": "Käyttöehtojen luoja",
+      "d": "Luo kattavat käyttöehdot verkkosivustoille ja sovelluksille"
+    },
+    "Privacy Policy Writer": {
+      "n": "Tietosuojaselosteen kirjoittaja",
+      "d": "Luo GDPR- ja CCPA-yhteensopivia tietosuojaselosteita"
+    },
+    "Freelance Agreement": {
+      "n": "Freelancer-sopimus",
+      "d": "Luo sopimuksia freelancereiden ja asiakkaiden välille"
+    },
+    "Non-Compete Draft": {
+      "n": "Kilpailukieltosopimusluonnos",
+      "d": "Laadi kilpailukieltolausekkeita ja itsenäisiä sopimuksia"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC-yhtiösopimus",
+      "d": "Luo yhtiösopimuksia osakeyhtiöille"
+    },
+    "Partnership Agreement": {
+      "n": "Yhtiökumppanuussopimus",
+      "d": "Laadi yhtiökumppanuussopimuksia selkein roolein ja ehdoin"
+    },
+    "Intellectual Property Brief": {
+      "n": "Immateriaalioikeustiivistelmä",
+      "d": "Hahmottele immateriaalioikeuksien omistus ja suojausstrategiat"
+    },
+    "Cease and Desist Draft": {
+      "n": "Lopettamisvaatimusluonnos",
+      "d": "Luo lopettamisvaatimuskirjeitä erilaisten rikkomusten varalle"
+    },
+    "Employee Handbook Section": {
+      "n": "Työntekijän käsikirjan osio",
+      "d": "Kirjoita yksittäisiä osioita työntekijän käsikirjoihin"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Itsenäisen urakoitsijan sopimus",
+      "d": "Laadi urakoitsijasopimuksia asianmukaisella luokittelukielellä"
+    },
+    "Liability Waiver Draft": {
+      "n": "Vastuuvapauslausekeluonnos",
+      "d": "Luo vastuuvapauslausekkeita toiminnoille ja palveluille"
+    },
+    "Settlement Letter Draft": {
+      "n": "Sovittelukirjeluonnos",
+      "d": "Laadi sovittelutarjous- tai vastauskirjeitä"
+    },
+    "Demand Letter Draft": {
+      "n": "Vaatimuskirjeluonnos",
+      "d": "Luo virallisia vaatimuskirjeitä erilaisten vaateiden osalta"
+    },
+    "Power of Attorney Draft": {
+      "n": "Valtakirjaluonnos",
+      "d": "Laadi valtakirjoja eri tarkoituksiin"
+    },
+    "Last Will Outline": {
+      "n": "Testamentin runko",
+      "d": "Luo runko perusmalliselle testamentille"
+    },
+    "Business License Checklist": {
+      "n": "Yrityslupatarkistuslista",
+      "d": "Luo tarkistuslista yrityksellesi vaadittavista luvista"
+    },
+    "Trademark Application Guide": {
+      "n": "Tavaramerkkihakemuksen opas",
+      "d": "Vaiheittainen opas tavaramerkkihakemuksen jättämiseen"
+    },
+    "Small Claims Court Guide": {
+      "n": "Käräjäoikeusopas",
+      "d": "Valmistaudu käräjäoikeuteen järjestellyillä argumenteilla"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Avioeron sovitteluun valmistautuminen",
+      "d": "Järjestä keskeisiä asioita ja prioriteetteja avioeron sovittelua varten"
+    },
+    "Tenant Rights Guide": {
+      "n": "Vuokralaisen oikeuksien opas",
+      "d": "Ymmärrä vuokralaisen oikeudet ja oikeussuojakeinot alueellasi"
+    },
+    "Landlord Notice Draft": {
+      "n": "Vuokranantajan ilmoitusluonnos",
+      "d": "Laadi asianmukaisia juridisia ilmoituksia vuokranantajalta vuokralaiselle"
+    },
+    "Copyright Registration Guide": {
+      "n": "Tekijänoikeuden rekisteröintiopas",
+      "d": "Opas tekijänoikeuksien rekisteröintiin tekijänoikeusvirastossa"
+    },
+    "Personal Budget Planner": {
+      "n": "Henkilökohtainen budjettisuunnittelija",
+      "d": "Luo kattava kuukausi- tai vuosibudjetti"
+    },
+    "Investment Research Assistant": {
+      "n": "Sijoitustutkimusavustaja",
+      "d": "Tutki ja analysoi sijoitusmahdollisuuksia järjestelmällisesti"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Velan takaisinmaksulaskuri",
+      "d": "Suunnittele strategia velan tehokkaaseen poistamiseen"
+    },
+    "Expense Tracker Setup": {
+      "n": "Kuluseurannan asennus",
+      "d": "Suunnittele henkilökohtainen kuluseurantajärjestelmä"
+    },
+    "Retirement Planning Guide": {
+      "n": "Eläkesuunnitteluopas",
+      "d": "Rakenna kattava eläkesäästöstrategia"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Veroilmoituksen valmistelutarkistuslista",
+      "d": "Järjestä asiakirjat ja vähennykset verotusta varten"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Hätärahaston laskuri",
+      "d": "Määritä ja suunnittele ihanteellinen hätärahastosi"
+    },
+    "Net Worth Tracker": {
+      "n": "Nettovarallisuuden seuranta",
+      "d": "Seuraa ja visualisoi koko taloudellinen tilanteesi"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Luottoluokituksen parantamissuunnitelma",
+      "d": "Luo toteuttamiskelpoinen suunnitelma luottoluokituksesi parantamiseksi"
+    },
+    "Student Loan Strategy": {
+      "n": "Opintolainastrategia",
+      "d": "Optimoi opintolainasi takaisinmaksutapa"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Sivutulojen suunnittelija",
+      "d": "Suunnittele ja ennusta tuloja sivutöistä"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Vakuutustarpeiden analysaattori",
+      "d": "Arvioi vakuutusturvasi aukot ja tarpeet"
+    },
+    "Estate Planning Checklist": {
+      "n": "Perintösuunnittelun tarkistuslista",
+      "d": "Järjestä perintösuunnittelun asiakirjat ja päätökset"
+    },
+    "Financial Goal Setter": {
+      "n": "Taloudellisten tavoitteiden asettaja",
+      "d": "Määritä ja seuraa edistymistä kohti taloudellisia virstanpylväitä"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Kassavirta-analysaattori",
+      "d": "Analysoi tulo- ja menomalleja ajan kuluessa"
+    },
+    "Savings Challenge Creator": {
+      "n": "Säästöhaasteen luoja",
+      "d": "Suunnittele hauska säästöhaaste pesämunan kasvattamiseksi"
+    },
+    "Investment Portfolio Review": {
+      "n": "Sijoitussalkun arviointi",
+      "d": "Arvioi ja tasapainota sijoitussalkkuasi uudelleen"
+    },
+    "Cryptocurrency Research": {
+      "n": "Kryptovaluuttatutkimus",
+      "d": "Tutki ja arvioi kryptovaluuttasijoituksia"
+    },
+    "Stock Analysis Helper": {
+      "n": "Osakeanalyysin avustaja",
+      "d": "Tee perustavanlaatuista ja teknistä analyysia osakkeista"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Kiinteistösijoituslaskuri",
+      "d": "Analysoi mahdollisia kiinteistösijoitusten tuottoja"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Yritysverovähennusten etsijä",
+      "d": "Tunnista yrityksesi verovähennysmahdollisuudet"
+    },
+    "Payroll Budget Planner": {
+      "n": "Palkkabudjetin suunnittelija",
+      "d": "Suunnittele ja budjetoi työntekijöiden palkkakulut"
+    },
+    "Invoice Template Creator": {
+      "n": "Laskupohjan luoja",
+      "d": "Suunnittele ammattimaisia laskupohjia yrityksellesi"
+    },
+    "Profit Margin Calculator": {
+      "n": "Voittomarginaalilaskuri",
+      "d": "Laske ja optimoi voittomarginaalit tuotteiden välillä"
+    },
+    "Financial Independence Planner": {
+      "n": "Taloudellisen riippumattomuuden suunnittelija",
+      "d": "Kartoita polkusi taloudelliseen riippumattomuuteen ja varhaiseen eläkkeeseen"
+    },
+    "Ad Copy Writer": {
+      "n": "Mainostekstin kirjoittaja",
+      "d": "Luo vakuuttavaa mainostekstiä mille tahansa alustalle tai medialle"
+    },
+    "SEO Article Creator": {
+      "n": "SEO-artikkelin luoja",
+      "d": "Kirjoita SEO-optimoituja artikkeleita, jotka sijoittuvat korkealle ja konvertoivat"
+    },
+    "Social Media Content Calendar": {
+      "n": "Sosiaalisen median sisältökalenteri",
+      "d": "Suunnittele kuukauden sosiaalisen median sisältö eri alustoille"
+    },
+    "Email Campaign Builder": {
+      "n": "Sähköpostikampanjan rakentaja",
+      "d": "Suunnittele monivaiheisia sähköpostimarkkinointikampanjoita, jotka konvertoivat"
+    },
+    "Product Launch Strategy": {
+      "n": "Tuotelanseerausstrategia",
+      "d": "Luo kattava tuotelanseerauksen markkinointistrategia"
+    },
+    "Brand Voice Guide": {
+      "n": "Brändäänen opas",
+      "d": "Määrittele ja dokumentoi brändisi ääni ja viestintä"
+    },
+    "Content Marketing Strategy": {
+      "n": "Sisältömarkkinointistrategia",
+      "d": "Rakenna kattava sisältömarkkinointistrategia alusta alkaen"
+    },
+    "Influencer Outreach Template": {
+      "n": "Vaikuttajayhteistyöpohja",
+      "d": "Luo henkilökohtaisia vaikuttajayhteistyöehdotuksia"
+    },
+    "Landing Page Copywriter": {
+      "n": "Laskeutumissivun tekstisuunnittelija",
+      "d": "Kirjoita tehokkaasti konvertoivaa laskeutumissivun tekstiä"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B-testisuunnitelman luoja",
+      "d": "Suunnittele jäsenneltyjä A/B-testejä markkinointikampanjoihin"
+    },
+    "Buyer Persona Builder": {
+      "n": "Ostajapersoonan rakentaja",
+      "d": "Luo yksityiskohtaisia asiakaspersoonia kohdennusta varten"
+    },
+    "Competitive Analysis Template": {
+      "n": "Kilpailija-analyysipohja",
+      "d": "Analysoi kilpailijoita ja tunnista markkinamahdollisuuksia"
+    },
+    "Marketing Budget Planner": {
+      "n": "Markkinointibudjetin suunnittelija",
+      "d": "Kohdenna ja optimoi markkinointibudjettisi"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Kumppanuusmarkkinointistrategia",
+      "d": "Rakenna ja optimoi kumppanuusmarkkinointiohjelma"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcastin markkinointisuunnitelma",
+      "d": "Markkinoi podcastiasi ja kasvata kuuntelijakuntaasi"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Webinaarin markkinointisuunnitelma",
+      "d": "Suunnittele ja markkinoi webinaareja, jotka tuottavat ilmoittautumisia"
+    },
+    "Referral Program Designer": {
+      "n": "Suositteluohjelman suunnittelija",
+      "d": "Suunnittele suositteluohjelmia, jotka edistävät suosittelupohjaista kasvua"
+    },
+    "Brand Story Writer": {
+      "n": "Bränditarinan kirjoittaja",
+      "d": "Luo mukaansatempaava brändin alkuperätarina ja kerronta"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Markkinointisuppilon rakentaja",
+      "d": "Suunnittele asiakaspolkusuppiloita tietoisuudesta konversioon"
+    },
+    "App Store Optimization": {
+      "n": "Sovelluskaupan optimointi",
+      "d": "Optimoi sovelluskaupan listaukset latausten maksimoimiseksi"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Google Ads -tekstisuunnittelija",
+      "d": "Kirjoita tehokkaita Google Ads -otsikoita ja kuvauksia"
+    },
+    "Facebook Ads Creator": {
+      "n": "Facebook-mainosten luoja",
+      "d": "Luo Facebook- ja Instagram-mainoskampanjoita"
+    },
+    "Newsletter Strategy": {
+      "n": "Uutiskirjestrategia",
+      "d": "Suunnittele ja kasvata sähköpostiuutiskirje alusta alkaen"
+    },
+    "PR Media Pitch": {
+      "n": "PR-mediaehdotus",
+      "d": "Kirjoita vakuuttavia mediaehdotuksia lehdistönäkyvyyteen"
+    },
+    "Content Repurposing Plan": {
+      "n": "Sisällön uudelleenkäyttösuunnitelma",
+      "d": "Muunna olemassa oleva sisältö useisiin eri formaatteihin"
+    },
+    "Cold Email Generator": {
+      "n": "Kylmäsähköpostien luoja",
+      "d": "Luo henkilökohtaisia kylmäyhteydenottosähköposteja, jotka saavat vastauksia"
+    },
+    "Sales Script Writer": {
+      "n": "Myyntiskriptin kirjoittaja",
+      "d": "Kirjoita tehokkaita myyntiskriptejä puheluihin ja tapaamisiin"
+    },
+    "Objection Handling Guide": {
+      "n": "Vastaväitteiden käsittelyopas",
+      "d": "Valmistele vastauksia yleisiin myyntivastaväitteisiin"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Seurantaviestin luoja",
+      "d": "Luo strategisia seurantaviestisarjoja"
+    },
+    "Sales Pitch Creator": {
+      "n": "Myyntipuheen luoja",
+      "d": "Rakenna vakuuttavia hissipuheita ja myyntiesityksiä"
+    },
+    "Proposal Generator": {
+      "n": "Tarjousgeneraattori",
+      "d": "Luo ammattimaisia myyntitarjouksia ja hinta-arvioita"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "CRM-tietojen siivoussuunnitelma",
+      "d": "Järjestele ja siivoa CRM-tietokantasi järjestelmällisesti"
+    },
+    "Sales Territory Planner": {
+      "n": "Myyntialueiden suunnittelija",
+      "d": "Määrittele ja optimoi myyntialueet tiimillesi"
+    },
+    "Account Strategy Builder": {
+      "n": "Asiakkuusstrategian rakentaja",
+      "d": "Luo strategisia asiakkuussuunnitelmia avainasiakkaille"
+    },
+    "Upsell Script Creator": {
+      "n": "Lisämyyntiskriptin luoja",
+      "d": "Kirjoita skriptejä lisä- ja ristiinmyyntiin nykyisille asiakkaille"
+    },
+    "Customer Win-Back Email": {
+      "n": "Asiakkaan takaisinvoittosähköposti",
+      "d": "Aktivoi menetetyt asiakkaat kohdennetuilla takaisinvoittokampanjoilla"
+    },
+    "Sales Forecast Template": {
+      "n": "Myyntiennustepohja",
+      "d": "Rakenna tarkkoja myyntiennusteita myyntiputkellesi"
+    },
+    "Commission Calculator": {
+      "n": "Provisiolaskuri",
+      "d": "Suunnittele ja laske myyntiprovisiorakenteita"
+    },
+    "Discovery Call Script": {
+      "n": "Kartoituspuhelun skripti",
+      "d": "Jäsennä tehokkaita kartoituspuheluita prospektien kvalifiointiin"
+    },
+    "Demo Presentation Outline": {
+      "n": "Tuotedemon esitysrunko",
+      "d": "Luo jäsenneltyjä tuotedemoesityksiä"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Myyjien perehdytyssuunnitelma",
+      "d": "Suunnittele perehdytysohjelmia uusille myyntiedustajille"
+    },
+    "Quarterly Business Review": {
+      "n": "Neljännesvuosikatsaus",
+      "d": "Valmistele neljännesvuosikatsausesityksiä asiakkaille"
+    },
+    "Customer Success Plan": {
+      "n": "Asiakasmenestyssuunnitelma",
+      "d": "Rakenna ennakoivia asiakasmenestys- ja sitoutumissuunnitelmia"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Hinnoittelustrategian neuvonantaja",
+      "d": "Kehitä ja optimoi tuotteesi hinnoittelustrategia"
+    },
+    "Value Proposition Builder": {
+      "n": "Arvolupauksen rakentaja",
+      "d": "Muotoile selkeitä ja vakuuttavia arvolupauksia"
+    },
+    "FAQ Generator": {
+      "n": "UKK-generaattori",
+      "d": "Luo kattavia UKK-osioita tuotetietojen pohjalta"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Tietopankkiartikkelin kirjoittaja",
+      "d": "Kirjoita selkeitä ja helposti löydettäviä tietopankkiartikkeleita"
+    },
+    "Support Response Template": {
+      "n": "Tukivastausmalli",
+      "d": "Luo uudelleenkäytettäviä malleja yleisiin tukitilanteisiin"
+    },
+    "Chatbot Training Data": {
+      "n": "Chatbotin koulutusdata",
+      "d": "Tuota koulutusdataa asiakastuen chatboteille"
+    },
+    "Escalation Response Guide": {
+      "n": "Eskalaation käsittelyopas",
+      "d": "Luo ohjeistuksia eskaloitujen tukitapausten käsittelyyn"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Asiakastyytyväisyyskysely",
+      "d": "Suunnittele kyselyjä asiakastyytyväisyyden mittaamiseen"
+    },
+    "Refund Policy Writer": {
+      "n": "Palautuskäytännön kirjoittaja",
+      "d": "Luo selkeät ja reilut palautus- ja hyvityskäytännöt"
+    },
+    "Bug Report Template": {
+      "n": "Vikaraporttipohja",
+      "d": "Suunnittele jäsenneltyjä vikaraporttimalleja käyttäjille"
+    },
+    "Feature Request Response": {
+      "n": "Ominaisuuspyyntövastaus",
+      "d": "Muotoile vastauksia asiakkaiden ominaisuuspyyntöihin"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Käyttöönoton sähköpostisarja",
+      "d": "Luo sähköpostisarjoja uusien asiakkaiden perehdyttämiseen"
+    },
+    "Help Center Article": {
+      "n": "Ohjekeskuksen artikkeli",
+      "d": "Kirjoita kattavaa ohjekeskusdokumentaatiota"
+    },
+    "Service Level Agreement": {
+      "n": "Palvelutasosopimus",
+      "d": "Laadi palvelutasosopimuksia tukisitoumuksille"
+    },
+    "Customer Apology Template": {
+      "n": "Asiakkaan pahoittelupohja",
+      "d": "Kirjoita vilpittömiä pahoitteluviestejä palveluvirheisiin"
+    },
+    "Product Update Announcement": {
+      "n": "Tuotepäivitystiedote",
+      "d": "Viesti tuotepäivityksistä ja muutoksista asiakkaille"
+    },
+    "Community Guidelines Writer": {
+      "n": "Yhteisösääntöjen kirjoittaja",
+      "d": "Luo yhteisösäännöt foorumeille ja somekanavilla"
+    },
+    "Startup Validation Framework": {
+      "n": "Startup-idean validointikehys",
+      "d": "Validoi startup-ideasi ennen rakentamista"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP-ominaisuussuunnittelija",
+      "d": "Priorisoi ominaisuudet pienimmälle toimivalle tuotteellesi"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Hinnoittelustrategian rakentaja",
+      "d": "Kehitä hinnoittelumalleja startup-tuotteellesi"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Sijoittajaesityksen runko",
+      "d": "Jäsennä vakuuttava esityspaketti varainhankintaan"
+    },
+    "Business Model Canvas": {
+      "n": "Liiketoimintamallikanvaasi",
+      "d": "Kuvaa koko liiketoimintamallisi yhdelle sivulle"
+    },
+    "Lean Canvas Creator": {
+      "n": "Lean Canvas -luoja",
+      "d": "Luo Lean Canvas riskien ja oletusten tunnistamiseen"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Kilpailuympäristön analysaattori",
+      "d": "Kartoita ja analysoi kilpailuympäristösi"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Markkinoilletulostrategia",
+      "d": "Suunnittele markkinoille tulo ja asiakashankintamenetelmät"
+    },
+    "Founding Team Assessment": {
+      "n": "Perustajaiiimin arviointi",
+      "d": "Arvioi tiimin koostumus ja tunnista osaamisvajeet"
+    },
+    "Startup Financial Projections": {
+      "n": "Startupin talousennusteet",
+      "d": "Rakenna 3 vuoden talousennusteet startupillesi"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Neuvonantajiston rekrytoija",
+      "d": "Tunnista ja rekrytoi neuvonantajia startupillesi"
+    },
+    "Pivot Decision Framework": {
+      "n": "Pivot-päätöskehys",
+      "d": "Arvioi, pitäisikö ja miten suuntaa muuttaa startupissasi"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Startupin KPI-mittaristo",
+      "d": "Määrittele ja seuraa keskeisiä suorituskykymittareita"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Joukkorahoituskampanjasuunnitelma",
+      "d": "Suunnittele ja toteuta onnistunut joukkorahoituskampanja"
+    },
+    "Partnership Strategy": {
+      "n": "Kumppanuusstrategia",
+      "d": "Tunnista ja tavoittele strategisia kumppanuuksia"
+    },
+    "Accelerator Application": {
+      "n": "Kiihdyttämöhakemus",
+      "d": "Valmistele vakuuttava kiihdyttämö- tai hautomohakemus"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Tuote-markkinasopivuuskysely",
+      "d": "Suunnittele kyselyjä tuote-markkinasopivuuden mittaamiseen"
+    },
+    "Startup Legal Checklist": {
+      "n": "Startupin juridinen tarkistuslista",
+      "d": "Huolehdi kaikista juridisista perusasioista yritystä perustaessasi"
+    },
+    "Equity Split Calculator": {
+      "n": "Osakejako-laskin",
+      "d": "Määritä oikeudenmukainen osakejakauma perustajien kesken"
+    },
+    "Growth Experiment Planner": {
+      "n": "Kasvukokeilun suunnittelija",
+      "d": "Suunnittele ja seuraa kasvukokeiluja järjestelmällisesti"
+    },
+    "Product Description Writer": {
+      "n": "Tuotekuvauksen kirjoittaja",
+      "d": "Kirjoita mukaansatempaavia tuotekuvauksia, jotka lisäävät myyntiä"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Amazon-listauksen optimoija",
+      "d": "Optimoi Amazonin tuotelistaukset näkyvyyden ja konversion parantamiseksi"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Etsy-kaupan perustamisopas",
+      "d": "Perusta ja optimoi Etsy-kauppasi menestystä varten"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify-kaupan suunnittelija",
+      "d": "Suunnittele Shopify-kauppasi rakenne ja julkaisu"
+    },
+    "Product Photography Brief": {
+      "n": "Tuotekuvauksen toimeksianto",
+      "d": "Luo toimeksiantoja tuotekuvauksiin"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Toimitusstrategian suunnittelija",
+      "d": "Suunnittele kustannustehokkaita toimitusstrategioita"
+    },
+    "Return Policy Creator": {
+      "n": "Palautuskäytännön luoja",
+      "d": "Luo selkeät verkkokaupan palautus- ja vaihtokäytännöt"
+    },
+    "Customer Review Response": {
+      "n": "Asiakasarvion vastaus",
+      "d": "Muotoile ammattimaisia vastauksia asiakasarvioihin"
+    },
+    "Inventory Management Plan": {
+      "n": "Varastonhallintasuunnitelma",
+      "d": "Luo järjestelmiä varaston seurantaan ja hallintaan"
+    },
+    "Dropshipping Product Research": {
+      "n": "Dropshipping-tuotetutkimus",
+      "d": "Tutki ja arvioi dropshipping-tuotemahdollisuuksia"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Tilauspaino-suunnittelija",
+      "d": "Suunnittele tilauspaino-tuotelinjoja ja -malleja"
+    },
+    "Subscription Box Planner": {
+      "n": "Tilauslaatikon suunnittelija",
+      "d": "Suunnittele ja lanseeraa tilauslaatikkoliiketoiminta"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Sesonkimyyntistrategia",
+      "d": "Suunnittele kausittaisia kampanjoita ja juhlapyhämyyntejä"
+    },
+    "Product Bundle Creator": {
+      "n": "Tuotepaketin luoja",
+      "d": "Suunnittele tuotepaketteja, jotka kasvattavat keskimääräistä tilauskokoa"
+    },
+    "Cart Abandonment Email": {
+      "n": "Hylätyn ostoskorin sähköposti",
+      "d": "Luo sähköpostisarjoja hylättyjen ostoskorien palauttamiseen"
+    },
+    "Homework Helper": {
+      "n": "Läksyapu",
+      "d": "Saa vaiheittaista apua läksyihin kaikissa oppiaineissa"
+    },
+    "Quiz & Test Generator": {
+      "n": "Tietovisojen ja kokeiden luoja",
+      "d": "Luo mukautettuja tietovisoja mistä tahansa aiheesta tai opiskelumateriaalista"
+    },
+    "Science Fair Project Planner": {
+      "n": "Tiedeprojektin suunnittelija",
+      "d": "Suunnittele ja järjestele voittava tiedeprojekti hypoteesista esitykseen"
+    },
+    "Lesson Plan Creator": {
+      "n": "Tuntisuunnitelman luoja",
+      "d": "Suunnittele jäsenneltyjä tuntisuunnitelmia oppimistavoitteiden mukaisesti"
+    },
+    "Lab Report Writer": {
+      "n": "Laboratorioraportin kirjoittaja",
+      "d": "Jäsennä ja kirjoita laboratorioraportteja oikealla tieteellisellä muotoilulla"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Luetun ymmärtämisen apu",
+      "d": "Paranna luetun ymmärtämistä ohjatulla analyysillä ja kysymyksillä"
+    },
+    "Math Problem Solver": {
+      "n": "Matemaattisten tehtävien ratkaisija",
+      "d": "Ratkaise matemaattisia tehtäviä yksityiskohtaisilla vaiheittaisilla selityksillä"
+    },
+    "Vocabulary Builder": {
+      "n": "Sanastonrakentaja",
+      "d": "Rakenna ja harjoittele sanastoa määritelmillä, esimerkeillä ja harjoituksilla"
+    },
+    "Book Report Helper": {
+      "n": "Kirjaraportin apu",
+      "d": "Jäsennä ja kirjoita kirjaraportteja rakenteellisella analyysillä"
+    },
+    "History Timeline Creator": {
+      "n": "Historiallisen aikajanan luoja",
+      "d": "Luo yksityiskohtaisia historiallisia aikajanoja mille tahansa aikakaudelle tai tapahtumalle"
+    },
+    "Geography Quiz Maker": {
+      "n": "Maantietovisailun luoja",
+      "d": "Luo maantietovisoja kartoista, pääkaupungeista, maamerkeistä ja muusta"
+    },
+    "Spelling Practice Generator": {
+      "n": "Oikeinkirjoitusharjoitusten luoja",
+      "d": "Luo henkilökohtaisia oikeinkirjoitusharjoituslistoja ja -tehtäviä"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Kielioppiharjoitusten luoja",
+      "d": "Luo kielioppiharjoituksia kaikille taitotasoille ja aiheille"
+    },
+    "Critical Thinking Questions": {
+      "n": "Kriittisen ajattelun kysymykset",
+      "d": "Luo ajatuksia herättäviä kysymyksiä kriittisen ajattelun kehittämiseen"
+    },
+    "Debate Prep Guide": {
+      "n": "Väittelyyn valmistautumisopas",
+      "d": "Valmistele jäsenneltyjä argumentteja ja vasta-argumentteja väittelyihin"
+    },
+    "College Application Essay": {
+      "n": "Yliopistohakemuksen essee",
+      "d": "Kirjoita vakuuttavia yliopistohakemuksen esseitä ohjatuilla kehoteilla"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Apuraha-esseen apu",
+      "d": "Kirjoita vakuuttavia apuraha-esseitä, jotka korostavat saavutuksia ja tavoitteita"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT-valmistautumisopas",
+      "d": "Luo kohdennettuja opiskelusuunnitelmia ja harjoituksia SAT- tai ACT-kokeisiin"
+    },
+    "Study Schedule Planner": {
+      "n": "Opiskeluaikataulun suunnittelija",
+      "d": "Rakenna tehokas opiskeluaikataulu, joka tasapainottaa kaikki aineet ja määräajat"
+    },
+    "Group Project Organizer": {
+      "n": "Ryhmäprojektin järjestäjä",
+      "d": "Suunnittele roolit, tehtävät ja aikataulut ryhmäprojekteille"
+    },
+    "Presentation Creator": {
+      "n": "Esityksen luoja",
+      "d": "Suunnittele ja jäsennä mukaansatempaavia esityksiä mistä tahansa aiheesta"
+    },
+    "Note-Taking Guide": {
+      "n": "Muistiinpano-opas",
+      "d": "Luo jäsenneltyjä muistiinpanopohjia luentoihin ja lukemiseen"
+    },
+    "Mind Map Generator": {
+      "n": "Miellekartan luoja",
+      "d": "Luo visuaalisia miellekarttoja ajatusten ja käsitteiden jäsentämiseen"
+    },
+    "Research Project Planner": {
+      "n": "Tutkimusprojektin suunnittelija",
+      "d": "Suunnittele ja hallinnoi tutkimusprojekteja aiheen valinnasta lopputyöhön"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Vanhempainiltaan valmistautuminen",
+      "d": "Valmistele puheenaiheita ja kysymyksiä tuottaviin vanhempainiltoihin"
+    },
+    "Classroom Activity Designer": {
+      "n": "Luokkahuonetoiminnan suunnittelija",
+      "d": "Suunnittele vuorovaikutteisia luokkahuonetoimintoja, jotka vahvistavat oppimistavoitteita"
+    },
+    "Special Education Resource": {
+      "n": "Erityisopetuksen resurssi",
+      "d": "Luo räätälöityjä oppimisresursseja erityistä tukea tarvitseville oppilaille"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Kotiopetuksen opetussuunnittelija",
+      "d": "Suunnittele kattava kotiopetuksen opetussuunnitelma aineittain ja lukukausittain"
+    },
+    "Student Self-Assessment": {
+      "n": "Opiskelijan itsearviointi",
+      "d": "Luo itsearviointityökaluja opiskelijoiden oman oppimisen seurantaan"
+    },
+    "Learning Style Analyzer": {
+      "n": "Oppimistyylianalysaattori",
+      "d": "Tunnista oppimistyylit ja ehdota henkilökohtaisia opiskelustrategioita"
+    },
+    "Literature Review Writer": {
+      "n": "Kirjallisuuskatsauksen kirjoittaja",
+      "d": "Järjestä ja kirjoita kattavia kirjallisuuskatsauksia mistä tahansa aiheesta"
+    },
+    "Research Assistant": {
+      "n": "Tutkimusassistentti",
+      "d": "Saa apua tutkimusmateriaalien etsimiseen, järjestämiseen ja tiivistämiseen"
+    },
+    "Fact Checker Template": {
+      "n": "Faktantarkistuspohja",
+      "d": "Todenna väitteitä ja lausuntoja jäsennellyllä faktantarkistusmenetelmällä"
+    },
+    "Source Comparison Tool": {
+      "n": "Lähdevertailutyökalu",
+      "d": "Vertaa ja vastakohtaista useita lähteitä samasta aiheesta"
+    },
+    "Citation Generator": {
+      "n": "Viittausgeneraattori",
+      "d": "Luo oikein muotoiltuja viittauksia missä tahansa akateemisessa tyylissä"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Kommentoidun bibliografian luoja",
+      "d": "Luo kommentoituja bibliografioita tiivistelmien ja arviointien kanssa"
+    },
+    "Research Methodology Guide": {
+      "n": "Tutkimusmenetelmäopas",
+      "d": "Valitse ja suunnittele oikea tutkimusmenetelmä tutkimukseesi"
+    },
+    "Survey Question Designer": {
+      "n": "Kyselykysymysten suunnittelija",
+      "d": "Suunnittele tehokkaita kyselykysymyksiä luotettavan tutkimusdatan keräämiseen"
+    },
+    "Data Collection Plan": {
+      "n": "Tiedonkeruusuunnitelma",
+      "d": "Luo jäsennelty suunnitelma tutkimusdatan keräämiseen"
+    },
+    "Thesis Statement Generator": {
+      "n": "Tutkimuskysymyksen muotoilija",
+      "d": "Muotoile vahvoja tutkimuskysymyksiä tutkielmiin ja väitöskirjoihin"
+    },
+    "Research Proposal Writer": {
+      "n": "Tutkimusehdotuksen kirjoittaja",
+      "d": "Kirjoita vakuuttavia tutkimusehdotuksia akateemiseen tai rahoitusarviointiin"
+    },
+    "Systematic Review Guide": {
+      "n": "Systemaattisen katsauksen opas",
+      "d": "Suorita systemaattisia katsauksia vakiintuneiden protokollien mukaisesti"
+    },
+    "Interview Protocol Creator": {
+      "n": "Haastatteluprotokollan luoja",
+      "d": "Suunnittele jäsenneltyjä haastatteluprotokollia laadulliseen tutkimukseen"
+    },
+    "Research Ethics Checklist": {
+      "n": "Tutkimusetiikan tarkistuslista",
+      "d": "Varmista tutkimuksen eettisten ohjeiden ja vaatimusten noudattaminen"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Meta-analyysikehys",
+      "d": "Jäsennä ja suorita meta-analyysejä useista tutkimuksista"
+    },
+    "Case Study Template": {
+      "n": "Tapaustutkimuspohja",
+      "d": "Jäsennä ja kirjoita yksityiskohtaisia tapaustutkimuksia tutkimukseen tai liiketoimintaan"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Laadullisen analyysin opas",
+      "d": "Ohjaa laadullista data-analyysiä koodauksen ja temaattisten lähestymistapojen avulla"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Määrällisen analyysin opas",
+      "d": "Ohjaa määrällistä data-analyysiä asianmukaisilla tilastollisilla menetelmillä"
+    },
+    "Research Poster Creator": {
+      "n": "Tutkimusjulisteen luoja",
+      "d": "Suunnittele ja taita tutkimusjulisteita konferensseihin ja esityksiin"
+    },
+    "Research Grant Writer": {
+      "n": "Tutkimusapurahahakemuksen kirjoittaja",
+      "d": "Kirjoita jäsenneltyjä apurahahakemuksia tutkimusrahoitukseen"
+    },
+    "Chemistry Tutor": {
+      "n": "Kemian tutoropettaja",
+      "d": "Saa henkilökohtaista kemian opetusta selityksillä ja harjoitustehtävillä"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Kemiallisten yhtälöiden tasapainottaja",
+      "d": "Tasapainota kemiallisia yhtälöitä vaiheittaisilla selityksillä"
+    },
+    "Lab Safety Checklist": {
+      "n": "Laboratorioturvallisuuden tarkistuslista",
+      "d": "Luo kattavia laboratorioturvallisuustarkistuslistoja kemian kokeisiin"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Orgaanisen kemian apu",
+      "d": "Opiskele orgaanisia reaktioita, mekanismeja ja nimistöä"
+    },
+    "Periodic Table Explorer": {
+      "n": "Jaksollisen järjestelmän tutkija",
+      "d": "Tutki alkuaineiden ominaisuuksia, trendejä ja suhteita jaksollisessa järjestelmässä"
+    },
+    "Stoichiometry Solver": {
+      "n": "Stoikiometrian ratkaisija",
+      "d": "Ratkaise stoikiometriatehtäviä yksityiskohtaisilla moolilaskuilla"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Kemiallisten sidosten opas",
+      "d": "Ymmärrä ionisia, kovalenttisia ja metallisia sidoksia visuaalisilla selityksillä"
+    },
+    "Acid-Base Calculator": {
+      "n": "Happo-emäslaskuri",
+      "d": "Laske pH, pOH, Ka, Kb ja ratkaise happo-emästasapainotehtäviä"
+    },
+    "Solution Preparation Guide": {
+      "n": "Liuosten valmistusopas",
+      "d": "Laske ja valmista kemiallisia liuoksia oikeilla pitoisuuksilla"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Spektroskopian tulkitsija",
+      "d": "Tulkitse IR-, NMR- ja massaspektrejä yhdisteiden tunnistamiseen"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Kemian laboratoriopäiväkirja",
+      "d": "Luo jäsenneltyjä laboratoriopäiväkirjamerkintöjä kemian kokeisiin"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Reaktiomekanismin apu",
+      "d": "Piirrä ja ymmärrä reaktiomekanismeja vaihe vaiheelta"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Termokemian laskuri",
+      "d": "Laske entalpia, entropia ja Gibbsin vapaaenergia kemiallisille reaktioille"
+    },
+    "Electrochemistry Guide": {
+      "n": "Sähkökemian opas",
+      "d": "Ymmärrä sähkökemiallisia kennoja, elektrodipotentiaaleja ja elektrolyysiä"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Polymeerikemian opas",
+      "d": "Opiskele polymeerityyppejä, synteesimekanismeja ja ominaisuuksia"
+    },
+    "Biology Tutor": {
+      "n": "Biologian tutoropettaja",
+      "d": "Saa henkilökohtaista biologian opetusta selkeillä selityksillä ja esimerkeillä"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Solubiologian opas",
+      "d": "Opiskele solujen rakenteita, toimintoja ja prosesseja perusteellisesti"
+    },
+    "Genetics Problem Solver": {
+      "n": "Genetiikan tehtävien ratkaisija",
+      "d": "Ratkaise genetiikan tehtäviä mukaan lukien Punnettin ruudukot ja sukupuuanalyysi"
+    },
+    "Ecology Study Helper": {
+      "n": "Ekologian opiskeluapu",
+      "d": "Opiskele ekosysteemejä, ravintoverkoja, populaatiodynamiikkaa ja ekologisia suhteita"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Anatomian ja fysiologian opas",
+      "d": "Opiskele ihmiskehon elinjärjestelmiä yksityiskohtaisilla anatomisilla selityksillä"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Mikrobiologian laboratorio-opas",
+      "d": "Ohjaa mikrobiologian laboratoriotekniikoita mukaan lukien värjäys, viljely ja tunnistus"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Evoluution käsitekartoittaja",
+      "d": "Kartoita evoluutiokäsitteitä mukaan lukien luonnonvalinta, lajiutuminen ja fylogenetiikka"
+    },
+    "Plant Biology Helper": {
+      "n": "Kasvibiologian apu",
+      "d": "Opiskele kasvien anatomiaa, fysiologiaa ja ekologista roolia"
+    },
+    "Molecular Biology Guide": {
+      "n": "Molekyylibiologian opas",
+      "d": "Ymmärrä DNA:n replikaatio, transkriptio, translaatio ja geenien säätely"
+    },
+    "Bioinformatics Helper": {
+      "n": "Bioinformatiikan apu",
+      "d": "Saa apua sekvenssianalyysiin, tietokantahakuihin ja laskennalliseen biologiaan"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Neurotieteen opas",
+      "d": "Opiskele hermostoa, aivojen toimintaa ja hermoratoja"
+    },
+    "Marine Biology Explorer": {
+      "n": "Meribiologian tutkija",
+      "d": "Tutki meriekosysteemejä, eliöitä ja meritiedettä"
+    },
+    "Immunology Study Guide": {
+      "n": "Immunologian opas",
+      "d": "Opiskele immuunijärjestelmää, immuunivasteita ja immunologisia häiriöitä"
+    },
+    "Biotechnology Overview": {
+      "n": "Biotekniikan yleiskatsaus",
+      "d": "Tutki biotekniikan sovelluksia mukaan lukien geenitekniikka ja CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Suojelubiologian suunnittelija",
+      "d": "Suunnittele suojelustrategioita lajien ja elinympäristöjen säilyttämiseen"
+    },
+    "Physics Problem Solver": {
+      "n": "Fysiikan tehtävien ratkaisija",
+      "d": "Ratkaise fysiikan tehtäviä yksityiskohtaisilla vaiheittaisilla ratkaisuilla"
+    },
+    "Mechanics Helper": {
+      "n": "Mekaniikan apu",
+      "d": "Opiskele ja ratkaise klassisen mekaniikan tehtäviä mukaan lukien kinematiikka ja dynamiikka"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Sähkön ja magnetismin opas",
+      "d": "Ymmärrä sähkökenttiä, virtapiirejä ja sähkömagneettisia ilmiöitä"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Termodynamiikan tutoropettaja",
+      "d": "Opiskele termodynamiikan lakeja, prosesseja ja lämmönsiirtotehtäviä"
+    },
+    "Optics & Waves Guide": {
+      "n": "Optiikan ja aaltojen opas",
+      "d": "Opiskele aaltoilmiöitä, optiikkaa ja valon käyttäytymistä"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Kvanttifysiikan selittäjä",
+      "d": "Ymmärrä kvanttimekaniikan käsitteitä selkeillä selityksillä ja esimerkeillä"
+    },
+    "Astrophysics Explorer": {
+      "n": "Astrofysiikan tutkija",
+      "d": "Tutki tähtien kehitystä, kosmologiaa ja taivaanmekaniikkaa"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Ydinfysiikan opas",
+      "d": "Opiskele ydinreaktioita, radioaktiivisuutta ja ydinenergiaa"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Virtausdynamiikan apu",
+      "d": "Ratkaise virtausmekaniikan tehtäviä mukaan lukien Bernoullin ja Navier-Stokesin sovellukset"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Klassisen mekaniikan tutoropettaja",
+      "d": "Syvenny Lagrangen ja Hamiltonin mekaniikkaan ja edistyneeseen dynamiikkaan"
+    },
+    "Relativity Concept Guide": {
+      "n": "Suhteellisuusteorian opas",
+      "d": "Ymmärrä erityinen ja yleinen suhteellisuusteoria ajatuskokeiden ja matematiikan avulla"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Fysiikan laboratorioraportin apu",
+      "d": "Jäsennä ja kirjoita fysiikan laboratorioraportteja asianmukaisella data-analyysillä"
+    },
+    "Math Proof Writer": {
+      "n": "Matemaattisen todistuksen kirjoittaja",
+      "d": "Kirjoita selkeitä ja täsmällisiä matemaattisia todistuksia loogisella rakenteella"
+    },
+    "Calculus Problem Solver": {
+      "n": "Analyysin tehtävien ratkaisija",
+      "d": "Ratkaise analyysin tehtäviä mukaan lukien raja-arvot, derivaatat ja integraalit"
+    },
+    "Statistics Helper": {
+      "n": "Tilastotieteen apu",
+      "d": "Ratkaise tilastotehtäviä ja tulkitse tilastollisia tuloksia"
+    },
+    "Linear Algebra Guide": {
+      "n": "Lineaarialgebran opas",
+      "d": "Opiskele vektoreita, matriiseja, muunnoksia ja ominaisarvoja"
+    },
+    "Probability Calculator": {
+      "n": "Todennäköisyyslaskuri",
+      "d": "Laske todennäköisyyksiä ja ratkaise todennäköisyysjakaumatehtäviä"
+    },
+    "Geometry Tutor": {
+      "n": "Geometrian tutoropettaja",
+      "d": "Opiskele geometrisia käsitteitä, lauseita ja ratkaise geometriatehtäviä"
+    },
+    "Trigonometry Helper": {
+      "n": "Trigonometrian apu",
+      "d": "Ratkaise trigonometrisia yhtälöitä, identiteettejä ja sovelluksia"
+    },
+    "Number Theory Explorer": {
+      "n": "Lukuteorian tutkija",
+      "d": "Tutki alkulukuja, jaollisuutta, modulaariaritmetiikkaa ja kryptografisia sovelluksia"
+    },
+    "Discrete Math Guide": {
+      "n": "Diskreetin matematiikan opas",
+      "d": "Opiskele kombinatoriikkaa, graafiiteoriaa, logiikkaa ja joukko-oppia"
+    },
+    "Differential Equations Solver": {
+      "n": "Differentiaaliyhtälöiden ratkaisija",
+      "d": "Ratkaise tavallisia ja osittaisia differentiaaliyhtälöitä yksityiskohtaisilla menetelmillä"
+    },
+    "Math Word Problem Solver": {
+      "n": "Matematiikan sanallisten tehtävien ratkaisija",
+      "d": "Muotoile ja ratkaise tosielämän matemaattisia sanallisia tehtäviä vaihe vaiheelta"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Matemaattisen mallinnuksen opas",
+      "d": "Rakenna matemaattisia malleja tosielämän ilmiöille ja sovelluksille"
+    },
+    "SQL Query Generator": {
+      "n": "SQL-kyselyjen luoja",
+      "d": "Luo ja optimoi SQL-kyselyitä tiedon hakuun ja analyysiin"
+    },
+    "Python Data Analysis": {
+      "n": "Python-data-analyysi",
+      "d": "Kirjoita Python-koodia data-analyysiin käyttäen pandasia, NumPyä ja muita kirjastoja"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Datan puhdistuksen tarkistuslista",
+      "d": "Luo kattavia tarkistuslistoja datan puhdistukseen ja esikäsittelyyn"
+    },
+    "Data Visualization Planner": {
+      "n": "Datavisualisoinnin suunnittelija",
+      "d": "Valitse oikeat kaaviot ja suunnittele tehokkaita datavisualisointeja"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Koneoppimismallin valitsin",
+      "d": "Valitse paras koneoppimismalli ongelmallesi ja datasi ominaisuuksille"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B-testilaskuri",
+      "d": "Suunnittele ja analysoi A/B-testejä tilastollisen merkitsevyyden laskennalla"
+    },
+    "Dashboard Design Guide": {
+      "n": "Mittaristopaneelin suunnitteluopas",
+      "d": "Suunnittele tehokkaita mittaristopaneeleja oikeilla KPI-mittareilla ja asettelulla"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL-putken suunnittelija",
+      "d": "Suunnittele ETL-putkia datan integrointiin ja käsittelyyn"
+    },
+    "Feature Engineering Guide": {
+      "n": "Piirre-engineering-opas",
+      "d": "Luo tehokkaita piirteitä koneoppimismalleihin"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Dataputkiarkkitehtuuri",
+      "d": "Suunnittele skaalautuvia dataputkiarkkitehtuureja analytiikkaan ja koneoppimiseen"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Eksploratiivinen data-analyysi",
+      "d": "Suorita perusteellinen EDA jäsennellyllä analyysillä ja visualisointisuunnitelmilla"
+    },
+    "Statistical Test Selector": {
+      "n": "Tilastollisen testin valitsin",
+      "d": "Valitse ja sovella oikea tilastollinen testi dataasi ja hypoteesiisi"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Aikasarja-analyysin opas",
+      "d": "Analysoi aikasarjadataa ennustamis- ja trendintunnistusmenetelmillä"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Luonnollisen kielen käsittelyn aloitusopas",
+      "d": "Aloita NLP-tehtävät mukaan lukien tekstin luokittelu ja sentimenttianalyysi"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Konenäköprojektin suunnittelija",
+      "d": "Suunnittele konenäköprojekteja datan keruusta mallin käyttöönottoon"
+    },
+    "Technical Requirements Document": {
+      "n": "Teknisten vaatimusten dokumentti",
+      "d": "Luo yksityiskohtaisia teknisiä vaatimusdokumentteja insinööriprojekteihin"
+    },
+    "Engineering Design Review": {
+      "n": "Suunnittelun katselmointi",
+      "d": "Valmistele jäsenneltyjä suunnittelukatselmointidokumentteja insinööriprojekteihin"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Vikamuotoanalyysi (FMEA)",
+      "d": "Suorita järjestelmällinen vikamuoto- ja vaikutusanalyysi tuotteille tai prosesseille"
+    },
+    "Project Specification Writer": {
+      "n": "Projektispesifikaation kirjoittaja",
+      "d": "Kirjoita selkeät ja kattavat projektispesifikaatiot insinöörityöhön"
+    },
+    "CAD Project Planner": {
+      "n": "CAD-projektin suunnittelija",
+      "d": "Suunnittele ja järjestele CAD-mallinnusprojekteja asianmukaisella dokumentaatiolla"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Valmistusprosessiopas",
+      "d": "Valitse ja suunnittele valmistusprosesseja tuotekehitykseen"
+    },
+    "Quality Control Checklist": {
+      "n": "Laadunvalvonnan tarkistuslista",
+      "d": "Luo laadunvalvonnan tarkistuslistoja ja tarkastussuunnitelmia valmistukseen"
+    },
+    "Engineering Change Request": {
+      "n": "Suunnittelumuutospyyntö",
+      "d": "Dokumentoi ja hallinnoi suunnittelumuutospyyntöjä vaikutusanalyysillä"
+    },
+    "Structural Analysis Guide": {
+      "n": "Rakennelaskennan opas",
+      "d": "Ohjaa rakennelaskentaa ja menetelmiä insinööriprojekteissa"
+    },
+    "Materials Selection Guide": {
+      "n": "Materiaalivalintaopas",
+      "d": "Valitse optimaaliset materiaalit mekaanisten, termisten ja kemiallisten vaatimusten perusteella"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Midjourney-kehotteen luoja",
+      "d": "Muotoile yksityiskohtaisia Midjourney-kehottteita tyylillä, valaistuksella ja sommitteluparametreilla"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E-kehotteen rakentaja",
+      "d": "Rakenna optimoituja DALL-E-kehotteita selkeillä kuvauksilla ja taiteellisella ohjauksella"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Stable Diffusion -kehotteen kirjoittaja",
+      "d": "Luo Stable Diffusion -kehotteita positiivisella ja negatiivisella kehotesuunnittelulla"
+    },
+    "Product Photography Prompt": {
+      "n": "Tuotevalokuvauskehote",
+      "d": "Luo tekoälykehottteita upeaan tuotevalokuvaukseen studiolaatuisilla tuloksilla"
+    },
+    "Landscape Art Prompt": {
+      "n": "Maisemataidekehote",
+      "d": "Luo henkeäsalpaavia maisemataidekehotteita ympäristö- ja tunnelmatiedoilla"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Muotovalokuvauskehote",
+      "d": "Luo tekoälyn muotokuvauskehottteita valaistuksen, ilmeen ja sommittelun ohjauksella"
+    },
+    "Food Photography Prompt": {
+      "n": "Ruokavalokuvauskehote",
+      "d": "Muotoile houkuttelevia ruokavalokuvauskehottteita stailaus- ja asetelmatiedoilla"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Arkkitehtuurivisualisointikehote",
+      "d": "Luo arkkitehtuurivisualisointikehottteita rakennuksille ja sisätiloille"
+    },
+    "Fashion Design Prompt": {
+      "n": "Muotisuunnittelukehote",
+      "d": "Luo muotisuunnittelukonsepteja kangastiedoilla, siluetilla ja stailauksella"
+    },
+    "Comic Art Prompt": {
+      "n": "Sarjakuvataidekehote",
+      "d": "Luo sarjakuvatyylisiä taidekehottteita ruutusommittelulla ja hahmojen toiminnalla"
+    },
+    "Abstract Art Prompt": {
+      "n": "Abstraktin taiteen kehote",
+      "d": "Luo abstraktin taiteen kehottteita väriteorialla, tekstuurilla ja tunneilmaisulla"
+    },
+    "Icon Design Brief": {
+      "n": "Ikonien suunnittelutoimeksianto",
+      "d": "Suunnittele selkeitä ikonisarjoja yhtenäisellä tyylillä ja visuaalisella kielellä"
+    },
+    "Infographic Design Brief": {
+      "n": "Infografiikan suunnittelutoimeksianto",
+      "d": "Suunnittele infografiikan asetteluja datavisualisoinnilla ja visuaalisella hierarkialla"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Somegrafiikkakehote",
+      "d": "Luo huomiota herättäviä somegrafiikkoja mille tahansa alustalle"
+    },
+    "Meme Creator Prompt": {
+      "n": "Meemien luontikehote",
+      "d": "Luo meemikonsepteja formaattivalinnalla, kuvateksteillä ja viraalipotentiaalilla"
+    },
+    "AI Avatar Prompt": {
+      "n": "Tekoälyavatar-kehote",
+      "d": "Luo ainutlaatuisia tekoälyavatarsuunnitelmia profiileihin, pelaamiseen ja virtuaali-identiteetteihin"
+    },
+    "Song Lyrics Writer": {
+      "n": "Laulun sanoittaja",
+      "d": "Kirjoita alkuperäisiä laulunsanoja säkeistöillä, kertosäkeellä ja sillalla missä tahansa genressä"
+    },
+    "Chord Progression Generator": {
+      "n": "Sointukierron luoja",
+      "d": "Luo sointukiertoja musiikkiteorian ohjauksella mihin tahansa genreen ja tunnelmaan"
+    },
+    "Beat Ideas Creator": {
+      "n": "Biittikonseptien luoja",
+      "d": "Luo biittikonsepteja tempolla, rumpukuvioilla ja soitinideoilla"
+    },
+    "Song Structure Builder": {
+      "n": "Kappaleen rakenteen suunnittelija",
+      "d": "Suunnittele kappaleiden sovituksia osiojärjestyksellä, dynamiikalla ja siirtymillä"
+    },
+    "Rap Verse Writer": {
+      "n": "Räp-säkeistön kirjoittaja",
+      "d": "Kirjoita iskevä räp-säkeistöjä flow-kuvioilla, riimikaavoilla ja sanaleikillä"
+    },
+    "Country Song Writer": {
+      "n": "Country-kappaleen kirjoittaja",
+      "d": "Kirjoita aitoja country-kappaleita tarinankehrronnalla, kuvastolla ja perinteisellä soundilla"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Pop-kappaleen koukun luoja",
+      "d": "Muotoile tarttuvia pop-koukkuja ja kertosäemelodiioita, jotka jäävät kuulijan päähän"
+    },
+    "Rock Ballad Writer": {
+      "n": "Rockballadin kirjoittaja",
+      "d": "Kirjoita tunteikkaita rockballadeja voimakkailla nousuilla ja yhteislaulukelpoisi kertosäkeillä"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Sovitusopas",
+      "d": "Suunnittele kokonaisia sovituksia soitinnuksella, äänityksellä ja dynamiikalla"
+    },
+    "Band Name Generator": {
+      "n": "Bändinimen luoja",
+      "d": "Luo luovia bändinimiä genren, tunnelman ja kuvastomieltymysten perusteella"
+    },
+    "Music Video Concept": {
+      "n": "Musiikkivideokonsepti",
+      "d": "Kehitä luovia musiikkivideokonsepteja kerronnalla, visuaaleilla ja koreografialla"
+    },
+    "Mixing Checklist": {
+      "n": "Miksauksen tarkistuslista",
+      "d": "Kattava miksauksen tarkistuslista EQ:sta, kompressiosta, efekteistä ja balanssista"
+    },
+    "Film Score Brief": {
+      "n": "Elokuvamusiikin toimeksianto",
+      "d": "Luo yksityiskohtaisia elokuvamusiikin toimeksiantoja tunnelmalla, soitinnuksella ja ajoitusvihjeillä"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts -käsikirjoitus",
+      "d": "Kirjoita mukaansatempaavia YouTube Shorts -käsikirjoituksia 60 sekunnin pystyvideoon"
+    },
+    "Video Storyboard Creator": {
+      "n": "Videokuvakäsikirjoituksen luoja",
+      "d": "Suunnittele visuaalisia kuvakäsikirjoituksia kohtauskuvauksilla, kamerakulmilla ja siirtymillä"
+    },
+    "Documentary Outline": {
+      "n": "Dokumenttirunko",
+      "d": "Jäsennä vakuuttavia dokumentteja kerronnallisella kaarella, haastatteluilla ja b-roll-suunnitelmilla"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlogijakson suunnittelija",
+      "d": "Suunnittele mukaansatempaavia vlogijaksoja paikoilla, puheenaiheilla ja visuaalisella vaihtelulla"
+    },
+    "Screenwriting Helper": {
+      "n": "Käsikirjoitusapu",
+      "d": "Kehitä käsikirjoituksia oikealla muotoilulla, dialogilla ja ohjaushuomautuksilla"
+    },
+    "Short Film Script": {
+      "n": "Lyhytelokuvan käsikirjoitus",
+      "d": "Kirjoita kokonaisia lyhytelokuvakäsikirjoituksia visuaalisella kerronnalla ja tiiviillä narratiivilla"
+    },
+    "Animation Script Writer": {
+      "n": "Animaatiokäsikirjoittaja",
+      "d": "Kirjoita animaatiokäsikirjoituksia visuaalisilla vitseillä, hahmojen toiminnalla ja ajoituksella"
+    },
+    "Video Editing Brief": {
+      "n": "Videoeditonnin toimeksianto",
+      "d": "Luo yksityiskohtaisia videoeditoinnin toimeksiantoja rytmityksellä, efekteillä ja tyyliohjeilla"
+    },
+    "Livestream Run Sheet": {
+      "n": "Suoralähetyksen ajokaavio",
+      "d": "Suunnittele suoralähetyksiä aikastetuilla segmenteillä, puheenaiheilla ja osallistamistrigereillä"
+    },
+    "Tutorial Video Script": {
+      "n": "Opasvideon käsikirjoitus",
+      "d": "Kirjoita selkeitä opasvideoiden käsikirjoituksia vaiheittaisilla ohjeilla ja visuaaleilla"
+    },
+    "Explainer Video Script": {
+      "n": "Selitysvideon käsikirjoitus",
+      "d": "Kirjoita selkeitä selitysvideoiden käsikirjoituksia, jotka yksinkertaistavat monimutkaisia aiheita visuaalisesti"
+    },
+    "Video SEO Optimizer": {
+      "n": "Video-SEO-optimoija",
+      "d": "Optimoi videometatiedot otsikoilla, kuvauksilla, tunnisteilla ja pikkukuvastrategioilla"
+    },
+    "Novel Outline Creator": {
+      "n": "Romaanin jäsennyksen luoja",
+      "d": "Rakenna kattavia romaanijäsennyksiä juonirakenteella, luvuilla ja hahmokaarilla"
+    },
+    "Short Story Writer": {
+      "n": "Novellin kirjoittaja",
+      "d": "Kirjoita mukaansatempaavia novelleja elävillä hahmoilla ja tyydyttävillä loppuratkaisuilla"
+    },
+    "Poetry Generator": {
+      "n": "Runojen luoja",
+      "d": "Luo alkuperäistä runoutta eri muodoissa kuvastolla, runomitalla ja tunteella"
+    },
+    "Book Proposal Template": {
+      "n": "Kirjaehdotuspohja",
+      "d": "Luo ammattimaisia kirjaehdotuksia markkina-analyysillä ja lukutiivistelmillä"
+    },
+    "Memoir Outline": {
+      "n": "Muistelmien runko",
+      "d": "Jäsennä henkilökohtaisia muistelmia temaattisilla luvuilla ja heijastavalla kerronnalla"
+    },
+    "Children's Book Creator": {
+      "n": "Lastenkirjan luoja",
+      "d": "Kirjoita ikätasolle sopivia lastenkirjoja mukaansatempaavilla tarinoilla ja kuvitusohjeilla"
+    },
+    "Screenplay Outline": {
+      "n": "Elokuvakäsikirjoituksen runko",
+      "d": "Jäsennä elokuvakäsikirjoituksia kolminäytöksisellä rakenteella, kohtausjaottelulla ja dialogimuistiinpanoilla"
+    },
+    "Play Script Writer": {
+      "n": "Näytelmäkäsikirjoittaja",
+      "d": "Kirjoita näytelmäkäsikirjoituksia näyttämöohjeilla, dialogilla ja kohtausrakenteella"
+    },
+    "Comic Book Script": {
+      "n": "Sarjakuvakäsikirjoitus",
+      "d": "Kirjoita sarjakuvakäsikirjoituksia ruutukuvauksilla, dialogilla ja rytmityksellä"
+    },
+    "Fan Fiction Creator": {
+      "n": "Fanifiktion luoja",
+      "d": "Kirjoita fanifiktiota uskollisilla hahmoäänillä ja luovilla uusilla juonikuvioilla"
+    },
+    "Writing Prompt Generator": {
+      "n": "Kirjoituskehotteen luoja",
+      "d": "Luo luovia kirjoituskehottteita genrellä, rajoitteilla ja tarinalähtökohdilla"
+    },
+    "Dialogue Writer": {
+      "n": "Dialogin kirjoittaja",
+      "d": "Muotoile luonnolliselta kuulostavaa dialogia, joka paljastaa hahmoa ja vie juonta eteenpäin"
+    },
+    "Plot Twist Generator": {
+      "n": "Juonenkäänteen luoja",
+      "d": "Luo yllättäviä mutta loogisia juonenkäänteitä, jotka asettavat tarinan uuteen valoon"
+    },
+    "Query Letter Writer": {
+      "n": "Kyselykirjeen kirjoittaja",
+      "d": "Kirjoita vakuuttavia kyselykirjeitä kirjallisuusagenteille koukulla ja tiivistelmällä"
+    },
+    "Book Description Writer": {
+      "n": "Kirjakuvauksen kirjoittaja",
+      "d": "Kirjoita vakuuttavia kirjakuvauksia, jotka koukuttavat lukijoita ja lisäävät myyntiä"
+    },
+    "Ghostwriting Brief": {
+      "n": "Haamukirjoituksen toimeksianto",
+      "d": "Luo yksityiskohtaisia haamukirjoitustoimeksiantoja äänellä, tyylillä ja sisältövaatimuksilla"
+    },
+    "Technical Writing Guide": {
+      "n": "Teknisen kirjoittamisen opas",
+      "d": "Kirjoita selkeää teknistä dokumentaatiota jäsennellyllä muotoilulla ja tarkkuudella"
+    },
+    "Grant Proposal Writer": {
+      "n": "Apurahahakemuksen kirjoittaja",
+      "d": "Kirjoita vakuuttavia apurahahakemuksia projektikuvauksilla ja budjetin perusteluilla"
+    },
+    "White Paper Outline": {
+      "n": "Valkoisen kirjan runko",
+      "d": "Jäsennä arvovaltaisia valkoisia kirjoja tutkimuksella, analyysillä ja suosituksilla"
+    },
+    "Copywriting Formula": {
+      "n": "Mainostekstin kaava",
+      "d": "Sovella todistettuja mainostekstikaavoja kuten AIDA, PAS ja BAB mihin tahansa tuotteeseen tai palveluun"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram-sisältösuunnittelija",
+      "d": "Suunnittele viikon Instagram-sisältö julkaisuilla, tarinoilla, keloilla ja kuvateksteillä"
+    },
+    "X Thread Creator": {
+      "n": "X-ketjun luoja",
+      "d": "Kirjoita mukaansatempaavia X-ketjuja, jotka rakentavat auktoriteettia ja lisäävät sitoutumista"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit-julkaisun kirjoittaja",
+      "d": "Kirjoita Reddit-julkaisuja optimoituna tietyille alayhteisöille yhteisönormit huomioiden"
+    },
+    "Viral Hook Generator": {
+      "n": "Viraalikoukun luoja",
+      "d": "Luo huomiota herättäviä koukkuja somesisältöön eri alustoilla"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Hashtagistrategiatyökalu",
+      "d": "Tutki ja järjestele hashtagistrategioita maksimaalisen löydettävyyden saavuttamiseksi"
+    },
+    "Engagement Response Generator": {
+      "n": "Sitoutumisvasteen luoja",
+      "d": "Luo harkittuja vastauksia kommentteihin, yksityisviesteihin ja mainintoihin suuressa mittakaavassa"
+    },
+    "LinkedIn Article Writer": {
+      "n": "LinkedIn-artikkelin kirjoittaja",
+      "d": "Kirjoita ajatusjohtajuutta ilmentäviä LinkedIn-artikkeleita, jotka vakiinnuttavat ammatillista auktoriteettia"
+    },
+    "Episode Show Notes": {
+      "n": "Jakson muistiinpanot",
+      "d": "Kirjoita yksityiskohtaiset jaksomuistiinpanot aikamerkeillä, linkeillä ja tärkeimmillä oivalluksilla"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Podcastin editoinnin tarkistuslista",
+      "d": "Standardoi podcastin editointityönkulku laaduntarkistuspisteillä ja viimeistelyaskeleilla"
+    },
+    "Prompt Improver": {
+      "n": "Kehotteen parantaja",
+      "d": "Hio ja optimoi mitä tahansa kehotetta parempiin tekoälytuotoksiin jäsennellyillä tekniikoilla"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Ajatusketjun järjestäjä",
+      "d": "Rakenna ajatusketjukehottteita, jotka ohjaavat tekoälyä vaiheittaiseen päättelyyn"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG-kehotteen luoja",
+      "d": "Luo haun tehostamia generointikehottteita konteksti-ikkunan optimoinnilla"
+    },
+    "Prompt Translator": {
+      "n": "Kehotteen kääntäjä",
+      "d": "Käännä kehottteita eri tekoälymallien välillä säilyttäen tarkoitus ja laatu"
+    },
+    "Prompt Evaluator": {
+      "n": "Kehotteen arvioija",
+      "d": "Arvioi ja pisteytä kehottteita useilla laatuulottuvuuksilla ja parannusvinkein"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Muutaman esimerkin luoja",
+      "d": "Luo laadukkaita muutaman esimerkin malleja kontekstissa oppimisen kehottteisiin"
+    },
+    "System Prompt Writer": {
+      "n": "Järjestelmäkehotteen kirjoittaja",
+      "d": "Kirjoita tehokkaita järjestelmäkehottteita, jotka määrittelevät tekoälyn käytöksen, rajoitteet ja tulostyylin"
+    },
+    "AI Guardrails Designer": {
+      "n": "Tekoälyn turvaraiteiden suunnittelija",
+      "d": "Suunnittele turvaraiteita ja sisältökäytäntöjä tekoälysovelluksiin"
+    },
+    "AI Use Case Identifier": {
+      "n": "Tekoälyn käyttötapausten tunnistaja",
+      "d": "Tunnista ja arvioi mahdollisia tekoälyn käyttötapauksia yrityksille ja työnkuluille"
+    },
+    "Model Comparison Guide": {
+      "n": "Mallien vertailuopas",
+      "d": "Vertaile tekoälymalleja ominaisuuksien, hinnoittelun ja käyttötapaussopivuuden mukaan"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM-hienosäätödatan luoja",
+      "d": "Luo ja jäsennä koulutusdataa LLM-hienosäätöprojekteihin"
+    },
+    "Debugger Assistant": {
+      "n": "Virheenkorjausassistentti",
+      "d": "Selvitä koodivirheitä järjestelmällisesti juurisyyanalyysillä ja korjausehdotuksilla"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD-putken suunnittelija",
+      "d": "Suunnittele CI/CD-putkia rakennus-, testaus- ja käyttöönottovaiheiden konfiguraatioilla"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker-konfiguraatio-opas",
+      "d": "Luo Dockerfile- ja Compose-konfiguraatioita parhaiden käytäntöjen mukaisesti"
+    },
+    "Git Workflow Planner": {
+      "n": "Git-työnkulun suunnittelija",
+      "d": "Suunnittele Git-haarautumisstrategioita ja yhteistyötyönkulkuja kehitystiimeille"
+    },
+    "Code Migration Guide": {
+      "n": "Koodimigraation opas",
+      "d": "Suunnittele ja toteuta koodimigraatioita kielten, kehysten tai versioiden välillä"
+    },
+    "Database Schema Designer": {
+      "n": "Tietokantaskeeman suunnittelija",
+      "d": "Suunnittele tietokantaskeemoja tauluilla, relaatioilla, indekseillä ja rajoitteilla"
+    },
+    "Performance Optimization Guide": {
+      "n": "Suorituskyvyn optimointiopas",
+      "d": "Tunnista ja ratkaise suorituskyvyn pullonkauloja profiloinnin ja optimointistrategioiden avulla"
+    },
+    "Microservices Architecture": {
+      "n": "Mikropalveluarkkitehtuuri",
+      "d": "Suunnittele mikropalveluarkkitehtuureja palvelurajoilla, kommunikaatiolla ja käyttöönotolla"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL-skeeman rakentaja",
+      "d": "Suunnittele GraphQL-skeemoja tyypeillä, kyselyillä, mutaatioilla ja tilauksilla"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform-konfiguraatio",
+      "d": "Luo Terraform-konfiguraatioita pilvi-infrastruktuurin provisiointiin"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS-arkkitehtuurin suunnittelija",
+      "d": "Suunnittele AWS-pilvi-arkkitehtuureja palveluvalinnoilla ja kustannusoptimoinnilla"
+    },
+    "Code Documentation Generator": {
+      "n": "Koodidokumentaation luoja",
+      "d": "Luo rivinsisäistä dokumentaatiota, JSDoc-merkintöjä, docstring-tekstejä ja koodikommentteja"
+    },
+    "Technical Interview Prep": {
+      "n": "Teknisen haastattelun valmistelu",
+      "d": "Valmistaudu teknisiin haastatteluihin ongelmanratkaisuilla ja ratkaisukaavoilla"
+    },
+    "Changelog Writer": {
+      "n": "Muutoslokin kirjoittaja",
+      "d": "Kirjoita selkeitä muutoslokeja Keep a Changelog -muodossa semanttisella versioinnilla"
+    },
+    "Error Handling Strategy": {
+      "n": "Virheenkäsittelystrategia",
+      "d": "Suunnittele kattavia virheenkäsittelystrategioita kaavoilla ja käyttäjäviestinnällä"
+    },
+    "Logging Strategy Guide": {
+      "n": "Lokitusstrategiaopas",
+      "d": "Suunnittele sovelluksen lokitusstrategioita tasoilla, muodoilla ja koostamisella"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Seurannan käyttöönotto-opas",
+      "d": "Ota käyttöön sovelluksen seuranta metriikoilla, hälytyksillä ja mittaristopaneeleilla"
+    },
+    "Load Testing Plan": {
+      "n": "Kuormitustestaussuunnitelma",
+      "d": "Suunnittele kuormitustestaussuunnitelmia skenaarioilla, metriikoilla ja hyväksymiskriteereillä"
+    },
+    "Security Audit Checklist": {
+      "n": "Tietoturva-auditoinnin tarkistuslista",
+      "d": "Suorita tietoturva-auditointeja OWASP-pohjaisilla tarkistuslistoilla ja korjausohjeilla"
+    },
+    "Security Checklist Creator": {
+      "n": "Tietoturvatarkistuslistan luoja",
+      "d": "Luo kattavia tietoturvatarkistuslistoja sovelluksellesi ja teknologiapinollesi"
+    },
+    "Penetration Testing Plan": {
+      "n": "Tunkeutumistestaussuunnitelma",
+      "d": "Suunnittele jäsenneltyjä tunkeutumistestejä laajuudella, metodologialla ja raportointipohjilla"
+    },
+    "Secure Coding Guide": {
+      "n": "Turvallisen koodauksen opas",
+      "d": "Luo kielikohtaisia turvallisen koodauksen ohjeistuksia haavoittuvuuksien ehkäisyyn"
+    },
+    "Incident Response Plan": {
+      "n": "Poikkeamien vastaussuunnitelma",
+      "d": "Suunnittele poikkeamien vastaussuunnitelmia havaitsemis-, rajoittamis- ja palautumismenettelyillä"
+    },
+    "Security Policy Writer": {
+      "n": "Tietoturvakäytännön kirjoittaja",
+      "d": "Kirjoita organisaation tietoturvakäytäntöjä pääsynhallinnasta, tietojenkäsittelystä ja vaatimustenmukaisuudesta"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Haavoittuvuusarvioinnin opas",
+      "d": "Suorita järjestelmällisiä haavoittuvuusarviointeja skannauksella ja priorisoidulla korjaamisella"
+    },
+    "Security Awareness Training": {
+      "n": "Tietoturvatietoisuuskoulutus",
+      "d": "Suunnittele tietoturvatietoisuusohjelmia kaikentasoisille työntekijöille"
+    },
+    "Password Policy Creator": {
+      "n": "Salasanakäytännön luoja",
+      "d": "Luo vankkoja salasanakäytäntöjä monimutkaisuus-, vaihto- ja MFA-vaatimuksilla"
+    },
+    "Data Protection Plan": {
+      "n": "Tietosuojasuunnitelma",
+      "d": "Suunnittele tietosuojastrategioita luokittelusta, salauksesta ja säilyttämisestä"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT-analyysi Pro",
+      "d": "Edistynyt SWOT-analyysi painotetulla pisteityksellä ja toimintasuunnitelmilla"
+    },
+    "Pitch Deck Outline": {
+      "n": "Esityspaketin runko",
+      "d": "Luo vakuuttava sijoittajaesityksen rakenne"
+    },
+    "Business Canvas Creator": {
+      "n": "Liiketoimintakanvaasin luoja",
+      "d": "Luo kattava liiketoimintamallikanvaasi yritykseesi"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Kilpailutietoraportti",
+      "d": "Analysoi kilpailijoita ja tunnista markkina-asemointimahdollisuuksia"
+    },
+    "Strategic Planning Guide": {
+      "n": "Strategisen suunnittelun opas",
+      "d": "Kehitä monivuotinen strategiasuunnitelma tavoitteilla ja virstanpylväillä"
+    },
+    "Annual Report Template": {
+      "n": "Vuosikertomuspohja",
+      "d": "Jäsennä yrityksesi vuosikertomus keskeisillä talous- ja toimintakohokohdilla"
+    },
+    "Board Meeting Agenda": {
+      "n": "Hallituksen kokouksen esityslista",
+      "d": "Ammattimainen hallituksen kokouksen esityslista hallintoparhailla käytännöillä"
+    },
+    "Company Newsletter": {
+      "n": "Yrityksen uutiskirje",
+      "d": "Suunnittele mukaansatempaava sisäinen tai ulkoinen yrityksen uutiskirje"
+    },
+    "Employee Survey Creator": {
+      "n": "Henkilöstökyselyn luoja",
+      "d": "Rakenna tehokkaita henkilöstön sitoutumis- ja tyytyväisyyskyselyjä"
+    },
+    "Team Building Activity Planner": {
+      "n": "Tiimipäivän suunnittelija",
+      "d": "Suunnittele mukaansatempaavia tiiminrakennustapahtumia ja -aktiviteetteja"
+    },
+    "Remote Work Policy": {
+      "n": "Etätyökäytäntö",
+      "d": "Luo kattava etätyökäytäntö organisaatiollesi"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Monimuotoisuus- ja inkluusiosuunnitelma",
+      "d": "Kehitä merkityksellinen monimuotoisuus-, yhdenvertaisuus- ja inkluusiostrategia"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Toimittaja-arviointimatriisi",
+      "d": "Arvioi ja vertaile toimittajia järjestelmällisesti hankintapäätöksiin"
+    },
+    "Process Improvement Plan": {
+      "n": "Prosessien kehittämissuunnitelma",
+      "d": "Tunnista ja toteuta prosessiparannuksia lean-menetelmin"
+    },
+    "Change Management Plan": {
+      "n": "Muutosjohtamissuunnitelma",
+      "d": "Ohjaa organisaatiomuutosta sidosryhmien yhteensovittamisella ja viestinnällä"
+    },
+    "Risk Assessment Template": {
+      "n": "Riskiarviointipohja",
+      "d": "Tunnista, arvioi ja lieventele liiketoimintariskejä järjestelmällisesti"
+    },
+    "Succession Planning Guide": {
+      "n": "Seuraajasuunnittelun opas",
+      "d": "Suunnittele johtajuuden siirtymiä ja osaajien kehityspolkuja"
+    },
+    "Business Continuity Plan": {
+      "n": "Liiketoiminnan jatkuvuussuunnitelma",
+      "d": "Varaudu häiriöihin kattavalla jatkuvuusstrategialla"
+    },
+    "Customer Journey Map": {
+      "n": "Asiakaspolkukartta",
+      "d": "Visualisoi ja optimoi kokonaisvaltainen asiakaskokemus"
+    },
+    "Brand Guidelines Template": {
+      "n": "Brändiohjepohja",
+      "d": "Määrittele brändi-identiteettisi kattavilla tyyli- ja käyttöohjeilla"
+    },
+    "Mission & Vision Statement": {
+      "n": "Missio- ja visiolausunto",
+      "d": "Muotoile inspiroivat missio- ja visiolausunnot organisaatiollesi"
+    },
+    "Company Culture Document": {
+      "n": "Yrityskulttuuridokumentti",
+      "d": "Määrittele ja dokumentoi organisaatiokulttuurisi ja arvosi"
+    },
+    "Organizational Chart Planner": {
+      "n": "Organisaatiokaavion suunnittelija",
+      "d": "Suunnittele organisaatiorakenteesi ja raportointilinjat"
+    },
+    "Department Budget Template": {
+      "n": "Osastobudjetin pohja",
+      "d": "Luo yksityiskohtaisia osastobudjetteja ennustamisella ja seurannalla"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI-mittariston rakentaja",
+      "d": "Suunnittele KPI-mittaristopaneelit datavetoiseen päätöksentekoon"
+    },
+    "Job Description Writer": {
+      "n": "Työpaikkailmoituksen kirjoittaja",
+      "d": "Luo selkeitä ja inklusiivisia työpaikkailmoituksia, jotka houkuttelevat huippuosaajia"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Haastattelupistekortin luoja",
+      "d": "Rakenna jäsenneltyjä haastattelupistekortteja johdonmukaiseen hakija-arviointiin"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Työntekijän perehdytyksen tarkistuslista",
+      "d": "Kattava perehdytyksen tarkistuslista uuden työntekijän onnistumiseen"
+    },
+    "Performance Improvement Plan": {
+      "n": "Suorituskyvyn parantamissuunnitelma",
+      "d": "Luo tukevia suorituskyvyn parantamissuunnitelmia selkeillä virstanpylväillä"
+    },
+    "Exit Interview Guide": {
+      "n": "Lähtöhaastattelun opas",
+      "d": "Suorita oivaltavia lähtöhaastatteluja sitoutumisen parantamiseksi"
+    },
+    "Compensation Analysis": {
+      "n": "Palkitsemisanalyysi",
+      "d": "Analysoi ja vertaile palkkioita markkinakilpailukyvyn varmistamiseksi"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Etuvertailuopas",
+      "d": "Vertaile ja arvioi työntekijöiden etuuspaketteja"
+    },
+    "Team Retrospective": {
+      "n": "Tiimin retrospektiivi",
+      "d": "Fasilitoi tehokkaita tiimiretrospektiivejä jatkuvaan parantamiseen"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Kahdenkeskisen kokouksen pohja",
+      "d": "Jäsennä tuottavia kahdenkeskisiä kokouksia esihenkilön ja alaisen välillä"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Rekrytointiputken suunnittelija",
+      "d": "Suunnittele ja optimoi rekrytointiputkesi kokonaisuudessaan"
+    },
+    "Employee Recognition Program": {
+      "n": "Henkilöstön tunnustusohjelma",
+      "d": "Rakenna merkityksellinen henkilöstön tunnustus- ja palkitsemisohjelma"
+    },
+    "Training Program Designer": {
+      "n": "Koulutusohjelman suunnittelija",
+      "d": "Suunnittele tehokkaita henkilöstön koulutus- ja kehitysohjelmia"
+    },
+    "Workplace Policy Writer": {
+      "n": "Työpaikkakäytäntöjen kirjoittaja",
+      "d": "Laadi selkeitä työpaikkakäytäntöjä keskeisistä organisaation aiheista"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Konfliktinratkaisuopas",
+      "d": "Selvitä työpaikan konfliktitilanteita jäsennellyillä ratkaisukehyksillä"
+    },
+    "Remote Team Handbook": {
+      "n": "Etätiimin käsikirja",
+      "d": "Luo kattava käsikirja hajautetun tiimin toimintaan"
+    },
+    "Career Path Planner": {
+      "n": "Urapolun suunnittelija",
+      "d": "Kartoita urapolkusi konkreettisilla virstanpylväillä"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Palkkaneuvottelun valmistelu",
+      "d": "Valmistele itsevarmat palkkaneuvottelun puheenvuorot ja strategiat"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn-profiilin rakentaja",
+      "d": "Optimoi LinkedIn-profiilisi rekrytoijien ja mahdollisuuksien houkuttelemiseksi"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Portfolion rakentamisopas",
+      "d": "Luo erottuva ammattiportfolio, joka esittelee parhaat työsi"
+    },
+    "Networking Email Templates": {
+      "n": "Verkostoitumissähköpostipohjat",
+      "d": "Kirjoita tehokkaita verkostoitumissähköposteja urakehitykseen ja esittelyihin"
+    },
+    "Career Pivot Guide": {
+      "n": "Uranvaihdon opas",
+      "d": "Selvitä onnistunut uranvaihto jäsennellyllä suunnitelmalla"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Freelancer-hintalaskuri",
+      "d": "Laske ihanteellinen freelancer-hintasi ja hinnoittelustrategia"
+    },
+    "Professional Development Plan": {
+      "n": "Ammatillisen kehityksen suunnitelma",
+      "d": "Luo jäsennelty suunnitelma jatkuvaan ammatilliseen kasvuun"
+    },
+    "Mentorship Program Guide": {
+      "n": "Mentorointiohjelman opas",
+      "d": "Löydä, jäsennä ja maksimoi mentorointisuhteet"
+    },
+    "Side Hustle Validator": {
+      "n": "Sivubisneksen validoija",
+      "d": "Arvioi ja validoi sivubisnesideoiden elinkelpoisuus"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Työ-elämätasapainon arviointi",
+      "d": "Arvioi ja paranna työ-elämätasapainoasi konkreettisilla strategioilla"
+    },
+    "Speaking Proposal Template": {
+      "n": "Puhujakutsuehdotuspohja",
+      "d": "Luo vakuuttavia konferenssi- ja tapahtumapuheehdotuksia"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Konsulttitarjouksen kirjoittaja",
+      "d": "Laadi voittavia konsulttitarjouksia, jotka sulkevat kauppoja"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Osaamisvajeen analysaattori",
+      "d": "Tunnista ja suunnittele kriittisten osaamiskuilujen täyttämistä uralla etenemiseen"
+    },
+    "Career Journal Prompts": {
+      "n": "Urapäiväkirjan kehotteet",
+      "d": "Reflektoi urapolkuasi ohjatuilla päiväkirjaharjoituksilla"
+    },
+    "Informational Interview Guide": {
+      "n": "Tietohaastattelun opas",
+      "d": "Valmistele ja suorita tehokkaita tietohaastatteluja"
+    },
+    "Thank You Note Writer": {
+      "n": "Kiitoskirjeen kirjoittaja",
+      "d": "Kirjoita harkittuja ammattimaisia kiitosviestejä kaikkiin tilanteisiin"
+    },
+    "Resignation Letter Template": {
+      "n": "Irtisanoutumiskirjepohja",
+      "d": "Kirjoita ammattimainen irtisanoutumiskirje myönteisiä suhteita ylläpitäen"
+    },
+    "Meal Prep Planner": {
+      "n": "Aterioiden esivalmistelusuunnitelma",
+      "d": "Suunnittele viikon ateriat ostoslistoilla ja esivalmistusaikatauluilla"
+    },
+    "Habit Tracker Designer": {
+      "n": "Tapaseurannan suunnittelija",
+      "d": "Suunnittele henkilökohtainen tapaseurantajärjestelmä pysyvään muutokseen"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Unenlaadun parantamisopas",
+      "d": "Optimoi unesi laatu näyttöön perustuvilla strategioilla"
+    },
+    "Stress Management Plan": {
+      "n": "Stressinhallintasuunnitelma",
+      "d": "Rakenna henkilökohtainen stressinhallintatyökalupakki ja toimintasuunnitelma"
+    },
+    "Yoga Routine Builder": {
+      "n": "Joogaharjoituksen rakentaja",
+      "d": "Luo räätälöityjä joogaharjoituksia tasollesi ja tavoitteillesi"
+    },
+    "Running Training Plan": {
+      "n": "Juoksuharjoittelusuunnitelma",
+      "d": "Rakenna jäsennelty juoksuharjoittelusuunnitelma mille tahansa matkatavoitteelle"
+    },
+    "Swimming Workout": {
+      "n": "Uintiharjoitus",
+      "d": "Suunnittele tehokkaita uintiharjoituksia kuntoon ja tekniikkaan"
+    },
+    "Strength Training Program": {
+      "n": "Voimaharjoitteluohjelma",
+      "d": "Luo progressiivinen voimaharjoitteluohjelma tavoitteisiisi räätälöitynä"
+    },
+    "Flexibility Routine": {
+      "n": "Liikkuvuusharjoitus",
+      "d": "Paranna liikkuvuutta ja joustavuutta jäsennellyillä venyttelyrutiineilla"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT-harjoituksen luoja",
+      "d": "Suunnittele tehokkaita HIIT-harjoituksia maksimaalisten tulosten saavuttamiseksi"
+    },
+    "Nutrition Label Reader": {
+      "n": "Ravintomerkintöjen lukuopas",
+      "d": "Opi lukemaan ja ymmärtämään ravintomerkintöjä terveellisempiin valintoihin"
+    },
+    "Calorie Counter Guide": {
+      "n": "Kalorilaskuriopas",
+      "d": "Ota käyttöön henkilökohtainen kaloriseuranta makrojaottelulla"
+    },
+    "Hydration Tracker": {
+      "n": "Nesteytyksen seuranta",
+      "d": "Seuraa ja optimoi päivittäistä vedensaantiasi ja nestetasapainoasi"
+    },
+    "Mental Health Check-In": {
+      "n": "Mielenterveyden tarkistus",
+      "d": "Ohjattu mielenterveyden itsearviointi ja hyvinvoinnin seuranta"
+    },
+    "Therapy Session Prep": {
+      "n": "Terapiaistunnon valmistelu",
+      "d": "Valmistaudu terapiaistuntoihin jäsennellyn itsereflektion ja tavoitteiden asettamisen avulla"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Kiitollisuuspäiväkirjan aiheet",
+      "d": "Päivittäiset kiitollisuuspäiväkirjan aiheet henkisen hyvinvoinnin edistämiseksi"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Tietoisuusharjoitusten luoja",
+      "d": "Luo henkilökohtaisia tietoisuus- ja hengitysharjoituksia"
+    },
+    "Supplement Research Guide": {
+      "n": "Ravintolisätutkimusopas",
+      "d": "Tutki ja arvioi ravintolisiä terveystarpeidesi mukaan"
+    },
+    "Allergy Management Plan": {
+      "n": "Allergioiden hallintasuunnitelma",
+      "d": "Luo kattava allergioiden hallinta- ja välttämisstrategia"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Pitkäaikaissairauksien seuranta",
+      "d": "Seuraa oireita, lääkitystä ja laukaisevia tekijöitä pitkäaikaissairauksissa"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Fysioterapiaharjoitusten loki",
+      "d": "Kirjaa ja seuraa fysioterapiaharjoituksia ja kuntoutumisen edistymistä"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonominen työtilan järjestely",
+      "d": "Optimoi työtilasi mukavuuden, terveyden ja tuottavuuden kannalta"
+    },
+    "Digital Detox Planner": {
+      "n": "Digipaaston suunnittelija",
+      "d": "Suunnittele ja toteuta digipaasto henkisen hyvinvoinnin parantamiseksi"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Itsehoitorutiinin rakentaja",
+      "d": "Rakenna kestävä itsehoitorutiini kaikilla hyvinvoinnin osa-alueilla"
+    },
+    "First Aid Guide": {
+      "n": "Ensiapuopas",
+      "d": "Pikaopas ensiapumenetelmiin yleisimmissä hätätilanteissa"
+    },
+    "To-Do List Power Planner": {
+      "n": "Tehtävälistan tehosuunnittelija",
+      "d": "Luo priorisoituja tehtävälistoja aika-arvioiden ja energiatasojen kanssa"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Päiväaikataulun optimoija",
+      "d": "Suunnittele optimoitu päiväaikataulu energiarytmisi mukaan"
+    },
+    "Project Planner Pro": {
+      "n": "Projektisuunnittelija Pro",
+      "d": "Suunnittele projekteja välitavoittein, tuotoksin ja resurssien jaoin"
+    },
+    "Decision Matrix Builder": {
+      "n": "Päätösmatriisin rakentaja",
+      "d": "Tee parempia päätöksiä painotetun kriteeranalyysin avulla"
+    },
+    "Weekly Review Template": {
+      "n": "Viikkokatsauksen pohja",
+      "d": "Tee perusteellisia viikkokatsauksia pysyäksesi tavoitteissasi"
+    },
+    "Morning Routine Designer": {
+      "n": "Aamurutiinin suunnittelija",
+      "d": "Suunnittele energisoiva aamurutiini huippusuoritukseen"
+    },
+    "Evening Routine Creator": {
+      "n": "Iltarutiinin luoja",
+      "d": "Luo rauhoittava iltarutiini parempaan lepoon ja seuraavan päivän valmisteluun"
+    },
+    "Time Blocking Schedule": {
+      "n": "Aikablokkausaikataulu",
+      "d": "Järjestä päiväsi keskittyneillä aikablokeilla maksimaalisen tuottavuuden saavuttamiseksi"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhower-matriisityökalu",
+      "d": "Luokittele tehtävät kiireellisyyden ja tärkeyden mukaan parempaan priorisointiin"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Pomodoro-istunnon suunnittelija",
+      "d": "Suunnittele keskittyneitä työjaksoja Pomodoro-tekniikalla"
+    },
+    "Goal Tracking System": {
+      "n": "Tavoitteiden seurantajärjestelmä",
+      "d": "Perusta kattava tavoitteiden seurantajärjestelmä edistymismittareineen"
+    },
+    "Quarterly Planning Template": {
+      "n": "Neljännesvuosisuunnitelman pohja",
+      "d": "Suunnittele neljännesvuotesi strategisin tavoittein ja toimenpitein"
+    },
+    "Annual Review Template": {
+      "n": "Vuosikatsauksen pohja",
+      "d": "Tee perusteellinen vuosikatsaus saavutuksista ja aseta tulevat tavoitteet"
+    },
+    "Meeting Notes Template": {
+      "n": "Kokousmuistion pohja",
+      "d": "Kirjaa toiminnalliset kokousmuistiot päätöksineen ja jatkotoimenpiteineen"
+    },
+    "Brain Dump Organizer": {
+      "n": "Ajatusvirran jäsentäjä",
+      "d": "Muunna kaoottinen ajatusvirta järjestetyiksi toiminnallisiksi kategorioiksi"
+    },
+    "Delegation Framework": {
+      "n": "Delegointikehys",
+      "d": "Tunnista delegoitavat tehtävät ja luo selkeät delegointitoimeksiannot"
+    },
+    "Focus Session Planner": {
+      "n": "Keskittymisjakson suunnittelija",
+      "d": "Suunnittele syväkeskittymisen jaksoja ympäristön ja häiriöiden hallinnalla"
+    },
+    "Energy Management Guide": {
+      "n": "Energianhallinnan opas",
+      "d": "Optimoi energiatasosi päivän aikana huippusuoritukseen"
+    },
+    "Batch Processing Planner": {
+      "n": "Eräkäsittelyn suunnittelija",
+      "d": "Ryhmittele samankaltaiset tehtävät tehokkaiksi eräkäsittelyistunnoiksi"
+    },
+    "System Documentation Template": {
+      "n": "Järjestelmädokumentaation pohja",
+      "d": "Dokumentoi henkilökohtaiset ja tiimin järjestelmät johdonmukaisuuden ja perehdytyksen tueksi"
+    },
+    "Project Kickoff Template": {
+      "n": "Projektin käynnistyspohja",
+      "d": "Käynnistä projekteja selkein tavoittein, laajuuksin ja tiimin linjauksin"
+    },
+    "Sprint Planning Guide": {
+      "n": "Sprintin suunnitteluopas",
+      "d": "Suunnittele tehokkaat sprintit käyttäjätarinoiden, arvioinnin ja kapasiteetin avulla"
+    },
+    "Kanban Board Setup": {
+      "n": "Kanban-taulun määrittely",
+      "d": "Suunnittele ja konfiguroi Kanban-taulu visuaaliseen työnkulun hallintaan"
+    },
+    "Gantt Chart Planner": {
+      "n": "Gantt-kaavion suunnittelija",
+      "d": "Luo yksityiskohtaiset projektiaikataulut riippuvuuksineen ja välitavoitteineen"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Resurssien kohdennusmatriisi",
+      "d": "Suunnittele ja optimoi resurssien kohdentaminen projektien ja tiimien kesken"
+    },
+    "Status Report Template": {
+      "n": "Tilanneraportin pohja",
+      "d": "Luo selkeitä projektin tilanneraportteja sidosryhmäviestintään"
+    },
+    "Risk Register Creator": {
+      "n": "Riskirekisterin luoja",
+      "d": "Rakenna ja ylläpidä kattava projektin riskirekisteri"
+    },
+    "Lessons Learned Template": {
+      "n": "Opitun dokumentoinnin pohja",
+      "d": "Kirjaa ja dokumentoi projektista opittuja asioita tulevaa parantamista varten"
+    },
+    "Requirements Document": {
+      "n": "Vaatimusdokumentti",
+      "d": "Kerää ja dokumentoi projektin vaatimukset hyväksymiskriteereineen"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Käyttäjähyväksyntätestauksen suunnitelma",
+      "d": "Luo jäsenneltyjä UAT-suunnitelmia testitapauksineen ja hyväksymiskriteereineen"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Sidosryhmäviestintäsuunnitelma",
+      "d": "Suunnittele sidosryhmäviestintä kanavien, tiheyden ja viestinnän osalta"
+    },
+    "Project Timeline Creator": {
+      "n": "Projektiaikataulun luoja",
+      "d": "Rakenna yksityiskohtaiset projektiaikataulut vaiheineen ja tuotoksineen"
+    },
+    "Agile Retrospective": {
+      "n": "Ketterä retrospektiivi",
+      "d": "Fasilitoi tuottavia ketteriä retrospektiiveja eri formaateilla"
+    },
+    "Scope Document Writer": {
+      "n": "Laajuusdokumentin kirjoittaja",
+      "d": "Määrittele projektin laajuus rajauksineen, tuotoksineen ja poissulkemisineen"
+    },
+    "Project Closure Report": {
+      "n": "Projektin loppuraportti",
+      "d": "Dokumentoi projektin valmistuminen tuloksineen ja loppuarvioineen"
+    },
+    "Conversation Practice Partner": {
+      "n": "Keskusteluharjoittelukumppani",
+      "d": "Harjoittele keskustelua kohdekielelläsi realististen skenaarioiden avulla"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Sanastonrakentaja Pro",
+      "d": "Rakenna sanastoa kontekstin, esimerkkien ja ajoitetun kertauksen avulla"
+    },
+    "Grammar Coach": {
+      "n": "Kielioppivalmentaja",
+      "d": "Opi ja harjoittele kielioppisääntöjä selkein selityksin ja harjoituksin"
+    },
+    "Translation Helper": {
+      "n": "Käännösavustaja",
+      "d": "Saa tarkkoja käännöksiä kontekstin ja käyttöhuomautuksin"
+    },
+    "Language Exchange Prep": {
+      "n": "Kielenvaihtovalmistelu",
+      "d": "Valmistaudu kielenvaihtoistuntoihin jäsennellyillä keskusteluaiheilla"
+    },
+    "Travel Phrase Book": {
+      "n": "Matkafraasikirja",
+      "d": "Tärkeimmät matkafraasit tilanteittain järjestettynä kohdeesi mukaan"
+    },
+    "Business Language Guide": {
+      "n": "Liikekielen opas",
+      "d": "Opi ammattikieltä liiketoimintaympäristöihin ja viestintään"
+    },
+    "Accent Improvement Guide": {
+      "n": "Ääntämisen kehittämisopas",
+      "d": "Paranna ääntämistä ja aksenttia kohdennetuin harjoituksin"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Luetun ymmärtämisen harjoitus",
+      "d": "Paranna lukutaitoa tasoitetuin tekstein ja ymmärtämiskysymyksin"
+    },
+    "Writing Practice Creator": {
+      "n": "Kirjoitusharjoitusten luoja",
+      "d": "Harjoittele kirjoittamista kohdekielelläsi ohjatuin tehtävin ja palautteen kera"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Kuullunymmärtämisen opas",
+      "d": "Paranna kuuntelutaitoa jäsenneltyjen harjoitusten ja strategioiden avulla"
+    },
+    "Cultural Context Guide": {
+      "n": "Kulttuurisen kontekstin opas",
+      "d": "Ymmärrä kulttuurisia vivahteita ja etikettiä tehokkaaseen viestintään"
+    },
+    "Room Layout Planner": {
+      "n": "Huonejärjestyksen suunnittelija",
+      "d": "Suunnittele optimaaliset huonejärjestykset kalustesijoittelulla ja kulkureiteillä"
+    },
+    "Color Palette Creator": {
+      "n": "Väripaletin luoja",
+      "d": "Luo yhtenäisiä väripaletteja huoneisiin ja suunnitteluprojekteihin"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Kalusteostosopas",
+      "d": "Älykäs kalusteostaminen tyyliyhteensopivuudella ja budjettisuunnittelulla"
+    },
+    "Home Decor Style Finder": {
+      "n": "Sisustustyylin löytäjä",
+      "d": "Löydä sisustussuunnittelutyylisi ohjatun arvioinnin avulla"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Kapselivaatekaapin rakentaja",
+      "d": "Rakenna monipuolinen kapselivaatekaappi, joka maksimoi asukokonaisuudet"
+    },
+    "Outfit Planner": {
+      "n": "Asusuunnittelija",
+      "d": "Suunnittele asut viikolle tai erityistilaisuuksiin olemassa olevasta vaatekaapistasi"
+    },
+    "Personal Style Guide": {
+      "n": "Henkilökohtaisen tyylin opas",
+      "d": "Määrittele tyyli-identiteettisi ja ostosohjeesi"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Kausivaatekaapin päivitys",
+      "d": "Päivitä vaatekaappisi joka kausi strategisin lisäyksin ja muokkauksin"
+    },
+    "Home Office Setup Guide": {
+      "n": "Kotitoimiston järjestelyopas",
+      "d": "Suunnittele tuottava ja tyylikäs kotitoimistotila"
+    },
+    "Bathroom Design Planner": {
+      "n": "Kylpyhuoneen suunnittelija",
+      "d": "Suunnittele kylpyhuoneremontteja ja -päivityksiä tyylillä ja toiminnallisuudella"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Hackathon-ideageneraattori",
+      "d": "Ideoi ja validoi hackathon-projekti-ideoita teemojen ja rajoitteiden perusteella"
+    },
+    "MVP Builder Guide": {
+      "n": "MVP-rakentamisopas",
+      "d": "Suunnittele ja rakenna minimituote tiukan hackathon-aikataulun puitteissa"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon-esitys",
+      "d": "Luo vakuuttava esityspaketti hackathon-projektisi esittämiseen tuomareille"
+    },
+    "Technical Architecture Planner": {
+      "n": "Teknisen arkkitehtuurin suunnittelija",
+      "d": "Suunnittele hackathon-projektisi tekninen arkkitehtuuri nopeasti"
+    },
+    "Hackathon Team Builder": {
+      "n": "Hackathon-tiimin rakentaja",
+      "d": "Muodosta tasapainoinen hackathon-tiimi toisiaan täydentävin taidoin ja selkein roolein"
+    },
+    "Demo Day Script": {
+      "n": "Demopäivän käsikirjoitus",
+      "d": "Käsikirjoita viimeistelty live-demo, joka korostaa projektisi avainominaisuuksia"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Tuomaristokriteerien analysoija",
+      "d": "Analysoi hackathonin tuomaristokriteerit ja optimoi projektisi niiden mukaan"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Hackathon-aikataulun suunnittelija",
+      "d": "Jaa hackathon-tuntisi jäsenneltyyn sprinttiaikatauluun"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Palkintostrategian neuvonantaja",
+      "d": "Kohdista projektisi strategisesti tiettyihin palkintokategorioihin voittaaksesi"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Hackathonin jälkeinen toimintasuunnitelma",
+      "d": "Muunna hackathon-projektisi todelliseksi tuotteeksi tai portfolioteokseksi"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Nopean prototyypin opas",
+      "d": "Prototyypitä ja iteroi hackathon-konseptiasi nopeasti rajallisessa ajassa"
+    },
+    "Hackathon Submission Template": {
+      "n": "Hackathon-lähetyspohja",
+      "d": "Valmistele täydellinen ja viimeistelty hackathon-lähetys kaikkine vaadittavine materiaaleineen"
+    },
+    "Game Design Document": {
+      "n": "Pelisuunnitteludokumentti",
+      "d": "Luo kattava pelisuunnitteludokumentti, joka kattaa pelisi kaikki osa-alueet"
+    },
+    "Game Mechanics Designer": {
+      "n": "Pelimekaniikkasuunnittelija",
+      "d": "Suunnittele ja tasapainota ydinpelimekaniikat mukaansatempaavaan pelaamiseen"
+    },
+    "Level Design Planner": {
+      "n": "Kenttäsuunnittelun suunnittelija",
+      "d": "Suunnittele pelikenttiä rytmityksen, haasteiden ja ympäristötarinankerronnan kanssa"
+    },
+    "Game Economy Balancer": {
+      "n": "Pelitalouden tasapainottaja",
+      "d": "Suunnittele ja tasapainota pelinsisäisiä talouksia reilun ja mukaansatempaavan etenemisen varmistamiseksi"
+    },
+    "Character Stats Builder": {
+      "n": "Hahmon ominaisuuksien rakentaja",
+      "d": "Luo tasapainotettuja hahmon ominaisuusjärjestelmiä ja luokka-arkkityyppejä"
+    },
+    "Quest Designer": {
+      "n": "Tehtäväsuunnittelija",
+      "d": "Suunnittele mukaansatempaavia tehtäviä haarautuvine tarinoineen ja merkityksellisine palkintoineen"
+    },
+    "Game UI/UX Planner": {
+      "n": "Pelin UI/UX-suunnittelija",
+      "d": "Suunnittele intuitiivisia pelin käyttöliittymäasetteluja ja käyttäjäkokemusvirtoja"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Pöytäroolipelikampanja",
+      "d": "Rakenna pöytäroolipelikampanja maailman tarinoineen, NPC-hahmoineen ja juonikaarin"
+    },
+    "Board Game Designer": {
+      "n": "Lautapelisuunnittelija",
+      "d": "Suunnittele lautapeli konseptista prototyypiksi tasapainotetuin säännöin"
+    },
+    "Game Testing Checklist": {
+      "n": "Pelitestauksen tarkistuslista",
+      "d": "Luo kattava laadunvarmistuksen tarkistuslista pelillesi"
+    },
+    "Photo Shoot Planner": {
+      "n": "Valokuvauksen suunnittelija",
+      "d": "Suunnittele kokonainen valokuvaus konseptista toteutukseen kaikella logistiikalla"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Valokuvaportfolion opas",
+      "d": "Kuratoi ja järjestä erottuva valokuvaportfolio asiakkaille tai näyttelyihin"
+    },
+    "Photo Editing Workflow": {
+      "n": "Kuvankäsittelyn työnkulku",
+      "d": "Rakenna tehokas kuvankäsittelyn työnkulku tuonnista lopulliseen vientiin"
+    },
+    "Client Photography Brief": {
+      "n": "Asiakasvalokuvaustoimeksianto",
+      "d": "Luo ammattimainen valokuvaustoimeksianto asiakasprojekteihin"
+    },
+    "Landscape Photography Guide": {
+      "n": "Maisemavalokuvausopas",
+      "d": "Suunnittele maisemavalokuvausretkiä sää-, ajoitus- ja sommitteluvinkkien kanssa"
+    },
+    "Portrait Photography Tips": {
+      "n": "Muotokuvavalokuvausvinkit",
+      "d": "Opas vaikuttavien muotokuvien ottamiseen valaistuksen ja poseerauksen ohjauksella"
+    },
+    "Product Photography Setup": {
+      "n": "Tuotevalokuvauksen järjestely",
+      "d": "Järjestä ammattimainen tuotevalokuvaus oikealla valaistuksella ja esillepanolla"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Häävalokuvauksen aikataulu",
+      "d": "Suunnittele kattava hääpäivän valokuvausaikataulu valmistautumisesta juhliin"
+    },
+    "Street Photography Guide": {
+      "n": "Katuvalokuvausopas",
+      "d": "Vinkkejä ja tekniikoita aitoon ja vaikuttavaan katuvalokuvaukseen"
+    },
+    "Astrophotography Planner": {
+      "n": "Tähtitieteellisen valokuvauksen suunnittelija",
+      "d": "Suunnittele tähtitieteellisiä valokuvausistuntoja laite-, asetus- ja taivaanilmiötietoineen"
+    },
+    "Character Design Brief": {
+      "n": "Hahmosuunnittelun toimeksianto",
+      "d": "Luo yksityiskohtaisia hahmosuunnittelutoimeksiantoja persoonallisuuden, ulkonäön ja taustatarinan kanssa"
+    },
+    "Comic Strip Creator": {
+      "n": "Sarjakuvastriipin luoja",
+      "d": "Suunnittele ja luo sarjakuvastriippejä ruutuasettelun, dialogin ja rytmityksen kanssa"
+    },
+    "World Building Guide": {
+      "n": "Maailmanrakennuksen opas",
+      "d": "Suunnittele immersiivisia kuvitteellisia maailmoja maantieteineen, kulttuureineen ja tarinoineen"
+    },
+    "Children's Book Illustrator": {
+      "n": "Lastenkirjakuvittaja",
+      "d": "Suunnittele kuvituksia lastenkirjoihin ikätasoisella tyylillä ja rytmityksellä"
+    },
+    "Art Portfolio Curator": {
+      "n": "Taideportfolion kuraattori",
+      "d": "Kuratoi ja esittele taideportfolio gallerioille, asiakkaille tai kouluille"
+    },
+    "Color Theory Guide": {
+      "n": "Väriteorian opas",
+      "d": "Sovella väriteorian periaatteita harmonisten ja vaikuttavien taideteosten luomiseksi"
+    },
+    "Digital Art Workflow": {
+      "n": "Digitaalisen taiteen työnkulku",
+      "d": "Tehosta digitaalisen taiteen prosessiasi luonnoksesta lopulliseen renderöintiin"
+    },
+    "Art Commission Brief": {
+      "n": "Taidetoimeksiannon kuvaus",
+      "d": "Kirjoita selkeitä taidetoimeksiantoja visiosi välittämiseksi taiteilijoille"
+    },
+    "Mural Design Planner": {
+      "n": "Seinämaalauksen suunnittelija",
+      "d": "Suunnittele suuren mittakaavan seinämaalausprojekirja konseptista asennukseen"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Taidenäyttelyn ehdotus",
+      "d": "Kirjoita ammattimainen taidenäyttelyehdotus gallerioille ja näyttelytiloille"
+    },
+    "Tax Deduction Finder": {
+      "n": "Verovähennyksen löytäjä",
+      "d": "Tunnista yleisesti unohtuvat verovähennykset tilanteesi ja veroilmoitusstatuksesi perusteella"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Ammatinharjoittajan vero-opas",
+      "d": "Hallitse ammatinharjoittajan verot mukaan lukien ennakkomaksut ja vähennykset"
+    },
+    "Tax Document Organizer": {
+      "n": "Veroasiakirjojen järjestäjä",
+      "d": "Järjestä ja seuraa kaikkia veroilmoituskauden tarvittavia asiakirjoja"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Neljännesvuosiveron laskin",
+      "d": "Laske ja suunnittele neljännesvuosittaiset verot ammatinharjoittajille"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Luovutusvoittolaskin-opas",
+      "d": "Ymmärrä ja suunnittele luovutusvoittoverot sijoituksista ja kiinteistöistä"
+    },
+    "Tax Filing Checklist": {
+      "n": "Veroilmoituksen tarkistuslista",
+      "d": "Vaiheittainen tarkistuslista tarkan ja täydellisen veroilmoituksen varmistamiseksi"
+    },
+    "State Tax Comparison": {
+      "n": "Osavaltioverojen vertailu",
+      "d": "Vertaa osavaltioverojen vaikutuksia muuton tai useamman osavaltion tulojen osalta"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Verotappioiden hyödyntämisopas",
+      "d": "Hyödynnä strategisesti sijoitustappioita voittojen kuittaamiseen ja verorasituksen vähentämiseen"
+    },
+    "Stock Research Template": {
+      "n": "Osaketutkimuspohja",
+      "d": "Tee perusteellinen fundamentaali- ja tekninen analyysi yksittäisistä osakkeista"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF-vertailutyökalu",
+      "d": "Vertaa ETF-rahastoja kulusuhteiden, omistusten, tuoton ja strategian mukaan"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Osinkosijoitussalkun suunnittelija",
+      "d": "Rakenna osinkokeskeinen sijoitussalkku passiivisen tulon tuottamiseen"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Kiinteistösijoitusanalysaattori",
+      "d": "Analysoi vuokrakiinteistöjä ja kiinteistösijoituksia tuottojen ja kassavirran osalta"
+    },
+    "Angel Investing Checklist": {
+      "n": "Enkelisijoittamisen tarkistuslista",
+      "d": "Arvioi startup-sijoitusmahdollisuuksia due diligence -kehyksillä"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Eläketilin optimoija",
+      "d": "Optimoi maksut eläketilien kesken parhaan hyödyn saavuttamiseksi"
+    },
+    "Bond Analysis Guide": {
+      "n": "Joukkovelkakirja-analyysin opas",
+      "d": "Analysoi joukkovelkakirjoja ja korkoinstrumentteja tuoton, duraation ja riskin osalta"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Sijoitusrahastojen arvioija",
+      "d": "Arvioi sijoitusrahastoja tuoton, kulujen, salkunhoitajan ja sopivuuden mukaan"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Salkun tasapainotusopas",
+      "d": "Tasapainota sijoitussalkkusi tavoitellun omaisuusjakauman ylläpitämiseksi"
+    },
+    "Investment Journal Template": {
+      "n": "Sijoituspäiväkirjan pohja",
+      "d": "Seuraa sijoituspäätöksiä, perusteluja ja tuloksia jatkuvan kehittymisen tueksi"
+    },
+    "AWS Service Selector": {
+      "n": "AWS-palvelun valitsin",
+      "d": "Valitse oikeat AWS-palvelut sovelluksesi vaatimusten ja budjetin mukaan"
+    },
+    "Cloud Migration Plan": {
+      "n": "Pilvimigraatiosuunnitelma",
+      "d": "Suunnittele jäsennelty siirtymä paikallisista työkuormista pilveen"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Kubernetes-käyttöönoton opas",
+      "d": "Ota sovelluksia käyttöön ja hallitse niitä Kubernetesissa parhaiden käytäntöjen mukaan"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Infrastruktuuri koodina -pohja",
+      "d": "Luo infrastruktuuri koodina -pohjia toistettaville pilviympäristöille"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD-putken suunnittelija",
+      "d": "Suunnittele automatisoidut CI/CD-putket jatkuvaan integraatioon ja käyttöönottoon"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Pilvikustannusten optimoija",
+      "d": "Tunnista ja toteuta pilvikustannusten optimointistrategioita"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Palvelimettoman arkkitehtuurin suunnittelija",
+      "d": "Suunnittele palvelimettomia sovelluksia tapahtumaohjautuvilla arkkitehtuurimalleilla"
+    },
+    "Container Strategy Guide": {
+      "n": "Konttien strategiaopas",
+      "d": "Määrittele kontitusstrategia sovelluksille ja mikropalveluille"
+    },
+    "Cloud Security Checklist": {
+      "n": "Pilviturvallisuuden tarkistuslista",
+      "d": "Auditoi ja suojaa pilvi-infrastruktuuria kattavin turvallisuustarkastuksin"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Katastrofista palautumissuunnitelma",
+      "d": "Suunnittele pilven palautumissuunnitelma RTO- ja RPO-tavoitteineen"
+    },
+    "Keynote Speech Writer": {
+      "n": "Pääpuheen kirjoittaja",
+      "d": "Kirjoita vaikuttava pääpuhe, joka inspiroi ja sitouttaa yleisösi"
+    },
+    "TED Talk Outline": {
+      "n": "TED-puheen jäsennys",
+      "d": "Rakenna vakuuttava TED-tyylinen puhe vahvalla narratiivisella kaarella"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Maljapuheen ja kunnianosoituksen kirjoittaja",
+      "d": "Kirjoita mieleenpainuvia maljapuheita ja kunnianosoituksia häihin, eläkkeelle jäämisiin ja juhliin"
+    },
+    "Debate Preparation Guide": {
+      "n": "Väittelyvalmistautumisopas",
+      "d": "Valmistaudu perusteellisesti väittelyihin argumenttien, vastaväitteiden ja todisteiden avulla"
+    },
+    "Panel Discussion Prep": {
+      "n": "Paneelikeskustelun valmistelu",
+      "d": "Valmistaudu paneelikeskusteluihin puheenvuoroin ja yleisön sitouttamiskeinoin"
+    },
+    "Presentation Slide Planner": {
+      "n": "Esitysdiojen suunnittelija",
+      "d": "Suunnittele esitysdiat visuaalisella hierarkialla ja narratiivisella virtauksella"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Improvisoidun puheen opas",
+      "d": "Kehitä taitoa ajatella nopeasti improvisoitujen puheenkehysten avulla"
+    },
+    "Commencement Speech Writer": {
+      "n": "Valmistujaisjuhlapuheen kirjoittaja",
+      "d": "Kirjoita inspiroiva valmistujaisjuhlapuhe valmistujaisseremonioihin"
+    },
+    "Grant Application Writer": {
+      "n": "Apurahahakemuksen kirjoittaja",
+      "d": "Kirjoita vakuuttavia apurahahakemuksia, jotka tuovat selkeästi esiin vaikutuksen ja tarpeen"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Varainhankintakampanjan suunnitelma",
+      "d": "Suunnittele ja toteuta tehokkaita varainhankintakampanjoita useiden kanavien kautta"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Vapaaehtoisrekrytoinnin opas",
+      "d": "Rekrytoi, perehdytä ja sitouta vapaaehtoisia järjestön ohjelmiin"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Järjestön hallituksen kokous",
+      "d": "Valmistele ja johda tehokkaita järjestön hallituksen kokouksia selkein esityslistoin"
+    },
+    "Impact Report Template": {
+      "n": "Vaikuttavuusraportin pohja",
+      "d": "Luo vakuuttavia vaikuttavuusraportteja, jotka esittelevät järjestösi saavutukset"
+    },
+    "Donor Thank You Letter": {
+      "n": "Lahjoittajan kiitoskirje",
+      "d": "Kirjoita henkilökohtaisia lahjoittajan kiitoskirjeitä kestävien suhteiden rakentamiseksi"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Vuosittainen kampanjastrategia",
+      "d": "Kehitä kattava vuosittainen varainhankinnan ja sitouttamisen strategia"
+    },
+    "Community Needs Assessment": {
+      "n": "Yhteisön tarveselvitys",
+      "d": "Tee perusteellinen yhteisön tarveselvitys ohjelmakehityksen tueksi"
+    },
+    "Construction Project Plan": {
+      "n": "Rakennusprojektin suunnitelma",
+      "d": "Luo kattava rakennusprojektisuunnitelma vaiheineen, aikatauluineen ja budjetteineen"
+    },
+    "Building Permit Checklist": {
+      "n": "Rakennusluvan tarkistuslista",
+      "d": "Seuraa kaikkia tarvittavia rakennuslupia ja hyväksyntöjä projektillesi"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Urakoitsijan arviointiopas",
+      "d": "Arvioi ja vertaa urakoitsijoita jäsennellyllä pisteytysrungolla"
+    },
+    "Material Estimate Calculator": {
+      "n": "Materiaaliarviolaskin",
+      "d": "Arvioi tarvittavat rakennusmateriaalit määrineen ja kustannusennusteineen"
+    },
+    "Site Inspection Checklist": {
+      "n": "Työmaan tarkastuksen tarkistuslista",
+      "d": "Suorita perusteellisia työmaan tarkastuksia standardoiduin tarkistuslistoin"
+    },
+    "Renovation Scope Document": {
+      "n": "Remontin laajuusdokumentti",
+      "d": "Määrittele selkeä remontin työlaajuus erittelyin ja odotuksin"
+    },
+    "Architectural Brief": {
+      "n": "Arkkitehtoninen toimeksianto",
+      "d": "Kirjoita arkkitehtoninen toimeksianto, joka määrittelee projektin vision, vaatimukset ja rajoitteet"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Turvallisuusvaatimusten tarkistuslista",
+      "d": "Varmista työmaan turvallisuusmääräysten noudattaminen paikallisten säädösten mukaan"
+    },
+    "Robot Design Specification": {
+      "n": "Robotin suunnittelumääritys",
+      "d": "Määrittele täydelliset robotin suunnittelumääritykset mekaniikan, elektroniikan ja ohjelmiston osalta"
+    },
+    "IoT Project Planner": {
+      "n": "IoT-projektin suunnittelija",
+      "d": "Suunnittele kokonaisia IoT-projekteja antureista pilvikäyttöpaneeleihin"
+    },
+    "Sensor Selection Guide": {
+      "n": "Anturivalinnan opas",
+      "d": "Valitse optimaaliset anturit robotiikka- tai IoT-sovelluksesi tarpeisiin"
+    },
+    "Embedded Systems Guide": {
+      "n": "Sulautettujen järjestelmien opas",
+      "d": "Suunnittele sulautettuja järjestelmiä asianmukaisella mikrokontrollerivalinnalla ja laiteohjelmistoarkkitehtuurilla"
+    },
+    "Automation Workflow Designer": {
+      "n": "Automaatiotyönkulun suunnittelija",
+      "d": "Suunnittele teollisia tai kotiautomaation työnkulkuja anturein ja toimilaittein"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Laitteistoprototyyppisuunnittelija",
+      "d": "Suunnittele laitteistoprototyypejä koekytkentälevystä piirilevyyn komponenttihankinnan kanssa"
+    },
+    "Anxiety Management Plan": {
+      "n": "Ahdistuksen hallintasuunnitelma",
+      "d": "Luo henkilökohtainen ahdistuksen hallintasuunnitelma selviytymiskeinoin ja laukaisijoin"
+    },
+    "CBT Thought Record": {
+      "n": "KKT-ajatuspäiväkirja",
+      "d": "Harjoittele kognitiivisen käyttäytymisterapian ajatuspäiväkirjaa negatiivisen ajattelun haastamiseksi"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Päiväkirja-aiheiden generaattori",
+      "d": "Luo merkityksellisiä päiväkirja-aiheita itsereflektioon ja tunteiden käsittelyyn"
+    },
+    "Relationship Communication Guide": {
+      "n": "Parisuhdekommunikaation opas",
+      "d": "Paranna parisuhdekommunikaatiota jäsennellyillä keskustelurungolla"
+    },
+    "Boundary Setting Guide": {
+      "n": "Rajojen asettamisen opas",
+      "d": "Opi asettamaan ja ylläpitämään terveitä rajoja henkilökohtaisessa ja ammatillisessa elämässä"
+    },
+    "Grief Processing Helper": {
+      "n": "Surun käsittelyn apuri",
+      "d": "Navigoi suruprosessia myötätuntoisella ohjauksella ja käytännön askelin"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Itsemyötätuntoharjoitus",
+      "d": "Harjoittele itsemyötätuntoa resilienssin rakentamiseksi ja itsekritiikin vähentämiseksi"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Tunneälyn kehittäjä",
+      "d": "Kehitä tunneälytaitoja parempaan itsetuntemukseen ja ihmissuhteisiin"
+    },
+    "Anger Management Plan": {
+      "n": "Vihan hallintasuunnitelma",
+      "d": "Kehitä terveitä vihanhallintastrategioita laukaisijoineen ja rauhoittamiskeinoin"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Loppuunpalamisen palautumissuunnitelma",
+      "d": "Luo jäsennelty loppuunpalamisen palautumissuunnitelma rajoineen, levolla ja asteittaisella paluulla"
+    },
+    "Instant Pot Recipe": {
+      "n": "Pikakattilan reseptit",
+      "d": "Painekeitinreseptejä ajoitusohjeilla"
+    },
+    "World Cuisine Explorer": {
+      "n": "Maailman keittiöiden tutkija",
+      "d": "Aitoja reseptejä maailman eri keittiöistä"
+    },
+    "Fermentation Guide": {
+      "n": "Fermentointiopas",
+      "d": "Fermentoitujen ruokien reseptejä ja tekniikoita"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Grillaus- ja BBQ-opas",
+      "d": "Grillausreseptejä mauste- ja kastikeyhdistelmineen"
+    },
+    "Bread Baking Guide": {
+      "n": "Leivontaopas",
+      "d": "Artesaanileipäreseptejä juuresta valmiiksi leivoksi"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Sienenviljelyn opas",
+      "d": "Sisätilojen sienenviljely ymppäyksestä satoon"
+    },
+    "Permaculture Planner": {
+      "n": "Permakulttuurin suunnittelija",
+      "d": "Suunnittele itseään ylläpitävä ruokapuutarhaekosysteemi"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Kasvihuoneen perustamisopas",
+      "d": "Suunnittele ja rakenna tuottava kasvihuone"
+    },
+    "FSBO Selling Guide": {
+      "n": "Asunnon itsemyyntiopas",
+      "d": "Myy asuntosi ilman välittäjää vaihe vaiheelta"
+    },
+    "Investment Property Finder": {
+      "n": "Sijoituskiinteistön etsijä",
+      "d": "Arvioi potentiaalisia vuokrasijoituskiinteistöjä"
+    },
+    "Car Modification Guide": {
+      "n": "Auton muokkausopas",
+      "d": "Suunnittele ajoneuvon muokkauksia ja päivityksiä"
+    },
+    "Fleet Management Planner": {
+      "n": "Ajoneuvokannan hallinnan suunnittelija",
+      "d": "Hallitse useiden ajoneuvojen huoltoa ja kustannuksia"
+    },
+    "Digital Nomad Guide": {
+      "n": "Digitaalisen nomadin opas",
+      "d": "Työskentele etänä samalla kun matkustat maailmalla"
+    },
+    "Eco-Travel Planner": {
+      "n": "Ekomatkasuunnittelija",
+      "d": "Suunnittele kestäviä ja ympäristöystävällisiä matkoja"
+    },
+    "Product Launch Event": {
+      "n": "Tuotelanseeraustilaisuus",
+      "d": "Suunnittele tuotelanseeraustilaisuus tilasta tiedotukseen"
+    },
+    "Virtual Event Planner": {
+      "n": "Virtuaalitapahtuman suunnittelija",
+      "d": "Suunnittele sitouttavia verkkotapahtumia ja webinaareja"
+    },
+    "College Planning Guide": {
+      "n": "Yliopisto-opintojen suunnitteluopas",
+      "d": "Suunnittele yliopisto-opinnot oppilaitoksen valinnasta taloudelliseen tukeen"
+    },
+    "Child Safety Plan": {
+      "n": "Lapsen turvallisuussuunnitelma",
+      "d": "Kattavat kodin ja verkon turvallisuusohjeet"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Eksoottisten lemmikkien hoito-opas",
+      "d": "Hoito-oppaat matelijoille, linnuille ja eksoottisille lemmikeille"
+    },
+    "Pet Adoption Guide": {
+      "n": "Lemmikin adoptio-opas",
+      "d": "Navigoi lemmikin adoptioprosessi onnistuneesti"
+    },
+    "Tiny House Builder": {
+      "n": "Pientalon rakentaja",
+      "d": "Suunnittele ja rakenna pientalo vaihe vaiheelta"
+    },
+    "Workshop Setup Guide": {
+      "n": "Verstaan perustamisopas",
+      "d": "Suunnittele ja varusta kotiverstas"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Kuponkistrategian suunnittelija",
+      "d": "Maksimoi säästöt strategisella kuponkien käytöllä"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Käytetyn tavaran ostosopas",
+      "d": "Löydä laadukkaita tuotteita kirpputoreilta ja verkosta"
+    },
+    "Theological Study Guide": {
+      "n": "Teologinen tutkimusopas",
+      "d": "Syvenny teologisiin käsitteisiin ja oppeihin"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Uskontojen välisen dialogin opas",
+      "d": "Fasilitoi kunnioittavia uskontojen välisiä keskusteluja"
+    },
+    "Marathon Training Plan": {
+      "n": "Maratonharjoittelusuunnitelma",
+      "d": "Täydellinen maratonharjoittelu aloittelijasta 42 kilometriin"
+    },
+    "Youth Sports Coach": {
+      "n": "Nuorten urheiluvalmentaja",
+      "d": "Suunnittele nuorten urheiluharjoituksia ja kehitystä"
+    },
+    "Woodworking Project": {
+      "n": "Puutyöprojekti",
+      "d": "Suunnittele puutyöprojekteja sahauslistoineen ja vaiheineen"
+    },
+    "Vinyl Record Guide": {
+      "n": "Vinyylilevyopas",
+      "d": "Aloita ja kuratoi vinyylilevykokoelma"
+    },
+    "Home Brewing Guide": {
+      "n": "Kotipanemisen opas",
+      "d": "Pane olutta tai viiniä kotona alusta loppuun"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Taloudellisen vapauden tiekartta",
+      "d": "Kartoita polkusi taloudelliseen riippumattomuuteen"
+    },
+    "Midlife Career Change": {
+      "n": "Uran vaihto keski-iässä",
+      "d": "Navigoi uran vaihtoa missä iässä tahansa"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI-taustakuvan luoja",
+      "d": "Luo upeita taustakuvia mille tahansa laitteelle"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Tatuointisuunnittelukehote",
+      "d": "Luo räätälöityjä tatuointisuunnitelmia tekoälyn avulla"
+    },
+    "DJ Set Planner": {
+      "n": "DJ-setin suunnittelija",
+      "d": "Suunnittele DJ-settejä kappalevalinnan ja siirtymien kanssa"
+    },
+    "Music Theory Tutor": {
+      "n": "Musiikinteorian opettaja",
+      "d": "Opi musiikinteorian käsitteitä harjoituksin"
+    },
+    "Podcast Video Setup": {
+      "n": "Videopodcastin järjestely",
+      "d": "Järjestä videopodcastaus laitteistosta editointiin"
+    },
+    "Wedding Video Plan": {
+      "n": "Häävideon suunnitelma",
+      "d": "Suunnittele häävideokuvaus seremoniasta editointiin"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Muistelman luvun kirjoittaja",
+      "d": "Kirjoita vaikuttavia muistelman lukuja elämäntarinoista"
+    },
+    "Haiku Generator": {
+      "n": "Haiku-generaattori",
+      "d": "Luo haiku-runoja mistä tahansa aiheesta"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok-sisältöstrategia",
+      "d": "Rakenna TikTokin kasvustrategia sisältöideoineen"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube-yhteisöjulkaisu",
+      "d": "Luo sitouttavia YouTube-yhteisöjulkaisuja"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Podcastin ansaintasuunnitelma",
+      "d": "Strategioita podcastisi rahaksi muuttamiseen"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "AI-työkalujen vertailuopas",
+      "d": "Vertaa tekoälytyökaluja tiettyihin käyttötarkoituksiin"
+    },
+    "Code Snippet Library": {
+      "n": "Koodinpätkäkirjasto",
+      "d": "Järjestä ja dokumentoi uudelleenkäytettäviä koodinpätkiä"
+    },
+    "Tech Stack Selector": {
+      "n": "Teknologiapinon valitsin",
+      "d": "Valitse oikea teknologiapino projektiisi"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Tietosuojavaatimusten opas",
+      "d": "Varmista, että sovelluksesi täyttää tietosuojamääräykset"
+    },
+    "API Security Audit": {
+      "n": "API-turvallisuusauditointi",
+      "d": "Auditoi API-päätepisteidesi tietoturva-aukot"
+    },
+    "AI Hackathon Project": {
+      "n": "AI-hackathon-projekti",
+      "d": "Suunnittele tekoälyyn keskittyvä hackathon-projekti kokonaisuudessaan"
+    },
+    "Mobile Game Concept": {
+      "n": "Mobiilipelikonsepti",
+      "d": "Suunnittele mobiilipeli konseptista ansaintamalliin"
+    },
+    "Drone Photography Guide": {
+      "n": "Dronekuvausopas",
+      "d": "Suunnittele ilmavalokuvauslentoja ja -otoksia"
+    },
+    "NFT Art Collection": {
+      "n": "NFT-taidekokoelma",
+      "d": "Suunnittele ja luo digitaalinen taidekokoelma"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Freelancerin vero-opas",
+      "d": "Hallitse ammatinharjoittajan verotusta ja vähennyksiä"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Kryptosalkun rakentaja",
+      "d": "Rakenna hajautettu kryptovaluuttasalkku"
+    },
+    "Azure Service Guide": {
+      "n": "Azure-palveluopas",
+      "d": "Valitse ja konfiguroi Azuren pilvipalveluja"
+    },
+    "Wedding Speech Writer": {
+      "n": "Häiden puheen kirjoittaja",
+      "d": "Kirjoita sydämellisiä häähpuheita ja maljapuheita"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Järjestön perustamisopas",
+      "d": "Perusta voittoa tavoittelematon järjestö alusta alkaen"
+    },
+    "Home Addition Planner": {
+      "n": "Kodin laajennuksen suunnittelija",
+      "d": "Suunnittele kodin laajennus luvista rakentamiseen"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino-projektin suunnittelija",
+      "d": "Suunnittele Arduino-pohjaisia elektroniikkaprojekteja"
+    },
+    "Digital Wellness Plan": {
+      "n": "Digitaalisen hyvinvoinnin suunnitelma",
+      "d": "Luo terve suhde teknologiaan"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT-analyysityökalu",
+      "d": "Strateginen analyysi vahvuuksista, heikkouksista, mahdollisuuksista ja uhista"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Kokouksen esityslistan rakentaja",
+      "d": "Luo jäsenneltyjä kokouksen esityslistoja aikablokkeineen"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR-kehyksen rakentaja",
+      "d": "Aseta tavoitteet ja avaintulokset tiimeille"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Toimittajaneuvottelun valmistelu",
+      "d": "Valmistaudu toimittaja- ja tavarantoimittajaneuvotteluihin"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Franchising-arviointiopas",
+      "d": "Arvioi franchising-mahdollisuuksia järjestelmällisesti"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Etätyökäytännön kirjoittaja",
+      "d": "Luo kattavia etätyökäytäntöjä"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Monimuotoisuusrekrytointisuunnitelma",
+      "d": "Rakenna inklusiivisia rekrytointikäytäntöjä ja -kanavia"
+    },
+    "Freelance Contract Template": {
+      "n": "Freelance-sopimuspohja",
+      "d": "Luo ammattimaisia freelance-palvelusopimuksia"
+    },
+    "Personal Website Planner": {
+      "n": "Henkilökohtaisen verkkosivuston suunnittelija",
+      "d": "Suunnittele ja jäsennä ammatillinen portfoliosivustosi"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Ajoittaisen paaston opas",
+      "d": "Suunnittele ajoittaisen paaston ohjelma"
+    },
+    "Posture Improvement Plan": {
+      "n": "Ryhdin parantamissuunnitelma",
+      "d": "Korjaa ryhtiongelmia harjoituksin ja tavoin"
+    },
+    "Notion Template Builder": {
+      "n": "Notion-mallipohjan rakentaja",
+      "d": "Suunnittele Notion-työtilan mallipohjia mihin tahansa työnkulkuun"
+    },
+    "Automation Workflow Builder": {
+      "n": "Automaatiotyönkulun rakentaja",
+      "d": "Suunnittele automaatiotyönkulkuja Zapierilla tai Makella"
+    },
+    "Agile Sprint Planner": {
+      "n": "Ketterän sprintin suunnittelija",
+      "d": "Suunnittele ketteriä sprinttejä tarinapistein ja nopeuden kanssa"
+    },
+    "Product Roadmap Builder": {
+      "n": "Tuotetiekartan rakentaja",
+      "d": "Luo tuotetiekarttoja välitavoittein ja teemoin"
+    },
+    "TOEFL Prep Guide": {
+      "n": "TOEFL-valmistautumisopas",
+      "d": "Valmistaudu TOEFL-kokeeseen opiskelustrategioin"
+    },
+    "Business English Coach": {
+      "n": "Liike-englannin valmentaja",
+      "d": "Paranna ammatillista englanninkielistä viestintää"
+    },
+    "Brand Identity Designer": {
+      "n": "Brändi-identiteetin suunnittelija",
+      "d": "Luo yhtenäiset brändin visuaalisen identiteetin ohjeet"
+    },
+    "UX Research Plan": {
+      "n": "UX-tutkimussuunnitelma",
+      "d": "Suunnittele käyttäjäkokemustutkimusta digitaalisille tuotteille"
+    },
+    "Data Storytelling Guide": {
+      "n": "Datatarinankerronnan opas",
+      "d": "Muunna datanäkemykset vakuuttaviksi tarinoiksi"
+    },
+    "AI Model Evaluation": {
+      "n": "AI-mallin arviointi",
+      "d": "Arvioi ja vertaa koneoppimismallien suorituskykyä"
+    },
+    "3D Printing Project": {
+      "n": "3D-tulostusprojekti",
+      "d": "Suunnittele 3D-tulostusprojekteja suunnittelusta tulostukseen"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Sähköpiirin suunnittelija",
+      "d": "Suunnittele sähköpiirejä komponenttivalinnoin"
+    },
+    "Side Hustle Finder": {
+      "n": "Sivutulojen etsijä",
+      "d": "Löydä sivutuloideita taitojesi perusteella"
+    },
+    "Passive Income Blueprint": {
+      "n": "Passiivisen tulon suunnitelma",
+      "d": "Rakenna tilanteeseesi sopiva passiivisen tulon strategia"
+    },
+    "Savings Challenge Generator": {
+      "n": "Säästöhaaste-generaattori",
+      "d": "Luo räätälöity säästöhaastesuunnitelma"
+    },
+    "Negotiate Any Bill": {
+      "n": "Laskujen neuvottelija",
+      "d": "Skriptit toistuvien laskujen neuvottelemiseen ja alentamiseen"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy-kaupan käynnistäjä",
+      "d": "Vaiheittainen suunnitelma Etsy-kaupan perustamiseen ja kasvattamiseen"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube-kanavan suunnittelija",
+      "d": "Suunnittele ja käynnistä tuottava YouTube-kanava"
+    },
+    "Rental Income Analyzer": {
+      "n": "Vuokratuloanalysaattori",
+      "d": "Analysoi potentiaalisia vuokrakiinteistöjen tuottoja"
+    },
+    "Online Course Creator": {
+      "n": "Verkkokurssin luoja",
+      "d": "Suunnittele ja rakenna myytävä verkkokurssi"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Kuponki ja cashback -maksimoija",
+      "d": "Maksimoi säästöt kupongeilla, cashbackilla ja palkinnoilla"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Dropshipping-kaupan perustaminen",
+      "d": "Suunnittele dropshipping-yritys alusta alkaen"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Keikkatalouden optimoija",
+      "d": "Maksimoi tulot gig-sovelluksista kuten Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Vše",
+    "free": "⭐ Zdarma",
+    "money": "💰 Podnikání",
+    "coding": "💻 Kódování",
+    "ai": "🤖 AI",
+    "writing": "✍️ Psaní",
+    "marketing": "📢 Marketing",
+    "sales": "🤝 Prodej",
+    "school": "📚 Vzdělávání",
+    "research": "🔬 Výzkum",
+    "career": "🚀 Kariéra",
+    "legal": "⚖️ Právo",
+    "finance": "📊 Finance",
+    "health": "🏥 Zdraví",
+    "cooking": "🍳 Vaření",
+    "garden": "🌱 Zahrada",
+    "realestate": "🏠 Reality",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Cestování",
+    "image": "🎨 Obrázkové AI",
+    "music": "🎵 Hudba",
+    "video": "🎬 Video",
+    "social": "📱 Sociální sítě",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-shop",
+    "productivity": "⏱ Produktivita",
+    "diy": "🔨 Kutilství",
+    "event": "🎉 Akce",
+    "parent": "👶 Rodičovství",
+    "pets": "🐾 Mazlíčci",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Wellness",
+    "language": "🌍 Jazyky",
+    "security": "🔒 Bezpečnost",
+    "datascience": "📈 Datová věda",
+    "chemistry": "🧪 Chemie",
+    "biology": "🧬 Biologie",
+    "physics": "⚛️ Fyzika",
+    "math": "🔢 Matematika",
+    "makemoney": "💰 Peníze"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Nástroj pro shrnutí",
+      "d": "Zhuštěte jakýkoli obsah do přehledných souhrnů odrážek"
+    },
+    "Technical Documentation": {
+      "n": "Technická dokumentace",
+      "d": "Vytvářejte jasné technické dokumenty pro rozhraní API a funkce"
+    },
+    "YouTube Script": {
+      "n": "Skript YouTube",
+      "d": "Plný video skript s háčkem, sekcemi, CTA, b-roll seznamem"
+    },
+    "TikTok Generator": {
+      "n": "Generátor TikTok",
+      "d": "Krátký video skript optimalizovaný pro TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Autor příspěvků na LinkedIn",
+      "d": "Příspěvky LinkedIn zastavující posouvání, které podporují zapojení"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Generátor blogových příspěvků",
+      "d": "Dlouhé blogové příspěvky optimalizované pro SEO"
+    },
+    "SEO Article Writer": {
+      "n": "SEO článek spisovatel",
+      "d": "Články bohaté na klíčová slova vytvořené tak, aby se umístily na Googlu"
+    },
+    "Podcast Episode Outline": {
+      "n": "Nástin epizody podcastu",
+      "d": "Strukturovaný nástin epizody s mluvenými body"
+    },
+    "Newsletter Writer": {
+      "n": "Spisovatel zpravodaje",
+      "d": "Zapojení čtenářů e-mailových zpravodajů skutečně otevírá"
+    },
+    "Product Review Writer": {
+      "n": "Autor recenze produktu",
+      "d": "Vyvážené, důvěryhodné recenze produktů"
+    },
+    "Social Media Calendar": {
+      "n": "Kalendář sociálních médií",
+      "d": "30denní kalendář obsahu s nápady na příspěvky na platformě"
+    },
+    "Executive Summary": {
+      "n": "Shrnutí",
+      "d": "Jednostránkové shrnutí z dlouhých dokumentů"
+    },
+    "Customer Support Response": {
+      "n": "Odpověď zákaznické podpory",
+      "d": "Empatické odpovědi zákaznické podpory značky"
+    },
+    "Business Proposal": {
+      "n": "Obchodní návrh",
+      "d": "Vítězné nabídky klientů s rozsahem a cenou"
+    },
+    "Decision Memo": {
+      "n": "Rozhodnutí Memo",
+      "d": "Přehledné poznámky k rozhodnutí s možnostmi a doporučeními"
+    },
+    "Stakeholder Update": {
+      "n": "Aktualizace zúčastněných stran",
+      "d": "Stručné aktualizace stavu projektu pro zúčastněné strany"
+    },
+    "Code Review Assistant": {
+      "n": "Asistent kontroly kódu",
+      "d": "Zkontrolujte kód, zda neobsahuje chyby, styl a doporučené postupy"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Komentáře ke kódu",
+      "d": "Komentáře JSDoc pro JavaScript a TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Záznam rozhodnutí o architektuře",
+      "d": "Formální ADR dokumentující technická rozhodnutí"
+    },
+    "User Story Writer": {
+      "n": "Spisovatel uživatelských příběhů",
+      "d": "Agilní uživatelské příběhy s kritérii přijetí"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Kritéria přijetí",
+      "d": "Kritéria přijímání uživatelských příběhů ve stylu okurek"
+    },
+    "PR Description Writer": {
+      "n": "Autor popisu PR",
+      "d": "Jasné PR popisy s kontextem a testovacími poznámkami"
+    },
+    "Unit Test Generator": {
+      "n": "Generátor testů jednotek",
+      "d": "Unit testy s okrajovými případy pro jakoukoli funkci"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F poradce pro refaktoring kódu",
+      "d": "Refaktor kód pro čitelnost a výkon"
+    },
+    "SQL Query Builder": {
+      "n": "Tvůrce dotazů SQL",
+      "d": "Přirozený jazyk pro optimalizované SQL dotazy"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Generátor konfigurace Kubernetes",
+      "d": "Rychle diagnostikujte a opravte problémy s K8"
+    },
+    "Postmortem Report": {
+      "n": "Posmrtná zpráva",
+      "d": "Bezúhonná pitva s časovou osou a akčními předměty"
+    },
+    "Release Notes Writer": {
+      "n": "Spisovatel poznámek k vydání",
+      "d": "Uživatelsky přívětivé poznámky k vydání ze zpráv odevzdání"
+    },
+    "Prompt Optimizer": {
+      "n": "Optimalizátor promptů",
+      "d": "Vylepšete jakýkoli AI prompt pro lepší a přesnější výstupy"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Tvůrce řetězce myšlenek",
+      "d": "Vytvářejte výzvy k uvažování o více krocích pro složité úkoly"
+    },
+    "RAG System Prompt": {
+      "n": "Výzva systému RAG",
+      "d": "Šablony výzvy pro generování rozšířené o načítání"
+    },
+    "Eval Dataset Creator": {
+      "n": "Tvůrce evaluačních datasetů",
+      "d": "Generujte evaluační datasety pro testování AI modelů"
+    },
+    "Prompt A/B Tester": {
+      "n": "A/B tester promptů",
+      "d": "Generujte A/B varianty promptů pro porovnání výkonu"
+    },
+    "Multi-Model Comparison": {
+      "n": "Srovnání více modelů",
+      "d": "Framework pro porovnání výstupů napříč modely AI"
+    },
+    "Resume Tailoring": {
+      "n": "Pokračovat v krejčovství",
+      "d": "Přizpůsobte svůj životopis konkrétnímu popisu práce"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Generátor krycích dopisů",
+      "d": "Působivé motivační dopisy, které získávají rozhovory"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "Optimalizátor LinkedIn profilu",
+      "d": "Optimalizujte svůj LinkedIn profil pro náboráře"
+    },
+    "Interview Coach": {
+      "n": "Rozhovor s trenérem",
+      "d": "Procvičte si otázky a odpovědi na pohovoru pro jakoukoli roli"
+    },
+    "Salary Negotiation Script": {
+      "n": "Scénář vyjednávání o platu",
+      "d": "Scénáře a strategie pro vyjednávání vyšší mzdy"
+    },
+    "Career Roadmap Planner": {
+      "n": "Plánovač kariérního plánu",
+      "d": "12měsíční plán kariérního růstu s milníky"
+    },
+    "Objection Handler": {
+      "n": "Zpracovatel námitek",
+      "d": "Skripty pro řešení běžných prodejních námitek"
+    },
+    "Landing Page Copy": {
+      "n": "Kopie vstupní stránky",
+      "d": "Kopie vstupní stránky s vysokým počtem konverzí"
+    },
+    "Google Ads Copy": {
+      "n": "Kopie Google Ads",
+      "d": "Text reklamy ve vyhledávání Google s vysokou mírou prokliku"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Reklama na Facebooku/Instagramu",
+      "d": "Text reklamy na Facebooku a Instagramu, který převádí"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Stručný přehled marketingové kampaně",
+      "d": "Kompletní marketingová kampaň s kanály a časovou osou"
+    },
+    "Customer Persona Builder": {
+      "n": "Tvůrce zákaznických person",
+      "d": "Podrobné persony kupujících pro marketing a produkt"
+    },
+    "Value Proposition Canvas": {
+      "n": "Plátno hodnotové nabídky",
+      "d": "Jasné a přesvědčivé hodnotové nabídky"
+    },
+    "Product Launch Plan": {
+      "n": "Plán uvedení produktu na trh",
+      "d": "Plán uvedení produktu na trh"
+    },
+    "Study Guide Creator": {
+      "n": "Tvůrce studijních příruček",
+      "d": "Proměňte jakékoli téma ve strukturovanou studijní příručku"
+    },
+    "Flashcard Creator": {
+      "n": "Tvůrce kartičky",
+      "d": "Kartičky Q&A sady pro rychlé zapamatování"
+    },
+    "Quiz Generator": {
+      "n": "Generátor kvízů",
+      "d": "Kvízy s více možnostmi a krátkými odpověďmi"
+    },
+    "Lesson Plan Builder": {
+      "n": "Tvůrce plánu lekce",
+      "d": "Podrobné plány lekcí s aktivitami a hodnoceními"
+    },
+    "Research Notes Organizer": {
+      "n": "Organizátor výzkumných poznámek",
+      "d": "Uspořádejte výzkumné poznámky do strukturovaných obrysů"
+    },
+    "Essay Outline Generator": {
+      "n": "Generátor osnovy eseje",
+      "d": "Strukturované osnovy eseje s tezí a argumenty"
+    },
+    "Literature Review Assistant": {
+      "n": "Asistentka literární revize",
+      "d": "Přehled akademické literatury se syntézou"
+    },
+    "Thesis Statement Builder": {
+      "n": "Tvůrce prohlášení k práci",
+      "d": "Silné, diskutabilní teze"
+    },
+    "Exam Prep Planner": {
+      "n": "Plánovač přípravy na zkoušky",
+      "d": "Personalizovaný studijní plán zkoušek"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Souhrn smlouvy",
+      "d": "Přehled smlouvy v jednoduché angličtině. Ne právní poradenství."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Kontrola smluvního rizika",
+      "d": "Identifikujte rizikové věty. Ne právní poradenství."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F Analyzátor NDA",
+      "d": "Rozbor klauzulí NDA. Nejedná se o právní poradenství."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Asistent návrhu zásad",
+      "d": "Návrh vnitřních zásad. Ne právní poradenství."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Kontrolní seznam shody",
+      "d": "Kontrolní seznam shody podle rámce. Ne právní poradenství."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Recenzent smluvních podmínek",
+      "d": "Označte rizika ToS. Ne právní poradenství."
+    },
+    "Budget Planner": {
+      "n": "Plánovač rozpočtu",
+      "d": "Osobní nebo obchodní plán rozpočtu. Ne finanční poradenství."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Sumarizátor výdělků",
+      "d": "Klíčové poznatky z výdělků. Ne finanční poradenství."
+    },
+    "Investment Thesis Builder": {
+      "n": "Tvůrce investičních prací",
+      "d": "Diplomová práce o strukturované investici. Ne finanční poradenství."
+    },
+    "Financial Analysis Report": {
+      "n": "Zpráva o finanční analýze",
+      "d": "Analyzujte finance. Ne finanční poradenství."
+    },
+    "Expense Categorizer": {
+      "n": "Kategorizátor výdajů",
+      "d": "Kategorizovat a analyzovat výdaje. Ne finanční poradenství."
+    },
+    "SOAP Note Generator": {
+      "n": "Generátor SOAP poznámek",
+      "d": "Klinické SOAP poznámky. Nejedná se o lékařské poradenství."
+    },
+    "Clinical Case Summary": {
+      "n": "Shrnutí klinického případu",
+      "d": "Struktura klinických poznámek. Ne lékařskou radu."
+    },
+    "Patient Education Writer": {
+      "n": "Spisovatelka vzdělávání pacientů",
+      "d": "Edukace pacientů v prostém jazyce. Ne lékařskou radu."
+    },
+    "Medical Research Summarizer": {
+      "n": "Sumarizátor lékařského výzkumu",
+      "d": "Shrňte výzkumné práce. Ne lékařskou radu."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Asistent diferenciální diagnostiky",
+      "d": "Organizovat diferenciální diagnostiky. Ne lékařskou radu."
+    },
+    "Creative Storyteller": {
+      "n": "Kreativní vypravěč",
+      "d": "Vytvářejte kreativní příběhy a vyprávění"
+    },
+    "Ad Copy Generator": {
+      "n": "Generátor reklamních textů",
+      "d": "Vysoce konverzní texty pro Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Autor hlášení chyb",
+      "d": "Pište jasné, reprodukovatelné zprávy o chybách"
+    },
+    "Social Media Caption": {
+      "n": "Titulek sociálních médií",
+      "d": "Vytvářejte titulky zastavující posouvání pro jakoukoli platformu"
+    },
+    "Research Paper Abstract": {
+      "n": "Abstraktní výzkumný papír",
+      "d": "Pište strukturované akademické abstrakty"
+    },
+    "Translation Expert": {
+      "n": "Překladatelský expert",
+      "d": "Přeložte text s kontextem a nuancemi"
+    },
+    "Data Analyst": {
+      "n": "Datový analytik",
+      "d": "Analyzujte data a poskytujte užitečné informace"
+    },
+    "Recipe Generator": {
+      "n": "Generátor receptů",
+      "d": "Vytvářejte vlastní recepty na základě vašich preferencí a dietních potřeb"
+    },
+    "Meal Planner": {
+      "n": "Plánovač jídel",
+      "d": "Naplánujte si vyvážená jídla na celý týden s ohledem na pestrost a výživu"
+    },
+    "Grocery List Builder": {
+      "n": "Tvůrce seznamu potravin",
+      "d": "Sestavte si organizovaný seznam potravin z plánovaných jídel a potřeb ve spíži"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Vyhledávač receptů ve spíži",
+      "d": "Najděte chutné recepty z ingrediencí, které již máte po ruce"
+    },
+    "Nutrition Calculator": {
+      "n": "Výživová kalkulačka",
+      "d": "Vypočítejte podrobné nutriční informace pro jakýkoli recept nebo kombinaci jídel"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Průvodce náhradou přísad",
+      "d": "Najděte dokonalé náhrady za chybějící nebo omezené přísady"
+    },
+    "Batch Cooking Planner": {
+      "n": "Plánovač dávkového vaření",
+      "d": "Naplánujte si efektivní dávkové vaření, abyste ušetřili čas na celý týden"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Tvůrce receptů na koktejly",
+      "d": "Vytvářejte a přizpůsobujte recepty koktejlů pro každou příležitost"
+    },
+    "Baking Conversion Helper": {
+      "n": "Pomocník pro konverzi pečení",
+      "d": "Převádějte měření pečení mezi jednotkami a měřítko receptů nahoru nebo dolů"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Vyhledávač receptů pro konkrétní diety",
+      "d": "Najděte recepty přizpůsobené vašemu konkrétnímu dietnímu plánu nebo výživovým cílům"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Recept na pomalý hrnec",
+      "d": "Získejte perfektně načasované recepty v pomalém hrnci pro vaření bez použití rukou"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Tvůrce receptů vzduchové fritézy",
+      "d": "Vytvářejte křupavé a lahodné recepty vzduchové fritézy s dokonalým načasováním"
+    },
+    "Smoothie Builder": {
+      "n": "Tvůrce smoothie",
+      "d": "Sestavte výživné a lahodné recepty na smoothie pro jakýkoli cíl"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Tvůrce omáček a dresinků",
+      "d": "Vytvořte si domácí omáčky a dresinky od začátku"
+    },
+    "Spice Blend Guide": {
+      "n": "Průvodce směsí koření",
+      "d": "Vytvořte si vlastní směsi koření pro jakoukoli kuchyni nebo typ pokrmu"
+    },
+    "Food Pairing Expert": {
+      "n": "Expert na párování potravin",
+      "d": "Objevte ideální kombinace potravin a chutí pro vyšší jídla"
+    },
+    "Holiday Menu Planner": {
+      "n": "Plánovač svátečního menu",
+      "d": "Naplánujte si kompletní sváteční menu s časovou osou a nákupním seznamem"
+    },
+    "Leftover Makeover": {
+      "n": "Zbytky člověka",
+      "d": "Přeměňte zbytky jídla na vzrušující nová jídla pomocí kreativních nápadů"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Nápady na jídlo vhodné pro děti",
+      "d": "Vytvářejte zdravá jídla, která budou děti skutečně jíst"
+    },
+    "Date Night Dinner": {
+      "n": "Rande noční večeře",
+      "d": "Naplánujte si působivou večeři pro romantický večer doma"
+    },
+    "Budget Meal Planner": {
+      "n": "Plánovač rozpočtu",
+      "d": "Vytvářejte chutná jídla s omezeným rozpočtem, aniž byste museli obětovat výživu"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Převaděč veganských receptů",
+      "d": "Převeďte jakýkoli tradiční recept na lahodnou veganskou verzi"
+    },
+    "Dessert Creator": {
+      "n": "Tvůrce dezertů",
+      "d": "Navrhněte vlastní recepty na dezerty pro jakoukoli úroveň dovedností a příležitost"
+    },
+    "Appetizer Planner": {
+      "n": "Plánovač předkrmů",
+      "d": "Naplánujte si perfektní předkrm na večírky a setkání"
+    },
+    "Food Prep Timeline": {
+      "n": "Časová osa přípravy jídla",
+      "d": "Vytvořte si podrobnou časovou osu vaření, aby bylo vše připraveno najednou"
+    },
+    "Plant Care Guide": {
+      "n": "Průvodce péčí o rostliny",
+      "d": "Získejte personalizované pokyny pro péči o jakoukoli rostlinu ve vaší sbírce"
+    },
+    "Garden Planner": {
+      "n": "Zahradní plánovač",
+      "d": "Navrhněte a naplánujte si uspořádání zahrady pro maximální výnos a krásu"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Nástroj pro diagnostiku škůdců",
+      "d": "Identifikujte zahradní škůdce a choroby pomocí organických možností ošetření"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Sezónní kalendář výsadby",
+      "d": "Vědět přesně, kdy zasadit jednotlivé plodiny ve vaší pěstitelské zóně"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Plánovač zeleninové zahrady",
+      "d": "Naplánujte si produktivní zeleninovou zahradu s doprovodnou výsadbou a rotací"
+    },
+    "Indoor Plant Guide": {
+      "n": "Průvodce pokojovými rostlinami",
+      "d": "Vyberte si a pečujte o dokonalé pokojové rostliny pro váš prostor"
+    },
+    "Herb Garden Starter": {
+      "n": "Startér bylinkové zahrady",
+      "d": "Začněte prosperující bylinkovou zahrádku uvnitř nebo venku s odborným vedením"
+    },
+    "Composting Guide": {
+      "n": "Průvodce kompostováním",
+      "d": "Spusťte a udržujte kompostovací systém pro bohatou zahradní půdu"
+    },
+    "Landscape Design Helper": {
+      "n": "Pomocník pro návrh krajiny",
+      "d": "Navrhněte krásný plán krajiny pro vaši nemovitost"
+    },
+    "Raised Bed Planner": {
+      "n": "Plánovač vyvýšených postelí",
+      "d": "Navrhněte a postavte dokonalé vyvýšené zahradní záhony pro váš prostor"
+    },
+    "Fruit Tree Guide": {
+      "n": "Průvodce ovocnými stromy",
+      "d": "Vybírejte a pečujte o ovocné stromy vhodné pro vaše klima a prostor"
+    },
+    "Container Garden Planner": {
+      "n": "Plánovač kontejnerové zahrady",
+      "d": "Vytvořte krásné a produktivní kontejnerové zahrady pro jakýkoli prostor"
+    },
+    "Pollinator Garden": {
+      "n": "Zahrada opylovačů",
+      "d": "Navrhněte zahradu, která přitahuje včely, motýly a užitečný hmyz"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Zahrada odolná vůči suchu",
+      "d": "Naplánujte si vodní zahradu, která prosperuje s minimálním zavlažováním"
+    },
+    "Soil Amendment Guide": {
+      "n": "Průvodce změnou půdy",
+      "d": "Otestujte a vylepšete svou zahradní půdu pro optimální zdraví rostlin"
+    },
+    "Seed Starting Calendar": {
+      "n": "Kalendář výsevu semen",
+      "d": "Naplánujte si harmonogram výsevu pro úspěšnou pěstební sezónu"
+    },
+    "Garden Layout Designer": {
+      "n": "Návrhář zahradního uspořádání",
+      "d": "Vytvořte optimalizované uspořádání zahrady se správným rozestupem a přístupem slunce"
+    },
+    "Water Schedule Planner": {
+      "n": "Plánovač vodních plánů",
+      "d": "Vytvořte si efektivní plán zavlažování vaší zahrady a trávníku"
+    },
+    "Plant Problem Solver": {
+      "n": "Řešení problémů rostlin",
+      "d": "Diagnostikujte a léčte běžné problémy rostlin s odborným poradenstvím"
+    },
+    "Pruning Guide": {
+      "n": "Průvodce prořezáváním",
+      "d": "Naučte se, kdy a jak stříhat jakoukoli rostlinu pro zdraví a krásu"
+    },
+    "Home Buying Checklist": {
+      "n": "Kontrolní seznam pro nákup domů",
+      "d": "Kompletní kontrolní seznam krok za krokem pro proces nákupu domu"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Nástroj pro srovnání bytů",
+      "d": "Porovnejte byty vedle sebe a najděte si ideální pronájem"
+    },
+    "Rental Application Helper": {
+      "n": "Pomocník aplikace pro pronájem",
+      "d": "Připravte si silnou žádost o pronájem, která pronajímatelům vynikne"
+    },
+    "Home Inspection Questions": {
+      "n": "Otázky týkající se domovní prohlídky",
+      "d": "Zásadní otázky, které je třeba položit při domovní prohlídce"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Porovnávací kalkulačka hypoték",
+      "d": "Porovnejte možnosti hypotéky a najděte tu nejlepší nabídku pro vaši situaci"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Průvodce prvním kupujícím",
+      "d": "Kompletní průvodce pro sebevědomou navigaci při prvním nákupu domu"
+    },
+    "Neighborhood Research": {
+      "n": "Sousedský výzkum",
+      "d": "Prozkoumejte a porovnejte čtvrti, abyste našli to pravé pro vás"
+    },
+    "Home Value Estimator": {
+      "n": "Odhad domácí hodnoty",
+      "d": "Odhadněte hodnotu svého domova pomocí srovnatelných údajů o prodeji a trhu"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Recenzent nájemní smlouvy",
+      "d": "Přečtěte si a pochopte klíčové pojmy ve své nájemní smlouvě"
+    },
+    "Moving Checklist": {
+      "n": "Pohybující se kontrolní seznam",
+      "d": "Komplexní pohyblivý kontrolní seznam s časovou osou a správou úkolů"
+    },
+    "Property Investment Analyzer": {
+      "n": "Analyzátor investic do nemovitostí",
+      "d": "Analyzujte pronájem nemovitostí z hlediska potenciálu návratnosti investice"
+    },
+    "Renovation Budget Planner": {
+      "n": "Plánovač rozpočtu na rekonstrukci",
+      "d": "Plánujte a rozpočítávejte projekty renovace domů s podrobnými odhady nákladů"
+    },
+    "House Hunting Scorecard": {
+      "n": "Scorecard domácího lovu",
+      "d": "Skóre a hodnocení domů během procesu lovu domu"
+    },
+    "Down Payment Calculator": {
+      "n": "Kalkulačka záloh",
+      "d": "Spočítejte si možnosti zálohy a plány úspor pro váš nákup domu"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Plán údržby domu",
+      "d": "Vytvořte si plán sezónní údržby domu, abyste ochránili svou investici"
+    },
+    "Rental Property Analysis": {
+      "n": "Analýza nájemního majetku",
+      "d": "Vyhodnoťte možnosti pronájmu nemovitostí pomocí finančních projekcí"
+    },
+    "Home Staging Tips": {
+      "n": "Tipy na přípravu domu k prodeji",
+      "d": "Připravte svůj dům k rychlejšímu prodeji za vyšší cenu"
+    },
+    "Realtor Interview Questions": {
+      "n": "Otázky pro pohovor s realitním makléřem",
+      "d": "Klíčové otázky, které položit při výběru realitních makléřů"
+    },
+    "Closing Cost Estimator": {
+      "n": "Kalkulačka nákladů na uzavření",
+      "d": "Odhadněte všechny náklady na uzavření vaší nemovitostní transakce"
+    },
+    "HOA Assessment Guide": {
+      "n": "Průvodce hodnocením HOA",
+      "d": "Zhodnoťte poplatky HOA, pravidla a finanční zdraví před nákupem"
+    },
+    "Car Buying Assistant": {
+      "n": "Asistent pro nákup auta",
+      "d": "Projděte procesem nákupu auta s jistotou a ušetřete peníze"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Nástroj pro porovnání vozidel",
+      "d": "Porovnejte vozidla vedle sebe podle specifikací, ceny a výbavy"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Plánovač harmonogramu údržby",
+      "d": "Vytvořte personalizovaný harmonogram údržby vozidla pro prodloužení jeho životnosti"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Analyzátor odhadů oprav",
+      "d": "Zhodnoťte odhady autooprav a najděte férové ceny za služby"
+    },
+    "Road Trip Planner": {
+      "n": "Plánovač výletů autem",
+      "d": "Naplánujte dokonalý výlet autem se zastávkami, palivem a vypočítaným časem"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Kontrolní seznam pro prohlídku ojetého auta",
+      "d": "Důkladný kontrolní seznam pro nákup ojetého auta s jistotou"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Porovnání autopojištění",
+      "d": "Porovnejte možnosti autopojištění a najděte nejlepší krytí a cenu"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Kalkulačka spotřeby paliva",
+      "d": "Vypočítejte a optimalizujte náklady na palivo a účinnost vozidla"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Analyzátor leasingu vs. koupě auta",
+      "d": "Porovnejte leasing a koupi a najděte nejlepší finanční variantu"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Odhad hodnoty při výkupu",
+      "d": "Odhadněte hodnotu svého vozidla při výkupu a vyjednejte férový obchod"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Kontrola historie vozidla",
+      "d": "Klíčové otázky a kontroly při posuzování zprávy o historii ojetého vozidla"
+    },
+    "Car Detailing Guide": {
+      "n": "Průvodce detailingem auta",
+      "d": "Podrobné pokyny k detailnímu čištění auta pro výstavní lesk"
+    },
+    "Winter Car Prep": {
+      "n": "Příprava auta na zimu",
+      "d": "Připravte své vozidlo na zimní jízdní podmínky a chladné počasí"
+    },
+    "New Driver Guide": {
+      "n": "Průvodce pro nové řidiče",
+      "d": "Základní tipy a znalosti pro nové a začínající řidiče"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Průvodce elektromobily",
+      "d": "Vše, co potřebujete vědět o koupi a vlastnictví elektromobilu"
+    },
+    "Trip Planner": {
+      "n": "Plánovač cest",
+      "d": "Naplánujte svou dokonalou cestu s destinacemi, aktivitami a logistikou"
+    },
+    "Packing List Generator": {
+      "n": "Generátor balicího seznamu",
+      "d": "Vygenerujte přizpůsobený balicí seznam pro jakoukoliv cestu a destinaci"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Tvůrce itineráře dovolené",
+      "d": "Sestavte denní itinerář dovolené s aktivitami a stravováním"
+    },
+    "Travel Budget Calculator": {
+      "n": "Kalkulačka cestovního rozpočtu",
+      "d": "Vypočítejte a sledujte svůj cestovní rozpočet s podrobnými kategoriemi výdajů"
+    },
+    "Local Attractions Guide": {
+      "n": "Průvodce místními atrakcemi",
+      "d": "Objevte nejlepší místní atrakce, skryté klenoty a místa, která musíte vidět"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Porovnání cestovního pojištění",
+      "d": "Porovnejte možnosti cestovního pojištění pro správné krytí na vaší cestě"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Strategie hledání levných letenek",
+      "d": "Strategie a tipy pro nalezení nejlepších nabídek a cen letenek"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Pomocník pro porovnání hotelů",
+      "d": "Porovnejte hotely podle ceny, vybavení, polohy a recenzí"
+    },
+    "Solo Travel Planner": {
+      "n": "Plánovač samostatného cestování",
+      "d": "Naplánujte bezpečné a obohacující samostatné cestovní dobrodružství kamkoliv na světě"
+    },
+    "Family Vacation Planner": {
+      "n": "Plánovač rodinné dovolené",
+      "d": "Naplánujte rodinnou dovolenou, která zabaví všechny věkové kategorie"
+    },
+    "Backpacking Planner": {
+      "n": "Plánovač batůžkářské cesty",
+      "d": "Naplánujte cenově dostupné batůžkářské dobrodružství s trasami a výbavou"
+    },
+    "Business Travel Organizer": {
+      "n": "Organizátor služebních cest",
+      "d": "Organizujte služební cesty efektivně se sledováním výdajů a plánováním"
+    },
+    "Cruise Planner": {
+      "n": "Plánovač plavby",
+      "d": "Naplánujte dokonalou dovolenou na lodi s výlety do přístavů a palubními aktivitami"
+    },
+    "Travel Safety Guide": {
+      "n": "Průvodce bezpečností na cestách",
+      "d": "Zůstaňte v bezpečí na cestách s bezpečnostními tipy a postupy pro konkrétní destinace"
+    },
+    "Visa Requirements Checker": {
+      "n": "Kontrola vízových požadavků",
+      "d": "Zkontrolujte vízové požadavky a připravte podklady pro žádost na vaši cestu"
+    },
+    "Language Survival Kit": {
+      "n": "Jazyková sada pro přežití",
+      "d": "Naučte se základní fráze a kulturní tipy pro vaši cestovní destinaci"
+    },
+    "Airport Navigation Guide": {
+      "n": "Průvodce orientací na letišti",
+      "d": "Orientujte se na letištích efektivně s tipy na terminály a time management"
+    },
+    "Travel Photo Plan": {
+      "n": "Plán cestovní fotografie",
+      "d": "Naplánujte si cestovní fotografování s nejlepšími lokacemi, časy a technikami"
+    },
+    "Group Trip Coordinator": {
+      "n": "Koordinátor skupinového výletu",
+      "d": "Koordinujte logistiku skupinového cestování, rozpočty a aktivity pro všechny"
+    },
+    "Adventure Travel Planner": {
+      "n": "Plánovač dobrodružného cestování",
+      "d": "Naplánujte adrenalinové dobrodružné cestování s bezpečností a logistikou"
+    },
+    "Wedding Planner": {
+      "n": "Svatební plánovač",
+      "d": "Naplánujte každý detail vaší dokonalé svatby od místa konání po sliby"
+    },
+    "Birthday Party Planner": {
+      "n": "Plánovač narozeninové oslavy",
+      "d": "Naplánujte nezapomenutelnou narozeninovou oslavu pro jakýkoli věk a styl"
+    },
+    "Conference Organizer": {
+      "n": "Organizátor konferencí",
+      "d": "Organizujte profesionální konference a semináře s detailní logistikou"
+    },
+    "Baby Shower Planner": {
+      "n": "Plánovač oslavy před narozením dítěte",
+      "d": "Naplánujte krásnou oslavu před narozením dítěte s hrami, jídlem a dekoracemi"
+    },
+    "Anniversary Celebration": {
+      "n": "Oslava výročí",
+      "d": "Naplánujte smysluplnou oslavu výročí pro jakýkoli milník"
+    },
+    "Graduation Party": {
+      "n": "Promocní oslava",
+      "d": "Oslavte akademické úspěchy dokonale naplánovanou promocní oslavou"
+    },
+    "Holiday Party Planner": {
+      "n": "Plánovač svátečních oslav",
+      "d": "Naplánujte slavnostní sváteční setkání s jídlem, aktivitami a dekoracemi"
+    },
+    "Corporate Event Planner": {
+      "n": "Plánovač firemních akcí",
+      "d": "Naplánujte profesionální firemní akce, které zapůsobí na klienty a zaměstnance"
+    },
+    "Fundraiser Organizer": {
+      "n": "Organizátor benefičních akcí",
+      "d": "Organizujte úspěšné fundraisingové akce pro charity a dobré účely"
+    },
+    "Reunion Planner": {
+      "n": "Plánovač setkání",
+      "d": "Naplánujte nezapomenutelné rodinné nebo třídní setkání, které spojí všechny dohromady"
+    },
+    "Engagement Party Planner": {
+      "n": "Plánovač zásnubní oslavy",
+      "d": "Naplánujte radostnou zásnubní oslavu ke sdílení šťastné zprávy"
+    },
+    "Retirement Party": {
+      "n": "Oslava odchodu do důchodu",
+      "d": "Oslavte dobře prožitou kariéru promyšlenou oslavou odchodu do důchodu"
+    },
+    "Housewarming Planner": {
+      "n": "Plánovač oslavy nového bydlení",
+      "d": "Naplánujte přátelskou oslavu nastěhování do nového domova"
+    },
+    "Themed Party Creator": {
+      "n": "Tvůrce tematických párty",
+      "d": "Navrhněte a naplánujte kreativní tematické párty s koordinovanými detaily"
+    },
+    "Event Budget Tracker": {
+      "n": "Sledování rozpočtu akce",
+      "d": "Sledujte a spravujte výdaje na akci, abyste zůstali v rozpočtu oslavy"
+    },
+    "Chore Chart Creator": {
+      "n": "Tvůrce tabulky domácích prací",
+      "d": "Vytvořte tabulky domácích prací přiměřené věku s odměnami a sledováním"
+    },
+    "Educational Activity Planner": {
+      "n": "Plánovač vzdělávacích aktivit",
+      "d": "Naplánujte zábavné vzdělávací aktivity, které učení učiní vzrušujícím pro děti"
+    },
+    "Bedtime Story Writer": {
+      "n": "Autor pohádek na dobrou noc",
+      "d": "Vytvořte personalizované pohádky na dobrou noc s vaším dítětem v hlavní roli"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Sledování milníků dle věku",
+      "d": "Sledujte vývojové milníky a oslavujte růst vašeho dítěte"
+    },
+    "School Lunch Planner": {
+      "n": "Plánovač školních obědů",
+      "d": "Naplánujte zdravé a lákavé školní obědy, které děti opravdu snědí"
+    },
+    "Homework Help Guide": {
+      "n": "Průvodce pomocí s domácími úkoly",
+      "d": "Strategie pro podporu domácích úkolů vašeho dítěte, aniž byste je dělali za něj"
+    },
+    "Family Game Night Ideas": {
+      "n": "Nápady na rodinný herní večer",
+      "d": "Naplánujte poutavé rodinné herní večery s aktivitami pro všechny věkové kategorie"
+    },
+    "Screen Time Schedule": {
+      "n": "Harmonogram času u obrazovky",
+      "d": "Vytvořte vyvážená pravidla a harmonogramy času u obrazovky pro vaši rodinu"
+    },
+    "Allowance System Designer": {
+      "n": "Návrhář systému kapesného",
+      "d": "Navrhněte věku přiměřený systém kapesného a správy peněz"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Harmonogram spánku miminka",
+      "d": "Vytvořte zdravé spánkové harmonogramy a rutiny pro miminka a batolata"
+    },
+    "Potty Training Guide": {
+      "n": "Průvodce nácvikem na nočník",
+      "d": "Postupné plány nácviku na nočník s tipy pro každou fázi"
+    },
+    "Back to School Prep": {
+      "n": "Příprava na návrat do školy",
+      "d": "Připravte svou rodinu na hladký přechod zpět do školy"
+    },
+    "Summer Activity Planner": {
+      "n": "Plánovač letních aktivit",
+      "d": "Naplánujte zábavné a obohacující léto s aktivitami, tábory a dobrodružstvími"
+    },
+    "Family Meeting Agenda": {
+      "n": "Program rodinné porady",
+      "d": "Veďte produktivní rodinné porady, kde má každý svůj hlas"
+    },
+    "Child Development Tracker": {
+      "n": "Sledování vývoje dítěte",
+      "d": "Sledujte a podporujte fyzický, sociální a kognitivní vývoj vašeho dítěte"
+    },
+    "Dog Training Plan": {
+      "n": "Plán výcviku psa",
+      "d": "Vytvořte přizpůsobený plán výcviku pro vašeho psa v jakémkoli věku nebo na jakékoli úrovni"
+    },
+    "Cat Care Guide": {
+      "n": "Průvodce péčí o kočku",
+      "d": "Kompletní průvodce péčí pro zdravou a šťastnou kočku"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Plánovač výživy domácích mazlíčků",
+      "d": "Naplánujte optimální výživu pro vašeho mazlíčka na základě věku, plemene a zdravotních potřeb"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Kontrolní seznam socializace štěněte",
+      "d": "Zajistěte správnou socializaci štěněte v kritickém vývojovém období"
+    },
+    "Pet First Aid Guide": {
+      "n": "Průvodce první pomocí pro mazlíčky",
+      "d": "Základní znalosti první pomoci a nouzové postupy pro majitele mazlíčků"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Plánovač zřízení akvária",
+      "d": "Naplánujte a zřiďte prosperující akvárium se správnými rybami a vybavením"
+    },
+    "Pet Travel Preparation": {
+      "n": "Příprava na cestování s mazlíčkem",
+      "d": "Připravte vše potřebné pro bezpečné a bezstresové cestování s vaším mazlíčkem"
+    },
+    "New Pet Checklist": {
+      "n": "Kontrolní seznam pro nového mazlíčka",
+      "d": "Vše, co potřebujete připravit, než si přinesete nového mazlíčka domů"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Analyzátor chování mazlíčků",
+      "d": "Pochopte a řešte problémy s chováním vašeho mazlíčka s odborným vedením"
+    },
+    "Senior Pet Care": {
+      "n": "Péče o starší mazlíčky",
+      "d": "Specializovaný průvodce péčí o stárnoucí mazlíčky pro jejich pohodlí a zdraví"
+    },
+    "Pet Exercise Planner": {
+      "n": "Plánovač cvičení pro mazlíčky",
+      "d": "Vytvořte cvičební rutinu, která udrží vašeho mazlíčka fit a duševně stimulovaného"
+    },
+    "Vet Visit Preparation": {
+      "n": "Příprava na návštěvu veterináře",
+      "d": "Připravte se na návštěvu veterináře s uspořádanými zdravotními údaji a otázkami"
+    },
+    "Home Improvement Planner": {
+      "n": "Plánovač vylepšení domova",
+      "d": "Naplánujte a stanovte priority projektů vylepšení domova s rozpočty a harmonogramy"
+    },
+    "Furniture Project Planner": {
+      "n": "Plánovač nábytkových projektů",
+      "d": "Naplánujte stavbu nábytku na míru s materiály, nástroji a postupem krok za krokem"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Kalkulačka rozpočtu na rekonstrukci",
+      "d": "Vypočítejte podrobné náklady na rekonstrukci včetně práce, materiálů a rezervy"
+    },
+    "Paint Color Coordinator": {
+      "n": "Koordinátor barev malby",
+      "d": "Vyberte a slaďte barvy malby pro soudržnou paletu domova"
+    },
+    "Organization System Designer": {
+      "n": "Návrhář organizačního systému",
+      "d": "Navrhněte vlastní organizační systémy pro jakoukoli místnost nebo prostor ve vašem domě"
+    },
+    "Storage Solutions Planner": {
+      "n": "Plánovač úložných řešení",
+      "d": "Najděte kreativní úložná řešení pro maximální využití prostoru v jakékoli místnosti"
+    },
+    "Home Repair Guide": {
+      "n": "Průvodce domácími opravami",
+      "d": "Pokyny krok za krokem pro běžné domácí opravy, které zvládnete sami"
+    },
+    "Tool Buying Guide": {
+      "n": "Průvodce nákupem nářadí",
+      "d": "Vyberte správné nářadí pro vaše kutilské projekty bez zbytečného utrácení"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Sezónní údržba domu",
+      "d": "Kompletní sezónní kontrolní seznamy údržby pro ochranu vašeho domu po celý rok"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Audit energetické účinnosti",
+      "d": "Zhodnoťte a zlepšete energetickou účinnost vašeho domu pro úsporu na účtech"
+    },
+    "Smart Home Setup": {
+      "n": "Nastavení chytré domácnosti",
+      "d": "Naplánujte a nastavte systém chytré domácnosti se správnými zařízeními a integracemi"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Plánovač rekonstrukce koupelny",
+      "d": "Naplánujte rekonstrukci koupelny s dispozicí, vybavením a správou rozpočtu"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Plánovač rekonstrukce kuchyně",
+      "d": "Naplánujte rekonstrukci kuchyně od dispozice po spotřebiče s podrobným rozpočtem"
+    },
+    "Closet Organization": {
+      "n": "Organizace šatny",
+      "d": "Navrhněte a organizujte šatny pro maximální efektivitu a snadný přístup"
+    },
+    "Garage Organization": {
+      "n": "Organizace garáže",
+      "d": "Proměňte svou garáž v organizovaný a funkční prostor"
+    },
+    "Product Comparison Tool": {
+      "n": "Nástroj pro porovnání produktů",
+      "d": "Porovnejte produkty vedle sebe pro nejlepší nákupní rozhodnutí"
+    },
+    "Buying Guide Creator": {
+      "n": "Tvůrce nákupních průvodců",
+      "d": "Vytvořte podrobné nákupní průvodce pro jakoukoli kategorii produktů"
+    },
+    "Gift Finder": {
+      "n": "Hledač dárků",
+      "d": "Najděte dokonalý dárek pro kohokoliv na základě jeho zájmů a vašeho rozpočtu"
+    },
+    "Price Tracker Strategy": {
+      "n": "Strategie sledování cen",
+      "d": "Strategie pro sledování cen a nákup v ten nejlepší čas"
+    },
+    "Black Friday Strategy": {
+      "n": "Strategie pro Black Friday",
+      "d": "Naplánujte si nákupy na Black Friday a Cyber Monday pro maximální úspory"
+    },
+    "Back to School Shopping": {
+      "n": "Nákupy na začátek školy",
+      "d": "Organizujte nákupy na začátek školy se seznamy, rozpočty a slevami"
+    },
+    "Wardrobe Planner": {
+      "n": "Plánovač šatníku",
+      "d": "Sestavte univerzální šatník se strategickými nákupy a plánováním outfitů"
+    },
+    "Electronics Buying Guide": {
+      "n": "Průvodce nákupem elektroniky",
+      "d": "Orientujte se v nákupu elektroniky s porovnáním specifikací a radami ohledně načasování"
+    },
+    "Subscription Service Comparison": {
+      "n": "Porovnání předplatitelských služeb",
+      "d": "Porovnejte předplatitelské služby a najděte nejlepší hodnotu pro vaše potřeby"
+    },
+    "Wedding Registry Planner": {
+      "n": "Plánovač svatebního seznamu přání",
+      "d": "Sestavte komplexní svatební seznam přání s položkami pro každý rozpočet"
+    },
+    "Bible Study Guide": {
+      "n": "Průvodce studiem Bible",
+      "d": "Vytvořte strukturované plány studia Bible s kontextem, otázkami a aplikací"
+    },
+    "Sermon Outline Creator": {
+      "n": "Tvůrce osnov kázání",
+      "d": "Vytvořte poutavé osnovy kázání s Písmem, body a ilustracemi"
+    },
+    "Comparative Religion Study": {
+      "n": "Srovnávací studium náboženství",
+      "d": "Prozkoumejte a porovnejte víru, zvyky a historii světových náboženství"
+    },
+    "Discussion Question Generator": {
+      "n": "Generátor diskusních otázek",
+      "d": "Generujte promyšlené diskusní otázky pro náboženská a filozofická témata"
+    },
+    "Devotional Writer": {
+      "n": "Autor denních zamyšlení",
+      "d": "Vytvořte denní zamyšlení s Písmem, reflexí a podněty k modlitbě"
+    },
+    "Prayer Journal Guide": {
+      "n": "Průvodce modlitebním deníkem",
+      "d": "Strukturujte svůj modlitební život s řízenými podněty a rámci pro deník"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Průvodce duchovním knižním klubem",
+      "d": "Vytvořte průvodce diskusí knižního klubu pro duchovní a náboženské knihy"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Průvodce meditací nad Písmem",
+      "d": "Vytvořte řízené meditační zážitky zaměřené na pasáže z Písma"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Plán lekce pro mládežnickou skupinu",
+      "d": "Vytvořte poutavé lekce pro mládežnické skupiny s aktivitami a diskusemi"
+    },
+    "Faith Journey Reflector": {
+      "n": "Reflexe cesty víry",
+      "d": "Řízené reflexe pro prozkoumání a prohloubení vaší osobní cesty víry"
+    },
+    "Workout Plan Creator": {
+      "n": "Tvůrce tréninkového plánu",
+      "d": "Vytvořte personalizované tréninkové plány na základě vašich cílů a úrovně kondice"
+    },
+    "Training Schedule Builder": {
+      "n": "Tvůrce tréninkového harmonogramu",
+      "d": "Sestavte strukturovaný tréninkový harmonogram pro jakýkoli sport nebo fitness cíl"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Analyzátor herní strategie",
+      "d": "Analyzujte herní strategie a vytvořte vítězné přístupy pro váš sport"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Průvodce sportovní výživou",
+      "d": "Optimalizujte sportovní výživu pro špičkový výkon a regeneraci"
+    },
+    "Coaching Practice Plan": {
+      "n": "Plán tréninkové jednotky",
+      "d": "Navrhněte efektivní tréninková sezení rozvíjející dovednosti a týmovou soudržnost"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Analyzátor fantasy sportů",
+      "d": "Analyzujte zápasy a optimalizujte svou fantasy sportovní sestavu každý týden"
+    },
+    "Race Training Plan": {
+      "n": "Plán přípravy na závod",
+      "d": "Trénujte na závody od 5 km po maraton se strukturovanými progresivními plány"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Analyzátor sportovních statistik",
+      "d": "Analyzujte statistiky hráčů a týmů pro hlubší porozumění sportu"
+    },
+    "Team Management Tool": {
+      "n": "Nástroj pro řízení týmu",
+      "d": "Spravujte týmové soupisky, harmonogramy a komunikaci efektivně"
+    },
+    "Injury Recovery Planner": {
+      "n": "Plánovač zotavení po zranění",
+      "d": "Naplánujte bezpečné a účinné zotavení z běžných sportovních zranění"
+    },
+    "Photography Guide": {
+      "n": "Průvodce fotografováním",
+      "d": "Zlepšete své fotografické dovednosti s tipy na kompozici, osvětlení a vybavení"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Pomocník pro pletací vzory",
+      "d": "Najděte a upravte pletací vzory pro vaši úroveň dovedností a nápady na projekty"
+    },
+    "Board Game Night Planner": {
+      "n": "Plánovač večera s deskovými hrami",
+      "d": "Naplánujte dokonalé večery s deskovými hrami s výběrem her a přizpůsobením skupině"
+    },
+    "Fishing Trip Planner": {
+      "n": "Plánovač rybářského výletu",
+      "d": "Naplánujte úspěšné rybářské výlety s radami k místu, výbavě a technice"
+    },
+    "Camping Trip Organizer": {
+      "n": "Organizátor kempování",
+      "d": "Organizujte kempovací výlety se seznamy výbavy, jídelními plány a nápady na aktivity"
+    },
+    "Bird Watching Guide": {
+      "n": "Průvodce pozorováním ptáků",
+      "d": "Identifikujte místní ptáky a plánujte ornitologické výlety se sezónními tipy"
+    },
+    "Model Building Planner": {
+      "n": "Plánovač stavby modelů",
+      "d": "Naplánujte a realizujte projekty stavby modelů s materiály a technikami"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Průvodce strategiemi hlavolamů",
+      "d": "Strategie a techniky pro rychlejší a efektivnější řešení hlavolamů"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Plánovač astronomického pozorování",
+      "d": "Naplánujte pozorování hvězd s nebeskými událostmi a doporučeními na vybavení"
+    },
+    "Art Supply Guide": {
+      "n": "Průvodce výtvarnými potřebami",
+      "d": "Vyberte správné výtvarné potřeby pro vaše médium a úroveň dovedností"
+    },
+    "Goal Setting Framework": {
+      "n": "Rámec pro stanovení cílů",
+      "d": "Stanovte a dosáhněte smysluplných cílů se strukturovaným rámcem a akčním plánem"
+    },
+    "Bucket List Creator": {
+      "n": "Tvůrce seznamu přání",
+      "d": "Vytvořte inspirativní seznam přání organizovaný podle kategorie a priority"
+    },
+    "Personal Mission Statement": {
+      "n": "Osobní prohlášení o poslání",
+      "d": "Vytvořte smysluplné osobní prohlášení o poslání, které řídí vaše životní rozhodnutí"
+    },
+    "Life Transition Guide": {
+      "n": "Průvodce životními změnami",
+      "d": "Zvládněte velké životní změny s plánováním, podporou a strategiemi zvládání"
+    },
+    "Habit Building Plan": {
+      "n": "Plán budování návyků",
+      "d": "Vybudujte trvalé pozitivní návyky s osvědčenými vědecky podloženými strategiemi"
+    },
+    "Time Audit Tool": {
+      "n": "Nástroj pro audit času",
+      "d": "Proveďte audit toho, jak trávíte čas, a optimalizujte pro to, na čem nejvíce záleží"
+    },
+    "Relationship Goal Planner": {
+      "n": "Plánovač vztahových cílů",
+      "d": "Stanovte a pracujte na cílech pro silnější a zdravější vztahy"
+    },
+    "Vision Board Creator": {
+      "n": "Tvůrce nástěnky vizí",
+      "d": "Vytvořte digitální nástěnku vizí s řízenými podněty a vizualizačními cvičeními"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Osobní SWOT analýza",
+      "d": "Proveďte osobní SWOT analýzu pro plánování kariéry a života"
+    },
+    "Legacy Letter Writer": {
+      "n": "Autor odkazu v dopise",
+      "d": "Napište smysluplné dopisy odkazu blízkým zachycující vaše hodnoty a moudrost"
+    },
+    "Contract Draft Creator": {
+      "n": "Tvůrce návrhu smlouvy",
+      "d": "Generujte profesionální návrhy smluv pro jakýkoli obchodní vztah"
+    },
+    "NDA Generator": {
+      "n": "Generátor NDA",
+      "d": "Vytvořte dohody o mlčenlivosti přizpůsobené vaší situaci"
+    },
+    "Rental Agreement Draft": {
+      "n": "Návrh nájemní smlouvy",
+      "d": "Navrhněte rezidenční nebo komerční nájemní smlouvy"
+    },
+    "Terms of Service Generator": {
+      "n": "Generátor obchodních podmínek",
+      "d": "Vytvořte komplexní obchodní podmínky pro webové stránky a aplikace"
+    },
+    "Privacy Policy Writer": {
+      "n": "Autor zásad ochrany soukromí",
+      "d": "Generujte zásady ochrany soukromí v souladu s GDPR a CCPA"
+    },
+    "Freelance Agreement": {
+      "n": "Smlouva pro freelancery",
+      "d": "Vytvořte smlouvy mezi freelancery a klienty"
+    },
+    "Non-Compete Draft": {
+      "n": "Návrh konkurenční doložky",
+      "d": "Navrhněte konkurenční doložky a samostatné dohody"
+    },
+    "LLC Operating Agreement": {
+      "n": "Společenská smlouva LLC",
+      "d": "Vytvořte společenské smlouvy pro společnosti s ručením omezeným"
+    },
+    "Partnership Agreement": {
+      "n": "Smlouva o partnerství",
+      "d": "Navrhněte smlouvy o partnerství s jasnými rolemi a podmínkami"
+    },
+    "Intellectual Property Brief": {
+      "n": "Shrnutí duševního vlastnictví",
+      "d": "Načrtněte vlastnictví duševního vlastnictví a strategie ochrany"
+    },
+    "Cease and Desist Draft": {
+      "n": "Návrh výzvy k upuštění od jednání",
+      "d": "Vytvořte výzvy k upuštění od jednání pro různé typy porušení"
+    },
+    "Employee Handbook Section": {
+      "n": "Sekce příručky pro zaměstnance",
+      "d": "Napište jednotlivé sekce příruček pro zaměstnance"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Smlouva s nezávislým dodavatelem",
+      "d": "Navrhněte smlouvy s nezávislými dodavateli se správnou klasifikací"
+    },
+    "Liability Waiver Draft": {
+      "n": "Návrh zřeknutí se odpovědnosti",
+      "d": "Vytvořte prohlášení o zřeknutí se odpovědnosti pro aktivity a služby"
+    },
+    "Settlement Letter Draft": {
+      "n": "Návrh dopisu o narovnání",
+      "d": "Navrhněte nabídku narovnání nebo odpovědi na ni"
+    },
+    "Demand Letter Draft": {
+      "n": "Návrh předžalobní výzvy",
+      "d": "Vytvořte formální předžalobní výzvy pro různé nároky"
+    },
+    "Power of Attorney Draft": {
+      "n": "Návrh plné moci",
+      "d": "Navrhněte dokumenty plné moci pro různé účely"
+    },
+    "Last Will Outline": {
+      "n": "Osnova poslední vůle",
+      "d": "Vytvořte osnovu základní poslední vůle a závěti"
+    },
+    "Business License Checklist": {
+      "n": "Kontrolní seznam podnikatelských licencí",
+      "d": "Vygenerujte kontrolní seznam požadovaných licencí pro vaše podnikání"
+    },
+    "Trademark Application Guide": {
+      "n": "Průvodce přihláškou ochranné známky",
+      "d": "Průvodce krok za krokem pro podání přihlášky ochranné známky"
+    },
+    "Small Claims Court Guide": {
+      "n": "Průvodce bagatelním řízením",
+      "d": "Připravte se na bagatelní řízení s uspořádanými argumenty"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Příprava na rozvodovou mediaci",
+      "d": "Uspořádejte klíčové body a priority pro rozvodovou mediaci"
+    },
+    "Tenant Rights Guide": {
+      "n": "Průvodce právy nájemce",
+      "d": "Pochopte práva nájemce a opravné prostředky ve vaší jurisdikci"
+    },
+    "Landlord Notice Draft": {
+      "n": "Návrh oznámení pronajímatele",
+      "d": "Navrhněte řádná právní oznámení od pronajímatele nájemci"
+    },
+    "Copyright Registration Guide": {
+      "n": "Průvodce registrací autorských práv",
+      "d": "Průvodce registrací autorských práv u Úřadu pro autorská práva"
+    },
+    "Personal Budget Planner": {
+      "n": "Plánovač osobního rozpočtu",
+      "d": "Vytvořte komplexní měsíční nebo roční rozpočtový plán"
+    },
+    "Investment Research Assistant": {
+      "n": "Asistent pro výzkum investic",
+      "d": "Systematicky zkoumejte a analyzujte investiční příležitosti"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Kalkulačka splácení dluhů",
+      "d": "Naplánujte strategii pro efektivní splacení dluhů"
+    },
+    "Expense Tracker Setup": {
+      "n": "Nastavení sledování výdajů",
+      "d": "Navrhněte personalizovaný systém sledování výdajů"
+    },
+    "Retirement Planning Guide": {
+      "n": "Průvodce plánováním důchodu",
+      "d": "Sestavte komplexní strategii spoření na důchod"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Kontrolní seznam pro přípravu daní",
+      "d": "Uspořádejte dokumenty a odpočty pro podání daňového přiznání"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Kalkulačka nouzového fondu",
+      "d": "Určete a naplánujte svůj ideální nouzový fond"
+    },
+    "Net Worth Tracker": {
+      "n": "Sledování čistého jmění",
+      "d": "Sledujte a vizualizujte svůj celkový finanční obraz"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Plán zlepšení kreditního skóre",
+      "d": "Vytvořte realizovatelný plán pro zlepšení vašeho kreditního skóre"
+    },
+    "Student Loan Strategy": {
+      "n": "Strategie studentských půjček",
+      "d": "Optimalizujte svůj přístup ke splácení studentských půjček"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Plánovač příjmů z vedlejší činnosti",
+      "d": "Plánujte a projektujte příjmy z vedlejších činností"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Analyzátor pojistných potřeb",
+      "d": "Zhodnoťte mezery a potřeby ve vašem pojistném krytí"
+    },
+    "Estate Planning Checklist": {
+      "n": "Kontrolní seznam majetkového plánování",
+      "d": "Uspořádejte dokumenty a rozhodnutí majetkového plánování"
+    },
+    "Financial Goal Setter": {
+      "n": "Stanovovač finančních cílů",
+      "d": "Definujte a sledujte pokrok směrem k finančním milníkům"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Analyzátor peněžních toků",
+      "d": "Analyzujte vzorce příjmů a výdajů v čase"
+    },
+    "Savings Challenge Creator": {
+      "n": "Tvůrce spořicí výzvy",
+      "d": "Navrhněte zábavnou spořicí výzvu pro budování vašich úspor"
+    },
+    "Investment Portfolio Review": {
+      "n": "Přehled investičního portfolia",
+      "d": "Přezkounejte a vyvažte své investiční portfolio"
+    },
+    "Cryptocurrency Research": {
+      "n": "Výzkum kryptoměn",
+      "d": "Zkoumejte a hodnoťte kryptoměnové investice"
+    },
+    "Stock Analysis Helper": {
+      "n": "Pomocník pro analýzu akcií",
+      "d": "Proveďte fundamentální a technickou analýzu akcií"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Kalkulačka investic do nemovitostí",
+      "d": "Analyzujte potenciální výnosy z investic do nemovitostí"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Vyhledávač daňových odpočtů pro firmy",
+      "d": "Identifikujte oprávněné daňové odpočty pro vaše podnikání"
+    },
+    "Payroll Budget Planner": {
+      "n": "Plánovač mzdového rozpočtu",
+      "d": "Plánujte a rozpočtujte náklady na mzdy zaměstnanců"
+    },
+    "Invoice Template Creator": {
+      "n": "Tvůrce šablon faktur",
+      "d": "Navrhněte profesionální faktury pro vaše podnikání"
+    },
+    "Profit Margin Calculator": {
+      "n": "Kalkulačka ziskové marže",
+      "d": "Vypočítejte a optimalizujte ziskové marže napříč produkty"
+    },
+    "Financial Independence Planner": {
+      "n": "Plánovač finanční nezávislosti",
+      "d": "Zmapujte si cestu k finanční nezávislosti a předčasnému důchodu"
+    },
+    "Ad Copy Writer": {
+      "n": "Autor reklamních textů",
+      "d": "Vytvořte přesvědčivé reklamní texty pro jakoukoli platformu nebo médium"
+    },
+    "SEO Article Creator": {
+      "n": "Tvůrce SEO článků",
+      "d": "Pište SEO optimalizované články, které se umístí vysoko a konvertují"
+    },
+    "Social Media Content Calendar": {
+      "n": "Kalendář obsahu sociálních sítí",
+      "d": "Naplánujte měsíc obsahu na sociálních sítích napříč platformami"
+    },
+    "Email Campaign Builder": {
+      "n": "Tvůrce e-mailových kampaní",
+      "d": "Navrhněte vícekrokové e-mailové marketingové kampaně, které konvertují"
+    },
+    "Product Launch Strategy": {
+      "n": "Strategie uvedení produktu na trh",
+      "d": "Vytvořte komplexní marketingovou strategii uvedení produktu na trh"
+    },
+    "Brand Voice Guide": {
+      "n": "Průvodce hlasem značky",
+      "d": "Definujte a zdokumentujte hlas a komunikaci vaší značky"
+    },
+    "Content Marketing Strategy": {
+      "n": "Strategie obsahového marketingu",
+      "d": "Vybudujte kompletní strategii obsahového marketingu od základů"
+    },
+    "Influencer Outreach Template": {
+      "n": "Šablona pro oslovení influencerů",
+      "d": "Vytvořte personalizované nabídky spolupráce pro influencery"
+    },
+    "Landing Page Copywriter": {
+      "n": "Copywriter vstupních stránek",
+      "d": "Napište vysoce konverzní texty pro vstupní stránky"
+    },
+    "A/B Test Plan Creator": {
+      "n": "Tvůrce plánu A/B testů",
+      "d": "Navrhněte strukturované A/B testy pro marketingové kampaně"
+    },
+    "Buyer Persona Builder": {
+      "n": "Tvůrce person kupujících",
+      "d": "Vytvořte podrobné zákaznické persony pro cílení"
+    },
+    "Competitive Analysis Template": {
+      "n": "Šablona konkurenční analýzy",
+      "d": "Analyzujte konkurenci a identifikujte tržní příležitosti"
+    },
+    "Marketing Budget Planner": {
+      "n": "Plánovač marketingového rozpočtu",
+      "d": "Přidělte a optimalizujte svůj marketingový rozpočet"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Strategie affiliate marketingu",
+      "d": "Vybudujte a optimalizujte program affiliate marketingu"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Marketingový plán podcastu",
+      "d": "Propagujte svůj podcast a rozšiřte základnu posluchačů"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Plán propagace webinářů",
+      "d": "Plánujte a propagujte webináře, které přilákají registrace"
+    },
+    "Referral Program Designer": {
+      "n": "Návrhář doporučovacího programu",
+      "d": "Navrhněte doporučovací programy, které podpoří růst díky ústnímu doporučení"
+    },
+    "Brand Story Writer": {
+      "n": "Autor příběhu značky",
+      "d": "Vytvořte přesvědčivý příběh o vzniku a narativ značky"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Tvůrce marketingového trychtýře",
+      "d": "Navrhněte zákaznické cesty od povědomí po konverzi"
+    },
+    "App Store Optimization": {
+      "n": "Optimalizace pro obchod s aplikacemi",
+      "d": "Optimalizujte záznamy v obchodě s aplikacemi pro maximální počet stažení"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Autor textů pro Google Ads",
+      "d": "Napište efektivní nadpisy a popisy pro Google Ads"
+    },
+    "Facebook Ads Creator": {
+      "n": "Tvůrce reklam na Facebook",
+      "d": "Vytvořte reklamní kampaně na Facebook a Instagram"
+    },
+    "Newsletter Strategy": {
+      "n": "Strategie newsletteru",
+      "d": "Naplánujte a rozvíjejte e-mailový newsletter od nuly"
+    },
+    "PR Media Pitch": {
+      "n": "PR pitch pro média",
+      "d": "Napište přesvědčivé mediální pitche pro získání tiskového pokrytí"
+    },
+    "Content Repurposing Plan": {
+      "n": "Plán přepracování obsahu",
+      "d": "Transformujte existující obsah do více formátů"
+    },
+    "Cold Email Generator": {
+      "n": "Generátor studených e-mailů",
+      "d": "Vytvořte personalizované studené e-maily, které získají odpovědi"
+    },
+    "Sales Script Writer": {
+      "n": "Autor prodejních skriptů",
+      "d": "Napište efektivní prodejní skripty pro hovory a schůzky"
+    },
+    "Objection Handling Guide": {
+      "n": "Průvodce zvládáním námitek",
+      "d": "Připravte si odpovědi na běžné prodejní námitky"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Tvůrce následných zpráv",
+      "d": "Vytvořte strategické sekvence následných zpráv"
+    },
+    "Sales Pitch Creator": {
+      "n": "Tvůrce prodejní prezentace",
+      "d": "Sestavte přesvědčivé výtahové projevy a prodejní prezentace"
+    },
+    "Proposal Generator": {
+      "n": "Generátor nabídek",
+      "d": "Vytvořte profesionální prodejní nabídky a cenové kalkulace"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Plán čištění dat v CRM",
+      "d": "Systematicky organizujte a vyčistěte svou CRM databázi"
+    },
+    "Sales Territory Planner": {
+      "n": "Plánovač prodejních území",
+      "d": "Definujte a optimalizujte prodejní území pro svůj tým"
+    },
+    "Account Strategy Builder": {
+      "n": "Tvůrce strategie pro klíčové zákazníky",
+      "d": "Vytvořte strategické plány pro klíčové zákaznické účty"
+    },
+    "Upsell Script Creator": {
+      "n": "Tvůrce skriptů pro upselling",
+      "d": "Napište skripty pro upselling a cross-selling stávajícím zákazníkům"
+    },
+    "Customer Win-Back Email": {
+      "n": "E-mail pro znovuzískání zákazníků",
+      "d": "Znovu zaujměte ztracené zákazníky cílenými kampaněmi na znovuzískání"
+    },
+    "Sales Forecast Template": {
+      "n": "Šablona prodejní prognózy",
+      "d": "Sestavte přesné prodejní prognózy pro váš obchodní kanál"
+    },
+    "Commission Calculator": {
+      "n": "Kalkulačka provizí",
+      "d": "Navrhněte a vypočítejte struktury prodejních provizí"
+    },
+    "Discovery Call Script": {
+      "n": "Skript pro úvodní hovor",
+      "d": "Strukturujte efektivní úvodní hovory pro kvalifikaci potenciálních zákazníků"
+    },
+    "Demo Presentation Outline": {
+      "n": "Osnova demo prezentace",
+      "d": "Vytvořte strukturované prezentace produktových ukázek"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Plán zaškolení obchodníků",
+      "d": "Navrhněte onboardingové programy pro nové obchodní zástupce"
+    },
+    "Quarterly Business Review": {
+      "n": "Čtvrtletní obchodní přehled",
+      "d": "Připravte prezentace čtvrtletního obchodního přehledu pro klienty"
+    },
+    "Customer Success Plan": {
+      "n": "Plán úspěchu zákazníků",
+      "d": "Vybudujte proaktivní plány úspěchu a udržení zákazníků"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Poradce cenové strategie",
+      "d": "Vytvořte a optimalizujte cenovou strategii vašeho produktu"
+    },
+    "Value Proposition Builder": {
+      "n": "Tvůrce hodnotové nabídky",
+      "d": "Vytvořte jasné a přesvědčivé hodnotové nabídky"
+    },
+    "FAQ Generator": {
+      "n": "Generátor FAQ",
+      "d": "Vytvořte komplexní sekce FAQ z informací o produktu"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Autor článků znalostní báze",
+      "d": "Napište jasné a snadno vyhledatelné články znalostní báze"
+    },
+    "Support Response Template": {
+      "n": "Šablona odpovědí podpory",
+      "d": "Vytvořte znovupoužitelné šablony pro běžné scénáře podpory"
+    },
+    "Chatbot Training Data": {
+      "n": "Tréninková data pro chatbota",
+      "d": "Generujte tréninková data pro chatboty zákaznické podpory"
+    },
+    "Escalation Response Guide": {
+      "n": "Průvodce reakcí na eskalaci",
+      "d": "Vytvořte pokyny pro řešení eskalovaných problémů podpory"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Průzkum spokojenosti zákazníků",
+      "d": "Navrhněte průzkumy pro měření spokojenosti zákazníků"
+    },
+    "Refund Policy Writer": {
+      "n": "Autor zásad vrácení peněz",
+      "d": "Vytvořte jasné a férové zásady vrácení peněz a zboží"
+    },
+    "Bug Report Template": {
+      "n": "Šablona hlášení chyb",
+      "d": "Navrhněte strukturované šablony hlášení chyb pro uživatele"
+    },
+    "Feature Request Response": {
+      "n": "Odpověď na požadavek na funkci",
+      "d": "Formulujte odpovědi na požadavky zákazníků na nové funkce"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Sekvence onboardingových e-mailů",
+      "d": "Vytvořte e-mailové sekvence pro zapojení nových zákazníků"
+    },
+    "Help Center Article": {
+      "n": "Článek centra nápovědy",
+      "d": "Napište komplexní dokumentaci centra nápovědy"
+    },
+    "Service Level Agreement": {
+      "n": "Smlouva o úrovni služeb",
+      "d": "Navrhněte dokumenty SLA pro závazky podpory"
+    },
+    "Customer Apology Template": {
+      "n": "Šablona omluvy zákazníkovi",
+      "d": "Napište upřímné omluvy za selhání služeb"
+    },
+    "Product Update Announcement": {
+      "n": "Oznámení o aktualizaci produktu",
+      "d": "Komunikujte aktualizace a změny produktu zákazníkům"
+    },
+    "Community Guidelines Writer": {
+      "n": "Autor pravidel komunity",
+      "d": "Vytvořte pravidla komunity pro fóra a sociální kanály"
+    },
+    "Startup Validation Framework": {
+      "n": "Rámec validace startupu",
+      "d": "Validujte svůj nápad na startup ještě před zahájením vývoje"
+    },
+    "MVP Feature Planner": {
+      "n": "Plánovač funkcí MVP",
+      "d": "Stanovte priority funkcí pro váš minimální životaschopný produkt"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Tvůrce cenové strategie",
+      "d": "Vytvořte cenové modely pro váš startupový produkt"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Osnova prezentace pro investory",
+      "d": "Strukturujte přesvědčivou prezentaci pro získání financování"
+    },
+    "Business Model Canvas": {
+      "n": "Plátno obchodního modelu",
+      "d": "Zmapujte svůj kompletní obchodní model na jedné stránce"
+    },
+    "Lean Canvas Creator": {
+      "n": "Tvůrce Lean Canvas",
+      "d": "Vytvořte Lean Canvas pro identifikaci rizik a předpokladů"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Analyzátor konkurenčního prostředí",
+      "d": "Zmapujte a analyzujte vaše konkurenční prostředí"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Strategie vstupu na trh",
+      "d": "Naplánujte vstup na trh a přístup k získávání zákazníků"
+    },
+    "Founding Team Assessment": {
+      "n": "Hodnocení zakladatelského týmu",
+      "d": "Zhodnoťte složení týmu a identifikujte chybějící dovednosti"
+    },
+    "Startup Financial Projections": {
+      "n": "Finanční projekce startupu",
+      "d": "Sestavte tříleté finanční projekce pro váš startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Nábor poradního sboru",
+      "d": "Identifikujte a získejte poradce pro svůj startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Rámec pro rozhodnutí o pivotu",
+      "d": "Zhodnoťte, zda a jak pivotovat váš startup"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Dashboard KPI startupu",
+      "d": "Definujte a sledujte klíčové ukazatele výkonnosti"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Plán crowdfundingové kampaně",
+      "d": "Naplánujte a realizujte úspěšnou crowdfundingovou kampaň"
+    },
+    "Partnership Strategy": {
+      "n": "Strategie partnerství",
+      "d": "Identifikujte a rozvíjejte strategická partnerství"
+    },
+    "Accelerator Application": {
+      "n": "Přihláška do akcelerátoru",
+      "d": "Připravte přesvědčivou přihlášku do akcelerátoru nebo inkubátoru"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Průzkum shody produktu s trhem",
+      "d": "Navrhněte průzkumy pro měření shody produktu s trhem"
+    },
+    "Startup Legal Checklist": {
+      "n": "Právní kontrolní seznam startupu",
+      "d": "Pokryjte všechny právní náležitosti při zakládání firmy"
+    },
+    "Equity Split Calculator": {
+      "n": "Kalkulačka rozdělení podílů",
+      "d": "Určete férové rozdělení podílů mezi spoluzakladatele"
+    },
+    "Growth Experiment Planner": {
+      "n": "Plánovač růstových experimentů",
+      "d": "Navrhněte a sledujte růstové experimenty systematicky"
+    },
+    "Product Description Writer": {
+      "n": "Autor popisů produktů",
+      "d": "Napište přesvědčivé popisy produktů, které podporují prodej"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Optimalizátor záznamů na Amazon",
+      "d": "Optimalizujte záznamy produktů na Amazon pro viditelnost a konverzi"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Průvodce založením obchodu na Etsy",
+      "d": "Založte a optimalizujte svůj obchod na Etsy pro úspěch"
+    },
+    "Shopify Store Planner": {
+      "n": "Plánovač obchodu na Shopify",
+      "d": "Naplánujte strukturu a spuštění vašeho obchodu na Shopify"
+    },
+    "Product Photography Brief": {
+      "n": "Zadání produktové fotografie",
+      "d": "Vytvořte zadání pro focení produktové fotografie"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Plánovač strategie dopravy",
+      "d": "Navrhněte nákladově efektivní strategie dopravy"
+    },
+    "Return Policy Creator": {
+      "n": "Tvůrce zásad vrácení zboží",
+      "d": "Vytvořte jasné zásady vrácení a výměny zboží pro e-commerce"
+    },
+    "Customer Review Response": {
+      "n": "Odpověď na zákaznickou recenzi",
+      "d": "Formulujte profesionální odpovědi na zákaznické recenze"
+    },
+    "Inventory Management Plan": {
+      "n": "Plán řízení zásob",
+      "d": "Vytvořte systémy pro sledování a správu zásob"
+    },
+    "Dropshipping Product Research": {
+      "n": "Průzkum produktů pro dropshipping",
+      "d": "Zkoumejte a hodnoťte produktové příležitosti pro dropshipping"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Návrhář print-on-demand produktů",
+      "d": "Plánujte produktové řady a designy pro print-on-demand"
+    },
+    "Subscription Box Planner": {
+      "n": "Plánovač předplatného krabic",
+      "d": "Navrhněte a spusťte podnikání s předplatnými krabicemi"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Strategie svátečního prodeje",
+      "d": "Naplánujte sezónní akce a sváteční prodejní kampaně"
+    },
+    "Product Bundle Creator": {
+      "n": "Tvůrce produktových balíčků",
+      "d": "Navrhněte produktové balíčky, které zvýší průměrnou hodnotu objednávky"
+    },
+    "Cart Abandonment Email": {
+      "n": "E-mail při opuštění košíku",
+      "d": "Vytvořte e-mailové sekvence pro záchranu opuštěných košíků"
+    },
+    "Homework Helper": {
+      "n": "Pomocník s domácími úkoly",
+      "d": "Získejte pomoc krok za krokem s domácími úkoly z jakéhokoli předmětu"
+    },
+    "Quiz & Test Generator": {
+      "n": "Generátor kvízů a testů",
+      "d": "Vytvořte vlastní kvízy z jakéhokoli tématu nebo studijního materiálu"
+    },
+    "Science Fair Project Planner": {
+      "n": "Plánovač projektu na vědeckou soutěž",
+      "d": "Naplánujte a organizujte vítězný projekt na vědeckou soutěž od hypotézy po prezentaci"
+    },
+    "Lesson Plan Creator": {
+      "n": "Tvůrce plánů lekcí",
+      "d": "Navrhněte strukturované plány lekcí v souladu s učebními cíli"
+    },
+    "Lab Report Writer": {
+      "n": "Autor laboratorních zpráv",
+      "d": "Strukturujte a pište laboratorní zprávy se správným vědeckým formátováním"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Pomocník pro porozumění čtenému textu",
+      "d": "Zlepšete porozumění čtenému textu s řízenou analýzou a otázkami"
+    },
+    "Math Problem Solver": {
+      "n": "Řešitel matematických úloh",
+      "d": "Řešte matematické úlohy s podrobnými postupy krok za krokem"
+    },
+    "Vocabulary Builder": {
+      "n": "Tvůrce slovní zásoby",
+      "d": "Budujte a procvičujte slovní zásobu s definicemi, příklady a cvičeními"
+    },
+    "Book Report Helper": {
+      "n": "Pomocník pro knižní referáty",
+      "d": "Načrtněte a napište knižní referáty se strukturovanou analýzou"
+    },
+    "History Timeline Creator": {
+      "n": "Tvůrce historických časových os",
+      "d": "Vytvořte podrobné historické časové osy pro jakoukoli éru nebo událost"
+    },
+    "Geography Quiz Maker": {
+      "n": "Tvůrce zeměpisných kvízů",
+      "d": "Generujte zeměpisné kvízy pokrývající mapy, hlavní města, památky a další"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generátor procvičování pravopisu",
+      "d": "Vytvořte personalizované seznamy a cvičení pro procvičování pravopisu"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Tvůrce gramatických cvičení",
+      "d": "Generujte gramatická cvičení pro jakoukoli úroveň a téma"
+    },
+    "Critical Thinking Questions": {
+      "n": "Otázky kritického myšlení",
+      "d": "Generujte podnětné otázky pro rozvoj dovedností kritického myšlení"
+    },
+    "Debate Prep Guide": {
+      "n": "Průvodce přípravou na debatu",
+      "d": "Připravte strukturované argumenty a protiargumenty pro debaty"
+    },
+    "College Application Essay": {
+      "n": "Esej pro přihlášku na vysokou školu",
+      "d": "Vytvořte přesvědčivé eseje pro přihlášky na vysokou školu s řízenými podněty"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Pomocník pro esej na stipendium",
+      "d": "Napište přesvědčivé stipendijní eseje, které vyzdvihnou úspěchy a cíle"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "Průvodce přípravou na SAT/ACT",
+      "d": "Vytvořte cílené studijní plány a procvičování pro zkoušky SAT nebo ACT"
+    },
+    "Study Schedule Planner": {
+      "n": "Plánovač studijního rozvrhu",
+      "d": "Sestavte efektivní studijní rozvrh vyvažující všechny předměty a termíny"
+    },
+    "Group Project Organizer": {
+      "n": "Organizátor skupinových projektů",
+      "d": "Naplánujte role, úkoly a harmonogramy pro skupinové projekty"
+    },
+    "Presentation Creator": {
+      "n": "Tvůrce prezentací",
+      "d": "Navrhněte a načrtněte poutavé prezentace na jakékoli téma"
+    },
+    "Note-Taking Guide": {
+      "n": "Průvodce zapisováním poznámek",
+      "d": "Vytvořte strukturované šablony poznámek pro přednášky a četbu"
+    },
+    "Mind Map Generator": {
+      "n": "Generátor myšlenkových map",
+      "d": "Vytvořte vizuální myšlenkové mapy pro organizaci nápadů a konceptů"
+    },
+    "Research Project Planner": {
+      "n": "Plánovač výzkumného projektu",
+      "d": "Naplánujte a řiďte výzkumné projekty od výběru tématu po závěrečnou práci"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Příprava na rodičovskou schůzku",
+      "d": "Připravte si body k diskusi a otázky pro produktivní rodičovské schůzky"
+    },
+    "Classroom Activity Designer": {
+      "n": "Návrhář třídních aktivit",
+      "d": "Navrhněte interaktivní třídní aktivity posilující učební cíle"
+    },
+    "Special Education Resource": {
+      "n": "Zdroj pro speciální vzdělávání",
+      "d": "Vytvořte přizpůsobené vzdělávací zdroje pro žáky se speciálními vzdělávacími potřebami"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Plánovač osnov domácího vzdělávání",
+      "d": "Naplánujte kompletní osnovy domácího vzdělávání podle předmětu a semestru"
+    },
+    "Student Self-Assessment": {
+      "n": "Sebehodnocení studenta",
+      "d": "Vytvořte nástroje sebehodnocení pro studenty ke sledování vlastního pokroku v učení"
+    },
+    "Learning Style Analyzer": {
+      "n": "Analyzátor stylu učení",
+      "d": "Identifikujte styly učení a navrhněte personalizované studijní strategie"
+    },
+    "Literature Review Writer": {
+      "n": "Autor přehledu literatury",
+      "d": "Organizujte a pište komplexní přehledy literatury na jakékoli téma"
+    },
+    "Research Assistant": {
+      "n": "Výzkumný asistent",
+      "d": "Získejte pomoc s hledáním, organizací a shrnutím výzkumných materiálů"
+    },
+    "Fact Checker Template": {
+      "n": "Šablona ověřování faktů",
+      "d": "Ověřujte tvrzení a prohlášení strukturovanou metodologií ověřování faktů"
+    },
+    "Source Comparison Tool": {
+      "n": "Nástroj pro porovnání zdrojů",
+      "d": "Porovnejte a kontrastujte více zdrojů ke stejnému tématu"
+    },
+    "Citation Generator": {
+      "n": "Generátor citací",
+      "d": "Generujte správně naformátované citace v jakémkoli akademickém stylu"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Tvůrce anotované bibliografie",
+      "d": "Vytvořte anotované bibliografie se souhrny a hodnoceními"
+    },
+    "Research Methodology Guide": {
+      "n": "Průvodce výzkumnou metodologií",
+      "d": "Vyberte a navrhněte správnou výzkumnou metodologii pro vaši studii"
+    },
+    "Survey Question Designer": {
+      "n": "Návrhář otázek pro průzkum",
+      "d": "Navrhněte efektivní otázky pro průzkumy k získání spolehlivých výzkumných dat"
+    },
+    "Data Collection Plan": {
+      "n": "Plán sběru dat",
+      "d": "Vytvořte strukturovaný plán pro sběr výzkumných dat"
+    },
+    "Thesis Statement Generator": {
+      "n": "Generátor tezí",
+      "d": "Formulujte silné teze pro výzkumné práce a disertace"
+    },
+    "Research Proposal Writer": {
+      "n": "Autor výzkumného návrhu",
+      "d": "Napište přesvědčivé výzkumné návrhy pro akademické nebo grantové posouzení"
+    },
+    "Systematic Review Guide": {
+      "n": "Průvodce systematickým přehledem",
+      "d": "Provádějte systematické přehledy podle zavedených protokolů"
+    },
+    "Interview Protocol Creator": {
+      "n": "Tvůrce protokolu rozhovorů",
+      "d": "Navrhněte strukturované protokoly rozhovorů pro kvalitativní výzkum"
+    },
+    "Research Ethics Checklist": {
+      "n": "Kontrolní seznam výzkumné etiky",
+      "d": "Zajistěte soulad výzkumu s etickými pokyny a požadavky etické komise"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Rámec metaanalýzy",
+      "d": "Strukturujte a provádějte metaanalýzy napříč více studiemi"
+    },
+    "Case Study Template": {
+      "n": "Šablona případové studie",
+      "d": "Strukturujte a pište podrobné případové studie pro výzkum nebo podnikání"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Průvodce kvalitativní analýzou",
+      "d": "Veďte kvalitativní analýzu dat pomocí kódování a tematických přístupů"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Průvodce kvantitativní analýzou",
+      "d": "Veďte kvantitativní analýzu dat s vhodnými statistickými metodami"
+    },
+    "Research Poster Creator": {
+      "n": "Tvůrce výzkumného posteru",
+      "d": "Navrhněte a rozložte výzkumné postery pro konference a prezentace"
+    },
+    "Research Grant Writer": {
+      "n": "Autor grantových žádostí",
+      "d": "Napište strukturované grantové žádosti pro výzkumné financování"
+    },
+    "Chemistry Tutor": {
+      "n": "Doučovatel chemie",
+      "d": "Získejte personalizované doučování chemie s vysvětleními a cvičnými úlohami"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Vyrovnávač chemických rovnic",
+      "d": "Vyrovnejte chemické rovnice s vysvětlením krok za krokem"
+    },
+    "Lab Safety Checklist": {
+      "n": "Kontrolní seznam bezpečnosti v laboratoři",
+      "d": "Generujte komplexní kontrolní seznamy bezpečnosti pro chemické experimenty"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Pomocník pro organickou chemii",
+      "d": "Studujte organické reakce, mechanismy a názvosloví"
+    },
+    "Periodic Table Explorer": {
+      "n": "Průzkumník periodické tabulky",
+      "d": "Prozkoumejte vlastnosti prvků, trendy a vztahy v periodické tabulce"
+    },
+    "Stoichiometry Solver": {
+      "n": "Řešitel stechiometrie",
+      "d": "Řešte stechiometrické úlohy s podrobnými výpočty mol na mol"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Průvodce chemickými vazbami",
+      "d": "Pochopte iontové, kovalentní a kovové vazby s vizuálními vysvětleními"
+    },
+    "Acid-Base Calculator": {
+      "n": "Kalkulačka kyselin a zásad",
+      "d": "Vypočítejte pH, pOH, Ka, Kb a řešte úlohy acidobazické rovnováhy"
+    },
+    "Solution Preparation Guide": {
+      "n": "Průvodce přípravou roztoků",
+      "d": "Vypočítejte a připravte chemické roztoky se správnými koncentracemi"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Interpretátor spektroskopie",
+      "d": "Interpretujte IR, NMR a hmotnostní spektra pro identifikaci sloučenin"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Laboratorní sešit chemie",
+      "d": "Vytvořte strukturované záznamy laboratorního sešitu pro chemické experimenty"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Pomocník pro reakční mechanismy",
+      "d": "Kreslete a pochopte reakční mechanismy krok za krokem"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Kalkulačka termochemie",
+      "d": "Vypočítejte entalpii, entropii a Gibbsovu volnou energii pro chemické reakce"
+    },
+    "Electrochemistry Guide": {
+      "n": "Průvodce elektrochemií",
+      "d": "Pochopte elektrochemické články, elektrodové potenciály a elektrolýzu"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Průvodce chemií polymerů",
+      "d": "Studujte typy polymerů, mechanismy syntézy a vlastnosti"
+    },
+    "Biology Tutor": {
+      "n": "Doučovatel biologie",
+      "d": "Získejte personalizované doučování biologie s jasnými vysvětleními a příklady"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Studijní průvodce buněčnou biologií",
+      "d": "Studujte buněčné struktury, funkce a procesy do hloubky"
+    },
+    "Genetics Problem Solver": {
+      "n": "Řešitel genetických úloh",
+      "d": "Řešte genetické úlohy včetně Punnettových čtverců a analýzy rodokmenu"
+    },
+    "Ecology Study Helper": {
+      "n": "Pomocník pro studium ekologie",
+      "d": "Studujte ekosystémy, potravní sítě, populační dynamiku a ekologické vztahy"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Průvodce anatomií a fyziologií",
+      "d": "Studujte systémy lidského těla s podrobnými anatomickými vysvětleními"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Průvodce mikrobiologickou laboratoří",
+      "d": "Průvodce mikrobiologickými laboratorními technikami včetně barvení, kultivace a identifikace"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Mapovač evolučních konceptů",
+      "d": "Mapujte evoluční koncepty včetně přirozeného výběru, speciace a fylogenetiky"
+    },
+    "Plant Biology Helper": {
+      "n": "Pomocník pro botaniku",
+      "d": "Studujte anatomii rostlin, fyziologii a ekologické role"
+    },
+    "Molecular Biology Guide": {
+      "n": "Průvodce molekulární biologií",
+      "d": "Pochopte replikaci DNA, transkripci, translaci a regulaci genů"
+    },
+    "Bioinformatics Helper": {
+      "n": "Pomocník pro bioinformatiku",
+      "d": "Získejte pomoc s analýzou sekvencí, prohledáváním databází a výpočetní biologií"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Studijní průvodce neurovědou",
+      "d": "Studujte nervový systém, funkce mozku a nervové dráhy"
+    },
+    "Marine Biology Explorer": {
+      "n": "Průzkumník mořské biologie",
+      "d": "Prozkoumejte mořské ekosystémy, organismy a oceánskou vědu"
+    },
+    "Immunology Study Guide": {
+      "n": "Studijní průvodce imunologií",
+      "d": "Studujte imunitní systém, imunitní odpovědi a imunologické poruchy"
+    },
+    "Biotechnology Overview": {
+      "n": "Přehled biotechnologií",
+      "d": "Prozkoumejte aplikace biotechnologií včetně genetického inženýrství a CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Plánovač ochranářské biologie",
+      "d": "Plánujte ochranářské strategie pro zachování druhů a biotopů"
+    },
+    "Physics Problem Solver": {
+      "n": "Řešitel fyzikálních úloh",
+      "d": "Řešte fyzikální úlohy s podrobnými postupy krok za krokem"
+    },
+    "Mechanics Helper": {
+      "n": "Pomocník pro mechaniku",
+      "d": "Studujte a řešte úlohy z klasické mechaniky včetně kinematiky a dynamiky"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Průvodce elektřinou a magnetismem",
+      "d": "Pochopte elektrická pole, obvody a elektromagnetické jevy"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Doučovatel termodynamiky",
+      "d": "Studujte termodynamické zákony, procesy a úlohy přenosu tepla"
+    },
+    "Optics & Waves Guide": {
+      "n": "Průvodce optikou a vlnami",
+      "d": "Studujte vlnové jevy, optiku a chování světla"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Vysvětlovatel kvantové fyziky",
+      "d": "Pochopte koncepty kvantové mechaniky s jasnými vysvětleními a příklady"
+    },
+    "Astrophysics Explorer": {
+      "n": "Průzkumník astrofyziky",
+      "d": "Prozkoumejte vývoj hvězd, kosmologii a nebeskou mechaniku"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Průvodce jadernou fyzikou",
+      "d": "Studujte jaderné reakce, radioaktivitu a jadernou energii"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Pomocník pro dynamiku tekutin",
+      "d": "Řešte úlohy z mechaniky tekutin včetně Bernoulliho a Navier-Stokesových aplikací"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Doučovatel klasické mechaniky",
+      "d": "Hluboký ponor do Lagrangeovy a Hamiltonovy mechaniky a pokročilé dynamiky"
+    },
+    "Relativity Concept Guide": {
+      "n": "Průvodce koncepty relativity",
+      "d": "Pochopte speciální a obecnou relativitu pomocí myšlenkových experimentů a matematiky"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Pomocník pro laboratorní zprávy z fyziky",
+      "d": "Strukturujte a pište laboratorní zprávy z fyziky se správnou analýzou dat"
+    },
+    "Math Proof Writer": {
+      "n": "Autor matematických důkazů",
+      "d": "Pište jasné a rigorózní matematické důkazy s logickou strukturou"
+    },
+    "Calculus Problem Solver": {
+      "n": "Řešitel úloh z kalkulu",
+      "d": "Řešte úlohy z kalkulu včetně limit, derivací a integrálů"
+    },
+    "Statistics Helper": {
+      "n": "Pomocník pro statistiku",
+      "d": "Řešte statistické úlohy a interpretujte statistické výsledky"
+    },
+    "Linear Algebra Guide": {
+      "n": "Průvodce lineární algebrou",
+      "d": "Studujte vektory, matice, transformace a vlastní čísla"
+    },
+    "Probability Calculator": {
+      "n": "Kalkulačka pravděpodobnosti",
+      "d": "Vypočítejte pravděpodobnosti a řešte úlohy rozdělení pravděpodobnosti"
+    },
+    "Geometry Tutor": {
+      "n": "Doučování geometrie",
+      "d": "Studujte geometrické pojmy, věty a řešte geometrické úlohy"
+    },
+    "Trigonometry Helper": {
+      "n": "Pomocník pro trigonometrii",
+      "d": "Řešte trigonometrické rovnice, identity a aplikace"
+    },
+    "Number Theory Explorer": {
+      "n": "Průzkumník teorie čísel",
+      "d": "Prozkoumejte prvočísla, dělitelnost, modulární aritmetiku a kryptografické aplikace"
+    },
+    "Discrete Math Guide": {
+      "n": "Průvodce diskrétní matematikou",
+      "d": "Studujte kombinatoriku, teorii grafů, logiku a teorii množin"
+    },
+    "Differential Equations Solver": {
+      "n": "Řešitel diferenciálních rovnic",
+      "d": "Řešte obyčejné a parciální diferenciální rovnice s podrobnými metodami"
+    },
+    "Math Word Problem Solver": {
+      "n": "Řešitel slovních úloh z matematiky",
+      "d": "Převeďte a řešte matematické slovní úlohy z reálného světa krok za krokem"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Průvodce matematickým modelováním",
+      "d": "Vytvářejte matematické modely pro reálné jevy a aplikace"
+    },
+    "SQL Query Generator": {
+      "n": "Generátor SQL dotazů",
+      "d": "Generujte a optimalizujte SQL dotazy pro získávání a analýzu dat"
+    },
+    "Python Data Analysis": {
+      "n": "Analýza dat v Pythonu",
+      "d": "Pište kód v Pythonu pro analýzu dat pomocí pandas, NumPy a dalších nástrojů"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Kontrolní seznam čištění dat",
+      "d": "Vytvořte komplexní kontrolní seznamy pro čištění a předzpracování dat"
+    },
+    "Data Visualization Planner": {
+      "n": "Plánovač vizualizace dat",
+      "d": "Vyberte správné grafy a navrhněte efektivní vizualizace dat"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Výběr modelu strojového učení",
+      "d": "Vyberte nejlepší ML model pro váš typ problému a charakteristiky dat"
+    },
+    "A/B Test Calculator": {
+      "n": "Kalkulačka A/B testů",
+      "d": "Navrhněte a analyzujte A/B testy s výpočty statistické významnosti"
+    },
+    "Dashboard Design Guide": {
+      "n": "Průvodce návrhem dashboardu",
+      "d": "Navrhněte efektivní dashboardy se správnými KPI a rozložením"
+    },
+    "ETL Pipeline Planner": {
+      "n": "Plánovač ETL pipeline",
+      "d": "Navrhněte a plánujte ETL pipeline pro integraci a zpracování dat"
+    },
+    "Feature Engineering Guide": {
+      "n": "Průvodce tvorbou příznaků",
+      "d": "Vytvářejte efektivní příznaky pro modely strojového učení"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Architektura datových pipeline",
+      "d": "Navrhněte škálovatelné architektury datových pipeline pro analytiku a ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Explorativní analýza dat",
+      "d": "Provádějte důkladnou EDA se strukturovanou analýzou a plány vizualizace"
+    },
+    "Statistical Test Selector": {
+      "n": "Výběr statistického testu",
+      "d": "Vyberte a aplikujte správný statistický test pro vaše data a hypotézu"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Průvodce analýzou časových řad",
+      "d": "Analyzujte data časových řad pomocí metod prognózování a detekce trendů"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Úvod do zpracování přirozeného jazyka",
+      "d": "Začněte s úlohami NLP včetně klasifikace textu a analýzy sentimentu"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Plánovač projektů počítačového vidění",
+      "d": "Plánujte projekty počítačového vidění od sběru dat po nasazení modelu"
+    },
+    "Technical Requirements Document": {
+      "n": "Dokument technických požadavků",
+      "d": "Vytvářejte podrobné dokumenty technických požadavků pro inženýrské projekty"
+    },
+    "Engineering Design Review": {
+      "n": "Revize inženýrského návrhu",
+      "d": "Připravte strukturované dokumenty revize návrhu pro inženýrské projekty"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Analýza způsobů poruch (FMEA)",
+      "d": "Provádějte systematickou analýzu způsobů a důsledků poruch pro produkty nebo procesy"
+    },
+    "Project Specification Writer": {
+      "n": "Autor projektových specifikací",
+      "d": "Pište jasné a úplné projektové specifikace pro inženýrskou práci"
+    },
+    "CAD Project Planner": {
+      "n": "Plánovač CAD projektů",
+      "d": "Plánujte a organizujte CAD modelovací projekty se správnou dokumentací"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Průvodce výrobními procesy",
+      "d": "Vybírejte a plánujte výrobní procesy pro vývoj produktů"
+    },
+    "Quality Control Checklist": {
+      "n": "Kontrolní seznam řízení kvality",
+      "d": "Vytvářejte kontrolní seznamy řízení kvality a plány inspekcí pro výrobu"
+    },
+    "Engineering Change Request": {
+      "n": "Požadavek na inženýrskou změnu",
+      "d": "Dokumentujte a spravujte požadavky na inženýrské změny s analýzou dopadů"
+    },
+    "Structural Analysis Guide": {
+      "n": "Průvodce statickou analýzou",
+      "d": "Průvodce výpočty a metodikou statické analýzy pro inženýrské projekty"
+    },
+    "Materials Selection Guide": {
+      "n": "Průvodce výběrem materiálů",
+      "d": "Vybírejte optimální materiály na základě mechanických, tepelných a chemických požadavků"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Tvůrce promptů pro Midjourney",
+      "d": "Vytvářejte detailní Midjourney prompty s parametry stylu, osvětlení a kompozice"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "Tvůrce promptů pro DALL-E",
+      "d": "Vytvářejte optimalizované DALL-E prompty s jasnými popisy a uměleckým směřováním"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Autor promptů pro Stable Diffusion",
+      "d": "Generujte Stable Diffusion prompty s pozitivním a negativním prompt engineeringem"
+    },
+    "Product Photography Prompt": {
+      "n": "Prompt pro produktovou fotografii",
+      "d": "Vytvářejte AI prompty pro úchvatnou produktovou fotografii ve studiové kvalitě"
+    },
+    "Landscape Art Prompt": {
+      "n": "Prompt pro krajinné umění",
+      "d": "Vytvářejte prompty pro dechberoucí krajinné umění s detaily prostředí a atmosféry"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Prompt pro portrétní fotografii",
+      "d": "Generujte AI prompty pro portréty s naváděním osvětlení, výrazu a kompozice"
+    },
+    "Food Photography Prompt": {
+      "n": "Prompt pro food fotografii",
+      "d": "Vytvářejte lákavé prompty pro food fotografii s detaily stylingu a servírování"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Prompt pro architektonickou vizualizaci",
+      "d": "Vytvářejte prompty pro architektonickou vizualizaci budov a interiérových prostor"
+    },
+    "Fashion Design Prompt": {
+      "n": "Prompt pro módní design",
+      "d": "Generujte koncepty módního designu s detaily látek, siluet a stylingu"
+    },
+    "Comic Art Prompt": {
+      "n": "Prompt pro komiksové umění",
+      "d": "Vytvářejte prompty pro komiksové umění s kompozicí panelů a akcí postav"
+    },
+    "Abstract Art Prompt": {
+      "n": "Prompt pro abstraktní umění",
+      "d": "Generujte prompty pro abstraktní umění s teorií barev, texturou a emotivním výrazem"
+    },
+    "Icon Design Brief": {
+      "n": "Zadání návrhu ikon",
+      "d": "Navrhujte čisté sady ikon s konzistentním stylem a vizuálním jazykem"
+    },
+    "Infographic Design Brief": {
+      "n": "Zadání návrhu infografiky",
+      "d": "Plánujte rozložení infografik s vizualizací dat a vizuální hierarchií"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Prompt pro grafiku na sociální sítě",
+      "d": "Generujte poutavou grafiku pro sociální sítě pro jakoukoli platformu"
+    },
+    "Meme Creator Prompt": {
+      "n": "Prompt pro tvorbu memů",
+      "d": "Generujte koncepty memů s výběrem formátu, popisky a virálním potenciálem"
+    },
+    "AI Avatar Prompt": {
+      "n": "Prompt pro AI avatary",
+      "d": "Vytvářejte unikátní návrhy AI avatarů pro profily, hry a virtuální identity"
+    },
+    "Song Lyrics Writer": {
+      "n": "Autor textů písní",
+      "d": "Pište originální texty písní se slokami, refrénem a bridge v jakémkoli žánru"
+    },
+    "Chord Progression Generator": {
+      "n": "Generátor akordových postupů",
+      "d": "Generujte akordové postupy s průvodcem hudební teorií pro jakýkoli žánr a náladu"
+    },
+    "Beat Ideas Creator": {
+      "n": "Tvůrce nápadů na beaty",
+      "d": "Generujte koncepty beatů s tempem, bubenickými patterny a nápady na instrumentaci"
+    },
+    "Song Structure Builder": {
+      "n": "Tvůrce struktury písně",
+      "d": "Navrhujte aranžmá písní s pořadím sekcí, dynamikou a přechody"
+    },
+    "Rap Verse Writer": {
+      "n": "Autor rapových slok",
+      "d": "Pište tvrdé rapové sloky se vzory flow, rýmovými schématy a slovními hříčkami"
+    },
+    "Country Song Writer": {
+      "n": "Autor country písní",
+      "d": "Pište autentické country písně s příběhem, obrazností a typickým zvukem"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Tvůrce popových hooků",
+      "d": "Vytvářejte chytlavé popové hooky a melodie refrénů, které se vám vryjí do paměti"
+    },
+    "Rock Ballad Writer": {
+      "n": "Autor rockových balad",
+      "d": "Pište emotivní rockové balady s působivými gradacemi a hymickými refrémy"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Průvodce hudebním aranžmá",
+      "d": "Plánujte kompletní hudební aranžmá s instrumentací, hlasovým vedením a dynamikou"
+    },
+    "Band Name Generator": {
+      "n": "Generátor názvů kapel",
+      "d": "Generujte kreativní názvy kapel podle žánru, atmosféry a vizuálních preferencí"
+    },
+    "Music Video Concept": {
+      "n": "Koncept hudebního videa",
+      "d": "Vyvíjejte kreativní koncepty hudebních videí s příběhem, vizuály a choreografií"
+    },
+    "Mixing Checklist": {
+      "n": "Kontrolní seznam mixování",
+      "d": "Komplexní kontrolní seznam mixování zahrnující EQ, kompresi, efekty a vyvážení"
+    },
+    "Film Score Brief": {
+      "n": "Zadání filmové hudby",
+      "d": "Vytvářejte podrobná zadání filmové hudby s náladou, instrumentací a časovými značkami"
+    },
+    "YouTube Shorts Script": {
+      "n": "Scénář pro YouTube Shorts",
+      "d": "Pište poutavé scénáře pro YouTube Shorts optimalizované pro 60sekundové vertikální video"
+    },
+    "Video Storyboard Creator": {
+      "n": "Tvůrce video storyboardů",
+      "d": "Plánujte vizuální storyboardy s popisy scén, úhly kamery a přechody"
+    },
+    "Documentary Outline": {
+      "n": "Osnova dokumentu",
+      "d": "Strukturujte poutavé dokumenty s narativním obloukem, rozhovory a plány doplňkových záběrů"
+    },
+    "Vlog Episode Planner": {
+      "n": "Plánovač vlogových epizod",
+      "d": "Plánujte poutavé vlogové epizody s lokacemi, tématy k diskuzi a vizuální pestrostí"
+    },
+    "Screenwriting Helper": {
+      "n": "Pomocník pro psaní scénářů",
+      "d": "Vyvíjejte scénáře se správným formátováním, dialogy a režijními pokyny"
+    },
+    "Short Film Script": {
+      "n": "Scénář krátkého filmu",
+      "d": "Pište kompletní scénáře krátkých filmů s vizuálním vyprávěním a sevřeným příběhem"
+    },
+    "Animation Script Writer": {
+      "n": "Autor animačních scénářů",
+      "d": "Pište animační scénáře s vizuálními gagy, akcemi postav a načasováním"
+    },
+    "Video Editing Brief": {
+      "n": "Zadání střihu videa",
+      "d": "Vytvářejte podrobná zadání střihu videa s tempem, efekty a stylovými pokyny"
+    },
+    "Livestream Run Sheet": {
+      "n": "Scénář živého vysílání",
+      "d": "Plánujte živá vysílání s časovanými segmenty, tématy a prvky pro zapojení diváků"
+    },
+    "Tutorial Video Script": {
+      "n": "Scénář výukového videa",
+      "d": "Pište srozumitelné scénáře výukových videí s pokyny krok za krokem a vizuály"
+    },
+    "Explainer Video Script": {
+      "n": "Scénář vysvětlujícího videa",
+      "d": "Pište srozumitelné scénáře vysvětlujících videí, které vizuálně zjednodušují složitá témata"
+    },
+    "Video SEO Optimizer": {
+      "n": "Optimalizátor video SEO",
+      "d": "Optimalizujte metadata videí s titulky, popisy, štítky a strategiemi miniatur"
+    },
+    "Novel Outline Creator": {
+      "n": "Tvůrce osnovy románu",
+      "d": "Vytvářejte komplexní osnovy románů se strukturou děje, kapitolami a vývojem postav"
+    },
+    "Short Story Writer": {
+      "n": "Autor povídek",
+      "d": "Pište poutavé povídky s živými postavami a uspokojivými závěry"
+    },
+    "Poetry Generator": {
+      "n": "Generátor poezie",
+      "d": "Vytvářejte originální poezii v různých formách s obrazností, metrem a emocí"
+    },
+    "Book Proposal Template": {
+      "n": "Šablona knižního návrhu",
+      "d": "Vytvářejte profesionální knižní návrhy s tržní analýzou a shrnutím kapitol"
+    },
+    "Memoir Outline": {
+      "n": "Osnova memoárů",
+      "d": "Strukturujte osobní memoáry s tematickými kapitolami a reflektivním vyprávěním"
+    },
+    "Children's Book Creator": {
+      "n": "Tvůrce dětských knih",
+      "d": "Pište věkově přiměřené dětské knihy s poutavými příběhy a poznámkami k ilustracím"
+    },
+    "Screenplay Outline": {
+      "n": "Osnova filmového scénáře",
+      "d": "Vytvářejte osnovy scénářů s třídílnou strukturou, rozpisy scén a poznámkami k dialogům"
+    },
+    "Play Script Writer": {
+      "n": "Autor divadelních her",
+      "d": "Pište divadelní scénáře s režijními poznámkami, dialogy a strukturou scén"
+    },
+    "Comic Book Script": {
+      "n": "Scénář komiksu",
+      "d": "Pište scénáře komiksů s popisy panelů, dialogy a tempem"
+    },
+    "Fan Fiction Creator": {
+      "n": "Tvůrce fan fiction",
+      "d": "Pište fan fiction s věrným hlasem postav a kreativními novými dějovými liniemi"
+    },
+    "Writing Prompt Generator": {
+      "n": "Generátor tvůrčích podnětů",
+      "d": "Generujte podněty pro tvůrčí psaní se žánrem, omezeními a zárodky příběhů"
+    },
+    "Dialogue Writer": {
+      "n": "Autor dialogů",
+      "d": "Vytvářejte přirozeně znějící dialogy, které odhalují charakter a posouvají děj"
+    },
+    "Plot Twist Generator": {
+      "n": "Generátor dějových zvratů",
+      "d": "Generujte překvapivé, ale logické dějové zvraty, které přehodnotí celý příběh"
+    },
+    "Query Letter Writer": {
+      "n": "Autor nabídkových dopisů",
+      "d": "Pište přesvědčivé nabídkové dopisy literárním agentům s háčkem a synopsí"
+    },
+    "Book Description Writer": {
+      "n": "Autor popisů knih",
+      "d": "Pište přesvědčivé popisy knih, které zaujmou čtenáře a podpoří prodej"
+    },
+    "Ghostwriting Brief": {
+      "n": "Zadání pro ghostwriting",
+      "d": "Vytvářejte podrobná zadání pro ghostwriting s požadavky na hlas, styl a obsah"
+    },
+    "Technical Writing Guide": {
+      "n": "Průvodce technickým psaním",
+      "d": "Pište srozumitelnou technickou dokumentaci se strukturovaným formátováním a přesností"
+    },
+    "Grant Proposal Writer": {
+      "n": "Autor grantových návrhů",
+      "d": "Pište přesvědčivé grantové návrhy s popisy projektů a zdůvodněním rozpočtu"
+    },
+    "White Paper Outline": {
+      "n": "Osnova bílé knihy",
+      "d": "Strukturujte autoritativní bílé knihy s výzkumem, analýzou a doporučeními"
+    },
+    "Copywriting Formula": {
+      "n": "Copywritingové vzorce",
+      "d": "Aplikujte osvědčené copywritingové vzorce jako AIDA, PAS a BAB na jakýkoli produkt nebo službu"
+    },
+    "Instagram Content Planner": {
+      "n": "Plánovač obsahu pro Instagram",
+      "d": "Naplánujte týden obsahu na Instagram s příspěvky, příběhy, reels a popisky"
+    },
+    "X Thread Creator": {
+      "n": "Tvůrce vláken na X",
+      "d": "Pište poutavá vlákna na X, která budují autoritu a zvyšují engagement"
+    },
+    "Reddit Post Writer": {
+      "n": "Autor příspěvků na Reddit",
+      "d": "Pište příspěvky na Reddit optimalizované pro konkrétní subreddity s ohledem na pravidla komunity"
+    },
+    "Viral Hook Generator": {
+      "n": "Generátor virálních háčků",
+      "d": "Generujte poutavé háčky pro obsah na sociálních sítích napříč platformami"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Nástroj pro strategii hashtagů",
+      "d": "Zkoumejte a organizujte strategie hashtagů pro maximální dohledatelnost"
+    },
+    "Engagement Response Generator": {
+      "n": "Generátor odpovědí pro engagement",
+      "d": "Generujte promyšlené odpovědi na komentáře, zprávy a zmínky ve velkém měřítku"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Autor článků na LinkedIn",
+      "d": "Pište odborné články na LinkedIn, které budují profesionální autoritu"
+    },
+    "Episode Show Notes": {
+      "n": "Poznámky k epizodě",
+      "d": "Pište podrobné poznámky k epizodě s časovými značkami, odkazy a klíčovými poznatky"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Kontrolní seznam editace podcastu",
+      "d": "Standardizujte pracovní postup editace podcastu s kontrolními body kvality a kroky pro finální úpravu"
+    },
+    "Prompt Improver": {
+      "n": "Vylepšovač promptů",
+      "d": "Zdokonalte a optimalizujte jakýkoli prompt pro lepší AI výstupy pomocí strukturovaných technik"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Organizátor řetězce myšlenek",
+      "d": "Vytvářejte prompty s řetězcem myšlenek, které vedou AI krok za krokem k závěru"
+    },
+    "RAG Prompt Generator": {
+      "n": "Generátor RAG promptů",
+      "d": "Vytvářejte prompty pro retrieval-augmented generation s optimalizací kontextového okna"
+    },
+    "Prompt Translator": {
+      "n": "Překladač promptů",
+      "d": "Překládejte prompty mezi různými AI modely při zachování záměru a kvality"
+    },
+    "Prompt Evaluator": {
+      "n": "Hodnotitel promptů",
+      "d": "Hodnoťte a bodujte prompty napříč více dimenzemi kvality s tipy na zlepšení"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Generátor few-shot příkladů",
+      "d": "Generujte vysoce kvalitní few-shot příklady pro prompty s učením v kontextu"
+    },
+    "System Prompt Writer": {
+      "n": "Autor systémových promptů",
+      "d": "Pište efektivní systémové prompty definující chování AI, omezení a styl výstupu"
+    },
+    "AI Guardrails Designer": {
+      "n": "Návrhář ochranných mechanismů AI",
+      "d": "Navrhujte bezpečnostní ochranné mechanismy a obsahové politiky pro AI aplikace"
+    },
+    "AI Use Case Identifier": {
+      "n": "Identifikátor AI případů užití",
+      "d": "Identifikujte a vyhodnocujte potenciální případy užití AI pro firmy a pracovní postupy"
+    },
+    "Model Comparison Guide": {
+      "n": "Průvodce srovnáním modelů",
+      "d": "Srovnávejte AI modely podle schopností, cen a vhodnosti pro různé případy užití"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "Tvůrce dat pro fine-tuning LLM",
+      "d": "Generujte a strukturujte tréninková data pro projekty fine-tuningu LLM"
+    },
+    "Debugger Assistant": {
+      "n": "Asistent pro ladění",
+      "d": "Systematicky laďte chyby v kódu s analýzou příčin a návrhy oprav"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "Plánovač CI/CD pipeline",
+      "d": "Navrhujte CI/CD pipeline s konfiguracemi fází sestavení, testování a nasazení"
+    },
+    "Docker Configuration Guide": {
+      "n": "Průvodce konfigurací Dockeru",
+      "d": "Vytvářejte Dockerfiles a compose konfigurace podle osvědčených postupů"
+    },
+    "Git Workflow Planner": {
+      "n": "Plánovač Git workflow",
+      "d": "Navrhujte strategie větvení v Gitu a pracovní postupy spolupráce pro vývojové týmy"
+    },
+    "Code Migration Guide": {
+      "n": "Průvodce migrací kódu",
+      "d": "Plánujte a provádějte migrace kódu mezi jazyky, frameworky nebo verzemi"
+    },
+    "Database Schema Designer": {
+      "n": "Návrhář databázového schématu",
+      "d": "Navrhujte databázová schémata s tabulkami, relacemi, indexy a omezeními"
+    },
+    "Performance Optimization Guide": {
+      "n": "Průvodce optimalizací výkonu",
+      "d": "Identifikujte a řešte úzká hrdla výkonu pomocí profilování a optimalizačních strategií"
+    },
+    "Microservices Architecture": {
+      "n": "Architektura mikroslužeb",
+      "d": "Navrhujte architektury mikroslužeb s hranicemi služeb, komunikací a nasazením"
+    },
+    "GraphQL Schema Builder": {
+      "n": "Tvůrce GraphQL schémat",
+      "d": "Navrhujte GraphQL schémata s typy, dotazy, mutacemi a subskripcemi"
+    },
+    "Terraform Configuration": {
+      "n": "Konfigurace Terraformu",
+      "d": "Generujte konfigurace Terraformu pro provisioning cloudové infrastruktury"
+    },
+    "AWS Architecture Planner": {
+      "n": "Plánovač AWS architektury",
+      "d": "Navrhujte cloudové architektury AWS s výběrem služeb a optimalizací nákladů"
+    },
+    "Code Documentation Generator": {
+      "n": "Generátor dokumentace kódu",
+      "d": "Generujte inline dokumentaci, JSDoc, docstringy a komentáře ke kódu"
+    },
+    "Technical Interview Prep": {
+      "n": "Příprava na technický pohovor",
+      "d": "Připravte se na technické pohovory s rozborem problémů a vzory řešení"
+    },
+    "Changelog Writer": {
+      "n": "Autor changelogu",
+      "d": "Pište přehledné changelogy ve formátu Keep a Changelog se sémantickým verzováním"
+    },
+    "Error Handling Strategy": {
+      "n": "Strategie zpracování chyb",
+      "d": "Navrhujte komplexní strategie zpracování chyb se vzory a uživatelskými zprávami"
+    },
+    "Logging Strategy Guide": {
+      "n": "Průvodce strategií logování",
+      "d": "Navrhujte strategie logování aplikací s úrovněmi, formáty a agregací"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Průvodce nastavením monitoringu",
+      "d": "Nastavte monitoring aplikací s metrikami, upozorněními a dashboardy"
+    },
+    "Load Testing Plan": {
+      "n": "Plán zátěžového testování",
+      "d": "Navrhujte plány zátěžového testování se scénáři, metrikami a akceptačními kritérii"
+    },
+    "Security Audit Checklist": {
+      "n": "Kontrolní seznam bezpečnostního auditu",
+      "d": "Provádějte bezpečnostní audity s kontrolními seznamy založenými na OWASP a pokyny k nápravě"
+    },
+    "Security Checklist Creator": {
+      "n": "Tvůrce bezpečnostních kontrolních seznamů",
+      "d": "Generujte komplexní bezpečnostní kontrolní seznamy přizpůsobené vaší aplikaci a technologickému zásobníku"
+    },
+    "Penetration Testing Plan": {
+      "n": "Plán penetračního testování",
+      "d": "Plánujte strukturované penetrační testy s rozsahem, metodikou a šablonami reportů"
+    },
+    "Secure Coding Guide": {
+      "n": "Průvodce bezpečným kódováním",
+      "d": "Vytvářejte pokyny pro bezpečné kódování specifické pro daný jazyk s prevencí zranitelností"
+    },
+    "Incident Response Plan": {
+      "n": "Plán reakce na incidenty",
+      "d": "Navrhujte plány reakce na incidenty s detekcí, zadržením a postupy obnovy"
+    },
+    "Security Policy Writer": {
+      "n": "Autor bezpečnostních politik",
+      "d": "Pište organizační bezpečnostní politiky pokrývající řízení přístupu, nakládání s daty a compliance"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Průvodce hodnocením zranitelností",
+      "d": "Provádějte systematická hodnocení zranitelností se skenováním a prioritizovanou nápravou"
+    },
+    "Security Awareness Training": {
+      "n": "Školení bezpečnostního povědomí",
+      "d": "Navrhujte programy školení bezpečnostního povědomí pro zaměstnance na všech úrovních"
+    },
+    "Password Policy Creator": {
+      "n": "Tvůrce politiky hesel",
+      "d": "Vytvářejte robustní politiky hesel s požadavky na složitost, obměnu a vícefaktorové ověření"
+    },
+    "Data Protection Plan": {
+      "n": "Plán ochrany dat",
+      "d": "Navrhujte strategie ochrany dat pokrývající klasifikaci, šifrování a uchovávání"
+    },
+    "SWOT Analysis Pro": {
+      "n": "Profesionální SWOT analýza",
+      "d": "Pokročilá SWOT analýza s váženým bodováním a akčními plány"
+    },
+    "Pitch Deck Outline": {
+      "n": "Osnova prezentace pro investory",
+      "d": "Vytvořte přesvědčivou strukturu prezentace pro investory"
+    },
+    "Business Canvas Creator": {
+      "n": "Tvůrce obchodního modelu Canvas",
+      "d": "Vygenerujte kompletní plátno obchodního modelu pro váš podnik"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Zpráva o konkurenčním zpravodajství",
+      "d": "Analyzujte konkurenty a identifikujte příležitosti tržního positioningu"
+    },
+    "Strategic Planning Guide": {
+      "n": "Průvodce strategickým plánováním",
+      "d": "Vypracujte víceletý strategický plán s cíli a milníky"
+    },
+    "Annual Report Template": {
+      "n": "Šablona výroční zprávy",
+      "d": "Strukturujte výroční zprávu společnosti s klíčovými finančními a provozními ukazateli"
+    },
+    "Board Meeting Agenda": {
+      "n": "Program zasedání správní rady",
+      "d": "Profesionální program zasedání správní rady s osvědčenými postupy správy"
+    },
+    "Company Newsletter": {
+      "n": "Firemní zpravodaj",
+      "d": "Navrhněte poutavý interní nebo externí firemní zpravodaj"
+    },
+    "Employee Survey Creator": {
+      "n": "Tvůrce zaměstnaneckých průzkumů",
+      "d": "Vytvářejte efektivní průzkumy angažovanosti a spokojenosti zaměstnanců"
+    },
+    "Team Building Activity Planner": {
+      "n": "Plánovač teambuildigových aktivit",
+      "d": "Plánujte poutavé teambuildigové akce a aktivity"
+    },
+    "Remote Work Policy": {
+      "n": "Politika práce na dálku",
+      "d": "Vytvořte komplexní politiku práce na dálku pro vaši organizaci"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Plán diverzity a inkluze",
+      "d": "Vypracujte smysluplnou strategii diverzity, rovnosti a inkluze"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Matice hodnocení dodavatelů",
+      "d": "Systematicky hodnoťte a porovnávejte dodavatele pro rozhodování o nákupu"
+    },
+    "Process Improvement Plan": {
+      "n": "Plán zlepšování procesů",
+      "d": "Identifikujte a implementujte zlepšení procesů pomocí lean metodologií"
+    },
+    "Change Management Plan": {
+      "n": "Plán řízení změn",
+      "d": "Řiďte organizační změny se zapojením zainteresovaných stran a komunikací"
+    },
+    "Risk Assessment Template": {
+      "n": "Šablona hodnocení rizik",
+      "d": "Systematicky identifikujte, vyhodnocujte a zmírňujte podnikatelská rizika"
+    },
+    "Succession Planning Guide": {
+      "n": "Průvodce plánováním nástupnictví",
+      "d": "Plánujte přechody vedení a rozvoj talentového poolu"
+    },
+    "Business Continuity Plan": {
+      "n": "Plán kontinuity podnikání",
+      "d": "Připravte se na výpadky s komplexní strategií kontinuity"
+    },
+    "Customer Journey Map": {
+      "n": "Mapa zákaznické cesty",
+      "d": "Vizualizujte a optimalizujte kompletní zákaznickou zkušenost"
+    },
+    "Brand Guidelines Template": {
+      "n": "Šablona pravidel značky",
+      "d": "Definujte identitu vaší značky s komplexními pravidly stylu a použití"
+    },
+    "Mission & Vision Statement": {
+      "n": "Prohlášení o misi a vizi",
+      "d": "Vytvořte inspirativní prohlášení o misi a vizi pro vaši organizaci"
+    },
+    "Company Culture Document": {
+      "n": "Dokument firemní kultury",
+      "d": "Definujte a zdokumentujte vaši organizační kulturu a hodnoty"
+    },
+    "Organizational Chart Planner": {
+      "n": "Plánovač organizační struktury",
+      "d": "Navrhněte a plánujte organizační strukturu a podřízenostní vztahy"
+    },
+    "Department Budget Template": {
+      "n": "Šablona rozpočtu oddělení",
+      "d": "Vytvářejte podrobné rozpočty oddělení s prognózováním a sledováním"
+    },
+    "KPI Dashboard Builder": {
+      "n": "Tvůrce KPI dashboardu",
+      "d": "Navrhujte dashboardy klíčových ukazatelů výkonnosti pro rozhodování založené na datech"
+    },
+    "Job Description Writer": {
+      "n": "Autor popisů pracovních pozic",
+      "d": "Vytvářejte jasné a inkluzivní popisy pracovních pozic, které přitahují špičkové talenty"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Tvůrce hodnotících karet pro pohovory",
+      "d": "Vytvářejte strukturované hodnotící karty pro konzistentní hodnocení kandidátů"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Kontrolní seznam onboardingu zaměstnanců",
+      "d": "Komplexní kontrolní seznam onboardingu pro úspěšný nástup nových zaměstnanců"
+    },
+    "Performance Improvement Plan": {
+      "n": "Plán zlepšení výkonu",
+      "d": "Vytvářejte podpůrné plány zlepšení výkonu s jasnými milníky"
+    },
+    "Exit Interview Guide": {
+      "n": "Průvodce výstupním pohovorem",
+      "d": "Provádějte poučné výstupní pohovory pro zlepšení retence"
+    },
+    "Compensation Analysis": {
+      "n": "Analýza odměňování",
+      "d": "Analyzujte a srovnávejte balíčky odměňování pro tržní konkurenceschopnost"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Průvodce srovnáním benefitů",
+      "d": "Porovnávejte a hodnoťte balíčky zaměstnaneckých benefitů"
+    },
+    "Team Retrospective": {
+      "n": "Týmová retrospektiva",
+      "d": "Facilitujte efektivní týmové retrospektivy pro neustálé zlepšování"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Šablona individuálních schůzek",
+      "d": "Strukturujte produktivní individuální schůzky s přímými podřízenými"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Plánovač náborového procesu",
+      "d": "Navrhněte a optimalizujte váš náborový proces od začátku do konce"
+    },
+    "Employee Recognition Program": {
+      "n": "Program uznání zaměstnanců",
+      "d": "Vytvořte smysluplný program uznání a odměňování zaměstnanců"
+    },
+    "Training Program Designer": {
+      "n": "Návrhář vzdělávacích programů",
+      "d": "Navrhujte efektivní programy školení a rozvoje zaměstnanců"
+    },
+    "Workplace Policy Writer": {
+      "n": "Autor pracovních směrnic",
+      "d": "Tvořte jasné pracovní směrnice pokrývající klíčová organizační témata"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Průvodce řešením konfliktů",
+      "d": "Zvládejte konflikty na pracovišti pomocí strukturovaných rámců řešení"
+    },
+    "Remote Team Handbook": {
+      "n": "Příručka pro vzdálené týmy",
+      "d": "Vytvořte komplexní příručku pro fungování distribuovaných týmů"
+    },
+    "Career Path Planner": {
+      "n": "Plánovač kariérní dráhy",
+      "d": "Zmapujte svou kariérní trajektorii s konkrétními milníky"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Příprava na vyjednávání platu",
+      "d": "Připravte si sebevědomé argumenty a strategie pro vyjednávání platu"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "Tvůrce LinkedIn profilu",
+      "d": "Optimalizujte svůj LinkedIn profil pro přilákání náborářů a příležitostí"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Průvodce tvorbou portfolia",
+      "d": "Vytvořte vynikající profesionální portfolio prezentující vaši nejlepší práci"
+    },
+    "Networking Email Templates": {
+      "n": "Šablony networkingových e-mailů",
+      "d": "Pište efektivní networkingové e-maily pro kariérní růst a úvody"
+    },
+    "Career Pivot Guide": {
+      "n": "Průvodce změnou kariéry",
+      "d": "Zvládněte úspěšný přechod v kariéře se strukturovaným plánem"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Kalkulačka sazeb na volné noze",
+      "d": "Vypočítejte ideální sazbu na volné noze a cenovou strategii"
+    },
+    "Professional Development Plan": {
+      "n": "Plán profesního rozvoje",
+      "d": "Vytvořte strukturovaný plán pro kontinuální profesní růst"
+    },
+    "Mentorship Program Guide": {
+      "n": "Průvodce mentoringovým programem",
+      "d": "Najděte, strukturujte a maximalizujte mentorské vztahy"
+    },
+    "Side Hustle Validator": {
+      "n": "Validátor vedlejších projektů",
+      "d": "Vyhodnoťte a ověřte nápady na vedlejší podnikání z hlediska životaschopnosti"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Audit rovnováhy mezi prací a životem",
+      "d": "Zhodnoťte a zlepšete svou rovnováhu mezi prací a životem pomocí konkrétních strategií"
+    },
+    "Speaking Proposal Template": {
+      "n": "Šablona návrhu přednášky",
+      "d": "Vytvářejte přesvědčivé návrhy přednášek na konference a události"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Autor konzultačních návrhů",
+      "d": "Tvořte vítězné konzultační návrhy, které uzavřou obchody"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Analyzátor mezery v dovednostech",
+      "d": "Identifikujte a naplánujte překlenutí kritických mezer v dovednostech pro kariérní postup"
+    },
+    "Career Journal Prompts": {
+      "n": "Podněty pro kariérní deník",
+      "d": "Reflektujte svou kariérní cestu pomocí řízených deníkových cvičení"
+    },
+    "Informational Interview Guide": {
+      "n": "Průvodce informačním pohovorem",
+      "d": "Připravte a veďte efektivní informační pohovory"
+    },
+    "Thank You Note Writer": {
+      "n": "Autor děkovných dopisů",
+      "d": "Pište promyšlené profesionální děkovné dopisy pro jakoukoli příležitost"
+    },
+    "Resignation Letter Template": {
+      "n": "Šablona výpovědního dopisu",
+      "d": "Napište profesionální výpovědní dopis při zachování pozitivních vztahů"
+    },
+    "Meal Prep Planner": {
+      "n": "Plánovač přípravy jídel",
+      "d": "Plánujte týdenní jídla s nákupními seznamy a harmonogramy přípravy"
+    },
+    "Habit Tracker Designer": {
+      "n": "Návrh sledování návyků",
+      "d": "Navrhněte si osobní systém sledování návyků pro trvalou změnu"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Průvodce zlepšením spánku",
+      "d": "Optimalizujte kvalitu spánku pomocí ověřených strategií"
+    },
+    "Stress Management Plan": {
+      "n": "Plán zvládání stresu",
+      "d": "Sestavte si osobní sadu nástrojů a akční plán pro zvládání stresu"
+    },
+    "Yoga Routine Builder": {
+      "n": "Tvorba jógové sestavy",
+      "d": "Vytvořte si jógové sestavy přizpůsobené vaší úrovni a cílům"
+    },
+    "Running Training Plan": {
+      "n": "Běžecký tréninkový plán",
+      "d": "Sestavte strukturovaný běžecký plán pro jakýkoli distanční cíl"
+    },
+    "Swimming Workout": {
+      "n": "Plavecký trénink",
+      "d": "Navrhněte efektivní plavecké tréninky pro kondici i techniku"
+    },
+    "Strength Training Program": {
+      "n": "Silový tréninkový program",
+      "d": "Vytvořte progresivní silový program přizpůsobený vašim cílům"
+    },
+    "Flexibility Routine": {
+      "n": "Cvičení na flexibilitu",
+      "d": "Zlepšete ohebnost a pohyblivost pomocí strukturovaných protahovacích cvičení"
+    },
+    "HIIT Workout Creator": {
+      "n": "Tvorba HIIT tréninku",
+      "d": "Navrhněte vysoce intenzivní intervalové tréninky pro maximální výsledky"
+    },
+    "Nutrition Label Reader": {
+      "n": "Čtení nutričních údajů",
+      "d": "Naučte se číst a rozumět nutričním údajům pro zdravější volby"
+    },
+    "Calorie Counter Guide": {
+      "n": "Průvodce počítáním kalorií",
+      "d": "Nastavte si osobní sledování kalorií s rozpisem makroživin"
+    },
+    "Hydration Tracker": {
+      "n": "Sledování hydratace",
+      "d": "Sledujte a optimalizujte denní příjem vody a hydratační návyky"
+    },
+    "Mental Health Check-In": {
+      "n": "Kontrola duševního zdraví",
+      "d": "Řízené sebehodnocení duševního zdraví a sledování pohody"
+    },
+    "Therapy Session Prep": {
+      "n": "Příprava na terapii",
+      "d": "Připravte se na terapeutická sezení pomocí strukturované reflexe a stanovení cílů"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Podněty pro deník vděčnosti",
+      "d": "Denní podněty pro psaní deníku vděčnosti a zlepšení duševní pohody"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Tvorba cvičení všímavosti",
+      "d": "Vytvořte si osobní cvičení všímavosti a dechová cvičení"
+    },
+    "Supplement Research Guide": {
+      "n": "Průvodce doplňky stravy",
+      "d": "Prozkoumejte a vyhodnoťte doplňky stravy podle vašich zdravotních cílů"
+    },
+    "Allergy Management Plan": {
+      "n": "Plán zvládání alergií",
+      "d": "Vytvořte komplexní strategii pro zvládání a předcházení alergiím"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Sledování chronického onemocnění",
+      "d": "Sledujte příznaky, léky a spouštěče u chronických onemocnění"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Deník rehabilitačních cvičení",
+      "d": "Zaznamenávejte rehabilitační cvičení a sledujte pokrok v zotavení"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonomické uspořádání pracoviště",
+      "d": "Optimalizujte pracovní prostor pro pohodlí, zdraví a produktivitu"
+    },
+    "Digital Detox Planner": {
+      "n": "Plánovač digitálního detoxu",
+      "d": "Naplánujte a realizujte digitální detox pro lepší duševní pohodu"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Tvorba rutiny péče o sebe",
+      "d": "Vybudujte udržitelnou rutinu péče o sebe ve všech oblastech pohody"
+    },
+    "First Aid Guide": {
+      "n": "Průvodce první pomocí",
+      "d": "Rychlý přehled postupů první pomoci při běžných nouzových situacích"
+    },
+    "To-Do List Power Planner": {
+      "n": "Výkonný plánovač úkolů",
+      "d": "Vytvářejte prioritizované seznamy úkolů s odhady času a energetickou náročností"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Optimalizace denního rozvrhu",
+      "d": "Navrhněte optimální denní rozvrh podle vašich energetických vzorců"
+    },
+    "Project Planner Pro": {
+      "n": "Profesionální plánovač projektů",
+      "d": "Plánujte projekty s milníky, dodávkami a alokací zdrojů"
+    },
+    "Decision Matrix Builder": {
+      "n": "Tvorba rozhodovací matice",
+      "d": "Dělejte lepší rozhodnutí pomocí analýzy vážených kritérií"
+    },
+    "Weekly Review Template": {
+      "n": "Šablona týdenního hodnocení",
+      "d": "Provádějte důkladná týdenní hodnocení a držte se svých cílů"
+    },
+    "Morning Routine Designer": {
+      "n": "Návrh ranní rutiny",
+      "d": "Navrhněte energizující ranní rutinu pro špičkový výkon"
+    },
+    "Evening Routine Creator": {
+      "n": "Tvorba večerní rutiny",
+      "d": "Vytvořte uklidňující večerní rutinu pro lepší odpočinek a přípravu na další den"
+    },
+    "Time Blocking Schedule": {
+      "n": "Rozvrh s časovými bloky",
+      "d": "Organizujte svůj den pomocí soustředěných časových bloků pro maximální produktivitu"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhowerova matice",
+      "d": "Třiďte úkoly podle naléhavosti a důležitosti pro lepší prioritizaci"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Plánovač Pomodoro sezení",
+      "d": "Plánujte soustředěné pracovní úseky pomocí techniky Pomodoro"
+    },
+    "Goal Tracking System": {
+      "n": "Systém sledování cílů",
+      "d": "Nastavte komplexní systém sledování cílů s metrikami pokroku"
+    },
+    "Quarterly Planning Template": {
+      "n": "Šablona čtvrtletního plánování",
+      "d": "Plánujte čtvrtletí se strategickými cíli a realizovatelnými záměry"
+    },
+    "Annual Review Template": {
+      "n": "Šablona ročního hodnocení",
+      "d": "Proveďte důkladné roční hodnocení úspěchů a stanovte budoucí cíle"
+    },
+    "Meeting Notes Template": {
+      "n": "Šablona zápisů z porad",
+      "d": "Zachyťte praktické poznámky z porad s rozhodnutími a navazujícími kroky"
+    },
+    "Brain Dump Organizer": {
+      "n": "Organizér myšlenkového výpisu",
+      "d": "Přeměňte chaotické myšlenky na uspořádané realizovatelné kategorie"
+    },
+    "Delegation Framework": {
+      "n": "Rámec pro delegování",
+      "d": "Určete, co delegovat, a vytvořte jasné zadání pro delegování"
+    },
+    "Focus Session Planner": {
+      "n": "Plánovač soustředěné práce",
+      "d": "Plánujte bloky hluboké koncentrace s řízením prostředí a rozptýlení"
+    },
+    "Energy Management Guide": {
+      "n": "Průvodce řízením energie",
+      "d": "Optimalizujte hladinu energie během dne pro špičkový výkon"
+    },
+    "Batch Processing Planner": {
+      "n": "Plánovač dávkového zpracování",
+      "d": "Seskupte podobné úkoly pro efektivní dávkové zpracování"
+    },
+    "System Documentation Template": {
+      "n": "Šablona systémové dokumentace",
+      "d": "Zdokumentujte osobní a týmové systémy pro konzistenci a zapracování nových členů"
+    },
+    "Project Kickoff Template": {
+      "n": "Šablona zahájení projektu",
+      "d": "Zahajujte projekty s jasnými cíli, rozsahem a sladěním týmu"
+    },
+    "Sprint Planning Guide": {
+      "n": "Průvodce plánováním sprintu",
+      "d": "Plánujte efektivní sprinty s uživatelskými příběhy, odhadem a kapacitou"
+    },
+    "Kanban Board Setup": {
+      "n": "Nastavení Kanban nástěnky",
+      "d": "Navrhněte a nastavte Kanban nástěnku pro vizuální řízení pracovního toku"
+    },
+    "Gantt Chart Planner": {
+      "n": "Plánovač Ganttova diagramu",
+      "d": "Vytvořte podrobné projektové časové osy se závislostmi a milníky"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Matice alokace zdrojů",
+      "d": "Plánujte a optimalizujte přidělování zdrojů napříč projekty a týmy"
+    },
+    "Status Report Template": {
+      "n": "Šablona stavového hlášení",
+      "d": "Vytvářejte jasné stavové zprávy projektu pro komunikaci se zainteresovanými stranami"
+    },
+    "Risk Register Creator": {
+      "n": "Tvorba registru rizik",
+      "d": "Sestavte a udržujte komplexní registr projektových rizik"
+    },
+    "Lessons Learned Template": {
+      "n": "Šablona poučení z projektu",
+      "d": "Zachyťte a zdokumentujte ponaučení z projektu pro budoucí zlepšení"
+    },
+    "Requirements Document": {
+      "n": "Dokument požadavků",
+      "d": "Shromážděte a zdokumentujte projektové požadavky s akceptačními kritérii"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Plán uživatelského akceptačního testování",
+      "d": "Vytvořte strukturované plány UAT s testovými případy a kritérii schválení"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Komunikační plán se zainteresovanými stranami",
+      "d": "Plánujte komunikaci se stakeholdery – kanály, frekvenci a obsah sdělení"
+    },
+    "Project Timeline Creator": {
+      "n": "Tvorba projektové časové osy",
+      "d": "Sestavte podrobné projektové časové osy s fázemi a dodávkami"
+    },
+    "Agile Retrospective": {
+      "n": "Agilní retrospektiva",
+      "d": "Veďte produktivní agilní retrospektivy s různými formáty"
+    },
+    "Scope Document Writer": {
+      "n": "Tvůrce dokumentu rozsahu",
+      "d": "Definujte rozsah projektu s hranicemi, dodávkami a vyloučeními"
+    },
+    "Project Closure Report": {
+      "n": "Závěrečná zpráva projektu",
+      "d": "Zdokumentujte dokončení projektu s výsledky a závěrečným hodnocením"
+    },
+    "Conversation Practice Partner": {
+      "n": "Partner pro konverzační praxi",
+      "d": "Procvičujte konverzaci v cílovém jazyce s realistickými scénáři"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Profesionální budování slovní zásoby",
+      "d": "Budujte slovní zásobu s kontextem, příklady a podněty pro opakování"
+    },
+    "Grammar Coach": {
+      "n": "Trenér gramatiky",
+      "d": "Učte se a procvičujte gramatická pravidla s jasnými vysvětleními a cvičeními"
+    },
+    "Translation Helper": {
+      "n": "Pomocník s překlady",
+      "d": "Získejte přesné překlady s kontextem a poznámkami k použití"
+    },
+    "Language Exchange Prep": {
+      "n": "Příprava na jazykovou výměnu",
+      "d": "Připravte se na jazykovou výměnu se strukturovanými konverzačními tématy"
+    },
+    "Travel Phrase Book": {
+      "n": "Cestovní konverzace",
+      "d": "Základní cestovní fráze uspořádané podle situací pro vaši destinaci"
+    },
+    "Business Language Guide": {
+      "n": "Průvodce obchodním jazykem",
+      "d": "Naučte se profesionální jazyk pro obchodní prostředí a komunikaci"
+    },
+    "Accent Improvement Guide": {
+      "n": "Průvodce zlepšením výslovnosti",
+      "d": "Zlepšete výslovnost a přízvuk pomocí cílených cvičení"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Procvičování čtení s porozuměním",
+      "d": "Zlepšete čtenářské dovednosti s texty podle úrovně a otázkami k porozumění"
+    },
+    "Writing Practice Creator": {
+      "n": "Tvorba písemných cvičení",
+      "d": "Procvičujte psaní v cílovém jazyce s řízenými podněty a zpětnou vazbou"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Průvodce poslechem s porozuměním",
+      "d": "Zlepšete poslechové dovednosti pomocí strukturovaných cvičení a strategií"
+    },
+    "Cultural Context Guide": {
+      "n": "Průvodce kulturním kontextem",
+      "d": "Porozumějte kulturním nuancím a etiketě pro efektivní komunikaci"
+    },
+    "Room Layout Planner": {
+      "n": "Plánovač uspořádání místnosti",
+      "d": "Navrhněte optimální rozvržení místnosti s rozmístěním nábytku a průchodností"
+    },
+    "Color Palette Creator": {
+      "n": "Tvorba barevné palety",
+      "d": "Vygenerujte sladěné barevné palety pro interiéry a designové projekty"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Průvodce nákupem nábytku",
+      "d": "Chytrý nákup nábytku se sladěním stylu a plánováním rozpočtu"
+    },
+    "Home Decor Style Finder": {
+      "n": "Hledač stylu interiéru",
+      "d": "Objevte svůj styl interiérového designu pomocí řízeného hodnocení"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Tvorba kapsulového šatníku",
+      "d": "Sestavte si všestranný kapsulový šatník maximalizující kombinace outfitů"
+    },
+    "Outfit Planner": {
+      "n": "Plánovač outfitů",
+      "d": "Naplánujte outfity na týden nebo zvláštní příležitosti z vašeho stávajícího šatníku"
+    },
+    "Personal Style Guide": {
+      "n": "Průvodce osobním stylem",
+      "d": "Definujte svou stylovou identitu a pravidla pro nakupování"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Sezónní obnovení šatníku",
+      "d": "Obnovte šatník každou sezónu strategickými doplňky a úpravami"
+    },
+    "Home Office Setup Guide": {
+      "n": "Průvodce zařízením domácí kanceláře",
+      "d": "Navrhněte produktivní a stylový prostor domácí kanceláře"
+    },
+    "Bathroom Design Planner": {
+      "n": "Plánovač designu koupelny",
+      "d": "Plánujte renovaci a modernizaci koupelny s důrazem na styl i funkčnost"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Generátor nápadů pro hackathon",
+      "d": "Brainstormujte a ověřte nápady na hackathonové projekty podle témat a omezení"
+    },
+    "MVP Builder Guide": {
+      "n": "Průvodce tvorbou MVP",
+      "d": "Naplánujte a vytvořte minimální životaschopný produkt v krátkém hackathonové termínu"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathonová prezentace",
+      "d": "Vytvořte přesvědčivou prezentaci svého hackathonového projektu pro porotu"
+    },
+    "Technical Architecture Planner": {
+      "n": "Plánovač technické architektury",
+      "d": "Rychle navrhněte technickou architekturu pro hackathonový projekt"
+    },
+    "Hackathon Team Builder": {
+      "n": "Sestavení hackathonového týmu",
+      "d": "Sestavte vyvážený hackathonový tým s doplňujícími se dovednostmi a jasnými rolemi"
+    },
+    "Demo Day Script": {
+      "n": "Scénář pro demo den",
+      "d": "Připravte si vybroušenou živou ukázku zdůrazňující klíčové funkce projektu"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Analýza hodnotících kritérií",
+      "d": "Analyzujte hodnotící kritéria hackathonu a optimalizujte svůj projekt podle nich"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Časový plán hackathonu",
+      "d": "Rozložte hodiny hackathonu do strukturovaného sprintového rozvrhu"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Poradce pro strategii cen",
+      "d": "Strategicky cílte na konkrétní cenové kategorie a přizpůsobte projekt k výhře"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Akční plán po hackathonu",
+      "d": "Přeměňte hackathonový projekt na reálný produkt nebo portfoliový kousek"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Průvodce rychlým prototypováním",
+      "d": "Rychle prototypujte a iterujte hackathonový koncept s omezeným časem"
+    },
+    "Hackathon Submission Template": {
+      "n": "Šablona hackathonového odevzdání",
+      "d": "Připravte kompletní a propracované hackathonové odevzdání se všemi požadovanými materiály"
+    },
+    "Game Design Document": {
+      "n": "Dokument herního designu",
+      "d": "Vytvořte komplexní dokument herního designu pokrývající všechny aspekty vaší hry"
+    },
+    "Game Mechanics Designer": {
+      "n": "Návrhář herních mechanik",
+      "d": "Navrhněte a vyvažte klíčové herní mechaniky pro poutavý gameplay"
+    },
+    "Level Design Planner": {
+      "n": "Plánovač designu úrovní",
+      "d": "Plánujte herní úrovně s tempem, výzvami a vyprávěním prostřednictvím prostředí"
+    },
+    "Game Economy Balancer": {
+      "n": "Vyvažování herní ekonomiky",
+      "d": "Navrhněte a vyvažte herní ekonomiku pro férový a poutavý postup"
+    },
+    "Character Stats Builder": {
+      "n": "Tvorba statistik postav",
+      "d": "Vytvořte vyvážené systémy statistik postav a archetypů tříd"
+    },
+    "Quest Designer": {
+      "n": "Návrhář questů",
+      "d": "Navrhněte poutavé questy s větvícím se příběhem a smysluplnými odměnami"
+    },
+    "Game UI/UX Planner": {
+      "n": "Plánovač herního UI/UX",
+      "d": "Plánujte intuitivní herní rozhraní a uživatelské zážitky"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Kampaň stolního RPG",
+      "d": "Vytvořte kampaň stolního RPG se světem, NPC a dějovými linkami"
+    },
+    "Board Game Designer": {
+      "n": "Návrhář deskových her",
+      "d": "Navrhněte deskovou hru od konceptu po prototyp s vyváženými pravidly"
+    },
+    "Game Testing Checklist": {
+      "n": "Checklist testování her",
+      "d": "Vytvořte komplexní QA testovací checklist pro vaši hru"
+    },
+    "Photo Shoot Planner": {
+      "n": "Plánovač focení",
+      "d": "Naplánujte kompletní focení od konceptu po realizaci včetně logistiky"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Průvodce fotografickým portfoliem",
+      "d": "Sestavte a uspořádejte výjimečné fotografické portfolio pro klienty nebo výstavy"
+    },
+    "Photo Editing Workflow": {
+      "n": "Postup úpravy fotografií",
+      "d": "Vytvořte efektivní postup úprav fotografií od importu po finální export"
+    },
+    "Client Photography Brief": {
+      "n": "Fotografický brief pro klienta",
+      "d": "Vytvořte profesionální fotografický brief pro klientské projekty"
+    },
+    "Landscape Photography Guide": {
+      "n": "Průvodce krajinářskou fotografií",
+      "d": "Plánujte fotografické výlety za krajinou s tipy na počasí, načasování a kompozici"
+    },
+    "Portrait Photography Tips": {
+      "n": "Tipy pro portrétní fotografii",
+      "d": "Průvodce zachycením působivých portrétů s osvětlením a vedením póz"
+    },
+    "Product Photography Setup": {
+      "n": "Nastavení produktové fotografie",
+      "d": "Připravte profesionální produktovou fotografii se správným osvětlením a aranžmá"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Časový plán svatební fotografie",
+      "d": "Naplánujte kompletní harmonogram svatebního focení od příprav po hostinu"
+    },
+    "Street Photography Guide": {
+      "n": "Průvodce pouliční fotografií",
+      "d": "Tipy a techniky pro autentickou a působivou pouliční fotografii"
+    },
+    "Astrophotography Planner": {
+      "n": "Plánovač astrofotografie",
+      "d": "Plánujte astrofotografická sezení s nastavením vybavení a nebeskými událostmi"
+    },
+    "Character Design Brief": {
+      "n": "Brief pro design postavy",
+      "d": "Vytvořte podrobné briefy pro design postav s osobností, vzhledem a příběhem"
+    },
+    "Comic Strip Creator": {
+      "n": "Tvorba komiksu",
+      "d": "Plánujte a tvořte komiksy s rozložením panelů, dialogy a tempem"
+    },
+    "World Building Guide": {
+      "n": "Průvodce tvorbou světa",
+      "d": "Vytvořte pohlcující fiktivní světy s geografií, kulturami a mytologií"
+    },
+    "Children's Book Illustrator": {
+      "n": "Ilustrace dětské knihy",
+      "d": "Plánujte ilustrace pro dětské knihy s věkově přiměřeným stylem a tempem"
+    },
+    "Art Portfolio Curator": {
+      "n": "Kurátor uměleckého portfolia",
+      "d": "Sestavte a prezentujte umělecké portfolio pro galerie, klienty nebo školy"
+    },
+    "Color Theory Guide": {
+      "n": "Průvodce teorií barev",
+      "d": "Aplikujte principy teorie barev pro tvorbu harmonických a působivých děl"
+    },
+    "Digital Art Workflow": {
+      "n": "Postup digitální tvorby",
+      "d": "Zefektivněte proces digitální tvorby od skici po finální render"
+    },
+    "Art Commission Brief": {
+      "n": "Brief pro uměleckou zakázku",
+      "d": "Napište jasné zadání umělecké zakázky pro komunikaci vaší vize umělcům"
+    },
+    "Mural Design Planner": {
+      "n": "Plánovač návrhu muralu",
+      "d": "Plánujte velkoplošné muralové projekty od konceptu po instalaci"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Návrh umělecké výstavy",
+      "d": "Napište profesionální návrh umělecké výstavy pro galerie a prostory"
+    },
+    "Tax Deduction Finder": {
+      "n": "Vyhledávač daňových odpočtů",
+      "d": "Identifikujte běžně přehlížené daňové odpočty podle vaší situace a statusu"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Daňový průvodce pro OSVČ",
+      "d": "Zorientujte se v daních pro OSVČ včetně záloh a odpočtů"
+    },
+    "Tax Document Organizer": {
+      "n": "Organizér daňových dokumentů",
+      "d": "Uspořádejte a sledujte všechny daňové dokumenty potřebné k podání přiznání"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Odhad čtvrtletních daní",
+      "d": "Vypočítejte a naplánujte čtvrtletní zálohy na daně pro OSVČ"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Průvodce výpočtem kapitálových zisků",
+      "d": "Pochopte a naplánujte daň z kapitálových zisků z investic a nemovitostí"
+    },
+    "Tax Filing Checklist": {
+      "n": "Checklist pro podání daňového přiznání",
+      "d": "Krokový checklist pro přesné a kompletní podání daňového přiznání"
+    },
+    "State Tax Comparison": {
+      "n": "Srovnání daní podle státu",
+      "d": "Porovnejte daňové dopady při stěhování nebo příjmech z více států"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Průvodce daňovou optimalizací ztrát",
+      "d": "Strategicky využijte investiční ztráty k vyrovnání zisků a snížení daňové povinnosti"
+    },
+    "Stock Research Template": {
+      "n": "Šablona průzkumu akcií",
+      "d": "Proveďte důkladnou fundamentální a technickou analýzu jednotlivých akcií"
+    },
+    "ETF Comparison Tool": {
+      "n": "Nástroj pro porovnání ETF",
+      "d": "Porovnejte ETF podle nákladovosti, složení, výkonnosti a strategie"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Plánovač dividendového portfolia",
+      "d": "Sestavte portfolio zaměřené na dividendy pro pasivní příjem"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Analyzátor investic do nemovitostí",
+      "d": "Analyzujte nájemní nemovitosti a realitní investice z hlediska výnosů a cash flow"
+    },
+    "Angel Investing Checklist": {
+      "n": "Checklist pro andělské investice",
+      "d": "Vyhodnoťte investiční příležitosti do startupů pomocí rámce due diligence"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Optimalizace důchodových účtů",
+      "d": "Optimalizujte příspěvky napříč penzijními a důchodovými účty"
+    },
+    "Bond Analysis Guide": {
+      "n": "Průvodce analýzou dluhopisů",
+      "d": "Analyzujte dluhopisy a cenné papíry s pevným výnosem z hlediska úroku, doby splatnosti a rizika"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Hodnocení podílových fondů",
+      "d": "Vyhodnoťte podílové fondy podle výkonnosti, poplatků, správce a vhodnosti"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Průvodce rebalancováním portfolia",
+      "d": "Rebalancujte investiční portfolio pro udržení cílové alokace aktiv"
+    },
+    "Investment Journal Template": {
+      "n": "Šablona investičního deníku",
+      "d": "Zaznamenávejte investiční rozhodnutí, důvody a výsledky pro průběžné zlepšování"
+    },
+    "AWS Service Selector": {
+      "n": "Výběr služeb AWS",
+      "d": "Vyberte správné služby AWS pro požadavky a rozpočet vaší aplikace"
+    },
+    "Cloud Migration Plan": {
+      "n": "Plán migrace do cloudu",
+      "d": "Naplánujte strukturovanou migraci lokální infrastruktury do cloudu"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Průvodce nasazením Kubernetes",
+      "d": "Nasazujte a spravujte aplikace na Kubernetes podle osvědčených postupů"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Šablona infrastruktury jako kódu",
+      "d": "Vytvořte šablony infrastruktury jako kódu pro reprodukovatelná cloudová prostředí"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "Návrhář CI/CD pipeline",
+      "d": "Navrhněte automatizované CI/CD pipeline pro kontinuální integraci a nasazení"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Optimalizace cloudových nákladů",
+      "d": "Identifikujte a implementujte strategie pro optimalizaci nákladů na cloud"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Plánovač serverless architektury",
+      "d": "Navrhněte serverless aplikace s událostmi řízenými architektonickými vzory"
+    },
+    "Container Strategy Guide": {
+      "n": "Průvodce strategií kontejnerizace",
+      "d": "Definujte strategii kontejnerizace pro aplikace a mikroslužby"
+    },
+    "Cloud Security Checklist": {
+      "n": "Checklist zabezpečení cloudu",
+      "d": "Auditujte a zabezpečte cloudovou infrastrukturu pomocí komplexních bezpečnostních kontrol"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Plán obnovy po havárii",
+      "d": "Navrhněte plán cloudové obnovy po havárii s cíli RTO a RPO"
+    },
+    "Keynote Speech Writer": {
+      "n": "Tvůrce hlavního projevu",
+      "d": "Napište silný hlavní projev, který inspiruje a zaujme vaše publikum"
+    },
+    "TED Talk Outline": {
+      "n": "Osnova TED přednášky",
+      "d": "Strukturujte přesvědčivou přednášku ve stylu TED se silným příběhovým obloukem"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Tvůrce přípitků a poct",
+      "d": "Napište nezapomenutelné přípitky a pocty na svatby, odchody do důchodu a oslavy"
+    },
+    "Debate Preparation Guide": {
+      "n": "Průvodce přípravou na debatu",
+      "d": "Důkladně se připravte na debaty s argumenty, protiargumenty a důkazy"
+    },
+    "Panel Discussion Prep": {
+      "n": "Příprava na panelovou diskusi",
+      "d": "Připravte se na panelové diskuse s body k jednání a zapojením publika"
+    },
+    "Presentation Slide Planner": {
+      "n": "Plánovač prezentačních snímků",
+      "d": "Plánujte prezentační snímky s vizuální hierarchií a narativním tokem"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Průvodce improvizovaným projevem",
+      "d": "Rozvíjejte schopnost pohotově mluvit pomocí rámců pro improvizovaný projev"
+    },
+    "Commencement Speech Writer": {
+      "n": "Tvůrce promočního projevu",
+      "d": "Napište inspirativní promoční projev pro slavnostní ceremoniál"
+    },
+    "Grant Application Writer": {
+      "n": "Tvůrce žádostí o granty",
+      "d": "Napište přesvědčivé grantové žádosti jasně formulující dopad a potřebu"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Plán fundraisingové kampaně",
+      "d": "Naplánujte a realizujte efektivní fundraisingové kampaně napříč kanály"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Průvodce náborem dobrovolníků",
+      "d": "Získávejte, zaučujte a udržte dobrovolníky pro neziskové programy"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Zasedání správní rady neziskovky",
+      "d": "Připravte a veďte efektivní zasedání správní rady neziskové organizace"
+    },
+    "Impact Report Template": {
+      "n": "Šablona zprávy o dopadu",
+      "d": "Vytvořte přesvědčivé zprávy o dopadu prezentující úspěchy vaší neziskovky"
+    },
+    "Donor Thank You Letter": {
+      "n": "Děkovný dopis dárci",
+      "d": "Napište osobní děkovné dopisy dárcům budující trvalé vztahy"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Strategie roční kampaně",
+      "d": "Vytvořte komplexní roční strategii fundraisingu a zapojení"
+    },
+    "Community Needs Assessment": {
+      "n": "Hodnocení potřeb komunity",
+      "d": "Proveďte důkladné hodnocení potřeb komunity pro nasměrování rozvoje programů"
+    },
+    "Construction Project Plan": {
+      "n": "Plán stavebního projektu",
+      "d": "Vytvořte komplexní plán stavebního projektu s fázemi, harmonogramem a rozpočty"
+    },
+    "Building Permit Checklist": {
+      "n": "Checklist stavebních povolení",
+      "d": "Sledujte všechna potřebná stavební povolení a schválení pro váš projekt"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Průvodce hodnocením dodavatelů",
+      "d": "Hodnoťte a porovnávejte dodavatele pomocí strukturovaného bodového systému"
+    },
+    "Material Estimate Calculator": {
+      "n": "Kalkulačka odhadu materiálu",
+      "d": "Odhadněte potřebné stavební materiály s množstvím a projekcí nákladů"
+    },
+    "Site Inspection Checklist": {
+      "n": "Checklist kontroly staveniště",
+      "d": "Provádějte důkladné kontroly staveniště pomocí standardizovaných checklistů"
+    },
+    "Renovation Scope Document": {
+      "n": "Dokument rozsahu rekonstrukce",
+      "d": "Definujte jasný rozsah rekonstrukčních prací se specifikacemi a očekáváními"
+    },
+    "Architectural Brief": {
+      "n": "Architektonický brief",
+      "d": "Napište architektonický brief definující vizi, požadavky a omezení projektu"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Checklist bezpečnostních předpisů",
+      "d": "Zajistěte dodržování bezpečnostních předpisů na staveništi dle BOZP a místních norem"
+    },
+    "Robot Design Specification": {
+      "n": "Specifikace designu robota",
+      "d": "Definujte kompletní specifikace robota včetně mechaniky, elektroniky a softwaru"
+    },
+    "IoT Project Planner": {
+      "n": "Plánovač IoT projektu",
+      "d": "Plánujte IoT projekty od senzorů po cloudové dashboardy"
+    },
+    "Sensor Selection Guide": {
+      "n": "Průvodce výběrem senzorů",
+      "d": "Vyberte optimální senzory pro vaše robotické nebo IoT aplikace"
+    },
+    "Embedded Systems Guide": {
+      "n": "Průvodce vestavěnými systémy",
+      "d": "Navrhněte vestavěné systémy se správným výběrem mikrokontroléru a architekturou firmwaru"
+    },
+    "Automation Workflow Designer": {
+      "n": "Návrhář automatizačních procesů",
+      "d": "Navrhněte průmyslové nebo domácí automatizační procesy se senzory a akčními členy"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Plánovač hardwarového prototypu",
+      "d": "Plánujte hardwarové prototypy od nepájivého pole po DPS s výběrem součástek"
+    },
+    "Anxiety Management Plan": {
+      "n": "Plán zvládání úzkosti",
+      "d": "Vytvořte osobní plán zvládání úzkosti se strategiemi a identifikací spouštěčů"
+    },
+    "CBT Thought Record": {
+      "n": "Záznam myšlenek KBT",
+      "d": "Procvičujte záznamy myšlenek kognitivně-behaviorální terapie pro zvládání negativního myšlení"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Generátor podnětů pro deník",
+      "d": "Generujte smysluplné podněty pro psaní deníku, sebereflexi a zpracování emocí"
+    },
+    "Relationship Communication Guide": {
+      "n": "Průvodce komunikací ve vztahu",
+      "d": "Zlepšete komunikaci ve vztahu pomocí strukturovaných konverzačních rámců"
+    },
+    "Boundary Setting Guide": {
+      "n": "Průvodce nastavováním hranic",
+      "d": "Naučte se stanovit a udržovat zdravé hranice v osobním i profesním životě"
+    },
+    "Grief Processing Helper": {
+      "n": "Pomocník při zpracování smutku",
+      "d": "Projděte procesem truchlení s empatickým vedením a praktickými kroky"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Cvičení soucitu se sebou",
+      "d": "Procvičujte soucit se sebou pro budování odolnosti a snížení sebekritiky"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Rozvoj emoční inteligence",
+      "d": "Rozvíjejte dovednosti emoční inteligence pro lepší sebeuvědomění a vztahy"
+    },
+    "Anger Management Plan": {
+      "n": "Plán zvládání hněvu",
+      "d": "Vytvořte zdravé strategie zvládání hněvu s identifikací spouštěčů a technikami deeskalace"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Plán zotavení z vyhoření",
+      "d": "Vytvořte strukturovaný plán zotavení z vyhoření s hranicemi, odpočinkem a postupným návratem"
+    },
+    "Instant Pot Recipe": {
+      "n": "Recepty do tlakového hrnce",
+      "d": "Recepty do tlakového hrnce s průvodcem časováním"
+    },
+    "World Cuisine Explorer": {
+      "n": "Průzkumník světové kuchyně",
+      "d": "Autentické recepty ze světových kuchyní"
+    },
+    "Fermentation Guide": {
+      "n": "Průvodce fermentací",
+      "d": "Recepty a techniky fermentovaných potravin"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Průvodce grilováním",
+      "d": "Recepty na grilování s marinádami a omáčkami"
+    },
+    "Bread Baking Guide": {
+      "n": "Průvodce pečením chleba",
+      "d": "Recepty na domácí chléb od kvásku po hotový bochník"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Průvodce pěstováním hub",
+      "d": "Domácí pěstování hub od podhoubí po sklizeň"
+    },
+    "Permaculture Planner": {
+      "n": "Plánovač permakultury",
+      "d": "Navrhněte soběstačný ekosystém potravinové zahrady"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Průvodce zřízením skleníku",
+      "d": "Naplánujte a postavte produktivní skleník"
+    },
+    "FSBO Selling Guide": {
+      "n": "Průvodce prodejem nemovitosti bez realitky",
+      "d": "Prodejte svůj dům bez realitního makléře krok za krokem"
+    },
+    "Investment Property Finder": {
+      "n": "Vyhledávač investičních nemovitostí",
+      "d": "Vyhodnoťte potenciální nájemní investiční nemovitosti"
+    },
+    "Car Modification Guide": {
+      "n": "Průvodce úpravami automobilu",
+      "d": "Plánujte úpravy a vylepšení vozidla"
+    },
+    "Fleet Management Planner": {
+      "n": "Plánovač správy vozového parku",
+      "d": "Spravujte údržbu a náklady více vozidel"
+    },
+    "Digital Nomad Guide": {
+      "n": "Průvodce digitálního nomáda",
+      "d": "Pracujte na dálku a cestujte po světě"
+    },
+    "Eco-Travel Planner": {
+      "n": "Plánovač ekologického cestování",
+      "d": "Plánujte udržitelné a ekologické výlety"
+    },
+    "Product Launch Event": {
+      "n": "Událost uvedení produktu",
+      "d": "Naplánujte událost uvedení produktu od místa konání po PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Plánovač online událostí",
+      "d": "Plánujte poutavé online akce a webináře"
+    },
+    "College Planning Guide": {
+      "n": "Průvodce plánováním studia",
+      "d": "Plánujte vysokoškolské studium od výběru školy po finanční pomoc"
+    },
+    "Child Safety Plan": {
+      "n": "Plán bezpečnosti dítěte",
+      "d": "Komplexní pokyny pro bezpečnost doma i na internetu"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Průvodce péčí o exotická zvířata",
+      "d": "Návody na péči o plazy, ptáky a exotická zvířata"
+    },
+    "Pet Adoption Guide": {
+      "n": "Průvodce adopcí zvířete",
+      "d": "Úspěšně zvládněte proces adopce domácího mazlíčka"
+    },
+    "Tiny House Builder": {
+      "n": "Stavba minidomu",
+      "d": "Naplánujte a postavte minidům krok za krokem"
+    },
+    "Workshop Setup Guide": {
+      "n": "Průvodce zřízením dílny",
+      "d": "Navrhněte a vybavte domácí dílnu"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Plánovač slevové strategie",
+      "d": "Maximalizujte úspory strategickým využíváním kuponů a slev"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Průvodce nákupem z druhé ruky",
+      "d": "Najděte kvalitní kousky v second handech a online"
+    },
+    "Theological Study Guide": {
+      "n": "Průvodce teologickým studiem",
+      "d": "Hloubkový ponor do teologických konceptů a doktrín"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Průvodce mezináboženským dialogem",
+      "d": "Usnadněte respektující mezináboženské rozhovory"
+    },
+    "Marathon Training Plan": {
+      "n": "Tréninkový plán na maraton",
+      "d": "Kompletní příprava na maraton od nuly po 42,195 km"
+    },
+    "Youth Sports Coach": {
+      "n": "Trenér mládežnického sportu",
+      "d": "Plánujte tréninky a rozvoj mládežnického sportu"
+    },
+    "Woodworking Project": {
+      "n": "Truhlářský projekt",
+      "d": "Plánujte truhlářské projekty s nářezovými plány a postupy"
+    },
+    "Vinyl Record Guide": {
+      "n": "Průvodce vinylovými deskami",
+      "d": "Začněte a spravujte sbírku vinylových desek"
+    },
+    "Home Brewing Guide": {
+      "n": "Průvodce domácím vařením piva",
+      "d": "Uvařte si pivo nebo víno doma od začátku do konce"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Plán cesty k finanční svobodě",
+      "d": "Zmapujte si cestu k finanční nezávislosti"
+    },
+    "Midlife Career Change": {
+      "n": "Změna kariéry v polovině života",
+      "d": "Zvládněte kariérní přechod v jakémkoli věku"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI tvorba tapet",
+      "d": "Generujte úchvatné tapety pro jakékoli zařízení"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Návrh tetování s AI",
+      "d": "Vytvořte originální koncepty tetování pomocí AI"
+    },
+    "DJ Set Planner": {
+      "n": "Plánovač DJ setu",
+      "d": "Plánujte DJ sety s výběrem skladeb a přechody"
+    },
+    "Music Theory Tutor": {
+      "n": "Lektor hudební teorie",
+      "d": "Učte se koncepty hudební teorie s cvičeními"
+    },
+    "Podcast Video Setup": {
+      "n": "Nastavení video podcastu",
+      "d": "Připravte video podcast od vybavení po střih"
+    },
+    "Wedding Video Plan": {
+      "n": "Plán svatebního videa",
+      "d": "Naplánujte natáčení svatby od obřadu po střih"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Tvůrce kapitol memoárů",
+      "d": "Pište poutavé kapitoly memoárů z životních příběhů"
+    },
+    "Haiku Generator": {
+      "n": "Generátor haiku",
+      "d": "Tvořte básně haiku na jakékoli téma"
+    },
+    "TikTok Content Strategy": {
+      "n": "Obsahová strategie pro TikTok",
+      "d": "Vytvořte růstovou strategii pro TikTok s nápady na obsah"
+    },
+    "YouTube Community Post": {
+      "n": "Komunitní příspěvek na YouTube",
+      "d": "Tvořte poutavé komunitní příspěvky na YouTube"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Plán monetizace podcastu",
+      "d": "Strategie pro zpeněžení vašeho podcastu"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Průvodce porovnáním AI nástrojů",
+      "d": "Porovnejte AI nástroje pro konkrétní případy použití"
+    },
+    "Code Snippet Library": {
+      "n": "Knihovna úryvků kódu",
+      "d": "Organizujte a dokumentujte znovupoužitelné úryvky kódu"
+    },
+    "Tech Stack Selector": {
+      "n": "Výběr technologického stacku",
+      "d": "Vyberte správný technologický stack pro váš projekt"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Průvodce shodou s ochranou soukromí",
+      "d": "Zajistěte soulad vaší aplikace s předpisy o ochraně soukromí"
+    },
+    "API Security Audit": {
+      "n": "Bezpečnostní audit API",
+      "d": "Proveďte audit koncových bodů API na bezpečnostní zranitelnosti"
+    },
+    "AI Hackathon Project": {
+      "n": "AI hackathonový projekt",
+      "d": "Naplánujte hackathonový projekt zaměřený na AI od A do Z"
+    },
+    "Mobile Game Concept": {
+      "n": "Koncept mobilní hry",
+      "d": "Navrhněte mobilní hru od konceptu po monetizaci"
+    },
+    "Drone Photography Guide": {
+      "n": "Průvodce fotografováním dronem",
+      "d": "Plánujte mise a záběry letecké fotografie"
+    },
+    "NFT Art Collection": {
+      "n": "NFT umělecká kolekce",
+      "d": "Naplánujte a vytvořte kolekci digitálního umění"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Daňový průvodce pro freelancery",
+      "d": "Zorientujte se v daních a odpočtech pro OSVČ"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Tvorba kryptoměnového portfolia",
+      "d": "Sestavte diverzifikované portfolio kryptoměn"
+    },
+    "Azure Service Guide": {
+      "n": "Průvodce službami Azure",
+      "d": "Vyberte a nakonfigurujte cloudové služby Azure"
+    },
+    "Wedding Speech Writer": {
+      "n": "Tvůrce svatebního projevu",
+      "d": "Napište srdečné svatební proslovy a přípitky"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Průvodce založením neziskovky",
+      "d": "Založte neziskovou organizaci od nuly"
+    },
+    "Home Addition Planner": {
+      "n": "Plánovač přístavby domu",
+      "d": "Naplánujte přístavbu od povolení po stavbu"
+    },
+    "Arduino Project Planner": {
+      "n": "Plánovač projektů s Arduinem",
+      "d": "Plánujte elektronické projekty založené na Arduinu"
+    },
+    "Digital Wellness Plan": {
+      "n": "Plán digitální pohody",
+      "d": "Vytvořte si zdravý vztah k technologiím"
+    },
+    "SWOT Analysis Tool": {
+      "n": "Nástroj SWOT analýzy",
+      "d": "Strategická analýza silných a slabých stránek, příležitostí a hrozeb"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Tvůrce programu porady",
+      "d": "Vytvářejte strukturované programy porad s časovými bloky"
+    },
+    "OKR Framework Builder": {
+      "n": "Tvůrce OKR rámce",
+      "d": "Stanovte cíle a klíčové výsledky pro týmy"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Příprava na vyjednávání s dodavateli",
+      "d": "Připravte se na vyjednávání s dodavateli a partnery"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Průvodce hodnocením franšízy",
+      "d": "Systematicky vyhodnoťte franšízové příležitosti"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Tvůrce pravidel pro práci na dálku",
+      "d": "Vytvořte komplexní pravidla pro práci na dálku"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Plán diverzitního náboru",
+      "d": "Budujte inkluzivní náborové postupy a procesy"
+    },
+    "Freelance Contract Template": {
+      "n": "Šablona freelance smlouvy",
+      "d": "Vytvořte profesionální smlouvy o poskytování služeb na volné noze"
+    },
+    "Personal Website Planner": {
+      "n": "Plánovač osobních webových stránek",
+      "d": "Naplánujte a strukturujte svůj profesionální portfoliový web"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Průvodce přerušovaným půstem",
+      "d": "Navrhněte si protokol přerušovaného půstu"
+    },
+    "Posture Improvement Plan": {
+      "n": "Plán zlepšení držení těla",
+      "d": "Napravte problémy s držením těla pomocí cvičení a návyků"
+    },
+    "Notion Template Builder": {
+      "n": "Tvůrce šablon pro Notion",
+      "d": "Navrhněte šablony pracovního prostoru Notion pro jakýkoli workflow"
+    },
+    "Automation Workflow Builder": {
+      "n": "Tvůrce automatizačních workflow",
+      "d": "Navrhněte automatizační workflow pomocí Zapier nebo Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Agilní plánovač sprintů",
+      "d": "Plánujte agilní sprinty se story pointy a rychlostí"
+    },
+    "Product Roadmap Builder": {
+      "n": "Tvůrce produktové roadmapy",
+      "d": "Vytvářejte produktové roadmapy s milníky a tématy"
+    },
+    "TOEFL Prep Guide": {
+      "n": "Průvodce přípravou na TOEFL",
+      "d": "Připravte se na zkoušku TOEFL se studijními strategiemi"
+    },
+    "Business English Coach": {
+      "n": "Kouč obchodní angličtiny",
+      "d": "Zlepšete profesionální komunikaci v angličtině"
+    },
+    "Brand Identity Designer": {
+      "n": "Návrhář identity značky",
+      "d": "Vytvořte jednotné vizuální pokyny pro identitu značky"
+    },
+    "UX Research Plan": {
+      "n": "Plán UX výzkumu",
+      "d": "Plánujte výzkum uživatelské zkušenosti pro digitální produkty"
+    },
+    "Data Storytelling Guide": {
+      "n": "Průvodce vyprávěním pomocí dat",
+      "d": "Přeměňte datové poznatky na přesvědčivé příběhy"
+    },
+    "AI Model Evaluation": {
+      "n": "Hodnocení AI modelů",
+      "d": "Vyhodnoťte a porovnejte výkon modelů strojového učení"
+    },
+    "3D Printing Project": {
+      "n": "Projekt 3D tisku",
+      "d": "Plánujte projekty 3D tisku od návrhu po tisk"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Návrhář elektrických obvodů",
+      "d": "Navrhněte elektrické obvody s výběrem součástek"
+    },
+    "Side Hustle Finder": {
+      "n": "Hledač přivýdělku",
+      "d": "Objevte nápady na přivýdělek na základě vašich dovedností"
+    },
+    "Passive Income Blueprint": {
+      "n": "Plán pasivního příjmu",
+      "d": "Vytvořte strategii pasivního příjmu přizpůsobenou vaší situaci"
+    },
+    "Savings Challenge Generator": {
+      "n": "Generátor výzvy spoření",
+      "d": "Vytvořte přizpůsobený plán výzvy spoření"
+    },
+    "Negotiate Any Bill": {
+      "n": "Vyjednavač účtů",
+      "d": "Skripty pro vyjednávání a snížení opakujících se účtů"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Spouštěč obchodu Etsy",
+      "d": "Plán krok za krokem pro spuštění a růst obchodu Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Plánovač YouTube kanálu",
+      "d": "Naplánujte a spusťte ziskový YouTube kanál"
+    },
+    "Rental Income Analyzer": {
+      "n": "Analyzátor příjmů z pronájmu",
+      "d": "Analyzujte potenciální výnosy z pronájmu nemovitostí"
+    },
+    "Online Course Creator": {
+      "n": "Tvůrce online kurzů",
+      "d": "Naplánujte a strukturujte online kurz k prodeji"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Maximalizátor kupónů a cashbacku",
+      "d": "Maximalizujte úspory s kupóny, cashbackem a odměnami"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Nastavení dropshipping obchodu",
+      "d": "Naplánujte dropshippingový podnik od nuly"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Optimalizátor gig ekonomiky",
+      "d": "Maximalizujte příjmy z gig aplikací jako Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

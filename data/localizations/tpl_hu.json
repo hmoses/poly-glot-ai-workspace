@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Összes",
+    "free": "⭐ Ingyenes",
+    "money": "💰 Üzlet",
+    "coding": "💻 Kódolás",
+    "ai": "🤖 AI",
+    "writing": "✍️ Írás",
+    "marketing": "📢 Marketing",
+    "sales": "🤝 Értékesítés",
+    "school": "📚 Oktatás",
+    "research": "🔬 Kutatás",
+    "career": "🚀 Karrier",
+    "legal": "⚖️ Jogi",
+    "finance": "📊 Pénzügy",
+    "health": "🏥 Egészség",
+    "cooking": "🍳 Főzés",
+    "garden": "🌱 Kert",
+    "realestate": "🏠 Ingatlan",
+    "auto": "🚗 Autó",
+    "travel": "✈️ Utazás",
+    "image": "🎨 Kép AI",
+    "music": "🎵 Zene",
+    "video": "🎬 Videó",
+    "social": "📱 Közösségi",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-kereskedelem",
+    "productivity": "⏱ Termelékenység",
+    "diy": "🔨 Barkácsolás",
+    "event": "🎉 Események",
+    "parent": "👶 Szülőség",
+    "pets": "🐾 Háziállatok",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Jólét",
+    "language": "🌍 Nyelvek",
+    "security": "🔒 Biztonság",
+    "datascience": "📈 Adattudomány",
+    "chemistry": "🧪 Kémia",
+    "biology": "🧬 Biológia",
+    "physics": "⚛️ Fizika",
+    "math": "🔢 Matematika",
+    "makemoney": "💰 Pénz"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Összefoglaló eszköz",
+      "d": "Sűrítse le a tartalmat világos, pontszerű összefoglalókba"
+    },
+    "Technical Documentation": {
+      "n": "Műszaki dokumentáció",
+      "d": "Készítsen egyértelmű technikai dokumentumokat az API-khoz és funkciókhoz"
+    },
+    "YouTube Script": {
+      "n": "YouTube Script",
+      "d": "Teljes videó forgatókönyv horoggal, szakaszokkal, CTA-val, b-roll listával"
+    },
+    "TikTok Generator": {
+      "n": "TikTok generátor",
+      "d": "TikTok-ra optimalizált rövid formátumú videó szkript"
+    },
+    "LinkedIn Post Writer": {
+      "n": "LinkedIn posztíró",
+      "d": "Az elköteleződést ösztönző LinkedIn-bejegyzések görgetése"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Blogbejegyzés-generátor",
+      "d": "SEO-optimalizált hosszú formátumú blogbejegyzések"
+    },
+    "SEO Article Writer": {
+      "n": "SEO cikkíró",
+      "d": "Kulcsszavakban gazdag cikkek a Google-on való rangsorolás érdekében"
+    },
+    "Podcast Episode Outline": {
+      "n": "A podcast epizód vázlata",
+      "d": "Strukturált epizódvázlat beszédpontokkal"
+    },
+    "Newsletter Writer": {
+      "n": "Hírlevél író",
+      "d": "A vonzó e-mailes hírlevelek olvasói valóban megnyitják"
+    },
+    "Product Review Writer": {
+      "n": "Termékismertető író",
+      "d": "Kiegyensúlyozott, hiteles termékértékelések"
+    },
+    "Social Media Calendar": {
+      "n": "Közösségi média naptár",
+      "d": "30 napos tartalomnaptár bejegyzési ötletekkel platformonként"
+    },
+    "Executive Summary": {
+      "n": "Vezetői összefoglaló",
+      "d": "Egyoldalas vezetői összefoglaló hosszú dokumentumokból"
+    },
+    "Customer Support Response": {
+      "n": "Ügyfélszolgálati válasz",
+      "d": "Empatikus, márkán belüli ügyfélszolgálati válaszok"
+    },
+    "Business Proposal": {
+      "n": "Üzleti javaslat",
+      "d": "Nyertes ügyfélajánlatok hatókörrel és árral"
+    },
+    "Decision Memo": {
+      "n": "Határozati feljegyzés",
+      "d": "Világos döntési feljegyzések lehetőségekkel és ajánlásokkal"
+    },
+    "Stakeholder Update": {
+      "n": "Az érintettek frissítése",
+      "d": "A projekt állapotának tömör frissítései az érdekelt felek számára"
+    },
+    "Code Review Assistant": {
+      "n": "Kódellenőrző asszisztens",
+      "d": "Tekintse át a kódot a hibák, a stílus és a bevált módszerek tekintetében"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Code Megjegyzések",
+      "d": "JSDoc megjegyzések a JavaScripthez és a TypeScripthez"
+    },
+    "Architecture Decision Record": {
+      "n": "Építészeti döntési jegyzőkönyv",
+      "d": "A műszaki döntéseket dokumentáló formális ADR"
+    },
+    "User Story Writer": {
+      "n": "Felhasználói történetíró",
+      "d": "Agilis felhasználói történetek elfogadási feltételekkel"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Elfogadási feltételek",
+      "d": "Uborka-stílusú elfogadási kritériumok a felhasználói történetekhez"
+    },
+    "PR Description Writer": {
+      "n": "PR leírás író",
+      "d": "Világos PR-leírások kontextussal és tesztelési megjegyzésekkel"
+    },
+    "Unit Test Generator": {
+      "n": "Egységteszt generátor",
+      "d": "Egységtesztek éles esetekkel bármely funkcióhoz"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Code Refaktoring Advisor",
+      "d": "Refaktor kód az olvashatóság és a teljesítmény érdekében"
+    },
+    "SQL Query Builder": {
+      "n": "SQL Query Builder",
+      "d": "Természetes nyelv az optimalizált SQL-lekérdezésekhez"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes Config Generator",
+      "d": "Gyorsan diagnosztizálja és javítsa ki a K8s-problémákat"
+    },
+    "Postmortem Report": {
+      "n": "Halál utáni jelentés",
+      "d": "Kifogástalan postmortem idővonallal és akcióelemekkel"
+    },
+    "Release Notes Writer": {
+      "n": "Kiadási megjegyzések írója",
+      "d": "Felhasználóbarát kibocsátási megjegyzések a véglegesítési üzenetekből"
+    },
+    "Prompt Optimizer": {
+      "n": "Prompt Optimizer",
+      "d": "Javítson bármilyen mesterséges intelligencia kérést a jobb, pontosabb kimenetek érdekében"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Gondolatlánc-építő",
+      "d": "Hozzon létre többlépcsős érvelési felszólításokat összetett feladatokhoz"
+    },
+    "RAG System Prompt": {
+      "n": "RAG System Prompt",
+      "d": "Lekéréssel kiegészített generálási prompt sablonok"
+    },
+    "Eval Dataset Creator": {
+      "n": "Eval Dataset Creator",
+      "d": "Kiértékelési adatkészletek létrehozása az AI-modell teszteléséhez"
+    },
+    "Prompt A/B Tester": {
+      "n": "A/B tesztelő kérése",
+      "d": "A teljesítmény összehasonlításához állítson elő A/B változatokat"
+    },
+    "Multi-Model Comparison": {
+      "n": "Több modell összehasonlítása",
+      "d": "Keretrendszer az AI-modellek kimeneteinek összehasonlításához"
+    },
+    "Resume Tailoring": {
+      "n": "A szabászat folytatása",
+      "d": "Igazítsa önéletrajzát egy adott munkaköri leíráshoz"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F kísérőlevél generátor",
+      "d": "Lenyűgöző kísérőlevelek, amelyek interjúkat kapnak"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn Profiloptimalizáló",
+      "d": "Optimalizálja LinkedInjét a toborzóknak"
+    },
+    "Interview Coach": {
+      "n": "Interjú edző",
+      "d": "Gyakorold az interjúkat és válaszokat bármilyen szerephez"
+    },
+    "Salary Negotiation Script": {
+      "n": "Fizetéstárgyalás Script",
+      "d": "Szkriptek és stratégiák a magasabb fizetés tárgyalására"
+    },
+    "Career Roadmap Planner": {
+      "n": "Karrier ütemterv tervező",
+      "d": "12 hónapos karrier növekedési terv mérföldkövekkel"
+    },
+    "Objection Handler": {
+      "n": "Kifogáskezelő",
+      "d": "Szkriptek a gyakori értékesítési kifogások kezelésére"
+    },
+    "Landing Page Copy": {
+      "n": "Céloldal másolása",
+      "d": "Nagy konverziójú céloldal másolata"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads-másolat",
+      "d": "Magas átkattintási arányú Google keresési hirdetésszöveg"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram hirdetés",
+      "d": "Facebook és Instagram hirdetésmásolat, amely konvertál"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Marketingkampány tájékoztató",
+      "d": "Teljes marketing kampány csatornákkal és idővonallal"
+    },
+    "Customer Persona Builder": {
+      "n": "Ügyfél Persona Builder",
+      "d": "Részletes vásárlói személyiségek a marketinghez és a termékhez"
+    },
+    "Value Proposition Canvas": {
+      "n": "Értékajánlat vászon",
+      "d": "Világos, meggyőző értékajánlatok"
+    },
+    "Product Launch Plan": {
+      "n": "Termékbevezetési terv",
+      "d": "Termékbevezetési terv a piacra"
+    },
+    "Study Guide Creator": {
+      "n": "Tanulmányi útmutató készítője",
+      "d": "Bármely témát alakítson át strukturált tanulmányi útmutatóvá"
+    },
+    "Flashcard Creator": {
+      "n": "Tanulókártya készítő",
+      "d": "Tanulókártya Q&A készletek a gyors memorizáláshoz"
+    },
+    "Quiz Generator": {
+      "n": "Kvíz generátor",
+      "d": "Feleletválasztós és rövid válaszszavas kvízek"
+    },
+    "Lesson Plan Builder": {
+      "n": "Óraterv-készítő",
+      "d": "Részletes óravázlatok tevékenységekkel és értékelésekkel"
+    },
+    "Research Notes Organizer": {
+      "n": "Kutatási jegyzetek szervezője",
+      "d": "A kutatási jegyzeteket strukturált körvonalakba rendezze"
+    },
+    "Essay Outline Generator": {
+      "n": "Esszévázlat-generátor",
+      "d": "Strukturált esszévázlatok tézisekkel és érvekkel"
+    },
+    "Literature Review Assistant": {
+      "n": "Irodalmi áttekintő asszisztens",
+      "d": "Szakirodalmi áttekintés szintézissel"
+    },
+    "Thesis Statement Builder": {
+      "n": "Szakdolgozat-készítő",
+      "d": "Erős, vitatható tézisállítások"
+    },
+    "Exam Prep Planner": {
+      "n": "Vizsgafelkészítő tervező",
+      "d": "Személyre szabott vizsgaidőszak"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Szerződés összefoglalója",
+      "d": "Egyszerű-angol szerződés-összefoglaló. Nem jogi tanács."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Szerződéskockázatok áttekintése",
+      "d": "Határozza meg a kockázatos kitételeket. Nem jogi tanács."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA Analyzer",
+      "d": "NDA záradék lebontása. Nem jogi tanács."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Irányelvtervezet-asszisztens",
+      "d": "Belső szabályzat tervezete. Nem jogi tanács."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F megfelelőségi ellenőrzőlista",
+      "d": "Megfelelőségi ellenőrző lista keretrendszerenként. Nem jogi tanács."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Általános Szerződési Feltételek felülvizsgálója",
+      "d": "Jelölje meg a szerződési feltételek kockázatait. Nem jogi tanács."
+    },
+    "Budget Planner": {
+      "n": "Költségvetés tervező",
+      "d": "Személyes vagy üzleti költségvetési terv. Nem pénzügyi tanács."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Bevételek hívása összegző",
+      "d": "A bevételszerzéssel kapcsolatos hívások legfontosabb tudnivalói. Nem pénzügyi tanács."
+    },
+    "Investment Thesis Builder": {
+      "n": "Befektetési szakdolgozatkészítő",
+      "d": "Strukturált befektetés szakdolgozat. Nem pénzügyi tanács."
+    },
+    "Financial Analysis Report": {
+      "n": "Pénzügyi elemzési jelentés",
+      "d": "Pénzügyi elemzés. Nem pénzügyi tanács."
+    },
+    "Expense Categorizer": {
+      "n": "Költségkategorizáló",
+      "d": "A költségek kategorizálása és elemzése. Nem pénzügyi tanács."
+    },
+    "SOAP Note Generator": {
+      "n": "SZAPPAN Jegyzetgenerátor",
+      "d": "Klinikai SOAP megjegyzések. Nem orvosi tanács."
+    },
+    "Clinical Case Summary": {
+      "n": "Klinikai eset-összefoglaló",
+      "d": "Szerkezeti klinikai megjegyzések. Nem orvosi tanács."
+    },
+    "Patient Education Writer": {
+      "n": "Betegoktatási író",
+      "d": "Egyszerű nyelvű betegoktatás. Nem orvosi tanács."
+    },
+    "Medical Research Summarizer": {
+      "n": "Orvosi kutatások összefoglalója",
+      "d": "Foglalja össze a kutatási munkákat. Nem orvosi tanács."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Differenciáldiagnosztikai asszisztens",
+      "d": "Differenciáldiagnózis szervezése. Nem orvosi tanács."
+    },
+    "Creative Storyteller": {
+      "n": "Kreatív mesemondó",
+      "d": "Kreatív történetek és narratívák létrehozása"
+    },
+    "Ad Copy Generator": {
+      "n": "Ad Copy Generator",
+      "d": "Nagy konvertáló példány a Google, Meta, LinkedIn számára"
+    },
+    "Bug Report Writer": {
+      "n": "Bug Report Writer",
+      "d": "Írjon világos, reprodukálható hibajelentéseket"
+    },
+    "Social Media Caption": {
+      "n": "Közösségi média felirat",
+      "d": "Létrehozhat görgetést leállító feliratokat bármilyen platformra"
+    },
+    "Research Paper Abstract": {
+      "n": "Research Paper Abstract",
+      "d": "Írjon strukturált tudományos absztraktokat"
+    },
+    "Translation Expert": {
+      "n": "Fordítási szakértő",
+      "d": "Szöveg fordítása kontextussal és árnyalattal"
+    },
+    "Data Analyst": {
+      "n": "Adatelemző",
+      "d": "Elemezze az adatokat és nyújtson gyakorlatias betekintést"
+    },
+    "Recipe Generator": {
+      "n": "Receptgenerátor",
+      "d": "Készítsen egyedi recepteket preferenciái és étrendi igényei alapján"
+    },
+    "Meal Planner": {
+      "n": "Étkezéstervező",
+      "d": "Tervezzen kiegyensúlyozott étkezést az egész hétre, a változatosságot és a táplálkozást szem előtt tartva"
+    },
+    "Grocery List Builder": {
+      "n": "Élelmiszerbolt listakészítő",
+      "d": "Készítsen szervezett élelmiszerlistát a tervezett étkezések és kamraszükségletek alapján"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Kamra Receptkereső",
+      "d": "Keressen finom recepteket a már kéznél lévő összetevőkből"
+    },
+    "Nutrition Calculator": {
+      "n": "Táplálkozási kalkulátor",
+      "d": "Számítsa ki a részletes táplálkozási információkat bármely recepthez vagy étkezési kombinációhoz"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Összetevők helyettesítési útmutatója",
+      "d": "Találja meg a hiányzó vagy korlátozott összetevők tökéletes helyettesítését"
+    },
+    "Batch Cooking Planner": {
+      "n": "Batch Cooking Planner",
+      "d": "Tervezze meg a hatékony szakaszos főzési folyamatokat, hogy időt takarítson meg a héten"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Koktél recept készítője",
+      "d": "Készítsen és szabjon testre koktélrecepteket bármilyen alkalomra"
+    },
+    "Baking Conversion Helper": {
+      "n": "Sütés-átalakító segéd",
+      "d": "Konvertálja a sütési méreteket mértékegységek között, és a receptúrákat felfelé vagy lefelé skálázza"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Diéta-specifikus receptkereső",
+      "d": "Találja meg az adott étrendi tervéhez vagy táplálkozási céljaihoz szabott recepteket"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Lassú tűzhely receptje",
+      "d": "Tökéletesen időzített lassú tűzhelyreceptek a kéz nélküli főzéshez"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Légsütő recept készítője",
+      "d": "Készítsen ropogós és ízletes légsütő recepteket tökéletes időzítéssel"
+    },
+    "Smoothie Builder": {
+      "n": "Smoothie Builder",
+      "d": "Készítsen tápláló és ízletes turmixrecepteket bármilyen cél érdekében"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Szósz és öntet készítője",
+      "d": "Készítsen házi készítésű szószokat és önteteket a semmiből"
+    },
+    "Spice Blend Guide": {
+      "n": "Fűszerkeverék útmutató",
+      "d": "Készítsen egyedi fűszerkeverékeket bármilyen konyhához vagy ételtípushoz"
+    },
+    "Food Pairing Expert": {
+      "n": "Ételpárosítási szakértő",
+      "d": "Fedezze fel az ideális étel- és ízpárosításokat az emelt szintű étkezésekhez"
+    },
+    "Holiday Menu Planner": {
+      "n": "Ünnepi menütervező",
+      "d": "Tervezzen meg egy teljes ünnepi menüt idővonallal és bevásárlólistával"
+    },
+    "Leftover Makeover": {
+      "n": "Maradék átalakítás",
+      "d": "A maradékot kreatív ötletekkel alakítsa át izgalmas, új ételekké"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Gyerekbarát étkezési ötletek",
+      "d": "Készítsen egészséges ételeket, amelyeket a gyerekek valóban szívesen fogyasztanak"
+    },
+    "Date Night Dinner": {
+      "n": "Randi esti vacsora",
+      "d": "Tervezzen lenyűgöző vacsorát egy romantikus estére otthon"
+    },
+    "Budget Meal Planner": {
+      "n": "Költségvetési étkezéstervező",
+      "d": "Készítsen finom ételeket szűkös költségvetéssel a táplálkozás feláldozása nélkül"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Vegán recept átalakító",
+      "d": "Alakítsa át bármelyik hagyományos receptet finom vegán változattá"
+    },
+    "Dessert Creator": {
+      "n": "Desszertkészítő",
+      "d": "Tervezz egyedi desszertrecepteket bármilyen képzettségi szintre és alkalomra"
+    },
+    "Appetizer Planner": {
+      "n": "Előétel-tervező",
+      "d": "Tervezze meg a tökéletes előételt bulikra és összejövetelekre"
+    },
+    "Food Prep Timeline": {
+      "n": "Food Prep Timeline",
+      "d": "Hozzon létre egy részletes főzési idővonalat, hogy minden egyszerre készen álljon"
+    },
+    "Plant Care Guide": {
+      "n": "Növényápolási útmutató",
+      "d": "Szerezzen személyre szabott gondozási utasításokat a gyűjteményében lévő bármely növényhez"
+    },
+    "Garden Planner": {
+      "n": "Kerttervező",
+      "d": "Tervezze meg kertjét a maximális hozam és szépség érdekében"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Kártevő diagnosztikai eszköz",
+      "d": "Azonosítsa a kerti kártevőket és betegségeket organikus kezelési lehetőségekkel"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Szezonális ültetési naptár",
+      "d": "Pontosan tudja, mikor kell ültetni az egyes növényeket a növekedési zónájában"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Zöldségkert tervező",
+      "d": "Tervezzen termékeny veteményeskertet társültetéssel és forgatással"
+    },
+    "Indoor Plant Guide": {
+      "n": "Beltéri növények útmutatója",
+      "d": "Válassza ki és gondoskodjon a tökéletes szobanövényekről az Ön számára"
+    },
+    "Herb Garden Starter": {
+      "n": "Gyógynövénykert indító",
+      "d": "Indítson el virágzó gyógynövénykertet beltéren vagy kültéren szakértői útmutatás alapján"
+    },
+    "Composting Guide": {
+      "n": "Komposztálási útmutató",
+      "d": "Indítson el és tartson fenn egy komposztáló rendszert a gazdag kerti talajhoz"
+    },
+    "Landscape Design Helper": {
+      "n": "Tájtervező Segítő",
+      "d": "Készítsen gyönyörű tájtervet ingatlanához"
+    },
+    "Raised Bed Planner": {
+      "n": "Emelt ágytervező",
+      "d": "Tervezze meg és építse meg a tökéletes megemelt kerti ágyakat a teréhez"
+    },
+    "Fruit Tree Guide": {
+      "n": "Gyümölcsfa útmutató",
+      "d": "Válassza ki és ápolja az Ön éghajlatának és helyének megfelelő gyümölcsfákat"
+    },
+    "Container Garden Planner": {
+      "n": "Konténeres kerttervező",
+      "d": "Hozzon létre gyönyörű és produktív konténerkertet bármilyen helyre"
+    },
+    "Pollinator Garden": {
+      "n": "Beporzó kert",
+      "d": "Tervezzen olyan kertet, amely vonzza a méheket, a pillangókat és a hasznos rovarokat"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Szárazságtűrő kert",
+      "d": "Tervezze meg a vízigényes kertet, amely minimális öntözéssel virágzik"
+    },
+    "Soil Amendment Guide": {
+      "n": "Talajmódosítási útmutató",
+      "d": "Tesztelje és javítsa kertje talaját az optimális növényegészségügy érdekében"
+    },
+    "Seed Starting Calendar": {
+      "n": "Seed kezdőnaptár",
+      "d": "Tervezze meg magkezdési ütemtervét a sikeres növekedési időszak érdekében"
+    },
+    "Garden Layout Designer": {
+      "n": "Kerttervező",
+      "d": "Hozzon létre egy optimalizált kerti elrendezést megfelelő távolsággal és napfényforrással"
+    },
+    "Water Schedule Planner": {
+      "n": "Víz menetrend tervező",
+      "d": "Hozzon létre hatékony öntözési ütemtervet kertje és pázsit számára"
+    },
+    "Plant Problem Solver": {
+      "n": "Üzemi problémamegoldó",
+      "d": "Diagnosztizálja és kezelje a gyakori növényi problémákat szakértői tanácsokkal"
+    },
+    "Pruning Guide": {
+      "n": "Metszési útmutató",
+      "d": "Ismerje meg, mikor és hogyan kell metszeni bármely növényt az egészség és a szépség érdekében"
+    },
+    "Home Buying Checklist": {
+      "n": "Lakásvásárlási ellenőrzőlista",
+      "d": "A lakásvásárlási folyamat lépésről lépésre történő kitöltése"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Lakás-összehasonlító eszköz",
+      "d": "Hasonlítsa össze az apartmanokat egymás mellett, hogy megtalálja a tökéletes bérlést"
+    },
+    "Rental Application Helper": {
+      "n": "Bérleti alkalmazás segítő",
+      "d": "Készítsen erős bérleti kérelmet, amely kiemelkedik a bérbeadók számára"
+    },
+    "Home Inspection Questions": {
+      "n": "Lakásellenőrzési kérdések",
+      "d": "Alapvető kérdések, amelyeket fel kell tenni az otthoni szemle során"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Jelzálog-összehasonlító kalkulátor",
+      "d": "Hasonlítsa össze a jelzáloghitel-lehetőségeket, hogy megtalálja a helyzetének legjobban megfelelő ajánlatot"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Útmutató első vásárlónak",
+      "d": "Teljes útmutató az első lakásvásárláshoz való bizalomhoz"
+    },
+    "Neighborhood Research": {
+      "n": "Neighborhood Research",
+      "d": "Kutasson és hasonlítsa össze a környékeket, hogy megtalálja az Önnek megfelelőt"
+    },
+    "Home Value Estimator": {
+      "n": "Otthoni értékbecslő",
+      "d": "Becsülje meg lakása értékét összehasonlítható értékesítési és piaci adatok alapján"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Bérleti szerződés felülvizsgálója",
+      "d": "Tekintse át és értse meg a bérleti szerződés kulcsfontosságú feltételeit"
+    },
+    "Moving Checklist": {
+      "n": "Mozgó ellenőrzőlista",
+      "d": "Átfogó mozgó ellenőrzőlista idővonallal és feladatkezeléssel"
+    },
+    "Property Investment Analyzer": {
+      "n": "Ingatlanbefektetési elemző",
+      "d": "Elemezze a bérleményeket a befektetés megtérülési potenciálja szempontjából"
+    },
+    "Renovation Budget Planner": {
+      "n": "Felújítási költségvetés-tervező",
+      "d": "Lakásfelújítási projektek tervezése és költségvetése részletes költségbecslésekkel"
+    },
+    "House Hunting Scorecard": {
+      "n": "House Hunting Scorecard",
+      "d": "Pontozzon és rangsoroljon otthonokat a házkeresési folyamat során"
+    },
+    "Down Payment Calculator": {
+      "n": "Előleg kalkulátor",
+      "d": "Számolja ki az előlegfizetési lehetőségeket és a megtakarítási terveket lakásvásárlásához"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Otthoni karbantartási ütemterv",
+      "d": "Hozzon létre egy szezonális otthoni karbantartási ütemtervet, hogy megvédje befektetését"
+    },
+    "Rental Property Analysis": {
+      "n": "Bérlemény elemzése",
+      "d": "Pénzügyi előrejelzésekkel értékelje a bérbeadási lehetőségeket"
+    },
+    "Home Staging Tips": {
+      "n": "Otthoni rendezési tippek",
+      "d": "Állítsa be otthonát, hogy gyorsabban és magasabb áron adhassa el"
+    },
+    "Realtor Interview Questions": {
+      "n": "Ingatlanközvetítői interjúkérdések",
+      "d": "Legfontosabb kérdések, amelyeket fel kell tenni az ingatlanügynökök interjúzásakor"
+    },
+    "Closing Cost Estimator": {
+      "n": "Zárási költségbecslés",
+      "d": "Becsülje meg az ingatlantranzakció összes lezárási költségét"
+    },
+    "HOA Assessment Guide": {
+      "n": "HOA értékelési útmutató",
+      "d": "Vásárlás előtt értékelje a HOA díjait, szabályait és pénzügyi helyzetét"
+    },
+    "Car Buying Assistant": {
+      "n": "Autóvásárlási asszisztens",
+      "d": "Navigáljon magabiztosan az autóvásárlási folyamatban, és takarítson meg pénzt"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Jármű-összehasonlító eszköz",
+      "d": "Hasonlítsa össze a járműveket a műszaki adatok, az ár és a jellemzők alapján"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Karbantartási ütemterv",
+      "d": "Hozzon létre egy személyre szabott járműkarbantartási ütemtervet az autó élettartamának meghosszabbításához"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Becslőelemző javítása",
+      "d": "Értékelje az autójavítási becsléseket, és találjon tisztességes árat a szolgáltatásokért"
+    },
+    "Road Trip Planner": {
+      "n": "Road Trip Planner",
+      "d": "Tervezze meg a tökéletes utat a megállások, az üzemanyag és az idő kiszámításával"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Használt autók ellenőrzési listája",
+      "d": "Alapos ellenőrzési ellenőrző lista a használt autó bizalommal történő vásárlásához"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Autóbiztosítások összehasonlítása",
+      "d": "Hasonlítsa össze az autóbiztosítási lehetőségeket, hogy megtalálja a legjobb fedezetet és árat"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Üzemanyag-takarékosság kalkulátor",
+      "d": "Számolja ki és optimalizálja járműve üzemanyagköltségeit és hatékonyságát"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Autólízing kontra vásárlás elemző",
+      "d": "Hasonlítsa össze a lízinget a vásárlással, hogy megtalálja a legjobb pénzügyi lehetőséget"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Beszámítási érték kalkulátor",
+      "d": "Becsülje meg járműve beszámítási értékét, és tárgyaljon ki egy tisztességes üzletet"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Jármű-előzmények ellenőrző",
+      "d": "Fontos kérdések és ellenőrzések használt jármű előzményi jelentésének áttekintésekor"
+    },
+    "Car Detailing Guide": {
+      "n": "Autó részletes ápolási útmutató",
+      "d": "Lépésről lépésre autóápolási útmutató szalonminőségű eredményért"
+    },
+    "Winter Car Prep": {
+      "n": "Téli autó-előkészítés",
+      "d": "Készítse fel járművét a téli vezetési körülményekre és a hideg időjárásra"
+    },
+    "New Driver Guide": {
+      "n": "Kezdő sofőr útmutató",
+      "d": "Alapvető vezetési tippek és tudnivalók új és tanuló sofőrök számára"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Elektromos jármű útmutató",
+      "d": "Minden, amit tudnia kell az elektromos jármű vásárlásáról és tulajdonlásáról"
+    },
+    "Trip Planner": {
+      "n": "Utazástervező",
+      "d": "Tervezze meg tökéletes utazását úti célokkal, tevékenységekkel és logisztikával"
+    },
+    "Packing List Generator": {
+      "n": "Csomagolási lista generátor",
+      "d": "Készítsen személyre szabott csomagolási listát bármilyen utazáshoz és úti célhoz"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Nyaralási útvonalterv készítő",
+      "d": "Készítsen napról napra szóló nyaralási útvonaltervet tevékenységekkel és étkezési lehetőségekkel"
+    },
+    "Travel Budget Calculator": {
+      "n": "Utazási költségvetés kalkulátor",
+      "d": "Számítsa ki és kövesse nyomon utazási költségvetését részletes kiadási kategóriákkal"
+    },
+    "Local Attractions Guide": {
+      "n": "Helyi látnivalók útmutató",
+      "d": "Fedezze fel a legjobb helyi látnivalókat, rejtett kincseket és kötelező úti célokat"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Utasbiztosítás összehasonlítás",
+      "d": "Hasonlítsa össze az utasbiztosítási lehetőségeket a megfelelő fedezet érdekében"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Repülőjegy-akció kereső stratégia",
+      "d": "Stratégiák és tippek a legjobb repülőjegy-ajánlatok és árak megtalálásához"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Szálloda-összehasonlító segéd",
+      "d": "Hasonlítsa össze a szállodákat ár, szolgáltatások, elhelyezkedés és vélemények alapján"
+    },
+    "Solo Travel Planner": {
+      "n": "Egyedül utazók tervezője",
+      "d": "Tervezzen biztonságos és tartalmas egyedüli utazási kalandot a világ bármely pontjára"
+    },
+    "Family Vacation Planner": {
+      "n": "Családi nyaralás tervező",
+      "d": "Tervezzen családbarát nyaralást, amely minden korosztályt szórakoztat"
+    },
+    "Backpacking Planner": {
+      "n": "Hátizsákos utazás tervező",
+      "d": "Tervezzen költségkímélő hátizsákos kalandot útvonalakkal és felszereléssel"
+    },
+    "Business Travel Organizer": {
+      "n": "Üzleti utazás szervező",
+      "d": "Szervezze meg hatékonyan üzleti útjait költségkövetéssel és ütemezéssel"
+    },
+    "Cruise Planner": {
+      "n": "Tengeri hajóút tervező",
+      "d": "Tervezze meg a tökéletes tengeri hajóutat kikötői kirándulásokkal és fedélzeti programokkal"
+    },
+    "Travel Safety Guide": {
+      "n": "Utazási biztonsági útmutató",
+      "d": "Maradjon biztonságban utazás közben célállomás-specifikus biztonsági tippekkel és protokollokkal"
+    },
+    "Visa Requirements Checker": {
+      "n": "Vízumkövetelmények ellenőrző",
+      "d": "Ellenőrizze a vízumkövetelményeket és készítse elő a pályázati anyagokat utazásához"
+    },
+    "Language Survival Kit": {
+      "n": "Nyelvi túlélőkészlet",
+      "d": "Tanuljon meg alapvető kifejezéseket és kulturális tippeket úti céljához"
+    },
+    "Airport Navigation Guide": {
+      "n": "Reptéri navigációs útmutató",
+      "d": "Navigáljon hatékonyan a repülőtereken terminál-tippekkel és időgazdálkodással"
+    },
+    "Travel Photo Plan": {
+      "n": "Utazási fotóterv",
+      "d": "Tervezze meg utazási fotózását a legjobb helyszínekkel, időpontokkal és technikákkal"
+    },
+    "Group Trip Coordinator": {
+      "n": "Csoportos utazás koordinátor",
+      "d": "Koordinálja a csoportos utazás logisztikáját, költségvetését és programjait mindenki számára"
+    },
+    "Adventure Travel Planner": {
+      "n": "Kalandutazás tervező",
+      "d": "Tervezzen adrenalinpumpáló kalandutazást biztonsággal és logisztikával"
+    },
+    "Wedding Planner": {
+      "n": "Esküvőszervező",
+      "d": "Tervezze meg tökéletes esküvője minden részletét a helyszíntől a fogadalmakig"
+    },
+    "Birthday Party Planner": {
+      "n": "Születésnapi parti tervező",
+      "d": "Tervezzen emlékezetes születésnapi ünnepséget bármely korosztály és stílus számára"
+    },
+    "Conference Organizer": {
+      "n": "Konferenciaszervező",
+      "d": "Szervezzen professzionális konferenciákat és szemináriumokat részletes logisztikával"
+    },
+    "Baby Shower Planner": {
+      "n": "Babaváró ünnepség tervező",
+      "d": "Tervezzen szép babaváró ünnepséget játékokkal, ételekkel és dekorációval"
+    },
+    "Anniversary Celebration": {
+      "n": "Évfordulós ünnepség",
+      "d": "Tervezzen értelmes évfordulós ünnepséget bármely mérföldkő-évhez"
+    },
+    "Graduation Party": {
+      "n": "Ballagási buli",
+      "d": "Ünnepelje a tanulmányi eredményeket egy tökéletesen megtervezett ballagási bulival"
+    },
+    "Holiday Party Planner": {
+      "n": "Ünnepi parti tervező",
+      "d": "Tervezzen ünnepi összejöveteleket ételekkel, programokkal és dekorációval"
+    },
+    "Corporate Event Planner": {
+      "n": "Céges rendezvény szervező",
+      "d": "Tervezzen professzionális céges rendezvényeket, amelyek lenyűgözik az ügyfeleket és a munkatársakat"
+    },
+    "Fundraiser Organizer": {
+      "n": "Adománygyűjtés szervező",
+      "d": "Szervezzen sikeres adománygyűjtő rendezvényeket jótékony célokra"
+    },
+    "Reunion Planner": {
+      "n": "Találkozó szervező",
+      "d": "Tervezzen emlékezetes családi vagy osztálytalálkozót, amely mindenkit összegyűjt"
+    },
+    "Engagement Party Planner": {
+      "n": "Eljegyzési parti tervező",
+      "d": "Tervezzen örömteli eljegyzési ünnepséget a boldog hír megosztására"
+    },
+    "Retirement Party": {
+      "n": "Nyugdíjas búcsúztató",
+      "d": "Ünnepelje a jól megélt karriert egy átgondolt nyugdíjba vonulási partival"
+    },
+    "Housewarming Planner": {
+      "n": "Házszentelő parti tervező",
+      "d": "Tervezzen barátságos házszentelő partit új otthonához"
+    },
+    "Themed Party Creator": {
+      "n": "Tematikus parti készítő",
+      "d": "Tervezzen és hozzon létre kreatív tematikus partikat összehangolt részletekkel"
+    },
+    "Event Budget Tracker": {
+      "n": "Rendezvény költségvetés nyomkövető",
+      "d": "Kövesse nyomon és kezelje a rendezvény kiadásait, hogy betartsa a költségkeretet"
+    },
+    "Chore Chart Creator": {
+      "n": "Házimunka táblázat készítő",
+      "d": "Készítsen kornak megfelelő házimunka-táblázatokat jutalmakkal és nyomon követéssel"
+    },
+    "Educational Activity Planner": {
+      "n": "Oktatási tevékenység tervező",
+      "d": "Tervezzen szórakoztató oktatási tevékenységeket, amelyek izgalmassá teszik a tanulást a gyerekek számára"
+    },
+    "Bedtime Story Writer": {
+      "n": "Esti mese író",
+      "d": "Készítsen személyre szabott esti meséket gyermekével a főszerepben"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Kornak megfelelő mérföldkő nyomkövető",
+      "d": "Kövesse nyomon a fejlődési mérföldköveket és ünnepelje gyermeke növekedését"
+    },
+    "School Lunch Planner": {
+      "n": "Iskolai ebéd tervező",
+      "d": "Tervezzen egészséges és vonzó iskolai ebédeket, amelyeket a gyerekek tényleg megeszik"
+    },
+    "Homework Help Guide": {
+      "n": "Házi feladat segítő útmutató",
+      "d": "Stratégiák gyermeke házi feladatának támogatásához anélkül, hogy helyette csinálná"
+    },
+    "Family Game Night Ideas": {
+      "n": "Családi játékest ötletek",
+      "d": "Tervezzen szórakoztató családi játékesteket minden korosztálynak megfelelő tevékenységekkel"
+    },
+    "Screen Time Schedule": {
+      "n": "Képernyőidő ütemterv",
+      "d": "Készítsen kiegyensúlyozott képernyőidő szabályokat és ütemterveket családja számára"
+    },
+    "Allowance System Designer": {
+      "n": "Zsebpénz rendszer tervező",
+      "d": "Tervezzen kornak megfelelő zsebpénz- és pénzkezelési rendszert"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Baba alvásrend",
+      "d": "Készítsen egészséges alvásrendet és rutinokat babák és kisgyermekek számára"
+    },
+    "Potty Training Guide": {
+      "n": "Bilire szoktatási útmutató",
+      "d": "Lépésről lépésre bilire szoktatási tervek tippekkel minden szakaszhoz"
+    },
+    "Back to School Prep": {
+      "n": "Iskolakezdés előkészítés",
+      "d": "Készítse fel családját a zökkenőmentes iskolakezdésre"
+    },
+    "Summer Activity Planner": {
+      "n": "Nyári tevékenység tervező",
+      "d": "Tervezzen szórakoztató és gazdagító nyarat tevékenységekkel, táborokkal és kalandokkal"
+    },
+    "Family Meeting Agenda": {
+      "n": "Családi megbeszélés napirend",
+      "d": "Vezessen eredményes családi megbeszéléseket, ahol mindenki szóhoz juthat"
+    },
+    "Child Development Tracker": {
+      "n": "Gyermekfejlődés nyomkövető",
+      "d": "Kövesse nyomon és támogassa gyermeke fizikai, szociális és kognitív fejlődését"
+    },
+    "Dog Training Plan": {
+      "n": "Kutyakiképzési terv",
+      "d": "Készítsen személyre szabott kiképzési tervet kutyájának bármilyen korban és szinten"
+    },
+    "Cat Care Guide": {
+      "n": "Macskagondozási útmutató",
+      "d": "Teljes körű gondozási útmutató macskája egészségéhez és boldogságához"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Kisállat táplálkozási tervező",
+      "d": "Tervezze meg kisállata optimális táplálkozását kor, fajta és egészségi szükségletek alapján"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Kölyökkutya szocializációs ellenőrzőlista",
+      "d": "Gondoskodjon kölyökkutyája megfelelő szocializációjáról a kritikus fejlődési időszakban"
+    },
+    "Pet First Aid Guide": {
+      "n": "Kisállat elsősegély útmutató",
+      "d": "Alapvető elsősegély-ismeretek és sürgősségi eljárások kisállattulajdonosok számára"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Akvárium beüzemelési tervező",
+      "d": "Tervezze meg és üzemelje be virágzó akváriumát a megfelelő halakkal és felszereléssel"
+    },
+    "Pet Travel Preparation": {
+      "n": "Kisállattal utazás előkészítése",
+      "d": "Készítsen elő mindent a biztonságos és stresszmentes utazáshoz kisállatával"
+    },
+    "New Pet Checklist": {
+      "n": "Új kisállat ellenőrzőlista",
+      "d": "Minden, amire szüksége van az új kisállat hazahozatala előtti felkészüléshez"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Kisállat viselkedés elemző",
+      "d": "Értse meg és kezelje kisállata viselkedési problémáit szakértői útmutatással"
+    },
+    "Senior Pet Care": {
+      "n": "Idős kisállat gondozás",
+      "d": "Speciális gondozási útmutató idős kisállatok kényelméhez és egészségéhez"
+    },
+    "Pet Exercise Planner": {
+      "n": "Kisállat mozgásterv",
+      "d": "Készítsen mozgásrutint, amely fitneszen és szellemileg is stimulálja kisállatát"
+    },
+    "Vet Visit Preparation": {
+      "n": "Állatorvosi vizit előkészítés",
+      "d": "Készüljön fel az állatorvosi vizitekre rendezett egészségügyi adatokkal és kérdésekkel"
+    },
+    "Home Improvement Planner": {
+      "n": "Lakásfelújítási tervező",
+      "d": "Tervezze meg és rangsorolja lakásfelújítási projektjeit költségvetéssel és ütemtervvel"
+    },
+    "Furniture Project Planner": {
+      "n": "Bútorprojekt tervező",
+      "d": "Tervezzen egyedi bútorépítést anyagokkal, eszközökkel és lépésről lépésre útmutatóval"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Átalakítási költségvetés kalkulátor",
+      "d": "Számítsa ki a részletes átalakítási költségeket munkadíjjal, anyagokkal és tartalékkal"
+    },
+    "Paint Color Coordinator": {
+      "n": "Festékszín koordinátor",
+      "d": "Válasszon és hangolja össze a festékszíneket egy egységes otthoni palettához"
+    },
+    "Organization System Designer": {
+      "n": "Rendszerezési rendszer tervező",
+      "d": "Tervezzen egyedi rendszerezési rendszereket otthona bármely szobájához vagy teréhez"
+    },
+    "Storage Solutions Planner": {
+      "n": "Tárolási megoldások tervező",
+      "d": "Találjon kreatív tárolási megoldásokat a hely maximalizálásához bármely szobában"
+    },
+    "Home Repair Guide": {
+      "n": "Otthoni javítási útmutató",
+      "d": "Lépésről lépésre útmutatás a gyakori otthoni javításokhoz, amelyeket maga is elvégezhet"
+    },
+    "Tool Buying Guide": {
+      "n": "Szerszám vásárlási útmutató",
+      "d": "Válassza ki a megfelelő szerszámokat barkácsprojektjeihez túlköltekezés nélkül"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Évszakos otthoni karbantartás",
+      "d": "Teljes körű évszakos karbantartási ellenőrzőlisták otthona védelméhez egész évben"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Energiahatékonysági audit",
+      "d": "Mérje fel és javítsa otthona energiahatékonyságát a rezsicsökkentés érdekében"
+    },
+    "Smart Home Setup": {
+      "n": "Okosotthon beüzemelés",
+      "d": "Tervezze meg és üzemelje be okosotthon-rendszerét a megfelelő eszközökkel és integrációkkal"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Fürdőszoba felújítási tervező",
+      "d": "Tervezze meg fürdőszobája felújítását elrendezéssel, berendezéssel és költségvetés-kezeléssel"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Konyha felújítási tervező",
+      "d": "Tervezze meg konyhája felújítását az elrendezéstől a háztartási gépekig részletes költségvetéssel"
+    },
+    "Closet Organization": {
+      "n": "Szekrény rendszerezés",
+      "d": "Tervezze meg és rendszerezze szekrényeit a maximális hatékonyság és könnyű hozzáférés érdekében"
+    },
+    "Garage Organization": {
+      "n": "Garázs rendszerezés",
+      "d": "Alakítsa garázsát rendezett és funkcionális térré"
+    },
+    "Product Comparison Tool": {
+      "n": "Termék-összehasonlító eszköz",
+      "d": "Hasonlítsa össze a termékeket egymás mellett a legjobb vásárlási döntéshez"
+    },
+    "Buying Guide Creator": {
+      "n": "Vásárlási útmutató készítő",
+      "d": "Készítsen részletes vásárlási útmutatókat bármilyen termékkategóriához"
+    },
+    "Gift Finder": {
+      "n": "Ajándékkereső",
+      "d": "Találja meg a tökéletes ajándékot bárkinek érdeklődési köre és költségkerete alapján"
+    },
+    "Price Tracker Strategy": {
+      "n": "Árkövetési stratégia",
+      "d": "Stratégiák az árak nyomon követéséhez és a legjobb időben történő vásárláshoz"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday stratégia",
+      "d": "Tervezze meg Black Friday és Cyber Monday vásárlását a maximális megtakarítás érdekében"
+    },
+    "Back to School Shopping": {
+      "n": "Iskolakezdési bevásárlás",
+      "d": "Szervezze meg az iskolakezdési bevásárlást listákkal, költségvetéssel és akciókkal"
+    },
+    "Wardrobe Planner": {
+      "n": "Gardrób tervező",
+      "d": "Építsen sokoldalú gardróbot stratégiai vásárlással és öltözéktervezéssel"
+    },
+    "Electronics Buying Guide": {
+      "n": "Elektronikai vásárlási útmutató",
+      "d": "Navigáljon az elektronikai vásárlásokban specifikáció-összehasonlítással és időzítési tanácsokkal"
+    },
+    "Subscription Service Comparison": {
+      "n": "Előfizetési szolgáltatás összehasonlítás",
+      "d": "Hasonlítsa össze az előfizetési szolgáltatásokat, és találja meg a legjobb értéket igényeihez"
+    },
+    "Wedding Registry Planner": {
+      "n": "Esküvői ajándéklista tervező",
+      "d": "Készítsen átfogó esküvői ajándéklistát minden költségkerethez illő termékekkel"
+    },
+    "Bible Study Guide": {
+      "n": "Bibliatanulmány útmutató",
+      "d": "Készítsen strukturált Biblia-tanulmányi terveket kontextussal, kérdésekkel és alkalmazással"
+    },
+    "Sermon Outline Creator": {
+      "n": "Prédikáció vázlat készítő",
+      "d": "Készítsen meggyőző prédikáció vázlatokat szentírási hivatkozásokkal, pontokkal és illusztrációkkal"
+    },
+    "Comparative Religion Study": {
+      "n": "Összehasonlító vallástanulmány",
+      "d": "Fedezze fel és hasonlítsa össze a világ vallásainak hitét, gyakorlatát és történelmét"
+    },
+    "Discussion Question Generator": {
+      "n": "Vitakérdés generátor",
+      "d": "Generáljon elgondolkodtató vitakérdéseket vallási és filozófiai témákhoz"
+    },
+    "Devotional Writer": {
+      "n": "Áhítat író",
+      "d": "Készítsen napi áhítatokat szentírási idézetekkel, elmélkedéssel és imádkozási javaslatokkal"
+    },
+    "Prayer Journal Guide": {
+      "n": "Imanapló útmutató",
+      "d": "Strukturálja imaéletét irányított naplózási javaslatokkal és keretrendszerekkel"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Spirituális könyvklub útmutató",
+      "d": "Készítsen könyvklub vitaútmutatókat spirituális és vallási könyvekhez"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Meditációs szentírás útmutató",
+      "d": "Készítsen irányított meditációs élményeket szentírási részletek köré"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Ifjúsági csoport óraterv",
+      "d": "Készítsen lebilincselő ifjúsági csoport órákat tevékenységekkel és beszélgetésekkel"
+    },
+    "Faith Journey Reflector": {
+      "n": "Hitút reflexió segéd",
+      "d": "Irányított elmélkedések személyes hitútjának felfedezéséhez és elmélyítéséhez"
+    },
+    "Workout Plan Creator": {
+      "n": "Edzésterv készítő",
+      "d": "Készítsen személyre szabott edzésterveket céljai és fitnesz-szintje alapján"
+    },
+    "Training Schedule Builder": {
+      "n": "Edzésütemterv készítő",
+      "d": "Készítsen strukturált edzésütemtervet bármilyen sporthoz vagy fitnesz-célhoz"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Játékstratégia elemző",
+      "d": "Elemezzen játékstratégiákat és dolgozzon ki győztes megközelítéseket sportjához"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Sporttáplálkozási útmutató",
+      "d": "Optimalizálja sporttáplálkozását a csúcsteljesítmény és a regenerálódás érdekében"
+    },
+    "Coaching Practice Plan": {
+      "n": "Edzői gyakorlatterv",
+      "d": "Tervezzen hatékony edzéseket, amelyek fejlesztik a készségeket és a csapategységet"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Fantasy sport elemző",
+      "d": "Elemezze a párharc-felállásokat és optimalizálja fantasy sport csapatát minden héten"
+    },
+    "Race Training Plan": {
+      "n": "Versenyre felkészülési terv",
+      "d": "Készüljön fel versenyekre az 5 km-től a maratonig strukturált, fokozatos tervekkel"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Sportstatisztika elemző",
+      "d": "Elemezze a játékos- és csapatstatisztikákat a mélyebb sporti megértésért"
+    },
+    "Team Management Tool": {
+      "n": "Csapatkezelő eszköz",
+      "d": "Kezelje hatékonyan a csapatnévsorokat, ütemterveket és kommunikációt"
+    },
+    "Injury Recovery Planner": {
+      "n": "Sérülés-rehabilitációs tervező",
+      "d": "Tervezzen biztonságos és hatékony felépülést gyakori sportsérülésekből"
+    },
+    "Photography Guide": {
+      "n": "Fotózási útmutató",
+      "d": "Fejlessze fotózási készségeit kompozíciós, világítási és felszerelési tippekkel"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Kötésminta segéd",
+      "d": "Találjon és alakítson át kötésmintákat tudásszintjéhez és projektötleteihez"
+    },
+    "Board Game Night Planner": {
+      "n": "Társasjáték-est tervező",
+      "d": "Tervezzen tökéletes társasjáték-estéket játékválasztással és csoportösszeállítással"
+    },
+    "Fishing Trip Planner": {
+      "n": "Horgászat tervező",
+      "d": "Tervezzen sikeres horgászkirándulásokat helyszínnel, felszereléssel és technikával"
+    },
+    "Camping Trip Organizer": {
+      "n": "Kempingezés szervező",
+      "d": "Szervezzen kempingtúrákat felszereléslisával, étkezési tervvel és programötletekkel"
+    },
+    "Bird Watching Guide": {
+      "n": "Madármegfigyelési útmutató",
+      "d": "Azonosítsa a helyi madarakat és tervezzen madármegfigyelési kirándulásokat évszakos tippekkel"
+    },
+    "Model Building Planner": {
+      "n": "Modellépítés tervező",
+      "d": "Tervezze meg és valósítsa meg modellépítési projektjeit anyagokkal és technikákkal"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Rejtvénystratégia útmutató",
+      "d": "Stratégiák és technikák rejtvények gyorsabb és hatékonyabb megoldásához"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Csillagászati megfigyelés tervező",
+      "d": "Tervezzen csillagleséseket égi eseményekkel és felszerelési ajánlásokkal"
+    },
+    "Art Supply Guide": {
+      "n": "Művészeti kellék útmutató",
+      "d": "Válassza ki a megfelelő művészeti kellékeket technikájához és tudásszintjéhez"
+    },
+    "Goal Setting Framework": {
+      "n": "Célkitűzési keretrendszer",
+      "d": "Tűzzön ki és érjen el értelmes célokat strukturált keretrendszerrel és cselekvési tervvel"
+    },
+    "Bucket List Creator": {
+      "n": "Bakancslistakészítő",
+      "d": "Készítsen inspiráló bakancslisát kategória és prioritás szerint rendezve"
+    },
+    "Personal Mission Statement": {
+      "n": "Személyes küldetésnyilatkozat",
+      "d": "Fogalmazzon meg értelmes személyes küldetésnyilatkozatot, amely irányítja életdöntéseit"
+    },
+    "Life Transition Guide": {
+      "n": "Életváltozás útmutató",
+      "d": "Navigáljon a jelentős életváltozásokon tervezéssel, támogatással és megküzdési stratégiákkal"
+    },
+    "Habit Building Plan": {
+      "n": "Szokásépítési terv",
+      "d": "Építsen tartós pozitív szokásokat tudományosan bizonyított stratégiákkal"
+    },
+    "Time Audit Tool": {
+      "n": "Időaudit eszköz",
+      "d": "Vizsgálja felül, hogyan tölti idejét, és optimalizáljon a legfontosabb dolgokra"
+    },
+    "Relationship Goal Planner": {
+      "n": "Kapcsolati cél tervező",
+      "d": "Tűzzön ki és dolgozzon célokért az erősebb, egészségesebb kapcsolatokért"
+    },
+    "Vision Board Creator": {
+      "n": "Álomtábla készítő",
+      "d": "Készítsen digitális álomtáblát irányított javaslatokkal és vizualizációs gyakorlatokkal"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Személyes SWOT elemzés",
+      "d": "Végezzen személyes SWOT elemzést karrier- és élettervezéshez"
+    },
+    "Legacy Letter Writer": {
+      "n": "Örökséglevel író",
+      "d": "Írjon értelmes örökségleveleket szeretteinek, rögzítve értékeit és bölcsességét"
+    },
+    "Contract Draft Creator": {
+      "n": "Szerződésvázlat készítő",
+      "d": "Készítsen professzionális szerződésvázlatokat bármilyen üzleti kapcsolathoz"
+    },
+    "NDA Generator": {
+      "n": "Titoktartási megállapodás generátor",
+      "d": "Készítsen helyzetéhez szabott titoktartási megállapodásokat"
+    },
+    "Rental Agreement Draft": {
+      "n": "Bérleti szerződés tervezet",
+      "d": "Készítsen lakás- vagy kereskedelmi bérleti szerződéseket"
+    },
+    "Terms of Service Generator": {
+      "n": "Felhasználási feltételek generátor",
+      "d": "Készítsen átfogó felhasználási feltételeket weboldalakhoz és alkalmazásokhoz"
+    },
+    "Privacy Policy Writer": {
+      "n": "Adatvédelmi szabályzat író",
+      "d": "Készítsen GDPR és CCPA kompatibilis adatvédelmi szabályzatokat"
+    },
+    "Freelance Agreement": {
+      "n": "Szabadúszói megállapodás",
+      "d": "Készítsen megállapodásokat szabadúszók és megbízók között"
+    },
+    "Non-Compete Draft": {
+      "n": "Versenytilalmi záradék tervezet",
+      "d": "Készítsen versenytilalmi záradékokat és önálló megállapodásokat"
+    },
+    "LLC Operating Agreement": {
+      "n": "Kft. működési megállapodás",
+      "d": "Készítsen működési megállapodásokat korlátolt felelősségű társaságokhoz"
+    },
+    "Partnership Agreement": {
+      "n": "Társasági szerződés",
+      "d": "Készítsen társasági szerződéseket egyértelmű szerepekkel és feltételekkel"
+    },
+    "Intellectual Property Brief": {
+      "n": "Szellemi tulajdon összefoglaló",
+      "d": "Vázolja fel a szellemi tulajdon birtoklási és védelmi stratégiáit"
+    },
+    "Cease and Desist Draft": {
+      "n": "Felszólító levél tervezet",
+      "d": "Készítsen felszólító leveleket különféle jogsértésekhez"
+    },
+    "Employee Handbook Section": {
+      "n": "Munkavállalói kézikönyv fejezet",
+      "d": "Írjon egyes fejezeteket munkavállalói kézikönyvekhez"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Független vállalkozói szerződés",
+      "d": "Készítsen független vállalkozói szerződéseket megfelelő besorolási nyelvezettell"
+    },
+    "Liability Waiver Draft": {
+      "n": "Felelősségkizáró nyilatkozat tervezet",
+      "d": "Készítsen felelősségkizáró nyilatkozatokat tevékenységekhez és szolgáltatásokhoz"
+    },
+    "Settlement Letter Draft": {
+      "n": "Egyezségi levél tervezet",
+      "d": "Készítsen egyezségi ajánlat- vagy válaszleveleket"
+    },
+    "Demand Letter Draft": {
+      "n": "Felszólító levél tervezet",
+      "d": "Készítsen hivatalos felszólító leveleket különféle követelésekhez"
+    },
+    "Power of Attorney Draft": {
+      "n": "Meghatalmazás tervezet",
+      "d": "Készítsen meghatalmazási dokumentumokat különböző célokra"
+    },
+    "Last Will Outline": {
+      "n": "Végrendelet vázlat",
+      "d": "Készítsen vázlatot egy alapvető végrendelethez"
+    },
+    "Business License Checklist": {
+      "n": "Üzleti engedély ellenőrzőlista",
+      "d": "Készítsen ellenőrzőlistát a vállalkozásához szükséges engedélyekről"
+    },
+    "Trademark Application Guide": {
+      "n": "Védjegybejelentési útmutató",
+      "d": "Lépésről lépésre útmutató védjegybejelentés benyújtásához"
+    },
+    "Small Claims Court Guide": {
+      "n": "Kis értékű perek útmutató",
+      "d": "Készüljön fel a kis értékű perekre rendezett érvekkel"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Válási mediáció előkészítés",
+      "d": "Rendszerezze a legfontosabb pontokat és prioritásokat a válási mediációhoz"
+    },
+    "Tenant Rights Guide": {
+      "n": "Bérlői jogok útmutató",
+      "d": "Ismerje meg a bérlői jogokat és jogorvoslati lehetőségeket az Ön joghatóságában"
+    },
+    "Landlord Notice Draft": {
+      "n": "Bérbeadói értesítés tervezet",
+      "d": "Készítsen megfelelő jogi értesítéseket bérbeadótól bérlőnek"
+    },
+    "Copyright Registration Guide": {
+      "n": "Szerzői jogi regisztrációs útmutató",
+      "d": "Útmutató a szerzői jogok bejegyzéséhez a szerzői jogi hivatalnál"
+    },
+    "Personal Budget Planner": {
+      "n": "Személyes költségvetés tervező",
+      "d": "Készítsen átfogó havi vagy éves költségvetési tervet"
+    },
+    "Investment Research Assistant": {
+      "n": "Befektetéskutatási asszisztens",
+      "d": "Kutasson és elemezzen szisztematikusan befektetési lehetőségeket"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Adósságtörlesztési kalkulátor",
+      "d": "Tervezzen stratégiát adósságai hatékony törlesztéséhez"
+    },
+    "Expense Tracker Setup": {
+      "n": "Kiadáskövetés beüzemelése",
+      "d": "Tervezzen személyre szabott kiadáskövető rendszert"
+    },
+    "Retirement Planning Guide": {
+      "n": "Nyugdíjtervezési útmutató",
+      "d": "Építsen átfogó nyugdíj-megtakarítási stratégiát"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Adóbevallási ellenőrzőlista",
+      "d": "Rendszerezze dokumentumait és levonásait az adóbevalláshoz"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Vészhelyzeti alap kalkulátor",
+      "d": "Határozza meg és tervezze meg ideális vészhelyzeti alapját"
+    },
+    "Net Worth Tracker": {
+      "n": "Nettó vagyon nyomkövető",
+      "d": "Kövesse nyomon és vizualizálja teljes pénzügyi helyzetét"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Hitelpontszám javítási terv",
+      "d": "Készítsen végrehajtható tervet hitelpontszáma javításához"
+    },
+    "Student Loan Strategy": {
+      "n": "Diákhitel stratégia",
+      "d": "Optimalizálja diákhitel-törlesztési megközelítését"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Mellékjövedelem tervező",
+      "d": "Tervezze meg és vetítse előre mellékjövedelmeit"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Biztosítási igényfelmérő",
+      "d": "Értékelje biztosítási fedezeti hiányait és szükségleteit"
+    },
+    "Estate Planning Checklist": {
+      "n": "Hagyatéktervezési ellenőrzőlista",
+      "d": "Rendszerezze hagyatéktervezési dokumentumait és döntéseit"
+    },
+    "Financial Goal Setter": {
+      "n": "Pénzügyi cél kitűző",
+      "d": "Határozzon meg pénzügyi mérföldköveket és kövesse nyomon a haladást"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Pénzforgalom elemző",
+      "d": "Elemezze a bevételi és kiadási mintákat az idő függvényében"
+    },
+    "Savings Challenge Creator": {
+      "n": "Megtakarítási kihívás készítő",
+      "d": "Tervezzen szórakoztató megtakarítási kihívást tartalékai építéséhez"
+    },
+    "Investment Portfolio Review": {
+      "n": "Befektetési portfólió áttekintés",
+      "d": "Tekintse át és egyensúlyozza újra befektetési portfólióját"
+    },
+    "Cryptocurrency Research": {
+      "n": "Kriptovaluta kutatás",
+      "d": "Kutasson és értékeljen kriptovaluta-befektetéseket"
+    },
+    "Stock Analysis Helper": {
+      "n": "Részvényelemzési segéd",
+      "d": "Végezzen fundamentális és technikai elemzést részvényeken"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Ingatlan-befektetési kalkulátor",
+      "d": "Elemezze a potenciális ingatlan-befektetési hozamokat"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Üzleti adólevonás kereső",
+      "d": "Azonosítsa vállalkozásának elérhető adólevonásait"
+    },
+    "Payroll Budget Planner": {
+      "n": "Bérköltségvetés tervező",
+      "d": "Tervezze meg és költségvetezze a munkavállalói bérköltségeket"
+    },
+    "Invoice Template Creator": {
+      "n": "Számlasablon készítő",
+      "d": "Tervezzen professzionális számlákat vállalkozása számára"
+    },
+    "Profit Margin Calculator": {
+      "n": "Haszonkulcs kalkulátor",
+      "d": "Számítsa ki és optimalizálja a haszonkulcsokat termékei között"
+    },
+    "Financial Independence Planner": {
+      "n": "Pénzügyi függetlenség tervező",
+      "d": "Térképezze fel útját a pénzügyi függetlenséghez és a korai nyugdíjhoz"
+    },
+    "Ad Copy Writer": {
+      "n": "Reklámszöveg író",
+      "d": "Készítsen meggyőző reklámszövegeket bármilyen platformra vagy médiumba"
+    },
+    "SEO Article Creator": {
+      "n": "SEO cikk készítő",
+      "d": "Írjon SEO-optimalizált cikkeket, amelyek rangsorolnak és konvertálnak"
+    },
+    "Social Media Content Calendar": {
+      "n": "Közösségi média tartalomnaptár",
+      "d": "Tervezzen egy hónapnyi közösségi média tartalmat platformokon átívelően"
+    },
+    "Email Campaign Builder": {
+      "n": "E-mail kampány készítő",
+      "d": "Tervezzen többleveles marketing e-mail kampányokat, amelyek konvertálnak"
+    },
+    "Product Launch Strategy": {
+      "n": "Terméklanszirozási stratégia",
+      "d": "Készítsen átfogó terméklanszirozási marketing stratégiát"
+    },
+    "Brand Voice Guide": {
+      "n": "Márka hangvételi útmutató",
+      "d": "Határozza meg és dokumentálja márkája hangvételét és üzeneteit"
+    },
+    "Content Marketing Strategy": {
+      "n": "Tartalommarketing stratégia",
+      "d": "Építsen fel teljes tartalommarketing stratégiát a nulláról"
+    },
+    "Influencer Outreach Template": {
+      "n": "Influenszer megkeresési sablon",
+      "d": "Készítsen személyre szabott influenszer együttműködési ajánlatokat"
+    },
+    "Landing Page Copywriter": {
+      "n": "Céloldal szövegíró",
+      "d": "Írjon magasan konvertáló céloldal szöveget"
+    },
+    "A/B Test Plan Creator": {
+      "n": "A/B teszt terv készítő",
+      "d": "Tervezzen strukturált A/B teszteket marketing kampányokhoz"
+    },
+    "Buyer Persona Builder": {
+      "n": "Vásárlói persona készítő",
+      "d": "Készítsen részletes ügyfélprofilokat a célzáshoz"
+    },
+    "Competitive Analysis Template": {
+      "n": "Versenyelemzési sablon",
+      "d": "Elemezze a versenytársakat és azonosítsa a piaci lehetőségeket"
+    },
+    "Marketing Budget Planner": {
+      "n": "Marketing költségvetés tervező",
+      "d": "Allokálja és optimalizálja marketing költségvetését"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Affiliate marketing stratégia",
+      "d": "Építsen és optimalizáljon affiliate marketing programot"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Podcast marketing terv",
+      "d": "Népszerűsítse podcastját és növelje hallgatói bázisát"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Webinárium promóciós terv",
+      "d": "Tervezzen és népszerűsítsen webináriumokat, amelyek regisztrációkat generálnak"
+    },
+    "Referral Program Designer": {
+      "n": "Ajánlóprogram tervező",
+      "d": "Tervezzen ajánlóprogramokat, amelyek szájról szájra terjedő növekedést hoznak"
+    },
+    "Brand Story Writer": {
+      "n": "Márkatörténet író",
+      "d": "Készítsen meggyőző márkaeredettörténetet és narratívát"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Marketing tölcsér készítő",
+      "d": "Tervezzen ügyfélútvonal tölcséreket az ismertségtől a konverzióig"
+    },
+    "App Store Optimization": {
+      "n": "Alkalmazásbolt optimalizálás",
+      "d": "Optimalizálja alkalmazásbolt-megjelenéseit a maximális letöltésszámért"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Google Ads szövegíró",
+      "d": "Írjon hatékony Google Ads címsorokat és leírásokat"
+    },
+    "Facebook Ads Creator": {
+      "n": "Facebook hirdetéskészítő",
+      "d": "Készítsen Facebook és Instagram hirdetési kampányokat"
+    },
+    "Newsletter Strategy": {
+      "n": "Hírlevél stratégia",
+      "d": "Tervezzen és növesszen e-mail hírlevelet a nulláról"
+    },
+    "PR Media Pitch": {
+      "n": "PR média megkeresés",
+      "d": "Írjon meggyőző média megkereséseket sajtómegjelenéshez"
+    },
+    "Content Repurposing Plan": {
+      "n": "Tartalom újrahasznosítási terv",
+      "d": "Alakítsa át meglévő tartalmait többféle formátumba"
+    },
+    "Cold Email Generator": {
+      "n": "Hideg e-mail generátor",
+      "d": "Készítsen személyre szabott hideg megkereső e-maileket, amelyekre válaszolnak"
+    },
+    "Sales Script Writer": {
+      "n": "Értékesítési forgatókönyv író",
+      "d": "Írjon hatékony értékesítési forgatókönyveket hívásokhoz és megbeszélésekhez"
+    },
+    "Objection Handling Guide": {
+      "n": "Kifogáskezelési útmutató",
+      "d": "Készítsen válaszokat a gyakori értékesítési kifogásokra"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Utánkövető üzenet készítő",
+      "d": "Készítsen stratégiai utánkövető üzenetsorozatokat"
+    },
+    "Sales Pitch Creator": {
+      "n": "Értékesítési prezentáció készítő",
+      "d": "Készítsen meggyőző liftbeszédeket és értékesítési prezentációkat"
+    },
+    "Proposal Generator": {
+      "n": "Ajánlat generátor",
+      "d": "Készítsen professzionális értékesítési ajánlatokat és árajánlatokat"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "CRM adattisztítási terv",
+      "d": "Rendszerezze és tisztítsa meg szisztematikusan CRM adatbázisát"
+    },
+    "Sales Territory Planner": {
+      "n": "Értékesítési terület tervező",
+      "d": "Határozza meg és optimalizálja csapata értékesítési területeit"
+    },
+    "Account Strategy Builder": {
+      "n": "Ügyfélstratégia készítő",
+      "d": "Készítsen stratégiai ügyfélkezelési terveket kulcsfontosságú ügyfelekhez"
+    },
+    "Upsell Script Creator": {
+      "n": "Upsell forgatókönyv készítő",
+      "d": "Írjon forgatókönyveket meglévő ügyfelek felértékesítéséhez és keresztértékesítéséhez"
+    },
+    "Customer Win-Back Email": {
+      "n": "Ügyfél-visszaszerzési e-mail",
+      "d": "Szerezze vissza elveszett ügyfeleit célzott visszaszerző kampányokkal"
+    },
+    "Sales Forecast Template": {
+      "n": "Értékesítési előrejelzés sablon",
+      "d": "Készítsen pontos értékesítési előrejelzéseket pipeline-jához"
+    },
+    "Commission Calculator": {
+      "n": "Jutalék kalkulátor",
+      "d": "Tervezzen és számítson ki értékesítési jutalékstruktúrákat"
+    },
+    "Discovery Call Script": {
+      "n": "Felderítő hívás forgatókönyv",
+      "d": "Strukturáljon hatékony felderítő hívásokat az érdeklődők minősítéséhez"
+    },
+    "Demo Presentation Outline": {
+      "n": "Demó prezentáció vázlat",
+      "d": "Készítsen strukturált termékdemó prezentációkat"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Értékesítői betanulási terv",
+      "d": "Tervezzen betanulási programokat új értékesítők számára"
+    },
+    "Quarterly Business Review": {
+      "n": "Negyedéves üzleti áttekintés",
+      "d": "Készítsen negyedéves üzleti áttekintő prezentációkat ügyfeleknek"
+    },
+    "Customer Success Plan": {
+      "n": "Ügyfélelégedettségi terv",
+      "d": "Készítsen proaktív ügyfélelégedettségi és megtartási terveket"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Árazási stratégia tanácsadó",
+      "d": "Dolgozzon ki és optimalizálja termékei árazási stratégiáját"
+    },
+    "Value Proposition Builder": {
+      "n": "Értékajánlat készítő",
+      "d": "Fogalmazzon meg világos és meggyőző értékajánlatokat"
+    },
+    "FAQ Generator": {
+      "n": "GYIK generátor",
+      "d": "Készítsen átfogó GYIK szekciókat termékinformációk alapján"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Tudásbázis cikkíró",
+      "d": "Írjon világos és kereshető tudásbázis cikkeket"
+    },
+    "Support Response Template": {
+      "n": "Ügyfélszolgálati válaszsablon",
+      "d": "Készítsen újrafelhasználható sablonokat gyakori ügyfélszolgálati helyzetekhez"
+    },
+    "Chatbot Training Data": {
+      "n": "Chatbot betanító adatok",
+      "d": "Generáljon betanító adatokat ügyfélszolgálati chatbotokhoz"
+    },
+    "Escalation Response Guide": {
+      "n": "Eszkalációs válasz útmutató",
+      "d": "Készítsen irányelveket az eszkalált ügyfélszolgálati problémák kezeléséhez"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Ügyfél-elégedettségi felmérés",
+      "d": "Tervezzen felméréseket az ügyfél-elégedettség mérésére"
+    },
+    "Refund Policy Writer": {
+      "n": "Visszatérítési szabályzat készítő",
+      "d": "Készítsen világos és méltányos visszatérítési és visszaküldési szabályzatokat"
+    },
+    "Bug Report Template": {
+      "n": "Hibajelentés sablon",
+      "d": "Tervezzen strukturált hibajelentés sablonokat a felhasználók számára"
+    },
+    "Feature Request Response": {
+      "n": "Funkciókérés válasz",
+      "d": "Fogalmazzon válaszokat az ügyfelek funkciókéréseire"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Bevezetési e-mail sorozat",
+      "d": "Készítsen e-mail sorozatokat új ügyfelek bevezetéséhez"
+    },
+    "Help Center Article": {
+      "n": "Súgóközpont cikk",
+      "d": "Írjon átfogó súgóközpont dokumentációt"
+    },
+    "Service Level Agreement": {
+      "n": "Szolgáltatási szintű megállapodás",
+      "d": "Készítsen SLA dokumentumokat ügyfélszolgálati kötelezettségvállalásokhoz"
+    },
+    "Customer Apology Template": {
+      "n": "Ügyfél bocsánatkérő sablon",
+      "d": "Írjon őszinte bocsánatkérő üzeneteket szolgáltatási hibákért"
+    },
+    "Product Update Announcement": {
+      "n": "Termékfrissítési közlemény",
+      "d": "Kommunikálja a termékfrissítéseket és változtatásokat az ügyfeleknek"
+    },
+    "Community Guidelines Writer": {
+      "n": "Közösségi irányelvek készítő",
+      "d": "Készítsen közösségi irányelveket fórumokhoz és közösségi csatornákhoz"
+    },
+    "Startup Validation Framework": {
+      "n": "Startup validációs keretrendszer",
+      "d": "Validálja startup ötletét az építés megkezdése előtt"
+    },
+    "MVP Feature Planner": {
+      "n": "MVP funkció tervező",
+      "d": "Priorizálja a minimálisan életképes termék funkcióit"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Árstratégia készítő",
+      "d": "Dolgozzon ki ármodelleket startup termékéhez"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Befektetői prezentáció vázlat",
+      "d": "Strukturáljon meggyőző prezentációt tőkebevonáshoz"
+    },
+    "Business Model Canvas": {
+      "n": "Üzleti modell vászon",
+      "d": "Térképezze fel teljes üzleti modelljét egyetlen oldalon"
+    },
+    "Lean Canvas Creator": {
+      "n": "Lean Canvas készítő",
+      "d": "Készítsen lean canvast a kockázatok és feltételezések azonosításához"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Versenyhelyzet elemző",
+      "d": "Térképezze fel és elemezze versenykörnyezetét"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Piacra lépési stratégia",
+      "d": "Tervezze meg piaci belépési és ügyfélszerzési megközelítését"
+    },
+    "Founding Team Assessment": {
+      "n": "Alapító csapat értékelés",
+      "d": "Értékelje a csapat összetételét és azonosítsa a hiányzó készségeket"
+    },
+    "Startup Financial Projections": {
+      "n": "Startup pénzügyi előrejelzések",
+      "d": "Készítsen 3 éves pénzügyi előrejelzéseket startupjához"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Tanácsadó testület toborzó",
+      "d": "Azonosítson és toborozzon tanácsadókat startupjához"
+    },
+    "Pivot Decision Framework": {
+      "n": "Pivot döntési keretrendszer",
+      "d": "Értékelje, hogy mikor és hogyan érdemes pivotálni startupját"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Startup KPI műszerfal",
+      "d": "Definiáljon és kövessen nyomon kulcsfontosságú teljesítménymutatókat"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Közösségi finanszírozási kampányterv",
+      "d": "Tervezzen és hajtson végre sikeres közösségi finanszírozási kampányt"
+    },
+    "Partnership Strategy": {
+      "n": "Partnerségi stratégia",
+      "d": "Azonosítson és valósítson meg stratégiai partnerségeket"
+    },
+    "Accelerator Application": {
+      "n": "Gyorsítóprogram pályázat",
+      "d": "Készítsen meggyőző gyorsítóprogram vagy inkubátor pályázatot"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Termék-piac illeszkedési felmérés",
+      "d": "Tervezzen felméréseket a termék-piac illeszkedés mérésére"
+    },
+    "Startup Legal Checklist": {
+      "n": "Startup jogi ellenőrzőlista",
+      "d": "Fedjen le minden jogi alapot cégalapításkor"
+    },
+    "Equity Split Calculator": {
+      "n": "Tulajdonrész elosztó kalkulátor",
+      "d": "Határozza meg a méltányos tulajdonrész elosztást a társalapítók között"
+    },
+    "Growth Experiment Planner": {
+      "n": "Növekedési kísérlet tervező",
+      "d": "Tervezzen és kövessen nyomon növekedési kísérleteket szisztematikusan"
+    },
+    "Product Description Writer": {
+      "n": "Termékleírás író",
+      "d": "Írjon meggyőző termékleírásokat, amelyek növelik az eladásokat"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Amazon hirdetés optimalizáló",
+      "d": "Optimalizálja Amazon termékhirdetéseit a láthatóság és konverzió érdekében"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Etsy bolt beállítási útmutató",
+      "d": "Állítsa be és optimalizálja Etsy boltját a sikerhez"
+    },
+    "Shopify Store Planner": {
+      "n": "Shopify bolt tervező",
+      "d": "Tervezze meg Shopify boltjának szerkezetét és indítását"
+    },
+    "Product Photography Brief": {
+      "n": "Termékfotózási brief",
+      "d": "Készítsen briefeket termékfotózási munkákhoz"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Szállítási stratégia tervező",
+      "d": "Tervezzen költséghatékony szállítási stratégiákat"
+    },
+    "Return Policy Creator": {
+      "n": "Visszaküldési szabályzat készítő",
+      "d": "Készítsen világos e-kereskedelmi visszaküldési és csere szabályzatokat"
+    },
+    "Customer Review Response": {
+      "n": "Ügyfélvélemény válasz",
+      "d": "Fogalmazzon professzionális válaszokat ügyfélvéleményekre"
+    },
+    "Inventory Management Plan": {
+      "n": "Készletgazdálkodási terv",
+      "d": "Készítsen rendszereket a készlet nyomon követéséhez és kezeléséhez"
+    },
+    "Dropshipping Product Research": {
+      "n": "Dropshipping termékkutatás",
+      "d": "Kutasson és értékeljen dropshipping terméklehetőségeket"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Igény szerinti nyomtatás tervező",
+      "d": "Tervezzen igény szerinti nyomtatással készülő termékvonalakat és dizájnokat"
+    },
+    "Subscription Box Planner": {
+      "n": "Előfizetési doboz tervező",
+      "d": "Tervezzen és indítson előfizetési doboz vállalkozást"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Ünnepi értékesítési stratégia",
+      "d": "Tervezzen szezonális promóciókat és ünnepi értékesítési kampányokat"
+    },
+    "Product Bundle Creator": {
+      "n": "Termékcsomagolás készítő",
+      "d": "Tervezzen termékcsomagokat az átlagos rendelési érték növeléséhez"
+    },
+    "Cart Abandonment Email": {
+      "n": "Kosárelhagyási e-mail",
+      "d": "Készítsen e-mail sorozatokat az elhagyott kosarak visszaszerzéséhez"
+    },
+    "Homework Helper": {
+      "n": "Házi feladat segítő",
+      "d": "Kapjon lépésről lépésre segítséget a házi feladathoz bármely tantárgyból"
+    },
+    "Quiz & Test Generator": {
+      "n": "Kvíz és teszt generátor",
+      "d": "Készítsen egyéni kvízeket bármely témából vagy tananyagból"
+    },
+    "Science Fair Project Planner": {
+      "n": "Tudományos vásár projekt tervező",
+      "d": "Tervezzen és szervezzen nyertes tudományos vásár projektet a hipotézistől a bemutatóig"
+    },
+    "Lesson Plan Creator": {
+      "n": "Óravázlat készítő",
+      "d": "Tervezzen strukturált óravázlatokat a tanulási célokhoz igazodva"
+    },
+    "Lab Report Writer": {
+      "n": "Laborjelentés író",
+      "d": "Strukturálja és írja meg laborjelentéseit megfelelő tudományos formátumban"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Szövegértési segítő",
+      "d": "Javítsa szövegértését irányított elemzéssel és kérdésekkel"
+    },
+    "Math Problem Solver": {
+      "n": "Matematikai feladatmegoldó",
+      "d": "Oldjon meg matematikai feladatokat részletes, lépésről lépésre történő magyarázatokkal"
+    },
+    "Vocabulary Builder": {
+      "n": "Szókincsfejlesztő",
+      "d": "Építsen és gyakoroljon szókincset definíciókkal, példákkal és feladatokkal"
+    },
+    "Book Report Helper": {
+      "n": "Könyvismertető segítő",
+      "d": "Vázolja fel és írja meg könyvismertetőjét strukturált elemzéssel"
+    },
+    "History Timeline Creator": {
+      "n": "Történelmi idővonal készítő",
+      "d": "Készítsen részletes történelmi idővonalakat bármely korszakhoz vagy eseményhez"
+    },
+    "Geography Quiz Maker": {
+      "n": "Földrajz kvíz készítő",
+      "d": "Generáljon földrajz kvízeket térképekről, fővárosokról, nevezetességekről és egyebekről"
+    },
+    "Spelling Practice Generator": {
+      "n": "Helyesírás-gyakorlat generátor",
+      "d": "Készítsen személyre szabott helyesírás-gyakorló listákat és feladatokat"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Nyelvtani gyakorlat készítő",
+      "d": "Generáljon nyelvtani gyakorlatokat bármely szinthez és témához"
+    },
+    "Critical Thinking Questions": {
+      "n": "Kritikus gondolkodás kérdések",
+      "d": "Generáljon elgondolkodtató kérdéseket a kritikus gondolkodás fejlesztéséhez"
+    },
+    "Debate Prep Guide": {
+      "n": "Vita-felkészítő útmutató",
+      "d": "Készítsen strukturált érveket és ellenérveket vitákhoz"
+    },
+    "College Application Essay": {
+      "n": "Egyetemi felvételi esszé",
+      "d": "Fogalmazzon meggyőző egyetemi felvételi esszéket irányított segítséggel"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Ösztöndíj esszé segítő",
+      "d": "Írjon meggyőző ösztöndíj esszéket, amelyek kiemelik eredményeit és céljait"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "SAT/ACT felkészítő útmutató",
+      "d": "Készítsen célzott tanulási terveket és gyakorlatokat SAT vagy ACT vizsgákra"
+    },
+    "Study Schedule Planner": {
+      "n": "Tanulási ütemterv tervező",
+      "d": "Készítsen hatékony tanulási ütemtervet minden tantárgy és határidő egyensúlyával"
+    },
+    "Group Project Organizer": {
+      "n": "Csoportos projekt szervező",
+      "d": "Tervezzen szerepeket, feladatokat és időzítést csoportos projektekhez"
+    },
+    "Presentation Creator": {
+      "n": "Prezentáció készítő",
+      "d": "Tervezzen és vázoljon fel lenyűgöző prezentációkat bármely témában"
+    },
+    "Note-Taking Guide": {
+      "n": "Jegyzetelési útmutató",
+      "d": "Készítsen strukturált jegyzetelési sablonokat előadásokhoz és olvasmányokhoz"
+    },
+    "Mind Map Generator": {
+      "n": "Gondolattérkép generátor",
+      "d": "Készítsen vizuális gondolattérképeket ötletek és fogalmak rendszerezéséhez"
+    },
+    "Research Project Planner": {
+      "n": "Kutatási projekt tervező",
+      "d": "Tervezzen és kezeljen kutatási projekteket a témaválasztástól a végső dolgozatig"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Szülői értekezlet felkészítő",
+      "d": "Készítsen beszédpontokat és kérdéseket produktív szülő-tanár megbeszélésekhez"
+    },
+    "Classroom Activity Designer": {
+      "n": "Tantermi tevékenység tervező",
+      "d": "Tervezzen interaktív tantermi tevékenységeket a tanulási célok megerősítéséhez"
+    },
+    "Special Education Resource": {
+      "n": "Gyógypedagógiai forrás",
+      "d": "Készítsen testreszabott tanulási forrásokat speciális nevelési igényű diákok számára"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Otthoni tanterv tervező",
+      "d": "Tervezzen teljes otthoni tantervet tantárgyak és félévek szerint"
+    },
+    "Student Self-Assessment": {
+      "n": "Diák önértékelés",
+      "d": "Készítsen önértékelő eszközöket diákoknak saját tanulási előrehaladásuk nyomon követéséhez"
+    },
+    "Learning Style Analyzer": {
+      "n": "Tanulási stílus elemző",
+      "d": "Azonosítsa a tanulási stílusokat és javasoljon személyre szabott tanulási stratégiákat"
+    },
+    "Literature Review Writer": {
+      "n": "Irodalmi áttekintés író",
+      "d": "Szervezzen és írjon átfogó irodalmi áttekintéseket bármely témában"
+    },
+    "Research Assistant": {
+      "n": "Kutatási asszisztens",
+      "d": "Kapjon segítséget kutatási anyagok kereséséhez, rendszerezéséhez és összefoglalásához"
+    },
+    "Fact Checker Template": {
+      "n": "Tényellenőrző sablon",
+      "d": "Ellenőrizzen állításokat és kijelentéseket strukturált tényellenőrzési módszertannal"
+    },
+    "Source Comparison Tool": {
+      "n": "Forrás-összehasonlító eszköz",
+      "d": "Hasonlítson össze és vessen össze több forrást ugyanabban a témában"
+    },
+    "Citation Generator": {
+      "n": "Hivatkozásgenerátor",
+      "d": "Generáljon helyesen formázott hivatkozásokat bármely akadémiai stílusban"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Annotált bibliográfia készítő",
+      "d": "Készítsen annotált bibliográfiákat összefoglalókkal és értékelésekkel"
+    },
+    "Research Methodology Guide": {
+      "n": "Kutatási módszertani útmutató",
+      "d": "Válassza ki és tervezze meg a megfelelő kutatási módszertant tanulmányához"
+    },
+    "Survey Question Designer": {
+      "n": "Kérdőív kérdés tervező",
+      "d": "Tervezzen hatékony kérdőív kérdéseket megbízható kutatási adatok gyűjtéséhez"
+    },
+    "Data Collection Plan": {
+      "n": "Adatgyűjtési terv",
+      "d": "Készítsen strukturált tervet kutatási adatok gyűjtéséhez"
+    },
+    "Thesis Statement Generator": {
+      "n": "Tézismondat generátor",
+      "d": "Fogalmazzon erős tézismondatokat kutatási dolgozatokhoz és disszertációkhoz"
+    },
+    "Research Proposal Writer": {
+      "n": "Kutatási javaslat író",
+      "d": "Írjon meggyőző kutatási javaslatokat akadémiai vagy finanszírozási értékeléshez"
+    },
+    "Systematic Review Guide": {
+      "n": "Szisztematikus áttekintés útmutató",
+      "d": "Végezzen szisztematikus áttekintéseket bevált protokollok szerint"
+    },
+    "Interview Protocol Creator": {
+      "n": "Interjúprotokoll készítő",
+      "d": "Tervezzen strukturált interjúprotokollokat kvalitatív kutatáshoz"
+    },
+    "Research Ethics Checklist": {
+      "n": "Kutatásetikai ellenőrzőlista",
+      "d": "Biztosítsa a kutatás megfelelőségét az etikai irányelveknek és IRB követelményeknek"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Meta-elemzési keretrendszer",
+      "d": "Strukturáljon és végezzen meta-elemzéseket több tanulmány alapján"
+    },
+    "Case Study Template": {
+      "n": "Esettanulmány sablon",
+      "d": "Strukturáljon és írjon részletes esettanulmányokat kutatáshoz vagy üzleti célokra"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Kvalitatív elemzési útmutató",
+      "d": "Vezesse a kvalitatív adatelemzést kódolási és tematikus megközelítésekkel"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Kvantitatív elemzési útmutató",
+      "d": "Vezesse a kvantitatív adatelemzést megfelelő statisztikai módszerekkel"
+    },
+    "Research Poster Creator": {
+      "n": "Kutatási poszter készítő",
+      "d": "Tervezzen és rendezzen el kutatási posztereket konferenciákra és prezentációkra"
+    },
+    "Research Grant Writer": {
+      "n": "Kutatási pályázatíró",
+      "d": "Írjon strukturált pályázati javaslatokat kutatási finanszírozási pályázatokhoz"
+    },
+    "Chemistry Tutor": {
+      "n": "Kémia oktató",
+      "d": "Személyre szabott kémia oktatás magyarázatokkal és gyakorlófeladatokkal"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Kémiai egyenlet kiegyenlítő",
+      "d": "Kémiai egyenletek kiegyenlítése lépésről lépésre magyarázatokkal"
+    },
+    "Lab Safety Checklist": {
+      "n": "Labor biztonsági ellenőrzőlista",
+      "d": "Átfogó labor biztonsági ellenőrzőlisták generálása kémiai kísérletekhez"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Szerves kémia segítő",
+      "d": "Szerves reakciók, mechanizmusok és nómenklatúra tanulása"
+    },
+    "Periodic Table Explorer": {
+      "n": "Periódusos rendszer felfedező",
+      "d": "Elemtulajdonságok, trendek és kapcsolatok felfedezése a periódusos rendszerben"
+    },
+    "Stoichiometry Solver": {
+      "n": "Sztöchiometria megoldó",
+      "d": "Sztöchiometriai feladatok megoldása részletes mól-mól számításokkal"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Kémiai kötés útmutató",
+      "d": "Ionos, kovalens és fémes kötés megértése vizuális magyarázatokkal"
+    },
+    "Acid-Base Calculator": {
+      "n": "Sav-bázis kalkulátor",
+      "d": "pH, pOH, Ka, Kb számítása és sav-bázis egyensúlyi feladatok megoldása"
+    },
+    "Solution Preparation Guide": {
+      "n": "Oldat elkészítési útmutató",
+      "d": "Kémiai oldatok számítása és elkészítése megfelelő koncentrációkkal"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Spektroszkópia értelmező",
+      "d": "IR, NMR és tömegspektrumok értelmezése vegyületazonosításhoz"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Kémia laborfüzet",
+      "d": "Strukturált laborfüzet bejegyzések létrehozása kémiai kísérletekhez"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Reakciómechanizmus segítő",
+      "d": "Reakciómechanizmusok rajzolása és megértése lépésről lépésre"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Termokémia kalkulátor",
+      "d": "Entalpia, entrópia és Gibbs szabadenergia számítása kémiai reakciókhoz"
+    },
+    "Electrochemistry Guide": {
+      "n": "Elektrokémia útmutató",
+      "d": "Elektrokémiai cellák, elektródpotenciálok és elektrolízis megértése"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Polimerkémia útmutató",
+      "d": "Polimertípusok, szintézismechanizmusok és tulajdonságok tanulása"
+    },
+    "Biology Tutor": {
+      "n": "Biológia oktató",
+      "d": "Személyre szabott biológia oktatás világos magyarázatokkal és példákkal"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Sejtbiológia tanulási útmutató",
+      "d": "Sejtszerkezetek, funkciók és folyamatok mélyreható tanulása"
+    },
+    "Genetics Problem Solver": {
+      "n": "Genetikai feladat megoldó",
+      "d": "Genetikai feladatok megoldása Punnett-négyzetekkel és családfa elemzéssel"
+    },
+    "Ecology Study Helper": {
+      "n": "Ökológia tanulási segítő",
+      "d": "Ökoszisztémák, táplálékhálózatok, populációdinamika és ökológiai kapcsolatok tanulása"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Anatómia és élettan útmutató",
+      "d": "Emberi testrendszerek tanulása részletes anatómiai magyarázatokkal"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Mikrobiológia labor útmutató",
+      "d": "Mikrobiológiai labortechnikák irányítása: festés, tenyésztés és azonosítás"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Evolúció fogalomtérkép",
+      "d": "Evolúciós fogalmak feltérképezése: természetes szelekció, fajkeletkezés és törzsfejlődés"
+    },
+    "Plant Biology Helper": {
+      "n": "Növénybiológia segítő",
+      "d": "Növényanatómia, élettan és ökológiai szerepek tanulása"
+    },
+    "Molecular Biology Guide": {
+      "n": "Molekuláris biológia útmutató",
+      "d": "DNS-replikáció, transzkripció, transzláció és génreguláció megértése"
+    },
+    "Bioinformatics Helper": {
+      "n": "Bioinformatika segítő",
+      "d": "Segítség szekvenciaelemzésben, adatbázis-keresésben és számítógépes biológiában"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Idegtudományi tanulási útmutató",
+      "d": "Idegrendszer, agyműködés és idegpályák tanulása"
+    },
+    "Marine Biology Explorer": {
+      "n": "Tengeri biológia felfedező",
+      "d": "Tengeri ökoszisztémák, élőlények és óceántudomány felfedezése"
+    },
+    "Immunology Study Guide": {
+      "n": "Immunológia tanulási útmutató",
+      "d": "Immunrendszer, immunválaszok és immunológiai rendellenességek tanulása"
+    },
+    "Biotechnology Overview": {
+      "n": "Biotechnológia áttekintés",
+      "d": "Biotechnológiai alkalmazások felfedezése: géntechnológia és CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Természetvédelmi biológia tervező",
+      "d": "Természetvédelmi stratégiák tervezése fajok és élőhelyek megőrzéséhez"
+    },
+    "Physics Problem Solver": {
+      "n": "Fizika feladat megoldó",
+      "d": "Fizikai feladatok megoldása részletes lépésről lépésre megoldásokkal"
+    },
+    "Mechanics Helper": {
+      "n": "Mechanika segítő",
+      "d": "Klasszikus mechanikai feladatok tanulása és megoldása: kinematika és dinamika"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Elektromosság és mágnesesség útmutató",
+      "d": "Elektromos terek, áramkörök és elektromágneses jelenségek megértése"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Termodinamika oktató",
+      "d": "Termodinamikai törvények, folyamatok és hőátadási feladatok tanulása"
+    },
+    "Optics & Waves Guide": {
+      "n": "Optika és hullámok útmutató",
+      "d": "Hullámjelenségek, optika és fényviselkedés tanulása"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Kvantumfizika magyarázó",
+      "d": "Kvantummechanikai fogalmak megértése világos magyarázatokkal és példákkal"
+    },
+    "Astrophysics Explorer": {
+      "n": "Asztrofizika felfedező",
+      "d": "Csillagfejlődés, kozmológia és égi mechanika felfedezése"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Magfizika útmutató",
+      "d": "Magreakciók, radioaktivitás és atomenergia tanulása"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Áramlástan segítő",
+      "d": "Áramlástani feladatok megoldása: Bernoulli és Navier-Stokes alkalmazások"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Klasszikus mechanika oktató",
+      "d": "Mélyebb betekintés a Lagrange- és Hamilton-mechanikába és haladó dinamikába"
+    },
+    "Relativity Concept Guide": {
+      "n": "Relativitáselmélet útmutató",
+      "d": "Speciális és általános relativitáselmélet megértése gondolatkísérletekkel és matematikával"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Fizika laborbeszámoló segítő",
+      "d": "Fizika laborbeszámolók strukturálása és megírása megfelelő adatelemzéssel"
+    },
+    "Math Proof Writer": {
+      "n": "Matematikai bizonyítás író",
+      "d": "Világos és precíz matematikai bizonyítások írása logikus szerkezettel"
+    },
+    "Calculus Problem Solver": {
+      "n": "Analízis feladat megoldó",
+      "d": "Analízis feladatok megoldása: határértékek, deriváltak és integrálok"
+    },
+    "Statistics Helper": {
+      "n": "Statisztika segítő",
+      "d": "Statisztikai feladatok megoldása és statisztikai eredmények értelmezése"
+    },
+    "Linear Algebra Guide": {
+      "n": "Lineáris algebra útmutató",
+      "d": "Vektorok, mátrixok, transzformációk és sajátértékek tanulása"
+    },
+    "Probability Calculator": {
+      "n": "Valószínűségszámítás kalkulátor",
+      "d": "Valószínűségek kiszámítása és valószínűségi eloszlási feladatok megoldása"
+    },
+    "Geometry Tutor": {
+      "n": "Geometria oktató",
+      "d": "Geometriai fogalmak, tételek tanulása és geometriai feladatok megoldása"
+    },
+    "Trigonometry Helper": {
+      "n": "Trigonometria segítő",
+      "d": "Trigonometriai egyenletek, azonosságok és alkalmazások megoldása"
+    },
+    "Number Theory Explorer": {
+      "n": "Számelmélet felfedező",
+      "d": "Prímszámok, oszthatóság, moduláris aritmetika és kriptográfiai alkalmazások felfedezése"
+    },
+    "Discrete Math Guide": {
+      "n": "Diszkrét matematika útmutató",
+      "d": "Kombinatorika, gráfelmélet, logika és halmazelmélet tanulása"
+    },
+    "Differential Equations Solver": {
+      "n": "Differenciálegyenlet megoldó",
+      "d": "Közönséges és parciális differenciálegyenletek megoldása részletes módszerekkel"
+    },
+    "Math Word Problem Solver": {
+      "n": "Matematikai szöveges feladat megoldó",
+      "d": "Valós matematikai szöveges feladatok lefordítása és lépésről lépésre megoldása"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Matematikai modellezés útmutató",
+      "d": "Matematikai modellek építése valós jelenségekhez és alkalmazásokhoz"
+    },
+    "SQL Query Generator": {
+      "n": "SQL lekérdezés generátor",
+      "d": "SQL lekérdezések generálása és optimalizálása adatlekéréshez és elemzéshez"
+    },
+    "Python Data Analysis": {
+      "n": "Python adatelemzés",
+      "d": "Python kód írása adatelemzéshez pandas, NumPy és további könyvtárakkal"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Adattisztítási ellenőrzőlista",
+      "d": "Átfogó ellenőrzőlisták létrehozása adattisztításhoz és előfeldolgozáshoz"
+    },
+    "Data Visualization Planner": {
+      "n": "Adatvizualizáció tervező",
+      "d": "A megfelelő diagramok kiválasztása és hatékony adatvizualizációk tervezése"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Gépi tanulási modell választó",
+      "d": "A legjobb ML modell kiválasztása problématípushoz és adatjellemzőkhöz"
+    },
+    "A/B Test Calculator": {
+      "n": "A/B teszt kalkulátor",
+      "d": "A/B tesztek tervezése és elemzése statisztikai szignifikancia számításokkal"
+    },
+    "Dashboard Design Guide": {
+      "n": "Műszerfal tervezési útmutató",
+      "d": "Hatékony műszerfalak tervezése megfelelő KPI-kkal és elrendezéssel"
+    },
+    "ETL Pipeline Planner": {
+      "n": "ETL csővezeték tervező",
+      "d": "ETL csővezetékek tervezése adatintegrációhoz és feldolgozáshoz"
+    },
+    "Feature Engineering Guide": {
+      "n": "Jellemzőmérnökség útmutató",
+      "d": "Hatékony jellemzők létrehozása gépi tanulási modellekhez"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Adatcsővezeték architektúra",
+      "d": "Skálázható adatcsővezeték architektúrák tervezése elemzéshez és ML-hez"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Feltáró adatelemzés",
+      "d": "Alapos feltáró adatelemzés strukturált elemzéssel és vizualizációs tervekkel"
+    },
+    "Statistical Test Selector": {
+      "n": "Statisztikai teszt választó",
+      "d": "A megfelelő statisztikai teszt kiválasztása és alkalmazása adataihoz és hipotéziséhez"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Idősor elemzés útmutató",
+      "d": "Idősor adatok elemzése előrejelzési és trendfelismerési módszerekkel"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Természetes nyelvfeldolgozás kezdő",
+      "d": "Bevezetés az NLP feladatokba: szövegklasszifikáció és szentimentelemzés"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Számítógépes látás projekt tervező",
+      "d": "Számítógépes látás projektek tervezése az adatgyűjtéstől a modell telepítéséig"
+    },
+    "Technical Requirements Document": {
+      "n": "Műszaki követelmény dokumentum",
+      "d": "Részletes műszaki követelmény dokumentumok létrehozása mérnöki projektekhez"
+    },
+    "Engineering Design Review": {
+      "n": "Mérnöki tervezési felülvizsgálat",
+      "d": "Strukturált tervezési felülvizsgálati dokumentumok előkészítése mérnöki projektekhez"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Hibamód elemzés (FMEA)",
+      "d": "Szisztematikus hibamód- és hatáselemzés lefolytatása termékekhez vagy folyamatokhoz"
+    },
+    "Project Specification Writer": {
+      "n": "Projekt specifikáció író",
+      "d": "Világos és teljes projekt specifikációk írása mérnöki munkához"
+    },
+    "CAD Project Planner": {
+      "n": "CAD projekt tervező",
+      "d": "CAD modellezési projektek tervezése és szervezése megfelelő dokumentációval"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Gyártási folyamat útmutató",
+      "d": "Gyártási folyamatok kiválasztása és tervezése termékfejlesztéshez"
+    },
+    "Quality Control Checklist": {
+      "n": "Minőségellenőrzési ellenőrzőlista",
+      "d": "Minőségellenőrzési ellenőrzőlisták és vizsgálati tervek létrehozása gyártáshoz"
+    },
+    "Engineering Change Request": {
+      "n": "Mérnöki változtatási kérelem",
+      "d": "Mérnöki változtatási kérelmek dokumentálása és kezelése hatáselemzéssel"
+    },
+    "Structural Analysis Guide": {
+      "n": "Szerkezeti elemzés útmutató",
+      "d": "Szerkezeti elemzési számítások és módszertan irányítása mérnöki projektekhez"
+    },
+    "Materials Selection Guide": {
+      "n": "Anyagválasztási útmutató",
+      "d": "Optimális anyagok kiválasztása mechanikai, termikus és kémiai követelmények alapján"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Midjourney prompt készítő",
+      "d": "Részletes Midjourney promptok készítése stílus, megvilágítás és kompozíció paraméterekkel"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E prompt építő",
+      "d": "Optimalizált DALL-E promptok készítése világos leírásokkal és művészi irányítással"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Stable Diffusion prompt író",
+      "d": "Stable Diffusion promptok generálása pozitív és negatív prompt tervezéssel"
+    },
+    "Product Photography Prompt": {
+      "n": "Termékfotó prompt",
+      "d": "AI promptok létrehozása lenyűgöző termékfotókhoz stúdióminőségű eredményekkel"
+    },
+    "Landscape Art Prompt": {
+      "n": "Tájkép művészeti prompt",
+      "d": "Lélegzetelállító tájképi promptok létrehozása környezet és légkör részletekkel"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Portréfotó prompt",
+      "d": "AI portré promptok generálása megvilágítás, kifejezés és kompozíció irányítással"
+    },
+    "Food Photography Prompt": {
+      "n": "Ételgfotó prompt",
+      "d": "Ínycsiklandó ételgfotó promptok készítése stílus és tálalás részletekkel"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Építészeti vizualizáció prompt",
+      "d": "Építészeti vizualizációs promptok létrehozása épületekhez és belső terekhez"
+    },
+    "Fashion Design Prompt": {
+      "n": "Divattervezési prompt",
+      "d": "Divattervezési koncepciók generálása anyag, sziluett és stílus részletekkel"
+    },
+    "Comic Art Prompt": {
+      "n": "Képregény művészeti prompt",
+      "d": "Képregény stílusú művészeti promptok létrehozása panel kompozícióval és karakterakcióval"
+    },
+    "Abstract Art Prompt": {
+      "n": "Absztrakt művészeti prompt",
+      "d": "Absztrakt művészeti promptok generálása színelmélettel, textúrával és érzelmi kifejezéssel"
+    },
+    "Icon Design Brief": {
+      "n": "Ikon tervezési brief",
+      "d": "Tiszta ikonográfiai készletek tervezése egységes stílussal és vizuális nyelvvel"
+    },
+    "Infographic Design Brief": {
+      "n": "Infografika tervezési brief",
+      "d": "Infografika elrendezések tervezése adatvizualizációval és vizuális hierarchiával"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Közösségi média grafika prompt",
+      "d": "Figyelemfelkeltő közösségi média grafikák generálása bármely platformra"
+    },
+    "Meme Creator Prompt": {
+      "n": "Mém készítő prompt",
+      "d": "Mém koncepciók generálása formátumválasztással, feliratokkal és virális potenciállal"
+    },
+    "AI Avatar Prompt": {
+      "n": "AI avatár prompt",
+      "d": "Egyedi AI avatár dizájnok létrehozása profilokhoz, játékokhoz és virtuális identitásokhoz"
+    },
+    "Song Lyrics Writer": {
+      "n": "Dalszövegíró",
+      "d": "Eredeti dalszövegek írása versszakokkal, refrénnel és bridge-dzsel bármely műfajban"
+    },
+    "Chord Progression Generator": {
+      "n": "Akkordmenet generátor",
+      "d": "Akkordmenetek generálása zeneelméleti útmutatóval bármely műfajhoz és hangulathoz"
+    },
+    "Beat Ideas Creator": {
+      "n": "Beat ötlet készítő",
+      "d": "Beat koncepciók generálása tempóval, dobmintákkal és hangszerelési ötletekkel"
+    },
+    "Song Structure Builder": {
+      "n": "Dalstruktúra építő",
+      "d": "Dalszerkesztés tervezése szekciósorrenddel, dinamikával és átmenetekkel"
+    },
+    "Rap Verse Writer": {
+      "n": "Rap versszak író",
+      "d": "Ütős rap versszakok írása flowmintákkal, rímsémákkal és szójátékkal"
+    },
+    "Country Song Writer": {
+      "n": "Country dalszövegíró",
+      "d": "Írjon autentikus country dalokat történetmeséléssel, képekkel és hangulattal"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Pop dalrefren készítő",
+      "d": "Alkosson fülbemászó pop refreneket és dallamokat, amelyek megragadnak a hallgatók fejében"
+    },
+    "Rock Ballad Writer": {
+      "n": "Rock ballada író",
+      "d": "Írjon érzelmes rock balladákat erőteljes felépítéssel és himnikus refrénnel"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Zenei hangszerelési útmutató",
+      "d": "Tervezzen teljes zenei hangszereléseket hangszereléssel, szólamvezetéssel és dinamikával"
+    },
+    "Band Name Generator": {
+      "n": "Együttesnév generátor",
+      "d": "Generáljon kreatív együttesneveket műfaj, hangulat és képi preferenciák alapján"
+    },
+    "Music Video Concept": {
+      "n": "Videoklip koncepció",
+      "d": "Fejlesszen kreatív videoklip koncepciókat narratívával, vizuális elemekkel és koreográfiával"
+    },
+    "Mixing Checklist": {
+      "n": "Keverési ellenőrzőlista",
+      "d": "Átfogó keverési ellenőrzőlista EQ-t, kompressziót, effekteket és egyensúlyt lefedve"
+    },
+    "Film Score Brief": {
+      "n": "Filmzene brief",
+      "d": "Készítsen részletes filmzene briefeket hangulattal, hangszereléssel és időzítési jelzésekkel"
+    },
+    "YouTube Shorts Script": {
+      "n": "YouTube Shorts forgatókönyv",
+      "d": "Írjon lebilincselő YouTube Shorts forgatókönyveket 60 másodperces függőleges videóhoz optimalizálva"
+    },
+    "Video Storyboard Creator": {
+      "n": "Videó storyboard készítő",
+      "d": "Tervezzen vizuális forgatókönyveket jelenetleírásokkal, kameraszögekkel és átmenetekkel"
+    },
+    "Documentary Outline": {
+      "n": "Dokumentumfilm vázlat",
+      "d": "Strukturáljon meggyőző dokumentumfilmeket narratív ívvel, interjúkkal és b-roll tervekkel"
+    },
+    "Vlog Episode Planner": {
+      "n": "Vlog epizód tervező",
+      "d": "Tervezzen lebilincselő vlog epizódokat helyszínekkel, beszédpontokkal és vizuális változatossággal"
+    },
+    "Screenwriting Helper": {
+      "n": "Forgatókönyvírás segítő",
+      "d": "Fejlesszen forgatókönyveket megfelelő formázással, párbeszédekkel és jelenetrendezéssel"
+    },
+    "Short Film Script": {
+      "n": "Rövidfilm forgatókönyv",
+      "d": "Írjon teljes rövidfilm forgatókönyveket vizuális történetmeséléssel és tömör narratívával"
+    },
+    "Animation Script Writer": {
+      "n": "Animációs forgatókönyvíró",
+      "d": "Írjon animációs forgatókönyveket vizuális poénokkal, karaktercselekvésekkel és időzítési jelzésekkel"
+    },
+    "Video Editing Brief": {
+      "n": "Videószerkesztési brief",
+      "d": "Készítsen részletes videószerkesztési briefeket tempóval, effektekkel és stílus irányelvekkel"
+    },
+    "Livestream Run Sheet": {
+      "n": "Élő közvetítés menetrendje",
+      "d": "Tervezzen élő közvetítéseket időzített szegmensekkel, beszédpontokkal és elköteleződési triggerekkel"
+    },
+    "Tutorial Video Script": {
+      "n": "Oktatóvideó forgatókönyv",
+      "d": "Írjon világos oktatóvideó forgatókönyveket lépésről lépésre utasításokkal és vizuális elemekkel"
+    },
+    "Explainer Video Script": {
+      "n": "Magyarázó videó forgatókönyv",
+      "d": "Írjon világos magyarázó videó forgatókönyveket, amelyek vizuálisan egyszerűsítik az összetett témákat"
+    },
+    "Video SEO Optimizer": {
+      "n": "Videó SEO optimalizáló",
+      "d": "Optimalizálja a videó metaadatokat címekkel, leírásokkal, címkékkel és indexkép stratégiákkal"
+    },
+    "Novel Outline Creator": {
+      "n": "Regény vázlat készítő",
+      "d": "Készítsen átfogó regényvázlatokat cselekményszerkezettel, fejezetekkel és karakterívekkel"
+    },
+    "Short Story Writer": {
+      "n": "Novellaíró",
+      "d": "Írjon lebilincselő novellákat élénk karakterekkel és kielégítő befejezéssel"
+    },
+    "Poetry Generator": {
+      "n": "Költemény generátor",
+      "d": "Alkosson eredeti költeményeket különféle formákban képekkel, ritmussal és érzelemmel"
+    },
+    "Book Proposal Template": {
+      "n": "Könyvjavaslat sablon",
+      "d": "Készítsen professzionális könyvjavaslatokat piacelemzéssel és fejezet-összefoglalókkal"
+    },
+    "Memoir Outline": {
+      "n": "Memoár vázlat",
+      "d": "Strukturáljon személyes memoárokat tematikus fejezetekkel és reflektív narratívával"
+    },
+    "Children's Book Creator": {
+      "n": "Gyermekkönyv készítő",
+      "d": "Írjon korosztálynak megfelelő gyermekkönyveket lebilincselő történetekkel és illusztrációs jegyzetekkel"
+    },
+    "Screenplay Outline": {
+      "n": "Forgatókönyv vázlat",
+      "d": "Vázolja fel a forgatókönyvet háromfelvonásos szerkezettel, jelenetbontásokkal és párbeszédjegyzetekkel"
+    },
+    "Play Script Writer": {
+      "n": "Színdarab forgatókönyvíró",
+      "d": "Írjon színházi forgatókönyveket színpadi utasításokkal, párbeszédekkel és jelenetszerkezettel"
+    },
+    "Comic Book Script": {
+      "n": "Képregény forgatókönyv",
+      "d": "Írjon képregény forgatókönyveket panel-leírásokkal, párbeszédekkel és tempóval"
+    },
+    "Fan Fiction Creator": {
+      "n": "Rajongói fikció készítő",
+      "d": "Írjon rajongói fikciót hű karakterhangokkal és kreatív új történetszálakkal"
+    },
+    "Writing Prompt Generator": {
+      "n": "Írási témaötlet generátor",
+      "d": "Generáljon kreatív írási témákat műfajjal, megszorításokkal és történetcsírákkal"
+    },
+    "Dialogue Writer": {
+      "n": "Párbeszédíró",
+      "d": "Alkosson természetesen hangzó párbeszédeket, amelyek feltárják a karaktert és előreviszik a cselekményt"
+    },
+    "Plot Twist Generator": {
+      "n": "Cselekményfordulat generátor",
+      "d": "Generáljon meglepő, mégis logikus cselekményfordulatokat, amelyek újraértelmezik a narratívát"
+    },
+    "Query Letter Writer": {
+      "n": "Ajánlólevél író",
+      "d": "Írjon meggyőző ajánlóleveleket irodalmi ügynököknek horoggal és szinopszissal"
+    },
+    "Book Description Writer": {
+      "n": "Könyvleírás író",
+      "d": "Írjon meggyőző könyvleírásokat, amelyek megragadják az olvasókat és növelik az eladásokat"
+    },
+    "Ghostwriting Brief": {
+      "n": "Szellemírás brief",
+      "d": "Készítsen részletes szellemírás briefeket hang, stílus és tartalmi követelményekkel"
+    },
+    "Technical Writing Guide": {
+      "n": "Műszaki írás útmutató",
+      "d": "Írjon világos műszaki dokumentációt strukturált formázással és pontossággal"
+    },
+    "Grant Proposal Writer": {
+      "n": "Pályázatíró",
+      "d": "Írjon meggyőző pályázatokat projektleírásokkal és költségvetés-indoklással"
+    },
+    "White Paper Outline": {
+      "n": "Fehér könyv vázlat",
+      "d": "Strukturáljon hiteles fehér könyveket kutatással, elemzéssel és ajánlásokkal"
+    },
+    "Copywriting Formula": {
+      "n": "Szövegírási formula",
+      "d": "Alkalmazzon bevált szövegírási formulákat, mint az AIDA, PAS és BAB bármely termékhez vagy szolgáltatáshoz"
+    },
+    "Instagram Content Planner": {
+      "n": "Instagram tartalom tervező",
+      "d": "Tervezzen egy hét Instagram tartalmat bejegyzésekkel, sztorikkal, reelekkel és feliratokkal"
+    },
+    "X Thread Creator": {
+      "n": "X szál készítő",
+      "d": "Írjon lebilincselő X szálakat, amelyek építik a tekintélyt és növelik az elköteleződést"
+    },
+    "Reddit Post Writer": {
+      "n": "Reddit bejegyzés író",
+      "d": "Írjon Reddit bejegyzéseket adott subredditekhez optimalizálva, a közösségi normákat szem előtt tartva"
+    },
+    "Viral Hook Generator": {
+      "n": "Vírusos horog generátor",
+      "d": "Generáljon figyelemfelkeltő horgokat közösségi média tartalomhoz minden platformra"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Hashtag stratégia eszköz",
+      "d": "Kutasson és szervezzen hashtag stratégiákat a maximális felfedezhetőség érdekében"
+    },
+    "Engagement Response Generator": {
+      "n": "Elköteleződési válasz generátor",
+      "d": "Generáljon átgondolt válaszokat hozzászólásokra, üzenetekre és említésekre nagy mennyiségben"
+    },
+    "LinkedIn Article Writer": {
+      "n": "LinkedIn cikkíró",
+      "d": "Írjon véleményformáló LinkedIn cikkeket, amelyek megalapozzák a szakmai tekintélyt"
+    },
+    "Episode Show Notes": {
+      "n": "Epizód műsorjegyzetek",
+      "d": "Írjon részletes műsorjegyzeteket időbélyegekkel, linkekkel és fő tanulságokkal"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Podcast szerkesztési ellenőrzőlista",
+      "d": "Szabványosítsa a podcast szerkesztési munkafolyamatot minőségi ellenőrzőpontokkal és csiszolási lépésekkel"
+    },
+    "Prompt Improver": {
+      "n": "Prompt javító",
+      "d": "Finomítsa és optimalizálja bármely promptot jobb AI kimenetekért strukturált technikákkal"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Gondolatmenet szervező",
+      "d": "Építsen gondolatmenet promptokat, amelyek lépésről lépésre vezetik az AI-t a gondolkodásban"
+    },
+    "RAG Prompt Generator": {
+      "n": "RAG prompt generátor",
+      "d": "Készítsen visszakereséssel kiegészített generálási promptokat kontextusablak optimalizálással"
+    },
+    "Prompt Translator": {
+      "n": "Prompt fordító",
+      "d": "Fordítson promptokat különböző AI modellek között a szándék és minőség megőrzése mellett"
+    },
+    "Prompt Evaluator": {
+      "n": "Prompt értékelő",
+      "d": "Értékelje és pontozza a promptokat több minőségi dimenzió mentén javítási tippekkel"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Néhány példás tanítás generátor",
+      "d": "Generáljon kiváló minőségű néhány példás tanulási példákat kontextuson belüli tanulási promptokhoz"
+    },
+    "System Prompt Writer": {
+      "n": "Rendszer prompt író",
+      "d": "Írjon hatékony rendszer promptokat, amelyek meghatározzák az AI viselkedését, korlátait és kimeneti stílusát"
+    },
+    "AI Guardrails Designer": {
+      "n": "AI védőkorlát tervező",
+      "d": "Tervezzen biztonsági védőkorlátokat és tartalompolitikákat AI alkalmazásokhoz"
+    },
+    "AI Use Case Identifier": {
+      "n": "AI felhasználási eset azonosító",
+      "d": "Azonosítson és értékeljen lehetséges AI felhasználási eseteket vállalkozásokhoz és munkafolyamatokhoz"
+    },
+    "Model Comparison Guide": {
+      "n": "Modell-összehasonlító útmutató",
+      "d": "Hasonlítson össze AI modelleket képességek, árazás és felhasználási esetek szerint"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "LLM finomhangolási adat készítő",
+      "d": "Generáljon és strukturáljon betanítási adatokat LLM finomhangolási projektekhez"
+    },
+    "Debugger Assistant": {
+      "n": "Hibakereső asszisztens",
+      "d": "Szisztematikusan keresse meg a kódhibákat gyökérok-elemzéssel és javítási javaslatokkal"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "CI/CD csővezeték tervező",
+      "d": "Tervezzen CI/CD csővezetékeket build, teszt és telepítési fázis konfigurációkkal"
+    },
+    "Docker Configuration Guide": {
+      "n": "Docker konfigurációs útmutató",
+      "d": "Készítsen Dockerfile-okat és compose konfigurációkat bevált gyakorlatok alapján"
+    },
+    "Git Workflow Planner": {
+      "n": "Git munkafolyamat tervező",
+      "d": "Tervezzen Git elágazási stratégiákat és együttműködési munkafolyamatokat fejlesztői csapatoknak"
+    },
+    "Code Migration Guide": {
+      "n": "Kódmigrációs útmutató",
+      "d": "Tervezzen és hajtson végre kódmigrációkat nyelvek, keretrendszerek vagy verziók között"
+    },
+    "Database Schema Designer": {
+      "n": "Adatbázisséma tervező",
+      "d": "Tervezzen adatbázissémákat táblákkal, kapcsolatokkal, indexekkel és megszorításokkal"
+    },
+    "Performance Optimization Guide": {
+      "n": "Teljesítmény-optimalizálási útmutató",
+      "d": "Azonosítson és oldjon meg teljesítményszűk keresztmetszeteket profilozással és optimalizálási stratégiákkal"
+    },
+    "Microservices Architecture": {
+      "n": "Mikroszolgáltatás architektúra",
+      "d": "Tervezzen mikroszolgáltatás architektúrákat szolgáltatáshatárokkal, kommunikációval és telepítéssel"
+    },
+    "GraphQL Schema Builder": {
+      "n": "GraphQL séma építő",
+      "d": "Tervezzen GraphQL sémákat típusokkal, lekérdezésekkel, mutációkkal és feliratkozásokkal"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform konfiguráció",
+      "d": "Generáljon Terraform konfigurációkat felhő infrastruktúra kiépítéséhez"
+    },
+    "AWS Architecture Planner": {
+      "n": "AWS architektúra tervező",
+      "d": "Tervezzen AWS felhő architektúrákat szolgáltatásválasztással és költségoptimalizálással"
+    },
+    "Code Documentation Generator": {
+      "n": "Kód dokumentáció generátor",
+      "d": "Generáljon inline dokumentációt, JSDoc-ot, docstringeket és kódkommenteket"
+    },
+    "Technical Interview Prep": {
+      "n": "Műszaki interjú felkészítő",
+      "d": "Készüljön fel műszaki interjúkra problémabontásokkal és megoldási mintákkal"
+    },
+    "Changelog Writer": {
+      "n": "Változásnapló író",
+      "d": "Írjon világos változásnaplókat a Keep a Changelog formátum szerint szemantikus verziókezeléssel"
+    },
+    "Error Handling Strategy": {
+      "n": "Hibakezelési stratégia",
+      "d": "Tervezzen átfogó hibakezelési stratégiákat mintákkal és felhasználói üzenetekkel"
+    },
+    "Logging Strategy Guide": {
+      "n": "Naplózási stratégia útmutató",
+      "d": "Tervezzen alkalmazás naplózási stratégiákat szintekkel, formátumokkal és aggregációval"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Monitorozás beállítási útmutató",
+      "d": "Állítson be alkalmazás monitorozást mérőszámokkal, riasztásokkal és műszerfalakkal"
+    },
+    "Load Testing Plan": {
+      "n": "Terheléstesztelési terv",
+      "d": "Tervezzen terheléstesztelési terveket forgatókönyvekkel, mérőszámokkal és elfogadási kritériumokkal"
+    },
+    "Security Audit Checklist": {
+      "n": "Biztonsági audit ellenőrzőlista",
+      "d": "Végezzen biztonsági auditokat OWASP alapú ellenőrzőlistákkal és javítási útmutatással"
+    },
+    "Security Checklist Creator": {
+      "n": "Biztonsági ellenőrzőlista készítő",
+      "d": "Generáljon átfogó biztonsági ellenőrzőlistákat az alkalmazásához és technológiai verméhez szabva"
+    },
+    "Penetration Testing Plan": {
+      "n": "Behatolástesztelési terv",
+      "d": "Tervezzen strukturált behatolásteszteket hatókörrel, módszertannal és jelentési sablonokkal"
+    },
+    "Secure Coding Guide": {
+      "n": "Biztonságos kódolási útmutató",
+      "d": "Készítsen nyelvspecifikus biztonságos kódolási irányelveket sebezhetőség-megelőzéssel"
+    },
+    "Incident Response Plan": {
+      "n": "Incidenskezelési terv",
+      "d": "Tervezzen incidenskezelési terveket észleléssel, elszigetelési és helyreállítási eljárásokkal"
+    },
+    "Security Policy Writer": {
+      "n": "Biztonsági szabályzat író",
+      "d": "Írjon szervezeti biztonsági szabályzatokat hozzáférés-vezérlésre, adatkezelésre és megfelelőségre vonatkozóan"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Sebezhetőség-értékelési útmutató",
+      "d": "Végezzen szisztematikus sebezhetőség-értékeléseket szkennéssel és priorizált javítással"
+    },
+    "Security Awareness Training": {
+      "n": "Biztonságtudatossági képzés",
+      "d": "Tervezzen biztonságtudatossági képzési programokat minden szintű alkalmazottnak"
+    },
+    "Password Policy Creator": {
+      "n": "Jelszószabályzat készítő",
+      "d": "Készítsen robusztus jelszószabályzatokat összetettségi, rotációs és MFA követelményekkel"
+    },
+    "Data Protection Plan": {
+      "n": "Adatvédelmi terv",
+      "d": "Tervezzen adatvédelmi stratégiákat osztályozással, titkosítással és megőrzéssel"
+    },
+    "SWOT Analysis Pro": {
+      "n": "SWOT elemzés Pro",
+      "d": "Haladó SWOT elemzés súlyozott pontozással és cselekvési tervekkel"
+    },
+    "Pitch Deck Outline": {
+      "n": "Bemutató prezentáció vázlat",
+      "d": "Készítsen meggyőző befektetői prezentáció szerkezetet"
+    },
+    "Business Canvas Creator": {
+      "n": "Üzleti vászon készítő",
+      "d": "Generáljon teljes üzleti modell vásznat vállalkozásához"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Versenytársi hírszerzési jelentés",
+      "d": "Elemezze a versenytársakat és azonosítsa a piaci pozicionálási lehetőségeket"
+    },
+    "Strategic Planning Guide": {
+      "n": "Stratégiai tervezési útmutató",
+      "d": "Dolgozzon ki többéves stratégiai tervet célokkal és mérföldkövekkel"
+    },
+    "Annual Report Template": {
+      "n": "Éves jelentés sablon",
+      "d": "Strukturálja vállalata éves jelentését kulcsfontosságú pénzügyi és működési kiemelésekkel"
+    },
+    "Board Meeting Agenda": {
+      "n": "Igazgatótanácsi ülés napirendje",
+      "d": "Professzionális igazgatótanácsi ülés napirend vállalatirányítási bevált gyakorlatokkal"
+    },
+    "Company Newsletter": {
+      "n": "Vállalati hírlevél",
+      "d": "Tervezzen lebilincselő belső vagy külső vállalati hírlevelet"
+    },
+    "Employee Survey Creator": {
+      "n": "Munkavállalói felmérés készítő",
+      "d": "Készítsen hatékony munkavállalói elköteleződési és elégedettségi felméréseket"
+    },
+    "Team Building Activity Planner": {
+      "n": "Csapatépítő tevékenység tervező",
+      "d": "Tervezzen lebilincselő csapatépítő eseményeket és tevékenységeket"
+    },
+    "Remote Work Policy": {
+      "n": "Távmunka szabályzat",
+      "d": "Készítsen átfogó távmunka szabályzatot szervezetéhez"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Sokszínűségi és befogadási terv",
+      "d": "Dolgozzon ki értelmes sokszínűségi, méltányossági és befogadási stratégiát"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Beszállító értékelési mátrix",
+      "d": "Szisztematikusan értékelje és hasonlítsa össze a beszállítókat beszerzési döntésekhez"
+    },
+    "Process Improvement Plan": {
+      "n": "Folyamatfejlesztési terv",
+      "d": "Azonosítson és vezessen be folyamatfejlesztéseket lean módszertanokkal"
+    },
+    "Change Management Plan": {
+      "n": "Változáskezelési terv",
+      "d": "Vezesse a szervezeti változást az érdekelt felek összehangolásával és kommunikációval"
+    },
+    "Risk Assessment Template": {
+      "n": "Kockázatértékelési sablon",
+      "d": "Azonosítsa, értékelje és mérsékelje az üzleti kockázatokat szisztematikusan"
+    },
+    "Succession Planning Guide": {
+      "n": "Utódlástervezési útmutató",
+      "d": "Tervezze meg a vezetői átmeneteket és a tehetségpipeline fejlesztését"
+    },
+    "Business Continuity Plan": {
+      "n": "Üzletfolytonossági terv",
+      "d": "Készüljön fel a zavarokra átfogó folytonossági stratégiával"
+    },
+    "Customer Journey Map": {
+      "n": "Ügyfélút térkép",
+      "d": "Vizualizálja és optimalizálja a teljes ügyfélélményt"
+    },
+    "Brand Guidelines Template": {
+      "n": "Márka irányelvek sablon",
+      "d": "Határozza meg márkaidentitását átfogó stílus- és használati irányelvekkel"
+    },
+    "Mission & Vision Statement": {
+      "n": "Küldetés- és jövőkép nyilatkozat",
+      "d": "Fogalmazzon inspiráló küldetés- és jövőkép nyilatkozatokat szervezetéhez"
+    },
+    "Company Culture Document": {
+      "n": "Vállalati kultúra dokumentum",
+      "d": "Határozza meg és dokumentálja szervezeti kultúráját és értékeit"
+    },
+    "Organizational Chart Planner": {
+      "n": "Szervezeti diagram tervező",
+      "d": "Tervezze meg szervezeti struktúráját és jelentési vonalait"
+    },
+    "Department Budget Template": {
+      "n": "Részleg költségvetési sablon",
+      "d": "Készítsen részletes részleg költségvetéseket előrejelzéssel és nyomon követéssel"
+    },
+    "KPI Dashboard Builder": {
+      "n": "KPI műszerfal készítő",
+      "d": "Tervezzen kulcsfontosságú teljesítménymutató műszerfalakat adatvezérelt döntésekhez"
+    },
+    "Job Description Writer": {
+      "n": "Munkaköri leírás író",
+      "d": "Készítsen világos és befogadó munkaköri leírásokat, amelyek vonzzák a legjobb tehetségeket"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Interjú értékelőlap készítő",
+      "d": "Készítsen strukturált interjú értékelőlapokat az egységes jelöltértékeléshez"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Munkavállalói beilleszkedési ellenőrzőlista",
+      "d": "Átfogó beilleszkedési ellenőrzőlista az új munkatársak sikeréhez"
+    },
+    "Performance Improvement Plan": {
+      "n": "Teljesítményjavítási terv",
+      "d": "Készítsen támogató teljesítményjavítási terveket világos mérföldkövekkel"
+    },
+    "Exit Interview Guide": {
+      "n": "Kilépési interjú útmutató",
+      "d": "Vezessen tanulságos kilépési interjúkat a megtartás javításához"
+    },
+    "Compensation Analysis": {
+      "n": "Kompenzációelemzés",
+      "d": "Elemezze és hasonlítsa össze a kompenzációs csomagokat a piaci versenyképesség érdekében"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Juttatás-összehasonlító útmutató",
+      "d": "Hasonlítsa össze és értékelje a munkavállalói juttatási csomagokat"
+    },
+    "Team Retrospective": {
+      "n": "Csapat retrospektív",
+      "d": "Vezessen hatékony csapat retrospektíveket a folyamatos fejlődés érdekében"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Személyes megbeszélés sablon",
+      "d": "Strukturáljon produktív személyes megbeszéléseket közvetlen beosztottakkal"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Toborzási csővezeték tervező",
+      "d": "Tervezzen és optimalizáljon toborzási csővezetéket elejétől a végéig"
+    },
+    "Employee Recognition Program": {
+      "n": "Munkavállalói elismerési program",
+      "d": "Építsen értelmes munkavállalói elismerési és jutalmazási programot"
+    },
+    "Training Program Designer": {
+      "n": "Képzési program tervező",
+      "d": "Tervezzen hatékony munkavállalói képzési és fejlesztési programokat"
+    },
+    "Workplace Policy Writer": {
+      "n": "Munkahelyi szabályzat író",
+      "d": "Fogalmazzon világos munkahelyi szabályzatokat kulcsfontosságú szervezeti témákban"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Konfliktuskezelési útmutató",
+      "d": "Navigáljon munkahelyi konfliktusokban strukturált megoldási keretrendszerekkel"
+    },
+    "Remote Team Handbook": {
+      "n": "Távoli csapat kézikönyv",
+      "d": "Készítsen átfogó kézikönyvet az elosztott csapat működéséhez"
+    },
+    "Career Path Planner": {
+      "n": "Karrierút tervező",
+      "d": "Térképezze fel karrierpályáját cselekvőképes mérföldkövekkel"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Fizetési tárgyalás felkészítő",
+      "d": "Készítsen magabiztos fizetési tárgyalási beszédpontokat és stratégiákat"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "LinkedIn profil építő",
+      "d": "Optimalizálja LinkedIn profilját toborzók és lehetőségek vonzásához"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Portfólió készítő útmutató",
+      "d": "Készítsen kiemelkedő professzionális portfóliót legjobb munkáinak bemutatásával"
+    },
+    "Networking Email Templates": {
+      "n": "Kapcsolatépítő e-mail sablonok",
+      "d": "Írjon hatékony kapcsolatépítő e-maileket karriernövekedéshez és bemutatkozásokhoz"
+    },
+    "Career Pivot Guide": {
+      "n": "Karrierváltás útmutató",
+      "d": "Navigáljon sikeres karrierváltást strukturált tervvel"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Szabadúszó díjkalkulátor",
+      "d": "Számítsa ki az ideális szabadúszó díjat és árstratégiát"
+    },
+    "Professional Development Plan": {
+      "n": "Szakmai fejlődési terv",
+      "d": "Készítsen strukturált tervet a folyamatos szakmai fejlődéshez"
+    },
+    "Mentorship Program Guide": {
+      "n": "Mentorprogram útmutató",
+      "d": "Találjon, strukturáljon és maximalizáljon mentori kapcsolatokat"
+    },
+    "Side Hustle Validator": {
+      "n": "Mellékállás validátor",
+      "d": "Értékelje és validálja mellékállás ötleteit életképesség szempontjából"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Munka-magánélet egyensúly audit",
+      "d": "Értékelje és javítsa munka-magánélet egyensúlyát cselekvőképes stratégiákkal"
+    },
+    "Speaking Proposal Template": {
+      "n": "Előadási javaslat sablon",
+      "d": "Készítsen meggyőző konferencia és rendezvény előadási javaslatokat"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Tanácsadási ajánlat író",
+      "d": "Fogalmazzon nyerő tanácsadási ajánlatokat, amelyek meggyőzik az ügyfeleket"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Készségdeficit elemző",
+      "d": "Azonosítsa és tervezze meg a kritikus készségdeficitek pótlását a karrierelőrelépéshez"
+    },
+    "Career Journal Prompts": {
+      "n": "Karriernapló témák",
+      "d": "Reflektáljon karrierútjára irányított naplóírási gyakorlatokkal"
+    },
+    "Informational Interview Guide": {
+      "n": "Tájékoztató interjú útmutató",
+      "d": "Készüljön fel és vezessen hatékony tájékoztató interjúkat"
+    },
+    "Thank You Note Writer": {
+      "n": "Köszönőlevél író",
+      "d": "Írjon átgondolt professzionális köszönőleveleket bármely alkalomra"
+    },
+    "Resignation Letter Template": {
+      "n": "Felmondólevél sablon",
+      "d": "Írjon professzionális felmondólevelet a pozitív kapcsolatok fenntartásával"
+    },
+    "Meal Prep Planner": {
+      "n": "Étkezés-előkészítő tervező",
+      "d": "Tervezzen heti étkezéseket bevásárlólistákkal és előkészítési ütemtervvel"
+    },
+    "Habit Tracker Designer": {
+      "n": "Szokáskövető tervező",
+      "d": "Tervezzen személyre szabott szokáskövető rendszert tartós változáshoz"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Alvásfejlesztő útmutató",
+      "d": "Optimalizálja alvásminőségét tudományosan megalapozott stratégiákkal"
+    },
+    "Stress Management Plan": {
+      "n": "Stresszkezelési terv",
+      "d": "Építsen személyre szabott stresszkezelési eszköztárat és cselekvési tervet"
+    },
+    "Yoga Routine Builder": {
+      "n": "Jóga rutin építő",
+      "d": "Készítsen testreszabott jóga rutinokat szintjéhez és céljaihoz"
+    },
+    "Running Training Plan": {
+      "n": "Futóedzésterv",
+      "d": "Készítsen strukturált futóedzéstervet bármely távlati célhoz"
+    },
+    "Swimming Workout": {
+      "n": "Úszó edzésterv",
+      "d": "Tervezzen hatékony úszó edzéseket fittséghez és technikafejlesztéshez"
+    },
+    "Strength Training Program": {
+      "n": "Erőnléti edzésprogram",
+      "d": "Készítsen progresszív erőnléti edzésprogramot céljaihoz igazítva"
+    },
+    "Flexibility Routine": {
+      "n": "Rugalmassági rutin",
+      "d": "Javítsa rugalmasságát és mobilitását strukturált nyújtási rutinokkal"
+    },
+    "HIIT Workout Creator": {
+      "n": "HIIT edzés készítő",
+      "d": "Tervezzen magas intenzitású intervallum edzéseket maximális eredményekért"
+    },
+    "Nutrition Label Reader": {
+      "n": "Táplálkozási címke olvasó",
+      "d": "Tanulja meg olvasni és megérteni a táplálkozási címkéket egészségesebb választásokért"
+    },
+    "Calorie Counter Guide": {
+      "n": "Kalóriaszámláló útmutató",
+      "d": "Állítson be személyre szabott kalórianyilvántartást makrotápanyag bontással"
+    },
+    "Hydration Tracker": {
+      "n": "Folyadékbevitel nyomkövető",
+      "d": "Kövesse nyomon és optimalizálja napi vízfogyasztását és hidratálási szokásait"
+    },
+    "Mental Health Check-In": {
+      "n": "Mentális egészség ellenőrzés",
+      "d": "Irányított mentális egészség önértékelés és jóllét nyomon követés"
+    },
+    "Therapy Session Prep": {
+      "n": "Terápiás ülés felkészítő",
+      "d": "Készüljön fel a terápiás ülésekre strukturált reflexióval és célmeghatározással"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Hálanapolási témák",
+      "d": "Napi hálanaplóírási témák a mentális jóllét javításához"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Tudatossági gyakorlat készítő",
+      "d": "Készítsen személyre szabott tudatossági és légzőgyakorlatokat"
+    },
+    "Supplement Research Guide": {
+      "n": "Étrendkiegészítő kutatási útmutató",
+      "d": "Kutasson és értékeljen étrendkiegészítőket egészségügyi céljai alapján"
+    },
+    "Allergy Management Plan": {
+      "n": "Allergiakezelési terv",
+      "d": "Készítsen átfogó allergiakezelési és elkerülési stratégiát"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Krónikus betegség nyomkövető",
+      "d": "Kövesse nyomon a tüneteket, gyógyszereket és kiváltó okokat krónikus egészségügyi állapotoknál"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Gyógytorna gyakorlatnapló",
+      "d": "Naplózza és kövesse nyomon a gyógytorna gyakorlatokat és a felépülési haladást"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonómikus munkahely beállítás",
+      "d": "Optimalizálja munkahelyét a kényelem, egészség és termelékenység érdekében"
+    },
+    "Digital Detox Planner": {
+      "n": "Digitális méregtelenítés tervező",
+      "d": "Tervezzen és hajtson végre digitális méregtelenítést a jobb mentális jóllét érdekében"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Önápolási rutin építő",
+      "d": "Építsen fenntartható önápolási rutint a jóllét minden dimenziójában"
+    },
+    "First Aid Guide": {
+      "n": "Elsősegélynyújtási útmutató",
+      "d": "Gyors hivatkozású elsősegélynyújtási eljárások gyakori vészhelyzetekhez"
+    },
+    "To-Do List Power Planner": {
+      "n": "Teendőlista hatékony tervező",
+      "d": "Készítsen priorizált teendőlistákat időbecslésekkel és energiaszintekkel"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Napi menetrend optimalizáló",
+      "d": "Tervezzen optimalizált napi menetrendet energiamintái alapján"
+    },
+    "Project Planner Pro": {
+      "n": "Projekt tervező Pro",
+      "d": "Tervezzen projekteket mérföldkövekkel, eredményekkel és erőforrás-elosztással"
+    },
+    "Decision Matrix Builder": {
+      "n": "Döntési mátrix készítő",
+      "d": "Hozzon jobb döntéseket súlyozott kritérium-elemzéssel"
+    },
+    "Weekly Review Template": {
+      "n": "Heti áttekintés sablon",
+      "d": "Végezzen alapos heti áttekintéseket céljai nyomon követéséhez"
+    },
+    "Morning Routine Designer": {
+      "n": "Reggeli rutin tervező",
+      "d": "Tervezzen energizáló reggeli rutint a csúcsteljesítményhez"
+    },
+    "Evening Routine Creator": {
+      "n": "Esti rutin készítő",
+      "d": "Készítsen nyugtató esti rutint a jobb pihenéshez és másnapi felkészüléshez"
+    },
+    "Time Blocking Schedule": {
+      "n": "Időblokkolás ütemterv",
+      "d": "Szervezze napját fókuszált időblokkokkal a maximális termelékenység érdekében"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Eisenhower mátrix eszköz",
+      "d": "Kategorizálja feladatait sürgősség és fontosság szerint a jobb priorizáláshoz"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Pomodoro ülés tervező",
+      "d": "Tervezzen fókuszált munkaüléseket a Pomodoro technikával"
+    },
+    "Goal Tracking System": {
+      "n": "Célkövető rendszer",
+      "d": "Állítson be átfogó célkövető rendszert haladási mérőszámokkal"
+    },
+    "Quarterly Planning Template": {
+      "n": "Negyedéves tervezési sablon",
+      "d": "Tervezze meg negyedévét stratégiai célokkal és cselekvőképes célkitűzésekkel"
+    },
+    "Annual Review Template": {
+      "n": "Éves áttekintés sablon",
+      "d": "Végezzen alapos éves áttekintést az elért eredményekről és tűzzön ki jövőbeli célokat"
+    },
+    "Meeting Notes Template": {
+      "n": "Megbeszélés-jegyzet sablon",
+      "d": "Rögzítsen cselekvőképes megbeszélésjegyzeteket döntésekkel és utánkövetésekkel"
+    },
+    "Brain Dump Organizer": {
+      "n": "Gondolatkiöntés szervező",
+      "d": "Alakítsa át a kaotikus gondolatokat szervezett, cselekvőképes kategóriákká"
+    },
+    "Delegation Framework": {
+      "n": "Delegálási keretrendszer",
+      "d": "Azonosítsa, mit érdemes delegálni, és készítsen világos delegálási briefeket"
+    },
+    "Focus Session Planner": {
+      "n": "Fókusz munkamenet tervező",
+      "d": "Tervezzen mélyfókuszú munkaüléseket környezet- és zavaráselemzéssel"
+    },
+    "Energy Management Guide": {
+      "n": "Energiamenedzsment útmutató",
+      "d": "Optimalizálja energiaszintjeit a nap folyamán a csúcsteljesítmény érdekében"
+    },
+    "Batch Processing Planner": {
+      "n": "Kötegelt feldolgozás tervező",
+      "d": "Csoportosítson hasonló feladatokat hatékony kötegelt feldolgozási ülésekhez"
+    },
+    "System Documentation Template": {
+      "n": "Rendszer dokumentációs sablon",
+      "d": "Dokumentáljon személyes és csapatrendszereket az egységesség és beilleszkedés érdekében"
+    },
+    "Project Kickoff Template": {
+      "n": "Projekt indítósablon",
+      "d": "Indítson projekteket világos célkitűzésekkel, hatókörrel és csapatösszehangolással"
+    },
+    "Sprint Planning Guide": {
+      "n": "Sprint tervezési útmutató",
+      "d": "Tervezzen hatékony sprinteket felhasználói történetekkel, becslésekkel és kapacitással"
+    },
+    "Kanban Board Setup": {
+      "n": "Kanban tábla beállítás",
+      "d": "Tervezzen és konfiguráljon Kanban táblát vizuális munkafolyamat-kezeléshez"
+    },
+    "Gantt Chart Planner": {
+      "n": "Gantt diagram tervező",
+      "d": "Készítsen részletes projekt idővonalakat függőségekkel és mérföldkövekkel"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Erőforrás-elosztási mátrix",
+      "d": "Tervezzen és optimalizáljon erőforrás-elosztást projektek és csapatok között"
+    },
+    "Status Report Template": {
+      "n": "Állapotjelentés sablon",
+      "d": "Készítsen világos projekt állapotjelentéseket az érdekelt felek kommunikációjához"
+    },
+    "Risk Register Creator": {
+      "n": "Kockázati nyilvántartás készítő",
+      "d": "Építsen és tartson fenn átfogó projekt kockázati nyilvántartást"
+    },
+    "Lessons Learned Template": {
+      "n": "Tanulságok sablon",
+      "d": "Rögzítse és dokumentálja a projekt tanulságait jövőbeli fejlesztéshez"
+    },
+    "Requirements Document": {
+      "n": "Követelmény dokumentum",
+      "d": "Gyűjtse össze és dokumentálja a projektkövetelményeket elfogadási kritériumokkal"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Felhasználói elfogadási tesztelési terv",
+      "d": "Készítsen strukturált UAT terveket tesztesetekkel és jóváhagyási kritériumokkal"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Érdekelt felek kommunikációs terve",
+      "d": "Tervezze meg az érdekelt felek kommunikációját csatornákkal, gyakorisággal és üzenetekkel"
+    },
+    "Project Timeline Creator": {
+      "n": "Projekt idővonal készítő",
+      "d": "Készítsen részletes projekt idővonalakat fázisokkal és eredményekkel"
+    },
+    "Agile Retrospective": {
+      "n": "Agilis retrospektív",
+      "d": "Vezessen produktív agilis retrospektíveket változatos formátumokkal"
+    },
+    "Scope Document Writer": {
+      "n": "Hatókör dokumentum író",
+      "d": "Határozza meg a projekt hatókörét határokkal, eredményekkel és kizárásokkal"
+    },
+    "Project Closure Report": {
+      "n": "Projektzárási jelentés",
+      "d": "Dokumentálja a projekt befejezését eredményekkel és végső értékelésekkel"
+    },
+    "Conversation Practice Partner": {
+      "n": "Társalgás gyakorló partner",
+      "d": "Gyakoroljon társalgást célnyelvén valósághű forgatókönyvekkel"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Szókincsfejlesztő Pro",
+      "d": "Építsen szókincset kontextus példákkal és ismétléses tanulási jelzésekkel"
+    },
+    "Grammar Coach": {
+      "n": "Nyelvtani edző",
+      "d": "Tanuljon és gyakoroljon nyelvtani szabályokat világos magyarázatokkal és feladatokkal"
+    },
+    "Translation Helper": {
+      "n": "Fordítási segítő",
+      "d": "Kapjon pontos fordításokat kontextussal és használati megjegyzésekkel"
+    },
+    "Language Exchange Prep": {
+      "n": "Nyelvi csere felkészítő",
+      "d": "Készüljön fel nyelvi csere ülésekre strukturált beszélgetési témákkal"
+    },
+    "Travel Phrase Book": {
+      "n": "Utazási kifejezéstár",
+      "d": "Alapvető utazási kifejezések szituációk szerint rendezve úticéljához"
+    },
+    "Business Language Guide": {
+      "n": "Üzleti nyelvezet útmutató",
+      "d": "Tanuljon professzionális nyelvet üzleti környezetekhez és kommunikációhoz"
+    },
+    "Accent Improvement Guide": {
+      "n": "Kiejtésjavító útmutató",
+      "d": "Javítsa kiejtését és akcentusát célzott gyakorlatokkal"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Szövegértési gyakorlat",
+      "d": "Javítsa olvasási készségeit szintezett szövegekkel és szövegértési kérdésekkel"
+    },
+    "Writing Practice Creator": {
+      "n": "Íráskészség gyakorlat készítő",
+      "d": "Gyakoroljon írást célnyelvén irányított feladatokkal és visszajelzéssel"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Hallás utáni értés útmutató",
+      "d": "Javítsa hallás utáni értési készségeit strukturált gyakorlatokkal és stratégiákkal"
+    },
+    "Cultural Context Guide": {
+      "n": "Kulturális kontextus útmutató",
+      "d": "Értse meg a kulturális árnyalatokat és illemszabályokat a hatékony kommunikációhoz"
+    },
+    "Room Layout Planner": {
+      "n": "Szoba elrendezés tervező",
+      "d": "Tervezzen optimális szoba elrendezéseket bútorelhelyezéssel és közlekedéssel"
+    },
+    "Color Palette Creator": {
+      "n": "Színpaletta készítő",
+      "d": "Generáljon egységes színpalettákat szobákhoz és tervezési projektekhez"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Bútorvásárlási útmutató",
+      "d": "Okos bútorvásárlás stílus-illesztéssel és költségvetés-tervezéssel"
+    },
+    "Home Decor Style Finder": {
+      "n": "Lakásdekoráció stíluskereső",
+      "d": "Fedezze fel belső építészeti stílusát irányított értékeléssel"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Kapszulagardrób építő",
+      "d": "Építsen sokoldalú kapszulagardróbot, amely maximalizálja az öltözetkombinációkat"
+    },
+    "Outfit Planner": {
+      "n": "Öltözet tervező",
+      "d": "Tervezzen öltözeteket a hétre vagy különleges eseményekre meglévő ruhatárából"
+    },
+    "Personal Style Guide": {
+      "n": "Személyes stílus útmutató",
+      "d": "Határozza meg személyes stílusidentitását és vásárlási irányelveit"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Szezonális gardrób frissítés",
+      "d": "Frissítse gardróbját minden szezonban stratégiai kiegészítésekkel és szerkesztésekkel"
+    },
+    "Home Office Setup Guide": {
+      "n": "Otthoni iroda beállítási útmutató",
+      "d": "Tervezzen produktív és stílusos otthoni irodai teret"
+    },
+    "Bathroom Design Planner": {
+      "n": "Fürdőszoba tervezés tervező",
+      "d": "Tervezzen fürdőszoba felújításokat és frissítéseket stílussal és funkcionalitással"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Hackathon ötletgenerátor",
+      "d": "Ötleteljen és validáljon hackathon projektötleteket témák és korlátok alapján"
+    },
+    "MVP Builder Guide": {
+      "n": "MVP építő útmutató",
+      "d": "Tervezzen és építsen minimálisan életképes terméket szoros hackathon határidőn belül"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon bemutató prezentáció",
+      "d": "Készítsen meggyőző prezentációt hackathon projektje zsűri elé történő bemutatásához"
+    },
+    "Technical Architecture Planner": {
+      "n": "Műszaki architektúra tervező",
+      "d": "Tervezze meg hackathon projektje műszaki architektúráját gyorsan"
+    },
+    "Hackathon Team Builder": {
+      "n": "Hackathon csapatépítő",
+      "d": "Állítson össze kiegyensúlyozott hackathon csapatot kiegészítő készségekkel és tiszta szerepekkel"
+    },
+    "Demo Day Script": {
+      "n": "Demo nap forgatókönyv",
+      "d": "Írjon csiszolt élő demó forgatókönyvet, amely kiemeli projektje fő jellemzőit"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Bírálati kritérium elemző",
+      "d": "Elemezze a hackathon bírálati szempontjait és optimalizálja projektjét ennek megfelelően"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Hackathon idővonal tervező",
+      "d": "Bontsa le hackathon óráit strukturált sprint ütemtervbe"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Díjstratégiai tanácsadó",
+      "d": "Stratégiailag célozza meg az adott díjkategóriákat és szabja projektjét a győzelemhez"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Hackathon utáni cselekvési terv",
+      "d": "Alakítsa hackathon projektjét valódi termékké vagy portfólió darabká"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Gyors prototípus-készítési útmutató",
+      "d": "Gyorsan készítsen prototípust és iteráljon hackathon koncepcióján korlátozott idő alatt"
+    },
+    "Hackathon Submission Template": {
+      "n": "Hackathon beadási sablon",
+      "d": "Készítsen teljes és csiszolt hackathon beadást minden szükséges anyaggal"
+    },
+    "Game Design Document": {
+      "n": "Játéktervezési dokumentum",
+      "d": "Készítsen átfogó játéktervezési dokumentumot játéka minden aspektusát lefedve"
+    },
+    "Game Mechanics Designer": {
+      "n": "Játékmechanika tervező",
+      "d": "Tervezzen és egyensúlyozzon ki alap játékmechanikákat vonzó játékélményhez"
+    },
+    "Level Design Planner": {
+      "n": "Pálya tervezés tervező",
+      "d": "Tervezzen játékpályákat tempóval, kihívásokkal és környezeti történetmeséléssel"
+    },
+    "Game Economy Balancer": {
+      "n": "Játékgazdaság kiegyensúlyozó",
+      "d": "Tervezzen és egyensúlyozzon játékon belüli gazdaságokat igazságos és vonzó haladásért"
+    },
+    "Character Stats Builder": {
+      "n": "Karakter statisztika építő",
+      "d": "Készítsen kiegyensúlyozott karakter statisztikai rendszereket és osztály-archetípusokat"
+    },
+    "Quest Designer": {
+      "n": "Küldetés tervező",
+      "d": "Tervezzen lebilincselő küldetéseket elágazó narratívákkal és értékes jutalmakkal"
+    },
+    "Game UI/UX Planner": {
+      "n": "Játék UI/UX tervező",
+      "d": "Tervezzen intuitív játék felhasználói felületet és felhasználói élmény folyamatokat"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Asztali RPG kampány",
+      "d": "Építsen asztali RPG kampányt világ háttértörténettel, NPC-kkel és történetívekkel"
+    },
+    "Board Game Designer": {
+      "n": "Társasjáték tervező",
+      "d": "Tervezzen társasjátékot a koncepciótól a prototípusig kiegyensúlyozott szabályokkal"
+    },
+    "Game Testing Checklist": {
+      "n": "Játéktesztelési ellenőrzőlista",
+      "d": "Készítsen átfogó QA tesztelési ellenőrzőlistát játékához"
+    },
+    "Photo Shoot Planner": {
+      "n": "Fotózás tervező",
+      "d": "Tervezzen teljes fotózást a koncepciótól a megvalósításig minden logisztikával"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Fotós portfólió útmutató",
+      "d": "Válogatja össze és rendezze kiemelkedő fotóportfólióját ügyfeleknek vagy kiállításokhoz"
+    },
+    "Photo Editing Workflow": {
+      "n": "Fotószerkesztési munkafolyamat",
+      "d": "Építsen hatékony fotószerkesztési munkafolyamatot importálástól a végső exportálásig"
+    },
+    "Client Photography Brief": {
+      "n": "Ügyfél fotózási brief",
+      "d": "Készítsen professzionális fotózási briefet ügyfélprojektekhez"
+    },
+    "Landscape Photography Guide": {
+      "n": "Tájfotózási útmutató",
+      "d": "Tervezzen tájfotózási kirándulásokat időjárási, időzítési és kompozíciós tippekkel"
+    },
+    "Portrait Photography Tips": {
+      "n": "Portréfotózási tippek",
+      "d": "Útmutató meggyőző portrék készítéséhez megvilágítási és pózolási iránymutatással"
+    },
+    "Product Photography Setup": {
+      "n": "Termékfotózás beállítás",
+      "d": "Állítson be professzionális termékfotózást megfelelő megvilágítással és díszletezéssel"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Esküvői fotózás idővonal",
+      "d": "Tervezzen teljes esküvői nap fotózási idővonalat a készülődéstől a fogadásig"
+    },
+    "Street Photography Guide": {
+      "n": "Utcai fotózás útmutató",
+      "d": "Tippek és technikák hiteles és lenyűgöző utcai fotózáshoz"
+    },
+    "Astrophotography Planner": {
+      "n": "Asztrofotográfiai tervező",
+      "d": "Tervezzen asztrofotográfiai üléseket felszerelés-beállításokkal és égi eseményekkel"
+    },
+    "Character Design Brief": {
+      "n": "Karaktertervezési brief",
+      "d": "Készítsen részletes karaktertervezési briefeket személyiséggel, megjelenéssel és háttértörténettel"
+    },
+    "Comic Strip Creator": {
+      "n": "Képregénycsík készítő",
+      "d": "Tervezzen és készítsen képregénycsíkokat panel-elrendezéssel, párbeszéddel és tempóval"
+    },
+    "World Building Guide": {
+      "n": "Világépítési útmutató",
+      "d": "Tervezzen magával ragadó fiktív világokat földrajzzal, kultúrákkal és háttértörténettel"
+    },
+    "Children's Book Illustrator": {
+      "n": "Gyermekkönyv illusztrátor",
+      "d": "Tervezzen illusztrációkat gyermekkönyvekhez korosztálynak megfelelő stílussal és tempóval"
+    },
+    "Art Portfolio Curator": {
+      "n": "Művészeti portfólió kurátor",
+      "d": "Válogasson és mutasson be művészeti portfóliót galériáknak, ügyfeleknek vagy iskoláknak"
+    },
+    "Color Theory Guide": {
+      "n": "Színelmélet útmutató",
+      "d": "Alkalmazza a színelmélet elveit harmonikus és hatásos műalkotások készítéséhez"
+    },
+    "Digital Art Workflow": {
+      "n": "Digitális művészeti munkafolyamat",
+      "d": "Racionalizálja digitális művészeti folyamatát a vázlattól a végső renderelésig"
+    },
+    "Art Commission Brief": {
+      "n": "Művészeti megrendelés brief",
+      "d": "Írjon világos művészeti megrendelés briefeket, hogy közvetítse vízióját a művészeknek"
+    },
+    "Mural Design Planner": {
+      "n": "Falfestmény tervezési tervező",
+      "d": "Tervezzen nagyszabású falfestmény projekteket a koncepciótól a megvalósításig"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Művészeti kiállítás javaslat",
+      "d": "Írjon professzionális művészeti kiállítási javaslatot galériáknak és helyszíneknek"
+    },
+    "Tax Deduction Finder": {
+      "n": "Adólevonás kereső",
+      "d": "Azonosítsa a gyakran kihagyott adólevonásokat helyzete és adóbevallási státusza alapján"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Önfoglalkoztatói adó útmutató",
+      "d": "Navigáljon az önfoglalkoztatói adók között, beleértve a becsült befizetéseket és levonásokat"
+    },
+    "Tax Document Organizer": {
+      "n": "Adódokumentum rendszerező",
+      "d": "Rendszerezze és kövesse nyomon az adóbevallási időszakhoz szükséges összes dokumentumot"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Negyedéves adóbecslő",
+      "d": "Számítsa ki és tervezze meg a negyedéves becsült adófizetéseket önfoglalkoztatók számára"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Tőkenyereség kalkulátor útmutató",
+      "d": "Értse meg és tervezze meg a tőkenyereségadót befektetéseknél és ingatlanoknál"
+    },
+    "Tax Filing Checklist": {
+      "n": "Adóbevallási ellenőrzőlista",
+      "d": "Lépésről lépésre ellenőrzőlista a pontos és teljes adóbevalláshoz"
+    },
+    "State Tax Comparison": {
+      "n": "Állami adó összehasonlítás",
+      "d": "Hasonlítsa össze az állami adóhatásokat költözésnél vagy több állambeli jövedelemnél"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Adóveszteség betakarítási útmutató",
+      "d": "Stratégiailag realizáljon befektetési veszteségeket a nyereségek ellensúlyozására és adóteher csökkentésére"
+    },
+    "Stock Research Template": {
+      "n": "Részvénykutatási sablon",
+      "d": "Végezzen alapos fundamentális és technikai elemzést egyes részvényekről"
+    },
+    "ETF Comparison Tool": {
+      "n": "ETF összehasonlító eszköz",
+      "d": "Hasonlítson össze ETF-eket költséghányadok, portfólió-összetétel, teljesítmény és stratégia szerint"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Osztalékportfólió tervező",
+      "d": "Építsen osztalékfókuszú portfóliót passzív jövedelem generálásához"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Ingatlanbefektetés elemző",
+      "d": "Elemezzen bérbeadási ingatlanokat és ingatlanbefektetéseket hozam és cash flow szempontjából"
+    },
+    "Angel Investing Checklist": {
+      "n": "Angyalbefektetői ellenőrzőlista",
+      "d": "Értékeljen startup befektetési lehetőségeket átvilágítási keretrendszerekkel"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Nyugdíjszámla optimalizáló",
+      "d": "Optimalizálja befizetéseit 401k, IRA és más nyugdíjszámlák között"
+    },
+    "Bond Analysis Guide": {
+      "n": "Kötvényelemzési útmutató",
+      "d": "Elemezzen kötvényeket és fix kamatozású értékpapírokat hozam, futamidő és kockázat szerint"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Befektetési alap értékelő",
+      "d": "Értékeljen befektetési alapokat teljesítmény, díjak, alapkezelői múlt és illeszkedés szerint"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Portfólió-újraegyensúlyozási útmutató",
+      "d": "Egyensúlyozza újra befektetési portfólióját a cél eszközallokáció fenntartásához"
+    },
+    "Investment Journal Template": {
+      "n": "Befektetési napló sablon",
+      "d": "Kövesse nyomon befektetési döntéseit, indoklásait és eredményeit a folyamatos fejlődés érdekében"
+    },
+    "AWS Service Selector": {
+      "n": "AWS szolgáltatás választó",
+      "d": "Válassza ki a megfelelő AWS szolgáltatásokat alkalmazáskövetelményeihez és költségvetéséhez"
+    },
+    "Cloud Migration Plan": {
+      "n": "Felhőmigrációs terv",
+      "d": "Tervezzen strukturált migrációt helyszíni munkaterhelésekből a felhőbe"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Kubernetes telepítési útmutató",
+      "d": "Telepítsen és kezeljen alkalmazásokat Kubernetes-en bevált gyakorlatokkal"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Infrastruktúra mint kód sablon",
+      "d": "Készítsen infrastruktúra mint kód sablonokat reprodukálható felhőkörnyezetekhez"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "CI/CD csővezeték tervező",
+      "d": "Tervezzen automatizált CI/CD csővezetékeket folyamatos integrációhoz és telepítéshez"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Felhőköltség optimalizáló",
+      "d": "Azonosítson és valósítson meg felhőköltség optimalizálási stratégiákat"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Szerver nélküli architektúra tervező",
+      "d": "Tervezzen szerver nélküli alkalmazásokat eseményvezérelt architektúra mintákkal"
+    },
+    "Container Strategy Guide": {
+      "n": "Konténer stratégia útmutató",
+      "d": "Határozzon meg konténerizálási stratégiát alkalmazásokhoz és mikroszolgáltatásokhoz"
+    },
+    "Cloud Security Checklist": {
+      "n": "Felhőbiztonsági ellenőrzőlista",
+      "d": "Auditálja és biztosítsa felhőinfrastruktúráját átfogó biztonsági ellenőrzésekkel"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Katasztrófa-helyreállítási terv",
+      "d": "Tervezzen felhő katasztrófa-helyreállítási tervet RTO és RPO célokkal"
+    },
+    "Keynote Speech Writer": {
+      "n": "Nyitóelőadás író",
+      "d": "Írjon erőteljes nyitóelőadást, amely inspirálja és leköti közönségét"
+    },
+    "TED Talk Outline": {
+      "n": "TED előadás vázlat",
+      "d": "Strukturáljon meggyőző TED-stílusú előadást erős narratív ívvel"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Köszöntő és méltatás író",
+      "d": "Írjon emlékezetes köszöntőket és méltatásokat esküvőkre, nyugdíjazásokra és ünnepségekre"
+    },
+    "Debate Preparation Guide": {
+      "n": "Vita felkészülési útmutató",
+      "d": "Készüljön fel alaposan vitákra érvekkel, ellenérvekkel és bizonyítékokkal"
+    },
+    "Panel Discussion Prep": {
+      "n": "Panelbeszélgetés felkészítő",
+      "d": "Készüljön fel panelbeszélgetésekre beszédpontokkal és közönségbevonással"
+    },
+    "Presentation Slide Planner": {
+      "n": "Prezentációs dia tervező",
+      "d": "Tervezzen prezentációs diákat vizuális hierarchiával és narratív folyamattal"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Rögtönzött beszéd útmutató",
+      "d": "Fejlessze képességeit a rögtönzött gondolkodáshoz rögtönzött beszéd keretrendszerekkel"
+    },
+    "Commencement Speech Writer": {
+      "n": "Diplomaosztó beszéd író",
+      "d": "Írjon inspiráló diplomaosztó beszédet ballagási ceremóniákra"
+    },
+    "Grant Application Writer": {
+      "n": "Pályázati anyag író",
+      "d": "Írjon meggyőző pályázati anyagokat, amelyek világosan megfogalmazzák a hatást és szükségletet"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Adománygyűjtési kampányterv",
+      "d": "Tervezzen és hajtson végre hatékony adománygyűjtési kampányokat több csatornán"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Önkéntes toborzási útmutató",
+      "d": "Toborozzon, vezessen be és tartson meg önkénteseket nonprofit programokhoz"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Nonprofit igazgatótanácsi ülés",
+      "d": "Készítsen elő és vezessen hatékony nonprofit igazgatótanácsi üléseket világos napirenddel"
+    },
+    "Impact Report Template": {
+      "n": "Hatásjelentés sablon",
+      "d": "Készítsen meggyőző hatásjelentéseket nonprofitja eredményeinek bemutatásával"
+    },
+    "Donor Thank You Letter": {
+      "n": "Adományozói köszönőlevél",
+      "d": "Írjon személyre szabott adományozói elismerő leveleket, amelyek tartós kapcsolatokat építenek"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Éves kampánystratégia",
+      "d": "Dolgozzon ki átfogó éves adománygyűjtési és elköteleződési stratégiát"
+    },
+    "Community Needs Assessment": {
+      "n": "Közösségi szükségletek felmérése",
+      "d": "Végezzen alapos közösségi szükségletfelmérést a programfejlesztés irányításához"
+    },
+    "Construction Project Plan": {
+      "n": "Építési projekt terv",
+      "d": "Készítsen átfogó építési projekt tervet fázisokkal, idővonalakkal és költségvetésekkel"
+    },
+    "Building Permit Checklist": {
+      "n": "Építési engedély ellenőrzőlista",
+      "d": "Kövesse nyomon az összes szükséges építési engedélyt és jóváhagyást építési projektjéhez"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Kivitelező értékelési útmutató",
+      "d": "Értékelje és hasonlítsa össze a kivitelezőket strukturált pontozási keretrendszerrel"
+    },
+    "Material Estimate Calculator": {
+      "n": "Anyagbecslés kalkulátor",
+      "d": "Becsülje meg a szükséges építőanyagokat mennyiségekkel és költség-előrejelzésekkel"
+    },
+    "Site Inspection Checklist": {
+      "n": "Helyszíni szemle ellenőrzőlista",
+      "d": "Végezzen alapos helyszíni szemléket szabványosított ellenőrzőlistákkal"
+    },
+    "Renovation Scope Document": {
+      "n": "Felújítási hatókör dokumentum",
+      "d": "Határozzon meg világos felújítási munkahatókört specifikációkkal és elvárásokkal"
+    },
+    "Architectural Brief": {
+      "n": "Építészeti brief",
+      "d": "Írjon építészeti briefet a projekt víziójának, követelményeinek és korlátainak meghatározásával"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Biztonsági megfelelőségi ellenőrzőlista",
+      "d": "Biztosítsa az építési terület biztonsági megfelelőségét az OSHA és helyi előírásoknak"
+    },
+    "Robot Design Specification": {
+      "n": "Robot tervezési specifikáció",
+      "d": "Határozzon meg teljes robot tervezési specifikációkat mechanikával, elektronikával és szoftverrel"
+    },
+    "IoT Project Planner": {
+      "n": "IoT projekt tervező",
+      "d": "Tervezzen végponttól végpontig IoT projekteket érzékelőktől felhő műszerfalakig"
+    },
+    "Sensor Selection Guide": {
+      "n": "Érzékelő választási útmutató",
+      "d": "Válasszon optimális érzékelőket robotikai vagy IoT alkalmazás követelményeihez"
+    },
+    "Embedded Systems Guide": {
+      "n": "Beágyazott rendszerek útmutató",
+      "d": "Tervezzen beágyazott rendszereket megfelelő mikrokontroller-választással és firmware architektúrával"
+    },
+    "Automation Workflow Designer": {
+      "n": "Automatizálási munkafolyamat tervező",
+      "d": "Tervezzen ipari vagy otthoni automatizálási munkafolyamatokat érzékelőkkel és beavatkozókkal"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Hardver prototípus tervező",
+      "d": "Tervezzen hardver prototípusokat a próbapaneltől a NYÁK-ig alkatrész-beszerzéssel"
+    },
+    "Anxiety Management Plan": {
+      "n": "Szorongáskezelési terv",
+      "d": "Készítsen személyre szabott szorongáskezelési tervet megküzdési stratégiákkal és kiváltó okokkal"
+    },
+    "CBT Thought Record": {
+      "n": "CBT gondolatnapló",
+      "d": "Gyakorolja a kognitív viselkedésterápiás gondolatnaplókat a negatív gondolkodás felülvizsgálatához"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Naplóírási téma generátor",
+      "d": "Generáljon értelmes naplóírási témákat önreflexióhoz és érzelmi feldolgozáshoz"
+    },
+    "Relationship Communication Guide": {
+      "n": "Kapcsolati kommunikáció útmutató",
+      "d": "Javítsa a kapcsolati kommunikációt strukturált beszélgetési keretrendszerekkel"
+    },
+    "Boundary Setting Guide": {
+      "n": "Határállítási útmutató",
+      "d": "Tanulja meg felállítani és fenntartani az egészséges határokat személyes és szakmai életben"
+    },
+    "Grief Processing Helper": {
+      "n": "Gyász feldolgozási segítő",
+      "d": "Navigáljon a gyász folyamatában együttérző útmutatással és gyakorlati lépésekkel"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Önegyüttérzés gyakorlat",
+      "d": "Gyakoroljon önegyüttérzés gyakorlatokat a reziliencia építéséhez és az önkritika csökkentéséhez"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Érzelmi intelligencia fejlesztő",
+      "d": "Fejlessze érzelmi intelligencia készségeit a jobb önismeret és kapcsolatok érdekében"
+    },
+    "Anger Management Plan": {
+      "n": "Düh kezelési terv",
+      "d": "Fejlesszen egészséges düh kezelési stratégiákat kiváltó okokkal és de-eszkalációs technikákkal"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Kiégés-felépülési terv",
+      "d": "Készítsen strukturált kiégés-felépülési tervet határokkal, pihenéssel és fokozatos visszatéréssel"
+    },
+    "Instant Pot Recipe": {
+      "n": "Instant Pot recept",
+      "d": "Kukta receptek időzítési útmutatókkal"
+    },
+    "World Cuisine Explorer": {
+      "n": "Világkonyha felfedező",
+      "d": "Autentikus receptek a világ konyhájából"
+    },
+    "Fermentation Guide": {
+      "n": "Fermentálási útmutató",
+      "d": "Fermentált ételek receptjei és technikái"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "BBQ és grill útmutató",
+      "d": "Grillreceptek fűszerkeverék és szósz párosításokkal"
+    },
+    "Bread Baking Guide": {
+      "n": "Kenyérsütési útmutató",
+      "d": "Kézműves kenyérreceptek a kovászt elejétől a végéig"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Gombatermesztési útmutató",
+      "d": "Beltéri gombatermesztés a csíráktól a betakarításig"
+    },
+    "Permaculture Planner": {
+      "n": "Permakultúra tervező",
+      "d": "Tervezzen önfenntartó élelmiszer-kert ökoszisztémát"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Üvegház beállítási útmutató",
+      "d": "Tervezzen és építsen produktív üvegházat"
+    },
+    "FSBO Selling Guide": {
+      "n": "Tulajdonostól eladás útmutató",
+      "d": "Adja el otthonát ingatlanközvetítő nélkül lépésről lépésre"
+    },
+    "Investment Property Finder": {
+      "n": "Befektetési ingatlan kereső",
+      "d": "Értékeljen potenciális bérbeadási befektetési ingatlanokat"
+    },
+    "Car Modification Guide": {
+      "n": "Autóátalakítási útmutató",
+      "d": "Tervezzen járműátalakításokat és fejlesztéseket"
+    },
+    "Fleet Management Planner": {
+      "n": "Flottakezelési tervező",
+      "d": "Kezelje több jármű karbantartását és költségeit"
+    },
+    "Digital Nomad Guide": {
+      "n": "Digitális nomád útmutató",
+      "d": "Dolgozzon távolról miközben bejárja a világot"
+    },
+    "Eco-Travel Planner": {
+      "n": "Öko-utazás tervező",
+      "d": "Tervezzen fenntartható és környezetbarát utazásokat"
+    },
+    "Product Launch Event": {
+      "n": "Termékbemuató esemény",
+      "d": "Tervezzen termékbemutató eseményt a helyszíntől a PR-ig"
+    },
+    "Virtual Event Planner": {
+      "n": "Virtuális esemény tervező",
+      "d": "Tervezzen lebilincselő online eseményeket és webináriumokat"
+    },
+    "College Planning Guide": {
+      "n": "Felsőoktatási tervezési útmutató",
+      "d": "Tervezzen a felsőoktatásra a kiválasztástól az anyagi támogatásig"
+    },
+    "Child Safety Plan": {
+      "n": "Gyermekbiztonsági terv",
+      "d": "Átfogó otthoni és online biztonsági irányelvek"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Egzotikus kisállat gondozási útmutató",
+      "d": "Gondozási útmutatók hüllőkhöz, madarakhoz és egzotikus kisállatokhoz"
+    },
+    "Pet Adoption Guide": {
+      "n": "Kisállat örökbefogadási útmutató",
+      "d": "Sikeresen navigáljon a kisállat örökbefogadási folyamatban"
+    },
+    "Tiny House Builder": {
+      "n": "Miniház építő",
+      "d": "Tervezzen és építsen miniházat lépésről lépésre"
+    },
+    "Workshop Setup Guide": {
+      "n": "Műhely beállítási útmutató",
+      "d": "Tervezzen és szereljen fel otthoni műhelyt"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Kupon stratégia tervező",
+      "d": "Maximalizálja megtakarításait stratégiai kuponozással"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Használtcikk vásárlási útmutató",
+      "d": "Találjon minőségi termékeket turkálókban és online"
+    },
+    "Theological Study Guide": {
+      "n": "Teológiai tanulmányi útmutató",
+      "d": "Merüljön el teológiai fogalmakban és tanokban"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Vallásközi párbeszéd útmutató",
+      "d": "Segítse a tiszteletteljes vallásközi beszélgetéseket"
+    },
+    "Marathon Training Plan": {
+      "n": "Maraton edzésterv",
+      "d": "Teljes maraton edzésterv a kanapétól a 42 km-ig"
+    },
+    "Youth Sports Coach": {
+      "n": "Ifjúsági sportoktató",
+      "d": "Tervezzen ifjúsági sportedzéseket és fejlesztést"
+    },
+    "Woodworking Project": {
+      "n": "Famunkálási projekt",
+      "d": "Tervezzen famunkálási projekteket vágáslistákkal és lépésekkel"
+    },
+    "Vinyl Record Guide": {
+      "n": "Bakelitlemez útmutató",
+      "d": "Indítson és gondozzon bakelitlemez gyűjteményt"
+    },
+    "Home Brewing Guide": {
+      "n": "Otthoni sörfőzési útmutató",
+      "d": "Főzzön sört vagy bort otthon az elejétől a végéig"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Pénzügyi szabadság ütemterv",
+      "d": "Térképezze fel az útját a pénzügyi függetlenséghez"
+    },
+    "Midlife Career Change": {
+      "n": "Középkorú karrierváltás",
+      "d": "Navigáljon karrierváltást bármely életkorban"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI háttérkép készítő",
+      "d": "Generáljon lenyűgöző háttérképeket bármely eszközhöz"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Tetoválás tervezési prompt",
+      "d": "Készítsen egyedi tetoválás tervezési koncepciókat AI-val"
+    },
+    "DJ Set Planner": {
+      "n": "DJ szett tervező",
+      "d": "Tervezzen DJ szetteket számválogatással és átmenetekkel"
+    },
+    "Music Theory Tutor": {
+      "n": "Zeneelmélet oktató",
+      "d": "Tanuljon zeneelméleti fogalmakat gyakorlatokkal"
+    },
+    "Podcast Video Setup": {
+      "n": "Podcast videó beállítás",
+      "d": "Állítson be video podcastot a felszereléstől a szerkesztésig"
+    },
+    "Wedding Video Plan": {
+      "n": "Esküvői videó terv",
+      "d": "Tervezzen esküvői videózást a szertartástól a vágásig"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Memoár fejezet író",
+      "d": "Írjon meggyőző memoár fejezeteket élettörténetekből"
+    },
+    "Haiku Generator": {
+      "n": "Haiku generátor",
+      "d": "Készítsen haiku költeményeket bármely témában"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok tartalomstratégia",
+      "d": "Építsen TikTok növekedési stratégiát tartalomötletekkel"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube közösségi bejegyzés",
+      "d": "Készítsen lebilincselő YouTube közösségi bejegyzéseket"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Podcast monetizálási terv",
+      "d": "Stratégiák a podcast bevételszerzéséhez"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "AI eszköz összehasonlító útmutató",
+      "d": "Hasonlítson össze AI eszközöket konkrét felhasználási esetekhez"
+    },
+    "Code Snippet Library": {
+      "n": "Kódrészlet könyvtár",
+      "d": "Szervezze és dokumentálja az újrafelhasználható kódrészleteket"
+    },
+    "Tech Stack Selector": {
+      "n": "Technológiai verem választó",
+      "d": "Válassza ki a megfelelő technológiai vermet projektjéhez"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Adatvédelmi megfelelőségi útmutató",
+      "d": "Biztosítsa, hogy alkalmazása megfelel az adatvédelmi előírásoknak"
+    },
+    "API Security Audit": {
+      "n": "API biztonsági audit",
+      "d": "Auditálja API végpontjait biztonsági sebezhetőségek szempontjából"
+    },
+    "AI Hackathon Project": {
+      "n": "AI hackathon projekt",
+      "d": "Tervezzen AI-fókuszú hackathon projektet az elejétől a végéig"
+    },
+    "Mobile Game Concept": {
+      "n": "Mobiljáték koncepció",
+      "d": "Tervezzen mobiljátékot a koncepciótól a monetizálásig"
+    },
+    "Drone Photography Guide": {
+      "n": "Drón fotózási útmutató",
+      "d": "Tervezzen légi fotózási küldetéseket és felvételeket"
+    },
+    "NFT Art Collection": {
+      "n": "NFT művészeti gyűjtemény",
+      "d": "Tervezzen és készítsen digitális művészeti gyűjteményt"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Szabadúszó adóügyi útmutató",
+      "d": "Navigáljon az önfoglalkoztatói adók és levonások között"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Kripto portfólió építő",
+      "d": "Építsen diverzifikált kriptovaluta portfóliót"
+    },
+    "Azure Service Guide": {
+      "n": "Azure szolgáltatás útmutató",
+      "d": "Válasszon és konfiguráljon Azure felhőszolgáltatásokat"
+    },
+    "Wedding Speech Writer": {
+      "n": "Esküvői beszéd író",
+      "d": "Írjon szívből jövő esküvői beszédeket és köszöntőket"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Nonprofit indítási útmutató",
+      "d": "Indítson nonprofit szervezetet a nulláról"
+    },
+    "Home Addition Planner": {
+      "n": "Házbővítés tervező",
+      "d": "Tervezzen házbővítést az engedélyektől az építésig"
+    },
+    "Arduino Project Planner": {
+      "n": "Arduino projekt tervező",
+      "d": "Tervezzen Arduino-alapú elektronikai projekteket"
+    },
+    "Digital Wellness Plan": {
+      "n": "Digitális jóllét terv",
+      "d": "Teremtsen egészséges kapcsolatot a technológiával"
+    },
+    "SWOT Analysis Tool": {
+      "n": "SWOT elemzés eszköz",
+      "d": "Erősségek, gyengeségek, lehetőségek és veszélyek stratégiai elemzése"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Megbeszélés napirend készítő",
+      "d": "Készítsen strukturált megbeszélés napirendeket időblokkokkal"
+    },
+    "OKR Framework Builder": {
+      "n": "OKR keretrendszer készítő",
+      "d": "Állítson fel célkitűzéseket és kulcseredményeket csapatok számára"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Beszállítói tárgyalás felkészítő",
+      "d": "Készüljön fel beszállítói és szállítói tárgyalásokra"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Franchise értékelési útmutató",
+      "d": "Értékelje szisztematikusan a franchise lehetőségeket"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Távmunka szabályzat író",
+      "d": "Készítsen átfogó távmunka szabályzatokat"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Sokszínű toborzási terv",
+      "d": "Építsen befogadó toborzási gyakorlatokat és csővezetékeket"
+    },
+    "Freelance Contract Template": {
+      "n": "Szabadúszó szerződés sablon",
+      "d": "Készítsen professzionális szabadúszó szolgáltatási megállapodásokat"
+    },
+    "Personal Website Planner": {
+      "n": "Személyes weboldal tervező",
+      "d": "Tervezze meg és strukturálja professzionális portfólió weboldalát"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Időszakos böjtölési útmutató",
+      "d": "Tervezzen időszakos böjtölési protokollt"
+    },
+    "Posture Improvement Plan": {
+      "n": "Testtartás javítási terv",
+      "d": "Javítson testtartási problémákat gyakorlatokkal és szokásokkal"
+    },
+    "Notion Template Builder": {
+      "n": "Notion sablon készítő",
+      "d": "Tervezzen Notion munkaterület sablonokat bármely munkafolyamathoz"
+    },
+    "Automation Workflow Builder": {
+      "n": "Automatizálási munkafolyamat készítő",
+      "d": "Tervezzen automatizálási munkafolyamatokat Zapierrel vagy Make-kel"
+    },
+    "Agile Sprint Planner": {
+      "n": "Agilis sprint tervező",
+      "d": "Tervezzen agilis sprinteket story pointokkal és sebességgel"
+    },
+    "Product Roadmap Builder": {
+      "n": "Termék ütemterv készítő",
+      "d": "Készítsen termék ütemterveket mérföldkövekkel és témákkal"
+    },
+    "TOEFL Prep Guide": {
+      "n": "TOEFL felkészítő útmutató",
+      "d": "Készüljön fel a TOEFL vizsgára tanulási stratégiákkal"
+    },
+    "Business English Coach": {
+      "n": "Üzleti angol edző",
+      "d": "Javítsa professzionális angol kommunikációját"
+    },
+    "Brand Identity Designer": {
+      "n": "Márkaidentitás tervező",
+      "d": "Készítsen koherens márka vizuális identitás irányelveket"
+    },
+    "UX Research Plan": {
+      "n": "UX kutatási terv",
+      "d": "Tervezzen felhasználói élmény kutatást digitális termékekhez"
+    },
+    "Data Storytelling Guide": {
+      "n": "Adattörténet-mesélési útmutató",
+      "d": "Alakítsa az adatokból nyert felismeréseket meggyőző narratívákká"
+    },
+    "AI Model Evaluation": {
+      "n": "AI modell értékelés",
+      "d": "Értékelje és hasonlítsa össze a gépi tanulási modellek teljesítményét"
+    },
+    "3D Printing Project": {
+      "n": "3D nyomtatási projekt",
+      "d": "Tervezzen 3D nyomtatási projekteket a tervezéstől a nyomtatásig"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Elektromos áramkör tervező",
+      "d": "Tervezzen elektromos áramköröket alkatrész-kiválasztással"
+    },
+    "Side Hustle Finder": {
+      "n": "Mellékjövedelem kereső",
+      "d": "Fedezzen fel mellékjövedelem ötleteket a képességei alapján"
+    },
+    "Passive Income Blueprint": {
+      "n": "Passzív jövedelem terv",
+      "d": "Építsen passzív jövedelem stratégiát az Ön helyzetéhez igazítva"
+    },
+    "Savings Challenge Generator": {
+      "n": "Megtakarítási kihívás generátor",
+      "d": "Hozzon létre személyre szabott megtakarítási kihívás tervet"
+    },
+    "Negotiate Any Bill": {
+      "n": "Számla tárgyaló",
+      "d": "Szkriptek az ismétlődő számlák tárgyalásához és csökkentéséhez"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Etsy bolt indító",
+      "d": "Lépésről lépésre terv egy Etsy bolt indításához és növeléséhez"
+    },
+    "YouTube Channel Planner": {
+      "n": "YouTube csatorna tervező",
+      "d": "Tervezzen és indítson egy nyereséges YouTube csatornát"
+    },
+    "Rental Income Analyzer": {
+      "n": "Bérleti jövedelem elemző",
+      "d": "Elemezze a potenciális bérleti ingatlan hozamokat"
+    },
+    "Online Course Creator": {
+      "n": "Online kurzus készítő",
+      "d": "Tervezzen és strukturáljon egy online kurzust eladásra"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Kupon és cashback maximalizáló",
+      "d": "Maximalizálja a megtakarításokat kuponokkal, cashbackkel és jutalmakkal"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Dropshipping bolt beállítás",
+      "d": "Tervezzen dropshipping üzletet a semmiből"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Gig gazdaság optimalizáló",
+      "d": "Maximalizálja a bevételt gig alkalmazásokból mint Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

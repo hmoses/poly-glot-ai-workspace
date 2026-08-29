@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Sve",
+    "free": "⭐ Besplatno",
+    "money": "💰 Poslovanje",
+    "coding": "💻 Kodiranje",
+    "ai": "🤖 AI",
+    "writing": "✍️ Pisanje",
+    "marketing": "📢 Marketing",
+    "sales": "🤝 Prodaja",
+    "school": "📚 Obrazovanje",
+    "research": "🔬 Istraživanje",
+    "career": "🚀 Karijera",
+    "legal": "⚖️ Pravo",
+    "finance": "📊 Financije",
+    "health": "🏥 Zdravlje",
+    "cooking": "🍳 Kuhanje",
+    "garden": "🌱 Vrt",
+    "realestate": "🏠 Nekretnine",
+    "auto": "🚗 Auto",
+    "travel": "✈️ Putovanja",
+    "image": "🎨 Slika AI",
+    "music": "🎵 Glazba",
+    "video": "🎬 Video",
+    "social": "📱 Društvene mreže",
+    "startup": "🦄 Startup",
+    "ecommerce": "🛒 E-trgovina",
+    "productivity": "⏱ Produktivnost",
+    "diy": "🔨 Uradi sam",
+    "event": "🎉 Događaji",
+    "parent": "👶 Roditeljstvo",
+    "pets": "🐾 Kućni ljubimci",
+    "sports": "⚽ Sport",
+    "wellness": "🧘 Wellness",
+    "language": "🌍 Jezici",
+    "security": "🔒 Sigurnost",
+    "datascience": "📈 Podatkovna znanost",
+    "chemistry": "🧪 Kemija",
+    "biology": "🧬 Biologija",
+    "physics": "⚛️ Fizika",
+    "math": "🔢 Matematika",
+    "makemoney": "💰 Novac"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Alat za sažimanje",
+      "d": "Kondenzirajte bilo koji sadržaj u jasne sažetke s nabrajanim točkama"
+    },
+    "Technical Documentation": {
+      "n": "Tehnička dokumentacija",
+      "d": "Izradite jasne tehničke dokumente za API-je i značajke"
+    },
+    "YouTube Script": {
+      "n": "YouTube skripta",
+      "d": "Potpuna video skripta s hookom, odjeljcima, CTA, b-roll listom"
+    },
+    "TikTok Generator": {
+      "n": "TikTok Generator",
+      "d": "Skripta za kratke videozapise optimizirana za TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Autor postova na LinkedInu",
+      "d": "LinkedIn postovi koji zaustavljaju pomicanje i potiču angažman"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Generator postova na blogu",
+      "d": "Dugi postovi na blogu optimizirani za SEO"
+    },
+    "SEO Article Writer": {
+      "n": "SEO pisac članaka",
+      "d": "Članci bogati ključnim riječima napravljeni za rangiranje na Googleu"
+    },
+    "Podcast Episode Outline": {
+      "n": "Pregled epizode podcasta",
+      "d": "Strukturirani pregled epizode s temama za razgovor"
+    },
+    "Newsletter Writer": {
+      "n": "Pisac biltena",
+      "d": "Privlačne e-biltene čitatelji zapravo otvaraju"
+    },
+    "Product Review Writer": {
+      "n": "Pisac recenzije proizvoda",
+      "d": "Uravnotežene, vjerodostojne recenzije proizvoda"
+    },
+    "Social Media Calendar": {
+      "n": "Kalendar društvenih mreža",
+      "d": "30-dnevni kalendar sadržaja s idejama za objave po platformi"
+    },
+    "Executive Summary": {
+      "n": "Izvršni sažetak",
+      "d": "Izvršni sažetak na jednoj stranici iz dugih dokumenata"
+    },
+    "Customer Support Response": {
+      "n": "Odgovor korisničke podrške",
+      "d": "Empatični odgovori korisničke podrške robne marke"
+    },
+    "Business Proposal": {
+      "n": "Poslovni prijedlog",
+      "d": "Pobjednički prijedlozi klijenata s opsegom i cijenama"
+    },
+    "Decision Memo": {
+      "n": "Dopis o odluci",
+      "d": "Jasne bilješke o odlukama s opcijama i preporukama"
+    },
+    "Stakeholder Update": {
+      "n": "Ažuriranje dionika",
+      "d": "Sažeta ažuriranja statusa projekta za dionike"
+    },
+    "Code Review Assistant": {
+      "n": "Pomoćnik za pregled koda",
+      "d": "Pregledajte kod radi pogrešaka, stila i najboljih praksi"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc / Komentari koda",
+      "d": "JSDoc komentari za JavaScript i TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Zapis o odlukama o arhitekturi",
+      "d": "Formalni ADR koji dokumentira tehničke odluke"
+    },
+    "User Story Writer": {
+      "n": "Autor korisničkih priča",
+      "d": "Agilne korisničke priče s kriterijima prihvaćanja"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Kriteriji prihvaćanja",
+      "d": "Kriteriji prihvaćanja u stilu kornišona za korisničke priče"
+    },
+    "PR Description Writer": {
+      "n": "Pisac PR opisa",
+      "d": "Jasni PR opisi s kontekstom i bilješkama o testiranju"
+    },
+    "Unit Test Generator": {
+      "n": "Generator testa jedinice",
+      "d": "Jedinični testovi s rubnim slučajevima za bilo koju funkciju"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Savjetnik za refaktoriranje koda",
+      "d": "Refaktor koda za čitljivost i izvedbu"
+    },
+    "SQL Query Builder": {
+      "n": "SQL Alat za izradu upita",
+      "d": "Pretvaranje prirodnog jezika u optimizirane SQL upite"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Kubernetes Config Generator",
+      "d": "Brzo dijagnosticirajte i riješite probleme s K8s"
+    },
+    "Postmortem Report": {
+      "n": "Obdukcija",
+      "d": "Besprijekoran postmortem s vremenskom crtom i akcijskim stavkama"
+    },
+    "Release Notes Writer": {
+      "n": "Pisac napomena o izdanju",
+      "d": "Bilješke o izdanju jednostavne za korisnike iz poruka predaje"
+    },
+    "Prompt Optimizer": {
+      "n": "Optimizator promptova",
+      "d": "Poboljšajte bilo koji AI prompt za bolje i preciznije rezultate"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Graditelj lanca misli",
+      "d": "Izradite upute za razmišljanje u više koraka za složene zadatke"
+    },
+    "RAG System Prompt": {
+      "n": "RAG Sistemski prompt",
+      "d": "Predlošci promptova za generiranje potpomognuto dohvatom"
+    },
+    "Eval Dataset Creator": {
+      "n": "Kreator evaluacijskih skupova podataka",
+      "d": "Generirajte evaluacijske skupove podataka za testiranje AI modela"
+    },
+    "Prompt A/B Tester": {
+      "n": "Brzi A/B tester",
+      "d": "Generirajte A/B varijante upita za usporedbu izvedbe"
+    },
+    "Multi-Model Comparison": {
+      "n": "Usporedba više modela",
+      "d": "Okvir za usporedbu izlaza između AI modela"
+    },
+    "Resume Tailoring": {
+      "n": "Životopis Krojenje",
+      "d": "Prilagodite svoj životopis specifičnom opisu posla"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Generator propratnih pisama",
+      "d": "Uvjerljiva propratna pisma koja dobivaju intervjue"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "LinkedIn Optimizator profila",
+      "d": "Optimizirajte svoj LinkedIn profil za regrutere"
+    },
+    "Interview Coach": {
+      "n": "Trener intervjua",
+      "d": "Vježbajte intervju s pitanjima i odgovorima za bilo koju ulogu"
+    },
+    "Salary Negotiation Script": {
+      "n": "Skripta za pregovore o plaćama",
+      "d": "Skripte i strategije za pregovaranje o većoj plaći"
+    },
+    "Career Roadmap Planner": {
+      "n": "Planer karijera",
+      "d": "12-mjesečni plan razvoja karijere s prekretnicama"
+    },
+    "Objection Handler": {
+      "n": "Obrađivač prigovora",
+      "d": "Skripte za rješavanje uobičajenih prigovora na prodaju"
+    },
+    "Landing Page Copy": {
+      "n": "Kopija odredišne ​​stranice",
+      "d": "Kopija odredišne ​​stranice s visokom stopom konverzije"
+    },
+    "Google Ads Copy": {
+      "n": "Google Ads kopija",
+      "d": "Tekst oglasa za Google pretraživanje visokog CTR-a"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Facebook/Instagram oglas",
+      "d": "Kopija oglasa za Facebook i Instagram koja pretvara"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Sažetak marketinške kampanje",
+      "d": "Potpuna marketinška kampanja s kanalima i vremenskom crtom"
+    },
+    "Customer Persona Builder": {
+      "n": "Graditelj persone kupca",
+      "d": "Detaljne osobe kupaca za marketing i proizvod"
+    },
+    "Value Proposition Canvas": {
+      "n": "Vrijednost prijedloga platna",
+      "d": "Jasne, uvjerljive vrijednosne ponude"
+    },
+    "Product Launch Plan": {
+      "n": "Plan lansiranja proizvoda",
+      "d": "Plan izlaska na tržište za lansiranje proizvoda"
+    },
+    "Study Guide Creator": {
+      "n": "Stvoritelj vodiča za učenje",
+      "d": "Pretvorite bilo koju temu u strukturirani vodič za učenje"
+    },
+    "Flashcard Creator": {
+      "n": "Stvoritelj Flashcard",
+      "d": "Setovi pitanja i odgovora s karticama za brzo pamćenje"
+    },
+    "Quiz Generator": {
+      "n": "Generator kvizova",
+      "d": "Kvizovi s višestrukim izborom i s kratkim odgovorima"
+    },
+    "Lesson Plan Builder": {
+      "n": "Graditelj plana lekcija",
+      "d": "Detaljni planovi lekcija s aktivnostima i procjenama"
+    },
+    "Research Notes Organizer": {
+      "n": "Organizator bilješki istraživanja",
+      "d": "Organizirajte istraživačke bilješke u strukturirane obrise"
+    },
+    "Essay Outline Generator": {
+      "n": "Generator nacrta eseja",
+      "d": "Strukturirani pregledi eseja s tezama i argumentima"
+    },
+    "Literature Review Assistant": {
+      "n": "Asistent za pregled književnosti",
+      "d": "Pregled stručne literature sa sintezom"
+    },
+    "Thesis Statement Builder": {
+      "n": "Graditelj izjava o tezama",
+      "d": "Snažne, argumentirane teze"
+    },
+    "Exam Prep Planner": {
+      "n": "Planer priprema za ispite",
+      "d": "Personalizirani raspored ispita za učenje"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Sažetak ugovora",
+      "d": "Sažetak ugovora na jednostavnom engleskom jeziku. Ne pravni savjet."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Pregled rizika ugovora",
+      "d": "Prepoznajte rizične klauzule. Ne pravni savjet."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F NDA analizator",
+      "d": "Raščlamba NDA klauzule. Ne pravni savjet."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Pomoćnik za nacrt pravila",
+      "d": "Nacrt internih politika. Ne pravni savjet."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Kontrolni popis usklađenosti",
+      "d": "Kontrolni popis usklađenosti prema okviru. Ne pravni savjet."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F recenzent uvjeta usluge",
+      "d": "Označite rizike ToS-a. Ne pravni savjet."
+    },
+    "Budget Planner": {
+      "n": "Planer proračuna",
+      "d": "Plan osobnog ili poslovnog proračuna. Ne financijski savjet."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Sažetak poziva zarade",
+      "d": "Ključni zaključci iz poziva o zaradi. Ne financijski savjet."
+    },
+    "Investment Thesis Builder": {
+      "n": "Graditelj investicijskih teza",
+      "d": "Strukturirana investicijska teza. Ne financijski savjet."
+    },
+    "Financial Analysis Report": {
+      "n": "Izvješće o financijskoj analizi",
+      "d": "Analizirajte financije. Ne financijski savjet."
+    },
+    "Expense Categorizer": {
+      "n": "Kategorizator troškova",
+      "d": "Kategorizirajte i analizirajte troškove. Ne financijski savjet."
+    },
+    "SOAP Note Generator": {
+      "n": "Generator SOAP bilješki",
+      "d": "Kliničke SOAP bilješke. Ne medicinski savjet."
+    },
+    "Clinical Case Summary": {
+      "n": "Sažetak kliničkog slučaja",
+      "d": "Struktura kliničkih bilješki. Ne medicinski savjet."
+    },
+    "Patient Education Writer": {
+      "n": "Pisac o obrazovanju pacijenata",
+      "d": "Edukacija pacijenata jednostavnim jezikom. Ne medicinski savjet."
+    },
+    "Medical Research Summarizer": {
+      "n": "Sažetak medicinskih istraživanja",
+      "d": "Sažeti istraživačke radove. Ne medicinski savjet."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Asistent za diferencijalnu dijagnozu",
+      "d": "Organizirajte diferencijalne dijagnoze. Ne medicinski savjet."
+    },
+    "Creative Storyteller": {
+      "n": "Kreativni pripovjedač",
+      "d": "Generirajte kreativne priče i narative"
+    },
+    "Ad Copy Generator": {
+      "n": "Generator kopija oglasa",
+      "d": "Kopija s visokim stupnjem konverzije za Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Pisac izvještaja o greškama",
+      "d": "Pišite jasne, ponovljive izvještaje o greškama"
+    },
+    "Social Media Caption": {
+      "n": "Naslov na društvenim mrežama",
+      "d": "Generirajte opise koji zaustavljaju pomicanje za bilo koju platformu"
+    },
+    "Research Paper Abstract": {
+      "n": "Sažetak istraživačkog rada",
+      "d": "Pišite strukturirane akademske sažetke"
+    },
+    "Translation Expert": {
+      "n": "Stručnjak za prijevode",
+      "d": "Prevedite tekst s kontekstom i nijansama"
+    },
+    "Data Analyst": {
+      "n": "Analitičar podataka",
+      "d": "Analizirajte podatke i pružite korisne uvide"
+    },
+    "Recipe Generator": {
+      "n": "Generator recepata",
+      "d": "Generirajte prilagođene recepte na temelju svojih preferencija i prehrambenih potreba"
+    },
+    "Meal Planner": {
+      "n": "Planer obroka",
+      "d": "Planirajte uravnotežene obroke za cijeli tjedan imajući na umu raznolikost i prehranu"
+    },
+    "Grocery List Builder": {
+      "n": "Graditelj popisa namirnica",
+      "d": "Sastavite organizirani popis namirnica od planiranih obroka i potreba smočnice"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Tražilica recepata iz smočnice",
+      "d": "Pronađite ukusne recepte koristeći sastojke koje već imate pri ruci"
+    },
+    "Nutrition Calculator": {
+      "n": "Nutricionistički kalkulator",
+      "d": "Izračunajte detaljne nutritivne podatke za bilo koji recept ili kombinaciju obroka"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Vodič za zamjenu sastojaka",
+      "d": "Pronađite savršene zamjene za sastojke koji nedostaju ili su ograničeni"
+    },
+    "Batch Cooking Planner": {
+      "n": "Planer grupnog kuhanja",
+      "d": "Planirajte učinkovite serije kuhanja kako biste uštedjeli vrijeme tijekom cijelog tjedna"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Kreator recepata za koktele",
+      "d": "Stvorite i prilagodite recepte za koktele za svaku priliku"
+    },
+    "Baking Conversion Helper": {
+      "n": "Pomoćnik za pretvorbu pečenja",
+      "d": "Pretvorite mjere pečenja između jedinica i povećajte ili smanjite recepte"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Traženje recepata za specifičnu dijetu",
+      "d": "Pronađite recepte prilagođene vašem specifičnom planu prehrane ili prehrambenim ciljevima"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Recept za sporo kuhanje",
+      "d": "Nabavite savršeno tempirane recepte za sporo kuhanje za kuhanje bez ruku"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Kreator recepata za zračnu fritezu",
+      "d": "Stvorite hrskave i ukusne recepte za prženje u savršenom trenutku"
+    },
+    "Smoothie Builder": {
+      "n": "Kreator smoothieja",
+      "d": "Kreirajte hranjive i ukusne recepte za smoothieje za bilo koji cilj"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Kreator umaka i preljeva",
+      "d": "Stvorite domaće umake i preljeve od nule"
+    },
+    "Spice Blend Guide": {
+      "n": "Vodič za mješavinu začina",
+      "d": "Stvorite prilagođene mješavine začina za bilo koju kuhinju ili vrstu jela"
+    },
+    "Food Pairing Expert": {
+      "n": "Stručnjak za spajanje hrane",
+      "d": "Otkrijte idealne kombinacije hrane i okusa za bogate obroke"
+    },
+    "Holiday Menu Planner": {
+      "n": "Planer blagdanskog jelovnika",
+      "d": "Planirajte potpuni blagdanski jelovnik s vremenskom crtom i popisom za kupovinu"
+    },
+    "Leftover Makeover": {
+      "n": "Preostali makeover",
+      "d": "Pretvorite ostatke u uzbudljive nove obroke s kreativnim idejama"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Ideje za obroke prikladne za djecu",
+      "d": "Stvorite zdrave obroke koje će djeca zaista uživati"
+    },
+    "Date Night Dinner": {
+      "n": "Večera na spoju",
+      "d": "Isplanirajte impresivnu večeru za romantičnu večer kod kuće"
+    },
+    "Budget Meal Planner": {
+      "n": "Povoljni planer obroka",
+      "d": "Napravite ukusna jela s ograničenim proračunom bez žrtvovanja prehrane"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Pretvarač veganskih recepata",
+      "d": "Pretvorite bilo koji tradicionalni recept u ukusnu vegansku verziju"
+    },
+    "Dessert Creator": {
+      "n": "Kreator slastica",
+      "d": "Dizajnirajte prilagođene recepte za deserte za bilo koju razinu vještine i prigodu"
+    },
+    "Appetizer Planner": {
+      "n": "Planer predjela",
+      "d": "Isplanirajte savršeno predjelo za zabave i okupljanja"
+    },
+    "Food Prep Timeline": {
+      "n": "Vremenski okvir pripreme hrane",
+      "d": "Napravite detaljan raspored kuhanja kako bi sve bilo spremno odjednom"
+    },
+    "Plant Care Guide": {
+      "n": "Vodič za njegu biljaka",
+      "d": "Dobijte personalizirane upute za njegu bilo koje biljke u svojoj kolekciji"
+    },
+    "Garden Planner": {
+      "n": "Planer vrta",
+      "d": "Dizajnirajte i isplanirajte svoj vrt za maksimalan prinos i ljepotu"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Alat za dijagnostiku štetnika",
+      "d": "Identificirajte vrtne štetočine i bolesti s mogućnostima organskog tretmana"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Kalendar sezonske sadnje",
+      "d": "Znajte točno kada posaditi svaku kulturu u svojoj zoni uzgoja"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Planer povrtnjaka",
+      "d": "Planirajte produktivan povrtnjak s popratnom sadnjom i rotacijom"
+    },
+    "Indoor Plant Guide": {
+      "n": "Vodič za sobne biljke",
+      "d": "Odaberite i njegujte savršene sobne biljke za svoj prostor"
+    },
+    "Herb Garden Starter": {
+      "n": "Vodič za početnike u uzgoju bilja",
+      "d": "Pokrenite uspješan vrt ljekovitog bilja unutar ili izvan kuće uz stručne savjete"
+    },
+    "Composting Guide": {
+      "n": "Vodič za kompostiranje",
+      "d": "Pokrenite i održavajte sustav kompostiranja za bogatu vrtnu zemlju"
+    },
+    "Landscape Design Helper": {
+      "n": "Pomoćnik u dizajnu krajolika",
+      "d": "Osmislite prekrasan krajolik za svoje imanje"
+    },
+    "Raised Bed Planner": {
+      "n": "Planer s povišenim krevetom",
+      "d": "Dizajnirajte i napravite savršene uzdignute vrtne gredice za svoj prostor"
+    },
+    "Fruit Tree Guide": {
+      "n": "Vodič za voćke",
+      "d": "Odaberite i njegujte voćke koje odgovaraju vašoj klimi i prostoru"
+    },
+    "Container Garden Planner": {
+      "n": "Kontejnerski vrtni planer",
+      "d": "Stvorite prekrasne i produktivne vrtove u kontejnerima za svaki prostor"
+    },
+    "Pollinator Garden": {
+      "n": "Vrt oprašivača",
+      "d": "Osmislite vrt koji privlači pčele, leptire i korisne kukce"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Vrt otporan na sušu",
+      "d": "Planirajte vrt s vodom koji uspijeva uz minimalno navodnjavanje"
+    },
+    "Soil Amendment Guide": {
+      "n": "Vodič za izmjene tla",
+      "d": "Testirajte i poboljšajte svoje vrtno tlo za optimalno zdravlje biljaka"
+    },
+    "Seed Starting Calendar": {
+      "n": "Kalendar početka sjemena",
+      "d": "Planirajte raspored početka sjetve za uspješnu sezonu rasta"
+    },
+    "Garden Layout Designer": {
+      "n": "Dizajner vrtnog rasporeda",
+      "d": "Napravite optimizirani raspored vrta s pravilnim razmakom i pristupom suncu"
+    },
+    "Water Schedule Planner": {
+      "n": "Planer rasporeda vode",
+      "d": "Napravite učinkovit raspored navodnjavanja za svoj vrt i travnjak"
+    },
+    "Plant Problem Solver": {
+      "n": "Rješivač problema s biljkama",
+      "d": "Dijagnosticirajte i liječite uobičajene probleme s biljkama uz savjet stručnjaka"
+    },
+    "Pruning Guide": {
+      "n": "Vodič za orezivanje",
+      "d": "Naučite kada i kako orezati bilo koju biljku za zdravlje i ljepotu"
+    },
+    "Home Buying Checklist": {
+      "n": "Kontrolni popis za kupnju kuće",
+      "d": "Potpuni popis korak po korak za postupak kupnje kuće"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Alat za usporedbu stanova",
+      "d": "Usporedite stanove jedan pored drugog kako biste pronašli svoj savršeni najam"
+    },
+    "Rental Application Helper": {
+      "n": "Pomoćnik za prijavu za iznajmljivanje",
+      "d": "Pripremite snažnu prijavu za najam koja se ističe stanodavcima"
+    },
+    "Home Inspection Questions": {
+      "n": "Pitanja kućne inspekcije",
+      "d": "Osnovna pitanja koja treba postaviti tijekom pregleda doma"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Kalkulator za usporedbu hipoteka",
+      "d": "Usporedite opcije hipoteke kako biste pronašli najbolju ponudu za svoju situaciju"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Vodič za prve kupce",
+      "d": "Potpuni vodič za navigaciju pri prvoj kupnji doma s povjerenjem"
+    },
+    "Neighborhood Research": {
+      "n": "Istraživanje susjedstva",
+      "d": "Istražite i usporedite četvrti kako biste pronašli ono što vam najviše odgovara"
+    },
+    "Home Value Estimator": {
+      "n": "Procjenitelj vrijednosti kuće",
+      "d": "Procijenite vrijednost svoje kuće koristeći usporedive podatke o prodaji i tržištu"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Recenzent ugovora o najmu",
+      "d": "Pregledajte i razumite ključne uvjete u svom ugovoru o najmu"
+    },
+    "Moving Checklist": {
+      "n": "Kontrolni popis za premještanje",
+      "d": "Sveobuhvatan kontrolni popis za selidbu s vremenskom crtom i upravljanjem zadacima"
+    },
+    "Property Investment Analyzer": {
+      "n": "Analizator ulaganja u nekretnine",
+      "d": "Analizirajte nekretnine za iznajmljivanje s obzirom na potencijal povrata ulaganja"
+    },
+    "Renovation Budget Planner": {
+      "n": "Planer proračuna obnove",
+      "d": "Planirajte i proračunajte projekte obnove kuće s detaljnim procjenama troškova"
+    },
+    "House Hunting Scorecard": {
+      "n": "Tablica rezultata traženja kuće",
+      "d": "Ocijenite i rangirajte domove tijekom procesa traženja kuće"
+    },
+    "Down Payment Calculator": {
+      "n": "Kalkulator predujma",
+      "d": "Izračunajte opcije predujma i planove štednje za kupnju vašeg doma"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Raspored održavanja kuće",
+      "d": "Napravite sezonski raspored održavanja kuće kako biste zaštitili svoju investiciju"
+    },
+    "Rental Property Analysis": {
+      "n": "Analiza nekretnine za iznajmljivanje",
+      "d": "Procijenite mogućnosti iznajmljivanja nekretnina s financijskim projekcijama"
+    },
+    "Home Staging Tips": {
+      "n": "Savjeti za postavljanje doma",
+      "d": "Uredite svoj dom kako biste ga prodali brže i po višoj cijeni"
+    },
+    "Realtor Interview Questions": {
+      "n": "Pitanja za intervju za trgovca nekretninama",
+      "d": "Ključna pitanja koja treba postaviti prilikom razgovora s agentima za nekretnine"
+    },
+    "Closing Cost Estimator": {
+      "n": "Procjenitelj troškova zaključenja",
+      "d": "Procijenite sve troškove zaključenja vaše nekretninske transakcije"
+    },
+    "HOA Assessment Guide": {
+      "n": "Vodič za procjenu HOA",
+      "d": "Ocijenite HOA naknade, pravila i financijsko zdravlje prije kupnje"
+    },
+    "Car Buying Assistant": {
+      "n": "Pomoćnik za kupnju automobila",
+      "d": "Prođite kroz proces kupnje automobila s pouzdanjem i uštedite novac"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Alat za usporedbu vozila",
+      "d": "Usporedite vozila jedan do drugoga prema specifikacijama, cijeni i značajkama"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Planer rasporeda održavanja",
+      "d": "Kreirajte personalizirani raspored održavanja vozila za produženje vijeka automobila"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Analizator procjena popravaka",
+      "d": "Ocijenite procjene auto popravaka i pronađite poštene cijene usluga"
+    },
+    "Road Trip Planner": {
+      "n": "Planer putovanja cestom",
+      "d": "Isplanirajte savršeno putovanje cestom s odmorištima, gorivom i izračunatim vremenom"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Kontrolna lista za pregled rabljenog automobila",
+      "d": "Temeljita kontrolna lista za kupnju rabljenog automobila s pouzdanjem"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Usporedba auto osiguranja",
+      "d": "Usporedite opcije auto osiguranja kako biste pronašli najbolju pokrivenost i cijenu"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Kalkulator potrošnje goriva",
+      "d": "Izračunajte i optimizirajte troškove goriva i učinkovitost vašeg vozila"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Analizator leasinga naspram kupnje automobila",
+      "d": "Usporedite leasing i kupnju kako biste pronašli najbolju financijsku opciju"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Procjenitelj vrijednosti zamjene",
+      "d": "Procijenite vrijednost zamjene vašeg vozila i pregovarajte o poštenom dogovoru"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Pregledavač povijesti vozila",
+      "d": "Ključna pitanja i provjere pri pregledavanju izvještaja o povijesti rabljenog vozila"
+    },
+    "Car Detailing Guide": {
+      "n": "Vodič za detaljno čišćenje automobila",
+      "d": "Upute korak po korak za detaljno čišćenje automobila do izložbenog sjaja"
+    },
+    "Winter Car Prep": {
+      "n": "Priprema automobila za zimu",
+      "d": "Pripremite svoje vozilo za zimske uvjete vožnje i hladno vrijeme"
+    },
+    "New Driver Guide": {
+      "n": "Vodič za nove vozače",
+      "d": "Osnovni savjeti i znanje o vožnji za nove vozače i početnike"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Vodič za električna vozila",
+      "d": "Sve što trebate znati o kupnji i posjedovanju električnog vozila"
+    },
+    "Trip Planner": {
+      "n": "Planer putovanja",
+      "d": "Isplanirajte savršeno putovanje s odredištima, aktivnostima i logistikom"
+    },
+    "Packing List Generator": {
+      "n": "Generator popisa za pakiranje",
+      "d": "Generirajte prilagođeni popis za pakiranje za bilo koje putovanje i odredište"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Kreator rasporeda odmora",
+      "d": "Izradite dnevni raspored odmora s aktivnostima i restoranima"
+    },
+    "Travel Budget Calculator": {
+      "n": "Kalkulator proračuna za putovanje",
+      "d": "Izračunajte i pratite proračun za putovanje s detaljnim kategorijama troškova"
+    },
+    "Local Attractions Guide": {
+      "n": "Vodič za lokalne atrakcije",
+      "d": "Otkrijte najbolje lokalne atrakcije, skrivene dragulje i mjesta koja morate posjetiti"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Usporedba putnog osiguranja",
+      "d": "Usporedite opcije putnog osiguranja za pravu pokrivenost na vašem putovanju"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Strategija pronalaženja povoljnih letova",
+      "d": "Strategije i savjeti za pronalaženje najboljih ponuda i cijena letova"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Pomoćnik za usporedbu hotela",
+      "d": "Usporedite hotele prema cijeni, sadržajima, lokaciji i recenzijama"
+    },
+    "Solo Travel Planner": {
+      "n": "Planer solo putovanja",
+      "d": "Isplanirajte sigurnu i ispunjavajuću solo avanturu bilo gdje u svijetu"
+    },
+    "Family Vacation Planner": {
+      "n": "Planer obiteljskog odmora",
+      "d": "Isplanirajte obiteljski odmor koji zabavlja sve uzraste"
+    },
+    "Backpacking Planner": {
+      "n": "Planer putovanja s naprtnjačom",
+      "d": "Isplanirajte povoljno putovanje s naprtnjačom s rutama i opremom"
+    },
+    "Business Travel Organizer": {
+      "n": "Organizator poslovnih putovanja",
+      "d": "Učinkovito organizirajte poslovna putovanja s praćenjem troškova i rasporedom"
+    },
+    "Cruise Planner": {
+      "n": "Planer krstarenja",
+      "d": "Isplanirajte savršeni odmor na krstarenju s izletima u lukama i aktivnostima na brodu"
+    },
+    "Travel Safety Guide": {
+      "n": "Vodič za sigurnost na putovanju",
+      "d": "Ostanite sigurni na putovanju uz savjete za sigurnost i protokole specifične za odredište"
+    },
+    "Visa Requirements Checker": {
+      "n": "Provjera viznih zahtjeva",
+      "d": "Provjerite vizne zahtjeve i pripremite materijale za prijavu za vaše putovanje"
+    },
+    "Language Survival Kit": {
+      "n": "Jezični komplet za preživljavanje",
+      "d": "Naučite osnovne fraze i kulturne savjete za vaše odredište putovanja"
+    },
+    "Airport Navigation Guide": {
+      "n": "Vodič za snalaženje u zračnoj luci",
+      "d": "Učinkovito se snalazite u zračnim lukama uz savjete za terminale i upravljanje vremenom"
+    },
+    "Travel Photo Plan": {
+      "n": "Plan putničke fotografije",
+      "d": "Isplanirajte svoju putničku fotografiju s najboljim lokacijama, vremenima i tehnikama"
+    },
+    "Group Trip Coordinator": {
+      "n": "Koordinator grupnog putovanja",
+      "d": "Koordinirajte logistiku grupnog putovanja, proračune i aktivnosti za sve"
+    },
+    "Adventure Travel Planner": {
+      "n": "Planer avanturističkog putovanja",
+      "d": "Isplanirajte uzbudljivo avanturističko putovanje uz sigurnost i logistiku"
+    },
+    "Wedding Planner": {
+      "n": "Planer vjenčanja",
+      "d": "Isplanirajte svaki detalj vašeg savršenog vjenčanja od mjesta do zavjeta"
+    },
+    "Birthday Party Planner": {
+      "n": "Planer rođendanske proslave",
+      "d": "Isplanirajte nezaboravnu rođendansku proslavu za bilo koju dob i stil"
+    },
+    "Conference Organizer": {
+      "n": "Organizator konferencija",
+      "d": "Organizirajte profesionalne konferencije i seminare s detaljnom logistikom"
+    },
+    "Baby Shower Planner": {
+      "n": "Planer baby showera",
+      "d": "Isplanirajte prekrasan baby shower s igrama, hranom i dekoracijama"
+    },
+    "Anniversary Celebration": {
+      "n": "Proslava obljetnice",
+      "d": "Isplanirajte značajnu proslavu obljetnice za bilo koju važnu godišnjicu"
+    },
+    "Graduation Party": {
+      "n": "Proslava diplomiranja",
+      "d": "Proslavite akademska postignuća savršeno planiranom proslavom diplomiranja"
+    },
+    "Holiday Party Planner": {
+      "n": "Planer blagdanskih zabava",
+      "d": "Isplanirajte svečana blagdanska okupljanja s hranom, aktivnostima i dekoracijama"
+    },
+    "Corporate Event Planner": {
+      "n": "Planer korporativnih događanja",
+      "d": "Isplanirajte profesionalna korporativna događanja koja impresioniraju klijente i zaposlenike"
+    },
+    "Fundraiser Organizer": {
+      "n": "Organizator dobrotvornih događanja",
+      "d": "Organizirajte uspješna događanja za prikupljanje sredstava za dobrotvorne svrhe"
+    },
+    "Reunion Planner": {
+      "n": "Planer okupljanja",
+      "d": "Isplanirajte nezaboravno obiteljsko ili razredno okupljanje koje spaja sve"
+    },
+    "Engagement Party Planner": {
+      "n": "Planer proslave zaruka",
+      "d": "Isplanirajte radosnu proslavu zaruka za dijeljenje sretne vijesti"
+    },
+    "Retirement Party": {
+      "n": "Proslava umirovljenja",
+      "d": "Proslavite dobro proživljenu karijeru promišljenom proslavom umirovljenja"
+    },
+    "Housewarming Planner": {
+      "n": "Planer useljenja",
+      "d": "Isplanirajte toplu proslavu useljenja u vaš novi dom"
+    },
+    "Themed Party Creator": {
+      "n": "Kreator tematskih zabava",
+      "d": "Osmislite i isplanirajte kreativne tematske zabave s koordiniranim detaljima"
+    },
+    "Event Budget Tracker": {
+      "n": "Praćenje proračuna događanja",
+      "d": "Pratite i upravljajte troškovima događanja kako biste ostali unutar proračuna proslave"
+    },
+    "Chore Chart Creator": {
+      "n": "Kreator rasporeda kućanskih poslova",
+      "d": "Kreirajte raspored kućanskih poslova primjeren dobi s nagradama i praćenjem"
+    },
+    "Educational Activity Planner": {
+      "n": "Planer obrazovnih aktivnosti",
+      "d": "Isplanirajte zabavne obrazovne aktivnosti koje učenje čine uzbudljivim za djecu"
+    },
+    "Bedtime Story Writer": {
+      "n": "Pisac priča za laku noć",
+      "d": "Kreirajte personalizirane priče za laku noć s vašim djetetom u glavnoj ulozi"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Praćenje razvojnih prekretnica prema dobi",
+      "d": "Pratite razvojne prekretnice i slavite rast vašeg djeteta"
+    },
+    "School Lunch Planner": {
+      "n": "Planer školskog ručka",
+      "d": "Isplanirajte zdrave i privlačne školske ručkove koje će djeca zaista jesti"
+    },
+    "Homework Help Guide": {
+      "n": "Vodič za pomoć s domaćom zadaćom",
+      "d": "Strategije za podršku domaćoj zadaći vašeg djeteta bez rješavanja umjesto njega"
+    },
+    "Family Game Night Ideas": {
+      "n": "Ideje za obiteljsku večer igara",
+      "d": "Isplanirajte zabavne obiteljske večeri igara s aktivnostima za sve uzraste"
+    },
+    "Screen Time Schedule": {
+      "n": "Raspored vremena pred ekranom",
+      "d": "Kreirajte uravnotežena pravila i rasporede za vrijeme pred ekranom za vašu obitelj"
+    },
+    "Allowance System Designer": {
+      "n": "Dizajner sustava džeparca",
+      "d": "Osmislite sustav džeparca i upravljanja novcem primjeren dobi"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Raspored spavanja beba",
+      "d": "Kreirajte zdrave rasporede i rutine spavanja za bebe i malu djecu"
+    },
+    "Potty Training Guide": {
+      "n": "Vodič za odvikavanje od pelena",
+      "d": "Planovi za odvikavanje od pelena korak po korak sa savjetima za svaku fazu"
+    },
+    "Back to School Prep": {
+      "n": "Priprema za povratak u školu",
+      "d": "Pripremite svoju obitelj za gladak povratak u školu"
+    },
+    "Summer Activity Planner": {
+      "n": "Planer ljetnih aktivnosti",
+      "d": "Isplanirajte zabavno i obogaćujuće ljeto s aktivnostima, kampovima i avanturama"
+    },
+    "Family Meeting Agenda": {
+      "n": "Dnevni red obiteljskog sastanka",
+      "d": "Vodite produktivne obiteljske sastanke koji svima daju glas"
+    },
+    "Child Development Tracker": {
+      "n": "Praćenje razvoja djeteta",
+      "d": "Pratite i podržite fizički, društveni i kognitivni razvoj vašeg djeteta"
+    },
+    "Dog Training Plan": {
+      "n": "Plan treninga pasa",
+      "d": "Kreirajte prilagođeni plan treninga za vašeg psa bilo koje dobi ili razine vještina"
+    },
+    "Cat Care Guide": {
+      "n": "Vodič za njegu mačaka",
+      "d": "Potpuni vodič za njegu kako bi vaša mačka bila zdrava i sretna"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Planer prehrane kućnih ljubimaca",
+      "d": "Isplanirajte optimalnu prehranu za vašeg ljubimca prema dobi, pasmini i zdravstvenim potrebama"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Kontrolna lista za socijalizaciju šteneta",
+      "d": "Osigurajte da je vaše štene pravilno socijalizirano tijekom kritičnog razvojnog razdoblja"
+    },
+    "Pet First Aid Guide": {
+      "n": "Vodič za prvu pomoć za kućne ljubimce",
+      "d": "Osnovno znanje o prvoj pomoći i hitni postupci za vlasnike kućnih ljubimaca"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Planer postavljanja akvarija",
+      "d": "Isplanirajte i postavite uspješan akvarij s pravim ribama i opremom"
+    },
+    "Pet Travel Preparation": {
+      "n": "Priprema za putovanje s kućnim ljubimcem",
+      "d": "Pripremite sve potrebno za sigurno putovanje bez stresa s vašim ljubimcem"
+    },
+    "New Pet Checklist": {
+      "n": "Kontrolna lista za novog kućnog ljubimca",
+      "d": "Sve što trebate pripremiti prije nego dovedete novog kućnog ljubimca kući"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Analizator ponašanja kućnih ljubimaca",
+      "d": "Razumite i riješite probleme u ponašanju vašeg ljubimca uz stručne savjete"
+    },
+    "Senior Pet Care": {
+      "n": "Njega starijih kućnih ljubimaca",
+      "d": "Specijalizirani vodič za njegu starijih ljubimaca kako bi bili udobni i zdravi"
+    },
+    "Pet Exercise Planner": {
+      "n": "Planer vježbanja kućnih ljubimaca",
+      "d": "Kreirajte rutinu vježbanja koja održava vašeg ljubimca u formi i mentalno stimuliranog"
+    },
+    "Vet Visit Preparation": {
+      "n": "Priprema za posjet veterinaru",
+      "d": "Pripremite se za posjet veterinaru s organiziranim zdravstvenim podacima i pitanjima"
+    },
+    "Home Improvement Planner": {
+      "n": "Planer uređenja doma",
+      "d": "Isplanirajte i odredite prioritete projekata uređenja doma s proračunima i rokovima"
+    },
+    "Furniture Project Planner": {
+      "n": "Planer projekata namještaja",
+      "d": "Isplanirajte izradu namještaja po mjeri s materijalima, alatima i uputama korak po korak"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Kalkulator proračuna za renoviranje",
+      "d": "Izračunajte detaljne troškove renoviranja s radnom snagom, materijalima i rezervom"
+    },
+    "Paint Color Coordinator": {
+      "n": "Koordinator boja za ličenje",
+      "d": "Odaberite i koordinirajte boje za ličenje za skladnu paletu doma"
+    },
+    "Organization System Designer": {
+      "n": "Dizajner sustava organizacije",
+      "d": "Osmislite prilagođene sustave organizacije za bilo koju prostoriju ili prostor u vašem domu"
+    },
+    "Storage Solutions Planner": {
+      "n": "Planer rješenja za pohranu",
+      "d": "Pronađite kreativna rješenja za pohranu kako biste maksimizirali prostor u bilo kojoj prostoriji"
+    },
+    "Home Repair Guide": {
+      "n": "Vodič za kućne popravke",
+      "d": "Upute korak po korak za uobičajene kućne popravke koje možete sami napraviti"
+    },
+    "Tool Buying Guide": {
+      "n": "Vodič za kupnju alata",
+      "d": "Odaberite prave alate za vaše uradi sam projekte bez pretjerane potrošnje"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Sezonsko održavanje doma",
+      "d": "Potpune sezonske kontrolne liste za održavanje kako biste zaštitili svoj dom tijekom cijele godine"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Revizija energetske učinkovitosti",
+      "d": "Procijenite i poboljšajte energetsku učinkovitost vašeg doma kako biste uštedjeli na računima"
+    },
+    "Smart Home Setup": {
+      "n": "Postavljanje pametnog doma",
+      "d": "Isplanirajte i postavite sustav pametnog doma s pravim uređajima i integracijama"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Planer renoviranja kupaonice",
+      "d": "Isplanirajte renoviranje kupaonice s rasporedom, armaturom i upravljanjem proračunom"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Planer renoviranja kuhinje",
+      "d": "Isplanirajte renoviranje kuhinje od rasporeda do uređaja s detaljnim proračunom"
+    },
+    "Closet Organization": {
+      "n": "Organizacija ormara",
+      "d": "Osmislite i organizirajte ormare za maksimalnu učinkovitost i lak pristup"
+    },
+    "Garage Organization": {
+      "n": "Organizacija garaže",
+      "d": "Pretvorite svoju garažu u organiziran i funkcionalan prostor"
+    },
+    "Product Comparison Tool": {
+      "n": "Alat za usporedbu proizvoda",
+      "d": "Usporedite proizvode jedan do drugoga kako biste donijeli najbolju odluku o kupnji"
+    },
+    "Buying Guide Creator": {
+      "n": "Kreator vodiča za kupnju",
+      "d": "Kreirajte detaljne vodiče za kupnju za bilo koju kategoriju proizvoda"
+    },
+    "Gift Finder": {
+      "n": "Tražilica darova",
+      "d": "Pronađite savršeni dar za bilo koga na temelju interesa i vašeg proračuna"
+    },
+    "Price Tracker Strategy": {
+      "n": "Strategija praćenja cijena",
+      "d": "Strategije za praćenje cijena i kupnju u pravo vrijeme"
+    },
+    "Black Friday Strategy": {
+      "n": "Black Friday Strategija",
+      "d": "Isplanirajte svoju Black Friday i Cyber Monday kupnju za maksimalnu uštedu"
+    },
+    "Back to School Shopping": {
+      "n": "Kupnja za povratak u školu",
+      "d": "Organizirajte kupnju za povratak u školu s popisima, proračunima i ponudama"
+    },
+    "Wardrobe Planner": {
+      "n": "Planer garderobe",
+      "d": "Izgradite svestranu garderobu sa strateškom kupnjom i planiranjem odjevnih kombinacija"
+    },
+    "Electronics Buying Guide": {
+      "n": "Vodič za kupnju elektronike",
+      "d": "Snalazite se pri kupnji elektronike uz usporedbu specifikacija i savjete o tajmingu"
+    },
+    "Subscription Service Comparison": {
+      "n": "Usporedba pretplatničkih usluga",
+      "d": "Usporedite pretplatničke usluge kako biste pronašli najbolju vrijednost za vaše potrebe"
+    },
+    "Wedding Registry Planner": {
+      "n": "Planer popisa darova za vjenčanje",
+      "d": "Izradite sveobuhvatan popis darova za vjenčanje s artiklima za svaki proračun"
+    },
+    "Bible Study Guide": {
+      "n": "Vodič za proučavanje Biblije",
+      "d": "Kreirajte strukturirane planove proučavanja Biblije s kontekstom, pitanjima i primjenom"
+    },
+    "Sermon Outline Creator": {
+      "n": "Kreator nacrta propovijedi",
+      "d": "Razvijte uvjerljive nacrte propovijedi sa Svetim pismom, ključnim točkama i ilustracijama"
+    },
+    "Comparative Religion Study": {
+      "n": "Komparativna studija religija",
+      "d": "Istražite i usporedite vjerovanja, prakse i povijest svjetskih religija"
+    },
+    "Discussion Question Generator": {
+      "n": "Generator pitanja za raspravu",
+      "d": "Generirajte promišljena pitanja za raspravu o vjerskim i filozofskim temama"
+    },
+    "Devotional Writer": {
+      "n": "Pisac pobožnih razmišljanja",
+      "d": "Kreirajte dnevna pobožna razmišljanja sa Svetim pismom, refleksijom i molitvenim poticajima"
+    },
+    "Prayer Journal Guide": {
+      "n": "Vodič za molitveni dnevnik",
+      "d": "Strukturirajte svoj molitveni život uz vođene poticaje i okvire za dnevnik"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Vodič za duhovni knjiški klub",
+      "d": "Kreirajte vodiče za raspravu u knjiškom klubu za duhovne i vjerske knjige"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Vodič za meditaciju nad Svetim pismom",
+      "d": "Kreirajte vođena iskustva meditacije usredotočena na biblijske odlomke"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Plan lekcija za mladež",
+      "d": "Kreirajte zanimljive lekcije za grupu mladih s aktivnostima i raspravama"
+    },
+    "Faith Journey Reflector": {
+      "n": "Reflektor duhovnog puta",
+      "d": "Vođene refleksije za istraživanje i produbljivanje vašeg osobnog puta vjere"
+    },
+    "Workout Plan Creator": {
+      "n": "Kreator plana vježbanja",
+      "d": "Kreirajte personalizirane planove vježbanja na temelju vaših ciljeva i razine kondicije"
+    },
+    "Training Schedule Builder": {
+      "n": "Kreator rasporeda treninga",
+      "d": "Izradite strukturirani raspored treninga za bilo koji sport ili kondicijski cilj"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Analizator strategije igre",
+      "d": "Analizirajte strategije igre i razvijte pobjedničke pristupe za vaš sport"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Vodič za sportsku prehranu",
+      "d": "Optimizirajte svoju sportsku prehranu za vrhunske performanse i oporavak"
+    },
+    "Coaching Practice Plan": {
+      "n": "Plan trenerske vježbe",
+      "d": "Osmislite učinkovite treninge koji razvijaju vještine i timsku koheziju"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Analizator fantasy sportova",
+      "d": "Analizirajte susrete i optimizirajte svoju fantasy sportsku postavu svaki tjedan"
+    },
+    "Race Training Plan": {
+      "n": "Plan treninga za utrku",
+      "d": "Trenirajte za utrke od 5 km do maratona sa strukturiranim progresivnim planovima"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Analizator sportske statistike",
+      "d": "Analizirajte statistiku igrača i timova za dublje razumijevanje sporta"
+    },
+    "Team Management Tool": {
+      "n": "Alat za upravljanje timom",
+      "d": "Upravljajte popisom tima, rasporedima i komunikacijom učinkovito"
+    },
+    "Injury Recovery Planner": {
+      "n": "Planer oporavka od ozljede",
+      "d": "Isplanirajte siguran i učinkovit oporavak od uobičajenih sportskih ozljeda"
+    },
+    "Photography Guide": {
+      "n": "Vodič za fotografiju",
+      "d": "Poboljšajte svoje fotografske vještine uz savjete o kompoziciji, osvjetljenju i opremi"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Pomoćnik za uzorke pletenja",
+      "d": "Pronađite i prilagodite uzorke pletenja za vašu razinu vještina i ideje projekata"
+    },
+    "Board Game Night Planner": {
+      "n": "Planer večeri društvenih igara",
+      "d": "Isplanirajte savršene večeri društvenih igara s odabirom igara i uparivanjem grupa"
+    },
+    "Fishing Trip Planner": {
+      "n": "Planer ribolovnog izleta",
+      "d": "Isplanirajte uspješne ribolovne izlete sa savjetima o lokaciji, opremi i tehnikama"
+    },
+    "Camping Trip Organizer": {
+      "n": "Organizator kampiranja",
+      "d": "Organizirajte kampiranje s popisima opreme, planovima obroka i idejama za aktivnosti"
+    },
+    "Bird Watching Guide": {
+      "n": "Vodič za promatranje ptica",
+      "d": "Identificirajte lokalne ptice i planirajte izlete za promatranje uz sezonske savjete"
+    },
+    "Model Building Planner": {
+      "n": "Planer izgradnje maketa",
+      "d": "Isplanirajte i izvedite projekte izgradnje maketa s materijalima i tehnikama"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Vodič za strategiju slagalica",
+      "d": "Strategije i tehnike za brže i učinkovitije rješavanje slagalica"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Planer astronomskog promatranja",
+      "d": "Isplanirajte večeri promatranja zvijezda s nebeskim događajima i preporukama za opremu"
+    },
+    "Art Supply Guide": {
+      "n": "Vodič za likovni pribor",
+      "d": "Odaberite pravi likovni pribor za vaš medij i razinu vještina"
+    },
+    "Goal Setting Framework": {
+      "n": "Okvir za postavljanje ciljeva",
+      "d": "Postavite i ostvarite značajne ciljeve sa strukturiranim okvirom i akcijskim planom"
+    },
+    "Bucket List Creator": {
+      "n": "Kreator liste želja",
+      "d": "Kreirajte inspirativnu listu želja organiziranu po kategoriji i prioritetu"
+    },
+    "Personal Mission Statement": {
+      "n": "Osobna izjava o misiji",
+      "d": "Osmislite značajnu osobnu izjavu o misiji koja usmjerava vaše životne odluke"
+    },
+    "Life Transition Guide": {
+      "n": "Vodič za životne prijelaze",
+      "d": "Prođite kroz velike životne prijelaze uz planiranje, podršku i strategije suočavanja"
+    },
+    "Habit Building Plan": {
+      "n": "Plan izgradnje navika",
+      "d": "Izgradite trajne pozitivne navike provjerenim strategijama temeljenim na znanosti"
+    },
+    "Time Audit Tool": {
+      "n": "Alat za reviziju vremena",
+      "d": "Revidirajte kako provodite vrijeme i optimizirajte za ono što je najvažnije"
+    },
+    "Relationship Goal Planner": {
+      "n": "Planer ciljeva u odnosima",
+      "d": "Postavite i radite prema ciljevima za jače, zdravije odnose"
+    },
+    "Vision Board Creator": {
+      "n": "Kreator ploče vizije",
+      "d": "Kreirajte digitalnu ploču vizije s vođenim poticajima i vježbama vizualizacije"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Osobna SWOT analiza",
+      "d": "Provedite osobnu SWOT analizu za planiranje karijere i života"
+    },
+    "Legacy Letter Writer": {
+      "n": "Pisac ostavštinskih pisama",
+      "d": "Napišite značajna pisma ostavštine voljenima koja bilježe vaše vrijednosti i mudrost"
+    },
+    "Contract Draft Creator": {
+      "n": "Kreator nacrta ugovora",
+      "d": "Generirajte profesionalne nacrte ugovora za bilo koji poslovni odnos"
+    },
+    "NDA Generator": {
+      "n": "NDA Generator",
+      "d": "Kreirajte ugovore o povjerljivosti prilagođene vašoj situaciji"
+    },
+    "Rental Agreement Draft": {
+      "n": "Nacrt ugovora o najmu",
+      "d": "Izradite ugovore o najmu stambenog ili poslovnog prostora"
+    },
+    "Terms of Service Generator": {
+      "n": "Generator uvjeta korištenja",
+      "d": "Kreirajte sveobuhvatne uvjete korištenja za web stranice i aplikacije"
+    },
+    "Privacy Policy Writer": {
+      "n": "Pisac politike privatnosti",
+      "d": "Generirajte politike privatnosti usklađene s GDPR-om i CCPA-om"
+    },
+    "Freelance Agreement": {
+      "n": "Ugovor za slobodnjake",
+      "d": "Kreirajte ugovore između slobodnjaka i klijenata"
+    },
+    "Non-Compete Draft": {
+      "n": "Nacrt zabrane konkurencije",
+      "d": "Izradite klauzule i samostalne ugovore o zabrani konkurencije"
+    },
+    "LLC Operating Agreement": {
+      "n": "LLC Operativni ugovor",
+      "d": "Kreirajte operativne ugovore za društva s ograničenom odgovornošću"
+    },
+    "Partnership Agreement": {
+      "n": "Ugovor o partnerstvu",
+      "d": "Izradite ugovore o partnerstvu s jasnim ulogama i uvjetima"
+    },
+    "Intellectual Property Brief": {
+      "n": "Sažetak intelektualnog vlasništva",
+      "d": "Opišite vlasništvo nad intelektualnim vlasništvom i strategije zaštite"
+    },
+    "Cease and Desist Draft": {
+      "n": "Nacrt opomene pred tužbu",
+      "d": "Kreirajte pisma opomene pred tužbu za razne povrede"
+    },
+    "Employee Handbook Section": {
+      "n": "Sekcija priručnika za zaposlenike",
+      "d": "Napišite pojedinačne sekcije za priručnike za zaposlenike"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Ugovor za nezavisnog izvođača",
+      "d": "Izradite ugovore za nezavisne izvođače s pravilnim jezikom klasifikacije"
+    },
+    "Liability Waiver Draft": {
+      "n": "Nacrt odricanja od odgovornosti",
+      "d": "Kreirajte odricanja od odgovornosti za aktivnosti i usluge"
+    },
+    "Settlement Letter Draft": {
+      "n": "Nacrt pisma o nagodbi",
+      "d": "Izradite pisma ponude ili odgovora na nagodbu"
+    },
+    "Demand Letter Draft": {
+      "n": "Nacrt pisma zahtjeva",
+      "d": "Kreirajte formalna pisma zahtjeva za razne potraživanja"
+    },
+    "Power of Attorney Draft": {
+      "n": "Nacrt punomoći",
+      "d": "Izradite dokumente punomoći za razne namjene"
+    },
+    "Last Will Outline": {
+      "n": "Nacrt oporuke",
+      "d": "Kreirajte nacrt za osnovnu oporuku"
+    },
+    "Business License Checklist": {
+      "n": "Kontrolna lista poslovnih dozvola",
+      "d": "Generirajte kontrolnu listu potrebnih dozvola za vaše poslovanje"
+    },
+    "Trademark Application Guide": {
+      "n": "Vodič za prijavu žiga",
+      "d": "Vodič korak po korak za podnošenje prijave žiga"
+    },
+    "Small Claims Court Guide": {
+      "n": "Vodič za sud za male sporove",
+      "d": "Pripremite se za sud za male sporove s organiziranim argumentima"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Priprema za medijaciju razvoda",
+      "d": "Organizirajte ključne točke i prioritete za medijaciju razvoda"
+    },
+    "Tenant Rights Guide": {
+      "n": "Vodič za prava stanara",
+      "d": "Razumite prava stanara i pravne lijekove u vašoj jurisdikciji"
+    },
+    "Landlord Notice Draft": {
+      "n": "Nacrt obavijesti stanodavca",
+      "d": "Izradite pravilne pravne obavijesti od stanodavca do stanara"
+    },
+    "Copyright Registration Guide": {
+      "n": "Vodič za registraciju autorskih prava",
+      "d": "Vodič za registraciju autorskih prava pri nadležnom uredu za autorska prava"
+    },
+    "Personal Budget Planner": {
+      "n": "Planer osobnog proračuna",
+      "d": "Kreirajte sveobuhvatni mjesečni ili godišnji plan proračuna"
+    },
+    "Investment Research Assistant": {
+      "n": "Pomoćnik za istraživanje investicija",
+      "d": "Sustavno istražite i analizirajte investicijske prilike"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Kalkulator otplate dugova",
+      "d": "Isplanirajte strategiju za učinkovito uklanjanje dugova"
+    },
+    "Expense Tracker Setup": {
+      "n": "Postavljanje praćenja troškova",
+      "d": "Osmislite personalizirani sustav praćenja troškova"
+    },
+    "Retirement Planning Guide": {
+      "n": "Vodič za planiranje mirovine",
+      "d": "Izgradite sveobuhvatnu strategiju štednje za mirovinu"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Kontrolna lista za pripremu poreza",
+      "d": "Organizirajte dokumente i odbitke za podnošenje porezne prijave"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Kalkulator fonda za hitne slučajeve",
+      "d": "Odredite i isplanirajte svoj idealni fond za hitne slučajeve"
+    },
+    "Net Worth Tracker": {
+      "n": "Praćenje neto vrijednosti",
+      "d": "Pratite i vizualizirajte svoju potpunu financijsku sliku"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Plan poboljšanja kreditnog rezultata",
+      "d": "Kreirajte akcijski plan za poboljšanje vašeg kreditnog rezultata"
+    },
+    "Student Loan Strategy": {
+      "n": "Strategija studentskih kredita",
+      "d": "Optimizirajte svoj pristup otplati studentskih kredita"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Planer prihoda od dodatnog posla",
+      "d": "Planirajte i projicirajte prihode od dodatnih poslova"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Analizator potreba za osiguranjem",
+      "d": "Ocijenite nedostatke i potrebe vaše pokrivenosti osiguranjem"
+    },
+    "Estate Planning Checklist": {
+      "n": "Kontrolna lista za planiranje ostavštine",
+      "d": "Organizirajte dokumente i odluke za planiranje ostavštine"
+    },
+    "Financial Goal Setter": {
+      "n": "Postavljač financijskih ciljeva",
+      "d": "Definirajte i pratite napredak prema financijskim prekretnicama"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Analizator novčanog toka",
+      "d": "Analizirajte obrasce prihoda i rashoda tijekom vremena"
+    },
+    "Savings Challenge Creator": {
+      "n": "Kreator izazova štednje",
+      "d": "Osmislite zabavan izazov štednje za izgradnju vaše financijske rezerve"
+    },
+    "Investment Portfolio Review": {
+      "n": "Pregled investicijskog portfelja",
+      "d": "Pregledajte i rebalansirajte svoj investicijski portfelj"
+    },
+    "Cryptocurrency Research": {
+      "n": "Istraživanje kriptovaluta",
+      "d": "Istražite i ocijenite investicije u kriptovalute"
+    },
+    "Stock Analysis Helper": {
+      "n": "Pomoćnik za analizu dionica",
+      "d": "Provedite fundamentalnu i tehničku analizu dionica"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Kalkulator ulaganja u nekretnine",
+      "d": "Analizirajte potencijalne povrate ulaganja u nekretnine"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Tražilica poreznih olakšica za tvrtke",
+      "d": "Pronađite porezne olakšice na koje vaša tvrtka ima pravo"
+    },
+    "Payroll Budget Planner": {
+      "n": "Planer proračuna za plaće",
+      "d": "Planirajte i budžetirajte troškove plaća zaposlenika"
+    },
+    "Invoice Template Creator": {
+      "n": "Kreator predložaka faktura",
+      "d": "Dizajnirajte profesionalne fakture za svoje poslovanje"
+    },
+    "Profit Margin Calculator": {
+      "n": "Kalkulator profitne marže",
+      "d": "Izračunajte i optimizirajte profitne marže za sve proizvode"
+    },
+    "Financial Independence Planner": {
+      "n": "Planer financijske neovisnosti",
+      "d": "Zacrtajte svoj put do financijske neovisnosti i prijevremene mirovine"
+    },
+    "Ad Copy Writer": {
+      "n": "Pisac reklamnih tekstova",
+      "d": "Kreirajte uvjerljive reklamne tekstove za bilo koju platformu ili medij"
+    },
+    "SEO Article Creator": {
+      "n": "Kreator SEO članaka",
+      "d": "Pišite SEO-optimizirane članke koji se rangiraju i konvertiraju"
+    },
+    "Social Media Content Calendar": {
+      "n": "Kalendar sadržaja za društvene mreže",
+      "d": "Isplanirajte mjesec dana sadržaja za društvene mreže na svim platformama"
+    },
+    "Email Campaign Builder": {
+      "n": "Kreator email kampanja",
+      "d": "Osmislite višestruke email marketinške kampanje koje konvertiraju"
+    },
+    "Product Launch Strategy": {
+      "n": "Strategija lansiranja proizvoda",
+      "d": "Kreirajte sveobuhvatnu marketinšku strategiju za lansiranje proizvoda"
+    },
+    "Brand Voice Guide": {
+      "n": "Vodič za glas brenda",
+      "d": "Definirajte i dokumentirajte glas i poruke svog brenda"
+    },
+    "Content Marketing Strategy": {
+      "n": "Strategija sadržajnog marketinga",
+      "d": "Izgradite kompletnu strategiju sadržajnog marketinga od nule"
+    },
+    "Influencer Outreach Template": {
+      "n": "Predložak za kontaktiranje influencera",
+      "d": "Kreirajte personalizirane ponude za suradnju s influencerima"
+    },
+    "Landing Page Copywriter": {
+      "n": "Copywriter za odredišne stranice",
+      "d": "Napišite tekstove za odredišne stranice s visokom stopom konverzije"
+    },
+    "A/B Test Plan Creator": {
+      "n": "Kreator plana A/B testiranja",
+      "d": "Osmislite strukturirane A/B testove za marketinške kampanje"
+    },
+    "Buyer Persona Builder": {
+      "n": "Kreator persone kupca",
+      "d": "Kreirajte detaljne persone kupaca za ciljano oglašavanje"
+    },
+    "Competitive Analysis Template": {
+      "n": "Predložak za analizu konkurencije",
+      "d": "Analizirajte konkurenciju i identificirajte tržišne prilike"
+    },
+    "Marketing Budget Planner": {
+      "n": "Planer marketinškog proračuna",
+      "d": "Rasporedite i optimizirajte svoj marketinški proračun"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Strategija affiliate marketinga",
+      "d": "Izgradite i optimizirajte program affiliate marketinga"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Plan marketinga podcasta",
+      "d": "Promovirajte svoj podcast i povećajte bazu slušatelja"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Plan promocije webinara",
+      "d": "Planirajte i promovirajte webinare koji privlače registracije"
+    },
+    "Referral Program Designer": {
+      "n": "Dizajner programa preporuka",
+      "d": "Osmislite programe preporuka koji pokreću rast usmenom predajom"
+    },
+    "Brand Story Writer": {
+      "n": "Pisac priče o brendu",
+      "d": "Osmislite uvjerljivu priču o nastanku i narativ brenda"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Kreator marketinškog lijevka",
+      "d": "Osmislite lijevke korisničkog puta od svijesti do konverzije"
+    },
+    "App Store Optimization": {
+      "n": "Optimizacija za trgovinu aplikacija",
+      "d": "Optimizirajte prikaz u trgovini aplikacija za maksimalan broj preuzimanja"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Pisac Google Ads tekstova",
+      "d": "Napišite učinkovite Google Ads naslove i opise"
+    },
+    "Facebook Ads Creator": {
+      "n": "Kreator Facebook oglasa",
+      "d": "Kreirajte kampanje za Facebook i Instagram oglase"
+    },
+    "Newsletter Strategy": {
+      "n": "Strategija biltena",
+      "d": "Planirajte i razvijajte email bilten od nule"
+    },
+    "PR Media Pitch": {
+      "n": "PR medijski pitch",
+      "d": "Napišite uvjerljive medijske ponude za medijsku pokrivenost"
+    },
+    "Content Repurposing Plan": {
+      "n": "Plan prenamjene sadržaja",
+      "d": "Pretvorite postojeći sadržaj u više različitih formata"
+    },
+    "Cold Email Generator": {
+      "n": "Generator hladnih emailova",
+      "d": "Kreirajte personalizirane hladne emailove koji dobivaju odgovore"
+    },
+    "Sales Script Writer": {
+      "n": "Pisac prodajnih skripti",
+      "d": "Napišite učinkovite prodajne skripte za pozive i sastanke"
+    },
+    "Objection Handling Guide": {
+      "n": "Vodič za rješavanje prigovora",
+      "d": "Pripremite odgovore na uobičajene prodajne prigovore"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Kreator poruka za praćenje",
+      "d": "Kreirajte strateške sekvence poruka za praćenje"
+    },
+    "Sales Pitch Creator": {
+      "n": "Kreator prodajnog pitcha",
+      "d": "Izgradite uvjerljive elevator pitcheve i prodajne prezentacije"
+    },
+    "Proposal Generator": {
+      "n": "Generator ponuda",
+      "d": "Kreirajte profesionalne prodajne ponude i ponude s cijenama"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Plan čišćenja CRM podataka",
+      "d": "Sustavno organizirajte i očistite svoju CRM bazu podataka"
+    },
+    "Sales Territory Planner": {
+      "n": "Planer prodajnih teritorija",
+      "d": "Definirajte i optimizirajte prodajne teritorije za svoj tim"
+    },
+    "Account Strategy Builder": {
+      "n": "Kreator strategije za ključne klijente",
+      "d": "Kreirajte strateške planove za ključne klijente"
+    },
+    "Upsell Script Creator": {
+      "n": "Kreator skripte za upsell",
+      "d": "Napišite skripte za upsell i cross-sell postojećim klijentima"
+    },
+    "Customer Win-Back Email": {
+      "n": "Email za povratak kupaca",
+      "d": "Ponovno angažirajte izgubljene kupce ciljanim kampanjama za povratak"
+    },
+    "Sales Forecast Template": {
+      "n": "Predložak prodajne prognoze",
+      "d": "Izradite točne prodajne prognoze za svoj prodajni cjevovod"
+    },
+    "Commission Calculator": {
+      "n": "Kalkulator provizija",
+      "d": "Osmislite i izračunajte strukture prodajnih provizija"
+    },
+    "Discovery Call Script": {
+      "n": "Skripta za otkrivački poziv",
+      "d": "Strukturirajte učinkovite otkrivačke pozive za kvalifikaciju potencijalnih klijenata"
+    },
+    "Demo Presentation Outline": {
+      "n": "Nacrt demo prezentacije",
+      "d": "Kreirajte strukturirane prezentacije demonstracije proizvoda"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Plan uvođenja prodajnog tima",
+      "d": "Osmislite programe uvođenja za nove prodajne predstavnike"
+    },
+    "Quarterly Business Review": {
+      "n": "Kvartalni poslovni pregled",
+      "d": "Pripremite kvartalne poslovne prezentacije za klijente"
+    },
+    "Customer Success Plan": {
+      "n": "Plan uspjeha kupaca",
+      "d": "Izgradite proaktivne planove uspjeha i zadržavanja kupaca"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Savjetnik za cjenovnu strategiju",
+      "d": "Razvijte i optimizirajte strategiju cijena svojih proizvoda"
+    },
+    "Value Proposition Builder": {
+      "n": "Kreator vrijednosne ponude",
+      "d": "Osmislite jasne i uvjerljive vrijednosne ponude"
+    },
+    "FAQ Generator": {
+      "n": "Generator često postavljanih pitanja",
+      "d": "Kreirajte sveobuhvatne sekcije s čestim pitanjima iz informacija o proizvodu"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Pisac članaka baze znanja",
+      "d": "Pišite jasne i pretražive članke za bazu znanja"
+    },
+    "Support Response Template": {
+      "n": "Predložak odgovora korisničke podrške",
+      "d": "Kreirajte višekratno upotrebljive predloške za uobičajene scenarije podrške"
+    },
+    "Chatbot Training Data": {
+      "n": "Podaci za treniranje chatbota",
+      "d": "Generirajte podatke za treniranje chatbotova korisničke podrške"
+    },
+    "Escalation Response Guide": {
+      "n": "Vodič za odgovor na eskalacije",
+      "d": "Kreirajte smjernice za rješavanje eskaliranih problema podrške"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Anketa zadovoljstva kupaca",
+      "d": "Osmislite ankete za mjerenje zadovoljstva kupaca"
+    },
+    "Refund Policy Writer": {
+      "n": "Pisac pravila o povratu novca",
+      "d": "Kreirajte jasna i pravedna pravila o povratu novca i zamjeni"
+    },
+    "Bug Report Template": {
+      "n": "Predložak prijave greške",
+      "d": "Osmislite strukturirane predloške prijave grešaka za korisnike"
+    },
+    "Feature Request Response": {
+      "n": "Odgovor na zahtjev za značajku",
+      "d": "Osmislite odgovore na zahtjeve korisnika za nove značajke"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Sekvenca emailova za uvođenje",
+      "d": "Kreirajte sekvence emailova za uvođenje novih korisnika"
+    },
+    "Help Center Article": {
+      "n": "Članak centra za pomoć",
+      "d": "Napišite sveobuhvatnu dokumentaciju za centar za pomoć"
+    },
+    "Service Level Agreement": {
+      "n": "Ugovor o razini usluge",
+      "d": "Izradite SLA dokumente za obveze korisničke podrške"
+    },
+    "Customer Apology Template": {
+      "n": "Predložak isprike kupcu",
+      "d": "Napišite iskrene poruke isprike za propuste u usluzi"
+    },
+    "Product Update Announcement": {
+      "n": "Najava ažuriranja proizvoda",
+      "d": "Komunicirajte ažuriranja i promjene proizvoda korisnicima"
+    },
+    "Community Guidelines Writer": {
+      "n": "Pisac smjernica za zajednicu",
+      "d": "Kreirajte smjernice za zajednicu na forumima i društvenim kanalima"
+    },
+    "Startup Validation Framework": {
+      "n": "Okvir za validaciju startupa",
+      "d": "Validirajte svoju startup ideju prije nego počnete graditi"
+    },
+    "MVP Feature Planner": {
+      "n": "Planer značajki za MVP",
+      "d": "Odredite prioritete značajki za svoj minimalno održivi proizvod"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Kreator cjenovne strategije",
+      "d": "Razvijte modele cijena za svoj startup proizvod"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Nacrt prezentacije za investitore",
+      "d": "Strukturirajte uvjerljivu prezentaciju za prikupljanje sredstava"
+    },
+    "Business Model Canvas": {
+      "n": "Platno poslovnog modela",
+      "d": "Zacrtajte svoj kompletan poslovni model na jednoj stranici"
+    },
+    "Lean Canvas Creator": {
+      "n": "Kreator Lean platna",
+      "d": "Kreirajte lean platno za prepoznavanje rizika i pretpostavki"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Analizator konkurentskog okruženja",
+      "d": "Mapirajte i analizirajte svoje konkurentsko okruženje"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Strategija izlaska na tržište",
+      "d": "Isplanirajte svoj ulazak na tržište i pristup privlačenju kupaca"
+    },
+    "Founding Team Assessment": {
+      "n": "Procjena osnivačkog tima",
+      "d": "Ocijenite sastav tima i identificirajte nedostatke u vještinama"
+    },
+    "Startup Financial Projections": {
+      "n": "Financijske projekcije startupa",
+      "d": "Izradite trogodišnje financijske projekcije za svoj startup"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Regrutiranje savjetodavnog odbora",
+      "d": "Identificirajte i regrutujte savjetnike za svoj startup"
+    },
+    "Pivot Decision Framework": {
+      "n": "Okvir za odluku o pivotu",
+      "d": "Ocijenite treba li i kako pivotirati svoj startup"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Startup KPI nadzorna ploča",
+      "d": "Definirajte i pratite ključne pokazatelje uspješnosti"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Plan crowdfunding kampanje",
+      "d": "Planirajte i provedite uspješnu crowdfunding kampanju"
+    },
+    "Partnership Strategy": {
+      "n": "Strategija partnerstva",
+      "d": "Identificirajte i ostvarite strateška partnerstva"
+    },
+    "Accelerator Application": {
+      "n": "Prijava za akcelerator",
+      "d": "Pripremite uvjerljivu prijavu za akcelerator ili inkubator"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Anketa o usklađenosti proizvoda s tržištem",
+      "d": "Osmislite ankete za mjerenje usklađenosti proizvoda s tržištem"
+    },
+    "Startup Legal Checklist": {
+      "n": "Pravna kontrolna lista za startup",
+      "d": "Pokrijte sve pravne osnove pri pokretanju tvrtke"
+    },
+    "Equity Split Calculator": {
+      "n": "Kalkulator raspodjele vlasničkih udjela",
+      "d": "Odredite pravednu raspodjelu vlasničkih udjela među suosnivačima"
+    },
+    "Growth Experiment Planner": {
+      "n": "Planer eksperimenata rasta",
+      "d": "Osmislite i pratite eksperimente rasta sustavno"
+    },
+    "Product Description Writer": {
+      "n": "Pisac opisa proizvoda",
+      "d": "Napišite uvjerljive opise proizvoda koji pokreću prodaju"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Optimizator Amazon oglasa",
+      "d": "Optimizirajte Amazon oglase proizvoda za vidljivost i konverziju"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Vodič za postavljanje Etsy trgovine",
+      "d": "Postavite i optimizirajte svoju Etsy trgovinu za uspjeh"
+    },
+    "Shopify Store Planner": {
+      "n": "Planer Shopify trgovine",
+      "d": "Isplanirajte strukturu i lansiranje svoje Shopify trgovine"
+    },
+    "Product Photography Brief": {
+      "n": "Sažetak za fotografiranje proizvoda",
+      "d": "Kreirajte sažetke za fotografiranje proizvoda"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Planer strategije dostave",
+      "d": "Osmislite isplative strategije dostave"
+    },
+    "Return Policy Creator": {
+      "n": "Kreator pravila o povratu",
+      "d": "Kreirajte jasna pravila o povratu i zamjeni za e-trgovinu"
+    },
+    "Customer Review Response": {
+      "n": "Odgovor na recenziju kupca",
+      "d": "Osmislite profesionalne odgovore na recenzije kupaca"
+    },
+    "Inventory Management Plan": {
+      "n": "Plan upravljanja zalihama",
+      "d": "Kreirajte sustave za praćenje i upravljanje zalihama"
+    },
+    "Dropshipping Product Research": {
+      "n": "Istraživanje proizvoda za dropshipping",
+      "d": "Istražite i ocijenite prilike za dropshipping proizvode"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Dizajner za tisak na zahtjev",
+      "d": "Planirajte linije proizvoda i dizajne za tisak na zahtjev"
+    },
+    "Subscription Box Planner": {
+      "n": "Planer pretplatničke kutije",
+      "d": "Osmislite i pokrenite poslovanje s pretplatničkim kutijama"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Strategija blagdanske prodaje",
+      "d": "Isplanirajte sezonske promocije i blagdanske prodajne kampanje"
+    },
+    "Product Bundle Creator": {
+      "n": "Kreator paketa proizvoda",
+      "d": "Osmislite pakete proizvoda koji povećavaju prosječnu vrijednost narudžbe"
+    },
+    "Cart Abandonment Email": {
+      "n": "Email za napuštenu košaricu",
+      "d": "Kreirajte sekvence emailova za oporavak napuštenih košarica"
+    },
+    "Homework Helper": {
+      "n": "Pomoćnik za domaću zadaću",
+      "d": "Dobijte pomoć korak po korak s domaćom zadaćom iz bilo kojeg predmeta"
+    },
+    "Quiz & Test Generator": {
+      "n": "Generator kvizova i testova",
+      "d": "Kreirajte prilagođene kvizove iz bilo koje teme ili materijala za učenje"
+    },
+    "Science Fair Project Planner": {
+      "n": "Planer projekta za sajam znanosti",
+      "d": "Isplanirajte i organizirajte pobjednički projekt za sajam znanosti od hipoteze do prezentacije"
+    },
+    "Lesson Plan Creator": {
+      "n": "Kreator plana lekcije",
+      "d": "Osmislite strukturirane planove lekcija usklađene s ciljevima učenja"
+    },
+    "Lab Report Writer": {
+      "n": "Pisac laboratorijskog izvještaja",
+      "d": "Strukturirajte i napišite laboratorijske izvještaje s pravilnim znanstvenim formatiranjem"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Pomoćnik za razumijevanje teksta",
+      "d": "Poboljšajte razumijevanje teksta s vođenom analizom i pitanjima"
+    },
+    "Math Problem Solver": {
+      "n": "Rješavač matematičkih problema",
+      "d": "Riješite matematičke probleme s detaljnim objašnjenjima korak po korak"
+    },
+    "Vocabulary Builder": {
+      "n": "Graditelj vokabulara",
+      "d": "Izgradite i vježbajte vokabular s definicijama, primjerima i vježbama"
+    },
+    "Book Report Helper": {
+      "n": "Pomoćnik za prikaz knjige",
+      "d": "Strukturirajte i napišite prikaze knjiga sa strukturiranom analizom"
+    },
+    "History Timeline Creator": {
+      "n": "Kreator povijesne vremenske crte",
+      "d": "Kreirajte detaljne povijesne vremenske crte za bilo koje razdoblje ili događaj"
+    },
+    "Geography Quiz Maker": {
+      "n": "Kreator kvizova iz geografije",
+      "d": "Generirajte kvizove iz geografije koji pokrivaju karte, glavne gradove, znamenitosti i više"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generator vježbi pravopisa",
+      "d": "Kreirajte personalizirane popise i vježbe za vježbanje pravopisa"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Kreator gramatičkih vježbi",
+      "d": "Generirajte gramatičke vježbe za bilo koju razinu vještine i temu"
+    },
+    "Critical Thinking Questions": {
+      "n": "Pitanja za kritičko razmišljanje",
+      "d": "Generirajte poticajna pitanja za razvoj vještina kritičkog razmišljanja"
+    },
+    "Debate Prep Guide": {
+      "n": "Vodič za pripremu za debatu",
+      "d": "Pripremite strukturirane argumente i protuargumente za debate"
+    },
+    "College Application Essay": {
+      "n": "Esej za prijavu na fakultet",
+      "d": "Osmislite uvjerljive eseje za prijavu na fakultet s vođenim smjernicama"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Pomoćnik za esej za stipendiju",
+      "d": "Napišite uvjerljive eseje za stipendiju koji ističu postignuća i ciljeve"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "Vodič za pripremu za SAT/ACT",
+      "d": "Kreirajte ciljane planove učenja i vježbe za SAT ili ACT ispite"
+    },
+    "Study Schedule Planner": {
+      "n": "Planer rasporeda učenja",
+      "d": "Izgradite učinkovit raspored učenja koji uravnotežuje sve predmete i rokove"
+    },
+    "Group Project Organizer": {
+      "n": "Organizator grupnog projekta",
+      "d": "Planirajte uloge, zadatke i rokove za grupne projekte"
+    },
+    "Presentation Creator": {
+      "n": "Kreator prezentacija",
+      "d": "Osmislite i strukturirajte zanimljive prezentacije za bilo koju temu"
+    },
+    "Note-Taking Guide": {
+      "n": "Vodič za bilježenje",
+      "d": "Kreirajte strukturirane predloške za bilježenje na predavanjima i pri čitanju"
+    },
+    "Mind Map Generator": {
+      "n": "Generator mentalnih mapa",
+      "d": "Kreirajte vizualne mentalne mape za organizaciju ideja i koncepata"
+    },
+    "Research Project Planner": {
+      "n": "Planer istraživačkog projekta",
+      "d": "Planirajte i upravljajte istraživačkim projektima od odabira teme do završnog rada"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Priprema za roditeljski sastanak",
+      "d": "Pripremite teme za razgovor i pitanja za produktivne roditeljske sastanke"
+    },
+    "Classroom Activity Designer": {
+      "n": "Dizajner aktivnosti u učionici",
+      "d": "Osmislite interaktivne aktivnosti u učionici koje pojačavaju ciljeve učenja"
+    },
+    "Special Education Resource": {
+      "n": "Resursi za posebno obrazovanje",
+      "d": "Kreirajte prilagođene materijale za učenje za učenike s posebnim obrazovnim potrebama"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Planer kurikuluma za kućno školovanje",
+      "d": "Isplanirajte kompletan kurikulum za kućno školovanje po predmetima i semestrima"
+    },
+    "Student Self-Assessment": {
+      "n": "Samoprocjena učenika",
+      "d": "Kreirajte alate za samoprocjenu kako bi učenici pratili vlastiti napredak u učenju"
+    },
+    "Learning Style Analyzer": {
+      "n": "Analizator stilova učenja",
+      "d": "Identificirajte stilove učenja i predložite personalizirane strategije učenja"
+    },
+    "Literature Review Writer": {
+      "n": "Pisac pregleda literature",
+      "d": "Organizirajte i napišite sveobuhvatne preglede literature na bilo koju temu"
+    },
+    "Research Assistant": {
+      "n": "Istraživački asistent",
+      "d": "Dobijte pomoć u pronalaženju, organiziranju i sažimanju istraživačkih materijala"
+    },
+    "Fact Checker Template": {
+      "n": "Predložak za provjeru činjenica",
+      "d": "Provjerite tvrdnje i izjave strukturiranom metodologijom provjere činjenica"
+    },
+    "Source Comparison Tool": {
+      "n": "Alat za usporedbu izvora",
+      "d": "Usporedite i suprotstavite više izvora na istu temu"
+    },
+    "Citation Generator": {
+      "n": "Generator citata",
+      "d": "Generirajte pravilno formatirane citate u bilo kojem akademskom stilu"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Kreator anotirane bibliografije",
+      "d": "Kreirajte anotirane bibliografije sa sažecima i procjenama"
+    },
+    "Research Methodology Guide": {
+      "n": "Vodič za istraživačku metodologiju",
+      "d": "Odaberite i osmislite pravu istraživačku metodologiju za svoju studiju"
+    },
+    "Survey Question Designer": {
+      "n": "Dizajner anketnih pitanja",
+      "d": "Osmislite učinkovita anketna pitanja za prikupljanje pouzdanih istraživačkih podataka"
+    },
+    "Data Collection Plan": {
+      "n": "Plan prikupljanja podataka",
+      "d": "Kreirajte strukturirani plan za prikupljanje istraživačkih podataka"
+    },
+    "Thesis Statement Generator": {
+      "n": "Generator teze",
+      "d": "Osmislite snažne teze za istraživačke radove i disertacije"
+    },
+    "Research Proposal Writer": {
+      "n": "Pisac istraživačkog prijedloga",
+      "d": "Napišite uvjerljive istraživačke prijedloge za akademsku ili financijsku recenziju"
+    },
+    "Systematic Review Guide": {
+      "n": "Vodič za sustavni pregled",
+      "d": "Provedite sustavne preglede prema utvrđenim protokolima"
+    },
+    "Interview Protocol Creator": {
+      "n": "Kreator protokola intervjua",
+      "d": "Osmislite strukturirane protokole intervjua za kvalitativno istraživanje"
+    },
+    "Research Ethics Checklist": {
+      "n": "Kontrolna lista istraživačke etike",
+      "d": "Osigurajte usklađenost istraživanja s etičkim smjernicama i zahtjevima etičkog povjerenstva"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Okvir za meta-analizu",
+      "d": "Strukturirajte i provedite meta-analize iz više studija"
+    },
+    "Case Study Template": {
+      "n": "Predložak studije slučaja",
+      "d": "Strukturirajte i napišite detaljne studije slučaja za istraživanje ili poslovanje"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Vodič za kvalitativnu analizu",
+      "d": "Vodite kvalitativnu analizu podataka koristeći kodiranje i tematske pristupe"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Vodič za kvantitativnu analizu",
+      "d": "Vodite kvantitativnu analizu podataka primjenom odgovarajućih statističkih metoda"
+    },
+    "Research Poster Creator": {
+      "n": "Kreator istraživačkog postera",
+      "d": "Osmislite i rasporedite istraživačke postere za konferencije i prezentacije"
+    },
+    "Research Grant Writer": {
+      "n": "Pisac prijave za istraživačku potporu",
+      "d": "Napišite strukturirane prijave za istraživačke potpore"
+    },
+    "Chemistry Tutor": {
+      "n": "Tutor iz kemije",
+      "d": "Dobijte personalizirano tutorstvo iz kemije s objašnjenjima i zadacima za vježbu"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Uravnoteživač kemijskih jednadžbi",
+      "d": "Uravnotežite kemijske jednadžbe s objašnjenjima korak po korak"
+    },
+    "Lab Safety Checklist": {
+      "n": "Kontrolna lista sigurnosti u laboratoriju",
+      "d": "Generirajte sveobuhvatne kontrolne liste sigurnosti za kemijske eksperimente"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Pomoćnik za organsku kemiju",
+      "d": "Učite organske reakcije, mehanizme i nomenklaturu"
+    },
+    "Periodic Table Explorer": {
+      "n": "Istraživač periodnog sustava",
+      "d": "Istražite svojstva elemenata, trendove i odnose u periodnom sustavu"
+    },
+    "Stoichiometry Solver": {
+      "n": "Rješavač stehiometrije",
+      "d": "Riješite stehiometrijske probleme s detaljnim izračunima mol-u-mol"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Vodič za kemijske veze",
+      "d": "Razumijte ionske, kovalentne i metalne veze uz vizualna objašnjenja"
+    },
+    "Acid-Base Calculator": {
+      "n": "Kalkulator kiselina i baza",
+      "d": "Izračunajte pH, pOH, Ka, Kb i riješite probleme ravnoteže kiselina i baza"
+    },
+    "Solution Preparation Guide": {
+      "n": "Vodič za pripremu otopina",
+      "d": "Izračunajte i pripremite kemijske otopine pravilnih koncentracija"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Tumač spektroskopije",
+      "d": "Interpretirajte IR, NMR i masene spektre za identifikaciju spojeva"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Laboratorijska bilježnica iz kemije",
+      "d": "Kreirajte strukturirane unose u laboratorijsku bilježnicu za kemijske eksperimente"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Pomoćnik za reakcijske mehanizme",
+      "d": "Crtajte i razumijte reakcijske mehanizme korak po korak"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Kalkulator termokemije",
+      "d": "Izračunajte entalpiju, entropiju i Gibbsovu slobodnu energiju za kemijske reakcije"
+    },
+    "Electrochemistry Guide": {
+      "n": "Vodič za elektrokemiju",
+      "d": "Razumijte elektrokemijske ćelije, elektrodne potencijale i elektrolizu"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Vodič za kemiju polimera",
+      "d": "Učite tipove polimera, mehanizme sinteze i svojstva"
+    },
+    "Biology Tutor": {
+      "n": "Tutor iz biologije",
+      "d": "Dobijte personalizirano tutorstvo iz biologije s jasnim objašnjenjima i primjerima"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Vodič za učenje stanične biologije",
+      "d": "Učite strukture, funkcije i procese stanica u dubinu"
+    },
+    "Genetics Problem Solver": {
+      "n": "Rješavač problema iz genetike",
+      "d": "Riješite probleme iz genetike uključujući Punnettove kvadrate i analizu rodoslovlja"
+    },
+    "Ecology Study Helper": {
+      "n": "Pomoćnik za učenje ekologije",
+      "d": "Učite ekosustave, hranidbene mreže, populacijsku dinamiku i ekološke odnose"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Vodič za anatomiju i fiziologiju",
+      "d": "Učite sustave ljudskog tijela s detaljnim anatomskim objašnjenjima"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Vodič za laboratorij iz mikrobiologije",
+      "d": "Vodite laboratorijske tehnike mikrobiologije uključujući bojanje, kultiviranje i identifikaciju"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Mapiranje koncepata evolucije",
+      "d": "Mapirajte evolucijske koncepte uključujući prirodnu selekciju, specijaciju i filogenetiku"
+    },
+    "Plant Biology Helper": {
+      "n": "Pomoćnik za biologiju biljaka",
+      "d": "Učite anatomiju, fiziologiju i ekološke uloge biljaka"
+    },
+    "Molecular Biology Guide": {
+      "n": "Vodič za molekularnu biologiju",
+      "d": "Razumijte replikaciju DNA, transkripciju, translaciju i regulaciju gena"
+    },
+    "Bioinformatics Helper": {
+      "n": "Pomoćnik za bioinformatiku",
+      "d": "Dobijte pomoć s analizom sekvenci, pretraživanjem baza podataka i računalnom biologijom"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Vodič za učenje neuroznanosti",
+      "d": "Učite živčani sustav, funkcije mozga i neuronske putove"
+    },
+    "Marine Biology Explorer": {
+      "n": "Istraživač morske biologije",
+      "d": "Istražite morske ekosustave, organizme i oceansku znanost"
+    },
+    "Immunology Study Guide": {
+      "n": "Vodič za učenje imunologije",
+      "d": "Učite imunološki sustav, imunološke odgovore i imunološke poremećaje"
+    },
+    "Biotechnology Overview": {
+      "n": "Pregled biotehnologije",
+      "d": "Istražite primjene biotehnologije uključujući genetički inženjering i CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Planer konzervacijske biologije",
+      "d": "Planirajte strategije očuvanja vrsta i staništa"
+    },
+    "Physics Problem Solver": {
+      "n": "Rješavač fizikalnih problema",
+      "d": "Riješite fizikalne probleme s detaljnim rješenjima korak po korak"
+    },
+    "Mechanics Helper": {
+      "n": "Pomoćnik za mehaniku",
+      "d": "Učite i rješavajte probleme iz klasične mehanike uključujući kinematiku i dinamiku"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Vodič za elektricitet i magnetizam",
+      "d": "Razumijte električna polja, strujne krugove i elektromagnetske pojave"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Tutor iz termodinamike",
+      "d": "Učite zakone termodinamike, procese i probleme prijenosa topline"
+    },
+    "Optics & Waves Guide": {
+      "n": "Vodič za optiku i valove",
+      "d": "Učite valne pojave, optiku i ponašanje svjetlosti"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Pojašnjivač kvantne fizike",
+      "d": "Razumijte koncepte kvantne mehanike s jasnim objašnjenjima i primjerima"
+    },
+    "Astrophysics Explorer": {
+      "n": "Istraživač astrofizike",
+      "d": "Istražite zvjezdanu evoluciju, kozmologiju i nebesku mehaniku"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Vodič za nuklearnu fiziku",
+      "d": "Učite nuklearne reakcije, radioaktivnost i nuklearnu energiju"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Pomoćnik za dinamiku fluida",
+      "d": "Riješite probleme mehanike fluida uključujući Bernoullijeve i Navier-Stokesove primjene"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Tutor iz klasične mehanike",
+      "d": "Dubinsko učenje Lagrangeove i Hamiltonove mehanike te napredne dinamike"
+    },
+    "Relativity Concept Guide": {
+      "n": "Vodič za koncepte relativnosti",
+      "d": "Razumijte specijalnu i opću relativnost uz misaone eksperimente i matematiku"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Pomoćnik za laboratorijski izvještaj iz fizike",
+      "d": "Strukturirajte i napišite laboratorijske izvještaje iz fizike s pravilnom analizom podataka"
+    },
+    "Math Proof Writer": {
+      "n": "Pisac matematičkih dokaza",
+      "d": "Napišite jasne i rigorozne matematičke dokaze s logičkom strukturom"
+    },
+    "Calculus Problem Solver": {
+      "n": "Rješavač problema iz matematičke analize",
+      "d": "Riješite probleme iz matematičke analize uključujući limese, derivacije i integrale"
+    },
+    "Statistics Helper": {
+      "n": "Pomoćnik za statistiku",
+      "d": "Riješite statističke probleme i interpretirajte statističke rezultate"
+    },
+    "Linear Algebra Guide": {
+      "n": "Vodič za linearnu algebru",
+      "d": "Učite vektore, matrice, transformacije i vlastite vrijednosti"
+    },
+    "Probability Calculator": {
+      "n": "Kalkulator vjerojatnosti",
+      "d": "Izračunajte vjerojatnosti i riješite probleme distribucije vjerojatnosti"
+    },
+    "Geometry Tutor": {
+      "n": "Tutor iz geometrije",
+      "d": "Učite geometrijske koncepte, teoreme i rješavajte geometrijske probleme"
+    },
+    "Trigonometry Helper": {
+      "n": "Pomoćnik za trigonometriju",
+      "d": "Riješite trigonometrijske jednadžbe, identitete i primjene"
+    },
+    "Number Theory Explorer": {
+      "n": "Istraživač teorije brojeva",
+      "d": "Istražite proste brojeve, djeljivost, modularnu aritmetiku i kriptografske primjene"
+    },
+    "Discrete Math Guide": {
+      "n": "Vodič za diskretnu matematiku",
+      "d": "Učite kombinatoriku, teoriju grafova, logiku i teoriju skupova"
+    },
+    "Differential Equations Solver": {
+      "n": "Rješavač diferencijalnih jednadžbi",
+      "d": "Riješite obične i parcijalne diferencijalne jednadžbe s detaljnim metodama"
+    },
+    "Math Word Problem Solver": {
+      "n": "Rješavač tekstualnih zadataka iz matematike",
+      "d": "Prevedite i riješite stvarne tekstualne matematičke zadatke korak po korak"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Vodič za matematičko modeliranje",
+      "d": "Izgradite matematičke modele za pojave i primjene u stvarnom svijetu"
+    },
+    "SQL Query Generator": {
+      "n": "Generator SQL upita",
+      "d": "Generirajte i optimizirajte SQL upite za dohvat i analizu podataka"
+    },
+    "Python Data Analysis": {
+      "n": "Analiza podataka u Pythonu",
+      "d": "Pišite Python kod za analizu podataka koristeći pandas, NumPy i više"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Kontrolna lista za čišćenje podataka",
+      "d": "Kreirajte sveobuhvatne kontrolne liste za čišćenje i pretprocesiranje podataka"
+    },
+    "Data Visualization Planner": {
+      "n": "Planer vizualizacije podataka",
+      "d": "Odaberite prave grafikone i osmislite učinkovite vizualizacije podataka"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Odabir modela strojnog učenja",
+      "d": "Odaberite najbolji ML model za svoj tip problema i karakteristike podataka"
+    },
+    "A/B Test Calculator": {
+      "n": "Kalkulator A/B testiranja",
+      "d": "Osmislite i analizirajte A/B testove s izračunima statističke značajnosti"
+    },
+    "Dashboard Design Guide": {
+      "n": "Vodič za dizajn nadzorne ploče",
+      "d": "Osmislite učinkovite nadzorne ploče s pravim KPI-jevima i rasporedom"
+    },
+    "ETL Pipeline Planner": {
+      "n": "Planer ETL cjevovoda",
+      "d": "Osmislite i planirajte ETL cjevovode za integraciju i obradu podataka"
+    },
+    "Feature Engineering Guide": {
+      "n": "Vodič za inženjering značajki",
+      "d": "Kreirajte učinkovite značajke za modele strojnog učenja"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Arhitektura podatkovnog cjevovoda",
+      "d": "Osmislite skalabilne arhitekture podatkovnih cjevovoda za analitiku i ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Eksplorativna analiza podataka",
+      "d": "Provedite temeljitu EDA sa strukturiranom analizom i planovima vizualizacije"
+    },
+    "Statistical Test Selector": {
+      "n": "Odabir statističkog testa",
+      "d": "Odaberite i primijenite pravi statistički test za svoje podatke i hipotezu"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Vodič za analizu vremenskih nizova",
+      "d": "Analizirajte podatke vremenskih nizova metodama prognoziranja i detekcije trendova"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Uvod u obradu prirodnog jezika",
+      "d": "Započnite s NLP zadacima uključujući klasifikaciju teksta i analizu sentimenta"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Planer projekta računalnog vida",
+      "d": "Planirajte projekte računalnog vida od prikupljanja podataka do implementacije modela"
+    },
+    "Technical Requirements Document": {
+      "n": "Dokument tehničkih zahtjeva",
+      "d": "Kreirajte detaljne dokumente tehničkih zahtjeva za inženjerske projekte"
+    },
+    "Engineering Design Review": {
+      "n": "Pregled inženjerskog dizajna",
+      "d": "Pripremite strukturirane dokumente pregleda dizajna za inženjerske projekte"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Analiza načina kvarova (FMEA)",
+      "d": "Provedite sustavnu analizu načina i učinaka kvarova za proizvode ili procese"
+    },
+    "Project Specification Writer": {
+      "n": "Pisac specifikacije projekta",
+      "d": "Napišite jasne i potpune specifikacije projekta za inženjerski rad"
+    },
+    "CAD Project Planner": {
+      "n": "Planer CAD projekta",
+      "d": "Planirajte i organizirajte projekte CAD modeliranja s pravilnom dokumentacijom"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Vodič za proizvodne procese",
+      "d": "Odaberite i planirajte proizvodne procese za razvoj proizvoda"
+    },
+    "Quality Control Checklist": {
+      "n": "Kontrolna lista za kontrolu kvalitete",
+      "d": "Kreirajte kontrolne liste kvalitete i planove inspekcije za proizvodnju"
+    },
+    "Engineering Change Request": {
+      "n": "Zahtjev za inženjersku promjenu",
+      "d": "Dokumentirajte i upravljajte zahtjevima za inženjerske promjene s analizom utjecaja"
+    },
+    "Structural Analysis Guide": {
+      "n": "Vodič za strukturalnu analizu",
+      "d": "Vodite izračune i metodologiju strukturalne analize za inženjerske projekte"
+    },
+    "Materials Selection Guide": {
+      "n": "Vodič za odabir materijala",
+      "d": "Odaberite optimalne materijale na temelju mehaničkih, toplinskih i kemijskih zahtjeva"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Kreator Midjourney promptova",
+      "d": "Osmislite detaljne Midjourney promptove s parametrima stila, osvjetljenja i kompozicije"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "DALL-E kreator promptova",
+      "d": "Izgradite optimizirane DALL-E promptove s jasnim opisima i umjetničkim smjerom"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Pisac Stable Diffusion promptova",
+      "d": "Generirajte Stable Diffusion promptove s pozitivnim i negativnim inženjeringom promptova"
+    },
+    "Product Photography Prompt": {
+      "n": "Prompt za fotografiju proizvoda",
+      "d": "Kreirajte AI promptove za zapanjujuću fotografiju proizvoda studijske kvalitete"
+    },
+    "Landscape Art Prompt": {
+      "n": "Prompt za pejzažnu umjetnost",
+      "d": "Kreirajte zadivljujuće promptove za pejzažnu umjetnost s detaljima okoline i atmosfere"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Prompt za portretnu fotografiju",
+      "d": "Generirajte AI promptove za portrete s vodičem za osvjetljenje, izraz i kompoziciju"
+    },
+    "Food Photography Prompt": {
+      "n": "Prompt za fotografiju hrane",
+      "d": "Osmislite primamljive promptove za fotografiju hrane s detaljima stilizacije i serviranja"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Prompt za arhitektonsku vizualizaciju",
+      "d": "Kreirajte promptove za arhitektonsku vizualizaciju zgrada i interijera"
+    },
+    "Fashion Design Prompt": {
+      "n": "Prompt za modni dizajn",
+      "d": "Generirajte koncepte modnog dizajna s detaljima tkanine, siluete i stilizacije"
+    },
+    "Comic Art Prompt": {
+      "n": "Prompt za strip umjetnost",
+      "d": "Kreirajte promptove za strip umjetnost s kompozicijom kadrova i akcijom likova"
+    },
+    "Abstract Art Prompt": {
+      "n": "Prompt za apstraktnu umjetnost",
+      "d": "Generirajte promptove za apstraktnu umjetnost s teorijom boja, teksturom i emocionalnim izrazom"
+    },
+    "Icon Design Brief": {
+      "n": "Sažetak dizajna ikona",
+      "d": "Dizajnirajte čiste setove ikona s dosljednim stilom i vizualnim jezikom"
+    },
+    "Infographic Design Brief": {
+      "n": "Sažetak dizajna infografike",
+      "d": "Planirajte raspored infografika s vizualizacijom podataka i vizualnom hijerarhijom"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Prompt za grafiku društvenih mreža",
+      "d": "Generirajte privlačnu grafiku za društvene mreže za bilo koju platformu"
+    },
+    "Meme Creator Prompt": {
+      "n": "Prompt za kreiranje memova",
+      "d": "Generirajte koncepte memova s odabirom formata, natpisima i viralnim potencijalom"
+    },
+    "AI Avatar Prompt": {
+      "n": "Prompt za AI avatar",
+      "d": "Kreirajte jedinstvene dizajne AI avatara za profile, igre i virtualne identitete"
+    },
+    "Song Lyrics Writer": {
+      "n": "Pisac tekstova pjesama",
+      "d": "Napišite originalne tekstove pjesama s kiticama, refrenom i mostom u bilo kojem žanru"
+    },
+    "Chord Progression Generator": {
+      "n": "Generator akorskih progresija",
+      "d": "Generirajte akorske progresije s vodičem za teoriju glazbe za bilo koji žanr i raspoloženje"
+    },
+    "Beat Ideas Creator": {
+      "n": "Kreator ideja za beatove",
+      "d": "Generirajte koncepte beatova s tempom, ritmičkim obrascima i idejama za instrumentaciju"
+    },
+    "Song Structure Builder": {
+      "n": "Kreator strukture pjesme",
+      "d": "Osmislite aranžmane pjesama s redoslijedom dijelova, dinamikom i prijelazima"
+    },
+    "Rap Verse Writer": {
+      "n": "Pisac rap stihova",
+      "d": "Napišite snažne rap stihove s obrascima flowa, shemama rima i igrom riječima"
+    },
+    "Country Song Writer": {
+      "n": "Pisac country pjesama",
+      "d": "Napišite autentične country pjesme s pripovijedanjem, slikovitošću i karakterom"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Kreator pop hookova",
+      "d": "Osmislite privlačne pop hookove i melodije refrena koje se pamte"
+    },
+    "Rock Ballad Writer": {
+      "n": "Pisac rock balada",
+      "d": "Napišite emotivne rock balade s moćnim gradacijama i himničnim refrenima"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Vodič za glazbeni aranžman",
+      "d": "Planirajte potpune glazbene aranžmane s instrumentacijom, glasovima i dinamikom"
+    },
+    "Band Name Generator": {
+      "n": "Generator imena za bend",
+      "d": "Generirajte kreativna imena za bendove prema žanru, ugođaju i preferencijama"
+    },
+    "Music Video Concept": {
+      "n": "Koncept glazbenog spota",
+      "d": "Razvijte kreativne koncepte glazbenih spotova s narativom, vizualima i koreografijom"
+    },
+    "Mixing Checklist": {
+      "n": "Kontrolna lista za miksanje",
+      "d": "Sveobuhvatna kontrolna lista za miksanje koja pokriva EQ, kompresiju, efekte i balans"
+    },
+    "Film Score Brief": {
+      "n": "Sažetak filmske glazbe",
+      "d": "Kreirajte detaljne sažetke filmske glazbe s raspoloženjem, instrumentacijom i vremenskim oznakama"
+    },
+    "YouTube Shorts Script": {
+      "n": "Skripta za YouTube Shorts",
+      "d": "Napišite zanimljive skripte za YouTube Shorts optimizirane za 60-sekundni vertikalni video"
+    },
+    "Video Storyboard Creator": {
+      "n": "Kreator video storyboarda",
+      "d": "Planirajte vizualne storyboardove s opisima scena, kutovima kamere i prijelazima"
+    },
+    "Documentary Outline": {
+      "n": "Nacrt dokumentarnog filma",
+      "d": "Strukturirajte uvjerljive dokumentarce s narativnim lukom, intervjuima i planovima za b-roll"
+    },
+    "Vlog Episode Planner": {
+      "n": "Planer vlog epizoda",
+      "d": "Planirajte zanimljive vlog epizode s lokacijama, temama za razgovor i vizualnom raznolikošću"
+    },
+    "Screenwriting Helper": {
+      "n": "Pomoćnik za pisanje scenarija",
+      "d": "Razvijajte scenarije s pravilnim formatiranjem, dijalogom i režijskim uputama"
+    },
+    "Short Film Script": {
+      "n": "Scenarij kratkog filma",
+      "d": "Napišite kompletne scenarije kratkih filmova s vizualnim pripovijedanjem i čvrstim narativom"
+    },
+    "Animation Script Writer": {
+      "n": "Pisac scenarija za animaciju",
+      "d": "Pišite scenarije za animaciju s vizualnim gagovima, akcijama likova i tajmingom"
+    },
+    "Video Editing Brief": {
+      "n": "Sažetak za montažu videa",
+      "d": "Kreirajte detaljne sažetke za montažu videa s tempom, efektima i smjernicama stila"
+    },
+    "Livestream Run Sheet": {
+      "n": "Plan emitiranja uživo",
+      "d": "Planirajte emitiranja uživo s vremenski ograničenim segmentima, temama i okidačima za angažman"
+    },
+    "Tutorial Video Script": {
+      "n": "Skripta za video vodič",
+      "d": "Napišite jasne skripte za video vodiče s uputama korak po korak i vizualima"
+    },
+    "Explainer Video Script": {
+      "n": "Skripta za objašnjavajući video",
+      "d": "Napišite jasne skripte za objašnjavajuće videe koji vizualno pojednostavljuju složene teme"
+    },
+    "Video SEO Optimizer": {
+      "n": "Optimizator SEO-a za video",
+      "d": "Optimizirajte metapodatke videa s naslovima, opisima, oznakama i strategijama za minijature"
+    },
+    "Novel Outline Creator": {
+      "n": "Kreator nacrta romana",
+      "d": "Izgradite sveobuhvatne nacrte romana sa strukturom radnje, poglavljima i razvojem likova"
+    },
+    "Short Story Writer": {
+      "n": "Pisac kratkih priča",
+      "d": "Napišite uvjerljive kratke priče sa živopisnim likovima i zadovoljavajućim zaključcima"
+    },
+    "Poetry Generator": {
+      "n": "Generator poezije",
+      "d": "Kreirajte originalnu poeziju u raznim oblicima sa slikovitošću, metrom i emocijom"
+    },
+    "Book Proposal Template": {
+      "n": "Predložak prijedloga knjige",
+      "d": "Kreirajte profesionalne prijedloge knjiga s analizom tržišta i sažecima poglavlja"
+    },
+    "Memoir Outline": {
+      "n": "Nacrt memoara",
+      "d": "Strukturirajte osobne memoare s tematskim poglavljima i reflektivnim narativom"
+    },
+    "Children's Book Creator": {
+      "n": "Kreator dječjih knjiga",
+      "d": "Napišite dobno primjerene dječje knjige sa zanimljivim pričama i bilješkama za ilustracije"
+    },
+    "Screenplay Outline": {
+      "n": "Nacrt scenarija",
+      "d": "Strukturirajte scenarije s trostrukom strukturom, rasporedom scena i bilješkama za dijalog"
+    },
+    "Play Script Writer": {
+      "n": "Pisac kazališnih komada",
+      "d": "Pišite kazališne skripte s režijskim uputama, dijalogom i strukturom scena"
+    },
+    "Comic Book Script": {
+      "n": "Scenarij za strip",
+      "d": "Pišite scenarije za stripove s opisima kadrova, dijalogom i tempom"
+    },
+    "Fan Fiction Creator": {
+      "n": "Kreator fan fikcije",
+      "d": "Pišite fan fikciju s vjernim glasovima likova i kreativnim novim zapletima"
+    },
+    "Writing Prompt Generator": {
+      "n": "Generator poticaja za pisanje",
+      "d": "Generirajte kreativne poticaje za pisanje s žanrom, ograničenjima i začecima priča"
+    },
+    "Dialogue Writer": {
+      "n": "Pisac dijaloga",
+      "d": "Osmislite prirodan dijalog koji otkriva karakter i pokreće radnju"
+    },
+    "Plot Twist Generator": {
+      "n": "Generator preokreta u radnji",
+      "d": "Generirajte iznenađujuće ali logične preokrete u radnji koji rekontekstualiziraju narativ"
+    },
+    "Query Letter Writer": {
+      "n": "Pisac pisma upita",
+      "d": "Napišite uvjerljiva pisma upita književnim agentima s hookom i sinopsisom"
+    },
+    "Book Description Writer": {
+      "n": "Pisac opisa knjige",
+      "d": "Napišite uvjerljive opise knjiga koji privlače čitatelje i pokreću prodaju"
+    },
+    "Ghostwriting Brief": {
+      "n": "Sažetak za ghostwriting",
+      "d": "Kreirajte detaljne sažetke za ghostwriting s glasom, stilom i zahtjevima za sadržaj"
+    },
+    "Technical Writing Guide": {
+      "n": "Vodič za tehničko pisanje",
+      "d": "Pišite jasnu tehničku dokumentaciju sa strukturiranim formatiranjem i točnošću"
+    },
+    "Grant Proposal Writer": {
+      "n": "Pisac prijedloga za potporu",
+      "d": "Napišite uvjerljive prijedloge za potpore s opisima projekata i obrazloženjem proračuna"
+    },
+    "White Paper Outline": {
+      "n": "Nacrt bijele knjige",
+      "d": "Strukturirajte autoritativne bijele knjige s istraživanjem, analizom i preporukama"
+    },
+    "Copywriting Formula": {
+      "n": "Formula copywritinga",
+      "d": "Primijenite provjerene formule copywritinga poput AIDA, PAS i BAB na bilo koji proizvod ili uslugu"
+    },
+    "Instagram Content Planner": {
+      "n": "Planer sadržaja za Instagram",
+      "d": "Isplanirajte tjedan dana Instagram sadržaja s objavama, pričama, reelsima i opisima"
+    },
+    "X Thread Creator": {
+      "n": "Kreator X niti",
+      "d": "Napišite zanimljive X niti koje grade autoritet i potiču angažman"
+    },
+    "Reddit Post Writer": {
+      "n": "Pisac Reddit objava",
+      "d": "Napišite Reddit objave optimizirane za specifične subreddite s normama zajednice na umu"
+    },
+    "Viral Hook Generator": {
+      "n": "Generator viralnih hookova",
+      "d": "Generirajte hookove koji privlače pažnju za sadržaj na društvenim mrežama na svim platformama"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Alat za strategiju hashtagova",
+      "d": "Istražite i organizirajte strategije hashtagova za maksimalnu vidljivost"
+    },
+    "Engagement Response Generator": {
+      "n": "Generator odgovora za angažman",
+      "d": "Generirajte promišljene odgovore na komentare, poruke i spominjanja u većem opsegu"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Pisac LinkedIn članaka",
+      "d": "Napišite LinkedIn članke za pozicioniranje stručnosti i profesionalnog autoriteta"
+    },
+    "Episode Show Notes": {
+      "n": "Bilješke epizode",
+      "d": "Napišite detaljne bilješke epizode s vremenskim oznakama, linkovima i ključnim porukama"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Kontrolna lista za montažu podcasta",
+      "d": "Standardizirajte tijek rada montaže podcasta s kontrolnim točkama kvalitete i završnom obradom"
+    },
+    "Prompt Improver": {
+      "n": "Poboljšivač promptova",
+      "d": "Usavršite i optimizirajte bilo koji prompt za bolje AI rezultate strukturiranim tehnikama"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Organizator lanca misli",
+      "d": "Izgradite promptove s lancem misli koji vode AI kroz razmišljanje korak po korak"
+    },
+    "RAG Prompt Generator": {
+      "n": "Generator RAG promptova",
+      "d": "Kreirajte promptove za generiranje potpomognuto dohvatom s optimizacijom kontekstnog prozora"
+    },
+    "Prompt Translator": {
+      "n": "Prevoditelj promptova",
+      "d": "Prevedite promptove između različitih AI modela uz očuvanje namjere i kvalitete"
+    },
+    "Prompt Evaluator": {
+      "n": "Evaluator promptova",
+      "d": "Ocijenite i bodujte promptove prema više dimenzija kvalitete s savjetima za poboljšanje"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Generator primjera za few-shot učenje",
+      "d": "Generirajte visokokvalitetne primjere za few-shot kontekstualno učenje u promptovima"
+    },
+    "System Prompt Writer": {
+      "n": "Pisac sistemskih promptova",
+      "d": "Napišite učinkovite sistemske promptove koji definiraju ponašanje, ograničenja i stil izlaza AI-ja"
+    },
+    "AI Guardrails Designer": {
+      "n": "Dizajner AI zaštitnih ograda",
+      "d": "Osmislite sigurnosne ograde i politike sadržaja za AI aplikacije"
+    },
+    "AI Use Case Identifier": {
+      "n": "Identifikator AI primjena",
+      "d": "Identificirajte i ocijenite potencijalne primjene AI-ja za tvrtke i radne procese"
+    },
+    "Model Comparison Guide": {
+      "n": "Vodič za usporedbu modela",
+      "d": "Usporedite AI modele prema sposobnostima, cijenama i primjerenosti za primjenu"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "Kreator podataka za fino podešavanje LLM-a",
+      "d": "Generirajte i strukturirajte podatke za treniranje za projekte finog podešavanja LLM-a"
+    },
+    "Debugger Assistant": {
+      "n": "Pomoćnik za debugiranje",
+      "d": "Sustavno debugirajte probleme u kodu s analizom korijenskog uzroka i prijedlozima popravaka"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "Planer CI/CD cjevovoda",
+      "d": "Osmislite CI/CD cjevovode s konfiguracijama faza izgradnje, testiranja i implementacije"
+    },
+    "Docker Configuration Guide": {
+      "n": "Vodič za Docker konfiguraciju",
+      "d": "Kreirajte Dockerfileove i compose konfiguracije prema najboljim praksama"
+    },
+    "Git Workflow Planner": {
+      "n": "Planer Git tijeka rada",
+      "d": "Osmislite Git strategije grananja i suradničke tijekove rada za razvojne timove"
+    },
+    "Code Migration Guide": {
+      "n": "Vodič za migraciju koda",
+      "d": "Planirajte i provedite migracije koda između jezika, okvira ili verzija"
+    },
+    "Database Schema Designer": {
+      "n": "Dizajner sheme baze podataka",
+      "d": "Dizajnirajte sheme baze podataka s tablicama, vezama, indeksima i ograničenjima"
+    },
+    "Performance Optimization Guide": {
+      "n": "Vodič za optimizaciju performansi",
+      "d": "Identificirajte i riješite uska grla performansi strategijama profiliranja i optimizacije"
+    },
+    "Microservices Architecture": {
+      "n": "Arhitektura mikroservisa",
+      "d": "Osmislite arhitekture mikroservisa s granicama usluga, komunikacijom i implementacijom"
+    },
+    "GraphQL Schema Builder": {
+      "n": "Kreator GraphQL sheme",
+      "d": "Osmislite GraphQL sheme s tipovima, upitima, mutacijama i pretplatama"
+    },
+    "Terraform Configuration": {
+      "n": "Terraform konfiguracija",
+      "d": "Generirajte Terraform konfiguracije za aprovizioniranje oblačne infrastrukture"
+    },
+    "AWS Architecture Planner": {
+      "n": "Planer AWS arhitekture",
+      "d": "Osmislite AWS oblačne arhitekture s odabirom usluga i optimizacijom troškova"
+    },
+    "Code Documentation Generator": {
+      "n": "Generator dokumentacije koda",
+      "d": "Generirajte ugrađenu dokumentaciju, JSDoc, docstringove i komentare koda"
+    },
+    "Technical Interview Prep": {
+      "n": "Priprema za tehnički intervju",
+      "d": "Pripremite se za tehničke intervjue s raščlambom problema i obrascima rješenja"
+    },
+    "Changelog Writer": {
+      "n": "Pisac dnevnika promjena",
+      "d": "Napišite jasne dnevnike promjena prema Keep a Changelog formatu sa semantičkim verzioniranjem"
+    },
+    "Error Handling Strategy": {
+      "n": "Strategija rukovanja greškama",
+      "d": "Osmislite sveobuhvatne strategije rukovanja greškama s obrascima i porukama za korisnika"
+    },
+    "Logging Strategy Guide": {
+      "n": "Vodič za strategiju zapisivanja",
+      "d": "Osmislite strategije zapisivanja aplikacija s razinama, formatima i agregacijom"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Vodič za postavljanje nadzora",
+      "d": "Postavite nadzor aplikacija s metrikama, upozorenjima i nadzornim pločama"
+    },
+    "Load Testing Plan": {
+      "n": "Plan testiranja opterećenja",
+      "d": "Osmislite planove testiranja opterećenja sa scenarijima, metrikama i kriterijima prihvatljivosti"
+    },
+    "Security Audit Checklist": {
+      "n": "Kontrolna lista sigurnosne revizije",
+      "d": "Provedite sigurnosne revizije s kontrolnim listama temeljenim na OWASP-u i smjernicama za popravak"
+    },
+    "Security Checklist Creator": {
+      "n": "Kreator sigurnosne kontrolne liste",
+      "d": "Generirajte sveobuhvatne sigurnosne kontrolne liste prilagođene vašoj aplikaciji i stogu"
+    },
+    "Penetration Testing Plan": {
+      "n": "Plan penetracijskog testiranja",
+      "d": "Planirajte strukturirane penetracijske testove s opsegom, metodologijom i predlošcima izvještaja"
+    },
+    "Secure Coding Guide": {
+      "n": "Vodič za sigurno kodiranje",
+      "d": "Kreirajte smjernice za sigurno kodiranje specifične za jezik s prevencijom ranjivosti"
+    },
+    "Incident Response Plan": {
+      "n": "Plan odgovora na incident",
+      "d": "Osmislite planove odgovora na incidente s postupcima detekcije, zaustavljanja i oporavka"
+    },
+    "Security Policy Writer": {
+      "n": "Pisac sigurnosnih politika",
+      "d": "Napišite organizacijske sigurnosne politike koje pokrivaju kontrolu pristupa, rukovanje podacima i usklađenost"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Vodič za procjenu ranjivosti",
+      "d": "Provedite sustavne procjene ranjivosti sa skeniranjem i prioritetiziranim popravkom"
+    },
+    "Security Awareness Training": {
+      "n": "Obuka o sigurnosnoj svijesti",
+      "d": "Osmislite programe obuke o sigurnosnoj svijesti za zaposlenike svih razina"
+    },
+    "Password Policy Creator": {
+      "n": "Kreator politike lozinki",
+      "d": "Kreirajte robusne politike lozinki sa zahtjevima složenosti, rotacije i MFA"
+    },
+    "Data Protection Plan": {
+      "n": "Plan zaštite podataka",
+      "d": "Osmislite strategije zaštite podataka koje pokrivaju klasifikaciju, šifriranje i zadržavanje"
+    },
+    "SWOT Analysis Pro": {
+      "n": "Napredna SWOT analiza",
+      "d": "Napredna SWOT analiza s ponderiranim bodovanjem i akcijskim planovima"
+    },
+    "Pitch Deck Outline": {
+      "n": "Nacrt prezentacije za ulagače",
+      "d": "Kreirajte uvjerljivu strukturu prezentacije za ulagače"
+    },
+    "Business Canvas Creator": {
+      "n": "Kreator poslovnog platna",
+      "d": "Generirajte kompletno platno poslovnog modela za vaš pothvat"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Izvješće o konkurentskoj inteligenciji",
+      "d": "Analizirajte konkurente i identificirajte prilike za tržišno pozicioniranje"
+    },
+    "Strategic Planning Guide": {
+      "n": "Vodič za strateško planiranje",
+      "d": "Razvijte višegodišnji strateški plan s ciljevima i prekretnicama"
+    },
+    "Annual Report Template": {
+      "n": "Predložak godišnjeg izvještaja",
+      "d": "Strukturirajte godišnji izvještaj tvrtke s ključnim financijskim i operativnim naglascima"
+    },
+    "Board Meeting Agenda": {
+      "n": "Dnevni red sjednice uprave",
+      "d": "Profesionalni dnevni red sjednice uprave s najboljim praksama korporativnog upravljanja"
+    },
+    "Company Newsletter": {
+      "n": "Bilten tvrtke",
+      "d": "Osmislite zanimljiv interni ili vanjski bilten tvrtke"
+    },
+    "Employee Survey Creator": {
+      "n": "Kreator ankete za zaposlenike",
+      "d": "Izgradite učinkovite ankete o angažmanu i zadovoljstvu zaposlenika"
+    },
+    "Team Building Activity Planner": {
+      "n": "Planer timskih aktivnosti",
+      "d": "Planirajte zanimljive događaje i aktivnosti za izgradnju tima"
+    },
+    "Remote Work Policy": {
+      "n": "Politika rada na daljinu",
+      "d": "Kreirajte sveobuhvatnu politiku rada na daljinu za svoju organizaciju"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Plan raznolikosti i uključivosti",
+      "d": "Razvijte značajnu strategiju raznolikosti, jednakosti i uključivosti"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Matrica evaluacije dobavljača",
+      "d": "Sustavno ocijenite i usporedite dobavljače za odluke o nabavi"
+    },
+    "Process Improvement Plan": {
+      "n": "Plan poboljšanja procesa",
+      "d": "Identificirajte i implementirajte poboljšanja procesa koristeći lean metodologije"
+    },
+    "Change Management Plan": {
+      "n": "Plan upravljanja promjenama",
+      "d": "Vodite organizacijske promjene uz usklađivanje dionika i komunikaciju"
+    },
+    "Risk Assessment Template": {
+      "n": "Predložak procjene rizika",
+      "d": "Identificirajte, ocijenite i ublažite poslovne rizike sustavno"
+    },
+    "Succession Planning Guide": {
+      "n": "Vodič za planiranje nasljeđivanja",
+      "d": "Planirajte tranzicije vodstva i razvoj talentiranog kadra"
+    },
+    "Business Continuity Plan": {
+      "n": "Plan kontinuiteta poslovanja",
+      "d": "Pripremite se za prekide sveobuhvatnom strategijom kontinuiteta"
+    },
+    "Customer Journey Map": {
+      "n": "Mapa korisničkog puta",
+      "d": "Vizualizirajte i optimizirajte kompletno korisničko iskustvo"
+    },
+    "Brand Guidelines Template": {
+      "n": "Predložak smjernica brenda",
+      "d": "Definirajte identitet brenda sa sveobuhvatnim smjernicama za stil i korištenje"
+    },
+    "Mission & Vision Statement": {
+      "n": "Izjava o misiji i viziji",
+      "d": "Osmislite inspirirajuće izjave o misiji i viziji za svoju organizaciju"
+    },
+    "Company Culture Document": {
+      "n": "Dokument o kulturi tvrtke",
+      "d": "Definirajte i dokumentirajte organizacijsku kulturu i vrijednosti"
+    },
+    "Organizational Chart Planner": {
+      "n": "Planer organizacijske strukture",
+      "d": "Osmislite i planirajte organizacijsku strukturu i linije odgovornosti"
+    },
+    "Department Budget Template": {
+      "n": "Predložak proračuna odjela",
+      "d": "Kreirajte detaljne proračune odjela s prognoziranjem i praćenjem"
+    },
+    "KPI Dashboard Builder": {
+      "n": "Kreator KPI nadzorne ploče",
+      "d": "Osmislite nadzorne ploče ključnih pokazatelja uspješnosti za odluke temeljene na podacima"
+    },
+    "Job Description Writer": {
+      "n": "Pisac opisa radnog mjesta",
+      "d": "Kreirajte jasne i inkluzivne opise radnih mjesta koji privlače vrhunske talente"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Kreator kartice ocjenjivanja za intervju",
+      "d": "Izgradite strukturirane kartice ocjenjivanja za dosljednu evaluaciju kandidata"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Kontrolna lista za uvođenje zaposlenika",
+      "d": "Sveobuhvatna kontrolna lista za uspješno uvođenje novih zaposlenika"
+    },
+    "Performance Improvement Plan": {
+      "n": "Plan poboljšanja učinkovitosti",
+      "d": "Kreirajte podržavajuće planove poboljšanja učinkovitosti s jasnim prekretnicama"
+    },
+    "Exit Interview Guide": {
+      "n": "Vodič za izlazni intervju",
+      "d": "Provedite uvide pune izlazne intervjue za poboljšanje zadržavanja"
+    },
+    "Compensation Analysis": {
+      "n": "Analiza kompenzacija",
+      "d": "Analizirajte i usporedite pakete kompenzacija za tržišnu konkurentnost"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Vodič za usporedbu beneficija",
+      "d": "Usporedite i ocijenite pakete beneficija za zaposlenike"
+    },
+    "Team Retrospective": {
+      "n": "Timska retrospektiva",
+      "d": "Vodite učinkovite timske retrospektive za kontinuirano poboljšanje"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Predložak za sastanak jedan na jedan",
+      "d": "Strukturirajte produktivne sastanke jedan na jedan s izravnim podređenima"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Planer cjevovoda zapošljavanja",
+      "d": "Osmislite i optimizirajte svoj cjevovod zapošljavanja od početka do kraja"
+    },
+    "Employee Recognition Program": {
+      "n": "Program priznanja zaposlenika",
+      "d": "Izgradite značajan program priznanja i nagrađivanja zaposlenika"
+    },
+    "Training Program Designer": {
+      "n": "Dizajner programa obuke",
+      "d": "Osmislite učinkovite programe obuke i razvoja zaposlenika"
+    },
+    "Workplace Policy Writer": {
+      "n": "Pisac politika na radnom mjestu",
+      "d": "Izradite jasne politike na radnom mjestu koje pokrivaju ključne organizacijske teme"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Vodič za rješavanje sukoba",
+      "d": "Upravljajte sukobima na radnom mjestu sa strukturiranim okvirima za rješavanje"
+    },
+    "Remote Team Handbook": {
+      "n": "Priručnik za udaljeni tim",
+      "d": "Kreirajte sveobuhvatan priručnik za rad distribuiranog tima"
+    },
+    "Career Path Planner": {
+      "n": "Planer karijerne putanje",
+      "d": "Zacrtajte svoju karijernu putanju s ostvarivim prekretnicama"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Priprema za pregovaranje o plaći",
+      "d": "Pripremite samopouzdane argumente i strategije za pregovaranje o plaći"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "Kreator LinkedIn profila",
+      "d": "Optimizirajte svoj LinkedIn profil za privlačenje regrutera i prilika"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Vodič za izradu portfelja",
+      "d": "Kreirajte istaknuti profesionalni portfelj koji prikazuje vaše najbolje radove"
+    },
+    "Networking Email Templates": {
+      "n": "Predlošci emailova za umrežavanje",
+      "d": "Napišite učinkovite emailove za umrežavanje radi karijernog rasta i upoznavanja"
+    },
+    "Career Pivot Guide": {
+      "n": "Vodič za promjenu karijere",
+      "d": "Upravljajte uspješnom promjenom karijere sa strukturiranim planom"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Kalkulator freelance tarifa",
+      "d": "Izračunajte idealnu freelance tarifu i strategiju cijena"
+    },
+    "Professional Development Plan": {
+      "n": "Plan profesionalnog razvoja",
+      "d": "Kreirajte strukturirani plan za kontinuirani profesionalni rast"
+    },
+    "Mentorship Program Guide": {
+      "n": "Vodič za program mentorstva",
+      "d": "Pronađite, strukturirajte i maksimalno iskoristite mentorske odnose"
+    },
+    "Side Hustle Validator": {
+      "n": "Validator dodatnog posla",
+      "d": "Ocijenite i validirajte ideje za dodatni posao s obzirom na izvedivost"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Revizija ravnoteže između posla i života",
+      "d": "Procijenite i poboljšajte svoju ravnotežu između posla i života s praktičnim strategijama"
+    },
+    "Speaking Proposal Template": {
+      "n": "Predložak prijedloga za govorništvo",
+      "d": "Kreirajte uvjerljive prijedloge za govorništvo na konferencijama i događanjima"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Pisac konzultantskih prijedloga",
+      "d": "Izradite pobjedničke konzultantske prijedloge koji zatvaraju poslove"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Analizator nedostataka u vještinama",
+      "d": "Identificirajte i planirajte zatvaranje ključnih nedostataka u vještinama za napredovanje u karijeri"
+    },
+    "Career Journal Prompts": {
+      "n": "Poticaji za karijernu bilježnicu",
+      "d": "Promišljajte o svom karijernom putu s vođenim vježbama za dnevnik"
+    },
+    "Informational Interview Guide": {
+      "n": "Vodič za informacijski intervju",
+      "d": "Pripremite i provedite učinkovite informacijske intervjue"
+    },
+    "Thank You Note Writer": {
+      "n": "Pisac zahvalnica",
+      "d": "Napišite promišljene profesionalne zahvalnice za svaku prigodu"
+    },
+    "Resignation Letter Template": {
+      "n": "Predložak pisma ostavke",
+      "d": "Napišite profesionalno pismo ostavke održavajući pozitivne odnose"
+    },
+    "Meal Prep Planner": {
+      "n": "Planer pripreme obroka",
+      "d": "Planirajte tjedne obroke s popisima za kupovinu i rasporedima pripreme"
+    },
+    "Habit Tracker Designer": {
+      "n": "Dizajner praćenja navika",
+      "d": "Osmislite personalizirani sustav praćenja navika za trajnu promjenu"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Vodič za poboljšanje sna",
+      "d": "Optimizirajte kvalitetu sna strategijama temeljenima na dokazima"
+    },
+    "Stress Management Plan": {
+      "n": "Plan upravljanja stresom",
+      "d": "Izgradite personalizirani alat za upravljanje stresom i akcijski plan"
+    },
+    "Yoga Routine Builder": {
+      "n": "Kreator rutine joge",
+      "d": "Kreirajte prilagođene rutine joge za svoju razinu i ciljeve"
+    },
+    "Running Training Plan": {
+      "n": "Plan treninga za trčanje",
+      "d": "Izgradite strukturirani plan treninga za trčanje za bilo koji cilj udaljenosti"
+    },
+    "Swimming Workout": {
+      "n": "Trening plivanja",
+      "d": "Osmislite učinkovite treninge plivanja za kondiciju i tehniku"
+    },
+    "Strength Training Program": {
+      "n": "Program treninga snage",
+      "d": "Kreirajte progresivni program treninga snage prilagođen vašim ciljevima"
+    },
+    "Flexibility Routine": {
+      "n": "Rutina fleksibilnosti",
+      "d": "Poboljšajte fleksibilnost i pokretljivost strukturiranim rutinama istezanja"
+    },
+    "HIIT Workout Creator": {
+      "n": "Kreator HIIT treninga",
+      "d": "Osmislite visokointenzivne intervalne treninge za maksimalne rezultate"
+    },
+    "Nutrition Label Reader": {
+      "n": "Čitač nutritivnih oznaka",
+      "d": "Naučite čitati i razumjeti nutritivne oznake za zdravije izbore"
+    },
+    "Calorie Counter Guide": {
+      "n": "Vodič za brojanje kalorija",
+      "d": "Postavite personalizirano praćenje kalorija s raspodjelom makronutrijenata"
+    },
+    "Hydration Tracker": {
+      "n": "Praćenje hidratacije",
+      "d": "Pratite i optimizirajte dnevni unos vode i navike hidratacije"
+    },
+    "Mental Health Check-In": {
+      "n": "Provjera mentalnog zdravlja",
+      "d": "Vođena samoprocjena mentalnog zdravlja i praćenje dobrobiti"
+    },
+    "Therapy Session Prep": {
+      "n": "Priprema za terapijsku seansu",
+      "d": "Pripremite se za terapijske seanse sa strukturiranom refleksijom i postavljanjem ciljeva"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Poticaji za dnevnik zahvalnosti",
+      "d": "Dnevni poticaji za pisanje dnevnika zahvalnosti radi poboljšanja mentalnog zdravlja"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Kreator vježbi svjesnosti",
+      "d": "Kreirajte personalizirane vježbe svjesnosti i disanja"
+    },
+    "Supplement Research Guide": {
+      "n": "Vodič za istraživanje dodataka prehrani",
+      "d": "Istražite i ocijenite dodatke prehrani prema svojim zdravstvenim ciljevima"
+    },
+    "Allergy Management Plan": {
+      "n": "Plan upravljanja alergijama",
+      "d": "Kreirajte sveobuhvatnu strategiju upravljanja i izbjegavanja alergija"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Praćenje kroničnih stanja",
+      "d": "Pratite simptome, lijekove i okidače za kronična zdravstvena stanja"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Dnevnik vježbi fizikalne terapije",
+      "d": "Bilježite i pratite vježbe fizikalne terapije i napredak oporavka"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Ergonomsko uređenje radnog prostora",
+      "d": "Optimizirajte svoj radni prostor za udobnost, zdravlje i produktivnost"
+    },
+    "Digital Detox Planner": {
+      "n": "Planer digitalnog detoksa",
+      "d": "Isplanirajte i provedite digitalni detoks za poboljšanje mentalnog zdravlja"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Kreator rutine brige o sebi",
+      "d": "Izgradite održivu rutinu brige o sebi u svim dimenzijama dobrobiti"
+    },
+    "First Aid Guide": {
+      "n": "Vodič za prvu pomoć",
+      "d": "Brzi priručnik za postupke prve pomoći u uobičajenim hitnim slučajevima"
+    },
+    "To-Do List Power Planner": {
+      "n": "Napredni planer popisa zadataka",
+      "d": "Kreirajte prioritetizirane popise zadataka s procjenama vremena i razinama energije"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Optimizator dnevnog rasporeda",
+      "d": "Osmislite optimizirani dnevni raspored prema vašim obrascima energije"
+    },
+    "Project Planner Pro": {
+      "n": "Profesionalni planer projekata",
+      "d": "Planirajte projekte s prekretnicama, isporukama i raspodjelom resursa"
+    },
+    "Decision Matrix Builder": {
+      "n": "Kreator matrice odlučivanja",
+      "d": "Donosite bolje odluke koristeći analizu ponderiranih kriterija"
+    },
+    "Weekly Review Template": {
+      "n": "Predložak tjednog pregleda",
+      "d": "Provedite temeljite tjedne preglede kako biste bili na pravom putu prema ciljevima"
+    },
+    "Morning Routine Designer": {
+      "n": "Dizajner jutarnje rutine",
+      "d": "Osmislite energizirajuću jutarnju rutinu za vrhunske performanse"
+    },
+    "Evening Routine Creator": {
+      "n": "Kreator večernje rutine",
+      "d": "Kreirajte opuštajuću večernju rutinu za bolji odmor i pripremu za sljedeći dan"
+    },
+    "Time Blocking Schedule": {
+      "n": "Raspored s vremenskim blokovima",
+      "d": "Organizirajte svoj dan s fokusiranim vremenskim blokovima za maksimalnu produktivnost"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Alat Eisenhowerove matrice",
+      "d": "Kategorizirajte zadatke prema hitnosti i važnosti za bolju prioritetizaciju"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Planer Pomodoro sesija",
+      "d": "Planirajte fokusirane radne sesije koristeći Pomodoro tehniku"
+    },
+    "Goal Tracking System": {
+      "n": "Sustav praćenja ciljeva",
+      "d": "Postavite sveobuhvatan sustav praćenja ciljeva s metrikama napretka"
+    },
+    "Quarterly Planning Template": {
+      "n": "Predložak kvartalnog planiranja",
+      "d": "Planirajte svoju četvrtinu sa strateškim ciljevima i ostvarivim zadacima"
+    },
+    "Annual Review Template": {
+      "n": "Predložak godišnjeg pregleda",
+      "d": "Provedite temeljiti godišnji pregled postignuća i postavite buduće ciljeve"
+    },
+    "Meeting Notes Template": {
+      "n": "Predložak bilješki sa sastanka",
+      "d": "Zabilježite akcijske bilješke sa sastanka s odlukama i zadacima za praćenje"
+    },
+    "Brain Dump Organizer": {
+      "n": "Organizator ispražnjavanja misli",
+      "d": "Pretvorite kaotične misli u organizirane akcijske kategorije"
+    },
+    "Delegation Framework": {
+      "n": "Okvir za delegiranje",
+      "d": "Identificirajte što delegirati i kreirajte jasne sažetke za delegiranje"
+    },
+    "Focus Session Planner": {
+      "n": "Planer sesija duboke fokusiranosti",
+      "d": "Planirajte sesije duboke fokusiranosti s upravljanjem okolinom i distrakcijama"
+    },
+    "Energy Management Guide": {
+      "n": "Vodič za upravljanje energijom",
+      "d": "Optimizirajte razine energije tijekom dana za vrhunske performanse"
+    },
+    "Batch Processing Planner": {
+      "n": "Planer skupne obrade",
+      "d": "Grupirajte slične zadatke za učinkovite sesije skupne obrade"
+    },
+    "System Documentation Template": {
+      "n": "Predložak dokumentacije sustava",
+      "d": "Dokumentirajte osobne i timske sustave za dosljednost i uvođenje novih članova"
+    },
+    "Project Kickoff Template": {
+      "n": "Predložak za pokretanje projekta",
+      "d": "Pokrenite projekte s jasnim ciljevima, opsegom i usklađenošću tima"
+    },
+    "Sprint Planning Guide": {
+      "n": "Vodič za planiranje sprinta",
+      "d": "Planirajte učinkovite sprintove s korisničkim pričama, procjenama i kapacitetom"
+    },
+    "Kanban Board Setup": {
+      "n": "Postavljanje Kanban ploče",
+      "d": "Osmislite i konfigurirajte Kanban ploču za vizualno upravljanje radnim tokom"
+    },
+    "Gantt Chart Planner": {
+      "n": "Planer Ganttovog dijagrama",
+      "d": "Kreirajte detaljne projektne vremenske crte s ovisnostima i prekretnicama"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Matrica raspodjele resursa",
+      "d": "Planirajte i optimizirajte raspodjelu resursa između projekata i timova"
+    },
+    "Status Report Template": {
+      "n": "Predložak izvješća o statusu",
+      "d": "Kreirajte jasna izvješća o statusu projekta za komunikaciju s dionicima"
+    },
+    "Risk Register Creator": {
+      "n": "Kreator registra rizika",
+      "d": "Izgradite i održavajte sveobuhvatan registar projektnih rizika"
+    },
+    "Lessons Learned Template": {
+      "n": "Predložak naučenih lekcija",
+      "d": "Zabilježite i dokumentirajte naučene lekcije projekta za buduće poboljšanje"
+    },
+    "Requirements Document": {
+      "n": "Dokument zahtjeva",
+      "d": "Prikupite i dokumentirajte projektne zahtjeve s kriterijima prihvaćanja"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Plan korisničkog testiranja prihvatljivosti",
+      "d": "Kreirajte strukturirane planove UAT-a s testnim slučajevima i kriterijima odobrenja"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Plan komunikacije s dionicima",
+      "d": "Planirajte komunikaciju s dionicima s kanalima, učestalošću i porukama"
+    },
+    "Project Timeline Creator": {
+      "n": "Kreator projektne vremenske crte",
+      "d": "Izgradite detaljne projektne vremenske crte s fazama i isporukama"
+    },
+    "Agile Retrospective": {
+      "n": "Agilna retrospektiva",
+      "d": "Vodite produktivne agilne retrospektive s raznovrsnim formatima"
+    },
+    "Scope Document Writer": {
+      "n": "Pisac dokumenta opsega",
+      "d": "Definirajte opseg projekta s granicama, isporukama i isključenjima"
+    },
+    "Project Closure Report": {
+      "n": "Izvještaj o zatvaranju projekta",
+      "d": "Dokumentirajte završetak projekta s rezultatima i završnim procjenama"
+    },
+    "Conversation Practice Partner": {
+      "n": "Partner za vježbanje konverzacije",
+      "d": "Vježbajte konverzaciju na ciljanom jeziku s realističnim scenarijima"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Profesionalni graditelj vokabulara",
+      "d": "Gradite vokabular s kontekstom, primjerima i znakovima za ponavljanje s razmakom"
+    },
+    "Grammar Coach": {
+      "n": "Trener gramatike",
+      "d": "Učite i vježbajte gramatička pravila s jasnim objašnjenjima i vježbama"
+    },
+    "Translation Helper": {
+      "n": "Pomoćnik za prijevod",
+      "d": "Dobijte točne prijevode s kontekstom i napomenama o korištenju"
+    },
+    "Language Exchange Prep": {
+      "n": "Priprema za jezičnu razmjenu",
+      "d": "Pripremite se za sesije jezične razmjene sa strukturiranim temama za razgovor"
+    },
+    "Travel Phrase Book": {
+      "n": "Putni razgovornik",
+      "d": "Ključne putne fraze organizirane po situacijama za vaše odredište"
+    },
+    "Business Language Guide": {
+      "n": "Vodič za poslovni jezik",
+      "d": "Naučite profesionalni jezik za poslovne situacije i komunikaciju"
+    },
+    "Accent Improvement Guide": {
+      "n": "Vodič za poboljšanje naglaska",
+      "d": "Poboljšajte izgovor i naglasak ciljanim vježbama"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Vježba razumijevanja čitanja",
+      "d": "Poboljšajte vještine čitanja s tekstovima prema razini i pitanjima za razumijevanje"
+    },
+    "Writing Practice Creator": {
+      "n": "Kreator vježbi pisanja",
+      "d": "Vježbajte pisanje na ciljanom jeziku s vođenim poticajima i povratnim informacijama"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Vodič za razumijevanje slušanja",
+      "d": "Poboljšajte vještine slušanja strukturiranim vježbama i strategijama"
+    },
+    "Cultural Context Guide": {
+      "n": "Vodič za kulturni kontekst",
+      "d": "Razumijte kulturne nijanse i bonton za učinkovitu komunikaciju"
+    },
+    "Room Layout Planner": {
+      "n": "Planer rasporeda prostorije",
+      "d": "Planirajte optimalne rasporede prostorija s postavljanjem namještaja i protokom"
+    },
+    "Color Palette Creator": {
+      "n": "Kreator palete boja",
+      "d": "Generirajte koherentne palete boja za prostorije i dizajnerske projekte"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Vodič za kupnju namještaja",
+      "d": "Pametna kupnja namještaja s usklađivanjem stila i planiranjem proračuna"
+    },
+    "Home Decor Style Finder": {
+      "n": "Tražilica stila uređenja doma",
+      "d": "Otkrijte svoj stil interijera s vođenom procjenom"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Kreator kapsulne garderobe",
+      "d": "Izgradite svestranu kapsulnu garderobu koja maksimizira kombinacije odjeće"
+    },
+    "Outfit Planner": {
+      "n": "Planer odjevnih kombinacija",
+      "d": "Planirajte odjevne kombinacije za tjedan ili posebne događaje iz postojeće garderobe"
+    },
+    "Personal Style Guide": {
+      "n": "Vodič za osobni stil",
+      "d": "Definirajte svoj identitet osobnog stila i smjernice za kupovinu"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Sezonsko osvježenje garderobe",
+      "d": "Osvježite garderobu svake sezone strateškim dodacima i izmjenama"
+    },
+    "Home Office Setup Guide": {
+      "n": "Vodič za uređenje kućnog ureda",
+      "d": "Osmislite produktivan i stilski kućni ured"
+    },
+    "Bathroom Design Planner": {
+      "n": "Planer dizajna kupaonice",
+      "d": "Planirajte renoviranje i uređenje kupaonice sa stilom i funkcionalnošću"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Generator ideja za hackathon",
+      "d": "Brainstormajte i validirajte ideje za hackathon projekte prema temama i ograničenjima"
+    },
+    "MVP Builder Guide": {
+      "n": "Vodič za izgradnju MVP-a",
+      "d": "Planirajte i izgradite minimalno održivi proizvod u kratkim hackathon rokovima"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Hackathon pitch prezentacija",
+      "d": "Kreirajte uvjerljivu pitch prezentaciju za predstavljanje hackathon projekta žiriju"
+    },
+    "Technical Architecture Planner": {
+      "n": "Planer tehničke arhitekture",
+      "d": "Brzo osmislite tehničku arhitekturu za hackathon projekt"
+    },
+    "Hackathon Team Builder": {
+      "n": "Kreator hackathon tima",
+      "d": "Sastavite uravnotežen hackathon tim s komplementarnim vještinama i jasnim ulogama"
+    },
+    "Demo Day Script": {
+      "n": "Skripta za dan demonstracije",
+      "d": "Napišite uglađenu skriptu za demonstraciju uživo koja ističe ključne značajke projekta"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Analizator kriterija ocjenjivanja",
+      "d": "Analizirajte kriterije ocjenjivanja hackathona i optimizirajte projekt u skladu s njima"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Planer hackathon vremenskog rasporeda",
+      "d": "Raščlanite sate hackathona u strukturirani sprint raspored"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Savjetnik za strategiju nagrada",
+      "d": "Strateški ciljajte specifične kategorije nagrada i prilagodite projekt za pobjedu"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Akcijski plan nakon hackathona",
+      "d": "Pretvorite hackathon projekt u pravi proizvod ili dio portfelja"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Vodič za brzo prototipiranje",
+      "d": "Brzo prototipirajte i iterativno poboljšavajte hackathon koncept s ograničenim vremenom"
+    },
+    "Hackathon Submission Template": {
+      "n": "Predložak hackathon prijave",
+      "d": "Pripremite potpunu i uglađenu hackathon prijavu sa svim potrebnim materijalima"
+    },
+    "Game Design Document": {
+      "n": "Dokument dizajna igre",
+      "d": "Kreirajte sveobuhvatan dokument dizajna igre koji pokriva sve aspekte vaše igre"
+    },
+    "Game Mechanics Designer": {
+      "n": "Dizajner mehanika igre",
+      "d": "Osmislite i uravnotežite temeljne mehanike igre za zanimljivo iskustvo igranja"
+    },
+    "Level Design Planner": {
+      "n": "Planer dizajna razina",
+      "d": "Planirajte razine igre s tempom, izazovima i pripovijedanjem kroz okolinu"
+    },
+    "Game Economy Balancer": {
+      "n": "Uravnoteživač ekonomije igre",
+      "d": "Osmislite i uravnotežite ekonomije unutar igre za pravičnu i zanimljivu progresiju"
+    },
+    "Character Stats Builder": {
+      "n": "Kreator statistika likova",
+      "d": "Kreirajte uravnotežene sustave statistika likova i arhetipove klasa"
+    },
+    "Quest Designer": {
+      "n": "Dizajner zadataka",
+      "d": "Osmislite uvjerljive zadatke s razgranatim narativima i značajnim nagradama"
+    },
+    "Game UI/UX Planner": {
+      "n": "Planer UI/UX igre",
+      "d": "Planirajte intuitivne rasporede korisničkog sučelja i tokove korisničkog iskustva igre"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Kampanja stolnog RPG-a",
+      "d": "Izgradite kampanju stolnog RPG-a sa svjetovnom pozadinom, NPC-jevima i zapletima"
+    },
+    "Board Game Designer": {
+      "n": "Dizajner društvenih igara",
+      "d": "Osmislite društvenu igru od koncepta do prototipa s uravnoteženim pravilima"
+    },
+    "Game Testing Checklist": {
+      "n": "Kontrolna lista za testiranje igre",
+      "d": "Kreirajte sveobuhvatnu QA kontrolnu listu za testiranje vaše igre"
+    },
+    "Photo Shoot Planner": {
+      "n": "Planer foto snimanja",
+      "d": "Isplanirajte kompletno foto snimanje od koncepta do izvedbe sa svom logistikom"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Vodič za fotografski portfelj",
+      "d": "Kurirajte i organizirajte istaknuti fotografski portfelj za klijente ili izložbe"
+    },
+    "Photo Editing Workflow": {
+      "n": "Tijek rada obrade fotografija",
+      "d": "Izgradite učinkovit tijek rada obrade fotografija od uvoza do završnog izvoza"
+    },
+    "Client Photography Brief": {
+      "n": "Sažetak za klijentsku fotografiju",
+      "d": "Kreirajte profesionalni fotografski sažetak za projekte s klijentima"
+    },
+    "Landscape Photography Guide": {
+      "n": "Vodič za pejzažnu fotografiju",
+      "d": "Planirajte izlete za pejzažnu fotografiju s vremenskim prilikama, tajmingom i kompozicijom"
+    },
+    "Portrait Photography Tips": {
+      "n": "Savjeti za portretnu fotografiju",
+      "d": "Vodič za snimanje uvjerljivih portreta s uputama za osvjetljenje i poziranje"
+    },
+    "Product Photography Setup": {
+      "n": "Postavljanje za fotografiju proizvoda",
+      "d": "Postavite profesionalnu fotografiju proizvoda s pravilnim osvjetljenjem i scenografijom"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Vremenska crta vjenčane fotografije",
+      "d": "Isplanirajte kompletnu vremensku crtu vjenčane fotografije od priprema do prijema"
+    },
+    "Street Photography Guide": {
+      "n": "Vodič za uličnu fotografiju",
+      "d": "Savjeti i tehnike za autentičnu i uvjerljivu uličnu fotografiju"
+    },
+    "Astrophotography Planner": {
+      "n": "Planer astrofotografije",
+      "d": "Planirajte sesije astrofotografije s postavkama opreme i nebeskim događajima"
+    },
+    "Character Design Brief": {
+      "n": "Sažetak dizajna lika",
+      "d": "Kreirajte detaljne sažetke dizajna likova s osobnošću, izgledom i pozadinom"
+    },
+    "Comic Strip Creator": {
+      "n": "Kreator strip traka",
+      "d": "Planirajte i kreirajte strip trake s rasporedom kadrova, dijalogom i tempom"
+    },
+    "World Building Guide": {
+      "n": "Vodič za izgradnju svijeta",
+      "d": "Osmislite imerzivne fiktivne svjetove s geografijom, kulturama i mitologijom"
+    },
+    "Children's Book Illustrator": {
+      "n": "Ilustrator dječjih knjiga",
+      "d": "Planirajte ilustracije za dječje knjige s dobno primjerenim stilom i tempom"
+    },
+    "Art Portfolio Curator": {
+      "n": "Kustos umjetničkog portfelja",
+      "d": "Kurirajte i predstavite umjetnički portfelj za galerije, klijente ili škole"
+    },
+    "Color Theory Guide": {
+      "n": "Vodič za teoriju boja",
+      "d": "Primijenite principe teorije boja za stvaranje skladnih i dojmljivih umjetničkih djela"
+    },
+    "Digital Art Workflow": {
+      "n": "Tijek rada digitalne umjetnosti",
+      "d": "Pojednostavite svoj proces digitalne umjetnosti od skice do završnog rendera"
+    },
+    "Art Commission Brief": {
+      "n": "Sažetak za umjetničku narudžbu",
+      "d": "Napišite jasne sažetke za narudžbe kako biste komunicirali svoju viziju umjetnicima"
+    },
+    "Mural Design Planner": {
+      "n": "Planer dizajna murala",
+      "d": "Planirajte velikoformatne projekte murala od koncepta do instalacije"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Prijedlog umjetničke izložbe",
+      "d": "Napišite profesionalni prijedlog umjetničke izložbe za galerije i prostore"
+    },
+    "Tax Deduction Finder": {
+      "n": "Tražilica poreznih olakšica",
+      "d": "Identificirajte često propuštene porezne olakšice prema vašoj situaciji i statusu prijave"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Vodič za porez na samozapošljavanje",
+      "d": "Upravljajte porezima na samozapošljavanje uključujući procijenjene uplate i olakšice"
+    },
+    "Tax Document Organizer": {
+      "n": "Organizator poreznih dokumenata",
+      "d": "Organizirajte i pratite sve porezne dokumente potrebne za sezonu podnošenja prijava"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Procjenitelj kvartalnog poreza",
+      "d": "Izračunajte i planirajte kvartalne procijenjene porezne uplate za samozaposlene"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Vodič za kalkulator kapitalnih dobitaka",
+      "d": "Razumijte i planirajte porez na kapitalne dobitke od investicija i nekretnina"
+    },
+    "Tax Filing Checklist": {
+      "n": "Kontrolna lista za podnošenje porezne prijave",
+      "d": "Kontrolna lista korak po korak za točno i potpuno podnošenje porezne prijave"
+    },
+    "State Tax Comparison": {
+      "n": "Usporedba državnih poreza",
+      "d": "Usporedite porezne implikacije po državama za preseljenje ili prihod iz više država"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Vodič za ubiranje poreznih gubitaka",
+      "d": "Strateški ubiru investicijski gubici za nadoknadu dobitaka i smanjenje porezne obveze"
+    },
+    "Stock Research Template": {
+      "n": "Predložak za istraživanje dionica",
+      "d": "Provedite temeljitu fundamentalnu i tehničku analizu pojedinačnih dionica"
+    },
+    "ETF Comparison Tool": {
+      "n": "Alat za usporedbu ETF-ova",
+      "d": "Usporedite ETF-ove prema omjerima troškova, ulaganjima, performansama i strategiji"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Planer dividendnog portfelja",
+      "d": "Izgradite portfelj usmjeren na dividende za generiranje pasivnog prihoda"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Analizator ulaganja u nekretnine",
+      "d": "Analizirajte nekretnine za iznajmljivanje i ulaganja s obzirom na povrate i novčani tok"
+    },
+    "Angel Investing Checklist": {
+      "n": "Kontrolna lista za anđeosko ulaganje",
+      "d": "Ocijenite prilike za ulaganje u startupe s okvirima dubinske analize"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Optimizator mirovinskih računa",
+      "d": "Optimizirajte doprinose na 401k, IRA i ostale mirovinske račune"
+    },
+    "Bond Analysis Guide": {
+      "n": "Vodič za analizu obveznica",
+      "d": "Analizirajte obveznice i vrijednosne papire s fiksnim prinosom za prinos, trajanje i rizik"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Evaluator investicijskih fondova",
+      "d": "Ocijenite investicijske fondove prema performansama, naknadama, rezultatima upravitelja i prikladnosti"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Vodič za rebalansiranje portfelja",
+      "d": "Rebalansirajte svoj investicijski portfelj za održavanje ciljane raspodjele imovine"
+    },
+    "Investment Journal Template": {
+      "n": "Predložak investicijskog dnevnika",
+      "d": "Pratite investicijske odluke, obrazloženja i ishode za kontinuirano poboljšanje"
+    },
+    "AWS Service Selector": {
+      "n": "Odabir AWS usluga",
+      "d": "Odaberite prave AWS usluge za zahtjeve vaše aplikacije i proračun"
+    },
+    "Cloud Migration Plan": {
+      "n": "Plan migracije u oblak",
+      "d": "Planirajte strukturiranu migraciju lokalnih radnih opterećenja u oblak"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Vodič za Kubernetes implementaciju",
+      "d": "Implementirajte i upravljajte aplikacijama na Kubernetesu prema najboljim praksama"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Predložak infrastrukture kao koda",
+      "d": "Kreirajte predloške infrastrukture kao koda za ponovljiva oblačna okruženja"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "Dizajner CI/CD cjevovoda",
+      "d": "Osmislite automatizirane CI/CD cjevovode za kontinuiranu integraciju i implementaciju"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Optimizator troškova oblaka",
+      "d": "Identificirajte i implementirajte strategije optimizacije troškova oblaka"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Planer serverless arhitekture",
+      "d": "Osmislite serverless aplikacije s obrascima arhitekture vođene događajima"
+    },
+    "Container Strategy Guide": {
+      "n": "Vodič za strategiju kontejnerizacije",
+      "d": "Definirajte strategiju kontejnerizacije za aplikacije i mikroservise"
+    },
+    "Cloud Security Checklist": {
+      "n": "Kontrolna lista sigurnosti oblaka",
+      "d": "Revidirajte i osigurajte oblačnu infrastrukturu sa sveobuhvatnim sigurnosnim provjerama"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Plan oporavka od katastrofe",
+      "d": "Osmislite oblačni plan oporavka od katastrofe s ciljevima RTO i RPO"
+    },
+    "Keynote Speech Writer": {
+      "n": "Pisac uvodnog govora",
+      "d": "Napišite moćan uvodni govor koji inspirira i angažira publiku"
+    },
+    "TED Talk Outline": {
+      "n": "Nacrt TED govora",
+      "d": "Strukturirajte uvjerljiv govor u TED stilu s jakim narativnim lukom"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Pisac zdravica i počasti",
+      "d": "Napišite nezaboravne zdravice i počasti za vjenčanja, umirovljenja i proslave"
+    },
+    "Debate Preparation Guide": {
+      "n": "Vodič za pripremu debate",
+      "d": "Temeljito se pripremite za debate s argumentima, pobijanjima i dokazima"
+    },
+    "Panel Discussion Prep": {
+      "n": "Priprema za panel raspravu",
+      "d": "Pripremite se za panel rasprave s temama za razgovor i angažmanom publike"
+    },
+    "Presentation Slide Planner": {
+      "n": "Planer prezentacijskih slajdova",
+      "d": "Planirajte prezentacijske slajdove s vizualnom hijerarhijom i narativnim tokom"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Vodič za improviziran govor",
+      "d": "Razvijte vještine razmišljanja na licu mjesta s okvirima za improviziran govor"
+    },
+    "Commencement Speech Writer": {
+      "n": "Pisac govora na promociji",
+      "d": "Napišite inspirirajući govor na promociji za ceremonije dodjele diploma"
+    },
+    "Grant Application Writer": {
+      "n": "Pisac prijave za potporu",
+      "d": "Napišite uvjerljive prijave za potpore koje jasno artikuliraju utjecaj i potrebu"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Plan kampanje za prikupljanje sredstava",
+      "d": "Planirajte i provedite učinkovite kampanje za prikupljanje sredstava kroz više kanala"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Vodič za regrutiranje volontera",
+      "d": "Regrutirajte, uvedite i zadržite volontere za programe neprofitnih organizacija"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Sjednica upravnog odbora neprofitne organizacije",
+      "d": "Pripremite i vodite učinkovite sjednice upravnog odbora neprofitne organizacije s jasnim dnevnim redom"
+    },
+    "Impact Report Template": {
+      "n": "Predložak izvještaja o utjecaju",
+      "d": "Kreirajte uvjerljive izvještaje o utjecaju koji prikazuju postignuća vaše neprofitne organizacije"
+    },
+    "Donor Thank You Letter": {
+      "n": "Pismo zahvale donatoru",
+      "d": "Napišite personalizirana pisma zahvale donatorima koja grade trajne odnose"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Strategija godišnje kampanje",
+      "d": "Razvijte sveobuhvatnu godišnju strategiju prikupljanja sredstava i angažmana"
+    },
+    "Community Needs Assessment": {
+      "n": "Procjena potreba zajednice",
+      "d": "Provedite temeljitu procjenu potreba zajednice za usmjeravanje razvoja programa"
+    },
+    "Construction Project Plan": {
+      "n": "Plan građevinskog projekta",
+      "d": "Kreirajte sveobuhvatan plan građevinskog projekta s fazama, rokovima i proračunima"
+    },
+    "Building Permit Checklist": {
+      "n": "Kontrolna lista građevinskih dozvola",
+      "d": "Pratite sve potrebne građevinske dozvole i odobrenja za vaš građevinski projekt"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Vodič za evaluaciju izvođača",
+      "d": "Ocijenite i usporedite izvođače strukturiranim okvirom bodovanja"
+    },
+    "Material Estimate Calculator": {
+      "n": "Kalkulator procjene materijala",
+      "d": "Procijenite potrebne građevinske materijale s količinama i projekcijama troškova"
+    },
+    "Site Inspection Checklist": {
+      "n": "Kontrolna lista inspekcije gradilišta",
+      "d": "Provedite temeljite inspekcije gradilišta standardiziranim kontrolnim listama"
+    },
+    "Renovation Scope Document": {
+      "n": "Dokument opsega renoviranja",
+      "d": "Definirajte jasan opseg radova renoviranja sa specifikacijama i očekivanjima"
+    },
+    "Architectural Brief": {
+      "n": "Arhitektonski sažetak",
+      "d": "Napišite arhitektonski sažetak koji definira viziju, zahtjeve i ograničenja projekta"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Kontrolna lista usklađenosti sa sigurnošću",
+      "d": "Osigurajte usklađenost sigurnosti na gradilištu s OSHA-om i lokalnim propisima"
+    },
+    "Robot Design Specification": {
+      "n": "Specifikacija dizajna robota",
+      "d": "Definirajte potpune specifikacije dizajna robota uključujući mehaniku, elektroniku i softver"
+    },
+    "IoT Project Planner": {
+      "n": "Planer IoT projekta",
+      "d": "Planirajte IoT projekte od kraja do kraja, od senzora do oblačnih nadzornih ploča"
+    },
+    "Sensor Selection Guide": {
+      "n": "Vodič za odabir senzora",
+      "d": "Odaberite optimalne senzore za zahtjeve vaše robotske ili IoT aplikacije"
+    },
+    "Embedded Systems Guide": {
+      "n": "Vodič za ugrađene sustave",
+      "d": "Osmislite ugrađene sustave s pravilnim odabirom mikrokontrolera i arhitekturom firmwarea"
+    },
+    "Automation Workflow Designer": {
+      "n": "Dizajner tijeka rada automatizacije",
+      "d": "Osmislite industrijske ili kućne tijekove rada automatizacije sa senzorima i aktuatorima"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Planer hardverskog prototipa",
+      "d": "Planirajte hardverske prototipe od eksperimentalne ploče do PCB-a s nabavom komponenata"
+    },
+    "Anxiety Management Plan": {
+      "n": "Plan upravljanja anksioznošću",
+      "d": "Kreirajte personalizirani plan upravljanja anksioznošću sa strategijama suočavanja i okidačima"
+    },
+    "CBT Thought Record": {
+      "n": "KBT zapis misli",
+      "d": "Vježbajte zapise misli kognitivno-bihevioralne terapije za izazivanje negativnog razmišljanja"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Generator poticaja za dnevnik",
+      "d": "Generirajte značajne poticaje za pisanje dnevnika radi samorefleksije i emocionalne obrade"
+    },
+    "Relationship Communication Guide": {
+      "n": "Vodič za komunikaciju u vezi",
+      "d": "Poboljšajte komunikaciju u vezi strukturiranim okvirima za razgovor"
+    },
+    "Boundary Setting Guide": {
+      "n": "Vodič za postavljanje granica",
+      "d": "Naučite postavljati i održavati zdrave granice u osobnom i profesionalnom životu"
+    },
+    "Grief Processing Helper": {
+      "n": "Pomoćnik za procesiranje tuge",
+      "d": "Upravljajte procesom tugovanja uz suosjećajne smjernice i praktične korake"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Vježba samosuosjećanja",
+      "d": "Vježbajte samosuosjećanje za izgradnju otpornosti i smanjenje samokritičnosti"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Graditelj emocionalne inteligencije",
+      "d": "Razvijte vještine emocionalne inteligencije za bolju samosvijest i odnose"
+    },
+    "Anger Management Plan": {
+      "n": "Plan upravljanja ljutnjom",
+      "d": "Razvijte zdrave strategije upravljanja ljutnjom s okidačima i tehnikama deeskalacije"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Plan oporavka od izgaranja",
+      "d": "Kreirajte strukturirani plan oporavka od izgaranja s granicama, odmorom i postupnim ponovnim angažmanom"
+    },
+    "Instant Pot Recipe": {
+      "n": "Recept za Instant Pot",
+      "d": "Recepti za lonac pod pritiskom s vodičima za tajming"
+    },
+    "World Cuisine Explorer": {
+      "n": "Istraživač svjetske kuhinje",
+      "d": "Autentični recepti iz globalnih kuhinja"
+    },
+    "Fermentation Guide": {
+      "n": "Vodič za fermentaciju",
+      "d": "Recepti i tehnike za fermentiranu hranu"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Vodič za roštilj",
+      "d": "Recepti za roštilj s uparivanjima marinada i umaka"
+    },
+    "Bread Baking Guide": {
+      "n": "Vodič za pečenje kruha",
+      "d": "Recepti za artizanski kruh od kvasca do gotovog proizvoda"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Vodič za uzgoj gljiva",
+      "d": "Uzgoj gljiva u zatvorenom prostoru od micelijja do berbe"
+    },
+    "Permaculture Planner": {
+      "n": "Planer permakulture",
+      "d": "Osmislite samoodrživi vrtni ekosustav za proizvodnju hrane"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Vodič za postavljanje staklenika",
+      "d": "Isplanirajte i izgradite produktivan staklenik"
+    },
+    "FSBO Selling Guide": {
+      "n": "Vodič za prodaju bez agenta",
+      "d": "Prodajte svoj dom bez agenta za nekretnine korak po korak"
+    },
+    "Investment Property Finder": {
+      "n": "Tražilica investicijskih nekretnina",
+      "d": "Ocijenite potencijalne nekretnine za investicijsko iznajmljivanje"
+    },
+    "Car Modification Guide": {
+      "n": "Vodič za modifikaciju automobila",
+      "d": "Planirajte modifikacije i nadogradnje vozila"
+    },
+    "Fleet Management Planner": {
+      "n": "Planer upravljanja voznim parkom",
+      "d": "Upravljajte održavanjem i troškovima više vozila"
+    },
+    "Digital Nomad Guide": {
+      "n": "Vodič za digitalne nomade",
+      "d": "Radite na daljinu dok putujete svijetom"
+    },
+    "Eco-Travel Planner": {
+      "n": "Planer eko-putovanja",
+      "d": "Planirajte održiva i ekološki prihvatljiva putovanja"
+    },
+    "Product Launch Event": {
+      "n": "Događaj lansiranja proizvoda",
+      "d": "Isplanirajte događaj lansiranja proizvoda od mjesta održavanja do PR-a"
+    },
+    "Virtual Event Planner": {
+      "n": "Planer virtualnih događanja",
+      "d": "Planirajte zanimljiva online događanja i webinare"
+    },
+    "College Planning Guide": {
+      "n": "Vodič za planiranje fakulteta",
+      "d": "Planirajte fakultet od odabira do financijske pomoći"
+    },
+    "Child Safety Plan": {
+      "n": "Plan sigurnosti djeteta",
+      "d": "Sveobuhvatne smjernice za sigurnost kod kuće i na internetu"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Vodič za njegu egzotičnih kućnih ljubimaca",
+      "d": "Vodiči za njegu gmazova, ptica i egzotičnih ljubimaca"
+    },
+    "Pet Adoption Guide": {
+      "n": "Vodič za udomljavanje kućnih ljubimaca",
+      "d": "Uspješno se snađite u procesu udomljavanja kućnog ljubimca"
+    },
+    "Tiny House Builder": {
+      "n": "Graditelj male kuće",
+      "d": "Planirajte i izgradite malu kuću korak po korak"
+    },
+    "Workshop Setup Guide": {
+      "n": "Vodič za uređenje radionice",
+      "d": "Osmislite i opremite kućnu radionicu"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Planer strategije kupona",
+      "d": "Maksimizirajte uštedu strateškim korištenjem kupona"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Vodič za kupovinu rabljenih stvari",
+      "d": "Pronađite kvalitetne predmete u second-hand trgovinama i na internetu"
+    },
+    "Theological Study Guide": {
+      "n": "Vodič za teološke studije",
+      "d": "Dubinsko istraživanje teoloških koncepata i doktrina"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Vodič za međureligijski dijalog",
+      "d": "Vodite s poštovanjem međureligijske razgovore"
+    },
+    "Marathon Training Plan": {
+      "n": "Plan treninga za maraton",
+      "d": "Kompletni trening za maraton od početnika do 42,2 km"
+    },
+    "Youth Sports Coach": {
+      "n": "Trener omladinskog sporta",
+      "d": "Planirajte treninge i razvoj za omladinski sport"
+    },
+    "Woodworking Project": {
+      "n": "Projekt obrade drva",
+      "d": "Planirajte projekte obrade drva s popisima rezova i koracima"
+    },
+    "Vinyl Record Guide": {
+      "n": "Vodič za vinilne ploče",
+      "d": "Započnite i kurirajte zbirku vinilnih ploča"
+    },
+    "Home Brewing Guide": {
+      "n": "Vodič za kućno pivarstvo",
+      "d": "Varite pivo ili vino kod kuće od početka do kraja"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Plan puta do financijske slobode",
+      "d": "Zacrtajte svoj put do financijske neovisnosti"
+    },
+    "Midlife Career Change": {
+      "n": "Promjena karijere u srednjim godinama",
+      "d": "Upravljajte karijernom tranzicijom u bilo kojoj dobi"
+    },
+    "AI Wallpaper Creator": {
+      "n": "AI kreator pozadina",
+      "d": "Generirajte zapanjujuće pozadine za bilo koji uređaj"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Prompt za dizajn tetovaže",
+      "d": "Kreirajte prilagođene koncepte dizajna tetovaža pomoću AI-ja"
+    },
+    "DJ Set Planner": {
+      "n": "Planer DJ seta",
+      "d": "Planirajte DJ setove s odabirom pjesama i prijelazima"
+    },
+    "Music Theory Tutor": {
+      "n": "Tutor iz teorije glazbe",
+      "d": "Učite koncepte teorije glazbe uz vježbe"
+    },
+    "Podcast Video Setup": {
+      "n": "Postavljanje video podcasta",
+      "d": "Postavite video podcasting od opreme do montaže"
+    },
+    "Wedding Video Plan": {
+      "n": "Plan vjenčanog videa",
+      "d": "Planirajte vjenčanu videografiju od ceremonije do montaže"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Pisac poglavlja memoara",
+      "d": "Napišite uvjerljiva poglavlja memoara iz životnih priča"
+    },
+    "Haiku Generator": {
+      "n": "Generator haikua",
+      "d": "Kreirajte haiku pjesme na bilo koju temu"
+    },
+    "TikTok Content Strategy": {
+      "n": "TikTok strategija sadržaja",
+      "d": "Izgradite TikTok strategiju rasta s idejama za sadržaj"
+    },
+    "YouTube Community Post": {
+      "n": "YouTube objava za zajednicu",
+      "d": "Kreirajte zanimljive YouTube objave za zajednicu"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Plan monetizacije podcasta",
+      "d": "Strategije za monetizaciju vašeg podcasta"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Vodič za usporedbu AI alata",
+      "d": "Usporedite AI alate za specifične primjene"
+    },
+    "Code Snippet Library": {
+      "n": "Biblioteka isječaka koda",
+      "d": "Organizirajte i dokumentirajte višekratno upotrebljive isječke koda"
+    },
+    "Tech Stack Selector": {
+      "n": "Odabir tehnološkog stoga",
+      "d": "Odaberite pravi tehnološki stog za svoj projekt"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Vodič za usklađenost s privatnošću",
+      "d": "Osigurajte da vaša aplikacija zadovoljava propise o privatnosti"
+    },
+    "API Security Audit": {
+      "n": "Sigurnosna revizija API-ja",
+      "d": "Revidirajte krajnje točke svog API-ja za sigurnosne ranjivosti"
+    },
+    "AI Hackathon Project": {
+      "n": "AI hackathon projekt",
+      "d": "Isplanirajte hackathon projekt usmjeren na AI od početka do kraja"
+    },
+    "Mobile Game Concept": {
+      "n": "Koncept mobilne igre",
+      "d": "Osmislite mobilnu igru od koncepta do monetizacije"
+    },
+    "Drone Photography Guide": {
+      "n": "Vodič za fotografiju dronom",
+      "d": "Planirajte misije i snimke iz zraka dronom"
+    },
+    "NFT Art Collection": {
+      "n": "NFT umjetnička kolekcija",
+      "d": "Planirajte i kreirajte kolekciju digitalne umjetnosti"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Porezni vodič za freelancere",
+      "d": "Upravljajte porezima i olakšicama za samozaposlene"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Kreator portfelja kriptovaluta",
+      "d": "Izgradite diversificirani portfelj kriptovaluta"
+    },
+    "Azure Service Guide": {
+      "n": "Vodič za Azure usluge",
+      "d": "Odaberite i konfigurirajte Azure oblačne usluge"
+    },
+    "Wedding Speech Writer": {
+      "n": "Pisac vjenčanih govora",
+      "d": "Napišite srdačne vjenčane govore i zdravice"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Vodič za pokretanje neprofitne organizacije",
+      "d": "Pokrenite neprofitnu organizaciju od nule"
+    },
+    "Home Addition Planner": {
+      "n": "Planer dogradnje kuće",
+      "d": "Isplanirajte dogradnju kuće od dozvola do gradnje"
+    },
+    "Arduino Project Planner": {
+      "n": "Planer Arduino projekata",
+      "d": "Planirajte elektroničke projekte temeljene na Arduinu"
+    },
+    "Digital Wellness Plan": {
+      "n": "Plan digitalne dobrobiti",
+      "d": "Stvorite zdrav odnos s tehnologijom"
+    },
+    "SWOT Analysis Tool": {
+      "n": "Alat za SWOT analizu",
+      "d": "Strateška analiza snaga, slabosti, prilika i prijetnji"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Kreator dnevnog reda sastanka",
+      "d": "Kreirajte strukturirane dnevne redove sastanaka s vremenskim blokovima"
+    },
+    "OKR Framework Builder": {
+      "n": "Kreator OKR okvira",
+      "d": "Postavite ciljeve i ključne rezultate za timove"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Priprema za pregovore s dobavljačima",
+      "d": "Pripremite se za pregovore s dobavljačima i opskrbljivačima"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Vodič za evaluaciju franšize",
+      "d": "Sustavno ocijenite prilike za franšizu"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Pisac politike rada na daljinu",
+      "d": "Kreirajte sveobuhvatne politike rada na daljinu"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Plan zapošljavanja za raznolikost",
+      "d": "Izgradite inkluzivne prakse zapošljavanja i cjevovode kandidata"
+    },
+    "Freelance Contract Template": {
+      "n": "Predložak ugovora za freelancere",
+      "d": "Kreirajte profesionalne ugovore o pružanju freelance usluga"
+    },
+    "Personal Website Planner": {
+      "n": "Planer osobne web stranice",
+      "d": "Planirajte i strukturirajte svoju profesionalnu portfolio stranicu"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Vodič za intermitentni post",
+      "d": "Osmislite protokol intermitentnog posta"
+    },
+    "Posture Improvement Plan": {
+      "n": "Plan poboljšanja držanja",
+      "d": "Ispravite probleme s držanjem vježbama i navikama"
+    },
+    "Notion Template Builder": {
+      "n": "Kreator Notion predložaka",
+      "d": "Osmislite Notion predloške radnog prostora za bilo koji tijek rada"
+    },
+    "Automation Workflow Builder": {
+      "n": "Kreator tijekova rada automatizacije",
+      "d": "Osmislite tijekove rada automatizacije s alatima Zapier ili Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Planer agilnog sprinta",
+      "d": "Planirajte agilne sprintove s bodovima priča i brzinom"
+    },
+    "Product Roadmap Builder": {
+      "n": "Kreator plana proizvoda",
+      "d": "Kreirajte planove razvoja proizvoda s prekretnicama i temama"
+    },
+    "TOEFL Prep Guide": {
+      "n": "Vodič za pripremu za TOEFL",
+      "d": "Pripremite se za TOEFL ispit sa strategijama učenja"
+    },
+    "Business English Coach": {
+      "n": "Trener poslovnog engleskog",
+      "d": "Poboljšajte profesionalnu komunikaciju na engleskom jeziku"
+    },
+    "Brand Identity Designer": {
+      "n": "Dizajner identiteta brenda",
+      "d": "Kreirajte koherentne smjernice vizualnog identiteta brenda"
+    },
+    "UX Research Plan": {
+      "n": "Plan UX istraživanja",
+      "d": "Planirajte istraživanje korisničkog iskustva za digitalne proizvode"
+    },
+    "Data Storytelling Guide": {
+      "n": "Vodič za pripovijedanje podacima",
+      "d": "Pretvorite uvide iz podataka u uvjerljive narative"
+    },
+    "AI Model Evaluation": {
+      "n": "Evaluacija AI modela",
+      "d": "Ocijenite i usporedite performanse modela strojnog učenja"
+    },
+    "3D Printing Project": {
+      "n": "Projekt 3D ispisa",
+      "d": "Planirajte projekte 3D ispisa od dizajna do ispisa"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Dizajner električnih krugova",
+      "d": "Osmislite električne krugove s odabirom komponenata"
+    },
+    "Side Hustle Finder": {
+      "n": "Tražilica dodatnog prihoda",
+      "d": "Otkrijte ideje za dodatni prihod na temelju vaših vještina"
+    },
+    "Passive Income Blueprint": {
+      "n": "Plan pasivnog prihoda",
+      "d": "Izgradite strategiju pasivnog prihoda prilagođenu vašoj situaciji"
+    },
+    "Savings Challenge Generator": {
+      "n": "Generator izazova štednje",
+      "d": "Napravite prilagođeni plan izazova štednje"
+    },
+    "Negotiate Any Bill": {
+      "n": "Pregovarač računa",
+      "d": "Skripte za pregovaranje i smanjenje ponavljajućih računa"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Pokretač Etsy trgovine",
+      "d": "Plan korak po korak za pokretanje i rast Etsy trgovine"
+    },
+    "YouTube Channel Planner": {
+      "n": "Planer YouTube kanala",
+      "d": "Planirajte i pokrenite profitabilan YouTube kanal"
+    },
+    "Rental Income Analyzer": {
+      "n": "Analizator prihoda od najma",
+      "d": "Analizirajte potencijalne prinose nekretnina za iznajmljivanje"
+    },
+    "Online Course Creator": {
+      "n": "Kreator online tečajeva",
+      "d": "Planirajte i strukturirajte online tečaj za prodaju"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Maksimizator kupona i cashbacka",
+      "d": "Maksimizirajte uštede s kuponima, cashbackom i nagradama"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Postavljanje dropshipping trgovine",
+      "d": "Planirajte dropshipping posao od nule"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Optimizator gig ekonomije",
+      "d": "Maksimizirajte zarade iz gig aplikacija poput Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "budget",
+    "topic": "topic",
+    "duration": "duration",
+    "level": "level",
+    "style": "style",
+    "timeline": "timeline",
+    "product": "product",
+    "audience": "audience",
+    "tone": "tone",
+    "industry": "industry",
+    "theme": "theme",
+    "platform": "platform",
+    "location": "location",
+    "experience": "experience",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "format",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "goal",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "language",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "role",
+    "companyName": "companyName",
+    "company": "company",
+    "title": "title",
+    "setting": "setting",
+    "date": "date",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "category",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "context",
+    "output_format": "output format",
+    "task": "task",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "length",
+    "niche": "niche",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "skills",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

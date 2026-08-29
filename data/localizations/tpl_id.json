@@ -1,0 +1,4254 @@
+{
+  "pills": {
+    "all": "Semua",
+    "free": "⭐ Gratis",
+    "money": "💰 Bisnis",
+    "coding": "💻 Pengkodean",
+    "ai": "🤖 AI",
+    "writing": "✍️ Menulis",
+    "marketing": "📢 Pemasaran",
+    "sales": "🤝 Penjualan",
+    "school": "📚 Pendidikan",
+    "research": "🔬 Penelitian",
+    "career": "🚀 Karier",
+    "legal": "⚖️ Hukum",
+    "finance": "📊 Keuangan",
+    "health": "🏥 Kesehatan",
+    "cooking": "🍳 Memasak",
+    "garden": "🌱 Taman",
+    "realestate": "🏠 Real Estat",
+    "auto": "🚗 Otomatis",
+    "travel": "✈️ Perjalanan",
+    "image": "🎨 Gambar AI",
+    "music": "🎵 Musik",
+    "video": "🎬 Video",
+    "social": "📱 Sosial",
+    "startup": "🦄 Memulai",
+    "ecommerce": "🛒 perdagangan elektronik",
+    "productivity": "⏱ Produktivitas",
+    "diy": "🔨 buatan sendiri",
+    "event": "🎉 Acara",
+    "parent": "👶 Mengasuh anak",
+    "pets": "🐾 Hewan peliharaan",
+    "sports": "⚽ Olahraga",
+    "wellness": "🧘 Kesehatan",
+    "language": "🌍 Bahasa",
+    "security": "🔒 Keamanan",
+    "datascience": "📈 Ilmu Data",
+    "chemistry": "🧪 Kimia",
+    "biology": "🧬 Biologi",
+    "physics": "⚛️ Fisika",
+    "math": "🔢 Matematika",
+    "makemoney": "💰 Uang"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Alat Peringkasan",
+      "d": "Padatkan konten apa pun menjadi ringkasan poin-poin yang jelas"
+    },
+    "Technical Documentation": {
+      "n": "Dokumentasi Teknis",
+      "d": "Buat dokumen teknis yang jelas untuk API dan fitur"
+    },
+    "YouTube Script": {
+      "n": "Skrip YouTube",
+      "d": "Skrip video lengkap dengan pengait, bagian, CTA, daftar b-roll"
+    },
+    "TikTok Generator": {
+      "n": "Pembuat TikTok",
+      "d": "Skrip video berdurasi pendek yang dioptimalkan untuk TikTok"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Penulis Posting LinkedIn",
+      "d": "Postingan LinkedIn yang menghentikan gulir yang mendorong keterlibatan"
+    },
+    "\\u270F\\uFE0F Blog Post Generator": {
+      "n": "\\u270F\\uFE0F Pembuat Entri Blog",
+      "d": "Posting blog bentuk panjang yang dioptimalkan untuk SEO"
+    },
+    "SEO Article Writer": {
+      "n": "Penulis Artikel SEO",
+      "d": "Artikel kaya kata kunci dibuat untuk mendapat peringkat di Google"
+    },
+    "Podcast Episode Outline": {
+      "n": "Garis Besar Episode Podcast",
+      "d": "Garis besar episode terstruktur dengan poin pembicaraan"
+    },
+    "Newsletter Writer": {
+      "n": "Penulis Buletin",
+      "d": "Melibatkan pembaca buletin email benar-benar terbuka"
+    },
+    "Product Review Writer": {
+      "n": "Penulis Review Produk",
+      "d": "Ulasan produk yang seimbang dan kredibel"
+    },
+    "Social Media Calendar": {
+      "n": "Kalender Media Sosial",
+      "d": "Kalender konten 30 hari dengan ide postingan per platform"
+    },
+    "Executive Summary": {
+      "n": "Ringkasan Eksekutif",
+      "d": "Ringkasan eksekutif satu halaman dari dokumen panjang"
+    },
+    "Customer Support Response": {
+      "n": "Respons Dukungan Pelanggan",
+      "d": "Balasan dukungan pelanggan sesuai merek yang empati"
+    },
+    "Business Proposal": {
+      "n": "Proposal Bisnis",
+      "d": "Memenangkan proposal klien dengan cakupan dan harga"
+    },
+    "Decision Memo": {
+      "n": "Memo Keputusan",
+      "d": "Hapus memo keputusan dengan opsi dan rekomendasi"
+    },
+    "Stakeholder Update": {
+      "n": "Pembaruan Pemangku Kepentingan",
+      "d": "Pembaruan status proyek secara ringkas untuk pemangku kepentingan"
+    },
+    "Code Review Assistant": {
+      "n": "Asisten Peninjau Kode",
+      "d": "Tinjau kode untuk bug, gaya, dan praktik terbaik"
+    },
+    "JSDoc / Code Comments": {
+      "n": "JSDoc/Komentar Kode",
+      "d": "Komentar JSDoc untuk JavaScript dan TypeScript"
+    },
+    "Architecture Decision Record": {
+      "n": "Catatan Keputusan Arsitektur",
+      "d": "ADR formal yang mendokumentasikan keputusan teknis"
+    },
+    "User Story Writer": {
+      "n": "Penulis Cerita Pengguna",
+      "d": "Kisah pengguna tangkas dengan kriteria penerimaan"
+    },
+    "\\u2705 Acceptance Criteria": {
+      "n": "\\u2705 Kriteria Penerimaan",
+      "d": "Kriteria penerimaan gaya Gherkin untuk cerita pengguna"
+    },
+    "PR Description Writer": {
+      "n": "Penulis Deskripsi PR",
+      "d": "Deskripsi PR yang jelas dengan konteks dan catatan pengujian"
+    },
+    "Unit Test Generator": {
+      "n": "Generator Uji Unit",
+      "d": "Pengujian unit dengan kasus tepi untuk fungsi apa pun"
+    },
+    "\\u267B\\uFE0F Code Refactoring Advisor": {
+      "n": "\\u267B\\uFE0F Penasihat Pemfaktoran Ulang Kode",
+      "d": "Refactor kode untuk keterbacaan dan kinerja"
+    },
+    "SQL Query Builder": {
+      "n": "Pembuat Kueri SQL",
+      "d": "Bahasa alami untuk kueri SQL yang dioptimalkan"
+    },
+    "\\u2388\\uFE0F Kubernetes Config Generator": {
+      "n": "\\u2388\\uFE0F Pembuat Konfigurasi Kubernetes",
+      "d": "Diagnosis dan perbaiki masalah K8 dengan cepat"
+    },
+    "Postmortem Report": {
+      "n": "Laporan Postmortem",
+      "d": "Postmortem tanpa cacat dengan garis waktu dan item tindakan"
+    },
+    "Release Notes Writer": {
+      "n": "Penulis Catatan Rilis",
+      "d": "Catatan rilis yang mudah digunakan dari pesan komit"
+    },
+    "Prompt Optimizer": {
+      "n": "Pengoptimal Cepat",
+      "d": "Tingkatkan perintah AI apa pun untuk hasil yang lebih baik dan presisi"
+    },
+    "Chain-of-Thought Builder": {
+      "n": "Pembangun Rantai Pemikiran",
+      "d": "Bangun petunjuk penalaran multi-langkah untuk tugas-tugas kompleks"
+    },
+    "RAG System Prompt": {
+      "n": "Perintah Sistem RAG",
+      "d": "Templat perintah pembuatan augmented pengambilan"
+    },
+    "Eval Dataset Creator": {
+      "n": "Evaluasi Pembuat Kumpulan Data",
+      "d": "Hasilkan kumpulan data evaluasi untuk pengujian model AI"
+    },
+    "Prompt A/B Tester": {
+      "n": "Penguji A/B Cepat",
+      "d": "Hasilkan varian perintah A/B untuk membandingkan kinerja"
+    },
+    "Multi-Model Comparison": {
+      "n": "Perbandingan Multi-Model",
+      "d": "Kerangka kerja untuk membandingkan keluaran seluruh model AI"
+    },
+    "Resume Tailoring": {
+      "n": "Lanjutkan Menjahit",
+      "d": "Sesuaikan resume Anda dengan deskripsi pekerjaan tertentu"
+    },
+    "\\u270F\\uFE0F Cover Letter Generator": {
+      "n": "\\u270F\\uFE0F Pembuat Surat Pengantar",
+      "d": "Surat lamaran menarik yang mendapatkan wawancara"
+    },
+    "LinkedIn Profile Optimizer": {
+      "n": "Pengoptimal Profil LinkedIn",
+      "d": "Optimalkan LinkedIn Anda untuk perekrut"
+    },
+    "Interview Coach": {
+      "n": "Pelatih Wawancara",
+      "d": "Berlatih tanya jawab wawancara untuk peran apa pun"
+    },
+    "Salary Negotiation Script": {
+      "n": "Naskah Negosiasi Gaji",
+      "d": "Skrip dan strategi untuk menegosiasikan gaji yang lebih tinggi"
+    },
+    "Career Roadmap Planner": {
+      "n": "Perencana Peta Jalan Karir",
+      "d": "Rencana pertumbuhan karir 12 bulan dengan pencapaiannya"
+    },
+    "Objection Handler": {
+      "n": "Penangan Keberatan",
+      "d": "Skrip untuk menangani keberatan penjualan umum"
+    },
+    "Landing Page Copy": {
+      "n": "Salinan Halaman Arahan",
+      "d": "Salinan halaman arahan dengan konversi tinggi"
+    },
+    "Google Ads Copy": {
+      "n": "Salinan Iklan Google",
+      "d": "Salinan iklan penelusuran Google dengan RKT tinggi"
+    },
+    "Facebook/Instagram Ad": {
+      "n": "Iklan Facebook/Instagram",
+      "d": "Salinan iklan Facebook dan Instagram yang mengkonversi"
+    },
+    "Marketing Campaign Brief": {
+      "n": "Ringkasan Kampanye Pemasaran",
+      "d": "Kampanye pemasaran lengkap dengan saluran dan garis waktu"
+    },
+    "Customer Persona Builder": {
+      "n": "Pembangun Persona Pelanggan",
+      "d": "Persona pembeli terperinci untuk pemasaran dan produk"
+    },
+    "Value Proposition Canvas": {
+      "n": "Kanvas Proposisi Nilai",
+      "d": "Proposisi nilai yang jelas dan menarik"
+    },
+    "Product Launch Plan": {
+      "n": "Rencana Peluncuran Produk",
+      "d": "Rencana masuk ke pasar untuk peluncuran produk"
+    },
+    "Study Guide Creator": {
+      "n": "Pembuat Panduan Belajar",
+      "d": "Ubah topik apa pun menjadi panduan belajar terstruktur"
+    },
+    "Flashcard Creator": {
+      "n": "Pembuat Kartu Flash",
+      "d": "Kumpulan Tanya Jawab Flashcard untuk menghafal cepat"
+    },
+    "Quiz Generator": {
+      "n": "Pembuat Kuis",
+      "d": "Kuis pilihan ganda dan jawaban singkat"
+    },
+    "Lesson Plan Builder": {
+      "n": "Pembuat Rencana Pelajaran",
+      "d": "Rencana pelajaran terperinci dengan kegiatan dan penilaian"
+    },
+    "Research Notes Organizer": {
+      "n": "Penyelenggara Catatan Penelitian",
+      "d": "Susun catatan penelitian ke dalam kerangka yang terstruktur"
+    },
+    "Essay Outline Generator": {
+      "n": "Pembuat Garis Besar Esai",
+      "d": "Esai terstruktur diuraikan dengan tesis dan argumen"
+    },
+    "Literature Review Assistant": {
+      "n": "Asisten Tinjauan Sastra",
+      "d": "Tinjauan literatur akademis dengan sintesis"
+    },
+    "Thesis Statement Builder": {
+      "n": "Pembuat Pernyataan Tesis",
+      "d": "Pernyataan tesis yang kuat dan dapat diperdebatkan"
+    },
+    "Exam Prep Planner": {
+      "n": "Perencana Persiapan Ujian",
+      "d": "Jadwal belajar ujian yang dipersonalisasi"
+    },
+    "\\u2696\\uFE0F Contract Summary": {
+      "n": "\\u2696\\uFE0F Ringkasan Kontrak",
+      "d": "Ringkasan kontrak bahasa Inggris biasa. Bukan nasihat hukum."
+    },
+    "\\u2696\\uFE0F Contract Risk Review": {
+      "n": "\\u2696\\uFE0F Tinjauan Risiko Kontrak",
+      "d": "Identifikasi klausul berisiko. Bukan nasihat hukum."
+    },
+    "\\u2696\\uFE0F NDA Analyzer": {
+      "n": "\\u2696\\uFE0F Penganalisis NDA",
+      "d": "Rincian klausul NDA. Bukan nasihat hukum."
+    },
+    "\\u2696\\uFE0F Policy Draft Assistant": {
+      "n": "\\u2696\\uFE0F Asisten Draf Kebijakan",
+      "d": "Draf kebijakan internal. Bukan nasihat hukum."
+    },
+    "\\u2696\\uFE0F Compliance Checklist": {
+      "n": "\\u2696\\uFE0F Daftar Periksa Kepatuhan",
+      "d": "Daftar periksa kepatuhan berdasarkan kerangka kerja. Bukan nasihat hukum."
+    },
+    "\\u2696\\uFE0F Terms of Service Reviewer": {
+      "n": "\\u2696\\uFE0F Peninjau Persyaratan Layanan",
+      "d": "Tandai risiko ToS. Bukan nasihat hukum."
+    },
+    "Budget Planner": {
+      "n": "Perencana Anggaran",
+      "d": "Rencana anggaran pribadi atau bisnis. Bukan nasihat keuangan."
+    },
+    "Earnings Call Summarizer": {
+      "n": "Peringkas Panggilan Penghasilan",
+      "d": "Poin penting dari panggilan pendapatan. Bukan nasihat keuangan."
+    },
+    "Investment Thesis Builder": {
+      "n": "Pembangun Tesis Investasi",
+      "d": "Tesis investasi terstruktur. Bukan nasihat keuangan."
+    },
+    "Financial Analysis Report": {
+      "n": "Laporan Analisis Keuangan",
+      "d": "Analisis keuangan. Bukan nasihat keuangan."
+    },
+    "Expense Categorizer": {
+      "n": "Kategori Pengeluaran",
+      "d": "Kategorikan dan analisis pengeluaran. Bukan nasihat keuangan."
+    },
+    "SOAP Note Generator": {
+      "n": "Pembuat Catatan SABUN",
+      "d": "Catatan SOAP klinis. Bukan nasihat medis."
+    },
+    "Clinical Case Summary": {
+      "n": "Ringkasan Kasus Klinis",
+      "d": "Struktur catatan klinis. Bukan nasihat medis."
+    },
+    "Patient Education Writer": {
+      "n": "Penulis Pendidikan Pasien",
+      "d": "Pendidikan pasien dalam bahasa sederhana. Bukan nasihat medis."
+    },
+    "Medical Research Summarizer": {
+      "n": "Peringkasan Penelitian Medis",
+      "d": "Meringkas makalah penelitian. Bukan nasihat medis."
+    },
+    "Differential Diagnosis Assistant": {
+      "n": "Asisten Diagnosis Diferensial",
+      "d": "Atur diagnosis banding. Bukan nasihat medis."
+    },
+    "Creative Storyteller": {
+      "n": "Pendongeng Kreatif",
+      "d": "Menghasilkan cerita dan narasi kreatif"
+    },
+    "Ad Copy Generator": {
+      "n": "Pembuat Salinan Iklan",
+      "d": "Salinan dengan konversi tinggi untuk Google, Meta, LinkedIn"
+    },
+    "Bug Report Writer": {
+      "n": "Penulis Laporan Bug",
+      "d": "Tulis laporan bug yang jelas dan dapat direproduksi"
+    },
+    "Social Media Caption": {
+      "n": "Keterangan Media Sosial",
+      "d": "Hasilkan teks penghenti gulir untuk platform apa pun"
+    },
+    "Research Paper Abstract": {
+      "n": "Abstrak Makalah Penelitian",
+      "d": "Menulis abstrak akademik terstruktur"
+    },
+    "Translation Expert": {
+      "n": "Pakar Penerjemahan",
+      "d": "Terjemahkan teks dengan konteks dan nuansa"
+    },
+    "Data Analyst": {
+      "n": "Analis Data",
+      "d": "Analisis data dan berikan wawasan yang dapat ditindaklanjuti"
+    },
+    "Recipe Generator": {
+      "n": "Pembuat Resep",
+      "d": "Hasilkan resep khusus berdasarkan preferensi dan kebutuhan diet Anda"
+    },
+    "Meal Planner": {
+      "n": "Perencana Makanan",
+      "d": "Rencanakan makanan seimbang sepanjang minggu dengan mempertimbangkan variasi dan nutrisi"
+    },
+    "Grocery List Builder": {
+      "n": "Pembuat Daftar Belanjaan",
+      "d": "Buat daftar belanjaan yang terorganisir dari rencana makanan dan kebutuhan dapur Anda"
+    },
+    "Pantry Recipe Finder": {
+      "n": "Pencari Resep Dapur",
+      "d": "Temukan resep lezat menggunakan bahan-bahan yang Anda miliki"
+    },
+    "Nutrition Calculator": {
+      "n": "Kalkulator Nutrisi",
+      "d": "Hitung informasi nutrisi terperinci untuk resep atau kombinasi makanan apa pun"
+    },
+    "Ingredient Substitution Guide": {
+      "n": "Panduan Penggantian Bahan",
+      "d": "Temukan pengganti yang sempurna untuk bahan-bahan yang hilang atau terbatas"
+    },
+    "Batch Cooking Planner": {
+      "n": "Perencana Memasak Batch",
+      "d": "Rencanakan sesi memasak batch yang efisien untuk menghemat waktu sepanjang minggu"
+    },
+    "Cocktail Recipe Creator": {
+      "n": "Pembuat Resep Koktail",
+      "d": "Buat dan sesuaikan resep koktail untuk setiap kesempatan"
+    },
+    "Baking Conversion Helper": {
+      "n": "Pembantu Konversi Memanggang",
+      "d": "Konversikan pengukuran kue antar unit dan skalakan resep ke atas atau ke bawah"
+    },
+    "Diet-Specific Recipe Finder": {
+      "n": "Pencari Resep Khusus Diet",
+      "d": "Temukan resep yang disesuaikan dengan rencana diet spesifik atau tujuan nutrisi Anda"
+    },
+    "Slow Cooker Recipe": {
+      "n": "Resep Pemasak Lambat",
+      "d": "Dapatkan resep slow cooker dengan waktu yang tepat untuk memasak langsung"
+    },
+    "Air Fryer Recipe Creator": {
+      "n": "Pembuat Resep Penggorengan Udara",
+      "d": "Buat resep air fryer yang renyah dan lezat dengan waktu yang tepat"
+    },
+    "Smoothie Builder": {
+      "n": "Pembuat Smoothie",
+      "d": "Buat resep smoothie yang bergizi dan lezat untuk tujuan apa pun"
+    },
+    "Sauce & Dressing Creator": {
+      "n": "Pembuat Saus & Saus",
+      "d": "Buat saus dan saus buatan sendiri dari awal"
+    },
+    "Spice Blend Guide": {
+      "n": "Panduan Campuran Rempah",
+      "d": "Buat campuran bumbu khusus untuk masakan atau jenis hidangan apa pun"
+    },
+    "Food Pairing Expert": {
+      "n": "Pakar Memasangkan Makanan",
+      "d": "Temukan perpaduan makanan dan rasa yang ideal untuk santapan lezat"
+    },
+    "Holiday Menu Planner": {
+      "n": "Perencana Menu Liburan",
+      "d": "Rencanakan menu liburan lengkap dengan timeline dan daftar belanjaan"
+    },
+    "Leftover Makeover": {
+      "n": "Perombakan Sisa",
+      "d": "Ubah sisa makanan menjadi makanan baru yang menarik dengan ide-ide kreatif"
+    },
+    "Kid-Friendly Meal Ideas": {
+      "n": "Ide Makanan Ramah Anak",
+      "d": "Hasilkan makanan sehat yang benar-benar disukai anak-anak"
+    },
+    "Date Night Dinner": {
+      "n": "Makan Malam Kencan Malam",
+      "d": "Rencanakan makan malam yang mengesankan untuk malam romantis di rumah"
+    },
+    "Budget Meal Planner": {
+      "n": "Perencana Makan Anggaran",
+      "d": "Ciptakan makanan lezat dengan anggaran terbatas tanpa mengorbankan nutrisi"
+    },
+    "Vegan Recipe Converter": {
+      "n": "Pengonversi Resep Vegan",
+      "d": "Ubah resep tradisional apa pun menjadi versi vegan yang lezat"
+    },
+    "Dessert Creator": {
+      "n": "Pembuat Makanan Penutup",
+      "d": "Rancang resep makanan penutup khusus untuk tingkat keahlian dan acara apa pun"
+    },
+    "Appetizer Planner": {
+      "n": "Perencana Makanan Pembuka",
+      "d": "Rencanakan hidangan pembuka yang sempurna untuk pesta dan pertemuan"
+    },
+    "Food Prep Timeline": {
+      "n": "Garis Waktu Persiapan Makanan",
+      "d": "Buat timeline memasak yang detail agar semuanya siap sekaligus"
+    },
+    "Plant Care Guide": {
+      "n": "Panduan Perawatan Tanaman",
+      "d": "Dapatkan instruksi perawatan yang dipersonalisasi untuk tanaman apa pun dalam koleksi Anda"
+    },
+    "Garden Planner": {
+      "n": "Perencana Taman",
+      "d": "Rancang dan rencanakan tata letak taman Anda untuk hasil dan keindahan yang maksimal"
+    },
+    "Pest Diagnosis Tool": {
+      "n": "Alat Diagnosis Hama",
+      "d": "Identifikasi hama dan penyakit kebun dengan pilihan pengobatan organik"
+    },
+    "Seasonal Planting Calendar": {
+      "n": "Kalender Penanaman Musiman",
+      "d": "Ketahui secara pasti kapan harus menanam setiap tanaman di zona tanam Anda"
+    },
+    "Vegetable Garden Planner": {
+      "n": "Perencana Kebun Sayur",
+      "d": "Rencanakan kebun sayur produktif dengan penanaman pendamping dan rotasi"
+    },
+    "Indoor Plant Guide": {
+      "n": "Panduan Tanaman Dalam Ruangan",
+      "d": "Pilih dan rawat tanaman dalam ruangan yang sempurna untuk ruangan Anda"
+    },
+    "Herb Garden Starter": {
+      "n": "Pemula Kebun Herbal",
+      "d": "Mulailah kebun herba yang tumbuh subur di dalam atau di luar ruangan dengan bimbingan ahli"
+    },
+    "Composting Guide": {
+      "n": "Panduan Pengomposan",
+      "d": "Memulai dan memelihara sistem pengomposan untuk tanah kebun yang subur"
+    },
+    "Landscape Design Helper": {
+      "n": "Pembantu Desain Lansekap",
+      "d": "Rancang rencana lanskap yang indah untuk properti Anda"
+    },
+    "Raised Bed Planner": {
+      "n": "Perencana Tempat Tidur yang Dibesarkan",
+      "d": "Rancang dan bangun tempat tidur taman yang sempurna untuk ruangan Anda"
+    },
+    "Fruit Tree Guide": {
+      "n": "Panduan Pohon Buah",
+      "d": "Pilih dan rawat pohon buah-buahan yang sesuai dengan iklim dan ruang Anda"
+    },
+    "Container Garden Planner": {
+      "n": "Perencana Taman Kontainer",
+      "d": "Ciptakan taman kontainer yang indah dan produktif untuk ruangan apa pun"
+    },
+    "Pollinator Garden": {
+      "n": "Taman Penyerbuk",
+      "d": "Rancang taman yang menarik lebah, kupu-kupu, dan serangga bermanfaat"
+    },
+    "Drought-Tolerant Garden": {
+      "n": "Taman Toleran Kekeringan",
+      "d": "Rencanakan taman hemat air yang tumbuh subur dengan irigasi minimal"
+    },
+    "Soil Amendment Guide": {
+      "n": "Panduan Amandemen Tanah",
+      "d": "Uji dan tingkatkan tanah kebun Anda untuk kesehatan tanaman yang optimal"
+    },
+    "Seed Starting Calendar": {
+      "n": "Kalender Awal Benih",
+      "d": "Rencanakan jadwal awal benih Anda untuk musim tanam yang sukses"
+    },
+    "Garden Layout Designer": {
+      "n": "Desainer Tata Letak Taman",
+      "d": "Ciptakan tata letak taman yang optimal dengan jarak yang tepat dan akses sinar matahari"
+    },
+    "Water Schedule Planner": {
+      "n": "Perencana Jadwal Air",
+      "d": "Buat jadwal penyiraman yang efisien untuk taman dan halaman rumput Anda"
+    },
+    "Plant Problem Solver": {
+      "n": "Pemecah Masalah Tanaman",
+      "d": "Diagnosis dan atasi masalah umum tanaman dengan saran ahli"
+    },
+    "Pruning Guide": {
+      "n": "Panduan Pemangkasan",
+      "d": "Pelajari kapan dan bagaimana memangkas tanaman apa pun untuk kesehatan dan kecantikan"
+    },
+    "Home Buying Checklist": {
+      "n": "Daftar Periksa Pembelian Rumah",
+      "d": "Lengkapi daftar periksa langkah demi langkah untuk proses pembelian rumah"
+    },
+    "Apartment Comparison Tool": {
+      "n": "Alat Perbandingan Apartemen",
+      "d": "Bandingkan apartemen secara berdampingan untuk menemukan persewaan yang sempurna"
+    },
+    "Rental Application Helper": {
+      "n": "Pembantu Aplikasi Sewa",
+      "d": "Siapkan aplikasi persewaan yang kuat dan menonjol bagi tuan tanah"
+    },
+    "Home Inspection Questions": {
+      "n": "Pertanyaan Inspeksi Rumah",
+      "d": "Pertanyaan penting untuk ditanyakan selama inspeksi rumah"
+    },
+    "Mortgage Comparison Calculator": {
+      "n": "Kalkulator Perbandingan Hipotek",
+      "d": "Bandingkan opsi hipotek untuk menemukan kesepakatan terbaik untuk situasi Anda"
+    },
+    "First-Time Buyer Guide": {
+      "n": "Panduan Pembeli Pertama Kali",
+      "d": "Panduan lengkap untuk menavigasi pembelian rumah pertama Anda dengan percaya diri"
+    },
+    "Neighborhood Research": {
+      "n": "Penelitian Lingkungan",
+      "d": "Teliti dan bandingkan lingkungan sekitar untuk menemukan lingkungan yang cocok untuk Anda"
+    },
+    "Home Value Estimator": {
+      "n": "Penaksir Nilai Rumah",
+      "d": "Perkirakan nilai rumah Anda menggunakan data penjualan dan pasar yang sebanding"
+    },
+    "Lease Agreement Reviewer": {
+      "n": "Peninjau Perjanjian Sewa",
+      "d": "Tinjau dan pahami istilah-istilah penting dalam perjanjian sewa Anda"
+    },
+    "Moving Checklist": {
+      "n": "Daftar Periksa Pemindahan",
+      "d": "Daftar periksa perpindahan yang komprehensif dengan garis waktu dan manajemen tugas"
+    },
+    "Property Investment Analyzer": {
+      "n": "Penganalisis Investasi Properti",
+      "d": "Analisis properti sewaan untuk mengetahui potensi laba atas investasi"
+    },
+    "Renovation Budget Planner": {
+      "n": "Perencana Anggaran Renovasi",
+      "d": "Rencanakan dan anggarkan proyek renovasi rumah dengan perkiraan biaya terperinci"
+    },
+    "House Hunting Scorecard": {
+      "n": "Kartu Skor Berburu Rumah",
+      "d": "Skor dan rangking rumah selama proses berburu rumah Anda"
+    },
+    "Down Payment Calculator": {
+      "n": "Kalkulator Uang Muka",
+      "d": "Hitung opsi uang muka dan rencana tabungan untuk pembelian rumah Anda"
+    },
+    "Home Maintenance Schedule": {
+      "n": "Jadwal Perawatan Rumah",
+      "d": "Buat jadwal pemeliharaan rumah musiman untuk melindungi investasi Anda"
+    },
+    "Rental Property Analysis": {
+      "n": "Analisis Properti Sewa",
+      "d": "Evaluasi peluang properti sewa dengan proyeksi keuangan"
+    },
+    "Home Staging Tips": {
+      "n": "Tip Pementasan Rumah",
+      "d": "Panggung rumah Anda untuk dijual lebih cepat dan dengan harga lebih tinggi"
+    },
+    "Realtor Interview Questions": {
+      "n": "Pertanyaan Wawancara Agen Properti",
+      "d": "Pertanyaan kunci untuk ditanyakan saat mewawancarai agen real estate"
+    },
+    "Closing Cost Estimator": {
+      "n": "Penaksir Biaya Penutupan",
+      "d": "Perkirakan semua biaya penutupan untuk transaksi real estat Anda"
+    },
+    "HOA Assessment Guide": {
+      "n": "Panduan Penilaian HOA",
+      "d": "Evaluasi biaya HOA, peraturan, dan kesehatan keuangan sebelum membeli"
+    },
+    "Car Buying Assistant": {
+      "n": "Asisten Pembelian Mobil",
+      "d": "Jalani proses pembelian mobil dengan percaya diri dan hemat uang"
+    },
+    "Vehicle Comparison Tool": {
+      "n": "Alat Perbandingan Kendaraan",
+      "d": "Bandingkan kendaraan secara berdampingan dalam hal spesifikasi, harga, dan fitur"
+    },
+    "Maintenance Schedule Planner": {
+      "n": "Perencana Jadwal Pemeliharaan",
+      "d": "Buat jadwal perawatan kendaraan yang dipersonalisasi untuk memperpanjang umur mobil"
+    },
+    "Repair Estimate Analyzer": {
+      "n": "Perbaiki Penganalisis Perkiraan",
+      "d": "Evaluasi perkiraan perbaikan mobil dan temukan harga yang wajar untuk layanan"
+    },
+    "Road Trip Planner": {
+      "n": "Perencana Perjalanan Darat",
+      "d": "Rencanakan perjalanan yang sempurna dengan memperhitungkan pemberhentian, bahan bakar, dan waktu"
+    },
+    "Used Car Inspection Checklist": {
+      "n": "Daftar Periksa Pemeriksaan Mobil Bekas",
+      "d": "Daftar periksa pemeriksaan menyeluruh untuk membeli mobil bekas dengan percaya diri"
+    },
+    "Auto Insurance Comparison": {
+      "n": "Perbandingan Asuransi Mobil",
+      "d": "Bandingkan opsi asuransi mobil untuk menemukan cakupan dan harga terbaik"
+    },
+    "Fuel Economy Calculator": {
+      "n": "Kalkulator Penghematan Bahan Bakar",
+      "d": "Hitung dan optimalkan biaya dan efisiensi bahan bakar kendaraan Anda"
+    },
+    "Car Lease vs Buy Analyzer": {
+      "n": "Penyewaan Mobil vs Penganalisis Beli",
+      "d": "Bandingkan sewa versus pembelian untuk menemukan opsi finansial terbaik"
+    },
+    "Trade-In Value Estimator": {
+      "n": "Penaksir Nilai Tukar Tambah",
+      "d": "Perkirakan nilai tukar tambah kendaraan Anda dan negosiasikan kesepakatan yang adil"
+    },
+    "Vehicle History Reviewer": {
+      "n": "Peninjau Sejarah Kendaraan",
+      "d": "Pertanyaan kunci dan pemeriksaan saat meninjau laporan riwayat kendaraan bekas"
+    },
+    "Car Detailing Guide": {
+      "n": "Panduan Detailing Mobil",
+      "d": "Petunjuk detail mobil langkah demi langkah untuk penyelesaian showroom"
+    },
+    "Winter Car Prep": {
+      "n": "Persiapan Mobil Musim Dingin",
+      "d": "Persiapkan kendaraan Anda untuk kondisi berkendara musim dingin dan cuaca dingin"
+    },
+    "New Driver Guide": {
+      "n": "Panduan Pengemudi Baru",
+      "d": "Kiat dan pengetahuan mengemudi yang penting untuk pengemudi baru dan yang sedang belajar"
+    },
+    "Electric Vehicle Guide": {
+      "n": "Panduan Kendaraan Listrik",
+      "d": "Semua yang perlu Anda ketahui tentang membeli dan memiliki kendaraan listrik"
+    },
+    "Trip Planner": {
+      "n": "Perencana Perjalanan",
+      "d": "Rencanakan perjalanan sempurna Anda dengan tujuan, aktivitas, dan logistik"
+    },
+    "Packing List Generator": {
+      "n": "Pembuat Daftar Pengepakan",
+      "d": "Hasilkan daftar pengepakan yang disesuaikan untuk perjalanan dan tujuan apa pun"
+    },
+    "Vacation Itinerary Builder": {
+      "n": "Pembuat Rencana Perjalanan Liburan",
+      "d": "Buat rencana perjalanan liburan sehari-hari dengan aktivitas dan santapan"
+    },
+    "Travel Budget Calculator": {
+      "n": "Kalkulator Anggaran Perjalanan",
+      "d": "Hitung dan lacak anggaran perjalanan Anda dengan kategori pengeluaran terperinci"
+    },
+    "Local Attractions Guide": {
+      "n": "Panduan Atraksi Lokal",
+      "d": "Temukan atraksi lokal terbaik, permata tersembunyi, dan tempat yang wajib dikunjungi"
+    },
+    "Travel Insurance Comparison": {
+      "n": "Perbandingan Asuransi Perjalanan",
+      "d": "Bandingkan opsi asuransi perjalanan untuk perlindungan yang tepat dalam perjalanan Anda"
+    },
+    "Flight Deal Finder Strategy": {
+      "n": "Strategi Pencari Kesepakatan Penerbangan",
+      "d": "Strategi dan tips untuk menemukan penawaran dan harga penerbangan terbaik"
+    },
+    "Hotel Comparison Helper": {
+      "n": "Pembantu Perbandingan Hotel",
+      "d": "Bandingkan hotel berdasarkan harga, fasilitas, lokasi, dan ulasan"
+    },
+    "Solo Travel Planner": {
+      "n": "Perencana Perjalanan Tunggal",
+      "d": "Rencanakan petualangan perjalanan solo yang aman dan memuaskan ke mana pun di seluruh dunia"
+    },
+    "Family Vacation Planner": {
+      "n": "Perencana Liburan Keluarga",
+      "d": "Rencanakan liburan ramah keluarga yang menghibur segala usia"
+    },
+    "Backpacking Planner": {
+      "n": "Perencana Backpacking",
+      "d": "Rencanakan petualangan backpacking hemat dengan rute dan perlengkapan"
+    },
+    "Business Travel Organizer": {
+      "n": "Penyelenggara Perjalanan Bisnis",
+      "d": "Atur perjalanan bisnis secara efisien dengan pelacakan dan penjadwalan pengeluaran"
+    },
+    "Cruise Planner": {
+      "n": "Perencana Pelayaran",
+      "d": "Rencanakan liburan kapal pesiar yang sempurna dengan tamasya pelabuhan dan aktivitas di kapal"
+    },
+    "Travel Safety Guide": {
+      "n": "Panduan Keamanan Perjalanan",
+      "d": "Tetap aman saat bepergian dengan tip dan protokol keselamatan khusus destinasi"
+    },
+    "Visa Requirements Checker": {
+      "n": "Pemeriksa Persyaratan Visa",
+      "d": "Periksa persyaratan visa dan siapkan materi aplikasi untuk perjalanan Anda"
+    },
+    "Language Survival Kit": {
+      "n": "Perlengkapan Kelangsungan Hidup Bahasa",
+      "d": "Pelajari frasa penting dan tip budaya untuk tujuan perjalanan Anda"
+    },
+    "Airport Navigation Guide": {
+      "n": "Panduan Navigasi Bandara",
+      "d": "Navigasi bandara secara efisien dengan tip terminal dan manajemen waktu"
+    },
+    "Travel Photo Plan": {
+      "n": "Paket Foto Perjalanan",
+      "d": "Rencanakan fotografi perjalanan Anda dengan lokasi, waktu, dan teknik terbaik"
+    },
+    "Group Trip Coordinator": {
+      "n": "Koordinator Perjalanan Kelompok",
+      "d": "Mengkoordinasikan logistik perjalanan kelompok, anggaran, dan aktivitas untuk semua orang"
+    },
+    "Adventure Travel Planner": {
+      "n": "Perencana Perjalanan Petualangan",
+      "d": "Rencanakan perjalanan petualangan yang memacu adrenalin dengan aman dan logistik"
+    },
+    "Wedding Planner": {
+      "n": "Perencana Pernikahan",
+      "d": "Rencanakan setiap detail pernikahan sempurna Anda mulai dari tempat hingga janji"
+    },
+    "Birthday Party Planner": {
+      "n": "Perencana Pesta Ulang Tahun",
+      "d": "Rencanakan perayaan ulang tahun yang berkesan untuk segala usia dan gaya"
+    },
+    "Conference Organizer": {
+      "n": "Penyelenggara Konferensi",
+      "d": "Atur konferensi dan seminar profesional dengan logistik terperinci"
+    },
+    "Baby Shower Planner": {
+      "n": "Perencana Baby Shower",
+      "d": "Rencanakan baby shower yang indah dengan permainan, makanan, dan dekorasi"
+    },
+    "Anniversary Celebration": {
+      "n": "Perayaan Hari Jadi",
+      "d": "Rencanakan perayaan ulang tahun yang bermakna untuk tahun bersejarah apa pun"
+    },
+    "Graduation Party": {
+      "n": "Pesta Kelulusan",
+      "d": "Rayakan prestasi akademis dengan pesta kelulusan yang direncanakan dengan sempurna"
+    },
+    "Holiday Party Planner": {
+      "n": "Perencana Pesta Liburan",
+      "d": "Rencanakan pertemuan liburan yang meriah dengan makanan, aktivitas, dan dekorasi"
+    },
+    "Corporate Event Planner": {
+      "n": "Perencana Acara Perusahaan",
+      "d": "Rencanakan acara perusahaan profesional yang mengesankan klien dan karyawan"
+    },
+    "Fundraiser Organizer": {
+      "n": "Penyelenggara Penggalangan Dana",
+      "d": "Atur acara penggalangan dana yang sukses untuk amal dan tujuan"
+    },
+    "Reunion Planner": {
+      "n": "Perencana Reuni",
+      "d": "Rencanakan reuni keluarga atau kelas yang berkesan yang menyatukan semua orang"
+    },
+    "Engagement Party Planner": {
+      "n": "Perencana Pesta Pertunangan",
+      "d": "Rencanakan perayaan pertunangan yang menyenangkan untuk berbagi kabar gembira"
+    },
+    "Retirement Party": {
+      "n": "Pesta Pensiun",
+      "d": "Rayakan karier yang dijalani dengan baik dengan pesta pensiun yang bijaksana"
+    },
+    "Housewarming Planner": {
+      "n": "Perencana Pindah Rumah",
+      "d": "Rencanakan pesta penyambutan pindah rumah untuk rumah baru Anda"
+    },
+    "Themed Party Creator": {
+      "n": "Pencipta Pesta Bertema",
+      "d": "Rancang dan rencanakan pesta bertema kreatif dengan detail yang terkoordinasi"
+    },
+    "Event Budget Tracker": {
+      "n": "Pelacak Anggaran Acara",
+      "d": "Lacak dan kelola pengeluaran acara agar tetap sesuai anggaran perayaan Anda"
+    },
+    "Chore Chart Creator": {
+      "n": "Pembuat Bagan Tugas",
+      "d": "Buat bagan tugas sesuai usia dengan hadiah dan pelacakan"
+    },
+    "Educational Activity Planner": {
+      "n": "Perencana Kegiatan Pendidikan",
+      "d": "Rencanakan kegiatan pendidikan yang menyenangkan yang membuat pembelajaran menjadi menarik bagi anak-anak"
+    },
+    "Bedtime Story Writer": {
+      "n": "Penulis Cerita Pengantar Tidur",
+      "d": "Buat cerita pengantar tidur yang dipersonalisasi dan dibintangi oleh anak Anda"
+    },
+    "Age-Appropriate Milestone Tracker": {
+      "n": "Pelacak Milestone Sesuai Usia",
+      "d": "Lacak tonggak perkembangan dan rayakan pertumbuhan anak Anda"
+    },
+    "School Lunch Planner": {
+      "n": "Perencana Makan Siang Sekolah",
+      "d": "Rencanakan makan siang sekolah yang sehat dan menarik yang akan dimakan anak-anak"
+    },
+    "Homework Help Guide": {
+      "n": "Panduan Bantuan Pekerjaan Rumah",
+      "d": "Strategi untuk mendukung pekerjaan rumah anak Anda tanpa mengerjakannya untuk mereka"
+    },
+    "Family Game Night Ideas": {
+      "n": "Ide Malam Permainan Keluarga",
+      "d": "Rencanakan malam permainan keluarga yang menarik dengan aktivitas untuk segala usia"
+    },
+    "Screen Time Schedule": {
+      "n": "Jadwal Waktu Layar",
+      "d": "Buat aturan dan jadwal waktu pemakaian perangkat yang seimbang untuk keluarga Anda"
+    },
+    "Allowance System Designer": {
+      "n": "Perancang Sistem Tunjangan",
+      "d": "Rancang sistem tunjangan dan pengelolaan uang yang sesuai dengan usia"
+    },
+    "Baby Sleep Schedule": {
+      "n": "Jadwal Tidur Bayi",
+      "d": "Ciptakan jadwal dan rutinitas tidur yang sehat untuk bayi dan balita"
+    },
+    "Potty Training Guide": {
+      "n": "Panduan Pelatihan Potty",
+      "d": "Rencana pelatihan pispot langkah demi langkah dengan tip untuk setiap tahap"
+    },
+    "Back to School Prep": {
+      "n": "Kembali ke Persiapan Sekolah",
+      "d": "Persiapkan keluarga Anda untuk transisi kembali ke sekolah yang lancar"
+    },
+    "Summer Activity Planner": {
+      "n": "Perencana Aktivitas Musim Panas",
+      "d": "Rencanakan musim panas yang menyenangkan dan memperkaya dengan aktivitas, perkemahan, dan petualangan"
+    },
+    "Family Meeting Agenda": {
+      "n": "Agenda Pertemuan Keluarga",
+      "d": "Jalankan pertemuan keluarga produktif yang memberikan suara kepada semua orang"
+    },
+    "Child Development Tracker": {
+      "n": "Pelacak Perkembangan Anak",
+      "d": "Pantau dan dukung perkembangan fisik, sosial, dan kognitif anak Anda"
+    },
+    "Dog Training Plan": {
+      "n": "Rencana Pelatihan Anjing",
+      "d": "Buat rencana pelatihan khusus untuk anjing Anda pada usia atau tingkat keahlian apa pun"
+    },
+    "Cat Care Guide": {
+      "n": "Panduan Perawatan Kucing",
+      "d": "Panduan perawatan lengkap untuk menjaga kucing Anda tetap sehat dan bahagia"
+    },
+    "Pet Nutrition Planner": {
+      "n": "Perencana Nutrisi Hewan Peliharaan",
+      "d": "Rencanakan nutrisi optimal untuk hewan peliharaan Anda berdasarkan usia, ras, dan kebutuhan kesehatan"
+    },
+    "Puppy Socialization Checklist": {
+      "n": "Daftar Periksa Sosialisasi Anak Anjing",
+      "d": "Pastikan anak anjing Anda disosialisasikan dengan baik selama masa perkembangan kritis"
+    },
+    "Pet First Aid Guide": {
+      "n": "Panduan Pertolongan Pertama pada Hewan Peliharaan",
+      "d": "Pengetahuan pertolongan pertama yang penting dan prosedur darurat untuk pemilik hewan peliharaan"
+    },
+    "Aquarium Setup Planner": {
+      "n": "Perencana Pengaturan Akuarium",
+      "d": "Rencanakan dan siapkan akuarium yang berkembang dengan ikan dan peralatan yang tepat"
+    },
+    "Pet Travel Preparation": {
+      "n": "Persiapan Perjalanan Hewan Peliharaan",
+      "d": "Persiapkan segala sesuatu yang diperlukan untuk perjalanan yang aman dan bebas stres bersama hewan peliharaan Anda"
+    },
+    "New Pet Checklist": {
+      "n": "Daftar Periksa Hewan Peliharaan Baru",
+      "d": "Segala sesuatu yang perlu Anda persiapkan sebelum membawa pulang hewan peliharaan baru"
+    },
+    "Pet Behavior Analyzer": {
+      "n": "Penganalisis Perilaku Hewan Peliharaan",
+      "d": "Pahami dan atasi masalah perilaku hewan peliharaan Anda dengan bimbingan ahli"
+    },
+    "Senior Pet Care": {
+      "n": "Perawatan Hewan Peliharaan Senior",
+      "d": "Panduan perawatan khusus untuk hewan peliharaan yang menua agar mereka tetap nyaman dan sehat"
+    },
+    "Pet Exercise Planner": {
+      "n": "Perencana Latihan Hewan Peliharaan",
+      "d": "Ciptakan rutinitas olahraga yang membuat hewan peliharaan Anda tetap bugar dan terstimulasi secara mental"
+    },
+    "Vet Visit Preparation": {
+      "n": "Persiapan Kunjungan Dokter Hewan",
+      "d": "Persiapkan kunjungan dokter hewan dengan informasi kesehatan terorganisir dan pertanyaan untuk diajukan"
+    },
+    "Home Improvement Planner": {
+      "n": "Perencana Perbaikan Rumah",
+      "d": "Rencanakan dan prioritaskan proyek perbaikan rumah dengan anggaran dan jadwal"
+    },
+    "Furniture Project Planner": {
+      "n": "Perencana Proyek Furnitur",
+      "d": "Rencanakan pembuatan furnitur khusus dengan bahan, alat, dan panduan langkah demi langkah"
+    },
+    "Remodeling Budget Calculator": {
+      "n": "Kalkulator Anggaran Renovasi",
+      "d": "Hitung biaya renovasi rinci dengan tenaga kerja, bahan, dan kontinjensi"
+    },
+    "Paint Color Coordinator": {
+      "n": "Koordinator Warna Cat",
+      "d": "Pilih dan koordinasikan warna cat untuk palet rumah yang kohesif"
+    },
+    "Organization System Designer": {
+      "n": "Perancang Sistem Organisasi",
+      "d": "Rancang sistem organisasi khusus untuk ruangan atau ruangan mana pun di rumah Anda"
+    },
+    "Storage Solutions Planner": {
+      "n": "Perencana Solusi Penyimpanan",
+      "d": "Temukan solusi penyimpanan kreatif untuk memaksimalkan ruang di ruangan mana pun"
+    },
+    "Home Repair Guide": {
+      "n": "Panduan Perbaikan Rumah",
+      "d": "Panduan langkah demi langkah untuk perbaikan rumah umum dapat Anda lakukan sendiri"
+    },
+    "Tool Buying Guide": {
+      "n": "Panduan Membeli Alat",
+      "d": "Pilih alat yang tepat untuk proyek DIY Anda tanpa mengeluarkan uang terlalu banyak"
+    },
+    "Seasonal Home Maintenance": {
+      "n": "Perawatan Rumah Musiman",
+      "d": "Lengkapi daftar periksa pemeliharaan musiman untuk melindungi rumah Anda sepanjang tahun"
+    },
+    "Energy Efficiency Audit": {
+      "n": "Audit Efisiensi Energi",
+      "d": "Nilai dan tingkatkan efisiensi energi rumah Anda untuk menghemat tagihan listrik"
+    },
+    "Smart Home Setup": {
+      "n": "Pengaturan Rumah Pintar",
+      "d": "Rencanakan dan siapkan sistem rumah pintar dengan perangkat dan integrasi yang tepat"
+    },
+    "Bathroom Remodel Planner": {
+      "n": "Perencana Merombak Kamar Mandi",
+      "d": "Rencanakan perombakan kamar mandi dengan tata letak, perlengkapan, dan manajemen anggaran"
+    },
+    "Kitchen Remodel Planner": {
+      "n": "Perencana Renovasi Dapur",
+      "d": "Rencanakan perombakan dapur mulai dari tata letak hingga peralatan dengan penganggaran terperinci"
+    },
+    "Closet Organization": {
+      "n": "Organisasi Lemari",
+      "d": "Rancang dan atur lemari untuk efisiensi maksimum dan akses mudah"
+    },
+    "Garage Organization": {
+      "n": "Organisasi Garasi",
+      "d": "Ubah garasi Anda menjadi ruang yang terorganisir dan fungsional"
+    },
+    "Product Comparison Tool": {
+      "n": "Alat Perbandingan Produk",
+      "d": "Bandingkan produk secara berdampingan untuk membuat keputusan pembelian terbaik"
+    },
+    "Buying Guide Creator": {
+      "n": "Pembuat Panduan Membeli",
+      "d": "Buat panduan pembelian terperinci untuk kategori produk apa pun"
+    },
+    "Gift Finder": {
+      "n": "Pencari Hadiah",
+      "d": "Temukan hadiah sempurna untuk siapa pun berdasarkan minat dan anggaran Anda"
+    },
+    "Price Tracker Strategy": {
+      "n": "Strategi Pelacak Harga",
+      "d": "Strategi untuk melacak harga dan membeli pada waktu terbaik"
+    },
+    "Black Friday Strategy": {
+      "n": "Strategi Jumat Hitam",
+      "d": "Rencanakan belanja Black Friday dan Cyber Monday Anda untuk penghematan maksimal"
+    },
+    "Back to School Shopping": {
+      "n": "Kembali ke Belanja Sekolah",
+      "d": "Atur belanja kembali ke sekolah dengan daftar, anggaran, dan penawaran"
+    },
+    "Wardrobe Planner": {
+      "n": "Perencana Lemari Pakaian",
+      "d": "Bangun lemari pakaian serbaguna dengan perencanaan belanja dan pakaian yang strategis"
+    },
+    "Electronics Buying Guide": {
+      "n": "Panduan Membeli Elektronik",
+      "d": "Navigasi pembelian elektronik dengan perbandingan spesifikasi dan saran waktu"
+    },
+    "Subscription Service Comparison": {
+      "n": "Perbandingan Layanan Berlangganan",
+      "d": "Bandingkan layanan berlangganan untuk menemukan nilai terbaik untuk kebutuhan Anda"
+    },
+    "Wedding Registry Planner": {
+      "n": "Perencana Pendaftaran Pernikahan",
+      "d": "Bangun daftar pernikahan yang komprehensif dengan item untuk setiap anggaran"
+    },
+    "Bible Study Guide": {
+      "n": "Panduan Belajar Alkitab",
+      "d": "Buat rencana pembelajaran Alkitab terstruktur dengan konteks, pertanyaan, dan penerapan"
+    },
+    "Sermon Outline Creator": {
+      "n": "Pembuat Garis Besar Khotbah",
+      "d": "Kembangkan garis besar khotbah yang menarik dengan tulisan suci, poin, dan ilustrasi"
+    },
+    "Comparative Religion Study": {
+      "n": "Studi Perbandingan Agama",
+      "d": "Jelajahi dan bandingkan keyakinan, praktik, dan sejarah di seluruh agama dunia"
+    },
+    "Discussion Question Generator": {
+      "n": "Pembuat Pertanyaan Diskusi",
+      "d": "Hasilkan pertanyaan diskusi yang bijaksana untuk topik agama dan filosofi"
+    },
+    "Devotional Writer": {
+      "n": "Penulis Renungan",
+      "d": "Ciptakan renungan harian dengan tulisan suci, refleksi, dan petunjuk doa"
+    },
+    "Prayer Journal Guide": {
+      "n": "Panduan Jurnal Doa",
+      "d": "Susun kehidupan doa Anda dengan petunjuk dan kerangka penjurnalan yang dipandu"
+    },
+    "Spiritual Book Club Guide": {
+      "n": "Panduan Klub Buku Spiritual",
+      "d": "Buat panduan diskusi klub buku untuk buku-buku spiritual dan agama"
+    },
+    "Meditation Scripture Guide": {
+      "n": "Panduan Kitab Suci Meditasi",
+      "d": "Ciptakan pengalaman meditasi terpandu yang berpusat pada petikan tulisan suci"
+    },
+    "Youth Group Lesson Plan": {
+      "n": "Rencana Pelajaran Kelompok Remaja",
+      "d": "Ciptakan pelajaran kelompok remaja yang menarik dengan kegiatan dan diskusi"
+    },
+    "Faith Journey Reflector": {
+      "n": "Reflektor Perjalanan Iman",
+      "d": "Refleksi terpandu untuk menjelajahi dan memperdalam perjalanan iman pribadi Anda"
+    },
+    "Workout Plan Creator": {
+      "n": "Pembuat Rencana Latihan",
+      "d": "Buat rencana latihan yang dipersonalisasi berdasarkan tujuan dan tingkat kebugaran Anda"
+    },
+    "Training Schedule Builder": {
+      "n": "Pembuat Jadwal Pelatihan",
+      "d": "Buat jadwal latihan terstruktur untuk tujuan olahraga atau kebugaran apa pun"
+    },
+    "Game Strategy Analyzer": {
+      "n": "Penganalisis Strategi Permainan",
+      "d": "Analisis strategi permainan dan kembangkan pendekatan kemenangan untuk olahraga Anda"
+    },
+    "Sports Nutrition Guide": {
+      "n": "Panduan Nutrisi Olahraga",
+      "d": "Optimalkan nutrisi olahraga Anda untuk performa puncak dan pemulihan"
+    },
+    "Coaching Practice Plan": {
+      "n": "Rencana Praktek Pembinaan",
+      "d": "Rancang sesi latihan efektif yang mengembangkan keterampilan dan kohesi tim"
+    },
+    "Fantasy Sports Analyzer": {
+      "n": "Penganalisis Olahraga Fantasi",
+      "d": "Analisis pertarungan dan optimalkan susunan olahraga fantasi Anda setiap minggu"
+    },
+    "Race Training Plan": {
+      "n": "Rencana Pelatihan Balapan",
+      "d": "Berlatih untuk balapan dari 5K hingga maraton dengan rencana progresif terstruktur"
+    },
+    "Sports Statistics Analyzer": {
+      "n": "Penganalisis Statistik Olahraga",
+      "d": "Analisis statistik pemain dan tim untuk pemahaman olahraga yang lebih mendalam"
+    },
+    "Team Management Tool": {
+      "n": "Alat Manajemen Tim",
+      "d": "Kelola daftar nama tim, jadwal, dan komunikasi secara efisien"
+    },
+    "Injury Recovery Planner": {
+      "n": "Perencana Pemulihan Cedera",
+      "d": "Rencanakan pemulihan yang aman dan efektif dari cedera olahraga umum"
+    },
+    "Photography Guide": {
+      "n": "Panduan Fotografi",
+      "d": "Tingkatkan keterampilan fotografi Anda dengan tips tentang komposisi, pencahayaan, dan perlengkapan"
+    },
+    "Knitting Pattern Helper": {
+      "n": "Pembantu Pola Rajut",
+      "d": "Temukan dan sesuaikan pola rajutan untuk tingkat keahlian dan ide proyek Anda"
+    },
+    "Board Game Night Planner": {
+      "n": "Perencana Malam Permainan Papan",
+      "d": "Rencanakan malam permainan papan yang sempurna dengan pemilihan permainan dan pencocokan kelompok"
+    },
+    "Fishing Trip Planner": {
+      "n": "Perencana Perjalanan Memancing",
+      "d": "Rencanakan perjalanan memancing yang sukses dengan saran lokasi, peralatan, dan teknik"
+    },
+    "Camping Trip Organizer": {
+      "n": "Penyelenggara Perjalanan Berkemah",
+      "d": "Atur perjalanan berkemah dengan daftar perlengkapan, rencana makan, dan ide aktivitas"
+    },
+    "Bird Watching Guide": {
+      "n": "Panduan Mengamati Burung",
+      "d": "Identifikasi burung lokal dan rencanakan tamasya mengamati burung dengan tip musiman"
+    },
+    "Model Building Planner": {
+      "n": "Perencana Pembangunan Model",
+      "d": "Merencanakan dan melaksanakan proyek pembangunan model dengan bahan dan teknik"
+    },
+    "Puzzle Strategy Guide": {
+      "n": "Panduan Strategi Teka-teki",
+      "d": "Strategi dan teknik memecahkan teka-teki dengan lebih cepat dan efisien"
+    },
+    "Astronomy Observation Planner": {
+      "n": "Perencana Pengamatan Astronomi",
+      "d": "Rencanakan sesi pengamatan bintang dengan acara angkasa dan rekomendasi peralatan"
+    },
+    "Art Supply Guide": {
+      "n": "Panduan Perlengkapan Seni",
+      "d": "Pilih perlengkapan seni yang tepat untuk tingkat menengah dan keahlian Anda"
+    },
+    "Goal Setting Framework": {
+      "n": "Kerangka Penetapan Tujuan",
+      "d": "Tetapkan dan capai tujuan yang bermakna dengan kerangka kerja terstruktur dan rencana tindakan"
+    },
+    "Bucket List Creator": {
+      "n": "Pembuat Daftar Ember",
+      "d": "Buat daftar keinginan yang menginspirasi yang disusun berdasarkan kategori dan prioritas"
+    },
+    "Personal Mission Statement": {
+      "n": "Pernyataan Misi Pribadi",
+      "d": "Buatlah pernyataan misi pribadi yang bermakna yang memandu keputusan hidup Anda"
+    },
+    "Life Transition Guide": {
+      "n": "Panduan Transisi Hidup",
+      "d": "Arahkan transisi besar dalam hidup dengan perencanaan, dukungan, dan strategi penanggulangan"
+    },
+    "Habit Building Plan": {
+      "n": "Rencana Pembangunan Kebiasaan",
+      "d": "Bangun kebiasaan positif yang bertahan lama dengan strategi berbasis sains yang telah terbukti"
+    },
+    "Time Audit Tool": {
+      "n": "Alat Audit Waktu",
+      "d": "Audit cara Anda menghabiskan waktu dan optimalkan untuk hal yang paling penting"
+    },
+    "Relationship Goal Planner": {
+      "n": "Perencana Tujuan Hubungan",
+      "d": "Tetapkan dan upayakan mencapai tujuan untuk hubungan yang lebih kuat dan sehat"
+    },
+    "Vision Board Creator": {
+      "n": "Pencipta Papan Visi",
+      "d": "Buat papan visi digital dengan petunjuk terpandu dan latihan visualisasi"
+    },
+    "Personal SWOT Analysis": {
+      "n": "Analisis SWOT Pribadi",
+      "d": "Lakukan analisis SWOT pribadi untuk perencanaan karier dan kehidupan"
+    },
+    "Legacy Letter Writer": {
+      "n": "Penulis Surat Warisan",
+      "d": "Tulislah surat warisan yang bermakna kepada orang-orang terkasih yang menyampaikan nilai-nilai dan kebijaksanaan Anda"
+    },
+    "Contract Draft Creator": {
+      "n": "Pembuat Draf Kontrak",
+      "d": "Hasilkan rancangan kontrak profesional untuk hubungan bisnis apa pun"
+    },
+    "NDA Generator": {
+      "n": "Pembangkit NDA",
+      "d": "Buat perjanjian kerahasiaan yang disesuaikan dengan situasi Anda"
+    },
+    "Rental Agreement Draft": {
+      "n": "Draf Perjanjian Sewa",
+      "d": "Draf perjanjian sewa tempat tinggal atau komersial"
+    },
+    "Terms of Service Generator": {
+      "n": "Persyaratan Layanan Generator",
+      "d": "Buat persyaratan layanan yang komprehensif untuk situs web dan aplikasi"
+    },
+    "Privacy Policy Writer": {
+      "n": "Penulis Kebijakan Privasi",
+      "d": "Hasilkan kebijakan privasi yang sesuai dengan GDPR dan CCPA"
+    },
+    "Freelance Agreement": {
+      "n": "Perjanjian Lepas",
+      "d": "Buat perjanjian antara freelancer dan klien"
+    },
+    "Non-Compete Draft": {
+      "n": "Draf Non-Bersaing",
+      "d": "Draf klausul non-persaingan dan perjanjian yang berdiri sendiri"
+    },
+    "LLC Operating Agreement": {
+      "n": "Perjanjian Pengoperasian LLC",
+      "d": "Membuat perjanjian operasi untuk perseroan terbatas"
+    },
+    "Partnership Agreement": {
+      "n": "Perjanjian Kemitraan",
+      "d": "Draf perjanjian kemitraan dengan peran dan ketentuan yang jelas"
+    },
+    "Intellectual Property Brief": {
+      "n": "Ringkasan Kekayaan Intelektual",
+      "d": "Menguraikan kepemilikan IP dan strategi perlindungan"
+    },
+    "Cease and Desist Draft": {
+      "n": "Hentikan dan Hentikan Draf",
+      "d": "Membuat surat penghentian dan penghentian untuk berbagai pelanggaran"
+    },
+    "Employee Handbook Section": {
+      "n": "Bagian Buku Pegangan Karyawan",
+      "d": "Tulis bagian individual untuk buku pegangan karyawan"
+    },
+    "Independent Contractor Agreement": {
+      "n": "Perjanjian Kontraktor Independen",
+      "d": "Draf perjanjian IC dengan bahasa klasifikasi yang tepat"
+    },
+    "Liability Waiver Draft": {
+      "n": "Draf Pengabaian Tanggung Jawab",
+      "d": "Buat keringanan tanggung jawab untuk aktivitas dan layanan"
+    },
+    "Settlement Letter Draft": {
+      "n": "Draf Surat Penyelesaian",
+      "d": "Draf penawaran penyelesaian atau surat tanggapan"
+    },
+    "Demand Letter Draft": {
+      "n": "Draf Surat Permintaan",
+      "d": "Buat surat permintaan formal untuk berbagai klaim"
+    },
+    "Power of Attorney Draft": {
+      "n": "Draf Surat Kuasa",
+      "d": "Rancangan dokumen surat kuasa untuk berbagai keperluan"
+    },
+    "Last Will Outline": {
+      "n": "Garis Besar Surat Terakhir",
+      "d": "Buatlah garis besar surat wasiat dan wasiat terakhir"
+    },
+    "Business License Checklist": {
+      "n": "Daftar Periksa Izin Usaha",
+      "d": "Buat daftar periksa lisensi yang diperlukan untuk bisnis Anda"
+    },
+    "Trademark Application Guide": {
+      "n": "Panduan Aplikasi Merek Dagang",
+      "d": "Panduan langkah demi langkah untuk mengajukan permohonan merek dagang"
+    },
+    "Small Claims Court Guide": {
+      "n": "Panduan Pengadilan Tuntutan Kecil",
+      "d": "Bersiaplah untuk pengadilan tuntutan kecil dengan argumen yang terorganisir"
+    },
+    "Divorce Mediation Prep": {
+      "n": "Persiapan Mediasi Perceraian",
+      "d": "Atur poin-poin penting dan prioritas untuk mediasi perceraian"
+    },
+    "Tenant Rights Guide": {
+      "n": "Panduan Hak Penyewa",
+      "d": "Pahami hak penyewa dan upaya hukum di yurisdiksi Anda"
+    },
+    "Landlord Notice Draft": {
+      "n": "Draf Pemberitahuan Pemilik Tanah",
+      "d": "Draf pemberitahuan hukum yang tepat dari pemilik ke penyewa"
+    },
+    "Copyright Registration Guide": {
+      "n": "Panduan Pendaftaran Hak Cipta",
+      "d": "Panduan untuk mendaftarkan hak cipta ke Kantor Hak Cipta AS"
+    },
+    "Personal Budget Planner": {
+      "n": "Perencana Anggaran Pribadi",
+      "d": "Buat rencana anggaran bulanan atau tahunan yang komprehensif"
+    },
+    "Investment Research Assistant": {
+      "n": "Asisten Peneliti Investasi",
+      "d": "Meneliti dan menganalisis peluang investasi secara sistematis"
+    },
+    "Debt Payoff Calculator": {
+      "n": "Kalkulator Pembayaran Hutang",
+      "d": "Rencanakan strategi untuk menghilangkan utang secara efisien"
+    },
+    "Expense Tracker Setup": {
+      "n": "Pengaturan Pelacak Biaya",
+      "d": "Rancang sistem pelacakan pengeluaran yang dipersonalisasi"
+    },
+    "Retirement Planning Guide": {
+      "n": "Panduan Perencanaan Pensiun",
+      "d": "Bangun strategi tabungan pensiun yang komprehensif"
+    },
+    "Tax Preparation Checklist": {
+      "n": "Daftar Periksa Persiapan Pajak",
+      "d": "Mengatur dokumen dan potongan untuk pengajuan pajak"
+    },
+    "Emergency Fund Calculator": {
+      "n": "Kalkulator Dana Darurat",
+      "d": "Tentukan dan rencanakan dana darurat ideal Anda"
+    },
+    "Net Worth Tracker": {
+      "n": "Pelacak Kekayaan Bersih",
+      "d": "Lacak dan visualisasikan gambaran keuangan lengkap Anda"
+    },
+    "Credit Score Improvement Plan": {
+      "n": "Rencana Peningkatan Skor Kredit",
+      "d": "Buat rencana yang dapat ditindaklanjuti untuk meningkatkan skor kredit Anda"
+    },
+    "Student Loan Strategy": {
+      "n": "Strategi Pinjaman Mahasiswa",
+      "d": "Optimalkan pendekatan pembayaran pinjaman pelajar Anda"
+    },
+    "Side Hustle Revenue Planner": {
+      "n": "Perencana Pendapatan Side Hustle",
+      "d": "Rencanakan dan proyeksikan pendapatan dari pekerjaan sampingan"
+    },
+    "Insurance Needs Analyzer": {
+      "n": "Penganalisis Kebutuhan Asuransi",
+      "d": "Evaluasi kesenjangan dan kebutuhan perlindungan asuransi Anda"
+    },
+    "Estate Planning Checklist": {
+      "n": "Daftar Periksa Perencanaan Perumahan",
+      "d": "Atur dokumen dan keputusan perencanaan warisan Anda"
+    },
+    "Financial Goal Setter": {
+      "n": "Penentu Sasaran Keuangan",
+      "d": "Tentukan dan lacak kemajuan menuju pencapaian keuangan"
+    },
+    "Cash Flow Analyzer": {
+      "n": "Penganalisis Arus Kas",
+      "d": "Analisis pola pendapatan dan pengeluaran dari waktu ke waktu"
+    },
+    "Savings Challenge Creator": {
+      "n": "Pencipta Tantangan Menabung",
+      "d": "Rancang tantangan menabung yang menyenangkan untuk membangun sarang telur Anda"
+    },
+    "Investment Portfolio Review": {
+      "n": "Tinjauan Portofolio Investasi",
+      "d": "Tinjau dan seimbangkan kembali portofolio investasi Anda"
+    },
+    "Cryptocurrency Research": {
+      "n": "Penelitian Mata Uang Kripto",
+      "d": "Teliti dan evaluasi investasi mata uang kripto"
+    },
+    "Stock Analysis Helper": {
+      "n": "Pembantu Analisis Saham",
+      "d": "Melakukan analisa fundamental dan teknikal pada saham"
+    },
+    "Real Estate Investment Calculator": {
+      "n": "Kalkulator Investasi Real Estat",
+      "d": "Analisis potensi keuntungan investasi real estat"
+    },
+    "Business Tax Deduction Finder": {
+      "n": "Pencari Pengurangan Pajak Bisnis",
+      "d": "Identifikasi pengurangan pajak yang memenuhi syarat untuk bisnis Anda"
+    },
+    "Payroll Budget Planner": {
+      "n": "Perencana Anggaran Penggajian",
+      "d": "Merencanakan dan menganggarkan biaya penggajian karyawan"
+    },
+    "Invoice Template Creator": {
+      "n": "Pembuat Templat Faktur",
+      "d": "Rancang faktur profesional untuk bisnis Anda"
+    },
+    "Profit Margin Calculator": {
+      "n": "Kalkulator Margin Keuntungan",
+      "d": "Hitung dan optimalkan margin keuntungan di seluruh produk"
+    },
+    "Financial Independence Planner": {
+      "n": "Perencana Kemandirian Finansial",
+      "d": "Petakan jalan Anda menuju kemandirian finansial dan pensiun dini"
+    },
+    "Ad Copy Writer": {
+      "n": "Penulis Salinan Iklan",
+      "d": "Buat salinan iklan yang menarik untuk platform atau media apa pun"
+    },
+    "SEO Article Creator": {
+      "n": "Pembuat Artikel SEO",
+      "d": "Tulis artikel yang dioptimalkan untuk SEO yang memberi peringkat dan mengonversi"
+    },
+    "Social Media Content Calendar": {
+      "n": "Kalender Konten Media Sosial",
+      "d": "Rencanakan konten media sosial selama sebulan di seluruh platform"
+    },
+    "Email Campaign Builder": {
+      "n": "Pembuat Kampanye Email",
+      "d": "Rancang kampanye pemasaran multi-email yang menghasilkan konversi"
+    },
+    "Product Launch Strategy": {
+      "n": "Strategi Peluncuran Produk",
+      "d": "Buat strategi pemasaran peluncuran produk yang komprehensif"
+    },
+    "Brand Voice Guide": {
+      "n": "Panduan Suara Merek",
+      "d": "Tentukan dan dokumentasikan suara dan pesan merek Anda"
+    },
+    "Content Marketing Strategy": {
+      "n": "Strategi Pemasaran Konten",
+      "d": "Bangun strategi pemasaran konten lengkap dari awal"
+    },
+    "Influencer Outreach Template": {
+      "n": "Templat Penjangkauan Influencer",
+      "d": "Buat promosi kolaborasi influencer yang dipersonalisasi"
+    },
+    "Landing Page Copywriter": {
+      "n": "Copywriter Halaman Arahan",
+      "d": "Tulis salinan halaman arahan dengan konversi tinggi"
+    },
+    "A/B Test Plan Creator": {
+      "n": "Pembuat Rencana Pengujian A/B",
+      "d": "Rancang pengujian A/B terstruktur untuk kampanye pemasaran"
+    },
+    "Buyer Persona Builder": {
+      "n": "Pembuat Persona Pembeli",
+      "d": "Buat persona pelanggan yang terperinci untuk penargetan"
+    },
+    "Competitive Analysis Template": {
+      "n": "Templat Analisis Kompetitif",
+      "d": "Analisis pesaing dan identifikasi peluang pasar"
+    },
+    "Marketing Budget Planner": {
+      "n": "Perencana Anggaran Pemasaran",
+      "d": "Alokasikan dan optimalkan anggaran pemasaran Anda"
+    },
+    "Affiliate Marketing Strategy": {
+      "n": "Strategi Pemasaran Afiliasi",
+      "d": "Bangun dan optimalkan program pemasaran afiliasi"
+    },
+    "Podcast Marketing Plan": {
+      "n": "Rencana Pemasaran Podcast",
+      "d": "Promosikan podcast Anda dan kembangkan basis pendengar Anda"
+    },
+    "Webinar Promotion Plan": {
+      "n": "Rencana Promosi Webinar",
+      "d": "Rencanakan dan promosikan webinar yang mendorong pendaftaran"
+    },
+    "Referral Program Designer": {
+      "n": "Perancang Program Rujukan",
+      "d": "Rancang program rujukan yang mendorong pertumbuhan promosi dari mulut ke mulut"
+    },
+    "Brand Story Writer": {
+      "n": "Penulis Cerita Merek",
+      "d": "Ciptakan kisah dan narasi asal merek yang menarik"
+    },
+    "Marketing Funnel Builder": {
+      "n": "Pembuat Saluran Pemasaran",
+      "d": "Rancang saluran perjalanan pelanggan mulai dari kesadaran hingga konversi"
+    },
+    "App Store Optimization": {
+      "n": "Optimasi Toko Aplikasi",
+      "d": "Optimalkan daftar toko aplikasi untuk unduhan maksimum"
+    },
+    "Google Ads Copy Writer": {
+      "n": "Penulis Salinan Google Ads",
+      "d": "Tulis judul dan deskripsi Google Ads yang efektif"
+    },
+    "Facebook Ads Creator": {
+      "n": "Pembuat Iklan Facebook",
+      "d": "Buat kampanye iklan Facebook dan Instagram"
+    },
+    "Newsletter Strategy": {
+      "n": "Strategi Buletin",
+      "d": "Rencanakan dan kembangkan buletin email dari awal"
+    },
+    "PR Media Pitch": {
+      "n": "Promosi Media Humas",
+      "d": "Tulis promosi media yang menarik untuk liputan pers"
+    },
+    "Content Repurposing Plan": {
+      "n": "Rencana Penggunaan Ulang Konten",
+      "d": "Ubah konten yang ada ke dalam berbagai format"
+    },
+    "Cold Email Generator": {
+      "n": "Pembuat Email Dingin",
+      "d": "Buat email penjangkauan dingin yang dipersonalisasi yang mendapat tanggapan"
+    },
+    "Sales Script Writer": {
+      "n": "Penulis Naskah Penjualan",
+      "d": "Tulis skrip penjualan yang efektif untuk panggilan dan rapat"
+    },
+    "Objection Handling Guide": {
+      "n": "Panduan Penanganan Keberatan",
+      "d": "Siapkan tanggapan terhadap keberatan penjualan yang umum"
+    },
+    "Follow-Up Message Creator": {
+      "n": "Pembuat Pesan Tindak Lanjut",
+      "d": "Buat urutan pesan tindak lanjut yang strategis"
+    },
+    "Sales Pitch Creator": {
+      "n": "Pencipta Promosi Penjualan",
+      "d": "Bangun elevator pitch dan presentasi penjualan yang menarik"
+    },
+    "Proposal Generator": {
+      "n": "Pembuat Usulan",
+      "d": "Buat proposal dan penawaran penjualan profesional"
+    },
+    "CRM Data Cleanup Plan": {
+      "n": "Rencana Pembersihan Data CRM",
+      "d": "Atur dan bersihkan database CRM Anda secara sistematis"
+    },
+    "Sales Territory Planner": {
+      "n": "Perencana Wilayah Penjualan",
+      "d": "Tentukan dan optimalkan wilayah penjualan untuk tim Anda"
+    },
+    "Account Strategy Builder": {
+      "n": "Pembuat Strategi Akun",
+      "d": "Buat rencana akun strategis untuk pelanggan utama"
+    },
+    "Upsell Script Creator": {
+      "n": "Tingkatkan Penjualan Pembuat Skrip",
+      "d": "Tulis skrip untuk melakukan upsell dan cross-sell ke pelanggan yang sudah ada"
+    },
+    "Customer Win-Back Email": {
+      "n": "Email Menang Kembali Pelanggan",
+      "d": "Libatkan kembali pelanggan yang hilang dengan kampanye win-back yang ditargetkan"
+    },
+    "Sales Forecast Template": {
+      "n": "Templat Perkiraan Penjualan",
+      "d": "Buat perkiraan penjualan yang akurat untuk saluran Anda"
+    },
+    "Commission Calculator": {
+      "n": "Kalkulator Komisi",
+      "d": "Merancang dan menghitung struktur komisi penjualan"
+    },
+    "Discovery Call Script": {
+      "n": "Skrip Panggilan Penemuan",
+      "d": "Susun panggilan penemuan yang efektif untuk memenuhi syarat prospek"
+    },
+    "Demo Presentation Outline": {
+      "n": "Garis Besar Presentasi Demo",
+      "d": "Buat presentasi demo produk terstruktur"
+    },
+    "Sales Onboarding Plan": {
+      "n": "Rencana Orientasi Penjualan",
+      "d": "Rancang program orientasi untuk perwakilan penjualan baru"
+    },
+    "Quarterly Business Review": {
+      "n": "Tinjauan Bisnis Triwulanan",
+      "d": "Siapkan presentasi ulasan bisnis triwulanan untuk klien"
+    },
+    "Customer Success Plan": {
+      "n": "Rencana Kesuksesan Pelanggan",
+      "d": "Bangun rencana kesuksesan dan retensi pelanggan yang proaktif"
+    },
+    "Pricing Strategy Advisor": {
+      "n": "Penasihat Strategi Penetapan Harga",
+      "d": "Kembangkan dan optimalkan strategi penetapan harga produk Anda"
+    },
+    "Value Proposition Builder": {
+      "n": "Pembangun Proposisi Nilai",
+      "d": "Ciptakan proposisi nilai yang jelas dan menarik"
+    },
+    "FAQ Generator": {
+      "n": "Pembuat Pertanyaan Umum",
+      "d": "Buat bagian FAQ yang komprehensif dari informasi produk"
+    },
+    "Knowledge Base Article Writer": {
+      "n": "Penulis Artikel Basis Pengetahuan",
+      "d": "Tulis artikel basis pengetahuan yang jelas dan mudah dicari"
+    },
+    "Support Response Template": {
+      "n": "Templat Respons Dukungan",
+      "d": "Buat templat yang dapat digunakan kembali untuk skenario dukungan umum"
+    },
+    "Chatbot Training Data": {
+      "n": "Data Pelatihan Chatbot",
+      "d": "Hasilkan data pelatihan untuk chatbot dukungan pelanggan"
+    },
+    "Escalation Response Guide": {
+      "n": "Panduan Respons Eskalasi",
+      "d": "Buat pedoman untuk menangani masalah dukungan yang meningkat"
+    },
+    "Customer Satisfaction Survey": {
+      "n": "Survei Kepuasan Pelanggan",
+      "d": "Rancang survei untuk mengukur kepuasan pelanggan"
+    },
+    "Refund Policy Writer": {
+      "n": "Penulis Kebijakan Pengembalian Dana",
+      "d": "Buat kebijakan pengembalian dana dan pengembalian yang jelas dan adil"
+    },
+    "Bug Report Template": {
+      "n": "Templat Laporan Bug",
+      "d": "Rancang templat laporan bug terstruktur untuk pengguna"
+    },
+    "Feature Request Response": {
+      "n": "Respon Permintaan Fitur",
+      "d": "Buat respons terhadap permintaan fitur pelanggan"
+    },
+    "Onboarding Email Sequence": {
+      "n": "Urutan Email Orientasi",
+      "d": "Buat urutan email untuk menerima pelanggan baru"
+    },
+    "Help Center Article": {
+      "n": "Artikel Pusat Bantuan",
+      "d": "Tulis dokumentasi pusat bantuan yang komprehensif"
+    },
+    "Service Level Agreement": {
+      "n": "Perjanjian Tingkat Layanan",
+      "d": "Draf dokumen SLA untuk komitmen dukungan"
+    },
+    "Customer Apology Template": {
+      "n": "Templat Permintaan Maaf Pelanggan",
+      "d": "Tulis pesan permintaan maaf yang tulus atas kegagalan layanan"
+    },
+    "Product Update Announcement": {
+      "n": "Pengumuman Pembaruan Produk",
+      "d": "Komunikasikan pembaruan dan perubahan produk kepada pelanggan"
+    },
+    "Community Guidelines Writer": {
+      "n": "Penulis Pedoman Komunitas",
+      "d": "Buat pedoman komunitas untuk forum dan saluran sosial"
+    },
+    "Startup Validation Framework": {
+      "n": "Kerangka Validasi Startup",
+      "d": "Validasi ide startup Anda sebelum membangun"
+    },
+    "MVP Feature Planner": {
+      "n": "Perencana Fitur MVP",
+      "d": "Prioritaskan fitur untuk produk minimum Anda yang layak"
+    },
+    "Pricing Strategy Builder": {
+      "n": "Pembuat Strategi Penetapan Harga",
+      "d": "Kembangkan model penetapan harga untuk produk startup Anda"
+    },
+    "Investor Pitch Deck Outline": {
+      "n": "Garis Besar Pitch Deck Investor",
+      "d": "Susun presentasi singkat yang menarik untuk penggalangan dana"
+    },
+    "Business Model Canvas": {
+      "n": "Kanvas Model Bisnis",
+      "d": "Petakan model bisnis lengkap Anda dalam satu halaman"
+    },
+    "Lean Canvas Creator": {
+      "n": "Pencipta Kanvas Ramping",
+      "d": "Buat kanvas ramping untuk mengidentifikasi risiko dan asumsi"
+    },
+    "Competitive Landscape Analyzer": {
+      "n": "Penganalisis Lanskap Kompetitif",
+      "d": "Petakan dan analisis lingkungan kompetitif Anda"
+    },
+    "Go-To-Market Strategy": {
+      "n": "Strategi Menuju Pasar",
+      "d": "Rencanakan pendekatan masuk pasar dan akuisisi pelanggan Anda"
+    },
+    "Founding Team Assessment": {
+      "n": "Penilaian Tim Pendiri",
+      "d": "Evaluasi komposisi tim dan identifikasi kesenjangan keterampilan"
+    },
+    "Startup Financial Projections": {
+      "n": "Proyeksi Keuangan Startup",
+      "d": "Buat proyeksi keuangan 3 tahun untuk startup Anda"
+    },
+    "Advisory Board Recruiter": {
+      "n": "Perekrut Dewan Penasihat",
+      "d": "Identifikasi dan rekrut penasihat untuk startup Anda"
+    },
+    "Pivot Decision Framework": {
+      "n": "Kerangka Keputusan Pivot",
+      "d": "Evaluasi apakah dan bagaimana melakukan pivot pada startup Anda"
+    },
+    "Startup KPI Dashboard": {
+      "n": "Dasbor KPI Startup",
+      "d": "Tentukan dan lacak indikator kinerja utama"
+    },
+    "Crowdfunding Campaign Plan": {
+      "n": "Rencana Kampanye Penggalangan Dana",
+      "d": "Rencanakan dan laksanakan kampanye crowdfunding yang sukses"
+    },
+    "Partnership Strategy": {
+      "n": "Strategi Kemitraan",
+      "d": "Mengidentifikasi dan mengejar kemitraan strategis"
+    },
+    "Accelerator Application": {
+      "n": "Aplikasi Akselerator",
+      "d": "Siapkan aplikasi akselerator atau inkubator yang menarik"
+    },
+    "Product-Market Fit Survey": {
+      "n": "Survei Kesesuaian Produk-Pasar",
+      "d": "Rancang survei untuk mengukur kesesuaian produk-pasar"
+    },
+    "Startup Legal Checklist": {
+      "n": "Daftar Periksa Hukum Startup",
+      "d": "Mencakup semua dasar hukum saat memulai sebuah perusahaan"
+    },
+    "Equity Split Calculator": {
+      "n": "Kalkulator Pembagian Ekuitas",
+      "d": "Menentukan distribusi ekuitas yang adil di antara para pendiri"
+    },
+    "Growth Experiment Planner": {
+      "n": "Perencana Eksperimen Pertumbuhan",
+      "d": "Rancang dan lacak eksperimen pertumbuhan secara sistematis"
+    },
+    "Product Description Writer": {
+      "n": "Penulis Deskripsi Produk",
+      "d": "Tulis deskripsi produk yang menarik yang mendorong penjualan"
+    },
+    "Amazon Listing Optimizer": {
+      "n": "Pengoptimal Daftar Amazon",
+      "d": "Optimalkan daftar produk Amazon untuk visibilitas dan konversi"
+    },
+    "Etsy Shop Setup Guide": {
+      "n": "Panduan Pengaturan Toko Etsy",
+      "d": "Siapkan dan optimalkan toko Etsy Anda untuk meraih kesuksesan"
+    },
+    "Shopify Store Planner": {
+      "n": "Perencana Toko Shopify",
+      "d": "Rencanakan struktur dan peluncuran toko Shopify Anda"
+    },
+    "Product Photography Brief": {
+      "n": "Ringkasan Fotografi Produk",
+      "d": "Buat brief untuk pemotretan produk"
+    },
+    "Shipping Strategy Planner": {
+      "n": "Perencana Strategi Pengiriman",
+      "d": "Rancang strategi pengiriman yang hemat biaya"
+    },
+    "Return Policy Creator": {
+      "n": "Pembuat Kebijakan Pengembalian",
+      "d": "Buat kebijakan pengembalian dan penukaran e-niaga yang jelas"
+    },
+    "Customer Review Response": {
+      "n": "Respon Tinjauan Pelanggan",
+      "d": "Buat tanggapan profesional terhadap ulasan pelanggan"
+    },
+    "Inventory Management Plan": {
+      "n": "Rencana Manajemen Inventaris",
+      "d": "Buat sistem untuk melacak dan mengelola inventaris"
+    },
+    "Dropshipping Product Research": {
+      "n": "Riset Produk Dropship",
+      "d": "Teliti dan evaluasi peluang produk dropshipping"
+    },
+    "Print-on-Demand Designer": {
+      "n": "Desainer Cetak Sesuai Permintaan",
+      "d": "Rencanakan lini dan desain produk print-on-demand"
+    },
+    "Subscription Box Planner": {
+      "n": "Perencana Kotak Berlangganan",
+      "d": "Rancang dan luncurkan bisnis kotak berlangganan"
+    },
+    "Holiday Sales Strategy": {
+      "n": "Strategi Penjualan Liburan",
+      "d": "Rencanakan promosi musiman dan kampanye penjualan liburan"
+    },
+    "Product Bundle Creator": {
+      "n": "Pembuat Paket Produk",
+      "d": "Rancang paket produk yang meningkatkan nilai pesanan rata-rata"
+    },
+    "Cart Abandonment Email": {
+      "n": "Email Pengabaian Keranjang",
+      "d": "Buat urutan email untuk memulihkan keranjang yang ditinggalkan"
+    },
+    "Homework Helper": {
+      "n": "Pembantu Pekerjaan Rumah",
+      "d": "Dapatkan bantuan langkah demi langkah mengerjakan pekerjaan rumah dalam mata pelajaran apa pun"
+    },
+    "Quiz & Test Generator": {
+      "n": "Kuis & Generator Tes",
+      "d": "Buat kuis khusus dari topik atau materi pelajaran apa pun"
+    },
+    "Science Fair Project Planner": {
+      "n": "Perencana Proyek Pameran Sains",
+      "d": "Rencanakan dan atur proyek pameran sains pemenang mulai dari hipotesis hingga presentasi"
+    },
+    "Lesson Plan Creator": {
+      "n": "Pembuat Rencana Pelajaran",
+      "d": "Merancang rencana pembelajaran terstruktur yang selaras dengan tujuan pembelajaran"
+    },
+    "Lab Report Writer": {
+      "n": "Penulis Laporan Lab",
+      "d": "Menyusun dan menulis laporan lab dengan format ilmiah yang tepat"
+    },
+    "Reading Comprehension Helper": {
+      "n": "Pembantu Pemahaman Membaca",
+      "d": "Tingkatkan pemahaman membaca dengan analisis dan pertanyaan terpandu"
+    },
+    "Math Problem Solver": {
+      "n": "Pemecah Masalah Matematika",
+      "d": "Selesaikan masalah matematika dengan penjelasan langkah demi langkah yang mendetail"
+    },
+    "Vocabulary Builder": {
+      "n": "Pembangun Kosakata",
+      "d": "Bangun dan latih kosakata dengan definisi, contoh, dan latihan"
+    },
+    "Book Report Helper": {
+      "n": "Pembantu Laporan Buku",
+      "d": "Buat garis besar dan tulis laporan buku dengan analisis terstruktur"
+    },
+    "History Timeline Creator": {
+      "n": "Pembuat Garis Waktu Sejarah",
+      "d": "Buat garis waktu sejarah terperinci untuk era atau peristiwa apa pun"
+    },
+    "Geography Quiz Maker": {
+      "n": "Pembuat Kuis Geografi",
+      "d": "Hasilkan kuis geografi yang mencakup peta, ibu kota, bangunan terkenal, dan banyak lagi"
+    },
+    "Spelling Practice Generator": {
+      "n": "Generator Latihan Ejaan",
+      "d": "Buat daftar latihan dan latihan ejaan yang dipersonalisasi"
+    },
+    "Grammar Exercise Creator": {
+      "n": "Pencipta Latihan Tata Bahasa",
+      "d": "Hasilkan latihan tata bahasa untuk tingkat keterampilan dan topik apa pun"
+    },
+    "Critical Thinking Questions": {
+      "n": "Pertanyaan Berpikir Kritis",
+      "d": "Hasilkan pertanyaan yang menggugah pikiran untuk mengembangkan keterampilan berpikir kritis"
+    },
+    "Debate Prep Guide": {
+      "n": "Panduan Persiapan Debat",
+      "d": "Siapkan argumen terstruktur dan argumen tandingan untuk perdebatan"
+    },
+    "College Application Essay": {
+      "n": "Esai Aplikasi Perguruan Tinggi",
+      "d": "Buat esai lamaran perguruan tinggi yang menarik dengan petunjuk yang dipandu"
+    },
+    "Scholarship Essay Helper": {
+      "n": "Pembantu Esai Beasiswa",
+      "d": "Tulis esai beasiswa persuasif yang menyoroti pencapaian dan tujuan"
+    },
+    "SAT/ACT Prep Guide": {
+      "n": "Panduan Persiapan SAT/ACT",
+      "d": "Buat rencana belajar yang ditargetkan dan latihan untuk ujian SAT atau ACT"
+    },
+    "Study Schedule Planner": {
+      "n": "Perencana Jadwal Belajar",
+      "d": "Bangun jadwal belajar yang efektif dengan menyeimbangkan semua mata pelajaran dan tenggat waktu"
+    },
+    "Group Project Organizer": {
+      "n": "Penyelenggara Proyek Grup",
+      "d": "Rencanakan peran, tugas, dan jadwal untuk proyek kelompok"
+    },
+    "Presentation Creator": {
+      "n": "Pembuat Presentasi",
+      "d": "Rancang dan buat garis besar presentasi yang menarik untuk topik apa pun"
+    },
+    "Note-Taking Guide": {
+      "n": "Panduan Mencatat",
+      "d": "Buat templat pencatatan terstruktur untuk kuliah dan bacaan"
+    },
+    "Mind Map Generator": {
+      "n": "Pembuat Peta Pikiran",
+      "d": "Buat peta pikiran visual untuk mengatur ide dan konsep"
+    },
+    "Research Project Planner": {
+      "n": "Perencana Proyek Penelitian",
+      "d": "Merencanakan dan mengelola proyek penelitian mulai dari pemilihan topik hingga makalah akhir"
+    },
+    "Parent-Teacher Conference Prep": {
+      "n": "Persiapan Konferensi Orang Tua-Guru",
+      "d": "Siapkan pokok pembicaraan dan pertanyaan untuk pertemuan orang tua-guru yang produktif"
+    },
+    "Classroom Activity Designer": {
+      "n": "Perancang Aktivitas Kelas",
+      "d": "Rancang kegiatan kelas interaktif yang memperkuat tujuan pembelajaran"
+    },
+    "Special Education Resource": {
+      "n": "Sumber Pendidikan Khusus",
+      "d": "Ciptakan sumber belajar yang disesuaikan untuk siswa berkebutuhan pendidikan khusus"
+    },
+    "Homeschool Curriculum Planner": {
+      "n": "Perencana Kurikulum Homeschool",
+      "d": "Rencanakan kurikulum homeschooling lengkap berdasarkan mata pelajaran dan semester"
+    },
+    "Student Self-Assessment": {
+      "n": "Penilaian Diri Siswa",
+      "d": "Ciptakan alat penilaian diri bagi siswa untuk melacak kemajuan belajar mereka sendiri"
+    },
+    "Learning Style Analyzer": {
+      "n": "Penganalisis Gaya Belajar",
+      "d": "Identifikasi gaya belajar dan sarankan strategi belajar yang dipersonalisasi"
+    },
+    "Literature Review Writer": {
+      "n": "Penulis Tinjauan Pustaka",
+      "d": "Atur dan tulis tinjauan literatur yang komprehensif tentang topik apa pun"
+    },
+    "Research Assistant": {
+      "n": "Asisten Peneliti",
+      "d": "Dapatkan bantuan untuk menemukan, mengatur, dan merangkum materi penelitian"
+    },
+    "Fact Checker Template": {
+      "n": "Templat Pemeriksa Fakta",
+      "d": "Verifikasi klaim dan pernyataan dengan metodologi pengecekan fakta terstruktur"
+    },
+    "Source Comparison Tool": {
+      "n": "Alat Perbandingan Sumber",
+      "d": "Bandingkan dan kontraskan berbagai sumber tentang topik yang sama"
+    },
+    "Citation Generator": {
+      "n": "Pembuat Kutipan",
+      "d": "Hasilkan kutipan yang diformat dengan benar dalam gaya akademis apa pun"
+    },
+    "Annotated Bibliography Creator": {
+      "n": "Pembuat Bibliografi Beranotasi",
+      "d": "Buat bibliografi beranotasi dengan ringkasan dan evaluasi"
+    },
+    "Research Methodology Guide": {
+      "n": "Panduan Metodologi Penelitian",
+      "d": "Pilih dan rancang metodologi penelitian yang tepat untuk studi Anda"
+    },
+    "Survey Question Designer": {
+      "n": "Perancang Pertanyaan Survei",
+      "d": "Rancang pertanyaan survei yang efektif untuk mengumpulkan data penelitian yang andal"
+    },
+    "Data Collection Plan": {
+      "n": "Rencana Pengumpulan Data",
+      "d": "Buat rencana terstruktur untuk mengumpulkan data penelitian"
+    },
+    "Thesis Statement Generator": {
+      "n": "Pembuat Pernyataan Tesis",
+      "d": "Buat pernyataan tesis yang kuat untuk makalah penelitian dan disertasi"
+    },
+    "Research Proposal Writer": {
+      "n": "Penulis Proposal Penelitian",
+      "d": "Tulis proposal penelitian yang menarik untuk tinjauan akademis atau pendanaan"
+    },
+    "Systematic Review Guide": {
+      "n": "Panduan Tinjauan Sistematis",
+      "d": "Melakukan tinjauan sistematis dengan mengikuti protokol yang telah ditetapkan"
+    },
+    "Interview Protocol Creator": {
+      "n": "Pembuat Protokol Wawancara",
+      "d": "Rancang protokol wawancara terstruktur untuk penelitian kualitatif"
+    },
+    "Research Ethics Checklist": {
+      "n": "Daftar Periksa Etika Penelitian",
+      "d": "Pastikan kepatuhan penelitian terhadap pedoman etika dan persyaratan IRB"
+    },
+    "Meta-Analysis Framework": {
+      "n": "Kerangka Meta-Analisis",
+      "d": "Susun dan lakukan meta-analisis di berbagai penelitian"
+    },
+    "Case Study Template": {
+      "n": "Templat Studi Kasus",
+      "d": "Susun dan tulis studi kasus terperinci untuk penelitian atau bisnis"
+    },
+    "Qualitative Analysis Guide": {
+      "n": "Panduan Analisis Kualitatif",
+      "d": "Panduan analisis data kualitatif dengan menggunakan pendekatan koding dan tematik"
+    },
+    "Quantitative Analysis Guide": {
+      "n": "Panduan Analisis Kuantitatif",
+      "d": "Memandu analisis data kuantitatif dengan metode statistik yang sesuai"
+    },
+    "Research Poster Creator": {
+      "n": "Pembuat Poster Penelitian",
+      "d": "Desain dan tata letak poster penelitian untuk konferensi dan presentasi"
+    },
+    "Research Grant Writer": {
+      "n": "Penulis Hibah Penelitian",
+      "d": "Tulis proposal hibah terstruktur untuk aplikasi pendanaan penelitian"
+    },
+    "Chemistry Tutor": {
+      "n": "Guru Kimia",
+      "d": "Dapatkan bimbingan kimia yang dipersonalisasi dengan penjelasan dan latihan soal"
+    },
+    "Chemical Equation Balancer": {
+      "n": "Penyeimbang Persamaan Kimia",
+      "d": "Seimbangkan persamaan kimia dengan penjelasan langkah demi langkah"
+    },
+    "Lab Safety Checklist": {
+      "n": "Daftar Periksa Keamanan Lab",
+      "d": "Hasilkan daftar periksa keselamatan laboratorium yang komprehensif untuk eksperimen kimia"
+    },
+    "Organic Chemistry Helper": {
+      "n": "Pembantu Kimia Organik",
+      "d": "Pelajari reaksi organik, mekanisme, dan tata nama"
+    },
+    "Periodic Table Explorer": {
+      "n": "Penjelajah Tabel Periodik",
+      "d": "Jelajahi properti elemen, tren, dan hubungan di seluruh tabel periodik"
+    },
+    "Stoichiometry Solver": {
+      "n": "Pemecah Stoikiometri",
+      "d": "Selesaikan masalah stoikiometri dengan perhitungan mol-ke-mol yang terperinci"
+    },
+    "Chemical Bonding Guide": {
+      "n": "Panduan Ikatan Kimia",
+      "d": "Memahami ikatan ionik, kovalen, dan logam dengan penjelasan visual"
+    },
+    "Acid-Base Calculator": {
+      "n": "Kalkulator Asam Basa",
+      "d": "Hitung pH, pOH, Ka, Kb dan selesaikan masalah kesetimbangan asam basa"
+    },
+    "Solution Preparation Guide": {
+      "n": "Panduan Persiapan Solusi",
+      "d": "Menghitung dan menyiapkan larutan kimia dengan konsentrasi yang tepat"
+    },
+    "Spectroscopy Interpreter": {
+      "n": "Penerjemah Spektroskopi",
+      "d": "Menafsirkan IR, NMR, dan spektrum massa untuk identifikasi senyawa"
+    },
+    "Chemistry Lab Notebook": {
+      "n": "Buku Catatan Lab Kimia",
+      "d": "Buat entri buku catatan lab terstruktur untuk eksperimen kimia"
+    },
+    "Reaction Mechanism Helper": {
+      "n": "Pembantu Mekanisme Reaksi",
+      "d": "Gambarkan dan pahami mekanisme reaksi langkah demi langkah"
+    },
+    "Thermochemistry Calculator": {
+      "n": "Kalkulator Termokimia",
+      "d": "Hitung entalpi, entropi, dan energi bebas Gibbs untuk reaksi kimia"
+    },
+    "Electrochemistry Guide": {
+      "n": "Panduan Elektrokimia",
+      "d": "Memahami sel elektrokimia, potensial elektroda, dan elektrolisis"
+    },
+    "Polymer Chemistry Guide": {
+      "n": "Panduan Kimia Polimer",
+      "d": "Pelajari jenis polimer, mekanisme sintesis, dan sifat"
+    },
+    "Biology Tutor": {
+      "n": "Guru Biologi",
+      "d": "Dapatkan bimbingan biologi yang dipersonalisasi dengan penjelasan dan contoh yang jelas"
+    },
+    "Cell Biology Study Guide": {
+      "n": "Panduan Belajar Biologi Sel",
+      "d": "Pelajari struktur, fungsi, dan proses sel secara mendalam"
+    },
+    "Genetics Problem Solver": {
+      "n": "Pemecah Masalah Genetika",
+      "d": "Memecahkan masalah genetika termasuk kuadrat Punnett dan analisis silsilah"
+    },
+    "Ecology Study Helper": {
+      "n": "Pembantu Studi Ekologi",
+      "d": "Pelajari ekosistem, jaring makanan, dinamika populasi, dan hubungan ekologi"
+    },
+    "Anatomy & Physiology Guide": {
+      "n": "Panduan Anatomi & Fisiologi",
+      "d": "Pelajari sistem tubuh manusia dengan penjelasan anatomi rinci"
+    },
+    "Microbiology Lab Guide": {
+      "n": "Panduan Lab Mikrobiologi",
+      "d": "Panduan teknik laboratorium mikrobiologi termasuk pewarnaan, kultur, dan identifikasi"
+    },
+    "Evolution Concept Mapper": {
+      "n": "Pemeta Konsep Evolusi",
+      "d": "Memetakan konsep evolusi termasuk seleksi alam, spesiasi, dan filogenetik"
+    },
+    "Plant Biology Helper": {
+      "n": "Pembantu Biologi Tumbuhan",
+      "d": "Pelajari anatomi tanaman, fisiologi, dan peran ekologi"
+    },
+    "Molecular Biology Guide": {
+      "n": "Panduan Biologi Molekuler",
+      "d": "Memahami replikasi DNA, transkripsi, translasi, dan regulasi gen"
+    },
+    "Bioinformatics Helper": {
+      "n": "Pembantu Bioinformatika",
+      "d": "Dapatkan bantuan dengan analisis urutan, pencarian database, dan biologi komputasi"
+    },
+    "Neuroscience Study Guide": {
+      "n": "Panduan Studi Ilmu Saraf",
+      "d": "Pelajari sistem saraf, fungsi otak, dan jalur saraf"
+    },
+    "Marine Biology Explorer": {
+      "n": "Penjelajah Biologi Kelautan",
+      "d": "Jelajahi ekosistem laut, organisme, dan ilmu kelautan"
+    },
+    "Immunology Study Guide": {
+      "n": "Panduan Studi Imunologi",
+      "d": "Pelajari sistem kekebalan tubuh, respon imun, dan gangguan imunologi"
+    },
+    "Biotechnology Overview": {
+      "n": "Tinjauan Bioteknologi",
+      "d": "Jelajahi aplikasi bioteknologi termasuk rekayasa genetika dan CRISPR"
+    },
+    "Conservation Biology Planner": {
+      "n": "Perencana Biologi Konservasi",
+      "d": "Merencanakan strategi konservasi untuk pelestarian spesies dan habitat"
+    },
+    "Physics Problem Solver": {
+      "n": "Pemecah Masalah Fisika",
+      "d": "Selesaikan masalah fisika dengan solusi langkah demi langkah yang terperinci"
+    },
+    "Mechanics Helper": {
+      "n": "Pembantu Mekanik",
+      "d": "Mempelajari dan memecahkan masalah mekanika klasik termasuk kinematika dan dinamika"
+    },
+    "Electricity & Magnetism Guide": {
+      "n": "Panduan Listrik & Magnet",
+      "d": "Memahami medan listrik, sirkuit, dan fenomena elektromagnetik"
+    },
+    "Thermodynamics Tutor": {
+      "n": "Guru Termodinamika",
+      "d": "Pelajari hukum termodinamika, proses, dan masalah perpindahan panas"
+    },
+    "Optics & Waves Guide": {
+      "n": "Panduan Optik & Gelombang",
+      "d": "Pelajari fenomena gelombang, optik, dan perilaku cahaya"
+    },
+    "Quantum Physics Explainer": {
+      "n": "Penjelasan Fisika Kuantum",
+      "d": "Memahami konsep mekanika kuantum disertai penjelasan dan contoh yang jelas"
+    },
+    "Astrophysics Explorer": {
+      "n": "Penjelajah Astrofisika",
+      "d": "Jelajahi evolusi bintang, kosmologi, dan mekanika angkasa"
+    },
+    "Nuclear Physics Guide": {
+      "n": "Panduan Fisika Nuklir",
+      "d": "Pelajari reaksi nuklir, radioaktivitas, dan energi nuklir"
+    },
+    "Fluid Dynamics Helper": {
+      "n": "Pembantu Dinamika Fluida",
+      "d": "Memecahkan masalah mekanika fluida termasuk aplikasi Bernoulli dan Navier-Stokes"
+    },
+    "Classical Mechanics Tutor": {
+      "n": "Guru Mekanika Klasik",
+      "d": "Selami lebih dalam mekanika Lagrangian dan Hamiltonian serta dinamika tingkat lanjut"
+    },
+    "Relativity Concept Guide": {
+      "n": "Panduan Konsep Relativitas",
+      "d": "Pahami relativitas khusus dan umum dengan eksperimen pikiran dan matematika"
+    },
+    "Physics Lab Report Helper": {
+      "n": "Pembantu Laporan Lab Fisika",
+      "d": "Menyusun dan menulis laporan lab fisika dengan analisis data yang tepat"
+    },
+    "Math Proof Writer": {
+      "n": "Penulis Bukti Matematika",
+      "d": "Tulis pembuktian matematis yang jelas dan teliti dengan struktur logis"
+    },
+    "Calculus Problem Solver": {
+      "n": "Pemecah Masalah Kalkulus",
+      "d": "Menyelesaikan masalah kalkulus termasuk limit, turunan, dan integral"
+    },
+    "Statistics Helper": {
+      "n": "Pembantu Statistik",
+      "d": "Memecahkan masalah statistik dan menafsirkan hasil statistik"
+    },
+    "Linear Algebra Guide": {
+      "n": "Panduan Aljabar Linier",
+      "d": "Pelajari vektor, matriks, transformasi, dan nilai eigen"
+    },
+    "Probability Calculator": {
+      "n": "Kalkulator Probabilitas",
+      "d": "Hitung probabilitas dan selesaikan masalah distribusi probabilitas"
+    },
+    "Geometry Tutor": {
+      "n": "Guru Geometri",
+      "d": "Mempelajari konsep geometri, teorema, dan menyelesaikan masalah geometri"
+    },
+    "Trigonometry Helper": {
+      "n": "Pembantu Trigonometri",
+      "d": "Memecahkan persamaan trigonometri, identitas, dan aplikasi"
+    },
+    "Number Theory Explorer": {
+      "n": "Penjelajah Teori Bilangan",
+      "d": "Jelajahi bilangan prima, pembagian, aritmatika modular, dan aplikasi kriptografi"
+    },
+    "Discrete Math Guide": {
+      "n": "Panduan Matematika Diskrit",
+      "d": "Pelajari kombinatorik, teori grafik, logika, dan teori himpunan"
+    },
+    "Differential Equations Solver": {
+      "n": "Pemecah Persamaan Diferensial",
+      "d": "Menyelesaikan persamaan diferensial biasa dan parsial dengan metode detail"
+    },
+    "Math Word Problem Solver": {
+      "n": "Pemecah Masalah Kata Matematika",
+      "d": "Terjemahkan dan selesaikan soal kata matematika dunia nyata langkah demi langkah"
+    },
+    "Mathematical Modeling Guide": {
+      "n": "Panduan Pemodelan Matematika",
+      "d": "Membangun model matematika untuk fenomena dan aplikasi dunia nyata"
+    },
+    "SQL Query Generator": {
+      "n": "Pembuat Kueri SQL",
+      "d": "Hasilkan dan optimalkan kueri SQL untuk pengambilan dan analisis data"
+    },
+    "Python Data Analysis": {
+      "n": "Analisis Data Python",
+      "d": "Tulis kode Python untuk analisis data menggunakan pandas, NumPy, dan lainnya"
+    },
+    "Data Cleaning Checklist": {
+      "n": "Daftar Periksa Pembersihan Data",
+      "d": "Buat daftar periksa komprehensif untuk pembersihan dan prapemrosesan data"
+    },
+    "Data Visualization Planner": {
+      "n": "Perencana Visualisasi Data",
+      "d": "Pilih bagan yang tepat dan rancang visualisasi data yang efektif"
+    },
+    "Machine Learning Model Selector": {
+      "n": "Pemilih Model Pembelajaran Mesin",
+      "d": "Pilih model ML terbaik untuk jenis masalah dan karakteristik data Anda"
+    },
+    "A/B Test Calculator": {
+      "n": "Kalkulator Uji A/B",
+      "d": "Rancang dan analisis pengujian A/B dengan perhitungan signifikansi statistik"
+    },
+    "Dashboard Design Guide": {
+      "n": "Panduan Desain Dasbor",
+      "d": "Rancang dasbor yang efektif dengan KPI dan tata letak yang tepat"
+    },
+    "ETL Pipeline Planner": {
+      "n": "Perencana Saluran Pipa ETL",
+      "d": "Rancang dan rencanakan jalur pipa ETL untuk integrasi dan pemrosesan data"
+    },
+    "Feature Engineering Guide": {
+      "n": "Panduan Rekayasa Fitur",
+      "d": "Buat fitur efektif untuk model pembelajaran mesin"
+    },
+    "Data Pipeline Architecture": {
+      "n": "Arsitektur Saluran Data",
+      "d": "Rancang arsitektur saluran data yang skalabel untuk analitik dan ML"
+    },
+    "Exploratory Data Analysis": {
+      "n": "Analisis Data Eksplorasi",
+      "d": "Lakukan EDA menyeluruh dengan analisis terstruktur dan rencana visualisasi"
+    },
+    "Statistical Test Selector": {
+      "n": "Pemilih Tes Statistik",
+      "d": "Pilih dan terapkan uji statistik yang tepat untuk data dan hipotesis Anda"
+    },
+    "Time Series Analysis Guide": {
+      "n": "Panduan Analisis Rangkaian Waktu",
+      "d": "Analisis data deret waktu dengan metode peramalan dan deteksi tren"
+    },
+    "Natural Language Processing Starter": {
+      "n": "Pemula Pemrosesan Bahasa Alami",
+      "d": "Mulailah dengan tugas NLP termasuk klasifikasi teks dan analisis sentimen"
+    },
+    "Computer Vision Project Planner": {
+      "n": "Perencana Proyek Visi Komputer",
+      "d": "Rencanakan proyek visi komputer mulai dari pengumpulan data hingga penerapan model"
+    },
+    "Technical Requirements Document": {
+      "n": "Dokumen Persyaratan Teknis",
+      "d": "Buat dokumen persyaratan teknis terperinci untuk proyek teknik"
+    },
+    "Engineering Design Review": {
+      "n": "Tinjauan Desain Teknik",
+      "d": "Menyiapkan dokumen tinjauan desain terstruktur untuk proyek teknik"
+    },
+    "Failure Mode Analysis (FMEA)": {
+      "n": "Analisis Mode Kegagalan (FMEA)",
+      "d": "Melakukan analisis mode kegagalan dan efek sistematis untuk produk atau proses"
+    },
+    "Project Specification Writer": {
+      "n": "Penulis Spesifikasi Proyek",
+      "d": "Tulis spesifikasi proyek yang jelas dan lengkap untuk pekerjaan teknik"
+    },
+    "CAD Project Planner": {
+      "n": "Perencana Proyek CAD",
+      "d": "Merencanakan dan mengatur proyek pemodelan CAD dengan dokumentasi yang tepat"
+    },
+    "Manufacturing Process Guide": {
+      "n": "Panduan Proses Manufaktur",
+      "d": "Memilih dan merencanakan proses manufaktur untuk pengembangan produk"
+    },
+    "Quality Control Checklist": {
+      "n": "Daftar Periksa Kontrol Kualitas",
+      "d": "Buat daftar periksa kendali mutu dan rencana inspeksi untuk produksi"
+    },
+    "Engineering Change Request": {
+      "n": "Permintaan Perubahan Teknik",
+      "d": "Dokumentasikan dan kelola permintaan perubahan teknik dengan analisis dampak"
+    },
+    "Structural Analysis Guide": {
+      "n": "Panduan Analisis Struktural",
+      "d": "Panduan perhitungan analisis struktural dan metodologi untuk proyek teknik"
+    },
+    "Materials Selection Guide": {
+      "n": "Panduan Pemilihan Bahan",
+      "d": "Pilih bahan yang optimal berdasarkan kebutuhan mekanik, termal, dan kimia"
+    },
+    "Midjourney Prompt Creator": {
+      "n": "Pencipta Perintah Tengah Perjalanan",
+      "d": "Buat petunjuk Midjourney yang mendetail dengan parameter gaya, pencahayaan, dan komposisi"
+    },
+    "DALL-E Prompt Builder": {
+      "n": "Pembuat Prompt DALL-E",
+      "d": "Buat perintah DALL-E yang dioptimalkan dengan deskripsi jelas dan arahan artistik"
+    },
+    "Stable Diffusion Prompt Writer": {
+      "n": "Penulis Prompt Difusi Stabil",
+      "d": "Hasilkan perintah Difusi Stabil dengan rekayasa cepat positif dan negatif"
+    },
+    "Product Photography Prompt": {
+      "n": "Perintah Fotografi Produk",
+      "d": "Buat perintah AI untuk fotografi produk menakjubkan dengan hasil berkualitas studio"
+    },
+    "Landscape Art Prompt": {
+      "n": "Perintah Seni Lansekap",
+      "d": "Buat petunjuk seni lanskap yang menakjubkan dengan detail lingkungan dan suasana"
+    },
+    "Portrait Photography Prompt": {
+      "n": "Perintah Fotografi Potret",
+      "d": "Hasilkan perintah potret AI dengan panduan pencahayaan, ekspresi, dan komposisi"
+    },
+    "Food Photography Prompt": {
+      "n": "Perintah Fotografi Makanan",
+      "d": "Buat petunjuk fotografi makanan yang menggugah selera dengan detail gaya dan pelapisan"
+    },
+    "Architecture Visualization Prompt": {
+      "n": "Prompt Visualisasi Arsitektur",
+      "d": "Buat petunjuk visualisasi arsitektur untuk bangunan dan ruang interior"
+    },
+    "Fashion Design Prompt": {
+      "n": "Perintah Desain Fashion",
+      "d": "Hasilkan konsep desain fesyen dengan detail kain, siluet, dan gaya"
+    },
+    "Comic Art Prompt": {
+      "n": "Perintah Seni Komik",
+      "d": "Buat petunjuk seni gaya buku komik dengan komposisi panel dan aksi karakter"
+    },
+    "Abstract Art Prompt": {
+      "n": "Perintah Seni Abstrak",
+      "d": "Hasilkan petunjuk seni abstrak dengan teori warna, tekstur, dan ekspresi emosional"
+    },
+    "Icon Design Brief": {
+      "n": "Ringkasan Desain Ikon",
+      "d": "Rancang kumpulan ikonografi yang bersih dengan gaya dan bahasa visual yang konsisten"
+    },
+    "Infographic Design Brief": {
+      "n": "Ringkasan Desain Infografis",
+      "d": "Rencanakan tata letak infografis dengan visualisasi data dan hierarki visual"
+    },
+    "Social Media Graphics Prompt": {
+      "n": "Perintah Grafik Media Sosial",
+      "d": "Hasilkan grafik media sosial yang dapat menghentikan gulir untuk platform apa pun"
+    },
+    "Meme Creator Prompt": {
+      "n": "Perintah Pembuat Meme",
+      "d": "Hasilkan konsep meme dengan pemilihan format, teks, dan potensi viral"
+    },
+    "AI Avatar Prompt": {
+      "n": "Perintah Avatar AI",
+      "d": "Buat desain avatar AI unik untuk profil, game, dan identitas virtual"
+    },
+    "Song Lyrics Writer": {
+      "n": "Penulis Lirik Lagu",
+      "d": "Tulis lirik lagu orisinal dengan bait, chorus, dan bridge dalam genre apa pun"
+    },
+    "Chord Progression Generator": {
+      "n": "Generator Progresi Akord",
+      "d": "Hasilkan progresi akord dengan panduan teori musik untuk genre dan suasana hati apa pun"
+    },
+    "Beat Ideas Creator": {
+      "n": "Kalahkan Pencipta Ide",
+      "d": "Hasilkan konsep ketukan dengan tempo, pola drum, dan ide instrumentasi"
+    },
+    "Song Structure Builder": {
+      "n": "Pembuat Struktur Lagu",
+      "d": "Rancang aransemen lagu dengan urutan bagian, dinamika, dan transisi"
+    },
+    "Rap Verse Writer": {
+      "n": "Penulis Ayat Rap",
+      "d": "Tulislah bait-bait rap yang menyentuh hati dengan pola aliran, skema rima, dan permainan kata"
+    },
+    "Country Song Writer": {
+      "n": "Penulis Lagu Negara",
+      "d": "Tulis lagu country autentik dengan cerita, perumpamaan, dan dentingan"
+    },
+    "Pop Song Hook Creator": {
+      "n": "Pencipta Pengait Lagu Pop",
+      "d": "Ciptakan pop hook yang menarik dan melodi chorus yang melekat di kepala pendengar"
+    },
+    "Rock Ballad Writer": {
+      "n": "Penulis Balada Rock",
+      "d": "Tulis balada rock emosional dengan bentukan yang kuat dan paduan suara yang antemik"
+    },
+    "Musical Arrangement Guide": {
+      "n": "Panduan Aransemen Musik",
+      "d": "Rencanakan aransemen musik lengkap dengan instrumentasi, sulih suara, dan dinamika"
+    },
+    "Band Name Generator": {
+      "n": "Pembuat Nama Band",
+      "d": "Hasilkan nama band kreatif berdasarkan genre, getaran, dan preferensi citra"
+    },
+    "Music Video Concept": {
+      "n": "Konsep Video Musik",
+      "d": "Mengembangkan konsep video musik kreatif dengan narasi, visual, dan koreografi"
+    },
+    "Mixing Checklist": {
+      "n": "Daftar Periksa Pencampuran",
+      "d": "Daftar periksa pencampuran komprehensif yang mencakup EQ, kompresi, efek, dan keseimbangan"
+    },
+    "Film Score Brief": {
+      "n": "Ringkasan Skor Film",
+      "d": "Buat ringkasan skor film yang mendetail dengan suasana hati, instrumentasi, dan petunjuk waktu"
+    },
+    "YouTube Shorts Script": {
+      "n": "Skrip YouTube Shorts",
+      "d": "Tulis skrip YouTube Shorts menarik yang dioptimalkan untuk video vertikal berdurasi 60 detik"
+    },
+    "Video Storyboard Creator": {
+      "n": "Pembuat Papan Cerita Video",
+      "d": "Rencanakan papan cerita visual dengan deskripsi adegan, sudut kamera, dan transisi"
+    },
+    "Documentary Outline": {
+      "n": "Garis Besar Dokumenter",
+      "d": "Susun film dokumenter yang menarik dengan alur naratif, wawancara, dan rencana b-roll"
+    },
+    "Vlog Episode Planner": {
+      "n": "Perencana Episode Vlog",
+      "d": "Rencanakan episode vlog yang menarik dengan lokasi, pokok pembicaraan, dan variasi visual"
+    },
+    "Screenwriting Helper": {
+      "n": "Pembantu Penulisan Skenario",
+      "d": "Kembangkan skenario dengan format, dialog, dan pengarahan adegan yang tepat"
+    },
+    "Short Film Script": {
+      "n": "Naskah Film Pendek",
+      "d": "Menulis naskah film pendek lengkap dengan penceritaan visual dan narasi yang padat"
+    },
+    "Animation Script Writer": {
+      "n": "Penulis Naskah Animasi",
+      "d": "Tulis skrip animasi dengan lelucon visual, tindakan karakter, dan petunjuk waktu"
+    },
+    "Video Editing Brief": {
+      "n": "Ringkasan Pengeditan Video",
+      "d": "Buat ringkasan pengeditan video mendetail dengan panduan tempo, efek, dan gaya"
+    },
+    "Livestream Run Sheet": {
+      "n": "Lembar Proses Streaming Langsung",
+      "d": "Rencanakan streaming langsung dengan segmen berwaktu, pokok pembicaraan, dan pemicu keterlibatan"
+    },
+    "Tutorial Video Script": {
+      "n": "Skrip Video Tutorial",
+      "d": "Tulis skrip video tutorial yang jelas dengan petunjuk langkah demi langkah dan visual"
+    },
+    "Explainer Video Script": {
+      "n": "Skrip Video Penjelasan",
+      "d": "Tulis skrip video penjelasan yang jelas yang menyederhanakan topik kompleks secara visual"
+    },
+    "Video SEO Optimizer": {
+      "n": "Pengoptimal SEO Video",
+      "d": "Optimalkan metadata video dengan judul, deskripsi, tag, dan strategi thumbnail"
+    },
+    "Novel Outline Creator": {
+      "n": "Pencipta Garis Besar Novel",
+      "d": "Bangun kerangka novel yang komprehensif dengan struktur plot, bab, dan alur karakter"
+    },
+    "Short Story Writer": {
+      "n": "Penulis Cerita Pendek",
+      "d": "Tulislah cerita pendek yang menarik dengan karakter yang hidup dan kesimpulan yang memuaskan"
+    },
+    "Poetry Generator": {
+      "n": "Pembuat Puisi",
+      "d": "Ciptakan puisi orisinal dalam berbagai bentuk dengan citraan, meteran, dan emosi"
+    },
+    "Book Proposal Template": {
+      "n": "Templat Proposal Buku",
+      "d": "Buat proposal buku profesional dengan analisis pasar dan ringkasan bab"
+    },
+    "Memoir Outline": {
+      "n": "Garis Besar Memoar",
+      "d": "Susun memoar pribadi dengan bab tematik dan narasi reflektif"
+    },
+    "Children's Book Creator": {
+      "n": "Pencipta Buku Anak-Anak",
+      "d": "Tulislah buku anak-anak sesuai usia dengan cerita dan catatan ilustrasi yang menarik"
+    },
+    "Screenplay Outline": {
+      "n": "Garis Besar Skenario",
+      "d": "Garis besar skenario dengan struktur tiga babak, rincian adegan, dan catatan dialog"
+    },
+    "Play Script Writer": {
+      "n": "Mainkan Penulis Skrip",
+      "d": "Tulis naskah teater dengan arahan panggung, dialog, dan struktur adegan"
+    },
+    "Comic Book Script": {
+      "n": "Naskah Buku Komik",
+      "d": "Tulis skrip buku komik dengan deskripsi panel, dialog, dan tempo"
+    },
+    "Fan Fiction Creator": {
+      "n": "Pencipta Fiksi Penggemar",
+      "d": "Tulis fiksi penggemar dengan suara karakter yang setia dan alur cerita baru yang kreatif"
+    },
+    "Writing Prompt Generator": {
+      "n": "Menulis Generator Prompt",
+      "d": "Hasilkan dorongan menulis kreatif dengan genre, batasan, dan benih cerita"
+    },
+    "Dialogue Writer": {
+      "n": "Penulis Dialog",
+      "d": "Ciptakan dialog yang terdengar alami yang mengungkapkan karakter dan memajukan alur cerita"
+    },
+    "Plot Twist Generator": {
+      "n": "Pembuat Plot Twist",
+      "d": "Hasilkan alur cerita yang mengejutkan namun logis yang mengontekstualisasikan ulang narasinya"
+    },
+    "Query Letter Writer": {
+      "n": "Penulis Surat Permintaan",
+      "d": "Tulis surat permintaan yang menarik kepada agen sastra dengan kaitan dan sinopsis"
+    },
+    "Book Description Writer": {
+      "n": "Penulis Deskripsi Buku",
+      "d": "Tulis deskripsi buku yang menarik yang memikat pembaca dan mendorong penjualan"
+    },
+    "Ghostwriting Brief": {
+      "n": "Ringkasan Penulisan Hantu",
+      "d": "Buat ringkasan tulisan untuk orang lain yang mendetail dengan persyaratan suara, gaya, dan konten"
+    },
+    "Technical Writing Guide": {
+      "n": "Panduan Penulisan Teknis",
+      "d": "Tulis dokumentasi teknis yang jelas dengan format terstruktur dan akurat"
+    },
+    "Grant Proposal Writer": {
+      "n": "Penulis Proposal Hibah",
+      "d": "Tulis proposal hibah persuasif dengan deskripsi proyek dan justifikasi anggaran"
+    },
+    "White Paper Outline": {
+      "n": "Garis Besar Kertas Putih",
+      "d": "Susun kertas putih resmi dengan penelitian, analisis, dan rekomendasi"
+    },
+    "Copywriting Formula": {
+      "n": "Rumus Copywriting",
+      "d": "Terapkan formula copywriting yang telah terbukti seperti AIDA, PAS, dan BAB ke produk atau layanan apa pun"
+    },
+    "Instagram Content Planner": {
+      "n": "Perencana Konten Instagram",
+      "d": "Rencanakan konten Instagram selama seminggu dengan postingan, cerita, reel, dan teks"
+    },
+    "X Thread Creator": {
+      "n": "Pembuat Benang X",
+      "d": "Tulis rangkaian X menarik yang membangun otoritas dan mendorong keterlibatan"
+    },
+    "Reddit Post Writer": {
+      "n": "Penulis Posting Reddit",
+      "d": "Tulis postingan Reddit yang dioptimalkan untuk subreddit tertentu dengan mempertimbangkan norma komunitas"
+    },
+    "Viral Hook Generator": {
+      "n": "Pembuat Kait Virus",
+      "d": "Hasilkan kaitan yang menarik perhatian untuk konten media sosial di seluruh platform"
+    },
+    "Hashtag Strategy Tool": {
+      "n": "Alat Strategi Hashtag",
+      "d": "Teliti dan atur strategi hashtag agar mudah ditemukan"
+    },
+    "Engagement Response Generator": {
+      "n": "Generator Respons Keterlibatan",
+      "d": "Hasilkan tanggapan yang bijaksana terhadap komentar, DM, dan sebutan dalam skala besar"
+    },
+    "LinkedIn Article Writer": {
+      "n": "Penulis Artikel LinkedIn",
+      "d": "Tulis artikel LinkedIn kepemimpinan pemikiran yang membangun otoritas profesional"
+    },
+    "Episode Show Notes": {
+      "n": "Catatan Pertunjukan Episode",
+      "d": "Tulis catatan acara terperinci dengan stempel waktu, tautan, dan poin-poin penting"
+    },
+    "Podcast Editing Checklist": {
+      "n": "Daftar Periksa Pengeditan Podcast",
+      "d": "Standarisasi alur kerja pengeditan podcast dengan pos pemeriksaan kualitas dan langkah-langkah penyempurnaan"
+    },
+    "Prompt Improver": {
+      "n": "Perbaikan Cepat",
+      "d": "Sempurnakan dan optimalkan setiap permintaan untuk menghasilkan keluaran AI yang lebih baik dengan teknik terstruktur"
+    },
+    "Chain-of-Thought Organizer": {
+      "n": "Penyelenggara Rantai Pemikiran",
+      "d": "Bangun petunjuk rantai pemikiran yang memandu AI melalui penalaran langkah demi langkah"
+    },
+    "RAG Prompt Generator": {
+      "n": "Generator Prompt RAG",
+      "d": "Buat perintah pembuatan augmented pengambilan dengan pengoptimalan jendela konteks"
+    },
+    "Prompt Translator": {
+      "n": "Penerjemah Cepat",
+      "d": "Terjemahkan perintah di berbagai model AI dengan tetap menjaga niat dan kualitas"
+    },
+    "Prompt Evaluator": {
+      "n": "Penilai Cepat",
+      "d": "Evaluasi dan nilai petunjuk di berbagai dimensi kualitas dengan tips peningkatan"
+    },
+    "Few-Shot Example Generator": {
+      "n": "Generator Contoh Beberapa Tembakan",
+      "d": "Hasilkan contoh beberapa contoh berkualitas tinggi untuk petunjuk pembelajaran dalam konteks"
+    },
+    "System Prompt Writer": {
+      "n": "Penulis Prompt Sistem",
+      "d": "Tulis perintah sistem efektif yang menentukan perilaku AI, batasan, dan gaya keluaran"
+    },
+    "AI Guardrails Designer": {
+      "n": "Desainer Pagar Pembatas AI",
+      "d": "Rancang pagar pengaman dan kebijakan konten untuk aplikasi AI"
+    },
+    "AI Use Case Identifier": {
+      "n": "Pengidentifikasi Kasus Penggunaan AI",
+      "d": "Identifikasi dan evaluasi potensi kasus penggunaan AI untuk bisnis dan alur kerja"
+    },
+    "Model Comparison Guide": {
+      "n": "Panduan Perbandingan Model",
+      "d": "Bandingkan model AI dalam hal kemampuan, harga, dan kesesuaian kasus penggunaan"
+    },
+    "LLM Fine-Tuning Data Creator": {
+      "n": "Pembuat Data Penyempurnaan LLM",
+      "d": "Menghasilkan dan menyusun data pelatihan untuk proyek penyesuaian LLM"
+    },
+    "Debugger Assistant": {
+      "n": "Asisten Debugger",
+      "d": "Debug masalah kode secara sistematis dengan analisis akar masalah dan saran perbaikan"
+    },
+    "CI/CD Pipeline Planner": {
+      "n": "Perencana Saluran Pipa CI/CD",
+      "d": "Rancang alur CI/CD dengan konfigurasi tahap pembuatan, pengujian, dan penerapan"
+    },
+    "Docker Configuration Guide": {
+      "n": "Panduan Konfigurasi Docker",
+      "d": "Buat Dockerfiles dan buat konfigurasi dengan praktik terbaik"
+    },
+    "Git Workflow Planner": {
+      "n": "Perencana Alur Kerja Git",
+      "d": "Rancang strategi percabangan Git dan alur kerja kolaborasi untuk tim pengembangan"
+    },
+    "Code Migration Guide": {
+      "n": "Panduan Migrasi Kode",
+      "d": "Rencanakan dan jalankan migrasi kode antar bahasa, kerangka kerja, atau versi"
+    },
+    "Database Schema Designer": {
+      "n": "Perancang Skema Basis Data",
+      "d": "Rancang skema database dengan tabel, hubungan, indeks, dan batasan"
+    },
+    "Performance Optimization Guide": {
+      "n": "Panduan Pengoptimalan Kinerja",
+      "d": "Identifikasi dan atasi hambatan kinerja dengan pembuatan profil dan strategi pengoptimalan"
+    },
+    "Microservices Architecture": {
+      "n": "Arsitektur Layanan Mikro",
+      "d": "Rancang arsitektur layanan mikro dengan batasan layanan, komunikasi, dan penerapan"
+    },
+    "GraphQL Schema Builder": {
+      "n": "Pembuat Skema GraphQL",
+      "d": "Rancang skema GraphQL dengan tipe, kueri, mutasi, dan langganan"
+    },
+    "Terraform Configuration": {
+      "n": "Konfigurasi Terraform",
+      "d": "Hasilkan konfigurasi Terraform untuk penyediaan infrastruktur cloud"
+    },
+    "AWS Architecture Planner": {
+      "n": "Perencana Arsitektur AWS",
+      "d": "Rancang arsitektur cloud AWS dengan pemilihan layanan dan optimalisasi biaya"
+    },
+    "Code Documentation Generator": {
+      "n": "Generator Dokumentasi Kode",
+      "d": "Hasilkan dokumentasi inline, JSDoc, docstrings, dan komentar kode"
+    },
+    "Technical Interview Prep": {
+      "n": "Persiapan Wawancara Teknis",
+      "d": "Mempersiapkan wawancara teknis dengan rincian masalah dan pola solusi"
+    },
+    "Changelog Writer": {
+      "n": "Penulis Changelog",
+      "d": "Tulis log perubahan yang jelas berikut Pertahankan format Changelog dengan versi semantik"
+    },
+    "Error Handling Strategy": {
+      "n": "Strategi Penanganan Kesalahan",
+      "d": "Rancang strategi penanganan kesalahan yang komprehensif dengan pola dan pesan pengguna"
+    },
+    "Logging Strategy Guide": {
+      "n": "Panduan Strategi Penebangan",
+      "d": "Rancang strategi pencatatan aplikasi dengan level, format, dan agregasi"
+    },
+    "Monitoring Setup Guide": {
+      "n": "Panduan Pengaturan Pemantauan",
+      "d": "Siapkan pemantauan aplikasi dengan metrik, peringatan, dan dasbor"
+    },
+    "Load Testing Plan": {
+      "n": "Rencana Pengujian Beban",
+      "d": "Rancang rencana pengujian beban dengan skenario, metrik, dan kriteria penerimaan"
+    },
+    "Security Audit Checklist": {
+      "n": "Daftar Periksa Audit Keamanan",
+      "d": "Lakukan audit keamanan dengan daftar periksa dan panduan remediasi berbasis OWASP"
+    },
+    "Security Checklist Creator": {
+      "n": "Pembuat Daftar Periksa Keamanan",
+      "d": "Hasilkan daftar periksa keamanan komprehensif yang disesuaikan dengan aplikasi dan tumpukan Anda"
+    },
+    "Penetration Testing Plan": {
+      "n": "Rencana Pengujian Penetrasi",
+      "d": "Rencanakan pengujian penetrasi terstruktur dengan cakupan, metodologi, dan templat pelaporan"
+    },
+    "Secure Coding Guide": {
+      "n": "Panduan Pengkodean Aman",
+      "d": "Buat pedoman pengkodean aman khusus bahasa dengan pencegahan kerentanan"
+    },
+    "Incident Response Plan": {
+      "n": "Rencana Respons Insiden",
+      "d": "Rancang rencana respons insiden dengan prosedur deteksi, penahanan, dan pemulihan"
+    },
+    "Security Policy Writer": {
+      "n": "Penulis Kebijakan Keamanan",
+      "d": "Tulis kebijakan keamanan organisasi yang mencakup kontrol akses, penanganan data, dan kepatuhan"
+    },
+    "Vulnerability Assessment Guide": {
+      "n": "Panduan Penilaian Kerentanan",
+      "d": "Melakukan penilaian kerentanan sistematis dengan pemindaian dan remediasi yang diprioritaskan"
+    },
+    "Security Awareness Training": {
+      "n": "Pelatihan Kesadaran Keamanan",
+      "d": "Rancang program pelatihan kesadaran keamanan untuk karyawan di semua tingkatan"
+    },
+    "Password Policy Creator": {
+      "n": "Pembuat Kebijakan Kata Sandi",
+      "d": "Buat kebijakan kata sandi yang kuat dengan kompleksitas, rotasi, dan persyaratan MFA"
+    },
+    "Data Protection Plan": {
+      "n": "Rencana Perlindungan Data",
+      "d": "Rancang strategi perlindungan data yang mencakup klasifikasi, enkripsi, dan retensi"
+    },
+    "SWOT Analysis Pro": {
+      "n": "Analisis SWOT Pro",
+      "d": "Analisis SWOT tingkat lanjut dengan penilaian tertimbang dan rencana tindakan"
+    },
+    "Pitch Deck Outline": {
+      "n": "Garis Besar Dek Pitch",
+      "d": "Ciptakan struktur presentasi investor yang menarik"
+    },
+    "Business Canvas Creator": {
+      "n": "Pencipta Kanvas Bisnis",
+      "d": "Hasilkan kanvas model bisnis lengkap untuk usaha Anda"
+    },
+    "Competitive Intelligence Report": {
+      "n": "Laporan Intelijen Kompetitif",
+      "d": "Analisis pesaing dan identifikasi peluang positioning pasar"
+    },
+    "Strategic Planning Guide": {
+      "n": "Panduan Perencanaan Strategis",
+      "d": "Kembangkan rencana strategis multi-tahun dengan tujuan dan pencapaian"
+    },
+    "Annual Report Template": {
+      "n": "Templat Laporan Tahunan",
+      "d": "Susun laporan tahunan perusahaan Anda dengan ringkasan keuangan dan operasional utama"
+    },
+    "Board Meeting Agenda": {
+      "n": "Agenda Rapat Dewan",
+      "d": "Agenda rapat dewan profesional dengan praktik terbaik tata kelola"
+    },
+    "Company Newsletter": {
+      "n": "Buletin Perusahaan",
+      "d": "Rancang buletin perusahaan internal atau eksternal yang menarik"
+    },
+    "Employee Survey Creator": {
+      "n": "Pembuat Survei Karyawan",
+      "d": "Bangun survei keterlibatan dan kepuasan karyawan yang efektif"
+    },
+    "Team Building Activity Planner": {
+      "n": "Perencana Kegiatan Membangun Tim",
+      "d": "Rencanakan acara dan aktivitas membangun tim yang menarik"
+    },
+    "Remote Work Policy": {
+      "n": "Kebijakan Kerja Jarak Jauh",
+      "d": "Buat kebijakan kerja jarak jauh yang komprehensif untuk organisasi Anda"
+    },
+    "Diversity & Inclusion Plan": {
+      "n": "Rencana Keberagaman & Inklusi",
+      "d": "Mengembangkan strategi kesetaraan dan inklusi keberagaman yang bermakna"
+    },
+    "Vendor Evaluation Matrix": {
+      "n": "Matriks Evaluasi Vendor",
+      "d": "Evaluasi dan bandingkan vendor secara sistematis untuk keputusan pengadaan"
+    },
+    "Process Improvement Plan": {
+      "n": "Rencana Peningkatan Proses",
+      "d": "Identifikasi dan terapkan perbaikan proses menggunakan metodologi lean"
+    },
+    "Change Management Plan": {
+      "n": "Rencana Manajemen Perubahan",
+      "d": "Pandu perubahan organisasi dengan penyelarasan dan komunikasi pemangku kepentingan"
+    },
+    "Risk Assessment Template": {
+      "n": "Templat Penilaian Risiko",
+      "d": "Mengidentifikasi mengevaluasi dan memitigasi risiko bisnis secara sistematis"
+    },
+    "Succession Planning Guide": {
+      "n": "Panduan Perencanaan Suksesi",
+      "d": "Merencanakan transisi kepemimpinan dan pengembangan saluran bakat"
+    },
+    "Business Continuity Plan": {
+      "n": "Rencana Keberlangsungan Bisnis",
+      "d": "Bersiaplah menghadapi gangguan dengan strategi kesinambungan yang komprehensif"
+    },
+    "Customer Journey Map": {
+      "n": "Peta Perjalanan Pelanggan",
+      "d": "Visualisasikan dan optimalkan pengalaman pelanggan yang lengkap"
+    },
+    "Brand Guidelines Template": {
+      "n": "Templat Pedoman Merek",
+      "d": "Tentukan identitas merek Anda dengan gaya dan pedoman penggunaan yang komprehensif"
+    },
+    "Mission & Vision Statement": {
+      "n": "Pernyataan Misi & Visi",
+      "d": "Buat pernyataan misi dan visi yang menginspirasi untuk organisasi Anda"
+    },
+    "Company Culture Document": {
+      "n": "Dokumen Budaya Perusahaan",
+      "d": "Tentukan dan dokumentasikan budaya dan nilai organisasi Anda"
+    },
+    "Organizational Chart Planner": {
+      "n": "Perencana Bagan Organisasi",
+      "d": "Rancang dan rencanakan struktur organisasi dan jalur pelaporan Anda"
+    },
+    "Department Budget Template": {
+      "n": "Templat Anggaran Departemen",
+      "d": "Buat anggaran departemen terperinci dengan perkiraan dan pelacakan"
+    },
+    "KPI Dashboard Builder": {
+      "n": "Pembuat Dasbor KPI",
+      "d": "Rancang dasbor indikator kinerja utama untuk keputusan berdasarkan data"
+    },
+    "Job Description Writer": {
+      "n": "Penulis Deskripsi Pekerjaan",
+      "d": "Ciptakan deskripsi pekerjaan yang jelas dan inklusif yang menarik talenta terbaik"
+    },
+    "Interview Scorecard Creator": {
+      "n": "Pembuat Kartu Skor Wawancara",
+      "d": "Bangun kartu skor wawancara terstruktur untuk evaluasi kandidat yang konsisten"
+    },
+    "Employee Onboarding Checklist": {
+      "n": "Daftar Periksa Orientasi Karyawan",
+      "d": "Daftar periksa orientasi yang komprehensif untuk kesuksesan karyawan baru"
+    },
+    "Performance Improvement Plan": {
+      "n": "Rencana Peningkatan Kinerja",
+      "d": "Buat rencana peningkatan kinerja yang mendukung dengan pencapaian yang jelas"
+    },
+    "Exit Interview Guide": {
+      "n": "Keluar dari Panduan Wawancara",
+      "d": "Lakukan wawancara keluar yang mendalam untuk meningkatkan retensi"
+    },
+    "Compensation Analysis": {
+      "n": "Analisis Kompensasi",
+      "d": "Menganalisis dan membandingkan paket kompensasi untuk daya saing pasar"
+    },
+    "Benefits Comparison Guide": {
+      "n": "Panduan Perbandingan Manfaat",
+      "d": "Bandingkan dan evaluasi paket tunjangan karyawan"
+    },
+    "Team Retrospective": {
+      "n": "Retrospektif Tim",
+      "d": "Memfasilitasi retrospektif tim yang efektif untuk perbaikan berkelanjutan"
+    },
+    "One-on-One Meeting Template": {
+      "n": "Templat Pertemuan Satu-satu",
+      "d": "Susun pertemuan tatap muka yang produktif dengan laporan langsung"
+    },
+    "Hiring Pipeline Planner": {
+      "n": "Mempekerjakan Perencana Saluran Pipa",
+      "d": "Rancang dan optimalkan jalur rekrutmen Anda secara menyeluruh"
+    },
+    "Employee Recognition Program": {
+      "n": "Program Pengakuan Karyawan",
+      "d": "Membangun program pengakuan dan penghargaan karyawan yang bermakna"
+    },
+    "Training Program Designer": {
+      "n": "Perancang Program Pelatihan",
+      "d": "Merancang program pelatihan dan pengembangan karyawan yang efektif"
+    },
+    "Workplace Policy Writer": {
+      "n": "Penulis Kebijakan Tempat Kerja",
+      "d": "Draf kebijakan tempat kerja yang jelas yang mencakup topik-topik utama organisasi"
+    },
+    "Conflict Resolution Guide": {
+      "n": "Panduan Resolusi Konflik",
+      "d": "Arahkan konflik di tempat kerja dengan kerangka resolusi terstruktur"
+    },
+    "Remote Team Handbook": {
+      "n": "Buku Pegangan Tim Jarak Jauh",
+      "d": "Buat buku pegangan komprehensif untuk operasi tim terdistribusi"
+    },
+    "Career Path Planner": {
+      "n": "Perencana Jalur Karir",
+      "d": "Petakan lintasan karier Anda dengan pencapaian yang dapat ditindaklanjuti"
+    },
+    "Salary Negotiation Prep": {
+      "n": "Persiapan Negosiasi Gaji",
+      "d": "Siapkan poin pembicaraan dan strategi negosiasi gaji yang percaya diri"
+    },
+    "LinkedIn Profile Builder": {
+      "n": "Pembuat Profil LinkedIn",
+      "d": "Optimalkan profil LinkedIn Anda untuk menarik perekrut dan peluang"
+    },
+    "Portfolio Builder Guide": {
+      "n": "Panduan Pembuat Portofolio",
+      "d": "Buat portofolio profesional menonjol yang menampilkan karya terbaik Anda"
+    },
+    "Networking Email Templates": {
+      "n": "Templat Email Jaringan",
+      "d": "Tulis email jaringan yang efektif untuk pertumbuhan karier dan perkenalan"
+    },
+    "Career Pivot Guide": {
+      "n": "Panduan Poros Karir",
+      "d": "Arahkan transisi karier yang sukses dengan rencana terstruktur"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Kalkulator tarif freelance",
+      "d": "Hitung tarif freelance ideal dan strategi penetapan harga Anda"
+    },
+    "Professional Development Plan": {
+      "n": "Rencana Pengembangan Profesional",
+      "d": "Buat rencana terstruktur untuk pertumbuhan profesional berkelanjutan"
+    },
+    "Mentorship Program Guide": {
+      "n": "Panduan Program Mentoring",
+      "d": "Temukan struktur dan maksimalkan hubungan bimbingan"
+    },
+    "Side Hustle Validator": {
+      "n": "Validator Keramaian Sampingan",
+      "d": "Evaluasi dan validasi ide bisnis sampingan untuk kelangsungan hidup"
+    },
+    "Work-Life Balance Audit": {
+      "n": "Audit Keseimbangan Kehidupan Kerja",
+      "d": "Nilai dan tingkatkan keseimbangan kehidupan kerja Anda dengan strategi yang dapat ditindaklanjuti"
+    },
+    "Speaking Proposal Template": {
+      "n": "Templat Proposal Berbicara",
+      "d": "Buat proposal pidato konferensi dan acara yang persuasif"
+    },
+    "Consulting Proposal Writer": {
+      "n": "Penulis Proposal Konsultasi",
+      "d": "Draf proposal konsultasi pemenang yang menghasilkan kesepakatan"
+    },
+    "Skill Gap Analyzer": {
+      "n": "Penganalisis Kesenjangan Keterampilan",
+      "d": "Identifikasi dan rencanakan untuk menutup kesenjangan keterampilan penting untuk kemajuan karir"
+    },
+    "Career Journal Prompts": {
+      "n": "Anjuran Jurnal Karir",
+      "d": "Renungkan perjalanan karier Anda dengan latihan penjurnalan terpandu"
+    },
+    "Informational Interview Guide": {
+      "n": "Panduan Wawancara Informasi",
+      "d": "Mempersiapkan dan melakukan wawancara informasi yang efektif"
+    },
+    "Thank You Note Writer": {
+      "n": "Terima Kasih Penulis Catatan",
+      "d": "Tulis catatan terima kasih profesional yang bijaksana untuk setiap kesempatan"
+    },
+    "Resignation Letter Template": {
+      "n": "Templat Surat Pengunduran Diri",
+      "d": "Tulis surat pengunduran diri profesional dengan menjaga hubungan positif"
+    },
+    "Meal Prep Planner": {
+      "n": "Perencana Persiapan Makanan",
+      "d": "Rencanakan makanan mingguan dengan daftar belanjaan dan jadwal persiapan"
+    },
+    "Habit Tracker Designer": {
+      "n": "Desainer Pelacak Kebiasaan",
+      "d": "Rancang sistem pelacakan kebiasaan yang dipersonalisasi untuk perubahan yang bertahan lama"
+    },
+    "Sleep Improvement Guide": {
+      "n": "Panduan Peningkatan Tidur",
+      "d": "Optimalkan kualitas tidur Anda dengan strategi berbasis bukti"
+    },
+    "Stress Management Plan": {
+      "n": "Rencana Manajemen Stres",
+      "d": "Bangun perangkat manajemen stres dan rencana tindakan yang dipersonalisasi"
+    },
+    "Yoga Routine Builder": {
+      "n": "Pembangun Rutin Yoga",
+      "d": "Buat rutinitas yoga yang disesuaikan untuk level dan tujuan Anda"
+    },
+    "Running Training Plan": {
+      "n": "Menjalankan Rencana Pelatihan",
+      "d": "Buat rencana latihan lari terstruktur untuk sasaran jarak apa pun"
+    },
+    "Swimming Workout": {
+      "n": "Latihan Berenang",
+      "d": "Rancang latihan renang yang efektif untuk kebugaran dan teknik"
+    },
+    "Strength Training Program": {
+      "n": "Program Pelatihan Kekuatan",
+      "d": "Buat program latihan kekuatan progresif yang disesuaikan dengan tujuan Anda"
+    },
+    "Flexibility Routine": {
+      "n": "Fleksibilitas Rutin",
+      "d": "Tingkatkan fleksibilitas dan mobilitas dengan rutinitas peregangan terstruktur"
+    },
+    "HIIT Workout Creator": {
+      "n": "Pencipta Latihan HIIT",
+      "d": "Rancang latihan interval intensitas tinggi untuk hasil maksimal"
+    },
+    "Nutrition Label Reader": {
+      "n": "Pembaca Label Nutrisi",
+      "d": "Belajar membaca dan memahami label nutrisi untuk pilihan yang lebih sehat"
+    },
+    "Calorie Counter Guide": {
+      "n": "Panduan Penghitung Kalori",
+      "d": "Siapkan pelacakan kalori yang dipersonalisasi dengan pengelompokan makro"
+    },
+    "Hydration Tracker": {
+      "n": "Pelacak Hidrasi",
+      "d": "Lacak dan optimalkan asupan air harian dan kebiasaan hidrasi Anda"
+    },
+    "Mental Health Check-In": {
+      "n": "Pemeriksaan Kesehatan Mental",
+      "d": "Penilaian diri dan pelacakan kesehatan kesehatan mental yang dipandu"
+    },
+    "Therapy Session Prep": {
+      "n": "Persiapan Sesi Terapi",
+      "d": "Mempersiapkan sesi terapi dengan refleksi terstruktur dan penetapan tujuan"
+    },
+    "Gratitude Journal Prompts": {
+      "n": "Anjuran Jurnal Syukur",
+      "d": "Penjurnalan rasa syukur setiap hari mendorong peningkatan kesehatan mental"
+    },
+    "Mindfulness Exercise Creator": {
+      "n": "Pencipta Latihan Perhatian",
+      "d": "Ciptakan latihan kesadaran dan pernapasan yang dipersonalisasi"
+    },
+    "Supplement Research Guide": {
+      "n": "Panduan Penelitian Tambahan",
+      "d": "Teliti dan evaluasi suplemen berdasarkan tujuan kesehatan Anda"
+    },
+    "Allergy Management Plan": {
+      "n": "Rencana Manajemen Alergi",
+      "d": "Ciptakan strategi manajemen dan penghindaran alergi yang komprehensif"
+    },
+    "Chronic Condition Tracker": {
+      "n": "Pelacak Kondisi Kronis",
+      "d": "Lacak gejala pengobatan dan pemicu kondisi kesehatan kronis"
+    },
+    "Physical Therapy Exercise Log": {
+      "n": "Log Latihan Terapi Fisik",
+      "d": "Catat dan lacak latihan terapi fisik dan kemajuan pemulihan"
+    },
+    "Ergonomic Workspace Setup": {
+      "n": "Pengaturan Ruang Kerja yang Ergonomis",
+      "d": "Optimalkan ruang kerja Anda untuk kenyamanan, kesehatan, dan produktivitas"
+    },
+    "Digital Detox Planner": {
+      "n": "Perencana Detoks Digital",
+      "d": "Rencanakan dan jalankan detoks digital untuk meningkatkan kesehatan mental"
+    },
+    "Self-Care Routine Builder": {
+      "n": "Pembangun Rutin Perawatan Diri",
+      "d": "Bangun rutinitas perawatan diri yang berkelanjutan di semua dimensi kesehatan"
+    },
+    "First Aid Guide": {
+      "n": "Panduan Pertolongan Pertama",
+      "d": "Referensi cepat prosedur pertolongan pertama untuk keadaan darurat umum"
+    },
+    "To-Do List Power Planner": {
+      "n": "Perencana Daya Daftar Tugas",
+      "d": "Buat daftar tugas yang diprioritaskan dengan perkiraan waktu dan tingkat energi"
+    },
+    "Daily Schedule Optimizer": {
+      "n": "Pengoptimal Jadwal Harian",
+      "d": "Rancang jadwal harian yang dioptimalkan berdasarkan pola energi Anda"
+    },
+    "Project Planner Pro": {
+      "n": "Perencana Proyek Pro",
+      "d": "Rencanakan proyek dengan pencapaian pencapaian dan alokasi sumber daya"
+    },
+    "Decision Matrix Builder": {
+      "n": "Pembuat Matriks Keputusan",
+      "d": "Buat keputusan yang lebih baik menggunakan analisis kriteria tertimbang"
+    },
+    "Weekly Review Template": {
+      "n": "Templat Tinjauan Mingguan",
+      "d": "Lakukan tinjauan mingguan secara menyeluruh agar tetap sesuai dengan tujuan Anda"
+    },
+    "Morning Routine Designer": {
+      "n": "Desainer Rutinitas Pagi",
+      "d": "Rancang rutinitas pagi yang memberi energi untuk kinerja puncak"
+    },
+    "Evening Routine Creator": {
+      "n": "Pencipta Rutinitas Malam",
+      "d": "Ciptakan rutinitas malam yang menenangkan untuk istirahat yang lebih baik dan persiapan hari berikutnya"
+    },
+    "Time Blocking Schedule": {
+      "n": "Jadwal Pemblokiran Waktu",
+      "d": "Atur hari Anda dengan blok waktu terfokus untuk produktivitas maksimum"
+    },
+    "Eisenhower Matrix Tool": {
+      "n": "Alat Matriks Eisenhower",
+      "d": "Kategorikan tugas berdasarkan urgensi dan kepentingannya untuk penentuan prioritas yang lebih baik"
+    },
+    "Pomodoro Session Planner": {
+      "n": "Perencana Sesi Pomodoro",
+      "d": "Rencanakan sesi kerja terfokus menggunakan teknik Pomodoro"
+    },
+    "Goal Tracking System": {
+      "n": "Sistem Pelacakan Sasaran",
+      "d": "Siapkan sistem pelacakan sasaran yang komprehensif dengan metrik kemajuan"
+    },
+    "Quarterly Planning Template": {
+      "n": "Templat Perencanaan Triwulanan",
+      "d": "Rencanakan kuartal Anda dengan sasaran strategis dan sasaran yang dapat ditindaklanjuti"
+    },
+    "Annual Review Template": {
+      "n": "Templat Tinjauan Tahunan",
+      "d": "Melakukan tinjauan tahunan menyeluruh atas pencapaian dan menetapkan tujuan masa depan"
+    },
+    "Meeting Notes Template": {
+      "n": "Templat Catatan Rapat",
+      "d": "Catat catatan rapat yang dapat ditindaklanjuti dengan keputusan dan tindak lanjut"
+    },
+    "Brain Dump Organizer": {
+      "n": "Penyelenggara Pembuangan Otak",
+      "d": "Ubah pikiran kacau menjadi kategori terorganisir yang dapat ditindaklanjuti"
+    },
+    "Delegation Framework": {
+      "n": "Kerangka Delegasi",
+      "d": "Identifikasi apa yang harus didelegasikan dan buat ringkasan delegasi yang jelas"
+    },
+    "Focus Session Planner": {
+      "n": "Perencana Sesi Fokus",
+      "d": "Rencanakan sesi fokus mendalam dengan manajemen lingkungan dan gangguan"
+    },
+    "Energy Management Guide": {
+      "n": "Panduan Manajemen Energi",
+      "d": "Optimalkan tingkat energi Anda sepanjang hari untuk kinerja puncak"
+    },
+    "Batch Processing Planner": {
+      "n": "Perencana Pemrosesan Batch",
+      "d": "Kelompokkan tugas serupa untuk sesi pemrosesan batch yang efisien"
+    },
+    "System Documentation Template": {
+      "n": "Templat Dokumentasi Sistem",
+      "d": "Dokumentasikan sistem pribadi dan tim untuk konsistensi dan orientasi"
+    },
+    "Project Kickoff Template": {
+      "n": "Templat Pembukaan Proyek",
+      "d": "Luncurkan proyek dengan cakupan tujuan dan keselarasan tim yang jelas"
+    },
+    "Sprint Planning Guide": {
+      "n": "Panduan Perencanaan Sprint",
+      "d": "Rencanakan sprint yang efektif dengan estimasi dan kapasitas cerita pengguna"
+    },
+    "Kanban Board Setup": {
+      "n": "Pengaturan Papan Kanban",
+      "d": "Rancang dan konfigurasikan papan Kanban untuk manajemen alur kerja visual"
+    },
+    "Gantt Chart Planner": {
+      "n": "Perencana Gantt Chart",
+      "d": "Buat garis waktu proyek terperinci dengan dependensi dan pencapaian"
+    },
+    "Resource Allocation Matrix": {
+      "n": "Matriks Alokasi Sumber Daya",
+      "d": "Merencanakan dan mengoptimalkan alokasi sumber daya di seluruh proyek dan tim"
+    },
+    "Status Report Template": {
+      "n": "Templat Laporan Status",
+      "d": "Buat laporan status proyek yang jelas untuk komunikasi pemangku kepentingan"
+    },
+    "Risk Register Creator": {
+      "n": "Pembuat Daftar Risiko",
+      "d": "Membangun dan memelihara daftar risiko proyek yang komprehensif"
+    },
+    "Lessons Learned Template": {
+      "n": "Templat Pembelajaran",
+      "d": "Menangkap dan mendokumentasikan pembelajaran proyek untuk perbaikan di masa depan"
+    },
+    "Requirements Document": {
+      "n": "Dokumen Persyaratan",
+      "d": "Kumpulkan dan dokumentasikan persyaratan proyek dengan kriteria penerimaan"
+    },
+    "User Acceptance Testing Plan": {
+      "n": "Rencana Pengujian Penerimaan Pengguna",
+      "d": "Buat rencana UAT terstruktur dengan kasus uji dan kriteria penandatanganan"
+    },
+    "Stakeholder Communication Plan": {
+      "n": "Rencana Komunikasi Pemangku Kepentingan",
+      "d": "Rencanakan komunikasi pemangku kepentingan dengan frekuensi saluran dan pesan"
+    },
+    "Project Timeline Creator": {
+      "n": "Pembuat Garis Waktu Proyek",
+      "d": "Bangun jadwal proyek terperinci dengan fase dan hasil"
+    },
+    "Agile Retrospective": {
+      "n": "Retrospektif Tangkas",
+      "d": "Memfasilitasi retrospektif tangkas yang produktif dengan beragam format"
+    },
+    "Scope Document Writer": {
+      "n": "Penulis Dokumen Lingkup",
+      "d": "Tentukan ruang lingkup proyek dengan batasan hasil dan pengecualian"
+    },
+    "Project Closure Report": {
+      "n": "Laporan Penutupan Proyek",
+      "d": "Dokumentasikan penyelesaian proyek dengan hasil dan penilaian akhir"
+    },
+    "Conversation Practice Partner": {
+      "n": "Rekan Latihan Percakapan",
+      "d": "Latih percakapan dalam bahasa target Anda dengan skenario realistis"
+    },
+    "Vocabulary Builder Pro": {
+      "n": "Pembangun Kosakata Pro",
+      "d": "Bangun kosakata dengan contoh konteks dan isyarat pengulangan spasi"
+    },
+    "Grammar Coach": {
+      "n": "Pelatih Tata Bahasa",
+      "d": "Pelajari dan praktikkan aturan tata bahasa dengan penjelasan dan latihan yang jelas"
+    },
+    "Translation Helper": {
+      "n": "Pembantu Terjemahan",
+      "d": "Dapatkan terjemahan akurat dengan konteks dan catatan penggunaan"
+    },
+    "Language Exchange Prep": {
+      "n": "Persiapan Pertukaran Bahasa",
+      "d": "Mempersiapkan sesi pertukaran bahasa dengan topik percakapan terstruktur"
+    },
+    "Travel Phrase Book": {
+      "n": "Buku Frasa Perjalanan",
+      "d": "Frase perjalanan penting yang disusun berdasarkan situasi untuk tujuan Anda"
+    },
+    "Business Language Guide": {
+      "n": "Panduan Bahasa Bisnis",
+      "d": "Pelajari bahasa profesional untuk pengaturan bisnis dan komunikasi"
+    },
+    "Accent Improvement Guide": {
+      "n": "Panduan Peningkatan Aksen",
+      "d": "Tingkatkan pengucapan dan aksen dengan latihan yang ditargetkan"
+    },
+    "Reading Comprehension Practice": {
+      "n": "Latihan Pemahaman Membaca",
+      "d": "Tingkatkan keterampilan membaca dengan teks berjenjang dan pertanyaan pemahaman"
+    },
+    "Writing Practice Creator": {
+      "n": "Pencipta Latihan Menulis",
+      "d": "Berlatihlah menulis dalam bahasa target Anda dengan petunjuk dan umpan balik yang dipandu"
+    },
+    "Listening Comprehension Guide": {
+      "n": "Panduan Pemahaman Mendengarkan",
+      "d": "Tingkatkan keterampilan mendengarkan dengan latihan dan strategi terstruktur"
+    },
+    "Cultural Context Guide": {
+      "n": "Panduan Konteks Budaya",
+      "d": "Memahami nuansa budaya dan etika untuk komunikasi yang efektif"
+    },
+    "Room Layout Planner": {
+      "n": "Perencana Tata Letak Ruangan",
+      "d": "Rencanakan tata letak ruangan yang optimal dengan penempatan dan aliran furnitur"
+    },
+    "Color Palette Creator": {
+      "n": "Pencipta Palet Warna",
+      "d": "Hasilkan palet warna yang kohesif untuk ruangan dan proyek desain"
+    },
+    "Furniture Shopping Guide": {
+      "n": "Panduan Belanja Furnitur",
+      "d": "Belanja furnitur cerdas dengan pencocokan gaya dan perencanaan anggaran"
+    },
+    "Home Decor Style Finder": {
+      "n": "Pencari Gaya Dekorasi Rumah",
+      "d": "Temukan gaya desain interior Anda dengan penilaian terpandu"
+    },
+    "Wardrobe Capsule Builder": {
+      "n": "Pembuat Kapsul Lemari Pakaian",
+      "d": "Bangun lemari pakaian kapsul serbaguna yang memaksimalkan kombinasi pakaian"
+    },
+    "Outfit Planner": {
+      "n": "Perencana Pakaian",
+      "d": "Rencanakan pakaian untuk minggu ini atau acara khusus dari lemari pakaian Anda yang ada"
+    },
+    "Personal Style Guide": {
+      "n": "Panduan Gaya Pribadi",
+      "d": "Tentukan identitas gaya pribadi dan pedoman belanja Anda"
+    },
+    "Seasonal Wardrobe Refresh": {
+      "n": "Penyegaran Lemari Pakaian Musiman",
+      "d": "Segarkan lemari pakaian Anda setiap musim dengan penambahan dan pengeditan strategis"
+    },
+    "Home Office Setup Guide": {
+      "n": "Panduan Pengaturan Rumah Kantor",
+      "d": "Rancang ruang kantor rumah yang produktif dan bergaya"
+    },
+    "Bathroom Design Planner": {
+      "n": "Perencana Desain Kamar Mandi",
+      "d": "Rencanakan renovasi dan pembaruan kamar mandi dengan gaya dan fungsionalitas"
+    },
+    "Hackathon Idea Generator": {
+      "n": "Penghasil Ide Hackathon",
+      "d": "Lakukan brainstorming dan validasi ide proyek hackathon berdasarkan tema dan batasan"
+    },
+    "MVP Builder Guide": {
+      "n": "Panduan Pembuat MVP",
+      "d": "Rencanakan dan bangun produk minimum yang layak dalam tenggat waktu hackathon yang ketat"
+    },
+    "Hackathon Pitch Presentation": {
+      "n": "Presentasi Promosi Hackathon",
+      "d": "Buat presentasi singkat yang menarik untuk mempresentasikan proyek hackathon Anda kepada juri"
+    },
+    "Technical Architecture Planner": {
+      "n": "Perencana Arsitektur Teknis",
+      "d": "Rancang arsitektur teknis untuk proyek hackathon Anda dengan cepat"
+    },
+    "Hackathon Team Builder": {
+      "n": "Pembangun Tim Hackathon",
+      "d": "Bentuk tim hackathon yang seimbang dengan keterampilan yang saling melengkapi dan peran yang jelas"
+    },
+    "Demo Day Script": {
+      "n": "Skrip Hari Demo",
+      "d": "Buat skrip demo langsung yang disempurnakan yang menyoroti fitur utama proyek Anda"
+    },
+    "Judging Criteria Analyzer": {
+      "n": "Penganalisis Kriteria Penilaian",
+      "d": "Analisis kriteria penilaian hackathon dan optimalkan proyek Anda"
+    },
+    "Hackathon Timeline Planner": {
+      "n": "Perencana Garis Waktu Hackathon",
+      "d": "Bagi jam hackathon Anda menjadi jadwal sprint yang terstruktur"
+    },
+    "Prize Strategy Advisor": {
+      "n": "Penasihat Strategi Hadiah",
+      "d": "Targetkan jalur hadiah tertentu secara strategis dan sesuaikan proyek Anda untuk menang"
+    },
+    "Post-Hackathon Action Plan": {
+      "n": "Rencana Aksi Pasca Hackathon",
+      "d": "Ubah proyek hackathon Anda menjadi produk atau portofolio nyata"
+    },
+    "Rapid Prototyping Guide": {
+      "n": "Panduan Pembuatan Prototipe Cepat",
+      "d": "Buat prototipe dengan cepat dan ulangi konsep hackathon Anda dengan waktu terbatas"
+    },
+    "Hackathon Submission Template": {
+      "n": "Templat Pengiriman Hackathon",
+      "d": "Siapkan kiriman hackathon yang lengkap dan halus dengan semua materi yang diperlukan"
+    },
+    "Game Design Document": {
+      "n": "Dokumen Desain Game",
+      "d": "Buat dokumen desain game komprehensif yang mencakup semua aspek game Anda"
+    },
+    "Game Mechanics Designer": {
+      "n": "Desainer Mekanik Game",
+      "d": "Rancang dan seimbangkan mekanisme permainan inti untuk gameplay yang menarik"
+    },
+    "Level Design Planner": {
+      "n": "Perencana Desain Tingkat",
+      "d": "Rencanakan level permainan dengan tempo, tantangan, dan penceritaan lingkungan"
+    },
+    "Game Economy Balancer": {
+      "n": "Penyeimbang Ekonomi Game",
+      "d": "Rancang dan seimbangkan perekonomian dalam game untuk kemajuan yang adil dan menarik"
+    },
+    "Character Stats Builder": {
+      "n": "Pembuat Statistik Karakter",
+      "d": "Buat sistem status karakter dan arketipe kelas yang seimbang"
+    },
+    "Quest Designer": {
+      "n": "Perancang Pencarian",
+      "d": "Rancang misi yang menarik dengan narasi bercabang dan hadiah yang bermakna"
+    },
+    "Game UI/UX Planner": {
+      "n": "Perencana UI/UX Game",
+      "d": "Rencanakan tata letak UI game yang intuitif dan alur pengalaman pengguna"
+    },
+    "Tabletop RPG Campaign": {
+      "n": "Kampanye RPG Meja",
+      "d": "Bangun kampanye RPG meja dengan pengetahuan dunia, NPC, dan alur cerita"
+    },
+    "Board Game Designer": {
+      "n": "Desainer Permainan Papan",
+      "d": "Rancang permainan papan dari konsep hingga prototipe dengan aturan yang seimbang"
+    },
+    "Game Testing Checklist": {
+      "n": "Daftar Periksa Pengujian Game",
+      "d": "Buat daftar periksa pengujian QA yang komprehensif untuk game Anda"
+    },
+    "Photo Shoot Planner": {
+      "n": "Perencana Pemotretan",
+      "d": "Rencanakan pemotretan lengkap mulai dari konsep hingga eksekusi dengan segala logistik"
+    },
+    "Photography Portfolio Guide": {
+      "n": "Panduan Portofolio Fotografi",
+      "d": "Kurasi dan atur portofolio fotografi yang menonjol untuk klien atau pameran"
+    },
+    "Photo Editing Workflow": {
+      "n": "Alur Kerja Pengeditan Foto",
+      "d": "Bangun alur kerja pengeditan foto yang efisien mulai dari impor hingga ekspor akhir"
+    },
+    "Client Photography Brief": {
+      "n": "Ringkasan Fotografi Klien",
+      "d": "Buat ringkasan fotografi profesional untuk proyek klien"
+    },
+    "Landscape Photography Guide": {
+      "n": "Panduan Fotografi Pemandangan",
+      "d": "Rencanakan tamasya fotografi lanskap dengan tip cuaca, waktu, dan komposisi"
+    },
+    "Portrait Photography Tips": {
+      "n": "Tip Fotografi Potret",
+      "d": "Panduan untuk mengambil potret yang menarik dengan pencahayaan dan arah pose"
+    },
+    "Product Photography Setup": {
+      "n": "Pengaturan Fotografi Produk",
+      "d": "Siapkan fotografi produk profesional dengan pencahayaan dan pementasan yang tepat"
+    },
+    "Wedding Photography Timeline": {
+      "n": "Garis Waktu Fotografi Pernikahan",
+      "d": "Rencanakan garis waktu fotografi hari pernikahan yang lengkap mulai dari persiapan hingga resepsi"
+    },
+    "Street Photography Guide": {
+      "n": "Panduan Fotografi Jalanan",
+      "d": "Tip dan teknik untuk fotografi jalanan yang autentik dan menarik"
+    },
+    "Astrophotography Planner": {
+      "n": "Perencana Astrofotografi",
+      "d": "Rencanakan sesi astrofotografi dengan pengaturan peralatan dan acara angkasa"
+    },
+    "Character Design Brief": {
+      "n": "Ringkasan Desain Karakter",
+      "d": "Buat ringkasan desain karakter mendetail dengan kepribadian, penampilan, dan latar belakang"
+    },
+    "Comic Strip Creator": {
+      "n": "Pencipta Komik Strip",
+      "d": "Rencanakan dan buat komik strip dengan tata letak panel, dialog, dan tempo"
+    },
+    "World Building Guide": {
+      "n": "Panduan Pembangunan Dunia",
+      "d": "Rancang dunia fiksi yang imersif dengan geografi, budaya, dan pengetahuan"
+    },
+    "Children's Book Illustrator": {
+      "n": "Ilustrator Buku Anak-anak",
+      "d": "Rencanakan ilustrasi untuk buku anak-anak dengan gaya dan tempo yang sesuai dengan usia"
+    },
+    "Art Portfolio Curator": {
+      "n": "Kurator Portofolio Seni",
+      "d": "Kurasi dan presentasikan portofolio seni untuk galeri, klien, atau sekolah"
+    },
+    "Color Theory Guide": {
+      "n": "Panduan Teori Warna",
+      "d": "Terapkan prinsip teori warna untuk menciptakan karya seni yang harmonis dan berdampak"
+    },
+    "Digital Art Workflow": {
+      "n": "Alur Kerja Seni Digital",
+      "d": "Sederhanakan proses seni digital Anda dari sketsa hingga render akhir"
+    },
+    "Art Commission Brief": {
+      "n": "Ringkasan Komisi Seni",
+      "d": "Tulis ringkasan komisi seni yang jelas untuk mengomunikasikan visi Anda kepada seniman"
+    },
+    "Mural Design Planner": {
+      "n": "Perencana Desain Mural",
+      "d": "Rencanakan proyek mural skala besar mulai dari konsep hingga instalasi"
+    },
+    "Art Exhibition Proposal": {
+      "n": "Proposal Pameran Seni",
+      "d": "Tulis proposal pameran seni profesional untuk galeri dan tempat"
+    },
+    "Tax Deduction Finder": {
+      "n": "Pencari Pengurangan Pajak",
+      "d": "Identifikasi pengurangan pajak yang sering terlewatkan berdasarkan situasi dan status pengarsipan Anda"
+    },
+    "Self-Employment Tax Guide": {
+      "n": "Panduan Pajak Wiraswasta",
+      "d": "Menavigasi pajak wirausaha termasuk perkiraan pembayaran dan pengurangan"
+    },
+    "Tax Document Organizer": {
+      "n": "Penyelenggara Dokumen Pajak",
+      "d": "Atur dan lacak semua dokumen pajak yang diperlukan untuk musim pengarsipan"
+    },
+    "Quarterly Tax Estimator": {
+      "n": "Penaksir Pajak Triwulanan",
+      "d": "Menghitung dan merencanakan perkiraan pembayaran pajak triwulanan untuk wiraswasta"
+    },
+    "Capital Gains Calculator Guide": {
+      "n": "Panduan Kalkulator Keuntungan Modal",
+      "d": "Memahami dan merencanakan pajak keuntungan modal atas investasi dan properti"
+    },
+    "Tax Filing Checklist": {
+      "n": "Daftar Periksa Pengajuan Pajak",
+      "d": "Daftar periksa langkah demi langkah untuk memastikan pengajuan pajak yang akurat dan lengkap"
+    },
+    "State Tax Comparison": {
+      "n": "Perbandingan Pajak Negara",
+      "d": "Bandingkan implikasi pajak negara bagian terhadap relokasi atau pendapatan multi-negara bagian"
+    },
+    "Tax-Loss Harvesting Guide": {
+      "n": "Panduan Pemanenan Rugi Pajak",
+      "d": "Panen kerugian investasi secara strategis untuk mengimbangi keuntungan dan mengurangi kewajiban pajak"
+    },
+    "Stock Research Template": {
+      "n": "Templat Penelitian Saham",
+      "d": "Lakukan analisis fundamental dan teknis menyeluruh pada masing-masing saham"
+    },
+    "ETF Comparison Tool": {
+      "n": "Alat Perbandingan ETF",
+      "d": "Bandingkan ETF berdasarkan rasio biaya, kepemilikan, kinerja, dan strategi"
+    },
+    "Dividend Portfolio Planner": {
+      "n": "Perencana Portofolio Dividen",
+      "d": "Bangun portofolio yang berfokus pada dividen untuk menghasilkan pendapatan pasif"
+    },
+    "Real Estate Investment Analyzer": {
+      "n": "Penganalisis Investasi Real Estat",
+      "d": "Analisis properti sewaan dan investasi real estat untuk mengetahui pengembalian dan arus kas"
+    },
+    "Angel Investing Checklist": {
+      "n": "Daftar Periksa Investasi Malaikat",
+      "d": "Evaluasi peluang investasi awal dengan kerangka uji tuntas"
+    },
+    "Retirement Account Optimizer": {
+      "n": "Pengoptimal Akun Pensiun",
+      "d": "Optimalkan kontribusi di 401k, IRA, dan akun pensiun lainnya"
+    },
+    "Bond Analysis Guide": {
+      "n": "Panduan Analisis Obligasi",
+      "d": "Analisis obligasi dan sekuritas pendapatan tetap untuk mengetahui hasil, durasi, dan risiko"
+    },
+    "Mutual Fund Evaluator": {
+      "n": "Penilai Reksa Dana",
+      "d": "Evaluasi reksa dana berdasarkan kinerja, biaya, rekam jejak manajer, dan kecocokan"
+    },
+    "Portfolio Rebalancing Guide": {
+      "n": "Panduan Penyeimbangan Kembali Portofolio",
+      "d": "Seimbangkan kembali portofolio investasi Anda untuk mempertahankan alokasi aset target"
+    },
+    "Investment Journal Template": {
+      "n": "Templat Jurnal Investasi",
+      "d": "Lacak keputusan investasi, alasan, dan hasil untuk perbaikan berkelanjutan"
+    },
+    "AWS Service Selector": {
+      "n": "Pemilih Layanan AWS",
+      "d": "Pilih layanan AWS yang tepat untuk kebutuhan dan anggaran aplikasi Anda"
+    },
+    "Cloud Migration Plan": {
+      "n": "Rencana Migrasi Cloud",
+      "d": "Rencanakan migrasi terstruktur beban kerja lokal ke cloud"
+    },
+    "Kubernetes Deployment Guide": {
+      "n": "Panduan Penerapan Kubernetes",
+      "d": "Terapkan dan kelola aplikasi di Kubernetes dengan praktik terbaik"
+    },
+    "Infrastructure as Code Template": {
+      "n": "Infrastruktur sebagai Templat Kode",
+      "d": "Buat infrastruktur sebagai templat kode untuk lingkungan cloud yang dapat direproduksi"
+    },
+    "CI/CD Pipeline Designer": {
+      "n": "Desainer Saluran Pipa CI/CD",
+      "d": "Rancang saluran CI/CD otomatis untuk integrasi dan penerapan berkelanjutan"
+    },
+    "Cloud Cost Optimizer": {
+      "n": "Pengoptimal Biaya Cloud",
+      "d": "Identifikasi dan terapkan strategi pengoptimalan biaya cloud"
+    },
+    "Serverless Architecture Planner": {
+      "n": "Perencana Arsitektur Tanpa Server",
+      "d": "Rancang aplikasi tanpa server dengan pola arsitektur berbasis peristiwa"
+    },
+    "Container Strategy Guide": {
+      "n": "Panduan Strategi Kontainer",
+      "d": "Tentukan strategi containerisasi untuk aplikasi dan layanan mikro"
+    },
+    "Cloud Security Checklist": {
+      "n": "Daftar Periksa Keamanan Cloud",
+      "d": "Audit dan amankan infrastruktur cloud dengan pemeriksaan keamanan komprehensif"
+    },
+    "Disaster Recovery Plan": {
+      "n": "Rencana Pemulihan Bencana",
+      "d": "Rancang rencana pemulihan bencana cloud dengan target RTO dan RPO"
+    },
+    "Keynote Speech Writer": {
+      "n": "Penulis Pidato Utama",
+      "d": "Tulis pidato utama yang kuat yang menginspirasi dan melibatkan audiens Anda"
+    },
+    "TED Talk Outline": {
+      "n": "Garis Besar Pembicaraan TED",
+      "d": "Susunlah pembicaraan gaya TED yang menarik dengan alur narasi yang kuat"
+    },
+    "Toast and Tribute Writer": {
+      "n": "Penulis Roti Bakar dan Penghargaan",
+      "d": "Tuliskan ucapan bersulang dan penghormatan yang berkesan untuk pernikahan, pensiun, dan perayaan"
+    },
+    "Debate Preparation Guide": {
+      "n": "Panduan Persiapan Debat",
+      "d": "Persiapkan secara menyeluruh untuk perdebatan dengan argumen, sanggahan, dan bukti"
+    },
+    "Panel Discussion Prep": {
+      "n": "Persiapan Diskusi Panel",
+      "d": "Bersiaplah untuk diskusi panel dengan poin pembicaraan dan keterlibatan audiens"
+    },
+    "Presentation Slide Planner": {
+      "n": "Perencana Slide Presentasi",
+      "d": "Rencanakan slide presentasi dengan hierarki visual dan alur naratif"
+    },
+    "Impromptu Speaking Guide": {
+      "n": "Panduan Berbicara Dadakan",
+      "d": "Bangun keterampilan berpikir mandiri dengan kerangka berbicara dadakan"
+    },
+    "Commencement Speech Writer": {
+      "n": "Penulis Pidato Permulaan",
+      "d": "Tulis pidato permulaan yang menginspirasi untuk upacara wisuda"
+    },
+    "Grant Application Writer": {
+      "n": "Hibah Penulis Aplikasi",
+      "d": "Tulis permohonan hibah yang menarik dan dengan jelas mengartikulasikan dampak dan kebutuhan"
+    },
+    "Fundraising Campaign Plan": {
+      "n": "Rencana Kampanye Penggalangan Dana",
+      "d": "Rencanakan dan laksanakan kampanye penggalangan dana yang efektif di berbagai saluran"
+    },
+    "Volunteer Recruitment Guide": {
+      "n": "Panduan Perekrutan Relawan",
+      "d": "Rekrut, libatkan, dan pertahankan sukarelawan untuk program nirlaba"
+    },
+    "Nonprofit Board Meeting": {
+      "n": "Rapat Dewan Nirlaba",
+      "d": "Mempersiapkan dan menjalankan rapat dewan nirlaba yang efektif dengan agenda yang jelas"
+    },
+    "Impact Report Template": {
+      "n": "Templat Laporan Dampak",
+      "d": "Buat laporan dampak menarik yang menampilkan pencapaian lembaga nonprofit Anda"
+    },
+    "Donor Thank You Letter": {
+      "n": "Surat Terima Kasih Donor",
+      "d": "Tulis surat pengakuan donor yang dipersonalisasi yang membangun hubungan yang langgeng"
+    },
+    "Annual Campaign Strategy": {
+      "n": "Strategi Kampanye Tahunan",
+      "d": "Kembangkan strategi penggalangan dana dan keterlibatan tahunan yang komprehensif"
+    },
+    "Community Needs Assessment": {
+      "n": "Penilaian Kebutuhan Komunitas",
+      "d": "Melakukan penilaian kebutuhan masyarakat secara menyeluruh untuk memandu pengembangan program"
+    },
+    "Construction Project Plan": {
+      "n": "Rencana Proyek Konstruksi",
+      "d": "Buat rencana proyek konstruksi yang komprehensif dengan fase, jadwal, dan anggaran"
+    },
+    "Building Permit Checklist": {
+      "n": "Daftar Periksa Izin Mendirikan Bangunan",
+      "d": "Lacak semua izin dan persetujuan bangunan yang diperlukan untuk proyek konstruksi Anda"
+    },
+    "Contractor Evaluation Guide": {
+      "n": "Panduan Evaluasi Kontraktor",
+      "d": "Evaluasi dan bandingkan kontraktor dengan kerangka penilaian terstruktur"
+    },
+    "Material Estimate Calculator": {
+      "n": "Kalkulator Perkiraan Bahan",
+      "d": "Perkirakan bahan konstruksi yang dibutuhkan dengan jumlah dan proyeksi biaya"
+    },
+    "Site Inspection Checklist": {
+      "n": "Daftar Periksa Inspeksi Lokasi",
+      "d": "Lakukan inspeksi lokasi secara menyeluruh dengan daftar periksa standar"
+    },
+    "Renovation Scope Document": {
+      "n": "Dokumen Ruang Lingkup Renovasi",
+      "d": "Tetapkan ruang lingkup pekerjaan renovasi yang jelas dengan spesifikasi dan harapan"
+    },
+    "Architectural Brief": {
+      "n": "Ringkasan Arsitektur",
+      "d": "Tulis ringkasan arsitektur yang menjelaskan visi, persyaratan, dan batasan proyek"
+    },
+    "Safety Compliance Checklist": {
+      "n": "Daftar Periksa Kepatuhan Keselamatan",
+      "d": "Pastikan kepatuhan keselamatan lokasi konstruksi dengan OSHA dan peraturan setempat"
+    },
+    "Robot Design Specification": {
+      "n": "Spesifikasi Desain Robot",
+      "d": "Tentukan spesifikasi desain robot lengkap termasuk mekanik, elektronik, dan perangkat lunak"
+    },
+    "IoT Project Planner": {
+      "n": "Perencana Proyek IoT",
+      "d": "Rencanakan proyek IoT menyeluruh mulai dari sensor hingga dasbor cloud"
+    },
+    "Sensor Selection Guide": {
+      "n": "Panduan Pemilihan Sensor",
+      "d": "Pilih sensor optimal untuk kebutuhan robotika atau aplikasi IoT Anda"
+    },
+    "Embedded Systems Guide": {
+      "n": "Panduan Sistem Tertanam",
+      "d": "Rancang sistem tertanam dengan pemilihan mikrokontroler dan arsitektur firmware yang tepat"
+    },
+    "Automation Workflow Designer": {
+      "n": "Perancang Alur Kerja Otomatisasi",
+      "d": "Rancang alur kerja otomatisasi industri atau rumah dengan sensor dan aktuator"
+    },
+    "Hardware Prototype Planner": {
+      "n": "Perencana Prototipe Perangkat Keras",
+      "d": "Rencanakan prototipe perangkat keras dari papan tempat memotong roti hingga PCB dengan sumber komponen"
+    },
+    "Anxiety Management Plan": {
+      "n": "Rencana Manajemen Kecemasan",
+      "d": "Buat rencana manajemen kecemasan yang dipersonalisasi dengan strategi dan pemicu penanggulangan"
+    },
+    "CBT Thought Record": {
+      "n": "Catatan Pemikiran CBT",
+      "d": "Latih catatan pemikiran terapi perilaku kognitif untuk menantang pemikiran negatif"
+    },
+    "Journaling Prompt Generator": {
+      "n": "Generator Prompt Jurnal",
+      "d": "Hasilkan petunjuk penjurnalan yang bermakna untuk refleksi diri dan pemrosesan emosional"
+    },
+    "Relationship Communication Guide": {
+      "n": "Panduan Komunikasi Hubungan",
+      "d": "Tingkatkan komunikasi hubungan dengan kerangka percakapan terstruktur"
+    },
+    "Boundary Setting Guide": {
+      "n": "Panduan Penetapan Batas",
+      "d": "Belajarlah untuk menetapkan dan mempertahankan batasan yang sehat dalam kehidupan pribadi dan profesional"
+    },
+    "Grief Processing Helper": {
+      "n": "Pembantu Pemrosesan Duka",
+      "d": "Jalani proses berduka dengan bimbingan penuh kasih dan langkah-langkah praktis"
+    },
+    "Self-Compassion Exercise": {
+      "n": "Latihan Welas Asih",
+      "d": "Latihlah latihan belas kasihan pada diri sendiri untuk membangun ketahanan dan mengurangi kritik terhadap diri sendiri"
+    },
+    "Emotional Intelligence Builder": {
+      "n": "Pembangun Kecerdasan Emosional",
+      "d": "Kembangkan keterampilan kecerdasan emosional untuk kesadaran diri dan hubungan yang lebih baik"
+    },
+    "Anger Management Plan": {
+      "n": "Rencana Pengelolaan Kemarahan",
+      "d": "Kembangkan strategi pengelolaan amarah yang sehat dengan pemicu dan teknik deeskalasi"
+    },
+    "Burnout Recovery Plan": {
+      "n": "Rencana Pemulihan Kelelahan",
+      "d": "Buat rencana pemulihan kelelahan yang terstruktur dengan batasan, istirahat, dan keterlibatan kembali secara bertahap"
+    },
+    "Instant Pot Recipe": {
+      "n": "Resep Pot Instan",
+      "d": "Resep pressure cooker dengan panduan waktu"
+    },
+    "World Cuisine Explorer": {
+      "n": "Penjelajah Masakan Dunia",
+      "d": "Resep otentik dari masakan global"
+    },
+    "Fermentation Guide": {
+      "n": "Panduan Fermentasi",
+      "d": "Resep dan teknik makanan fermentasi"
+    },
+    "BBQ & Grilling Guide": {
+      "n": "Panduan BBQ & Memanggang",
+      "d": "Resep memanggang dengan bumbu oles dan saus"
+    },
+    "Bread Baking Guide": {
+      "n": "Panduan Memanggang Roti",
+      "d": "Resep roti artisan dari awal hingga akhir"
+    },
+    "Mushroom Growing Guide": {
+      "n": "Panduan Menanam Jamur",
+      "d": "Budidaya jamur dalam ruangan mulai dari pemijahan hingga panen"
+    },
+    "Permaculture Planner": {
+      "n": "Perencana Permakultur",
+      "d": "Rancang ekosistem kebun pangan yang mandiri"
+    },
+    "Greenhouse Setup Guide": {
+      "n": "Panduan Pengaturan Rumah Kaca",
+      "d": "Merencanakan dan membangun rumah kaca yang produktif"
+    },
+    "FSBO Selling Guide": {
+      "n": "Panduan Penjualan FSBO",
+      "d": "Jual rumah Anda tanpa makelar langkah demi langkah"
+    },
+    "Investment Property Finder": {
+      "n": "Pencari Properti Investasi",
+      "d": "Evaluasi potensi properti investasi sewa"
+    },
+    "Car Modification Guide": {
+      "n": "Panduan Modifikasi Mobil",
+      "d": "Rencanakan modifikasi dan peningkatan kendaraan"
+    },
+    "Fleet Management Planner": {
+      "n": "Perencana Manajemen Armada",
+      "d": "Kelola berbagai perawatan dan biaya kendaraan"
+    },
+    "Digital Nomad Guide": {
+      "n": "Panduan Pengembara Digital",
+      "d": "Bekerja dari jarak jauh saat bepergian keliling dunia"
+    },
+    "Eco-Travel Planner": {
+      "n": "Perencana Perjalanan Ramah Lingkungan",
+      "d": "Rencanakan perjalanan yang berkelanjutan dan ramah lingkungan"
+    },
+    "Product Launch Event": {
+      "n": "Acara Peluncuran Produk",
+      "d": "Rencanakan acara peluncuran produk dari venue hingga PR"
+    },
+    "Virtual Event Planner": {
+      "n": "Perencana Acara Virtual",
+      "d": "Rencanakan acara online dan webinar yang menarik"
+    },
+    "College Planning Guide": {
+      "n": "Panduan Perencanaan Perguruan Tinggi",
+      "d": "Rencanakan kuliah mulai dari seleksi hingga bantuan keuangan"
+    },
+    "Child Safety Plan": {
+      "n": "Rencana Keselamatan Anak",
+      "d": "Pedoman keselamatan rumah dan online yang komprehensif"
+    },
+    "Exotic Pet Care Guide": {
+      "n": "Panduan Perawatan Hewan Peliharaan Eksotis",
+      "d": "Panduan perawatan reptil, burung, dan hewan peliharaan eksotik"
+    },
+    "Pet Adoption Guide": {
+      "n": "Panduan Adopsi Hewan Peliharaan",
+      "d": "Navigasikan proses adopsi hewan peliharaan dengan sukses"
+    },
+    "Tiny House Builder": {
+      "n": "Pembangun Rumah Kecil",
+      "d": "Rencanakan dan bangun rumah mungil selangkah demi selangkah"
+    },
+    "Workshop Setup Guide": {
+      "n": "Panduan Pengaturan Lokakarya",
+      "d": "Merancang dan melengkapi bengkel rumah"
+    },
+    "Coupon Strategy Planner": {
+      "n": "Perencana Strategi Kupon",
+      "d": "Maksimalkan penghematan dengan kupon strategis"
+    },
+    "Secondhand Shopping Guide": {
+      "n": "Panduan Belanja Barang Bekas",
+      "d": "Temukan barang berkualitas di toko barang bekas dan online"
+    },
+    "Theological Study Guide": {
+      "n": "Panduan Studi Teologi",
+      "d": "Menyelami lebih dalam konsep dan doktrin teologis"
+    },
+    "Interfaith Dialogue Guide": {
+      "n": "Panduan Dialog Antaragama",
+      "d": "Memfasilitasi percakapan antaragama yang saling menghormati"
+    },
+    "Marathon Training Plan": {
+      "n": "Rencana Pelatihan Maraton",
+      "d": "Selesaikan pelatihan maraton dari sofa hingga 26.2"
+    },
+    "Youth Sports Coach": {
+      "n": "Pelatih Olahraga Remaja",
+      "d": "Merencanakan praktik dan pengembangan olahraga remaja"
+    },
+    "Woodworking Project": {
+      "n": "Proyek Pengerjaan Kayu",
+      "d": "Rencanakan proyek pengerjaan kayu dengan daftar dan langkah potong"
+    },
+    "Vinyl Record Guide": {
+      "n": "Panduan Rekaman Vinyl",
+      "d": "Mulai dan kurasi koleksi piringan hitam"
+    },
+    "Home Brewing Guide": {
+      "n": "Panduan Pembuatan Bir Rumahan",
+      "d": "Seduh bir atau anggur di rumah dari awal hingga akhir"
+    },
+    "Financial Freedom Roadmap": {
+      "n": "Peta Jalan Kebebasan Finansial",
+      "d": "Petakan jalan Anda menuju kemandirian finansial"
+    },
+    "Midlife Career Change": {
+      "n": "Perubahan Karir Paruh Baya",
+      "d": "Arahkan transisi karier pada usia berapa pun"
+    },
+    "AI Wallpaper Creator": {
+      "n": "Pembuat Wallpaper AI",
+      "d": "Hasilkan wallpaper menakjubkan untuk perangkat apa pun"
+    },
+    "Tattoo Design Prompt": {
+      "n": "Perintah Desain Tato",
+      "d": "Buat konsep desain tato khusus dengan AI"
+    },
+    "DJ Set Planner": {
+      "n": "Perencana Perangkat DJ",
+      "d": "Rencanakan set DJ dengan pemilihan trek dan transisi"
+    },
+    "Music Theory Tutor": {
+      "n": "Guru Teori Musik",
+      "d": "Pelajari konsep teori musik dengan latihan"
+    },
+    "Podcast Video Setup": {
+      "n": "Pengaturan Video Podcast",
+      "d": "Siapkan podcasting video mulai dari perlengkapan hingga pengeditan"
+    },
+    "Wedding Video Plan": {
+      "n": "Paket Video Pernikahan",
+      "d": "Rencanakan videografi pernikahan mulai dari upacara hingga pengeditan"
+    },
+    "Memoir Chapter Writer": {
+      "n": "Penulis Bab Memoar",
+      "d": "Tulis bab memoar yang menarik dari kisah hidup"
+    },
+    "Haiku Generator": {
+      "n": "Pembuat Haiku",
+      "d": "Buat puisi haiku dengan tema apa pun"
+    },
+    "TikTok Content Strategy": {
+      "n": "Strategi Konten TikTok",
+      "d": "Bangun strategi pertumbuhan TikTok dengan ide konten"
+    },
+    "YouTube Community Post": {
+      "n": "Postingan Komunitas YouTube",
+      "d": "Buat postingan komunitas YouTube yang menarik"
+    },
+    "Podcast Monetization Plan": {
+      "n": "Rencana Monetisasi Podcast",
+      "d": "Strategi untuk memonetisasi podcast Anda"
+    },
+    "AI Tool Comparison Guide": {
+      "n": "Panduan Perbandingan Alat AI",
+      "d": "Bandingkan alat AI untuk kasus penggunaan tertentu"
+    },
+    "Code Snippet Library": {
+      "n": "Perpustakaan Cuplikan Kode",
+      "d": "Atur dan dokumentasikan cuplikan kode yang dapat digunakan kembali"
+    },
+    "Tech Stack Selector": {
+      "n": "Pemilih Tumpukan Teknologi",
+      "d": "Pilih tumpukan teknologi yang tepat untuk proyek Anda"
+    },
+    "Privacy Compliance Guide": {
+      "n": "Panduan Kepatuhan Privasi",
+      "d": "Pastikan aplikasi Anda memenuhi peraturan privasi"
+    },
+    "API Security Audit": {
+      "n": "Audit Keamanan API",
+      "d": "Audit titik akhir API Anda untuk mengetahui kerentanan keamanan"
+    },
+    "AI Hackathon Project": {
+      "n": "Proyek Hackathon AI",
+      "d": "Rencanakan proyek hackathon yang berfokus pada AI secara menyeluruh"
+    },
+    "Mobile Game Concept": {
+      "n": "Konsep Game Seluler",
+      "d": "Rancang game seluler mulai dari konsep hingga monetisasi"
+    },
+    "Drone Photography Guide": {
+      "n": "Panduan Fotografi Drone",
+      "d": "Rencanakan misi dan pengambilan foto udara"
+    },
+    "NFT Art Collection": {
+      "n": "Koleksi Seni NFT",
+      "d": "Merencanakan dan membuat koleksi seni digital"
+    },
+    "Freelancer Tax Guide": {
+      "n": "Panduan Pajak Freelancer",
+      "d": "Menavigasi pajak dan pemotongan wirausaha"
+    },
+    "Crypto Portfolio Builder": {
+      "n": "Pembuat Portofolio Kripto",
+      "d": "Bangun portofolio mata uang kripto yang terdiversifikasi"
+    },
+    "Azure Service Guide": {
+      "n": "Panduan Layanan Azure",
+      "d": "Pilih dan konfigurasikan layanan cloud Azure"
+    },
+    "Wedding Speech Writer": {
+      "n": "Penulis Pidato Pernikahan",
+      "d": "Tulis pidato pernikahan dan bersulang yang menyentuh hati"
+    },
+    "Nonprofit Startup Guide": {
+      "n": "Panduan Startup Nirlaba",
+      "d": "Mulai organisasi nirlaba dari awal"
+    },
+    "Home Addition Planner": {
+      "n": "Perencana Penambahan Rumah",
+      "d": "Rencanakan penambahan rumah mulai dari perizinan hingga pembangunan"
+    },
+    "Arduino Project Planner": {
+      "n": "Perencana Proyek Arduino",
+      "d": "Rencanakan proyek elektronik berbasis Arduino"
+    },
+    "Digital Wellness Plan": {
+      "n": "Rencana Kesehatan Digital",
+      "d": "Ciptakan hubungan yang sehat dengan teknologi"
+    },
+    "SWOT Analysis Tool": {
+      "n": "Alat Analisis SWOT",
+      "d": "Analisis strategis kekuatan, kelemahan, peluang, ancaman"
+    },
+    "Meeting Agenda Builder": {
+      "n": "Pembuat Agenda Rapat",
+      "d": "Buat agenda pertemuan terstruktur dengan blok waktu"
+    },
+    "OKR Framework Builder": {
+      "n": "Pembuat Kerangka OKR",
+      "d": "Tetapkan tujuan dan hasil utama untuk tim"
+    },
+    "Vendor Negotiation Prep": {
+      "n": "Persiapan Negosiasi Vendor",
+      "d": "Mempersiapkan negosiasi vendor dan pemasok"
+    },
+    "Franchise Evaluation Guide": {
+      "n": "Panduan Evaluasi Waralaba",
+      "d": "Evaluasi peluang waralaba secara sistematis"
+    },
+    "Remote Work Policy Writer": {
+      "n": "Penulis Kebijakan Kerja Jarak Jauh",
+      "d": "Buat kebijakan kerja jarak jauh yang komprehensif"
+    },
+    "Diversity Hiring Plan": {
+      "n": "Rencana Perekrutan Keberagaman",
+      "d": "Membangun praktik dan saluran perekrutan yang inklusif"
+    },
+    "Freelance Contract Template": {
+      "n": "Templat Kontrak Freelance",
+      "d": "Buat perjanjian layanan freelance profesional"
+    },
+    "Personal Website Planner": {
+      "n": "Perencana Situs Web Pribadi",
+      "d": "Rencanakan dan susun situs portofolio profesional Anda"
+    },
+    "Intermittent Fasting Guide": {
+      "n": "Panduan Puasa Intermiten",
+      "d": "Rancang protokol puasa intermiten"
+    },
+    "Posture Improvement Plan": {
+      "n": "Rencana Perbaikan Postur",
+      "d": "Perbaiki masalah postur tubuh dengan olahraga dan kebiasaan"
+    },
+    "Notion Template Builder": {
+      "n": "Pembuat Templat Gagasan",
+      "d": "Rancang templat ruang kerja Notion untuk alur kerja apa pun"
+    },
+    "Automation Workflow Builder": {
+      "n": "Pembuat Alur Kerja Otomatisasi",
+      "d": "Rancang alur kerja otomatisasi dengan Zapier atau Make"
+    },
+    "Agile Sprint Planner": {
+      "n": "Perencana Sprint yang tangkas",
+      "d": "Rencanakan sprint tangkas dengan poin cerita dan kecepatan"
+    },
+    "Product Roadmap Builder": {
+      "n": "Pembuat Peta Jalan Produk",
+      "d": "Buat peta jalan produk dengan pencapaian dan tema"
+    },
+    "TOEFL Prep Guide": {
+      "n": "Panduan Persiapan TOEFL",
+      "d": "Mempersiapkan ujian TOEFL dengan strategi belajar"
+    },
+    "Business English Coach": {
+      "n": "Pelatih Bahasa Inggris Bisnis",
+      "d": "Meningkatkan komunikasi bahasa Inggris profesional"
+    },
+    "Brand Identity Designer": {
+      "n": "Desainer Identitas Merek",
+      "d": "Buat pedoman identitas visual merek yang kohesif"
+    },
+    "UX Research Plan": {
+      "n": "Rencana Penelitian UX",
+      "d": "Rencanakan riset pengalaman pengguna untuk produk digital"
+    },
+    "Data Storytelling Guide": {
+      "n": "Panduan Bercerita Data",
+      "d": "Ubah wawasan data menjadi narasi yang menarik"
+    },
+    "AI Model Evaluation": {
+      "n": "Evaluasi Model AI",
+      "d": "Evaluasi dan bandingkan kinerja model pembelajaran mesin"
+    },
+    "3D Printing Project": {
+      "n": "Proyek Pencetakan 3D",
+      "d": "Rencanakan proyek pencetakan 3D mulai dari desain hingga pencetakan"
+    },
+    "Electrical Circuit Designer": {
+      "n": "Perancang Sirkuit Listrik",
+      "d": "Merancang rangkaian listrik dengan pemilihan komponen"
+    },
+    "Side Hustle Finder": {
+      "n": "Pencari penghasilan tambahan",
+      "d": "Temukan ide penghasilan tambahan berdasarkan keahlian Anda"
+    },
+    "Passive Income Blueprint": {
+      "n": "Rencana pendapatan pasif",
+      "d": "Bangun strategi pendapatan pasif yang disesuaikan dengan situasi Anda"
+    },
+    "Savings Challenge Generator": {
+      "n": "Generator tantangan menabung",
+      "d": "Buat rencana tantangan menabung yang disesuaikan"
+    },
+    "Negotiate Any Bill": {
+      "n": "Negosiator tagihan",
+      "d": "Skrip untuk menegosiasikan dan menurunkan tagihan berulang Anda"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Peluncur toko Etsy",
+      "d": "Rencana langkah demi langkah untuk meluncurkan dan mengembangkan toko Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Perencana saluran YouTube",
+      "d": "Rencanakan dan luncurkan saluran YouTube yang menguntungkan"
+    },
+    "Rental Income Analyzer": {
+      "n": "Penganalisis pendapatan sewa",
+      "d": "Analisis potensi pengembalian properti sewaan"
+    },
+    "Online Course Creator": {
+      "n": "Pembuat kursus online",
+      "d": "Rencanakan dan susun kursus online untuk dijual"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Pemaksimal kupon & cashback",
+      "d": "Maksimalkan penghematan dengan kupon, cashback, dan hadiah"
+    },
+    "Dropshipping Store Setup": {
+      "n": "Pengaturan toko dropshipping",
+      "d": "Rencanakan bisnis dropshipping dari nol"
+    },
+    "Gig Economy Optimizer": {
+      "n": "Pengoptimal ekonomi gig",
+      "d": "Maksimalkan penghasilan dari aplikasi gig seperti Uber, DoorDash, TaskRabbit"
+    }
+  },
+  "fields": {
+    "budget": "anggaran",
+    "topic": "topik",
+    "duration": "durasi",
+    "level": "tingkat",
+    "style": "gaya",
+    "timeline": "garis waktu",
+    "product": "produk",
+    "audience": "penonton",
+    "tone": "nada",
+    "industry": "industri",
+    "theme": "tema",
+    "platform": "platform",
+    "location": "lokasi",
+    "experience": "pengalaman",
+    "genre": "genre",
+    "frequency": "frekuensi",
+    "goals": "tujuan",
+    "format": "memformat",
+    "season": "musim",
+    "projectName": "nama proyek",
+    "showSteps": "menunjukkan langkah-langkah",
+    "goal": "tujuan",
+    "destination": "tujuan",
+    "subject": "subjek",
+    "equipment": "peralatan",
+    "targetAudience": "target audiens",
+    "language": "bahasa",
+    "problem": "masalah",
+    "categories": "kategori",
+    "gradeLevel": "tingkat kelas",
+    "mood": "suasana hati",
+    "role": "peran",
+    "companyName": "nama perusahaan",
+    "company": "perusahaan",
+    "title": "judul",
+    "setting": "pengaturan",
+    "date": "tanggal",
+    "environment": "lingkungan",
+    "state": "negara bagian",
+    "jurisdiction": "yurisdiksi",
+    "priorities": "prioritas",
+    "target_audience": "target audiens",
+    "deadline": "batas waktu",
+    "childAge": "usia anak",
+    "guestCount": "jumlah tamu",
+    "timeframe": "jangka waktu",
+    "interests": "kepentingan",
+    "concerns": "kekhawatiran",
+    "region": "wilayah",
+    "tools": "alat",
+    "category": "kategori",
+    "constraints": "kendala",
+    "projectType": "jenis proyek",
+    "venue": "tempat",
+    "focusArea": "daerah fokus",
+    "targetLanguage": "bahasa sasaran",
+    "framework": "kerangka kerja",
+    "domain": "domain",
+    "purpose": "tujuan",
+    "age": "usia",
+    "teamSize": "ukuran tim",
+    "researchQuestion": "pertanyaan penelitian",
+    "context": "konteks",
+    "output_format": "format keluaran",
+    "task": "tugas",
+    "channels": "saluran",
+    "servings": "porsi",
+    "skillLevel": "tingkat keterampilan",
+    "occasion": "kesempatan",
+    "climate": "iklim",
+    "zone": "zona",
+    "activities": "kegiatan",
+    "attendees": "peserta",
+    "objectives": "tujuan",
+    "characters": "karakter",
+    "length": "panjang",
+    "niche": "ceruk",
+    "scope": "ruang lingkup",
+    "stakeholders": "pemangku kepentingan",
+    "focus": "fokus",
+    "size": "ukuran",
+    "homeType": "tipe rumah",
+    "sport": "olahraga",
+    "application": "aplikasi",
+    "department": "departemen",
+    "cta": "cta",
+    "word_count": "jumlah kata",
+    "period": "periode",
+    "severity": "tingkat keparahan",
+    "difficulty": "kesulitan",
+    "skills": "keterampilan",
+    "materials": "bahan",
+    "methodology": "metodologi",
+    "cuisine": "masakan",
+    "lifestyle": "gaya hidup",
+    "year": "tahun",
+    "petType": "tipe hewan peliharaan",
+    "complexity": "kompleksitas",
+    "deliverables": "kiriman",
+    "dataType": "tipe data",
+    "hours_per_week": "hours per week",
+    "income_goal": "income goal",
+    "starting_capital": "starting capital",
+    "risk_tolerance": "risk tolerance",
+    "time_commitment": "time commitment",
+    "skill": "skill",
+    "experience_years": "experience years",
+    "expenses_monthly": "monthly expenses",
+    "hours_available": "hours available",
+    "target_income": "target income",
+    "savings_goal": "savings goal",
+    "current_savings": "current savings",
+    "monthly_income": "monthly income",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "content type",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "monthly spending",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}

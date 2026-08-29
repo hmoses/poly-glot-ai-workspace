@@ -1,0 +1,298 @@
+{
+  "pills": {
+    "all": "Duka",
+    "makemoney": "💰 Kudi",
+    "free": "⭐ Kyauta",
+    "money": "💰 Kasuwanci",
+    "coding": "💻 Shirye-shirye",
+    "ai": "🤖 AI",
+    "writing": "✍️ Rubutu",
+    "marketing": "📢 Tallace-tallace",
+    "sales": "🤝 Sayarwa",
+    "school": "📚 Ilimi",
+    "research": "🔬 Bincike",
+    "career": "🚀 Sana'a",
+    "legal": "⚖️ Shari'a",
+    "finance": "📊 Kudi",
+    "health": "🏥 Lafiya",
+    "cooking": "🍳 Girki",
+    "garden": "🌱 Lambu",
+    "realestate": "🏠 Gidaje",
+    "auto": "🚗 Motoci",
+    "travel": "✈️ Tafiya",
+    "image": "🎨 AI na Hoto",
+    "music": "🎵 Kida",
+    "video": "🎬 Bidiyo",
+    "social": "📱 Kafofin Watsa Labarai",
+    "startup": "🦄 Fara Kasuwanci",
+    "ecommerce": "🛒 Kasuwancin Yanar Gizo",
+    "productivity": "⏱ Aiki",
+    "diy": "🔨 Yi Da Kanka",
+    "event": "🎉 Bukukuwa",
+    "parent": "👶 Tarbiyya",
+    "pets": "🐾 Dabbobi",
+    "sports": "⚽ Wasanni",
+    "wellness": "🧘 Lafiya",
+    "language": "🌍 Harsuna",
+    "security": "🔒 Tsaro",
+    "datascience": "📈 Kimiyyar Bayanai",
+    "chemistry": "🧪 Ilmin Sunadarai",
+    "biology": "🧬 Ilmin Halitta",
+    "physics": "⚛️ Kimiyyar Lissafi",
+    "math": "🔢 Lissafi",
+    "time": "⏱ Lokaci"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "Kayan Takaita",
+      "d": "Takaita kowane abun ciki zuwa takaitaccen bayani"
+    },
+    "Technical Documentation": {
+      "n": "Takaddun Fasaha",
+      "d": "Kirkiri takaddun fasaha masu tsafta"
+    },
+    "YouTube Script": {
+      "n": "Rubutun YouTube",
+      "d": "Cikakken rubutun bidiyo tare da ndoano da CTA"
+    },
+    "LinkedIn Post Writer": {
+      "n": "Mai Rubuta Sakon LinkedIn",
+      "d": "Sakonni na LinkedIn masu jan hankali"
+    },
+    "Code Review Assistant": {
+      "n": "Mataimaki na Duba Lambar",
+      "d": "Duba lambar sosai tare da shawarwari"
+    },
+    "Content Writer": {
+      "n": "Mai Rubuta Abun Ciki",
+      "d": "Kirkiri abun ciki na gwani don kowane masu sauraro"
+    },
+    "Data Analyst": {
+      "n": "Mai Nazarin Bayanai",
+      "d": "Nazari bayanai kuma samu mahimman bayanai"
+    },
+    "Side Hustle Finder": {
+      "n": "Mai Nemo Aikin Gefe",
+      "d": "Gano ra'ayoyin aikin gefe bisa basira ku"
+    },
+    "Passive Income Blueprint": {
+      "n": "Shirin Samun Kudin Shiga Ba Tare Da Aiki Ba",
+      "d": "Gina dabara ta samun kudin shiga ba tare da aiki ba"
+    },
+    "Freelance Rate Calculator": {
+      "n": "Na'urar Lissafin Farashin Aikin Kai",
+      "d": "Lissafa farashin ku na aikin kai"
+    },
+    "Savings Challenge Generator": {
+      "n": "Mai Samar Da Kalubalen Ajiya",
+      "d": "Kirkiri shirin kalubalen ajiyar kudi"
+    },
+    "Negotiate Any Bill": {
+      "n": "Tattauna Kowane Bashi",
+      "d": "Rubuce-rubuce don tattaunawa da rage kudaden ku"
+    },
+    "Etsy Shop Launcher": {
+      "n": "Mai Bude Shagon Etsy",
+      "d": "Shirin mataki-mataki don bude shagon Etsy"
+    },
+    "YouTube Channel Planner": {
+      "n": "Mai Shirya Tashar YouTube",
+      "d": "Shirya kuma bude tashar YouTube mai riba"
+    },
+    "Rental Income Analyzer": {
+      "n": "Mai Nazarin Kudin Haya",
+      "d": "Nazari yiwuwar ribar kadarori na haya"
+    },
+    "Online Course Creator": {
+      "n": "Mai Kirkiran Darasi na Yanar Gizo",
+      "d": "Shirya kuma tsara darasi na yanar gizo don sayarwa"
+    },
+    "Creative Storyteller": {
+      "n": "Mai Ba Da Labari Mai Kirkira",
+      "d": "Labarai masu ban sha'awa na kowanne irin nau'i"
+    },
+    "Customer Support": {
+      "n": "Tallafin Abokin Ciniki",
+      "d": "Amsoshin tausayi da na gwani ga abokan ciniki"
+    },
+    "Meeting Summary": {
+      "n": "Takaitaccen Taron",
+      "d": "Takaitaccen taron da aka tsara sosai"
+    },
+    "Legal Contract Reviewer": {
+      "n": "Mai Duba Kwangilar Shari'a",
+      "d": "Duba kwangiloli na shari'a kuma gano hadari"
+    },
+    "Translation Expert": {
+      "n": "Gwanin Fassara",
+      "d": "Fassarar gwani tsakanin harsuna"
+    },
+    "Social Media Caption": {
+      "n": "Bayanin Kafofin Watsa Labarai",
+      "d": "Bayanai masu jan hankali don kafofin watsa labarai"
+    },
+    "Cold Email Outreach": {
+      "n": "Isar Da Sakon Imel",
+      "d": "Sakonnin imel masu inganci don samun sabbin abokan ciniki"
+    },
+    "Study Guide Creator": {
+      "n": "Mai Kirkiran Jagorar Karatu",
+      "d": "Cikakkun jagororin karatu don kowane batu"
+    },
+    "Bug Report Writer": {
+      "n": "Mai Rubuta Rahoton Matsala",
+      "d": "Rahotannin matsala da aka tsara sosai"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "Mai Kara Kuponi da Kudin Dawowa",
+      "d": "Kara ajiya da kuponi da kudin dawowa"
+    }
+  },
+  "fields": {
+    "budget": "kasafin kudi",
+    "topic": "batu",
+    "duration": "tsawon lokaci",
+    "level": "mataki",
+    "style": "salon",
+    "timeline": "jadawalin lokaci",
+    "product": "kaya",
+    "audience": "masu sauraro",
+    "tone": "muryar magana",
+    "industry": "masana'antu",
+    "theme": "theme",
+    "platform": "dandali",
+    "location": "wuri",
+    "experience": "gogewa",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "tsari",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "manufa",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "harshe",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "matsayi",
+    "companyName": "companyName",
+    "company": "kamfani",
+    "title": "taken",
+    "setting": "setting",
+    "date": "kwanan wata",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "rukuni",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "mahallin",
+    "output_format": "output format",
+    "task": "aiki",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "tsawo",
+    "niche": "fanni",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "basira",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "sa'o'i a mako",
+    "income_goal": "manufar samun kudin shiga",
+    "starting_capital": "jarin farawa",
+    "risk_tolerance": "juriyar hadari",
+    "time_commitment": "time commitment",
+    "experience_years": "experience years",
+    "expenses_monthly": "expenses monthly",
+    "hours_available": "hours available",
+    "target_income": "kudin shiga da ake so",
+    "savings_goal": "manufar ajiya",
+    "current_savings": "current savings",
+    "monthly_income": "kudin shiga na wata",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "nau'in abun ciki",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "kashe kudin wata",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}
