@@ -42,7 +42,8 @@ import {
   localizedFieldLabel,
   resolveLanguage,
 } from "./localization.js";
-import { trackToolCall } from "./analytics.js";
+import { trackToolCall, analyticsContext } from "./analytics.js";
+import { expandedTrack, recordError } from "./analytics-expansion.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
@@ -217,8 +218,34 @@ function createPolyglotServer(requestAuthToken = "") {
       token: extra?.authInfo?.token || extra?.authInfo?.accessToken || requestAuthToken || "",
     },
   });
+  // Combined analytics: raw event + expansion rollups + error recording
+  const track = (toolName, extra, metadata = {}) => {
+    trackToolCall(toolName, extra, requestAuthToken, metadata);
+    const ctx = analyticsContext(extra, requestAuthToken);
+    expandedTrack({
+      toolName,
+      userKey: ctx.userKey,
+      sessionKey: ctx.sessionKey,
+      clientName: ctx.clientName,
+      authenticated: ctx.authenticated,
+      entitlementState: metadata.entitlementState || null,
+      metadata,
+    });
+  };
+  const trackError = (toolName, err, extra) => {
+    const ctx = analyticsContext(extra, requestAuthToken);
+    recordError({
+      toolName,
+      errorType: err?.message || String(err),
+      clientName: ctx.clientName,
+      userKey: ctx.userKey,
+      sessionKey: ctx.sessionKey,
+      metadata: { stack: false },
+    });
+  };
+
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.5.0" },
+    { name: "polyglot-ai-workspace", version: "1.6.0" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, and prepare Compare Mode runs across multiple AI providers. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server." }
   );
 
@@ -237,7 +264,7 @@ function createPolyglotServer(requestAuthToken = "") {
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async ({ uiLanguage = "EN" }, extra) => {
-    trackToolCall("get_language_options", extra, requestAuthToken, {
+    track("get_language_options", extra, {
       success: true,
       uiLanguage,
       languageCount: languagePublicList().length,
@@ -258,7 +285,7 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async (_args, extra) => {
     const entitlement = await getEntitlement(entitlementContext(extra));
-    trackToolCall("get_subscription_status", extra, requestAuthToken, {
+    track("get_subscription_status", extra, {
       success: true,
       entitlementState: entitlement.state,
       isPro: entitlement.isPro,
@@ -281,7 +308,7 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, limit: 12, uiLanguage: localization.uiLanguage.code }, entitlement);
-    trackToolCall("open_workspace", extra, requestAuthToken, {
+    track("open_workspace", extra, {
       success: true,
       query: query ? "provided" : "empty",
       resultCount: results.length,
@@ -310,7 +337,7 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, goal, plan, limit, uiLanguage: localization.uiLanguage.code }, entitlement);
-    trackToolCall("search_templates", extra, requestAuthToken, {
+    track("search_templates", extra, {
       success: true,
       query: query ? "provided" : "empty",
       goal: goal || null,
@@ -345,7 +372,7 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const access = templateAccess(template, entitlement);
-    trackToolCall("get_template", extra, requestAuthToken, {
+    track("get_template", extra, {
       success: access.allowed,
       templateName: template.name,
       templatePlan: template.plan,
@@ -392,7 +419,7 @@ function createPolyglotServer(requestAuthToken = "") {
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
       locked.structuredContent.localization = localization;
-      trackToolCall("build_prompt", extra, requestAuthToken, {
+      track("build_prompt", extra, {
         success: false, locked: true, templateName: template.name, templatePlan: template.plan,
         lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
       });
@@ -405,7 +432,7 @@ function createPolyglotServer(requestAuthToken = "") {
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
         locked.structuredContent.localization = localization;
-        trackToolCall("build_prompt", extra, requestAuthToken, {
+        track("build_prompt", extra, {
           success: false, locked: true, templateName: template.name, templatePlan: template.plan,
           lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
         });
@@ -424,7 +451,7 @@ function createPolyglotServer(requestAuthToken = "") {
     }
     const missingFields = placeholders(body);
     body = applyLanguageInstructions(body, localization.inputLanguage.code, localization.outputLanguage.code);
-    trackToolCall("build_prompt", extra, requestAuthToken, {
+    track("build_prompt", extra, {
       success: true,
       templateName: template.name,
       templatePlan: template.plan,
@@ -479,7 +506,7 @@ function createPolyglotServer(requestAuthToken = "") {
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
       locked.structuredContent.localization = localization;
-      trackToolCall("prepare_compare", extra, requestAuthToken, {
+      track("prepare_compare", extra, {
         success: false, locked: true, lockReason: "compare_locked",
         entitlementState: entitlement.state, isPro: entitlement.isPro,
       });
@@ -495,7 +522,7 @@ function createPolyglotServer(requestAuthToken = "") {
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
         locked.structuredContent.localization = localization;
-        trackToolCall("prepare_compare", extra, requestAuthToken, {
+        track("prepare_compare", extra, {
           success: false, locked: true, templateName: template.name, templatePlan: template.plan,
           lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
         });
@@ -516,7 +543,7 @@ function createPolyglotServer(requestAuthToken = "") {
     const unique = [...new Set(providers)];
     const targets = unique.map((id) => ({ id, ...COMPARE_PROVIDERS[id] }));
     const instructions = "Use exactly the same canonical prompt with each selected AI, collect the responses, then compare them side by side. Poly-Glot does not silently call competing AI services or transmit account credentials.";
-    trackToolCall("prepare_compare", extra, requestAuthToken, {
+    track("prepare_compare", extra, {
       success: true,
       sourceTemplate: sourceTemplate || null,
       hasCustomPrompt: Boolean(prompt),
@@ -581,6 +608,7 @@ const httpServer = createServer(async (req, res) => {
       await transport.handleRequest(req, res);
     } catch (error) {
       console.error("MCP request failed", error);
+      recordError({ toolName: "mcp_transport", errorType: error?.message || String(error), clientName: "unknown", userKey: null, sessionKey: null, metadata: {} });
       if (!res.headersSent) res.writeHead(500).end("Internal server error");
     }
     return;
