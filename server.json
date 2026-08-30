@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.hmoses/poly-glot-ai-workspace",
+  "title": "Poly-Glot AI Workspace",
+  "description": "Seven MCP tools. 1,000+ multilingual prompt templates across 38 languages.",
+  "version": "1.6.0",
+  "repository": {
+    "url": "https://github.com/hmoses/poly-glot-ai-workspace",
+    "source": "github",
+    "id": "1350794581"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp"
+    }
+  ]
+}
