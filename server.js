@@ -42,6 +42,7 @@ import {
   localizedFieldLabel,
   resolveLanguage,
 } from "./localization.js";
+import { trackToolCall } from "./analytics.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
@@ -235,7 +236,12 @@ function createPolyglotServer(requestAuthToken = "") {
       localization: localizationSchema,
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
-  }, async ({ uiLanguage = "EN" }) => {
+  }, async ({ uiLanguage = "EN" }, extra) => {
+    trackToolCall("get_language_options", extra, requestAuthToken, {
+      success: true,
+      uiLanguage,
+      languageCount: languagePublicList().length,
+    });
     const ui = resolveLanguage(uiLanguage);
     const localization = languageContext({ uiLanguage: ui.code, inputLanguage: ui.code, outputLanguage: ui.code });
     return {
@@ -252,6 +258,12 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async (_args, extra) => {
     const entitlement = await getEntitlement(entitlementContext(extra));
+    trackToolCall("get_subscription_status", extra, requestAuthToken, {
+      success: true,
+      entitlementState: entitlement.state,
+      isPro: entitlement.isPro,
+      trialActive: entitlement.trialActive,
+    });
     return {
       structuredContent: { view: "subscription", entitlement: entitlementSummary(entitlement) },
       content: [{ type: "text", text: `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.` }],
@@ -269,6 +281,14 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, limit: 12, uiLanguage: localization.uiLanguage.code }, entitlement);
+    trackToolCall("open_workspace", extra, requestAuthToken, {
+      success: true,
+      query: query ? "provided" : "empty",
+      resultCount: results.length,
+      uiLanguage: localization.uiLanguage.code,
+      entitlementState: entitlement.state,
+      isPro: entitlement.isPro,
+    });
     return {
       structuredContent: { view: "search", query, results, entitlement: entitlementSummary(entitlement), localization },
       content: [{ type: "text", text: `Opened Poly-Glot AI Workspace with ${results.length} template${results.length === 1 ? "" : "s"}.` }],
@@ -290,6 +310,16 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, goal, plan, limit, uiLanguage: localization.uiLanguage.code }, entitlement);
+    trackToolCall("search_templates", extra, requestAuthToken, {
+      success: true,
+      query: query ? "provided" : "empty",
+      goal: goal || null,
+      planFilter: plan || null,
+      resultCount: results.length,
+      uiLanguage: localization.uiLanguage.code,
+      entitlementState: entitlement.state,
+      isPro: entitlement.isPro,
+    });
     return {
       structuredContent: { view: "search", query, results, entitlement: entitlementSummary(entitlement), localization },
       content: [{ type: "text", text: results.length ? `Found ${results.length} Poly-Glot templates for “${query || "all templates"}”.` : `No Poly-Glot templates matched “${query}”.` }],
@@ -315,6 +345,16 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const access = templateAccess(template, entitlement);
+    trackToolCall("get_template", extra, requestAuthToken, {
+      success: access.allowed,
+      templateName: template.name,
+      templatePlan: template.plan,
+      locked: !access.allowed,
+      lockReason: access.reason || null,
+      uiLanguage: localization.uiLanguage.code,
+      entitlementState: entitlement.state,
+      isPro: entitlement.isPro,
+    });
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
       locked.structuredContent.localization = localization;
@@ -352,6 +392,10 @@ function createPolyglotServer(requestAuthToken = "") {
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
       locked.structuredContent.localization = localization;
+      trackToolCall("build_prompt", extra, requestAuthToken, {
+        success: false, locked: true, templateName: template.name, templatePlan: template.plan,
+        lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
+      });
       return locked;
     }
 
@@ -361,6 +405,10 @@ function createPolyglotServer(requestAuthToken = "") {
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
         locked.structuredContent.localization = localization;
+        trackToolCall("build_prompt", extra, requestAuthToken, {
+          success: false, locked: true, templateName: template.name, templatePlan: template.plan,
+          lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
+        });
         return locked;
       }
     }
@@ -376,6 +424,18 @@ function createPolyglotServer(requestAuthToken = "") {
     }
     const missingFields = placeholders(body);
     body = applyLanguageInstructions(body, localization.inputLanguage.code, localization.outputLanguage.code);
+    trackToolCall("build_prompt", extra, requestAuthToken, {
+      success: true,
+      templateName: template.name,
+      templatePlan: template.plan,
+      missingFieldCount: missingFields.length,
+      uiLanguage: localization.uiLanguage.code,
+      inputLanguage: localization.inputLanguage.code,
+      outputLanguage: localization.outputLanguage.code,
+      entitlementState: entitlement.state,
+      isPro: entitlement.isPro,
+      trialActive: entitlement.trialActive,
+    });
     return {
       structuredContent: { view: "prompt", name: localizedTemplateMeta(template, localization.uiLanguage.code).name, prompt: body, missingFields, outputLanguage: localization.outputLanguage.name, inputLanguage: localization.inputLanguage.name, entitlement: entitlementSummary(entitlement), localization },
       content: [
@@ -419,6 +479,10 @@ function createPolyglotServer(requestAuthToken = "") {
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
       locked.structuredContent.localization = localization;
+      trackToolCall("prepare_compare", extra, requestAuthToken, {
+        success: false, locked: true, lockReason: "compare_locked",
+        entitlementState: entitlement.state, isPro: entitlement.isPro,
+      });
       return locked;
     }
 
@@ -431,6 +495,10 @@ function createPolyglotServer(requestAuthToken = "") {
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
         locked.structuredContent.localization = localization;
+        trackToolCall("prepare_compare", extra, requestAuthToken, {
+          success: false, locked: true, templateName: template.name, templatePlan: template.plan,
+          lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
+        });
         return locked;
       }
       sourceTemplate = template.name;
@@ -448,6 +516,18 @@ function createPolyglotServer(requestAuthToken = "") {
     const unique = [...new Set(providers)];
     const targets = unique.map((id) => ({ id, ...COMPARE_PROVIDERS[id] }));
     const instructions = "Use exactly the same canonical prompt with each selected AI, collect the responses, then compare them side by side. Poly-Glot does not silently call competing AI services or transmit account credentials.";
+    trackToolCall("prepare_compare", extra, requestAuthToken, {
+      success: true,
+      sourceTemplate: sourceTemplate || null,
+      hasCustomPrompt: Boolean(prompt),
+      providerCount: unique.length,
+      providers: unique,
+      uiLanguage: localization.uiLanguage.code,
+      inputLanguage: localization.inputLanguage.code,
+      outputLanguage: localization.outputLanguage.code,
+      entitlementState: entitlement.state,
+      isPro: entitlement.isPro,
+    });
     return {
       structuredContent: { view: "compare", prompt: canonicalPrompt, sourceTemplate, providers: targets, instructions, entitlement: entitlementSummary(entitlement), localization },
       content: [
