@@ -1,8 +1,10 @@
 # Poly-Glot AI Workspace
 
-> 1,000+ expert AI prompt templates · 38 languages · Compare Mode · Embedded GUI
+> Seven MCP tools. One multilingual AI workspace.
 
-Remote MCP server with an embedded MCP Apps / ChatGPT Apps SDK GUI, server-side entitlements, and Apple-backed subscriptions.
+Search 1,000+ expert prompt templates, build structured prompts in 38 languages, and prepare the same workflow for multiple AI providers — all from your MCP client.
+
+Production remote MCP server with an embedded GUI, server-side entitlements, and Apple-backed subscriptions.
 
 ## MCP Endpoint
 
