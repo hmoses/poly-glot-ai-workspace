@@ -2,7 +2,7 @@
 
 > Seven MCP tools. One multilingual AI workspace.
 
-Search 1,000+ expert prompt templates, build structured prompts in 38 languages, and prepare the same workflow for multiple AI providers — all from your MCP client.
+Search 1,022 expert prompt templates, build structured prompts in 38 languages, and prepare the same workflow for multiple AI providers — all from your MCP client.
 
 Production remote MCP server with an embedded GUI, server-side entitlements, and Apple-backed subscriptions.
 
