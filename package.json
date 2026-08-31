@@ -13,7 +13,9 @@
     "migrate": "node scripts/migrate-neon.mjs",
     "sync": "node scripts/sync-catalog.mjs"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "@apple/app-store-server-library": "^2.0.0",
     "@modelcontextprotocol/ext-apps": "^1.0.1",
@@ -21,5 +23,6 @@
     "jose": "^6.0.0",
     "pg": "^8.16.0",
     "zod": "^3.25.76"
-  }
+  },
+  "license": "MIT"
 }
