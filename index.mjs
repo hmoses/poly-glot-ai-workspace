@@ -1,4 +1,3 @@
-// Neon deploy v15b - cache bust
 /**
  * Neon Functions entry point.
  * Exports { fetch } using Web Standard Request/Response APIs.
@@ -62,8 +61,15 @@ export default {
         });
       } catch (error) {
         console.error("MCP request failed", error);
-        const detail = { error: error?.message || String(error), stack: error?.stack || "no stack" };
-        return Response.json(detail, { status: 500 });
+        recordError({
+          toolName: "mcp_transport",
+          errorType: error?.message || String(error),
+          clientName: "unknown",
+          userKey: null,
+          sessionKey: null,
+          metadata: {},
+        });
+        return Response.json({ error: "Internal server error" }, { status: 500 });
       }
     }
 
