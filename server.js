@@ -575,53 +575,55 @@ function createPolyglotServer(requestAuthToken = "") {
   return server;
 }
 
-const port = Number(process.env.PORT ?? 8787);
 const MCP_PATH = "/mcp";
-const httpServer = createServer(async (req, res) => {
-  if (!req.url) return res.writeHead(400).end("Missing URL");
-  const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
-  if (req.method === "OPTIONS" && url.pathname === MCP_PATH) {
-    res.writeHead(204, {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "POST, GET, DELETE, OPTIONS",
-      "Access-Control-Allow-Headers": "content-type, mcp-session-id, authorization",
-      "Access-Control-Expose-Headers": "Mcp-Session-Id",
-    });
-    return res.end();
-  }
-  // the production runtime expose one public app port. Keep the MCP and
-  // entitlement APIs on the same HTTPS origin and dispatch entitlement routes
-  // before the MCP handler. This preserves one deployable container.
-  if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
-    return handleEntitlementRequest(req, res);
-  }
 
-  if (req.method === "GET" && url.pathname === "/") {
-    res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
-    return res.end(JSON.stringify({
-      name: "Poly-Glot AI Workspace MCP", status: "ok", endpoint: MCP_PATH, templates: templates.length,
-      freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, pricing: publicPricing(),
-    }));
-  }
-  if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
-    const authHeader = String(req.headers.authorization || "");
-    const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
-    const server = createPolyglotServer(requestAuthToken);
-    const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
-    res.on("close", () => { transport.close(); server.close(); });
-    try {
-      await server.connect(transport);
-      await transport.handleRequest(req, res);
-    } catch (error) {
-      console.error("MCP request failed", error);
-      recordError({ toolName: "mcp_transport", errorType: error?.message || String(error), clientName: "unknown", userKey: null, sessionKey: null, metadata: {} });
-      if (!res.headersSent) res.writeHead(500).end("Internal server error");
+// ── Exports for Neon Functions fetch handler (index.mjs) ──────────────
+export { createPolyglotServer, templates, MCP_PATH };
+
+// ── Local dev: Node HTTP server (skipped in Neon Functions) ───────────
+if (!process.env.NEON_FUNCTION) {
+  const port = Number(process.env.PORT ?? 8787);
+  const httpServer = createServer(async (req, res) => {
+    if (!req.url) return res.writeHead(400).end("Missing URL");
+    const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
+    if (req.method === "OPTIONS" && url.pathname === MCP_PATH) {
+      res.writeHead(204, {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST, GET, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "content-type, mcp-session-id, authorization",
+        "Access-Control-Expose-Headers": "Mcp-Session-Id",
+      });
+      return res.end();
     }
-    return;
-  }
-  res.writeHead(404).end("Not Found");
-});
-
-httpServer.listen(port, () => console.log(`Poly-Glot MCP listening on http://localhost:${port}${MCP_PATH}`));
+    if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
+      return handleEntitlementRequest(req, res);
+    }
+    if (req.method === "GET" && url.pathname === "/") {
+      res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
+      return res.end(JSON.stringify({
+        name: "Poly-Glot AI Workspace MCP", status: "ok", endpoint: MCP_PATH, templates: templates.length,
+        freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, pricing: publicPricing(),
+      }));
+    }
+    if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {
+      res.setHeader("Access-Control-Allow-Origin", "*");
+      res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
+      const authHeader = String(req.headers.authorization || "");
+      const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
+      const server = createPolyglotServer(requestAuthToken);
+      const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
+      res.on("close", () => { transport.close(); server.close(); });
+      try {
+        await server.connect(transport);
+        await transport.handleRequest(req, res);
+      } catch (error) {
+        console.error("MCP request failed", error);
+        recordError({ toolName: "mcp_transport", errorType: error?.message || String(error), clientName: "unknown", userKey: null, sessionKey: null, metadata: {} });
+        if (!res.headersSent) res.writeHead(500).end("Internal server error");
+      }
+      return;
+    }
+    res.writeHead(404).end("Not Found");
+  });
+  httpServer.listen(port, () => console.log(`Poly-Glot MCP listening on http://localhost:${port}${MCP_PATH}`));
+}
