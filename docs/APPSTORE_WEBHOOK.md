@@ -17,25 +17,62 @@ Hosted as a Neon Function: `webhook/index.mjs`
 
 ## Authentication Method
 
-The webhook verifies an `X-Webhook-Secret` header against `APPSTORE_WEBHOOK_SECRET` environment variable.
+**HMAC-SHA256** per [Apple's ASC webhook documentation](https://developer.apple.com/documentation/appstoreconnectapi/configuring-webhook-notifications).
 
-Apple's App Store Server Notifications V2 uses JWS-signed payloads. The receiver parses the signed notification but the primary auth gate is the shared secret header.
+When you register a webhook via the ASC API, you provide a `secret` value. Apple then:
+1. Computes HMAC-SHA256 of the POST body using your secret
+2. Sends the signature in the header: `x-apple-signature: hmacsha256=<hex-hash>`
+
+The webhook receiver:
+1. Reads the raw POST body
+2. Computes HMAC-SHA256 using `APPSTORE_WEBHOOK_SECRET`
+3. Compares in constant-time against Apple's provided signature
+4. Rejects on mismatch with HTTP 401
+
+**This is NOT the same as App Store Server Notifications V2** (which uses JWS-signed payloads). ASC webhooks are a separate system with plain JSON payloads and HMAC authentication.
 
 ## Event Types Used
 
-| Apple Event | Action | Description |
-|------------|--------|-------------|
-| Build `COMPLETE` | `STAGE` | Build upload processed → validate + stage |
-| Version `READY_FOR_DISTRIBUTION` | `PRODUCTION` | App approved → production eligible |
-| Other | `LOG_ONLY` | Recorded but no action taken |
+ASC webhook event types (from [WebhookEventType](https://developer.apple.com/documentation/appstoreconnectapi/webhookeventtype)):
 
-## Payload Fields Relied On
+| ASC Event Type | `attributes.newValue` | Action | Description |
+|---------------|----------------------|--------|-------------|
+| `buildBundleProcessingStateUpdated` | `VALID` | `STAGE` | Build processed successfully |
+| `buildBundleProcessingStateUpdated` | `FAILED` | `LOG_ONLY` | Build processing failed |
+| `appStoreVersionAppVersionStateUpdated` | `READY_FOR_DISTRIBUTION` | `PRODUCTION` | App approved by Apple |
+| `appStoreVersionAppVersionStateUpdated` | other | `LOG_ONLY` | Version state transition |
+| Ping | — | `PONG` | Test webhook delivery |
+| Other | — | `LOG_ONLY` | Recorded but no action taken |
 
-- `notificationType`
-- `data.bundleId` — must match `POLYGLOT_APP_BUNDLE_ID`
-- `data.platform` — iOS or macOS
-- `data.version` — marketing version
-- `data.buildState` or `data.versionState`
+## Payload Format (ASC Webhooks)
+
+```json
+{
+  "data": {
+    "type": "appStoreVersionAppVersionStateUpdated",
+    "id": "7c813492-...",
+    "version": 1,
+    "attributes": {
+      "newValue": "READY_FOR_DISTRIBUTION",
+      "oldValue": "IN_REVIEW",
+      "timestamp": "2025-04-16T05:00:52.745Z"
+    },
+    "relationships": {
+      "instance": {
+        "data": { "type": "appStoreVersions", "id": "ad7e6298-..." }
+      }
+    }
+  }
+}
+```
+
+## Fields Relied On
+
+- `data.type` — event type (e.g., `appStoreVersionAppVersionStateUpdated`)
+- `data.id` — unique event ID (used for idempotency)
+- `data.attributes.newValue` — new state value
+- `data.attributes.oldValue` — previous state value
+- `data.relationships.instance.data` — related resource (appStoreVersion or build)
 
 ## Bundle ID Filtering
 
@@ -82,9 +119,9 @@ Not yet deployed. Will be at a Neon Function URL once owner configures secrets a
 ## Security
 
 - HTTPS only
-- Shared secret validation
-- Bundle ID filtering
-- Idempotent by event ID (planned)
-- Rate limiting (planned)
+- HMAC-SHA256 signature verification (constant-time comparison)
+- Idempotent by event ID (in-memory set, bounded to 10K entries)
 - No secrets in logs
+- No raw signatures in logs
 - No private key material in responses
+- Proper HTTP status codes (401 for auth failures, 400 for malformed, 500 for server errors)

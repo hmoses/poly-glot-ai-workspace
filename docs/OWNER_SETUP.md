@@ -4,19 +4,39 @@
 
 For each Poly-Glot app record (iOS and macOS share bundle ID `ai.polyglot.workspace`):
 
-1. Open [App Store Connect](https://appstoreconnect.apple.com)
-2. Go to **Users and Access** → **Integrations** → **Webhooks**
-3. Click **Add Webhook**
-4. Select the Poly-Glot app
-5. Paste the production webhook endpoint URL (provided after Neon deployment)
-6. Configure the shared secret (generate a strong random value)
-7. Select event types: **Build Processing Complete**, **App Version Ready for Distribution**
-8. Save
-9. Use Apple's **Send Test Notification** to verify
-10. Check receiver logs for successful event receipt
-11. Verify GitHub workflow was triggered
+Webhooks are created via the [ASC API](https://developer.apple.com/documentation/appstoreconnectapi/configuring-webhook-notifications), not the ASC web UI.
 
-If iOS and macOS are separate App Store Connect records, configure both with the same webhook endpoint.
+1. Generate a strong random secret (e.g., `openssl rand -hex 32`)
+2. Store it as `APPSTORE_WEBHOOK_SECRET` in GitHub Secrets and Neon env vars
+3. Create the webhook via ASC API:
+   ```bash
+   curl -X POST https://api.appstoreconnect.apple.com/v1/webhooks \
+     -H "Authorization: Bearer $ASC_JWT" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "data": {
+         "type": "webhooks",
+         "attributes": {
+           "enabled": true,
+           "eventTypes": [
+             "APP_STORE_VERSION_APP_VERSION_STATE_UPDATED",
+             "BUILD_BUNDLE_PROCESSING_STATE_UPDATED"
+           ],
+           "name": "PolyGlot Auto-Sync",
+           "secret": "<your-secret>",
+           "url": "<production-webhook-url>/webhook"
+         },
+         "relationships": {
+           "app": { "data": { "type": "apps", "id": "6804499285" } }
+         }
+       }
+     }'
+   ```
+4. Test with a ping: `POST /v1/webhookPings` with the webhook ID
+5. Check receiver logs for `PONG` response
+6. Verify GitHub workflow was triggered
+
+**Authentication:** Apple uses HMAC-SHA256. Apple hashes the POST body with your secret and sends the signature in `x-apple-signature: hmacsha256=<hex>`. The receiver recomputes and compares in constant-time.
 
 ## GitHub — Repository Secrets
 

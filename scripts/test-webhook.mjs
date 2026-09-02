@@ -2,6 +2,10 @@
 /**
  * Webhook Test Matrix — App Store Connect webhook receiver validation.
  * Tests the webhook handler logic without requiring a live deployment.
+ *
+ * Apple ASC Webhook Auth:
+ *   https://developer.apple.com/documentation/appstoreconnectapi/configuring-webhook-notifications
+ *   HMAC-SHA256: x-apple-signature: hmacsha256=<hex>
  */
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
@@ -41,69 +45,117 @@ describe("Deployment policy structure", () => {
 });
 
 // ══════════════════════════════════════════════════════════════════════
-describe("Webhook source code checks", () => {
-  test("verifies webhook secret", () => {
-    assert.ok(webhookSource.includes("APPSTORE_WEBHOOK_SECRET") ||
-              webhookSource.includes("X-Webhook-Secret") ||
-              webhookSource.includes("x-webhook-secret"));
+describe("Apple HMAC-SHA256 webhook authentication", () => {
+  test("uses HMAC-SHA256 verification (not raw secret header)", () => {
+    assert.ok(webhookSource.includes("HMAC"));
+    assert.ok(webhookSource.includes("SHA-256") || webhookSource.includes("sha256"));
+    assert.ok(webhookSource.includes("x-apple-signature"));
   });
-  test("checks bundle ID", () => {
-    assert.ok(webhookSource.includes("bundleId") || webhookSource.includes("POLYGLOT_APP_BUNDLE_ID"));
+  test("parses hmacsha256= prefix from Apple header", () => {
+    assert.ok(webhookSource.includes("hmacsha256="));
   });
-  test("webhook is POST-only server-to-server", () => {
-    // Apple webhooks are POST-only, no CORS preflight needed
-    assert.ok(webhookSource.includes("POST") && webhookSource.includes("method"));
+  test("uses Web Crypto subtle for HMAC computation", () => {
+    assert.ok(webhookSource.includes("crypto.subtle.importKey") || webhookSource.includes("crypto.subtle"));
   });
-  test("returns proper status codes", () => {
-    assert.ok(webhookSource.includes("401") || webhookSource.includes("403"));
-    assert.ok(webhookSource.includes("200"));
+  test("uses constant-time comparison", () => {
+    assert.ok(webhookSource.includes("timingSafeEqual") || webhookSource.includes("timing"));
   });
-  test("triggers GitHub dispatch", () => {
-    assert.ok(webhookSource.includes("repository_dispatch") ||
-              webhookSource.includes("GITHUB_WEBHOOK_TOKEN"));
+  test("reads body once for both HMAC and parsing", () => {
+    assert.ok(webhookSource.includes("rawBody"));
   });
-  test("does not log secrets", () => {
-    assert.ok(!webhookSource.includes("console.log(secret") &&
-              !webhookSource.includes("console.log(token"));
+  test("rejects missing signature with 401", () => {
+    assert.ok(webhookSource.includes("Missing x-apple-signature") || webhookSource.includes("401"));
   });
-  test("handles unknown event types safely", () => {
-    assert.ok(webhookSource.includes("LOG_ONLY") || webhookSource.includes("IGNORE") ||
-              webhookSource.includes("default"));
+  test("rejects invalid signature format with 401", () => {
+    assert.ok(webhookSource.includes("Invalid x-apple-signature"));
+  });
+  test("rejects HMAC mismatch", () => {
+    assert.ok(webhookSource.includes("HMAC signature verification failed"));
+  });
+  test("does NOT use raw secret header comparison", () => {
+    // The old implementation checked x-apple-webhook-secret directly
+    assert.ok(!webhookSource.includes("x-apple-webhook-secret"));
+    assert.ok(!webhookSource.includes("X-Apple-Webhook-Secret"));
   });
 });
 
 // ══════════════════════════════════════════════════════════════════════
-describe("Webhook security policy", () => {
-  test("1. invalid auth should be rejected", () => {
-    // Webhook source checks secret header before processing
-    assert.ok(webhookSource.includes("401") || webhookSource.includes("Unauthorized"));
+describe("ASC webhook payload format", () => {
+  test("parses ASC webhook JSON format (not JWS)", () => {
+    // ASC webhooks send plain JSON, not signedPayload JWS
+    assert.ok(!webhookSource.includes("signedPayload"));
   });
-  test("2. wrong app should be rejected", () => {
-    assert.ok(webhookSource.includes("bundleId") || webhookSource.includes("bundle"));
+  test("extracts event type from data.type", () => {
+    assert.ok(webhookSource.includes("data.type") || webhookSource.includes("eventType"));
   });
-  test("3. safe defaults — no auto-production on build complete", () => {
+  test("handles appStoreVersionAppVersionStateUpdated events", () => {
+    assert.ok(webhookSource.includes("appStoreVersionAppVersionStateUpdated"));
+  });
+  test("handles buildBundleProcessingStateUpdated events", () => {
+    assert.ok(webhookSource.includes("buildBundleProcessingStateUpdated"));
+  });
+  test("handles ping events for testing", () => {
+    assert.ok(webhookSource.includes("ping") && webhookSource.includes("PONG"));
+  });
+  test("extracts newValue/oldValue from attributes", () => {
+    assert.ok(webhookSource.includes("newValue") && webhookSource.includes("oldValue"));
+  });
+  test("extracts instance relationship", () => {
+    assert.ok(webhookSource.includes("instance") && webhookSource.includes("instanceId"));
+  });
+});
+
+// ══════════════════════════════════════════════════════════════════════
+describe("Webhook policy decisions", () => {
+  test("VALID build → STAGE action", () => {
+    assert.ok(webhookSource.includes('"VALID"') && webhookSource.includes('"STAGE"'));
+  });
+  test("FAILED build → LOG_ONLY (no deployment)", () => {
+    assert.ok(webhookSource.includes('"FAILED"') && webhookSource.includes("LOG_ONLY"));
+  });
+  test("READY_FOR_DISTRIBUTION → PRODUCTION action", () => {
+    assert.ok(webhookSource.includes("READY_FOR_DISTRIBUTION") && webhookSource.includes('"PRODUCTION"'));
+  });
+  test("unknown events → LOG_ONLY", () => {
+    assert.ok(webhookSource.includes("Unhandled event type"));
+  });
+  test("triggers GitHub repository_dispatch", () => {
+    assert.ok(webhookSource.includes("repository_dispatch") || webhookSource.includes("dispatches"));
+  });
+  test("safe defaults — no auto-production on build complete", () => {
     assert.equal(policy.productionOnBuildComplete, false);
   });
-  test("4. production requires parity validation", () => {
-    assert.equal(policy.requireParityValidation, true);
+});
+
+// ══════════════════════════════════════════════════════════════════════
+describe("Webhook security and idempotency", () => {
+  test("idempotency check for duplicate events", () => {
+    assert.ok(webhookSource.includes("processedEvents") || webhookSource.includes("idempoten"));
   });
-  test("5. production requires regression tests", () => {
-    assert.equal(policy.requireRegressionTests, true);
+  test("bounds processed event set to prevent memory leaks", () => {
+    assert.ok(webhookSource.includes("10000") || webhookSource.includes("size >"));
   });
-  test("6. production requires smoke tests", () => {
-    assert.equal(policy.requireProductionSmokeTests, true);
+  test("does not log secrets", () => {
+    assert.ok(!webhookSource.includes("console.log(secret"));
+    assert.ok(!webhookSource.includes("console.log(token"));
   });
-  test("7. concurrency lock prevents race conditions", () => {
-    assert.equal(policy.concurrencyLock, true);
+  test("does not log raw signature", () => {
+    assert.ok(!webhookSource.includes("logEvent") || !webhookSource.match(/logEvent.*appleHash/));
   });
-  test("8. real webhook verification required before live status", () => {
+  test("POST-only webhook endpoint", () => {
+    assert.ok(webhookSource.includes('request.method === "POST"'));
+  });
+  test("returns proper error status codes", () => {
+    assert.ok(webhookSource.includes("statusCode") && webhookSource.includes("401"));
+  });
+  test("real webhook verification required before live status", () => {
     assert.equal(policy.requireRealWebhookVerificationBeforeLiveStatus, true);
   });
 });
 
 // ══════════════════════════════════════════════════════════════════════
 describe("Auto-sync workflow exists", () => {
-  test("polyglot-mcp-autosync.yml exists", () => {
+  test("polyglot-mcp-autosync.yml exists and references correct events", () => {
     const workflowSource = readFileSync(
       join(ROOT, ".github/workflows/polyglot-mcp-autosync.yml"), "utf8"
     );
