@@ -1,0 +1,8 @@
+{
+  "stageOnBuildComplete": true,
+  "productionOnReadyForDistribution": true,
+  "productionOnBuildComplete": false,
+  "requireParityValidation": true,
+  "requireMcpRegressionTests": true,
+  "requireProductionSmokeTests": true
+}

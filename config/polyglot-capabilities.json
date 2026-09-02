@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "entitlementVersion": "2026-09-02.1",
+  "plans": {
+    "free": {
+      "compare": false,
+      "premiumTemplates": false,
+      "crossPlatformTools": false,
+      "freeTemplateCount": 25,
+      "trialDays": 3
+    },
+    "trial": {
+      "compare": false,
+      "premiumTemplates": false,
+      "crossPlatformTools": true,
+      "freeTemplateCount": 25
+    },
+    "pro": {
+      "compare": true,
+      "premiumTemplates": true,
+      "crossPlatformTools": true,
+      "freeTemplateCount": 25
+    }
+  },
+  "features": {
+    "transcription": true,
+    "detectLanguage": true,
+    "translation": true,
+    "localization": true,
+    "compareMode": true,
+    "templateBrowsing": true,
+    "promptBuilding": true
+  },
+  "products": {
+    "monthly": {
+      "id": "ai.polyglot.workspace.pro.monthly",
+      "mcpPlanKey": "pro_monthly",
+      "price": 9.99,
+      "currency": "USD",
+      "interval": "month"
+    },
+    "annual": {
+      "id": "ai.polyglot.workspace.pro.annual",
+      "mcpPlanKey": "pro_annual",
+      "price": 79.99,
+      "currency": "USD",
+      "interval": "year",
+      "savingsLabel": "Save 33%"
+    }
+  },
+  "entitlementStates": [
+    "not_started",
+    "trial",
+    "expired",
+    "pro_monthly",
+    "pro_annual"
+  ],
+  "mcpTools": {
+    "open": [
+      "get_language_options",
+      "get_subscription_status"
+    ],
+    "entitlementAware": [
+      "open_workspace",
+      "search_templates",
+      "get_template",
+      "build_prompt"
+    ],
+    "proOnly": [
+      "prepare_compare"
+    ],
+    "proOrTrial": [
+      "transcribe_audio",
+      "detect_language",
+      "translate_text",
+      "localize_text"
+    ]
+  }
+}

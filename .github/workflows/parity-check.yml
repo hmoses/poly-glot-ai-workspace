@@ -1,0 +1,57 @@
+name: Parity Check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/polyglot-product-parity.json'
+      - 'config/polyglot-capabilities.json'
+      - 'pricing.js'
+      - 'entitlements.js'
+      - 'server.js'
+      - 'src/cross-platform-tools.js'
+      - 'data/widget-html.js'
+      - 'Generated/**'
+      - 'scripts/test-total-parity.mjs'
+      - 'scripts/validate-entitlement-parity.mjs'
+      - 'scripts/generate-apple-capabilities.mjs'
+  pull_request:
+    branches: [main]
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts 2>/dev/null || npm install --ignore-scripts
+
+      - name: Validate shared parity contract
+        run: node --test scripts/validate-entitlement-parity.mjs
+
+      - name: Verify generated Apple artifacts are current
+        run: node scripts/generate-apple-capabilities.mjs --check
+
+      - name: Run total parity tests
+        run: node --test scripts/test-total-parity.mjs
+
+      - name: Run MCP backend tests
+        run: npm test
+
+      - name: Generate parity matrix
+        if: always()
+        run: |
+          node --test scripts/test-total-parity.mjs 2>&1 | grep -A30 "PARITY MATRIX" > parity-matrix.txt || true
+          cat parity-matrix.txt
+
+      - name: Upload parity matrix
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: parity-matrix
+          path: parity-matrix.txt

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "parityVersion": "2026-09-02.1",
+  "plans": {
+    "free": {
+      "compare": false,
+      "premiumTemplates": false,
+      "crossPlatformTools": false,
+      "freeTemplateCount": 25,
+      "trialDays": 3
+    },
+    "trial": {
+      "compare": false,
+      "premiumTemplates": false,
+      "crossPlatformTools": true,
+      "freeTemplateCount": 25
+    },
+    "pro": {
+      "compare": true,
+      "premiumTemplates": true,
+      "crossPlatformTools": true,
+      "freeTemplateCount": 25
+    }
+  },
+  "features": {
+    "compare": {
+      "visible": true,
+      "freeAccess": false,
+      "trialAccess": false,
+      "proAccess": true,
+      "uiStateWhenLocked": "locked",
+      "lockLabel": "PRO",
+      "mcpTool": "prepare_compare",
+      "mcpGate": "compareAccess"
+    },
+    "premiumTemplates": {
+      "visible": true,
+      "freeAccess": false,
+      "trialAccess": false,
+      "proAccess": true,
+      "uiStateWhenLocked": "locked",
+      "lockLabel": "PRO",
+      "mcpTool": "build_prompt",
+      "mcpGate": "templateAccess"
+    },
+    "transcription": {
+      "visible": true,
+      "freeAccess": false,
+      "trialAccess": true,
+      "proAccess": true,
+      "uiStateWhenLocked": "locked",
+      "lockLabel": "PRO",
+      "mcpTool": "transcribe_audio",
+      "mcpGate": "requireEntitlement"
+    },
+    "detectLanguage": {
+      "visible": true,
+      "freeAccess": false,
+      "trialAccess": true,
+      "proAccess": true,
+      "uiStateWhenLocked": "locked",
+      "lockLabel": "PRO",
+      "mcpTool": "detect_language",
+      "mcpGate": "requireEntitlement"
+    },
+    "translation": {
+      "visible": true,
+      "freeAccess": false,
+      "trialAccess": true,
+      "proAccess": true,
+      "uiStateWhenLocked": "locked",
+      "lockLabel": "PRO",
+      "mcpTool": "translate_text",
+      "mcpGate": "requireEntitlement"
+    },
+    "localization": {
+      "visible": true,
+      "freeAccess": false,
+      "trialAccess": true,
+      "proAccess": true,
+      "uiStateWhenLocked": "locked",
+      "lockLabel": "PRO",
+      "mcpTool": "localize_text",
+      "mcpGate": "requireEntitlement"
+    },
+    "templateBrowsing": {
+      "visible": true,
+      "freeAccess": true,
+      "trialAccess": true,
+      "proAccess": true,
+      "uiStateWhenLocked": "visible_with_locks",
+      "mcpTool": "search_templates",
+      "mcpGate": "entitlementAware"
+    },
+    "promptBuilding": {
+      "visible": true,
+      "freeAccess": true,
+      "trialAccess": true,
+      "proAccess": true,
+      "uiStateWhenLocked": "gated_per_template",
+      "mcpTool": "build_prompt",
+      "mcpGate": "templateAccess"
+    }
+  },
+  "products": {
+    "monthly": {
+      "id": "ai.polyglot.workspace.pro.monthly",
+      "mcpPlanKey": "pro_monthly",
+      "price": 9.99,
+      "currency": "USD",
+      "interval": "month",
+      "label": "Pro Monthly"
+    },
+    "annual": {
+      "id": "ai.polyglot.workspace.pro.annual",
+      "mcpPlanKey": "pro_annual",
+      "price": 79.99,
+      "currency": "USD",
+      "interval": "year",
+      "label": "Pro Annual",
+      "savingsLabel": "Save 33%"
+    }
+  },
+  "entitlementStates": [
+    "not_started",
+    "trial",
+    "expired",
+    "pro_monthly",
+    "pro_annual"
+  ],
+  "languages": {
+    "count": 38,
+    "codes": [
+      "EN", "ES", "FR", "DE", "IT", "PT", "NL", "RU",
+      "ZH", "ZH_TW", "JA", "KO", "AR", "HI", "BN", "TR",
+      "PL", "SV", "NO", "DA", "FI", "EL", "HE", "ID",
+      "MS", "TH", "VI", "UK", "CS", "RO", "HU", "SK",
+      "HR", "CA", "AF", "SW", "HA", "AM"
+    ]
+  },
+  "messages": {
+    "trialStart": "25 free templates for 3 days.",
+    "trialExpired": "Your 3-day trial has ended.",
+    "proRequired": "A Pro subscription is required.",
+    "compareLocked": "Compare Mode requires a Pro subscription.",
+    "crossPlatformLocked": "A Pro subscription or active trial is required to use cross-platform language tools."
+  },
+  "mcpTools": {
+    "open": ["get_language_options", "get_subscription_status"],
+    "entitlementAware": ["open_workspace", "search_templates", "get_template", "build_prompt"],
+    "proOnly": ["prepare_compare"],
+    "proOrTrial": ["transcribe_audio", "detect_language", "translate_text", "localize_text"]
+  },
+  "uiViews": {
+    "locked": "lockedView",
+    "compareLocked": "compare_locked",
+    "search": "searchView",
+    "template": "templateView",
+    "prompt": "promptView",
+    "compare": "compareView",
+    "subscription": "renderEnt"
+  }
+}
