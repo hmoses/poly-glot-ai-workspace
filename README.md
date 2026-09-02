@@ -1,10 +1,10 @@
 # Poly-Glot AI Workspace
 
-> Seven MCP tools. One multilingual AI workspace.
+> Multilingual AI workspace and MCP server for prompt workflows, model comparison, speech-to-text, language detection, translation, and localization.
 
-Search 1,022 expert prompt templates, build structured prompts in 38 languages, and prepare the same workflow for multiple AI providers — all from your MCP client.
+Poly-Glot AI Workspace is a multilingual AI workspace and MCP server for reusable prompt workflows, model comparison, and cross-platform language tasks. Compatible MCP clients can use server-side speech-to-text, language detection, translation, and localization without depending on Apple-only frameworks. The native iOS and macOS apps continue to use and preserve Apple-native speech, localization, StoreKit, and entitlement behavior.
 
-Production remote MCP server with an embedded GUI, server-side entitlements, and Apple-backed subscriptions.
+Production remote MCP server with an embedded GUI, server-side entitlements, Apple-backed subscriptions, and cross-platform language capabilities.
 
 ## MCP Endpoint
 
@@ -58,15 +58,41 @@ Open the interactive Poly-Glot template browser and prompt editor with subscript
 
 **Parameters:** `query` (string), `uiLanguage` (string, default "EN")
 
+### `transcribe_audio`
+
+Transcribe supplied audio for cross-platform Poly-Glot workflows. Provide exactly one of audioUrl (HTTPS only) or audioBase64. Apple-native clients continue using Apple Speech.
+
+**Parameters:** `audioUrl` (string, HTTPS), `audioBase64` (string), `filename` (string), `mimeType` (string), `languageHint` (string), `prompt` (string), `detectLanguage` (boolean)
+
+### `detect_language`
+
+Detect the language of supplied text and map it to a supported Poly-Glot language from the 38-language catalog.
+
+**Parameters:** `text` (string, required)
+
+### `translate_text`
+
+Translate text into a supported Poly-Glot language. Preserves meaning, formatting, names, code, and URLs.
+
+**Parameters:** `text` (string, required), `sourceLanguage` (string, default "auto"), `targetLanguage` (string, required)
+
+### `localize_text`
+
+Localize text for a target language, locale, audience, and tone — not merely literal translation.
+
+**Parameters:** `text` (string, required), `targetLanguage` (string, required), `locale` (string), `audience` (string), `tone` (string)
+
 ## Features
 
 - **1,022 prompt templates** — 25 Free, 997 Pro
 - **38 languages** — independent UI, input, and output language controls
 - **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral
+- **Cross-platform voice & language** — server-side transcription, language detection, translation, and localization for non-Apple clients
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts
 - **3-day free trial** — 25 free templates, no credit card required
 - **Pro subscriptions** — $9.99/month or $79.99/year (Save 33%)
 - **Server-side entitlements** — Apple-backed subscription verification via Neon Postgres
+- **Apple-native path preserved** — Apple Speech, StoreKit, and native localization fully intact
 
 ## Endpoints
 
