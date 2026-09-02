@@ -8,11 +8,8 @@
  * Security note: language selection changes presentation/instructions only. It
  * never changes subscription state or bypasses template entitlement checks.
  */
-import { readFileSync, existsSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import widgetLocalesData from "./data/widget-locales-bundle.js";
+import localizationsData from "./data/localizations-bundle.js";
 
 export const SUPPORTED_LANGUAGES = Object.freeze([
   ["EN","English","🇺🇸"],["ES","Spanish","🇪🇸"],["FR","French","🇫🇷"],["DE","German","🇩🇪"],
@@ -30,7 +27,7 @@ export const SUPPORTED_LANGUAGES = Object.freeze([
 const byCode = new Map(SUPPORTED_LANGUAGES.map((x) => [x.code, x]));
 const byName = new Map(SUPPORTED_LANGUAGES.map((x) => [x.name.toLowerCase(), x]));
 const localeCache = new Map();
-const widgetLocales = JSON.parse(readFileSync(join(__dirname, "data", "widget-locales.json"), "utf8"));
+const widgetLocales = widgetLocalesData;
 
 export function resolveLanguage(value, fallback = "EN") {
   if (!value) return byCode.get(fallback) ?? byCode.get("EN");
@@ -55,12 +52,7 @@ export function localizedTemplateMeta(template, uiLanguage = "EN") {
   const lang = resolveLanguage(uiLanguage);
   if (lang.code === "EN") return { name: template.name, description: template.desc };
   if (!localeCache.has(lang.code)) {
-    const filename = `tpl_${lang.code.toLowerCase()}.json`;
-    const path = join(__dirname, "data", "localizations", filename);
-    let data = {};
-    if (existsSync(path)) {
-      try { data = JSON.parse(readFileSync(path, "utf8")); } catch { data = {}; }
-    }
+    const data = localizationsData[lang.code] || {};
     localeCache.set(lang.code, data);
   }
   const translated = localeCache.get(lang.code)?.templates?.[template.name];
