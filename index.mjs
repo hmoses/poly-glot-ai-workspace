@@ -40,14 +40,14 @@ export default {
 
     // MCP endpoint
     if (url.pathname === MCP_PATH && ["POST", "GET", "DELETE"].includes(request.method)) {
-      const authHeader = String(request.headers.get("authorization") || "");
-      const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
-      const server = createPolyglotServer(requestAuthToken);
-      const transport = new WebStandardStreamableHTTPServerTransport({
-        sessionIdGenerator: undefined,
-        enableJsonResponse: true,
-      });
       try {
+        const authHeader = String(request.headers.get("authorization") || "");
+        const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
+        const server = createPolyglotServer(requestAuthToken);
+        const transport = new WebStandardStreamableHTTPServerTransport({
+          sessionIdGenerator: undefined,
+          enableJsonResponse: true,
+        });
         await server.connect(transport);
         const response = await transport.handleRequest(request);
         // Inject CORS headers into the response
@@ -61,15 +61,8 @@ export default {
         });
       } catch (error) {
         console.error("MCP request failed", error);
-        recordError({
-          toolName: "mcp_transport",
-          errorType: error?.message || String(error),
-          clientName: "unknown",
-          userKey: null,
-          sessionKey: null,
-          metadata: {},
-        });
-        return Response.json({ error: "Internal server error" }, { status: 500 });
+        const detail = { error: error?.message || String(error), stack: error?.stack || "no stack" };
+        return Response.json(detail, { status: 500 });
       }
     }
 
