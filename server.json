@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.hmoses/poly-glot-ai-workspace",
   "title": "Poly-Glot AI Workspace",
-  "description": "Seven MCP tools. 1,000+ multilingual prompt templates across 38 languages.",
-  "version": "1.6.0",
+  "description": "Eleven MCP tools. 1,000+ multilingual prompt templates across 38 languages with cross-platform voice transcription, language detection, translation, and localization.",
+  "version": "1.7.0",
   "repository": {
     "url": "https://github.com/hmoses/poly-glot-ai-workspace",
     "source": "github",

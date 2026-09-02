@@ -44,6 +44,7 @@ import {
 } from "./localization.js";
 import { trackToolCall, analyticsContext } from "./analytics.js";
 import { expandedTrack, recordError } from "./analytics-expansion.js";
+import { registerCrossPlatformTools } from "./src/cross-platform-tools.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
@@ -245,7 +246,7 @@ function createPolyglotServer(requestAuthToken = "") {
   };
 
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.6.0" },
+    { name: "polyglot-ai-workspace", version: "1.7.0" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, and prepare Compare Mode runs across multiple AI providers. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server." }
   );
 
@@ -562,6 +563,18 @@ function createPolyglotServer(requestAuthToken = "") {
         { type: "text", text: canonicalPrompt },
       ],
     };
+  });
+
+  // ── Cross-platform voice & language tools (additive, Apple-safe) ────
+  registerCrossPlatformTools(server, {
+    languagePublicList,
+    resolveLanguage,
+    languageContext: (langCode) => {
+      const resolved = resolveLanguage(langCode);
+      return resolved?.name || "";
+    },
+    track,
+    trackError,
   });
 
   return server;
