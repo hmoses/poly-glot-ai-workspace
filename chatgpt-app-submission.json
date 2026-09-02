@@ -4,7 +4,7 @@
   "app_info": {
     "display_name": "Poly-Glot AI Workspace",
     "subtitle": "Build and compare AI prompts",
-    "description": "Poly-Glot AI Workspace helps users discover 1,000+ expert prompt workflows, work across 38 UI/input/output languages, build finished prompts, and prepare Compare Mode runs across multiple AI providers with subscription-aware access.",
+    "description": "Poly-Glot AI Workspace is a multilingual AI workspace for reusable prompt workflows, model comparison, language detection, translation, localization, and cross-platform speech-to-text. Compatible MCP clients use server-side language tools without depending on Apple-only frameworks.",
     "category": "PRODUCTIVITY"
   },
   "tools": {
@@ -88,6 +88,54 @@
       },
       "justifications": {
         "read_only_justification": "Returns the static list of 38 supported Poly-Glot UI, input, and output languages without changing user data or entitlement state.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "transcribe_audio": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "transcribe_audio processes user-supplied input and returns results without modifying any stored data.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "detect_language": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "detect_language processes user-supplied input and returns results without modifying any stored data.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "translate_text": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "translate_text processes user-supplied input and returns results without modifying any stored data.",
+        "open_world_justification": "Does not publish content or change any public or third-party system.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
+      }
+    },
+    "localize_text": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "localize_text processes user-supplied input and returns results without modifying any stored data.",
         "open_world_justification": "Does not publish content or change any public or third-party system.",
         "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
       }
