@@ -5,8 +5,8 @@
 - **Display name:** Poly-Glot AI Workspace
 - **Subtitle:** Build expert AI prompts
 - **Category:** Productivity
-- **Website:** https://poly-glot.ai/
-- **Support:** https://poly-glot.ai/support.html
+- **Website:** https://hmoses.github.io/poly-glot-site/
+- **Support:** https://hmoses.github.io/poly-glot-site/
 - **Mac App Store:** https://apps.apple.com/us/app/poly-glot-ai-workspace/id6804499285?mt=12
 
 ## Pricing represented by the MCP

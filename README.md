@@ -125,7 +125,7 @@ Local MCP endpoint: `http://localhost:8787/mcp`
 
 ## Links
 
-- [Website](https://poly-glot.ai)
+- [Website](https://hmoses.github.io/poly-glot-site/)
 - [Mac App Store](https://apps.apple.com/us/app/poly-glot-ai-workspace/id6804499285?mt=12)
 - [Hugging Face](https://huggingface.co/spaces/HWM2/poly-glot-ai-workspace)
-- [Support](https://poly-glot.ai/support.html)
+- [Support](https://hmoses.github.io/poly-glot-site/)
