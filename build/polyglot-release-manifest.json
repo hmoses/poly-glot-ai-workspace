@@ -1,0 +1,31 @@
+{
+  "gitCommit": "4393c5d",
+  "parityVersion": "2026-09-02.1",
+  "mcpVersion": "1.7.0",
+  "schemaVersion": 1,
+  "iOS": {
+    "marketingVersion": "1.0.3",
+    "buildNumber": "556",
+    "status": "WAITING_FOR_REVIEW"
+  },
+  "macOS": {
+    "marketingVersion": "2.5",
+    "buildNumber": "586",
+    "status": "WAITING_FOR_REVIEW"
+  },
+  "production": {
+    "endpoint": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp",
+    "deployId": "21",
+    "deployedAt": "2026-09-02T00:00:00Z",
+    "toolCount": 11,
+    "templateCount": 1022,
+    "languageCount": 38
+  },
+  "tests": {
+    "mcpMain": 63,
+    "entitlementParity": 24,
+    "totalParity": 72,
+    "total": 159
+  },
+  "timestamp": "2026-09-02T13:30:00Z"
+}

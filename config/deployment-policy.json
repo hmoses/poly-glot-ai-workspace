@@ -3,6 +3,8 @@
   "productionOnReadyForDistribution": true,
   "productionOnBuildComplete": false,
   "requireParityValidation": true,
-  "requireMcpRegressionTests": true,
-  "requireProductionSmokeTests": true
+  "requireRegressionTests": true,
+  "requireProductionSmokeTests": true,
+  "requireRealWebhookVerificationBeforeLiveStatus": true,
+  "concurrencyLock": true
 }

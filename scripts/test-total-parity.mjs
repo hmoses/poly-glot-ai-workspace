@@ -39,12 +39,23 @@ try {
 // iOS/macOS sources (may not be in same repo)
 const IOS_PATH = "../Desktop/polyglot-workspace/ios/ios/App/App/IAPManager.swift";
 const MAC_PATH = "../Desktop/polyglot-workspace/mac/PolyGlotAI/PolyGlotAI/Sources/IAPManagerMac.swift";
+const IOS_CAP_PATH = "../Desktop/polyglot-workspace/ios/ios/App/App/PolyGlotCapabilities.swift";
+const MAC_CAP_PATH = "../Desktop/polyglot-workspace/mac/PolyGlotAI/PolyGlotAI/Sources/PolyGlotCapabilities.swift";
+const GEN_CAP_PATH = "Generated/PolyGlotCapabilities.swift";
 let iosSource = "", macSource = "";
+let iosCapSource = "", macCapSource = "", genCapSource = "";
 try { iosSource = readFileSync(join(ROOT, IOS_PATH), "utf8"); } catch { /* iOS not local */ }
 try { macSource = readFileSync(join(ROOT, MAC_PATH), "utf8"); } catch { /* macOS not local */ }
+try { iosCapSource = readFileSync(join(ROOT, IOS_CAP_PATH), "utf8"); } catch { /* iOS cap not local */ }
+try { macCapSource = readFileSync(join(ROOT, MAC_CAP_PATH), "utf8"); } catch { /* macOS cap not local */ }
+try { genCapSource = readFileSync(join(ROOT, GEN_CAP_PATH), "utf8"); } catch { /* gen cap not found */ }
 
 const hasIos = iosSource.length > 0;
 const hasMac = macSource.length > 0;
+
+// Combined source for product ID checks — IAP file + PolyGlotCapabilities file
+const iosCombined = iosSource + "\n" + iosCapSource;
+const macCombined = macSource + "\n" + macCapSource;
 const hasWidget = widgetSource.length > 0;
 
 // ── Parity matrix output ───────────────────────────────────────────────
@@ -99,21 +110,22 @@ describe("Product ID parity", () => {
   });
   if (hasIos) {
     test("iOS monthly product ID matches contract", () => {
-      assert.ok(iosSource.includes(parity.products.monthly.id));
+      // Product ID may be literal or sourced via PolyGlotCapabilities
+      assert.ok(iosCombined.includes(parity.products.monthly.id));
       record("iOS monthly ID", "MATCH", "—", "—", "—", "PASS");
     });
     test("iOS annual product ID matches contract", () => {
-      assert.ok(iosSource.includes(parity.products.annual.id));
+      assert.ok(iosCombined.includes(parity.products.annual.id));
       record("iOS annual ID", "MATCH", "—", "—", "—", "PASS");
     });
   }
   if (hasMac) {
     test("macOS monthly product ID matches contract", () => {
-      assert.ok(macSource.includes(parity.products.monthly.id));
+      assert.ok(macCombined.includes(parity.products.monthly.id));
       record("macOS monthly ID", "—", "MATCH", "—", "—", "PASS");
     });
     test("macOS annual product ID matches contract", () => {
-      assert.ok(macSource.includes(parity.products.annual.id));
+      assert.ok(macCombined.includes(parity.products.annual.id));
       record("macOS annual ID", "—", "MATCH", "—", "—", "PASS");
     });
   }

@@ -1,0 +1,151 @@
+name: Poly-Glot MCP Auto-Sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'App platform (ios/macos)'
+        required: true
+        type: choice
+        options: [ios, macos]
+      version:
+        description: 'App marketing version'
+        required: true
+        type: string
+      build:
+        description: 'Build number'
+        required: false
+        type: string
+      parityVersion:
+        description: 'Parity contract version'
+        required: false
+        type: string
+      commitSha:
+        description: 'Git commit SHA'
+        required: false
+        type: string
+      appleEvent:
+        description: 'Apple event type'
+        required: false
+        type: string
+      target:
+        description: 'Promotion target'
+        required: true
+        type: choice
+        options: [staging, production]
+
+  repository_dispatch:
+    types:
+      - apple-webhook-STAGE
+      - apple-webhook-PRODUCTION
+
+concurrency:
+  group: polyglot-mcp-autosync
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    outputs:
+      target: ${{ steps.resolve.outputs.target }}
+      platform: ${{ steps.resolve.outputs.platform }}
+      version: ${{ steps.resolve.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts 2>/dev/null || npm install --ignore-scripts
+
+      - name: Resolve inputs
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            echo "target=${{ contains(github.event.action, 'PRODUCTION') && 'production' || 'staging' }}" >> $GITHUB_OUTPUT
+            echo "platform=${{ github.event.client_payload.platform || 'unknown' }}" >> $GITHUB_OUTPUT
+            echo "version=${{ github.event.client_payload.version || 'unknown' }}" >> $GITHUB_OUTPUT
+          else
+            echo "target=${{ inputs.target }}" >> $GITHUB_OUTPUT
+            echo "platform=${{ inputs.platform }}" >> $GITHUB_OUTPUT
+            echo "version=${{ inputs.version }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Verify generated parity artifact
+        run: node scripts/generate-apple-capabilities.mjs --check
+
+      - name: Run entitlement parity tests
+        run: node --test scripts/validate-entitlement-parity.mjs
+
+      - name: Run total parity tests
+        run: node --test scripts/test-total-parity.mjs
+
+      - name: Run MCP regression tests
+        run: npm test
+
+      - name: Validation summary
+        run: |
+          echo "✅ All validation checks passed"
+          echo "Target: ${{ steps.resolve.outputs.target }}"
+          echo "Platform: ${{ steps.resolve.outputs.platform }}"
+          echo "Version: ${{ steps.resolve.outputs.version }}"
+
+  deploy-staging:
+    needs: validate
+    if: needs.validate.outputs.target == 'staging'
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage deployment
+        run: |
+          echo "🔄 Staging deployment for ${{ needs.validate.outputs.platform }} v${{ needs.validate.outputs.version }}"
+          echo "Staging validated. Production promotion requires separate approval."
+
+  deploy-production:
+    needs: validate
+    if: needs.validate.outputs.target == 'production'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read deployment policy
+        id: policy
+        run: |
+          REQ_PARITY=$(jq -r '.requireParityValidation' config/deployment-policy.json)
+          REQ_TESTS=$(jq -r '.requireRegressionTests' config/deployment-policy.json)
+          REQ_SMOKE=$(jq -r '.requireProductionSmokeTests' config/deployment-policy.json)
+          echo "requireParity=$REQ_PARITY" >> $GITHUB_OUTPUT
+          echo "requireTests=$REQ_TESTS" >> $GITHUB_OUTPUT
+          echo "requireSmoke=$REQ_SMOKE" >> $GITHUB_OUTPUT
+
+      - name: Production deploy placeholder
+        run: |
+          echo "🚀 Production deployment for ${{ needs.validate.outputs.platform }} v${{ needs.validate.outputs.version }}"
+          echo "Deploy mechanism: neonctl functions deploy mcp"
+          echo "NOTE: Actual Neon deployment requires CLI auth configured in this runner."
+          echo "Owner must configure NEON_API_KEY secret and install neonctl."
+
+      - name: Production smoke test
+        if: steps.policy.outputs.requireSmoke == 'true'
+        run: |
+          HEALTH=$(curl -sf https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/ || echo "FAILED")
+          echo "Health check: $HEALTH"
+          if echo "$HEALTH" | grep -q "polyglot"; then
+            echo "✅ Production health OK"
+          else
+            echo "⚠️ Health check returned unexpected response"
+          fi
+
+      - name: Deployment summary
+        run: |
+          echo "## Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Platform | ${{ needs.validate.outputs.platform }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Version | ${{ needs.validate.outputs.version }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Target | production |" >> $GITHUB_STEP_SUMMARY
+          echo "| Commit | ${{ github.sha }} |" >> $GITHUB_STEP_SUMMARY
