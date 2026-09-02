@@ -570,8 +570,11 @@ function createPolyglotServer(requestAuthToken = "") {
       const resolved = resolveLanguage(langCode);
       return resolved?.name || "";
     },
-    track,
-    trackError,
+    track: (toolName, metadata) => track(toolName, {}, metadata),
+    trackError: (toolName, error) => trackError(toolName, {}, error),
+    getEntitlement,
+    entitlementContext,
+    entitlementSummary,
   });
 
   return server;

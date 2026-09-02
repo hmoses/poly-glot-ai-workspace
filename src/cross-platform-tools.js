@@ -38,7 +38,35 @@ export function registerCrossPlatformTools(server, deps = {}) {
     languageContext = () => "",
     track = async () => {},
     trackError = async () => {},
+    getEntitlement = async () => ({ state: "not_started", isPro: false, trialActive: false, canUseFree: true }),
+    entitlementContext = (extra) => extra || {},
+    entitlementSummary = (e) => e,
   } = deps;
+
+  // Gate: cross-platform tools cost OpenAI credits per call, so require Pro
+  // or active trial. Returns a locked response if not entitled.
+  async function requireEntitlement(toolName, extra) {
+    const entitlement = await getEntitlement(entitlementContext(extra));
+    if (entitlement.isPro || entitlement.trialActive) return { allowed: true, entitlement };
+    return {
+      allowed: false,
+      entitlement,
+      lockedResult: {
+        content: [{
+          type: "text",
+          text: JSON.stringify({
+            view: "locked",
+            tool: toolName,
+            message: entitlement.state === "expired"
+              ? "Your 3-day trial has ended. A Pro subscription is required to use cross-platform language tools."
+              : "A Pro subscription or active trial is required to use cross-platform language tools.",
+            entitlement: entitlementSummary(entitlement),
+          }, null, 2),
+        }],
+        isError: true,
+      },
+    };
+  }
 
   // Helper: resolveLanguage returns { code, name, flag }. Extract the code
   // string for provider calls and JSON responses.
@@ -66,8 +94,11 @@ export function registerCrossPlatformTools(server, deps = {}) {
       prompt: z.string().optional(),
       detectLanguage: z.boolean().optional(),
     },
-  }, async (args) => {
+  }, async (args, extra) => {
     try {
+      const gate = await requireEntitlement("transcribe_audio", extra);
+      if (!gate.allowed) return gate.lockedResult;
+
       const hasUrl = Boolean(args.audioUrl);
       const hasBase64 = Boolean(args.audioBase64);
       if (hasUrl === hasBase64) throw new Error("Provide exactly one of audioUrl or audioBase64.");
@@ -108,8 +139,11 @@ export function registerCrossPlatformTools(server, deps = {}) {
     description:
       "Detect the language of supplied text and map it to a supported Poly-Glot language.",
     inputSchema: { text: z.string().min(1) },
-  }, async ({ text }) => {
+  }, async ({ text }, extra) => {
     try {
+      const gate = await requireEntitlement("detect_language", extra);
+      if (!gate.allowed) return gate.lockedResult;
+
       const result = await detectLanguageText(text, languagePublicList());
       const resolved = resolveLanguage(result.text.trim());
       const language = typeof resolved === "string" ? resolved : resolved?.code || result.text.trim();
@@ -131,8 +165,11 @@ export function registerCrossPlatformTools(server, deps = {}) {
       sourceLanguage: z.string().optional().default("auto"),
       targetLanguage: z.string().min(1),
     },
-  }, async ({ text, sourceLanguage, targetLanguage }) => {
+  }, async ({ text, sourceLanguage, targetLanguage }, extra) => {
     try {
+      const gate = await requireEntitlement("translate_text", extra);
+      if (!gate.allowed) return gate.lockedResult;
+
       const target = resolveName(targetLanguage);
       const targetCode = resolveCode(targetLanguage);
       const result = await providerTranslate({ text, sourceLanguage, targetLanguage: target });
@@ -156,8 +193,11 @@ export function registerCrossPlatformTools(server, deps = {}) {
       audience: z.string().optional(),
       tone: z.string().optional(),
     },
-  }, async ({ text, targetLanguage, locale, audience, tone }) => {
+  }, async ({ text, targetLanguage, locale, audience, tone }, extra) => {
     try {
+      const gate = await requireEntitlement("localize_text", extra);
+      if (!gate.allowed) return gate.lockedResult;
+
       const target = resolveName(targetLanguage);
       const targetCode = resolveCode(targetLanguage);
       const context = languageContext?.(targetLanguage) || "";
