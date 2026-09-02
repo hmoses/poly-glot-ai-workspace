@@ -259,6 +259,7 @@ function createPolyglotServer(requestAuthToken = "") {
       localization: localizationSchema,
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+    _meta: UI_META,
   }, async ({ uiLanguage = "EN" }, extra) => {
     track("get_language_options", extra, {
       success: true,
@@ -279,6 +280,7 @@ function createPolyglotServer(requestAuthToken = "") {
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+    _meta: UI_META,
   }, async (_args, extra) => {
     const entitlement = await getEntitlement(entitlementContext(extra));
     track("get_subscription_status", extra, {
