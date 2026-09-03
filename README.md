@@ -56,6 +56,30 @@ Open the interactive Poly-Glot template browser and prompt editor with subscript
 
 **Parameters:** `query` (string), `uiLanguage` (string, default "EN")
 
+### `transcribe_audio`
+
+Transcribe audio content and return text. Supports language detection and forced source language. Requires entitlement.
+
+**Parameters:** `audioUrl` (string, required), `sourceLanguage` (string), `uiLanguage` (string, default "EN")
+
+### `detect_language`
+
+Detect the language of a text snippet. Returns ISO code and confidence score.
+
+**Parameters:** `text` (string, required), `uiLanguage` (string, default "EN")
+
+### `translate_text`
+
+Translate text between any of the 38 supported Poly-Glot languages.
+
+**Parameters:** `text` (string, required), `from` (string), `to` (string, required), `uiLanguage` (string, default "EN")
+
+### `localize_text`
+
+Localize text for a target locale — adapts tone, units, date formats, and cultural references beyond simple translation.
+
+**Parameters:** `text` (string, required), `targetLocale` (string, required), `context` (string), `uiLanguage` (string, default "EN")
+
 ### `get_custom_model_capabilities`
 
 Return supported BYOM adapter modes, credential policy, network restrictions, and notes about localhost access.
