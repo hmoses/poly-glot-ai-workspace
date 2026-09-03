@@ -42,6 +42,13 @@ import {
   localizedFieldLabel,
   resolveLanguage,
 } from "./localization.js";
+import {
+  customModelCapabilities,
+  invokeOpenAICompatible,
+  invokeCustomRest,
+  validatePublicHttpsUrl,
+  sanitizeError,
+} from "./src/byom.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
@@ -217,8 +224,8 @@ function createPolyglotServer(requestAuthToken = "") {
     },
   });
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.5.0" },
-    { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, and prepare Compare Mode runs across multiple AI providers. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server." }
+    { name: "polyglot-ai-workspace", version: "1.8.0" },
+    { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
   );
 
   registerAppResource(server, "polyglot-workspace", UI_URI, { _meta: UI_META }, async () => ({
@@ -452,6 +459,216 @@ function createPolyglotServer(requestAuthToken = "") {
       structuredContent: { view: "compare", prompt: canonicalPrompt, sourceTemplate, providers: targets, instructions, entitlement: entitlementSummary(entitlement), localization },
       content: [
         { type: "text", text: `Compare Mode prepared for ${targets.map((x) => x.label).join(", ")}.` },
+        { type: "text", text: canonicalPrompt },
+      ],
+    };
+  });
+
+  // ── BYOM: Bring Your Own Model tools (Pro capability) ───────────────
+
+  server.registerTool("get_custom_model_capabilities", {
+    title: "Get custom model capabilities",
+    description: "Return supported BYOM adapter modes, credential policy, network restrictions, and notes about localhost access from the public remote MCP.",
+    inputSchema: {},
+    annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+  }, async (_args, _extra) => {
+    const caps = customModelCapabilities();
+    return {
+      structuredContent: { view: "byom_capabilities", ...caps },
+      content: [{ type: "text", text: `BYOM supports ${caps.modes.join(", ")} adapter modes. Credentials are never persisted. ${caps.directLocalhostFromRemoteMcp ? "Direct localhost is reachable." : "Direct localhost/private endpoints are not reachable from the public remote MCP."}` }],
+    };
+  });
+
+  server.registerTool("validate_custom_model", {
+    title: "Validate a custom model endpoint",
+    description: "Validate a developer-supplied model endpoint. Checks HTTPS, SSRF, and optionally probes the model with a minimal request. API keys are transient and never persisted or echoed.",
+    inputSchema: {
+      adapterMode: z.enum(["openai-compatible", "custom-rest"]),
+      baseUrl: z.string().max(2000).optional(),
+      endpoint: z.string().max(2000).optional(),
+      model: z.string().max(200).optional().default(""),
+      apiKey: z.string().max(2000).optional(),
+      authMode: z.enum(["bearer", "api-key-header", "none"]).optional().default("bearer"),
+      apiKeyHeader: z.string().max(100).optional().default("x-api-key"),
+      promptField: z.string().max(100).optional().default("prompt"),
+      systemField: z.string().max(100).optional().default("system"),
+      responseTextPath: z.string().max(200).optional(),
+      probe: z.boolean().optional().default(false),
+    },
+    annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+  }, async (args, extra) => {
+    const entitlement = await getEntitlement(entitlementContext(extra));
+    if (!entitlement.isPro && !entitlement.trialActive && entitlement.state !== "not_started") {
+      const message = "Validating custom model endpoints requires an active trial or Pro subscription.";
+      return {
+        structuredContent: { view: "locked", message, entitlement: entitlementSummary(entitlement) },
+        content: [{ type: "text", text: message }],
+      };
+    }
+
+    const url = args.adapterMode === "openai-compatible" ? args.baseUrl : args.endpoint;
+    if (!url) throw new Error("Provide baseUrl (openai-compatible) or endpoint (custom-rest).");
+
+    try {
+      await validatePublicHttpsUrl(url);
+    } catch (err) {
+      return {
+        structuredContent: { view: "byom_validation", valid: false, error: err.message, adapterMode: args.adapterMode },
+        content: [{ type: "text", text: `Validation failed: ${err.message}` }],
+      };
+    }
+
+    let probeResult = null;
+    if (args.probe) {
+      try {
+        if (args.adapterMode === "openai-compatible") {
+          probeResult = await invokeOpenAICompatible({
+            baseUrl: args.baseUrl, model: args.model || "test", apiKey: args.apiKey,
+            prompt: "Respond with exactly: BYOM probe OK", timeoutMs: 15000,
+          });
+        } else {
+          probeResult = await invokeCustomRest({
+            endpoint: args.endpoint, apiKey: args.apiKey, authMode: args.authMode, apiKeyHeader: args.apiKeyHeader,
+            prompt: "Respond with exactly: BYOM probe OK", promptField: args.promptField, systemField: args.systemField,
+            responseTextPath: args.responseTextPath, timeoutMs: 15000,
+          });
+        }
+      } catch (err) {
+        return {
+          structuredContent: { view: "byom_validation", valid: true, endpointReachable: true, probeSuccess: false, probeError: sanitizeError(err, [args.apiKey]), adapterMode: args.adapterMode },
+          content: [{ type: "text", text: `Endpoint is valid HTTPS but probe failed: ${sanitizeError(err, [args.apiKey])}` }],
+        };
+      }
+    }
+
+    return {
+      structuredContent: {
+        view: "byom_validation", valid: true, endpointReachable: true,
+        probeSuccess: probeResult ? true : null,
+        probeText: probeResult?.text?.slice(0, 200) || null,
+        adapterMode: args.adapterMode,
+      },
+      content: [{ type: "text", text: probeResult ? `Endpoint validated and probe returned: "${probeResult.text.slice(0, 200)}"` : "Endpoint validated. HTTPS and SSRF checks passed." }],
+    };
+  });
+
+  server.registerTool("run_custom_model", {
+    title: "Run a custom model",
+    description: "Run a Poly-Glot prompt against a developer-supplied model endpoint. API keys are transient and never persisted. Respects Poly-Glot entitlement checks and applies language instructions.",
+    inputSchema: {
+      adapterMode: z.enum(["openai-compatible", "custom-rest"]),
+      baseUrl: z.string().max(2000).optional(),
+      endpoint: z.string().max(2000).optional(),
+      model: z.string().max(200).optional().default(""),
+      apiKey: z.string().max(2000).optional(),
+      prompt: z.string().min(1).max(30000),
+      system: z.string().max(10000).optional(),
+      temperature: z.number().min(0).max(2).optional(),
+      maxTokens: z.number().int().min(1).max(128000).optional(),
+      extraHeaders: z.record(z.string(), z.string()).optional().default({}),
+      authMode: z.enum(["bearer", "api-key-header", "none"]).optional().default("bearer"),
+      apiKeyHeader: z.string().max(100).optional().default("x-api-key"),
+      promptField: z.string().max(100).optional().default("prompt"),
+      systemField: z.string().max(100).optional().default("system"),
+      responseTextPath: z.string().max(200).optional(),
+      ...localizationArgs,
+    },
+    annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
+  }, async (args, extra) => {
+    const entitlement = await getEntitlement(entitlementContext(extra));
+    if (!entitlement.isPro && !entitlement.trialActive) {
+      const message = "Running custom models requires an active trial or Pro subscription.";
+      return {
+        structuredContent: { view: "locked", message, entitlement: entitlementSummary(entitlement) },
+        content: [{ type: "text", text: message }],
+      };
+    }
+
+    const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
+    const prompt = applyLanguageInstructions(args.prompt, localization.inputLanguage.code, localization.outputLanguage.code);
+
+    try {
+      let result;
+      if (args.adapterMode === "openai-compatible") {
+        if (!args.baseUrl) throw new Error("baseUrl is required for openai-compatible mode.");
+        result = await invokeOpenAICompatible({
+          baseUrl: args.baseUrl, model: args.model, apiKey: args.apiKey, prompt,
+          system: args.system, temperature: args.temperature, maxTokens: args.maxTokens,
+          extraHeaders: args.extraHeaders,
+        });
+      } else {
+        if (!args.endpoint) throw new Error("endpoint is required for custom-rest mode.");
+        result = await invokeCustomRest({
+          endpoint: args.endpoint, apiKey: args.apiKey, authMode: args.authMode, apiKeyHeader: args.apiKeyHeader,
+          prompt, system: args.system, promptField: args.promptField, systemField: args.systemField,
+          responseTextPath: args.responseTextPath,
+        });
+      }
+
+      return {
+        structuredContent: {
+          view: "custom_model_result", text: result.text, model: result.model,
+          usage: result.usage, entitlement: entitlementSummary(entitlement), localization,
+        },
+        content: [
+          { type: "text", text: `Custom model (${result.model || args.adapterMode}) response:` },
+          { type: "text", text: result.text },
+        ],
+      };
+    } catch (err) {
+      const safeMsg = sanitizeError(err, [args.apiKey]);
+      throw new Error(safeMsg);
+    }
+  });
+
+  server.registerTool("prepare_custom_compare", {
+    title: "Prepare custom Compare Mode",
+    description: "Build a Compare Mode plan containing built-in Poly-Glot providers and developer-supplied custom model descriptors. Credentials are supplied only at execution time and are never embedded in the comparison plan.",
+    inputSchema: {
+      prompt: z.string().min(1).max(30000),
+      builtinProviders: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral"])).optional().default([]),
+      customModels: z.array(z.object({
+        label: z.string().max(100),
+        adapterMode: z.enum(["openai-compatible", "custom-rest"]),
+        baseUrl: z.string().max(2000).optional(),
+        endpoint: z.string().max(2000).optional(),
+        model: z.string().max(200).optional(),
+      })).min(1).max(5),
+      ...localizationArgs,
+    },
+    annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
+  }, async (args, extra) => {
+    let entitlement = await getEntitlement(entitlementContext(extra));
+    if (entitlement.state === "not_started") entitlement = await startTrialIfNeeded(entitlementContext(extra));
+    if (!compareAccess(entitlement)) {
+      const locked = compareLocked(entitlement);
+      const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
+      locked.structuredContent.localization = localization;
+      return locked;
+    }
+
+    const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
+    const canonicalPrompt = applyLanguageInstructions(args.prompt, localization.inputLanguage.code, localization.outputLanguage.code);
+
+    const builtinTargets = [...new Set(args.builtinProviders || [])].map((id) => ({ id, type: "builtin", ...COMPARE_PROVIDERS[id] }));
+    const customTargets = (args.customModels || []).map((m) => ({
+      id: `custom:${m.label}`, type: "custom", label: m.label, adapterMode: m.adapterMode,
+      baseUrl: m.baseUrl || undefined, endpoint: m.endpoint || undefined, model: m.model || undefined,
+    }));
+    const allTargets = [...builtinTargets, ...customTargets];
+
+    if (allTargets.length < 2) throw new Error("Compare Mode requires at least two targets (built-in and/or custom models).");
+
+    const instructions = "Use the canonical prompt with each target. For built-in providers, open the provider and paste the prompt. For custom models, use run_custom_model with the developer's transient credentials at execution time. Poly-Glot does not store or forward API keys in the comparison plan.";
+
+    return {
+      structuredContent: {
+        view: "custom_compare_plan", prompt: canonicalPrompt,
+        targets: allTargets, instructions,
+        entitlement: entitlementSummary(entitlement), localization,
+      },
+      content: [
+        { type: "text", text: `Custom Compare Mode prepared for ${allTargets.map((t) => t.label).join(", ")}.` },
         { type: "text", text: canonicalPrompt },
       ],
     };

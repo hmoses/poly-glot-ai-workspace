@@ -1,8 +1,8 @@
 # Poly-Glot AI Workspace
 
-> 1,000+ expert AI prompt templates · 38 languages · Compare Mode · Embedded GUI
+> Multilingual MCP tool platform: 1,000+ prompt templates · 38 languages · Compare Mode · BYOM · Embedded GUI
 
-Remote MCP server with an embedded MCP Apps / ChatGPT Apps SDK GUI, server-side entitlements, and Apple-backed subscriptions.
+Remote MCP server with an embedded MCP Apps / ChatGPT Apps SDK GUI, server-side entitlements, Apple-backed subscriptions, and Bring Your Own Model (BYOM) support.
 
 ## MCP Endpoint
 
@@ -56,11 +56,36 @@ Open the interactive Poly-Glot template browser and prompt editor with subscript
 
 **Parameters:** `query` (string), `uiLanguage` (string, default "EN")
 
+### `get_custom_model_capabilities`
+
+Return supported BYOM adapter modes, credential policy, network restrictions, and notes about localhost access.
+
+**Parameters:** none
+
+### `validate_custom_model`
+
+Validate a developer-supplied model endpoint. Checks HTTPS, SSRF, and optionally probes the model. API keys are transient and never persisted or echoed.
+
+**Parameters:** `adapterMode` ("openai-compatible" | "custom-rest"), `baseUrl` (string), `endpoint` (string), `model` (string), `apiKey` (string, transient), `probe` (boolean)
+
+### `run_custom_model`
+
+Run a Poly-Glot prompt against a developer-supplied model endpoint. Applies language instructions and respects entitlement checks.
+
+**Parameters:** `adapterMode` ("openai-compatible" | "custom-rest"), `baseUrl`/`endpoint` (string), `model` (string), `apiKey` (string, transient), `prompt` (string, required), `system` (string), `temperature`, `maxTokens`, `uiLanguage`, `inputLanguage`, `outputLanguage`
+
+### `prepare_custom_compare`
+
+Build a Compare Mode plan containing built-in providers and developer-supplied custom model descriptors. Credentials are supplied at execution time only.
+
+**Parameters:** `prompt` (string, required), `builtinProviders` (array), `customModels` (array of { label, adapterMode, baseUrl/endpoint, model }), `uiLanguage`, `inputLanguage`, `outputLanguage`
+
 ## Features
 
 - **1,022 prompt templates** — 25 Free, 997 Pro
 - **38 languages** — independent UI, input, and output language controls
 - **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral
+- **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts
 - **3-day free trial** — 25 free templates, no credit card required
 - **Pro subscriptions** — $9.99/month or $79.99/year (Save 33%)
