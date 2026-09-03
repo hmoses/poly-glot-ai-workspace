@@ -96,14 +96,13 @@ const COMPARE_PROVIDERS = Object.freeze({
 });
 
 function compareAccess(entitlement) {
-  // Mirrors the native product's practical trial behavior while preventing
-  // Compare Mode from becoming a post-trial bypass. Pro always has access;
-  // not-started/active-trial users may compare eligible free/custom prompts.
-  return entitlement.isPro || entitlement.canUseFree;
+  // Compare Mode: Pro or active trial only. Locked after trial expires.
+  return entitlement.isPro || entitlement.trialActive;
 }
 
 function compareLocked(entitlement) {
-  const message = "Compare Mode is unavailable because your Poly-Glot trial has ended. Subscribe to Pro Monthly ($9.99/month) or Pro Annual ($79.99/year) to continue.";
+  const resetInfo = entitlement.nextResetAt ? ` Your next free Ask Any AI send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
+  const message = `Compare Mode requires a Pro subscription. Subscribe to Pro Monthly ($9.99/month) or Pro Annual ($79.99/year) to unlock Compare Mode and all templates.${resetInfo}`;
   return {
     structuredContent: { view: "compare_locked", message, entitlement: entitlementSummary(entitlement) },
     content: [{ type: "text", text: message }],
@@ -182,6 +181,8 @@ const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN"
 
 const entitlementSchema = z.object({
   state: z.string(), trialEndsAt: z.string().nullable(), isPro: z.boolean(), trialActive: z.boolean(), canUseFree: z.boolean(),
+  compareLocked: z.boolean().optional(), nextResetAt: z.string().nullable().optional(),
+  weeklyFreeLimit: z.number().nullable().optional(),
   pricing: z.object({
     currency: z.string(), trialDays: z.number(), freeTemplateCount: z.number(),
     monthly: z.object({ id: z.string(), label: z.string(), price: z.number(), interval: z.string() }),
@@ -196,9 +197,12 @@ const templateSchema = z.object({
 });
 
 function lockedResult(template, entitlement, uiLanguage = "EN") {
-  const reason = template.plan === "pro"
+  const resetInfo = entitlement.nextResetAt ? ` Next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
+  const reason = entitlement.isExpired
+    ? `Your 3-day trial has ended. All templates are locked. You have 1 free Ask Any AI send per week (single AI).${resetInfo} Subscribe to Pro for unlimited access.`
+    : template.plan === "pro"
     ? "This is a Pro template. Subscribe to Pro Monthly ($9.99/month) or Pro Annual ($79.99/year) to unlock all 1,000+ templates."
-    : "Your 3-day trial has ended. A Pro subscription is required to continue using templates.";
+    : "Start your free 3-day trial to access all templates, Compare Mode, and more.";
   return {
     structuredContent: {
       view: "locked",
@@ -271,9 +275,17 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async (_args, extra) => {
     const entitlement = await getEntitlement(entitlementContext(extra));
+    const summary = entitlementSummary(entitlement);
+    let text = `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.`;
+    if (entitlement.isExpired) {
+      const resetDate = entitlement.nextResetAt ? new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "Monday";
+      text += ` Trial ended. 1 free Ask Any AI send/week (single AI, no Compare). Next reset: ${resetDate}. Subscribe for unlimited.`;
+    } else if (entitlement.trialActive) {
+      text += ` Trial active — all features unlocked (all templates, Compare Mode, BYOM). Ends ${entitlement.trialEndsAt ? new Date(entitlement.trialEndsAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "in 3 days"}.`;
+    }
     return {
-      structuredContent: { view: "subscription", entitlement: entitlementSummary(entitlement) },
-      content: [{ type: "text", text: `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.` }],
+      structuredContent: { view: "subscription", entitlement: summary },
+      content: [{ type: "text", text }],
     };
   });
 

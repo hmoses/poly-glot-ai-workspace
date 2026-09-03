@@ -11,6 +11,11 @@
  * GOOSE NOTE: Production must call the remote, server-verified entitlement API.
  * The local JSON store exists only for development/testing and must never be a
  * production fallback. Fail closed when production verification is unavailable.
+ *
+ * ENTITLEMENT MODEL (v1.9):
+ *   Trial (3 days) — ALL features free: every template (free + pro), Compare Mode, BYOM.
+ *   Expired — ALL templates lock. Ask Any AI = 1 free send/week, single AI only. Compare Mode locked.
+ *   Pro — Everything unlimited.
  */
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -27,6 +32,26 @@ const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
 function nowIso() { return new Date().toISOString(); }
 function hash(value) { return createHash("sha256").update(String(value)).digest("hex"); }
+
+/**
+ * Calculate the next Monday 00:00 UTC — weekly free send reset point.
+ * Returns ISO-8601 timestamp string.
+ */
+function nextWeeklyResetAt() {
+  const now = new Date();
+  const day = now.getUTCDay(); // 0=Sun, 1=Mon, ...
+  // Days until next Monday: if today is Mon (1) and past midnight, next Mon is 7 days away.
+  // Formula: (8 - day) % 7 gives days to next Monday, but 0 means today IS Monday.
+  let daysUntil = (8 - day) % 7;
+  if (daysUntil === 0) daysUntil = 7; // If today is Monday, next reset is NEXT Monday
+  const next = new Date(Date.UTC(
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate() + daysUntil,
+    0, 0, 0, 0
+  ));
+  return next.toISOString();
+}
 
 function loadStore() {
   try {
@@ -100,9 +125,14 @@ export async function getEntitlement(extra) {
   const isPro = base.state === ENTITLEMENT_STATES.PRO_MONTHLY || base.state === ENTITLEMENT_STATES.PRO_ANNUAL;
   const trialActive = base.state === ENTITLEMENT_STATES.TRIAL && (!base.trialEndsAt || Date.now() < Date.parse(base.trialEndsAt));
   const isExpired = base.state === ENTITLEMENT_STATES.EXPIRED;
-  // After trial expires, users can still use 1 free template per week (single AI, no Compare)
+  // After trial expires, users get 1 free Ask Any AI send/week (single AI, no Compare)
+  // canUseFree means the user can use the Ask Any AI feature (with weekly limit if expired)
   const canUseFree = base.state === ENTITLEMENT_STATES.NOT_STARTED || trialActive || isPro || isExpired;
   const weeklyFreeLimit = isExpired ? PRICING.weeklyFreeSends : null;
+  // Compare Mode: only Pro and active trial can use it
+  const compareLocked = !(isPro || trialActive);
+  // Next weekly reset: only relevant for expired users
+  const nextResetAt = isExpired ? nextWeeklyResetAt() : null;
   return {
     ...base,
     isPro,
@@ -110,6 +140,8 @@ export async function getEntitlement(extra) {
     canUseFree,
     isExpired,
     weeklyFreeLimit,
+    compareLocked,
+    nextResetAt,
     pricing: publicPricing(),
   };
 }
@@ -139,20 +171,57 @@ export async function startTrialIfNeeded(extra) {
   return getEntitlement(extra);
 }
 
+/**
+ * Template access for the new entitlement model (v1.9):
+ *   Trial — ALL templates allowed (free + pro). Full access.
+ *   Expired — ALL templates LOCKED. Ask Any AI = 1/week, single AI. Compare locked.
+ *             The weekly Ask Any AI send is handled at the send layer, not template access.
+ *             Templates still show as locked so the UI can gate them properly.
+ *   Pro — Everything allowed.
+ *   Not started — Free templates allowed (triggers trial on first use).
+ */
 export function templateAccess(template, entitlement) {
+  // Pro: always allowed
   if (entitlement.isPro) return { allowed: true, locked: false, reason: null };
-  if (template.plan === "free" && entitlement.canUseFree) {
-    // Expired users can access free templates but with weekly send limit
-    if (entitlement.isExpired) {
-      return { allowed: true, locked: false, reason: null, weeklyLimited: true, weeklyFreeLimit: entitlement.weeklyFreeLimit };
-    }
-    return { allowed: true, locked: false, reason: null };
+
+  // Active trial: ALL templates allowed (free + pro)
+  if (entitlement.trialActive) return { allowed: true, locked: false, reason: null };
+
+  // Not started: free templates allowed (will trigger trial on build_prompt)
+  if (entitlement.state === ENTITLEMENT_STATES.NOT_STARTED) {
+    if (template.plan === "free") return { allowed: true, locked: false, reason: null };
+    return { allowed: false, locked: true, reason: "pro_required" };
   }
-  if (template.plan === "pro") return { allowed: false, locked: true, reason: "pro_required" };
-  return { allowed: false, locked: true, reason: entitlement.state === ENTITLEMENT_STATES.EXPIRED ? "trial_expired" : "subscription_required" };
+
+  // Expired: ALL templates locked. Ask Any AI weekly send handled separately.
+  if (entitlement.isExpired) {
+    return {
+      allowed: false,
+      locked: true,
+      reason: "trial_expired",
+      weeklyLimited: true,
+      weeklyFreeLimit: entitlement.weeklyFreeLimit,
+      nextResetAt: entitlement.nextResetAt,
+      message: `Your trial has ended. You have 1 free Ask Any AI send per week (resets Monday). Subscribe to Pro for unlimited access.`,
+    };
+  }
+
+  // Fallback
+  return { allowed: false, locked: true, reason: "subscription_required" };
 }
 
 export function entitlementSummary(entitlement) {
   const { state, trialEndsAt, pricing } = entitlement;
-  return { state, trialEndsAt, isPro: entitlement.isPro, trialActive: entitlement.trialActive, canUseFree: entitlement.canUseFree, isExpired: entitlement.isExpired, weeklyFreeLimit: entitlement.weeklyFreeLimit, pricing };
+  return {
+    state,
+    trialEndsAt,
+    isPro: entitlement.isPro,
+    trialActive: entitlement.trialActive,
+    canUseFree: entitlement.canUseFree,
+    isExpired: entitlement.isExpired,
+    weeklyFreeLimit: entitlement.weeklyFreeLimit,
+    compareLocked: entitlement.compareLocked,
+    nextResetAt: entitlement.nextResetAt,
+    pricing,
+  };
 }
