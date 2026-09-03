@@ -47,8 +47,21 @@ import {
   sanitizeError,
 } from "./src/byom.js";
 
-import widgetHtml from "./data/widget-html.js";
-import catalog from "./data/catalog-bundle.js";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+let widgetHtml, catalog;
+try {
+  widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
+  catalog = JSON.parse(readFileSync(join(__dirname, "data", "catalog.json"), "utf8"));
+} catch {
+  // Neon Functions: __dirname may not match /opt/function layout
+  const { default: wh } = await import("./data/widget-html.js");
+  const { default: cat } = await import("./data/catalog-bundle.js");
+  widgetHtml = wh;
+  catalog = cat;
+}
 const templates = catalog.templates;
 const prompts = catalog.prompts;
 const UI_URI = "ui://polyglot/workspace-v3.html";
