@@ -15,9 +15,6 @@
  * move Pro authorization into the browser/widget.
  */
 import { createServer } from "node:http";
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
 import {
   registerAppResource,
   registerAppTool,
@@ -50,9 +47,8 @@ import {
   sanitizeError,
 } from "./src/byom.js";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
-const catalog = JSON.parse(readFileSync(join(__dirname, "data", "catalog.json"), "utf8"));
+import widgetHtml from "./data/widget-html.js";
+import catalog from "./data/catalog-bundle.js";
 const templates = catalog.templates;
 const prompts = catalog.prompts;
 const UI_URI = "ui://polyglot/workspace-v3.html";
