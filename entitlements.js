@@ -99,12 +99,17 @@ export async function getEntitlement(extra) {
   const base = remote || (PRODUCTION ? (() => { throw new Error("Production entitlement service unavailable"); })() : localEntitlement(extra));
   const isPro = base.state === ENTITLEMENT_STATES.PRO_MONTHLY || base.state === ENTITLEMENT_STATES.PRO_ANNUAL;
   const trialActive = base.state === ENTITLEMENT_STATES.TRIAL && (!base.trialEndsAt || Date.now() < Date.parse(base.trialEndsAt));
-  const canUseFree = base.state === ENTITLEMENT_STATES.NOT_STARTED || trialActive || isPro;
+  const isExpired = base.state === ENTITLEMENT_STATES.EXPIRED;
+  // After trial expires, users can still use 1 free template per week (single AI, no Compare)
+  const canUseFree = base.state === ENTITLEMENT_STATES.NOT_STARTED || trialActive || isPro || isExpired;
+  const weeklyFreeLimit = isExpired ? PRICING.weeklyFreeSends : null;
   return {
     ...base,
     isPro,
     trialActive,
     canUseFree,
+    isExpired,
+    weeklyFreeLimit,
     pricing: publicPricing(),
   };
 }
@@ -136,12 +141,18 @@ export async function startTrialIfNeeded(extra) {
 
 export function templateAccess(template, entitlement) {
   if (entitlement.isPro) return { allowed: true, locked: false, reason: null };
-  if (template.plan === "free" && entitlement.canUseFree) return { allowed: true, locked: false, reason: null };
+  if (template.plan === "free" && entitlement.canUseFree) {
+    // Expired users can access free templates but with weekly send limit
+    if (entitlement.isExpired) {
+      return { allowed: true, locked: false, reason: null, weeklyLimited: true, weeklyFreeLimit: entitlement.weeklyFreeLimit };
+    }
+    return { allowed: true, locked: false, reason: null };
+  }
   if (template.plan === "pro") return { allowed: false, locked: true, reason: "pro_required" };
   return { allowed: false, locked: true, reason: entitlement.state === ENTITLEMENT_STATES.EXPIRED ? "trial_expired" : "subscription_required" };
 }
 
 export function entitlementSummary(entitlement) {
   const { state, trialEndsAt, pricing } = entitlement;
-  return { state, trialEndsAt, isPro: entitlement.isPro, trialActive: entitlement.trialActive, canUseFree: entitlement.canUseFree, pricing };
+  return { state, trialEndsAt, isPro: entitlement.isPro, trialActive: entitlement.trialActive, canUseFree: entitlement.canUseFree, isExpired: entitlement.isExpired, weeklyFreeLimit: entitlement.weeklyFreeLimit, pricing };
 }

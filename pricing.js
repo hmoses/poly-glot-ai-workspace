@@ -2,6 +2,7 @@ export const PRICING = Object.freeze({
   currency: "USD",
   trialDays: 3,
   freeTemplateCount: 25,
+  weeklyFreeSends: 1,
   monthly: Object.freeze({
     id: "pro_monthly",
     label: "Pro Monthly",
@@ -29,6 +30,7 @@ export const publicPricing = () => ({
   currency: PRICING.currency,
   trialDays: PRICING.trialDays,
   freeTemplateCount: PRICING.freeTemplateCount,
+  weeklyFreeSends: PRICING.weeklyFreeSends,
   monthly: PRICING.monthly,
   annual: PRICING.annual,
 });
