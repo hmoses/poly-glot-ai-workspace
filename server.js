@@ -47,6 +47,7 @@ import {
   sanitizeError,
 } from "./src/byom.js";
 
+import { registerCrossPlatformTools } from "./src/cross-platform-tools.js";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -688,6 +689,16 @@ function createPolyglotServer(requestAuthToken = "") {
         { type: "text", text: canonicalPrompt },
       ],
     };
+  });
+
+  // ── Cross-platform language tools (4 tools) ──────────────────────────
+  registerCrossPlatformTools(server, {
+    languagePublicList,
+    resolveLanguage,
+    languageContext,
+    getEntitlement: (extra) => getEntitlement(entitlementContext(extra)),
+    entitlementContext,
+    entitlementSummary,
   });
 
   return server;
