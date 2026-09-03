@@ -673,8 +673,14 @@ function createPolyglotServer(requestAuthToken = "") {
   return server;
 }
 
-const port = Number(process.env.PORT ?? 8787);
 const MCP_PATH = "/mcp";
+
+// ── Exports for Neon Functions fetch handler (index.mjs) ──────────────
+export { createPolyglotServer, templates, MCP_PATH };
+
+// ── Local dev: Node HTTP server (skipped in Neon Functions) ───────────
+if (process.env.NEON_FUNCTION) { /* Neon Functions uses index.mjs */ } else {
+const port = Number(process.env.PORT ?? 8787);
 const httpServer = createServer(async (req, res) => {
   if (!req.url) return res.writeHead(400).end("Missing URL");
   const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
@@ -722,3 +728,4 @@ const httpServer = createServer(async (req, res) => {
 });
 
 httpServer.listen(port, () => console.log(`Poly-Glot MCP listening on http://localhost:${port}${MCP_PATH}`));
+}
