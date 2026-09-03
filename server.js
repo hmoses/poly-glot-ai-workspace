@@ -244,6 +244,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "get_language_options", {
     title: "Get Poly-Glot language options",
     description: "Return the 38 supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement.",
+    _meta: UI_META,
     inputSchema: { uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: {
       view: z.literal("languages"),
@@ -263,6 +264,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "get_subscription_status", {
     title: "Get Poly-Glot subscription status",
     description: "Return the current Poly-Glot trial or Pro entitlement and current pricing.",
+    _meta: UI_META,
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
@@ -277,6 +279,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "open_workspace", {
     title: "Open Poly-Glot AI Workspace",
     description: "Open the interactive Poly-Glot template browser and prompt editor with subscription-aware locked states.",
+    _meta: UI_META,
     inputSchema: { query: z.string().max(200).optional().default(""), uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
@@ -294,6 +297,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "search_templates", {
     title: "Search Poly-Glot templates",
     description: "Find Poly-Glot prompt templates. Results include whether each template is currently locked for this account.",
+    _meta: UI_META,
     inputSchema: {
       query: z.string().max(200).optional().default(""), goal: z.string().max(80).optional(),
       plan: z.enum(["free", "pro"]).optional(), limit: z.number().int().min(1).max(24).optional().default(12),
@@ -315,6 +319,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "get_template", {
     title: "Open a Poly-Glot template",
     description: "Get a template's fields. The source prompt body is returned only when the account is entitled to use the template.",
+    _meta: UI_META,
     inputSchema: { name: z.string().min(1).max(200), uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: {
       view: z.enum(["template", "locked"]),
@@ -347,6 +352,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "build_prompt", {
     title: "Build a Poly-Glot prompt",
     description: "Fill an entitled Poly-Glot template. First use of a free template starts the 3-day trial. Pro templates require an active Pro subscription.",
+    _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200),
       values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}),
@@ -405,6 +411,7 @@ function createPolyglotServer(requestAuthToken = "") {
   registerAppTool(server, "prepare_compare", {
     title: "Prepare Poly-Glot Compare Mode",
     description: "Prepare one canonical prompt for two or more AI providers so the user can compare answers. Uses the same server-side template entitlement checks as build_prompt and never calls third-party models on the user's behalf.",
+    _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200).optional(),
       prompt: z.string().min(1).max(30000).optional(),
