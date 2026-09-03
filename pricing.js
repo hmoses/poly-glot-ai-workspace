@@ -3,6 +3,7 @@ export const PRICING = Object.freeze({
   trialDays: 3,
   freeTemplateCount: 25,
   weeklyFreeSends: 1,
+  weeklyFreeSends: 1,
   monthly: Object.freeze({
     id: "pro_monthly",
     label: "Pro Monthly",
