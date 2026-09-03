@@ -15,6 +15,9 @@
  * move Pro authorization into the browser/widget.
  */
 import { createServer } from "node:http";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 import {
   registerAppResource,
   registerAppTool,
@@ -39,11 +42,10 @@ import {
   localizedFieldLabel,
   resolveLanguage,
 } from "./localization.js";
-import { trackToolCall, analyticsContext } from "./analytics.js";
-import { expandedTrack, recordError } from "./analytics-expansion.js";
-import { registerCrossPlatformTools } from "./src/cross-platform-tools.js";
-import widgetHtml from "./data/widget-html.js";
-import catalog from "./data/catalog-bundle.js";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const widgetHtml = readFileSync(join(__dirname, "public", "workspace-widget.html"), "utf8");
+const catalog = JSON.parse(readFileSync(join(__dirname, "data", "catalog.json"), "utf8"));
 const templates = catalog.templates;
 const prompts = catalog.prompts;
 const UI_URI = "ui://polyglot/workspace-v3.html";
@@ -214,34 +216,8 @@ function createPolyglotServer(requestAuthToken = "") {
       token: extra?.authInfo?.token || extra?.authInfo?.accessToken || requestAuthToken || "",
     },
   });
-  // Combined analytics: raw event + expansion rollups + error recording
-  const track = (toolName, extra, metadata = {}) => {
-    trackToolCall(toolName, extra, requestAuthToken, metadata);
-    const ctx = analyticsContext(extra, requestAuthToken);
-    expandedTrack({
-      toolName,
-      userKey: ctx.userKey,
-      sessionKey: ctx.sessionKey,
-      clientName: ctx.clientName,
-      authenticated: ctx.authenticated,
-      entitlementState: metadata.entitlementState || null,
-      metadata,
-    });
-  };
-  const trackError = (toolName, err, extra) => {
-    const ctx = analyticsContext(extra, requestAuthToken);
-    recordError({
-      toolName,
-      errorType: err?.message || String(err),
-      clientName: ctx.clientName,
-      userKey: ctx.userKey,
-      sessionKey: ctx.sessionKey,
-      metadata: { stack: false },
-    });
-  };
-
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.7.0" },
+    { name: "polyglot-ai-workspace", version: "1.5.0" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, and prepare Compare Mode runs across multiple AI providers. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server." }
   );
 
@@ -259,13 +235,7 @@ function createPolyglotServer(requestAuthToken = "") {
       localization: localizationSchema,
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
-    _meta: UI_META,
-  }, async ({ uiLanguage = "EN" }, extra) => {
-    track("get_language_options", extra, {
-      success: true,
-      uiLanguage,
-      languageCount: languagePublicList().length,
-    });
+  }, async ({ uiLanguage = "EN" }) => {
     const ui = resolveLanguage(uiLanguage);
     const localization = languageContext({ uiLanguage: ui.code, inputLanguage: ui.code, outputLanguage: ui.code });
     return {
@@ -280,15 +250,8 @@ function createPolyglotServer(requestAuthToken = "") {
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
-    _meta: UI_META,
   }, async (_args, extra) => {
     const entitlement = await getEntitlement(entitlementContext(extra));
-    track("get_subscription_status", extra, {
-      success: true,
-      entitlementState: entitlement.state,
-      isPro: entitlement.isPro,
-      trialActive: entitlement.trialActive,
-    });
     return {
       structuredContent: { view: "subscription", entitlement: entitlementSummary(entitlement) },
       content: [{ type: "text", text: `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.` }],
@@ -306,14 +269,6 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, limit: 12, uiLanguage: localization.uiLanguage.code }, entitlement);
-    track("open_workspace", extra, {
-      success: true,
-      query: query ? "provided" : "empty",
-      resultCount: results.length,
-      uiLanguage: localization.uiLanguage.code,
-      entitlementState: entitlement.state,
-      isPro: entitlement.isPro,
-    });
     return {
       structuredContent: { view: "search", query, results, entitlement: entitlementSummary(entitlement), localization },
       content: [{ type: "text", text: `Opened Poly-Glot AI Workspace with ${results.length} template${results.length === 1 ? "" : "s"}.` }],
@@ -335,16 +290,6 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, goal, plan, limit, uiLanguage: localization.uiLanguage.code }, entitlement);
-    track("search_templates", extra, {
-      success: true,
-      query: query ? "provided" : "empty",
-      goal: goal || null,
-      planFilter: plan || null,
-      resultCount: results.length,
-      uiLanguage: localization.uiLanguage.code,
-      entitlementState: entitlement.state,
-      isPro: entitlement.isPro,
-    });
     return {
       structuredContent: { view: "search", query, results, entitlement: entitlementSummary(entitlement), localization },
       content: [{ type: "text", text: results.length ? `Found ${results.length} Poly-Glot templates for “${query || "all templates"}”.` : `No Poly-Glot templates matched “${query}”.` }],
@@ -370,16 +315,6 @@ function createPolyglotServer(requestAuthToken = "") {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const access = templateAccess(template, entitlement);
-    track("get_template", extra, {
-      success: access.allowed,
-      templateName: template.name,
-      templatePlan: template.plan,
-      locked: !access.allowed,
-      lockReason: access.reason || null,
-      uiLanguage: localization.uiLanguage.code,
-      entitlementState: entitlement.state,
-      isPro: entitlement.isPro,
-    });
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
       locked.structuredContent.localization = localization;
@@ -417,10 +352,6 @@ function createPolyglotServer(requestAuthToken = "") {
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
       locked.structuredContent.localization = localization;
-      track("build_prompt", extra, {
-        success: false, locked: true, templateName: template.name, templatePlan: template.plan,
-        lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
-      });
       return locked;
     }
 
@@ -430,10 +361,6 @@ function createPolyglotServer(requestAuthToken = "") {
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
         locked.structuredContent.localization = localization;
-        track("build_prompt", extra, {
-          success: false, locked: true, templateName: template.name, templatePlan: template.plan,
-          lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
-        });
         return locked;
       }
     }
@@ -449,18 +376,6 @@ function createPolyglotServer(requestAuthToken = "") {
     }
     const missingFields = placeholders(body);
     body = applyLanguageInstructions(body, localization.inputLanguage.code, localization.outputLanguage.code);
-    track("build_prompt", extra, {
-      success: true,
-      templateName: template.name,
-      templatePlan: template.plan,
-      missingFieldCount: missingFields.length,
-      uiLanguage: localization.uiLanguage.code,
-      inputLanguage: localization.inputLanguage.code,
-      outputLanguage: localization.outputLanguage.code,
-      entitlementState: entitlement.state,
-      isPro: entitlement.isPro,
-      trialActive: entitlement.trialActive,
-    });
     return {
       structuredContent: { view: "prompt", name: localizedTemplateMeta(template, localization.uiLanguage.code).name, prompt: body, missingFields, outputLanguage: localization.outputLanguage.name, inputLanguage: localization.inputLanguage.name, entitlement: entitlementSummary(entitlement), localization },
       content: [
@@ -504,10 +419,6 @@ function createPolyglotServer(requestAuthToken = "") {
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
       locked.structuredContent.localization = localization;
-      track("prepare_compare", extra, {
-        success: false, locked: true, lockReason: "compare_locked",
-        entitlementState: entitlement.state, isPro: entitlement.isPro,
-      });
       return locked;
     }
 
@@ -520,10 +431,6 @@ function createPolyglotServer(requestAuthToken = "") {
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
         locked.structuredContent.localization = localization;
-        track("prepare_compare", extra, {
-          success: false, locked: true, templateName: template.name, templatePlan: template.plan,
-          lockReason: access.reason || null, entitlementState: entitlement.state, isPro: entitlement.isPro,
-        });
         return locked;
       }
       sourceTemplate = template.name;
@@ -541,18 +448,6 @@ function createPolyglotServer(requestAuthToken = "") {
     const unique = [...new Set(providers)];
     const targets = unique.map((id) => ({ id, ...COMPARE_PROVIDERS[id] }));
     const instructions = "Use exactly the same canonical prompt with each selected AI, collect the responses, then compare them side by side. Poly-Glot does not silently call competing AI services or transmit account credentials.";
-    track("prepare_compare", extra, {
-      success: true,
-      sourceTemplate: sourceTemplate || null,
-      hasCustomPrompt: Boolean(prompt),
-      providerCount: unique.length,
-      providers: unique,
-      uiLanguage: localization.uiLanguage.code,
-      inputLanguage: localization.inputLanguage.code,
-      outputLanguage: localization.outputLanguage.code,
-      entitlementState: entitlement.state,
-      isPro: entitlement.isPro,
-    });
     return {
       structuredContent: { view: "compare", prompt: canonicalPrompt, sourceTemplate, providers: targets, instructions, entitlement: entitlementSummary(entitlement), localization },
       content: [
@@ -562,73 +457,55 @@ function createPolyglotServer(requestAuthToken = "") {
     };
   });
 
-  // ── Cross-platform voice & language tools (additive, Apple-safe) ────
-  registerCrossPlatformTools(server, {
-    languagePublicList,
-    resolveLanguage,
-    languageContext: (langCode) => {
-      const resolved = resolveLanguage(langCode);
-      return resolved?.name || "";
-    },
-    track: (toolName, metadata) => track(toolName, {}, metadata),
-    trackError: (toolName, error) => trackError(toolName, {}, error),
-    getEntitlement,
-    entitlementContext,
-    entitlementSummary,
-  });
-
   return server;
 }
 
+const port = Number(process.env.PORT ?? 8787);
 const MCP_PATH = "/mcp";
+const httpServer = createServer(async (req, res) => {
+  if (!req.url) return res.writeHead(400).end("Missing URL");
+  const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
+  if (req.method === "OPTIONS" && url.pathname === MCP_PATH) {
+    res.writeHead(204, {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, GET, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "content-type, mcp-session-id, authorization",
+      "Access-Control-Expose-Headers": "Mcp-Session-Id",
+    });
+    return res.end();
+  }
+  // the production runtime expose one public app port. Keep the MCP and
+  // entitlement APIs on the same HTTPS origin and dispatch entitlement routes
+  // before the MCP handler. This preserves one deployable container.
+  if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
+    return handleEntitlementRequest(req, res);
+  }
 
-// ── Exports for Neon Functions fetch handler (index.mjs) ──────────────
-export { createPolyglotServer, templates, MCP_PATH };
+  if (req.method === "GET" && url.pathname === "/") {
+    res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
+    return res.end(JSON.stringify({
+      name: "Poly-Glot AI Workspace MCP", status: "ok", endpoint: MCP_PATH, templates: templates.length,
+      freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, pricing: publicPricing(),
+    }));
+  }
+  if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
+    const authHeader = String(req.headers.authorization || "");
+    const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
+    const server = createPolyglotServer(requestAuthToken);
+    const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
+    res.on("close", () => { transport.close(); server.close(); });
+    try {
+      await server.connect(transport);
+      await transport.handleRequest(req, res);
+    } catch (error) {
+      console.error("MCP request failed", error);
+      if (!res.headersSent) res.writeHead(500).end("Internal server error");
+    }
+    return;
+  }
+  res.writeHead(404).end("Not Found");
+});
 
-// ── Local dev: Node HTTP server (skipped in Neon Functions) ───────────
-if (!process.env.NEON_FUNCTION) {
-  const port = Number(process.env.PORT ?? 8787);
-  const httpServer = createServer(async (req, res) => {
-    if (!req.url) return res.writeHead(400).end("Missing URL");
-    const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
-    if (req.method === "OPTIONS" && url.pathname === MCP_PATH) {
-      res.writeHead(204, {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, GET, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "content-type, mcp-session-id, authorization",
-        "Access-Control-Expose-Headers": "Mcp-Session-Id",
-      });
-      return res.end();
-    }
-    if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
-      return handleEntitlementRequest(req, res);
-    }
-    if (req.method === "GET" && url.pathname === "/") {
-      res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
-      return res.end(JSON.stringify({
-        name: "Poly-Glot AI Workspace MCP", status: "ok", endpoint: MCP_PATH, templates: templates.length,
-        freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, pricing: publicPricing(),
-      }));
-    }
-    if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
-      const authHeader = String(req.headers.authorization || "");
-      const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
-      const server = createPolyglotServer(requestAuthToken);
-      const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
-      res.on("close", () => { transport.close(); server.close(); });
-      try {
-        await server.connect(transport);
-        await transport.handleRequest(req, res);
-      } catch (error) {
-        console.error("MCP request failed", error);
-        recordError({ toolName: "mcp_transport", errorType: error?.message || String(error), clientName: "unknown", userKey: null, sessionKey: null, metadata: {} });
-        if (!res.headersSent) res.writeHead(500).end("Internal server error");
-      }
-      return;
-    }
-    res.writeHead(404).end("Not Found");
-  });
-  httpServer.listen(port, () => console.log(`Poly-Glot MCP listening on http://localhost:${port}${MCP_PATH}`));
-}
+httpServer.listen(port, () => console.log(`Poly-Glot MCP listening on http://localhost:${port}${MCP_PATH}`));

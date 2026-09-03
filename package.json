@@ -1,21 +1,16 @@
 {
   "name": "polyglot-workspace-mcp",
-  "version": "1.7.0",
+  "version": "1.4.0",
   "private": true,
   "type": "module",
-  "description": "Poly-Glot AI Workspace remote MCP server for Neon Compute, with embedded GUI, Compare Mode, localization, Apple-backed entitlements, and cross-platform speech-to-text, language detection, translation, and localization",
+  "description": "Poly-Glot AI Workspace remote MCP server for Neon Compute, with embedded GUI, Compare Mode, localization, and Apple-backed entitlements",
   "scripts": {
     "start": "node server.js",
-    "check": "node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js && node --check analytics.js && node --check analytics-expansion.js && node --check entitlement-service/server.js && node --check entitlement-service/db.js && node --check entitlement-service/auth.js && node --check entitlement-service/apple.js && node --check src/security.js && node --check src/openai-language-provider.js && node --check src/cross-platform-tools.js",
-    "test:analytics": "DATABASE_URL=${DATABASE_URL:-postgres://dummy:dummy@localhost:5432/dummy} node --test scripts/test-analytics.mjs",
-    "test:expansion": "DATABASE_URL=${DATABASE_URL:-postgres://dummy:dummy@localhost:5432/dummy} node --test scripts/test-analytics-expansion.mjs",
-    "test": "DATABASE_URL=${DATABASE_URL:-postgres://dummy:dummy@localhost:5432/dummy} node --test scripts/test-analytics.mjs scripts/test-analytics-expansion.mjs scripts/test-cross-platform.mjs",
+    "check": "node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js && node --check entitlement-service/server.js && node --check entitlement-service/db.js && node --check entitlement-service/auth.js && node --check entitlement-service/apple.js",
     "migrate": "node scripts/migrate-neon.mjs",
     "sync": "node scripts/sync-catalog.mjs"
   },
-  "engines": {
-    "node": ">=20"
-  },
+  "engines": { "node": ">=20" },
   "dependencies": {
     "@apple/app-store-server-library": "^2.0.0",
     "@modelcontextprotocol/ext-apps": "^1.0.1",
@@ -23,6 +18,5 @@
     "jose": "^6.0.0",
     "pg": "^8.16.0",
     "zod": "^3.25.76"
-  },
-  "license": "MIT"
+  }
 }
