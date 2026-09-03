@@ -111,9 +111,23 @@ Build a Compare Mode plan containing built-in providers and developer-supplied c
 - **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral
 - **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts
-- **3-day free trial** — 25 free templates, no credit card required
-- **Pro subscriptions** — $9.99/month or $79.99/year (Save 33%)
+- **3-day free trial** — all 1,000+ templates, Compare Mode, BYOM, language tools — no credit card required
+- **After trial** — 1 free send per week (single AI only, no Compare Mode). Subscribe for unlimited.
+- **Pro subscriptions** — $9.99/month or $79.99/year (Save 33%) — unlimited sends, Compare Mode, BYOM, language processing
 - **Server-side entitlements** — Apple-backed subscription verification via Neon Postgres
+
+### Entitlement tiers
+
+| Feature | Free (no trial) | Trial (3 days) | Expired (post-trial) | Pro |
+|---|---|---|---|---|
+| Browse & search templates | ✅ | ✅ | ✅ | ✅ |
+| Language options & status | ✅ | ✅ | ✅ | ✅ |
+| Open free templates | ✅ | ✅ | ✅ | ✅ |
+| Send to 1 AI | ✅ (starts trial) | ✅ Unlimited | ✅ 1/week | ✅ Unlimited |
+| 🔀 Compare Mode | ✅ (starts trial) | ✅ | ❌ | ✅ |
+| Pro templates | ❌ | ✅ | ❌ | ✅ |
+| Language processing | ❌ | ✅ | ❌ | ✅ |
+| BYOM execution | ❌ | ✅ | ❌ | ✅ |
 
 ## Endpoints
 
