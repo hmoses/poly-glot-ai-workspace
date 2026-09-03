@@ -3,7 +3,7 @@
   "name": "io.github.hmoses/poly-glot-ai-workspace",
   "title": "Poly-Glot AI Workspace",
   "description": "Multilingual MCP tools: prompts, Compare Mode, 38 languages, transcription, translation, BYOM.",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "repository": {
     "url": "https://github.com/hmoses/poly-glot-ai-workspace",
     "source": "github",

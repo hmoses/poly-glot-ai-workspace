@@ -1,6 +1,6 @@
 {
   "name": "polyglot-workspace-mcp",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "private": true,
   "type": "module",
   "description": "Poly-Glot AI Workspace remote MCP server for Neon Compute, with embedded GUI, Compare Mode, localization, and Apple-backed entitlements",
