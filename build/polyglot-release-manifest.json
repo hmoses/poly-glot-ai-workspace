@@ -1,23 +1,30 @@
 {
-  "gitCommit": "4393c5d",
-  "parityVersion": "2026-09-02.1",
-  "mcpVersion": "1.7.0",
+  "gitCommit": "bf97c09",
+  "parityVersion": "2026-09-04.1",
+  "mcpVersion": "1.9.0",
   "schemaVersion": 1,
   "iOS": {
     "marketingVersion": "1.0.3",
-    "buildNumber": "556",
-    "status": "WAITING_FOR_REVIEW"
+    "buildNumber": "609",
+    "status": "IN_DEVELOPMENT",
+    "authoritativeRepo": "hmoses/polyglot-workspace-ios"
   },
   "macOS": {
-    "marketingVersion": "2.5",
-    "buildNumber": "586",
-    "status": "WAITING_FOR_REVIEW"
+    "marketingVersion": "2.6",
+    "buildNumber": "606",
+    "status": "IN_DEVELOPMENT",
+    "authoritativeRepo": "hmoses/polyglot-workspace-mac"
   },
   "production": {
     "endpoint": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp",
-    "deployId": "21",
-    "deployedAt": "2026-09-02T00:00:00Z",
-    "toolCount": 11,
+    "deployId": "29",
+    "deployedAt": "2026-09-03T22:57:22Z",
+    "toolCount": 15,
+    "tools": {
+      "core": ["get_language_options", "get_subscription_status", "open_workspace", "search_templates", "get_template", "build_prompt", "prepare_compare"],
+      "byom": ["get_custom_model_capabilities", "validate_custom_model", "run_custom_model", "prepare_custom_compare"],
+      "language": ["transcribe_audio", "detect_language", "translate_text", "localize_text"]
+    },
     "templateCount": 1022,
     "languageCount": 38
   },
@@ -27,5 +34,5 @@
     "totalParity": 72,
     "total": 159
   },
-  "timestamp": "2026-09-02T13:30:00Z"
+  "timestamp": "2026-09-04T06:00:00Z"
 }
