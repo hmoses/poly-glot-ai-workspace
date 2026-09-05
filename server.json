@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.hmoses/poly-glot-ai-workspace",
   "title": "Poly-Glot AI Workspace",
-  "description": "Multilingual MCP workspace with 1,000+ prompts, Compare Mode, 38 languages and BYOM. 3-day full-access trial; then 1 free single-AI send/week. Pro: $9.99/month or $79.99/year.",
-  "version": "1.8.1",
+  "description": "Multilingual MCP workspace with 1,000+ prompts, Compare Mode, 38 languages and BYOM. 3-day full-access trial; then 1 free single-AI send/day. Pro: $9.99/month or $79.99/year.",
+  "version": "1.9.0",
   "repository": {
     "url": "https://github.com/hmoses/poly-glot-ai-workspace",
     "source": "github",
