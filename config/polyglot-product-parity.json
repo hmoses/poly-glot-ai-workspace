@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "parityVersion": "2026-09-02.1",
+  "parityVersion": "2026-09-05.1",
   "plans": {
     "free": {
       "compare": false,
@@ -10,7 +10,7 @@
       "trialDays": 3
     },
     "trial": {
-      "compare": false,
+      "compare": true,
       "premiumTemplates": false,
       "crossPlatformTools": true,
       "freeTemplateCount": 25
@@ -26,7 +26,7 @@
     "compare": {
       "visible": true,
       "freeAccess": false,
-      "trialAccess": false,
+      "trialAccess": true,
       "proAccess": true,
       "uiStateWhenLocked": "locked",
       "lockLabel": "PRO",
@@ -142,14 +142,14 @@
     "trialStart": "25 free templates for 3 days.",
     "trialExpired": "Your 3-day trial has ended.",
     "proRequired": "A Pro subscription is required.",
-    "compareLocked": "Compare Mode requires a Pro subscription.",
+    "compareLocked": "Compare Mode requires an active trial or Pro subscription.",
     "crossPlatformLocked": "A Pro subscription or active trial is required to use cross-platform language tools."
   },
   "mcpTools": {
     "open": ["get_language_options", "get_subscription_status"],
     "entitlementAware": ["open_workspace", "search_templates", "get_template", "build_prompt"],
-    "proOnly": ["prepare_compare"],
-    "proOrTrial": ["transcribe_audio", "detect_language", "translate_text", "localize_text"]
+    "proOnly": [],
+    "proOrTrial": ["prepare_compare", "transcribe_audio", "detect_language", "translate_text", "localize_text"]
   },
   "uiViews": {
     "locked": "lockedView",
