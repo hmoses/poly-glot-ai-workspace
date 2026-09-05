@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "entitlementVersion": "2026-09-02.1",
+  "entitlementVersion": "2026-09-05.1",
   "plans": {
     "free": {
       "compare": false,
@@ -10,7 +10,7 @@
       "trialDays": 3
     },
     "trial": {
-      "compare": false,
+      "compare": true,
       "premiumTemplates": false,
       "crossPlatformTools": true,
       "freeTemplateCount": 25
@@ -66,10 +66,9 @@
       "get_template",
       "build_prompt"
     ],
-    "proOnly": [
-      "prepare_compare"
-    ],
+    "proOnly": [],
     "proOrTrial": [
+      "prepare_compare",
       "transcribe_audio",
       "detect_language",
       "translate_text",
