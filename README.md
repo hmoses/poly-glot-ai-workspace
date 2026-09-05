@@ -28,7 +28,7 @@ Get a template's fields and prompt body. The source prompt body is returned only
 
 ### `build_prompt`
 
-Fill an entitled Poly-Glot template with user values. First use of a free template starts the 3-day trial. Pro templates require an active Pro subscription.
+Fill an entitled Poly-Glot template with user values. First eligible use starts the 3-day trial. During the active trial, all 1,000+ templates are unlocked; after the trial, template bodies lock unless the account is Pro.
 
 **Parameters:** `name` (string, required), `values` (object), `uiLanguage`, `inputLanguage`, `outputLanguage` (strings, default "EN")
 
@@ -104,28 +104,31 @@ Build a Compare Mode plan containing built-in providers and developer-supplied c
 
 **Parameters:** `prompt` (string, required), `builtinProviders` (array), `customModels` (array of { label, adapterMode, baseUrl/endpoint, model }), `uiLanguage`, `inputLanguage`, `outputLanguage`
 
+## Pricing and access
+
+- **3-day free trial** — full access to all 1,000+ templates, Compare Mode, unlimited sends, BYOM, and language tools.
+- **After trial** — 1 free single-AI send per week; Compare Mode and premium features lock.
+- **Pro Monthly** — $9.99/month for unlimited access.
+- **Pro Annual** — $79.99/year (Save 33%) for unlimited access.
+
 ## Features
 
-- **1,022 prompt templates** — 25 Free, 997 Pro
+- **1,022 prompt templates** — 25 designated Free, 997 designated Pro; all 1,022 are unlocked during the active trial
 - **38 languages** — independent UI, input, and output language controls
 - **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral
 - **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts
-- **3-day free trial** — all 1,000+ templates, Compare Mode, BYOM, language tools — no credit card required
-- **After trial** — 1 free send per week (single AI only, no Compare Mode). Subscribe for unlimited.
-- **Pro subscriptions** — $9.99/month or $79.99/year (Save 33%) — unlimited sends, Compare Mode, BYOM, language processing
 - **Server-side entitlements** — Apple-backed subscription verification via Neon Postgres
 
 ### Entitlement tiers
 
-| Feature | Free (no trial) | Trial (3 days) | Expired (post-trial) | Pro |
+| Feature | Free / not started | Trial (3 days) | Expired (post-trial) | Pro |
 |---|---|---|---|---|
 | Browse & search templates | ✅ | ✅ | ✅ | ✅ |
 | Language options & status | ✅ | ✅ | ✅ | ✅ |
-| Open free templates | ✅ | ✅ | ✅ | ✅ |
-| Send to 1 AI | ✅ (starts trial) | ✅ Unlimited | ✅ 1/week | ✅ Unlimited |
-| 🔀 Compare Mode | ✅ (starts trial) | ✅ | ❌ | ✅ |
-| Pro templates | ❌ | ✅ | ❌ | ✅ |
+| Template bodies | Free templates only | ✅ All | ❌ Locked | ✅ All |
+| Send to 1 AI | ✅ starts trial | ✅ Unlimited | ✅ 1/week | ✅ Unlimited |
+| 🔀 Compare Mode | ✅ starts trial | ✅ | ❌ | ✅ |
 | Language processing | ❌ | ✅ | ❌ | ✅ |
 | BYOM execution | ❌ | ✅ | ❌ | ✅ |
 
