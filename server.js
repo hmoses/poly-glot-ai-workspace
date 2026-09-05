@@ -182,7 +182,7 @@ const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN"
 const entitlementSchema = z.object({
   state: z.string(), trialEndsAt: z.string().nullable(), isPro: z.boolean(), trialActive: z.boolean(), canUseFree: z.boolean(),
   compareLocked: z.boolean().optional(), nextResetAt: z.string().nullable().optional(),
-  weeklyFreeLimit: z.number().nullable().optional(),
+  dailyFreeLimit: z.number().nullable().optional(),
   pricing: z.object({
     currency: z.string(), trialDays: z.number(), freeTemplateCount: z.number(),
     monthly: z.object({ id: z.string(), label: z.string(), price: z.number(), interval: z.string() }),
@@ -238,7 +238,7 @@ function createPolyglotServer(requestAuthToken = "") {
     },
   });
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.8.0" },
+    { name: "polyglot-ai-workspace", version: "1.9.0" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
   );
 
@@ -278,8 +278,7 @@ function createPolyglotServer(requestAuthToken = "") {
     const summary = entitlementSummary(entitlement);
     let text = `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.`;
     if (entitlement.isExpired) {
-      const resetDate = entitlement.nextResetAt ? new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "Monday";
-      text += ` Trial ended. 1 free Ask Any AI send/week (single AI, no Compare). Next reset: ${resetDate}. Subscribe for unlimited.`;
+      text += ` Trial ended. 1 free Ask Any AI send/day (single AI, no Compare). Resets at midnight. Subscribe for unlimited.`;
     } else if (entitlement.trialActive) {
       text += ` Trial active — all features unlocked (all templates, Compare Mode, BYOM). Ends ${entitlement.trialEndsAt ? new Date(entitlement.trialEndsAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "in 3 days"}.`;
     }
