@@ -1,17 +1,17 @@
 {
-  "gitCommit": "bf97c09",
-  "parityVersion": "2026-09-04.1",
+  "gitCommit": "c0a814a",
+  "parityVersion": "2026-09-07.1",
   "mcpVersion": "1.9.0",
   "schemaVersion": 1,
   "iOS": {
     "marketingVersion": "1.0.3",
-    "buildNumber": "609",
+    "buildNumber": "612",
     "status": "IN_DEVELOPMENT",
     "authoritativeRepo": "hmoses/polyglot-workspace-ios"
   },
   "macOS": {
     "marketingVersion": "2.6",
-    "buildNumber": "606",
+    "buildNumber": "612",
     "status": "IN_DEVELOPMENT",
     "authoritativeRepo": "hmoses/polyglot-workspace-mac"
   },
