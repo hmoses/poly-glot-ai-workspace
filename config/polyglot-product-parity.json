@@ -11,7 +11,7 @@
     },
     "trial": {
       "compare": true,
-      "premiumTemplates": false,
+      "premiumTemplates": true,
       "crossPlatformTools": true,
       "freeTemplateCount": 25
     },
@@ -131,25 +131,72 @@
   "languages": {
     "count": 38,
     "codes": [
-      "EN", "ES", "FR", "DE", "IT", "PT", "NL", "RU",
-      "ZH", "ZH_TW", "JA", "KO", "AR", "HI", "BN", "TR",
-      "PL", "SV", "NO", "DA", "FI", "EL", "HE", "ID",
-      "MS", "TH", "VI", "UK", "CS", "RO", "HU", "SK",
-      "HR", "CA", "AF", "SW", "HA", "AM"
+      "EN",
+      "ES",
+      "FR",
+      "DE",
+      "IT",
+      "PT",
+      "NL",
+      "RU",
+      "ZH",
+      "ZH_TW",
+      "JA",
+      "KO",
+      "AR",
+      "HI",
+      "BN",
+      "TR",
+      "PL",
+      "SV",
+      "NO",
+      "DA",
+      "FI",
+      "EL",
+      "HE",
+      "ID",
+      "MS",
+      "TH",
+      "VI",
+      "UK",
+      "CS",
+      "RO",
+      "HU",
+      "SK",
+      "HR",
+      "CA",
+      "AF",
+      "SW",
+      "HA",
+      "AM"
     ]
   },
   "messages": {
-    "trialStart": "25 free templates for 3 days.",
+    "trialStart": "All features free for 3 days.",
     "trialExpired": "Your 3-day trial has ended.",
     "proRequired": "A Pro subscription is required.",
     "compareLocked": "Compare Mode requires an active trial or Pro subscription.",
     "crossPlatformLocked": "A Pro subscription or active trial is required to use cross-platform language tools."
   },
   "mcpTools": {
-    "open": ["get_language_options", "get_subscription_status"],
-    "entitlementAware": ["open_workspace", "search_templates", "get_template", "build_prompt"],
+    "open": [
+      "get_language_options",
+      "get_subscription_status"
+    ],
+    "entitlementAware": [
+      "open_workspace",
+      "search_templates",
+      "get_template",
+      "build_prompt"
+    ],
     "proOnly": [],
-    "proOrTrial": ["prepare_compare", "transcribe_audio", "detect_language", "translate_text", "localize_text"]
+    "proOrTrial": [
+      "prepare_compare",
+      "transcribe_audio",
+      "detect_language",
+      "translate_text",
+      "localize_text"
+    ]
   },
   "uiViews": {
     "locked": "lockedView",
