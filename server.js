@@ -199,7 +199,7 @@ const templateSchema = z.object({
 function lockedResult(template, entitlement, uiLanguage = "EN") {
   const resetInfo = entitlement.nextResetAt ? ` Next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
   const reason = entitlement.isExpired
-    ? `Your 3-day trial has ended. All templates are locked. You have 1 free Ask Any AI send per week (single AI).${resetInfo} Subscribe to Pro for unlimited access.`
+    ? `Your 3-day trial has ended. All templates are locked. You have 1 free Ask Any AI send per day (single AI).${resetInfo} Subscribe to Pro for unlimited access.`
     : template.plan === "pro"
     ? "This is a Pro template. Subscribe to Pro Monthly ($9.99/month) or Pro Annual ($79.99/year) to unlock all 1,000+ templates."
     : "Start your free 3-day trial to access all templates, Compare Mode, and more.";

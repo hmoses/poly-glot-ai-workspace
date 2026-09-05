@@ -107,7 +107,7 @@ Build a Compare Mode plan containing built-in providers and developer-supplied c
 ## Pricing and access
 
 - **3-day free trial** — full access to all 1,000+ templates, Compare Mode, unlimited sends, BYOM, and language tools.
-- **After trial** — 1 free single-AI send per week; Compare Mode and premium features lock.
+- **After trial** — 1 free single-AI send per day; Compare Mode and premium features lock.
 - **Pro Monthly** — $9.99/month for unlimited access.
 - **Pro Annual** — $79.99/year (Save 33%) for unlimited access.
 

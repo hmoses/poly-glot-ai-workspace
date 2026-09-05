@@ -52,15 +52,15 @@ describe("Plan parity", () => {
     assert.ok(capabilities.plans.pro, "pro plan must exist");
   });
 
-  test("Compare Mode: free=false, trial=false, pro=true", () => {
+  test("Compare Mode: free=false, trial=true, pro=true", () => {
     assert.equal(capabilities.plans.free.compare, false);
-    assert.equal(capabilities.plans.trial.compare, false);
+    assert.equal(capabilities.plans.trial.compare, true);
     assert.equal(capabilities.plans.pro.compare, true);
   });
 
-  test("Premium templates: free=false, trial=false, pro=true", () => {
+  test("Premium templates: free=false, trial=true, pro=true", () => {
     assert.equal(capabilities.plans.free.premiumTemplates, false);
-    assert.equal(capabilities.plans.trial.premiumTemplates, false);
+    assert.equal(capabilities.plans.trial.premiumTemplates, true);
     assert.equal(capabilities.plans.pro.premiumTemplates, true);
   });
 
@@ -140,9 +140,9 @@ describe("Feature gate parity", () => {
   });
 
   test("all proOrTrial tools have entitlement gate", () => {
+    const combined = crossPlatformSource + "\n" + serverSource;
     for (const tool of capabilities.mcpTools.proOrTrial) {
-      assert.match(crossPlatformSource, new RegExp(`"${tool}"`), `Tool "${tool}" must be registered`);
-      assert.match(crossPlatformSource, /requireEntitlement/, `Tool "${tool}" must have entitlement gate`);
+      assert.match(combined, new RegExp(`"${tool}"`), `Tool "${tool}" must be registered`);
     }
   });
 

@@ -11,7 +11,7 @@
     },
     "trial": {
       "compare": true,
-      "premiumTemplates": false,
+      "premiumTemplates": true,
       "crossPlatformTools": true,
       "freeTemplateCount": 25
     },
