@@ -14,8 +14,8 @@
 - **Deployment target**: iOS 15.0
 - **Deployment workflow**: `hmoses/polyglot-workspace-ios/.github/workflows/ios-upload-testflight.yml`
 - **MCP parity consumer path**: `www/` (Capacitor hybrid app)
-- **Marketing version**: 1.0.3
-- **Current ASC build**: 609
+- **Marketing version**: 1.0.4
+- **Current ASC build**: 667
 
 ## macOS
 - **Authoritative repo**: `hmoses/polyglot-workspace-mac`
@@ -32,11 +32,11 @@
 - **Deployment workflow**: `hmoses/polyglot-workspace-mac/.github/workflows/mac-upload.yml`
 - **MCP parity consumer path**: `PolyGlotAI/PolyGlotAI/Resources/public/`
 - **Marketing version**: 2.6
-- **Current ASC build**: 606
+- **Current ASC build**: 663
 
 ## MCP
 - **Authoritative repo**: `hmoses/poly-glot-ai-workspace` (this repo)
-- **Production baseline**: Deploy 29 / v1.9.0 / 15 tools / 1,022 templates / 35 languages
+- **Production baseline**: Deploy 30 / v1.9.0 / 15 tools / 1,022 templates / 35 languages
 - **Parity manifest**: `config/polyglot-product-parity.json`
 - **Apple capability generator**: `scripts/generate-apple-capabilities.mjs`
 - **Generated Swift contract**: `Generated/PolyGlotCapabilities.swift`

@@ -129,7 +129,7 @@
     "pro_annual"
   ],
   "languages": {
-    "count": 38,
+    "count": 35,
     "codes": [
       "EN",
       "ES",
@@ -165,10 +165,7 @@
       "SK",
       "HR",
       "CA",
-      "AF",
-      "SW",
-      "HA",
-      "AM"
+      "AF"
     ]
   },
   "messages": {

@@ -4,29 +4,47 @@
   "mcpVersion": "1.9.0",
   "schemaVersion": 1,
   "iOS": {
-    "marketingVersion": "1.0.3",
-    "buildNumber": "612",
-    "status": "IN_DEVELOPMENT",
+    "marketingVersion": "1.0.4",
+    "buildNumber": "667",
+    "status": "IN_REVIEW",
     "authoritativeRepo": "hmoses/polyglot-workspace-ios"
   },
   "macOS": {
     "marketingVersion": "2.6",
-    "buildNumber": "612",
-    "status": "IN_DEVELOPMENT",
+    "buildNumber": "663",
+    "status": "PREPARE_FOR_SUBMISSION",
     "authoritativeRepo": "hmoses/polyglot-workspace-mac"
   },
   "production": {
     "endpoint": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp",
-    "deployId": "29",
-    "deployedAt": "2026-09-03T22:57:22Z",
+    "deployId": "30",
+    "deployedAt": "2026-09-08T22:15:00Z",
     "toolCount": 15,
     "tools": {
-      "core": ["get_language_options", "get_subscription_status", "open_workspace", "search_templates", "get_template", "build_prompt", "prepare_compare"],
-      "byom": ["get_custom_model_capabilities", "validate_custom_model", "run_custom_model", "prepare_custom_compare"],
-      "language": ["transcribe_audio", "detect_language", "translate_text", "localize_text"]
+      "core": [
+        "get_language_options",
+        "get_subscription_status",
+        "open_workspace",
+        "search_templates",
+        "get_template",
+        "build_prompt",
+        "prepare_compare"
+      ],
+      "byom": [
+        "get_custom_model_capabilities",
+        "validate_custom_model",
+        "run_custom_model",
+        "prepare_custom_compare"
+      ],
+      "language": [
+        "transcribe_audio",
+        "detect_language",
+        "translate_text",
+        "localize_text"
+      ]
     },
     "templateCount": 1022,
-    "languageCount": 38
+    "languageCount": 35
   },
   "tests": {
     "mcpMain": 63,
@@ -34,5 +52,5 @@
     "totalParity": 72,
     "total": 159
   },
-  "timestamp": "2026-09-04T06:00:00Z"
+  "timestamp": "2026-09-08T22:30:00Z"
 }

@@ -30,7 +30,7 @@
 | Detect Language — Trial | N/A | N/A | ✅ requireEntitlement | N/A | None | — |
 | Detect Language — Pro | N/A | N/A | ✅ requireEntitlement | N/A | None | — |
 | **Languages** | | | | | | |
-| Language count | 35 | 38 | 35 | 38 | None | — |
+| Language count | 35 | 35 | 35 | 35 | None | — |
 | Language codes match | ✅ | ✅ | ✅ | ✅ | None | — |
 | **UI States** | | | | | | |
 | Locked template card | 🔒 + PRO badge | 🔒 + PRO badge | locked flag | 🔒 PRO badge + opacity | None | — |

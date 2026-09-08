@@ -19,7 +19,7 @@ Snapshot of all verified facts before final parity + auto-sync work begins.
 | schemaVersion | 1 |
 | parityVersion | `2026-09-02.1` |
 | Plans | free, trial, pro |
-| Features | 8 (compare, premiumTemplates, transcription, detectLanguage, translation, localization, templateBrowsing, promptBuilding) |
+| Features | 8 (compare, premiumTemplates, transcription, detectLanguage, translation, localization, templateBrowsing, promptBuilding) + 4 BYOM tools |
 | Languages | 35 |
 | Entitlement states | 5 (not_started, trial, expired, pro_monthly, pro_annual) |
 
@@ -36,13 +36,13 @@ Snapshot of all verified facts before final parity + auto-sync work begins.
 
 | Item | Value |
 |------|-------|
-| Version | 1.7.0 |
-| Tools | 11 (get_language_options, get_subscription_status, open_workspace, search_templates, get_template, build_prompt, prepare_compare, transcribe_audio, detect_language, translate_text, localize_text) |
+| Version | 1.9.0 |
+| Tools | 15 (get_language_options, get_subscription_status, open_workspace, search_templates, get_template, build_prompt, prepare_compare, get_custom_model_capabilities, validate_custom_model, run_custom_model, prepare_custom_compare, transcribe_audio, detect_language, translate_text, localize_text) |
 | Templates | 1,022 (25 free, 997 pro) |
 | Languages | 35 |
 | Endpoint | `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp` |
 | Health | ✅ OK |
-| Deploy | #21 (Neon Functions) |
+| Deploy | #30 (Neon Functions) |
 
 ## Test Suites
 
@@ -95,15 +95,15 @@ Verified identical in:
 
 | Platform | Version | Build | Status |
 |----------|---------|-------|--------|
-| macOS | 2.5 | 586 | WAITING_FOR_REVIEW |
-| iOS | 1.0.3 | — | WAITING_FOR_REVIEW |
+| macOS | 2.6 | 663 | PREPARE_FOR_SUBMISSION |
+| iOS | 1.0.4 | 667 | IN_REVIEW |
 
 ## Apple Xcode Projects
 
 | Platform | Path | Project |
 |----------|------|---------|
-| iOS | `~/Desktop/polyglot-workspace/ios/ios/App/App.xcodeproj` | App target |
-| macOS | `~/Desktop/polyglot-workspace/mac/PolyGlotAI/PolyGlotAI.xcodeproj` | PolyGlotAI target |
+| iOS | `~/Desktop/PolyGlot/PolyGlotWorkspace_iOS/ios/App/App.xcodeproj` | App target |
+| macOS | `~/Desktop/PolyGlot/PolyGlotMac/PolyGlotAI/PolyGlotAI.xcodeproj` | PolyGlotAI target |
 
 ## Swift Integration Status (Pre-Phase 1)
 
@@ -111,4 +111,4 @@ Verified identical in:
 
 ## Differences from Prior Report
 
-None found. All 159/159 tests pass. Production v1.7.0 live with 11 tools. All product IDs match across all surfaces.
+None found. All 159/159 tests pass. Production v1.9.0 live with 15 tools. All product IDs match across all surfaces.
