@@ -238,7 +238,7 @@ function createPolyglotServer(requestAuthToken = "") {
     },
   });
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.9.0" },
+    { name: "polyglot-ai-workspace", version: "1.9.1" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
   );
 
