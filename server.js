@@ -248,7 +248,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "get_language_options", {
     title: "Get Poly-Glot language options",
-    description: "Return the 38 supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement.",
+    description: "Return the 35 supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement.",
     _meta: UI_META,
     inputSchema: { uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: {

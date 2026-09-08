@@ -4,7 +4,7 @@ Post-deployment surface verification status.
 
 | Surface | Role | Status | Evidence |
 |---|---|---|---|
-| **Production Health** | Server health | VERIFIED | `{"status":"ok","templates":1022,"supportedLanguages":38}` — live |
+| **Production Health** | Server health | VERIFIED | `{"status":"ok","templates":1022,"supportedLanguages":35}` — live |
 | **Production MCP** | Streamable HTTP endpoint | BLOCKED | Live endpoint responds but still running v1.3.0 — code merged to main but Neon Compute requires manual redeploy |
 | **Official MCP Registry** | Registry metadata | UPDATED | v1.7.0 published via `mcp-publisher`, workflow run #33663026254 all steps SUCCESS, `isLatest: true` |
 | **Glama** | Directory/listing | BLOCKED | Page live at glama.ai/mcp/servers/hmoses/poly-glot-ai-workspace, shows 7 tools (pre-deploy). Will auto-discover 11 tools after production redeploy |

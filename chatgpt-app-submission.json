@@ -87,7 +87,7 @@
         "destructiveHint": false
       },
       "justifications": {
-        "read_only_justification": "Returns the static list of 38 supported Poly-Glot UI, input, and output languages without changing user data or entitlement state.",
+        "read_only_justification": "Returns the static list of 35 supported Poly-Glot UI, input, and output languages without changing user data or entitlement state.",
         "open_world_justification": "Does not publish content or change any public or third-party system.",
         "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
       }

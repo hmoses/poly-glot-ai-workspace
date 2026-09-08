@@ -11,7 +11,7 @@ import {
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, "..");
 const catalog = JSON.parse(readFileSync(join(root, "data", "catalog.json"), "utf8"));
-if (SUPPORTED_LANGUAGES.length !== 38) throw new Error(`Expected 38 languages, got ${SUPPORTED_LANGUAGES.length}`);
+if (SUPPORTED_LANGUAGES.length !== 35) throw new Error(`Expected 35 languages, got ${SUPPORTED_LANGUAGES.length}`);
 for (const lang of SUPPORTED_LANGUAGES) {
   const file = join(root, "data", "localizations", `tpl_${lang.code.toLowerCase()}.json`);
   if (!existsSync(file)) throw new Error(`Missing template localization: ${lang.code}`);

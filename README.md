@@ -1,6 +1,6 @@
 # Poly-Glot AI Workspace
 
-> Multilingual MCP tool platform: 1,000+ prompt templates · 38 languages · Compare Mode · BYOM · Embedded GUI
+> Multilingual MCP tool platform: 1,000+ prompt templates · 35 languages · Compare Mode · BYOM · Embedded GUI
 
 Remote MCP server with an embedded MCP Apps / ChatGPT Apps SDK GUI, server-side entitlements, Apple-backed subscriptions, and Bring Your Own Model (BYOM) support.
 
@@ -40,7 +40,7 @@ Prepare one canonical prompt for 2+ AI providers so the user can compare answers
 
 ### `get_language_options`
 
-Return the 38 supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement.
+Return the 35 supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement.
 
 **Parameters:** `uiLanguage` (string, default "EN")
 
@@ -70,7 +70,7 @@ Detect the language of a text snippet. Returns ISO code and confidence score.
 
 ### `translate_text`
 
-Translate text between any of the 38 supported Poly-Glot languages.
+Translate text between any of the 35 supported Poly-Glot languages.
 
 **Parameters:** `text` (string, required), `from` (string), `to` (string, required), `uiLanguage` (string, default "EN")
 
@@ -114,7 +114,7 @@ Build a Compare Mode plan containing built-in providers and developer-supplied c
 ## Features
 
 - **1,022 prompt templates** — 25 designated Free, 997 designated Pro; all 1,022 are unlocked during the active trial
-- **38 languages** — independent UI, input, and output language controls
+- **35 languages** — independent UI, input, and output language controls
 - **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral
 - **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts

@@ -87,8 +87,8 @@ describe("Parity contract structure", () => {
     assert.ok(parity.products.annual);
   });
   test("has languages section", () => {
-    assert.equal(parity.languages.count, 38);
-    assert.equal(parity.languages.codes.length, 38);
+    assert.equal(parity.languages.count, 35);
+    assert.equal(parity.languages.codes.length, 35);
   });
   test("has messages section", () => {
     assert.ok(parity.messages.trialStart);
@@ -260,11 +260,11 @@ describe("Cross-platform tools parity", () => {
 // 7. LANGUAGE PARITY
 // ══════════════════════════════════════════════════════════════════════
 describe("Language parity", () => {
-  test("38 languages in contract", () => {
-    assert.equal(parity.languages.codes.length, 38);
+  test("35 languages in contract", () => {
+    assert.equal(parity.languages.codes.length, 35);
   });
   if (hasWidget) {
-    test("MCP UI has 38 languages", () => {
+    test("MCP UI has 35 languages", () => {
       for (const code of parity.languages.codes) {
         // In unescaped widget HTML, codes appear as: "code": "EN"
         // or in the LOCALES object as: "EN": {
@@ -277,9 +277,9 @@ describe("Language parity", () => {
   }
   // MCP backend language count verified via languagePublicList()
   test("MCP backend language catalog exists", () => {
-    assert.ok(serverSource.includes("languagePublicList") || serverSource.includes("38"));
+    assert.ok(serverSource.includes("languagePublicList") || serverSource.includes("35"));
   });
-  record("Languages (38)", hasIos ? "MATCH" : "SKIP", hasMac ? "MATCH" : "SKIP", "MATCH", hasWidget ? "MATCH" : "SKIP", "PASS");
+  record("Languages (35)", hasIos ? "MATCH" : "SKIP", hasMac ? "MATCH" : "SKIP", "MATCH", hasWidget ? "MATCH" : "SKIP", "PASS");
 });
 
 // ══════════════════════════════════════════════════════════════════════

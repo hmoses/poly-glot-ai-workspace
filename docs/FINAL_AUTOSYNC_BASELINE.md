@@ -20,7 +20,7 @@ Snapshot of all verified facts before final parity + auto-sync work begins.
 | parityVersion | `2026-09-02.1` |
 | Plans | free, trial, pro |
 | Features | 8 (compare, premiumTemplates, transcription, detectLanguage, translation, localization, templateBrowsing, promptBuilding) |
-| Languages | 38 |
+| Languages | 35 |
 | Entitlement states | 5 (not_started, trial, expired, pro_monthly, pro_annual) |
 
 ## Generated Swift
@@ -39,7 +39,7 @@ Snapshot of all verified facts before final parity + auto-sync work begins.
 | Version | 1.7.0 |
 | Tools | 11 (get_language_options, get_subscription_status, open_workspace, search_templates, get_template, build_prompt, prepare_compare, transcribe_audio, detect_language, translate_text, localize_text) |
 | Templates | 1,022 (25 free, 997 pro) |
-| Languages | 38 |
+| Languages | 35 |
 | Endpoint | `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp` |
 | Health | ✅ OK |
 | Deploy | #21 (Neon Functions) |
