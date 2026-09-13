@@ -87,21 +87,53 @@ export function sanitizeFilename(name = "audio.bin") {
   return safe || "audio.bin";
 }
 
+/**
+ * AudioFetchError carries a structured error code for analytics/client handling.
+ */
+export class AudioFetchError extends Error {
+  constructor(message, code, { status } = {}) {
+    super(message);
+    this.name = "AudioFetchError";
+    this.code = code;
+    this.status = status ?? null;
+  }
+}
+
 export async function fetchRemoteAudio(value) {
   const url = await validateRemoteAudioUrl(value);
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), AUDIO_TIMEOUT_MS);
   try {
     const res = await fetch(url, { redirect: "error", signal: controller.signal });
-    if (!res.ok) throw new Error(`Audio download failed with HTTP ${res.status}.`);
+    if (res.status === 404) {
+      throw new AudioFetchError(
+        `Audio not found at the provided URL (HTTP 404). Verify the URL is correct and the resource exists.`,
+        "AUDIO_NOT_FOUND",
+        { status: 404 }
+      );
+    }
+    if (!res.ok) {
+      throw new AudioFetchError(
+        `Audio download failed with HTTP ${res.status}.`,
+        "AUDIO_DOWNLOAD_FAILED",
+        { status: res.status }
+      );
+    }
     const type = res.headers.get("content-type") || "";
     if (type && !/^(audio\/|video\/|application\/octet-stream)/i.test(type)) {
-      throw new Error("Remote resource does not appear to be audio.");
+      throw new AudioFetchError(
+        "Remote resource does not appear to be audio.",
+        "AUDIO_INVALID_CONTENT_TYPE"
+      );
     }
     const len = Number(res.headers.get("content-length"));
-    if (Number.isFinite(len) && len > AUDIO_MAX_BYTES) throw new Error("Remote audio exceeds maximum allowed size.");
+    if (Number.isFinite(len) && len > AUDIO_MAX_BYTES) {
+      throw new AudioFetchError("Remote audio exceeds maximum allowed size.", "AUDIO_TOO_LARGE");
+    }
     const arr = new Uint8Array(await res.arrayBuffer());
-    if (arr.byteLength > AUDIO_MAX_BYTES) throw new Error("Remote audio exceeds maximum allowed size.");
+    if (arr.byteLength > AUDIO_MAX_BYTES) {
+      throw new AudioFetchError("Remote audio exceeds maximum allowed size.", "AUDIO_TOO_LARGE");
+    }
     return { buffer: Buffer.from(arr), contentType: type || "application/octet-stream" };
   } finally {
     clearTimeout(timer);

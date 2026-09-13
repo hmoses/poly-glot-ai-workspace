@@ -1,7 +1,7 @@
 {
   "gitCommit": "c0a814a",
-  "parityVersion": "2026-09-07.1",
-  "mcpVersion": "1.9.0",
+  "parityVersion": "2026-09-13.1",
+  "mcpVersion": "1.9.2",
   "schemaVersion": 1,
   "iOS": {
     "marketingVersion": "1.0.4",

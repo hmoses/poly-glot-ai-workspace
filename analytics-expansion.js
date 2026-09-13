@@ -174,15 +174,16 @@ export async function aggregateDaily(targetDate) {
 /**
  * Called after trackToolCall in server.js to handle expansion rollups.
  * Fire-and-forget. Never throws.
+ * v1.9.2: test_run flag propagated to prevent test data from polluting funnels.
  */
-export function expandedTrack({ toolName, userKey, sessionKey, clientName, authenticated, entitlementState, metadata = {} }) {
+export function expandedTrack({ toolName, userKey, sessionKey, clientName, authenticated, entitlementState, testRun = false, metadata = {} }) {
   // User rollup
   upsertUser({ userKey, clientName, entitlementState }).catch(() => {});
   // Session rollup
   upsertSession({ sessionKey, userKey, clientName, authenticated }).catch(() => {});
 
-  // Conversion milestones (fire per tool)
-  if (userKey) {
+  // Conversion milestones (fire per tool) — skip for test runs
+  if (userKey && !testRun) {
     recordConversion({ userKey, sessionKey, eventType: "first_call", clientName }).catch(() => {});
     const milestoneMap = {
       search_templates: "first_search",
@@ -197,8 +198,8 @@ export function expandedTrack({ toolName, userKey, sessionKey, clientName, authe
     }
   }
 
-  // Subscription milestones from entitlement state changes
-  if (userKey && entitlementState) {
+  // Subscription milestones from entitlement state changes — skip for test runs
+  if (userKey && entitlementState && !testRun) {
     if (entitlementState === "trial") {
       recordConversion({ userKey, sessionKey, eventType: "trial_started", clientName }).catch(() => {});
     }

@@ -19,7 +19,7 @@ import {
   registerAppResource,
   registerAppTool,
   RESOURCE_MIME_TYPE,
-} from "@modelcontextprotocol/ext-apps/server";
+} from "./src/safe-ext-apps.js";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { z } from "zod";
@@ -238,7 +238,7 @@ function createPolyglotServer(requestAuthToken = "") {
     },
   });
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.9.1" },
+    { name: "polyglot-ai-workspace", version: "1.9.2" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
   );
 
@@ -344,7 +344,11 @@ function createPolyglotServer(requestAuthToken = "") {
     _meta: renderMeta("Opening template…", "Template opened"),
   }, async ({ name, uiLanguage = "EN" }, extra) => {
     const template = findTemplate(name);
-    if (!template) throw new Error(`Template not found: ${name}`);
+    if (!template) {
+      const error = new Error(`Template not found: ${name}. Use search_templates to find available templates.`);
+      error.code = "TEMPLATE_NOT_FOUND";
+      throw error;
+    }
     const entitlement = await getEntitlement(entitlementContext(extra));
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const access = templateAccess(template, entitlement);
@@ -379,7 +383,11 @@ function createPolyglotServer(requestAuthToken = "") {
     _meta: renderMeta("Building prompt…", "Prompt is ready"),
   }, async ({ name, values = {}, uiLanguage = "EN", inputLanguage = "EN", outputLanguage = "EN" }, extra) => {
     const template = findTemplate(name);
-    if (!template) throw new Error(`Template not found: ${name}`);
+    if (!template) {
+      const error = new Error(`Template not found: ${name}. Use search_templates to find available templates.`);
+      error.code = "TEMPLATE_NOT_FOUND";
+      throw error;
+    }
     const localization = languageContext({ uiLanguage, inputLanguage, outputLanguage });
     let entitlement = await getEntitlement(entitlementContext(extra));
     let access = templateAccess(template, entitlement);
@@ -461,7 +469,11 @@ function createPolyglotServer(requestAuthToken = "") {
     let sourceTemplate;
     if (name) {
       const template = findTemplate(name);
-      if (!template) throw new Error(`Template not found: ${name}`);
+      if (!template) {
+        const error = new Error(`Template not found: ${name}. Use search_templates to find available templates.`);
+        error.code = "TEMPLATE_NOT_FOUND";
+        throw error;
+      }
       const access = templateAccess(template, entitlement);
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);

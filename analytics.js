@@ -19,10 +19,22 @@ function hash(value) {
 
 /**
  * Detect the MCP client/host from available request context.
+ * v1.9.2: also checks clientInfo from the MCP SDK initialize handshake.
  * Only returns a known value when it can be reliably determined.
  */
 export function detectClient(extra, requestAuthToken = "") {
-  // ChatGPT OAuth uses accounts.google.com or platform.openai.com issuers
+  // MCP SDK clientInfo (set during initialize handshake by compliant clients)
+  const clientInfoName = (extra?.clientInfo?.name || "").toLowerCase();
+  if (clientInfoName) {
+    if (/chatgpt|openai/i.test(clientInfoName)) return "chatgpt";
+    if (/claude|anthropic/i.test(clientInfoName)) return "claude";
+    if (/goose/i.test(clientInfoName)) return "goose";
+    if (/cursor/i.test(clientInfoName)) return "cursor";
+    if (/windsurf|codeium/i.test(clientInfoName)) return "windsurf";
+    if (/continue/i.test(clientInfoName)) return "continue";
+  }
+
+  // Fallback to OAuth/auth context heuristics
   const issuer = extra?.authInfo?.issuer || "";
   const clientId = extra?.authInfo?.clientId || "";
   const userAgent = extra?._userAgent || "";
@@ -103,8 +115,20 @@ export async function recordMcpUsage({
 }
 
 /**
+ * Detect if this is a test/CI run that should not pollute production analytics.
+ * Checks env vars and client context signals.
+ */
+export function isTestRun(extra) {
+  if (process.env.POLYGLOT_TEST_RUN === "true" || process.env.CI === "true") return true;
+  const clientName = (extra?.clientInfo?.name || "").toLowerCase();
+  if (/test|smoke|ci|check|verify/i.test(clientName)) return true;
+  return false;
+}
+
+/**
  * Build common analytics context from MCP extra and request auth token.
  * Used by every tool handler to avoid repetition.
+ * v1.9.2: includes test_run flag to filter test traffic from real usage.
  */
 export function analyticsContext(extra, requestAuthToken = "") {
   const token = extra?.authInfo?.token || extra?.authInfo?.accessToken || requestAuthToken || "";
@@ -114,20 +138,23 @@ export function analyticsContext(extra, requestAuthToken = "") {
     authenticated: Boolean(token),
     clientName: detectClient(extra, requestAuthToken),
     source: "mcp",
+    testRun: isTestRun(extra),
   };
 }
 
 /**
  * Convenience: record a tool call with standard context + tool-specific metadata.
  * Never throws. Returns immediately (fire-and-forget).
+ * v1.9.2: tags test_run in metadata for analytics filtering.
  */
 export function trackToolCall(toolName, extra, requestAuthToken, metadata = {}) {
   const ctx = analyticsContext(extra, requestAuthToken);
+  const enrichedMeta = ctx.testRun ? { ...metadata, test_run: true } : metadata;
   // Do not await — fire and forget so MCP response is never delayed
   recordMcpUsage({
     eventType: "tool_call",
     toolName,
     ...ctx,
-    metadata,
+    metadata: enrichedMeta,
   }).catch(() => {});
 }

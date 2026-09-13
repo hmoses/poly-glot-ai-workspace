@@ -61,15 +61,16 @@ export default {
         });
       } catch (error) {
         console.error("MCP request failed", error);
+        const errorCode = error?.code || "TRANSPORT_ERROR";
         recordError({
           toolName: "mcp_transport",
           errorType: error?.message || String(error),
           clientName: "unknown",
           userKey: null,
           sessionKey: null,
-          metadata: {},
+          metadata: { code: errorCode },
         });
-        return Response.json({ error: "Internal server error" }, { status: 500 });
+        return Response.json({ error: "Internal server error", code: errorCode }, { status: 500 });
       }
     }
 
