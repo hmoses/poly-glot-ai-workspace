@@ -89,16 +89,16 @@ Rules:
 - For GEO: bold key phrases that AI search engines would match on.
 - For headings: add {#slug} anchor IDs for citation targeting.
 - Keep chunk sizes between 100-500 words per section (split if oversized).
-- Maintain the author\'s voice and tone.`;
+- Maintain the author's voice and tone.`;
 
   try {
     const geminiRes = await fetch(
-      \`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=\${GEMINI_KEY}\`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${GEMINI_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          contents: [{ parts: [{ text: \`\${systemPrompt}\n\n---\n\nDocument to optimize:\n\n\${content}\` }] }],
+          contents: [{ parts: [{ text: `${systemPrompt}\n\n---\n\nDocument to optimize:\n\n${content}` }] }],
           generationConfig: { temperature: 0.3, maxOutputTokens: 8192 },
         }),
       }
@@ -119,7 +119,7 @@ Rules:
     result = result.replace(/^```(?:markdown|md|mdx)?\s*\n/i, "").replace(/\n```\s*$/, "");
 
     return Response.json(
-      { result: result.trim(), model: "gemini-2.0-flash", mode: "ai" },
+      { result: result.trim(), model: "gemini-3.6-flash", mode: "ai" },
       { status: 200, headers: CORS_HEADERS }
     );
   } catch (err) {
@@ -141,8 +141,11 @@ export default {
     }
 
     // ── Markdown Format API (Gemini-powered, free) ──────────────────
-    if (request.method === "POST" && url.pathname === "/api/markdown/format") {
-      return handleMarkdownFormat(request);
+    if (url.pathname === "/api/markdown/format") {
+      if (request.method === "POST") {
+        return handleMarkdownFormat(request);
+      }
+      return Response.json({ status: "ok", endpoint: "/api/markdown/format", method: request.method }, { status: 200, headers: CORS_HEADERS });
     }
 
     // Health / info endpoint
@@ -150,6 +153,7 @@ export default {
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
+        deploy: 38,
         endpoint: MCP_PATH,
         templates: templates.length,
         freeTemplates: templates.filter((t) => t.plan === "free").length,
@@ -194,6 +198,6 @@ export default {
       }
     }
 
-    return new Response("Not Found", { status: 404 });
+    return Response.json({ debug: true, pathname: url.pathname, method: request.method, msg: "No route matched" }, { status: 404 });
   },
 };
