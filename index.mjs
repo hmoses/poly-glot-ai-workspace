@@ -153,12 +153,15 @@ export default {
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
-        deploy: 38,
+        deploy: 39,
+        version: "1.10.0",
         endpoint: MCP_PATH,
         templates: templates.length,
         freeTemplates: templates.filter((t) => t.plan === "free").length,
         supportedLanguages: languagePublicList().length,
+        tools: 15,
         pricing: publicPricing(),
+        trial: { days: 3, startsOn: "first Send", autoConverts: false },
       });
     }
 
