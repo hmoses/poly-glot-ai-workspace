@@ -11,8 +11,9 @@
 
 ## Pricing represented by the MCP
 
-- 3-day free trial, starting on first eligible free-template use
-- 25 free templates during the trial
+- 3-day free trial, starting on first Send
+- Full access to all 1,000+ templates during trial
+- After trial: 1 free send/day with Ask Any AI or free templates
 - Pro Monthly: $9.99/month
 - Pro Annual: $79.99/year
 - Full Pro access: 1,000+ templates
