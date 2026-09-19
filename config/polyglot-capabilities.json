@@ -1,26 +1,40 @@
 {
-  "schemaVersion": 1,
-  "entitlementVersion": "2026-09-05.1",
+  "schemaVersion": 2,
+  "entitlementVersion": "2026-09-18.1",
   "plans": {
     "free": {
       "compare": false,
       "premiumTemplates": false,
       "crossPlatformTools": false,
+      "byomExecution": false,
       "freeTemplateCount": 25,
-      "trialDays": 3
+      "trialDays": 3,
+      "dailyFreeSends": 1
     },
     "trial": {
       "compare": true,
       "premiumTemplates": true,
       "crossPlatformTools": true,
+      "byomExecution": true,
       "freeTemplateCount": 25
     },
     "pro": {
       "compare": true,
       "premiumTemplates": true,
       "crossPlatformTools": true,
+      "byomExecution": true,
       "freeTemplateCount": 25
     }
+  },
+  "trial": {
+    "days": 3,
+    "startsOn": "first Send (build_prompt, prepare_compare, or prepare_custom_compare)",
+    "autoConverts": false,
+    "purchaseRequired": true
+  },
+  "pricing": {
+    "monthly": "$9.99",
+    "annual": "$79.99"
   },
   "features": {
     "transcription": true,
@@ -29,7 +43,8 @@
     "localization": true,
     "compareMode": true,
     "templateBrowsing": true,
-    "promptBuilding": true
+    "promptBuilding": true,
+    "byom": true
   },
   "products": {
     "monthly": {
@@ -58,21 +73,29 @@
   "mcpTools": {
     "open": [
       "get_language_options",
-      "get_subscription_status"
+      "get_subscription_status",
+      "get_custom_model_capabilities"
     ],
-    "entitlementAware": [
+    "readOnly_entitlementAware": [
       "open_workspace",
       "search_templates",
-      "get_template",
-      "build_prompt"
+      "get_template"
     ],
-    "proOnly": [],
-    "proOrTrial": [
+    "sendActions": [
+      "build_prompt",
       "prepare_compare",
+      "prepare_custom_compare"
+    ],
+    "proOrTrial": [
+      "validate_custom_model",
+      "run_custom_model",
       "transcribe_audio",
       "detect_language",
       "translate_text",
       "localize_text"
     ]
-  }
+  },
+  "toolCount": 15,
+  "languageCount": 35,
+  "distribution": "hosted-remote-mcp"
 }

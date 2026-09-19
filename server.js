@@ -101,10 +101,20 @@ function compareAccess(entitlement) {
 }
 
 function compareLocked(entitlement) {
-  const resetInfo = entitlement.nextResetAt ? ` Your next free Ask Any AI send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
-  const message = `Compare Mode requires a Pro subscription. Subscribe to Pro Monthly ($9.99/month) or Pro Annual ($79.99/year) to unlock Compare Mode and all templates.${resetInfo}`;
+  const resetInfo = entitlement.nextResetAt ? ` Your next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
+  const message = `Compare Mode requires an active trial or Pro subscription. Poly-Glot Pro: $9.99/month or $79.99/year — unlocks Pro templates, Compare Mode, and unlimited sends.${resetInfo}`;
   return {
-    structuredContent: { view: "compare_locked", message, entitlement: entitlementSummary(entitlement) },
+    structuredContent: {
+      view: "compare_locked",
+      message,
+      entitlement: entitlementSummary(entitlement),
+      upgrade: {
+        monthly: "$9.99/month",
+        annual: "$79.99/year",
+        message: "Upgrade to Poly-Glot Pro for Pro templates, Compare Mode, and unlimited sends.",
+        trialAutoConverts: false,
+      },
+    },
     content: [{ type: "text", text: message }],
   };
 }
@@ -199,16 +209,22 @@ const templateSchema = z.object({
 function lockedResult(template, entitlement, uiLanguage = "EN") {
   const resetInfo = entitlement.nextResetAt ? ` Next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
   const reason = entitlement.isExpired
-    ? `Your 3-day trial has ended. All templates are locked. You have 1 free Ask Any AI send per day (single AI).${resetInfo} Subscribe to Pro for unlimited access.`
+    ? `Your 3-day trial has ended. You have 1 free send per day using Ask Any AI or a free template.${resetInfo} Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year.`
     : template.plan === "pro"
-    ? "This is a Pro template. Subscribe to Pro Monthly ($9.99/month) or Pro Annual ($79.99/year) to unlock all 1,000+ templates."
-    : "Start your free 3-day trial to access all templates, Compare Mode, and more.";
+    ? "This is a Pro template. Subscribe to Poly-Glot Pro ($9.99/month or $79.99/year) to unlock Pro templates, Compare Mode, and unlimited sends."
+    : "Your 3-day free trial starts when you first Send. Full access to all 1,000+ templates, Compare Mode, and unlimited sends during trial.";
   return {
     structuredContent: {
       view: "locked",
       template: publicTemplate(template, entitlement, uiLanguage),
       entitlement: entitlementSummary(entitlement),
       message: reason,
+      upgrade: {
+        monthly: "$9.99/month",
+        annual: "$79.99/year",
+        message: "Upgrade to Poly-Glot Pro for Pro templates, Compare Mode, and unlimited sends.",
+        trialAutoConverts: false,
+      },
     },
     content: [{ type: "text", text: reason }],
   };
@@ -238,8 +254,8 @@ function createPolyglotServer(requestAuthToken = "") {
     },
   });
   const server = new McpServer(
-    { name: "polyglot-ai-workspace", version: "1.9.2" },
-    { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. Poly-Glot has a 3-day trial covering 25 free templates; Pro Monthly is $9.99/month and Pro Annual is $79.99/year. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
+    { name: "polyglot-ai-workspace", version: "1.10.0" },
+    { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. The 3-day free trial starts on the user's first Send and includes full access to all 1,000+ templates, Compare Mode, unlimited sends, and BYOM. After the trial, users get 1 free send per day using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year. The trial does not automatically convert to a paid subscription. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
   );
 
   registerAppResource(server, "polyglot-workspace", UI_URI, { _meta: UI_META }, async () => ({
@@ -248,7 +264,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "get_language_options", {
     title: "Get Poly-Glot language options",
-    description: "Return the 35 supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement.",
+    description: "Return the supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement and does not start the trial.",
     _meta: UI_META,
     inputSchema: { uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: {
@@ -268,7 +284,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "get_subscription_status", {
     title: "Get Poly-Glot subscription status",
-    description: "Return the current Poly-Glot trial or Pro entitlement and current pricing.",
+    description: "Return the current Poly-Glot entitlement state, trial status, daily free send allowance, feature locks, and pricing. This is the authoritative MCP-facing explanation of the user's access. Does not start the trial.",
     _meta: UI_META,
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
@@ -276,21 +292,48 @@ function createPolyglotServer(requestAuthToken = "") {
   }, async (_args, extra) => {
     const entitlement = await getEntitlement(entitlementContext(extra));
     const summary = entitlementSummary(entitlement);
-    let text = `Poly-Glot access: ${entitlement.state}. Pro Monthly is $9.99/month; Pro Annual is $79.99/year.`;
-    if (entitlement.isExpired) {
-      text += ` Trial ended. 1 free Ask Any AI send/day (single AI, no Compare). Resets at midnight. Subscribe for unlimited.`;
-    } else if (entitlement.trialActive) {
-      text += ` Trial active — all features unlocked (all templates, Compare Mode, BYOM). Ends ${entitlement.trialEndsAt ? new Date(entitlement.trialEndsAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "in 3 days"}.`;
+    // Map entitlement state to the canonical funnel status
+    let status;
+    if (entitlement.isPro) status = "pro";
+    else if (entitlement.trialActive) status = "trialActive";
+    else if (entitlement.isExpired) status = "free";
+    else status = "preTrial";
+
+    const enriched = {
+      ...summary,
+      status,
+      trialStarted: entitlement.state !== "not_started",
+      trialStart: entitlement.trialStartedAt || null,
+      trialExpiresAt: entitlement.trialEndsAt || null,
+      trialDays: 3,
+      dailyFreeRemaining: entitlement.isExpired ? (entitlement.dailyFreeLimit ?? 1) : null,
+      proTemplatesLocked: !(entitlement.isPro || entitlement.trialActive),
+      unlimitedSends: entitlement.isPro || entitlement.trialActive,
+      monthlyPrice: "$9.99",
+      annualPrice: "$79.99",
+      trialAutoConverts: false,
+      purchaseRequired: true,
+    };
+
+    let text = `Poly-Glot access: ${status}.`;
+    if (status === "preTrial") {
+      text += ` Your 3-day free trial starts when you first Send. Full access to all 1,000+ templates, Compare Mode, and unlimited sends during trial. The trial does not automatically convert to a paid subscription.`;
+    } else if (status === "trialActive") {
+      text += ` Trial active — all features unlocked (all templates, Compare Mode, BYOM, unlimited sends). Ends ${entitlement.trialEndsAt ? new Date(entitlement.trialEndsAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "in 3 days"}. The trial does not automatically convert to a paid subscription.`;
+    } else if (status === "free") {
+      text += ` Trial ended. 1 free send per day using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year.`;
+    } else if (status === "pro") {
+      text += ` Pro subscriber — all features unlocked. Pro Monthly $9.99/month; Pro Annual $79.99/year.`;
     }
     return {
-      structuredContent: { view: "subscription", entitlement: summary },
+      structuredContent: { view: "subscription", entitlement: enriched },
       content: [{ type: "text", text }],
     };
   });
 
   registerAppTool(server, "open_workspace", {
     title: "Open Poly-Glot AI Workspace",
-    description: "Open the interactive Poly-Glot template browser and prompt editor with subscription-aware locked states.",
+    description: "Open the interactive Poly-Glot template browser and prompt editor with subscription-aware locked states. Browsing does not start the trial or consume a send.",
     _meta: UI_META,
     inputSchema: { query: z.string().max(200).optional().default(""), uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
@@ -308,7 +351,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "search_templates", {
     title: "Search Poly-Glot templates",
-    description: "Find Poly-Glot prompt templates. Results include whether each template is currently locked for this account.",
+    description: "Find Poly-Glot prompt templates. Results include whether each template is currently locked for this account. Searching does not start the trial or consume a send.",
     _meta: UI_META,
     inputSchema: {
       query: z.string().max(200).optional().default(""), goal: z.string().max(80).optional(),
@@ -330,7 +373,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "get_template", {
     title: "Open a Poly-Glot template",
-    description: "Get a template's fields. The source prompt body is returned only when the account is entitled to use the template.",
+    description: "Get a template's fields and prompt body. Opening a template does not start the trial or consume a send. The prompt body is returned only when the account is entitled.",
     _meta: UI_META,
     inputSchema: { name: z.string().min(1).max(200), uiLanguage: z.string().max(80).optional().default("EN") },
     outputSchema: {
@@ -367,7 +410,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "build_prompt", {
     title: "Build a Poly-Glot prompt",
-    description: "Fill an entitled Poly-Glot template. First use of a free template starts the 3-day trial. Pro templates require an active Pro subscription.",
+    description: "Fill and Send an entitled Poly-Glot template. This is a Send action: it starts the 3-day free trial on first use if the user has not sent before. Pro templates require an active trial or Pro subscription.",
     _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200),
@@ -430,7 +473,7 @@ function createPolyglotServer(requestAuthToken = "") {
 
   registerAppTool(server, "prepare_compare", {
     title: "Prepare Poly-Glot Compare Mode",
-    description: "Prepare one canonical prompt for two or more AI providers so the user can compare answers. Uses the same server-side template entitlement checks as build_prompt and never calls third-party models on the user's behalf.",
+    description: "Prepare one canonical prompt for two or more AI providers so the user can compare answers. This is a Send action: it starts the 3-day free trial on first use. Compare Mode requires an active trial or Pro subscription. Never calls third-party models on the user's behalf.",
     _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200).optional(),
@@ -757,8 +800,9 @@ const httpServer = createServer(async (req, res) => {
   if (req.method === "GET" && url.pathname === "/") {
     res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
     return res.end(JSON.stringify({
-      name: "Poly-Glot AI Workspace MCP", status: "ok", endpoint: MCP_PATH, templates: templates.length,
-      freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, pricing: publicPricing(),
+      name: "Poly-Glot AI Workspace MCP", status: "ok", version: "1.10.0", endpoint: MCP_PATH, templates: templates.length,
+      freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, tools: 15, pricing: publicPricing(),
+      trial: { days: 3, startsOn: "first Send", autoConverts: false },
     }));
   }
   if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {

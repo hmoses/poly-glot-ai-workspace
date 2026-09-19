@@ -182,7 +182,7 @@ export function templateAccess(template, entitlement) {
   // Active trial: ALL templates allowed (free + pro)
   if (entitlement.trialActive) return { allowed: true, locked: false, reason: null };
 
-  // Not started: free templates allowed (will trigger trial on build_prompt)
+  // Not started (pre-trial): free templates allowed. Trial starts on first Send (build_prompt/prepare_compare).
   if (entitlement.state === ENTITLEMENT_STATES.NOT_STARTED) {
     if (template.plan === "free") return { allowed: true, locked: false, reason: null };
     return { allowed: false, locked: true, reason: "pro_required" };
@@ -218,5 +218,7 @@ export function entitlementSummary(entitlement) {
     compareLocked: entitlement.compareLocked,
     nextResetAt: entitlement.nextResetAt,
     pricing,
+    trialAutoConverts: false,
+    purchaseRequired: true,
   };
 }

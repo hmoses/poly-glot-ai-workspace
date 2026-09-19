@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.hmoses/poly-glot-ai-workspace",
   "title": "Poly-Glot AI Workspace",
-  "description": "Multilingual AI workspace: 1,000+ prompts, Compare Mode, 35 languages, BYOM. Free trial.",
-  "version": "1.9.1",
+  "description": "Multilingual AI workspace: 1,000+ prompts, Compare Mode, 35 languages, BYOM. 3-day full-access trial starts on first Send. Afterward: 1 free send/day with Ask Any AI or free templates. Pro unlocks Pro templates, Compare Mode, and unlimited sends — $9.99/month or $79.99/year.",
+  "version": "1.10.0",
   "repository": {
     "url": "https://github.com/hmoses/poly-glot-ai-workspace",
     "source": "github",

@@ -1,6 +1,6 @@
 # Current Entitlement Map — Poly-Glot AI Workspace
 
-> Generated from verified runtime behavior. Last updated: 2026-09-05.
+> Generated from verified runtime behavior. Last updated: 2026-09-18.
 
 ## Entitlement States
 
@@ -27,8 +27,12 @@
 | Subscription status | None | None (`get_subscription_status`) | ✅ | ✅ | ✅ | ✅ |
 | Template browsing | UI locked flags | `search_templates` + locked flags | ✅ sees locks | ✅ | ✅ | ✅ |
 | Template details | UI locked flags | `get_template` + `templateAccess()` | 🔒 pro templates | ✅ free | ✅ | ✅ |
-| Prompt building | StoreKit paywall | `build_prompt` + `templateAccess()` | 🔒 pro templates | ✅ free | ✅ | ✅ |
-| Compare Mode | StoreKit paywall | `prepare_compare` + `compareAccess()` | 🔒 | ✅ | ✅ | ✅ |
+| Prompt building (Send) | StoreKit paywall | `build_prompt` + `templateAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
+| Compare Mode (Send) | StoreKit paywall | `prepare_compare` + `compareAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
+| BYOM info | None | `get_custom_model_capabilities` | ✅ | ✅ | ✅ | ✅ |
+| BYOM validation | StoreKit paywall | `validate_custom_model` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
+| BYOM execution | StoreKit paywall | `run_custom_model` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
+| Custom Compare (Send) | StoreKit paywall | `prepare_custom_compare` + `compareAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
 | Transcription | Apple Speech (native) | `transcribe_audio` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
 | Language detection | N/A (native) | `detect_language` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
 | Translation | N/A (native) | `translate_text` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
@@ -56,4 +60,10 @@
 - Compare Mode is available during an active trial and for Pro subscribers
 - Compare Mode locks when the trial expires unless the user has an active Pro subscription
 - Cross-platform tools (transcribe, detect, translate, localize) require Pro or active trial on MCP
+- BYOM tools (validate_custom_model, run_custom_model) require Pro or active trial; get_custom_model_capabilities is open
 - Apple-native behavior (Speech, StoreKit, native localization) is fully preserved — cross-platform tools are additive only
+- The 3-day trial starts on the user's first Send (build_prompt, prepare_compare, or prepare_custom_compare)
+- The trial does NOT automatically convert to a paid subscription; purchase is required via Apple StoreKit
+- Total MCP tools: 15
+- Supported languages: 35
+- Distribution: hosted remote MCP (no local package)
