@@ -8,6 +8,8 @@ import { createPolyglotServer, templates, MCP_PATH } from "./server.js";
 import { languagePublicList } from "./localization.js";
 import { publicPricing } from "./pricing.js";
 import { recordError } from "./analytics-expansion.js";
+import { sanitizeRequestContext, recordRequestEvent, classifyTraffic } from "./analytics.js";
+import { randomUUID } from "node:crypto";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -150,6 +152,7 @@ export default {
 
     // Health / info endpoint
     if (request.method === "GET" && url.pathname === "/") {
+      recordRequestEvent({ requestKey: randomUUID(), eventType: "health_check", method: "GET", path: "/", trafficClass: "health_check" }).catch(() => {});
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
@@ -170,7 +173,24 @@ export default {
       try {
         const authHeader = String(request.headers.get("authorization") || "");
         const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
-        const server = createPolyglotServer(requestAuthToken);
+        const hdrs = Object.fromEntries([...request.headers.entries()].filter(([k]) => ["user-agent","referer","origin"].includes(k)));
+        const reqCtx = {
+          ...sanitizeRequestContext(hdrs),
+          requestKey: randomUUID(),
+          path: url.pathname,
+          method: request.method,
+        };
+        recordRequestEvent({
+          requestKey: reqCtx.requestKey,
+          eventType: "mcp_request",
+          method: request.method,
+          path: url.pathname,
+          trafficClass: classifyTraffic({ userAgent: reqCtx.userAgent, path: url.pathname, method: request.method, testRun: false, authenticated: Boolean(requestAuthToken) }),
+          authenticated: Boolean(requestAuthToken),
+          refererHost: reqCtx.refererHost,
+          originHost: reqCtx.originHost,
+        }).catch(() => {});
+        const server = createPolyglotServer(requestAuthToken, reqCtx);
         const transport = new WebStandardStreamableHTTPServerTransport({
           sessionIdGenerator: undefined,
           enableJsonResponse: true,
