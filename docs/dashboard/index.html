@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poly-Glot MCP Dashboard</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #21262d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text2: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --yellow: #d29922;
+  --red: #f85149;
+  --purple: #bc8cff;
+  --orange: #f0883e;
+  --cyan: #39d2c0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 0;
+}
+.header {
+  background: linear-gradient(135deg, #1a1e2e 0%, #0d1117 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header h1 .logo { font-size: 28px; }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.status-pill.ok { background: rgba(63,185,80,0.15); color: var(--green); }
+.status-pill.error { background: rgba(248,81,73,0.15); color: var(--red); }
+.status-pill .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+.status-pill.ok .dot { background: var(--green); }
+.status-pill.error .dot { background: var(--red); }
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.refresh-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+.refresh-btn:hover { background: var(--border); color: var(--text); }
+.last-update { font-size: 12px; color: var(--text2); }
+
+.container { max-width: 1400px; margin: 0 auto; padding: 24px 32px; }
+
+/* KPI Cards */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+.kpi-card.blue::before { background: var(--accent); }
+.kpi-card.green::before { background: var(--green); }
+.kpi-card.purple::before { background: var(--purple); }
+.kpi-card.orange::before { background: var(--orange); }
+.kpi-card.cyan::before { background: var(--cyan); }
+.kpi-card.yellow::before { background: var(--yellow); }
+.kpi-label { font-size: 12px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.kpi-value { font-size: 32px; font-weight: 700; line-height: 1; }
+.kpi-sub { font-size: 12px; color: var(--text2); margin-top: 6px; }
+
+/* Section */
+.section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.section-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-body { padding: 20px; }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th {
+  text-align: left;
+  padding: 10px 12px;
+  color: var(--text2);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(88,166,255,0.04); }
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.badge.customer { background: rgba(63,185,80,0.15); color: var(--green); }
+.badge.anonymous { background: rgba(88,166,255,0.15); color: var(--accent); }
+.badge.directory_check { background: rgba(210,153,34,0.15); color: var(--yellow); }
+.badge.health_check { background: rgba(139,148,158,0.15); color: var(--text2); }
+.badge.test { background: rgba(188,140,255,0.15); color: var(--purple); }
+.badge.unknown { background: rgba(240,136,62,0.15); color: var(--orange); }
+
+/* Bar chart */
+.bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.bar-label { width: 160px; font-size: 13px; text-align: right; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar-track { flex: 1; height: 28px; background: var(--surface2); border-radius: 6px; overflow: hidden; position: relative; }
+.bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding: 0 10px; font-size: 12px; font-weight: 600; min-width: 40px; transition: width 0.6s ease; }
+.bar-count { font-size: 13px; width: 60px; text-align: right; flex-shrink: 0; color: var(--text2); }
+
+/* Grid layouts */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+
+/* Daily chart */
+.chart-container { height: 200px; display: flex; align-items: flex-end; gap: 3px; padding: 0 4px; }
+.chart-bar {
+  flex: 1;
+  min-width: 8px;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.chart-bar:hover { opacity: 0.8; }
+.chart-bar .tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  white-space: nowrap;
+  z-index: 10;
+}
+.chart-bar:hover .tooltip { display: block; }
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text2);
+}
+
+/* Server info */
+.server-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.info-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+.info-value { font-size: 14px; font-weight: 600; }
+
+/* Loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  color: var(--text2);
+  font-size: 14px;
+  gap: 12px;
+}
+.spinner {
+  width: 20px; height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Funnel */
+.funnel-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.funnel-step:last-child { border-bottom: none; }
+.funnel-num {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--surface2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.funnel-info { flex: 1; }
+.funnel-label { font-size: 13px; font-weight: 600; }
+.funnel-count { font-size: 12px; color: var(--text2); }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: var(--text2);
+  border-top: 1px solid var(--border);
+  margin-top: 24px;
+}
+.footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span class="logo">🌐</span> Poly-Glot MCP Dashboard</h1>
+  <div class="header-right">
+    <div id="status-pill" class="status-pill ok">
+      <span class="dot"></span>
+      <span id="status-text">Checking...</span>
+    </div>
+    <button class="refresh-btn" onclick="loadAll()">↻ Refresh</button>
+    <span class="last-update" id="last-update"></span>
+  </div>
+</div>
+
+<div class="container">
+  <!-- KPI Cards -->
+  <div class="kpi-grid" id="kpi-grid">
+    <div class="kpi-card blue"><div class="kpi-label">Total Events</div><div class="kpi-value" id="kpi-events">—</div><div class="kpi-sub" id="kpi-events-sub"></div></div>
+    <div class="kpi-card green"><div class="kpi-label">Unique Users</div><div class="kpi-value" id="kpi-users">—</div><div class="kpi-sub" id="kpi-users-sub"></div></div>
+    <div class="kpi-card purple"><div class="kpi-label">Pro Users</div><div class="kpi-value" id="kpi-pro">—</div><div class="kpi-sub" id="kpi-pro-sub"></div></div>
+    <div class="kpi-card orange"><div class="kpi-label">Active (7d)</div><div class="kpi-value" id="kpi-active7">—</div><div class="kpi-sub" id="kpi-active7-sub"></div></div>
+    <div class="kpi-card cyan"><div class="kpi-label">Templates</div><div class="kpi-value" id="kpi-templates">—</div><div class="kpi-sub" id="kpi-templates-sub"></div></div>
+    <div class="kpi-card yellow"><div class="kpi-label">Tools</div><div class="kpi-value" id="kpi-tools">—</div><div class="kpi-sub" id="kpi-tools-sub"></div></div>
+  </div>
+
+  <!-- Server Info -->
+  <div class="section">
+    <div class="section-header">🖥️ Server Status</div>
+    <div class="section-body">
+      <div class="server-info" id="server-info">
+        <div class="loading"><div class="spinner"></div> Loading server info...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily Volume Chart -->
+  <div class="section">
+    <div class="section-header">📊 Daily Volume (Last 30 Days)</div>
+    <div class="section-body">
+      <div id="daily-chart-area">
+        <div class="loading"><div class="spinner"></div> Loading chart...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <!-- Traffic Classification -->
+    <div class="section">
+      <div class="section-header">🚦 Traffic Classification</div>
+      <div class="section-body" id="traffic-class-area">
+        <div class="loading"><div class="spinner"></div> Loading...</div>
+      </div>
+    </div>
+
+    <!-- Client Breakdown -->
+    <div class="section">
+      <div class="section-header">🤖 Client Breakdown</div>
+      <div class="section-body" id="client-area">
+        <div class="loading"><div class="spinner"></div> Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <!-- Tool Popularity -->
+    <div class="section">
+      <div class="section-header">🔧 Tool Usage (Human Traffic Only)</div>
+      <div class="section-body" id="tool-area">
+        <div class="loading"><div class="spinner"></div> Loading...</div>
+      </div>
+    </div>
+
+    <!-- Conversion Funnel -->
+    <div class="section">
+      <div class="section-header">📈 Conversion Funnel</div>
+      <div class="section-body" id="funnel-area">
+        <div class="loading"><div class="spinner"></div> Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <!-- Request Events -->
+    <div class="section">
+      <div class="section-header">📡 Request Events</div>
+      <div class="section-body" id="request-area">
+        <div class="loading"><div class="spinner"></div> Loading...</div>
+      </div>
+    </div>
+
+    <!-- Recent Errors -->
+    <div class="section">
+      <div class="section-header">⚠️ Recent Errors (7d)</div>
+      <div class="section-body" id="error-area">
+        <div class="loading"><div class="spinner"></div> Loading...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Poly-Glot MCP Dashboard · <a href="https://poly-glot.ai">poly-glot.ai</a> · Analytics v2.0.0 · Data refreshes on demand
+</div>
+
+<script>
+const HEALTH_URL = "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/";
+const METRICS_URL = "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/v1/metrics/public";
+
+const COLORS = {
+  customer: "#3fb950",
+  anonymous: "#58a6ff",
+  directory_check: "#d29922",
+  health_check: "#8b949e",
+  test: "#bc8cff",
+  unknown: "#f0883e",
+};
+const CLIENT_COLORS = {
+  chatgpt: "#10a37f",
+  claude: "#cc785c",
+  goose: "#58a6ff",
+  cursor: "#00e5ff",
+  windsurf: "#39d2c0",
+  continue: "#f0883e",
+  unknown: "#8b949e",
+};
+const TOOL_COLORS = [
+  "#58a6ff","#3fb950","#bc8cff","#d29922","#f0883e","#39d2c0",
+  "#f85149","#e3b341","#a5d6ff","#d2a8ff","#7ee787","#ffa657",
+  "#ff7b72","#79c0ff","#56d364",
+];
+
+function fmt(n) {
+  if (n == null) return "—";
+  return Number(n).toLocaleString();
+}
+function ago(dateStr) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  const diff = Date.now() - d.getTime();
+  if (diff < 60000) return "just now";
+  if (diff < 3600000) return Math.floor(diff/60000) + "m ago";
+  if (diff < 86400000) return Math.floor(diff/3600000) + "h ago";
+  return Math.floor(diff/86400000) + "d ago";
+}
+
+async function loadHealth() {
+  try {
+    const r = await fetch(HEALTH_URL);
+    const d = await r.json();
+    const pill = document.getElementById("status-pill");
+    const txt = document.getElementById("status-text");
+    pill.className = "status-pill ok";
+    txt.textContent = `v${d.version} · Deploy ${d.deploy}`;
+
+    document.getElementById("kpi-templates").textContent = fmt(d.templates);
+    document.getElementById("kpi-templates-sub").textContent = `${d.freeTemplates} free · ${d.templates - d.freeTemplates} pro`;
+    document.getElementById("kpi-tools").textContent = fmt(d.tools);
+    document.getElementById("kpi-tools-sub").textContent = `${d.supportedLanguages} languages`;
+
+    document.getElementById("server-info").innerHTML = `
+      <div class="info-item"><div class="info-label">Name</div><div class="info-value">${d.name}</div></div>
+      <div class="info-item"><div class="info-label">Version</div><div class="info-value">${d.version}</div></div>
+      <div class="info-item"><div class="info-label">Deploy</div><div class="info-value">#${d.deploy}</div></div>
+      <div class="info-item"><div class="info-label">Templates</div><div class="info-value">${d.templates} (${d.freeTemplates} free)</div></div>
+      <div class="info-item"><div class="info-label">Languages</div><div class="info-value">${d.supportedLanguages}</div></div>
+      <div class="info-item"><div class="info-label">Tools</div><div class="info-value">${d.tools}</div></div>
+      <div class="info-item"><div class="info-label">Trial</div><div class="info-value">${d.trial.days}d · ${d.trial.startsOn}</div></div>
+      <div class="info-item"><div class="info-label">Monthly</div><div class="info-value">$${d.pricing.monthly.price}</div></div>
+      <div class="info-item"><div class="info-label">Annual</div><div class="info-value">$${d.pricing.annual.price} (${d.pricing.annual.savingsLabel})</div></div>
+      <div class="info-item"><div class="info-label">Endpoint</div><div class="info-value" style="font-family:monospace;font-size:12px">${d.endpoint}</div></div>
+    `;
+  } catch (e) {
+    document.getElementById("status-pill").className = "status-pill error";
+    document.getElementById("status-text").textContent = "Offline";
+    document.getElementById("server-info").innerHTML = `<div style="color:var(--red)">Failed to reach server: ${e.message}</div>`;
+  }
+}
+
+function renderBars(items, labelKey, valueKey, colorMap, maxVal) {
+  if (!items || !items.length) return '<div style="color:var(--text2);padding:20px;text-align:center">No data yet</div>';
+  const mx = maxVal || Math.max(...items.map(i => Number(i[valueKey])));
+  return items.map(i => {
+    const val = Number(i[valueKey]);
+    const pct = mx ? Math.max((val / mx) * 100, 4) : 4;
+    const label = i[labelKey] || "unknown";
+    const color = (colorMap && colorMap[label]) || TOOL_COLORS[items.indexOf(i) % TOOL_COLORS.length];
+    return `<div class="bar-row">
+      <div class="bar-label">${label}</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${pct}%;background:${color}">${val}</div>
+      </div>
+      <div class="bar-count">${i.unique_users ? fmt(i.unique_users) + ' users' : ''}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderFunnel(items) {
+  if (!items || !items.length) return '<div style="color:var(--text2);padding:20px;text-align:center">No conversion events yet</div>';
+  const order = ["first_call","first_search","first_template_open","first_workspace_open","first_build","first_compare",
+    "first_byom_validate","first_byom_run","first_byom_compare","first_transcribe","first_detect_language",
+    "first_translate","first_localize","trial_started","pro_subscribed"];
+  const sorted = [...items].sort((a,b) => {
+    const ai = order.indexOf(a.event_type); const bi = order.indexOf(b.event_type);
+    return (ai===-1?99:ai) - (bi===-1?99:bi);
+  });
+  return sorted.map((s,i) => `
+    <div class="funnel-step">
+      <div class="funnel-num">${i+1}</div>
+      <div class="funnel-info">
+        <div class="funnel-label">${s.event_type.replace(/_/g,' ')}</div>
+        <div class="funnel-count">${fmt(s.unique_users)} users · ${ago(s.last_at)}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderDailyChart(items) {
+  if (!items || !items.length) return '<div style="color:var(--text2);padding:20px;text-align:center">No daily data yet</div>';
+  // Aggregate by day
+  const byDay = {};
+  items.forEach(i => {
+    const d = i.day?.split('T')[0] || i.day;
+    if (!byDay[d]) byDay[d] = { total: 0, classes: {} };
+    byDay[d].total += Number(i.calls);
+    byDay[d].classes[i.traffic_class] = (byDay[d].classes[i.traffic_class]||0) + Number(i.calls);
+  });
+  const days = Object.keys(byDay).sort();
+  const maxVal = Math.max(...days.map(d => byDay[d].total));
+
+  const bars = days.map(d => {
+    const data = byDay[d];
+    const pct = maxVal ? (data.total / maxVal) * 100 : 0;
+    const classBreakdown = Object.entries(data.classes).map(([c,v]) => `${c}: ${v}`).join(', ');
+    // Stack colors
+    let segments = '';
+    let offset = 0;
+    for (const [cls, val] of Object.entries(data.classes)) {
+      const segPct = data.total ? (val / data.total) * 100 : 0;
+      segments += `<div style="width:${segPct}%;height:100%;background:${COLORS[cls]||COLORS.unknown};display:inline-block"></div>`;
+      offset += segPct;
+    }
+    return `<div class="chart-bar" style="height:${Math.max(pct,2)}%;display:flex;flex-direction:row;overflow:hidden;background:var(--surface2)">
+      ${segments}
+      <div class="tooltip">${d}<br>${data.total} calls<br>${classBreakdown}</div>
+    </div>`;
+  }).join('');
+
+  const labels = days.length > 0 ? `<div class="chart-labels"><span>${days[0]}</span><span>${days[days.length-1]}</span></div>` : '';
+
+  // Legend
+  const legend = Object.entries(COLORS).map(([k,v]) =>
+    `<span style="display:inline-flex;align-items:center;gap:4px;margin-right:12px;font-size:11px"><span style="width:10px;height:10px;border-radius:2px;background:${v};display:inline-block"></span>${k}</span>`
+  ).join('');
+
+  return `<div style="margin-bottom:8px">${legend}</div><div class="chart-container">${bars}</div>${labels}`;
+}
+
+function renderTable(items, columns) {
+  if (!items || !items.length) return '<div style="color:var(--text2);padding:20px;text-align:center">No data</div>';
+  const ths = columns.map(c => `<th>${c.label}</th>`).join('');
+  const rows = items.map(i => {
+    const tds = columns.map(c => {
+      let val = i[c.key];
+      if (c.badge) val = `<span class="badge ${val}">${val}</span>`;
+      if (c.time) val = val ? `${new Date(val).toLocaleDateString()} <span style="color:var(--text2)">${ago(val)}</span>` : '—';
+      if (c.num) val = fmt(val);
+      return `<td>${val ?? '—'}</td>`;
+    }).join('');
+    return `<tr>${tds}</tr>`;
+  }).join('');
+  return `<table><thead><tr>${ths}</tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+async function loadMetrics() {
+  try {
+    const url = new URL(METRICS_URL);
+    // Check for key in URL hash (e.g., #key=abc123)
+    const hash = window.location.hash.slice(1);
+    if (hash.startsWith("key=")) url.searchParams.set("key", hash.slice(4));
+
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d = await r.json();
+    if (d.error) throw new Error(d.error);
+
+    // KPIs
+    const t = d.totals || {};
+    const u = d.user_summary || {};
+    document.getElementById("kpi-events").textContent = fmt(t.total_events);
+    document.getElementById("kpi-events-sub").textContent = t.last_event ? `Last: ${ago(t.last_event)}` : '';
+    document.getElementById("kpi-users").textContent = fmt(u.total_users || t.unique_users);
+    document.getElementById("kpi-users-sub").textContent = `${fmt(u.active_30d)} active 30d`;
+    document.getElementById("kpi-pro").textContent = fmt(u.pro_users);
+    document.getElementById("kpi-pro-sub").textContent = `${fmt(u.trial_users)} trial`;
+    document.getElementById("kpi-active7").textContent = fmt(u.active_7d);
+    document.getElementById("kpi-active7-sub").textContent = "last 7 days";
+
+    // Traffic classification
+    document.getElementById("traffic-class-area").innerHTML = renderBars(d.by_traffic_class, 'traffic_class', 'calls', COLORS);
+
+    // Client breakdown
+    document.getElementById("client-area").innerHTML = renderBars(d.by_client, 'client', 'calls', CLIENT_COLORS);
+
+    // Tool usage
+    document.getElementById("tool-area").innerHTML = renderBars(d.by_tool, 'tool_name', 'calls', null);
+
+    // Daily chart
+    document.getElementById("daily-chart-area").innerHTML = renderDailyChart(d.daily_volume);
+
+    // Conversion funnel
+    document.getElementById("funnel-area").innerHTML = renderFunnel(d.conversion_funnel);
+
+    // Request events
+    document.getElementById("request-area").innerHTML = renderTable(d.request_events, [
+      { key: 'traffic_class', label: 'Class', badge: true },
+      { key: 'event_type', label: 'Event' },
+      { key: 'calls', label: 'Count', num: true },
+      { key: 'last_seen', label: 'Last Seen', time: true },
+    ]);
+
+    // Errors
+    document.getElementById("error-area").innerHTML = d.recent_errors && d.recent_errors.length
+      ? renderTable(d.recent_errors, [
+          { key: 'tool', label: 'Tool' },
+          { key: 'errors', label: 'Errors', num: true },
+          { key: 'last_error', label: 'Last Error', time: true },
+        ])
+      : '<div style="color:var(--green);padding:20px;text-align:center">✅ No errors in last 7 days</div>';
+
+  } catch (e) {
+    // Metrics unavailable — show what we can from health
+    const areas = ["traffic-class-area","client-area","tool-area","funnel-area","request-area","error-area","daily-chart-area"];
+    areas.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.querySelector('.loading')) {
+        el.innerHTML = `<div style="color:var(--yellow);padding:20px;text-align:center">⚠️ Metrics API unavailable: ${e.message}<br><small>Set METRICS_API_KEY or check endpoint</small></div>`;
+      }
+    });
+  }
+}
+
+async function loadAll() {
+  document.getElementById("last-update").textContent = "Refreshing...";
+  await Promise.all([loadHealth(), loadMetrics()]);
+  document.getElementById("last-update").textContent = `Updated ${new Date().toLocaleTimeString()}`;
+}
+
+// Auto-refresh every 60s
+loadAll();
+setInterval(loadAll, 60000);
+</script>
+</body>
+</html>

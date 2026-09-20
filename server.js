@@ -31,6 +31,7 @@ import {
 } from "./entitlements.js";
 import { publicPricing } from "./pricing.js";
 import { handleEntitlementRequest } from "./entitlement-service/server.js";
+import { handleMetricsRequest } from "./metrics-api.js";
 import {
   applyLanguageInstructions,
   languageContext,
@@ -848,6 +849,9 @@ const httpServer = createServer(async (req, res) => {
   // the production runtime expose one public app port. Keep the MCP and
   // entitlement APIs on the same HTTPS origin and dispatch entitlement routes
   // before the MCP handler. This preserves one deployable container.
+  if (url.pathname === "/v1/metrics/public") {
+    return handleMetricsRequest(req, res);
+  }
   if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
     return handleEntitlementRequest(req, res);
   }

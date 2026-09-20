@@ -8,6 +8,7 @@ import { createPolyglotServer, templates, MCP_PATH } from "./server.js";
 import { languagePublicList } from "./localization.js";
 import { publicPricing } from "./pricing.js";
 import { recordError } from "./analytics-expansion.js";
+import { handleMetricsRequestWeb } from "./metrics-api.js";
 import { sanitizeRequestContext, recordRequestEvent, classifyTraffic } from "./analytics.js";
 import { randomUUID } from "node:crypto";
 
@@ -148,6 +149,11 @@ export default {
         return handleMarkdownFormat(request);
       }
       return Response.json({ status: "ok", endpoint: "/api/markdown/format", method: request.method }, { status: 200, headers: CORS_HEADERS });
+    }
+
+    // Metrics API
+    if (url.pathname === "/v1/metrics/public") {
+      return handleMetricsRequestWeb(request);
     }
 
     // Health / info endpoint
