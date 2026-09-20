@@ -48,6 +48,19 @@ import {
 } from "./src/byom.js";
 
 import { registerCrossPlatformTools } from "./src/cross-platform-tools.js";
+import { randomUUID } from "node:crypto";
+import {
+  trackToolCall,
+  analyticsContext,
+  sanitizeRequestContext,
+  recordRequestEvent,
+  classifyTraffic,
+  detectClient,
+  extractReportedClient,
+  isTestRun,
+  ANALYTICS_VERSION,
+} from "./analytics.js";
+import { expandedTrack, recordError } from "./analytics-expansion.js";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -240,7 +253,7 @@ const localizationArgs = {
   outputLanguage: z.string().max(80).optional().default("EN"),
 };
 
-function createPolyglotServer(requestAuthToken = "") {
+function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
   // production host forwards the Authorization header on each Streamable HTTP
   // request. The MCP SDK does not guarantee that raw HTTP auth is copied into
   // extra.authInfo for a custom server, so we bind the verified bearer token
@@ -253,6 +266,28 @@ function createPolyglotServer(requestAuthToken = "") {
       token: extra?.authInfo?.token || extra?.authInfo?.accessToken || requestAuthToken || "",
     },
   });
+
+  // ── Analytics helpers scoped to this request ────────────────────────
+  // reqCtx carries sanitized HTTP context (userAgent, refererHost, originHost, requestKey)
+  const track = (toolName, extra, metadata = {}) => {
+    const ctx = trackToolCall(toolName, extra, requestAuthToken, metadata, reqCtx);
+    return ctx;
+  };
+  const trackExpanded = (toolName, extra, entitlementState, metadata = {}) => {
+    const ctx = analyticsContext(extra, requestAuthToken, reqCtx);
+    expandedTrack({ toolName, ...ctx, entitlementState, metadata });
+  };
+  const trackErr = (toolName, error, extra) => {
+    const ctx = analyticsContext(extra, requestAuthToken, reqCtx);
+    recordError({
+      toolName,
+      errorType: error?.message || String(error),
+      clientName: ctx.clientName,
+      userKey: ctx.userKey,
+      sessionKey: ctx.sessionKey,
+      metadata: { requestKey: reqCtx.requestKey },
+    });
+  };
   const server = new McpServer(
     { name: "polyglot-ai-workspace", version: "1.10.0" },
     { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. The 3-day free trial starts on the user's first Send and includes full access to all 1,000+ templates, Compare Mode, unlimited sends, and BYOM. After the trial, users get 1 free send per day using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year. The trial does not automatically convert to a paid subscription. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
@@ -273,7 +308,8 @@ function createPolyglotServer(requestAuthToken = "") {
       localization: localizationSchema,
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
-  }, async ({ uiLanguage = "EN" }) => {
+  }, async ({ uiLanguage = "EN" }, extra) => {
+    track("get_language_options", extra, { uiLanguage });
     const ui = resolveLanguage(uiLanguage);
     const localization = languageContext({ uiLanguage: ui.code, inputLanguage: ui.code, outputLanguage: ui.code });
     return {
@@ -290,7 +326,9 @@ function createPolyglotServer(requestAuthToken = "") {
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async (_args, extra) => {
+    track("get_subscription_status", extra);
     const entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("get_subscription_status", extra, entitlement.state);
     const summary = entitlementSummary(entitlement);
     // Map entitlement state to the canonical funnel status
     let status;
@@ -340,7 +378,9 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
     _meta: renderMeta("Opening Poly-Glot…", "Poly-Glot is ready"),
   }, async ({ query = "", uiLanguage = "EN" }, extra) => {
+    track("open_workspace", extra, { query });
     const entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("open_workspace", extra, entitlement.state);
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, limit: 12, uiLanguage: localization.uiLanguage.code }, entitlement);
     return {
@@ -362,7 +402,10 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
     _meta: renderMeta("Searching templates…", "Templates updated"),
   }, async ({ query = "", goal, plan, limit = 12, uiLanguage = "EN" }, extra) => {
+    track("search_templates", extra, { query, goal, plan });
     const entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("search_templates", extra, entitlement.state);
+    trackExpanded("search_templates", extra, entitlement.state);
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, goal, plan, limit, uiLanguage: localization.uiLanguage.code }, entitlement);
     return {
@@ -386,6 +429,8 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
     _meta: renderMeta("Opening template…", "Template opened"),
   }, async ({ name, uiLanguage = "EN" }, extra) => {
+    track("get_template", extra, { name });
+    trackExpanded("get_template", extra);
     const template = findTemplate(name);
     if (!template) {
       const error = new Error(`Template not found: ${name}. Use search_templates to find available templates.`);
@@ -425,6 +470,7 @@ function createPolyglotServer(requestAuthToken = "") {
     annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
     _meta: renderMeta("Building prompt…", "Prompt is ready"),
   }, async ({ name, values = {}, uiLanguage = "EN", inputLanguage = "EN", outputLanguage = "EN" }, extra) => {
+    track("build_prompt", extra, { name });
     const template = findTemplate(name);
     if (!template) {
       const error = new Error(`Template not found: ${name}. Use search_templates to find available templates.`);
@@ -433,6 +479,7 @@ function createPolyglotServer(requestAuthToken = "") {
     }
     const localization = languageContext({ uiLanguage, inputLanguage, outputLanguage });
     let entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("build_prompt", extra, entitlement.state);
     let access = templateAccess(template, entitlement);
     if (!access.allowed) {
       const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
@@ -580,7 +627,9 @@ function createPolyglotServer(requestAuthToken = "") {
     },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async (args, extra) => {
+    track("validate_custom_model", extra, { adapterMode: args.adapterMode });
     const entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("validate_custom_model", extra, entitlement.state);
     if (!entitlement.isPro && !entitlement.trialActive && entitlement.state !== "not_started") {
       const message = "Validating custom model endpoints requires an active trial or Pro subscription.";
       return {
@@ -658,7 +707,9 @@ function createPolyglotServer(requestAuthToken = "") {
     },
     annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
   }, async (args, extra) => {
+    track("run_custom_model", extra, { adapterMode: args.adapterMode, model: args.model });
     const entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("run_custom_model", extra, entitlement.state);
     if (!entitlement.isPro && !entitlement.trialActive) {
       const message = "Running custom models requires an active trial or Pro subscription.";
       return {
@@ -721,7 +772,9 @@ function createPolyglotServer(requestAuthToken = "") {
     },
     annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
   }, async (args, extra) => {
+    track("prepare_custom_compare", extra, { customModels: (args.customModels||[]).length });
     let entitlement = await getEntitlement(entitlementContext(extra));
+    trackExpanded("prepare_custom_compare", extra, entitlement.state);
     if (entitlement.state === "not_started") entitlement = await startTrialIfNeeded(entitlementContext(extra));
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
@@ -765,6 +818,8 @@ function createPolyglotServer(requestAuthToken = "") {
     getEntitlement: (extra) => getEntitlement(entitlementContext(extra)),
     entitlementContext,
     entitlementSummary,
+    track: async (toolName, metadata) => { track(toolName, {}, metadata); },
+    trackError: async (toolName, error) => { trackErr(toolName, error, {}); },
   });
 
   return server;
@@ -798,6 +853,7 @@ const httpServer = createServer(async (req, res) => {
   }
 
   if (req.method === "GET" && url.pathname === "/") {
+    recordRequestEvent({ requestKey: randomUUID(), eventType: "health_check", method: "GET", path: "/", trafficClass: "health_check" }).catch(() => {});
     res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
     return res.end(JSON.stringify({
       name: "Poly-Glot AI Workspace MCP", status: "ok", version: "1.10.0", endpoint: MCP_PATH, templates: templates.length,
@@ -810,7 +866,23 @@ const httpServer = createServer(async (req, res) => {
     res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
     const authHeader = String(req.headers.authorization || "");
     const requestAuthToken = authHeader.startsWith("Bearer ") ? authHeader.slice(7).trim() : "";
-    const server = createPolyglotServer(requestAuthToken);
+    const reqCtx = {
+      ...sanitizeRequestContext(req.headers),
+      requestKey: randomUUID(),
+      path: url.pathname,
+      method: req.method,
+    };
+    recordRequestEvent({
+      requestKey: reqCtx.requestKey,
+      eventType: "mcp_request",
+      method: req.method,
+      path: url.pathname,
+      trafficClass: classifyTraffic({ userAgent: reqCtx.userAgent, path: url.pathname, method: req.method, testRun: false, authenticated: Boolean(requestAuthToken) }),
+      authenticated: Boolean(requestAuthToken),
+      refererHost: reqCtx.refererHost,
+      originHost: reqCtx.originHost,
+    }).catch(() => {});
+    const server = createPolyglotServer(requestAuthToken, reqCtx);
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
     res.on("close", () => { transport.close(); server.close(); });
     try {
