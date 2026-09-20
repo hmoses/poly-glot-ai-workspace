@@ -139,7 +139,7 @@ export default {
     const url = new URL(request.url);
 
     // CORS preflight
-    if (request.method === "OPTIONS" && (url.pathname === MCP_PATH || url.pathname === "/api/markdown/format")) {
+    if (request.method === "OPTIONS" && (url.pathname === MCP_PATH || url.pathname === "/api/markdown/format" || url.pathname === "/" || url.pathname === "/v1/metrics/public")) {
       return new Response(null, { status: 204, headers: CORS_HEADERS });
     }
 
@@ -162,7 +162,7 @@ export default {
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
-        deploy: 44,
+        deploy: 45,
         version: "1.10.0",
         endpoint: MCP_PATH,
         templates: templates.length,
@@ -171,7 +171,7 @@ export default {
         tools: 15,
         pricing: publicPricing(),
         trial: { days: 3, startsOn: "first Send", autoConverts: false },
-      });
+      }, { headers: CORS_HEADERS });
     }
 
     // MCP endpoint
