@@ -156,7 +156,7 @@ export default {
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
-        deploy: 39,
+        deploy: 44,
         version: "1.10.0",
         endpoint: MCP_PATH,
         templates: templates.length,
