@@ -14,7 +14,7 @@
  *
  * ENTITLEMENT MODEL (v1.9):
  *   Trial (3 days) — ALL features free: every template (free + pro), Compare Mode, BYOM.
- *   Expired — ALL templates lock. Ask Any AI = 1 free send/day, single AI only. Compare Mode locked.
+ *   Expired — FREE templates allowed; PRO templates lock. Ask Any AI = 1 free send/day, single AI only. Compare Mode locked.
  *   Pro — Everything unlimited.
  */
 import { createHash } from "node:crypto";
@@ -167,11 +167,10 @@ export async function startTrialIfNeeded(extra) {
 }
 
 /**
- * Template access for the new entitlement model (v1.9):
+ * Template access for the new entitlement model (v1.9, amended 2026-09-22):
  *   Trial — ALL templates allowed (free + pro). Full access.
- *   Expired — ALL templates LOCKED. Ask Any AI = 1/day, single AI. Compare locked.
+ *   Expired — FREE templates allowed; PRO templates locked. Ask Any AI = 1/day, single AI. Compare locked.
  *             The daily Ask Any AI send is handled at the send layer, not template access.
- *             Templates still show as locked so the UI can gate them properly.
  *   Pro — Everything allowed.
  *   Not started — Free templates allowed (triggers trial on first use).
  */
@@ -188,8 +187,16 @@ export function templateAccess(template, entitlement) {
     return { allowed: false, locked: true, reason: "pro_required" };
   }
 
-  // Expired: ALL templates locked. Ask Any AI daily send handled separately.
+  // Expired: FREE templates allowed; PRO templates locked. Ask Any AI daily send handled separately.
   if (entitlement.isExpired) {
+    if (template.plan === "free") {
+      return {
+        allowed: true, locked: false, reason: null,
+        dailyLimited: true,
+        dailyFreeLimit: entitlement.dailyFreeLimit,
+        nextResetAt: entitlement.nextResetAt,
+      };
+    }
     return {
       allowed: false,
       locked: true,
@@ -197,11 +204,11 @@ export function templateAccess(template, entitlement) {
       dailyLimited: true,
       dailyFreeLimit: entitlement.dailyFreeLimit,
       nextResetAt: entitlement.nextResetAt,
-      message: `Your trial has ended. You have 1 free Ask Any AI send per day (resets at midnight). Subscribe to Pro for unlimited access.`,
+      message: `Your trial has ended. Free templates remain available, plus 1 free Ask Any AI send per day. Subscribe to Pro for Pro templates, Compare Mode, and unlimited access.`,
     };
   }
 
-  // Fallback
+  // Fallback: unknown/missing tier — fail closed
   return { allowed: false, locked: true, reason: "subscription_required" };
 }
 
