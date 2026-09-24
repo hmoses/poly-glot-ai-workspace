@@ -2,3 +2,6 @@
 .neon
 .neon/
 node_modules/
+
+# Goose runtime diagnostics
+.goose/

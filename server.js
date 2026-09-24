@@ -62,6 +62,13 @@ import {
   ANALYTICS_VERSION,
 } from "./analytics.js";
 import { expandedTrack, recordError } from "./analytics-expansion.js";
+import {
+  checkMethodContract,
+  methodNotAllowedResponse,
+  generateRequestId,
+  logStructured,
+  redactHeaders,
+} from "./src/resilience.js";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -837,6 +844,22 @@ const port = Number(process.env.PORT ?? 8787);
 const httpServer = createServer(async (req, res) => {
   if (!req.url) return res.writeHead(400).end("Missing URL");
   const url = new URL(req.url, `http://${req.headers.host ?? "localhost"}`);
+  const requestId = generateRequestId();
+  res.setHeader("X-Request-Id", requestId);
+
+  // Phase 2: Method contract check — reject invalid methods with 405 + Allow
+  const contract = checkMethodContract(req.method, url.pathname);
+  if (contract.matched && !contract.allowed) {
+    logStructured("warn", "method_not_allowed", {
+      request_id: requestId,
+      method: req.method,
+      pathname: url.pathname,
+      allowed_methods: contract.allowedMethods,
+      headers: redactHeaders(req.headers),
+    });
+    return methodNotAllowedResponse(res, req.method, url.pathname, contract.allowedMethods, requestId);
+  }
+
   if (req.method === "OPTIONS" && url.pathname === MCP_PATH) {
     res.writeHead(204, {
       "Access-Control-Allow-Origin": "*",
@@ -898,6 +921,7 @@ const httpServer = createServer(async (req, res) => {
     }
     return;
   }
+  logStructured("info", "not_found", { request_id: requestId, method: req.method, pathname: url.pathname });
   res.writeHead(404).end("Not Found");
 });
 

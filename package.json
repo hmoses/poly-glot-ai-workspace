@@ -8,7 +8,8 @@
     "start": "node server.js",
     "check": "node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js && node --check entitlement-service/server.js && node --check entitlement-service/db.js && node --check entitlement-service/auth.js && node --check entitlement-service/apple.js",
     "migrate": "node scripts/migrate-neon.mjs",
-    "sync": "node scripts/sync-catalog.mjs"
+    "sync": "node scripts/sync-catalog.mjs",
+    "test": "node scripts/test-resilience.mjs && npm run check"
   },
   "engines": {
     "node": ">=20"
