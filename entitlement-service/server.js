@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import { verifyAppleIdentityToken, verifyMcpUser } from "./auth.js";
 import { transactionFromNotification, verifyNotification, verifyTransaction } from "./apple.js";
 import { entitlementForSubject, linkTransactionToSubject, startTrial, subjectForTransaction, upsertTransaction } from "./db.js";
+import { recordConversion } from "../analytics-expansion.js";
 
 const MONTHLY_IDS = new Set((process.env.POLYGLOT_MONTHLY_PRODUCT_IDS || "ai.polyglot.promptstudio.mac.subscription.monthly,ai.polyglot.workspace.pro.monthly").split(",").map(s => s.trim()).filter(Boolean));
 const ANNUAL_IDS = new Set((process.env.POLYGLOT_ANNUAL_PRODUCT_IDS || "ai.polyglot.mac.pro.annual.2704,ai.polyglot.workspace.pro.annual").split(",").map(s => s.trim()).filter(Boolean));
@@ -69,12 +70,34 @@ export async function handleEntitlementRequest(req, res) {
 
     if (req.method === "GET" && url.pathname === "/v1/entitlements/me") {
       const subject = await verifyMcpUser(req);
+      // A verified entitlement read proves that this user reached Poly-Glot's
+      // backend. This is intentionally named "first_entitlement_seen", not
+      // "download" or "install", because App Store delivery happens before the
+      // server can observe the user.
+      await recordConversion({
+        userKey: subject,
+        eventType: "first_entitlement_seen",
+        clientName: "entitlement_api",
+        metadata: { route: "entitlements_me" },
+      });
       return json(res, 200, await entitlementJson(subject));
     }
 
     if (req.method === "POST" && url.pathname === "/v1/trials/start") {
       const subject = await verifyMcpUser(req);
       await startTrial(subject, TRIAL_DAYS);
+      await recordConversion({
+        userKey: subject,
+        eventType: "first_entitlement_seen",
+        clientName: "entitlement_api",
+        metadata: { route: "trials_start" },
+      });
+      await recordConversion({
+        userKey: subject,
+        eventType: "trial_started",
+        clientName: "entitlement_api",
+        metadata: { source: "entitlement_api" },
+      });
       return json(res, 200, await entitlementJson(subject));
     }
 
