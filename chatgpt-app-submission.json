@@ -178,12 +178,12 @@
         },
         "prepare_custom_compare": {
             "annotations": {
-                "readOnlyHint": true,
+                "readOnlyHint": false,
                 "openWorldHint": false,
                 "destructiveHint": false
             },
             "justifications": {
-                "read_only_justification": "Builds a Compare Mode plan with built-in and custom model descriptors without executing any requests.",
+                "read_only_justification": "Preparing the first eligible custom comparison can persist the start of the user's 3-day Poly-Glot trial; it does not execute the comparison targets.",
                 "open_world_justification": "Does not publish content or change any public or third-party system.",
                 "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
             }
