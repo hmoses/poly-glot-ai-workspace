@@ -1,6 +1,6 @@
 # Current Entitlement Map — Poly-Glot AI Workspace
 
-> Generated from verified runtime behavior. Last updated: 2026-09-18.
+> Generated from verified runtime behavior. Last updated: 2026-10-06.
 
 ## Entitlement States
 
@@ -56,7 +56,7 @@
 
 - iOS and macOS share identical product IDs (`ai.polyglot.workspace.pro.monthly`, `ai.polyglot.workspace.pro.annual`)
 - Trial is 3 days on both platforms
-- Free users get 25 templates on both platforms
+- Post-trial users can browse free templates; successful free Sends are limited to one every rolling 24 hours
 - Compare Mode is available during an active trial and for Pro subscribers
 - Compare Mode locks when the trial expires unless the user has an active Pro subscription
 - Cross-platform tools (transcribe, detect, translate, localize) require Pro or active trial on MCP
@@ -65,5 +65,5 @@
 - The 3-day trial starts on the user's first Send (build_prompt, prepare_compare, or prepare_custom_compare)
 - The trial does NOT automatically convert to a paid subscription; purchase is required via Apple StoreKit
 - Total MCP tools: 15
-- Supported languages: 35
+- Supported languages: 38
 - Distribution: hosted remote MCP (no local package)
