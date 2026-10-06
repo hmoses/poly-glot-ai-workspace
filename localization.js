@@ -20,7 +20,8 @@ export const SUPPORTED_LANGUAGES = Object.freeze([
   ["FI","Finnish","🇫🇮"],["EL","Greek","🇬🇷"],["HE","Hebrew","🇮🇱"],["ID","Indonesian","🇮🇩"],
   ["MS","Malay","🇲🇾"],["TH","Thai","🇹🇭"],["VI","Vietnamese","🇻🇳"],["UK","Ukrainian","🇺🇦"],
   ["CS","Czech","🇨🇿"],["RO","Romanian","🇷🇴"],["HU","Hungarian","🇭🇺"],["SK","Slovak","🇸🇰"],
-  ["HR","Croatian","🇭🇷"],["CA","Catalan","🇪🇸"],["AF","Afrikaans","🇿🇦"],
+  ["HR","Croatian","🇭🇷"],["CA","Catalan","🇪🇸"],["BG","Bulgarian","🇧🇬"],
+  ["LT","Lithuanian","🇱🇹"],["LV","Latvian","🇱🇻"],["ET","Estonian","🇪🇪"],
 ].map(([code,name,flag]) => Object.freeze({ code, name, flag })));
 
 const byCode = new Map(SUPPORTED_LANGUAGES.map((x) => [x.code, x]));
