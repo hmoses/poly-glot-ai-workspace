@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "parityVersion": "2026-09-05.1",
+  "parityVersion": "2026-10-06.1",
   "plans": {
     "free": {
       "compare": false,
       "premiumTemplates": false,
       "crossPlatformTools": false,
       "freeTemplateCount": 25,
-      "trialDays": 3
+      "trialDays": 3,
+      "dailyFreeSends": 1,
+      "freeSendWindowHours": 24
     },
     "trial": {
       "compare": true,
@@ -36,7 +38,7 @@
     "premiumTemplates": {
       "visible": true,
       "freeAccess": false,
-      "trialAccess": false,
+      "trialAccess": true,
       "proAccess": true,
       "uiStateWhenLocked": "locked",
       "lockLabel": "PRO",
@@ -129,7 +131,7 @@
     "pro_annual"
   ],
   "languages": {
-    "count": 35,
+    "count": 38,
     "codes": [
       "EN",
       "ES",
@@ -165,7 +167,10 @@
       "SK",
       "HR",
       "CA",
-      "AF"
+      "BG",
+      "LT",
+      "LV",
+      "ET"
     ]
   },
   "messages": {
@@ -173,12 +178,14 @@
     "trialExpired": "Your 3-day trial has ended.",
     "proRequired": "A Pro subscription is required.",
     "compareLocked": "Compare Mode requires an active trial or Pro subscription.",
-    "crossPlatformLocked": "A Pro subscription or active trial is required to use cross-platform language tools."
+    "crossPlatformLocked": "A Pro subscription or active trial is required to use cross-platform language tools.",
+    "freeSend": "One free single-AI send every rolling 24 hours after the trial."
   },
   "mcpTools": {
     "open": [
       "get_language_options",
-      "get_subscription_status"
+      "get_subscription_status",
+      "get_custom_model_capabilities"
     ],
     "entitlementAware": [
       "open_workspace",
@@ -189,6 +196,9 @@
     "proOnly": [],
     "proOrTrial": [
       "prepare_compare",
+      "prepare_custom_compare",
+      "validate_custom_model",
+      "run_custom_model",
       "transcribe_audio",
       "detect_language",
       "translate_text",
@@ -203,5 +213,19 @@
     "prompt": "promptView",
     "compare": "compareView",
     "subscription": "renderEnt"
+  },
+  "providers": {
+    "count": 9,
+    "ids": [
+      "chatgpt",
+      "claude",
+      "gemini",
+      "perplexity",
+      "grok",
+      "copilot",
+      "mistral",
+      "huggingchat",
+      "duckduckgo"
+    ]
   }
 }
