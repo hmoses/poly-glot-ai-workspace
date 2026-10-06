@@ -14,7 +14,7 @@ import { createServer } from "node:http";
 import { fileURLToPath } from "node:url";
 import { verifyAppleIdentityToken, verifyMcpUser } from "./auth.js";
 import { transactionFromNotification, verifyNotification, verifyTransaction } from "./apple.js";
-import { entitlementForSubject, linkTransactionToSubject, startTrial, subjectForTransaction, upsertTransaction } from "./db.js";
+import { consumeFreeSend, entitlementForSubject, linkTransactionToSubject, startTrial, subjectForTransaction, upsertTransaction } from "./db.js";
 
 const MONTHLY_IDS = new Set((process.env.POLYGLOT_MONTHLY_PRODUCT_IDS || "ai.polyglot.promptstudio.mac.subscription.monthly,ai.polyglot.workspace.pro.monthly").split(",").map(s => s.trim()).filter(Boolean));
 const ANNUAL_IDS = new Set((process.env.POLYGLOT_ANNUAL_PRODUCT_IDS || "ai.polyglot.mac.pro.annual.2704,ai.polyglot.workspace.pro.annual").split(",").map(s => s.trim()).filter(Boolean));
@@ -54,6 +54,7 @@ async function entitlementJson(subject) {
     userId: subject,
     trialStartedAt: row.user?.trial_started_at?.toISOString?.() || row.user?.trial_started_at || null,
     trialEndsAt: row.user?.trial_ends_at?.toISOString?.() || row.user?.trial_ends_at || null,
+    lastFreeSendAt: row.user?.last_free_send_at?.toISOString?.() || row.user?.last_free_send_at || null,
     source: row.transaction ? "apple_server_verified" : "account",
   };
 }
@@ -76,6 +77,18 @@ export async function handleEntitlementRequest(req, res) {
       const subject = await verifyMcpUser(req);
       await startTrial(subject, TRIAL_DAYS);
       return json(res, 200, await entitlementJson(subject));
+    }
+
+    if (req.method === "POST" && url.pathname === "/v1/free-send/consume") {
+      const subject = await verifyMcpUser(req);
+      const result = await consumeFreeSend(subject);
+      const last = result.lastFreeSendAt ? new Date(result.lastFreeSendAt) : null;
+      const nextResetAt = last ? new Date(last.getTime() + 24 * 60 * 60 * 1000).toISOString() : null;
+      return json(res, result.allowed ? 200 : 429, {
+        allowed: result.allowed,
+        lastFreeSendAt: last?.toISOString?.() || result.lastFreeSendAt || null,
+        nextResetAt,
+      });
     }
 
     if (req.method === "POST" && url.pathname === "/v1/apple/sync") {
