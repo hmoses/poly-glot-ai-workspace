@@ -2,6 +2,7 @@ CREATE TABLE IF NOT EXISTS polyglot_users (
   subject TEXT PRIMARY KEY,
   trial_started_at TIMESTAMPTZ,
   trial_ends_at TIMESTAMPTZ,
+  last_free_send_at TIMESTAMPTZ,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
