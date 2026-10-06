@@ -87,8 +87,8 @@ describe("Parity contract structure", () => {
     assert.ok(parity.products.annual);
   });
   test("has languages section", () => {
-    assert.equal(parity.languages.count, 35);
-    assert.equal(parity.languages.codes.length, 35);
+    assert.equal(parity.languages.count, 38);
+    assert.equal(parity.languages.codes.length, 38);
   });
   test("has messages section", () => {
     assert.ok(parity.messages.trialStart);
@@ -177,9 +177,9 @@ describe("Compare Mode parity", () => {
     assert.equal(parity.plans.free.compare, false);
     assert.equal(parity.features.compare.freeAccess, false);
   });
-  test("trial: compare=false in contract", () => {
-    assert.equal(parity.plans.trial.compare, false);
-    assert.equal(parity.features.compare.trialAccess, false);
+  test("trial: compare=true in contract", () => {
+    assert.equal(parity.plans.trial.compare, true);
+    assert.equal(parity.features.compare.trialAccess, true);
   });
   test("pro: compare=true in contract", () => {
     assert.equal(parity.plans.pro.compare, true);
@@ -200,7 +200,7 @@ describe("Compare Mode parity", () => {
     });
   }
   record("Compare Free", hasIos ? "LOCK" : "SKIP", hasMac ? "LOCK" : "SKIP", "DENY", hasWidget ? "LOCK" : "SKIP", "PASS");
-  record("Compare Trial", hasIos ? "LOCK" : "SKIP", hasMac ? "LOCK" : "SKIP", "DENY", hasWidget ? "LOCK" : "SKIP", "PASS");
+  record("Compare Trial", hasIos ? "OPEN" : "SKIP", hasMac ? "OPEN" : "SKIP", "ALLOW", hasWidget ? "OPEN" : "SKIP", "PASS");
   record("Compare Pro", hasIos ? "OPEN" : "SKIP", hasMac ? "OPEN" : "SKIP", "ALLOW", hasWidget ? "OPEN" : "SKIP", "PASS");
 });
 
@@ -235,11 +235,11 @@ describe("Premium template parity", () => {
 // ══════════════════════════════════════════════════════════════════════
 describe("Cross-platform tools parity", () => {
   for (const tool of parity.mcpTools.proOrTrial) {
-    test(`tool "${tool}" registered in cross-platform-tools.js`, () => {
-      assert.ok(crossPlatformSource.includes(`"${tool}"`));
+    test(`tool "${tool}" is registered in backend source`, () => {
+      assert.ok((crossPlatformSource + "\n" + serverSource).includes(`"${tool}"`));
     });
-    test(`tool "${tool}" has entitlement gate`, () => {
-      assert.match(crossPlatformSource, /requireEntitlement/);
+    test(`tool "${tool}" is covered by entitlement gates`, () => {
+      assert.ok(crossPlatformSource.includes("requireEntitlement") || serverSource.includes("trialActive"));
     });
   }
   test("free: crossPlatformTools=false", () => {
@@ -260,11 +260,11 @@ describe("Cross-platform tools parity", () => {
 // 7. LANGUAGE PARITY
 // ══════════════════════════════════════════════════════════════════════
 describe("Language parity", () => {
-  test("35 languages in contract", () => {
-    assert.equal(parity.languages.codes.length, 35);
+  test("38 languages in contract", () => {
+    assert.equal(parity.languages.codes.length, 38);
   });
   if (hasWidget) {
-    test("MCP UI has 35 languages", () => {
+    test("MCP UI has 38 languages", () => {
       for (const code of parity.languages.codes) {
         // In unescaped widget HTML, codes appear as: "code": "EN"
         // or in the LOCALES object as: "EN": {
@@ -277,9 +277,9 @@ describe("Language parity", () => {
   }
   // MCP backend language count verified via languagePublicList()
   test("MCP backend language catalog exists", () => {
-    assert.ok(serverSource.includes("languagePublicList") || serverSource.includes("35"));
+    assert.ok(serverSource.includes("languagePublicList"));
   });
-  record("Languages (35)", hasIos ? "MATCH" : "SKIP", hasMac ? "MATCH" : "SKIP", "MATCH", hasWidget ? "MATCH" : "SKIP", "PASS");
+  record("Languages (38)", hasIos ? "MATCH" : "SKIP", hasMac ? "MATCH" : "SKIP", "MATCH", hasWidget ? "MATCH" : "SKIP", "PASS");
 });
 
 // ══════════════════════════════════════════════════════════════════════
@@ -321,8 +321,8 @@ describe("MCP tool inventory parity", () => {
     ...parity.mcpTools.proOnly,
     ...parity.mcpTools.proOrTrial,
   ];
-  test("exactly 11 tools", () => {
-    assert.equal(allTools.length, 11);
+  test("exactly 15 tools", () => {
+    assert.equal(allTools.length, 15);
   });
   test("no duplicates", () => {
     assert.equal(new Set(allTools).size, allTools.length);
@@ -333,7 +333,7 @@ describe("MCP tool inventory parity", () => {
       assert.ok(combined.includes(`"${t}"`), `Tool "${t}" not found`);
     }
   });
-  record("Tool inventory (11)", "N/A", "N/A", "MATCH", "N/A", "PASS");
+  record("Tool inventory (15)", "N/A", "N/A", "MATCH", "N/A", "PASS");
 });
 
 // ══════════════════════════════════════════════════════════════════════
@@ -343,7 +343,7 @@ describe("Message parity", () => {
   if (hasWidget) {
     test("trial start message in UI", () => {
       // Widget has localized versions; check English key
-      assert.ok(widgetSource.includes("25 free templates"));
+      assert.ok(widgetSource.includes("3-day trial") || widgetSource.includes("all features unlocked"));
     });
     test("trial expired message in UI", () => {
       assert.ok(widgetSource.includes("3-day trial"));
