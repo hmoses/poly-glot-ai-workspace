@@ -1,8 +1,8 @@
 {
-  "gitCommit": "c0a814a",
-  "parityVersion": "2026-09-13.1",
-  "mcpVersion": "1.9.2",
-  "schemaVersion": 1,
+  "gitCommit": "4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6",
+  "parityVersion": "2026-10-06.1",
+  "mcpVersion": "1.11.0",
+  "schemaVersion": 2,
   "iOS": {
     "marketingVersion": "1.0.4",
     "buildNumber": "667",
@@ -44,13 +44,15 @@
       ]
     },
     "templateCount": 1022,
-    "languageCount": 35
+    "languageCount": 38,
+    "providerCount": 9,
+    "deploymentStatus": "SOURCE_READY_MIGRATION_AND_REDEPLOY_REQUIRED",
+    "freeSendPolicy": "1 free single-AI send every rolling 24 hours after trial"
   },
   "tests": {
-    "mcpMain": 63,
-    "entitlementParity": 24,
-    "totalParity": 72,
-    "total": 159
+    "parityWorkflow": "PASS",
+    "parityJobId": 112551312742,
+    "verifiedCommit": "4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6"
   },
-  "timestamp": "2026-09-08T22:30:00Z"
+  "timestamp": "2026-10-06T23:24:46Z"
 }
