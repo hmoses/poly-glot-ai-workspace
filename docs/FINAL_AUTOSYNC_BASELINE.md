@@ -1,114 +1,57 @@
-# FINAL AUTO-SYNC BASELINE — 2026-09-02
+# Poly-Glot MCP Current Baseline
 
-Snapshot of all verified facts before final parity + auto-sync work begins.
+> Source baseline verified: 2026-10-06.
 
-## Repository
+## Canonical Product Contract
 
-| Item | Value |
-|------|-------|
-| Repo | `hmoses/poly-glot-ai-workspace` |
-| Branch | `main` |
-| HEAD commit | `4393c5d` |
-| Local path | `/Users/haroldmoses/poly-glot-ai-workspace` |
+| Item | Current value |
+|---|---|
+| Parity contract | `config/polyglot-product-parity.json` |
+| parityVersion | `2026-10-06.1` |
+| MCP target version | `1.11.0` |
+| Tools | 15 |
+| Languages | 38 |
+| Built-in AI providers | 9 |
+| Templates | 1,022 |
+| Trial | 3 days, begins on first qualifying Send |
+| Post-trial free send | 1 shared single-AI Send every rolling 24 hours |
+| Pro templates | Locked post-trial |
+| Compare Mode | Trial + Pro only |
+| BYOM execution | Trial + Pro only |
+| Cross-platform language tools | Trial + Pro only |
+| Trial auto-conversion | No |
 
-## Parity Contract
+## 15 MCP Tools
 
-| Item | Value |
-|------|-------|
-| File | `config/polyglot-product-parity.json` |
-| schemaVersion | 1 |
-| parityVersion | `2026-09-02.1` |
-| Plans | free, trial, pro |
-| Features | 8 (compare, premiumTemplates, transcription, detectLanguage, translation, localization, templateBrowsing, promptBuilding) + 4 BYOM tools |
-| Languages | 35 |
-| Entitlement states | 5 (not_started, trial, expired, pro_monthly, pro_annual) |
+Core: `get_language_options`, `get_subscription_status`, `open_workspace`, `search_templates`, `get_template`, `build_prompt`, `prepare_compare`.
 
-## Generated Swift
+BYOM: `get_custom_model_capabilities`, `validate_custom_model`, `run_custom_model`, `prepare_custom_compare`.
 
-| Item | Value |
-|------|-------|
-| File | `Generated/PolyGlotCapabilities.swift` |
-| entitlementVersion | `2026-09-02.1` |
-| Staleness check | ✅ Up to date (`--check` passes) |
-| Source | `config/polyglot-capabilities.json` (reads parity contract values) |
+Language/media: `transcribe_audio`, `detect_language`, `translate_text`, `localize_text`.
 
-## MCP Server
+## Provider Parity
 
-| Item | Value |
-|------|-------|
-| Version | 1.9.0 |
-| Tools | 15 (get_language_options, get_subscription_status, open_workspace, search_templates, get_template, build_prompt, prepare_compare, get_custom_model_capabilities, validate_custom_model, run_custom_model, prepare_custom_compare, transcribe_audio, detect_language, translate_text, localize_text) |
-| Templates | 1,022 (25 free, 997 pro) |
-| Languages | 35 |
-| Endpoint | `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp` |
-| Health | ✅ OK |
-| Deploy | #30 (Neon Functions) |
+Compare Mode accepts: ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral, HuggingChat, and DuckDuckGo AI.
 
-## Test Suites
+## Rolling Free-Send Enforcement
 
-| Suite | Result |
-|-------|--------|
-| Main MCP tests | 63/63 ✅ |
-| Entitlement parity | 24/24 ✅ |
-| Total parity | 72/72 ✅ |
-| **TOTAL** | **159/159** ✅ |
+The source now persists `last_free_send_at` and atomically consumes the post-trial free Send through `POST /v1/free-send/consume`. A second free Send is blocked until exactly 24 hours after the previous successful free-send reservation. The database upgrade is in `entitlement-service/sql/002_rolling_free_send.sql`.
 
-## CI Workflows
+## Localization
 
-| File | Purpose |
-|------|---------|
-| `.github/workflows/parity-check.yml` | Parity validation, Swift staleness, MCP tests |
-| `.github/workflows/publish-mcp-registry.yml` | Registry publish on v*.*.* tags |
+The MCP language contract contains 38 product languages. The embedded MCP widget contains all 38 selectable languages and UI strings for the newly added Bulgarian, Lithuanian, Latvian, and Estonian locales. Template metadata falls back safely to English when a translated template entry is unavailable.
 
-## Deployment Policy
+## Validation
 
-| File | `config/deployment-policy.json` |
-|------|------|
-| stageOnBuildComplete | true |
-| productionOnReadyForDistribution | true |
-| productionOnBuildComplete | false (safe) |
-| requireParityValidation | true |
-| requireMcpRegressionTests | true |
-| requireProductionSmokeTests | true |
+GitHub Actions parity job **112551312742** completed successfully on commit `4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6`.
 
-## Webhook
+## Production Activation Still Required
 
-| Item | Value |
-|------|-------|
-| File | `webhook/index.mjs` |
-| Status | Not deployed (infrastructure ready) |
+Source parity and CI are complete. The following are deployment operations, not source changes:
 
-## Apple Product IDs
+1. Apply `002_rolling_free_send.sql` to the production Neon database.
+2. Redeploy the production MCP/entitlement function from the updated source.
+3. Publish/update MCP Registry metadata for v1.11.0 after deployment verification.
+4. Refresh MCP.so manually if its listing does not re-crawl the canonical metadata.
 
-| Product | ID |
-|---------|-----|
-| Pro Monthly | `ai.polyglot.workspace.pro.monthly` |
-| Pro Annual | `ai.polyglot.workspace.pro.annual` |
-
-Verified identical in:
-- iOS `IAPManager.swift` ✅
-- macOS `IAPManagerMac.swift` ✅
-- Generated `PolyGlotCapabilities.swift` ✅
-- `config/polyglot-product-parity.json` ✅
-
-## Apple App Versions
-
-| Platform | Version | Build | Status |
-|----------|---------|-------|--------|
-| macOS | 2.6 | 663 | PREPARE_FOR_SUBMISSION |
-| iOS | 1.0.4 | 667 | IN_REVIEW |
-
-## Apple Xcode Projects
-
-| Platform | Path | Project |
-|----------|------|---------|
-| iOS | `~/Desktop/PolyGlot/PolyGlotWorkspace_iOS/ios/App/App.xcodeproj` | App target |
-| macOS | `~/Desktop/PolyGlot/PolyGlotMac/PolyGlotAI/PolyGlotAI.xcodeproj` | PolyGlotAI target |
-
-## Swift Integration Status (Pre-Phase 1)
-
-`Generated/PolyGlotCapabilities.swift` exists in MCP repo but is **NOT yet integrated** into either iOS or macOS Xcode projects. Both apps still use hand-maintained `ProductID` enums with identical values.
-
-## Differences from Prior Report
-
-None found. All 159/159 tests pass. Production v1.9.0 live with 15 tools. All product IDs match across all surfaces.
+Do not mark v1.11.0 as production-live until the migration and redeploy are verified against the public endpoint.
