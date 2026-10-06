@@ -657,12 +657,12 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
       responseTextPath: z.string().max(200).optional(),
       probe: z.boolean().optional().default(false),
     },
-    annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
+    annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: true },
   }, async (args, extra) => {
     track("validate_custom_model", extra, { adapterMode: args.adapterMode });
     const entitlement = await getEntitlement(entitlementContext(extra));
     trackExpanded("validate_custom_model", extra, entitlement.state);
-    if (!entitlement.isPro && !entitlement.trialActive && entitlement.state !== "not_started") {
+    if (!entitlement.isPro && !entitlement.trialActive) {
       const message = "Validating custom model endpoints requires an active trial or Pro subscription.";
       return {
         structuredContent: { view: "locked", message, entitlement: entitlementSummary(entitlement) },
@@ -737,7 +737,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
       responseTextPath: z.string().max(200).optional(),
       ...localizationArgs,
     },
-    annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
+    annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: true },
   }, async (args, extra) => {
     track("run_custom_model", extra, { adapterMode: args.adapterMode, model: args.model });
     const entitlement = await getEntitlement(entitlementContext(extra));
@@ -907,7 +907,7 @@ const httpServer = createServer(async (req, res) => {
     recordRequestEvent({ requestKey: randomUUID(), eventType: "health_check", method: "GET", path: "/", trafficClass: "health_check" }).catch(() => {});
     res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
     return res.end(JSON.stringify({
-      name: "Poly-Glot AI Workspace MCP", status: "ok", version: "1.10.0", endpoint: MCP_PATH, templates: templates.length,
+      name: "Poly-Glot AI Workspace MCP", status: "ok", version: "1.11.0", endpoint: MCP_PATH, templates: templates.length,
       freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, tools: 15, pricing: publicPricing(),
       trial: { days: 3, startsOn: "first Send", autoConverts: false },
     }));
