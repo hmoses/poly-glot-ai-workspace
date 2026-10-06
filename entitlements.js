@@ -37,15 +37,11 @@ function hash(value) { return createHash("sha256").update(String(value)).digest(
  * Calculate tomorrow 00:00 UTC — daily free send reset point.
  * Returns ISO-8601 timestamp string.
  */
-function nextDailyResetAt() {
-  const now = new Date();
-  const next = new Date(Date.UTC(
-    now.getUTCFullYear(),
-    now.getUTCMonth(),
-    now.getUTCDate() + 1,
-    0, 0, 0, 0
-  ));
-  return next.toISOString();
+function rollingResetAt(lastFreeSendAt) {
+  if (!lastFreeSendAt) return null;
+  const last = Date.parse(lastFreeSendAt);
+  if (!Number.isFinite(last)) return null;
+  return new Date(last + MS_PER_DAY).toISOString();
 }
 
 function loadStore() {
@@ -83,6 +79,7 @@ function normalizeRemote(data) {
     userId: data?.userId || null,
     trialStartedAt: data?.trialStartedAt || null,
     trialEndsAt: data?.trialEndsAt || null,
+    lastFreeSendAt: data?.lastFreeSendAt || null,
     source: "remote",
   };
 }
@@ -105,7 +102,7 @@ function localEntitlement(extra) {
   }
   const store = loadStore();
   const key = subjectKey(extra);
-  const row = store.users[key] || { state: ENTITLEMENT_STATES.NOT_STARTED, trialStartedAt: null, trialEndsAt: null };
+  const row = store.users[key] || { state: ENTITLEMENT_STATES.NOT_STARTED, trialStartedAt: null, trialEndsAt: null, lastFreeSendAt: null };
   if (row.state === ENTITLEMENT_STATES.TRIAL && row.trialEndsAt && Date.now() >= Date.parse(row.trialEndsAt)) {
     row.state = ENTITLEMENT_STATES.EXPIRED;
     store.users[key] = row;
@@ -124,10 +121,11 @@ export async function getEntitlement(extra) {
   // canUseFree means the user can use the Ask Any AI feature (with daily limit if expired)
   const canUseFree = base.state === ENTITLEMENT_STATES.NOT_STARTED || trialActive || isPro || isExpired;
   const dailyFreeLimit = isExpired ? PRICING.dailyFreeSends : null;
+  const nextResetAt = isExpired ? rollingResetAt(base.lastFreeSendAt) : null;
+  const freeWindowOpen = !isExpired || !base.lastFreeSendAt || !nextResetAt || Date.now() >= Date.parse(nextResetAt);
+  const dailyFreeRemaining = isExpired ? (freeWindowOpen ? PRICING.dailyFreeSends : 0) : null;
   // Compare Mode: only Pro and active trial can use it
   const compareLocked = !(isPro || trialActive);
-  // Next daily reset: only relevant for expired users
-  const nextResetAt = isExpired ? nextDailyResetAt() : null;
   return {
     ...base,
     isPro,
@@ -135,10 +133,59 @@ export async function getEntitlement(extra) {
     canUseFree,
     isExpired,
     dailyFreeLimit,
+    dailyFreeRemaining,
+    lastFreeSendAt: base.lastFreeSendAt || null,
     compareLocked,
     nextResetAt,
     pricing: publicPricing(),
   };
+}
+
+export async function consumeDailyFreeSend(extra) {
+  const current = await getEntitlement(extra);
+  if (!current.isExpired) return { allowed: true, entitlement: current };
+
+  if (REMOTE_URL || PRODUCTION) {
+    if (!REMOTE_URL) throw new Error("POLYGLOT_ENTITLEMENT_ENDPOINT is required in production");
+    const configured = String(process.env.POLYGLOT_FREE_SEND_ENDPOINT || "").trim();
+    const endpoint = configured || REMOTE_URL.replace(/\/v1\/entitlements\/me\/?$/, "/v1/free-send/consume");
+    const token = authToken(extra);
+    if (!token) return { allowed: false, entitlement: current };
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { authorization: `Bearer ${token}`, accept: "application/json" },
+    });
+    const data = await response.json().catch(() => ({}));
+    if (response.ok && data.allowed) {
+      const entitlement = await getEntitlement(extra);
+      return { allowed: true, entitlement };
+    }
+    if (response.status === 429) {
+      return {
+        allowed: false,
+        entitlement: {
+          ...current,
+          lastFreeSendAt: data.lastFreeSendAt || current.lastFreeSendAt || null,
+          nextResetAt: data.nextResetAt || current.nextResetAt || null,
+          dailyFreeRemaining: 0,
+        },
+      };
+    }
+    throw new Error(`Free send service returned ${response.status}`);
+  }
+
+  const store = loadStore();
+  const key = subjectKey(extra);
+  const row = store.users[key] || { state: ENTITLEMENT_STATES.EXPIRED, trialStartedAt: null, trialEndsAt: null, lastFreeSendAt: null };
+  const resetAt = rollingResetAt(row.lastFreeSendAt);
+  if (row.lastFreeSendAt && resetAt && Date.now() < Date.parse(resetAt)) {
+    return { allowed: false, entitlement: await getEntitlement(extra) };
+  }
+  row.lastFreeSendAt = nowIso();
+  row.updatedAt = nowIso();
+  store.users[key] = row;
+  saveStore(store);
+  return { allowed: true, entitlement: await getEntitlement(extra) };
 }
 
 export async function startTrialIfNeeded(extra) {
@@ -222,6 +269,8 @@ export function entitlementSummary(entitlement) {
     canUseFree: entitlement.canUseFree,
     isExpired: entitlement.isExpired,
     dailyFreeLimit: entitlement.dailyFreeLimit,
+    dailyFreeRemaining: entitlement.dailyFreeRemaining,
+    lastFreeSendAt: entitlement.lastFreeSendAt,
     compareLocked: entitlement.compareLocked,
     nextResetAt: entitlement.nextResetAt,
     pricing,
