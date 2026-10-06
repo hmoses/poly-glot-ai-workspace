@@ -510,6 +510,19 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
       }
     }
 
+    let body = getPromptBody(template);
+    if (!body) throw new Error(`No prompt body is available for template: ${template.name}`);
+    const sourceFields = placeholders(body);
+    const defaults = template.vars ?? {};
+    for (const key of sourceFields) {
+      const supplied = values[key];
+      const value = supplied !== undefined && supplied !== null && String(supplied) !== "" ? String(supplied) : String(defaults[key] ?? "");
+      if (value) body = body.split(`{{${key}}}`).join(value);
+    }
+    const missingFields = placeholders(body);
+    body = applyLanguageInstructions(body, localization.inputLanguage.code, localization.outputLanguage.code);
+
+    // Consume the post-trial free allowance only after the prompt has been built successfully.
     if (template.plan === "free" && entitlement.isExpired) {
       const consumed = await consumeDailyFreeSend(entitlementContext(extra));
       entitlement = consumed.entitlement;
@@ -529,17 +542,6 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
       }
     }
 
-    let body = getPromptBody(template);
-    if (!body) throw new Error(`No prompt body is available for template: ${template.name}`);
-    const sourceFields = placeholders(body);
-    const defaults = template.vars ?? {};
-    for (const key of sourceFields) {
-      const supplied = values[key];
-      const value = supplied !== undefined && supplied !== null && String(supplied) !== "" ? String(supplied) : String(defaults[key] ?? "");
-      if (value) body = body.split(`{{${key}}}`).join(value);
-    }
-    const missingFields = placeholders(body);
-    body = applyLanguageInstructions(body, localization.inputLanguage.code, localization.outputLanguage.code);
     return {
       structuredContent: { view: "prompt", name: localizedTemplateMeta(template, localization.uiLanguage.code).name, prompt: body, missingFields, outputLanguage: localization.outputLanguage.name, inputLanguage: localization.inputLanguage.name, entitlement: entitlementSummary(entitlement), localization },
       content: [
