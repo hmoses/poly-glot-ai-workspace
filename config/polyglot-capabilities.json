@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "entitlementVersion": "2026-09-18.1",
+  "entitlementVersion": "2026-10-06.1",
   "plans": {
     "free": {
       "compare": false,
@@ -9,7 +9,8 @@
       "byomExecution": false,
       "freeTemplateCount": 25,
       "trialDays": 3,
-      "dailyFreeSends": 1
+      "dailyFreeSends": 1,
+      "freeSendWindowHours": 24
     },
     "trial": {
       "compare": true,
@@ -96,6 +97,17 @@
     ]
   },
   "toolCount": 15,
-  "languageCount": 35,
-  "distribution": "hosted-remote-mcp"
+  "languageCount": 38,
+  "distribution": "hosted-remote-mcp",
+  "providers": [
+    "chatgpt",
+    "claude",
+    "gemini",
+    "perplexity",
+    "grok",
+    "copilot",
+    "mistral",
+    "huggingchat",
+    "duckduckgo"
+  ]
 }
