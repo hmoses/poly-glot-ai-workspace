@@ -1,7 +1,7 @@
 // ──────────────────────────────────────────────────────────────────────
 // AUTO-GENERATED — do not edit manually.
 // Source: config/polyglot-capabilities.json
-// Entitlement version: 2026-09-02.1
+// Entitlement version: 2026-10-06.1
 // Run: node scripts/generate-apple-capabilities.mjs
 // ──────────────────────────────────────────────────────────────────────
 
@@ -11,7 +11,7 @@ import Foundation
 /// Kept in sync with the MCP server via CI parity checks.
 enum PolyGlotCapabilities {
 
-    static let entitlementVersion = "2026-09-02.1"
+    static let entitlementVersion = "2026-10-06.1"
     static let schemaVersion = 1
 
     // MARK: - Products
@@ -35,8 +35,8 @@ enum PolyGlotCapabilities {
     }
 
     enum TrialPlan {
-        static let compare = false
-        static let premiumTemplates = false
+        static let compare = true
+        static let premiumTemplates = true
         static let crossPlatformTools = true
         static let freeTemplateCount = 25
     }
