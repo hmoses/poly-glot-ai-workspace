@@ -97,9 +97,27 @@ export async function subjectForTransaction(tx) {
 }
 
 // GOOSE NOTE: This query is the final source for Pro/trial authorization decisions.
+export async function consumeFreeSend(subject) {
+  await ensureUser(subject);
+  const { rows } = await pool.query(
+    `UPDATE polyglot_users
+       SET last_free_send_at = now(), updated_at = now()
+     WHERE subject = $1
+       AND (last_free_send_at IS NULL OR last_free_send_at <= now() - interval '24 hours')
+     RETURNING last_free_send_at`,
+    [subject]
+  );
+  if (rows[0]) return { allowed: true, lastFreeSendAt: rows[0].last_free_send_at };
+  const current = await pool.query(
+    `SELECT last_free_send_at FROM polyglot_users WHERE subject=$1`,
+    [subject]
+  );
+  return { allowed: false, lastFreeSendAt: current.rows[0]?.last_free_send_at || null };
+}
+
 export async function entitlementForSubject(subject) {
   await ensureUser(subject);
-  const userQ = await pool.query(`SELECT trial_started_at, trial_ends_at FROM polyglot_users WHERE subject=$1`, [subject]);
+  const userQ = await pool.query(`SELECT trial_started_at, trial_ends_at, last_free_send_at FROM polyglot_users WHERE subject=$1`, [subject]);
   const txQ = await pool.query(
     `SELECT product_id, expires_at, revocation_date
        FROM apple_transactions
