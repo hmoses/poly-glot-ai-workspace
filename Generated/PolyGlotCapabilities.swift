@@ -30,7 +30,6 @@ enum PolyGlotCapabilities {
         static let compare = false
         static let premiumTemplates = false
         static let crossPlatformTools = false
-        static let byomExecution = false
         static let freeTemplateCount = 25
         static let trialDays = 3
         static let dailyFreeSends = 1
@@ -41,7 +40,6 @@ enum PolyGlotCapabilities {
         static let compare = true
         static let premiumTemplates = true
         static let crossPlatformTools = true
-        static let byomExecution = true
         static let freeTemplateCount = 25
     }
 
