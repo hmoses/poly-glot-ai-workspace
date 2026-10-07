@@ -35,7 +35,7 @@
 | **UI States** | | | | | | |
 | Locked template card | 🔒 + PRO badge | 🔒 + PRO badge | locked flag | 🔒 PRO badge + opacity | None | — |
 | Paywall view | StoreKit sheet | StoreKit sheet | locked JSON | Plans + pricing | None | — |
-| Trial expired message | ✅ localized | ✅ localized | ✅ "trial_expired" | ✅ localized 35 langs | None | — |
+| Trial expired message | ✅ localized | ✅ localized | ✅ "trial_expired" | ✅ localized 38 langs | None | — |
 | **Entitlement States** | | | | | | |
 | not_started | ✅ | ✅ | ✅ | ✅ "Trial Not Started" | None | — |
 | trial | ✅ | ✅ | ✅ | ✅ "Free Trial" | None | — |
