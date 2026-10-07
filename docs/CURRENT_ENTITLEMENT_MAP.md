@@ -1,6 +1,6 @@
 # Current Entitlement Map — Poly-Glot AI Workspace
 
-> Generated from verified runtime behavior. Last updated: 2026-10-06.
+> Refreshed against current source on 2026-10-07. Contract: `2026-10-06.1`.
 
 ## Entitlement States
 
@@ -29,6 +29,7 @@
 | Template details | UI locked flags | `get_template` + `templateAccess()` | 🔒 pro templates | ✅ free | ✅ | ✅ |
 | Prompt building (Send) | StoreKit paywall | `build_prompt` + `templateAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
 | Compare Mode (Send) | StoreKit paywall | `prepare_compare` + `compareAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
+| Post-trial single-AI send | App rolling-send state | `consumeDailyFreeSend()` / entitlement service | ✅ 1 every rolling 24h | Unlimited | Unlimited | ✅ |
 | BYOM info | None | `get_custom_model_capabilities` | ✅ | ✅ | ✅ | ✅ |
 | BYOM validation | StoreKit paywall | `validate_custom_model` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
 | BYOM execution | StoreKit paywall | `run_custom_model` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
@@ -50,7 +51,9 @@
 
 | Issue | Severity | Status |
 |-------|----------|--------|
-| None | — | ✅ All gates match |
+| Apple generated capability copies were behind the MCP contract | Medium | ✅ Synced to `2026-10-06.1` on 2026-10-07 |
+| Local StoreKit test product IDs differed from canonical IDs | Medium | ✅ Synced to `ai.polyglot.workspace.pro.monthly` / `.annual` |
+| Current source gate mismatch | — | ✅ None identified after synchronization |
 
 ## Notes
 
@@ -64,6 +67,7 @@
 - Apple-native behavior (Speech, StoreKit, native localization) is fully preserved — cross-platform tools are additive only
 - The 3-day trial starts on the user's first Send (build_prompt, prepare_compare, or prepare_custom_compare)
 - The trial does NOT automatically convert to a paid subscription; purchase is required via Apple StoreKit
+- Current Apple source: iOS 1.1.4 build 827; macOS 3.4 build 812
 - Total MCP tools: 15
 - Supported languages: 38
 - Distribution: hosted remote MCP (no local package)
