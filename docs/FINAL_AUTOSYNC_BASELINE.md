@@ -1,6 +1,6 @@
 # Poly-Glot MCP Current Baseline
 
-> Source baseline verified: 2026-10-06.
+> Source baseline refreshed: 2026-10-07.
 
 ## Canonical Product Contract
 
@@ -45,13 +45,12 @@ The MCP language contract contains 38 product languages. The embedded MCP widget
 
 GitHub Actions parity job **112551312742** completed successfully on commit `4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6`.
 
-## Production Activation Still Required
+## Production State
 
-Source parity and CI are complete. The following are deployment operations, not source changes:
+Repository-recorded production state is **v1.11.0 / 15 tools / deploy 52**, with entitlement service deploy 8. The rolling free-send migration is recorded as applied in production.
 
-1. Apply `002_rolling_free_send.sql` to the production Neon database.
-2. Redeploy the production MCP/entitlement function from the updated source.
-3. Publish/update MCP Registry metadata for v1.11.0 after deployment verification.
-4. Refresh MCP.so manually if its listing does not re-crawl the canonical metadata.
+Remaining distribution follow-up is metadata propagation rather than product parity:
+1. Confirm the Official MCP Registry reflects v1.11.0 after the publish workflow.
+2. Refresh MCP.so manually only if its crawler does not pick up the canonical metadata.
 
-Do not mark v1.11.0 as production-live until the migration and redeploy are verified against the public endpoint.
+Apple source parity is tracked separately: iOS **1.1.4 build 827** and macOS **3.4 build 812** use the shared entitlement contract `2026-10-06.1`.
