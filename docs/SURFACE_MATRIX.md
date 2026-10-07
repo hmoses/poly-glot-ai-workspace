@@ -1,6 +1,6 @@
 # MCP Surface Matrix
 
-Post-deployment surface verification status. Last updated: 2026-10-06.
+Post-deployment surface verification status. Last updated: 2026-10-07.
 
 | Surface | Role | Status | Evidence |
 |---|---|---|---|
@@ -24,7 +24,8 @@ Post-deployment surface verification status. Last updated: 2026-10-06.
 - **AVAILABLE** — endpoint works, client can connect
 - **PR OPEN** — pull request submitted, awaiting merge
 
-## Known gaps
-1. Production database migration `002_rolling_free_send.sql` is applied on `br-steep-leaf-ae2o29qz`.
-2. Production MCP v1.11.0 is live as Neon deployment 52 and the entitlement service is live as deployment 8.
-3. MCP.so description may need manual owner-login refresh if its crawler does not auto-sync.
+## Current notes
+1. Production database migration `002_rolling_free_send.sql` is recorded as applied on `br-steep-leaf-ae2o29qz`.
+2. Production MCP v1.11.0 is recorded live as Neon deployment 52; entitlement service deployment 8 is recorded live.
+3. iOS source is 1.1.4 build 827; macOS source is 3.4 build 812; both now consume the generated entitlement contract `2026-10-06.1`.
+4. MCP.so description may still require a manual owner-login refresh if its crawler does not auto-sync.
