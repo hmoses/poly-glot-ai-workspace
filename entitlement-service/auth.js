@@ -10,7 +10,9 @@ let oidcJwks;
 let appleJwks;
 
 function bearer(req) {
-  const h = String(req.headers.authorization || "");
+  const headers = req?.headers;
+  const value = typeof headers?.get === "function" ? headers.get("authorization") : headers?.authorization;
+  const h = String(value || "");
   return h.startsWith("Bearer ") ? h.slice(7).trim() : "";
 }
 
