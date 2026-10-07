@@ -14,7 +14,7 @@
  *
  * ENTITLEMENT MODEL (v1.9):
  *   Trial (3 days) — ALL features free: every template (free + pro), Compare Mode, BYOM.
- *   Expired — FREE templates allowed; PRO templates lock. Ask Any AI = 1 free send/day, single AI only. Compare Mode locked.
+ *   Expired — FREE templates allowed; PRO templates lock. One single-AI free Send every rolling 24 hours. Compare Mode locked.
  *   Pro — Everything unlimited.
  */
 import { createHash } from "node:crypto";
@@ -251,7 +251,7 @@ export function templateAccess(template, entitlement) {
       dailyLimited: true,
       dailyFreeLimit: entitlement.dailyFreeLimit,
       nextResetAt: entitlement.nextResetAt,
-      message: `Your trial has ended. Free templates remain available, plus 1 free Ask Any AI send per day. Subscribe to Pro for Pro templates, Compare Mode, and unlimited access.`,
+      message: `Your trial has ended. Free templates remain available, plus 1 free single-AI Send every rolling 24 hours. Subscribe to Pro for Pro templates, Compare Mode, and unlimited access.`,
     };
   }
 
