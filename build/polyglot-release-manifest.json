@@ -1,5 +1,5 @@
 {
-  "gitCommit": "5a46f00cf047a2290cbba653f297fc870b3baa07",
+  "gitCommit": "ed045b6a1e2ed95095b131045e18a3f7f82c9426",
   "parityVersion": "2026-10-06.1",
   "mcpVersion": "1.11.0",
   "schemaVersion": 2,
@@ -52,12 +52,15 @@
   },
   "tests": {
     "parityWorkflow": "PASS",
-    "parityJobId": 112551312742,
-    "verifiedCommit": "ed045b6a1e2ed95095b131045e18a3f7f82c9426"
+    "parityRunNumber": 60,
+    "parityJobId": 37681503758,
+    "verifiedCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399"
   },
-  "timestamp": "2026-10-07T00:00:00Z",
+  "timestamp": "2026-10-07T20:22:44Z",
   "notes": {
     "appleSourceState": "Versions/builds reflect current authoritative GitHub source. App Store Connect release status is intentionally not inferred here.",
-    "parityContract": "2026-10-06.1"
-  }
+    "parityContract": "2026-10-06.1",
+    "productionCommit": "gitCommit identifies the source recorded for production deploy 52; sourceSyncCommit identifies the latest parity-contract synchronization verified by CI."
+  },
+  "sourceSyncCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399"
 }
