@@ -123,6 +123,82 @@ export async function handleEntitlementRequest(req, res) {
   }
 }
 
+function webJson(status, value) {
+  return Response.json(value, {
+    status,
+    headers: {
+      "cache-control": "no-store",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "authorization, content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+    },
+  });
+}
+
+export async function handleEntitlementRequestWeb(request) {
+  try {
+    const url = new URL(request.url);
+    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: {
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "authorization, content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+    }});
+
+    if (request.method === "GET" && (url.pathname === "/" || url.pathname === "/healthz")) {
+      return webJson(200, { ok: true, service: "polyglot-entitlements", database: "neon" });
+    }
+
+    if (request.method === "GET" && url.pathname === "/v1/entitlements/me") {
+      const subject = await verifyMcpUser(request);
+      return webJson(200, await entitlementJson(subject));
+    }
+
+    if (request.method === "POST" && url.pathname === "/v1/trials/start") {
+      const subject = await verifyMcpUser(request);
+      await startTrial(subject, TRIAL_DAYS);
+      return webJson(200, await entitlementJson(subject));
+    }
+
+    if (request.method === "POST" && url.pathname === "/v1/free-send/consume") {
+      const subject = await verifyMcpUser(request);
+      const result = await consumeFreeSend(subject);
+      const last = result.lastFreeSendAt ? new Date(result.lastFreeSendAt) : null;
+      const nextResetAt = last ? new Date(last.getTime() + 24 * 60 * 60 * 1000).toISOString() : null;
+      return webJson(result.allowed ? 200 : 429, {
+        allowed: result.allowed,
+        lastFreeSendAt: last?.toISOString?.() || result.lastFreeSendAt || null,
+        nextResetAt,
+      });
+    }
+
+    if (request.method === "POST" && url.pathname === "/v1/apple/sync") {
+      const payload = await request.json();
+      const subject = await verifyAppleIdentityToken(payload.identityToken);
+      const tx = await verifyTransaction(payload.signedTransaction);
+      if (!MONTHLY_IDS.has(tx.productId) && !ANNUAL_IDS.has(tx.productId)) return webJson(400, { error: "unsupported_product" });
+      await upsertTransaction(tx, subject);
+      await linkTransactionToSubject(tx.originalTransactionId, subject);
+      return webJson(200, { ok: true, entitlement: await entitlementJson(subject) });
+    }
+
+    if (request.method === "POST" && url.pathname === "/v1/apple/notifications") {
+      const payload = await request.json();
+      const notification = await verifyNotification(payload.signedPayload);
+      const tx = await transactionFromNotification(notification);
+      if (tx && (MONTHLY_IDS.has(tx.productId) || ANNUAL_IDS.has(tx.productId))) {
+        const subject = await subjectForTransaction(tx);
+        await upsertTransaction(tx, subject);
+      }
+      return webJson(200, { ok: true });
+    }
+
+    return webJson(404, { error: "not_found" });
+  } catch (error) {
+    console.error("Entitlement web request failed", error);
+    return webJson(error.statusCode || 500, { error: error.statusCode === 401 ? "unauthorized" : "request_failed" });
+  }
+}
+
 // Local development only. Production imports handleEntitlementRequest into the
 // single production host listener in ../server.js.
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
