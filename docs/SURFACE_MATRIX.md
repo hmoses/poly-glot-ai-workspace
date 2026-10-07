@@ -25,6 +25,6 @@ Post-deployment surface verification status. Last updated: 2026-10-06.
 - **PR OPEN** — pull request submitted, awaiting merge
 
 ## Known gaps
-1. Production database migration `002_rolling_free_send.sql` must be applied before rolling 24-hour enforcement can be active in production.
-2. Production MCP function must be redeployed from the updated source.
+1. Production database migration `002_rolling_free_send.sql` is applied on `br-steep-leaf-ae2o29qz`.
+2. Production MCP function still must be redeployed from the updated v1.11.0 source before the new rolling-send logic and 9-provider schema are active at runtime.
 3. MCP.so description may need manual owner-login refresh if its crawler does not auto-sync.
