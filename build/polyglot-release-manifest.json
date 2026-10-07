@@ -1,5 +1,5 @@
 {
-  "gitCommit": "4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6",
+  "gitCommit": "ed045b6a1e2ed95095b131045e18a3f7f82c9426",
   "parityVersion": "2026-10-06.1",
   "mcpVersion": "1.11.0",
   "schemaVersion": 2,
@@ -17,8 +17,8 @@
   },
   "production": {
     "endpoint": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp",
-    "deployId": "30",
-    "deployedAt": "2026-09-08T22:15:00Z",
+    "deployId": 52,
+    "deployedAt": "2026-10-07T01:39:39Z",
     "toolCount": 15,
     "tools": {
       "core": [
@@ -46,13 +46,14 @@
     "templateCount": 1022,
     "languageCount": 38,
     "providerCount": 9,
-    "deploymentStatus": "SOURCE_READY_MIGRATION_AND_REDEPLOY_REQUIRED",
-    "freeSendPolicy": "1 free single-AI send every rolling 24 hours after trial"
+    "deploymentStatus": "LIVE",
+    "freeSendPolicy": "1 free single-AI send every rolling 24 hours after trial",
+    "entitlementDeployId": 8
   },
   "tests": {
     "parityWorkflow": "PASS",
     "parityJobId": 112551312742,
-    "verifiedCommit": "4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6"
+    "verifiedCommit": "ed045b6a1e2ed95095b131045e18a3f7f82c9426"
   },
-  "timestamp": "2026-10-06T23:24:46Z"
+  "timestamp": "2026-10-07T01:40:00Z"
 }
