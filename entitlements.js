@@ -117,8 +117,8 @@ export async function getEntitlement(extra) {
   const isPro = base.state === ENTITLEMENT_STATES.PRO_MONTHLY || base.state === ENTITLEMENT_STATES.PRO_ANNUAL;
   const trialActive = base.state === ENTITLEMENT_STATES.TRIAL && (!base.trialEndsAt || Date.now() < Date.parse(base.trialEndsAt));
   const isExpired = base.state === ENTITLEMENT_STATES.EXPIRED;
-  // After trial expires, users get 1 free Ask Any AI send/day (single AI, no Compare)
-  // canUseFree means the user can use the Ask Any AI feature (with daily limit if expired)
+  // After trial expires, users get 1 free single-AI Send every rolling 24 hours (no Compare).
+  // canUseFree means the user can use the free single-AI Send path (rolling limit if expired).
   const canUseFree = base.state === ENTITLEMENT_STATES.NOT_STARTED || trialActive || isPro || isExpired;
   const dailyFreeLimit = isExpired ? PRICING.dailyFreeSends : null;
   const nextResetAt = isExpired ? rollingResetAt(base.lastFreeSendAt) : null;
