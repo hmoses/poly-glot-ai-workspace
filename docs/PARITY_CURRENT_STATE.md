@@ -1,6 +1,6 @@
 # Parity Current State — Poly-Glot AI Workspace
 
-> Last verified: 2026-10-06 | parityVersion: 2026-10-06.1
+> Source synchronized: 2026-10-07 | parityVersion: 2026-10-06.1 | iOS 1.1.4 (827) | macOS 3.4 (812)
 
 ## Four-Surface Parity Matrix
 
@@ -17,6 +17,7 @@
 | Compare Mode — Pro | ✅ | ✅ | ✅ compareAccess() | ✅ compareView | None | — |
 | Premium Templates — Free | 🔒 | 🔒 | 🔒 templateAccess() | 🔒 lockedView | None | — |
 | Premium Templates — Pro | ✅ | ✅ | ✅ templateAccess() | ✅ promptView | None | — |
+| Post-trial free Send | ✅ 1 / rolling 24h | ✅ 1 / rolling 24h | ✅ atomic rolling 24h gate | ✅ status/lock messaging | None | — |
 | Transcription — Free | 🔒 (server gate) | 🔒 (server gate) | 🔒 requireEntitlement | N/A (no UI) | None | — |
 | Transcription — Trial | ✅ Apple Speech | ✅ Apple Speech | ✅ requireEntitlement | N/A | None | — |
 | Transcription — Pro | ✅ Apple Speech | ✅ Apple Speech | ✅ requireEntitlement | N/A | None | — |
@@ -47,12 +48,12 @@
 
 | Surface | Key Files |
 |---------|-----------|
-| iOS | `ios/App/App/IAPManager.swift` |
-| macOS | `mac/PolyGlotAI/PolyGlotAI/Sources/IAPManagerMac.swift` |
+| iOS | `hmoses/polyglot-workspace-ios`: `ios/App/App/IAPManager.swift`, `ios/App/App/PolyGlotCapabilities.swift` |
+| macOS | `hmoses/polyglot-workspace-mac`: `PolyGlotAI/PolyGlotAI/Sources/IAPManagerMac.swift`, `PolyGlotAI/PolyGlotAI/Sources/PolyGlotCapabilities.swift` |
 | MCP Backend | `server.js`, `entitlements.js`, `pricing.js`, `src/cross-platform-tools.js` |
 | MCP UI | `data/widget-html.js` |
 | Parity Contract | `config/polyglot-product-parity.json` |
 
 ## Conclusion
 
-**All four surfaces are in parity.** No mismatches found. The parity contract at `config/polyglot-product-parity.json` is the canonical source of truth.
+**Source parity has been resynchronized across all four surfaces.** The Apple capability copies and local StoreKit configurations now use the same canonical product IDs and entitlement contract as MCP. The parity contract at `config/polyglot-product-parity.json` remains the canonical source of truth; CI is the final verification gate for each change.
