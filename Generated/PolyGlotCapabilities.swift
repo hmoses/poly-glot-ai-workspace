@@ -1,6 +1,6 @@
 // ──────────────────────────────────────────────────────────────────────
 // AUTO-GENERATED — do not edit manually.
-// Source: config/polyglot-capabilities.json
+// Source: config/polyglot-product-parity.json
 // Entitlement version: 2026-10-06.1
 // Run: node scripts/generate-apple-capabilities.mjs
 // ──────────────────────────────────────────────────────────────────────
@@ -30,14 +30,18 @@ enum PolyGlotCapabilities {
         static let compare = false
         static let premiumTemplates = false
         static let crossPlatformTools = false
+        static let byomExecution = false
         static let freeTemplateCount = 25
         static let trialDays = 3
+        static let dailyFreeSends = 1
+        static let freeSendWindowHours = 24
     }
 
     enum TrialPlan {
         static let compare = true
         static let premiumTemplates = true
         static let crossPlatformTools = true
+        static let byomExecution = true
         static let freeTemplateCount = 25
     }
 
