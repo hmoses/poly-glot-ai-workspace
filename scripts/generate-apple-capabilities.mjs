@@ -28,7 +28,7 @@ function swift() {
 
   w("// ──────────────────────────────────────────────────────────────────────");
   w("// AUTO-GENERATED — do not edit manually.");
-  w("// Source: config/polyglot-capabilities.json");
+  w(`// Source: ${INPUT === PARITY_PATH ? "config/polyglot-product-parity.json" : "config/polyglot-capabilities.json"}`);
   const version = capabilities.entitlementVersion || capabilities.parityVersion;
   w(`// Entitlement version: ${version}`);
   w("// Run: node scripts/generate-apple-capabilities.mjs");
@@ -65,9 +65,18 @@ function swift() {
     w(`        static let compare = ${config.compare}`);
     w(`        static let premiumTemplates = ${config.premiumTemplates}`);
     w(`        static let crossPlatformTools = ${config.crossPlatformTools}`);
+    if (config.byomExecution !== undefined) {
+      w(`        static let byomExecution = ${config.byomExecution}`);
+    }
     w(`        static let freeTemplateCount = ${config.freeTemplateCount}`);
     if (config.trialDays !== undefined) {
       w(`        static let trialDays = ${config.trialDays}`);
+    }
+    if (config.dailyFreeSends !== undefined) {
+      w(`        static let dailyFreeSends = ${config.dailyFreeSends}`);
+    }
+    if (config.freeSendWindowHours !== undefined) {
+      w(`        static let freeSendWindowHours = ${config.freeSendWindowHours}`);
     }
     w("    }");
     w();
