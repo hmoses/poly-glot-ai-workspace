@@ -137,9 +137,9 @@ describe("resolveLanguage integration", () => {
 });
 
 describe("languagePublicList", () => {
-  it("returns 35 languages", () => {
+  it("returns 38 languages", () => {
     const list = languagePublicList();
-    assert.equal(list.length, 35);
+    assert.equal(list.length, 38);
   });
   it("each entry has code, name, flag", () => {
     for (const lang of languagePublicList()) {
