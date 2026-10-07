@@ -165,7 +165,7 @@ ORDER BY 1 DESC;
 -- id           BIGSERIAL PRIMARY KEY
 -- occurred_at  TIMESTAMPTZ
 -- event_type   TEXT          -- "tool_call"
--- tool_name    TEXT          -- one of the 7 MCP tools
+-- tool_name    TEXT          -- one of the 15 MCP tools
 -- user_key     TEXT          -- SHA-256 hash of auth token (never raw)
 -- session_key  TEXT          -- SHA-256 hash of session ID
 -- authenticated BOOLEAN
