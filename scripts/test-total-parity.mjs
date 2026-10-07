@@ -269,7 +269,10 @@ describe("Language parity", () => {
         // In unescaped widget HTML, codes appear as: "code": "EN"
         // or in the LOCALES object as: "EN": {
         assert.ok(
-          widgetSource.includes(`"code": "${code}"`) || widgetSource.includes(`"${code}": {`),
+          widgetSource.includes(`"code": "${code}"`) ||
+          widgetSource.includes(`"code":"${code}"`) ||
+          widgetSource.includes(`"${code}": {`) ||
+          widgetSource.includes(`"${code}":{`),
           `Language ${code} missing from widget`
         );
       }
