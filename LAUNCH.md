@@ -13,7 +13,7 @@
 
 - 3-day free trial, starting on first Send
 - Full access to all 1,000+ templates during trial
-- After trial: 1 free send/day with Ask Any AI or free templates
+- After trial: 1 free single-AI Send every rolling 24 hours with Ask Any AI or free templates
 - Pro Monthly: $9.99/month
 - Pro Annual: $79.99/year
 - Full Pro access: 1,000+ templates
@@ -23,11 +23,12 @@
 1. Deploy `chatgpt-app/` to a stable public HTTPS origin and expose `/mcp`.
 2. Configure production authentication for the MCP server.
 3. Configure `POLYGLOT_ENTITLEMENT_ENDPOINT` to a server-side service that maps the authenticated Poly-Glot user to `not_started`, `trial`, `expired`, `pro_monthly`, or `pro_annual`.
-4. Configure `POLYGLOT_TRIAL_START_ENDPOINT` so first free-template use persists the 3-day trial in that same account system.
-5. Ensure the entitlement service validates Apple subscription state server-side. Do not trust plan values supplied by the widget/client.
-6. Verify the production privacy-policy URL and terms URL in the OpenAI submission form. The repository provides the product website/support URL but does not contain authoritative privacy/terms URLs for the ChatGPT listing.
-7. Run `npm install && npm run check`, then test the deployed `/mcp` endpoint with MCP Inspector and ChatGPT Developer mode.
-8. Upload `chatgpt-app-submission.json` in the ChatGPT app submission flow and complete the account-bound review/submission fields.
+4. Configure `POLYGLOT_TRIAL_START_ENDPOINT` so first qualifying Send persists the 3-day trial in that same account system.
+5. Configure `POLYGLOT_FREE_SEND_ENDPOINT` so post-trial free usage is atomically limited to one successful single-AI Send every rolling 24 hours.
+6. Ensure the entitlement service validates Apple subscription state server-side. Do not trust plan values supplied by the widget/client.
+7. Verify the production privacy-policy URL and terms URL in the OpenAI submission form. The repository provides the product website/support URL but does not contain authoritative privacy/terms URLs for the ChatGPT listing.
+8. Run `npm install && npm run check`, then test the deployed `/mcp` endpoint with MCP Inspector and ChatGPT Developer mode.
+9. Upload `chatgpt-app-submission.json` in the ChatGPT app submission flow and complete the account-bound review/submission fields.
 
 ## Important
 
