@@ -117,7 +117,7 @@ Try Poly-Glot free for 3 days. Your trial starts when you first Send and include
 
 - **1,022 prompt templates** — 25 designated Free, 997 designated Pro; all 1,022 are unlocked during the active trial
 - **38 languages** — independent UI, input, and output language controls
-- **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral
+- **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral, HuggingChat, and DuckDuckGo AI
 - **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts
 - **Server-side entitlements** — Apple-backed subscription verification via Neon Postgres
