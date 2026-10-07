@@ -43,7 +43,7 @@ The MCP language contract contains 38 product languages. The embedded MCP widget
 
 ## Validation
 
-GitHub Actions parity job **112551312742** completed successfully on commit `4cb4536cbc9f0efdbd1fbd742a1ef881e2aa5aa6`.
+GitHub Actions Parity Check run **#60** (run ID `37681503758`) completed successfully on commit `b68171c66dac3a6be976b66e8fa4e854630eb399`.
 
 ## Production State
 
