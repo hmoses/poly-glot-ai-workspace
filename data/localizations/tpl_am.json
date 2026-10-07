@@ -1,0 +1,298 @@
+{
+  "pills": {
+    "all": "ሁሉም",
+    "makemoney": "💰 ገንዘብ",
+    "free": "⭐ ነጻ",
+    "money": "💰 ንግድ",
+    "coding": "💻 ኮድ",
+    "ai": "🤖 AI",
+    "writing": "✍️ ጽሑፍ",
+    "marketing": "📢 ግብይት",
+    "sales": "🤝 ሽያጭ",
+    "school": "📚 ትምህርት",
+    "research": "🔬 ምርምር",
+    "career": "🚀 ሙያ",
+    "legal": "⚖️ ሕግ",
+    "finance": "📊 ፋይናንስ",
+    "health": "🏥 ጤና",
+    "cooking": "🍳 ማብሰል",
+    "garden": "🌱 አትክልት",
+    "realestate": "🏠 ሪል ኢስቴት",
+    "auto": "🚗 መኪና",
+    "travel": "✈️ ጉዞ",
+    "image": "🎨 AI ምስል",
+    "music": "🎵 ሙዚቃ",
+    "video": "🎬 ቪዲዮ",
+    "social": "📱 ማህበራዊ ሚዲያ",
+    "startup": "🦄 ስታርትአፕ",
+    "ecommerce": "🛒 ኢ-ኮሜርስ",
+    "productivity": "⏱ ምርታማነት",
+    "diy": "🔨 እራስዎ ይስሩ",
+    "event": "🎉 ዝግጅቶች",
+    "parent": "👶 ልጆችን ማሳደግ",
+    "pets": "🐾 እንስሳት",
+    "sports": "⚽ ስፖርት",
+    "wellness": "🧘 ደህንነት",
+    "language": "🌍 ቋንቋዎች",
+    "security": "🔒 ደህንነት",
+    "datascience": "📈 ዳታ ሳይንስ",
+    "chemistry": "🧪 ኬሚስትሪ",
+    "biology": "🧬 ባዮሎጂ",
+    "physics": "⚛️ ፊዚክስ",
+    "math": "🔢 ሒሳብ",
+    "time": "⏱ ጊዜ"
+  },
+  "templates": {
+    "Summarization Tool": {
+      "n": "የማጠቃለያ መሳሪያ",
+      "d": "ማንኛውንም ይዘት ወደ ግልጽ ማጠቃለያ ያሳጥሩ"
+    },
+    "Technical Documentation": {
+      "n": "ቴክኒካል ሰነድ",
+      "d": "ለAPI እና ባህሪያት ግልጽ ቴክኒካል ሰነዶች ይፍጠሩ"
+    },
+    "YouTube Script": {
+      "n": "የYouTube ስክሪፕት",
+      "d": "ሙሉ የቪዲዮ ስክሪፕት ከንድፎ፣ ክፍሎች፣ CTA ጋር"
+    },
+    "LinkedIn Post Writer": {
+      "n": "የLinkedIn ልጥፍ ጸሐፊ",
+      "d": "ስክሮልን የሚያቆሙ የLinkedIn ልጥፎች"
+    },
+    "Code Review Assistant": {
+      "n": "የኮድ ግምገማ ረዳት",
+      "d": "ከጥቆማዎች ጋር ጥልቅ የኮድ ግምገማ"
+    },
+    "Content Writer": {
+      "n": "የይዘት ጸሐፊ",
+      "d": "ለማንኛውም ታዳሚ ባለሙያ ይዘት ይፍጠሩ"
+    },
+    "Data Analyst": {
+      "n": "የዳታ ተንታኝ",
+      "d": "ዳታ ይመረምሩ እና ቁልፍ ግንዛቤዎችን ያግኙ"
+    },
+    "Side Hustle Finder": {
+      "n": "የጎን ሥራ ፈላጊ",
+      "d": "በክህሎቶችዎ ላይ የተመሰረቱ የጎን ሥራ ሀሳቦችን ያግኙ"
+    },
+    "Passive Income Blueprint": {
+      "n": "የፓሲቭ ገቢ ዕቅድ",
+      "d": "የፓሲቭ ገቢ ስትራቴጂ ይገንቡ"
+    },
+    "Freelance Rate Calculator": {
+      "n": "የፍሪላንስ ዋጋ ካልኩሌተር",
+      "d": "ተስማሚ የፍሪላንስ ዋጋዎን ያሰሉ"
+    },
+    "Savings Challenge Generator": {
+      "n": "የቁጠባ ፈተና ፈጣሪ",
+      "d": "ብጁ የገንዘብ ቁጠባ ፈተና ዕቅድ ይፍጠሩ"
+    },
+    "Negotiate Any Bill": {
+      "n": "ማንኛውንም ሂሳብ ይደራደሩ",
+      "d": "ተደጋጋሚ ሂሳቦችን ለመደራደር እና ለመቀነስ ስክሪፕቶች"
+    },
+    "Etsy Shop Launcher": {
+      "n": "የEtsy ሱቅ አስጀማሪ",
+      "d": "የEtsy ሱቅ ለማስጀመር ደረጃ-በ-ደረጃ ዕቅድ"
+    },
+    "YouTube Channel Planner": {
+      "n": "የYouTube ቻናል አቅዳሚ",
+      "d": "ትርፋማ የYouTube ቻናል ያቅዱ እና ያስጀምሩ"
+    },
+    "Rental Income Analyzer": {
+      "n": "የኪራይ ገቢ ተንታኝ",
+      "d": "ሊሆኑ የሚችሉ የኪራይ ንብረት ገቢዎችን ይመረምሩ"
+    },
+    "Online Course Creator": {
+      "n": "የመስመር ላይ ኮርስ ፈጣሪ",
+      "d": "ለሽያጭ የመስመር ላይ ኮርስ ያቅዱ እና ያዋቅሩ"
+    },
+    "Creative Storyteller": {
+      "n": "ፈጠራ ተረት ተናጋሪ",
+      "d": "የማንኛውም ዘውግ አስደናቂ ታሪኮች"
+    },
+    "Customer Support": {
+      "n": "የደንበኛ ድጋፍ",
+      "d": "ሐዘንተኛ እና ባለሙያ የደንበኛ ምላሾች"
+    },
+    "Meeting Summary": {
+      "n": "የስብሰባ ማጠቃለያ",
+      "d": "በጥሩ ሁኔታ የተዋቀረ የስብሰባ ማጠቃለያ"
+    },
+    "Legal Contract Reviewer": {
+      "n": "የሕግ ውል ገምጋሚ",
+      "d": "የሕግ ውሎችን ይገምግሙ እና ስጋቶችን ያግኙ"
+    },
+    "Translation Expert": {
+      "n": "የትርጉም ባለሙያ",
+      "d": "በቋንቋዎች መካከል ባለሙያ ትርጉሞች"
+    },
+    "Social Media Caption": {
+      "n": "የማህበራዊ ሚዲያ መግለጫ",
+      "d": "ለማህበራዊ ሚዲያ አሳታፊ መግለጫዎች"
+    },
+    "Cold Email Outreach": {
+      "n": "ቀዝቃዛ ኢሜይል ተደራሽነት",
+      "d": "አዳዲስ ደንበኞችን ለማግኘት ውጤታማ ኢሜይሎች"
+    },
+    "Study Guide Creator": {
+      "n": "የጥናት መመሪያ ፈጣሪ",
+      "d": "ለማንኛውም ርዕስ ሁሉን አቀፍ የጥናት መመሪያዎች"
+    },
+    "Bug Report Writer": {
+      "n": "የስህተት ሪፖርት ጸሐፊ",
+      "d": "በጥሩ ሁኔታ የተዋቀሩ የስህተት ሪፖርቶች"
+    },
+    "Coupon & Cashback Maximizer": {
+      "n": "የኩፖን እና ገንዘብ ተመላሽ ከፍ አድራጊ",
+      "d": "በኩፖኖች እና ገንዘብ ተመላሽ ቁጠባን ያሳድጉ"
+    }
+  },
+  "fields": {
+    "budget": "በጀት",
+    "topic": "ርዕስ",
+    "duration": "ቆይታ",
+    "level": "ደረጃ",
+    "style": "ዘይቤ",
+    "timeline": "የጊዜ ገደብ",
+    "product": "ምርት",
+    "audience": "ታዳሚ",
+    "tone": "ድምጸት",
+    "industry": "ኢንዱስትሪ",
+    "theme": "theme",
+    "platform": "መድረክ",
+    "location": "ቦታ",
+    "experience": "ልምድ",
+    "genre": "genre",
+    "frequency": "frequency",
+    "goals": "goals",
+    "format": "ቅርጸት",
+    "season": "season",
+    "projectName": "projectName",
+    "showSteps": "showSteps",
+    "goal": "ግብ",
+    "destination": "destination",
+    "subject": "subject",
+    "equipment": "equipment",
+    "targetAudience": "targetAudience",
+    "language": "ቋንቋ",
+    "problem": "problem",
+    "categories": "categories",
+    "gradeLevel": "gradeLevel",
+    "mood": "mood",
+    "role": "ሚና",
+    "companyName": "companyName",
+    "company": "ኩባንያ",
+    "title": "ርዕስ",
+    "setting": "setting",
+    "date": "ቀን",
+    "environment": "environment",
+    "state": "state",
+    "jurisdiction": "jurisdiction",
+    "priorities": "priorities",
+    "target_audience": "target audience",
+    "deadline": "deadline",
+    "childAge": "childAge",
+    "guestCount": "guestCount",
+    "timeframe": "timeframe",
+    "interests": "interests",
+    "concerns": "concerns",
+    "region": "region",
+    "tools": "tools",
+    "category": "ምድብ",
+    "constraints": "constraints",
+    "projectType": "projectType",
+    "venue": "venue",
+    "focusArea": "focusArea",
+    "targetLanguage": "targetLanguage",
+    "framework": "framework",
+    "domain": "domain",
+    "purpose": "purpose",
+    "age": "age",
+    "teamSize": "teamSize",
+    "researchQuestion": "researchQuestion",
+    "context": "አውድ",
+    "output_format": "output format",
+    "task": "ተግባር",
+    "channels": "channels",
+    "servings": "servings",
+    "skillLevel": "skillLevel",
+    "occasion": "occasion",
+    "climate": "climate",
+    "zone": "zone",
+    "activities": "activities",
+    "attendees": "attendees",
+    "objectives": "objectives",
+    "characters": "characters",
+    "length": "ርዝመት",
+    "niche": "ልዩ መስክ",
+    "scope": "scope",
+    "stakeholders": "stakeholders",
+    "focus": "focus",
+    "size": "size",
+    "homeType": "homeType",
+    "sport": "sport",
+    "application": "application",
+    "department": "department",
+    "cta": "cta",
+    "word_count": "word count",
+    "period": "period",
+    "severity": "severity",
+    "difficulty": "difficulty",
+    "skills": "ክህሎቶች",
+    "materials": "materials",
+    "methodology": "methodology",
+    "cuisine": "cuisine",
+    "lifestyle": "lifestyle",
+    "year": "year",
+    "petType": "petType",
+    "complexity": "complexity",
+    "deliverables": "deliverables",
+    "dataType": "dataType",
+    "hours_per_week": "በሳምንት ሰዓቶች",
+    "income_goal": "የገቢ ግብ",
+    "starting_capital": "የመነሻ ካፒታል",
+    "risk_tolerance": "የአደጋ መቻል",
+    "time_commitment": "time commitment",
+    "experience_years": "experience years",
+    "expenses_monthly": "expenses monthly",
+    "hours_available": "hours available",
+    "target_income": "ዒላማ ገቢ",
+    "savings_goal": "የቁጠባ ግብ",
+    "current_savings": "current savings",
+    "monthly_income": "ወርሃዊ ገቢ",
+    "bill_type": "bill type",
+    "current_amount": "current amount",
+    "provider": "provider",
+    "competitor_price": "competitor price",
+    "customer_years": "customer years",
+    "desired_amount": "desired amount",
+    "product_type": "product type",
+    "pricing_range": "pricing range",
+    "content_type": "የይዘት ዓይነት",
+    "upload_frequency": "upload frequency",
+    "equipment_budget": "equipment budget",
+    "monetization_goal": "monetization goal",
+    "property_price": "property price",
+    "down_payment": "down payment",
+    "monthly_rent": "monthly rent",
+    "property_type": "property type",
+    "expenses": "expenses",
+    "expertise_level": "expertise level",
+    "target_student": "target student",
+    "course_length": "course length",
+    "price_point": "price point",
+    "monthly_spending": "ወርሃዊ ወጪ",
+    "current_cards": "current cards",
+    "store_preferences": "store preferences",
+    "effort_level": "effort level",
+    "apps_used": "apps used",
+    "marketing_budget": "marketing budget",
+    "product_count": "product count",
+    "target_market": "target market",
+    "available_hours": "available hours",
+    "vehicle": "vehicle",
+    "current_gigs": "current gigs",
+    "preferences": "preferences"
+  }
+}
