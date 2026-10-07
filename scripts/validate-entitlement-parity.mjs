@@ -76,8 +76,8 @@ describe("Runtime gates", () => {
 
 describe("Language and provider parity", () => {
   test("backend language list exposes 38 product languages", () => {
-    for (const code of ["BN","BG","LT","LV","ET"]) assert.ok(localization.includes(`["${code}"`));
-    assert.ok(!localization.includes('["AF","Afrikaans"'));
+    for (const code of ["BN","AF","AM","HA","SW"]) assert.ok(localization.includes(`["${code}"`));
+    for (const code of ["BG","LT","LV","ET"]) assert.ok(!localization.includes(`["${code}"`));
   });
   test("Compare Mode exposes all 9 providers", () => {
     for (const id of caps.providers) assert.ok(server.includes(`${id}:`) || server.includes(`"${id}"`), `Provider ${id} missing`);
