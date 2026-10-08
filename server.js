@@ -261,9 +261,9 @@ const localizationSchema = z.object({
   uiLanguage: languageSchema, inputLanguage: languageSchema, outputLanguage: languageSchema, supportedCount: z.number(),
 });
 const localizationArgs = {
-  uiLanguage: z.string().max(80).optional().default("EN"),
-  inputLanguage: z.string().max(80).optional().default("EN"),
-  outputLanguage: z.string().max(80).optional().default("EN"),
+  uiLanguage: z.string().max(80).optional().default("EN").describe("Interface language name or code, e.g. EN; independent of source and response languages."),
+  inputLanguage: z.string().max(80).optional().default("EN").describe("Language name or code of input text, e.g. es; defaults to EN."),
+  outputLanguage: z.string().max(80).optional().default("EN").describe("Requested output language name or code, e.g. fr; defaults to EN."),
 };
 
 function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
@@ -312,9 +312,9 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "get_language_options", {
     title: "Get Poly-Glot language options",
-    description: "Return the supported Poly-Glot UI, input, and AI output languages. Language selection never changes entitlement and does not start the trial.",
+    description: "List Poly-Glot's 38 supported UI, input, and AI output languages. Use to verify language availability before multilingual work. Optionally select uiLanguage to localize labels. Returns language records and localization metadata. Read-only, with no send or trial activation.",
     _meta: UI_META,
-    inputSchema: { uiLanguage: z.string().max(80).optional().default("EN") },
+    inputSchema: { uiLanguage: z.string().max(80).optional().default("EN").describe("UI language code or name such as EN, es or Arabic; defaults to EN.") },
     outputSchema: {
       view: z.literal("languages"),
       languages: z.array(languageSchema),
@@ -333,7 +333,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "get_subscription_status", {
     title: "Get Poly-Glot subscription status",
-    description: "Return the current Poly-Glot entitlement state, trial status, daily free send allowance, feature locks, and pricing. This is the authoritative MCP-facing explanation of the user's access. Does not start the trial.",
+    description: "Read the current account's access state, trial timing, rolling 24-hour free-send allowance, Pro locks and subscription pricing. Use before gated tools or when asked about remaining access. This read-only operation does not initiate a trial or spend a send; the trial begins on the first qualifying Send.",
     _meta: UI_META,
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
@@ -384,9 +384,9 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "open_workspace", {
     title: "Open Poly-Glot AI Workspace",
-    description: "Open the interactive Poly-Glot template browser and prompt editor with subscription-aware locked states. Browsing does not start the trial or consume a send.",
+    description: "Open the embedded Poly-Glot prompt workspace and template browser, optionally prefiltered by a query and translated via uiLanguage. Returns searchable template records, their locked states, entitlement and localization. Browsing is read-only and does not start the trial or use a send.",
     _meta: UI_META,
-    inputSchema: { query: z.string().max(200).optional().default(""), uiLanguage: z.string().max(80).optional().default("EN") },
+    inputSchema: { query: z.string().max(200).optional().default("").describe("Optional keyword or goal for template search, e.g. resume. Maximum 200 characters."), uiLanguage: z.string().max(80).optional().default("EN").describe("UI language name or code for template labels; defaults to EN.") },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
     _meta: renderMeta("Opening Poly-Glot…", "Poly-Glot is ready"),
@@ -404,12 +404,12 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "search_templates", {
     title: "Search Poly-Glot templates",
-    description: "Find Poly-Glot prompt templates. Results include whether each template is currently locked for this account. Searching does not start the trial or consume a send.",
+    description: "Search Poly-Glot's template catalog by keywords and goal, optionally filtered to free or Pro results. Use before get_template or build_prompt when the exact name is unknown. Results contain template metadata, tier and entitlement status. Searching is read-only and does not trigger a send or trial.",
     _meta: UI_META,
     inputSchema: {
-      query: z.string().max(200).optional().default(""), goal: z.string().max(80).optional(),
-      plan: z.enum(["free", "pro"]).optional(), limit: z.number().int().min(1).max(24).optional().default(12),
-      uiLanguage: z.string().max(80).optional().default("EN"),
+      query: z.string().max(200).optional().default("").describe("Search phrase or topic; blank lists available templates."), goal: z.string().max(80).optional().describe("Optional intended outcome, e.g. write a help article."),
+      plan: z.enum(["free", "pro"]).optional().describe("Filter catalog by free or Pro tier; filtering does not grant access."), limit: z.number().int().min(1).max(24).optional().default(12).describe("Maximum matches to return (1 to 24), default 12."),
+      uiLanguage: z.string().max(80).optional().default("EN").describe("Language code for localized template labels; defaults to EN."),
     },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
@@ -429,9 +429,9 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "get_template", {
     title: "Open a Poly-Glot template",
-    description: "Get a template's fields and prompt body. Opening a template does not start the trial or consume a send. The prompt body is returned only when the account is entitled.",
+    description: "Retrieve a named template's fields and entitled prompt body. Use search_templates first to find the exact name; inaccessible templates return a locked view instead of private prompt content. Returns template, entitlement and localization data. Reading a template alone neither starts the trial nor consumes a send.",
     _meta: UI_META,
-    inputSchema: { name: z.string().min(1).max(200), uiLanguage: z.string().max(80).optional().default("EN") },
+    inputSchema: { name: z.string().min(1).max(200).describe("Required template name returned by search_templates."), uiLanguage: z.string().max(80).optional().default("EN").describe("Language code for localized template fields; defaults to EN.") },
     outputSchema: {
       view: z.enum(["template", "locked"]),
       template: templateSchema.extend({ promptTemplate: z.string().optional() }),
@@ -468,11 +468,11 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "build_prompt", {
     title: "Build a Poly-Glot prompt",
-    description: "Fill and Send an entitled Poly-Glot template. This is a Send action: it starts the 3-day free trial on first use if the user has not sent before. Pro templates require an active trial or Pro subscription.",
+    description: "Fill a named Poly-Glot template with field values and requested input/output languages, producing a finished prompt. Use get_template to inspect needed fields first. This is a Send: it starts the 3-day trial on the first qualifying use, or counts toward the shared rolling 24-hour free-send allowance after trial. Pro templates require trial or Pro; this does not directly query external AI providers.",
     _meta: UI_META,
     inputSchema: {
-      name: z.string().min(1).max(200),
-      values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}),
+      name: z.string().min(1).max(200).describe("Required accessible template name; use search_templates or get_template to find it."),
+      values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}).describe("Map of template placeholder names to strings, numbers or booleans, e.g. {topic: onboarding}."),
       ...localizationArgs,
     },
     outputSchema: {
@@ -554,14 +554,14 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "prepare_compare", {
     title: "Prepare Poly-Glot Compare Mode",
-    description: "Prepare one canonical prompt for two or more AI providers so the user can compare answers. This is a Send action: it starts the 3-day free trial on first use. Compare Mode requires an active trial or Pro subscription. Never calls third-party models on the user's behalf.",
+    description: "Prepare the same canonical prompt for two to nine selected AI providers using a raw prompt or accessible template. Returns provider destinations, prompt and usage instructions without calling third-party models. This is a Send and begins the 3-day trial on first qualifying use; Compare Mode requires active trial or Pro. Use when a user explicitly wants side-by-side answers.",
     _meta: UI_META,
     inputSchema: {
-      name: z.string().min(1).max(200).optional(),
-      prompt: z.string().min(1).max(30000).optional(),
-      values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}),
+      name: z.string().min(1).max(200).optional().describe("Optional accessible template name; supply this or a raw prompt."),
+      prompt: z.string().min(1).max(30000).optional().describe("Optional original prompt for each provider, maximum 30,000 characters; provide this or name."),
+      values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}).describe("Placeholder values used when preparing a named template."),
       ...localizationArgs,
-      providers: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral", "huggingchat", "duckduckgo"])).min(2).max(9).optional().default(["chatgpt", "claude"]),
+      providers: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral", "huggingchat", "duckduckgo"])).min(2).max(9).optional().default(["chatgpt", "claude"]).describe("Two to nine provider IDs; defaults to ChatGPT and Claude and duplicates are removed."),
     },
     outputSchema: {
       view: z.enum(["compare", "compare_locked", "locked"]),
