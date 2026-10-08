@@ -1,13 +1,13 @@
 # MCP Surface Matrix
 
-Post-deployment surface verification status. Last updated: 2026-10-07.
+Post-deployment surface verification status. Last updated: 2026-10-08.
 
 | Surface | Role | Status | Evidence |
 |---|---|---|---|
 | **Production Health** | Server health | VERIFIED | `{"status":"ok","templates":1022,"supportedLanguages":38}` — live |
 | **Production MCP** | Streamable HTTP endpoint | VERIFIED | Live endpoint source v1.11.0, 15 tools |
 | **Official MCP Registry** | Registry metadata | UPDATED | v1.11.0 metadata prepared; publish workflow required for registry promotion |
-| **Glama** | Directory/listing | LIVE | Page live at glama.ai/mcp/servers/hmoses/poly-glot-ai-workspace |
+| **Glama** | Remote connector | NEEDS OWNER ACTION | Connector at https://glama.ai/mcp/connectors/io.github.hmoses/poly-glot-ai-workspace currently shows Unhealthy (last checked 2026-10-08); owner claim and Glama test-profile diagnostics required. All 15 tools are indexed, but its 35-language listing description is stale. |
 | **MCP.so** | Directory/listing | LIVE | Listing live at mcp.so/server/poly-glot-ai-workspace/hmoses (paid $39, verified) |
 | **GitHub** | Repository | UPDATED | README, server.json, package.json updated. 38 languages, 15 tools |
 | **awesome-remote-mcp-servers** | Discovery list | PR OPEN | Submitted to punkpeye/awesome-remote-mcp-servers (awesome-mcp-servers PR #13166 closed — remote servers split out) |
@@ -29,3 +29,4 @@ Post-deployment surface verification status. Last updated: 2026-10-07.
 2. Production MCP v1.11.0 is recorded live as Neon deployment 52; entitlement service deployment 8 is recorded live.
 3. iOS source is 1.1.4 build 827; macOS source is 3.4 build 812; both now consume the generated entitlement contract `2026-10-06.1`.
 4. MCP.so description may still require a manual owner-login refresh if its crawler does not auto-sync.
+5. Glama's remote connector listing is currently marked Unhealthy and uses outdated 35-language text despite 38-language source metadata in `server.json`. Claim `io.github.hmoses` on Glama by connecting the matching GitHub identity, inspect Admin → Health Checks / Test Profile, configure the transport and authentication to match the public server, rerun checks, and correct the description to 38 languages. The repository `glama.json` already specifies maintainer `hmoses` and cannot by itself claim a remote connector. The official registry's description may overwrite Glama edits unless 'Use Glama listing details as the source of truth' is enabled in Glama. Do not modify the MCP server, entitlements, or trial logic merely to make directory checks pass without a diagnosed server error.
