@@ -83,16 +83,20 @@ export function registerCrossPlatformTools(server, deps = {}) {
   server.registerTool("transcribe_audio", {
     title: "Transcribe audio",
     description:
-      "Transcribe supplied audio for cross-platform Poly-Glot workflows. " +
-      "Provide exactly one of audioUrl (HTTPS only) or audioBase64.",
+      "Convert audio to transcript text for Poly-Glot workflows. Use for supplied speech recordings, not for translating text. " +
+      "Provide exactly one source: a publicly reachable HTTPS audioUrl or base64-encoded audioBase64 (without a data-URL prefix). " +
+      "For base64 audio, supply mimeType and filename when known; languageHint can improve recognition. " +
+      "Set detectLanguage=true to identify the resulting text's language. Requires an active trial or Pro. " +
+      "Returns JSON containing transcript text, optional detectedLanguage, provider, and model. " +
+      "Audio is submitted to a transcription provider; do not send material without permission.",
     inputSchema: {
-      audioUrl: z.string().url().optional(),
-      audioBase64: z.string().optional(),
-      filename: z.string().optional(),
-      mimeType: z.string().optional(),
-      languageHint: z.string().optional(),
-      prompt: z.string().optional(),
-      detectLanguage: z.boolean().optional(),
+      audioUrl: z.string().url().optional().describe("Public HTTPS URL of an audio recording to transcribe. Use this OR audioBase64, never both; private or local URLs are not supported."),
+      audioBase64: z.string().optional().describe("Base64-encoded audio bytes, without a data: prefix. Alternative to audioUrl; provide exactly one audio source."),
+      filename: z.string().optional().describe("Original audio filename with extension, such as meeting.m4a, to help determine the format."),
+      mimeType: z.string().optional().describe("Audio MIME type, such as audio/mpeg, audio/mp4, or audio/wav. Recommended for base64 input."),
+      languageHint: z.string().optional().describe("Optional language hint for speech recognition, such as en, es, or fr. Leave blank if unknown."),
+      prompt: z.string().optional().describe("Optional recognition context, such as expected names or specialist vocabulary; not the text to transcribe."),
+      detectLanguage: z.boolean().optional().describe("When true, also infer a supported Poly-Glot language from the resulting transcript; defaults to false."),
     },
   }, async (args, extra) => {
     try {
@@ -137,8 +141,12 @@ export function registerCrossPlatformTools(server, deps = {}) {
   server.registerTool("detect_language", {
     title: "Detect language",
     description:
-      "Detect the language of supplied text and map it to a supported Poly-Glot language.",
-    inputSchema: { text: z.string().min(1) },
+      "Identify the primary language of a nonempty text snippet and map it to one of Poly-Glot's 38 supported language codes. " +
+      "Use when the source language is unknown before choosing an interface, output language, or translation workflow. " +
+      "Provide natural-language text in the text parameter (for example, '¿Dónde está la estación?'). " +
+      "Returns JSON with language, provider, and model. Does not translate or alter the input text. " +
+      "Requires an active 3-day trial or Pro subscription; very short, mixed-language, or ambiguous snippets may be misclassified.",
+    inputSchema: { text: z.string().min(1).describe("Nonempty sample of text whose predominant language should be detected. Prefer a phrase or sentence, e.g. 'Bonjour, comment allez-vous ?'; this is source content, not an instruction.") },
   }, async ({ text }, extra) => {
     try {
       const gate = await requireEntitlement("detect_language", extra);
@@ -159,11 +167,15 @@ export function registerCrossPlatformTools(server, deps = {}) {
   server.registerTool("translate_text", {
     title: "Translate text",
     description:
-      "Translate text into a supported Poly-Glot language. Preserves meaning, formatting, names, code, and URLs.",
+      "Translate supplied text into one of Poly-Glot's 38 supported languages while aiming to preserve meaning, names, formatting, code, and URLs. " +
+      "Use for translation rather than cultural adaptation; use localize_text when audience, tone, or regional conventions must change. " +
+      "Specify required targetLanguage (language name or code, e.g. 'es'); set sourceLanguage to 'auto' to detect the source automatically. " +
+      "Returns JSON containing translated text, targetLanguage, provider, and model; quality can vary with idiom and context. " +
+      "Requires an active trial or Pro; text is processed by the configured translation provider.",
     inputSchema: {
-      text: z.string().min(1),
-      sourceLanguage: z.string().optional().default("auto"),
-      targetLanguage: z.string().min(1),
+      text: z.string().min(1).describe("Nonempty original text to translate, including any formatting to preserve."),
+      sourceLanguage: z.string().optional().default("auto").describe("Original language name or code, such as 'en' or 'English'; 'auto' (default) asks the provider to detect it."),
+      targetLanguage: z.string().min(1).describe("Required desired output language name or code among the 38 supported, e.g. 'Spanish' or 'es'."),
     },
   }, async ({ text, sourceLanguage, targetLanguage }, extra) => {
     try {
@@ -185,13 +197,17 @@ export function registerCrossPlatformTools(server, deps = {}) {
   server.registerTool("localize_text", {
     title: "Localize text",
     description:
-      "Localize text for a target language, locale, audience, and tone — not merely literal translation.",
+      "Adapt supplied text for a target language and audience, including culturally appropriate phrasing, tone, and regional conventions rather than literal translation. " +
+      "Use for localized product UI, marketing copy, documentation, or customer communications; use translate_text for a closer translation. " +
+      "Set required targetLanguage and optionally locale (e.g. 'es-MX'), audience, and tone. " +
+      "Returns JSON containing localized text, targetLanguage, locale, provider, and model. " +
+      "Requires an active trial or Pro. Review sensitive, legal, and technical output with a qualified local reviewer.",
     inputSchema: {
-      text: z.string().min(1),
-      targetLanguage: z.string().min(1),
-      locale: z.string().optional(),
-      audience: z.string().optional(),
-      tone: z.string().optional(),
+      text: z.string().min(1).describe("Original nonempty copy to adapt for the target culture, region, and audience."),
+      targetLanguage: z.string().min(1).describe("Required output language name or code, e.g. 'Arabic' or 'ar'."),
+      locale: z.string().optional().describe("Optional regional locale, such as 'es-MX', 'fr-CA', or 'en-GB'; affects regional spelling and conventions."),
+      audience: z.string().optional().describe("Intended readers or customers, e.g. 'first-time mobile app users' or 'enterprise developers'."),
+      tone: z.string().optional().describe("Desired writing style, such as 'friendly', 'formal', or 'concise'."),
     },
   }, async ({ text, targetLanguage, locale, audience, tone }, extra) => {
     try {
