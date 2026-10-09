@@ -51,7 +51,7 @@ jobs:
       platform: ${{ steps.resolve.outputs.platform }}
       version: ${{ steps.resolve.outputs.version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -98,7 +98,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: staging
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Stage deployment
         run: |
           echo "🔄 Staging deployment for ${{ needs.validate.outputs.platform }} v${{ needs.validate.outputs.version }}"
@@ -110,7 +110,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Read deployment policy
         id: policy
