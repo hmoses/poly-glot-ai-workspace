@@ -1,34 +1,35 @@
-# MCP Surface Matrix
+# Poly-Glot MCP Distribution and Tool Surface
 
-Post-deployment surface verification status. Last updated: 2026-10-08.
+Verified: 2026-10-09. This is a point-in-time check. A directory displaying all 15 tools does not imply its manually maintained overview is current.
 
-| Surface | Role | Status | Evidence |
+## Canonical inventory (15 tools)
+
+- Core (7): `get_language_options`, `get_subscription_status`, `open_workspace`, `search_templates`, `get_template`, `build_prompt`, `prepare_compare`
+- BYOM (4): `get_custom_model_capabilities`, `validate_custom_model`, `run_custom_model`, `prepare_custom_compare`
+- Language/audio (4): `transcribe_audio`, `detect_language`, `translate_text`, `localize_text`
+
+Product baseline: **v1.11.0; 15 tools; 38 languages; 9 built-in providers; 1,022 templates**. Remote endpoint: `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp`.
+
+## Verified distribution surfaces
+
+| Surface | Tool coverage | Last observed status | Action still needed |
 |---|---|---|---|
-| **Production Health** | Server health | VERIFIED | `{"status":"ok","templates":1022,"supportedLanguages":38}` — live |
-| **Production MCP** | Streamable HTTP endpoint | VERIFIED | Live endpoint source v1.11.0, 15 tools |
-| **Official MCP Registry** | Registry metadata | UPDATED | v1.11.0 metadata prepared; publish workflow required for registry promotion |
-| **Glama** | Remote connector | OWNER VERIFIED; TEST PROFILE PENDING | Ownership confirmed by Glama email on 2026-10-08 for `io.github.hmoses`. The public connector currently reports Unhealthy and still displays 35 languages. The production MCP exposes unauthenticated Streamable HTTP tool discovery, so Glama's Test Profile should first be configured for **No Auth** and the exact `/mcp` URL. Owner-only Admin test details and listing overrides require a signed-in Glama session. |
-| **MCP.so** | Directory/listing | LIVE | Listing live at mcp.so/server/poly-glot-ai-workspace/hmoses (paid $39, verified) |
-| **GitHub** | Repository | UPDATED | README, server.json, package.json updated. 38 languages, 15 tools |
-| **awesome-remote-mcp-servers** | Discovery list | PR OPEN | Submitted to punkpeye/awesome-remote-mcp-servers (awesome-mcp-servers PR #13166 closed — remote servers split out) |
-| **Hugging Face** | Optional showcase | VERIFIED | Space live at huggingface.co/spaces/HWM2/poly-glot-ai-workspace |
-| **ChatGPT / OpenAI** | MCP client / Apps host | LIVE | chatgpt-app-submission.json contains all 15 tools, including BYOM |
-| **Claude** | MCP client | AVAILABLE | Can connect via Streamable HTTP endpoint |
-| **Goose** | MCP client | AVAILABLE | Can connect via Streamable HTTP endpoint |
-| **Cursor / generic** | MCP clients | AVAILABLE | Standard Streamable HTTP, any MCP client can connect |
+| [MCP.so](https://mcp.so/servers/poly-glot-ai-workspace) | **15/15** in dynamic Tools | Verified + Featured; overview and About text still incorrectly say **7 tools**, and provider lists say **Groq** instead of **HuggingChat** | Claimed-owner listing editor or MCP.so support must update manually maintained description, overview, and provider tags; server tool registrations require no changes |
+| [Glama remote connector](https://glama.ai/mcp/connectors/io.github.hmoses/poly-glot-ai-workspace) | **15/15** live listed | **Healthy**, last tested 2026-10-09 17:16 UTC; owner verified; summary still incorrectly says **35 languages** | Owner Admin → Manage connector → update to **38 languages**, and enable **Use Glama listing details as the source of truth** if registry sync overwrites edits |
+| [Glama GitHub-backed server](https://glama.ai/mcp/servers/hmoses/poly-glot-ai-workspace) | **15/15** in README | Full tools list and **38 languages** displayed | No tool-list correction needed |
+| [GitHub source](https://github.com/hmoses/poly-glot-ai-workspace) | **15/15** in README, server code | v1.11.0 source | No missing registrations; registry `server.json` carries machine-readable inventory |
+| [Website MCP page](https://hmoses.github.io/poly-glot-site/mcp-integrations.html) | **15/15** in page | GitHub Pages deployment verified successful 2026-10-09 | No missing tool names |
+| [Hugging Face Space](https://huggingface.co/spaces/HWM2/poly-glot-ai-workspace) | Not independently inspectable from Space landing page | Space **Running** | Do not assert 15-tool visibility on Space without inspecting its iframe/code |
+| [Official MCP Registry](https://registry.modelcontextprotocol.io/) | Not independently verified in public API this check | Canonical `server.json` v1.11.0 prepared; publish workflow tag-triggered | Check registry version and run `.github/workflows/publish-mcp-registry.yml` via a version tag if new metadata must be published |
 
-## Status key
-- **VERIFIED** — confirmed working, correct data displayed
-- **LIVE** — listing exists and is accessible
-- **UPDATED** — metadata/copy changed and committed/published
-- **AVAILABLE** — endpoint works, client can connect
-- **PR OPEN** — pull request submitted, awaiting merge
+## Deployment and operational observations
 
-## Current notes
-1. Production database migration `002_rolling_free_send.sql` is recorded as applied on `br-steep-leaf-ae2o29qz`.
-2. Production MCP v1.11.0 is recorded live as Neon deployment 52; entitlement service deployment 8 is recorded live.
-3. iOS source is 1.1.4 build 827; macOS source is 3.4 build 812; both now consume the generated entitlement contract `2026-10-06.1`.
-4. MCP.so description may still require a manual owner-login refresh if its crawler does not auto-sync.
-5. Glama's remote connector listing is currently marked Unhealthy and uses outdated 35-language text despite 38-language source metadata in `server.json`. Ownership of `io.github.hmoses` was confirmed by the user's Glama email. In the authenticated Glama Admin → Test Profile, first select **No Auth** for the public Streamable HTTP tool-discovery endpoint and rerun the health check; inspect the response/error before changing server transport or policies. Update listing copy to 38 languages with the owner's listing override. The repository `glama.json` already specifies maintainer `hmoses` and cannot by itself claim a remote connector. The official registry's description may overwrite Glama edits unless 'Use Glama listing details as the source of truth' is enabled in Glama. Do not modify the MCP server, entitlements, or trial logic merely to make directory checks pass without a diagnosed server error.
-6. Glama TDQS schema-documentation fix prepared in GitHub source on 2026-10-08: `server.js` and `src/cross-platform-tools.js` now include purpose, behavior, usage, and parameter descriptions for all 15 tools (including `detect_language.text`). This is **source-only** until a tested Neon MCP deployment is performed and Glama rescans the live endpoint. The published 2.8/5.0 `detect_language` TDQS (scored 2026-09-19) should not be represented as improved until Glama recomputes it. GitHub commits: `5a4a197f`, `3d8a8f77`, `b27c9ee7`, `36efeeb8`. Preserve the existing 15 tool names, entitlements, trial policy, Apple verification, and URL when deploying.
-7. Diagnostic on 2026-10-08: production Neon MCP deployment 52 is marked completed, but `mcp_request_events` in the production project has no entries later than 2026-10-07 01:36:28 UTC, shortly before deployment 52. Neon invocation logs do show traffic afterward; therefore the absence of recorded errors is **not** proof that all MCP discovery requests are succeeding. Investigate telemetry/database access and record the Glama health-check response before any production redeploy. Neither Glama's owner-only admin actions nor a code-bundle deployment can be completed merely by updating GitHub source documentation.
+- Neon production MCP `mcp` current/active deployment **53** completed on 2026-10-08, consistent with v1.11.0 source.
+- Glama's current live health is **Healthy**; the older 2026-10-08 note saying Unhealthy is obsolete.
+- Neon `entitlements` current deployment **8 failed** with `Cannot find package 'jose' imported from /opt/function/auth.js`; active deployment remains **7 (completed)**. Do not report deployment 8 as live. Diagnose separately before redeploying, preserving subscription verification and free-send rules.
+- MCP.so and Glama owner UI edits cannot be performed by commits to this GitHub repository alone. Do not mark their stale text corrected until their public pages update.
+- Do not change MCP tool schemas, trial policy, Apple verification, authentication, production endpoint, or runtime merely to refresh directory copy.
+
+## Registry publication
+
+`server.json` documents the current full 15-tool inventory in its publisher-provided metadata for automated consumers and links to the canonical tools page. The official Registry publisher workflow runs on Git tags `v*`; GitHub main-branch commits alone are not proof of Registry publication.
