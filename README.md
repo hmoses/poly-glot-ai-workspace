@@ -1,6 +1,8 @@
 # Poly-Glot AI Workspace
 
-> Multilingual MCP tool platform: 1,000+ prompt templates · 38 languages · Compare Mode · BYOM · Embedded GUI
+> 15 MCP tools · 1,022 prompt templates · 38 languages · 9 AI providers · Compare Mode · BYOM · Embedded GUI
+
+**Directory listing facts:** Poly-Glot AI Workspace provides **15 MCP tools**, **38 languages**, and **1,022 templates**. Its nine built-in AI providers are **ChatGPT, Claude, Gemini, Grok, Perplexity, Copilot, Mistral, HuggingChat, and DuckDuckGo AI**. **Groq is not a built-in provider**. The server uses remote Streamable HTTP; tools include prompt discovery and building, AI comparison preparation, BYOM, audio transcription, translation, and localization. Glama and MCP.so should use these current facts instead of outdated seven-tool or 35-language summaries.
 
 Remote MCP server with an embedded MCP Apps / ChatGPT Apps SDK GUI, server-side entitlements, Apple-backed subscriptions, and Bring Your Own Model (BYOM) support.
 
