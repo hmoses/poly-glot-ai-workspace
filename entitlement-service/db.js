@@ -58,7 +58,7 @@ export async function upsertTransaction(tx, userSubject = null) {
      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
      ON CONFLICT(original_transaction_id) DO UPDATE SET
        transaction_id = EXCLUDED.transaction_id,
-       user_subject = COALESCE(EXCLUDED.user_subject, apple_transactions.user_subject),
+       user_subject = COALESCE(apple_transactions.user_subject, EXCLUDED.user_subject),
        app_account_token = COALESCE(EXCLUDED.app_account_token, apple_transactions.app_account_token),
        product_id = EXCLUDED.product_id,
        environment = EXCLUDED.environment,
@@ -74,11 +74,15 @@ export async function upsertTransaction(tx, userSubject = null) {
 
 export async function linkTransactionToSubject(originalTransactionId, subject) {
   await ensureUser(subject);
-  await pool.query(
+  const { rowCount } = await pool.query(
     `UPDATE apple_transactions SET user_subject=$2, updated_at=now()
-     WHERE original_transaction_id=$1`,
+     WHERE original_transaction_id=$1
+       AND (user_subject IS NULL OR user_subject=$2)`,
     [String(originalTransactionId), subject]
   );
+  if (rowCount !== 1) {
+    throw Object.assign(new Error("Apple transaction is already linked to another account"), { statusCode: 409 });
+  }
 }
 
 export async function subjectForTransaction(tx) {
