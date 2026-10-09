@@ -5,3 +5,27 @@ node_modules/
 
 # Goose runtime diagnostics
 .goose/
+
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.p12
+*.p8
+*.key
+*.jks
+*.keystore
+*.mobileprovision
+*.cer
+*.pfx
+*.secret
+secrets/
+credentials/
+
+# Local generated artifacts and runtime data
+.DS_Store
+coverage/
+.nyc_output/
+*.log
