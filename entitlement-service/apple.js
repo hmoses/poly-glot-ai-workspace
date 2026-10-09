@@ -15,8 +15,21 @@ const environment = mode === "SANDBOX" ? Environment.SANDBOX : Environment.PRODU
 function rootCertificates() {
   const paths = String(process.env.APPLE_ROOT_CA_PATHS || "")
     .split(",").map(s => s.trim()).filter(Boolean);
-  if (!paths.length) throw new Error("APPLE_ROOT_CA_PATHS is required; point it at Apple Root CA certificate files");
-  return paths.map(p => readFileSync(p));
+  if (paths.length) return paths.map(p => readFileSync(p));
+
+  // Neon Functions currently configure the trusted Apple root certificate
+  // directly as base64 instead of mounting a certificate file. Both forms
+  // contain the certificate bytes used by SignedDataVerifier.
+  const encoded = String(process.env.APPLE_ROOT_CA_B64 || "").trim();
+  if (encoded) {
+    if (!/^[A-Za-z0-9+/]+={0,2}$/.test(encoded)) {
+      throw new Error("APPLE_ROOT_CA_B64 is not valid base64");
+    }
+    const certificate = Buffer.from(encoded, "base64");
+    if (!certificate.length) throw new Error("APPLE_ROOT_CA_B64 is empty");
+    return [certificate];
+  }
+  throw new Error("Configure APPLE_ROOT_CA_PATHS or APPLE_ROOT_CA_B64 with Apple Root CA certificate bytes");
 }
 
 let verifier;
