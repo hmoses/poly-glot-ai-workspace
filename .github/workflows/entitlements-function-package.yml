@@ -1,0 +1,37 @@
+name: Entitlements Function Package Test
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'entitlement-service/**'
+      - 'scripts/package-neon-entitlements.mjs'
+      - '.github/workflows/entitlements-function-package.yml'
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify entitlement source
+        run: |
+          npm ci --prefix entitlement-service --ignore-scripts --no-audit
+          npm run check --prefix entitlement-service
+      - name: Package complete Function including dependencies
+        run: node scripts/package-neon-entitlements.mjs
+      - name: Validate archive contents
+        run: |
+          unzip -l dist/neon-entitlements.zip | grep -q 'node_modules/jose/'
+          unzip -l dist/neon-entitlements.zip | grep -q 'node_modules/pg/'
+          unzip -l dist/neon-entitlements.zip | grep -q 'node_modules/@apple/app-store-server-library/'
+          unzip -l dist/neon-entitlements.zip | grep -q 'index.mjs'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: polyglot-neon-entitlements
+          path: dist/neon-entitlements.zip
+          retention-days: 7
