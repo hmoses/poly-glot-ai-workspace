@@ -193,8 +193,11 @@ export async function startTrialIfNeeded(extra) {
     if (!REMOTE_URL) throw new Error("POLYGLOT_ENTITLEMENT_ENDPOINT is required in production");
     // Trial starts must be persisted by the production account/entitlement service.
     // POST is intentionally opt-in so deployments can keep entitlement reads read-only.
-    const startUrl = String(process.env.POLYGLOT_TRIAL_START_ENDPOINT || "").trim();
-    if (!startUrl) return getEntitlement(extra);
+    const configured = String(process.env.POLYGLOT_TRIAL_START_ENDPOINT || "").trim();
+    // Same verified account service as /v1/entitlements/me. Use its trial
+    // endpoint when a separately configured URL is absent, like free sends.
+    const startUrl = configured || REMOTE_URL.replace(/\/v1\/entitlements\/me\/?$/, "/v1/trials/start");
+    if (startUrl === REMOTE_URL) return getEntitlement(extra);
     const token = authToken(extra);
     if (!token) return getEntitlement(extra);
     const response = await fetch(startUrl, { method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json", accept: "application/json" }, body: JSON.stringify({ trialDays: PRICING.trialDays }) });
