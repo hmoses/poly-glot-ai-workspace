@@ -11,6 +11,7 @@
  * after Apple JWS verification.
  */
 import { createServer } from "node:http";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { verifyAppleIdentityToken, verifyMcpUser } from "./auth.js";
 import { transactionFromNotification, verifyNotification, verifyTransaction } from "./apple.js";
@@ -19,6 +20,21 @@ import { consumeFreeSend, entitlementForSubject, linkTransactionToSubject, start
 const MONTHLY_IDS = new Set((process.env.POLYGLOT_MONTHLY_PRODUCT_IDS || "ai.polyglot.promptstudio.mac.subscription.monthly,ai.polyglot.workspace.pro.monthly").split(",").map(s => s.trim()).filter(Boolean));
 const ANNUAL_IDS = new Set((process.env.POLYGLOT_ANNUAL_PRODUCT_IDS || "ai.polyglot.mac.pro.annual.2704,ai.polyglot.workspace.pro.annual").split(",").map(s => s.trim()).filter(Boolean));
 const TRIAL_DAYS = 3;
+
+// Match IAPManagerMac.stableAccountToken() exactly. Reject valid Apple JWS
+// receipts whose appAccountToken was bound to a different Apple sign-in user.
+function verifyAppAccountToken(subject, transaction) {
+  if (!transaction.appAccountToken) return; // Legacy transactions predate account tokens.
+  const bytes = Buffer.from(createHash("sha256").update(subject).digest().subarray(0, 16));
+  bytes[6] = (bytes[6] & 0x0f) | 0x50;
+  bytes[8] = (bytes[8] & 0x3f) | 0x80;
+  const hex = bytes.toString("hex");
+  const expected = hex.slice(0, 8) + hex.slice(8, 12) + hex.slice(12, 16) + hex.slice(16, 20) + hex.slice(20);
+  const received = String(transaction.appAccountToken).replace(/-/g, "").toLowerCase();
+  if (received !== expected) {
+    throw Object.assign(new Error("Apple transaction belongs to another sign-in account"), { statusCode: 403 });
+  }
+}
 
 async function body(req) {
   const parts = [];
@@ -95,6 +111,7 @@ export async function handleEntitlementRequest(req, res) {
       const payload = await body(req);
       const subject = await verifyAppleIdentityToken(payload.identityToken);
       const tx = await verifyTransaction(payload.signedTransaction);
+      verifyAppAccountToken(subject, tx);
       if (!MONTHLY_IDS.has(tx.productId) && !ANNUAL_IDS.has(tx.productId)) {
         return json(res, 400, { error: "unsupported_product" });
       }
@@ -175,6 +192,7 @@ export async function handleEntitlementRequestWeb(request) {
       const payload = await request.json();
       const subject = await verifyAppleIdentityToken(payload.identityToken);
       const tx = await verifyTransaction(payload.signedTransaction);
+      verifyAppAccountToken(subject, tx);
       if (!MONTHLY_IDS.has(tx.productId) && !ANNUAL_IDS.has(tx.productId)) return webJson(400, { error: "unsupported_product" });
       await upsertTransaction(tx, subject);
       await linkTransactionToSubject(tx.originalTransactionId, subject);
