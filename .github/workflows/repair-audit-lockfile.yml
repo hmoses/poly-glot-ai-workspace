@@ -1,0 +1,40 @@
+name: Repair dependency security lockfile
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-audit-lockfile.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Repair vulnerable npm lockfile resolutions
+        run: |
+          set -euo pipefail
+          npm ci --ignore-scripts
+          npm audit fix --package-lock-only --ignore-scripts
+          npm ci --ignore-scripts
+          npm audit --audit-level=high
+      - name: Run complete MCP regression tests
+        run: npm test
+      - name: Commit lockfile repair only if changed and all checks passed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- package-lock.json; then
+            echo 'Already secure; no dependency lockfile changes needed.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add package-lock.json
+          git commit -m 'fix: resolve high and critical npm dependency advisories'
+          git push origin HEAD:main
