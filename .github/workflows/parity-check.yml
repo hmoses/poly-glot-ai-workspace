@@ -9,6 +9,8 @@ on:
       - 'pricing.js'
       - 'entitlements.js'
       - 'server.js'
+      - 'package.json'
+      - 'scripts/test-mcp-anonymous-trial.mjs'
       - 'src/cross-platform-tools.js'
       - 'localization.js'
       - 'data/widget-html.js'
