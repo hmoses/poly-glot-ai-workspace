@@ -98,6 +98,7 @@ const UI_META = Object.freeze({
     csp: { connectDomains: [], resourceDomains: [] },
   },
   "openai/outputTemplate": UI_URI,
+  "openai/ui": { availableDisplayModes: ["inline", "fullscreen"], preferredDisplayMode: "inline" },
   "openai/widgetDescription": "Interactive Poly-Glot AI Workspace with template search, multilingual prompt building, subscription-aware states, and Compare Mode.",
 });
 
