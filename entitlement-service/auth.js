@@ -19,14 +19,24 @@ function bearer(req) {
 export async function verifyMcpUser(req) {
   const token = bearer(req);
   if (!token) throw Object.assign(new Error("Authentication required"), { statusCode: 401 });
-  const issuer = String(process.env.POLYGLOT_OIDC_ISSUER || "").replace(/\/$/, "");
-  const audience = process.env.POLYGLOT_OIDC_AUDIENCE;
-  if (!issuer || !audience) throw new Error("POLYGLOT_OIDC_ISSUER and POLYGLOT_OIDC_AUDIENCE are required");
-  const jwksUrl = process.env.POLYGLOT_OIDC_JWKS_URL || `${issuer}/.well-known/jwks.json`;
+  // Native app identities and MCP identities must resolve to the same
+  // Sign in with Apple subject when Apple is the configured identity provider.
+  // External OIDC installations can still supply their own issuer/audience.
+  const issuer = String(process.env.POLYGLOT_OIDC_ISSUER || "https://appleid.apple.com").replace(/\/$/, "");
+  const appleIssuer = issuer === "https://appleid.apple.com";
+  const audience = process.env.POLYGLOT_OIDC_AUDIENCE ||
+    (appleIssuer ? (process.env.APPLE_SIGN_IN_AUDIENCE || process.env.APPLE_BUNDLE_ID) : "");
+  if (!audience) throw new Error("POLYGLOT_OIDC_AUDIENCE or APPLE_BUNDLE_ID is required");
+  const jwksUrl = process.env.POLYGLOT_OIDC_JWKS_URL ||
+    (appleIssuer ? "https://appleid.apple.com/auth/keys" : `${issuer}/.well-known/jwks.json`);
   oidcJwks ||= createRemoteJWKSet(new URL(jwksUrl));
-  const { payload } = await jwtVerify(token, oidcJwks, { issuer, audience });
-  if (!payload.sub) throw Object.assign(new Error("Token has no subject"), { statusCode: 401 });
-  return String(payload.sub);
+  try {
+    const { payload } = await jwtVerify(token, oidcJwks, { issuer, audience });
+    if (!payload.sub) throw new Error("Token has no subject");
+    return String(payload.sub);
+  } catch {
+    throw Object.assign(new Error("Invalid identity token"), { statusCode: 401 });
+  }
 }
 
 export async function verifyAppleIdentityToken(identityToken) {
