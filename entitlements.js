@@ -199,7 +199,10 @@ export async function startTrialIfNeeded(extra) {
     if (!token) return getEntitlement(extra);
     const response = await fetch(startUrl, { method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json", accept: "application/json" }, body: JSON.stringify({ trialDays: PRICING.trialDays }) });
     if (!response.ok) throw new Error(`Trial service returned ${response.status}`);
-    return { ...normalizeRemote(await response.json()), pricing: publicPricing() };
+    // Re-read the verified account state. normalizeRemote() alone does not
+    // calculate trialActive/isPro and previously caused a successful trial
+    // activation to remain locked in the MCP tool handlers.
+    return getEntitlement(extra);
   }
 
   const current = localEntitlement(extra);
