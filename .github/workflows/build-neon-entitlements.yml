@@ -37,6 +37,7 @@ jobs:
             --platform=node \
             --target=node24 \
             --format=esm \
+            --minify \
             --external:pg-native \
             --banner:js="import { createRequire } from 'node:module'; const require = createRequire(import.meta.url);" \
             --outfile=dist/neon-entitlements/index.mjs
@@ -50,6 +51,9 @@ jobs:
             echo 'One or more runtime imports were not bundled' >&2
             exit 1
           fi
+      - name: Prepare verified base64 chunks for Neon connector
+        run: |
+          node -e 'const fs=require("fs");const c=require("crypto");const root="dist/neon-entitlements";const bin=fs.readFileSync(root+"/index.mjs");const base64=bin.toString("base64");fs.mkdirSync(root+"/chunks",{recursive:true});for(const f of fs.readdirSync(root+"/chunks"))fs.unlinkSync(root+"/chunks/"+f);const parts=[];for(let i=0;i<base64.length;i+=180000){const f="part-"+String(parts.length).padStart(3,"0")+".b64";fs.writeFileSync(root+"/chunks/"+f,base64.slice(i,i+180000));parts.push(f)}fs.writeFileSync(root+"/manifest.json",JSON.stringify({size:bin.length,sha256:c.createHash("sha256").update(bin).digest("hex"),parts},null,2)+"\\n");console.log("Created",parts.length,"chunks for",bin.length,"bytes")'
       - name: Upload deployable artifact
         uses: actions/upload-artifact@v4
         with:
@@ -60,7 +64,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f dist/neon-entitlements/index.mjs
+          git add -f -A dist/neon-entitlements
           if ! git diff --cached --quiet; then
             git commit -m 'Build self-contained entitlement function for Neon'
             git push origin HEAD:main
