@@ -124,6 +124,23 @@ function compareAccess(entitlement) {
   return entitlement.isPro || entitlement.trialActive;
 }
 
+function trialActivationLocked(entitlement, localization, authenticated) {
+  // Anonymous users may browse the catalog, but a Send must be associated
+  // with a verified account and an actually persisted trial.
+  const message = authenticated
+    ? "Your free trial could not be activated right now. Please try again later. No prompt was sent and no subscription was started."
+    : "Sign in to Poly-Glot to start your 3-day free trial before sending. Browsing and viewing free templates do not require a subscription.";
+  return {
+    structuredContent: {
+      view: "locked",
+      message,
+      entitlement: entitlementSummary(entitlement),
+      localization,
+    },
+    content: [{ type: "text", text: message }],
+  };
+}
+
 function compareLocked(entitlement) {
   const resetInfo = entitlement.nextResetAt ? ` Your next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
   const message = `Compare Mode requires an active trial or Pro subscription. Poly-Glot Pro: $9.99/month or $79.99/year — unlocks Pro templates, Compare Mode, and unlimited sends.${resetInfo}`;
@@ -501,7 +518,14 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     }
 
     if (template.plan === "free" && entitlement.state === "not_started") {
+      const authenticated = Boolean(entitlementContext(extra).authInfo.token);
+      if (!authenticated) return trialActivationLocked(entitlement, localization, false);
       entitlement = await startTrialIfNeeded(entitlementContext(extra));
+      // Fail closed if the trial endpoint is missing, or if activation did
+      // not persist. Without this check, pre-trial Sends were unlimited.
+      if (!entitlement.trialActive && !entitlement.isPro) {
+        return trialActivationLocked(entitlement, localization, true);
+      }
       access = templateAccess(template, entitlement);
       if (!access.allowed) {
         const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
@@ -582,7 +606,13 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     let entitlement = await getEntitlement(entitlementContext(extra));
 
     // First eligible Compare use starts the same three-day product trial.
-    if (entitlement.state === "not_started") entitlement = await startTrialIfNeeded(entitlementContext(extra));
+    if (entitlement.state === "not_started") {
+      if (!entitlementContext(extra).authInfo.token) return trialActivationLocked(entitlement, localization, false);
+      entitlement = await startTrialIfNeeded(entitlementContext(extra));
+      if (!entitlement.trialActive && !entitlement.isPro) {
+        return trialActivationLocked(entitlement, localization, true);
+      }
+    }
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
       locked.structuredContent.localization = localization;
@@ -809,7 +839,14 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     track("prepare_custom_compare", extra, { customModels: (args.customModels||[]).length });
     let entitlement = await getEntitlement(entitlementContext(extra));
     trackExpanded("prepare_custom_compare", extra, entitlement.state);
-    if (entitlement.state === "not_started") entitlement = await startTrialIfNeeded(entitlementContext(extra));
+    if (entitlement.state === "not_started") {
+      const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
+      if (!entitlementContext(extra).authInfo.token) return trialActivationLocked(entitlement, localization, false);
+      entitlement = await startTrialIfNeeded(entitlementContext(extra));
+      if (!entitlement.trialActive && !entitlement.isPro) {
+        return trialActivationLocked(entitlement, localization, true);
+      }
+    }
     if (!compareAccess(entitlement)) {
       const locked = compareLocked(entitlement);
       const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
