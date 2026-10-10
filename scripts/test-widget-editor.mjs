@@ -43,3 +43,16 @@ test("no changes to the entitlement gate, client/tool registration or display-mo
   assert.match(html, /callTool\('build_prompt'/);
   assert.match(html, /callTool\('prepare_compare'/);
 });
+
+test("MCP Apps embeds announce real content height and allow fullscreen", () => {
+  assert.match(html, /ui\\/notifications\\/size-changed/);
+  assert.match(html, /root\\.style\\.height='max-content'/);
+  assert.match(html, /new ResizeObserver\\(notifyWorkspaceHeight\\)/);
+  assert.match(html, /function enableWorkspaceAutoResize\\(\\)/);
+  assert.match(html, /ready\\.then\\(async\\(\\)=>\\{enableWorkspaceAutoResize\\(\\)/);
+  assert.match(html, /id="expandWorkspace"/);
+  assert.match(html, /addEventListener\\('click',\\(\\)=>\\{void requestWorkspaceFullscreen\\(\\);\\}\\)/);
+  const languages = JSON.parse(html.match(/const LANGUAGES=(\\[[^\\n]+\\]);/)[1]);
+  const translations = JSON.parse(html.match(/const WORKSPACE_EXPAND=(\\{[^\\n]+\\});/)[1]);
+  assert.deepEqual(Object.keys(translations).sort(), languages.map(l => l.code).sort());
+});
