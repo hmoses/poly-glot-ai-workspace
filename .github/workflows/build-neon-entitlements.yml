@@ -1,0 +1,67 @@
+name: Bundle Neon entitlements (include runtime dependencies)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-neon-entitlements.yml'
+      - 'entitlement-service/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-neon-entitlements
+  cancel-in-progress: false
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: entitlement-service/package-lock.json
+      - name: Install entitlement dependencies from lockfile
+        run: npm ci --prefix entitlement-service --ignore-scripts
+      - name: Bundle dependencies for Neon runtime
+        run: |
+          mkdir -p dist/neon-entitlements
+          npx --yes esbuild@0.25.12 entitlement-service/index.mjs \
+            --bundle \
+            --platform=node \
+            --target=node24 \
+            --format=esm \
+            --external:pg-native \
+            --banner:js="import { createRequire } from 'node:module'; const require = createRequire(import.meta.url);" \
+            --outfile=dist/neon-entitlements/index.mjs
+      - name: Check bundled module and native dependencies
+        env:
+          DATABASE_URL: postgresql://ci:ci@127.0.0.1:1/polyglot_test
+        run: |
+          node --check dist/neon-entitlements/index.mjs
+          node --input-type=module -e 'const mod = await import("./dist/neon-entitlements/index.mjs"); if (typeof mod.default?.fetch !== "function") process.exit(1); console.log("Bundled entitlement handler loaded");'
+          if grep -qE 'from ["\x27](jose|pg|@apple/app-store-server-library)["\x27]' dist/neon-entitlements/index.mjs; then
+            echo 'One or more runtime imports were not bundled' >&2
+            exit 1
+          fi
+      - name: Upload deployable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: neon-entitlements-bundle
+          path: dist/neon-entitlements/index.mjs
+          if-no-files-found: error
+      - name: Publish bundle for controlled deployment by Neon connector
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f dist/neon-entitlements/index.mjs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build self-contained entitlement function for Neon'
+            git push origin HEAD:main
+          fi
