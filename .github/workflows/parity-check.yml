@@ -62,7 +62,7 @@ jobs:
 
       - name: Upload parity matrix
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: parity-matrix
           path: parity-matrix.txt
