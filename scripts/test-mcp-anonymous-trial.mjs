@@ -7,6 +7,10 @@ import assert from "node:assert/strict";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 
+// This test mocks the remote entitlement API; no database connection is used.
+// Provide an unreachable, test-only URL so importing the production route module
+// does not require a real Neon secret in CI. Any unexpected DB query fails closed.
+process.env.DATABASE_URL ||= "postgresql://ci:ci@127.0.0.1:1/polyglot_test";
 process.env.NODE_ENV = "production";
 process.env.POLYGLOT_ENTITLEMENT_ENDPOINT = "https://entitlements.example.test/v1/entitlements/me";
 delete process.env.POLYGLOT_TRIAL_START_ENDPOINT; // Test derived fallback URL.
