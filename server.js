@@ -205,8 +205,9 @@ const findTemplate = (name) => {
 const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN" }, entitlement) => {
   const q = query.trim().toLowerCase();
   return templates
-    // Post-trial and unknown accounts can discover only free templates.
-    .filter((t) => t.plan === "free" || entitlement.isPro || entitlement.trialActive || entitlement.state === "not_started")
+    // Expired users see locked Pro discovery cards; unknown/lapsed states fail closed.
+    // Pro prompt bodies and fields are withheld by get_template/build_prompt.
+    .filter((t) => t.plan === "free" || entitlement.isPro || entitlement.trialActive || entitlement.isExpired || entitlement.state === "not_started")
     .filter((t) => !goal || t.goal === goal)
     .filter((t) => !plan || t.plan === plan)
     .map((t, index) => {
