@@ -205,6 +205,9 @@ const findTemplate = (name) => {
 const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN" }, entitlement) => {
   const q = query.trim().toLowerCase();
   return templates
+    // Expired accounts can browse ONLY free catalog entries. Filter before scoring,
+    // limiting and localization so search and open_workspace never leak Pro metadata.
+    .filter((t) => !entitlement.isExpired || entitlement.isPro || t.plan === "free")
     .filter((t) => !goal || t.goal === goal)
     .filter((t) => !plan || t.plan === plan)
     .map((t, index) => {
@@ -260,7 +263,10 @@ function lockedResult(template, entitlement, uiLanguage = "EN") {
   return {
     structuredContent: {
       view: "locked",
-      template: publicTemplate(template, entitlement, uiLanguage),
+      // Never reveal premium names, descriptions, fields or stable IDs post-trial.
+      template: entitlement.isExpired && !entitlement.isPro && template.plan === "pro"
+        ? { id: "", name: "Pro template", description: "Subscribe to access premium templates.", goal: "", plan: "pro", fields: [], hasPrompt: false, locked: true, lockReason: "trial_expired" }
+        : publicTemplate(template, entitlement, uiLanguage),
       entitlement: entitlementSummary(entitlement),
       message: reason,
       upgrade: {
@@ -402,7 +408,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "open_workspace", {
     title: "Open Poly-Glot AI Workspace",
-    description: "Open the embedded Poly-Glot prompt workspace and template browser, optionally prefiltered by a query and translated via uiLanguage. Returns searchable template records, their locked states, entitlement and localization. Browsing is read-only and does not start the trial or use a send.",
+    description: "Open the embedded Poly-Glot prompt workspace and template browser, optionally prefiltered by a query and translated via uiLanguage. Returns entitlement-filtered template records (free entries only after trial expiry), entitlement and localization. Browsing is read-only and does not start the trial or use a send.",
     _meta: UI_META,
     inputSchema: { query: z.string().max(200).optional().default("").describe("Optional keyword or goal for template search, e.g. resume. Maximum 200 characters."), uiLanguage: z.string().max(80).optional().default("EN").describe("UI language name or code for template labels; defaults to EN.") },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },
@@ -422,7 +428,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "search_templates", {
     title: "Search Poly-Glot templates",
-    description: "Search Poly-Glot's template catalog by keywords and goal, optionally filtered to free or Pro results. Use before get_template or build_prompt when the exact name is unknown. Results contain template metadata, tier and entitlement status. Searching is read-only and does not trigger a send or trial.",
+    description: "Search Poly-Glot's template catalog by keywords and goal, optionally filtered to free or Pro results. Use before get_template or build_prompt when the exact name is unknown. Expired accounts see free entries only; Pro template names and details are hidden. Searching is read-only and does not trigger a send or trial.",
     _meta: UI_META,
     inputSchema: {
       query: z.string().max(200).optional().default("").describe("Search phrase or topic; blank lists available templates."), goal: z.string().max(80).optional().describe("Optional intended outcome, e.g. write a help article."),
@@ -436,7 +442,6 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     track("search_templates", extra, { query, goal, plan });
     const entitlement = await getEntitlement(entitlementContext(extra));
     trackExpanded("search_templates", extra, entitlement.state);
-    trackExpanded("search_templates", extra, entitlement.state);
     const localization = languageContext({ uiLanguage, inputLanguage: uiLanguage, outputLanguage: uiLanguage });
     const results = searchTemplates({ query, goal, plan, limit, uiLanguage: localization.uiLanguage.code }, entitlement);
     return {
@@ -447,7 +452,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "get_template", {
     title: "Open a Poly-Glot template",
-    description: "Retrieve a named template's fields and entitled prompt body. Use search_templates first to find the exact name; inaccessible templates return a locked view instead of private prompt content. Returns template, entitlement and localization data. Reading a template alone neither starts the trial nor consumes a send.",
+    description: "Retrieve a named template's fields and entitled prompt body. Use search_templates first to find the exact name; inaccessible templates return a locked view without Pro metadata after the trial instead of private prompt content. Returns template, entitlement and localization data. Reading a template alone neither starts the trial nor consumes a send.",
     _meta: UI_META,
     inputSchema: { name: z.string().min(1).max(200).describe("Required template name returned by search_templates."), uiLanguage: z.string().max(80).optional().default("EN").describe("Language code for localized template fields; defaults to EN.") },
     outputSchema: {
