@@ -20,7 +20,7 @@ const search = runInNewContext(searchSource+"\nsearchTemplates",{
   publicTemplate:(t,e)=>({id:t.name,name:t.name,description:t.desc,plan:t.plan,locked:t.plan==="pro"&&!e.isPro&&!e.trialActive})
 });
 for(const [label,e,expected] of [
-  ["expired",{state:"expired",isExpired:true,isPro:false,trialActive:false},["Free Example","Secret Pro Example"]],
+  ["expired",{state:"expired",isExpired:true,isPro:false,trialActive:false},["Free Example"]],
   ["lapsed trial",{state:"trial",isPro:false,trialActive:false},["Free Example"]],
   ["unknown",{state:"unknown",isPro:false,trialActive:false},["Free Example"]],
   ["active trial",{state:"trial",isPro:false,trialActive:true},["Free Example","Secret Pro Example"]],
@@ -31,11 +31,6 @@ for(const [label,e,expected] of [
     const result=search({limit:24},e);
     assert.deepEqual(Array.from(result,x=>x.name),expected);
     if(expected.length===1)assert.equal(search({plan:"pro"},e).length,0);
-    if(label==="expired") {
-      const pro=search({plan:"pro"},e);
-      assert.equal(pro.length,1);
-      assert.equal(pro[0].locked,true);
-    }
   });
 }
 const lockedSource=section("function lockedResult(", "const languageSchema =");
@@ -43,7 +38,7 @@ const locked=runInNewContext(lockedSource+"\nlockedResult", {
  publicTemplate:t=>({id:t.name,name:t.name,description:t.desc,fields:[{key:"secret"}],plan:t.plan}),
  entitlementSummary:e=>e
 });
-test("post-trial Pro tap shows paywall and redacts editor fields, prompt text and IDs",()=>{
+test("post-trial direct Pro lookup redacts editor fields, prompt text and IDs",()=>{
   const e={state:"expired",isExpired:true,isPro:false,trialActive:false,nextResetAt:null};
   const body=locked(catalog[1],e).structuredContent.template;
   assert.equal(body.plan,"pro");
