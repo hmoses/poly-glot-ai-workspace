@@ -25,6 +25,7 @@ on:
       - 'scripts/check-entitlements.mjs'
       - 'scripts/check-localization.mjs'
       - 'scripts/test-cross-platform.mjs'
+      - 'scripts/test-pro-template-visibility.mjs'
       - 'scripts/generate-apple-capabilities.mjs'
   pull_request:
     branches: [main]
