@@ -25,7 +25,7 @@ for(const [label,e,expected] of [
   ["unknown",{state:"unknown",isPro:false,trialActive:false},["Free Example"]],
   ["active trial",{state:"trial",isPro:false,trialActive:true},["Free Example","Secret Pro Example"]],
   ["monthly Pro",{state:"pro_monthly",isPro:true,trialActive:false},["Free Example","Secret Pro Example"]],
-  ["pretrial",{state:"not_started",isPro:false,trialActive:false},["Free Example","Secret Pro Example"]]
+  ["pretrial (no verified premium entitlement)",{state:"not_started",isPro:false,trialActive:false},["Free Example"]]
 ]){
   test("catalog visibility: "+label,()=>{
     const result=search({limit:24},e);
