@@ -1,0 +1,25 @@
+{
+  "size": 2389314,
+  "sha256": "9b4859179c0de2d566cb37c5e75d076bdcf23a9b6fa3ff2b00d2a87915709e4a",
+  "parts": [
+    "part-000.b64",
+    "part-001.b64",
+    "part-002.b64",
+    "part-003.b64",
+    "part-004.b64",
+    "part-005.b64",
+    "part-006.b64",
+    "part-007.b64",
+    "part-008.b64",
+    "part-009.b64",
+    "part-010.b64",
+    "part-011.b64",
+    "part-012.b64",
+    "part-013.b64",
+    "part-014.b64",
+    "part-015.b64",
+    "part-016.b64",
+    "part-017.b64"
+  ],
+  "sourceCommit": "c4924e994b997b0dda556a6c0d2b574f36ba88ae"
+}
