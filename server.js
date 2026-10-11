@@ -205,8 +205,9 @@ const findTemplate = (name) => {
 const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN" }, entitlement) => {
   const q = query.trim().toLowerCase();
   return templates
-    // Pro cards remain visible as locked discovery items after trial expiry.
-    // get_template/build_prompt never reveal Pro fields or prompt bodies without access.
+    // Show locked Pro discovery cards for expired users; unknown/lapsed states fail closed.
+    // get_template/build_prompt never reveal fields or prompt bodies without access.
+    .filter((t) => t.plan === "free" || entitlement.isPro || entitlement.trialActive || entitlement.isExpired || entitlement.state === "not_started")
     .filter((t) => !goal || t.goal === goal)
     .filter((t) => !plan || t.plan === plan)
     .map((t, index) => {
