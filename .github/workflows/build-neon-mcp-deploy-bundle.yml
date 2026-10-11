@@ -1,0 +1,71 @@
+name: Build MCP bundle for verified Neon deployment
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-neon-mcp-deploy-bundle.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: build-neon-mcp-deploy-bundle
+  cancel-in-progress: false
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install existing dependencies
+        run: npm ci --ignore-scripts
+      - name: Validate all entitlement and tool regressions
+        run: npm test
+      - name: Bundle Neon MCP server and assets without changing production
+        run: |
+          set -euo pipefail
+          mkdir -p dist/neon-mcp
+          npx --yes esbuild@0.25.12 index.mjs \
+            --bundle --platform=node --target=node24 --format=esm --minify \
+            --external:pg-native \
+            --banner:js="import { createRequire } from 'node:module'; const require = createRequire(import.meta.url);" \
+            --outfile=dist/neon-mcp/index.mjs
+          node --check dist/neon-mcp/index.mjs
+          (cd dist/neon-mcp && zip -q -9 deploy.zip index.mjs)
+      - name: Split verified ZIP into publishable base64 chunks
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          const root = 'dist/neon-mcp';
+          const zip = fs.readFileSync(root + '/deploy.zip');
+          const b64 = zip.toString('base64');
+          fs.mkdirSync(root + '/chunks', {recursive:true});
+          for (const f of fs.readdirSync(root + '/chunks')) fs.unlinkSync(root + '/chunks/' + f);
+          const parts=[];
+          for(let i=0;i<b64.length;i+=180000){
+            const name='part-'+String(parts.length).padStart(3,'0')+'.b64';
+            fs.writeFileSync(root+'/chunks/'+name,b64.slice(i,i+180000));
+            parts.push(name);
+          }
+          fs.writeFileSync(root+'/manifest.json',JSON.stringify({
+            size:zip.length,
+            sha256:crypto.createHash('sha256').update(zip).digest('hex'),
+            parts,
+            sourceCommit:process.env.GITHUB_SHA,
+          },null,2)+'\n');
+          console.log('MCP ZIP ready for controlled Neon deployment:',zip.length,'bytes,',parts.length,'parts');
+          JS
+      - name: Publish tested MCP bundle for Neon connector
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f dist/neon-mcp/manifest.json dist/neon-mcp/chunks/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish tested MCP runtime artifact for Neon connector deployment'
+            git push origin HEAD:main
+          fi
