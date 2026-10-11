@@ -20,7 +20,7 @@ const search = runInNewContext(searchSource+"\nsearchTemplates",{
   publicTemplate:(t,e)=>({id:t.name,name:t.name,description:t.desc,plan:t.plan,locked:t.plan==="pro"&&!e.isPro&&!e.trialActive})
 });
 for(const [label,e,expected] of [
-  ["expired",{state:"expired",isExpired:true,isPro:false,trialActive:false},["Free Example","Secret Pro Example"]],
+  ["expired",{state:"expired",isExpired:true,isPro:false,trialActive:false},["Free Example"]],
   ["lapsed trial",{state:"trial",isPro:false,trialActive:false},["Free Example"]],
   ["unknown",{state:"unknown",isPro:false,trialActive:false},["Free Example"]],
   ["active trial",{state:"trial",isPro:false,trialActive:true},["Free Example","Secret Pro Example"]],
