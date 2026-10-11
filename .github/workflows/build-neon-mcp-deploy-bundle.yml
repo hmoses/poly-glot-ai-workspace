@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/build-neon-mcp-deploy-bundle.yml'
+      - 'server.js'
+      - 'entitlements.js'
+      - 'scripts/test-pro-template-visibility.mjs'
+      - 'public/workspace-widget.html'
   workflow_dispatch:
 permissions:
   contents: write
