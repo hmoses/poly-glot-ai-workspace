@@ -205,9 +205,8 @@ const findTemplate = (name) => {
 const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN" }, entitlement) => {
   const q = query.trim().toLowerCase();
   return templates
-    // Expired or unverified accounts must not discover Pro names, fields, or descriptions.
-    // Retain pre-trial previews and full access during active trials and paid plans.
-    .filter((t) => t.plan === "free" || entitlement.isPro || entitlement.trialActive || entitlement.state === "not_started")
+    // Pro cards remain visible as locked discovery items after trial expiry.
+    // get_template/build_prompt never reveal Pro fields or prompt bodies without access.
     .filter((t) => !goal || t.goal === goal)
     .filter((t) => !plan || t.plan === plan)
     .map((t, index) => {
@@ -428,7 +427,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "search_templates", {
     title: "Search Poly-Glot templates",
-    description: "Search Poly-Glot's template catalog by keywords and goal, optionally filtered to free or Pro results. Use before get_template or build_prompt when the exact name is unknown. Expired accounts see free templates only; Pro names, metadata and prompt bodies are hidden until a subscription is active. Searching is read-only and does not trigger a send or trial.",
+    description: "Search Poly-Glot's template catalog by keywords and goal, optionally filtered to free or Pro results. Use before get_template or build_prompt when the exact name is unknown. Expired accounts see locked Pro template cards. Selecting one returns a paywall, not Pro fields or prompt text. Searching is read-only and does not trigger a send or trial.",
     _meta: UI_META,
     inputSchema: {
       query: z.string().max(200).optional().default("").describe("Search phrase or topic; blank lists available templates."), goal: z.string().max(80).optional().describe("Optional intended outcome, e.g. write a help article."),
