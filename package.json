@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@apple/app-store-server-library": "^2.0.0",
-    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "@modelcontextprotocol/ext-apps": "^2.0.3",
     "@modelcontextprotocol/sdk": "^1.20.2",
     "jose": "^6.0.0",
     "pg": "^8.16.0",
