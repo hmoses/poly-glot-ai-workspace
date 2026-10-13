@@ -33,9 +33,9 @@ describe("Capability manifest", () => {
     assert.equal(allTools.length, 15);
     assert.equal(new Set(allTools).size, 15);
   });
-  test("38 languages and 9 providers are declared", () => {
+  test("38 languages and 8 providers are declared", () => {
     assert.equal(caps.languageCount, 38);
-    assert.equal(caps.providers.length, 9);
+    assert.equal(caps.providers.length, 8);
   });
 });
 
@@ -79,7 +79,7 @@ describe("Language and provider parity", () => {
     for (const code of ["BN","AF","AM","HA","SW"]) assert.ok(localization.includes(`["${code}"`));
     for (const code of ["BG","LT","LV","ET"]) assert.ok(!localization.includes(`["${code}"`));
   });
-  test("Compare Mode exposes all 9 providers", () => {
+  test("Compare Mode exposes all 8 providers", () => {
     for (const id of caps.providers) assert.ok(server.includes(`${id}:`) || server.includes(`"${id}"`), `Provider ${id} missing`);
   });
 });

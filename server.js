@@ -114,7 +114,6 @@ const COMPARE_PROVIDERS = Object.freeze({
   gemini: { label: "Gemini", url: "https://gemini.google.com/" },
   perplexity: { label: "Perplexity", url: "https://www.perplexity.ai/" },
   grok: { label: "Grok", url: "https://grok.com/" },
-  copilot: { label: "Copilot", url: "https://copilot.microsoft.com/" },
   mistral: { label: "Mistral", url: "https://chat.mistral.ai/" },
   huggingchat: { label: "HuggingChat", url: "https://huggingface.co/chat/" },
   duckduckgo: { label: "DuckDuckGo AI", url: "https://duck.ai/" },
@@ -584,14 +583,14 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "prepare_compare", {
     title: "Prepare Poly-Glot Compare Mode",
-    description: "Prepare the same canonical prompt for two to nine selected AI providers using a raw prompt or accessible template. Returns provider destinations, prompt and usage instructions without calling third-party models. This is a Send and begins the 3-day trial on first qualifying use; Compare Mode requires active trial or Pro. Use when a user explicitly wants side-by-side answers.",
+    description: "Prepare the same canonical prompt for two to eight selected AI providers using a raw prompt or accessible template. Returns provider destinations, prompt and usage instructions without calling third-party models. This is a Send and begins the 3-day trial on first qualifying use; Compare Mode requires active trial or Pro. Use when a user explicitly wants side-by-side answers.",
     _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200).optional().describe("Optional accessible template name; supply this or a raw prompt."),
       prompt: z.string().min(1).max(30000).optional().describe("Optional original prompt for each provider, maximum 30,000 characters; provide this or name."),
       values: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional().default({}).describe("Placeholder values used when preparing a named template."),
       ...localizationArgs,
-      providers: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral", "huggingchat", "duckduckgo"])).min(2).max(9).optional().default(["chatgpt", "claude"]).describe("Two to nine provider IDs; defaults to ChatGPT and Claude and duplicates are removed."),
+      providers: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "mistral", "huggingchat", "duckduckgo"])).min(2).max(8).optional().default(["chatgpt", "claude"]).describe("Two to eight provider IDs; defaults to ChatGPT and Claude and duplicates are removed."),
     },
     outputSchema: {
       view: z.enum(["compare", "compare_locked", "locked"]),
@@ -830,7 +829,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     description: "Prepare a canonical prompt and instructions for comparing at least two targets, including one to five custom BYOM models and optional supported built-in AI providers. API keys must not appear in the comparison plan; use run_custom_model to execute custom targets separately. Returns comparison targets and prompt without invoking any models. This is a Send and starts the 3-day trial on first qualifying use; Compare Mode requires trial or Pro.",
     inputSchema: {
       prompt: z.string().min(1).max(30000).describe("Required canonical prompt shared among all selected models, up to 30,000 characters."),
-      builtinProviders: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "copilot", "mistral", "huggingchat", "duckduckgo"])).optional().default([]).describe("Optional built-in provider IDs to include alongside custom targets. This preparation tool does not call providers."),
+      builtinProviders: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "mistral", "huggingchat", "duckduckgo"])).optional().default([]).describe("Optional built-in provider IDs to include alongside custom targets. This preparation tool does not call providers."),
       customModels: z.array(z.object({
         label: z.string().max(100).describe("Human-readable name of the custom model in the comparison results."),
         adapterMode: z.enum(["openai-compatible", "custom-rest"]).describe("Adapter type for this model's API."),

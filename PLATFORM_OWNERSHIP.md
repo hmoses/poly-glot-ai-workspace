@@ -36,7 +36,7 @@
 
 ## MCP
 - **Authoritative repo**: `hmoses/poly-glot-ai-workspace` (this repo)
-- **Current MCP source baseline**: v1.11.0 / 15 tools / 1,022 templates / 38 languages / 9 built-in AI providers
+- **Current MCP source baseline**: v1.11.0 / 15 tools / 1,022 templates / 38 languages / 8 built-in AI providers
 - **Parity manifest**: `config/polyglot-product-parity.json`
 - **Apple capability generator**: `scripts/generate-apple-capabilities.mjs`
 - **Generated Swift contract**: `Generated/PolyGlotCapabilities.swift`

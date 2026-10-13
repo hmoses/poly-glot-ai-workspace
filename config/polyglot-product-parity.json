@@ -215,14 +215,13 @@
     "subscription": "renderEnt"
   },
   "providers": {
-    "count": 9,
+    "count": 8,
     "ids": [
       "chatgpt",
       "claude",
       "gemini",
       "perplexity",
       "grok",
-      "copilot",
       "mistral",
       "huggingchat",
       "duckduckgo"

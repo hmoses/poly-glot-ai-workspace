@@ -1,8 +1,8 @@
 # Poly-Glot AI Workspace
 
-> 15 MCP tools · 1,022 prompt templates · 38 languages · 9 AI providers · Compare Mode · BYOM · Embedded GUI
+> 15 MCP tools · 1,022 prompt templates · 38 languages · 8 AI providers · Compare Mode · BYOM · Embedded GUI
 
-**Directory listing facts:** Poly-Glot AI Workspace provides **15 MCP tools**, **38 languages**, and **1,022 templates**. Its nine built-in AI providers are **ChatGPT, Claude, Gemini, Grok, Perplexity, Copilot, Mistral, HuggingChat, and DuckDuckGo AI**. **Groq is not a built-in provider**. The server uses remote Streamable HTTP; tools include prompt discovery and building, AI comparison preparation, BYOM, audio transcription, translation, and localization. Glama and MCP.so should use these current facts instead of outdated seven-tool or 35-language summaries.
+**Directory listing facts:** Poly-Glot AI Workspace provides **15 MCP tools**, **38 languages**, and **1,022 templates**. Its eight built-in AI providers are **ChatGPT, Claude, Gemini, Grok, Perplexity, Mistral, HuggingChat, and DuckDuckGo AI**. **Groq is not a built-in provider**. The server uses remote Streamable HTTP; tools include prompt discovery and building, AI comparison preparation, BYOM, audio transcription, translation, and localization. Glama and MCP.so should use these current facts instead of outdated seven-tool or 35-language summaries.
 
 Remote MCP server with an embedded MCP Apps / ChatGPT Apps SDK GUI, server-side entitlements, Apple-backed subscriptions, and Bring Your Own Model (BYOM) support.
 
@@ -56,7 +56,7 @@ Fill and Send an entitled Poly-Glot template. **This is a Send action:** it star
 
 Prepare one canonical prompt for 2+ AI providers so the user can compare answers side-by-side. **This is a Send action:** it starts the 3-day free trial on first use. Compare Mode requires an active trial or Pro subscription. Does not call third-party models on the user's behalf.
 
-**Parameters:** `name` (string), `prompt` (string), `values` (object), `providers` (array of "chatgpt" | "claude" | "gemini" | "perplexity" | "grok" | "copilot" | "mistral" | "huggingchat" | "duckduckgo", min 2), `uiLanguage`, `inputLanguage`, `outputLanguage` · **Send action** · Consumes a send · Starts trial on first use
+**Parameters:** `name` (string), `prompt` (string), `values` (object), `providers` (array of "chatgpt" | "claude" | "gemini" | "perplexity" | "grok" | "mistral" | "huggingchat" | "duckduckgo", min 2), `uiLanguage`, `inputLanguage`, `outputLanguage` · **Send action** · Consumes a send · Starts trial on first use
 
 ### `get_custom_model_capabilities`
 
@@ -119,7 +119,7 @@ Try Poly-Glot free for 3 days. Your trial starts when you first Send and include
 
 - **1,022 prompt templates** — 25 designated Free, 997 designated Pro; all 1,022 are unlocked during the active trial
 - **38 languages** — independent UI, input, and output language controls
-- **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral, HuggingChat, and DuckDuckGo AI
+- **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Mistral, HuggingChat, and DuckDuckGo AI
 - **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted
 - **Embedded GUI** — interactive workspace widget in ChatGPT and MCP Apps-capable hosts
 - **Server-side entitlements** — Apple-backed subscription verification via Neon Postgres

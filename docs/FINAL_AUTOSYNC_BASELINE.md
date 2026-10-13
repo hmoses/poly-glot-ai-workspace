@@ -11,7 +11,7 @@
 | MCP target version | `1.11.0` |
 | Tools | 15 |
 | Languages | 38 |
-| Built-in AI providers | 9 |
+| Built-in AI providers | 8 |
 | Templates | 1,022 |
 | Trial | 3 days, begins on first qualifying Send |
 | Post-trial free send | 1 shared single-AI Send every rolling 24 hours |
@@ -31,7 +31,7 @@ Language/media: `transcribe_audio`, `detect_language`, `translate_text`, `locali
 
 ## Provider Parity
 
-Compare Mode accepts: ChatGPT, Claude, Gemini, Perplexity, Grok, Copilot, Mistral, HuggingChat, and DuckDuckGo AI.
+Compare Mode accepts: ChatGPT, Claude, Gemini, Perplexity, Grok, Mistral, HuggingChat, and DuckDuckGo AI.
 
 ## Rolling Free-Send Enforcement
 
