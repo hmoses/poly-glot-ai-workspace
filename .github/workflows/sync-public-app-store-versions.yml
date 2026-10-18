@@ -1,0 +1,44 @@
+name: Sync Public App Store Versions
+on:
+  schedule:
+    - cron: '11 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-app-store-version-sync
+  cancel-in-progress: false
+
+jobs:
+  public-release-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate release-state transitions
+        run: node --test scripts/test-public-app-versions.mjs
+      - name: Read Apple public-release states (not TestFlight builds)
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: node scripts/sync-public-app-versions.mjs
+      - name: Commit public version changes only
+        run: |
+          if git diff --quiet -- public-app-versions.json; then
+            echo "Public App Store versions have not changed."
+            exit 0
+          fi
+          git config user.name 'Poly-Glot release synchronizer'
+          git config user.email 'polyglot-release-sync@users.noreply.github.com'
+          git add public-app-versions.json
+          git commit -m 'chore: sync Apple public App Store versions'
+          git push origin HEAD:main

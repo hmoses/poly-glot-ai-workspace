@@ -3,10 +3,10 @@
   "version": "1.11.0",
   "private": true,
   "type": "module",
-  "description": "Poly-Glot AI Workspace MCP: 1,000+ prompts, Compare Mode, 38 languages, BYOM. 3-day full-access trial starts on first Send. Afterward: 1 free send every rolling 24 hours. Pro $9.99/month or $79.99/year.",
+  "description": "Poly-Glot AI Workspace MCP: subscription-gated prompts, Compare Mode, multilingual tools, and eligible Apple 3-day introductory subscription offers.",
   "scripts": {
     "start": "node server.js",
-    "check": "node --test scripts/test-widget-editor.mjs && node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js && node --check entitlement-service/server.js && node --check entitlement-service/db.js && node --check entitlement-service/auth.js && node --check entitlement-service/apple.js",
+    "check": "node --test scripts/test-widget-editor.mjs && node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js && node --check entitlement-service/server.js && node --check entitlement-service/db.js && node --check entitlement-service/auth.js && node --check entitlement-service/apple.js && node --test scripts/test-public-app-versions.mjs",
     "migrate": "node scripts/migrate-neon.mjs",
     "sync": "node scripts/sync-catalog.mjs",
     "test": "node --test scripts/test-pro-template-visibility.mjs && node scripts/test-resilience.mjs && node --test scripts/test-cross-platform.mjs && node --test scripts/test-mcp-anonymous-trial.mjs && npm run check"
