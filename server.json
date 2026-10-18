@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.hmoses/poly-glot-ai-workspace",
   "title": "Poly-Glot AI Workspace",
-  "description": "Poly-Glot AI Workspace MCP server: 15 tools, 1,022 prompt templates, 38 languages, and 8 built-in AI providers (ChatGPT, Claude, Gemini, Grok, Perplexity, Mistral, HuggingChat, DuckDuckGo AI). Search templates, build prompts, prepare AI comparisons, transcribe audio, translate and localize text, and connect custom AI endpoints with BYOM. Streamable HTTP MCP; Free and Pro access.",
+  "description": "15 MCP tools, 1,022 templates, 38 languages, 8 AI providers, Compare Mode and BYOM.",
   "version": "1.11.0",
   "repository": {
     "url": "https://github.com/hmoses/poly-glot-ai-workspace",
