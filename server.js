@@ -124,39 +124,19 @@ function compareAccess(entitlement) {
   return entitlement.isPro || entitlement.trialActive;
 }
 
-function trialActivationLocked(entitlement, localization, authenticated) {
-  // Anonymous users may browse the catalog, but a Send must be associated
-  // with a verified account and an actually persisted trial.
-  const message = authenticated
-    ? "Your free trial could not be activated right now. Please try again later. No prompt was sent and no subscription was started."
-    : "Sign in to Poly-Glot to start your 3-day free trial before sending. Browsing and viewing free templates do not require a subscription.";
+function trialActivationLocked(entitlement, localization, _authenticated) {
+  const message = "Subscription required. Start an eligible introductory offer by authorizing a purchase in the Apple app, or restore an existing subscription.";
   return {
-    structuredContent: {
-      view: "locked",
-      message,
-      entitlement: entitlementSummary(entitlement),
-      localization,
-    },
-    content: [{ type: "text", text: message }],
+    structuredContent: {view:"locked", message, entitlement:entitlementSummary(entitlement), localization},
+    content:[{type:"text",text:message}]
   };
 }
 
 function compareLocked(entitlement) {
-  const resetInfo = entitlement.nextResetAt ? ` Your next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
-  const message = `Compare Mode requires an active trial or Pro subscription. Poly-Glot Pro: $9.99/month or $79.99/year — unlocks Pro templates, Compare Mode, and unlimited sends.${resetInfo}`;
+  const message = "Compare Mode requires an active Poly-Glot subscription or valid introductory trial.";
   return {
-    structuredContent: {
-      view: "compare_locked",
-      message,
-      entitlement: entitlementSummary(entitlement),
-      upgrade: {
-        monthly: "$9.99/month",
-        annual: "$79.99/year",
-        message: "Upgrade to Poly-Glot Pro for Pro templates, Compare Mode, and unlimited sends.",
-        trialAutoConverts: false,
-      },
-    },
-    content: [{ type: "text", text: message }],
+    structuredContent: {view:"compare_locked", message, entitlement:entitlementSummary(entitlement)},
+    content:[{type:"text",text:message}]
   };
 }
 
@@ -206,7 +186,7 @@ const searchTemplates = ({ query = "", goal, plan, limit = 12, uiLanguage = "EN"
   return templates
     // Expired and unverified accounts see free catalog entries only.
     // Filter before scoring and localization to avoid exposing Pro metadata.
-    .filter((t) => t.plan === "free" || entitlement.isPro || entitlement.trialActive || entitlement.state === "not_started")
+    .filter(() => entitlement.isPro || entitlement.trialActive)
     .filter((t) => !goal || t.goal === goal)
     .filter((t) => !plan || t.plan === plan)
     .map((t, index) => {
@@ -252,30 +232,17 @@ const templateSchema = z.object({
   hasPrompt: z.boolean(), locked: z.boolean(), lockReason: z.string().nullable(),
 });
 
-function lockedResult(template, entitlement, uiLanguage = "EN") {
-  const resetInfo = entitlement.nextResetAt ? ` Next free send resets ${new Date(entitlement.nextResetAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}.` : "";
-  const reason = entitlement.isExpired
-    ? `Your 3-day trial has ended. You have 1 free single-AI send every rolling 24 hours using Ask Any AI or a free template.${resetInfo} Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year.`
-    : template.plan === "pro"
-    ? "This is a Pro template. Subscribe to Poly-Glot Pro ($9.99/month or $79.99/year) to unlock Pro templates, Compare Mode, and unlimited sends."
-    : "Your 3-day free trial starts when you first Send. Full access to all 1,000+ templates, Compare Mode, and unlimited sends during trial.";
+function lockedResult(_template, entitlement, _uiLanguage = "EN") {
+  const message = "Subscription required. Start an eligible 3-day Apple introductory trial by authorizing the subscription in the app, or restore an existing purchase.";
   return {
     structuredContent: {
       view: "locked",
-      // Never reveal premium names, descriptions, fields or stable IDs post-trial.
-      template: !entitlement.isPro && !entitlement.trialActive && entitlement.state !== "not_started" && template.plan === "pro"
-        ? { id: "", name: "Pro template", description: "Subscribe to access premium templates.", goal: "", plan: "pro", fields: [], hasPrompt: false, locked: true, lockReason: "trial_expired" }
-        : publicTemplate(template, entitlement, uiLanguage),
+      template: {id:"",name:"Subscription required",description:"",goal:"",plan:"pro",fields:[],hasPrompt:false,locked:true,lockReason:"subscription_required"},
       entitlement: entitlementSummary(entitlement),
-      message: reason,
-      upgrade: {
-        monthly: "$9.99/month",
-        annual: "$79.99/year",
-        message: "Upgrade to Poly-Glot Pro for Pro templates, Compare Mode, and unlimited sends.",
-        trialAutoConverts: false,
-      },
+      message,
+      upgrade: {monthly:"$9.99/month",annual:"$79.99/year",message:"Subscribe to unlock workspace access.",trialAutoConverts:null},
     },
-    content: [{ type: "text", text: reason }],
+    content:[{type:"text",text:message}],
   };
 }
 
@@ -356,7 +323,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "get_subscription_status", {
     title: "Get Poly-Glot subscription status",
-    description: "Read the current account's access state, trial timing, rolling 24-hour free-send allowance, Pro locks and subscription pricing. Use before gated tools or when asked about remaining access. This read-only operation does not initiate a trial or spend a send; the trial begins on the first qualifying Send.",
+    description: "Read the current account's access state, trial timing, subscription entitlement locks and subscription pricing. Use before gated tools or when asked about remaining access. This read-only operation does not initiate a trial or spend a send; the trial begins on the first qualifying Send.",
     _meta: UI_META,
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
@@ -366,39 +333,23 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     const entitlement = await getEntitlement(entitlementContext(extra));
     trackExpanded("get_subscription_status", extra, entitlement.state);
     const summary = entitlementSummary(entitlement);
-    // Map entitlement state to the canonical funnel status
-    let status;
-    if (entitlement.isPro) status = "pro";
-    else if (entitlement.trialActive) status = "trialActive";
-    else if (entitlement.isExpired) status = "free";
-    else status = "preTrial";
-
+    const status = entitlement.isPro ? "pro" : entitlement.trialActive ? "trialActive" : "subscriptionRequired";
     const enriched = {
-      ...summary,
-      status,
-      trialStarted: entitlement.state !== "not_started",
+      ...summary, status, trialStarted: entitlement.state !== "not_started",
       trialStart: entitlement.trialStartedAt || null,
       trialExpiresAt: entitlement.trialEndsAt || null,
       trialDays: 3,
-      dailyFreeRemaining: entitlement.isExpired ? (entitlement.dailyFreeRemaining ?? 0) : null,
+      dailyFreeRemaining: null,
       proTemplatesLocked: !(entitlement.isPro || entitlement.trialActive),
       unlimitedSends: entitlement.isPro || entitlement.trialActive,
-      monthlyPrice: "$9.99",
-      annualPrice: "$79.99",
-      trialAutoConverts: false,
-      purchaseRequired: true,
+      monthlyPrice: "$9.99", annualPrice: "$79.99",
+      trialAutoConverts: null, purchaseRequired: !entitlement.isPro && !entitlement.trialActive,
     };
-
-    let text = `Poly-Glot access: ${status}.`;
-    if (status === "preTrial") {
-      text += ` Your 3-day free trial starts when you first Send. Full access to all 1,000+ templates, Compare Mode, and unlimited sends during trial. The trial does not automatically convert to a paid subscription.`;
-    } else if (status === "trialActive") {
-      text += ` Trial active — all features unlocked (all templates, Compare Mode, BYOM, unlimited sends). Ends ${entitlement.trialEndsAt ? new Date(entitlement.trialEndsAt).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "in 3 days"}. The trial does not automatically convert to a paid subscription.`;
-    } else if (status === "free") {
-      text += ` Trial ended. You get 1 free single-AI send every rolling 24 hours using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year.`;
-    } else if (status === "pro") {
-      text += ` Pro subscriber — all features unlocked. Pro Monthly $9.99/month; Pro Annual $79.99/year.`;
-    }
+    let text = status === "subscriptionRequired"
+      ? "A verified Poly-Glot subscription is required. Restore your subscription or authorize an Apple subscription with an introductory trial if eligible."
+      : status === "trialActive"
+      ? "Your valid trial is active. You have full workspace access until its verified expiration."
+      : "Your subscription is active. All workspace features are available.";
     return {
       structuredContent: { view: "subscription", entitlement: enriched },
       content: [{ type: "text", text }],
@@ -407,7 +358,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "open_workspace", {
     title: "Open Poly-Glot AI Workspace",
-    description: "Open the embedded Poly-Glot prompt workspace and template browser, optionally prefiltered by a query and translated via uiLanguage. Returns free and locked Pro template cards after trial expiry, plus entitlement and localization. Browsing is read-only and does not start the trial or use a send.",
+    description: "Open the embedded Poly-Glot prompt workspace and template browser, optionally prefiltered by a query and translated via uiLanguage. Returns the unlocked template catalog only for verified subscribers or valid legacy trials, plus entitlement and localization. An unsubscribed account receives no catalog results. Browsing is read-only and cannot start an Apple subscription.",
     _meta: UI_META,
     inputSchema: { query: z.string().max(200).optional().default("").describe("Optional keyword or goal for template search, e.g. resume. Maximum 200 characters."), uiLanguage: z.string().max(80).optional().default("EN").describe("UI language name or code for template labels; defaults to EN.") },
     outputSchema: { view: z.literal("search"), query: z.string(), results: z.array(templateSchema), entitlement: entitlementSchema, localization: localizationSchema },

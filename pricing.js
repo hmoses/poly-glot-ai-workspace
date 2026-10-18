@@ -1,8 +1,8 @@
 export const PRICING = Object.freeze({
   currency: "USD",
   trialDays: 3,
-  freeTemplateCount: 25,
-  dailyFreeSends: 1,
+  freeTemplateCount: 0,
+  dailyFreeSends: 0,
   monthly: Object.freeze({
     id: "pro_monthly",
     label: "Pro Monthly",

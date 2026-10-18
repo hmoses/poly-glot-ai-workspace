@@ -108,16 +108,18 @@ Localize text for a target locale — adapts tone, units, date formats, and cult
 
 ## Pricing and access
 
-Try Poly-Glot free for 3 days. Your trial starts when you first Send and includes full access to 1,000+ templates, Compare Mode, and unlimited sends. After the trial, you get 1 free send every rolling 24 hours using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year. **The 3-day trial does not automatically convert to a paid subscription.**
+Poly-Glot offers approved Apple subscriptions with an eligible **3-day introductory free trial**. The user must explicitly authorize the subscription with Apple; a prior app-managed trial or first MCP Send never starts a paid subscription. If eligible, the subscription renews at the chosen regular price after the trial unless canceled in Apple subscription settings.
 
-- **3-day free trial** — starts on first Send. Full access to all 1,000+ templates, Compare Mode, unlimited sends, BYOM, and language tools.
-- **After trial** — 1 free send every rolling 24 hours using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends are locked.
-- **Pro Monthly** — $9.99/month for unlimited access.
-- **Pro Annual** — $79.99/year (Save 33%) for unlimited access.
+- **Eligible Apple introductory offer** — 3 days of full access after authorizing Pro Monthly or Pro Annual in the app; Apple determines eligibility.
+- **Existing, unexpired legacy app trial** — access continues until its previously established expiration. Its expiration alone cannot charge the user.
+- **Without a valid entitlement** — templates, Ask Any AI, Compare Mode, History, Export and other premium workspace functions are locked. Historical user data is preserved.
+- **Pro Monthly** — $9.99/month for full access, renewing unless canceled.
+- **Pro Annual** — $79.99/year for full access, renewing unless canceled.
+
 
 ## Features
 
-- **1,022 prompt templates** — 25 designated Free, 997 designated Pro; all 1,022 are unlocked during the active trial
+- **1,022 prompt templates** — historical catalog tags retained for compatibility; all templates now require an active entitlement
 - **38 languages** — independent UI, input, and output language controls
 - **Compare Mode** — same prompt across ChatGPT, Claude, Gemini, Perplexity, Grok, Mistral, HuggingChat, and DuckDuckGo AI
 - **Bring Your Own Model (BYOM)** — connect OpenAI-compatible or custom REST HTTPS endpoints; credentials transient, never persisted

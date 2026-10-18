@@ -1,5 +1,6 @@
 import { readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { createHash } from "node:crypto";
 import { tmpdir } from "node:os";
 
 const store = join(tmpdir(), `polyglot-entitlements-check-${process.pid}.json`);
@@ -8,54 +9,37 @@ process.env.POLYGLOT_MCP_USER_ID = `check-${process.pid}`;
 const { consumeDailyFreeSend, getEntitlement, startTrialIfNeeded, templateAccess } = await import(`../entitlements.js?check=${Date.now()}`);
 
 const before = await getEntitlement({});
-if (before.state !== "not_started" || !before.canUseFree || before.isPro) throw new Error("Expected not_started free access");
-const freeAccess = templateAccess({ plan: "free" }, before);
-const proAccess = templateAccess({ plan: "pro" }, before);
-if (!freeAccess.allowed || proAccess.allowed) throw new Error("Template plan gate is incorrect before trial");
+if (before.state !== "not_started" || before.canUseFree || before.isPro)
+  throw new Error("Unsubscribed users must have no workspace allowance.");
+if (templateAccess({plan:"free"},before).allowed || templateAccess({plan:"pro"},before).allowed)
+  throw new Error("All templates must be locked before subscription.");
 
 const trial = await startTrialIfNeeded({});
-if (trial.state !== "trial" || !trial.trialActive || !trial.trialEndsAt) throw new Error("Trial did not start");
-const durationHours = (Date.parse(trial.trialEndsAt) - Date.parse(trial.trialStartedAt)) / 3600000;
-if (Math.abs(durationHours - 72) > 0.01) throw new Error(`Expected 72-hour trial, got ${durationHours}`);
-
-// Force the local test account into post-trial free state, then verify one rolling free Send.
-const persisted = JSON.parse(readFileSync(store, "utf8"));
-const userKey = Object.keys(persisted.users)[0];
-if (!userKey) throw new Error("Expected persisted local entitlement user");
-persisted.users[userKey].state = "expired";
-persisted.users[userKey].trialEndsAt = new Date(Date.now() - 1000).toISOString();
-persisted.users[userKey].lastFreeSendAt = null;
-writeFileSync(store, JSON.stringify(persisted, null, 2) + "\n", "utf8");
-
-const freeState = await getEntitlement({});
-if (!freeState.isExpired || freeState.dailyFreeRemaining !== 1 || freeState.nextResetAt !== null) {
-  throw new Error("Expected one post-trial free Send to be immediately available");
-}
+if (trial.state !== "not_started" || trial.trialActive)
+  throw new Error("An MCP request must not start a paid Apple intro offer.");
 
 const firstFree = await consumeDailyFreeSend({});
-if (!firstFree.allowed || firstFree.entitlement.dailyFreeRemaining !== 0 || !firstFree.entitlement.nextResetAt) {
-  throw new Error("First rolling free Send was not consumed correctly");
-}
+if (firstFree.allowed) throw new Error("Free Sends must be denied without an entitlement.");
 
-const secondFree = await consumeDailyFreeSend({});
-if (secondFree.allowed || secondFree.entitlement.dailyFreeRemaining !== 0) {
-  throw new Error("Second free Send inside the rolling 24-hour window should be blocked");
-}
+const accountKey = "local:" + createHash("sha256").update(process.env.POLYGLOT_MCP_USER_ID).digest("hex");
+writeFileSync(store, JSON.stringify({users:{[accountKey]:{
+  state:"trial",trialStartedAt:new Date(Date.now()-86400000).toISOString(),
+  trialEndsAt:new Date(Date.now()+86400000).toISOString()
+}}}));
+const trialCheck = await getEntitlement({});
+if (!trialCheck.trialActive || !templateAccess({plan:"free"},trialCheck).allowed
+  || !templateAccess({plan:"pro"},trialCheck).allowed)
+  throw new Error("Valid existing trials must retain all functionality.");
 
-const resetMs = Date.parse(firstFree.entitlement.nextResetAt) - Date.parse(firstFree.entitlement.lastFreeSendAt);
-if (Math.abs(resetMs - 24 * 60 * 60 * 1000) > 1000) {
-  throw new Error(`Expected rolling 24-hour reset, got ${resetMs}ms`);
-}
+writeFileSync(store,JSON.stringify({users:{[accountKey]:{state:"pro_monthly"}}}));
+const paid = await getEntitlement({});
+if (!paid.isPro || !templateAccess({plan:"pro"},paid).allowed)
+  throw new Error("Verified paid accounts must retain full access.");
+
 
 console.log(JSON.stringify({
-  before: before.state,
-  afterFirstUse: trial.state,
-  trialHours: durationHours,
-  freeAllowed: freeAccess.allowed,
-  proLocked: !proAccess.allowed,
-  postTrialFreeRemainingBeforeSend: freeState.dailyFreeRemaining,
-  firstFreeSendAllowed: firstFree.allowed,
-  secondFreeSendBlocked: !secondFree.allowed,
-  rollingResetHours: resetMs / 3600000,
-}, null, 2));
-rmSync(store, { force: true });
+  preSubscription: before.state, firstSendTrialDenied: trial.state==="not_started",
+  noFreeSend: !firstFree.allowed, validTrialUnblocked: trialCheck.trialActive,
+  validSubscriberUnblocked: paid.isPro, pricingNoFreeTier: true
+},null,2));
+rmSync(store,{force:true});

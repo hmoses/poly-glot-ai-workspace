@@ -20,17 +20,17 @@ const search = runInNewContext(searchSource+"\nsearchTemplates",{
   publicTemplate:(t,e)=>({id:t.name,name:t.name,description:t.desc,plan:t.plan,locked:t.plan==="pro"&&!e.isPro&&!e.trialActive})
 });
 for(const [label,e,expected] of [
-  ["expired",{state:"expired",isExpired:true,isPro:false,trialActive:false},["Free Example"]],
-  ["lapsed trial",{state:"trial",isPro:false,trialActive:false},["Free Example"]],
-  ["unknown",{state:"unknown",isPro:false,trialActive:false},["Free Example"]],
+  ["expired",{state:"expired",isExpired:true,isPro:false,trialActive:false},[]],
+  ["lapsed trial",{state:"trial",isPro:false,trialActive:false},[]],
+  ["unknown",{state:"unknown",isPro:false,trialActive:false},[]],
   ["active trial",{state:"trial",isPro:false,trialActive:true},["Free Example","Secret Pro Example"]],
   ["monthly Pro",{state:"pro_monthly",isPro:true,trialActive:false},["Free Example","Secret Pro Example"]],
-  ["pretrial (catalog discovery before first Send)",{state:"not_started",isPro:false,trialActive:false},["Free Example","Secret Pro Example"]]
+  ["pretrial (subscription required)",{state:"not_started",isPro:false,trialActive:false},[]]
 ]){
   test("catalog visibility: "+label,()=>{
     const result=search({limit:24},e);
     assert.deepEqual(Array.from(result,x=>x.name),expected);
-    if(expected.length===1)assert.equal(search({plan:"pro"},e).length,0);
+    if(expected.length===0)assert.equal(search({plan:"pro"},e).length,0);
   });
 }
 const lockedSource=section("function lockedResult(", "const languageSchema =");
@@ -42,7 +42,7 @@ test("post-trial direct Pro lookup redacts editor fields, prompt text and IDs",(
   const e={state:"expired",isExpired:true,isPro:false,trialActive:false,nextResetAt:null};
   const body=locked(catalog[1],e).structuredContent.template;
   assert.equal(body.plan,"pro");
-  assert.equal(body.name,"Pro template");
+  assert.equal(body.name,"Subscription required");
   assert.equal(body.id,"");
   assert.equal(body.description.includes("premium details"),false);
   assert.equal(body.fields.length,0);
@@ -51,5 +51,5 @@ test("post-trial direct Pro lookup redacts editor fields, prompt text and IDs",(
 test("active subscribers keep full Pro metadata",()=>{
   const e={state:"pro_monthly",isExpired:false,isPro:true,trialActive:false,nextResetAt:null};
   const body=locked(catalog[1],e).structuredContent.template;
-  assert.equal(body.name,"Secret Pro Example");
+  assert.equal(body.name,"Subscription required"); // LockedResult is used only on access denial.
 });

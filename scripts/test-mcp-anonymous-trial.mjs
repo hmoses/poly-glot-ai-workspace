@@ -12,10 +12,11 @@ import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 // does not require a real Neon secret in CI. Any unexpected DB query fails closed.
 process.env.DATABASE_URL ||= "postgresql://ci:ci@127.0.0.1:1/polyglot_test";
 process.env.NODE_ENV = "production";
+process.env.NEON_FUNCTION = "1"; // Tests use in-memory transport, not a live HTTP listener.
 process.env.POLYGLOT_ENTITLEMENT_ENDPOINT = "https://entitlements.example.test/v1/entitlements/me";
 delete process.env.POLYGLOT_TRIAL_START_ENDPOINT; // Test derived fallback URL.
 
-const { createPolyglotServer } = await import("../server.js");
+const { createPolyglotServer, templates } = await import("../server.js");
 
 let accountState = "not_started";
 let trialStartedAt = null;
@@ -66,12 +67,11 @@ test("anonymous clients can browse but cannot Send or start a trial", async () =
     assert.equal(languages.structuredContent?.view, "languages");
     const catalog = await send(client, "search_templates", { plan: "free", limit: 24 });
     assert.equal(catalog.structuredContent?.view, "search");
-    const freeTemplate = catalog.structuredContent.results.find(t => t.plan === "free");
-    assert.ok(freeTemplate, "test requires at least one free template");
-    const prompt = await send(client, "build_prompt", { name: freeTemplate.id, values: {} });
+    assert.equal(catalog.structuredContent.results.length, 0, "Unauthenticated catalog is locked");
+    const prompt = await send(client, "build_prompt", { name: templates[0].name, values: {} });
     assert.equal(prompt.structuredContent?.view, "locked");
     assert.equal(prompt.structuredContent?.prompt, undefined);
-    assert.match(prompt.structuredContent.message, /sign in/i);
+    assert.match(prompt.structuredContent.message, /subscription/i);
     const compare = await send(client, "prepare_compare", { prompt: "Hello", providers: ["chatgpt", "claude"] });
     assert.equal(compare.structuredContent?.view, "locked");
     assert.equal(compare.structuredContent?.prompt, undefined);
@@ -85,22 +85,20 @@ test("anonymous clients can browse but cannot Send or start a trial", async () =
   } finally { await client.close(); await server.close(); }
 });
 
-test("authenticated first Send starts a persisted trial and unlocks the prompt", async () => {
-  accountState = "not_started";
-  posts = 0;
-  lookups = 0;
-  const { client, server } = await connect("valid-test-token");
+test("authenticated but unsubscribed clients cannot self-activate a trial", async () => {
+  accountState = "not_started"; posts = 0; lookups = 0;
+  const {client,server} = await connect("valid-test-token");
   try {
-    const catalog = await send(client, "search_templates", { plan: "free", limit: 24 });
-    const freeTemplate = catalog.structuredContent.results.find(t => t.plan === "free");
-    assert.ok(freeTemplate);
-    const prompt = await send(client, "build_prompt", { name: freeTemplate.id, values: {} });
-    assert.equal(prompt.structuredContent?.view, "prompt");
-    assert.equal(prompt.structuredContent?.entitlement?.trialActive, true);
-    assert.equal(posts, 1, "trial start should be persisted exactly once");
-    assert.ok(lookups >= 2, "account state must be checked again after trial activation");
-    const status = await send(client, "get_subscription_status");
-    assert.equal(status.structuredContent?.entitlement?.trialActive, true);
+    const catalog = await send(client, "search_templates", {plan:"free"});
+    assert.equal(catalog.structuredContent.results.length,0);
+    const prompt = await send(client, "build_prompt", {name:templates[0].name,values:{}});
+    assert.equal(prompt.structuredContent.view,"locked");
+    assert.equal(prompt.structuredContent.prompt,undefined);
+    assert.equal(posts,0,"MCP must not start an Apple subscription or app-managed trial");
+    accountState="pro_monthly";
+    const unlocked = await send(client, "build_prompt", {name:templates[0].name,values:{}});
+    assert.equal(unlocked.structuredContent.view,"prompt");
+    assert.equal(posts,0);
   } finally { await client.close(); await server.close(); }
 });
 

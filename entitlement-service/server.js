@@ -90,21 +90,13 @@ export async function handleEntitlementRequest(req, res) {
     }
 
     if (req.method === "POST" && url.pathname === "/v1/trials/start") {
-      const subject = await verifyMcpUser(req);
-      await startTrial(subject, TRIAL_DAYS);
-      return json(res, 200, await entitlementJson(subject));
+      await verifyMcpUser(req);
+      return json(res, 403, {error:"apple_subscription_required"});
     }
 
     if (req.method === "POST" && url.pathname === "/v1/free-send/consume") {
-      const subject = await verifyMcpUser(req);
-      const result = await consumeFreeSend(subject);
-      const last = result.lastFreeSendAt ? new Date(result.lastFreeSendAt) : null;
-      const nextResetAt = last ? new Date(last.getTime() + 24 * 60 * 60 * 1000).toISOString() : null;
-      return json(res, result.allowed ? 200 : 429, {
-        allowed: result.allowed,
-        lastFreeSendAt: last?.toISOString?.() || result.lastFreeSendAt || null,
-        nextResetAt,
-      });
+      await verifyMcpUser(req);
+      return json(res, 403, {error:"subscription_required"});
     }
 
     if (req.method === "POST" && url.pathname === "/v1/apple/sync") {
@@ -171,21 +163,13 @@ export async function handleEntitlementRequestWeb(request) {
     }
 
     if (request.method === "POST" && url.pathname === "/v1/trials/start") {
-      const subject = await verifyMcpUser(request);
-      await startTrial(subject, TRIAL_DAYS);
-      return webJson(200, await entitlementJson(subject));
+      await verifyMcpUser(request);
+      return webJson(403, {error:"apple_subscription_required"});
     }
 
     if (request.method === "POST" && url.pathname === "/v1/free-send/consume") {
-      const subject = await verifyMcpUser(request);
-      const result = await consumeFreeSend(subject);
-      const last = result.lastFreeSendAt ? new Date(result.lastFreeSendAt) : null;
-      const nextResetAt = last ? new Date(last.getTime() + 24 * 60 * 60 * 1000).toISOString() : null;
-      return webJson(result.allowed ? 200 : 429, {
-        allowed: result.allowed,
-        lastFreeSendAt: last?.toISOString?.() || result.lastFreeSendAt || null,
-        nextResetAt,
-      });
+      await verifyMcpUser(request);
+      return webJson(403, {error:"subscription_required"});
     }
 
     if (request.method === "POST" && url.pathname === "/v1/apple/sync") {

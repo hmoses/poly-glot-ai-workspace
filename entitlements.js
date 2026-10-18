@@ -12,10 +12,12 @@
  * The local JSON store exists only for development/testing and must never be a
  * production fallback. Fail closed when production verification is unavailable.
  *
- * ENTITLEMENT MODEL (v1.9):
- *   Trial (3 days) — ALL features free: every template (free + pro), Compare Mode, BYOM.
- *   Expired — FREE templates allowed; PRO templates lock. One single-AI free Send every rolling 24 hours. Compare Mode locked.
- *   Pro — Everything unlimited.
+ * SUBSCRIPTION-ONLY ENTITLEMENT MODEL:
+ *   Valid Apple subscription (including its introductory trial): full access.
+ *   Grandfathered, unexpired legacy app-managed trial: full access until expiry.
+ *   No verified entitlement or expired legacy trial: workspace locked, including
+ *   previously designated Free templates, History, Compare Mode and sends.
+ *   No permanent free-Send allowance or MCP-activated trial.
  */
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -115,17 +117,16 @@ export async function getEntitlement(extra) {
   const remote = await remoteEntitlement(extra);
   const base = remote || (PRODUCTION ? (() => { throw new Error("Production entitlement service unavailable"); })() : localEntitlement(extra));
   const isPro = base.state === ENTITLEMENT_STATES.PRO_MONTHLY || base.state === ENTITLEMENT_STATES.PRO_ANNUAL;
-  const trialActive = base.state === ENTITLEMENT_STATES.TRIAL && (!base.trialEndsAt || Date.now() < Date.parse(base.trialEndsAt));
+  // A missing/corrupt legacy expiration must never grant an unlimited trial.
+  const trialEndMs = Date.parse(base.trialEndsAt || "");
+  const trialActive = base.state === ENTITLEMENT_STATES.TRIAL && Number.isFinite(trialEndMs) && Date.now() < trialEndMs;
   const isExpired = base.state === ENTITLEMENT_STATES.EXPIRED;
-  // After trial expires, users get 1 free single-AI Send every rolling 24 hours (no Compare).
-  // canUseFree means the user can use the free single-AI Send path (rolling limit if expired).
-  const canUseFree = base.state === ENTITLEMENT_STATES.NOT_STARTED || trialActive || isPro || isExpired;
-  const dailyFreeLimit = isExpired ? PRICING.dailyFreeSends : null;
-  const nextResetAt = isExpired ? rollingResetAt(base.lastFreeSendAt) : null;
-  const freeWindowOpen = !isExpired || !base.lastFreeSendAt || !nextResetAt || Date.now() >= Date.parse(nextResetAt);
-  const dailyFreeRemaining = isExpired ? (freeWindowOpen ? PRICING.dailyFreeSends : 0) : null;
-  // Compare Mode: only Pro and active trial can use it
-  const compareLocked = !(isPro || trialActive);
+  // Verified subscriptions and grandfathered active trials only.
+  const canUseFree = isPro || trialActive;
+  const dailyFreeLimit = null;
+  const dailyFreeRemaining = null;
+  const nextResetAt = null;
+  const compareLocked = !canUseFree;
   return {
     ...base,
     isPro,
@@ -141,128 +142,25 @@ export async function getEntitlement(extra) {
   };
 }
 
+// Kept for API compatibility; daily free Sends are discontinued.
 export async function consumeDailyFreeSend(extra) {
-  const current = await getEntitlement(extra);
-  if (!current.isExpired) return { allowed: true, entitlement: current };
-
-  if (REMOTE_URL || PRODUCTION) {
-    if (!REMOTE_URL) throw new Error("POLYGLOT_ENTITLEMENT_ENDPOINT is required in production");
-    const configured = String(process.env.POLYGLOT_FREE_SEND_ENDPOINT || "").trim();
-    const endpoint = configured || REMOTE_URL.replace(/\/v1\/entitlements\/me\/?$/, "/v1/free-send/consume");
-    const token = authToken(extra);
-    if (!token) return { allowed: false, entitlement: current };
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { authorization: `Bearer ${token}`, accept: "application/json" },
-    });
-    const data = await response.json().catch(() => ({}));
-    if (response.ok && data.allowed) {
-      const entitlement = await getEntitlement(extra);
-      return { allowed: true, entitlement };
-    }
-    if (response.status === 429) {
-      return {
-        allowed: false,
-        entitlement: {
-          ...current,
-          lastFreeSendAt: data.lastFreeSendAt || current.lastFreeSendAt || null,
-          nextResetAt: data.nextResetAt || current.nextResetAt || null,
-          dailyFreeRemaining: 0,
-        },
-      };
-    }
-    throw new Error(`Free send service returned ${response.status}`);
-  }
-
-  const store = loadStore();
-  const key = subjectKey(extra);
-  const row = store.users[key] || { state: ENTITLEMENT_STATES.EXPIRED, trialStartedAt: null, trialEndsAt: null, lastFreeSendAt: null };
-  const resetAt = rollingResetAt(row.lastFreeSendAt);
-  if (row.lastFreeSendAt && resetAt && Date.now() < Date.parse(resetAt)) {
-    return { allowed: false, entitlement: await getEntitlement(extra) };
-  }
-  row.lastFreeSendAt = nowIso();
-  row.updatedAt = nowIso();
-  store.users[key] = row;
-  saveStore(store);
-  return { allowed: true, entitlement: await getEntitlement(extra) };
+  return {allowed: false, entitlement: await getEntitlement(extra)};
 }
 
+// A new introductory trial requires Apple purchase authorization.
+// Keep this entry point for existing MCP integrations but never grant access.
 export async function startTrialIfNeeded(extra) {
-  if (REMOTE_URL || PRODUCTION) {
-    if (!REMOTE_URL) throw new Error("POLYGLOT_ENTITLEMENT_ENDPOINT is required in production");
-    // Trial starts must be persisted by the production account/entitlement service.
-    // POST is intentionally opt-in so deployments can keep entitlement reads read-only.
-    const configured = String(process.env.POLYGLOT_TRIAL_START_ENDPOINT || "").trim();
-    // Same verified account service as /v1/entitlements/me. Use its trial
-    // endpoint when a separately configured URL is absent, like free sends.
-    const startUrl = configured || REMOTE_URL.replace(/\/v1\/entitlements\/me\/?$/, "/v1/trials/start");
-    if (startUrl === REMOTE_URL) return getEntitlement(extra);
-    const token = authToken(extra);
-    if (!token) return getEntitlement(extra);
-    const response = await fetch(startUrl, { method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json", accept: "application/json" }, body: JSON.stringify({ trialDays: PRICING.trialDays }) });
-    if (!response.ok) throw new Error(`Trial service returned ${response.status}`);
-    // Re-read the verified account state. normalizeRemote() alone does not
-    // calculate trialActive/isPro and previously caused a successful trial
-    // activation to remain locked in the MCP tool handlers.
-    return getEntitlement(extra);
-  }
-
-  const current = localEntitlement(extra);
-  if (current.state !== ENTITLEMENT_STATES.NOT_STARTED) return getEntitlement(extra);
-  const store = loadStore();
-  const key = subjectKey(extra);
-  const start = new Date();
-  const end = new Date(start.getTime() + PRICING.trialDays * MS_PER_DAY);
-  store.users[key] = { state: ENTITLEMENT_STATES.TRIAL, trialStartedAt: start.toISOString(), trialEndsAt: end.toISOString(), updatedAt: nowIso() };
-  saveStore(store);
   return getEntitlement(extra);
 }
 
-/**
- * Template access for the new entitlement model (v1.9, amended 2026-09-22):
- *   Trial — ALL templates allowed (free + pro). Full access.
- *   Expired — FREE templates allowed; PRO templates locked. Ask Any AI = 1/day, single AI. Compare locked.
- *             The daily Ask Any AI send is handled at the send layer, not template access.
- *   Pro — Everything allowed.
- *   Not started — Free templates allowed (triggers trial on first use).
- */
-export function templateAccess(template, entitlement) {
-  // Pro: always allowed
-  if (entitlement.isPro) return { allowed: true, locked: false, reason: null };
-
-  // Active trial: ALL templates allowed (free + pro)
-  if (entitlement.trialActive) return { allowed: true, locked: false, reason: null };
-
-  // Not started (pre-trial): free templates allowed. Trial starts on first Send (build_prompt/prepare_compare).
-  if (entitlement.state === ENTITLEMENT_STATES.NOT_STARTED) {
-    if (template.plan === "free") return { allowed: true, locked: false, reason: null };
-    return { allowed: false, locked: true, reason: "pro_required" };
-  }
-
-  // Expired: FREE templates allowed; PRO templates locked. Ask Any AI daily send handled separately.
-  if (entitlement.isExpired) {
-    if (template.plan === "free") {
-      return {
-        allowed: true, locked: false, reason: null,
-        dailyLimited: true,
-        dailyFreeLimit: entitlement.dailyFreeLimit,
-        nextResetAt: entitlement.nextResetAt,
-      };
-    }
-    return {
-      allowed: false,
-      locked: true,
-      reason: "trial_expired",
-      dailyLimited: true,
-      dailyFreeLimit: entitlement.dailyFreeLimit,
-      nextResetAt: entitlement.nextResetAt,
-      message: `Your trial has ended. Free templates remain available, plus 1 free single-AI Send every rolling 24 hours. Subscribe to Pro for Pro templates, Compare Mode, and unlimited access.`,
-    };
-  }
-
-  // Fallback: unknown/missing tier — fail closed
-  return { allowed: false, locked: true, reason: "subscription_required" };
+/** Full workspace access requires a verified subscription or a legacy trial
+ * that has not expired. No free templates or daily Sends remain. */
+export function templateAccess(_template, entitlement) {
+  if (entitlement.isPro || entitlement.trialActive)
+    return {allowed: true, locked: false, reason: null};
+  return {allowed: false, locked: true,
+    reason: entitlement.isExpired ? "trial_expired" : "subscription_required",
+    message: "A valid Poly-Glot subscription is required."};
 }
 
 export function entitlementSummary(entitlement) {
@@ -280,7 +178,7 @@ export function entitlementSummary(entitlement) {
     compareLocked: entitlement.compareLocked,
     nextResetAt: entitlement.nextResetAt,
     pricing,
-    trialAutoConverts: false,
+    trialAutoConverts: null,
     purchaseRequired: true,
   };
 }
