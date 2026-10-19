@@ -66,7 +66,17 @@ export function signedEnvironment(signedPayload) {
   } catch {
     throw Object.assign(new Error("Malformed Apple signed payload"), {statusCode: 400});
   }
-  const environmentHint = decoded.environment || decoded.data?.environment;
+  // Notification V2 can carry data, summary, appData or an external
+  // purchase token. All are signature-verified before any result is used.
+  const externalId = decoded.externalPurchaseToken?.externalPurchaseId;
+  const environmentHint = decoded.environment ||
+    decoded.data?.environment ||
+    decoded.summary?.environment ||
+    decoded.appData?.environment ||
+    (decoded.externalPurchaseToken
+      ? (typeof externalId === "string" && externalId.startsWith("SANDBOX")
+          ? Environment.SANDBOX : Environment.PRODUCTION)
+      : undefined);
   if (!supportedEnvironments.includes(environmentHint)) {
     throw Object.assign(new Error("Unsupported Apple signed environment"), {statusCode: 400});
   }
