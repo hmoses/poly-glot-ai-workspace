@@ -1,5 +1,7 @@
 # Parity Current State — Poly-Glot AI Workspace
 
+> **Historical snapshot, superseded October 19, 2026.** This page records the former first-Send / rolling-24-hour free-tier assumptions. Do not use it to determine current billing, StoreKit behavior, MCP tool access, or Apple build status. Current contract: [CURRENT_ENTITLEMENT_MAP.md](CURRENT_ENTITLEMENT_MAP.md) and `config/polyglot-capabilities.json`. Apple-authorized subscriptions are required for new introductory offers; no continuing free Sends.
+
 > Source synchronized: 2026-10-07 | parityVersion: 2026-10-06.1 | iOS 1.1.4 (827) | macOS 3.4 (812)
 
 ## Four-Surface Parity Matrix
