@@ -1,5 +1,7 @@
 # Poly-Glot MCP Distribution and Tool Surface
 
+> **Historical directory snapshot (October 9, 2026).** Source-of-truth current contract: 15 tools, 38 languages, **8** built-in AI providers, zero continuing free Sends; eligible trial requires Apple subscription authorization. Neon reported MCP deployment 62 and entitlement deployment 10 active on October 19. MCP.so/Glama owner-controlled descriptions may still be stale, and directory page changes remain unverified.
+
 Verified: 2026-10-09. This is a point-in-time check. A directory displaying all 15 tools does not imply its manually maintained overview is current.
 
 ## Canonical inventory (15 tools)
