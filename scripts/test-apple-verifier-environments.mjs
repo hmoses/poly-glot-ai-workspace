@@ -28,6 +28,10 @@ test("environment selectors accept only production and Apple sandbox", () => {
   assert.equal(signedEnvironment(token({environment:"Production"})), "Production");
   assert.equal(signedEnvironment(token({environment:"Sandbox"})), "Sandbox");
   assert.equal(signedEnvironment(token({data:{environment:"Sandbox"}})), "Sandbox");
+  assert.equal(signedEnvironment(token({appData:{environment:"Sandbox"}})), "Sandbox");
+  assert.equal(signedEnvironment(token({summary:{environment:"Production"}})), "Production");
+  assert.equal(signedEnvironment(token({externalPurchaseToken:{externalPurchaseId:"SANDBOX.TEST"}})), "Sandbox");
+  assert.equal(signedEnvironment(token({externalPurchaseToken:{externalPurchaseId:"PROD.TEST"}})), "Production");
   for (const environment of ["Xcode", "LocalTesting", "development", "", "Prod", null]) {
     assert.throws(() => signedEnvironment(token({environment})), /Unsupported Apple signed environment/);
   }
