@@ -18,7 +18,7 @@
     "@apple/app-store-server-library": "^2.0.0",
     "@modelcontextprotocol/ext-apps": "^1.0.1",
     "@modelcontextprotocol/sdk": "^1.20.2",
-    "jose": "^6.0.0",
+    "jose": "^6.2.12",
     "pg": "^8.16.0",
     "zod": "^3.25.76"
   }
