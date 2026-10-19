@@ -139,8 +139,49 @@ export default {
     const url = new URL(request.url);
 
     // CORS preflight
-    if (request.method === "OPTIONS" && (url.pathname === MCP_PATH || url.pathname === "/api/markdown/format" || url.pathname === "/" || url.pathname === "/v1/metrics/public")) {
+    if (request.method === "OPTIONS" && (url.pathname === MCP_PATH || url.pathname === "/api/markdown/format" || url.pathname === "/" || url.pathname === "/v1/metrics/public" || url.pathname.startsWith("/.well-known/"))) {
       return new Response(null, { status: 204, headers: CORS_HEADERS });
+    }
+
+    // ── OAuth Protected Resource Metadata (RFC 9728) ────────────────
+    if (request.method === "GET" && (url.pathname === "/.well-known/oauth-protected-resource" || url.pathname === "/.well-known/oauth-protected-resource/mcp")) {
+      const mcpResource = url.origin || "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech";
+      const entitlementsBase = process.env.POLYGLOT_ENTITLEMENTS_PUBLIC_URL || "https://br-steep-leaf-ae2o29qz-entitlements.compute.c-2.us-east-2.aws.neon.tech";
+      return Response.json({
+        resource: mcpResource,
+        authorization_servers: [entitlementsBase],
+        scopes_supported: ["mcp:read", "mcp:write", "offline_access"],
+        bearer_methods_supported: ["header"],
+        resource_documentation: "https://poly-glot.ai",
+      }, { headers: { ...CORS_HEADERS, "cache-control": "public, max-age=3600" } });
+    }
+
+    // ── OAuth Authorization Server Metadata (proxy from entitlements) ─
+    if (request.method === "GET" && url.pathname === "/.well-known/oauth-authorization-server") {
+      const entitlementsBase = (process.env.POLYGLOT_ENTITLEMENTS_PUBLIC_URL || "https://br-steep-leaf-ae2o29qz-entitlements.compute.c-2.us-east-2.aws.neon.tech").replace(/\/$/, "");
+      try {
+        const asResp = await fetch(`${entitlementsBase}/.well-known/oauth-authorization-server`, {
+          signal: AbortSignal.timeout(10000),
+        });
+        if (asResp.ok) {
+          const metadata = await asResp.json();
+          return Response.json(metadata, { headers: { ...CORS_HEADERS, "cache-control": "public, max-age=3600" } });
+        }
+      } catch { /* fall through */ }
+      // Construct metadata if entitlements service unavailable
+      return Response.json({
+        issuer: entitlementsBase,
+        authorization_endpoint: `${entitlementsBase}/oauth/authorize`,
+        token_endpoint: `${entitlementsBase}/oauth/token`,
+        registration_endpoint: `${entitlementsBase}/oauth/register`,
+        revocation_endpoint: `${entitlementsBase}/oauth/revoke`,
+        jwks_uri: `${entitlementsBase}/oauth/jwks`,
+        response_types_supported: ["code"],
+        grant_types_supported: ["authorization_code", "refresh_token"],
+        code_challenge_methods_supported: ["S256"],
+        token_endpoint_auth_methods_supported: ["none"],
+        scopes_supported: ["mcp:read", "mcp:write", "offline_access"],
+      }, { headers: { ...CORS_HEADERS, "cache-control": "public, max-age=3600" } });
     }
 
     // ── Markdown Format API (Gemini-powered, free) ──────────────────

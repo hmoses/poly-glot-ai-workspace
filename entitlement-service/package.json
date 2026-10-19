@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "check": "node --check server.js && node --check apple.js && node --check auth.js && node --check db.js"
+    "check": "node --check server.js && node --check apple.js && node --check auth.js && node --check db.js && node --check oauth.js && node --check oauth-store.js"
   },
   "engines": { "node": ">=20" },
   "dependencies": {

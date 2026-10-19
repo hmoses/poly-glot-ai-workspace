@@ -16,6 +16,17 @@ import { fileURLToPath } from "node:url";
 import { verifyAppleIdentityToken, verifyMcpUser } from "./auth.js";
 import { transactionFromNotification, verifyNotification, verifyTransaction } from "./apple.js";
 import { entitlementForSubject, linkTransactionToSubject, subjectForTransaction, upsertTransaction } from "./db.js";
+import {
+  authorizationServerMetadata,
+  jwksEndpoint,
+  authorizePageHtml,
+  handleAuthorize,
+  handleAppleCallback,
+  handleToken,
+  handleRevoke,
+  handleRegister,
+  protectedResourceMetadata,
+} from "./oauth.js";
 
 const MONTHLY_IDS = new Set((process.env.POLYGLOT_MONTHLY_PRODUCT_IDS || "ai.polyglot.promptstudio.mac.subscription.monthly,ai.polyglot.workspace.pro.monthly").split(",").map(s => s.trim()).filter(Boolean));
 const ANNUAL_IDS = new Set((process.env.POLYGLOT_ANNUAL_PRODUCT_IDS || "ai.polyglot.mac.pro.annual.2704,ai.polyglot.workspace.pro.annual").split(",").map(s => s.trim()).filter(Boolean));
@@ -40,7 +51,12 @@ async function body(req) {
   const parts = [];
   for await (const chunk of req) parts.push(chunk);
   if (!parts.length) return {};
-  return JSON.parse(Buffer.concat(parts).toString("utf8"));
+  const raw = Buffer.concat(parts).toString("utf8");
+  const ct = String(typeof req.headers?.get === "function" ? req.headers.get("content-type") : req.headers?.["content-type"] || "");
+  if (ct.includes("application/x-www-form-urlencoded")) {
+    return Object.fromEntries(new URLSearchParams(raw));
+  }
+  return JSON.parse(raw);
 }
 
 function json(res, status, value) {
@@ -130,12 +146,84 @@ export async function handleEntitlementRequest(req, res) {
       return json(res, 200, { ok: true });
     }
 
+    // ── OAuth 2.1 Authorization Server routes ──────────────────────
+    if (req.method === "GET" && url.pathname === "/.well-known/oauth-authorization-server") {
+      return json(res, 200, authorizationServerMetadata());
+    }
+    if (req.method === "GET" && url.pathname === "/.well-known/oauth-protected-resource") {
+      return json(res, 200, protectedResourceMetadata());
+    }
+    if (req.method === "GET" && url.pathname === "/oauth/jwks") {
+      return json(res, 200, await jwksEndpoint());
+    }
+    if (req.method === "GET" && url.pathname === "/oauth/authorize") {
+      const params = Object.fromEntries(url.searchParams.entries());
+      const html = authorizePageHtml(params);
+      res.writeHead(200, { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" });
+      return res.end(html);
+    }
+    if (req.method === "POST" && url.pathname === "/oauth/authorize") {
+      const payload = await body(req);
+      // Handle URL-encoded form data from browser
+      const formData = typeof payload === "string"
+        ? Object.fromEntries(new URLSearchParams(payload))
+        : payload;
+      const result = await handleAuthorize(formData);
+      if (result.redirect) {
+        res.writeHead(302, { location: result.redirect, "cache-control": "no-store" });
+        return res.end();
+      }
+      return json(res, 200, result);
+    }
+    if (req.method === "POST" && url.pathname === "/oauth/apple-callback") {
+      const payload = await body(req);
+      const formData = typeof payload === "string"
+        ? Object.fromEntries(new URLSearchParams(payload))
+        : payload;
+      const result = await handleAppleCallback(formData);
+      if (result.redirect) {
+        res.writeHead(302, { location: result.redirect, "cache-control": "no-store" });
+        return res.end();
+      }
+      return json(res, 200, result);
+    }
+    if (req.method === "POST" && url.pathname === "/oauth/token") {
+      const payload = await body(req);
+      return json(res, 200, await handleToken(payload));
+    }
+    if (req.method === "POST" && url.pathname === "/oauth/revoke") {
+      const payload = await body(req);
+      handleRevoke(payload);
+      return json(res, 200, {});
+    }
+    if (req.method === "POST" && url.pathname === "/oauth/register") {
+      const payload = await body(req);
+      return json(res, 201, handleRegister(payload));
+    }
+
     return json(res, 404, { error: "not_found" });
   } catch (error) {
     console.error("Entitlement request failed", error);
-    return json(res, error.statusCode || 500, {
-      error: error.statusCode === 401 ? "unauthorized" : "request_failed",
-    });
+    if (error.statusCode === 401) {
+      const resourceMetadata = `${(process.env.POLYGLOT_ENTITLEMENTS_PUBLIC_URL || "https://br-steep-leaf-ae2o29qz-entitlements.compute.c-2.us-east-2.aws.neon.tech").replace(/\/$/, "")}/.well-known/oauth-protected-resource`;
+      res.writeHead(401, {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "no-store",
+        "www-authenticate": `Bearer resource_metadata="${resourceMetadata}"`,
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "authorization, content-type",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+      });
+      return res.end(JSON.stringify({ error: "unauthorized" }));
+    }
+    if (error.error) {
+      // OAuth-specific error (invalid_grant, invalid_client, etc.)
+      return json(res, error.statusCode || 400, {
+        error: error.error,
+        error_description: error.error_description,
+      });
+    }
+    return json(res, error.statusCode || 500, { error: "request_failed" });
   }
 }
 
@@ -201,10 +289,100 @@ export async function handleEntitlementRequestWeb(request) {
       return webJson(200, { ok: true });
     }
 
+    // ── OAuth 2.1 Authorization Server routes ──────────────────────
+    if (request.method === "GET" && url.pathname === "/.well-known/oauth-authorization-server") {
+      return webJson(200, authorizationServerMetadata());
+    }
+    if (request.method === "GET" && url.pathname === "/.well-known/oauth-protected-resource") {
+      return webJson(200, protectedResourceMetadata());
+    }
+    if (request.method === "GET" && url.pathname === "/oauth/jwks") {
+      return webJson(200, await jwksEndpoint());
+    }
+    if (request.method === "GET" && url.pathname === "/oauth/authorize") {
+      const params = Object.fromEntries(url.searchParams.entries());
+      const html = authorizePageHtml(params);
+      return new Response(html, {
+        status: 200,
+        headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store",
+                    "access-control-allow-origin": "*" },
+      });
+    }
+    if (request.method === "POST" && url.pathname === "/oauth/authorize") {
+      const ct = request.headers.get("content-type") || "";
+      let formData;
+      if (ct.includes("application/x-www-form-urlencoded")) {
+        const text = await request.text();
+        formData = Object.fromEntries(new URLSearchParams(text));
+      } else {
+        formData = await request.json();
+      }
+      const result = await handleAuthorize(formData);
+      if (result.redirect) {
+        return new Response(null, { status: 302, headers: { location: result.redirect, "cache-control": "no-store" } });
+      }
+      return webJson(200, result);
+    }
+    if (request.method === "POST" && url.pathname === "/oauth/apple-callback") {
+      const ct = request.headers.get("content-type") || "";
+      let formData;
+      if (ct.includes("application/x-www-form-urlencoded")) {
+        const text = await request.text();
+        formData = Object.fromEntries(new URLSearchParams(text));
+      } else {
+        formData = await request.json();
+      }
+      const result = await handleAppleCallback(formData);
+      if (result.redirect) {
+        return new Response(null, { status: 302, headers: { location: result.redirect, "cache-control": "no-store" } });
+      }
+      return webJson(200, result);
+    }
+    if (request.method === "POST" && url.pathname === "/oauth/token") {
+      const ct = request.headers.get("content-type") || "";
+      let payload;
+      if (ct.includes("application/x-www-form-urlencoded")) {
+        const text = await request.text();
+        payload = Object.fromEntries(new URLSearchParams(text));
+      } else {
+        payload = await request.json();
+      }
+      return webJson(200, await handleToken(payload));
+    }
+    if (request.method === "POST" && url.pathname === "/oauth/revoke") {
+      const payload = await request.json().catch(() => ({}));
+      handleRevoke(payload);
+      return webJson(200, {});
+    }
+    if (request.method === "POST" && url.pathname === "/oauth/register") {
+      const payload = await request.json();
+      return webJson(201, handleRegister(payload));
+    }
+
     return webJson(404, { error: "not_found" });
   } catch (error) {
     console.error("Entitlement web request failed", error);
-    return webJson(error.statusCode || 500, { error: error.statusCode === 401 ? "unauthorized" : "request_failed" });
+    if (error.statusCode === 401) {
+      const resourceMetadata = `${(process.env.POLYGLOT_ENTITLEMENTS_PUBLIC_URL || "https://br-steep-leaf-ae2o29qz-entitlements.compute.c-2.us-east-2.aws.neon.tech").replace(/\/$/, "")}/.well-known/oauth-protected-resource`;
+      return new Response(JSON.stringify({ error: "unauthorized" }), {
+        status: 401,
+        headers: {
+          "content-type": "application/json; charset=utf-8",
+          "cache-control": "no-store",
+          "www-authenticate": `Bearer resource_metadata="${resourceMetadata}"`,
+          "access-control-allow-origin": "*",
+          "access-control-allow-headers": "authorization, content-type",
+          "access-control-allow-methods": "GET, POST, OPTIONS",
+        },
+      });
+    }
+    if (error.error) {
+      return webJson(error.statusCode || 400, {
+        error: error.error,
+        error_description: error.error_description,
+      });
+    }
+    return webJson(error.statusCode || 500, { error: "request_failed" });
   }
 }
 

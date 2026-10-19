@@ -845,7 +845,7 @@ const httpServer = createServer(async (req, res) => {
   if (url.pathname === "/v1/metrics/public") {
     return handleMetricsRequest(req, res);
   }
-  if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/")) {
+  if (url.pathname === "/healthz" || url.pathname.startsWith("/v1/") || url.pathname.startsWith("/.well-known/") || url.pathname.startsWith("/oauth/")) {
     return handleEntitlementRequest(req, res);
   }
 
