@@ -1,73 +1,45 @@
 # Current Entitlement Map — Poly-Glot AI Workspace
 
-> Refreshed against current source on 2026-10-07. Contract: `2026-10-06.1`.
+> Source reviewed October 19, 2026. This is a **source-level contract**, not certification of Apple purchase lifecycle or all 15 production tool states. Canonical manifests: `config/polyglot-capabilities.json` and `config/polyglot-product-parity.json`.
 
-## Entitlement States
+## Subscription and identity rules
 
-| State | Apple StoreKit | MCP Server (`pricing.js`) | Match |
-|-------|---------------|--------------------------|-------|
-| `not_started` | No transaction history | `ENTITLEMENT_STATES.NOT_STARTED` | ✅ |
-| `trial` | `offerType == .introductory` | `ENTITLEMENT_STATES.TRIAL` | ✅ |
-| `expired` | Transaction revoked / no current entitlement | `ENTITLEMENT_STATES.EXPIRED` | ✅ |
-| `pro_monthly` | Active transaction for `ai.polyglot.workspace.pro.monthly` | `ENTITLEMENT_STATES.PRO_MONTHLY` | ✅ |
-| `pro_annual` | Active transaction for `ai.polyglot.workspace.pro.annual` | `ENTITLEMENT_STATES.PRO_ANNUAL` | ✅ |
+- Eligible customers authorize an Apple Pro Monthly or Pro Annual subscription **in the native app** to begin Apple's 3-day introductory offer. Apple controls offer eligibility and subscription renewal. Unless canceled, the authorized plan is billed at the price shown by Apple after the trial.
+- MCP **cannot** initiate an Apple purchase or start an app-managed trial. `POST /v1/trials/start` rejects attempts.
+- Verified current Apple subscription transactions grant Pro access. The MCP entitlement service currently categorizes verified active transactions by monthly or annual product ID; it **does not separately label Apple introductory transactions as `trial`**. The `trial` state is also used to honor existing, unexpired **legacy app-managed trials**.
+- No ongoing free Sends, free-template bodies, or post-trial free allowance. `POST /v1/free-send/consume` denies access.
+- Old app-managed trials cannot convert into paid billing without a distinct Apple-authorized subscription transaction.
+- Authentication and Apple signed-transaction verification are required for paid access. Production must fail closed if remote verification is unavailable.
 
 ## Product IDs
 
-| Product | iOS (`IAPManager.swift`) | macOS (`IAPManagerMac.swift`) | MCP (`pricing.js`) | Match |
-|---------|-------------------------|------------------------------|-------------------|-------|
-| Pro Monthly | `ai.polyglot.workspace.pro.monthly` | `ai.polyglot.workspace.pro.monthly` | `pro_monthly` | ✅ |
-| Pro Annual | `ai.polyglot.workspace.pro.annual` | `ai.polyglot.workspace.pro.annual` | `pro_annual` | ✅ |
+| Product | Canonical ID | MCP entitlement |
+|---|---|---|
+| Pro Monthly | `ai.polyglot.workspace.pro.monthly` | `pro_monthly` |
+| Pro Annual | `ai.polyglot.workspace.pro.annual` | `pro_annual` |
 
-## Feature Gates
+The entitlement service also supports certain earlier product IDs for compatibility. Do not change or remove those without reviewing existing Apple subscribers.
 
-| Feature | Apple Gate | MCP Gate | Free | Trial | Pro | Parity |
-|---------|-----------|----------|------|-------|-----|--------|
-| Language list | None | None (`get_language_options`) | ✅ | ✅ | ✅ | ✅ |
-| Subscription status | None | None (`get_subscription_status`) | ✅ | ✅ | ✅ | ✅ |
-| Template browsing | UI locked flags | `search_templates` + locked flags | ✅ sees locks | ✅ | ✅ | ✅ |
-| Template details | UI locked flags | `get_template` + `templateAccess()` | 🔒 pro templates | ✅ free | ✅ | ✅ |
-| Prompt building (Send) | StoreKit paywall | `build_prompt` + `templateAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
-| Compare Mode (Send) | StoreKit paywall | `prepare_compare` + `compareAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
-| Post-trial single-AI send | App rolling-send state | `consumeDailyFreeSend()` / entitlement service | ✅ 1 every rolling 24h | Unlimited | Unlimited | ✅ |
-| BYOM info | None | `get_custom_model_capabilities` | ✅ | ✅ | ✅ | ✅ |
-| BYOM validation | StoreKit paywall | `validate_custom_model` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
-| BYOM execution | StoreKit paywall | `run_custom_model` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
-| Custom Compare (Send) | StoreKit paywall | `prepare_custom_compare` + `compareAccess()` | ✅ starts trial | ✅ | ✅ | ✅ |
-| Transcription | Apple Speech (native) | `transcribe_audio` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
-| Language detection | N/A (native) | `detect_language` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
-| Translation | N/A (native) | `translate_text` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
-| Localization | Native localization | `localize_text` + entitlement gate | 🔒 | ✅ | ✅ | ✅ |
+## MCP access map
 
-## Shared Source of Truth
+| Capability | No verified entitlement | Apple-authorized subscription / introductory offer | Existing unexpired legacy trial |
+|---|---|---|---|
+| Language options, subscription status, BYOM capabilities information | Available | Available | Available |
+| Workspace and template search (discovery) | Callable, but no usable template bodies | Available | Available |
+| Template details and prompt building | Locked | Available | Available |
+| Compare Mode and custom Compare preparation | Locked | Available | Available |
+| BYOM validation and execution | Locked | Available | Available |
+| Transcription, language detection, translation, localization | Locked | Available | Available |
+| Ongoing free Sends or templates after expiry | None | Not applicable while authorized | None after expiry |
 
-- **Apple side**: StoreKit 2 `Transaction.currentEntitlements` → checks `ProductID.all` → sets `isPro` / `isInTrial`
-- **MCP side**: `entitlements.js` → `getEntitlement()` → checks remote entitlement service → returns `{ isPro, trialActive, canUseFree }`
-- **Pricing**: `pricing.js` → `PRICING` object (single source for prices, trial days, plan IDs)
-- **Template access**: `templateAccess(template, entitlement)` in `entitlements.js`
-- **Compare access**: `compareAccess(entitlement)` in `server.js`, allowing Pro or active trial and locking after expiration
+The `get_template` tool may be invoked while unsubscribed, but the underlying `templateAccess()` gate must prevent template-body disclosure. The following 15 tools must retain their contracts:
 
-## Mismatches Found
+- Core: `get_language_options`, `get_subscription_status`, `open_workspace`, `search_templates`, `get_template`, `build_prompt`, `prepare_compare`.
+- BYOM: `get_custom_model_capabilities`, `validate_custom_model`, `run_custom_model`, `prepare_custom_compare`.
+- Language/media: `transcribe_audio`, `detect_language`, `translate_text`, `localize_text`.
 
-| Issue | Severity | Status |
-|-------|----------|--------|
-| Apple generated capability copies were behind the MCP contract | Medium | ✅ Synced to `2026-10-06.1` on 2026-10-07 |
-| Local StoreKit test product IDs differed from canonical IDs | Medium | ✅ Synced to `ai.polyglot.workspace.pro.monthly` / `.annual` |
-| Current source gate mismatch | — | ✅ None identified after synchronization |
+## Verification boundary
 
-## Notes
+As of October 19, the active Neon functions were **MCP deployment 62** and **entitlements deployment 10**, both marked completed. No Apple transactions were recorded in the connected production database during the audit. This confirms deployment metadata, **not** that Apple authorization, expiration, cancellation, restoration, or all 15 tool gates passed end-to-end testing.
 
-- iOS and macOS share identical product IDs (`ai.polyglot.workspace.pro.monthly`, `ai.polyglot.workspace.pro.annual`)
-- Trial is 3 days on both platforms
-- Post-trial users can browse free templates; successful free Sends are limited to one every rolling 24 hours
-- Compare Mode is available during an active trial and for Pro subscribers
-- Compare Mode locks when the trial expires unless the user has an active Pro subscription
-- Cross-platform tools (transcribe, detect, translate, localize) require Pro or active trial on MCP
-- BYOM tools (validate_custom_model, run_custom_model) require Pro or active trial; get_custom_model_capabilities is open
-- Apple-native behavior (Speech, StoreKit, native localization) is fully preserved — cross-platform tools are additive only
-- The 3-day trial starts on the user's first Send (build_prompt, prepare_compare, or prepare_custom_compare)
-- The trial does NOT automatically convert to a paid subscription; purchase is required via Apple StoreKit
-- Current Apple source: iOS 1.1.4 build 827; macOS 3.4 build 812
-- Total MCP tools: 15
-- Supported languages: 38
-- Distribution: hosted remote MCP (no local package)
+Do not substitute historical iOS/macOS build numbers, old parity documentation, or generated metadata for the latest respective source repositories and App Store Connect evidence. Preserve the production endpoint, existing databases, StoreKit integration, authentication, and legacy customer records.
