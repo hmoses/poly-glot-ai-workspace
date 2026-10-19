@@ -43,10 +43,16 @@ export async function verifyAppleIdentityToken(identityToken) {
   if (!identityToken) throw Object.assign(new Error("Apple identity token required"), { statusCode: 401 });
   const audience = process.env.APPLE_SIGN_IN_AUDIENCE || process.env.APPLE_BUNDLE_ID || "ai.polyglot.workspace";
   appleJwks ||= createRemoteJWKSet(new URL("https://appleid.apple.com/auth/keys"));
-  const { payload } = await jwtVerify(identityToken, appleJwks, {
-    issuer: "https://appleid.apple.com",
-    audience,
-  });
-  if (!payload.sub) throw Object.assign(new Error("Apple token has no subject"), { statusCode: 401 });
-  return String(payload.sub);
+  try {
+    const { payload } = await jwtVerify(identityToken, appleJwks, {
+      issuer: "https://appleid.apple.com",
+      audience,
+    });
+    if (!payload.sub) throw new Error("Apple token has no subject");
+    return String(payload.sub);
+  } catch {
+    // Invalid signatures, expiration and audience failures are auth errors,
+    // not an internal server failure. Never return token contents in logs.
+    throw Object.assign(new Error("Invalid Apple identity token"), { statusCode: 401 });
+  }
 }
