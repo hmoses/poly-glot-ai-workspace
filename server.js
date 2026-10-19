@@ -24,10 +24,8 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { z } from "zod";
 import {
-  consumeDailyFreeSend,
   entitlementSummary,
   getEntitlement,
-  startTrialIfNeeded,
   templateAccess,
 } from "./entitlements.js";
 import { publicPricing } from "./pricing.js";
@@ -293,7 +291,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
   };
   const server = new McpServer(
     { name: "polyglot-ai-workspace", version: "1.11.0" },
-    { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. The 3-day free trial starts on the user's first Send and includes full access to all 1,000+ templates, Compare Mode, unlimited sends, and BYOM. After the trial, users get 1 free single-AI Send every rolling 24 hours using Ask Any AI or a free template. Pro templates, Compare Mode, and unlimited sends require Poly-Glot Pro: $9.99/month or $79.99/year. The trial does not automatically convert to a paid subscription. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
+    { instructions: "Use Poly-Glot AI Workspace to discover localized prompt templates, accept multilingual input, control AI output language, build finished prompts, prepare Compare Mode runs across multiple AI providers, and connect developer-supplied model endpoints via BYOM. Respect server-returned locked states. Eligible customers authorize an Apple subscription for a 3-day introductory Pro trial. Unless canceled, Apple renews and charges for the selected plan after the trial at the storefront price. Pro or an unexpired legacy app-managed trial is required for protected MCP actions. No permanent free-Send or free-template allowance remains. Legacy trials cannot create Apple charges without explicit purchase approval. Premium access is enforced by the server. BYOM credentials are transient and never persisted." }
   );
 
   registerAppResource(server, "polyglot-workspace", UI_URI, { _meta: UI_META }, async () => ({
@@ -323,7 +321,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "get_subscription_status", {
     title: "Get Poly-Glot subscription status",
-    description: "Read the current account's access state, trial timing, subscription entitlement locks and subscription pricing. Use before gated tools or when asked about remaining access. This read-only operation does not initiate a trial or spend a send; the trial begins on the first qualifying Send.",
+    description: "Read the current account's access state, trial timing, subscription entitlement locks and subscription pricing. Use before gated tools or when asked about remaining access. This read-only operation never starts a trial or a charge. Eligible introductory trials begin only after an Apple subscription is explicitly authorized in the native app.",
     _meta: UI_META,
     inputSchema: {},
     outputSchema: { view: z.literal("subscription"), entitlement: entitlementSchema },
@@ -441,7 +439,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "build_prompt", {
     title: "Build a Poly-Glot prompt",
-    description: "Fill a named Poly-Glot template with field values and requested input/output languages, producing a finished prompt. Use get_template to inspect needed fields first. This is a Send: it starts the 3-day trial on the first qualifying use, or counts toward the shared rolling 24-hour free-send allowance after trial. Pro templates require trial or Pro; this does not directly query external AI providers.",
+    description: "Fill a named Poly-Glot template with field values and requested input/output languages, producing a finished prompt. Use get_template to inspect needed fields first. This is a subscription-gated Send. An eligible 3-day Pro introductory trial must first be authorized through Apple's purchase flow; or counts toward the shared rolling 24-hour free-send allowance after trial. Pro templates require trial or Pro; this does not directly query external AI providers.",
     _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200).describe("Required accessible template name; use search_templates or get_template to find it."),
@@ -473,22 +471,6 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
       return locked;
     }
 
-    if (template.plan === "free" && entitlement.state === "not_started") {
-      const authenticated = Boolean(entitlementContext(extra).authInfo.token);
-      if (!authenticated) return trialActivationLocked(entitlement, localization, false);
-      entitlement = await startTrialIfNeeded(entitlementContext(extra));
-      // Fail closed if the trial endpoint is missing, or if activation did
-      // not persist. Without this check, pre-trial Sends were unlimited.
-      if (!entitlement.trialActive && !entitlement.isPro) {
-        return trialActivationLocked(entitlement, localization, true);
-      }
-      access = templateAccess(template, entitlement);
-      if (!access.allowed) {
-        const locked = lockedResult(template, entitlement, localization.uiLanguage.code);
-        locked.structuredContent.localization = localization;
-        return locked;
-      }
-    }
 
     let body = getPromptBody(template);
     if (!body) throw new Error(`No prompt body is available for template: ${template.name}`);
@@ -502,25 +484,6 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     const missingFields = placeholders(body);
     body = applyLanguageInstructions(body, localization.inputLanguage.code, localization.outputLanguage.code);
 
-    // Consume the post-trial free allowance only after the prompt has been built successfully.
-    if (template.plan === "free" && entitlement.isExpired) {
-      const consumed = await consumeDailyFreeSend(entitlementContext(extra));
-      entitlement = consumed.entitlement;
-      if (!consumed.allowed) {
-        const reset = entitlement.nextResetAt ? new Date(entitlement.nextResetAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }) : "24 hours after your last successful free send";
-        const message = `Your free send has already been used. Your next free send becomes available ${reset}. Upgrade to Poly-Glot Pro for unlimited sends, Pro templates, and Compare Mode.`;
-        return {
-          structuredContent: {
-            view: "locked",
-            template: publicTemplate(template, entitlement, localization.uiLanguage.code),
-            entitlement: entitlementSummary(entitlement),
-            localization,
-            message,
-          },
-          content: [{ type: "text", text: message }],
-        };
-      }
-    }
 
     return {
       structuredContent: { view: "prompt", name: localizedTemplateMeta(template, localization.uiLanguage.code).name, prompt: body, missingFields, outputLanguage: localization.outputLanguage.name, inputLanguage: localization.inputLanguage.name, entitlement: entitlementSummary(entitlement), localization },
@@ -534,7 +497,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "prepare_compare", {
     title: "Prepare Poly-Glot Compare Mode",
-    description: "Prepare the same canonical prompt for two to eight selected AI providers using a raw prompt or accessible template. Returns provider destinations, prompt and usage instructions without calling third-party models. This is a Send and begins the 3-day trial on first qualifying use; Compare Mode requires active trial or Pro. Use when a user explicitly wants side-by-side answers.",
+    description: "Prepare the same canonical prompt for two to eight selected AI providers using a raw prompt or accessible template. Returns provider destinations, prompt and usage instructions without calling third-party models. This is a subscription-gated Send; Compare Mode requires a verified Apple subscription or an unexpired legacy trial. MCP cannot start an introductory offer. Use when a user explicitly wants side-by-side answers.",
     _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200).optional().describe("Optional accessible template name; supply this or a raw prompt."),
@@ -561,16 +524,10 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     const localization = languageContext({ uiLanguage, inputLanguage, outputLanguage });
     let entitlement = await getEntitlement(entitlementContext(extra));
 
-    // First eligible Compare use starts the same three-day product trial.
-    if (entitlement.state === "not_started") {
-      if (!entitlementContext(extra).authInfo.token) return trialActivationLocked(entitlement, localization, false);
-      entitlement = await startTrialIfNeeded(entitlementContext(extra));
-      if (!entitlement.trialActive && !entitlement.isPro) {
-        return trialActivationLocked(entitlement, localization, true);
-      }
-    }
     if (!compareAccess(entitlement)) {
-      const locked = compareLocked(entitlement);
+      const locked = entitlement.state === "not_started"
+        ? trialActivationLocked(entitlement, localization, Boolean(entitlementContext(extra).authInfo.token))
+        : compareLocked(entitlement);
       locked.structuredContent.localization = localization;
       return locked;
     }
@@ -795,17 +752,11 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
     track("prepare_custom_compare", extra, { customModels: (args.customModels||[]).length });
     let entitlement = await getEntitlement(entitlementContext(extra));
     trackExpanded("prepare_custom_compare", extra, entitlement.state);
-    if (entitlement.state === "not_started") {
-      const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
-      if (!entitlementContext(extra).authInfo.token) return trialActivationLocked(entitlement, localization, false);
-      entitlement = await startTrialIfNeeded(entitlementContext(extra));
-      if (!entitlement.trialActive && !entitlement.isPro) {
-        return trialActivationLocked(entitlement, localization, true);
-      }
-    }
     if (!compareAccess(entitlement)) {
-      const locked = compareLocked(entitlement);
       const localization = languageContext({ uiLanguage: args.uiLanguage, inputLanguage: args.inputLanguage, outputLanguage: args.outputLanguage });
+      const locked = entitlement.state === "not_started"
+        ? trialActivationLocked(entitlement, localization, Boolean(entitlementContext(extra).authInfo.token))
+        : compareLocked(entitlement);
       locked.structuredContent.localization = localization;
       return locked;
     }

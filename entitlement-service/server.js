@@ -15,7 +15,7 @@ import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { verifyAppleIdentityToken, verifyMcpUser } from "./auth.js";
 import { transactionFromNotification, verifyNotification, verifyTransaction } from "./apple.js";
-import { consumeFreeSend, entitlementForSubject, linkTransactionToSubject, startTrial, subjectForTransaction, upsertTransaction } from "./db.js";
+import { entitlementForSubject, linkTransactionToSubject, subjectForTransaction, upsertTransaction } from "./db.js";
 
 const MONTHLY_IDS = new Set((process.env.POLYGLOT_MONTHLY_PRODUCT_IDS || "ai.polyglot.promptstudio.mac.subscription.monthly,ai.polyglot.workspace.pro.monthly").split(",").map(s => s.trim()).filter(Boolean));
 const ANNUAL_IDS = new Set((process.env.POLYGLOT_ANNUAL_PRODUCT_IDS || "ai.polyglot.mac.pro.annual.2704,ai.polyglot.workspace.pro.annual").split(",").map(s => s.trim()).filter(Boolean));
@@ -54,12 +54,19 @@ function json(res, status, value) {
   res.end(JSON.stringify(value));
 }
 
-function stateFrom({ user, transaction }) {
-  if (transaction) {
+export function stateFrom({ user, transaction }) {
+  // A missing expiry or revoked receipt cannot grant an indefinite Pro plan.
+  const expiresAt = Date.parse(transaction?.expires_at || "");
+  const verifiedActive = transaction && !transaction.revocation_date &&
+    Number.isFinite(expiresAt) && expiresAt > Date.now();
+  if (verifiedActive) {
     if (MONTHLY_IDS.has(transaction.product_id)) return "pro_monthly";
     if (ANNUAL_IDS.has(transaction.product_id)) return "pro_annual";
   }
-  if (user?.trial_ends_at) return new Date(user.trial_ends_at).getTime() > Date.now() ? "trial" : "expired";
+  // Honor only already-existing legacy app-managed trials before expiry.
+  const trialEndsAt = Date.parse(user?.trial_ends_at || "");
+  if (Number.isFinite(trialEndsAt))
+    return trialEndsAt > Date.now() ? "trial" : "expired";
   return "not_started";
 }
 

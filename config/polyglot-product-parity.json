@@ -6,22 +6,22 @@
       "compare": false,
       "premiumTemplates": false,
       "crossPlatformTools": false,
-      "freeTemplateCount": 25,
+      "freeTemplateCount": 0,
       "trialDays": 3,
-      "dailyFreeSends": 1,
-      "freeSendWindowHours": 24
+      "dailyFreeSends": 0,
+      "freeSendWindowHours": 0
     },
     "trial": {
       "compare": true,
       "premiumTemplates": true,
       "crossPlatformTools": true,
-      "freeTemplateCount": 25
+      "freeTemplateCount": 0
     },
     "pro": {
       "compare": true,
       "premiumTemplates": true,
       "crossPlatformTools": true,
-      "freeTemplateCount": 25
+      "freeTemplateCount": 0
     }
   },
   "features": {
@@ -96,10 +96,10 @@
     },
     "promptBuilding": {
       "visible": true,
-      "freeAccess": true,
+      "freeAccess": false,
       "trialAccess": true,
       "proAccess": true,
-      "uiStateWhenLocked": "gated_per_template",
+      "uiStateWhenLocked": "locked",
       "mcpTool": "build_prompt",
       "mcpGate": "templateAccess"
     }
@@ -174,12 +174,12 @@
     ]
   },
   "messages": {
-    "trialStart": "All features free for 3 days.",
+    "trialStart": "Eligible 3-day Pro introductory trial begins only after Apple subscription authorization.",
     "trialExpired": "Your 3-day trial has ended.",
     "proRequired": "A Pro subscription is required.",
     "compareLocked": "Compare Mode requires an active trial or Pro subscription.",
     "crossPlatformLocked": "A Pro subscription or active trial is required to use cross-platform language tools.",
-    "freeSend": "One free single-AI send every rolling 24 hours after the trial."
+    "freeSend": "No continuing free-Send allowance. An active Apple Pro subscription is required after the eligible introductory trial."
   },
   "mcpTools": {
     "open": [

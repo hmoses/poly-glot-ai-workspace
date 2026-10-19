@@ -38,7 +38,7 @@ export function registerCrossPlatformTools(server, deps = {}) {
     languageContext = () => "",
     track = async () => {},
     trackError = async () => {},
-    getEntitlement = async () => ({ state: "not_started", isPro: false, trialActive: false, canUseFree: true }),
+    getEntitlement = async () => ({ state: "not_started", isPro: false, trialActive: false, canUseFree: false }),
     entitlementContext = (extra) => extra || {},
     entitlementSummary = (e) => e,
   } = deps;

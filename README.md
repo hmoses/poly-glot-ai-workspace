@@ -24,7 +24,7 @@ Return the supported Poly-Glot UI, input, and AI output languages. Language sele
 
 ### `get_subscription_status`
 
-Return the current Poly-Glot entitlement state, trial status, rolling 24-hour free send allowance, feature locks, and pricing. This is the authoritative MCP-facing explanation of the user's access. Does not start the trial.
+Return the current verified Apple subscription or unexpired legacy trial state, feature locks, and reference pricing. This is the authoritative MCP-facing explanation of the user's access. Does not start the trial.
 
 **Parameters:** none · **Read-only** · Does not consume a send
 
@@ -48,15 +48,15 @@ Get a template's fields and prompt body. The source prompt body is returned only
 
 ### `build_prompt`
 
-Fill and Send an entitled Poly-Glot template. **This is a Send action:** it starts the 3-day free trial on first use if the user has not sent before. Pro templates require an active trial or Pro subscription.
+Fill and Send an entitled Poly-Glot template. **This is a Send action:** it requires a verified Apple subscription (including an Apple-authorized introductory offer) or an existing unexpired legacy trial. MCP cannot start a paid trial.
 
-**Parameters:** `name` (string, required), `values` (object), `uiLanguage`, `inputLanguage`, `outputLanguage` (strings, default "EN") · **Send action** · Consumes a send · Starts trial on first use
+**Parameters:** `name` (string, required), `values` (object), `uiLanguage`, `inputLanguage`, `outputLanguage` (strings, default "EN") · **Send action** · Requires active entitlement · Does not start billing or a trial
 
 ### `prepare_compare`
 
-Prepare one canonical prompt for 2+ AI providers so the user can compare answers side-by-side. **This is a Send action:** it starts the 3-day free trial on first use. Compare Mode requires an active trial or Pro subscription. Does not call third-party models on the user's behalf.
+Prepare one canonical prompt for 2+ AI providers so the user can compare answers side-by-side. **This is a Send action:** it requires an active Apple subscription or an unexpired legacy trial. MCP cannot start an Apple trial. Does not call third-party models on the user's behalf.
 
-**Parameters:** `name` (string), `prompt` (string), `values` (object), `providers` (array of "chatgpt" | "claude" | "gemini" | "perplexity" | "grok" | "mistral" | "huggingchat" | "duckduckgo", min 2), `uiLanguage`, `inputLanguage`, `outputLanguage` · **Send action** · Consumes a send · Starts trial on first use
+**Parameters:** `name` (string), `prompt` (string), `values` (object), `providers` (array of "chatgpt" | "claude" | "gemini" | "perplexity" | "grok" | "mistral" | "huggingchat" | "duckduckgo", min 2), `uiLanguage`, `inputLanguage`, `outputLanguage` · **Send action** · Requires active entitlement · Does not start billing or a trial
 
 ### `get_custom_model_capabilities`
 
@@ -80,7 +80,7 @@ Run a Poly-Glot prompt against a developer-supplied model endpoint. Applies lang
 
 Build a Compare Mode plan containing built-in providers and developer-supplied custom model descriptors. Credentials are supplied at execution time only. **This is a Send action.**
 
-**Parameters:** `prompt` (string, required), `builtinProviders` (array), `customModels` (array of { label, adapterMode, baseUrl/endpoint, model }), `uiLanguage`, `inputLanguage`, `outputLanguage` · **Send action** · Starts trial on first use
+**Parameters:** `prompt` (string, required), `builtinProviders` (array), `customModels` (array of { label, adapterMode, baseUrl/endpoint, model }), `uiLanguage`, `inputLanguage`, `outputLanguage` · **Send action** · Requires active entitlement; never starts trial
 
 ### `transcribe_audio`
 
@@ -128,19 +128,17 @@ Poly-Glot offers approved Apple subscriptions with an eligible **3-day introduct
 
 ### Entitlement tiers
 
-| Feature | Pre-Trial | Trial (3 days) | Free (post-trial) | Pro |
+| Feature | No verified entitlement | Eligible Apple-introductory Pro trial | Existing unexpired legacy trial | Active Pro |
 |---|---|---|---|---|
-| Browse & search templates | ✅ | ✅ | ✅ | ✅ |
-| Language options & status | ✅ | ✅ | ✅ | ✅ |
-| BYOM capabilities info | ✅ | ✅ | ✅ | ✅ |
-| Free template bodies | ✅ | ✅ | ✅ (via rolling 24-hour send) | ✅ |
-| Pro template bodies | ❌ | ✅ | ❌ Locked | ✅ |
-| Send (build_prompt) | ✅ starts trial | ✅ Unlimited | ✅ 1 per rolling 24 hours | ✅ Unlimited |
-| 🔀 Compare Mode | ✅ starts trial | ✅ | ❌ Locked | ✅ |
-| Language processing tools | ❌ | ✅ | ❌ Locked | ✅ |
-| BYOM execution | ❌ | ✅ | ❌ Locked | ✅ |
+| Language discovery and read-only tool metadata | ✅ | ✅ | ✅ | ✅ |
+| Entitlement status (signed-in account) | ✅ | ✅ | ✅ | ✅ |
+| Templates and protected prompt bodies | ❌ Locked | ✅ | ✅ | ✅ |
+| Build or send prompts | ❌ Locked | ✅ | ✅ | ✅ |
+| 🔀 Compare Mode | ❌ Locked | ✅ | ✅ | ✅ |
+| Language processing tools | ❌ Locked | ✅ | ✅ | ✅ |
+| BYOM execution | ❌ Locked | ✅ | ✅ | ✅ |
 
-> **Note:** The 3-day trial is app/MCP-managed. It does not automatically become a paid Apple subscription. There is no automatic charge when the trial expires. A paid subscription begins only when the user explicitly completes the Apple subscription purchase flow.
+**The app is free to download, but there is no post-trial daily free Send or free-template allowance.** The eligible Apple subscription introductory offer lasts three days and automatically renews into the selected monthly or annual plan unless the customer cancels. Apple displays the actual storefront price before authorization. Existing app-managed trials are honored until their original expiry but **cannot create paid charges** without a separate Apple-approved purchase.
 
 ## Distribution
 

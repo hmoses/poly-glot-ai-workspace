@@ -26,18 +26,10 @@ export async function ensureUser(subject) {
 }
 
 // GOOSE NOTE: COALESCE makes trial start idempotent. Repeated calls must not restart the trial.
-export async function startTrial(subject, trialDays = 3) {
-  await ensureUser(subject);
-  const { rows } = await pool.query(
-    `UPDATE polyglot_users
-       SET trial_started_at = COALESCE(trial_started_at, now()),
-           trial_ends_at = COALESCE(trial_ends_at, now() + ($2::text || ' days')::interval),
-           updated_at = now()
-     WHERE subject = $1
-     RETURNING trial_started_at, trial_ends_at`,
-    [subject, String(trialDays)]
-  );
-  return rows[0];
+// Apple subscription authorization must happen through StoreKit. Retained for
+// older imports only: this method must never create a new app-managed trial.
+export async function startTrial() {
+  throw Object.assign(new Error("Apple subscription authorization required"), {statusCode: 403});
 }
 
 // GOOSE NOTE: Persist only transactions that have already passed Apple JWS verification.
@@ -101,22 +93,10 @@ export async function subjectForTransaction(tx) {
 }
 
 // GOOSE NOTE: This query is the final source for Pro/trial authorization decisions.
-export async function consumeFreeSend(subject) {
-  await ensureUser(subject);
-  const { rows } = await pool.query(
-    `UPDATE polyglot_users
-       SET last_free_send_at = now(), updated_at = now()
-     WHERE subject = $1
-       AND (last_free_send_at IS NULL OR last_free_send_at <= now() - interval '24 hours')
-     RETURNING last_free_send_at`,
-    [subject]
-  );
-  if (rows[0]) return { allowed: true, lastFreeSendAt: rows[0].last_free_send_at };
-  const current = await pool.query(
-    `SELECT last_free_send_at FROM polyglot_users WHERE subject=$1`,
-    [subject]
-  );
-  return { allowed: false, lastFreeSendAt: current.rows[0]?.last_free_send_at || null };
+// Legacy compatibility only. The permanent free-Send allowance is retired.
+// This path must not update last_free_send_at or grant access under any condition.
+export async function consumeFreeSend() {
+  return {allowed:false,lastFreeSendAt:null,reason:"subscription_required"};
 }
 
 export async function entitlementForSubject(subject) {
@@ -127,7 +107,7 @@ export async function entitlementForSubject(subject) {
        FROM apple_transactions
       WHERE user_subject=$1
         AND revocation_date IS NULL
-        AND (expires_at IS NULL OR expires_at > now())
+        AND expires_at > now()
       ORDER BY expires_at DESC NULLS FIRST LIMIT 1`, [subject]);
   return { user: userQ.rows[0], transaction: txQ.rows[0] || null };
 }

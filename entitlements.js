@@ -30,21 +30,9 @@ const STORE_PATH = process.env.POLYGLOT_ENTITLEMENT_STORE || join(__dirname, "da
 const REMOTE_URL = String(process.env.POLYGLOT_ENTITLEMENT_ENDPOINT || "").trim();
 const DEV_PLAN = String(process.env.POLYGLOT_DEV_PLAN || "").trim();
 const PRODUCTION = process.env.NODE_ENV === "production";
-const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
 function nowIso() { return new Date().toISOString(); }
 function hash(value) { return createHash("sha256").update(String(value)).digest("hex"); }
-
-/**
- * Calculate tomorrow 00:00 UTC — daily free send reset point.
- * Returns ISO-8601 timestamp string.
- */
-function rollingResetAt(lastFreeSendAt) {
-  if (!lastFreeSendAt) return null;
-  const last = Date.parse(lastFreeSendAt);
-  if (!Number.isFinite(last)) return null;
-  return new Date(last + MS_PER_DAY).toISOString();
-}
 
 function loadStore() {
   try {
