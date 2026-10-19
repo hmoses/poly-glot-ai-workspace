@@ -6,19 +6,19 @@
   "iOS": {
     "marketingVersion": "1.1.4",
     "buildNumber": "827",
-    "status": "SOURCE_CURRENT",
+    "status": "HISTORICAL_SOURCE_SNAPSHOT_NOT_ASC_VERIFIED",
     "authoritativeRepo": "hmoses/polyglot-workspace-ios"
   },
   "macOS": {
     "marketingVersion": "3.4",
     "buildNumber": "812",
-    "status": "SOURCE_CURRENT",
+    "status": "HISTORICAL_SOURCE_SNAPSHOT_NOT_ASC_VERIFIED",
     "authoritativeRepo": "hmoses/polyglot-workspace-mac"
   },
   "production": {
     "endpoint": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp",
-    "deployId": 52,
-    "deployedAt": "2026-10-07T01:39:39Z",
+    "deployId": 62,
+    "deployedAt": "2026-10-19T17:41:14.289105Z",
     "toolCount": 15,
     "tools": {
       "core": [
@@ -46,21 +46,24 @@
     "templateCount": 1022,
     "languageCount": 38,
     "providerCount": 8,
-    "deploymentStatus": "LIVE",
-    "freeSendPolicy": "1 free single-AI send every rolling 24 hours after trial",
-    "entitlementDeployId": 8
+    "deploymentStatus": "ACTIVE_COMPLETED_LIFECYCLE_TESTS_UNVERIFIED",
+    "freeSendPolicy": "No continuing free Sends or free-template allowance; eligible trial requires Apple subscription authorization; active Pro required afterward.",
+    "entitlementDeployId": 10,
+    "entitlementDeployedAt": "2026-10-19T17:32:54.598822Z",
+    "observedDate": "2026-10-19"
   },
   "tests": {
-    "parityWorkflow": "PASS",
+    "parityWorkflow": "HISTORICAL_PASS_NOT_CURRENTLY_REVERIFIED",
     "parityRunNumber": 60,
     "parityJobId": 37681503758,
     "verifiedCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399"
   },
   "timestamp": "2026-10-07T20:22:44Z",
   "notes": {
-    "appleSourceState": "Versions/builds reflect current authoritative GitHub source. App Store Connect release status is intentionally not inferred here.",
-    "parityContract": "2026-10-06.1",
-    "productionCommit": "gitCommit identifies the source recorded for production deploy 52; sourceSyncCommit identifies the latest parity-contract synchronization verified by CI."
+    "appleSourceState": "iOS/macOS versions here are October 7 historical source snapshots, NOT the current Apple builds or App Store Connect statuses. Query their respective source repos and ASC independently.",
+    "parityContract": "2026-10-06.1 current parity artifact; subscription-only free limits are zero",
+    "productionCommit": "Top-level gitCommit and sourceSyncCommit are historical October 7 source pointers, not claimed to match deployment 62 or the latest HEAD; deployment metadata verified by Neon list_functions on October 19.",
+    "currentSubscriptionValidation": "Deployment status and source review only. No live Apple transaction rows at verification time; Apple purchase/renewal/cancellation/restoration and 15-tool authenticated matrix remain unverified."
   },
   "sourceSyncCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399"
 }
