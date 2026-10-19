@@ -10,9 +10,6 @@ import { Environment, SignedDataVerifier } from "@apple/app-store-server-library
 
 const bundleId = process.env.APPLE_BUNDLE_ID || "ai.polyglot.workspace";
 const appAppleId = Number(process.env.APPLE_APP_ID || "6804499285");
-const mode = String(process.env.APPLE_ENVIRONMENT || "PRODUCTION").toUpperCase();
-const environment = mode === "SANDBOX" ? Environment.SANDBOX : Environment.PRODUCTION;
-
 function rootCertificates() {
   const paths = String(process.env.APPLE_ROOT_CA_PATHS || "")
     .split(",").map(s => s.trim()).filter(Boolean);
@@ -33,26 +30,57 @@ function rootCertificates() {
   return certs;
 }
 
-let verifier;
-export function appleVerifier() {
-  verifier ||= new SignedDataVerifier(
-    rootCertificates(),
-    process.env.APPLE_ONLINE_CHECKS !== "false",
-    environment,
-    bundleId,
-    environment === Environment.PRODUCTION ? appAppleId : undefined,
-  );
-  return verifier;
+// Production and Apple sandbox transactions are both Apple-signed JWS.
+// Xcode/local-testing transactions are never eligible for server access.
+const supportedEnvironments = [Environment.PRODUCTION, Environment.SANDBOX];
+const verifiers = new Map();
+
+export function appleVerifier(environment = Environment.PRODUCTION) {
+  if (!supportedEnvironments.includes(environment)) {
+    throw Object.assign(new Error("Unsupported Apple environment"), {statusCode: 400});
+  }
+  if (!verifiers.has(environment)) {
+    verifiers.set(environment, new SignedDataVerifier(
+      rootCertificates(),
+      process.env.APPLE_ONLINE_CHECKS !== "false",
+      environment,
+      bundleId,
+      environment === Environment.PRODUCTION ? appAppleId : undefined,
+    ));
+  }
+  return verifiers.get(environment);
+}
+
+/**
+ * The payload's environment is only a verifier-selection hint, NEVER proof of
+ * purchase. The selected Apple verifier independently validates the entire JWS,
+ * Apple certificate chain, bundle ID, and signed environment value.
+ */
+export function signedEnvironment(signedPayload) {
+  if (typeof signedPayload !== "string" || signedPayload.length > 200000 || signedPayload.split(".").length !== 3) {
+    throw Object.assign(new Error("Invalid Apple signed payload"), {statusCode: 400});
+  }
+  let decoded;
+  try {
+    decoded = JSON.parse(Buffer.from(signedPayload.split(".")[1], "base64url").toString("utf8"));
+  } catch {
+    throw Object.assign(new Error("Malformed Apple signed payload"), {statusCode: 400});
+  }
+  const environmentHint = decoded.environment || decoded.data?.environment;
+  if (!supportedEnvironments.includes(environmentHint)) {
+    throw Object.assign(new Error("Unsupported Apple signed environment"), {statusCode: 400});
+  }
+  return environmentHint;
 }
 
 export async function verifyTransaction(signedTransaction) {
-  const tx = await appleVerifier().verifyAndDecodeTransaction(signedTransaction);
+  const tx = await appleVerifier(signedEnvironment(signedTransaction)).verifyAndDecodeTransaction(signedTransaction);
   tx.__signed = signedTransaction;
   return tx;
 }
 
 export async function verifyNotification(signedPayload) {
-  return appleVerifier().verifyAndDecodeNotification(signedPayload);
+  return appleVerifier(signedEnvironment(signedPayload)).verifyAndDecodeNotification(signedPayload);
 }
 
 export async function transactionFromNotification(notification) {
