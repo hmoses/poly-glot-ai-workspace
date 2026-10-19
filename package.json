@@ -9,7 +9,7 @@
     "check": "node --test scripts/test-widget-editor.mjs && node scripts/check.js && node scripts/check-entitlements.mjs && node scripts/validate-entitlement-parity.mjs && node scripts/generate-apple-capabilities.mjs --check && node scripts/check-localization.mjs && node --check server.js && node --check entitlements.js && node --check pricing.js && node --check localization.js && node --check entitlement-service/server.js && node --check entitlement-service/db.js && node --check entitlement-service/auth.js && node --check entitlement-service/apple.js && node --test scripts/test-public-app-versions.mjs",
     "migrate": "node scripts/migrate-neon.mjs",
     "sync": "node scripts/sync-catalog.mjs",
-    "test": "node --test scripts/test-pro-template-visibility.mjs && node scripts/test-resilience.mjs && node --test scripts/test-cross-platform.mjs && node --test scripts/test-mcp-anonymous-trial.mjs && node --test scripts/test-subscription-entitlement-boundary.mjs && npm run check"
+    "test": "node --test scripts/test-pro-template-visibility.mjs && node scripts/test-resilience.mjs && node --test scripts/test-cross-platform.mjs && node --test scripts/test-mcp-anonymous-trial.mjs && node --test scripts/test-subscription-entitlement-boundary.mjs && node --test scripts/test-apple-verifier-environments.mjs && npm run check"
   },
   "engines": {
     "node": ">=20"
