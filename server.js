@@ -734,7 +734,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   server.registerTool("prepare_custom_compare", {
     title: "Prepare custom Compare Mode",
-    description: "Prepare a canonical prompt and instructions for comparing at least two targets, including one to five custom BYOM models and optional supported built-in AI providers. API keys must not appear in the comparison plan; use run_custom_model to execute custom targets separately. Returns comparison targets and prompt without invoking any models. This is a Send and starts the 3-day trial on first qualifying use; Compare Mode requires trial or Pro.",
+    description: "Prepare a canonical prompt and instructions for comparing at least two targets, including one to five custom BYOM models and optional supported built-in AI providers. API keys must not appear in the comparison plan; use run_custom_model to execute custom targets separately. Returns comparison targets and prompt without invoking any models. This is a Send action requiring an active Apple-authorized introductory trial, active Pro subscription, or existing unexpired legacy app-managed trial. MCP cannot start an Apple subscription or paid trial.",
     inputSchema: {
       prompt: z.string().min(1).max(30000).describe("Required canonical prompt shared among all selected models, up to 30,000 characters."),
       builtinProviders: z.array(z.enum(["chatgpt", "claude", "gemini", "perplexity", "grok", "mistral", "huggingchat", "duckduckgo"])).optional().default([]).describe("Optional built-in provider IDs to include alongside custom targets. This preparation tool does not call providers."),
