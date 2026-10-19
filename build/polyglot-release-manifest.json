@@ -17,8 +17,8 @@
   },
   "production": {
     "endpoint": "https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp",
-    "deployId": 62,
-    "deployedAt": "2026-10-19T17:41:14.289105Z",
+    "deployId": 63,
+    "deployedAt": "2026-10-19T18:37:26.886691Z",
     "toolCount": 15,
     "tools": {
       "core": [
@@ -46,7 +46,7 @@
     "templateCount": 1022,
     "languageCount": 38,
     "providerCount": 8,
-    "deploymentStatus": "ACTIVE_COMPLETED_LIFECYCLE_TESTS_UNVERIFIED",
+    "deploymentStatus": "LIVE_COMPLETED_METADATA_CHANGE_AUTHENTICATED_APPLE_LIFECYCLE_UNVERIFIED",
     "freeSendPolicy": "No continuing free Sends or free-template allowance; eligible trial requires Apple subscription authorization; active Pro required afterward.",
     "entitlementDeployId": 10,
     "entitlementDeployedAt": "2026-10-19T17:32:54.598822Z",
@@ -62,8 +62,16 @@
   "notes": {
     "appleSourceState": "iOS/macOS versions here are October 7 historical source snapshots, NOT the current Apple builds or App Store Connect statuses. Query their respective source repos and ASC independently.",
     "parityContract": "2026-10-06.1 current parity artifact; subscription-only free limits are zero",
-    "productionCommit": "Top-level gitCommit and sourceSyncCommit are historical October 7 source pointers, not claimed to match deployment 62 or the latest HEAD; deployment metadata verified by Neon list_functions on October 19.",
-    "currentSubscriptionValidation": "Deployment status and source review only. No live Apple transaction rows at verification time; Apple purchase/renewal/cancellation/restoration and 15-tool authenticated matrix remain unverified."
+    "productionCommit": "MCP function deployed from GitHub main at b8eb7aeb6f1f26115ce4be251a3f58e88916b1e7 as Neon deployment 63. Repository documentation commits after deploy are metadata-only. Runtime health JSON has a stale hard-coded deploy value 62; Neon control-plane get_function is authoritative.",
+    "currentSubscriptionValidation": "Deployment status and source review only. No live Apple transaction rows at verification time; Apple purchase/renewal/cancellation/restoration and 15-tool authenticated matrix remain unverified.",
+    "externalDirectories": "MCP.so and Glama editorial/cached descriptions are not guaranteed to refresh from the official MCP Registry; owner-side edits or rescan are required. Latest public verification pending."
   },
-  "sourceSyncCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399"
+  "sourceSyncCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399",
+  "registry": {
+    "version": "1.11.1",
+    "publisher": "mcp-publisher local GitHub token",
+    "publishStatus": "PUBLISHED",
+    "verifiedDate": "2026-10-19",
+    "metadataOnly": true
+  }
 }
