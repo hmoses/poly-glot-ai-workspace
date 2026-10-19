@@ -63,9 +63,9 @@
                 "destructiveHint": false
             },
             "justifications": {
-                "read_only_justification": "Building the first eligible free prompt can persist the start of the user's 3-day Poly-Glot trial.",
-                "open_world_justification": "The tool only updates private Poly-Glot entitlement state and does not publish to public or third-party systems.",
-                "destructive_justification": "Starting a trial and building a prompt do not delete, overwrite, revoke, or perform an irreversible destructive action."
+                "read_only_justification": "Builds a prompt only for an entitled account and returns a locked response otherwise. MCP never starts an Apple purchase, subscription, or trial.",
+                "open_world_justification": "Does not publish content or contact AI providers; subscription approval and billing occur separately through Apple.",
+                "destructive_justification": "Does not delete, overwrite, revoke, or perform an irreversible destructive action; Apple authorization is required for an eligible introductory offer."
             }
         },
         "prepare_compare": {
@@ -75,7 +75,7 @@
                 "destructiveHint": false
             },
             "justifications": {
-                "read_only_justification": "First eligible Compare Mode use can persist the start of the user's 3-day Poly-Glot trial.",
+                "read_only_justification": "Prepares a comparison only for an account with an active Apple-authorized introductory trial, Pro subscription, or unexpired legacy trial. It cannot start an Apple purchase or trial.",
                 "open_world_justification": "Prepares provider targets and a canonical prompt but does not itself submit content to third-party AI services.",
                 "destructive_justification": "Does not delete, overwrite, revoke, or perform an irreversible destructive action."
             }
@@ -183,7 +183,7 @@
                 "destructiveHint": false
             },
             "justifications": {
-                "read_only_justification": "Preparing the first eligible custom comparison can persist the start of the user's 3-day Poly-Glot trial; it does not execute the comparison targets.",
+                "read_only_justification": "Prepares custom comparison targets only when the account is entitled; does not execute targets or start an Apple subscription or trial.",
                 "open_world_justification": "Does not publish content or change any public or third-party system.",
                 "destructive_justification": "Does not delete, overwrite, revoke, or irreversibly modify data."
             }
@@ -216,10 +216,10 @@
         },
         {
             "description": "Build a multilingual completed prompt from a Poly-Glot template.",
-            "user_prompt": "Show Poly-Glot language options, then use a free email template with Spanish input and request the AI answer in French.",
+            "user_prompt": "Show Poly-Glot language options, then use an accessible email template with Spanish input and request French output.",
             "file_attachment_urls": null,
             "tools_triggered": "get_language_options,search_templates,build_prompt",
-            "expected_output": "Returns the supported language options, builds the prompt using multilingual input, requests French output, and starts the 3-day trial only if this is the first eligible free-template use.",
+            "expected_output": "Returns language options and builds the multilingual prompt only when the account has a verified active Apple introductory trial, Pro subscription, or unexpired legacy trial; otherwise returns a subscription-required locked response without starting a trial or charge.",
             "expected_output_url": null
         },
         {
