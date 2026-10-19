@@ -439,7 +439,7 @@ function createPolyglotServer(requestAuthToken = "", reqCtx = {}) {
 
   registerAppTool(server, "build_prompt", {
     title: "Build a Poly-Glot prompt",
-    description: "Fill a named Poly-Glot template with field values and requested input/output languages, producing a finished prompt. Use get_template to inspect needed fields first. This is a subscription-gated Send. An eligible 3-day Pro introductory trial must first be authorized through Apple's purchase flow; or counts toward the shared rolling 24-hour free-send allowance after trial. Pro templates require trial or Pro; this does not directly query external AI providers.",
+    description: "Fill a named Poly-Glot template with field values and requested input/output languages, producing a finished prompt. Use get_template to inspect needed fields first. This is a subscription-gated Send. Eligible users must authorize a three-day Pro introductory trial through Apple's native subscription purchase flow, or have an active verified Pro subscription or an unexpired legacy trial. There is no continuing free-Send allowance. This tool cannot start an Apple subscription or trial and does not directly query external AI providers.",
     _meta: UI_META,
     inputSchema: {
       name: z.string().min(1).max(200).describe("Required accessible template name; use search_templates or get_template to find it."),
