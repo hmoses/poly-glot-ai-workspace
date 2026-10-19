@@ -40,6 +40,6 @@ The `get_template` tool may be invoked while unsubscribed, but the underlying `t
 
 ## Verification boundary
 
-As of October 19, the active Neon functions were **MCP deployment 62** and **entitlements deployment 10**, both marked completed. No Apple transactions were recorded in the connected production database during the audit. This confirms deployment metadata, **not** that Apple authorization, expiration, cancellation, restoration, or all 15 tool gates passed end-to-end testing.
+As of October 19, the active Neon functions were **MCP deployment 63** and **entitlements deployment 10**, both marked completed. MCP deployment 63 was verified live with all 15 tools and corrected `build_prompt` and `prepare_custom_compare` descriptions; official MCP Registry metadata version `1.11.1` was also published. No Apple transactions were recorded in the connected production database during the audit. This confirms deployment metadata, **not** that Apple authorization, expiration, cancellation, restoration, or all 15 tool gates passed end-to-end testing.
 
 Do not substitute historical iOS/macOS build numbers, old parity documentation, or generated metadata for the latest respective source repositories and App Store Connect evidence. Preserve the production endpoint, existing databases, StoreKit integration, authentication, and legacy customer records.
