@@ -30,24 +30,24 @@ enum PolyGlotCapabilities {
         static let compare = false
         static let premiumTemplates = false
         static let crossPlatformTools = false
-        static let freeTemplateCount = 25
+        static let freeTemplateCount = 0
         static let trialDays = 3
-        static let dailyFreeSends = 1
-        static let freeSendWindowHours = 24
+        static let dailyFreeSends = 0
+        static let freeSendWindowHours = 0
     }
 
     enum TrialPlan {
         static let compare = true
         static let premiumTemplates = true
         static let crossPlatformTools = true
-        static let freeTemplateCount = 25
+        static let freeTemplateCount = 0
     }
 
     enum ProPlan {
         static let compare = true
         static let premiumTemplates = true
         static let crossPlatformTools = true
-        static let freeTemplateCount = 25
+        static let freeTemplateCount = 0
     }
 
     // MARK: - Entitlement States
