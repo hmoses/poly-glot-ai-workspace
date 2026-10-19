@@ -162,15 +162,22 @@ export default {
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
-        deploy: 45,
+        deploy: 61, // Neon deployment number for this verified subscription-funnel release
         version: "1.11.0",
         endpoint: MCP_PATH,
         templates: templates.length,
-        freeTemplates: templates.filter((t) => t.plan === "free").length,
+        freeTemplates: publicPricing().freeTemplateCount, // current entitlement allowance, not legacy catalog tags
         supportedLanguages: languagePublicList().length,
         tools: 15,
         pricing: publicPricing(),
-        trial: { days: 3, startsOn: "first Send", autoConverts: false },
+        trial: {
+          days: 3,
+          startsOn: "Apple subscription approval",
+          requiresApplePurchaseAuthorization: true,
+          renewsAutomaticallyUnlessCanceled: true,
+          legacyTrialsNeverBillWithoutApproval: true,
+          autoConverts: null, // Billing differs for authorized Apple offers and legacy app trials.
+        },
       }, { headers: CORS_HEADERS });
     }
 

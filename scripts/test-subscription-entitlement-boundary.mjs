@@ -44,3 +44,13 @@ test('Production lookup query rejects missing subscription expiry',async()=>{
   assert.match(db,/AND expires_at > now\(\)/);
   assert.doesNotMatch(db,/expires_at IS NULL OR expires_at > now\(\)/);
 });
+
+test('Public MCP health advertises only active entitlements, not legacy free catalog tags',async()=>{
+  const {readFileSync}=await import('node:fs');
+  const src=readFileSync(new URL('../index.mjs',import.meta.url),'utf8');
+  assert.match(src,/freeTemplates: publicPricing\(\).freeTemplateCount/);
+  assert.match(src,/startsOn: "Apple subscription approval"/);
+  assert.match(src,/requiresApplePurchaseAuthorization: true/);
+  assert.match(src,/renewsAutomaticallyUnlessCanceled: true/);
+  assert.doesNotMatch(src,/startsOn: "first Send"/);
+});
