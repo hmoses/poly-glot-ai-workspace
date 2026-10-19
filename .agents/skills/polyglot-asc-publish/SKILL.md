@@ -4,7 +4,7 @@ description: Release and synchronize Poly-Glot AI Workspace iOS/macOS builds and
 ---
 
 # Poly-Glot AI Workspace ASC Publishing Skill
-Updated 2026-10-15. Maintained in GitHub for cross-session retrieval. **This repository skill is not automatically installed as a ChatGPT system-level skill.**
+Updated 2026-10-19. Maintained in GitHub for cross-session retrieval. **This repository skill is not automatically installed as a ChatGPT system-level skill.**
 
 ## First actions
 1. Read this skill and verify real-time GitHub, App Store Connect (ASC), and local build access. Do not claim access to ASC, signing, or a user computer without checking tools.
@@ -28,7 +28,7 @@ Updated 2026-10-15. Maintained in GitHub for cross-session retrieval. **This rep
 - Read remote changes before writing. Rebase/pull or use SHA-conditional updates; never overwrite concurrent commits.
 
 ## Product invariants and verification
-- Three-day full-feature trial starts on first qualifying Send. StoreKit 2 is authoritative for Pro. Four states: preTrial, trialActive, trialExpired, pro. Post trial: one single-provider free Send per rolling 24 hours; 25 featured free templates. Compare Mode and Photo to AI require active trial or Pro.
+- Eligible customers start a three-day introductory Pro trial only after authorizing an Apple subscription in StoreKit; authorized subscriptions renew unless canceled. App-managed legacy trials do not initiate Apple billing. After trial/expiry there is no continuing free Send or free-template allowance. Preserve per-account verified entitlement checks; premium templates, Compare Mode, and Photo to AI require valid trial or Pro access. Do not confuse the MCP `trial` state for grandfathered app-managed trials with the Apple-authorized introductory period; verify actual current native source and Apple transaction handling.
 - Preserve StoreKit, subscription pricing, paywall, onboarding, eligibility checks, and locked features. Validate against current source before asserting exact entitlement behavior.
 - Eight providers: ChatGPT, Claude, Gemini, Grok, Perplexity, Mistral, HuggingChat, DuckDuckGo AI. Copilot is removed. Prompt/photo handoff is user-initiated: no blanket claim of automatic send. Mac Photo to AI via Finder/browser handoff should be verified against actual native code, not overwritten using older "no Mac Photo to AI" statements. Do not invent a Mac camera/OCR scanner.
 - 38 in-app languages; verify matching translation key coverage, RTL (Arabic/Hebrew), locale switching, and native guidance. The uploaded older playbook specifies 40 ASC storefront locales; query ASC for actual platform localization counts before claiming coverage.
