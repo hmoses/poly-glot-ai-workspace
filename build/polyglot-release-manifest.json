@@ -48,8 +48,8 @@
     "providerCount": 8,
     "deploymentStatus": "LIVE_COMPLETED_METADATA_CHANGE_AUTHENTICATED_APPLE_LIFECYCLE_UNVERIFIED",
     "freeSendPolicy": "No continuing free Sends or free-template allowance; eligible trial requires Apple subscription authorization; active Pro required afterward.",
-    "entitlementDeployId": 10,
-    "entitlementDeployedAt": "2026-10-19T17:32:54.598822Z",
+    "entitlementDeployId": 12,
+    "entitlementDeployedAt": "2026-10-19",
     "observedDate": "2026-10-19"
   },
   "tests": {
@@ -63,7 +63,7 @@
     "appleSourceState": "iOS/macOS versions here are October 7 historical source snapshots, NOT the current Apple builds or App Store Connect statuses. Query their respective source repos and ASC independently.",
     "parityContract": "2026-10-06.1 current parity artifact; subscription-only free limits are zero",
     "productionCommit": "MCP function deployed from GitHub main at b8eb7aeb6f1f26115ce4be251a3f58e88916b1e7 as Neon deployment 63. Repository documentation commits after deploy are metadata-only. Runtime health JSON has a stale hard-coded deploy value 62; Neon control-plane get_function is authoritative.",
-    "currentSubscriptionValidation": "Deployment status and source review only. No live Apple transaction rows at verification time; Apple purchase/renewal/cancellation/restoration and 15-tool authenticated matrix remain unverified.",
+    "currentSubscriptionValidation": "Neon entitlement deployment 12 now verifies Apple-signed Production and Sandbox transactions with separate signature validators. Native iOS/macOS code supports signed transaction sync, but no genuine Apple subscriber JWS is recorded and MCP OAuth discovery endpoints are unavailable. Do not mark true client purchase-to-unlock verified until a signed purchase and authenticated client access succeed.",
     "externalDirectories": "MCP.so and Glama editorial/cached descriptions are not guaranteed to refresh from the official MCP Registry; owner-side edits or rescan are required. Latest public verification pending."
   },
   "sourceSyncCommit": "b68171c66dac3a6be976b66e8fa4e854630eb399",
