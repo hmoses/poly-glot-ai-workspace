@@ -45,11 +45,15 @@ describe("Plan parity", () => {
     assert.equal(caps.plans.trial.premiumTemplates, true);
     assert.equal(caps.plans.trial.crossPlatformTools, true);
   });
-  test("free plan is rolling-24-hour limited", () => {
-    assert.equal(caps.plans.free.dailyFreeSends, 1);
-    assert.equal(caps.plans.free.freeSendWindowHours, 24);
-    assert.match(entitlements, /lastFreeSendAt/);
+  test("no ongoing free Sends or free templates without Apple authorization", () => {
+    assert.equal(caps.plans.free.dailyFreeSends, 0);
+    assert.equal(caps.plans.free.freeSendWindowHours, 0);
+    assert.equal(caps.plans.free.freeTemplateCount, 0);
+    assert.equal(caps.trial.purchaseRequired, true);
+    assert.equal(caps.trial.renewsAutomaticallyUnlessCanceled, true);
+    assert.equal(caps.trial.legacyTrialsBillWithoutApproval, false);
     assert.match(entitlements, /consumeDailyFreeSend/);
+    assert.match(entitlements, /return \{allowed: false, entitlement: await getEntitlement\(extra\)\}/);
   });
   test("prices and trial days match pricing.js", () => {
     assert.match(pricing, new RegExp(`trialDays:\\s*${caps.plans.free.trialDays}`));
