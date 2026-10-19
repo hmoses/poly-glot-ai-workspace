@@ -854,8 +854,8 @@ const httpServer = createServer(async (req, res) => {
     res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
     return res.end(JSON.stringify({
       name: "Poly-Glot AI Workspace MCP", status: "ok", version: "1.11.0", endpoint: MCP_PATH, templates: templates.length,
-      freeTemplates: templates.filter((t) => t.plan === "free").length, supportedLanguages: languagePublicList().length, tools: 15, pricing: publicPricing(),
-      trial: { days: 3, startsOn: "first Send", autoConverts: false },
+      freeTemplates: publicPricing().freeTemplateCount, supportedLanguages: languagePublicList().length, tools: 15, pricing: publicPricing(),
+      trial: { days: 3, startsOn: "Apple subscription approval", requiresApplePurchaseAuthorization: true, renewsAutomaticallyUnlessCanceled: true, legacyTrialsNeverBillWithoutApproval: true, autoConverts: null },
     }));
   }
   if (url.pathname === MCP_PATH && req.method && ["POST", "GET", "DELETE"].includes(req.method)) {

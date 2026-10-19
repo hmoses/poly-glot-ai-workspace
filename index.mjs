@@ -162,7 +162,7 @@ export default {
       return Response.json({
         name: "Poly-Glot AI Workspace MCP",
         status: "ok",
-        deploy: 61, // Neon deployment number for this verified subscription-funnel release
+        deploy: 62, // Neon deployment number for this verified subscription-funnel release
         version: "1.11.0",
         endpoint: MCP_PATH,
         templates: templates.length,

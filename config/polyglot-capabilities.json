@@ -1,37 +1,39 @@
 {
   "schemaVersion": 2,
-  "entitlementVersion": "2026-10-06.1",
+  "entitlementVersion": "2026-10-19.1",
   "plans": {
     "free": {
       "compare": false,
       "premiumTemplates": false,
       "crossPlatformTools": false,
       "byomExecution": false,
-      "freeTemplateCount": 25,
+      "freeTemplateCount": 0,
       "trialDays": 3,
-      "dailyFreeSends": 1,
-      "freeSendWindowHours": 24
+      "dailyFreeSends": 0,
+      "freeSendWindowHours": 0
     },
     "trial": {
       "compare": true,
       "premiumTemplates": true,
       "crossPlatformTools": true,
       "byomExecution": true,
-      "freeTemplateCount": 25
+      "freeTemplateCount": 0
     },
     "pro": {
       "compare": true,
       "premiumTemplates": true,
       "crossPlatformTools": true,
       "byomExecution": true,
-      "freeTemplateCount": 25
+      "freeTemplateCount": 0
     }
   },
   "trial": {
     "days": 3,
-    "startsOn": "first Send (build_prompt, prepare_compare, or prepare_custom_compare)",
-    "autoConverts": false,
-    "purchaseRequired": true
+    "startsOn": "Explicit Apple subscription approval",
+    "autoConverts": null,
+    "purchaseRequired": true,
+    "renewsAutomaticallyUnlessCanceled": true,
+    "legacyTrialsBillWithoutApproval": false
   },
   "pricing": {
     "monthly": "$9.99",

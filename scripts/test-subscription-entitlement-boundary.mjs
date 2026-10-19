@@ -54,3 +54,16 @@ test('Public MCP health advertises only active entitlements, not legacy free cat
   assert.match(src,/renewsAutomaticallyUnlessCanceled: true/);
   assert.doesNotMatch(src,/startsOn: "first Send"/);
 });
+
+test('Node HTTP and Neon Web status expose the same subscription-only trial terms',async()=>{
+  const {readFileSync}=await import('node:fs');
+  const source=readFileSync(new URL('../server.js',import.meta.url),'utf8');
+  assert.match(source,/freeTemplates: publicPricing\(\).freeTemplateCount/);
+  assert.match(source,/startsOn: "Apple subscription approval"/);
+  assert.match(source,/renewsAutomaticallyUnlessCanceled: true/);
+  assert.doesNotMatch(source,/startsOn: "first Send"/);
+  const config=JSON.parse(readFileSync(new URL('../config/polyglot-capabilities.json',import.meta.url),'utf8'));
+  assert.equal(config.plans.free.dailyFreeSends,0);
+  assert.equal(config.plans.free.freeTemplateCount,0);
+  assert.equal(config.trial.renewsAutomaticallyUnlessCanceled,true);
+});
