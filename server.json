@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.hmoses/poly-glot-ai-workspace",
   "title": "Poly-Glot AI Workspace",
-  "description": "15 MCP tools, 1,022 templates, 38 languages, 8 AI providers, Compare Mode and BYOM. Eligible 3-day trial requires Apple subscription approval; no ongoing free Sends.",
+  "description": "15 tools, 38 languages, 8 AIs. Apple-approved 3-day Pro trial; subscription renews, no free Sends.",
   "version": "1.11.0",
   "repository": {
     "url": "https://github.com/hmoses/poly-glot-ai-workspace",
