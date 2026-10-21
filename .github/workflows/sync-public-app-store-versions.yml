@@ -1,7 +1,7 @@
 name: Sync Public App Store Versions
 on:
-  schedule:
-    - cron: '11 */3 * * *'
+  # Automatic schedules paused by request (2026-10-21).
+  # Run manually from GitHub Actions when needed.
   workflow_dispatch:
 
 permissions:
