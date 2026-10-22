@@ -14,7 +14,7 @@
  *
  * SUBSCRIPTION-ONLY ENTITLEMENT MODEL:
  *   Valid Apple subscription (including its introductory trial): full access.
- *   Grandfathered, unexpired legacy app-managed trial: full access until expiry.
+ *   Legacy app-managed trials never grant subscription access.
  *   No verified entitlement or expired legacy trial: workspace locked, including
  *   previously designated Free templates, History, Compare Mode and sends.
  *   No permanent free-Send allowance or MCP-activated trial.
@@ -107,7 +107,7 @@ export async function getEntitlement(extra) {
   const isPro = base.state === ENTITLEMENT_STATES.PRO_MONTHLY || base.state === ENTITLEMENT_STATES.PRO_ANNUAL;
   // A missing/corrupt legacy expiration must never grant an unlimited trial.
   const trialEndMs = Date.parse(base.trialEndsAt || "");
-  const trialActive = base.state === ENTITLEMENT_STATES.TRIAL && Number.isFinite(trialEndMs) && Date.now() < trialEndMs;
+  const trialActive = base.source === "remote" && base.state === ENTITLEMENT_STATES.TRIAL && Number.isFinite(trialEndMs) && Date.now() < trialEndMs;
   const isExpired = base.state === ENTITLEMENT_STATES.EXPIRED;
   // Verified subscriptions and grandfathered active trials only.
   const canUseFree = isPro || trialActive;

@@ -1,6 +1,6 @@
 /**
  * Subscription-only safety: Apple subscriptions must have a live expiry, with
- * no revocation, and only already-started legacy trials are honored.
+ * no revocation, and legacy app-managed trials are never a subscription entitlement.
  * No real Neon DB, Apple receipts, or API credentials are needed.
  */
 import test from 'node:test';
@@ -25,12 +25,12 @@ test('Apple verified monthly and annual plans grant Pro only before expiry',()=>
   assert.equal(stateFrom(row(monthly,future,past)), 'not_started');
   assert.equal(stateFrom(row('unrecognized',future)), 'not_started');
 });
-test('Only existing time-bounded legacy trials are honored',()=>{
-  assert.equal(stateFrom({user:{trial_ends_at:future},transaction:null}),'trial');
+test('Legacy app-managed trials never grant subscription access',()=>{
+  assert.equal(stateFrom({user:{trial_ends_at:future},transaction:null}),'expired');
   assert.equal(stateFrom({user:{trial_ends_at:past},transaction:null}),'expired');
   assert.equal(stateFrom({user:{trial_ends_at:'invalid'},transaction:null}),'not_started');
   assert.equal(stateFrom({user:null,transaction:null}),'not_started');
-  assert.equal(stateFrom({user:{trial_ends_at:future},transaction:row(monthly,past).transaction}),'trial');
+  assert.equal(stateFrom({user:{trial_ends_at:future},transaction:row(monthly,past).transaction}),'expired');
 });
 test('MCP compatibility methods cannot generate trials or consume free Sends',async()=>{
   await assert.rejects(()=>startTrial('legacy-user'),/Apple subscription authorization required/);

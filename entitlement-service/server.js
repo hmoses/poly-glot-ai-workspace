@@ -79,10 +79,9 @@ export function stateFrom({ user, transaction }) {
     if (MONTHLY_IDS.has(transaction.product_id)) return "pro_monthly";
     if (ANNUAL_IDS.has(transaction.product_id)) return "pro_annual";
   }
-  // Honor only already-existing legacy app-managed trials before expiry.
+  // Legacy app-managed trials are never a subscription entitlement.
   const trialEndsAt = Date.parse(user?.trial_ends_at || "");
-  if (Number.isFinite(trialEndsAt))
-    return trialEndsAt > Date.now() ? "trial" : "expired";
+  if (Number.isFinite(trialEndsAt)) return "expired";
   return "not_started";
 }
 

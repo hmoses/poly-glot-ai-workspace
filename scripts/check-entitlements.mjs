@@ -27,9 +27,9 @@ writeFileSync(store, JSON.stringify({users:{[accountKey]:{
   trialEndsAt:new Date(Date.now()+86400000).toISOString()
 }}}));
 const trialCheck = await getEntitlement({});
-if (!trialCheck.trialActive || !templateAccess({plan:"free"},trialCheck).allowed
-  || !templateAccess({plan:"pro"},trialCheck).allowed)
-  throw new Error("Valid existing trials must retain all functionality.");
+if (trialCheck.trialActive || templateAccess({plan:"free"},trialCheck).allowed
+  || templateAccess({plan:"pro"},trialCheck).allowed)
+  throw new Error("Legacy app-managed trials must not unlock the workspace.");
 
 writeFileSync(store,JSON.stringify({users:{[accountKey]:{state:"pro_monthly"}}}));
 const paid = await getEntitlement({});
@@ -39,7 +39,7 @@ if (!paid.isPro || !templateAccess({plan:"pro"},paid).allowed)
 
 console.log(JSON.stringify({
   preSubscription: before.state, firstSendTrialDenied: trial.state==="not_started",
-  noFreeSend: !firstFree.allowed, validTrialUnblocked: trialCheck.trialActive,
+  noFreeSend: !firstFree.allowed, legacyTrialLocked: !trialCheck.trialActive,
   validSubscriberUnblocked: paid.isPro, pricingNoFreeTier: true
 },null,2));
 rmSync(store,{force:true});
