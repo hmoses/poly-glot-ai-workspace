@@ -7,7 +7,7 @@
 | Item | Current description |
 |---|---|
 | Canonical capabilities | `config/polyglot-capabilities.json` + `config/polyglot-product-parity.json` |
-| MCP version | 1.11.1 |
+| MCP version | Repository registry metadata: 1.11.1; live MCP health endpoint: 1.11.0 (observed October 23) |
 | Tools | 15 |
 | Supported languages | 38 |
 | Built-in AI providers | 8 (Copilot excluded) |
@@ -33,7 +33,7 @@ Production entitlement decisions must be based on verified Apple-signed transact
 
 ## Production observations (October 23, 2026)
 
-Neon MCP **deployment 66** and entitlement-service **deployment 16** are both current, active and completed on the production main branch, as verified via Neon on October 23. These deployment statuses do not prove successful live Apple purchase/renewal/restoration, account linking or every authenticated MCP tool permission check. The earlier October 19 observations of deployment 62/10 are historical, not the current production deployment.
+Neon MCP **deployment 66** and entitlement-service **deployment 16** are both current, active and completed on the production main branch, as verified via Neon on October 23. These deployment statuses do not prove successful live Apple purchase/renewal/restoration, account linking or every authenticated MCP tool permission check. The earlier October 19 observations of deployment 62/10 are historical, not the current production deployment. A live GET of the MCP health endpoint on October 23 returned HTTP 200 with 15 tools, 38 languages, 1,022 templates, zero free Sends, zero free-template entitlement, Apple subscription approval to start the three-day introductory trial, and renewal unless canceled. The health response advertises runtime version 1.11.0 while repository registry metadata is 1.11.1; this is a metadata version mismatch, not a pricing-model mismatch.
 
 ## Historical verification preserved
 
