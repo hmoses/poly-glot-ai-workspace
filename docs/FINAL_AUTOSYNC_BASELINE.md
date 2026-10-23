@@ -33,7 +33,7 @@ Production entitlement decisions must be based on verified Apple-signed transact
 
 ## Production observations (October 23, 2026)
 
-Neon MCP **deployment 66** and entitlement-service **deployment 16** are both current, active and completed on the production main branch, as verified via Neon on October 23. These deployment statuses do not prove successful live Apple purchase/renewal/restoration, account linking or every authenticated MCP tool permission check. The earlier October 19 observations of deployment 62/10 are historical, not the current production deployment. A live GET of the MCP health endpoint on October 23 returned HTTP 200 with 15 tools, 38 languages, 1,022 templates, zero free Sends, zero free-template entitlement, Apple subscription approval to start the three-day introductory trial, and renewal unless canceled. The health response advertises runtime version 1.11.0 while repository registry metadata is 1.11.1; this is a metadata version mismatch, not a pricing-model mismatch.
+Neon MCP **deployment 67** and entitlement-service **deployment 16** are both current, active and completed on the production main branch, as verified via Neon on October 23. These deployment statuses do not prove successful live Apple purchase/renewal/restoration, account linking or every authenticated MCP tool permission check. The earlier October 19 observations of deployment 62/10 are historical, not the current production deployment. A live GET of the MCP health endpoint on October 23 returned HTTP 200 with 15 tools, 38 languages, 1,022 templates, zero free Sends, zero free-template entitlement, Apple subscription approval to start the three-day introductory trial, and renewal unless canceled. The health response advertises runtime version 1.11.0 while repository registry metadata is 1.11.1; this is a metadata version mismatch, not a pricing-model mismatch.
 
 ## Historical verification preserved
 
@@ -42,3 +42,7 @@ GitHub Actions Parity Check run **#60**, job ID `37681503758`, passed on `b68171
 ## Directory sync
 
 Canonical metadata must state 15 MCP tools, 38 languages, 8 built-in AI providers, and an Apple-authorized introductory trial with no continuing free allowance. MCP.so and Glama may require owner-side listing edits and/or crawler refreshes; a GitHub commit alone does not confirm their public pages were updated.
+
+## Live MCP GUI rollout (October 23)
+
+The corrective 38-language widget source (`191c869`) was bundled and deployed to production as MCP Function **67**; `entitlements` remained on **16**. Live `tools/list` returned 15 registered tools with current Apple purchase authorization wording. Live `resources/read` returned the updated UI document without prior daily free-Send/reset wording. The source/build tests passed, and no subscription-validation rules or environment variables were intentionally changed.
