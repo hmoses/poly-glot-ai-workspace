@@ -51,3 +51,7 @@ This establishes deployment status **only**. It does not independently verify an
 - Language/audio: `transcribe_audio`, `detect_language`, `translate_text`, `localize_text`.
 
 Never change live Apple entitlement verification, API authorization or MCP tool contracts merely to refresh public directory copy.
+
+## Source-versus-live widget deployment boundary
+
+October 23 source commit [`191c869`](https://github.com/hmoses/poly-glot-ai-workspace/commit/191c869) removes retired daily-free-Send UI messaging and updates the embedded workspace trial guidance across 38 languages. Its `public/workspace-widget.html` and bundled `data/widget-html.js` match byte-for-byte, and six focused widget tests pass. **This is source-only until the production Neon MCP Function is safely redeployed and an MCP Apps client confirms the displayed GUI.** Production deployment 66 predates that commit; do not claim the live embedded GUI has refreshed automatically. Current live health response separately confirms zero daily free Sends, zero free-template entitlement, 38 languages, 15 tools, and Apple-approved subscription trial initiation. It reports runtime version `1.11.0` while registry source metadata is `1.11.1`; this version discrepancy does not change the observed pricing response.
