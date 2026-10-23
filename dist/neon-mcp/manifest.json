@@ -1,6 +1,6 @@
 {
-  "size": 2389283,
-  "sha256": "6d8c2a2626d7542a4b47c51fd0cf9f8db0e9dfd6532a75cfa600307343e58c56",
+  "size": 2401122,
+  "sha256": "260370d88dee200bd8dee6b68d4917ee871c995eb3978de136da09d7585fb8d6",
   "parts": [
     "part-000.b64",
     "part-001.b64",
@@ -21,5 +21,6 @@
     "part-016.b64",
     "part-017.b64"
   ],
-  "sourceCommit": "1f93d4bfb107da34cf1e032871da59408ff922eb"
+  "sourceCommit": "191c869",
+  "format": "neon-function-prebundled-index-mjs"
 }
