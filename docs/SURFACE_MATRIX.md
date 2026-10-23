@@ -1,37 +1,53 @@
-# Poly-Glot MCP Distribution and Tool Surface
+# Poly-Glot MCP Distribution and Pricing — Current Audit
 
-> **Historical directory snapshot (October 9, 2026).** Source-of-truth current contract: 15 tools, 38 languages, **8** built-in AI providers, zero continuing free Sends; eligible trial requires Apple subscription authorization. Neon reported MCP deployment 62 and entitlement deployment 10 active on October 19. MCP.so/Glama owner-controlled descriptions may still be stale, and directory page changes remain unverified.
+**Audited October 23, 2026.** This document supersedes the older October 9 snapshot and must distinguish owned source metadata from independent third-party directory copy.
 
-Verified: 2026-10-09. This is a point-in-time check. A directory displaying all 15 tools does not imply its manually maintained overview is current.
+## Canonical contract
 
-## Canonical inventory (15 tools)
+| Field | Current contract |
+|---|---|
+| Server | Poly-Glot AI Workspace — remote Streamable HTTP MCP |
+| MCP tools | 15: 7 core, 4 BYOM, 4 language/audio |
+| Built-in AI destinations | 8: ChatGPT, Claude, Gemini, Grok, Perplexity, Mistral, HuggingChat, DuckDuckGo AI |
+| Language options | 38 |
+| Prompt templates | 1,022, access controlled by verified entitlement |
+| Introductory trial | Eligible user explicitly approves an Apple Pro subscription in the native app; three days of access |
+| Renewal | Selected monthly or annual plan renews unless canceled through Apple |
+| US reference prices | $9.99/month or $79.99/year; Apple checkout controls actual storefront price and eligibility |
+| Continuing free Sends / free-template entitlement | Zero: none after trial or without verified access |
+| Existing legacy app trials | Unexpired grandfathered access may persist, but does not authorize Apple billing |
+| MCP billing | MCP discovery, connections or tool calls cannot initiate Apple subscriptions |
+| Comparison | `prepare_compare` prepares prompts and destination instructions; it does not call the built-in AI providers |
 
-- Core (7): `get_language_options`, `get_subscription_status`, `open_workspace`, `search_templates`, `get_template`, `build_prompt`, `prepare_compare`
-- BYOM (4): `get_custom_model_capabilities`, `validate_custom_model`, `run_custom_model`, `prepare_custom_compare`
-- Language/audio (4): `transcribe_audio`, `detect_language`, `translate_text`, `localize_text`
+Production endpoint: `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp`.
 
-Product baseline: **v1.11.0; 15 tools; 38 languages; 9 built-in providers; 1,022 templates**. Remote endpoint: `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.aws.neon.tech/mcp`.
+## Current production deployment status
 
-## Verified distribution surfaces
+Read-only Neon inspection on **October 23, 2026** found both active **and** current deployments completed in project `small-fire-10422608`, default branch `br-steep-leaf-ae2o29qz`:
 
-| Surface | Tool coverage | Last observed status | Action still needed |
-|---|---|---|---|
-| [MCP.so](https://mcp.so/servers/poly-glot-ai-workspace) | **15/15** in dynamic Tools | Verified + Featured; overview and About text still incorrectly say **7 tools**, and provider lists say **Groq** instead of **HuggingChat** | Claimed-owner listing editor or MCP.so support must update manually maintained description, overview, and provider tags; server tool registrations require no changes |
-| [Glama remote connector](https://glama.ai/mcp/connectors/io.github.hmoses/poly-glot-ai-workspace) | **15/15** live listed | **Healthy**, last tested 2026-10-09 17:16 UTC; owner verified; summary still incorrectly says **35 languages** | Owner Admin → Manage connector → update to **38 languages**, and enable **Use Glama listing details as the source of truth** if registry sync overwrites edits |
-| [Glama GitHub-backed server](https://glama.ai/mcp/servers/hmoses/poly-glot-ai-workspace) | **15/15** in README | Full tools list and **38 languages** displayed | No tool-list correction needed |
-| [GitHub source](https://github.com/hmoses/poly-glot-ai-workspace) | **15/15** in README, server code | v1.11.0 source | No missing registrations; registry `server.json` carries machine-readable inventory |
-| [Website MCP page](https://hmoses.github.io/poly-glot-site/mcp-integrations.html) | **15/15** in page | GitHub Pages deployment verified successful 2026-10-09 | No missing tool names |
-| [Hugging Face Space](https://huggingface.co/spaces/HWM2/poly-glot-ai-workspace) | Not independently inspectable from Space landing page | Space **Running** | Do not assert 15-tool visibility on Space without inspecting its iframe/code |
-| [Official MCP Registry](https://registry.modelcontextprotocol.io/) | Not independently verified in public API this check | Canonical `server.json` v1.11.0 prepared; publish workflow tag-triggered | Check registry version and run `.github/workflows/publish-mcp-registry.yml` via a version tag if new metadata must be published |
+- **MCP function: deployment 66** — completed, active (Node.js 24).
+- **Entitlements function: deployment 16** — completed, active (Node.js 24).
 
-## Deployment and operational observations
+This establishes deployment status **only**. It does not independently verify an end-to-end Apple purchase/renewal/restore transaction, authenticated entitlement gating for all 15 tools, or every directory's public cached text. Never claim those untested paths are proven merely because deployments completed.
 
-- Neon production MCP `mcp` current/active deployment **53** completed on 2026-10-08, consistent with v1.11.0 source.
-- Glama's current live health is **Healthy**; the older 2026-10-08 note saying Unhealthy is obsolete.
-- Neon `entitlements` current deployment **8 failed** with `Cannot find package 'jose' imported from /opt/function/auth.js`; active deployment remains **7 (completed)**. Do not report deployment 8 as live. Diagnose separately before redeploying, preserving subscription verification and free-send rules.
-- MCP.so and Glama owner UI edits cannot be performed by commits to this GitHub repository alone. Do not mark their stale text corrected until their public pages update.
-- Do not change MCP tool schemas, trial policy, Apple verification, authentication, production endpoint, or runtime merely to refresh directory copy.
+## External directories — editorial copy not synchronized automatically
 
-## Registry publication
+| Surface | October 23 observation | Next action |
+|---|---|---|
+| [MCP.so](https://mcp.so/servers/poly-glot-ai-workspace) | Previously listed 15 tools dynamically; manually maintained descriptions may still show 7 tools or obsolete provider/pricing copy | Update claimed-owner About, summary, pricing and tool descriptions; verify public URL |
+| [Glama remote connector](https://glama.ai/mcp/connectors/io.github.hmoses/poly-glot-ai-workspace) | Public cached description still says 35 languages, and cached tool description says first free template starts trial | Owner: correct to 38 and Apple-approved trial; rescan tool descriptions; verify visible page |
+| [Glama GitHub-backed listing](https://glama.ai/mcp/servers/hmoses/poly-glot-ai-workspace) | GitHub-backed page may cache the older README pricing text despite current repo being corrected | Request listing refresh and inspect public result |
+| [GitHub source](https://github.com/hmoses/poly-glot-ai-workspace) | README and subscription policy use correct Apple-authorized model | Preserve canonical contract and CI validations |
+| [Website MCP page](https://hmoses.github.io/poly-glot-site/mcp-integrations.html) | Source describes 15 tools and current entitlement rules; the multilingual catalog included historical translation strings | Sync localized explanatory text and deploy/verify GitHub Pages |
+| [Hugging Face Space](https://huggingface.co/spaces/HWM2/poly-glot-ai-workspace) | Not reverified in this audit | Review actual Space public copy and tool widget before claiming parity |
+| [Official MCP Registry](https://registry.modelcontextprotocol.io/) | `server.json` in GitHub is current; published registry version not reverified | Check registry live metadata; version/tag publish only if needed |
 
-`server.json` documents the current full 15-tool inventory in its publisher-provided metadata for automated consumers and links to the canonical tools page. The official Registry publisher workflow runs on Git tags `v*`; GitHub main-branch commits alone are not proof of Registry publication.
+**Important:** Updating GitHub does not edit Glama/MCP.so owner-controlled fields, invalidate their stale caches, or publish a new Registry version. Do not mark those corrected before public verification.
+
+## Tools
+
+- Core: `get_language_options`, `get_subscription_status`, `open_workspace`, `search_templates`, `get_template`, `build_prompt`, `prepare_compare`.
+- BYOM: `get_custom_model_capabilities`, `validate_custom_model`, `run_custom_model`, `prepare_custom_compare`.
+- Language/audio: `transcribe_audio`, `detect_language`, `translate_text`, `localize_text`.
+
+Never change live Apple entitlement verification, API authorization or MCP tool contracts merely to refresh public directory copy.

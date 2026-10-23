@@ -1,6 +1,6 @@
 # Poly-Glot MCP — Current Directory Listing Copy
 
-**Reviewed:** October 19, 2026. This is the current public listing text for MCP.so, Glama and other MCP directories. It does not authorize any directory changes on its own.
+**Reverified:** October 23, 2026. This is the current public listing text for MCP.so, Glama and other MCP directories. It does not authorize any directory changes on its own.
 
 ## Short description
 
@@ -36,6 +36,10 @@ Poly-Glot AI Workspace provides a hosted remote Streamable HTTP MCP server with 
 
 ## Verification / publication boundary
 
-As observed October 19, MCP function deployment 62 responded HTTP 200 and a `tools/list` call returned all 15 tools. The health endpoint reports 38 languages, no free-template entitlement, and Apple authorization for the trial. The source `server.json` has also been corrected.
+October 23 Neon inventory shows production MCP deployment **66** and entitlement deployment **16**, both completed and active. A historical October 19 `tools/list` check returned 15 tools; that is **not** an October 23 authenticated end-to-end billing verification. The current GitHub `server.json` and README use the Apple-authorized subscription model.
 
 **Do not claim the external pages are updated until their public About/Overview copy and cached tool descriptions visibly reflect these facts.** A GitHub source commit is not an MCP.so owner edit, a Glama admin edit, or an Official MCP Registry publication. No new MCP production deployment, registry version, or native app build is authorized merely by updating this document.
+
+### October 23 public cache follow-up
+
+The publicly crawled Glama connector still says **35** languages and a cached `build_prompt` description claims the first free-template use starts an app trial. Those statements are inaccurate. The claimed-owner editor must update the summary, initiate an MCP tools rescan, and confirm that the public page no longer advertises first-Send trials, continuing free Sends, or free templates. MCP.so and the GitHub-backed Glama page may also retain cached editorial descriptions and must be verified separately. No owner-side changes are confirmed from this GitHub update alone.

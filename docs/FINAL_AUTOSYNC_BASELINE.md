@@ -1,13 +1,13 @@
 # Poly-Glot MCP — Subscription-Only Baseline
 
-> Current contract reviewed October 19, 2026. The earlier October 7 automatic-sync baseline described a superseded free-Send model and should not be used for release or billing decisions.
+> Current contract reviewed October 23, 2026. The earlier October 7 automatic-sync baseline described a superseded free-Send model and should not be used for release or billing decisions.
 
 ## Current source contract
 
 | Item | Current description |
 |---|---|
 | Canonical capabilities | `config/polyglot-capabilities.json` + `config/polyglot-product-parity.json` |
-| MCP version | 1.11.0 |
+| MCP version | 1.11.1 |
 | Tools | 15 |
 | Supported languages | 38 |
 | Built-in AI providers | 8 (Copilot excluded) |
@@ -31,9 +31,9 @@ The legacy `last_free_send_at` column remains for compatibility/audit, but no lo
 
 Production entitlement decisions must be based on verified Apple-signed transactions and server-side identity or on the existing, time-bounded legacy trial record. Neither tools/list nor read-only discovery starts billing.
 
-## Production observations (October 19, 2026)
+## Production observations (October 23, 2026)
 
-Neon MCP **deployment 62** and entitlement-service **deployment 10** were listed as active and completed. The production database had **zero Apple transaction records** when checked. Live Apple subscription lifecycle, authenticated 15-tool matrix, and StoreKit restoration behavior were **not verified** by that observation.
+Neon MCP **deployment 66** and entitlement-service **deployment 16** are both current, active and completed on the production main branch, as verified via Neon on October 23. These deployment statuses do not prove successful live Apple purchase/renewal/restoration, account linking or every authenticated MCP tool permission check. The earlier October 19 observations of deployment 62/10 are historical, not the current production deployment.
 
 ## Historical verification preserved
 
