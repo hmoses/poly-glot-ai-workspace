@@ -43,3 +43,7 @@ October 23 Neon inventory shows production MCP deployment **66** and entitlement
 ### October 23 public cache follow-up
 
 The publicly crawled Glama connector still says **35** languages and a cached `build_prompt` description claims the first free-template use starts an app trial. Those statements are inaccurate. The claimed-owner editor must update the summary, initiate an MCP tools rescan, and confirm that the public page no longer advertises first-Send trials, continuing free Sends, or free templates. MCP.so and the GitHub-backed Glama page may also retain cached editorial descriptions and must be verified separately. No owner-side changes are confirmed from this GitHub update alone.
+
+### October 23 rollout update
+
+Neon MCP deployment **67** now runs the corrected 38-language embedded GUI and current subscription-only pricing. Entitlements deployment **16** was left unchanged. Live tools/list returns all 15 tools; resources/read contains the new widget text, and official registry version 1.11.1 has correct metadata. Third-party owner-controlled listing text (particularly MCP.so About and Glama cached source/schema) still requires direct owner editing or recrawling; it is not corrected by GitHub and Neon alone.
