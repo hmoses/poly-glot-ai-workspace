@@ -1,6 +1,6 @@
 # Poly-Glot MCP Distribution and Pricing — Current Audit
 
-**Audited October 23, 2026.** This document supersedes the older October 9 snapshot and must distinguish owned source metadata from independent third-party directory copy.
+**Audited and redeployed October 23, 2026.** This document supersedes the older October 9 snapshot and must distinguish owned source metadata from independent third-party directory copy.
 
 ## Canonical contract
 
@@ -25,7 +25,7 @@ Production endpoint: `https://br-steep-leaf-ae2o29qz-mcp.compute.c-2.us-east-2.a
 
 Read-only Neon inspection on **October 23, 2026** found both active **and** current deployments completed in project `small-fire-10422608`, default branch `br-steep-leaf-ae2o29qz`:
 
-- **MCP function: deployment 66** — completed, active (Node.js 24).
+- **MCP function: deployment 67** — completed and active (Node.js 24); bundle built from source commit `191c869`, validated before deployment.
 - **Entitlements function: deployment 16** — completed, active (Node.js 24).
 
 This establishes deployment status **only**. It does not independently verify an end-to-end Apple purchase/renewal/restore transaction, authenticated entitlement gating for all 15 tools, or every directory's public cached text. Never claim those untested paths are proven merely because deployments completed.
@@ -54,4 +54,15 @@ Never change live Apple entitlement verification, API authorization or MCP tool 
 
 ## Source-versus-live widget deployment boundary
 
-October 23 source commit [`191c869`](https://github.com/hmoses/poly-glot-ai-workspace/commit/191c869) removes retired daily-free-Send UI messaging and updates the embedded workspace trial guidance across 38 languages. Its `public/workspace-widget.html` and bundled `data/widget-html.js` match byte-for-byte, and six focused widget tests pass. **This is source-only until the production Neon MCP Function is safely redeployed and an MCP Apps client confirms the displayed GUI.** Production deployment 66 predates that commit; do not claim the live embedded GUI has refreshed automatically. Current live health response separately confirms zero daily free Sends, zero free-template entitlement, 38 languages, 15 tools, and Apple-approved subscription trial initiation. It reports runtime version `1.11.0` while registry source metadata is `1.11.1`; this version discrepancy does not change the observed pricing response.
+October 23 source commit [`191c869`](https://github.com/hmoses/poly-glot-ai-workspace/commit/191c869) removes retired daily-free-Send UI messaging and updates the embedded workspace trial guidance across 38 languages. Its `public/workspace-widget.html` and bundled `data/widget-html.js` match byte-for-byte, and six focused widget tests pass. **This is deployed in Neon MCP Function 67 and verified through the live MCP `resources/read` response.** Production deployment **67** includes that commit. The live `resources/read` result for `ui://polyglot/workspace-v3.html` contained the updated Apple-approved trial copy and none of the removed daily-free-Send messages (confirmed October 23). Current live health response separately confirms zero daily free Sends, zero free-template entitlement, 38 languages, 15 tools, and Apple-approved subscription trial initiation. It reports runtime version `1.11.0` while registry source metadata is `1.11.1`; this version discrepancy does not change the observed pricing response.
+
+## October 23 post-deployment verification
+
+- Neon `mcp` deployment **67** active and completed; `entitlements` deployment **16** unchanged and completed, existing environment-key names preserved.
+- Live MCP `/` health: HTTP 200; 15 tools, 38 languages, 1,022 templates; 0 free Sends, 0 free templates; eligible 3-day Apple-approved Pro trial and auto-renewal disclosures.
+- Live MCP `tools/list`: 15 expected tools; subscription-dependent descriptions no longer claim a first-Send trial; embedded UI resource metadata present.
+- Live MCP `resources/list` and `resources/read`: `ui://polyglot/workspace-v3.html` available, containing corrected Apple subscription copy and no daily free-Send text.
+- Live MCP `get_language_options` read-only tool returned successfully.
+- Official MCP Registry: live version **1.11.1**, correct 15-tool, 38-language, eight-provider and Apple-authorized pricing metadata (October 23).
+- Production health metadata still says runtime `1.11.0`, which is not a billing inconsistency with registry metadata `1.11.1`.
+- Owner-controlled MCP.so About/tags and Glama cached prose/schema text remain unverified or outdated; GitHub/Neon deployments do not update those accounts. Those require their owner dashboards or the third parties to rescan.
